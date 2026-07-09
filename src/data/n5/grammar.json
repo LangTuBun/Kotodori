@@ -1,33 +1,76 @@
 [
   {
     "id": "g_001",
-    "pattern": "( N1 は)　N2 です。",
+    "num": "001",
+    "pattern": "(N1は) N2です",
     "meaning": {
-      "vi": "",
+      "vi": "N1 là N2",
       "en": ""
     },
-    "category": "copula",
+    "category": "noun-copula",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 1,
+    "order": 1,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "リンさんは学生です。",
+        "kana": "",
+        "vi": "Bạn Linh là sinh viên.",
+        "en": "",
+        "jaRuby": "リンさんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(N1は) N2です"
+  },
+  {
+    "id": "g_002",
+    "num": "002",
+    "pattern": "(N1は) N2ですか",
+    "meaning": {
+      "vi": "N1 có phải là N2 không?",
+      "en": ""
+    },
+    "category": "noun-copula",
+    "jlptLevel": "N5",
+    "chapter": 1,
+    "order": 2,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ズンさんは教師ですか。",
+        "kana": "",
+        "vi": "Anh Dũng là giáo viên đúng không?",
+        "en": "",
+        "jaRuby": "ズンさんは<ruby>教師<rp>(</rp><rt>きょうし</rt><rp>)</rp></ruby>ですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(N1は) N2ですか"
   },
   {
     "id": "g_003",
-    "pattern": "N も",
+    "num": "003",
+    "pattern": "Nも",
     "meaning": {
-      "vi": "",
+      "vi": "N cũng",
       "en": ""
     },
-    "category": "particles",
+    "category": "noun-copula",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 1,
+    "order": 3,
     "explanation": {
       "vi": "",
       "en": ""
@@ -35,113 +78,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "です。それも　日に本ほん料りょう理り",
+        "ja": "私はベトナム人です。マイさんもベトナム人です。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "ですか。",
-        "kana": "",
-        "vi": "Đây là món ăn Nhật. Đó cũng là món ăn Nhật đúng không?",
-        "en": ""
-      },
-      {
-        "ja": "B: いいえ、これは　ベトナム料りょう理り",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi là người Việt. Mai cũng là người Việt.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。マイさんもベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Nも"
   },
   {
     "id": "g_004",
-    "pattern": "N1 は　何なん",
+    "num": "004",
+    "pattern": "N1は N2じゃないです/じゃありません/ではありません",
     "meaning": {
-      "vi": "→ (N1 は） N2 です。",
+      "vi": "N1 không phải N2",
       "en": ""
     },
-    "category": "particles",
+    "category": "noun-copula",
     "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_005",
-    "pattern": "～ね",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "general",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_006",
-    "pattern": "～よ",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "general",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_007",
-    "pattern": "〜よね",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "general",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_008",
-    "pattern": "（N1 は）N2 でした",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 1,
+    "order": 4,
     "explanation": {
       "vi": "",
       "en": ""
@@ -149,132 +108,509 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "日は　晴は",
+        "ja": "リンさんは中国人じゃないです。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "れでした。　Hôm qua trời nắng.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "プレゼントは　電でん子し辞じ書しょ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Bạn Linh không phải là người Trung Quốc.",
+        "en": "",
+        "jaRuby": "リンさんは<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>じゃないです。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1は N2じゃないです/じゃありません/ではありません"
   },
   {
     "id": "g_009",
-    "pattern": "誰だれ",
+    "num": "009",
+    "pattern": "(N1は) N2でした",
     "meaning": {
-      "vi": "→ N1 (chủ sở hữu) の　N2 です。",
+      "vi": "N1 (đã) là N2 (quá khứ)",
       "en": ""
     },
-    "category": "general",
+    "category": "noun-copula",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 1,
+    "order": 5,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "昨日は晴れでした。",
+        "kana": "",
+        "vi": "Hôm qua trời nắng.",
+        "en": "",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>晴<rp>(</rp><rt>は</rt><rp>)</rp></ruby>れでした。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(N1は) N2でした"
   },
   {
     "id": "g_010",
-    "pattern": "何なん",
+    "num": "010",
+    "pattern": "(N1は) N2じゃなかったです/じゃありませんでした",
     "meaning": {
-      "vi": "→ N1 (nội dung) の　N2 です。",
+      "vi": "N1 (đã) không phải N2",
       "en": ""
     },
-    "category": "general",
+    "category": "noun-copula",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 1,
+    "order": 6,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "昨日は雨じゃなかったですよ。",
+        "kana": "",
+        "vi": "Hôm qua trời không mưa đâu.",
+        "en": "",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>じゃなかったですよ。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(N1は) N2じゃなかったです/じゃありませんでした"
   },
   {
     "id": "g_012",
-    "pattern": "何なん",
+    "num": "012",
+    "pattern": "(N1は) N2でN3です",
     "meaning": {
-      "vi": "→ N1 (nguyên liệu) の　N2 です。",
+      "vi": "N1 là N2 và N3 (liệt kê)",
       "en": ""
     },
-    "category": "general",
+    "category": "noun-copula",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 1,
+    "order": 7,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "リーさんは日本語学校の学生で、中国人です。",
+        "kana": "",
+        "vi": "Bạn Lý là học sinh trường Nhật ngữ và là người Trung Quốc.",
+        "en": "",
+        "jaRuby": "リーさんは<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>で、<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>です。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(N1は) N2でN3です"
+  },
+  {
+    "id": "g_006",
+    "num": "006",
+    "pattern": "N(は)いくらですか",
+    "meaning": {
+      "vi": "N bao nhiêu tiền?",
+      "en": ""
+    },
+    "category": "no-questions",
+    "jlptLevel": "N5",
+    "chapter": 2,
+    "order": 8,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "この辞書はいくらですか。",
+        "kana": "",
+        "vi": "Cuốn từ điển này giá bao nhiêu?",
+        "en": "",
+        "jaRuby": "この<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>はいくらですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N(は)いくらですか"
+  },
+  {
+    "id": "g_007",
+    "num": "007",
+    "pattern": "N1は何ですか",
+    "meaning": {
+      "vi": "N1 là cái gì?",
+      "en": ""
+    },
+    "category": "no-questions",
+    "jlptLevel": "N5",
+    "chapter": 2,
+    "order": 9,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "お仕事は何ですか。",
+        "kana": "",
+        "vi": "Công việc của bạn là gì?",
+        "en": "",
+        "jaRuby": "お<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか"
+  },
+  {
+    "id": "g_011_1",
+    "num": "011.1",
+    "pattern": "誰の N2ですか",
+    "meaning": {
+      "vi": "N2 của ai?",
+      "en": ""
+    },
+    "category": "no-questions",
+    "jlptLevel": "N5",
+    "chapter": 2,
+    "order": 10,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "これ、誰の傘ですか。",
+        "kana": "",
+        "vi": "Đây là ô của ai vậy?",
+        "en": "",
+        "jaRuby": "これ、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>ですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の N2ですか"
+  },
+  {
+    "id": "g_011_2",
+    "num": "011.2",
+    "pattern": "何の N2ですか",
+    "meaning": {
+      "vi": "N2 về cái gì?",
+      "en": ""
+    },
+    "category": "no-questions",
+    "jlptLevel": "N5",
+    "chapter": 2,
+    "order": 11,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "それは何の辞書ですか。",
+        "kana": "",
+        "vi": "Đó là từ điển gì vậy?",
+        "en": "",
+        "jaRuby": "それは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>ですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか"
+  },
+  {
+    "id": "g_011_3",
+    "num": "011.3",
+    "pattern": "どこの N2ですか",
+    "meaning": {
+      "vi": "N2 xuất xứ ở đâu?",
+      "en": ""
+    },
+    "category": "no-questions",
+    "jlptLevel": "N5",
+    "chapter": 2,
+    "order": 12,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "すしはどこの料理ですか。",
+        "kana": "",
+        "vi": "Sushi là món ăn ở đâu?",
+        "en": "",
+        "jaRuby": "すしはどこの<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>ですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "どこの N2ですか"
+  },
+  {
+    "id": "g_011_4",
+    "num": "011.4",
+    "pattern": "何の N2ですか",
+    "meaning": {
+      "vi": "N2 làm từ gì?",
+      "en": ""
+    },
+    "category": "no-questions",
+    "jlptLevel": "N5",
+    "chapter": 2,
+    "order": 13,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "これはぶどうとチョコレートのお菓子です。",
+        "kana": "",
+        "vi": "Đây là kẹo làm từ nho và sô cô la.",
+        "en": "",
+        "jaRuby": "これはぶどうとチョコレートのお<ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>です。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか"
+  },
+  {
+    "id": "g_011_5",
+    "num": "011.5",
+    "pattern": "N1の N2",
+    "meaning": {
+      "vi": "N2 thuộc N1",
+      "en": ""
+    },
+    "category": "no-questions",
+    "jlptLevel": "N5",
+    "chapter": 2,
+    "order": 14,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "リンさんはABC日本語学校の学生です。",
+        "kana": "",
+        "vi": "Bạn Linh là học viên trường Nhật ngữ ABC.",
+        "en": "",
+        "jaRuby": "リンさんはABC<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1の N2"
+  },
+  {
+    "id": "g_008_1",
+    "num": "008.1",
+    "pattern": "~ね",
+    "meaning": {
+      "vi": "~ nhỉ? (xác nhận lại)",
+      "en": ""
+    },
+    "category": "sentence-particles",
+    "jlptLevel": "N5",
+    "chapter": 3,
+    "order": 15,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "8時からですね。",
+        "kana": "",
+        "vi": "Từ 8 giờ nhỉ.",
+        "en": "",
+        "jaRuby": "8<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>からですね。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "~ね"
+  },
+  {
+    "id": "g_008_2",
+    "num": "008.2",
+    "pattern": "~よ",
+    "meaning": {
+      "vi": "~ đấy (thông báo điều mới)",
+      "en": ""
+    },
+    "category": "sentence-particles",
+    "jlptLevel": "N5",
+    "chapter": 3,
+    "order": 16,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "今日、図書館は休みですよ。",
+        "kana": "",
+        "vi": "Hôm nay thư viện đóng cửa đấy.",
+        "en": "",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みですよ。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "~よ"
+  },
+  {
+    "id": "g_008_3",
+    "num": "008.3",
+    "pattern": "~よね",
+    "meaning": {
+      "vi": "~ đúng không nhỉ?",
+      "en": ""
+    },
+    "category": "sentence-particles",
+    "jlptLevel": "N5",
+    "chapter": 3,
+    "order": 17,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "明日は15日ですよね。",
+        "kana": "",
+        "vi": "Ngày mai là ngày 15 nhỉ?",
+        "en": "",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は15<ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby>ですよね。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "~よね"
+  },
+  {
+    "id": "g_005",
+    "num": "005",
+    "pattern": "Nは何時から何時までですか",
+    "meaning": {
+      "vi": "N từ mấy giờ đến mấy giờ?",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 4,
+    "order": 18,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "病院は何時から何時までですか。",
+        "kana": "",
+        "vi": "Bệnh viện làm việc từ mấy giờ đến mấy giờ?",
+        "en": "",
+        "jaRuby": "<ruby>病院<rp>(</rp><rt>びょういん</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Nは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか"
   },
   {
     "id": "g_013",
-    "pattern": "N1 (nơi sở thuộc) の　N2 です。",
+    "num": "013",
+    "pattern": "(Nは)Aいです",
     "meaning": {
-      "vi": "",
+      "vi": "N có tính chất A (い)",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 19,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "この図書館は広いです。",
+        "kana": "",
+        "vi": "Thư viện này rộng.",
+        "en": "",
+        "jaRuby": "この<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>いです。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aいです"
   },
   {
     "id": "g_014",
-    "pattern": "（N1 は）N2 で　N3 です。",
+    "num": "014",
+    "pattern": "(Nは)Aくないです",
     "meaning": {
-      "vi": "",
+      "vi": "N không có tính chất A",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 20,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "明日は忙しくないです。",
+        "kana": "",
+        "vi": "Ngày mai tôi không bận.",
+        "en": "",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しくないです。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aくないです"
   },
   {
     "id": "g_015",
-    "pattern": "（N は）A いくないです。",
+    "num": "015",
+    "pattern": "(Nは)Aなです",
     "meaning": {
-      "vi": "",
+      "vi": "N có tính chất A (な)",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 21,
     "explanation": {
       "vi": "",
       "en": ""
@@ -282,132 +618,179 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "日は　忙いそが",
+        "ja": "私の町はまあまあ便利です。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しくないです。 　　　　　　　　　Ngày mai tôi không bận.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "は　あまり美お味い",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Thành phố này khá tiện lợi.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>はまあまあ<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>です。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aなです"
   },
   {
     "id": "g_016",
-    "pattern": "（N は）A なです。",
+    "num": "016",
+    "pattern": "(Nは)Aなじゃないです/じゃありません",
     "meaning": {
-      "vi": "",
+      "vi": "N không có tính chất A",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 22,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "私の部屋はあまりきれいじゃありません。",
+        "kana": "",
+        "vi": "Phòng tôi không đẹp lắm.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>はあまりきれいじゃありません。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aなじゃないです/じゃありません"
+  },
+  {
+    "id": "g_017",
+    "num": "017",
+    "pattern": "(Nは)Aい/Aなですか",
+    "meaning": {
+      "vi": "N có A không?",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 4,
+    "order": 23,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "日本は今、寒いですか。",
+        "kana": "",
+        "vi": "Nhật Bản bây giờ có lạnh không?",
+        "en": "",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>は<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>寒<rp>(</rp><rt>さむ</rt><rp>)</rp></ruby>いですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(Nは)Aい/Aなですか"
   },
   {
     "id": "g_018",
-    "pattern": "（N は）A い/A なですか。",
+    "num": "018",
+    "pattern": "(Nは)Aいくて+Aい/Aなです",
     "meaning": {
-      "vi": "",
+      "vi": "Nối tính từ い",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 24,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "この本は難しくてあまり面白くないです。",
+        "kana": "",
+        "vi": "Cuốn sách này khó và không thú vị lắm.",
+        "en": "",
+        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくてあまり<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>くないです。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aいくて+Aい/Aなです"
   },
   {
     "id": "g_019",
-    "pattern": "（N は）A いくて ＋ A い/A なです。れいこの本ほん",
+    "num": "019",
+    "pattern": "(Nは)Aなで+Aな/Aいです",
     "meaning": {
-      "vi": "",
+      "vi": "Nối tính từ な",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 25,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "日本語の授業はとてもにぎやかで楽しいです。",
+        "kana": "",
+        "vi": "Giờ học tiếng Nhật rất sôi động và vui vẻ.",
+        "en": "",
+        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>の<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>はとてもにぎやかで<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しいです。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aなで+Aな/Aいです"
   },
   {
     "id": "g_020",
-    "pattern": "（N は）A なで ＋ A な/A いです。れい日に本ほん語ご",
+    "num": "020",
+    "pattern": "(Nは)どうですか",
     "meaning": {
-      "vi": "",
+      "vi": "N thì thế nào?",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 26,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "東京の生活はどうですか。",
+        "kana": "",
+        "vi": "Cuộc sống ở Tokyo thế nào?",
+        "en": "",
+        "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>の<ruby>生活<rp>(</rp><rt>せいかつ</rt><rp>)</rp></ruby>はどうですか。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_021",
-    "pattern": "（N は）どうですか。",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "copula",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [],
-    "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)どうですか"
   },
   {
     "id": "g_022",
-    "pattern": "～が～",
+    "num": "022",
+    "pattern": "(Nは)Aいかったです/Aいくなかったです",
     "meaning": {
-      "vi": "",
+      "vi": "Tính từ い quá khứ",
       "en": ""
     },
-    "category": "particles",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 27,
     "explanation": {
       "vi": "",
       "en": ""
@@ -415,37 +798,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "は　忙いそが",
+        "ja": "先週は忙しかったです。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しかったです。　Tuần trước thì bận rộn.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "は　そんなに　寒さむ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tuần trước thì bận rộn.",
+        "en": "",
+        "jaRuby": "<ruby>先週<rp>(</rp><rt>せんしゅう</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったです。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aいかったです/Aいくなかったです"
   },
   {
     "id": "g_023",
-    "pattern": "どんな N ですか？  →  A いN/A なN",
+    "num": "023",
+    "pattern": "(Nは)Aなでした/Aなじゃなかったです",
     "meaning": {
-      "vi": "N thì như thế nào?",
+      "vi": "Tính từ な quá khứ",
       "en": ""
     },
-    "category": "copula",
+    "category": "adjectives",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 4,
+    "order": 28,
     "explanation": {
       "vi": "",
       "en": ""
@@ -453,37 +828,89 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "さくて　かわいかったお店みせ",
+        "ja": "昔、父はとてもハンサムでした。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "です。　　〇　小ちい",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "さくて　かわいいお店みせ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Ngày xưa bố tôi rất đẹp trai.",
+        "en": "",
+        "jaRuby": "<ruby>昔<rp>(</rp><rt>むかし</rt><rp>)</rp></ruby>、<ruby>父<rp>(</rp><rt>ちち</rt><rp>)</rp></ruby>はとてもハンサムでした。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aなでした/Aなじゃなかったです"
+  },
+  {
+    "id": "g_024",
+    "num": "024",
+    "pattern": "どんなNですか？→ AいN/AなN",
+    "meaning": {
+      "vi": "N như thế nào? -> N (A)",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 4,
+    "order": 29,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "小さくてかわいいお店です。",
+        "kana": "",
+        "vi": "Nó là cửa hàng nhỏ và đáng yêu.",
+        "en": "",
+        "jaRuby": "<ruby>小<rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さくてかわいいお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>です。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "どんなNですか？→ AいN/AなN"
+  },
+  {
+    "id": "g_021",
+    "num": "021",
+    "pattern": "~が~",
+    "meaning": {
+      "vi": "~ nhưng ~",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 4,
+    "order": 30,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "この店はとても安くておいしいですが、あまり有名じゃありません。",
+        "kana": "",
+        "vi": "Quán này rất rẻ và ngon nhưng không nổi tiếng lắm.",
+        "en": "",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はとても<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>くておいしいですが、あまり<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>じゃありません。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "~が~"
   },
   {
     "id": "g_025",
-    "pattern": "N1   （は） N2 より　A です。",
+    "num": "025",
+    "pattern": "N1で 疑問詞 が一番Aですか",
     "meaning": {
-      "vi": "",
+      "vi": "Trong N1, ai/gì A nhất?",
       "en": ""
     },
-    "category": "copula",
+    "category": "comparison",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 5,
+    "order": 31,
     "explanation": {
       "vi": "",
       "en": ""
@@ -491,56 +918,59 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "は　大おお阪さか",
+        "ja": "このクラスで誰が一番背が高いですか。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "より　人ひと",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "が　多おお",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Trong lớp này ai cao nhất?",
+        "en": "",
+        "jaRuby": "このクラスで<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>が<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby><ruby>背<rp>(</rp><rt>せ</rt><rp>)</rp></ruby>が<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いですか。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1で <ruby>疑問<rp>(</rp><rt>ぎもん</rt><rp>)</rp></ruby><ruby>詞<rp>(</rp><rt>ことば</rt><rp>)</rp></ruby> が<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby>Aですか"
   },
   {
     "id": "g_026",
-    "pattern": "Thể thường của câu N và A な",
+    "num": "026",
+    "pattern": "N1とN2(と)、どっち/どちらがAですか",
     "meaning": {
-      "vi": "Hiện tại, tương lai",
+      "vi": "N1 và N2 cái nào A hơn?",
       "en": ""
     },
-    "category": "adjectives",
+    "category": "comparison",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 5,
+    "order": 32,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "コーヒーと紅茶と、どちらが好きですか。",
+        "kana": "",
+        "vi": "Cà phê và trà, bạn thích cái nào hơn?",
+        "en": "",
+        "jaRuby": "コーヒーと<ruby>紅茶<rp>(</rp><rt>こうちゃ</rt><rp>)</rp></ruby>と、どちらが<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きですか。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1とN2(と)、どっち/どちらがAですか"
   },
   {
     "id": "g_027",
-    "pattern": "（N1 は） từ nghi vấn/N2/A な？",
+    "num": "027",
+    "pattern": "N1(は) N2よりAです",
     "meaning": {
-      "vi": "(Thể thường của Dạng nghi vấn câu N",
+      "vi": "N1 A hơn N2",
       "en": ""
     },
-    "category": "particles",
+    "category": "comparison",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 5,
+    "order": 33,
     "explanation": {
       "vi": "",
       "en": ""
@@ -548,37 +978,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "さんの　かばん？Đây là túi của anh Tanaka đúng không?",
+        "ja": "東京は大阪より人が多いです。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "B: うん、そう。                                    Ừ, đúng vậy.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "らしは　大たい変へん",
-        "kana": "",
-        "vi": "？Sống một mình thì vất vả đúng không?",
-        "en": ""
+        "vi": "Tokyo thì đông người hơn Osaka.",
+        "en": "",
+        "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>は<ruby>大阪<rp>(</rp><rt>おおさか</rt><rp>)</rp></ruby>より<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>いです。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1(は) N2よりAです"
   },
   {
-    "id": "g_028",
-    "pattern": "（N1は） N2 / Aな  （だよ/だね/だよね）。(Thể thường của Dạng khẳng định câu N",
+    "id": "g_028_1",
+    "num": "028.1",
+    "pattern": "Thể thường của N/A (だ thay です)",
     "meaning": {
-      "vi": "",
+      "vi": "Dạng thân mật",
       "en": ""
     },
-    "category": "particles",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 34,
     "explanation": {
       "vi": "",
       "en": ""
@@ -586,75 +1008,179 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "B: うん。ベトナムの　コーヒーだよ。  Đúng vậy. Cà phê Việt Nam đấy.",
+        "ja": "明日は休みだ。",
         "kana": "",
-        "vi": "28.1",
-        "en": ""
-      },
-      {
-        "ja": "28.2いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・「 です」 → 「だ」 nhưng thường được lược bỏ.",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Ngày mai nghỉ.",
+        "en": "",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みだ。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Thể thường của N/A (だ thay です)"
+  },
+  {
+    "id": "g_028_2",
+    "num": "028.2",
+    "pattern": "(N1は) từ nghi vấn/N2/A?",
+    "meaning": {
+      "vi": "Nghi vấn thể thường",
+      "en": ""
+    },
+    "category": "plain-form",
+    "jlptLevel": "N5",
+    "chapter": 6,
+    "order": 35,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "1人暮らしは大変？",
+        "kana": "",
+        "vi": "Sống một mình thì vất vả đúng không?",
+        "en": "",
+        "jaRuby": "1<ruby>人<rp>(</rp><rt>にん</rt><rp>)</rp></ruby><ruby>暮<rp>(</rp><rt>く</rt><rp>)</rp></ruby>らしは<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>？"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(N1は) từ nghi vấn/N2/A?"
   },
   {
     "id": "g_029",
-    "pattern": "（N1 は）N2/A なじゃない？",
+    "num": "029",
+    "pattern": "(N1は) N2/A(だよ/だね/だよね)",
     "meaning": {
-      "vi": "",
+      "vi": "Khẳng định thể thường",
       "en": ""
     },
-    "category": "particles",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 36,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "うん。ベトナムのコーヒーだよ。",
+        "kana": "",
+        "vi": "Đúng vậy. Cà phê Việt Nam đấy.",
+        "en": "",
+        "jaRuby": "うん。ベトナムのコーヒーだよ。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(N1は) N2/A(だよ/だね/だよね)"
   },
   {
-    "id": "g_030",
-    "pattern": "（N1 は）　N2 / A なじゃない。",
+    "id": "g_030_1",
+    "num": "030.1",
+    "pattern": "(N1は) N2/Aなじゃない？",
     "meaning": {
-      "vi": "N1 không phải N2/ không (có đặc điểm,",
+      "vi": "Chẳng phải ~ sao?",
       "en": ""
     },
-    "category": "particles",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 37,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "これ、ベトナム語じゃない？",
+        "kana": "",
+        "vi": "Đây chẳng phải là tiếng Việt hay sao?",
+        "en": "",
+        "jaRuby": "これ、ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>じゃない？"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(N1は) N2/Aなじゃない？"
+  },
+  {
+    "id": "g_030_2",
+    "num": "030.2",
+    "pattern": "(N1は) N2/Aなじゃない",
+    "meaning": {
+      "vi": "N1 không phải/không A",
+      "en": ""
+    },
+    "category": "plain-form",
+    "jlptLevel": "N5",
+    "chapter": 6,
+    "order": 38,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ううん、ベトナム語じゃないよ。",
+        "kana": "",
+        "vi": "Không, không phải tiếng Việt đâu.",
+        "en": "",
+        "jaRuby": "ううん、ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>じゃないよ。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(N1は) N2/Aなじゃない"
+  },
+  {
+    "id": "g_031",
+    "num": "031",
+    "pattern": "(N1は) N2/Aだった？/Aなだった",
+    "meaning": {
+      "vi": "Nghi vấn/khẳng định thể thường quá khứ",
+      "en": ""
+    },
+    "category": "plain-form",
+    "jlptLevel": "N5",
+    "chapter": 6,
+    "order": 39,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ダナンはどんな町だった？",
+        "kana": "",
+        "vi": "Đà Nẵng là thành phố như thế nào?",
+        "en": "",
+        "jaRuby": "ダナンはどんな<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>だった？"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(N1は) N2/Aだった？/Aなだった"
   },
   {
     "id": "g_032",
-    "pattern": "N1 はN2/ Ａなじゃなかった。",
+    "num": "032",
+    "pattern": "N1は N2/Aなじゃなかった",
     "meaning": {
-      "vi": "(Thể thường của Dạng phủ định câu N",
+      "vi": "Phủ định thể thường quá khứ",
       "en": ""
     },
-    "category": "particles",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 40,
     "explanation": {
       "vi": "",
       "en": ""
@@ -662,113 +1188,179 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "A: 日に本ほん",
+        "ja": "大変じゃなかったよ。楽しかったよ。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "の　生せい活かつ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "は　大たい変へん",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Không vất vả đâu. Rất vui.",
+        "en": "",
+        "jaRuby": "<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>じゃなかったよ。<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しかったよ。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1は N2/Aなじゃなかった"
   },
   {
-    "id": "g_033",
-    "pattern": "Thể thường của câu A い",
+    "id": "g_033_1",
+    "num": "033.1",
+    "pattern": "(Nは)Aい？",
     "meaning": {
-      "vi": "Hiện tại, tương lai",
+      "vi": "Nghi vấn thể thường tính từ い",
       "en": ""
     },
-    "category": "adjectives",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 41,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "ベトナム語は難しい？",
+        "kana": "",
+        "vi": "Tiếng Việt có khó không?",
+        "en": "",
+        "jaRuby": "ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しい？"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aい？"
+  },
+  {
+    "id": "g_033_2",
+    "num": "033.2",
+    "pattern": "(Nは)Aい",
+    "meaning": {
+      "vi": "Khẳng định thể thường tính từ い",
+      "en": ""
+    },
+    "category": "plain-form",
+    "jlptLevel": "N5",
+    "chapter": 6,
+    "order": 42,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "うん、ちょっと難しい。",
+        "kana": "",
+        "vi": "Ừ, hơi khó.",
+        "en": "",
+        "jaRuby": "うん、ちょっと<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しい。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(Nは)Aい"
   },
   {
     "id": "g_034",
-    "pattern": "（N は）　A い？",
+    "num": "034",
+    "pattern": "~けど~",
     "meaning": {
-      "vi": "",
+      "vi": "nhưng ~ (thân mật)",
       "en": ""
     },
-    "category": "particles",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 43,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "このレストラン、おいしいけど高いよね。",
+        "kana": "",
+        "vi": "Nhà hàng này ngon nhưng đắt nhỉ.",
+        "en": "",
+        "jaRuby": "このレストラン、おいしいけど<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いよね。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "~けど~"
   },
   {
     "id": "g_035",
-    "pattern": "（N は）　A い 。",
+    "num": "035",
+    "pattern": "(Nは)Aいかった",
     "meaning": {
-      "vi": "",
+      "vi": "Khẳng định tính từ い quá khứ (thân mật)",
       "en": ""
     },
-    "category": "particles",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 44,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "昨日は楽しかったね。",
+        "kana": "",
+        "vi": "Hôm qua vui nhỉ.",
+        "en": "",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しかったね。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aいかった"
   },
   {
     "id": "g_036",
-    "pattern": "～けど～",
+    "num": "036",
+    "pattern": "(Nは)Aいくなかった",
     "meaning": {
-      "vi": "",
+      "vi": "Phủ định tính từ い (mọi thì, thân mật)",
       "en": ""
     },
-    "category": "general",
+    "category": "plain-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 6,
+    "order": 45,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "今日は昨日より暑くないね。",
+        "kana": "",
+        "vi": "Hôm nay thì không nóng hơn hôm qua nhỉ.",
+        "en": "",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>より<ruby>暑<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>くないね。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)Aいくなかった"
   },
   {
     "id": "g_037",
-    "pattern": "（N は） A いかった。",
+    "num": "037",
+    "pattern": "N(は)ありますか",
     "meaning": {
-      "vi": "",
+      "vi": "Có N (đồ vật) không?",
       "en": ""
     },
-    "category": "particles",
+    "category": "existence",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 7,
+    "order": 46,
     "explanation": {
       "vi": "",
       "en": ""
@@ -776,37 +1368,89 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "い　→　高たか",
+        "ja": "タイ語の本はありますか。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "かった　　　　面おも白しろ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "い　→　面おも白しろかった",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Ở đây có sách tiếng Thái không?",
+        "en": "",
+        "jaRuby": "タイ<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>の<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>はありますか。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N(は)ありますか"
+  },
+  {
+    "id": "g_038_1",
+    "num": "038.1",
+    "pattern": "N1(sự vật)は N2(địa điểm)です/にあります",
+    "meaning": {
+      "vi": "N1 có ở N2",
+      "en": ""
+    },
+    "category": "existence",
+    "jlptLevel": "N5",
+    "chapter": 7,
+    "order": 47,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "スマホは机の上にあります。",
+        "kana": "",
+        "vi": "Điện thoại có ở trên bàn.",
+        "en": "",
+        "jaRuby": "スマホは<ruby>机<rp>(</rp><rt>つくえ</rt><rp>)</rp></ruby>の<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にあります。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1(sự vật)は N2(địa điểm)です/にあります"
+  },
+  {
+    "id": "g_038_2",
+    "num": "038.2",
+    "pattern": "N1(địa điểm)に N2(sự vật)があります",
+    "meaning": {
+      "vi": "Ở N1 có N2",
+      "en": ""
+    },
+    "category": "existence",
+    "jlptLevel": "N5",
+    "chapter": 7,
+    "order": 48,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ベッドの上にかばんがあります。",
+        "kana": "",
+        "vi": "Ở trên giường có cái cặp.",
+        "en": "",
+        "jaRuby": "ベッドの<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にかばんがあります。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1(địa điểm)に N2(sự vật)があります"
   },
   {
     "id": "g_039",
-    "pattern": "N1 (địa điểm) に　N2(sự vật) が　あります。　 Ở N1 có N2/Có N2 (nằm) ở N1.れい",
+    "num": "039",
+    "pattern": "(Nは)いますか",
     "meaning": {
-      "vi": "",
+      "vi": "Có N (người/động vật) không?",
       "en": ""
     },
-    "category": "particles",
+    "category": "existence",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 7,
+    "order": 49,
     "explanation": {
       "vi": "",
       "en": ""
@@ -814,37 +1458,89 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "に　オートバイが　あります。　　　　Ở trong sân có chiếc xe máy.",
+        "ja": "マインさんはいますか？",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　かばんが　あります。    Ở trên giường có cái cặp.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Mẫu câu miêu tả vị trí tồn tại của đồ vật, tòa nhà, cây cối,....",
-        "kana": "",
-        "vi": "☆",
-        "en": ""
+        "vi": "Có chị Mai ở đây không?",
+        "en": "",
+        "jaRuby": "マインさんはいますか？"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(Nは)いますか"
+  },
+  {
+    "id": "g_040_1",
+    "num": "040.1",
+    "pattern": "N1(người/vật)は N2(địa điểm)にいます",
+    "meaning": {
+      "vi": "N1 có ở N2",
+      "en": ""
+    },
+    "category": "existence",
+    "jlptLevel": "N5",
+    "chapter": 7,
+    "order": 50,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "猫はいすの下にいます。",
+        "kana": "",
+        "vi": "Con mèo đang ở dưới ghế.",
+        "en": "",
+        "jaRuby": "<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>はいすの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>にいます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1(người/vật)は N2(địa điểm)にいます"
+  },
+  {
+    "id": "g_040_2",
+    "num": "040.2",
+    "pattern": "N1(địa điểm)に N2(người/vật)がいます",
+    "meaning": {
+      "vi": "Ở N1 có N2",
+      "en": ""
+    },
+    "category": "existence",
+    "jlptLevel": "N5",
+    "chapter": 7,
+    "order": 51,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "あそこに猫がいますよ。",
+        "kana": "",
+        "vi": "Đằng kia có một chú mèo đấy.",
+        "en": "",
+        "jaRuby": "あそこに<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>がいますよ。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1(địa điểm)に N2(người/vật)がいます"
   },
   {
     "id": "g_041",
-    "pattern": "N1(người, động vật) は　N2(địa điểm) に　います",
+    "num": "041",
+    "pattern": "Nには/にも~",
     "meaning": {
-      "vi": "N1 (người, động vật)",
+      "vi": "N có/cũng có",
       "en": ""
     },
-    "category": "particles",
+    "category": "existence",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 7,
+    "order": 52,
     "explanation": {
       "vi": "",
       "en": ""
@@ -852,37 +1548,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "B: あ、あそこに　いますよ。 À, chị ấy có ở đằng kia đấy.いみ",
+        "ja": "日本には高い山がたくさんあります。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Có 2 cách khi hỏi về vị trí, địa điểm của người/động vật:",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "❶ N は　どこですか。　　　　❷ N は　どこに　いますか。",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Ở Nhật có rất nhiều ngọn núi cao.",
+        "en": "",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>には<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>い<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>がたくさんあります。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Nには/にも~"
   },
   {
     "id": "g_042",
-    "pattern": "N1(địa điểm) に　N2(người, động vật) が　います",
+    "num": "042",
+    "pattern": "N1とN2",
     "meaning": {
-      "vi": "",
+      "vi": "N1 và N2 (liệt kê cùng loại)",
       "en": ""
     },
-    "category": "particles",
+    "category": "existence",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 7,
+    "order": 53,
     "explanation": {
       "vi": "",
       "en": ""
@@ -890,37 +1578,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "が　いますよ。かわいいですね。",
+        "ja": "私の家には、犬と鳥がいます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "Đằng kia có 1 chú mèo đấy. Đáng yêu nhỉ!いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Khi hỏi về sự tồn tại của ai đó, ta dùng nghi vấn từ 誰だれ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Nhà tôi có chó và chim.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には、<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>と<ruby>鳥<rp>(</rp><rt>とり</rt><rp>)</rp></ruby>がいます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1とN2"
   },
   {
-    "id": "g_043",
-    "pattern": "N には/ にも～",
+    "id": "g_043_1_2",
+    "num": "043.1/2",
+    "pattern": "Số lượng từ + います/あります",
     "meaning": {
-      "vi": "",
+      "vi": "Có (số lượng) N",
       "en": ""
     },
-    "category": "particles",
+    "category": "existence",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 7,
+    "order": 54,
     "explanation": {
       "vi": "",
       "en": ""
@@ -928,37 +1608,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "には　高たかい山やま",
+        "ja": "私の家には犬が2匹と、猫が1匹います。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "が　たくさん　あります。     Ở Nhật có rất nhiều ngọn núi cao.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "い　山やま",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Nhà tôi có 2 con chó và 1 con mèo.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>が2<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>と、<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>が1<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>います。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Số lượng từ + います/あります"
   },
   {
     "id": "g_044",
-    "pattern": "N1 と　N2",
+    "num": "044",
+    "pattern": "Vます/Vました",
     "meaning": {
-      "vi": "",
+      "vi": "V hiện tại-tương lai / quá khứ",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 55,
     "explanation": {
       "vi": "",
       "en": ""
@@ -966,37 +1638,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "の　家いえ",
+        "ja": "毎朝コーヒーを飲みます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "には、犬いぬ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "と　鳥とり",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Mỗi sáng tôi uống cà phê.",
+        "en": "",
+        "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>コーヒーを<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vます/Vました"
   },
   {
     "id": "g_045",
-    "pattern": "Số lượng từ + います/ あります",
+    "num": "045",
+    "pattern": "~時に+V",
     "meaning": {
-      "vi": "→ Có (số lượng) người/ động vật/ đồ vậtれい",
+      "vi": "V vào lúc ~ giờ",
       "en": ""
     },
-    "category": "general",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 56,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1004,37 +1668,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "の　家いえ",
+        "ja": "3時に出かけます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "には　犬いぬ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "が　2 匹ひき",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi sẽ ra ngoài lúc 3 giờ.",
+        "en": "",
+        "jaRuby": "3<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かけます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "~<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に+V"
   },
   {
     "id": "g_046",
-    "pattern": "V ます｜V ました",
+    "num": "046",
+    "pattern": "~時間/分+V",
     "meaning": {
-      "vi": "",
+      "vi": "V trong ~ tiếng/phút",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 57,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1042,37 +1698,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "ます：ngủ　　　　　　　　寝ね",
+        "ja": "昨日10時間働きました。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "ました ： đã ngủ起お",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "きます： thức dậy　　　　　起お",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Hôm qua tôi đã làm việc 10 tiếng.",
+        "en": "",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>10<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby><ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きました。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "~<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>/<ruby>分<rp>(</rp><rt>ぶん</rt><rp>)</rp></ruby>+V"
   },
   {
     "id": "g_047",
-    "pattern": "〜時じ間かん",
+    "num": "047",
+    "pattern": "~から~まで~V",
     "meaning": {
-      "vi": "",
+      "vi": "V từ ~ đến ~",
       "en": ""
     },
-    "category": "general",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 58,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1080,37 +1728,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "日　10 時じ間かん働はたら",
+        "ja": "今朝は10時まで寝ました。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "きました。　　Hôm qua tôi đã làm việc 10 tiếng.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Không thêm trợ từ vào sau lượng từ chỉ khoảng thời gian xảy ra hành động",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Sáng nay tôi đã ngủ đến 10 giờ.",
+        "en": "",
+        "jaRuby": "<ruby>今朝<rp>(</rp><rt>けさ</rt><rp>)</rp></ruby>は10<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>まで<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ました。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "~から~まで~V"
   },
   {
-    "id": "g_049",
-    "pattern": "V ません｜V ませんでした。",
+    "id": "g_048",
+    "num": "048",
+    "pattern": "Vません/Vませんでした",
     "meaning": {
-      "vi": "",
+      "vi": "Không V / Đã không V",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 59,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1118,37 +1758,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "いもうと",
+        "ja": "昨日は勉強しませんでした。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "は　全ぜん然ぜん勉べん強きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しません。 　Em gái tôi hoàn toàn không học.",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Hôm qua tôi đã không học bài.",
+        "en": "",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しませんでした。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vません/Vませんでした"
   },
   {
-    "id": "g_050",
-    "pattern": "N(địa điểm) へ/ に　帰かえります",
+    "id": "g_049_1",
+    "num": "049.1",
+    "pattern": "N(địa điểm)へ/に帰ります",
     "meaning": {
-      "vi": "",
+      "vi": "Trở về địa điểm N",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 60,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1156,37 +1788,179 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "、国くに",
+        "ja": "7時に家へ帰ります。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　帰かえ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "ります。 　　　　　   Năm sau tôi sẽ về nước.",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi về nhà lúc 7 giờ.",
+        "en": "",
+        "jaRuby": "7<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>へ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N(địa điểm)へ/に<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります"
+  },
+  {
+    "id": "g_049_2",
+    "num": "049.2",
+    "pattern": "N(địa điểm)へ/に行きます",
+    "meaning": {
+      "vi": "Đi tới/đến địa điểm N",
+      "en": ""
+    },
+    "category": "masu-form",
+    "jlptLevel": "N5",
+    "chapter": 8,
+    "order": 61,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "明日、学校に行きます。",
+        "kana": "",
+        "vi": "Ngày mai tôi đi đến trường.",
+        "en": "",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N(địa điểm)へ/に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます"
+  },
+  {
+    "id": "g_049_3",
+    "num": "049.3",
+    "pattern": "N(địa điểm)へ/に来ます",
+    "meaning": {
+      "vi": "Đến địa điểm N (về phía người nói)",
+      "en": ""
+    },
+    "category": "masu-form",
+    "jlptLevel": "N5",
+    "chapter": 8,
+    "order": 62,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "友達が私の家に来ます。",
+        "kana": "",
+        "vi": "Bạn tôi sẽ đến nhà tôi.",
+        "en": "",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N(địa điểm)へ/に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます"
+  },
+  {
+    "id": "g_050_1",
+    "num": "050.1",
+    "pattern": "N(địa điểm)でV",
+    "meaning": {
+      "vi": "V ở tại N",
+      "en": ""
+    },
+    "category": "masu-form",
+    "jlptLevel": "N5",
+    "chapter": 8,
+    "order": 63,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "食堂で食べました。",
+        "kana": "",
+        "vi": "Tôi đã ăn ở nhà ăn.",
+        "en": "",
+        "jaRuby": "<ruby>食堂<rp>(</rp><rt>しょくどう</rt><rp>)</rp></ruby>で<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N(địa điểm)でV"
+  },
+  {
+    "id": "g_050_2",
+    "num": "050.2",
+    "pattern": "NをV",
+    "meaning": {
+      "vi": "V tác động đến N",
+      "en": ""
+    },
+    "category": "masu-form",
+    "jlptLevel": "N5",
+    "chapter": 8,
+    "order": 64,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "新聞を読みます。",
+        "kana": "",
+        "vi": "Tôi đọc báo.",
+        "en": "",
+        "jaRuby": "<ruby>新聞<rp>(</rp><rt>しんぶん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "NをV"
+  },
+  {
+    "id": "g_050_3",
+    "num": "050.3",
+    "pattern": "NとV",
+    "meaning": {
+      "vi": "V cùng với N",
+      "en": ""
+    },
+    "category": "masu-form",
+    "jlptLevel": "N5",
+    "chapter": 8,
+    "order": 65,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "友達と映画を見ます。",
+        "kana": "",
+        "vi": "Tôi xem phim cùng bạn.",
+        "en": "",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>と<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "NとV"
   },
   {
     "id": "g_051",
-    "pattern": "N(địa điểm) へ/ に　行いきます",
+    "num": "051",
+    "pattern": "N1とかN2(とか)/N1やN2(など)",
     "meaning": {
-      "vi": "",
+      "vi": "Nào là N1, nào là N2",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 66,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1194,37 +1968,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "、タイに　行い",
+        "ja": "週末は掃除とか洗濯とかをします。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "きます。 　　　Năm sau tôi sẽ đi Thái.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　病びょう院いん",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Cuối tuần tôi làm nào là dọn dẹp nào là giặt giũ.",
+        "en": "",
+        "jaRuby": "<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby>は<ruby>掃除<rp>(</rp><rt>そうじ</rt><rp>)</rp></ruby>とか<ruby>洗濯<rp>(</rp><rt>せんたく</rt><rp>)</rp></ruby>とかをします。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1とかN2(とか)/N1やN2(など)"
   },
   {
     "id": "g_052",
-    "pattern": "N(địa điểm) へ/ に　来きます",
+    "num": "052",
+    "pattern": "どこ/だれ/何+か+Vか",
     "meaning": {
-      "vi": "",
+      "vi": "Có V đâu đó/ai đó/gì đó không?",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 67,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1232,37 +1998,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "の　家いえ",
+        "ja": "部屋に誰かいますか。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　来き",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "ました。 　　　Chị Mai đã đến nhà tôi.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Trong phòng có ai đó không?",
+        "en": "",
+        "jaRuby": "<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>に<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かいますか。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+か+Vか"
   },
   {
     "id": "g_053",
-    "pattern": "どこ / だれ / 何なに",
+    "num": "053",
+    "pattern": "どこ/だれ/何+も+V(phủ định)",
     "meaning": {
-      "vi": "",
+      "vi": "Chẳng/không V cả",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 68,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1270,37 +2028,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "で　何なに",
+        "ja": "今日はどこも行きません。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "か　買か",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "いましたか？　　　　　　Bạn có mua gì ở Tokyo không?",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Hôm nay tôi chẳng đi đâu cả.",
+        "en": "",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>はどこも<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きません。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+も+V(phủ định)"
   },
   {
     "id": "g_054",
-    "pattern": "どこ / だれ / 何なに",
+    "num": "054",
+    "pattern": "Nを(số lượng)ください/お願いします",
     "meaning": {
-      "vi": "",
+      "vi": "Hãy cho tôi (số lượng) N",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 69,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1308,37 +2058,59 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "日、誰だれ",
+        "ja": "チョコレートのケーキを1個ください。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "かと　勉べん強きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しますか？              Hôm nay bạn có học cùng ai không?",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Hãy cho tôi 1 bánh kem sô cô la.",
+        "en": "",
+        "jaRuby": "チョコレートのケーキを1<ruby>個<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ください。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Nを(số lượng)ください/お<ruby>願<rp>(</rp><rt>ねが</rt><rp>)</rp></ruby>いします"
+  },
+  {
+    "id": "g_055",
+    "num": "055",
+    "pattern": "(thời gian)に+tần suất/số lượng+V",
+    "meaning": {
+      "vi": "V ~ lần trong khoảng thời gian",
+      "en": ""
+    },
+    "category": "masu-form",
+    "jlptLevel": "N5",
+    "chapter": 8,
+    "order": 70,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "1年に1回、旅行します。",
+        "kana": "",
+        "vi": "Một năm tôi đi du lịch một lần.",
+        "en": "",
+        "jaRuby": "1<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby>に1<ruby>回<rp>(</rp><rt>かい</rt><rp>)</rp></ruby>、<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>します。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(thời gian)に+tần suất/số lượng+V"
   },
   {
     "id": "g_056",
-    "pattern": "N が　欲ほ",
+    "num": "056",
+    "pattern": "Vませんか/Vましょう",
     "meaning": {
-      "vi": "",
+      "vi": "Cùng V không?/Cùng V nhé",
       "en": ""
     },
-    "category": "particles",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 71,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1346,37 +2118,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "は　新あたら",
+        "ja": "一緒に昼ご飯を食べませんか。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しい　スマホが　欲ほ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しいです。  Tôi muốn điện thoại thông minh mới.",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Chúng ta cùng ăn trưa không?",
+        "en": "",
+        "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>昼<rp>(</rp><rt>ひる</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べませんか。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vませんか/Vましょう"
   },
   {
     "id": "g_057",
-    "pattern": "N が/ を　V ますたいです。Muốn Vれい",
+    "num": "057",
+    "pattern": "Nが欲しいです",
     "meaning": {
-      "vi": "",
+      "vi": "Muốn có N (cho bản thân)",
       "en": ""
     },
-    "category": "copula",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 72,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1384,37 +2148,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "なワインが　飲の",
+        "ja": "新しいスマホが欲しいです。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "みたいです。  Tôi muốn uống rượu vang nổi tiếng của Pháp.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Mẫu câu được dùng để diễn tả mong muốn thực hiện hành động nào đó.",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi muốn có một chiếc điện thoại mới.",
+        "en": "",
+        "jaRuby": "<ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しいスマホが<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいです。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Nが<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいです"
   },
   {
     "id": "g_058",
-    "pattern": "V ます ＋ 方かた",
+    "num": "058",
+    "pattern": "(N1へ/に)+Vます/N2に 行きます/来ます/帰ります",
     "meaning": {
-      "vi": "",
+      "vi": "Đi để V (mục đích di chuyển)",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 73,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1422,75 +2178,59 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "が　わかりません。　　Tôi không biết cách sử dụng máy tính.",
+        "ja": "図書館へ本を借りに行きます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "の　行いき方かた",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "が　わかりません。 　　Tôi không biết cách đi đến đại sứ quán.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi đi thư viện để mượn sách.",
+        "en": "",
+        "jaRuby": "<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>へ<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>借<rp>(</rp><rt>か</rt><rp>)</rp></ruby>りに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(N1へ/に)+Vます/N2に <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます/<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます/<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります"
   },
   {
     "id": "g_059",
-    "pattern": "Các nhóm động từ trong tiếng Nhật",
+    "num": "059",
+    "pattern": "Nが/をVたいです",
     "meaning": {
-      "vi": "Nhóm 1  (_imasu)",
+      "vi": "Muốn V",
       "en": ""
     },
-    "category": "general",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 74,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "日本へ旅行に行きたいです。",
+        "kana": "",
+        "vi": "Tôi muốn đi du lịch Nhật Bản.",
+        "en": "",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>へ<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいです。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Nが/をVたいです"
   },
   {
     "id": "g_060",
-    "pattern": "動どう詞し",
+    "num": "060",
+    "pattern": "Vます+方",
     "meaning": {
-      "vi": "",
+      "vi": "Cách V",
       "en": ""
     },
-    "category": "general",
+    "category": "masu-form",
     "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_061",
-    "pattern": "（N は）～が　V (thể khả năng)",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
+    "order": 75,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1498,37 +2238,149 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "けます。 　Bạn Hoa có thể chơi piano.",
+        "ja": "この漢字の読み方が分かりません。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "で　フランスの　ワインが　買か",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "えます。",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi không biết cách đọc chữ Hán này.",
+        "en": "",
+        "jaRuby": "この<ruby>漢字<rp>(</rp><rt>かんじ</rt><rp>)</rp></ruby>の<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>み<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>が<ruby>分<rp>(</rp><rt>わ</rt><rp>)</rp></ruby>かりません。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vます+<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>"
+  },
+  {
+    "id": "g_061_1",
+    "num": "061.1",
+    "pattern": "Động từ khả năng (可能形)",
+    "meaning": {
+      "vi": "Nhóm 1→えます, Nhóm 2→られます, Nhóm 3 riêng",
+      "en": ""
+    },
+    "category": "potential-verbs",
+    "jlptLevel": "N5",
+    "chapter": 9,
+    "order": 76,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "飲む→飲めます、食べる→食べられます、来る→来られます",
+        "kana": "",
+        "vi": "",
+        "en": "",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>めます、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べられます、<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Động từ khả năng (<ruby>可能<rp>(</rp><rt>かのう</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>がた</rt><rp>)</rp></ruby>)"
+  },
+  {
+    "id": "g_061_2",
+    "num": "061.2",
+    "pattern": "(Nは)~がV(khả năng)",
+    "meaning": {
+      "vi": "N có thể làm V",
+      "en": ""
+    },
+    "category": "potential-verbs",
+    "jlptLevel": "N5",
+    "chapter": 9,
+    "order": 77,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "私は日本語が話せます。",
+        "kana": "",
+        "vi": "Tôi có thể nói tiếng Nhật.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>せます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "(Nは)~がV(khả năng)"
+  },
+  {
+    "id": "g_062",
+    "num": "062",
+    "pattern": "N(phương tiện)でV",
+    "meaning": {
+      "vi": "Làm V bằng N",
+      "en": ""
+    },
+    "category": "potential-verbs",
+    "jlptLevel": "N5",
+    "chapter": 9,
+    "order": 78,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "箸でフォーを食べます。",
+        "kana": "",
+        "vi": "Ăn phở bằng đũa.",
+        "en": "",
+        "jaRuby": "<ruby>箸<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>でフォーを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N(phương tiện)でV"
+  },
+  {
+    "id": "g_063",
+    "num": "063",
+    "pattern": "かかります",
+    "meaning": {
+      "vi": "Tốn/mất ~ tiền/thời gian",
+      "en": ""
+    },
+    "category": "potential-verbs",
+    "jlptLevel": "N5",
+    "chapter": 9,
+    "order": 79,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "学校まで30分かかります。",
+        "kana": "",
+        "vi": "Đến trường mất 30 phút.",
+        "en": "",
+        "jaRuby": "<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>まで30<ruby>分<rp>(</rp><rt>ふん</rt><rp>)</rp></ruby>かかります。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "かかります"
   },
   {
     "id": "g_064",
-    "pattern": "N1 は　N2 が　 好すき・嫌きら",
+    "num": "064",
+    "pattern": "Số tiền/thời gian+くらいです/で+V(khả năng)",
     "meaning": {
-      "vi": "",
+      "vi": "Khoảng... có thể V",
       "en": ""
     },
-    "category": "particles",
+    "category": "potential-verbs",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 9,
+    "order": 80,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1536,37 +2388,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "は　カラオケが　とても 好す",
+        "ja": "1万円くらいで買えます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "きです。でも、友とも達だち",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "は　カラオケが　嫌きら",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Có thể mua với khoảng 10 nghìn yên.",
+        "en": "",
+        "jaRuby": "1<ruby>万<rp>(</rp><rt>まん</rt><rp>)</rp></ruby><ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>くらいで<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>えます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Số tiền/thời gian+くらいです/で+V(khả năng)"
   },
   {
     "id": "g_065",
-    "pattern": "～から～",
+    "num": "065",
+    "pattern": "N1はN2が好き・嫌い/上手・下手/得意・苦手だ・です",
     "meaning": {
-      "vi": "",
+      "vi": "N1 thích/ghét/giỏi/kém N2",
       "en": ""
     },
-    "category": "particles",
+    "category": "potential-verbs",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 9,
+    "order": 81,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1574,37 +2418,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "だから、お酒さけ",
+        "ja": "私は料理が上手です。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "が　飲の",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "めません。",
-        "kana": "",
-        "vi": "Vì Minh là trẻ con nên không thể uống rượu.",
-        "en": ""
+        "vi": "Tôi giỏi nấu ăn.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>です。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1はN2が<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>き・<ruby>嫌<rp>(</rp><rt>きら</rt><rp>)</rp></ruby>い/<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>・<ruby>下手<rp>(</rp><rt>へた</rt><rp>)</rp></ruby>/<ruby>得意<rp>(</rp><rt>とくい</rt><rp>)</rp></ruby>・<ruby>苦手<rp>(</rp><rt>にがて</rt><rp>)</rp></ruby>だ・です"
   },
   {
     "id": "g_066",
-    "pattern": "N1 は　N2 が　A です。",
+    "num": "066",
+    "pattern": "~から~",
     "meaning": {
-      "vi": "",
+      "vi": "Vì ~ nên ~",
       "en": ""
     },
-    "category": "copula",
+    "category": "potential-verbs",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 9,
+    "order": 82,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1612,37 +2448,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "は　コーヒーが　おいしいです。　　Cửa hàng này có cà phê ngon.いみ",
+        "ja": "疲れましたから、早く寝ます。",
         "kana": "",
-        "vi": "Mẫu câu được dùng để diễn tả đặc trưng hay tính chất của một chủ thể (đồ vật, địa điểm, con người,..)",
-        "en": ""
-      },
-      {
-        "ja": "・「は」 đứng sau danh từ chủ thể.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・「が」 đứng sau danh từ là bộ phận, phương diện, khía cạnh thuộc chủ thể đó.",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Vì mệt nên tôi ngủ sớm.",
+        "en": "",
+        "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れましたから、<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "~から~"
   },
   {
     "id": "g_067",
-    "pattern": "V ますか → V る？",
+    "num": "067",
+    "pattern": "N1はN2がAです",
     "meaning": {
-      "vi": "Thể thường câu nghi vấn của động từ.",
+      "vi": "N1 có N2 mang tính chất A",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "potential-verbs",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 9,
+    "order": 83,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1650,37 +2478,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "、　出で",
+        "ja": "この店はコーヒーがおいしいです。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "かける？ 　　　　　Cuối tuần cậu có ra ngoài không?",
-        "kana": "",
-        "vi": "☆",
-        "en": ""
-      },
-      {
-        "ja": "・Câu trả lời: Trường hợp trả lời cho câu hỏi xác nhận đúng, sai ở thể thường được biến đổi",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Cửa hàng này có cà phê ngon.",
+        "en": "",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はコーヒーがおいしいです。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1はN2がAです"
   },
   {
     "id": "g_068",
-    "pattern": "V る ＋ こと/ N　が　できる",
+    "num": "068",
+    "pattern": "N1がN2/Aです/NがVます",
     "meaning": {
-      "vi": "",
+      "vi": "Nhấn mạnh chủ thể",
       "en": ""
     },
-    "category": "particles",
+    "category": "potential-verbs",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 9,
+    "order": 84,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1688,37 +2508,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "の　会かい社しゃ",
+        "ja": "誰が来ますか。田中さんが来ます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "では、　家いえ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "で　仕し事ごと",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Ai sẽ đến? Anh Tanaka sẽ đến.",
+        "en": "",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>が<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ますか。<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんが<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "N1がN2/Aです/NがVます"
   },
   {
     "id": "g_069",
-    "pattern": "V る + ことです",
+    "num": "069",
+    "pattern": "Thể từ điển (Vる)",
     "meaning": {
-      "vi": "",
+      "vi": "Thể thường của Vます",
       "en": ""
     },
-    "category": "copula",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 85,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1726,56 +2538,59 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "の　趣しゅ味み",
+        "ja": "飲みます→飲む、食べます→食べる",
         "kana": "",
         "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "は　料りょう理り",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "を　することです。　　Sở thích của tôi là nấu ăn..いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "en": "",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Thể từ điển (Vる)"
   },
   {
     "id": "g_070",
-    "pattern": "V ない",
+    "num": "070",
+    "pattern": "Vる？",
     "meaning": {
-      "vi": "Thể thường của Động từ dạng phủ định",
+      "vi": "Nghi vấn thể thường (lên giọng)",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 86,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "明日、来る？",
+        "kana": "",
+        "vi": "Ngày mai bạn đến chứ?",
+        "en": "",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る？"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vる？"
   },
   {
     "id": "g_071",
-    "pattern": "（一いっ緒しょ",
+    "num": "071",
+    "pattern": "Vる+こと/Nができる",
     "meaning": {
-      "vi": "",
+      "vi": "Có thể làm V/N",
       "en": ""
     },
-    "category": "general",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 87,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1783,37 +2598,59 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "に　富ふ士じ山さん",
+        "ja": "私はピアノを弾くことができます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　登のぼ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "らない？　　Cùng đi leo núi Phú Sĩ không?",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi có thể chơi đàn piano.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はピアノを<ruby>弾<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>くことができます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vる+こと/Nができる"
+  },
+  {
+    "id": "g_072",
+    "num": "072",
+    "pattern": "Vる+ことです",
+    "meaning": {
+      "vi": "Danh từ hóa động từ",
+      "en": ""
+    },
+    "category": "verb-forms-basic",
+    "jlptLevel": "N5",
+    "chapter": 10,
+    "order": 88,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "私の趣味は料理をすることです。",
+        "kana": "",
+        "vi": "Sở thích của tôi là nấu ăn.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>趣味<rp>(</rp><rt>しゅみ</rt><rp>)</rp></ruby>は<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>をすることです。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vる+ことです"
   },
   {
     "id": "g_073",
-    "pattern": "V た",
+    "num": "073",
+    "pattern": "Thể ない (Vない)",
     "meaning": {
-      "vi": "",
+      "vi": "Phủ định thể thường",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 89,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1821,37 +2658,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "日、何なん時じ間かん働はたら",
+        "ja": "飲みません→飲まない、食べません→食べない",
         "kana": "",
         "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "いた？　Hôm qua cậu đã làm việc mấy tiếng?",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "B: 9 時じ間かん働はたら",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "en": "",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みません→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>まない、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べません→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べない"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Thể ない (Vない)"
   },
   {
     "id": "g_074",
-    "pattern": "〜 V たい",
+    "num": "074",
+    "pattern": "(一緒に)Vない？",
     "meaning": {
-      "vi": "",
+      "vi": "Cùng V không? (thân mật)",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 90,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1859,37 +2688,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "きたい。　　Tôi muốn đi Thái.",
+        "ja": "一緒に映画を見ない？",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "、何なに",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "が　食た",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Cùng xem phim không?",
+        "en": "",
+        "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ない？"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "(<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に)Vない？"
   },
   {
     "id": "g_075",
-    "pattern": "V よう",
+    "num": "075",
+    "pattern": "V(khả năng)る/ V(khả năng)ない",
     "meaning": {
-      "vi": "",
+      "vi": "Thể từ điển/ない của động từ khả năng",
       "en": ""
     },
-    "category": "general",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 91,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1897,37 +2718,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "れたから、ちょっと　休やす",
+        "ja": "泳げる/泳げない",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "もう。 Mệt rồi, nghỉ một chút thôi.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　ジムに　行い",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "có thể/không thể bơi",
+        "en": "",
+        "jaRuby": "<ruby>泳<rp>(</rp><rt>およ</rt><rp>)</rp></ruby>げる/<ruby>泳<rp>(</rp><rt>およ</rt><rp>)</rp></ruby>げない"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "V(khả năng)る/ V(khả năng)ない"
   },
   {
     "id": "g_076",
-    "pattern": "V1 る/ N の　＋　前まえ",
+    "num": "076",
+    "pattern": "Thể た (Vた)",
     "meaning": {
-      "vi": "",
+      "vi": "Thể thường của Vました",
       "en": ""
     },
-    "category": "general",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 92,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1935,37 +2748,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "が　来くる前まえ",
+        "ja": "飲みました→飲んだ、食べました→食べた",
         "kana": "",
         "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に、部へ屋や",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "を　片かた付づ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "en": "",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みました→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んだ、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べた"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Thể た (Vた)"
   },
   {
     "id": "g_077",
-    "pattern": "V1 た/ N の + 後あと",
+    "num": "077",
+    "pattern": "V(khả năng)た/なかった",
     "meaning": {
-      "vi": "",
+      "vi": "Thể た của động từ khả năng",
       "en": ""
     },
-    "category": "particles",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 93,
     "explanation": {
       "vi": "",
       "en": ""
@@ -1973,37 +2778,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "の　後あと",
+        "ja": "昨日は早く起きられた。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "で、　カフェで　勉べん強きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しない？",
-        "kana": "",
-        "vi": "Sau giờ học, cậu có muốn học ở quán cà phê không?",
-        "en": ""
+        "vi": "Hôm qua tôi đã có thể dậy sớm.",
+        "en": "",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きられた。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "V(khả năng)た/なかった"
   },
   {
     "id": "g_078",
-    "pattern": "V1 たら、　V2",
+    "num": "078",
+    "pattern": "~Vたい (thể thường)",
     "meaning": {
-      "vi": "",
+      "vi": "Vたい/Vたい？/Vたくない/Vたかった",
       "en": ""
     },
-    "category": "conditional",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 94,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2011,37 +2808,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "いたら、　ちょっと　休やす",
+        "ja": "沖縄に行きたい。でも、お金がなくて行けなかった。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "みます。",
-        "kana": "",
-        "vi": "Sau khi đến khách sạn tôi sẽ nghỉ ngơi một chút.",
-        "en": ""
-      },
-      {
-        "ja": "んだら、　また　勉べん強きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi muốn đi Okinawa. Nhưng vì không có tiền nên đã không đi được.",
+        "en": "",
+        "jaRuby": "<ruby>沖縄<rp>(</rp><rt>おきなわ</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたい。でも、お<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>がなくて<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>けなかった。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "~Vたい (thể thường)"
   },
   {
     "id": "g_079",
-    "pattern": "V たばかりだ",
+    "num": "079",
+    "pattern": "Vよう (thể ý chí)",
     "meaning": {
-      "vi": "",
+      "vi": "Thể thường của Vましょう",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "verb-forms-basic",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
+    "order": 95,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2049,37 +2838,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "を　卒そつ業ぎょう",
+        "ja": "そろそろ帰ろう。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "したばかりです。",
-        "kana": "",
-        "vi": "Bạn Ánh vừa mới tốt nghiệp đại học năm ngoái.",
-        "en": ""
-      },
-      {
-        "ja": "に　日に本ほん",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Về thôi nào.",
+        "en": "",
+        "jaRuby": "そろそろ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ろう。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vよう (thể ý chí)"
   },
   {
-    "id": "g_080",
-    "pattern": "V たことが 　あります",
+    "id": "g_080_1",
+    "num": "080.1",
+    "pattern": "V1る/Nの+前に、V2",
     "meaning": {
-      "vi": "",
+      "vi": "Trước khi V1/N thì V2",
       "en": ""
     },
-    "category": "particles",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 96,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2087,56 +2868,89 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "は　日に本ほん",
+        "ja": "寝る前に、歯を磨きます。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "で　働はたら",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "いたことが　あります。 　　　Mẹ tôi đã từng làm việc ở Nhật.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Trước khi ngủ, tôi đánh răng.",
+        "en": "",
+        "jaRuby": "<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>る<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、<ruby>歯<rp>(</rp><rt>は</rt><rp>)</rp></ruby>を<ruby>磨<rp>(</rp><rt>みが</rt><rp>)</rp></ruby>きます。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "V1る/Nの+<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、V2"
+  },
+  {
+    "id": "g_080_2",
+    "num": "080.2",
+    "pattern": "V1た/Nの+後で、V2",
+    "meaning": {
+      "vi": "Sau khi V1/N thì V2",
+      "en": ""
+    },
+    "category": "sequence-conditional",
+    "jlptLevel": "N5",
+    "chapter": 11,
+    "order": 97,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "仕事の後で、ジムに行きます。",
+        "kana": "",
+        "vi": "Sau khi làm việc, tôi đi tập gym.",
+        "en": "",
+        "jaRuby": "<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>の<ruby>後<rp>(</rp><rt>のち</rt><rp>)</rp></ruby>で、ジムに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "V1た/Nの+<ruby>後<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>で、V2"
   },
   {
     "id": "g_081",
-    "pattern": "ば形けい",
+    "num": "081",
+    "pattern": "V1たら、V2",
     "meaning": {
-      "vi": "",
+      "vi": "Sau khi V1 thì V2 (điều kiện)",
       "en": ""
     },
-    "category": "conditional",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 98,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "家に着いたら、電話してください。",
+        "kana": "",
+        "vi": "Sau khi về đến nhà, hãy gọi điện cho tôi.",
+        "en": "",
+        "jaRuby": "<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>着<rp>(</rp><rt>つ</rt><rp>)</rp></ruby>いたら、<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>してください。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "V1たら、V2"
   },
   {
     "id": "g_082",
-    "pattern": "V ば/ A い ければ 〜",
+    "num": "082",
+    "pattern": "Vたばかりだ",
     "meaning": {
-      "vi": "",
+      "vi": "Vừa mới V",
       "en": ""
     },
-    "category": "adjectives",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 99,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2144,37 +2958,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "に　行い",
+        "ja": "この会社に入ったばかりです。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "けば、　色いろ々いろ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "な　本ほん",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi vừa mới vào công ty này.",
+        "en": "",
+        "jaRuby": "この<ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby>に<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>ったばかりです。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vたばかりだ"
   },
   {
     "id": "g_083",
-    "pattern": "Từ nghi vấn + ば、 ～か。",
+    "num": "083",
+    "pattern": "Vたことがあります",
     "meaning": {
-      "vi": "",
+      "vi": "Đã từng V",
       "en": ""
     },
-    "category": "conditional",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 100,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2182,37 +2988,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "で　どのくらい待ま",
+        "ja": "日本に行ったことがあります。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "てば、ラーメンが食た",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "べられますか？",
-        "kana": "",
-        "vi": "Ở quán này, chờ khoảng bao lâu thì có thể ăn ramen?",
-        "en": ""
+        "vi": "Tôi đã từng đi Nhật Bản.",
+        "en": "",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ったことがあります。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vたことがあります"
   },
   {
     "id": "g_084",
-    "pattern": "V なければ、〜",
+    "num": "084",
+    "pattern": "Thể ば (Vば/Aいければ)",
     "meaning": {
-      "vi": "Nếu không ～ thì không ～",
+      "vi": "Thể điều kiện",
       "en": ""
     },
-    "category": "conditional",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 101,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2220,37 +3018,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "がなければ、5 時じ半はん",
+        "ja": "飲めば/高ければ",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "の　電でん車しゃ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　間まに合あ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "nếu uống / nếu cao",
+        "en": "",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>めば/<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>ければ"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Thể ば (Vば/Aいければ)"
   },
   {
     "id": "g_085",
-    "pattern": "V なきゃ、～",
+    "num": "085",
+    "pattern": "Vば/Aいければ~",
     "meaning": {
-      "vi": "Nếu không ～ thì không ～",
+      "vi": "Nếu ~ thì sẽ ~",
       "en": ""
     },
-    "category": "general",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 102,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2258,37 +3048,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "で　聞き",
+        "ja": "安ければ、買います。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "かなきゃ、わからない。",
-        "kana": "",
-        "vi": "Điều đó nếu không hỏi qua điện thoại thì không biết được.",
-        "en": ""
-      },
-      {
-        "ja": "べなきゃ、もったいないですよ。　Nếu không ăn hết thì sẽ lãng phí lắm!いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Nếu rẻ thì tôi sẽ mua.",
+        "en": "",
+        "jaRuby": "<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ければ、<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vば/Aいければ~"
   },
   {
     "id": "g_086",
-    "pattern": "V なきゃいけない",
+    "num": "086",
+    "pattern": "Từ nghi vấn+ば、~か",
     "meaning": {
-      "vi": "",
+      "vi": "Nên (làm gì) thì ~ (xin lời khuyên)",
       "en": ""
     },
-    "category": "general",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 103,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2296,56 +3078,59 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "が　買か",
+        "ja": "どうすれば、日本語が上手になりますか。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "いたいな。　　　　　　　　　　　Tớ muốn mua xe quá.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "B: じゃ、一いっ生しょう懸けん命めい働はたら",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Nên làm thế nào để giỏi tiếng Nhật hơn?",
+        "en": "",
+        "jaRuby": "どうすれば、<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりますか。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Từ nghi vấn+ば、~か"
   },
   {
     "id": "g_087",
-    "pattern": "て形けい",
+    "num": "087",
+    "pattern": "Vなければ、~",
     "meaning": {
-      "vi": "",
+      "vi": "Nếu không ~ thì không ~",
       "en": ""
     },
-    "category": "general",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 104,
     "explanation": {
       "vi": "",
       "en": ""
     },
     "nuances": [],
-    "examples": [],
+    "examples": [
+      {
+        "ja": "練習しなければ、上手になりません。",
+        "kana": "",
+        "vi": "Nếu không luyện tập thì sẽ không giỏi lên được.",
+        "en": "",
+        "jaRuby": "<ruby>練習<rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>しなければ、<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりません。"
+      }
+    ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vなければ、~"
   },
   {
     "id": "g_088",
-    "pattern": "V １て、V2 て、…V",
+    "num": "088",
+    "pattern": "Vなければなりません/いけません/Vないといけません",
     "meaning": {
-      "vi": "",
+      "vi": "Phải làm V",
       "en": ""
     },
-    "category": "general",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 105,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2353,37 +3138,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "して、朝あさ",
+        "ja": "明日までにレポートを出さなければなりません。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "ごはんを　食た",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "べて、それから　勉べん強きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi phải nộp báo cáo trước ngày mai.",
+        "en": "",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>までにレポートを<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>さなければなりません。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vなければなりません/いけません/Vないといけません"
   },
   {
     "id": "g_089",
-    "pattern": "V1 てから V2",
+    "num": "089",
+    "pattern": "Vなきゃ、~",
     "meaning": {
-      "vi": "",
+      "vi": "Nếu không ~ thì không ~ (rút gọn)",
       "en": ""
     },
-    "category": "particles",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 106,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2391,31 +3168,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "びてから、出で",
+        "ja": "早く行かなきゃ、間に合わないよ。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "かけます。　　 Sau khi tắm xong tôi sẽ ra ngoài.",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Không đi nhanh thì không kịp đâu.",
+        "en": "",
+        "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなきゃ、<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>わないよ。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vなきゃ、~"
   },
   {
     "id": "g_090",
-    "pattern": "～V ている",
+    "num": "090",
+    "pattern": "Vなきゃいけない",
     "meaning": {
-      "vi": "",
+      "vi": "Phải làm V (văn nói)",
       "en": ""
     },
-    "category": "verb-forms",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 107,
     "explanation": {
       "vi": "",
       "en": ""
@@ -2423,683 +3198,29 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "どこに　いる？　Bây giờ cậu đang ở đâu?",
+        "ja": "もう帰らなきゃいけない。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "B: 食しょく堂どう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "で　ご飯はん食た",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Tôi phải về rồi.",
+        "en": "",
+        "jaRuby": "もう<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>らなきゃいけない。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_091",
-    "pattern": "N が　V て ＋ います",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "、東とう京きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "では　雪ゆき",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "が　降ふ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_092",
-    "pattern": "N が 　V ています",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "で　勉べん強きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しています。Bạn Hoa học ở thư viện mỗi ngày.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Diễn tả thói quen, lối sống.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_093",
-    "pattern": "N が　V ている",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "の　ドアが　閉し",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "まっています。　　　Cửa của phòng họp đang đóngいみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Diễn tả trạng thái, kết quả của hành động.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_094",
-    "pattern": "V て ＋ います",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "verb-forms",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "は　フランスに　住す",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "んでいます。　　　Chị gái tôi đang sống ở Pháp.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "は　東とう京きょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_096",
-    "pattern": "V ても　いいです。",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "copula",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "A: お庭にわ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "の　花はな",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "、きれいですね。　　Hoa trong vườn đẹp quá nhỉ!",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_098",
-    "pattern": "V なくても　いいです。",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "copula",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "日は　休やす",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "みだから、朝あさ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "7 時じ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_100",
-    "pattern": "V てくれますか　（→ V てくれる？）",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "verb-forms",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "、この資し料りょう",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "、ちょっと　確かく認にん",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "してくれますか。",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_101",
-    "pattern": "N1 は/ が（私わたし",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "の　本ほん",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "を　くれました。Bạn Hoa đã cho tôi cuốn sách tiếng Việt.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Mẫu câu dùng để diễn tả việc ai đó cho người nói (hoặc người có mối quan hệ gần gũi,",
-        "kana": "",
-        "vi": "thân thiết với người nói).",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_102",
-    "pattern": "N は/ が（私わたし",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "が　自じ転てん車しゃ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "を　買か",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "ってくれました。Bà đã mua xe đạp cho tôi.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_103",
-    "pattern": "N1 は/ が　N2 に　N3 を　あげる",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "は）弟",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "おとうと",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　古ふるい自じ転てん車しゃ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_104",
-    "pattern": "N1 は/ が　N2 に　V てあげる",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "は　友とも達だち",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　お金かね",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "を　貸か",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_105",
-    "pattern": "V ましょうか/ V ようか",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "invitation",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "、多おお",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "いね。少すこ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "し　持も",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_106",
-    "pattern": "N/số từ ＋ しか ～V ません/ V ない。",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "verb-forms",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "の　中なか",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　ビールが　2 本ほん",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "しかない。　　Chỉ có 2 chai bia trong tủ lạnh.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_107",
-    "pattern": "N/số từ  ＋ だけ〜",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "general",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "だけ　待ま",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "ってください。      Chỉ 5 phút thôi, hãy đợi tôi!",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "だから、昼ひる",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_108",
-    "pattern": "N (chủ đề) は 〜れい",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "は　この教きょう室しつ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "の　外そと",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "で　食た",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_109",
-    "pattern": "N1 は 〜 が/ けど、 N2 は 〜",
-    "meaning": {
-      "vi": "",
-      "en": ""
-    },
-    "category": "particles",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "Cầu lông thì tôi từng chơi, nhưng tennis thì tôi chưa từng.いみ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "・Cấu trúc này được sử dụng để so sánh, nhấn mạnh sự khác biệt giữa N1 và N2.",
-        "kana": "",
-        "vi": "☆",
-        "en": ""
-      },
-      {
-        "ja": "・ Có thể sử dụng câu đơn có một từ 「は」, nhưng thường trong câu sẽ có ẩn ý, ám chỉ khác.",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
-  },
-  {
-    "id": "g_110",
-    "pattern": "A い /A な + さ",
-    "meaning": {
-      "vi": "→　 大たい変へん",
-      "en": ""
-    },
-    "category": "adjectives",
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "explanation": {
-      "vi": "",
-      "en": ""
-    },
-    "nuances": [],
-    "examples": [
-      {
-        "ja": "の　便べん利り",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "さは、世せ界かい",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "で　有ゆう名めい",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      }
-    ],
-    "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "Vなきゃいけない"
   },
   {
     "id": "g_112",
-    "pattern": "A な/N ＋ なら",
+    "num": "112",
+    "pattern": "V/Aい/Aな/N(thể thường)+なら",
     "meaning": {
-      "vi": "",
+      "vi": "Nếu thì ~ (nhắc lại lời đối phương)",
       "en": ""
     },
-    "category": "adjectives",
+    "category": "sequence-conditional",
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 11,
+    "order": 108,
     "explanation": {
       "vi": "",
       "en": ""
@@ -3107,25 +3228,825 @@
     "nuances": [],
     "examples": [
       {
-        "ja": "みなら、一いっ緒しょ",
+        "ja": "日本に行くなら、京都がおすすめです。",
         "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "に　遊あそ",
-        "kana": "",
-        "vi": "",
-        "en": ""
-      },
-      {
-        "ja": "びに　行い",
-        "kana": "",
-        "vi": "",
-        "en": ""
+        "vi": "Nếu đi Nhật thì tôi khuyên nên đến Kyoto.",
+        "en": "",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くなら、<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>がおすすめです。"
       }
     ],
     "relatedGrammar": [],
-    "tags": []
+    "tags": [],
+    "patternRuby": "V/Aい/Aな/N(thể thường)+なら"
+  },
+  {
+    "id": "g_113",
+    "num": "113",
+    "pattern": "Aな/N+なら",
+    "meaning": {
+      "vi": "Nếu thì ~ (chỉ với N và tính từ な)",
+      "en": ""
+    },
+    "category": "sequence-conditional",
+    "jlptLevel": "N5",
+    "chapter": 11,
+    "order": 109,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "暇なら、手伝ってください。",
+        "kana": "",
+        "vi": "Nếu rảnh thì hãy giúp tôi với.",
+        "en": "",
+        "jaRuby": "<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なら、<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってください。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Aな/N+なら"
+  },
+  {
+    "id": "g_091",
+    "num": "091",
+    "pattern": "Thể て (Vて)",
+    "meaning": {
+      "vi": "Quy tắc chia (って/んで/いて/いで/して/来て...)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 110,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "買う→買って、飲む→飲んで、書く→書いて",
+        "kana": "",
+        "vi": "",
+        "en": "",
+        "jaRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>う→<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>って、<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んで、<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>く→<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いて"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Thể て (Vて)"
+  },
+  {
+    "id": "g_092",
+    "num": "092",
+    "pattern": "V1て、V2て、…V",
+    "meaning": {
+      "vi": "V1 rồi V2, ...V",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 111,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "朝起きて、シャワーを浴びて、朝ご飯を食べます。",
+        "kana": "",
+        "vi": "Sáng dậy, tắm, rồi ăn sáng.",
+        "en": "",
+        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、シャワーを<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びて、<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "V1て、V2て、…V"
+  },
+  {
+    "id": "g_093",
+    "num": "093",
+    "pattern": "V1てから V2",
+    "meaning": {
+      "vi": "Sau khi V1 thì V2",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 112,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "宿題をしてから、テレビを見ます。",
+        "kana": "",
+        "vi": "Sau khi làm bài tập xong thì tôi xem tivi.",
+        "en": "",
+        "jaRuby": "<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>をしてから、テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "V1てから V2"
+  },
+  {
+    "id": "g_094_1",
+    "num": "094.1",
+    "pattern": "~Vている",
+    "meaning": {
+      "vi": "Đang V",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 113,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "今、雨が降っています。",
+        "kana": "",
+        "vi": "Bây giờ trời đang mưa.",
+        "en": "",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>っています。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "~Vている"
+  },
+  {
+    "id": "g_094_2",
+    "num": "094.2",
+    "pattern": "NがVて+います",
+    "meaning": {
+      "vi": "N đang V (trước mắt)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 114,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "子供が公園で遊んでいます。",
+        "kana": "",
+        "vi": "Trẻ con đang chơi ở công viên.",
+        "en": "",
+        "jaRuby": "<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>が<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>で<ruby>遊<rp>(</rp><rt>あそ</rt><rp>)</rp></ruby>んでいます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "NがVて+います"
+  },
+  {
+    "id": "g_094_3",
+    "num": "094.3",
+    "pattern": "NがVています",
+    "meaning": {
+      "vi": "N thường V (thói quen)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 115,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "私は毎朝走っています。",
+        "kana": "",
+        "vi": "Mỗi sáng tôi đều chạy bộ.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby><ruby>走<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>っています。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "NがVています"
+  },
+  {
+    "id": "g_094_4",
+    "num": "094.4",
+    "pattern": "NがVている",
+    "meaning": {
+      "vi": "N đang V (trạng thái, kết quả)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 116,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "窓が開いています。",
+        "kana": "",
+        "vi": "Cửa sổ đang mở.",
+        "en": "",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>が<ruby>開<rp>(</rp><rt>ひら</rt><rp>)</rp></ruby>いています。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "NがVている"
+  },
+  {
+    "id": "g_094_5",
+    "num": "094.5",
+    "pattern": "Vて+います",
+    "meaning": {
+      "vi": "Đang V (duy trì lâu dài)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 117,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "私はハノイに住んでいます。",
+        "kana": "",
+        "vi": "Tôi đang sống ở Hà Nội.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はハノイに<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいます。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vて+います"
+  },
+  {
+    "id": "g_095",
+    "num": "095",
+    "pattern": "Nを知っていますか",
+    "meaning": {
+      "vi": "Bạn có biết N không?",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 118,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "田中さんを知っていますか。",
+        "kana": "",
+        "vi": "Bạn có biết anh Tanaka không?",
+        "en": "",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Nを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか"
+  },
+  {
+    "id": "g_096",
+    "num": "096",
+    "pattern": "Nでも+いい/大丈夫です/かまわないです",
+    "meaning": {
+      "vi": "N cũng được/ổn",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 119,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "お茶でもいいです。",
+        "kana": "",
+        "vi": "Trà cũng được.",
+        "en": "",
+        "jaRuby": "お<ruby>茶<rp>(</rp><rt>ちゃ</rt><rp>)</rp></ruby>でもいいです。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Nでも+いい/<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>です/かまわないです"
+  },
+  {
+    "id": "g_097",
+    "num": "097",
+    "pattern": "Vてもいいですか/だいじょうぶですか/かまわないですか",
+    "meaning": {
+      "vi": "V có được không? (xin phép)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 120,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ここに座ってもいいですか。",
+        "kana": "",
+        "vi": "Tôi ngồi đây có được không?",
+        "en": "",
+        "jaRuby": "ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>ってもいいですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vてもいいですか/だいじょうぶですか/かまわないですか"
+  },
+  {
+    "id": "g_098_1",
+    "num": "098.1",
+    "pattern": "Vてもいいです",
+    "meaning": {
+      "vi": "V cũng được (cho phép)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 121,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "写真を撮ってもいいです。",
+        "kana": "",
+        "vi": "Chụp ảnh cũng được.",
+        "en": "",
+        "jaRuby": "<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってもいいです。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vてもいいです"
+  },
+  {
+    "id": "g_098_2",
+    "num": "098.2",
+    "pattern": "Vなくてもいいです",
+    "meaning": {
+      "vi": "Không V cũng được",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 122,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "明日は来なくてもいいです。",
+        "kana": "",
+        "vi": "Ngày mai không đến cũng được.",
+        "en": "",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>なくてもいいです。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vなくてもいいです"
+  },
+  {
+    "id": "g_099",
+    "num": "099",
+    "pattern": "Vて+ください/Vない+で+ください",
+    "meaning": {
+      "vi": "Hãy V/Xin đừng V",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 123,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ここに名前を書いてください。ここに座らないでください。",
+        "kana": "",
+        "vi": "Hãy viết tên vào đây. Xin đừng ngồi ở đây.",
+        "en": "",
+        "jaRuby": "ここに<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてください。ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>らないでください。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vて+ください/Vない+で+ください"
+  },
+  {
+    "id": "g_100",
+    "num": "100",
+    "pattern": "Vてくれますか（→Vてくれる？）",
+    "meaning": {
+      "vi": "Bạn có thể V cho tôi không?",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 124,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ちょっと手伝ってくれる？",
+        "kana": "",
+        "vi": "Bạn giúp tôi một chút được không?",
+        "en": "",
+        "jaRuby": "ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれる？"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vてくれますか（→Vてくれる？）"
+  },
+  {
+    "id": "g_101",
+    "num": "101",
+    "pattern": "Vて+くれませんか/くださいませんか",
+    "meaning": {
+      "vi": "Bạn có thể V cho tôi không? (lịch sự)",
+      "en": ""
+    },
+    "category": "te-form",
+    "jlptLevel": "N5",
+    "chapter": 12,
+    "order": 125,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "窓を閉めてくださいませんか。",
+        "kana": "",
+        "vi": "Bạn có thể đóng cửa sổ giúp tôi không?",
+        "en": "",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めてくださいませんか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vて+くれませんか/くださいませんか"
+  },
+  {
+    "id": "g_102",
+    "num": "102",
+    "pattern": "N1は/が(私に) N2をくれる",
+    "meaning": {
+      "vi": "N1 cho tôi N2",
+      "en": ""
+    },
+    "category": "giving-receiving",
+    "jlptLevel": "N5",
+    "chapter": 13,
+    "order": 126,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "友達が私に本をくれました。",
+        "kana": "",
+        "vi": "Bạn tôi cho tôi một cuốn sách.",
+        "en": "",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>をくれました。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1は/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に) N2をくれる"
+  },
+  {
+    "id": "g_103",
+    "num": "103",
+    "pattern": "Nは/が(私に)~Vてくれる",
+    "meaning": {
+      "vi": "N làm V cho tôi",
+      "en": ""
+    },
+    "category": "giving-receiving",
+    "jlptLevel": "N5",
+    "chapter": 13,
+    "order": 127,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "先生が日本語を教えてくれました。",
+        "kana": "",
+        "vi": "Thầy giáo đã dạy tiếng Nhật cho tôi.",
+        "en": "",
+        "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>が<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えてくれました。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Nは/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に)~Vてくれる"
+  },
+  {
+    "id": "g_104",
+    "num": "104",
+    "pattern": "N1は/が N2に N3をあげる",
+    "meaning": {
+      "vi": "N1 tặng N2 (đồ vật) N3",
+      "en": ""
+    },
+    "category": "giving-receiving",
+    "jlptLevel": "N5",
+    "chapter": 13,
+    "order": 128,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "私は妹に花をあげました。",
+        "kana": "",
+        "vi": "Tôi đã tặng hoa cho em gái.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>妹<rp>(</rp><rt>いもうと</rt><rp>)</rp></ruby>に<ruby>花<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>をあげました。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1は/が N2に N3をあげる"
+  },
+  {
+    "id": "g_105",
+    "num": "105",
+    "pattern": "N1は/が N2にVてあげる",
+    "meaning": {
+      "vi": "N1 làm gì đó cho N2",
+      "en": ""
+    },
+    "category": "giving-receiving",
+    "jlptLevel": "N5",
+    "chapter": 13,
+    "order": 129,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "私は友達に本を貸してあげました。",
+        "kana": "",
+        "vi": "Tôi đã cho bạn mượn sách.",
+        "en": "",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>してあげました。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1は/が N2にVてあげる"
+  },
+  {
+    "id": "g_106",
+    "num": "106",
+    "pattern": "Vましょうか/Vようか",
+    "meaning": {
+      "vi": "Để tôi V nhé",
+      "en": ""
+    },
+    "category": "giving-receiving",
+    "jlptLevel": "N5",
+    "chapter": 13,
+    "order": 130,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "荷物を持ちましょうか。",
+        "kana": "",
+        "vi": "Để tôi xách đồ cho nhé.",
+        "en": "",
+        "jaRuby": "<ruby>荷物<rp>(</rp><rt>にもつ</rt><rp>)</rp></ruby>を<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>ちましょうか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Vましょうか/Vようか"
+  },
+  {
+    "id": "g_107",
+    "num": "107",
+    "pattern": "N/số từ+しか~Vません/Vない",
+    "meaning": {
+      "vi": "Chỉ có N (đi với phủ định)",
+      "en": ""
+    },
+    "category": "special-particles",
+    "jlptLevel": "N5",
+    "chapter": 14,
+    "order": 131,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "財布に1000円しかありません。",
+        "kana": "",
+        "vi": "Trong ví chỉ có 1000 yên.",
+        "en": "",
+        "jaRuby": "<ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>に1000<ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>しかありません。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N/số từ+しか~Vません/Vない"
+  },
+  {
+    "id": "g_108",
+    "num": "108",
+    "pattern": "N/số từ+だけ~",
+    "meaning": {
+      "vi": "Chỉ N",
+      "en": ""
+    },
+    "category": "special-particles",
+    "jlptLevel": "N5",
+    "chapter": 14,
+    "order": 132,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "今日は水だけ飲みました。",
+        "kana": "",
+        "vi": "Hôm nay tôi chỉ uống nước lọc.",
+        "en": "",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby>だけ<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みました。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N/số từ+だけ~"
+  },
+  {
+    "id": "g_109",
+    "num": "109",
+    "pattern": "N(chủ đề)は~",
+    "meaning": {
+      "vi": "は thay thế を, が khi làm chủ đề",
+      "en": ""
+    },
+    "category": "special-particles",
+    "jlptLevel": "N5",
+    "chapter": 14,
+    "order": 133,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "この本は昨日読みました。",
+        "kana": "",
+        "vi": "Cuốn sách này thì hôm qua tôi đã đọc rồi.",
+        "en": "",
+        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby><ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みました。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N(chủ đề)は~"
+  },
+  {
+    "id": "g_110",
+    "num": "110",
+    "pattern": "N1は~が/けど、N2は~",
+    "meaning": {
+      "vi": "N1 thì... còn N2 thì... (so sánh)",
+      "en": ""
+    },
+    "category": "special-particles",
+    "jlptLevel": "N5",
+    "chapter": 14,
+    "order": 134,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "兄は背が高いですが、弟は低いです。",
+        "kana": "",
+        "vi": "Anh trai thì cao, còn em trai thì thấp.",
+        "en": "",
+        "jaRuby": "<ruby>兄<rp>(</rp><rt>あに</rt><rp>)</rp></ruby>は<ruby>背<rp>(</rp><rt>せ</rt><rp>)</rp></ruby>が<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いですが、<ruby>弟<rp>(</rp><rt>おとうと</rt><rp>)</rp></ruby>は<ruby>低<rp>(</rp><rt>ひく</rt><rp>)</rp></ruby>いです。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "N1は~が/けど、N2は~"
+  },
+  {
+    "id": "g_111",
+    "num": "111",
+    "pattern": "Aい/Aな+さ",
+    "meaning": {
+      "vi": "Danh từ hóa tính từ (高い→高さ)",
+      "en": ""
+    },
+    "category": "special-particles",
+    "jlptLevel": "N5",
+    "chapter": 14,
+    "order": 135,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "この山の高さはどのくらいですか。",
+        "kana": "",
+        "vi": "Độ cao của ngọn núi này là bao nhiêu?",
+        "en": "",
+        "jaRuby": "この<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>の<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>さはどのくらいですか。"
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": [],
+    "patternRuby": "Aい/Aな+さ"
   }
 ]

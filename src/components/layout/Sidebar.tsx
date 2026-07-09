@@ -1,12 +1,14 @@
 ﻿import { NavLink } from "react-router-dom"
 import { useVocabStore } from "@/store/vocab-store"
+import { Furigana } from "@/components/ui/Furigana"
 
 const nav = [
-  { to: "/",           label: "ホーム",   en: "Home" },
-  { to: "/vocab",      label: "単語",     en: "Vocabulary" },
-  { to: "/review",     label: "復習",     en: "Review" },
-  { to: "/grammar",    label: "文法",     en: "Grammar" },
-  { to: "/homophones", label: "同音語",   en: "Homophones" },
+  { to: "/",           label: "ホーム",     kana: "ホーム",         en: "Home" },
+  { to: "/vocab",      label: "単語",       kana: "たんご",         en: "Vocabulary" },
+  { to: "/review",     label: "復習",       kana: "ふくしゅう",      en: "Review" },
+  { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        en: "Grammar" },
+  { to: "/verb-forms", label: "動詞の形",   kana: "どうしのかたち",   en: "Verb Forms" },
+  { to: "/homophones", label: "同音語",     kana: "どうおんご",      en: "Homophones" },
 ]
 
 export function Sidebar() {
@@ -19,13 +21,14 @@ export function Sidebar() {
     <aside className="w-64 min-h-screen border-r-3 border-ink bg-surface flex flex-col">
       {/* Logo */}
       <div className="border-b-3 border-ink p-6">
-        <div className="text-3xl font-black tracking-tighter jp">言鳥</div>
+        <div className="text-3xl font-black tracking-tighter">
+          <Furigana kanji="言鳥" kana="ことどり" />
+        </div>
         <div className="text-xs font-bold uppercase tracking-widest text-muted mt-1">KOTODORI</div>
       </div>
 
       {/* Streak */}
       <div className="border-b-3 border-ink p-4 flex items-center gap-3 bg-yellow">
-        <div className="text-xl font-black w-8 text-center">▲</div>
         <div>
           <div className="text-xl font-black">{streak}</div>
           <div className="text-xs font-bold uppercase tracking-wider">Day streak</div>
@@ -42,7 +45,7 @@ export function Sidebar() {
 
       {/* Nav */}
       <nav className="flex-1 p-4 flex flex-col gap-1">
-        {nav.map(({ to, label, en }) => (
+        {nav.map(({ to, label, kana, en }) => (
           <NavLink
             key={to}
             to={to}
@@ -57,7 +60,9 @@ export function Sidebar() {
             }
           >
             <div>
-              <div className="jp font-black text-sm leading-tight">{label}</div>
+              <div className="font-black text-sm leading-tight">
+                <Furigana kanji={label} kana={kana} />
+              </div>
               <div className="text-xs font-bold uppercase tracking-wider opacity-60">{en}</div>
             </div>
           </NavLink>

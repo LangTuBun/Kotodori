@@ -16,16 +16,95 @@
 
 export interface GrammarPoint {
   id: string
+  num: string
   pattern: string
+  patternRuby?: string
   meaning: { vi: string; en: string }
   category: string
   jlptLevel: string
   chapter: number
+  order: number
   explanation: { vi: string; en: string }
   nuances: string[]
-  examples: Array<{ ja: string; kana: string; vi: string; en: string }>
+  examples: Array<{ ja: string; jaRuby?: string; kana: string; vi: string; en: string }>
   relatedGrammar: string[]
   tags: string[]
+}
+
+export interface GrammarCategory {
+  slug: string
+  romanNumeral: string
+  order: number
+  title: string
+  count: number
+}
+
+export interface VerbGroupSample {
+  masu: string
+  masuRuby?: string
+  vi: string
+}
+
+export interface VerbGroup {
+  id: number
+  name: string
+  note: string
+  sample: VerbGroupSample[]
+}
+
+export interface VerbFormRule {
+  group: number | string
+  rule: string
+  ruleRuby?: string
+  note: string
+  noteRuby?: string
+}
+
+export interface VerbFormExample {
+  group: number | string
+  masu: string
+  masuRuby?: string
+  result: string
+  resultRuby?: string
+  resultNeg?: string
+  resultNegRuby?: string
+}
+
+export interface VerbGroup1Ending {
+  endings: string
+  endingsRuby?: string
+  result: string
+  resultRuby?: string
+  example: string
+  exampleRuby?: string
+}
+
+export interface VerbFormSentenceExample {
+  ja: string
+  jaRuby?: string
+  vi: string
+}
+
+export interface VerbForm {
+  id: string
+  title: string
+  titleJa: string
+  titleJaRuby?: string
+  meaning: string
+  rules: VerbFormRule[]
+  group1Endings?: VerbGroup1Ending[]
+  examples: VerbFormExample[]
+  sentenceExamples: VerbFormSentenceExample[]
+  exceptions: string[]
+  exceptionsRuby?: string[]
+}
+
+export interface VerbFormsData {
+  groups: VerbGroup[]
+  forms: VerbForm[]
+  cheatSheet: { headers: string[]; rows: string[][]; rowsRuby?: string[][] }
+  keyExceptions: string[]
+  keyExceptionsRuby?: string[]
 }
 
 export interface HomophoneGroup {

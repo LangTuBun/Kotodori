@@ -131,7 +131,7 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
       <div className="p-6 border-b-3 border-ink">
         <div className="flex justify-between items-start mb-4">
           <PosTag pos={vocab.pos} verbGroup={vocab.verbGroup} />
-          <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">✕</button>
+          <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">×</button>
         </div>
         <div className="text-5xl font-black jp leading-none mb-3">
           <Furigana kanji={vocab.kanji} kana={vocab.kana} />
@@ -194,7 +194,7 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
               if (!hw) return null
               return (
                 <div key={id} className="border-3 border-ink px-3 py-1 shadow-[2px_2px_0px_#0a0a0a]">
-                  <div className="jp font-bold">{hw.kanji || hw.kana}</div>
+                  <div className="font-bold"><Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} /></div>
                   <div className="text-xs text-muted">{hw.meanings.vi.slice(0, 20)}</div>
                 </div>
               )

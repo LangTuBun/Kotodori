@@ -2,6 +2,10 @@
 import { useVocabStore } from "@/store/vocab-store"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
+import { Ruby } from "@/components/ui/Ruby"
+
+const HEADING_LINE1_RUBY = '<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>も'
+const HEADING_LINE2_RUBY = '<ruby>頑張<rp>(</rp><rt>がんば</rt><rp>)</rp></ruby>ろう'
 
 export function Dashboard() {
   const { streak, totalReviewed, getStats, getDueCards, getNewCards } = useVocabStore()
@@ -14,8 +18,8 @@ export function Dashboard() {
       {/* Header */}
       <div className="border-b-3 border-ink pb-8 mb-8">
         <h1 className="text-6xl font-black tracking-tighter leading-none">
-          <span className="jp">今日も</span><br />
-          <span className="jp">頑張ろう</span>
+          <Ruby text="今日も" html={HEADING_LINE1_RUBY} /><br />
+          <Ruby text="頑張ろう" html={HEADING_LINE2_RUBY} />
         </h1>
         <p className="text-muted font-bold mt-3 uppercase tracking-widest text-sm">
           Let's study Japanese today

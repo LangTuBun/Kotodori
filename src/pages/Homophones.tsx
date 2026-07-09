@@ -237,8 +237,8 @@ function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; o
           </div>
           <div className="flex flex-wrap gap-1.5">
             {group.entries.map(e => (
-              <span key={e.id} className="text-xs border border-ink px-2 py-0.5 font-bold jp">
-                {e.kanji || e.kana}
+              <span key={e.id} className="text-xs border border-ink px-2 py-0.5 font-bold">
+                <Furigana kanji={e.kanji || e.kana} kana={e.kana} />
               </span>
             ))}
           </div>

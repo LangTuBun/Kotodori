@@ -59,8 +59,7 @@ export function Review() {
           <h1 className="text-5xl font-black">Review</h1>
         </div>
         <div className="border-3 border-ink p-8 shadow-[5px_5px_0px_#00cc66] text-center">
-          <div className="text-5xl font-black mb-4 text-green">✓</div>
-          <div className="text-2xl font-black mb-2">All done!</div>
+          <div className="text-2xl font-black mb-2 text-green">All done!</div>
           <div className="text-muted font-bold mb-6">No cards due right now. Come back later!</div>
           <Button onClick={() => navigate('/')}>Back to dashboard</Button>
         </div>
@@ -113,9 +112,13 @@ export function Review() {
                cardType === 'reading' ? 'How do you read this?' : 'What word?'}
             </div>
             <div className="text-6xl font-black jp leading-none mb-4">
-              {cardType === 'meaning' || cardType === 'reading'
-                ? entry.kanji || entry.kana
-                : entry.meanings.vi}
+              {cardType === 'meaning' ? (
+                <Furigana kanji={entry.kanji} kana={entry.kana} />
+              ) : cardType === 'reading' ? (
+                entry.kanji || entry.kana
+              ) : (
+                entry.meanings.vi
+              )}
             </div>
             {cardType === 'word' && entry.kana && (
               <div className="jp text-muted text-xl">{entry.kana}</div>

@@ -1,0 +1,108 @@
+{
+  "categories": [
+    {
+      "slug": "noun-copula",
+      "romanNumeral": "I",
+      "order": 1,
+      "title": "Câu khẳng định / phủ định với danh từ (N です)",
+      "count": 7
+    },
+    {
+      "slug": "no-questions",
+      "romanNumeral": "II",
+      "order": 2,
+      "title": "Trợ từ N の và cách hỏi thông tin",
+      "count": 7
+    },
+    {
+      "slug": "sentence-particles",
+      "romanNumeral": "III",
+      "order": 3,
+      "title": "Trợ từ kết thúc câu (sắc thái)",
+      "count": 3
+    },
+    {
+      "slug": "adjectives",
+      "romanNumeral": "IV",
+      "order": 4,
+      "title": "Tính từ (đuôi い và な)",
+      "count": 13
+    },
+    {
+      "slug": "comparison",
+      "romanNumeral": "V",
+      "order": 5,
+      "title": "So sánh",
+      "count": 3
+    },
+    {
+      "slug": "plain-form",
+      "romanNumeral": "VI",
+      "order": 6,
+      "title": "Thể thường (Plain form) của danh từ và tính từ",
+      "count": 12
+    },
+    {
+      "slug": "existence",
+      "romanNumeral": "VII",
+      "order": 7,
+      "title": "Sự tồn tại: あります・います",
+      "count": 9
+    },
+    {
+      "slug": "masu-form",
+      "romanNumeral": "VIII",
+      "order": 8,
+      "title": "Động từ thể ます — thời gian, mục đích, tần suất",
+      "count": 21
+    },
+    {
+      "slug": "potential-verbs",
+      "romanNumeral": "IX",
+      "order": 9,
+      "title": "Động từ khả năng, phương tiện, sở thích, so sánh",
+      "count": 9
+    },
+    {
+      "slug": "verb-forms-basic",
+      "romanNumeral": "X",
+      "order": 10,
+      "title": "Thể từ điển, thể ない, thể た",
+      "count": 11
+    },
+    {
+      "slug": "sequence-conditional",
+      "romanNumeral": "XI",
+      "order": 11,
+      "title": "Trình tự hành động, điều kiện, kinh nghiệm",
+      "count": 14
+    },
+    {
+      "slug": "te-form",
+      "romanNumeral": "XII",
+      "order": 12,
+      "title": "Thể て — nối tiếp, đang diễn ra, xin phép, nhờ vả",
+      "count": 16
+    },
+    {
+      "slug": "giving-receiving",
+      "romanNumeral": "XIII",
+      "order": 13,
+      "title": "Cho và nhận (あげる・くれる)",
+      "count": 5
+    },
+    {
+      "slug": "special-particles",
+      "romanNumeral": "XIV",
+      "order": 14,
+      "title": "Trợ từ đặc biệt và danh từ hóa",
+      "count": 5
+    }
+  ],
+  "tips": [
+    "Nhóm theo cấu trúc gốc (N/A + です, thể ます, thể て, thể た, thể ない, thể ば) sẽ dễ nhớ hơn học tuần tự theo số thứ tự.",
+    "Với các thể thường (VI), luyện tập theo cặp: khẳng định ↔ phủ định ↔ nghi vấn ↔ quá khứ để nắm hệ thống biến đổi.",
+    "Với ngữ pháp cho tồn tại (あります/います, VII), nhớ rõ あります dùng cho vật vô tri, います dùng cho người/động vật.",
+    "Thể て (XII) là nhóm ngữ pháp trọng tâm nhất N5 vì mở rộng ra rất nhiều mẫu câu (đang làm, xin phép, nhờ vả, nối câu)."
+  ]
+}
