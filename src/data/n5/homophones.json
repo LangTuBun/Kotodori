@@ -1,0 +1,332 @@
+[
+  {
+    "id": "homo_001",
+    "reading": "いま",
+    "words": [
+      {
+        "vocabId": "n5_0041",
+        "kanji": "今",
+        "meaning": {
+          "vi": "bây giờ",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0169",
+        "kanji": "今",
+        "meaning": {
+          "vi": "bây giờ",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_002",
+    "reading": "あめ",
+    "words": [
+      {
+        "vocabId": "n5_0104",
+        "kanji": "雨",
+        "meaning": {
+          "vi": "mưa",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0362",
+        "kanji": "あめ",
+        "meaning": {
+          "vi": "kẹo",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_003",
+    "reading": "いつか",
+    "words": [
+      {
+        "vocabId": "n5_0115",
+        "kanji": "五日",
+        "meaning": {
+          "vi": "ngày mùng 5",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0758",
+        "kanji": "いつか",
+        "meaning": {
+          "vi": "một lúc nào đó",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_004",
+    "reading": "ええ",
+    "words": [
+      {
+        "vocabId": "n5_0157",
+        "kanji": "ええ",
+        "meaning": {
+          "vi": "vâng",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0382",
+        "kanji": "ええ",
+        "meaning": {
+          "vi": "ôi! ôi! (tiếng kêu ngạc nhiên)",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_005",
+    "reading": "ねん",
+    "words": [
+      {
+        "vocabId": "n5_0415",
+        "kanji": "～年",
+        "meaning": {
+          "vi": "năm ∼",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0491",
+        "kanji": "～年",
+        "meaning": {
+          "vi": "￿năm",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_006",
+    "reading": "ふく",
+    "words": [
+      {
+        "vocabId": "n5_0478",
+        "kanji": "服",
+        "meaning": {
+          "vi": "quần áo",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0786",
+        "kanji": "吹く",
+        "meaning": {
+          "vi": "thổi",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0872",
+        "kanji": "（∼を）拭く",
+        "meaning": {
+          "vi": "lau (bàn...)",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 3
+  },
+  {
+    "id": "homo_007",
+    "reading": "かみ",
+    "words": [
+      {
+        "vocabId": "n5_0479",
+        "kanji": "紙",
+        "meaning": {
+          "vi": "giấy",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0615",
+        "kanji": "髪",
+        "meaning": {
+          "vi": "tóc",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_008",
+    "reading": "はな",
+    "words": [
+      {
+        "vocabId": "n5_0617",
+        "kanji": "鼻",
+        "meaning": {
+          "vi": "mũi",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0638",
+        "kanji": "花",
+        "meaning": {
+          "vi": "bông hoa",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_009",
+    "reading": "かきます",
+    "words": [
+      {
+        "vocabId": "n5_0652",
+        "kanji": "（～を）描きます",
+        "meaning": {
+          "vi": "vẽ",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0653",
+        "kanji": "（～を）書きます",
+        "meaning": {
+          "vi": "viết",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_010",
+    "reading": "チーズ",
+    "words": [
+      {
+        "vocabId": "n5_0679",
+        "kanji": "チーズ",
+        "meaning": {
+          "vi": "phô mai",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0887",
+        "kanji": "チーズ！",
+        "meaning": {
+          "vi": "Lời nói khi hô chụp ảnh",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_011",
+    "reading": "つく",
+    "words": [
+      {
+        "vocabId": "n5_0704",
+        "kanji": "（～に）着く",
+        "meaning": {
+          "vi": "đến (nơi)",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0810",
+        "kanji": "（～に）付く",
+        "meaning": {
+          "vi": "có dính, có gắn ￿",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_012",
+    "reading": "でる",
+    "words": [
+      {
+        "vocabId": "n5_0724",
+        "kanji": "（～を）出る",
+        "meaning": {
+          "vi": "ra (khỏi phòng/ khỏi nhà)",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0818",
+        "kanji": "出る",
+        "meaning": {
+          "vi": "lộra, lòi ra",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_013",
+    "reading": "とる",
+    "words": [
+      {
+        "vocabId": "n5_0850",
+        "kanji": "（メモを）取る",
+        "meaning": {
+          "vi": "ghi chép",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0875",
+        "kanji": "（コピーを）取る",
+        "meaning": {
+          "vi": "photo",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  },
+  {
+    "id": "homo_014",
+    "reading": "だす",
+    "words": [
+      {
+        "vocabId": "n5_0947",
+        "kanji": "（∼から）（∼を）出す",
+        "meaning": {
+          "vi": "lấy ra, đưa ra",
+          "en": ""
+        }
+      },
+      {
+        "vocabId": "n5_0958",
+        "kanji": "（∼を）出す",
+        "meaning": {
+          "vi": "gửi (thư)",
+          "en": ""
+        }
+      }
+    ],
+    "difficultyScore": 2
+  }
+]

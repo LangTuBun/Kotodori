@@ -1,0 +1,3131 @@
+[
+  {
+    "id": "g_001",
+    "pattern": "( N1 は)　N2 です。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_003",
+    "pattern": "N も",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "です。それも　日に本ほん料りょう理り",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "ですか。",
+        "kana": "",
+        "vi": "Đây là món ăn Nhật. Đó cũng là món ăn Nhật đúng không?",
+        "en": ""
+      },
+      {
+        "ja": "B: いいえ、これは　ベトナム料りょう理り",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_004",
+    "pattern": "N1 は　何なん",
+    "meaning": {
+      "vi": "→ (N1 は） N2 です。",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_005",
+    "pattern": "～ね",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_006",
+    "pattern": "～よ",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_007",
+    "pattern": "〜よね",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_008",
+    "pattern": "（N1 は）N2 でした",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "日は　晴は",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "れでした。　Hôm qua trời nắng.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "プレゼントは　電でん子し辞じ書しょ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_009",
+    "pattern": "誰だれ",
+    "meaning": {
+      "vi": "→ N1 (chủ sở hữu) の　N2 です。",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_010",
+    "pattern": "何なん",
+    "meaning": {
+      "vi": "→ N1 (nội dung) の　N2 です。",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_012",
+    "pattern": "何なん",
+    "meaning": {
+      "vi": "→ N1 (nguyên liệu) の　N2 です。",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_013",
+    "pattern": "N1 (nơi sở thuộc) の　N2 です。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_014",
+    "pattern": "（N1 は）N2 で　N3 です。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_015",
+    "pattern": "（N は）A いくないです。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "日は　忙いそが",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しくないです。 　　　　　　　　　Ngày mai tôi không bận.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "は　あまり美お味い",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_016",
+    "pattern": "（N は）A なです。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_018",
+    "pattern": "（N は）A い/A なですか。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_019",
+    "pattern": "（N は）A いくて ＋ A い/A なです。れいこの本ほん",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_020",
+    "pattern": "（N は）A なで ＋ A な/A いです。れい日に本ほん語ご",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_021",
+    "pattern": "（N は）どうですか。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_022",
+    "pattern": "～が～",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　忙いそが",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しかったです。　Tuần trước thì bận rộn.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "は　そんなに　寒さむ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_023",
+    "pattern": "どんな N ですか？  →  A いN/A なN",
+    "meaning": {
+      "vi": "N thì như thế nào?",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "さくて　かわいかったお店みせ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "です。　　〇　小ちい",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "さくて　かわいいお店みせ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_025",
+    "pattern": "N1   （は） N2 より　A です。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　大おお阪さか",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "より　人ひと",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "が　多おお",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_026",
+    "pattern": "Thể thường của câu N và A な",
+    "meaning": {
+      "vi": "Hiện tại, tương lai",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_027",
+    "pattern": "（N1 は） từ nghi vấn/N2/A な？",
+    "meaning": {
+      "vi": "(Thể thường của Dạng nghi vấn câu N",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "さんの　かばん？Đây là túi của anh Tanaka đúng không?",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "B: うん、そう。                                    Ừ, đúng vậy.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "らしは　大たい変へん",
+        "kana": "",
+        "vi": "？Sống một mình thì vất vả đúng không?",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_028",
+    "pattern": "（N1は） N2 / Aな  （だよ/だね/だよね）。(Thể thường của Dạng khẳng định câu N",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "B: うん。ベトナムの　コーヒーだよ。  Đúng vậy. Cà phê Việt Nam đấy.",
+        "kana": "",
+        "vi": "28.1",
+        "en": ""
+      },
+      {
+        "ja": "28.2いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・「 です」 → 「だ」 nhưng thường được lược bỏ.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_029",
+    "pattern": "（N1 は）N2/A なじゃない？",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_030",
+    "pattern": "（N1 は）　N2 / A なじゃない。",
+    "meaning": {
+      "vi": "N1 không phải N2/ không (có đặc điểm,",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_032",
+    "pattern": "N1 はN2/ Ａなじゃなかった。",
+    "meaning": {
+      "vi": "(Thể thường của Dạng phủ định câu N",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "A: 日に本ほん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "の　生せい活かつ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "は　大たい変へん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_033",
+    "pattern": "Thể thường của câu A い",
+    "meaning": {
+      "vi": "Hiện tại, tương lai",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_034",
+    "pattern": "（N は）　A い？",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_035",
+    "pattern": "（N は）　A い 。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_036",
+    "pattern": "～けど～",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_037",
+    "pattern": "（N は） A いかった。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "い　→　高たか",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "かった　　　　面おも白しろ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "い　→　面おも白しろかった",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_039",
+    "pattern": "N1 (địa điểm) に　N2(sự vật) が　あります。　 Ở N1 có N2/Có N2 (nằm) ở N1.れい",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "に　オートバイが　あります。　　　　Ở trong sân có chiếc xe máy.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　かばんが　あります。    Ở trên giường có cái cặp.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Mẫu câu miêu tả vị trí tồn tại của đồ vật, tòa nhà, cây cối,....",
+        "kana": "",
+        "vi": "☆",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_041",
+    "pattern": "N1(người, động vật) は　N2(địa điểm) に　います",
+    "meaning": {
+      "vi": "N1 (người, động vật)",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "B: あ、あそこに　いますよ。 À, chị ấy có ở đằng kia đấy.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Có 2 cách khi hỏi về vị trí, địa điểm của người/động vật:",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "❶ N は　どこですか。　　　　❷ N は　どこに　いますか。",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_042",
+    "pattern": "N1(địa điểm) に　N2(người, động vật) が　います",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "が　いますよ。かわいいですね。",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "Đằng kia có 1 chú mèo đấy. Đáng yêu nhỉ!いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Khi hỏi về sự tồn tại của ai đó, ta dùng nghi vấn từ 誰だれ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_043",
+    "pattern": "N には/ にも～",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "には　高たかい山やま",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "が　たくさん　あります。     Ở Nhật có rất nhiều ngọn núi cao.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "い　山やま",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_044",
+    "pattern": "N1 と　N2",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　家いえ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "には、犬いぬ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "と　鳥とり",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_045",
+    "pattern": "Số lượng từ + います/ あります",
+    "meaning": {
+      "vi": "→ Có (số lượng) người/ động vật/ đồ vậtれい",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　家いえ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "には　犬いぬ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "が　2 匹ひき",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_046",
+    "pattern": "V ます｜V ました",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "ます：ngủ　　　　　　　　寝ね",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "ました ： đã ngủ起お",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "きます： thức dậy　　　　　起お",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_047",
+    "pattern": "〜時じ間かん",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "日　10 時じ間かん働はたら",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "きました。　　Hôm qua tôi đã làm việc 10 tiếng.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Không thêm trợ từ vào sau lượng từ chỉ khoảng thời gian xảy ra hành động",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_049",
+    "pattern": "V ません｜V ませんでした。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "いもうと",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "は　全ぜん然ぜん勉べん強きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しません。 　Em gái tôi hoàn toàn không học.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_050",
+    "pattern": "N(địa điểm) へ/ に　帰かえります",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "、国くに",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　帰かえ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "ります。 　　　　　   Năm sau tôi sẽ về nước.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_051",
+    "pattern": "N(địa điểm) へ/ に　行いきます",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "、タイに　行い",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "きます。 　　　Năm sau tôi sẽ đi Thái.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　病びょう院いん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_052",
+    "pattern": "N(địa điểm) へ/ に　来きます",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　家いえ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　来き",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "ました。 　　　Chị Mai đã đến nhà tôi.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_053",
+    "pattern": "どこ / だれ / 何なに",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "で　何なに",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "か　買か",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "いましたか？　　　　　　Bạn có mua gì ở Tokyo không?",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_054",
+    "pattern": "どこ / だれ / 何なに",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "日、誰だれ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "かと　勉べん強きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しますか？              Hôm nay bạn có học cùng ai không?",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_056",
+    "pattern": "N が　欲ほ",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　新あたら",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しい　スマホが　欲ほ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しいです。  Tôi muốn điện thoại thông minh mới.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_057",
+    "pattern": "N が/ を　V ますたいです。Muốn Vれい",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "なワインが　飲の",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "みたいです。  Tôi muốn uống rượu vang nổi tiếng của Pháp.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Mẫu câu được dùng để diễn tả mong muốn thực hiện hành động nào đó.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_058",
+    "pattern": "V ます ＋ 方かた",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "が　わかりません。　　Tôi không biết cách sử dụng máy tính.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "の　行いき方かた",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "が　わかりません。 　　Tôi không biết cách đi đến đại sứ quán.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_059",
+    "pattern": "Các nhóm động từ trong tiếng Nhật",
+    "meaning": {
+      "vi": "Nhóm 1  (_imasu)",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_060",
+    "pattern": "動どう詞し",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_061",
+    "pattern": "（N は）～が　V (thể khả năng)",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "けます。 　Bạn Hoa có thể chơi piano.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "で　フランスの　ワインが　買か",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "えます。",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_064",
+    "pattern": "N1 は　N2 が　 好すき・嫌きら",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　カラオケが　とても 好す",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "きです。でも、友とも達だち",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "は　カラオケが　嫌きら",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_065",
+    "pattern": "～から～",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "だから、お酒さけ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "が　飲の",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "めません。",
+        "kana": "",
+        "vi": "Vì Minh là trẻ con nên không thể uống rượu.",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_066",
+    "pattern": "N1 は　N2 が　A です。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　コーヒーが　おいしいです。　　Cửa hàng này có cà phê ngon.いみ",
+        "kana": "",
+        "vi": "Mẫu câu được dùng để diễn tả đặc trưng hay tính chất của một chủ thể (đồ vật, địa điểm, con người,..)",
+        "en": ""
+      },
+      {
+        "ja": "・「は」 đứng sau danh từ chủ thể.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・「が」 đứng sau danh từ là bộ phận, phương diện, khía cạnh thuộc chủ thể đó.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_067",
+    "pattern": "V ますか → V る？",
+    "meaning": {
+      "vi": "Thể thường câu nghi vấn của động từ.",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "、　出で",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "かける？ 　　　　　Cuối tuần cậu có ra ngoài không?",
+        "kana": "",
+        "vi": "☆",
+        "en": ""
+      },
+      {
+        "ja": "・Câu trả lời: Trường hợp trả lời cho câu hỏi xác nhận đúng, sai ở thể thường được biến đổi",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_068",
+    "pattern": "V る ＋ こと/ N　が　できる",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　会かい社しゃ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "では、　家いえ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "で　仕し事ごと",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_069",
+    "pattern": "V る + ことです",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　趣しゅ味み",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "は　料りょう理り",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "を　することです。　　Sở thích của tôi là nấu ăn..いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_070",
+    "pattern": "V ない",
+    "meaning": {
+      "vi": "Thể thường của Động từ dạng phủ định",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_071",
+    "pattern": "（一いっ緒しょ",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "に　富ふ士じ山さん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　登のぼ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "らない？　　Cùng đi leo núi Phú Sĩ không?",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_073",
+    "pattern": "V た",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "日、何なん時じ間かん働はたら",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "いた？　Hôm qua cậu đã làm việc mấy tiếng?",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "B: 9 時じ間かん働はたら",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_074",
+    "pattern": "〜 V たい",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "きたい。　　Tôi muốn đi Thái.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "、何なに",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "が　食た",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_075",
+    "pattern": "V よう",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "れたから、ちょっと　休やす",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "もう。 Mệt rồi, nghỉ một chút thôi.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　ジムに　行い",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_076",
+    "pattern": "V1 る/ N の　＋　前まえ",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "が　来くる前まえ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に、部へ屋や",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "を　片かた付づ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_077",
+    "pattern": "V1 た/ N の + 後あと",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　後あと",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "で、　カフェで　勉べん強きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しない？",
+        "kana": "",
+        "vi": "Sau giờ học, cậu có muốn học ở quán cà phê không?",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_078",
+    "pattern": "V1 たら、　V2",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "conditional",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "いたら、　ちょっと　休やす",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "みます。",
+        "kana": "",
+        "vi": "Sau khi đến khách sạn tôi sẽ nghỉ ngơi một chút.",
+        "en": ""
+      },
+      {
+        "ja": "んだら、　また　勉べん強きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_079",
+    "pattern": "V たばかりだ",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "を　卒そつ業ぎょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "したばかりです。",
+        "kana": "",
+        "vi": "Bạn Ánh vừa mới tốt nghiệp đại học năm ngoái.",
+        "en": ""
+      },
+      {
+        "ja": "に　日に本ほん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_080",
+    "pattern": "V たことが 　あります",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　日に本ほん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "で　働はたら",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "いたことが　あります。 　　　Mẹ tôi đã từng làm việc ở Nhật.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_081",
+    "pattern": "ば形けい",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "conditional",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_082",
+    "pattern": "V ば/ A い ければ 〜",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "に　行い",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "けば、　色いろ々いろ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "な　本ほん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_083",
+    "pattern": "Từ nghi vấn + ば、 ～か。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "conditional",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "で　どのくらい待ま",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "てば、ラーメンが食た",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "べられますか？",
+        "kana": "",
+        "vi": "Ở quán này, chờ khoảng bao lâu thì có thể ăn ramen?",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_084",
+    "pattern": "V なければ、〜",
+    "meaning": {
+      "vi": "Nếu không ～ thì không ～",
+      "en": ""
+    },
+    "category": "conditional",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "がなければ、5 時じ半はん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "の　電でん車しゃ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　間まに合あ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_085",
+    "pattern": "V なきゃ、～",
+    "meaning": {
+      "vi": "Nếu không ～ thì không ～",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "で　聞き",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "かなきゃ、わからない。",
+        "kana": "",
+        "vi": "Điều đó nếu không hỏi qua điện thoại thì không biết được.",
+        "en": ""
+      },
+      {
+        "ja": "べなきゃ、もったいないですよ。　Nếu không ăn hết thì sẽ lãng phí lắm!いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_086",
+    "pattern": "V なきゃいけない",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "が　買か",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "いたいな。　　　　　　　　　　　Tớ muốn mua xe quá.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "B: じゃ、一いっ生しょう懸けん命めい働はたら",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_087",
+    "pattern": "て形けい",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_088",
+    "pattern": "V １て、V2 て、…V",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "して、朝あさ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "ごはんを　食た",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "べて、それから　勉べん強きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_089",
+    "pattern": "V1 てから V2",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "びてから、出で",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "かけます。　　 Sau khi tắm xong tôi sẽ ra ngoài.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_090",
+    "pattern": "～V ている",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "どこに　いる？　Bây giờ cậu đang ở đâu?",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "B: 食しょく堂どう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "で　ご飯はん食た",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_091",
+    "pattern": "N が　V て ＋ います",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "、東とう京きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "では　雪ゆき",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "が　降ふ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_092",
+    "pattern": "N が 　V ています",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "で　勉べん強きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しています。Bạn Hoa học ở thư viện mỗi ngày.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Diễn tả thói quen, lối sống.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_093",
+    "pattern": "N が　V ている",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　ドアが　閉し",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "まっています。　　　Cửa của phòng họp đang đóngいみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Diễn tả trạng thái, kết quả của hành động.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_094",
+    "pattern": "V て ＋ います",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　フランスに　住す",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "んでいます。　　　Chị gái tôi đang sống ở Pháp.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "は　東とう京きょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_096",
+    "pattern": "V ても　いいです。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "A: お庭にわ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "の　花はな",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "、きれいですね。　　Hoa trong vườn đẹp quá nhỉ!",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_098",
+    "pattern": "V なくても　いいです。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "copula",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "日は　休やす",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "みだから、朝あさ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "7 時じ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_100",
+    "pattern": "V てくれますか　（→ V てくれる？）",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "、この資し料りょう",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "、ちょっと　確かく認にん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "してくれますか。",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_101",
+    "pattern": "N1 は/ が（私わたし",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　本ほん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "を　くれました。Bạn Hoa đã cho tôi cuốn sách tiếng Việt.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Mẫu câu dùng để diễn tả việc ai đó cho người nói (hoặc người có mối quan hệ gần gũi,",
+        "kana": "",
+        "vi": "thân thiết với người nói).",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_102",
+    "pattern": "N は/ が（私わたし",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "が　自じ転てん車しゃ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "を　買か",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "ってくれました。Bà đã mua xe đạp cho tôi.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_103",
+    "pattern": "N1 は/ が　N2 に　N3 を　あげる",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は）弟",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "おとうと",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　古ふるい自じ転てん車しゃ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_104",
+    "pattern": "N1 は/ が　N2 に　V てあげる",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　友とも達だち",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　お金かね",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "を　貸か",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_105",
+    "pattern": "V ましょうか/ V ようか",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "invitation",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "、多おお",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "いね。少すこ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "し　持も",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_106",
+    "pattern": "N/số từ ＋ しか ～V ません/ V ない。",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "verb-forms",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　中なか",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　ビールが　2 本ほん",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "しかない。　　Chỉ có 2 chai bia trong tủ lạnh.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_107",
+    "pattern": "N/số từ  ＋ だけ〜",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "general",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "だけ　待ま",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "ってください。      Chỉ 5 phút thôi, hãy đợi tôi!",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "だから、昼ひる",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_108",
+    "pattern": "N (chủ đề) は 〜れい",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "は　この教きょう室しつ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "の　外そと",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "で　食た",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_109",
+    "pattern": "N1 は 〜 が/ けど、 N2 は 〜",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "particles",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "Cầu lông thì tôi từng chơi, nhưng tennis thì tôi chưa từng.いみ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "・Cấu trúc này được sử dụng để so sánh, nhấn mạnh sự khác biệt giữa N1 và N2.",
+        "kana": "",
+        "vi": "☆",
+        "en": ""
+      },
+      {
+        "ja": "・ Có thể sử dụng câu đơn có một từ 「は」, nhưng thường trong câu sẽ có ẩn ý, ám chỉ khác.",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_110",
+    "pattern": "A い /A な + さ",
+    "meaning": {
+      "vi": "→　 大たい変へん",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "の　便べん利り",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "さは、世せ界かい",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "で　有ゆう名めい",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  },
+  {
+    "id": "g_112",
+    "pattern": "A な/N ＋ なら",
+    "meaning": {
+      "vi": "",
+      "en": ""
+    },
+    "category": "adjectives",
+    "jlptLevel": "N5",
+    "chapter": 0,
+    "explanation": {
+      "vi": "",
+      "en": ""
+    },
+    "nuances": [],
+    "examples": [
+      {
+        "ja": "みなら、一いっ緒しょ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "に　遊あそ",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      },
+      {
+        "ja": "びに　行い",
+        "kana": "",
+        "vi": "",
+        "en": ""
+      }
+    ],
+    "relatedGrammar": [],
+    "tags": []
+  }
+]

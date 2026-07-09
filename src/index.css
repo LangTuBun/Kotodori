@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0a0a;
+  --color-paper: #fafaf7;
+  --color-yellow: #ffe600;
+  --color-red: #ff2d2d;
+  --color-green: #00cc66;
+  --color-blue: #0057ff;
+  --color-surface: #f0ede6;
+  --color-muted: #6b6b6b;
+
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-jp: 'Noto Sans JP', sans-serif;
+}
+
+/* border-3 is not a Tailwind v4 default — define it here */
+@utility border-3 {
+  border-width: 3px;
+}
+@utility border-t-3 {
+  border-top-width: 3px;
+}
+@utility border-b-3 {
+  border-bottom-width: 3px;
+}
+@utility border-l-3 {
+  border-left-width: 3px;
+}
+@utility border-r-3 {
+  border-right-width: 3px;
+}
+@utility border-x-3 {
+  border-left-width: 3px;
+  border-right-width: 3px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background-color: #fafaf7;
+  color: #0a0a0a;
+}
+
+body { margin: 0; padding: 0; min-height: 100vh; }
+
+.jp { font-family: 'Noto Sans JP', sans-serif; }
+
+ruby { font-family: 'Noto Sans JP', sans-serif; }
+rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: #6b6b6b; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f0ede6; }
+::-webkit-scrollbar-thumb { background: #0a0a0a; }
+
+:focus-visible { outline: 3px solid #ffe600; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
