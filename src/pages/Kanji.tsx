@@ -170,12 +170,6 @@ function KanjiGroupCard({ group, chapterNum, accent }: { group: KanjiGroup; chap
       <ul className="space-y-1.5">
         {group.words.map((w, i) => (
           <li key={i} className="flex items-start gap-2 text-sm">
-            {w.curated && (
-              <span
-                title="Từ bổ sung thêm (không có trong giáo trình gốc)"
-                className="w-1.5 h-1.5 rounded-full bg-yellow border border-ink/40 shrink-0 mt-1.5"
-              />
-            )}
             <span className="jp font-bold leading-snug shrink-0 min-w-[3.5rem]">
               <Furigana kanji={w.kanji} kana={w.kana} />
             </span>

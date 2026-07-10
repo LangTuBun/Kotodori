@@ -30,6 +30,19 @@ export function VocabBrowser() {
     })
   }, [search, chapter, pos])
 
+  const groupedByChapter = useMemo(() => {
+    const map = new Map<number, VocabEntry[]>()
+    for (const v of filtered) {
+      if (!map.has(v.chapter)) map.set(v.chapter, [])
+      map.get(v.chapter)!.push(v)
+    }
+    return [...map.entries()].sort(([a], [b]) => {
+      if (a === 0) return 1
+      if (b === 0) return -1
+      return a - b
+    })
+  }, [filtered])
+
   return (
     <div className="flex h-screen overflow-hidden">
       {/* List panel */}
@@ -65,40 +78,47 @@ export function VocabBrowser() {
           {filtered.length} words
         </div>
 
-        {/* Word list */}
+        {/* Word list, grouped and sorted by chapter */}
         <div className="flex-1 overflow-y-auto">
-          {filtered.map((v, idx) => {
-            const card = getCard(v.id)
-            return (
-              <button
-                key={v.id}
-                onClick={() => setSelected(v)}
-                className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${selected?.id === v.id ? 'bg-ink text-paper' : ''}`}
-              >
-                <div className="text-xs font-black text-muted w-8 shrink-0 text-right">{idx + 1}</div>
-                <div className="flex-1">
-                  <div className="font-bold text-lg jp leading-tight">
-                    <Furigana kanji={v.kanji} kana={v.kana} />
-                  </div>
-                  <div className={`text-xs mt-0.5 ${selected?.id === v.id ? 'text-paper/70' : 'text-muted'}`}>
-                    {v.meanings.vi.slice(0, 60)}
-                  </div>
-                </div>
-                <div className="flex flex-col items-end gap-1">
-                  <PosTag pos={v.pos} verbGroup={v.verbGroup} />
-                  {card && (
-                    <span className={`text-xs font-bold px-1.5 py-0.5 border border-current ${
-                      card.state === 'mastered' ? 'text-green' :
-                      card.state === 'review' ? 'text-yellow' :
-                      card.state === 'learning' ? 'text-blue' : 'text-muted'
-                    }`}>
-                      {card.state}
-                    </span>
-                  )}
-                </div>
-              </button>
-            )
-          })}
+          {groupedByChapter.map(([chapterNum, items]) => (
+            <div key={chapterNum}>
+              <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">
+                <span>{chapterNum === 0 ? 'Chưa rõ chương' : `Chương ${chapterNum}`}</span>
+                <span className="text-paper/60 font-bold">{items.length}</span>
+              </div>
+              {items.map(v => {
+                const card = getCard(v.id)
+                return (
+                  <button
+                    key={v.id}
+                    onClick={() => setSelected(v)}
+                    className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${selected?.id === v.id ? 'bg-ink text-paper' : ''}`}
+                  >
+                    <div className="flex-1">
+                      <div className="font-bold text-lg jp leading-tight">
+                        <Furigana kanji={v.kanji} kana={v.kana} />
+                      </div>
+                      <div className={`text-xs mt-0.5 ${selected?.id === v.id ? 'text-paper/70' : 'text-muted'}`}>
+                        {v.meanings.vi.slice(0, 60)}
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-end gap-1">
+                      <PosTag pos={v.pos} verbGroup={v.verbGroup} />
+                      {card && (
+                        <span className={`text-xs font-bold px-1.5 py-0.5 border border-current ${
+                          card.state === 'mastered' ? 'text-green' :
+                          card.state === 'review' ? 'text-yellow' :
+                          card.state === 'learning' ? 'text-blue' : 'text-muted'
+                        }`}>
+                          {card.state}
+                        </span>
+                      )}
+                    </div>
+                  </button>
+                )
+              })}
+            </div>
+          ))}
         </div>
       </div>
 
