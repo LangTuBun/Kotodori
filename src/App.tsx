@@ -6,6 +6,7 @@ import { Review } from "@/pages/Review"
 import { Grammar } from "@/pages/Grammar"
 import { VerbForms } from "@/pages/VerbForms"
 import { Homophones } from "@/pages/Homophones"
+import { Kanji } from "@/pages/Kanji"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="review" element={<Review />} />
           <Route path="grammar" element={<Grammar />} />
           <Route path="verb-forms" element={<VerbForms />} />
+          <Route path="kanji" element={<Kanji />} />
           <Route path="homophones" element={<Homophones />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

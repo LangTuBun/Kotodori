@@ -114,6 +114,34 @@ export interface HomophoneGroup {
   difficultyScore: number
 }
 
+export interface KanjiWord {
+  kanji: string
+  kana: string
+  hanviet: string
+  meaning: string
+  onkun: string
+  curated?: boolean
+}
+
+export interface KanjiGroup {
+  id: string
+  anchor: string
+  kana: string | null
+  hanviet: string | null
+  meaning: string | null
+  onkun: string | null
+  onyomi: string[]
+  kunyomi: string[]
+  words: KanjiWord[]
+}
+
+export interface KanjiChapter {
+  chapter: number
+  groupCount: number
+  wordCount: number
+  groups: KanjiGroup[]
+}
+
 export type SRSState = 'new' | 'learning' | 'review' | 'mastered'
 
 export interface SRSCard {
