@@ -27,7 +27,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2です"
+    "patternRuby": "(N1は) N2です",
+    "requiredVerbForm": []
   },
   {
     "id": "g_002",
@@ -57,7 +58,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2ですか"
+    "patternRuby": "(N1は) N2ですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_003",
@@ -87,7 +89,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nも"
+    "patternRuby": "Nも",
+    "requiredVerbForm": []
   },
   {
     "id": "g_004",
@@ -117,7 +120,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1は N2じゃないです/じゃありません/ではありません"
+    "patternRuby": "N1は N2じゃないです/じゃありません/ではありません",
+    "requiredVerbForm": []
   },
   {
     "id": "g_009",
@@ -147,7 +151,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2でした"
+    "patternRuby": "(N1は) N2でした",
+    "requiredVerbForm": []
   },
   {
     "id": "g_010",
@@ -177,7 +182,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2じゃなかったです/じゃありませんでした"
+    "patternRuby": "(N1は) N2じゃなかったです/じゃありませんでした",
+    "requiredVerbForm": []
   },
   {
     "id": "g_012",
@@ -207,7 +213,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2でN3です"
+    "patternRuby": "(N1は) N2でN3です",
+    "requiredVerbForm": []
   },
   {
     "id": "g_006",
@@ -237,7 +244,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(は)いくらですか"
+    "patternRuby": "N(は)いくらですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_007",
@@ -267,7 +275,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか"
+    "patternRuby": "N1は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_011_1",
@@ -297,7 +306,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の N2ですか"
+    "patternRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の N2ですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_011_2",
@@ -327,7 +337,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか"
+    "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_011_3",
@@ -357,7 +368,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "どこの N2ですか"
+    "patternRuby": "どこの N2ですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_011_4",
@@ -387,7 +399,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか"
+    "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_011_5",
@@ -417,7 +430,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1の N2"
+    "patternRuby": "N1の N2",
+    "requiredVerbForm": []
   },
   {
     "id": "g_008_1",
@@ -447,7 +461,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~ね"
+    "patternRuby": "~ね",
+    "requiredVerbForm": []
   },
   {
     "id": "g_008_2",
@@ -477,7 +492,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~よ"
+    "patternRuby": "~よ",
+    "requiredVerbForm": []
   },
   {
     "id": "g_008_3",
@@ -507,7 +523,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~よね"
+    "patternRuby": "~よね",
+    "requiredVerbForm": []
   },
   {
     "id": "g_005",
@@ -537,7 +554,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか"
+    "patternRuby": "Nは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_013",
@@ -567,7 +585,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aいです"
+    "patternRuby": "(Nは)Aいです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_014",
@@ -597,7 +616,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aくないです"
+    "patternRuby": "(Nは)Aくないです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_015",
@@ -627,7 +647,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aなです"
+    "patternRuby": "(Nは)Aなです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_016",
@@ -657,7 +678,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aなじゃないです/じゃありません"
+    "patternRuby": "(Nは)Aなじゃないです/じゃありません",
+    "requiredVerbForm": []
   },
   {
     "id": "g_017",
@@ -687,7 +709,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aい/Aなですか"
+    "patternRuby": "(Nは)Aい/Aなですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_018",
@@ -717,7 +740,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aいくて+Aい/Aなです"
+    "patternRuby": "(Nは)Aいくて+Aい/Aなです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_019",
@@ -747,7 +771,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aなで+Aな/Aいです"
+    "patternRuby": "(Nは)Aなで+Aな/Aいです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_020",
@@ -777,7 +802,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)どうですか"
+    "patternRuby": "(Nは)どうですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_022",
@@ -807,7 +833,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aいかったです/Aいくなかったです"
+    "patternRuby": "(Nは)Aいかったです/Aいくなかったです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_023",
@@ -837,7 +864,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aなでした/Aなじゃなかったです"
+    "patternRuby": "(Nは)Aなでした/Aなじゃなかったです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_024",
@@ -867,7 +895,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "どんなNですか？→ AいN/AなN"
+    "patternRuby": "どんなNですか？→ AいN/AなN",
+    "requiredVerbForm": []
   },
   {
     "id": "g_021",
@@ -897,7 +926,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~が~"
+    "patternRuby": "~が~",
+    "requiredVerbForm": []
   },
   {
     "id": "g_025",
@@ -927,7 +957,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1で <ruby>疑問<rp>(</rp><rt>ぎもん</rt><rp>)</rp></ruby><ruby>詞<rp>(</rp><rt>ことば</rt><rp>)</rp></ruby> が<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby>Aですか"
+    "patternRuby": "N1で <ruby>疑問<rp>(</rp><rt>ぎもん</rt><rp>)</rp></ruby><ruby>詞<rp>(</rp><rt>ことば</rt><rp>)</rp></ruby> が<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby>Aですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_026",
@@ -957,7 +988,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1とN2(と)、どっち/どちらがAですか"
+    "patternRuby": "N1とN2(と)、どっち/どちらがAですか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_027",
@@ -987,7 +1019,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1(は) N2よりAです"
+    "patternRuby": "N1(は) N2よりAです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_028_1",
@@ -1017,7 +1050,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Thể thường của N/A (だ thay です)"
+    "patternRuby": "Thể thường của N/A (だ thay です)",
+    "requiredVerbForm": []
   },
   {
     "id": "g_028_2",
@@ -1047,7 +1081,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) từ nghi vấn/N2/A?"
+    "patternRuby": "(N1は) từ nghi vấn/N2/A?",
+    "requiredVerbForm": []
   },
   {
     "id": "g_029",
@@ -1077,7 +1112,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2/A(だよ/だね/だよね)"
+    "patternRuby": "(N1は) N2/A(だよ/だね/だよね)",
+    "requiredVerbForm": []
   },
   {
     "id": "g_030_1",
@@ -1107,7 +1143,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2/Aなじゃない？"
+    "patternRuby": "(N1は) N2/Aなじゃない？",
+    "requiredVerbForm": []
   },
   {
     "id": "g_030_2",
@@ -1137,7 +1174,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2/Aなじゃない"
+    "patternRuby": "(N1は) N2/Aなじゃない",
+    "requiredVerbForm": []
   },
   {
     "id": "g_031",
@@ -1167,7 +1205,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1は) N2/Aだった？/Aなだった"
+    "patternRuby": "(N1は) N2/Aだった？/Aなだった",
+    "requiredVerbForm": []
   },
   {
     "id": "g_032",
@@ -1197,7 +1236,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1は N2/Aなじゃなかった"
+    "patternRuby": "N1は N2/Aなじゃなかった",
+    "requiredVerbForm": []
   },
   {
     "id": "g_033_1",
@@ -1227,7 +1267,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aい？"
+    "patternRuby": "(Nは)Aい？",
+    "requiredVerbForm": []
   },
   {
     "id": "g_033_2",
@@ -1257,7 +1298,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aい"
+    "patternRuby": "(Nは)Aい",
+    "requiredVerbForm": []
   },
   {
     "id": "g_034",
@@ -1287,7 +1329,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~けど~"
+    "patternRuby": "~けど~",
+    "requiredVerbForm": []
   },
   {
     "id": "g_035",
@@ -1317,7 +1360,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aいかった"
+    "patternRuby": "(Nは)Aいかった",
+    "requiredVerbForm": []
   },
   {
     "id": "g_036",
@@ -1347,7 +1391,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)Aいくなかった"
+    "patternRuby": "(Nは)Aいくなかった",
+    "requiredVerbForm": []
   },
   {
     "id": "g_037",
@@ -1377,7 +1422,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(は)ありますか"
+    "patternRuby": "N(は)ありますか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_038_1",
@@ -1407,7 +1453,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1(sự vật)は N2(địa điểm)です/にあります"
+    "patternRuby": "N1(sự vật)は N2(địa điểm)です/にあります",
+    "requiredVerbForm": []
   },
   {
     "id": "g_038_2",
@@ -1437,7 +1484,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1(địa điểm)に N2(sự vật)があります"
+    "patternRuby": "N1(địa điểm)に N2(sự vật)があります",
+    "requiredVerbForm": []
   },
   {
     "id": "g_039",
@@ -1467,7 +1515,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)いますか"
+    "patternRuby": "(Nは)いますか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_040_1",
@@ -1497,7 +1546,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1(người/vật)は N2(địa điểm)にいます"
+    "patternRuby": "N1(người/vật)は N2(địa điểm)にいます",
+    "requiredVerbForm": []
   },
   {
     "id": "g_040_2",
@@ -1527,7 +1577,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1(địa điểm)に N2(người/vật)がいます"
+    "patternRuby": "N1(địa điểm)に N2(người/vật)がいます",
+    "requiredVerbForm": []
   },
   {
     "id": "g_041",
@@ -1557,7 +1608,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nには/にも~"
+    "patternRuby": "Nには/にも~",
+    "requiredVerbForm": []
   },
   {
     "id": "g_042",
@@ -1587,7 +1639,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1とN2"
+    "patternRuby": "N1とN2",
+    "requiredVerbForm": []
   },
   {
     "id": "g_043_1_2",
@@ -1617,7 +1670,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Số lượng từ + います/あります"
+    "patternRuby": "Số lượng từ + います/あります",
+    "requiredVerbForm": []
   },
   {
     "id": "g_044",
@@ -1647,7 +1701,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vます/Vました"
+    "patternRuby": "Vます/Vました",
+    "requiredVerbForm": []
   },
   {
     "id": "g_045",
@@ -1677,7 +1732,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に+V"
+    "patternRuby": "~<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に+V",
+    "requiredVerbForm": []
   },
   {
     "id": "g_046",
@@ -1707,7 +1763,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>/<ruby>分<rp>(</rp><rt>ぶん</rt><rp>)</rp></ruby>+V"
+    "patternRuby": "~<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>/<ruby>分<rp>(</rp><rt>ぶん</rt><rp>)</rp></ruby>+V",
+    "requiredVerbForm": []
   },
   {
     "id": "g_047",
@@ -1737,7 +1794,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~から~まで~V"
+    "patternRuby": "~から~まで~V",
+    "requiredVerbForm": []
   },
   {
     "id": "g_048",
@@ -1767,7 +1825,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vません/Vませんでした"
+    "patternRuby": "Vません/Vませんでした",
+    "requiredVerbForm": []
   },
   {
     "id": "g_049_1",
@@ -1797,7 +1856,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(địa điểm)へ/に<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります"
+    "patternRuby": "N(địa điểm)へ/に<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります",
+    "requiredVerbForm": []
   },
   {
     "id": "g_049_2",
@@ -1827,7 +1887,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(địa điểm)へ/に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます"
+    "patternRuby": "N(địa điểm)へ/に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます",
+    "requiredVerbForm": []
   },
   {
     "id": "g_049_3",
@@ -1857,7 +1918,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(địa điểm)へ/に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます"
+    "patternRuby": "N(địa điểm)へ/に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます",
+    "requiredVerbForm": []
   },
   {
     "id": "g_050_1",
@@ -1887,7 +1949,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(địa điểm)でV"
+    "patternRuby": "N(địa điểm)でV",
+    "requiredVerbForm": []
   },
   {
     "id": "g_050_2",
@@ -1917,7 +1980,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "NをV"
+    "patternRuby": "NをV",
+    "requiredVerbForm": []
   },
   {
     "id": "g_050_3",
@@ -1947,7 +2011,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "NとV"
+    "patternRuby": "NとV",
+    "requiredVerbForm": []
   },
   {
     "id": "g_051",
@@ -1977,7 +2042,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1とかN2(とか)/N1やN2(など)"
+    "patternRuby": "N1とかN2(とか)/N1やN2(など)",
+    "requiredVerbForm": []
   },
   {
     "id": "g_052",
@@ -2007,7 +2073,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+か+Vか"
+    "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+か+Vか",
+    "requiredVerbForm": []
   },
   {
     "id": "g_053",
@@ -2037,7 +2104,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+も+V(phủ định)"
+    "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+も+V(phủ định)",
+    "requiredVerbForm": []
   },
   {
     "id": "g_054",
@@ -2067,7 +2135,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nを(số lượng)ください/お<ruby>願<rp>(</rp><rt>ねが</rt><rp>)</rp></ruby>いします"
+    "patternRuby": "Nを(số lượng)ください/お<ruby>願<rp>(</rp><rt>ねが</rt><rp>)</rp></ruby>いします",
+    "requiredVerbForm": []
   },
   {
     "id": "g_055",
@@ -2097,7 +2166,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(thời gian)に+tần suất/số lượng+V"
+    "patternRuby": "(thời gian)に+tần suất/số lượng+V",
+    "requiredVerbForm": []
   },
   {
     "id": "g_056",
@@ -2127,7 +2197,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vませんか/Vましょう"
+    "patternRuby": "Vませんか/Vましょう",
+    "requiredVerbForm": []
   },
   {
     "id": "g_057",
@@ -2157,7 +2228,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nが<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいです"
+    "patternRuby": "Nが<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_058",
@@ -2187,7 +2259,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(N1へ/に)+Vます/N2に <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます/<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます/<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります"
+    "patternRuby": "(N1へ/に)+Vます/N2に <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます/<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます/<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります",
+    "requiredVerbForm": []
   },
   {
     "id": "g_059",
@@ -2217,7 +2290,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nが/をVたいです"
+    "patternRuby": "Nが/をVたいです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_060",
@@ -2247,7 +2321,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vます+<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>"
+    "patternRuby": "Vます+<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>",
+    "requiredVerbForm": []
   },
   {
     "id": "g_061_1",
@@ -2277,7 +2352,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Động từ khả năng (<ruby>可能<rp>(</rp><rt>かのう</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>がた</rt><rp>)</rp></ruby>)"
+    "patternRuby": "Động từ khả năng (<ruby>可能<rp>(</rp><rt>かのう</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>がた</rt><rp>)</rp></ruby>)",
+    "requiredVerbForm": [
+      "potential"
+    ]
   },
   {
     "id": "g_061_2",
@@ -2307,7 +2385,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(Nは)~がV(khả năng)"
+    "patternRuby": "(Nは)~がV(khả năng)",
+    "requiredVerbForm": [
+      "potential"
+    ]
   },
   {
     "id": "g_062",
@@ -2337,7 +2418,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(phương tiện)でV"
+    "patternRuby": "N(phương tiện)でV",
+    "requiredVerbForm": []
   },
   {
     "id": "g_063",
@@ -2367,7 +2449,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "かかります"
+    "patternRuby": "かかります",
+    "requiredVerbForm": []
   },
   {
     "id": "g_064",
@@ -2397,7 +2480,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Số tiền/thời gian+くらいです/で+V(khả năng)"
+    "patternRuby": "Số tiền/thời gian+くらいです/で+V(khả năng)",
+    "requiredVerbForm": [
+      "potential"
+    ]
   },
   {
     "id": "g_065",
@@ -2427,7 +2513,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1はN2が<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>き・<ruby>嫌<rp>(</rp><rt>きら</rt><rp>)</rp></ruby>い/<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>・<ruby>下手<rp>(</rp><rt>へた</rt><rp>)</rp></ruby>/<ruby>得意<rp>(</rp><rt>とくい</rt><rp>)</rp></ruby>・<ruby>苦手<rp>(</rp><rt>にがて</rt><rp>)</rp></ruby>だ・です"
+    "patternRuby": "N1はN2が<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>き・<ruby>嫌<rp>(</rp><rt>きら</rt><rp>)</rp></ruby>い/<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>・<ruby>下手<rp>(</rp><rt>へた</rt><rp>)</rp></ruby>/<ruby>得意<rp>(</rp><rt>とくい</rt><rp>)</rp></ruby>・<ruby>苦手<rp>(</rp><rt>にがて</rt><rp>)</rp></ruby>だ・です",
+    "requiredVerbForm": []
   },
   {
     "id": "g_066",
@@ -2457,7 +2544,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~から~"
+    "patternRuby": "~から~",
+    "requiredVerbForm": []
   },
   {
     "id": "g_067",
@@ -2487,7 +2575,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1はN2がAです"
+    "patternRuby": "N1はN2がAです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_068",
@@ -2517,7 +2606,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1がN2/Aです/NがVます"
+    "patternRuby": "N1がN2/Aです/NがVます",
+    "requiredVerbForm": []
   },
   {
     "id": "g_069",
@@ -2547,7 +2637,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Thể từ điển (Vる)"
+    "patternRuby": "Thể từ điển (Vる)",
+    "requiredVerbForm": [
+      "dictionary"
+    ]
   },
   {
     "id": "g_070",
@@ -2577,7 +2670,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vる？"
+    "patternRuby": "Vる？",
+    "requiredVerbForm": [
+      "dictionary"
+    ]
   },
   {
     "id": "g_071",
@@ -2607,7 +2703,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vる+こと/Nができる"
+    "patternRuby": "Vる+こと/Nができる",
+    "requiredVerbForm": [
+      "dictionary"
+    ]
   },
   {
     "id": "g_072",
@@ -2637,7 +2736,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vる+ことです"
+    "patternRuby": "Vる+ことです",
+    "requiredVerbForm": [
+      "dictionary"
+    ]
   },
   {
     "id": "g_073",
@@ -2667,7 +2769,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Thể ない (Vない)"
+    "patternRuby": "Thể ない (Vない)",
+    "requiredVerbForm": [
+      "nai"
+    ]
   },
   {
     "id": "g_074",
@@ -2697,7 +2802,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "(<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に)Vない？"
+    "patternRuby": "(<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に)Vない？",
+    "requiredVerbForm": [
+      "nai"
+    ]
   },
   {
     "id": "g_075",
@@ -2727,7 +2835,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V(khả năng)る/ V(khả năng)ない"
+    "patternRuby": "V(khả năng)る/ V(khả năng)ない",
+    "requiredVerbForm": [
+      "potential"
+    ]
   },
   {
     "id": "g_076",
@@ -2757,7 +2868,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Thể た (Vた)"
+    "patternRuby": "Thể た (Vた)",
+    "requiredVerbForm": [
+      "ta"
+    ]
   },
   {
     "id": "g_077",
@@ -2787,7 +2901,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V(khả năng)た/なかった"
+    "patternRuby": "V(khả năng)た/なかった",
+    "requiredVerbForm": [
+      "potential-past"
+    ]
   },
   {
     "id": "g_078",
@@ -2817,7 +2934,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~Vたい (thể thường)"
+    "patternRuby": "~Vたい (thể thường)",
+    "requiredVerbForm": []
   },
   {
     "id": "g_079",
@@ -2847,7 +2965,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vよう (thể ý chí)"
+    "patternRuby": "Vよう (thể ý chí)",
+    "requiredVerbForm": [
+      "volitional"
+    ]
   },
   {
     "id": "g_080_1",
@@ -2877,7 +2998,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V1る/Nの+<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、V2"
+    "patternRuby": "V1る/Nの+<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、V2",
+    "requiredVerbForm": [
+      "dictionary"
+    ]
   },
   {
     "id": "g_080_2",
@@ -2907,7 +3031,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V1た/Nの+<ruby>後<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>で、V2"
+    "patternRuby": "V1た/Nの+<ruby>後<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>で、V2",
+    "requiredVerbForm": [
+      "ta"
+    ]
   },
   {
     "id": "g_081",
@@ -2937,7 +3064,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V1たら、V2"
+    "patternRuby": "V1たら、V2",
+    "requiredVerbForm": [
+      "ta"
+    ]
   },
   {
     "id": "g_082",
@@ -2967,7 +3097,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vたばかりだ"
+    "patternRuby": "Vたばかりだ",
+    "requiredVerbForm": [
+      "ta"
+    ]
   },
   {
     "id": "g_083",
@@ -2997,7 +3130,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vたことがあります"
+    "patternRuby": "Vたことがあります",
+    "requiredVerbForm": [
+      "ta"
+    ]
   },
   {
     "id": "g_084",
@@ -3027,7 +3163,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Thể ば (Vば/Aいければ)"
+    "patternRuby": "Thể ば (Vば/Aいければ)",
+    "requiredVerbForm": [
+      "ba"
+    ]
   },
   {
     "id": "g_085",
@@ -3057,7 +3196,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vば/Aいければ~"
+    "patternRuby": "Vば/Aいければ~",
+    "requiredVerbForm": [
+      "ba"
+    ]
   },
   {
     "id": "g_086",
@@ -3087,7 +3229,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Từ nghi vấn+ば、~か"
+    "patternRuby": "Từ nghi vấn+ば、~か",
+    "requiredVerbForm": [
+      "ba"
+    ]
   },
   {
     "id": "g_087",
@@ -3117,7 +3262,11 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vなければ、~"
+    "patternRuby": "Vなければ、~",
+    "requiredVerbForm": [
+      "nai",
+      "ba"
+    ]
   },
   {
     "id": "g_088",
@@ -3147,7 +3296,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vなければなりません/いけません/Vないといけません"
+    "patternRuby": "Vなければなりません/いけません/Vないといけません",
+    "requiredVerbForm": [
+      "nai"
+    ]
   },
   {
     "id": "g_089",
@@ -3177,7 +3329,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vなきゃ、~"
+    "patternRuby": "Vなきゃ、~",
+    "requiredVerbForm": [
+      "nai"
+    ]
   },
   {
     "id": "g_090",
@@ -3207,7 +3362,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vなきゃいけない"
+    "patternRuby": "Vなきゃいけない",
+    "requiredVerbForm": [
+      "nai"
+    ]
   },
   {
     "id": "g_112",
@@ -3237,7 +3395,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V/Aい/Aな/N(thể thường)+なら"
+    "patternRuby": "V/Aい/Aな/N(thể thường)+なら",
+    "requiredVerbForm": []
   },
   {
     "id": "g_113",
@@ -3267,7 +3426,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Aな/N+なら"
+    "patternRuby": "Aな/N+なら",
+    "requiredVerbForm": []
   },
   {
     "id": "g_091",
@@ -3297,7 +3457,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Thể て (Vて)"
+    "patternRuby": "Thể て (Vて)",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_092",
@@ -3327,7 +3490,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V1て、V2て、…V"
+    "patternRuby": "V1て、V2て、…V",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_093",
@@ -3357,7 +3523,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "V1てから V2"
+    "patternRuby": "V1てから V2",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_094_1",
@@ -3387,7 +3556,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "~Vている"
+    "patternRuby": "~Vている",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_094_2",
@@ -3417,7 +3589,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "NがVて+います"
+    "patternRuby": "NがVて+います",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_094_3",
@@ -3447,7 +3622,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "NがVています"
+    "patternRuby": "NがVています",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_094_4",
@@ -3477,7 +3655,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "NがVている"
+    "patternRuby": "NがVている",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_094_5",
@@ -3507,7 +3688,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vて+います"
+    "patternRuby": "Vて+います",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_095",
@@ -3537,7 +3721,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか"
+    "patternRuby": "Nを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_096",
@@ -3567,7 +3754,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nでも+いい/<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>です/かまわないです"
+    "patternRuby": "Nでも+いい/<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>です/かまわないです",
+    "requiredVerbForm": []
   },
   {
     "id": "g_097",
@@ -3597,7 +3785,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vてもいいですか/だいじょうぶですか/かまわないですか"
+    "patternRuby": "Vてもいいですか/だいじょうぶですか/かまわないですか",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_098_1",
@@ -3627,7 +3818,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vてもいいです"
+    "patternRuby": "Vてもいいです",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_098_2",
@@ -3657,7 +3851,11 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vなくてもいいです"
+    "patternRuby": "Vなくてもいいです",
+    "requiredVerbForm": [
+      "nai",
+      "te"
+    ]
   },
   {
     "id": "g_099",
@@ -3687,7 +3885,11 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vて+ください/Vない+で+ください"
+    "patternRuby": "Vて+ください/Vない+で+ください",
+    "requiredVerbForm": [
+      "nai",
+      "te"
+    ]
   },
   {
     "id": "g_100",
@@ -3717,7 +3919,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vてくれますか（→Vてくれる？）"
+    "patternRuby": "Vてくれますか（→Vてくれる？）",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_101",
@@ -3747,7 +3952,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vて+くれませんか/くださいませんか"
+    "patternRuby": "Vて+くれませんか/くださいませんか",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_102",
@@ -3777,7 +3985,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1は/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に) N2をくれる"
+    "patternRuby": "N1は/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に) N2をくれる",
+    "requiredVerbForm": []
   },
   {
     "id": "g_103",
@@ -3807,7 +4016,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Nは/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に)~Vてくれる"
+    "patternRuby": "Nは/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に)~Vてくれる",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_104",
@@ -3837,7 +4049,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1は/が N2に N3をあげる"
+    "patternRuby": "N1は/が N2に N3をあげる",
+    "requiredVerbForm": []
   },
   {
     "id": "g_105",
@@ -3867,7 +4080,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1は/が N2にVてあげる"
+    "patternRuby": "N1は/が N2にVてあげる",
+    "requiredVerbForm": [
+      "te"
+    ]
   },
   {
     "id": "g_106",
@@ -3897,7 +4113,10 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Vましょうか/Vようか"
+    "patternRuby": "Vましょうか/Vようか",
+    "requiredVerbForm": [
+      "volitional"
+    ]
   },
   {
     "id": "g_107",
@@ -3927,7 +4146,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N/số từ+しか~Vません/Vない"
+    "patternRuby": "N/số từ+しか~Vません/Vない",
+    "requiredVerbForm": []
   },
   {
     "id": "g_108",
@@ -3957,7 +4177,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N/số từ+だけ~"
+    "patternRuby": "N/số từ+だけ~",
+    "requiredVerbForm": []
   },
   {
     "id": "g_109",
@@ -3987,7 +4208,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N(chủ đề)は~"
+    "patternRuby": "N(chủ đề)は~",
+    "requiredVerbForm": []
   },
   {
     "id": "g_110",
@@ -4017,7 +4239,8 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "N1は~が/けど、N2は~"
+    "patternRuby": "N1は~が/けど、N2は~",
+    "requiredVerbForm": []
   },
   {
     "id": "g_111",
@@ -4047,6 +4270,7 @@
     ],
     "relatedGrammar": [],
     "tags": [],
-    "patternRuby": "Aい/Aな+さ"
+    "patternRuby": "Aい/Aな+さ",
+    "requiredVerbForm": []
   }
 ]

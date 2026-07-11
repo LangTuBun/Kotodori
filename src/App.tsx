@@ -7,6 +7,7 @@ import { Grammar } from "@/pages/Grammar"
 import { VerbForms } from "@/pages/VerbForms"
 import { Homophones } from "@/pages/Homophones"
 import { Kanji } from "@/pages/Kanji"
+import { Counters } from "@/pages/Counters"
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="grammar" element={<Grammar />} />
           <Route path="verb-forms" element={<VerbForms />} />
           <Route path="kanji" element={<Kanji />} />
+          <Route path="counters" element={<Counters />} />
           <Route path="homophones" element={<Homophones />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

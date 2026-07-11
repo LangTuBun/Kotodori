@@ -29,6 +29,7 @@ export interface GrammarPoint {
   examples: Array<{ ja: string; jaRuby?: string; kana: string; vi: string; en: string }>
   relatedGrammar: string[]
   tags: string[]
+  requiredVerbForm: string[]
 }
 
 export interface GrammarCategory {
@@ -140,6 +141,45 @@ export interface KanjiChapter {
   groupCount: number
   wordCount: number
   groups: KanjiGroup[]
+}
+
+export interface CounterRow {
+  number: string
+  kanji: string
+  kana: string
+  romaji?: string
+  meaning?: string
+  note?: string
+  isQuestion?: boolean
+}
+
+export type CounterColumn = 'number' | 'kanji' | 'kana' | 'romaji' | 'meaning' | 'note'
+
+export interface CounterCategory {
+  id: string
+  title: string
+  shortTitle: string
+  counter?: string
+  counterKana?: string
+  usage?: string
+  columns: CounterColumn[]
+  rows: CounterRow[]
+  footnote?: string
+  wide?: boolean
+}
+
+export interface CounterBigNumberExample {
+  kanji: string
+  kana: string
+  romaji: string
+  meaning: string
+}
+
+export interface CountersData {
+  title: string
+  intro: string
+  categories: CounterCategory[]
+  bigNumberExamples: CounterBigNumberExample[]
 }
 
 export type SRSState = 'new' | 'learning' | 'review' | 'mastered'

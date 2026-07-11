@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import verbFormsData from "@/data/n5/verb-forms.json"
-import type { VerbFormsData } from "@/types"
+import grammarData from "@/data/n5/grammar.json"
+import type { VerbFormsData, GrammarPoint } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
 
 const data = verbFormsData as unknown as VerbFormsData
+const grammar = grammarData as GrammarPoint[]
 
 const HEADER_RUBY = '<ruby>動詞<rp>(</rp><rt>どうし</rt><rp>)</rp></ruby>の<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>'
 
@@ -20,9 +23,15 @@ function groupLabel(g: number | string) {
 }
 
 export function VerbForms() {
+  const navigate = useNavigate()
   const [activeForm, setActiveForm] = useState(data.forms[0].id)
   const [showCheatSheet, setShowCheatSheet] = useState(true)
   const form = data.forms.find(f => f.id === activeForm)!
+
+  const relatedGrammar = useMemo(
+    () => grammar.filter(g => g.requiredVerbForm?.includes(activeForm)),
+    [activeForm]
+  )
 
   return (
     <div className="h-screen overflow-y-auto">
@@ -149,13 +158,40 @@ export function VerbForms() {
 
           {/* Exceptions */}
           {form.exceptions.length > 0 && (
-            <div className="border-3 border-red bg-red/5 p-4">
+            <div className="border-3 border-red bg-red/5 p-4 mb-5">
               <div className="text-xs font-black uppercase tracking-wider mb-2 text-red">Ngoại lệ</div>
               {form.exceptions.map((e, i) => (
                 <div key={i} className="text-sm font-bold">
                   <Ruby text={e} html={form.exceptionsRuby?.[i]} />
                 </div>
               ))}
+            </div>
+          )}
+
+          {/* Related grammar — cross-links into the Grammar tab */}
+          {relatedGrammar.length > 0 && (
+            <div>
+              <div className="text-xs font-black uppercase tracking-wider mb-3 text-muted">Ngữ pháp áp dụng</div>
+              <div className="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1">
+                {relatedGrammar.map(g => (
+                  <button
+                    key={g.id}
+                    onClick={() => navigate(`/grammar?point=${g.id}`)}
+                    className="group shrink-0 w-56 text-left border-3 border-ink bg-paper p-3 cursor-pointer transition-all hover:shadow-[4px_4px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5"
+                    style={{ borderLeftWidth: '6px', borderLeftColor: '#0057ff' }}
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="jp font-bold text-sm leading-snug">
+                        <Ruby text={g.pattern} html={g.patternRuby} />
+                      </div>
+                      <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-all">
+                        →
+                      </span>
+                    </div>
+                    <div className="text-xs mt-2 leading-relaxed text-muted">{g.meaning.vi}</div>
+                  </button>
+                ))}
+              </div>
             </div>
           )}
         </div>

@@ -1,39 +1,96 @@
 import { useState } from "react"
 import vocabData from "@/data/n5/vocabulary.json"
-import type { VocabEntry } from "@/types"
+import kanjiData from "@/data/n5/kanji.json"
+import type { VocabEntry, KanjiChapter } from "@/types"
 import { Button } from "@/components/ui/Button"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
 
 const vocab = vocabData as VocabEntry[]
+const kanjiChapters = kanjiData.chapters as KanjiChapter[]
 
 // Normalize kana for similarity matching:
 // 1. Katakana → hiragana
 // 2. Same-pronunciation subs (ぢ→じ, づ→ず)
 // 3. Remove long vowel mark ー
-// 4. Collapse long vowels: おう→おお, えい→ええ
-// 5. Collapse double vowels to single
+// 4. Collapse doubled VOWEL kana only (long-vowel spelling variants, e.g.
+//    ええっ ~ えっ). Deliberately does NOT fold おう→おお or えい→ええ —
+//    that used to fold accidental cross-boundary runs together (e.g. the
+//    え|い seam inside いえ+いえ collapsed it onto 家/いいえ, which is wrong:
+//    いえいえ is a different word, not a reading variant of いえ). N5
+//    dictionary kana already spell long vowels consistently, so there's no
+//    real variant-spelling collision for that substitution to catch.
 function normalizeReading(kana: string): string {
   let s = ''
   for (const c of kana) {
     const code = c.charCodeAt(0)
-    if (code >= 0x30A1 && code <= 0x30F6) {
-      // katakana → hiragana
-      s += String.fromCharCode(code - 0x60)
-    } else if (c === 'ー') {
-      // long vowel mark: skip (treat elongated and short as same)
-    } else {
-      s += c
-    }
+    if (code >= 0x30A1 && code <= 0x30F6) s += String.fromCharCode(code - 0x60)
+    else if (c === 'ー') { /* long vowel mark: elongated and short read the same */ }
+    else s += c
   }
-  // same-sound substitutions (modern Japanese pronunciation)
   s = s.replace(/ぢ/g, 'じ').replace(/づ/g, 'ず')
-  // long vowel patterns in hiragana
-  s = s.replace(/おう/g, 'おお')
-  s = s.replace(/えい/g, 'ええ')
-  // collapse doubled vowels
   s = s.replace(/([あいうえお])\1+/g, '$1')
   return s
+}
+
+// Two entries are the "same word" (not a homophone pair) if they differ only
+// by a bracketed usage-note ((～を), (メモを)…) or a leading ～/∼ particle
+// prefix (～時間 vs 時間) — strip those before comparing kanji identity so
+// note-variants of one word don't get double-counted as distinct words.
+function coreKanji(kanji: string): string {
+  return kanji.replace(/[（(][^）)]*[）)]/g, '').replace(/^[～∼]/, '').trim()
+}
+
+// Source-data placeholders (empty brackets, bare dashes) aren't real words.
+function hasRealKanjiField(kanji: string | undefined): kanji is string {
+  if (!kanji) return false
+  if (/[（(]\s*[）)]/.test(kanji)) return false
+  return /[一-龯ぁ-んァ-ヶA-Za-z0-9]/.test(kanji)
+}
+
+// Expand the candidate pool beyond vocabulary.json with kanji.json's
+// supplementary words[] (per-chapter leading-kanji groups) — this is a
+// separate, larger word list with limited overlap, so it surfaces real
+// same-reading/different-kanji pairs that vocabulary.json alone is too
+// sparse to catch. Synthesized entries get a full VocabEntry shape (stable
+// id, pos:'unknown', empty examples/tags) so WordCard/PosTag/keys behave
+// exactly like a real vocab entry.
+function buildPool(): VocabEntry[] {
+  const seen = new Set<string>()
+  const pool: VocabEntry[] = []
+  for (const v of vocab) {
+    if (!hasRealKanjiField(v.kanji)) continue
+    const key = v.kanji + '|' + v.kana
+    if (seen.has(key)) continue
+    seen.add(key)
+    pool.push(v)
+  }
+  for (const chapter of kanjiChapters) {
+    for (const group of chapter.groups) {
+      for (const w of group.words) {
+        if (!hasRealKanjiField(w.kanji)) continue
+        const key = w.kanji + '|' + w.kana
+        if (seen.has(key)) continue
+        seen.add(key)
+        pool.push({
+          id: `kj_${w.kanji}_${w.kana}`,
+          kanji: w.kanji,
+          kana: w.kana,
+          meanings: { vi: w.meaning, en: '' },
+          pos: 'unknown',
+          verbGroup: null,
+          adjType: null,
+          jlptLevel: 'N5',
+          chapter: chapter.chapter,
+          tags: [],
+          homophones: [],
+          relatedWords: [],
+          examples: [],
+        })
+      }
+    }
+  }
+  return pool
 }
 
 interface SoundGroup {
@@ -46,8 +103,9 @@ interface SoundGroup {
 
 // Compute groups at module load — cheap, runs once
 const groups: SoundGroup[] = (() => {
+  const pool = buildPool()
   const map = new Map<string, VocabEntry[]>()
-  for (const v of vocab) {
+  for (const v of pool) {
     if (!v.kana || v.kana.length < 2) continue
     const key = normalizeReading(v.kana)
     if (!map.has(key)) map.set(key, [])
@@ -55,7 +113,16 @@ const groups: SoundGroup[] = (() => {
   }
   const result: SoundGroup[] = []
   let i = 1
-  for (const [norm, entries] of map) {
+  for (const [norm, list] of map) {
+    if (list.length < 2) continue
+    // De-dupe note-variants of the same underlying word before counting —
+    // only genuinely distinct kanji forms count as separate homophones.
+    const byCore = new Map<string, VocabEntry>()
+    for (const v of list) {
+      const core = coreKanji(v.kanji) || v.kana
+      if (!byCore.has(core)) byCore.set(core, v)
+    }
+    const entries = [...byCore.values()]
     if (entries.length < 2) continue
     const readings = Array.from(new Set(entries.map(e => e.kana)))
     result.push({

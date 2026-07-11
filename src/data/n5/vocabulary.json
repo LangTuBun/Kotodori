@@ -598,7 +598,7 @@
     "kanji": "よろしくお願いします",
     "kana": "よろしくおねがいします",
     "meanings": {
-      "vi": "rất mong được anh/chịgiúp đỡ",
+      "vi": "rất mong được anh/chị giúp đỡ",
       "en": ""
     },
     "pos": "expression",
@@ -1014,7 +1014,7 @@
     "kanji": "ひらがな",
     "kana": "ひらがな",
     "meanings": {
-      "vi": "chữhiragana",
+      "vi": "chữ hiragana",
       "en": ""
     },
     "pos": "noun",
@@ -1032,7 +1032,7 @@
     "kanji": "カタカナ",
     "kana": "カタカナ",
     "meanings": {
-      "vi": "chữkatakana",
+      "vi": "chữ katakana",
       "en": ""
     },
     "pos": "noun",
@@ -1374,7 +1374,7 @@
     "kanji": "辞書",
     "kana": "じしょ",
     "meanings": {
-      "vi": "từđiển",
+      "vi": "từ điển",
       "en": ""
     },
     "pos": "noun",
@@ -1428,7 +1428,7 @@
     "kanji": "市役所",
     "kana": "しやくしょ",
     "meanings": {
-      "vi": "tòa thịchính",
+      "vi": "tòa thị chính",
       "en": ""
     },
     "pos": "noun",
@@ -1590,7 +1590,7 @@
     "kanji": "～円",
     "kana": "えん",
     "meanings": {
-      "vi": "yên; đơn vịtiền tệcủa Nhật",
+      "vi": "yên; đơn vị tiền tệ của Nhật",
       "en": ""
     },
     "pos": "suffix",
@@ -1608,7 +1608,7 @@
     "kanji": "～ドン",
     "kana": "ドン",
     "meanings": {
-      "vi": "đồng; đơn vịtiền tệcủa Việt Nam",
+      "vi": "đồng; đơn vị tiền tệ của Việt Nam",
       "en": ""
     },
     "pos": "suffix",
@@ -1680,7 +1680,7 @@
     "kanji": "ああ",
     "kana": "ああ",
     "meanings": {
-      "vi": "thán từthểhiện ngại ngùng, bối rối",
+      "vi": "thán từ thể hiện ngại ngùng, bối rối",
       "en": ""
     },
     "pos": "interjection",
@@ -1934,7 +1934,7 @@
     "kanji": "ゴールデンウィーク",
     "kana": "ゴールデンウィーク",
     "meanings": {
-      "vi": "tuần lễvàng",
+      "vi": "tuần lễ vàng",
       "en": ""
     },
     "pos": "noun",
@@ -2224,7 +2224,7 @@
     "kanji": "どうでしたか",
     "kana": "どうでしたか",
     "meanings": {
-      "vi": "… thếnào? Hỏi cảm nhận trong",
+      "vi": "… thế nào? Hỏi cảm nhận trong",
       "en": ""
     },
     "pos": "expression",
@@ -2260,7 +2260,7 @@
     "kanji": "どなた",
     "kana": "どなた",
     "meanings": {
-      "vi": "ai; cách nói lịch sựcủa ￿￿",
+      "vi": "ai; cách nói lịch sự của ￿￿",
       "en": ""
     },
     "pos": "pronoun",
@@ -2584,7 +2584,7 @@
     "kanji": "バイク",
     "kana": "バイク",
     "meanings": {
-      "vi": "xe máy; từthường dùng trong cuộc",
+      "vi": "xe máy; từ thường dùng trong cuộc",
       "en": ""
     },
     "pos": "noun",
@@ -2602,7 +2602,7 @@
     "kanji": "オートバイ",
     "kana": "オートバイ",
     "meanings": {
-      "vi": "xe máy; từthường dùng trong tin",
+      "vi": "xe máy; từ thường dùng trong tin",
       "en": ""
     },
     "pos": "noun",
@@ -2838,7 +2838,7 @@
     "kanji": "へえ",
     "kana": "へえ",
     "meanings": {
-      "vi": "ồ; từcảm thán, thểhiện sựngạc",
+      "vi": "ồ; từ cảm thán, thể hiện sự ngạc",
       "en": ""
     },
     "pos": "interjection",
@@ -3000,7 +3000,7 @@
     "kanji": "こっち・そっち・あっち",
     "kana": "こっち・そっち・あっち",
     "meanings": {
-      "vi": "chỗnày, chỗđó, chỗkia",
+      "vi": "chỗ này, chỗ đó, chỗ kia",
       "en": ""
     },
     "pos": "pronoun",
@@ -4154,7 +4154,7 @@
     "kanji": "どんな",
     "kana": "どんな",
     "meanings": {
-      "vi": "như thếnào, luôn đứng trước danh",
+      "vi": "như thế nào, luôn đứng trước danh",
       "en": ""
     },
     "pos": "determiner",
@@ -4208,7 +4208,7 @@
     "kanji": "ええっ",
     "kana": "ええっ",
     "meanings": {
-      "vi": "hả? gì? thểhiện sựngạc nhiên",
+      "vi": "hả? gì? thể hiện sự ngạc nhiên",
       "en": ""
     },
     "pos": "interjection",
@@ -4370,7 +4370,7 @@
     "kanji": "どこ",
     "kana": "どこ",
     "meanings": {
-      "vi": "chỗnào, ởđâu",
+      "vi": "chỗ nào, ở đâu",
       "en": ""
     },
     "pos": "pronoun",
@@ -4730,7 +4730,7 @@
     "kanji": "子ども",
     "kana": "こども",
     "meanings": {
-      "vi": "con, trẻcon",
+      "vi": "con, trẻ con",
       "en": ""
     },
     "pos": "noun",
@@ -5126,7 +5126,7 @@
     "kanji": "そのなか",
     "kana": "そのなか",
     "meanings": {
-      "vi": "trong sốđó",
+      "vi": "trong số đó",
       "en": ""
     },
     "pos": "expression",
@@ -5270,7 +5270,7 @@
     "kanji": "うーん",
     "kana": "うーん",
     "meanings": {
-      "vi": "hmmm, lời ậm ừkhi phân vân, suy",
+      "vi": "hmmm, lời ậm ừ khi phân vân, suy",
       "en": ""
     },
     "pos": "interjection",
@@ -5792,7 +5792,7 @@
     "kanji": "間",
     "kana": "あいだ",
     "meanings": {
-      "vi": "ởgiữa",
+      "vi": "ở giữa",
       "en": ""
     },
     "pos": "noun",
@@ -5882,7 +5882,7 @@
     "kanji": "ここ・そこ・あそこ",
     "kana": "ここ・そこ・あそこ",
     "meanings": {
-      "vi": "chỗnày, chỗđó, chỗkia",
+      "vi": "chỗ này, chỗ đó, chỗ kia",
       "en": ""
     },
     "pos": "pronoun",
@@ -5954,7 +5954,7 @@
     "kanji": "ソファ",
     "kana": "ソファ",
     "meanings": {
-      "vi": "ghếsô-pha",
+      "vi": "ghế sô-pha",
       "en": ""
     },
     "pos": "noun",
@@ -5990,7 +5990,7 @@
     "kanji": "あります",
     "kana": "あります",
     "meanings": {
-      "vi": "có, ở(dùng cho vật vô tri)",
+      "vi": "có, ở (dùng cho vật vô tri)",
       "en": ""
     },
     "pos": "verb-group1",
@@ -6386,7 +6386,7 @@
     "kanji": "います",
     "kana": "います",
     "meanings": {
-      "vi": "có, ở(dùng cho người, động vật)",
+      "vi": "có, ở (dùng cho người, động vật)",
       "en": ""
     },
     "pos": "verb-group2",
@@ -6404,7 +6404,7 @@
     "kanji": "いらっしゃいます",
     "kana": "いらっしゃいます",
     "meanings": {
-      "vi": "kính ngữcủa ￿￿￿",
+      "vi": "kính ngữ của ￿￿￿",
       "en": ""
     },
     "pos": "verb-group1",
@@ -6422,7 +6422,7 @@
     "kanji": "休憩します",
     "kana": "きゅうけいします",
     "meanings": {
-      "vi": "nghỉgiải lao",
+      "vi": "nghỉ giải lao",
       "en": ""
     },
     "pos": "verb-group3",
@@ -6532,7 +6532,7 @@
     "kanji": "たまご",
     "kana": "たまご",
     "meanings": {
-      "vi": "quảtrứng",
+      "vi": "quả trứng",
       "en": ""
     },
     "pos": "noun",
@@ -6730,7 +6730,7 @@
     "kanji": "大勢",
     "kana": "おおぜい",
     "meanings": {
-      "vi": "nhiều (chỉdùng cho người)",
+      "vi": "nhiều (chỉ dùng cho người)",
       "en": ""
     },
     "pos": "adverb",
@@ -6820,7 +6820,7 @@
     "kanji": "申し訳ございません",
     "kana": "もうしわけございません",
     "meanings": {
-      "vi": "Tôi xin lỗi ạ(lịch sựhơn)",
+      "vi": "Tôi xin lỗi ạ (lịch sự hơn)",
       "en": ""
     },
     "pos": "expression",
@@ -6856,7 +6856,7 @@
     "kanji": "お願いします",
     "kana": "おねがいします",
     "meanings": {
-      "vi": "nhờanh/chị",
+      "vi": "nhờ anh/chị",
       "en": ""
     },
     "pos": "expression",
@@ -7056,7 +7056,7 @@
     "kanji": "休みます",
     "kana": "やすみます",
     "meanings": {
-      "vi": "nghỉngơi",
+      "vi": "nghỉ ngơi",
       "en": ""
     },
     "pos": "verb-group1",
@@ -7164,7 +7164,7 @@
     "kanji": "これから",
     "kana": "これから",
     "meanings": {
-      "vi": "từgiờ(trởđi)",
+      "vi": "từ giờ (trở đi)",
       "en": ""
     },
     "pos": "adverb",
@@ -7218,7 +7218,7 @@
     "kanji": "ゆっくり",
     "kana": "ゆっくり",
     "meanings": {
-      "vi": "từtừ, thong thả",
+      "vi": "từ từ, thong thả",
       "en": ""
     },
     "pos": "adverb",
@@ -7398,7 +7398,7 @@
     "kanji": "実家",
     "kana": "じっか",
     "meanings": {
-      "vi": "nhà bốmẹđẻ",
+      "vi": "nhà bố mẹ đẻ",
       "en": ""
     },
     "pos": "noun",
@@ -7778,7 +7778,7 @@
     "kanji": "帰ります",
     "kana": "かえります",
     "meanings": {
-      "vi": "về, trởvề",
+      "vi": "về, trở về",
       "en": ""
     },
     "pos": "verb-group1",
@@ -8390,7 +8390,7 @@
     "kanji": "気持ちがいい",
     "kana": "きもちがいい",
     "meanings": {
-      "vi": "cảm thấy thoải mái, dễchịu",
+      "vi": "cảm thấy thoải mái, dễ chịu",
       "en": ""
     },
     "pos": "expression",
@@ -8426,7 +8426,7 @@
     "kanji": "問題ない",
     "kana": "もんだいない",
     "meanings": {
-      "vi": "không vấn đềgì",
+      "vi": "không vấn đề gì",
       "en": ""
     },
     "pos": "expression",
@@ -8462,7 +8462,7 @@
     "kanji": "お盆休み",
     "kana": "おぼんやすみ",
     "meanings": {
-      "vi": "kỳnghỉlễObon",
+      "vi": "kỳ nghỉ lễ Obon",
       "en": ""
     },
     "pos": "noun",
@@ -8719,7 +8719,7 @@
     "kanji": "バナナ",
     "kana": "バナナ",
     "meanings": {
-      "vi": "quảchuối",
+      "vi": "quả chuối",
       "en": ""
     },
     "pos": "noun",
@@ -9927,7 +9927,7 @@
     "kanji": "使います",
     "kana": "つかいます",
     "meanings": {
-      "vi": "sửdụng",
+      "vi": "sử dụng",
       "en": ""
     },
     "pos": "verb-group1",
@@ -10053,7 +10053,7 @@
     "kanji": "やっぱり",
     "kana": "やっぱり",
     "meanings": {
-      "vi": "quảnhiên",
+      "vi": "quả nhiên",
       "en": ""
     },
     "pos": "adverb",
@@ -10143,7 +10143,7 @@
     "kanji": "これくらい/",
     "kana": "これぐらい",
     "meanings": {
-      "vi": "mức này, cỡnày",
+      "vi": "mức này, cỡ này",
       "en": ""
     },
     "pos": "expression",
@@ -10719,7 +10719,7 @@
     "kanji": "得意",
     "kana": "とくい",
     "meanings": {
-      "vi": "giỏi, sởtrường",
+      "vi": "giỏi, sở trường",
       "en": ""
     },
     "pos": "adj-na",
@@ -10809,7 +10809,7 @@
     "kanji": "父",
     "kana": "ちち",
     "meanings": {
-      "vi": "bốcủa mình",
+      "vi": "bố của mình",
       "en": ""
     },
     "pos": "noun",
@@ -10827,7 +10827,7 @@
     "kanji": "お父さん",
     "kana": "おとうさん",
     "meanings": {
-      "vi": "bố(của người khác / cách gọi bố)",
+      "vi": "bố (của người khác / cách gọi bố)",
       "en": ""
     },
     "pos": "noun",
@@ -10845,7 +10845,7 @@
     "kanji": "母",
     "kana": "はは",
     "meanings": {
-      "vi": "mẹcủa mình",
+      "vi": "mẹ của mình",
       "en": ""
     },
     "pos": "noun",
@@ -10863,7 +10863,7 @@
     "kanji": "お母さん",
     "kana": "おかあさん",
     "meanings": {
-      "vi": "mẹ(của người khác / cách gọi mẹ)",
+      "vi": "mẹ (của người khác / cách gọi mẹ)",
       "en": ""
     },
     "pos": "noun",
@@ -11679,7 +11679,7 @@
     "kanji": "クラシック",
     "kana": "クラシック",
     "meanings": {
-      "vi": "nhạc cổđiển",
+      "vi": "nhạc cổ điển",
       "en": ""
     },
     "pos": "noun",
@@ -12115,7 +12115,7 @@
     "kanji": "こんなに",
     "kana": "こんなに",
     "meanings": {
-      "vi": "đến mức này, như thếnày",
+      "vi": "đến mức này, như thế này",
       "en": ""
     },
     "pos": "adverb",
@@ -12169,7 +12169,7 @@
     "kanji": "何でしょうか",
     "kana": "なんでしょうか",
     "meanings": {
-      "vi": "đây là cách nói lịch sựcủa ￿￿￿￿￿￿",
+      "vi": "đây là cách nói lịch sự của ￿￿￿￿￿￿",
       "en": ""
     },
     "pos": "expression",
@@ -12423,7 +12423,7 @@
     "kanji": "宿題",
     "kana": "しゅくだい",
     "meanings": {
-      "vi": "bài vềnhà",
+      "vi": "bài về nhà",
       "en": ""
     },
     "pos": "noun",
@@ -12531,7 +12531,7 @@
     "kanji": "みんなで",
     "kana": "みんなで",
     "meanings": {
-      "vi": "tất cả(mọi người) (cùng thực hiện",
+      "vi": "tất cả (mọi người) (cùng thực hiện",
       "en": ""
     },
     "pos": "adverb",
@@ -12821,7 +12821,7 @@
     "kanji": "お待たせ",
     "kana": "おまたせ",
     "meanings": {
-      "vi": "xin lỗi đã đểanh/chị/bạn chờ(lưu",
+      "vi": "xin lỗi đã để anh/chị/bạn chờ (lưu",
       "en": ""
     },
     "pos": "expression",
@@ -12893,7 +12893,7 @@
     "kanji": "両親",
     "kana": "りょうしん",
     "meanings": {
-      "vi": "bốmẹ",
+      "vi": "bố mẹ",
       "en": ""
     },
     "pos": "noun",
@@ -13147,7 +13147,7 @@
     "kanji": "お疲れ様です",
     "kana": "おつかれさまです",
     "meanings": {
-      "vi": "anh/ chịlàm việc vất vảrồi.",
+      "vi": "anh/ chị làm việc vất vả rồi.",
       "en": ""
     },
     "pos": "expression",
@@ -13165,7 +13165,7 @@
     "kanji": "Dạng)でした",
     "kana": "おつかれさまでした",
     "meanings": {
-      "vi": "anh/ chịlàm việc vất vảrồi.",
+      "vi": "anh/ chị làm việc vất vả rồi.",
       "en": ""
     },
     "pos": "expression",
@@ -13507,7 +13507,7 @@
     "kanji": "（～を）回す",
     "kana": "まわす",
     "meanings": {
-      "vi": "xoay tròn, vung tròn (thứgì đó)",
+      "vi": "xoay tròn, vung tròn (thứ gì đó)",
       "en": ""
     },
     "pos": "verb-group1",
@@ -13561,7 +13561,7 @@
     "kanji": "Ý)（する）",
     "kana": "ちゅういする",
     "meanings": {
-      "vi": "chú ý; nhắc nhở(người khác)",
+      "vi": "chú ý; nhắc nhở (người khác)",
       "en": ""
     },
     "pos": "verb-group3",
@@ -13689,7 +13689,7 @@
     "kanji": "そうなんですね",
     "kana": "そうなんですね",
     "meanings": {
-      "vi": "vậy à, thếà (sửdụng đểthểhiện sự",
+      "vi": "vậy à, thế à (sử dụng để thể hiện sự",
       "en": ""
     },
     "pos": "expression",
@@ -14085,7 +14085,7 @@
     "kanji": "（～に）通う",
     "kana": "かよう",
     "meanings": {
-      "vi": "đi lại (chỉviệc thường hay đi đến",
+      "vi": "đi lại (chỉ việc thường hay đi đến",
       "en": ""
     },
     "pos": "verb-group1",
@@ -14250,7 +14250,7 @@
     "kanji": "体にいい",
     "kana": "からだにいい",
     "meanings": {
-      "vi": "tốt cho cơ thể(cách chia thì và thể",
+      "vi": "tốt cho cơ thể (cách chia thì và thể",
       "en": ""
     },
     "pos": "expression",
@@ -14974,7 +14974,7 @@
     "kanji": "Dạng)です",
     "kana": "ごくろうさまです",
     "meanings": {
-      "vi": "Bạn đã làm việc vất vảrồi (chỉcó",
+      "vi": "Bạn đã làm việc vất vả rồi (chỉ có",
       "en": ""
     },
     "pos": "expression",
@@ -15172,7 +15172,7 @@
     "kanji": "アルバイト先",
     "kana": "アルバイトさき",
     "meanings": {
-      "vi": "nơi làm thêm, chỗlàm thêm",
+      "vi": "nơi làm thêm, chỗ làm thêm",
       "en": ""
     },
     "pos": "noun",
@@ -15444,7 +15444,7 @@
     "kanji": "Trước)（する）",
     "kana": "しちゃくする",
     "meanings": {
-      "vi": "mặc thử(quần áo...)",
+      "vi": "mặc thử (quần áo...)",
       "en": ""
     },
     "pos": "verb-group3",
@@ -15534,7 +15534,7 @@
     "kanji": "いかがですか",
     "kana": "いかがですか",
     "meanings": {
-      "vi": "anh/ chịthấy thếnào ạ? (Cách nói",
+      "vi": "anh/ chị thấy thế nào ạ? (Cách nói",
       "en": ""
     },
     "pos": "expression",
@@ -15552,7 +15552,7 @@
     "kanji": "いただきます",
     "kana": "いただきます",
     "meanings": {
-      "vi": "￿tôi xin nhận ạ(khi nhận thứgì đó",
+      "vi": "￿tôi xin nhận ạ (khi nhận thứ gì đó",
       "en": ""
     },
     "pos": "expression",
@@ -16045,7 +16045,7 @@
     "kanji": "親",
     "kana": "おや",
     "meanings": {
-      "vi": "bốmẹ",
+      "vi": "bố mẹ",
       "en": ""
     },
     "pos": "noun",
@@ -16531,7 +16531,7 @@
     "kanji": "お札",
     "kana": "おさつ",
     "meanings": {
-      "vi": "tờtiền giấy",
+      "vi": "tờ tiền giấy",
       "en": ""
     },
     "pos": "noun",
@@ -16981,7 +16981,7 @@
     "kanji": "（∼年、∼日）前",
     "kana": "ねんにちまえ",
     "meanings": {
-      "vi": "∼trước (Trước ￿là từchỉkhoảng",
+      "vi": "∼trước (Trước ￿là từ chỉ khoảng",
       "en": ""
     },
     "pos": "noun",
@@ -17327,7 +17327,7 @@
     "kanji": "（∼を）お願い（する）",
     "kana": "おねがいする",
     "meanings": {
-      "vi": "nhờ, nhờvả",
+      "vi": "nhờ, nhờ vả",
       "en": ""
     },
     "pos": "verb-group3",

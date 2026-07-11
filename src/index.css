@@ -50,6 +50,12 @@ body { margin: 0; padding: 0; min-height: 100vh; }
 ruby { font-family: 'Noto Sans JP', sans-serif; }
 rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: #6b6b6b; }
 
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fade-in { animation: fade-in 0.25s ease-out; }
+
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f0ede6; }
 ::-webkit-scrollbar-thumb { background: #0a0a0a; }

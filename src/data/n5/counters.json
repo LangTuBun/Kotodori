@@ -1,0 +1,190 @@
+{
+  "title": "Tổng hợp các cách đếm trong tiếng Nhật",
+  "intro": "Số, người, đồ vật, động vật và tiền — tổng hợp đầy đủ lượng từ (助数詞) thường gặp ở trình độ N5.",
+  "categories": [
+    {
+      "id": "basic-numbers",
+      "title": "1. Số đếm cơ bản và Đếm số lớn",
+      "shortTitle": "Số đếm cơ bản",
+      "usage": "Nền tảng để ghép với các lượng từ khác. Tiếng Nhật nhóm số lớn theo hàng vạn (4 chữ số 0 — 万) thay vì hàng nghìn như tiếng Việt.",
+      "columns": ["number", "kanji", "kana", "romaji", "note"],
+      "wide": true,
+      "rows": [
+        { "number": "1", "kanji": "一", "kana": "いち", "romaji": "ichi" },
+        { "number": "2", "kanji": "二", "kana": "に", "romaji": "ni" },
+        { "number": "3", "kanji": "三", "kana": "さん", "romaji": "san" },
+        { "number": "4", "kanji": "四", "kana": "よん / し", "romaji": "yon / shi" },
+        { "number": "5", "kanji": "五", "kana": "ご", "romaji": "go" },
+        { "number": "6", "kanji": "六", "kana": "ろく", "romaji": "roku" },
+        { "number": "7", "kanji": "七", "kana": "なな / しち", "romaji": "nana / shichi" },
+        { "number": "8", "kanji": "八", "kana": "はち", "romaji": "hachi" },
+        { "number": "9", "kanji": "九", "kana": "きゅう / く", "romaji": "kyuu / ku" },
+        { "number": "10", "kanji": "十", "kana": "じゅう", "romaji": "juu" },
+        { "number": "100", "kanji": "百", "kana": "ひゃく", "romaji": "hyaku" },
+        { "number": "1,000", "kanji": "千", "kana": "せん", "romaji": "sen" },
+        { "number": "10,000", "kanji": "一万", "kana": "いちまん", "romaji": "ichiman", "note": "1 vạn" },
+        { "number": "100,000", "kanji": "十万", "kana": "じゅうまん", "romaji": "juuman", "note": "10 vạn" },
+        { "number": "1,000,000", "kanji": "百万", "kana": "ひゃくまん", "romaji": "hyakuman", "note": "100 vạn" }
+      ]
+    },
+    {
+      "id": "people",
+      "title": "2. Cách đếm người (人 - にん)",
+      "shortTitle": "Đếm người",
+      "counter": "人",
+      "counterKana": "にん",
+      "columns": ["number", "kanji", "kana", "meaning"],
+      "rows": [
+        { "number": "1", "kanji": "1人", "kana": "ひとり", "meaning": "1 người" },
+        { "number": "2", "kanji": "2人", "kana": "ふたり", "meaning": "2 người" },
+        { "number": "3", "kanji": "3人", "kana": "さんにん", "meaning": "3 người" },
+        { "number": "4", "kanji": "4人", "kana": "よにん", "meaning": "4 người" },
+        { "number": "5", "kanji": "5人", "kana": "ごにん", "meaning": "5 người" },
+        { "number": "6", "kanji": "6人", "kana": "ろくにん", "meaning": "6 người" },
+        { "number": "7", "kanji": "7人", "kana": "ななにん / しちにん", "meaning": "7 người" },
+        { "number": "8", "kanji": "8人", "kana": "はちにん", "meaning": "8 người" },
+        { "number": "9", "kanji": "9人", "kana": "きゅうにん / くにん", "meaning": "9 người" },
+        { "number": "10", "kanji": "10人", "kana": "じゅうにん", "meaning": "10 người" },
+        { "number": "11", "kanji": "11人", "kana": "じゅういちにん", "meaning": "11 người" },
+        { "number": "Hỏi", "kanji": "何人", "kana": "なんにん", "meaning": "Mấy người?", "isQuestion": true }
+      ]
+    },
+    {
+      "id": "generic-small",
+      "title": "3. Cách đếm đồ vật nhỏ, chung chung (つ)",
+      "shortTitle": "Đồ vật chung chung",
+      "counter": "つ",
+      "usage": "Dùng cho các đồ vật không có lượng từ cụ thể hoặc hình dáng không rõ ràng.",
+      "columns": ["number", "kanji", "kana", "meaning"],
+      "footnote": "Từ số 11 trở đi, chỉ cần dùng số đếm cơ bản mà không thêm \"つ\".",
+      "rows": [
+        { "number": "1", "kanji": "1つ", "kana": "ひとつ", "meaning": "1 cái" },
+        { "number": "2", "kanji": "2つ", "kana": "ふたつ", "meaning": "2 cái" },
+        { "number": "3", "kanji": "3つ", "kana": "みっつ", "meaning": "3 cái" },
+        { "number": "4", "kanji": "4つ", "kana": "よっつ", "meaning": "4 cái" },
+        { "number": "5", "kanji": "5つ", "kana": "いつつ", "meaning": "5 cái" },
+        { "number": "6", "kanji": "6つ", "kana": "むっつ", "meaning": "6 cái" },
+        { "number": "7", "kanji": "7つ", "kana": "ななつ", "meaning": "7 cái" },
+        { "number": "8", "kanji": "8つ", "kana": "やっつ", "meaning": "8 cái" },
+        { "number": "9", "kanji": "9つ", "kana": "ここのつ", "meaning": "9 cái" },
+        { "number": "10", "kanji": "10", "kana": "とお", "meaning": "10 cái" },
+        { "number": "11", "kanji": "11", "kana": "じゅういち", "meaning": "11 cái" },
+        { "number": "Hỏi", "kanji": "いくつ", "kana": "いくつ", "meaning": "Mấy cái?", "isQuestion": true }
+      ]
+    },
+    {
+      "id": "small-animals",
+      "title": "4. Cách đếm động vật nhỏ (匹 - ひき)",
+      "shortTitle": "Động vật nhỏ",
+      "counter": "匹",
+      "counterKana": "ひき",
+      "usage": "Dùng cho chó, mèo, cá, côn trùng...",
+      "columns": ["number", "kanji", "kana", "meaning"],
+      "rows": [
+        { "number": "1", "kanji": "1匹", "kana": "いっぴき", "meaning": "1 con" },
+        { "number": "2", "kanji": "2匹", "kana": "にひき", "meaning": "2 con" },
+        { "number": "3", "kanji": "3匹", "kana": "さんびき", "meaning": "3 con" },
+        { "number": "4", "kanji": "4匹", "kana": "よんひき", "meaning": "4 con" },
+        { "number": "5", "kanji": "5匹", "kana": "ごひき", "meaning": "5 con" },
+        { "number": "6", "kanji": "6匹", "kana": "ろっぴき", "meaning": "6 con" },
+        { "number": "7", "kanji": "7匹", "kana": "ななひき", "meaning": "7 con" },
+        { "number": "8", "kanji": "8匹", "kana": "はっぴき", "meaning": "8 con" },
+        { "number": "9", "kanji": "9匹", "kana": "きゅうひき", "meaning": "9 con" },
+        { "number": "10", "kanji": "10匹", "kana": "じゅっぴき", "meaning": "10 con" },
+        { "number": "11", "kanji": "11匹", "kana": "じゅういっぴき", "meaning": "11 con" },
+        { "number": "Hỏi", "kanji": "何匹", "kana": "なんびき", "meaning": "Mấy con?", "isQuestion": true }
+      ]
+    },
+    {
+      "id": "flat-thin",
+      "title": "5a. Đếm vật mỏng, dẹt (枚 - まい)",
+      "shortTitle": "Vật mỏng, dẹt",
+      "counter": "枚",
+      "counterKana": "まい",
+      "usage": "Dùng cho: Giấy, áo mi, đĩa CD, vé...",
+      "columns": ["kanji", "kana", "meaning"],
+      "footnote": "Cứ thêm số đếm cơ bản + まい.",
+      "rows": [
+        { "number": "1", "kanji": "1枚", "kana": "いちまい", "meaning": "1 chiếc" },
+        { "number": "2", "kanji": "2枚", "kana": "にまい", "meaning": "2 chiếc" },
+        { "number": "Hỏi", "kanji": "何枚", "kana": "なんまい", "meaning": "Mấy tờ/cái?", "isQuestion": true }
+      ]
+    },
+    {
+      "id": "long-cylindrical",
+      "title": "5b. Đếm vật dài, hình trụ (本 - ほん)",
+      "shortTitle": "Vật dài, hình trụ",
+      "counter": "本",
+      "counterKana": "ほん",
+      "usage": "Dùng cho: Bút, chai, lọ, cái ô, cái cây... (lưu ý có biến âm)",
+      "columns": ["kanji", "kana", "meaning"],
+      "rows": [
+        { "number": "1", "kanji": "1本", "kana": "いっぽん", "meaning": "1 cái" },
+        { "number": "2", "kanji": "2本", "kana": "にほん", "meaning": "2 cái" },
+        { "number": "3", "kanji": "3本", "kana": "さんぼん", "meaning": "3 cái" },
+        { "number": "4", "kanji": "4本", "kana": "よんほん", "meaning": "4 cái" },
+        { "number": "6", "kanji": "6本", "kana": "ろっぽん", "meaning": "6 cái" },
+        { "number": "8", "kanji": "8本", "kana": "はっぽん", "meaning": "8 cái" },
+        { "number": "10", "kanji": "10本", "kana": "じゅっぽん", "meaning": "10 cái" },
+        { "number": "Hỏi", "kanji": "何本", "kana": "なんぼん", "meaning": "Mấy cái?", "isQuestion": true }
+      ]
+    },
+    {
+      "id": "machines-vehicles",
+      "title": "5c. Đếm máy móc, xe cộ (台 - だい)",
+      "shortTitle": "Máy móc, xe cộ",
+      "counter": "台",
+      "counterKana": "だい",
+      "usage": "Dùng cho: Tivi, máy tính, ô tô, xe đạp...",
+      "columns": ["kanji", "kana", "meaning"],
+      "footnote": "Cứ thêm số đếm cơ bản + だい.",
+      "rows": [
+        { "number": "1", "kanji": "1台", "kana": "いちだい", "meaning": "1 chiếc" },
+        { "number": "2", "kanji": "2台", "kana": "にだい", "meaning": "2 chiếc" },
+        { "number": "Hỏi", "kanji": "何台", "kana": "なんだい", "meaning": "Mấy chiếc?", "isQuestion": true }
+      ]
+    },
+    {
+      "id": "books",
+      "title": "5d. Đếm sách vở (冊 - さつ)",
+      "shortTitle": "Sách vở",
+      "counter": "冊",
+      "counterKana": "さつ",
+      "usage": "Dùng cho: Sách, vở, tạp chí, từ điển... (lưu ý có biến âm)",
+      "columns": ["kanji", "kana", "meaning"],
+      "rows": [
+        { "number": "1", "kanji": "1冊", "kana": "いっさつ", "meaning": "1 cuốn" },
+        { "number": "2", "kanji": "2冊", "kana": "にさつ", "meaning": "2 cuốn" },
+        { "number": "3", "kanji": "3冊", "kana": "さんさつ", "meaning": "3 cuốn" },
+        { "number": "8", "kanji": "8冊", "kana": "はっさつ", "meaning": "8 cuốn" },
+        { "number": "10", "kanji": "10冊", "kana": "じゅっさつ", "meaning": "10 cuốn" },
+        { "number": "Hỏi", "kanji": "何冊", "kana": "なんさつ", "meaning": "Mấy cuốn?", "isQuestion": true }
+      ]
+    },
+    {
+      "id": "money",
+      "title": "6. Cách đếm tiền (円 - えん)",
+      "shortTitle": "Đếm tiền",
+      "counter": "円",
+      "counterKana": "えん",
+      "usage": "Quy tắc đơn giản: Số đếm + えん.",
+      "columns": ["number", "kanji", "kana", "romaji"],
+      "footnote": "Đối với giá tiền, thay vì hỏi bằng \"何\" (cái gì), người Nhật dùng \"いくら\" — Bao nhiêu tiền.",
+      "rows": [
+        { "number": "1 Yên", "kanji": "1円", "kana": "いちえん", "romaji": "ichi en" },
+        { "number": "10 Yên", "kanji": "10円", "kana": "じゅうえん", "romaji": "juu en" },
+        { "number": "100 Yên", "kanji": "100円", "kana": "ひゃくえん", "romaji": "hyaku en" },
+        { "number": "1,000 Yên", "kanji": "1000円", "kana": "せんえん", "romaji": "sen en" },
+        { "number": "10,000 Yên", "kanji": "1万円", "kana": "いちまんえん", "romaji": "ichiman en" },
+        { "number": "100,000 Yên", "kanji": "10万円", "kana": "じゅうまんえん", "romaji": "juuman en" },
+        { "number": "1,000,000 Yên", "kanji": "100万円", "kana": "ひゃくまんえん", "romaji": "hyakuman en" },
+        { "number": "Hỏi", "kanji": "いくら", "kana": "いくら", "romaji": "ikura", "meaning": "Bao nhiêu tiền?", "isQuestion": true }
+      ]
+    }
+  ],
+  "bigNumberExamples": [
+    { "kanji": "一万五千", "kana": "いちまんごせん", "romaji": "ichi man go sen", "meaning": "15.000 (1 vạn 5 ngàn)" },
+    { "kanji": "十五万", "kana": "じゅうごまん", "romaji": "juu go man", "meaning": "150.000 (15 vạn)" },
+    { "kanji": "百二十五万", "kana": "ひゃくにじゅうごまん", "romaji": "hyaku ni juu go man", "meaning": "1.250.000 (125 vạn)" }
+  ]
+}

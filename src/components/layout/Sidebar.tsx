@@ -9,6 +9,7 @@ const nav = [
   { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        en: "Grammar" },
   { to: "/verb-forms", label: "動詞の形",   kana: "どうしのかたち",   en: "Verb Forms" },
   { to: "/kanji",      label: "漢字",       kana: "かんじ",          en: "Kanji" },
+  { to: "/counters",   label: "数え方",     kana: "かぞえかた",      en: "Counters" },
   { to: "/homophones", label: "同音語",     kana: "どうおんご",      en: "Homophones" },
 ]
 

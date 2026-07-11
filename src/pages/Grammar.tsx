@@ -1,12 +1,15 @@
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
+import { useSearchParams } from "react-router-dom"
 import grammarData from "@/data/n5/grammar.json"
 import categoriesData from "@/data/n5/grammar-categories.json"
-import type { GrammarPoint, GrammarCategory } from "@/types"
+import verbFormsData from "@/data/n5/verb-forms.json"
+import type { GrammarPoint, GrammarCategory, VerbFormsData } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
 
 const grammar = grammarData as GrammarPoint[]
 const categories = categoriesData.categories as GrammarCategory[]
 const tips = categoriesData.tips as string[]
+const verbForms = (verbFormsData as unknown as VerbFormsData).forms
 
 const ACCENTS = ['yellow', 'blue', 'red', 'green'] as const
 const ACCENT_HEX: Record<string, string> = {
@@ -17,16 +20,33 @@ function accentFor(order: number) {
 }
 
 export function Grammar() {
+  const [searchParams, setSearchParams] = useSearchParams()
   const [search, setSearch] = useState("")
   const [cat, setCat] = useState<string | null>(null)
+  const [verbForm, setVerbForm] = useState<string | null>(null)
   const [selected, setSelected] = useState<GrammarPoint | null>(null)
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({})
   const [showTips, setShowTips] = useState(false)
+
+  // Cross-navigation from the Verb Forms tab: /grammar?point=<id> opens
+  // that point's detail drawer and makes sure its category is expanded.
+  useEffect(() => {
+    const pointId = searchParams.get('point')
+    if (!pointId) return
+    const point = grammar.find(g => g.id === pointId)
+    if (point) {
+      setSelected(point)
+      setCollapsed(s => ({ ...s, [point.category]: false }))
+    }
+    setSearchParams(prev => { prev.delete('point'); return prev }, { replace: true })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams])
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
     return grammar.filter(g => {
       if (cat && g.category !== cat) return false
+      if (verbForm && !g.requiredVerbForm?.includes(verbForm)) return false
       if (q) {
         return (
           g.pattern.toLowerCase().includes(q) ||
@@ -36,7 +56,7 @@ export function Grammar() {
       }
       return true
     })
-  }, [search, cat])
+  }, [search, cat, verbForm])
 
   const byCategory = useMemo(() => {
     const map = new Map<string, GrammarPoint[]>()
@@ -92,6 +112,31 @@ export function Grammar() {
           ))}
         </div>
 
+        {/* Verb-form pill filter */}
+        <div className="px-4 py-3 border-b-3 border-ink bg-paper flex items-center gap-2 flex-wrap">
+          <span className="text-[10px] font-black uppercase tracking-widest shrink-0 text-muted">
+            Lọc theo thể động từ
+          </span>
+          {verbForms.map(f => {
+            const active = verbForm === f.id
+            return (
+              <button
+                key={f.id}
+                onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
+                className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
+                title={f.title}
+              >
+                {f.titleJa}
+              </button>
+            )
+          })}
+          {verbForm && (
+            <button onClick={() => setVerbForm(null)} className="text-xs font-bold text-muted hover:text-red underline cursor-pointer">
+              Xóa lọc
+            </button>
+          )}
+        </div>
+
         {showTips && (
           <div className="px-4 py-3 border-b-3 border-ink bg-yellow/30">
             <ul className="space-y-1.5">
@@ -106,7 +151,7 @@ export function Grammar() {
         )}
 
         {/* Category sections */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-6">
+        <div key={`${cat}|${verbForm}|${search}`} className="flex-1 overflow-y-auto p-4 space-y-6 animate-fade-in">
           {visibleCategories.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">Không tìm thấy mẫu câu nào.</div>
           )}
@@ -205,10 +250,22 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
         }`}
         style={!selected ? { borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] } : undefined}
       >
+        {g.requiredVerbForm?.length > 0 && (
+          <div className="absolute top-1.5 right-1.5 flex gap-1">
+            {g.requiredVerbForm.map(f => (
+              <span
+                key={f}
+                className={`text-[9px] font-black px-1.5 py-0.5 border ${selected ? 'border-paper/40 text-paper/80' : 'border-ink bg-blue text-paper'}`}
+              >
+                {f}
+              </span>
+            ))}
+          </div>
+        )}
         <div className="flex items-start gap-2">
           <span className={`text-[10px] font-black shrink-0 pt-0.5 ${selected ? 'text-paper/60' : 'text-muted'}`}>#{g.num}</span>
           <div className="flex-1 min-w-0">
-            <div className="font-black text-sm leading-snug break-words">
+            <div className="font-black text-sm leading-snug break-words pr-14">
               <Ruby text={g.pattern} html={g.patternRuby} />
             </div>
             <div className={`text-xs mt-1 ${selected ? 'text-paper/70' : 'text-muted'}`}>

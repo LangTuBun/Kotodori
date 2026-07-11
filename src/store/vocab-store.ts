@@ -13,6 +13,9 @@ interface VocabStore {
   getCard: (vocabId: string) => SRSCard
   getDueCards: () => SRSCard[]
   getNewCards: (limit?: number) => SRSCard[]
+  getDueCardsFor: (ids: string[]) => SRSCard[]
+  getNewCardsFor: (ids: string[], limit?: number) => SRSCard[]
+  getScheduledCardsFor: (ids: string[]) => SRSCard[]
   reviewCard: (vocabId: string, cardType: string, rating: number) => void
   updateStreak: () => void
   getStats: () => { total: number; new: number; learning: number; review: number; mastered: number }
@@ -45,19 +48,31 @@ export const useVocabStore = create<VocabStore>()(
       },
 
       getDueCards: () => {
-        const { cards } = get()
-        return (vocabData as any[])
-          .map(v => cards[v.id] ?? makeDefaultCard(v.id))
-          .filter(c => c.state !== 'new' && isDue(c))
-          .slice(0, 50)
+        return get().getDueCardsFor((vocabData as any[]).map(v => v.id)).slice(0, 50)
       },
 
       getNewCards: (limit = 10) => {
+        return get().getNewCardsFor((vocabData as any[]).map(v => v.id), limit)
+      },
+
+      getDueCardsFor: (ids) => {
         const { cards } = get()
-        return (vocabData as any[])
-          .filter(v => !cards[v.id] || cards[v.id].state === 'new')
-          .slice(0, limit)
-          .map(v => makeDefaultCard(v.id))
+        return ids
+          .map(id => cards[id] ?? makeDefaultCard(id))
+          .filter(c => c.state !== 'new' && isDue(c))
+      },
+
+      getNewCardsFor: (ids, limit) => {
+        const { cards } = get()
+        const news = ids.filter(id => !cards[id] || cards[id].state === 'new')
+        return (limit === undefined ? news : news.slice(0, limit)).map(id => makeDefaultCard(id))
+      },
+
+      getScheduledCardsFor: (ids) => {
+        const { cards } = get()
+        return ids
+          .map(id => cards[id])
+          .filter((c): c is SRSCard => !!c && c.state !== 'new' && !isDue(c))
       },
 
       reviewCard: (vocabId, cardType, rating) => {
