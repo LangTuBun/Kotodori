@@ -1,0 +1,186 @@
+{
+  "common": {
+    "all": "Tất cả",
+    "chapterN": "Chương {n}",
+    "close": "Đóng",
+    "examples": "Ví dụ",
+    "wordsCount": "{n} từ",
+    "stats": {
+      "total": "Tổng",
+      "new": "Mới",
+      "learning": "Đang học",
+      "review": "Cần ôn",
+      "mastered": "Đã thuộc"
+    }
+  },
+  "pos": {
+    "noun": "Danh từ",
+    "verb-group1": "Động từ nhóm 1",
+    "verb-group2": "Động từ nhóm 2",
+    "verb-group3": "Động từ nhóm 3",
+    "adj-i": "Tính từ đuôi い",
+    "adj-na": "Tính từ đuôi な",
+    "adverb": "Trạng từ",
+    "pronoun": "Đại từ",
+    "conjunction": "Liên từ",
+    "expression": "Cụm từ",
+    "interjection": "Thán từ",
+    "suffix": "Hậu tố",
+    "determiner": "Từ hạn định",
+    "unknown": "Chưa xác định"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "vocabulary": "Từ vựng",
+    "review": "Ôn tập",
+    "grammar": "Ngữ pháp",
+    "verbForms": "Chia động từ",
+    "kanji": "Kanji",
+    "counters": "Đếm số",
+    "homophones": "Từ đồng âm"
+  },
+  "sidebar": {
+    "dayStreak": "Chuỗi ngày",
+    "cardsDueNow": "thẻ đến hạn"
+  },
+  "dashboard": {
+    "subtitle": "Hôm nay cũng cố gắng nhé",
+    "streakLabel": "Chuỗi ngày",
+    "streakSuffix": " ngày",
+    "totalWordsLabel": "Tổng số từ",
+    "masteredLabel": "Đã thuộc",
+    "reviewedLabel": "Đã ôn",
+    "cardsDue": "Thẻ đến hạn",
+    "reviewNow": "Ôn ngay",
+    "allDone": "Xong hết rồi!",
+    "newWords": "Từ mới",
+    "learnNew": "Học từ mới",
+    "grammarPoints": "Mẫu ngữ pháp",
+    "studyGrammar": "Học ngữ pháp",
+    "progress": "Tiến độ N5",
+    "masteredCount": "{mastered} / {total} đã thuộc"
+  },
+  "review": {
+    "title": "Ôn tập",
+    "chooseScope": "Chọn phạm vi ôn tập",
+    "vocabTab": "Từ vựng",
+    "kanjiTab": "Kanji",
+    "chapterLabel": "Chương",
+    "posLabel": "Loại từ",
+    "countLabel": "Số lượng",
+    "wordsSuffix": "từ",
+    "due": "đến hạn",
+    "wordsInScope": "từ trong phạm vi",
+    "kanjiInScope": "chữ trong phạm vi",
+    "willReview": "sẽ ôn",
+    "noMatchWords": "Không có từ nào phù hợp bộ lọc.",
+    "noMatchKanji": "Không có chữ Hán nào phù hợp bộ lọc.",
+    "start": "Bắt đầu ôn tập",
+    "changeFilter": "Đổi bộ lọc",
+    "whatMeaning": "Nghĩa là gì?",
+    "howRead": "Đọc thế nào?",
+    "whatWord": "Từ gì?",
+    "tapReveal": "Chạm để xem",
+    "showAnswer": "Xem đáp án",
+    "spaceHint": "(Cách)",
+    "chapterBadge": "Chương {n}",
+    "done": "Xong!",
+    "wordsReviewed": "từ đã ôn",
+    "kanjiReviewed": "chữ Hán đã ôn",
+    "continueReview": "Ôn tiếp",
+    "dashboardBtn": "Trang chủ",
+    "rating": {
+      "again": "Lại",
+      "hard": "Khó",
+      "good": "Tốt",
+      "easy": "Dễ"
+    },
+    "kanjiQuestion": "Từ này đọc và nghĩa là gì?",
+    "sameGroup": "Thuộc nhóm chữ",
+    "siblingWords": "Từ cùng nhóm"
+  },
+  "vocab": {
+    "searchPlaceholder": "Tìm kanji, kana, nghĩa...",
+    "allChapters": "Tất cả chương",
+    "allPos": "Tất cả loại từ",
+    "unknownChapter": "Chưa rõ chương",
+    "selectWord": "Chọn một từ",
+    "stateReviews": "Trạng thái: {state} · {count} lượt ôn",
+    "notStudied": "Chưa học",
+    "homophones": "Từ đồng âm"
+  },
+  "grammar": {
+    "searchPlaceholder": "Tìm mẫu câu, nghĩa, số thứ tự...",
+    "tips": "Mẹo ôn tập",
+    "countOfTotal": "{filtered} / {total} mẫu câu",
+    "filterByVerbForm": "Lọc theo thể động từ",
+    "clearFilter": "Xóa lọc",
+    "noResults": "Không tìm thấy mẫu câu nào.",
+    "selectPrompt": "Chọn 1 mẫu câu",
+    "hoverHint": "hoặc di chuột qua thẻ để xem nhanh"
+  },
+  "verbForms": {
+    "subtitle": "Thể động từ — Bảng tra biến đổi động từ",
+    "groupAll": "Mọi nhóm",
+    "groupNeg": "Phủ định",
+    "groupN": "Nhóm {n}",
+    "masuEnding": "Đuôi ます",
+    "sentenceExamples": "Ví dụ câu",
+    "exceptions": "Ngoại lệ",
+    "relatedGrammar": "Ngữ pháp áp dụng",
+    "cheatSheet": "Cheat Sheet cực ngắn",
+    "keyExceptions": "Ngoại lệ cần nhớ"
+  },
+  "kanji": {
+    "searchPlaceholder": "Tìm kanji, từ, âm Hán Việt, nghĩa...",
+    "groupsCount": "{n} nhóm chữ dẫn đầu",
+    "noResults": "Không tìm thấy kanji nào.",
+    "viewStrokeAnim": "Xem hoạt hình nét chữ",
+    "unknownReading": "Không rõ âm đọc"
+  },
+  "counters": {
+    "columns": {
+      "number": "Số",
+      "kanji": "Kanji",
+      "kana": "Hiragana",
+      "romaji": "Romaji",
+      "meaning": "Nghĩa",
+      "note": "Ghi chú"
+    },
+    "bigExamplesTitle": "Ví dụ thực tế ghép số lớn"
+  },
+  "homophones": {
+    "title": "Từ đồng âm",
+    "subtitle": "Những từ phát âm giống hoặc gần giống nhau",
+    "backToList": "Về danh sách",
+    "similarSound": "Âm gần giống",
+    "identicalReading": "Đọc giống hệt",
+    "normalized": "(đã chuẩn hóa: {reading})",
+    "wordsShareSound": "{n} từ có cùng âm đọc này",
+    "revealAll": "Hiện tất cả",
+    "nextGroup": "Nhóm tiếp theo",
+    "exactHomophones": "Đồng âm chính xác",
+    "soundAlikes": "Gần giống (biến thể nguyên âm dài)",
+    "randomChallenge": "Thử thách ngẫu nhiên",
+    "wordsCount": "{n} từ"
+  },
+  "kanjiDrawer": {
+    "close": "Đóng",
+    "replay": "Xem lại",
+    "componentsTitle": "Bộ thủ / thành phần",
+    "radicalBadge": "bộ",
+    "ariaLabel": "Hoạt hình nét chữ {char}",
+    "positions": {
+      "left": "trái",
+      "right": "phải",
+      "top": "trên",
+      "bottom": "dưới",
+      "kamae": "bao quanh",
+      "kamaec": "bao quanh",
+      "nyo": "bao góc",
+      "nyoc": "bao góc",
+      "tare": "rủ xuống",
+      "tarec": "rủ xuống"
+    }
+  }
+}

@@ -5,6 +5,7 @@ import categoriesData from "@/data/n5/grammar-categories.json"
 import verbFormsData from "@/data/n5/verb-forms.json"
 import type { GrammarPoint, GrammarCategory, VerbFormsData } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
+import { useTranslation } from "@/lib/useTranslation"
 
 const grammar = grammarData as GrammarPoint[]
 const categories = categoriesData.categories as GrammarCategory[]
@@ -20,6 +21,7 @@ function accentFor(order: number) {
 }
 
 export function Grammar() {
+  const { t, localize } = useTranslation()
   const [searchParams, setSearchParams] = useSearchParams()
   const [search, setSearch] = useState("")
   const [cat, setCat] = useState<string | null>(null)
@@ -50,7 +52,7 @@ export function Grammar() {
       if (q) {
         return (
           g.pattern.toLowerCase().includes(q) ||
-          g.meaning.vi.toLowerCase().includes(q) ||
+          localize(g.meaning).toLowerCase().includes(q) ||
           g.num.includes(q)
         )
       }
@@ -78,17 +80,17 @@ export function Grammar() {
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
-            placeholder="Tìm mẫu câu, nghĩa, số thứ tự..."
+            placeholder={t('grammar.searchPlaceholder')}
             className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-bold text-sm bg-paper focus:outline-none"
           />
           <button
             onClick={() => setShowTips(s => !s)}
             className={`px-3 py-2 border-3 border-ink font-bold text-xs uppercase tracking-wider cursor-pointer transition-all ${showTips ? 'bg-ink text-paper' : 'bg-paper hover:bg-yellow'}`}
           >
-            Mẹo ôn tập
+            {t('grammar.tips')}
           </button>
           <div className="w-full text-xs font-bold uppercase tracking-wider text-muted">
-            {filtered.length} / {grammar.length} mẫu câu
+            {t('grammar.countOfTotal', { filtered: filtered.length, total: grammar.length })}
           </div>
         </div>
 
@@ -98,7 +100,7 @@ export function Grammar() {
             onClick={() => setCat(null)}
             className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${cat === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
-            Tất cả
+            {t('common.all')}
           </button>
           {categories.map(c => (
             <button
@@ -115,7 +117,7 @@ export function Grammar() {
         {/* Verb-form pill filter */}
         <div className="px-4 py-3 border-b-3 border-ink bg-paper flex items-center gap-2 flex-wrap">
           <span className="text-[10px] font-black uppercase tracking-widest shrink-0 text-muted">
-            Lọc theo thể động từ
+            {t('grammar.filterByVerbForm')}
           </span>
           {verbForms.map(f => {
             const active = verbForm === f.id
@@ -132,7 +134,7 @@ export function Grammar() {
           })}
           {verbForm && (
             <button onClick={() => setVerbForm(null)} className="text-xs font-bold text-muted hover:text-red underline cursor-pointer">
-              Xóa lọc
+              {t('grammar.clearFilter')}
             </button>
           )}
         </div>
@@ -153,7 +155,7 @@ export function Grammar() {
         {/* Category sections */}
         <div key={`${cat}|${verbForm}|${search}`} className="flex-1 overflow-y-auto p-4 space-y-6 animate-fade-in">
           {visibleCategories.length === 0 && (
-            <div className="text-center text-muted py-12 font-bold">Không tìm thấy mẫu câu nào.</div>
+            <div className="text-center text-muted py-12 font-bold">{t('grammar.noResults')}</div>
           )}
           {visibleCategories.map(c => {
             const items = byCategory.get(c.slug) || []
@@ -199,7 +201,7 @@ export function Grammar() {
       {selected ? (
         <div className="w-96 flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-ink">
           <div className="p-6 border-b-3 border-ink">
-            <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× Close</button>
+            <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
             <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-black px-2 py-0.5 border-2 border-ink" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
                 {categories.find(c => c.slug === selected.category)?.romanNumeral}
@@ -209,18 +211,18 @@ export function Grammar() {
             <div className="text-3xl font-black leading-tight mb-3">
               <Ruby text={selected.pattern} html={selected.patternRuby} />
             </div>
-            <div className="text-lg font-bold">{selected.meaning.vi}</div>
+            <div className="text-lg font-bold">{localize(selected.meaning)}</div>
           </div>
 
           {selected.examples && selected.examples.length > 0 && (
             <div className="p-6">
-              <div className="text-xs font-black uppercase tracking-wider mb-4">Ví dụ</div>
+              <div className="text-xs font-black uppercase tracking-wider mb-4">{t('common.examples')}</div>
               {selected.examples.map((ex, i) => (
                 <div key={i} className="mb-5 last:mb-0 border-l-3 pl-4" style={{ borderColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
                   <div className="font-bold text-lg leading-snug">
                     <Ruby text={ex.ja} html={ex.jaRuby} />
                   </div>
-                  {ex.vi && <div className="text-sm text-muted mt-1">{ex.vi}</div>}
+                  {ex.vi && <div className="text-sm text-muted mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>}
                 </div>
               ))}
             </div>
@@ -230,8 +232,8 @@ export function Grammar() {
         <div className="w-80 hidden lg:flex items-center justify-center text-muted flex-shrink-0 border-l-3 border-ink">
           <div className="text-center p-8">
             <div className="text-6xl jp mb-4">文</div>
-            <div className="font-bold text-sm uppercase tracking-wider">Chọn 1 mẫu câu</div>
-            <div className="text-xs mt-1">hoặc di chuột qua thẻ để xem nhanh</div>
+            <div className="font-bold text-sm uppercase tracking-wider">{t('grammar.selectPrompt')}</div>
+            <div className="text-xs mt-1">{t('grammar.hoverHint')}</div>
           </div>
         </div>
       )}
@@ -240,6 +242,7 @@ export function Grammar() {
 }
 
 function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent: string; selected: boolean; onClick: () => void }) {
+  const { localize } = useTranslation()
   const ex = g.examples[0]
   return (
     <div className="relative group">
@@ -269,7 +272,7 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
               <Ruby text={g.pattern} html={g.patternRuby} />
             </div>
             <div className={`text-xs mt-1 ${selected ? 'text-paper/70' : 'text-muted'}`}>
-              {g.meaning.vi || '—'}
+              {localize(g.meaning) || '—'}
             </div>
           </div>
         </div>
@@ -282,7 +285,7 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
             <div className="font-bold text-sm leading-snug">
               <Ruby text={ex.ja} html={ex.jaRuby} />
             </div>
-            {ex.vi && <div className="text-xs text-paper/70 mt-1">{ex.vi}</div>}
+            {ex.vi && <div className="text-xs text-paper/70 mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>}
           </div>
         </div>
       )}

@@ -6,6 +6,7 @@ import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
 import { RATING } from "@/lib/srs"
 import { onkunTone } from "@/lib/kanji"
+import { useTranslation } from "@/lib/useTranslation"
 import vocabData from "@/data/n5/vocabulary.json"
 import kanjiData from "@/data/n5/kanji.json"
 import type { VocabEntry, KanjiChapter, KanjiGroup, KanjiWord, SRSCard } from "@/types"
@@ -42,6 +43,7 @@ function shuffle<T>(arr: T[]): T[] {
 export function Review() {
   const navigate = useNavigate()
   const { getDueCardsFor, getNewCardsFor, getScheduledCardsFor, reviewCard, updateStreak } = useVocabStore()
+  const { t } = useTranslation()
 
   const [mode, setMode] = useState<Mode>('vocab')
   const [chapter, setChapter] = useState<number | null>(null)
@@ -142,16 +144,16 @@ export function Review() {
     return (
       <div className="p-8 max-w-xl">
         <div className="border-b-3 border-ink pb-6 mb-8">
-          <h1 className="text-5xl font-black">Done!</h1>
+          <h1 className="text-5xl font-black">{t('review.done')}</h1>
         </div>
         <div className="border-3 border-ink p-8 shadow-[5px_5px_0px_#00cc66] text-center">
           <div className="text-7xl font-black mb-3">{reviewed}</div>
           <div className="text-sm font-bold uppercase tracking-wider text-muted mb-6">
-            {mode === 'vocab' ? 'từ đã ôn' : 'chữ Hán đã ôn'}
+            {mode === 'vocab' ? t('review.wordsReviewed') : t('review.kanjiReviewed')}
           </div>
           <div className="flex gap-3 justify-center">
-            <Button variant="yellow" onClick={backToSetup}>Ôn tiếp</Button>
-            <Button onClick={() => navigate('/')}>Dashboard</Button>
+            <Button variant="yellow" onClick={backToSetup}>{t('review.continueReview')}</Button>
+            <Button onClick={() => navigate('/')}>{t('review.dashboardBtn')}</Button>
           </div>
         </div>
       </div>
@@ -167,7 +169,7 @@ export function Review() {
       <div className="flex items-center gap-4 mb-8">
         <button
           onClick={backToSetup}
-          title="Đổi bộ lọc"
+          title={t('review.changeFilter')}
           className="shrink-0 w-9 h-9 border-3 border-ink font-black flex items-center justify-center hover:bg-surface transition-colors"
         >
           ×
@@ -200,11 +202,12 @@ function ReviewSetup({
   poolSize: number; dueCount: number; effectiveCount: number
   onStart: () => void
 }) {
+  const { t } = useTranslation()
   return (
     <div className="p-8 max-w-3xl">
       <div className="border-b-3 border-ink pb-6 mb-8">
-        <h1 className="text-5xl font-black">Review</h1>
-        <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">Chọn phạm vi ôn tập</p>
+        <h1 className="text-5xl font-black">{t('review.title')}</h1>
+        <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">{t('review.chooseScope')}</p>
       </div>
 
       <div className="border-3 border-ink shadow-[6px_6px_0px_#0a0a0a] bg-paper">
@@ -214,24 +217,24 @@ function ReviewSetup({
             onClick={() => setMode('vocab')}
             className={`py-4 border-r-3 border-ink font-black text-sm uppercase tracking-wider cursor-pointer transition-all ${mode === 'vocab' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
-            Từ vựng <span className="opacity-60 normal-case font-bold">(Vocabulary)</span>
+            {t('review.vocabTab')}
           </button>
           <button
             onClick={() => setMode('kanji')}
             className={`py-4 font-black text-sm uppercase tracking-wider cursor-pointer transition-all ${mode === 'kanji' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
-            Kanji <span className="opacity-60 normal-case font-bold">(漢字)</span>
+            {t('review.kanjiTab')} <span className="opacity-60 normal-case font-bold">(漢字)</span>
           </button>
         </div>
 
         <div className="p-6 space-y-6">
           {/* Chapter filter */}
-          <FilterSection label="Chương">
+          <FilterSection label={t('review.chapterLabel')}>
             <ChipRow>
-              <Chip active={chapter === null} onClick={() => setChapter(null)}>Tất cả</Chip>
+              <Chip active={chapter === null} onClick={() => setChapter(null)}>{t('common.all')}</Chip>
               {CHAPTERS.map(c => (
                 <Chip key={c} active={chapter === c} onClick={() => setChapter(chapter === c ? null : c)}>
-                  Chương {c}
+                  {t('common.chapterN', { n: c })}
                 </Chip>
               ))}
             </ChipRow>
@@ -239,12 +242,12 @@ function ReviewSetup({
 
           {/* Category filter (vocab only) */}
           {mode === 'vocab' && (
-            <FilterSection label="Loại từ">
+            <FilterSection label={t('review.posLabel')}>
               <ChipRow>
-                <Chip active={pos === null} onClick={() => setPos(null)}>Tất cả</Chip>
+                <Chip active={pos === null} onClick={() => setPos(null)}>{t('common.all')}</Chip>
                 {POS_LIST.map(p => (
                   <Chip key={p} active={pos === p} onClick={() => setPos(pos === p ? null : p)}>
-                    {p}
+                    {t(`pos.${p}`)}
                   </Chip>
                 ))}
               </ChipRow>
@@ -252,12 +255,12 @@ function ReviewSetup({
           )}
 
           {/* Count */}
-          <FilterSection label="Số lượng">
+          <FilterSection label={t('review.countLabel')}>
             <ChipRow>
               {COUNT_PRESETS.map(n => (
-                <Chip key={n} active={countPreset === n} onClick={() => setCountPreset(n)}>{n} từ</Chip>
+                <Chip key={n} active={countPreset === n} onClick={() => setCountPreset(n)}>{n} {t('review.wordsSuffix')}</Chip>
               ))}
-              <Chip active={countPreset === 'all'} onClick={() => setCountPreset('all')}>Tất cả ({poolSize})</Chip>
+              <Chip active={countPreset === 'all'} onClick={() => setCountPreset('all')}>{t('common.all')} ({poolSize})</Chip>
             </ChipRow>
           </FilterSection>
         </div>
@@ -266,17 +269,17 @@ function ReviewSetup({
         <div className="border-t-3 border-ink p-6 bg-surface flex flex-wrap items-center justify-between gap-4">
           <div className="text-sm font-bold">
             {poolSize === 0 ? (
-              <span className="text-red">Không có {mode === 'vocab' ? 'từ' : 'chữ Hán'} nào phù hợp bộ lọc.</span>
+              <span className="text-red">{mode === 'vocab' ? t('review.noMatchWords') : t('review.noMatchKanji')}</span>
             ) : (
               <>
-                <span className="text-red">{dueCount} đến hạn</span>
-                <span className="text-muted"> · {poolSize} {mode === 'vocab' ? 'từ' : 'chữ'} trong phạm vi · sẽ ôn </span>
+                <span className="text-red">{dueCount} {t('review.due')}</span>
+                <span className="text-muted"> · {poolSize} {mode === 'vocab' ? t('review.wordsInScope') : t('review.kanjiInScope')} · {t('review.willReview')} </span>
                 <span>{effectiveCount}</span>
               </>
             )}
           </div>
           <Button variant="primary" size="lg" disabled={effectiveCount === 0} onClick={onStart}>
-            Bắt đầu ôn tập
+            {t('review.start')}
           </Button>
         </div>
       </div>
@@ -310,6 +313,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
 
 function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipped: boolean; onFlip: () => void }) {
   const { entry, cardType } = card
+  const { t, localize } = useTranslation()
   return (
     <div
       className="border-3 border-ink shadow-[6px_6px_0px_#0a0a0a] p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[8px_8px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5"
@@ -318,8 +322,8 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
       {!flipped ? (
         <>
           <div className="text-xs font-bold uppercase tracking-widest text-muted mb-6">
-            {cardType === 'meaning' ? 'What does this mean?' :
-             cardType === 'reading' ? 'How do you read this?' : 'What word?'}
+            {cardType === 'meaning' ? t('review.whatMeaning') :
+             cardType === 'reading' ? t('review.howRead') : t('review.whatWord')}
           </div>
           <div className="text-6xl font-black jp leading-none mb-4">
             {cardType === 'meaning' ? (
@@ -327,14 +331,14 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
             ) : cardType === 'reading' ? (
               entry.kanji || entry.kana
             ) : (
-              entry.meanings.vi
+              localize(entry.meanings)
             )}
           </div>
           {cardType === 'word' && entry.kana && (
             <div className="jp text-muted text-xl">{entry.kana}</div>
           )}
           <div className="mt-8 text-xs text-muted font-bold uppercase tracking-wider">
-            Tap to reveal
+            {t('review.tapReveal')}
           </div>
         </>
       ) : (
@@ -343,14 +347,14 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
           <div className="text-5xl font-black jp leading-none my-4">
             <Furigana kanji={entry.kanji} kana={entry.kana} />
           </div>
-          <div className="text-2xl font-bold mb-2">{entry.meanings.vi}</div>
+          <div className="text-2xl font-bold mb-2">{localize(entry.meanings)}</div>
           {entry.chapter > 0 && (
-            <div className="text-xs text-muted font-bold uppercase">Chapter {entry.chapter}</div>
+            <div className="text-xs text-muted font-bold uppercase">{t('common.chapterN', { n: entry.chapter })}</div>
           )}
           {entry.examples.length > 0 && (
             <div className="mt-6 text-left w-full border-t-3 border-ink pt-4">
               <div className="jp text-sm font-bold">{entry.examples[0].ja}</div>
-              <div className="text-xs text-muted mt-1">{entry.examples[0].vi}</div>
+              <div className="text-xs text-muted mt-1">{localize({ vi: entry.examples[0].vi, en: entry.examples[0].en })}</div>
             </div>
           )}
         </>
@@ -361,6 +365,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
 
 function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipped: boolean; onFlip: () => void }) {
   const { word, group, chapterNum } = card
+  const { t } = useTranslation()
   // Real example sentences don't exist yet for individual kanji words (or
   // for vocab entries in general — vocabulary.json's examples[] is empty
   // app-wide), so context comes from real sibling words in the same
@@ -375,13 +380,13 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
       {!flipped ? (
         <>
           <div className="text-xs font-bold uppercase tracking-widest text-muted mb-6">
-            Từ này đọc và nghĩa là gì?
+            {t('review.kanjiQuestion')}
           </div>
           <div className="text-6xl font-black jp leading-[2.2] mb-4">
             <Furigana kanji={word.kanji} kana={word.kana} />
           </div>
           <div className="mt-8 text-xs text-muted font-bold uppercase tracking-wider">
-            Tap to reveal
+            {t('review.tapReveal')}
           </div>
         </>
       ) : (
@@ -393,19 +398,19 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color: onkunTone(word.onkun) }}>
               {word.onkun}
             </span>
-            <span className="text-xs text-muted font-bold uppercase ml-auto">Chương {chapterNum}</span>
+            <span className="text-xs text-muted font-bold uppercase ml-auto">{t('common.chapterN', { n: chapterNum })}</span>
           </div>
           <div className="text-5xl font-black jp leading-[2] mb-4">
             <Furigana kanji={word.kanji} kana={word.kana} />
           </div>
           <div className="text-2xl font-bold mb-2">{word.meaning}</div>
           <div className="text-xs text-muted font-bold uppercase tracking-wider">
-            Thuộc nhóm chữ <span className="jp text-sm text-ink">{group.anchor}</span>
+            {t('review.sameGroup')} <span className="jp text-sm text-ink">{group.anchor}</span>
           </div>
 
           {siblings.length > 0 && (
             <div className="mt-6 text-left w-full border-t-3 border-ink pt-4">
-              <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-2">Từ cùng nhóm</div>
+              <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-2">{t('review.siblingWords')}</div>
               <ul className="space-y-1.5">
                 {siblings.map((w, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm">
@@ -431,10 +436,10 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
 }
 
 const RATING_BUTTONS = [
-  { key: '1', label: 'Again', sub: '<1m', rating: RATING.AGAIN, variant: 'red' },
-  { key: '2', label: 'Hard', sub: '~6m', rating: RATING.HARD, variant: 'secondary' },
-  { key: '3', label: 'Good', sub: '1d', rating: RATING.GOOD, variant: 'green' },
-  { key: '4', label: 'Easy', sub: '4d', rating: RATING.EASY, variant: 'yellow' },
+  { key: '1', labelKey: 'again', sub: '<1m', rating: RATING.AGAIN, variant: 'red' },
+  { key: '2', labelKey: 'hard', sub: '~6m', rating: RATING.HARD, variant: 'secondary' },
+  { key: '3', labelKey: 'good', sub: '1d', rating: RATING.GOOD, variant: 'green' },
+  { key: '4', labelKey: 'easy', sub: '4d', rating: RATING.EASY, variant: 'yellow' },
 ] as const
 
 function isTypingTarget(el: Element | null): boolean {
@@ -449,6 +454,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
 }) {
   const [flashRating, setFlashRating] = useState<number | null>(null)
   const [flashFlip, setFlashFlip] = useState(false)
+  const { t } = useTranslation()
 
   // Space flips the card; 1/2/3/4 rate it once the answer is showing.
   // Only one of the two is ever live at a time (rating buttons don't exist
@@ -480,14 +486,14 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
 
   useEffect(() => {
     if (flashRating === null) return
-    const t = setTimeout(() => setFlashRating(null), 150)
-    return () => clearTimeout(t)
+    const timer = setTimeout(() => setFlashRating(null), 150)
+    return () => clearTimeout(timer)
   }, [flashRating])
 
   useEffect(() => {
     if (!flashFlip) return
-    const t = setTimeout(() => setFlashFlip(false), 150)
-    return () => clearTimeout(t)
+    const timer = setTimeout(() => setFlashFlip(false), 150)
+    return () => clearTimeout(timer)
   }, [flashFlip])
 
   if (!flipped) {
@@ -497,15 +503,15 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
         className={`w-full text-lg py-4 transition-all ${flashFlip ? 'shadow-none translate-x-0.5 translate-y-0.5' : ''}`}
         onClick={onFlip}
       >
-        Show Answer <span className="text-xs opacity-60 font-bold ml-1">(Space)</span>
+        {t('review.showAnswer')} <span className="text-xs opacity-60 font-bold ml-1">{t('review.spaceHint')}</span>
       </Button>
     )
   }
   return (
     <div className="grid grid-cols-4 gap-3">
-      {RATING_BUTTONS.map(({ key, label, sub, rating, variant }) => (
+      {RATING_BUTTONS.map(({ key, labelKey, sub, rating, variant }) => (
         <Button
-          key={label}
+          key={labelKey}
           variant={variant as any}
           className={`relative flex flex-col gap-0.5 py-3 transition-all ${
             flashRating === rating ? 'shadow-none translate-x-0.5 translate-y-0.5' : ''
@@ -513,7 +519,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
           onClick={() => { onRate(rating); onAdvance() }}
         >
           <span className="absolute top-1 left-1.5 text-[10px] font-bold opacity-50">{key}</span>
-          <span className="font-black">{label}</span>
+          <span className="font-black">{t(`review.rating.${labelKey}`)}</span>
           <span className="text-xs opacity-70 font-bold">{sub}</span>
         </Button>
       ))}

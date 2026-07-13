@@ -1,5 +1,6 @@
 import countersData from "@/data/n5/counters.json"
 import type { CountersData, CounterCategory, CounterColumn } from "@/types"
+import { useTranslation } from "@/lib/useTranslation"
 
 const data = countersData as CountersData
 
@@ -11,16 +12,16 @@ function accentFor(i: number) {
   return ACCENTS[i % ACCENTS.length]
 }
 
-const COLUMN_LABELS: Record<CounterColumn, string> = {
-  number: 'Số',
-  kanji: 'Kanji',
-  kana: 'Hiragana',
-  romaji: 'Romaji',
-  meaning: 'Nghĩa',
-  note: 'Ghi chú',
-}
-
 export function Counters() {
+  const { t } = useTranslation()
+  const COLUMN_LABELS: Record<CounterColumn, string> = {
+    number: t('counters.columns.number'),
+    kanji: t('counters.columns.kanji'),
+    kana: t('counters.columns.kana'),
+    romaji: t('counters.columns.romaji'),
+    meaning: t('counters.columns.meaning'),
+    note: t('counters.columns.note'),
+  }
   return (
     <div className="p-8 max-w-6xl">
       {/* Header */}
@@ -33,7 +34,7 @@ export function Counters() {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
         {data.categories.map((cat, i) => (
           <div key={cat.id} className={cat.wide ? 'md:col-span-2 xl:col-span-3' : ''}>
-            <CounterTable category={cat} accent={accentFor(i)} />
+            <CounterTable category={cat} accent={accentFor(i)} columnLabels={COLUMN_LABELS} />
           </div>
         ))}
       </div>
@@ -41,7 +42,7 @@ export function Counters() {
       {data.bigNumberExamples.length > 0 && (
         <div className="mt-6 border-3 border-ink bg-yellow/20 shadow-[5px_5px_0px_#0a0a0a] p-6">
           <div className="text-xs font-black uppercase tracking-widest mb-4">
-            Ví dụ thực tế ghép số lớn
+            {t('counters.bigExamplesTitle')}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {data.bigNumberExamples.map((ex, i) => (
@@ -59,7 +60,7 @@ export function Counters() {
   )
 }
 
-function CounterTable({ category, accent }: { category: CounterCategory; accent: string }) {
+function CounterTable({ category, accent, columnLabels }: { category: CounterCategory; accent: string; columnLabels: Record<CounterColumn, string> }) {
   return (
     <div
       className="h-full border-3 border-ink bg-paper shadow-[4px_4px_0px_#0a0a0a] overflow-hidden flex flex-col"
@@ -88,7 +89,7 @@ function CounterTable({ category, accent }: { category: CounterCategory; accent:
                   key={col}
                   className="text-left px-3 py-2 text-[10px] font-black uppercase tracking-wider whitespace-nowrap text-muted"
                 >
-                  {COLUMN_LABELS[col]}
+                  {columnLabels[col]}
                 </th>
               ))}
             </tr>

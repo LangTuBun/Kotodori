@@ -4,6 +4,7 @@ import type { KanjiChapter, KanjiGroup } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { cleanReadings, onkunTone } from "@/lib/kanji"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
+import { useTranslation } from "@/lib/useTranslation"
 
 const chapters = kanjiData.chapters as KanjiChapter[]
 
@@ -16,6 +17,7 @@ function accentFor(i: number) {
 }
 
 export function Kanji() {
+  const { t } = useTranslation()
   const [chapter, setChapter] = useState<number | null>(1)
   const [search, setSearch] = useState("")
   const [selectedAnchor, setSelectedAnchor] = useState<string | null>(null)
@@ -55,11 +57,11 @@ export function Kanji() {
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
-            placeholder="Tìm kanji, từ, âm Hán Việt, nghĩa..."
+            placeholder={t('kanji.searchPlaceholder')}
             className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-bold text-sm bg-paper focus:outline-none"
           />
           <div className="w-full text-xs font-bold uppercase tracking-wider text-muted">
-            {chapter === null ? `${totalWords} từ` : `${visibleChapters[0]?.wordCount ?? 0} từ`} · {filteredGroups.length} nhóm chữ dẫn đầu
+            {t('common.wordsCount', { n: chapter === null ? totalWords : (visibleChapters[0]?.wordCount ?? 0) })} · {t('kanji.groupsCount', { n: filteredGroups.length })}
           </div>
         </div>
 
@@ -69,7 +71,7 @@ export function Kanji() {
             onClick={() => setChapter(null)}
             className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${chapter === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
-            Tất cả
+            {t('common.all')}
           </button>
           {chapters.map(c => (
             <button
@@ -77,7 +79,7 @@ export function Kanji() {
               onClick={() => setChapter(prev => prev === c.chapter ? null : c.chapter)}
               className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${chapter === c.chapter ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
             >
-              Chương {c.chapter} <span className="opacity-60">({c.wordCount})</span>
+              {t('common.chapterN', { n: c.chapter })} <span className="opacity-60">({c.wordCount})</span>
             </button>
           ))}
         </div>
@@ -85,7 +87,7 @@ export function Kanji() {
         {/* Groups grid */}
         <div className="flex-1 min-h-0 overflow-y-auto p-4 pb-10">
           {filteredGroups.length === 0 && (
-            <div className="text-center text-muted py-12 font-bold">Không tìm thấy kanji nào.</div>
+            <div className="text-center text-muted py-12 font-bold">{t('kanji.noResults')}</div>
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
             {filteredGroups.map(({ chapterNum, group }, i) => (
@@ -107,6 +109,7 @@ export function Kanji() {
 }
 
 function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick }: { group: KanjiGroup; chapterNum: number; accent: string; onAnchorClick: () => void }) {
+  const { t } = useTranslation()
   const on = cleanReadings(group.onyomi)
   const kun = cleanReadings(group.kunyomi)
 
@@ -119,7 +122,7 @@ function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick }: { group: K
       <div className="flex items-start gap-3 mb-2 pb-2 border-b-2 border-ink/10">
         <button
           onClick={onAnchorClick}
-          title="Xem hoạt hình nét chữ"
+          title={t('kanji.viewStrokeAnim')}
           className="appearance-none bg-transparent border-0 p-0 m-0 text-4xl font-black jp leading-none shrink-0 pt-0.5 cursor-pointer transition-transform hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-ink/40 rounded-sm"
         >
           {group.anchor}
@@ -155,7 +158,7 @@ function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick }: { group: K
             {kun.extra > 0 && <span className="text-[10px] text-muted">+{kun.extra}</span>}
 
             {on.shown.length === 0 && kun.shown.length === 0 && (
-              <span className="text-[10px] text-muted italic">Không rõ âm đọc</span>
+              <span className="text-[10px] text-muted italic">{t('kanji.unknownReading')}</span>
             )}
           </div>
 

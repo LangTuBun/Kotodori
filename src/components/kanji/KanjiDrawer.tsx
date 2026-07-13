@@ -3,16 +3,10 @@ import kanjivgJson from "@/data/n5/kanjivg.json"
 import radicalNamesJson from "@/data/n5/radical-names.json"
 import type { KanjiVgComponent, KanjiVgData, RadicalNamesData } from "@/types"
 import { AnimatedKanjiSvg } from "./AnimatedKanjiSvg"
+import { useTranslation } from "@/lib/useTranslation"
 
 const kanjivgData = kanjivgJson as KanjiVgData
 const radicalNames = radicalNamesJson as RadicalNamesData
-
-const POSITION_LABELS: Record<string, string> = {
-  left: "trái", right: "phải", top: "trên", bottom: "dưới",
-  kamae: "bao quanh", kamaec: "bao quanh",
-  nyo: "bao góc", nyoc: "bao góc",
-  tare: "rủ xuống", tarec: "rủ xuống",
-}
 
 interface GroupedComponent {
   element: string
@@ -61,6 +55,14 @@ interface KanjiDrawerProps {
 // `displayChar` keeps the last kanji's content visible while it slides out;
 // `char` alone would blank the panel before the transition finishes.
 export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
+  const { t } = useTranslation()
+  const POSITION_LABELS: Record<string, string> = {
+    left: t('kanjiDrawer.positions.left'), right: t('kanjiDrawer.positions.right'),
+    top: t('kanjiDrawer.positions.top'), bottom: t('kanjiDrawer.positions.bottom'),
+    kamae: t('kanjiDrawer.positions.kamae'), kamaec: t('kanjiDrawer.positions.kamaec'),
+    nyo: t('kanjiDrawer.positions.nyo'), nyoc: t('kanjiDrawer.positions.nyoc'),
+    tare: t('kanjiDrawer.positions.tare'), tarec: t('kanjiDrawer.positions.tarec'),
+  }
   const open = char !== null
   const [displayChar, setDisplayChar] = useState<string | null>(null)
   const [replayKey, setReplayKey] = useState(0)
@@ -99,7 +101,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
       <div
         role="dialog"
         aria-modal="true"
-        aria-label={displayChar ? `Hoạt hình nét chữ ${displayChar}` : undefined}
+        aria-label={displayChar ? t('kanjiDrawer.ariaLabel', { char: displayChar }) : undefined}
         className={`fixed top-0 right-0 z-50 h-screen w-full sm:w-[420px] border-l-3 border-ink shadow-[-6px_0px_0px_rgba(10,10,10,0.15)] transition-transform duration-300 ease-out overflow-y-auto ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
@@ -111,7 +113,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
             onClick={onClose}
             className="text-muted hover:text-red font-black text-sm cursor-pointer"
           >
-            × Đóng
+            × {t('kanjiDrawer.close')}
           </button>
         </div>
 
@@ -129,17 +131,17 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
             <div className="flex justify-center mt-3">
               <button
                 onClick={() => setReplayKey(k => k + 1)}
-                title="Xem lại"
+                title={t('kanjiDrawer.replay')}
                 className="flex items-center gap-1.5 px-3 py-1.5 border-2 border-ink font-bold text-xs uppercase tracking-wider cursor-pointer hover:bg-surface transition-colors"
               >
                 <ReplayIcon />
-                Xem lại
+                {t('kanjiDrawer.replay')}
               </button>
             </div>
 
             {groupedComponents.length > 0 && (
               <div className="mt-5">
-                <div className="text-xs font-black uppercase tracking-wider text-muted mb-2">Bộ thủ / thành phần</div>
+                <div className="text-xs font-black uppercase tracking-wider text-muted mb-2">{t('kanjiDrawer.componentsTitle')}</div>
                 <div className="flex flex-wrap gap-1.5 p-2 border-2 border-ink/10" style={{ backgroundColor: "rgb(255,255,255)" }}>
                   {groupedComponents.map(g => {
                     const name = radicalNames[g.element]
@@ -161,7 +163,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
                       >
                         [ {g.element}{name ? ` - ${name.hanviet}` : ""} ]
                         {g.count > 1 && <span className="font-black">×{g.count}</span>}
-                        {g.isRadical && <span className="text-[8px] font-black align-super">bộ</span>}
+                        {g.isRadical && <span className="text-[8px] font-black align-super">{t('kanjiDrawer.radicalBadge')}</span>}
                       </span>
                     )
                   })}

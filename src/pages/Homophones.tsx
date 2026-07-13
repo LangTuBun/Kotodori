@@ -5,6 +5,7 @@ import type { VocabEntry, KanjiChapter } from "@/types"
 import { Button } from "@/components/ui/Button"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
+import { useTranslation } from "@/lib/useTranslation"
 
 const vocab = vocabData as VocabEntry[]
 const kanjiChapters = kanjiData.chapters as KanjiChapter[]
@@ -143,6 +144,7 @@ const groups: SoundGroup[] = (() => {
 })()
 
 function WordCard({ entry, revealed }: { entry: VocabEntry; revealed: boolean }) {
+  const { localize } = useTranslation()
   return (
     <div className="border-3 border-ink shadow-[3px_3px_0px_#0a0a0a] p-4 flex-1 min-w-[140px] bg-paper">
       <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
@@ -152,7 +154,7 @@ function WordCard({ entry, revealed }: { entry: VocabEntry; revealed: boolean })
           : <span className="opacity-0 select-none">████</span>}
       </div>
       <div className={`text-sm font-bold transition-opacity duration-200 ${revealed ? 'opacity-100' : 'opacity-0'}`}>
-        {entry.meanings.vi}
+        {localize(entry.meanings)}
       </div>
       {revealed && entry.kana && (
         <div className="text-xs text-muted jp mt-1">{entry.kana}</div>
@@ -162,6 +164,7 @@ function WordCard({ entry, revealed }: { entry: VocabEntry; revealed: boolean })
 }
 
 export function Homophones() {
+  const { t } = useTranslation()
   const [selected, setSelected] = useState<SoundGroup | null>(null)
   const [revealed, setRevealed] = useState(false)
 
@@ -172,9 +175,9 @@ export function Homophones() {
     <div className="p-8 max-w-4xl">
       {/* Header */}
       <div className="border-b-3 border-ink pb-8 mb-8">
-        <h1 className="text-5xl font-black tracking-tighter">Homophones</h1>
+        <h1 className="text-5xl font-black tracking-tighter">{t('homophones.title')}</h1>
         <p className="text-muted font-bold text-sm uppercase tracking-widest mt-2">
-          Words that sound the same or similar
+          {t('homophones.subtitle')}
         </p>
       </div>
 
@@ -182,13 +185,13 @@ export function Homophones() {
       {selected ? (
         <div>
           <Button variant="ghost" size="sm" className="mb-6" onClick={() => { setSelected(null); setRevealed(false) }}>
-            Back to list
+            {t('homophones.backToList')}
           </Button>
 
           <div className="border-3 border-ink shadow-[6px_6px_0px_#ffe600] p-8 mb-6">
             <div className="text-center mb-6">
               <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">
-                {selected.readings.length > 1 ? 'Similar sound' : 'Identical reading'}
+                {selected.readings.length > 1 ? t('homophones.similarSound') : t('homophones.identicalReading')}
               </div>
               {/* Show all distinct readings */}
               <div className="flex gap-3 justify-center flex-wrap mb-2">
@@ -198,13 +201,13 @@ export function Homophones() {
               </div>
               {selected.readings.length > 1 && (
                 <div className="text-xs text-muted font-bold">
-                  (normalized: {selected.normalizedReading})
+                  {t('homophones.normalized', { reading: selected.normalizedReading })}
                 </div>
               )}
             </div>
 
             <div className="text-xs font-bold uppercase tracking-wider text-muted mb-4 text-center">
-              {selected.entries.length} words share this sound
+              {t('homophones.wordsShareSound', { n: selected.entries.length })}
             </div>
 
             <div className="flex gap-4 flex-wrap justify-center mb-6">
@@ -215,14 +218,14 @@ export function Homophones() {
 
             <div className="flex gap-3 justify-center">
               {!revealed ? (
-                <Button variant="yellow" onClick={() => setRevealed(true)}>Reveal all</Button>
+                <Button variant="yellow" onClick={() => setRevealed(true)}>{t('homophones.revealAll')}</Button>
               ) : (
                 <Button variant="green" onClick={() => {
                   const others = groups.filter(g => g.id !== selected.id)
                   setSelected(others[Math.floor(Math.random() * others.length)])
                   setRevealed(false)
                 }}>
-                  Next group
+                  {t('homophones.nextGroup')}
                 </Button>
               )}
             </div>
@@ -235,18 +238,18 @@ export function Homophones() {
             <div className="flex gap-8">
               <div>
                 <div className="font-black text-2xl">{trueHomophones.length}</div>
-                <div className="text-xs text-muted font-bold uppercase tracking-wider">Exact homophones</div>
+                <div className="text-xs text-muted font-bold uppercase tracking-wider">{t('homophones.exactHomophones')}</div>
               </div>
               <div>
                 <div className="font-black text-2xl">{soundAlikes.length}</div>
-                <div className="text-xs text-muted font-bold uppercase tracking-wider">Sound-alikes</div>
+                <div className="text-xs text-muted font-bold uppercase tracking-wider">{t('homophones.soundAlikes')}</div>
               </div>
             </div>
             <Button variant="yellow" onClick={() => {
               setSelected(groups[Math.floor(Math.random() * groups.length)])
               setRevealed(false)
             }}>
-              Random challenge
+              {t('homophones.randomChallenge')}
             </Button>
           </div>
 
@@ -254,7 +257,7 @@ export function Homophones() {
           {trueHomophones.length > 0 && (
             <>
               <div className="text-xs font-black uppercase tracking-widest mb-3 flex items-center gap-3">
-                <span>Exact homophones</span>
+                <span>{t('homophones.exactHomophones')}</span>
                 <div className="flex-1 border-t-3 border-ink" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
@@ -269,7 +272,7 @@ export function Homophones() {
           {soundAlikes.length > 0 && (
             <>
               <div className="text-xs font-black uppercase tracking-widest mb-3 flex items-center gap-3">
-                <span>Sound-alikes (long vowel variants)</span>
+                <span>{t('homophones.soundAlikes')}</span>
                 <div className="flex-1 border-t-3 border-ink" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -286,6 +289,7 @@ export function Homophones() {
 }
 
 function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; onSelect: () => void }) {
+  const { t } = useTranslation()
   return (
     <button
       onClick={onSelect}
@@ -300,7 +304,7 @@ function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; o
             ))}
           </div>
           <div className="text-xs font-bold uppercase tracking-wider text-muted mb-2">
-            {group.entries.length} words
+            {t('homophones.wordsCount', { n: group.entries.length })}
           </div>
           <div className="flex flex-wrap gap-1.5">
             {group.entries.map(e => (

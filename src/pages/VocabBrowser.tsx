@@ -6,6 +6,7 @@ import { PosTag } from "@/components/ui/PosTag"
 import { Button } from "@/components/ui/Button"
 import { useVocabStore } from "@/store/vocab-store"
 import { RATING } from "@/lib/srs"
+import { useTranslation } from "@/lib/useTranslation"
 
 const vocab = vocabData as VocabEntry[]
 const CHAPTERS = Array.from(new Set(vocab.map(v => v.chapter).filter(Boolean))).sort((a,b) => a-b)
@@ -17,6 +18,7 @@ export function VocabBrowser() {
   const [pos, setPos] = useState<string | null>(null)
   const [selected, setSelected] = useState<VocabEntry | null>(null)
   const { getCard, reviewCard } = useVocabStore()
+  const { t, localize } = useTranslation()
 
   const filtered = useMemo(() => {
     return vocab.filter(v => {
@@ -24,7 +26,7 @@ export function VocabBrowser() {
       if (pos !== null && v.pos !== pos) return false
       if (search) {
         const q = search.toLowerCase()
-        return v.kanji.includes(q) || v.kana.includes(q) || v.meanings.vi.toLowerCase().includes(q)
+        return v.kanji.includes(q) || v.kana.includes(q) || localize(v.meanings).toLowerCase().includes(q)
       }
       return true
     })
@@ -52,7 +54,7 @@ export function VocabBrowser() {
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
-            placeholder="Search kanji, kana, meaning..."
+            placeholder={t('vocab.searchPlaceholder')}
             className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_#0057ff]"
           />
           <select
@@ -60,22 +62,22 @@ export function VocabBrowser() {
             onChange={e => setChapter(e.target.value ? Number(e.target.value) : null)}
             className="px-3 py-2 border-3 border-ink font-bold text-sm bg-paper cursor-pointer"
           >
-            <option value="">All chapters</option>
-            {CHAPTERS.map(c => <option key={c} value={c}>Chapter {c}</option>)}
+            <option value="">{t('vocab.allChapters')}</option>
+            {CHAPTERS.map(c => <option key={c} value={c}>{t('common.chapterN', { n: c })}</option>)}
           </select>
           <select
             value={pos ?? ""}
             onChange={e => setPos(e.target.value || null)}
             className="px-3 py-2 border-3 border-ink font-bold text-sm bg-paper cursor-pointer"
           >
-            <option value="">All POS</option>
-            {POS_LIST.map(p => <option key={p} value={p}>{p}</option>)}
+            <option value="">{t('vocab.allPos')}</option>
+            {POS_LIST.map(p => <option key={p} value={p}>{t(`pos.${p}`)}</option>)}
           </select>
         </div>
 
         {/* Count */}
         <div className="px-4 py-2 border-b-3 border-ink bg-paper text-xs font-bold uppercase tracking-wider text-muted">
-          {filtered.length} words
+          {t('common.wordsCount', { n: filtered.length })}
         </div>
 
         {/* Word list, grouped and sorted by chapter */}
@@ -83,7 +85,7 @@ export function VocabBrowser() {
           {groupedByChapter.map(([chapterNum, items]) => (
             <div key={chapterNum}>
               <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">
-                <span>{chapterNum === 0 ? 'Chưa rõ chương' : `Chương ${chapterNum}`}</span>
+                <span>{chapterNum === 0 ? t('vocab.unknownChapter') : t('common.chapterN', { n: chapterNum })}</span>
                 <span className="text-paper/60 font-bold">{items.length}</span>
               </div>
               {items.map(v => {
@@ -99,7 +101,7 @@ export function VocabBrowser() {
                         <Furigana kanji={v.kanji} kana={v.kana} />
                       </div>
                       <div className={`text-xs mt-0.5 ${selected?.id === v.id ? 'text-paper/70' : 'text-muted'}`}>
-                        {v.meanings.vi.slice(0, 60)}
+                        {localize(v.meanings).slice(0, 60)}
                       </div>
                     </div>
                     <div className="flex flex-col items-end gap-1">
@@ -129,7 +131,7 @@ export function VocabBrowser() {
         <div className="w-80 hidden lg:flex items-center justify-center text-muted">
           <div className="text-center p-8">
             <div className="text-6xl jp mb-4">言</div>
-            <div className="font-bold text-sm uppercase tracking-wider">Select a word</div>
+            <div className="font-bold text-sm uppercase tracking-wider">{t('vocab.selectWord')}</div>
           </div>
         </div>
       )}
@@ -144,6 +146,7 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
   getCard: (id: string) => any
 }) {
   const card = getCard(vocab.id)
+  const { t, localize } = useTranslation()
 
   return (
     <div className="w-96 flex-shrink-0 overflow-y-auto bg-paper">
@@ -159,32 +162,32 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
         {vocab.kanji !== vocab.kana && vocab.kana && (
           <div className="text-xl jp text-muted font-bold">{vocab.kana}</div>
         )}
-        <div className="font-bold text-lg mt-3">{vocab.meanings.vi}</div>
+        <div className="font-bold text-lg mt-3">{localize(vocab.meanings)}</div>
         {vocab.chapter > 0 && (
-          <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">Chapter {vocab.chapter}</div>
+          <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{t('common.chapterN', { n: vocab.chapter })}</div>
         )}
       </div>
 
       {/* SRS actions */}
       <div className="p-6 border-b-3 border-ink">
         <div className="text-xs font-bold uppercase tracking-wider text-muted mb-3">
-          {card.state !== 'new' ? `State: ${card.state} · ${card.reviewCount} reviews` : 'Not studied yet'}
+          {card.state !== 'new' ? t('vocab.stateReviews', { state: card.state, count: card.reviewCount }) : t('vocab.notStudied')}
         </div>
         <div className="grid grid-cols-4 gap-2">
           {[
-            { label: 'Again', rating: RATING.AGAIN, color: 'red' },
-            { label: 'Hard', rating: RATING.HARD, color: 'secondary' },
-            { label: 'Good', rating: RATING.GOOD, color: 'green' },
-            { label: 'Easy', rating: RATING.EASY, color: 'yellow' },
-          ].map(({ label, rating, color }) => (
+            { labelKey: 'again', rating: RATING.AGAIN, color: 'red' },
+            { labelKey: 'hard', rating: RATING.HARD, color: 'secondary' },
+            { labelKey: 'good', rating: RATING.GOOD, color: 'green' },
+            { labelKey: 'easy', rating: RATING.EASY, color: 'yellow' },
+          ].map(({ labelKey, rating, color }) => (
             <Button
-              key={label}
+              key={labelKey}
               variant={color as any}
               size="sm"
               className="text-xs"
               onClick={() => reviewCard(vocab.id, 'word', rating)}
             >
-              {label}
+              {t(`review.rating.${labelKey}`)}
             </Button>
           ))}
         </div>
@@ -193,12 +196,12 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
       {/* Examples */}
       {vocab.examples.length > 0 && (
         <div className="p-6 border-b-3 border-ink">
-          <div className="text-xs font-black uppercase tracking-wider mb-4">Examples</div>
+          <div className="text-xs font-black uppercase tracking-wider mb-4">{t('common.examples')}</div>
           {vocab.examples.map((ex, i) => (
             <div key={i} className="mb-4 last:mb-0">
               <div className="jp font-bold text-base">{ex.ja}</div>
               {ex.kana && <div className="jp text-xs text-muted mt-0.5">{ex.kana}</div>}
-              <div className="text-sm text-muted mt-1">{ex.vi}</div>
+              <div className="text-sm text-muted mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>
             </div>
           ))}
         </div>
@@ -207,7 +210,7 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
       {/* Homophones */}
       {vocab.homophones.length > 0 && (
         <div className="p-6">
-          <div className="text-xs font-black uppercase tracking-wider mb-3">Homophones</div>
+          <div className="text-xs font-black uppercase tracking-wider mb-3">{t('vocab.homophones')}</div>
           <div className="flex flex-wrap gap-2">
             {vocab.homophones.map(id => {
               const hw = (vocabData as VocabEntry[]).find(v => v.id === id)
@@ -215,7 +218,7 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
               return (
                 <div key={id} className="border-3 border-ink px-3 py-1 shadow-[2px_2px_0px_#0a0a0a]">
                   <div className="font-bold"><Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} /></div>
-                  <div className="text-xs text-muted">{hw.meanings.vi.slice(0, 20)}</div>
+                  <div className="text-xs text-muted">{localize(hw.meanings).slice(0, 20)}</div>
                 </div>
               )
             })}

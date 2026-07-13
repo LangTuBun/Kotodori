@@ -1,0 +1,186 @@
+{
+  "common": {
+    "all": "All",
+    "chapterN": "Chapter {n}",
+    "close": "Close",
+    "examples": "Examples",
+    "wordsCount": "{n} words",
+    "stats": {
+      "total": "Total",
+      "new": "New",
+      "learning": "Learning",
+      "review": "Review",
+      "mastered": "Mastered"
+    }
+  },
+  "pos": {
+    "noun": "Noun",
+    "verb-group1": "Verb (Group 1)",
+    "verb-group2": "Verb (Group 2)",
+    "verb-group3": "Verb (Group 3)",
+    "adj-i": "i-Adjective",
+    "adj-na": "na-Adjective",
+    "adverb": "Adverb",
+    "pronoun": "Pronoun",
+    "conjunction": "Conjunction",
+    "expression": "Expression",
+    "interjection": "Interjection",
+    "suffix": "Suffix",
+    "determiner": "Determiner",
+    "unknown": "Unknown"
+  },
+  "nav": {
+    "home": "Home",
+    "vocabulary": "Vocabulary",
+    "review": "Review",
+    "grammar": "Grammar",
+    "verbForms": "Verb Forms",
+    "kanji": "Kanji",
+    "counters": "Counters",
+    "homophones": "Homophones"
+  },
+  "sidebar": {
+    "dayStreak": "Day streak",
+    "cardsDueNow": "cards due now"
+  },
+  "dashboard": {
+    "subtitle": "Let's study Japanese today",
+    "streakLabel": "Streak",
+    "streakSuffix": " days",
+    "totalWordsLabel": "Total Words",
+    "masteredLabel": "Mastered",
+    "reviewedLabel": "Reviewed",
+    "cardsDue": "Cards Due",
+    "reviewNow": "Review Now",
+    "allDone": "All done!",
+    "newWords": "New Words",
+    "learnNew": "Learn New",
+    "grammarPoints": "Grammar Points",
+    "studyGrammar": "Study Grammar",
+    "progress": "N5 Progress",
+    "masteredCount": "{mastered} / {total} mastered"
+  },
+  "review": {
+    "title": "Review",
+    "chooseScope": "Choose review scope",
+    "vocabTab": "Vocabulary",
+    "kanjiTab": "Kanji",
+    "chapterLabel": "Chapter",
+    "posLabel": "Word Type",
+    "countLabel": "Count",
+    "wordsSuffix": "words",
+    "due": "due",
+    "wordsInScope": "words in scope",
+    "kanjiInScope": "kanji in scope",
+    "willReview": "will review",
+    "noMatchWords": "No words match this filter.",
+    "noMatchKanji": "No kanji match this filter.",
+    "start": "Start Review",
+    "changeFilter": "Change filter",
+    "whatMeaning": "What does this mean?",
+    "howRead": "How do you read this?",
+    "whatWord": "What word?",
+    "tapReveal": "Tap to reveal",
+    "showAnswer": "Show Answer",
+    "spaceHint": "(Space)",
+    "chapterBadge": "Chapter {n}",
+    "done": "Done!",
+    "wordsReviewed": "words reviewed",
+    "kanjiReviewed": "kanji reviewed",
+    "continueReview": "Continue",
+    "dashboardBtn": "Dashboard",
+    "rating": {
+      "again": "Again",
+      "hard": "Hard",
+      "good": "Good",
+      "easy": "Easy"
+    },
+    "kanjiQuestion": "How is this word read, and what does it mean?",
+    "sameGroup": "Same kanji group as",
+    "siblingWords": "Related words"
+  },
+  "vocab": {
+    "searchPlaceholder": "Search kanji, kana, meaning...",
+    "allChapters": "All chapters",
+    "allPos": "All POS",
+    "unknownChapter": "Unknown chapter",
+    "selectWord": "Select a word",
+    "stateReviews": "State: {state} · {count} reviews",
+    "notStudied": "Not studied yet",
+    "homophones": "Homophones"
+  },
+  "grammar": {
+    "searchPlaceholder": "Search patterns, meaning, number...",
+    "tips": "Study tips",
+    "countOfTotal": "{filtered} / {total} patterns",
+    "filterByVerbForm": "Filter by verb form",
+    "clearFilter": "Clear filter",
+    "noResults": "No patterns found.",
+    "selectPrompt": "Select a pattern",
+    "hoverHint": "or hover a card for a quick look"
+  },
+  "verbForms": {
+    "subtitle": "Verb Forms — Verb Conjugation Cheat Sheet",
+    "groupAll": "All groups",
+    "groupNeg": "Negative",
+    "groupN": "Group {n}",
+    "masuEnding": "Masu ending",
+    "sentenceExamples": "Example sentences",
+    "exceptions": "Exceptions",
+    "relatedGrammar": "Related grammar",
+    "cheatSheet": "Quick Cheat Sheet",
+    "keyExceptions": "Key exceptions to remember"
+  },
+  "kanji": {
+    "searchPlaceholder": "Search kanji, words, Sino-Vietnamese, meaning...",
+    "groupsCount": "{n} leading-kanji groups",
+    "noResults": "No kanji found.",
+    "viewStrokeAnim": "View stroke animation",
+    "unknownReading": "Reading unknown"
+  },
+  "counters": {
+    "columns": {
+      "number": "Number",
+      "kanji": "Kanji",
+      "kana": "Hiragana",
+      "romaji": "Romaji",
+      "meaning": "Meaning",
+      "note": "Note"
+    },
+    "bigExamplesTitle": "Real examples with larger numbers"
+  },
+  "homophones": {
+    "title": "Homophones",
+    "subtitle": "Words that sound the same or similar",
+    "backToList": "Back to list",
+    "similarSound": "Similar sound",
+    "identicalReading": "Identical reading",
+    "normalized": "(normalized: {reading})",
+    "wordsShareSound": "{n} words share this sound",
+    "revealAll": "Reveal all",
+    "nextGroup": "Next group",
+    "exactHomophones": "Exact homophones",
+    "soundAlikes": "Sound-alikes (long vowel variants)",
+    "randomChallenge": "Random challenge",
+    "wordsCount": "{n} words"
+  },
+  "kanjiDrawer": {
+    "close": "Close",
+    "replay": "Replay",
+    "componentsTitle": "Radicals / components",
+    "radicalBadge": "rad",
+    "ariaLabel": "Stroke animation for {char}",
+    "positions": {
+      "left": "left",
+      "right": "right",
+      "top": "top",
+      "bottom": "bottom",
+      "kamae": "enclosing",
+      "kamaec": "enclosing",
+      "nyo": "corner-enclosing",
+      "nyoc": "corner-enclosing",
+      "tare": "drooping",
+      "tarec": "drooping"
+    }
+  }
+}

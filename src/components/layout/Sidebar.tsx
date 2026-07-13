@@ -1,16 +1,18 @@
 ﻿import { NavLink } from "react-router-dom"
 import { useVocabStore } from "@/store/vocab-store"
 import { Furigana } from "@/components/ui/Furigana"
+import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher"
+import { useTranslation } from "@/lib/useTranslation"
 
 const nav = [
-  { to: "/",           label: "ホーム",     kana: "ホーム",         en: "Home" },
-  { to: "/vocab",      label: "単語",       kana: "たんご",         en: "Vocabulary" },
-  { to: "/review",     label: "復習",       kana: "ふくしゅう",      en: "Review" },
-  { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        en: "Grammar" },
-  { to: "/verb-forms", label: "動詞の形",   kana: "どうしのかたち",   en: "Verb Forms" },
-  { to: "/kanji",      label: "漢字",       kana: "かんじ",          en: "Kanji" },
-  { to: "/counters",   label: "数え方",     kana: "かぞえかた",      en: "Counters" },
-  { to: "/homophones", label: "同音語",     kana: "どうおんご",      en: "Homophones" },
+  { to: "/",           label: "ホーム",     kana: "ホーム",         key: "home" },
+  { to: "/vocab",      label: "単語",       kana: "たんご",         key: "vocabulary" },
+  { to: "/review",     label: "復習",       kana: "ふくしゅう",      key: "review" },
+  { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        key: "grammar" },
+  { to: "/verb-forms", label: "動詞の形",   kana: "どうしのかたち",   key: "verbForms" },
+  { to: "/kanji",      label: "漢字",       kana: "かんじ",          key: "kanji" },
+  { to: "/counters",   label: "数え方",     kana: "かぞえかた",      key: "counters" },
+  { to: "/homophones", label: "同音語",     kana: "どうおんご",      key: "homophones" },
 ]
 
 export function Sidebar() {
@@ -18,13 +20,17 @@ export function Sidebar() {
   const stats = getStats()
   const getDueCards = useVocabStore(s => s.getDueCards)
   const due = getDueCards().length
+  const { t } = useTranslation()
 
   return (
     <aside className="w-64 h-screen overflow-y-auto border-r-3 border-ink bg-surface flex flex-col">
       {/* Logo */}
       <div className="border-b-3 border-ink p-6">
-        <div className="text-3xl font-black tracking-tighter">
-          <Furigana kanji="言鳥" kana="ことどり" />
+        <div className="flex items-start justify-between gap-2">
+          <div className="text-3xl font-black tracking-tighter">
+            <Furigana kanji="言鳥" kana="ことどり" />
+          </div>
+          <LanguageSwitcher />
         </div>
         <div className="text-xs font-bold uppercase tracking-widest text-muted mt-1">KOTODORI</div>
       </div>
@@ -33,7 +39,7 @@ export function Sidebar() {
       <div className="border-b-3 border-ink p-4 flex items-center gap-3 bg-yellow">
         <div>
           <div className="text-xl font-black">{streak}</div>
-          <div className="text-xs font-bold uppercase tracking-wider">Day streak</div>
+          <div className="text-xs font-bold uppercase tracking-wider">{t('sidebar.dayStreak')}</div>
         </div>
       </div>
 
@@ -41,13 +47,13 @@ export function Sidebar() {
       {due > 0 && (
         <div className="border-b-3 border-ink p-3 bg-red text-paper flex items-center gap-2">
           <span className="font-black text-lg">{due}</span>
-          <span className="text-xs font-bold uppercase tracking-wider">cards due now</span>
+          <span className="text-xs font-bold uppercase tracking-wider">{t('sidebar.cardsDueNow')}</span>
         </div>
       )}
 
       {/* Nav */}
       <nav className="flex-1 p-4 flex flex-col gap-1">
-        {nav.map(({ to, label, kana, en }) => (
+        {nav.map(({ to, label, kana, key }) => (
           <NavLink
             key={to}
             to={to}
@@ -65,7 +71,7 @@ export function Sidebar() {
               <div className="font-black text-sm leading-tight">
                 <Furigana kanji={label} kana={kana} />
               </div>
-              <div className="text-xs font-bold uppercase tracking-wider opacity-60">{en}</div>
+              <div className="text-xs font-bold uppercase tracking-wider opacity-60">{t(`nav.${key}`)}</div>
             </div>
           </NavLink>
         ))}
@@ -74,10 +80,10 @@ export function Sidebar() {
       {/* Mini stats */}
       <div className="border-t-3 border-ink p-4 grid grid-cols-2 gap-2">
         {[
-          { label: "Total", val: stats.total },
-          { label: "Mastered", val: stats.mastered },
-          { label: "Review", val: stats.review },
-          { label: "New", val: stats.new },
+          { label: t('common.stats.total'), val: stats.total },
+          { label: t('common.stats.mastered'), val: stats.mastered },
+          { label: t('common.stats.review'), val: stats.review },
+          { label: t('common.stats.new'), val: stats.new },
         ].map(({ label, val }) => (
           <div key={label} className="bg-paper border-2 border-ink p-2 text-center">
             <div className="text-lg font-black">{val}</div>

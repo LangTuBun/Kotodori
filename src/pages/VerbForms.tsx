@@ -4,6 +4,7 @@ import verbFormsData from "@/data/n5/verb-forms.json"
 import grammarData from "@/data/n5/grammar.json"
 import type { VerbFormsData, GrammarPoint } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
+import { useTranslation } from "@/lib/useTranslation"
 
 const data = verbFormsData as unknown as VerbFormsData
 const grammar = grammarData as GrammarPoint[]
@@ -16,17 +17,19 @@ const GROUP_ACCENT: Record<string, string> = {
 function groupAccent(g: number | string) {
   return GROUP_ACCENT[String(g)] ?? "#0a0a0a"
 }
-function groupLabel(g: number | string) {
-  if (g === "all") return "Mọi nhóm"
-  if (g === "neg") return "Phủ định"
-  return `Nhóm ${g}`
-}
 
 export function VerbForms() {
   const navigate = useNavigate()
+  const { t, localize } = useTranslation()
   const [activeForm, setActiveForm] = useState(data.forms[0].id)
   const [showCheatSheet, setShowCheatSheet] = useState(true)
   const form = data.forms.find(f => f.id === activeForm)!
+
+  function groupLabel(g: number | string) {
+    if (g === "all") return t('verbForms.groupAll')
+    if (g === "neg") return t('verbForms.groupNeg')
+    return t('verbForms.groupN', { n: g })
+  }
 
   const relatedGrammar = useMemo(
     () => grammar.filter(g => g.requiredVerbForm?.includes(activeForm)),
@@ -41,7 +44,7 @@ export function VerbForms() {
           <div className="text-4xl font-black leading-tight">
             <Ruby text="動詞の形" html={HEADER_RUBY} />
           </div>
-          <div className="text-sm font-bold uppercase tracking-wider text-muted mt-1">Thể động từ — Verb Conjugation Cheat Sheet</div>
+          <div className="text-sm font-bold uppercase tracking-wider text-muted mt-1">{t('verbForms.subtitle')}</div>
         </div>
 
         {/* Group overview */}
@@ -108,9 +111,9 @@ export function VerbForms() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-3 border-ink bg-surface">
-                    <th className="text-left p-2 font-black text-xs uppercase">Đuôi ます</th>
+                    <th className="text-left p-2 font-black text-xs uppercase">{t('verbForms.masuEnding')}</th>
                     <th className="text-left p-2 font-black text-xs uppercase">→</th>
-                    <th className="text-left p-2 font-black text-xs uppercase">Ví dụ</th>
+                    <th className="text-left p-2 font-black text-xs uppercase">{t('common.examples')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -146,7 +149,7 @@ export function VerbForms() {
           {/* Sentence examples */}
           {form.sentenceExamples.length > 0 && (
             <div className="border-3 border-ink bg-yellow/20 p-4 mb-5">
-              <div className="text-xs font-black uppercase tracking-wider mb-3">Ví dụ câu</div>
+              <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.sentenceExamples')}</div>
               {form.sentenceExamples.map((s, i) => (
                 <div key={i} className="mb-3 last:mb-0">
                   <div className="font-bold"><Ruby text={s.ja} html={s.jaRuby} /></div>
@@ -159,7 +162,7 @@ export function VerbForms() {
           {/* Exceptions */}
           {form.exceptions.length > 0 && (
             <div className="border-3 border-red bg-red/5 p-4 mb-5">
-              <div className="text-xs font-black uppercase tracking-wider mb-2 text-red">Ngoại lệ</div>
+              <div className="text-xs font-black uppercase tracking-wider mb-2 text-red">{t('verbForms.exceptions')}</div>
               {form.exceptions.map((e, i) => (
                 <div key={i} className="text-sm font-bold">
                   <Ruby text={e} html={form.exceptionsRuby?.[i]} />
@@ -171,7 +174,7 @@ export function VerbForms() {
           {/* Related grammar — cross-links into the Grammar tab */}
           {relatedGrammar.length > 0 && (
             <div>
-              <div className="text-xs font-black uppercase tracking-wider mb-3 text-muted">Ngữ pháp áp dụng</div>
+              <div className="text-xs font-black uppercase tracking-wider mb-3 text-muted">{t('verbForms.relatedGrammar')}</div>
               <div className="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1">
                 {relatedGrammar.map(g => (
                   <button
@@ -188,7 +191,7 @@ export function VerbForms() {
                         →
                       </span>
                     </div>
-                    <div className="text-xs mt-2 leading-relaxed text-muted">{g.meaning.vi}</div>
+                    <div className="text-xs mt-2 leading-relaxed text-muted">{localize(g.meaning)}</div>
                   </button>
                 ))}
               </div>
@@ -202,7 +205,7 @@ export function VerbForms() {
             onClick={() => setShowCheatSheet(s => !s)}
             className="w-full flex items-center gap-3 mb-3 text-left cursor-pointer group"
           >
-            <span className="font-black text-base flex-1 group-hover:underline">Cheat Sheet cực ngắn</span>
+            <span className="font-black text-base flex-1 group-hover:underline">{t('verbForms.cheatSheet')}</span>
             <span className="text-sm font-black text-muted w-4 text-center">{showCheatSheet ? '−' : '+'}</span>
           </button>
           {showCheatSheet && (
@@ -233,7 +236,7 @@ export function VerbForms() {
 
         {/* Key exceptions */}
         <div className="border-3 border-ink bg-surface p-4 mb-6">
-          <div className="text-xs font-black uppercase tracking-wider mb-3">Ngoại lệ cần nhớ</div>
+          <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.keyExceptions')}</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {data.keyExceptions.map((e, i) => (
               <div key={i} className="text-sm font-bold border-2 border-ink bg-paper px-3 py-2">
