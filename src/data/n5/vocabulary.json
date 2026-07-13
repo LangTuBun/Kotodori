@@ -308,9 +308,9 @@
   {
     "id": "n5_0018",
     "kanji": "名前",
-    "kana": "おなまえなまえ",
+    "kana": "なまえ",
     "meanings": {
-      "vi": "tên, họtên",
+      "vi": "tên, họ tên",
       "en": ""
     },
     "pos": "noun",
@@ -667,7 +667,7 @@
   },
   {
     "id": "n5_0038",
-    "kanji": "Phu)です",
+    "kanji": "大丈夫です",
     "kana": "だいじょうぶです",
     "meanings": {
       "vi": "không sao đâu",
@@ -1300,7 +1300,7 @@
   {
     "id": "n5_0073",
     "kanji": "あの",
-    "kana": "あのあのー",
+    "kana": "あの",
     "meanings": {
       "vi": "xin lỗi, xin hỏi; lời đánh tiếng",
       "en": ""
@@ -1644,7 +1644,7 @@
     "kanji": "じゃ",
     "kana": "じゃ",
     "meanings": {
-      "vi": "vậy thì, thếthì…",
+      "vi": "vậy thì, thế thì…",
       "en": ""
     },
     "pos": "conjunction",
@@ -4496,7 +4496,7 @@
     "kanji": "一番",
     "kana": "いちばん",
     "meanings": {
-      "vi": "nhất, sốmột",
+      "vi": "nhất, số một",
       "en": ""
     },
     "pos": "adverb",
@@ -4838,7 +4838,7 @@
     "kanji": "本当",
     "kana": "ほんとう",
     "meanings": {
-      "vi": "thật, sựthật",
+      "vi": "thật, sự thật",
       "en": ""
     },
     "pos": "noun",
@@ -7868,7 +7868,7 @@
     "kanji": "もの",
     "kana": "もの",
     "meanings": {
-      "vi": "đồvật",
+      "vi": "đồ vật",
       "en": ""
     },
     "pos": "noun",
@@ -12492,7 +12492,7 @@
   },
   {
     "id": "n5_0693",
-    "kanji": "Bị)（する）",
+    "kanji": "準備する",
     "kana": "じゅんびする",
     "meanings": {
       "vi": "chuẩn bị",
@@ -12510,7 +12510,7 @@
   },
   {
     "id": "n5_0694",
-    "kanji": "Trừ)（する）",
+    "kanji": "掃除する",
     "kana": "そうじする",
     "meanings": {
       "vi": "dọn dẹp",
@@ -12782,7 +12782,7 @@
   },
   {
     "id": "n5_0709",
-    "kanji": "Nghiệp)（する）",
+    "kanji": "卒業する",
     "kana": "そつぎょうする",
     "meanings": {
       "vi": "tốt nghiệp",
@@ -13072,7 +13072,7 @@
   },
   {
     "id": "n5_0725",
-    "kanji": "Ước)（する）",
+    "kanji": "予約する",
     "kana": "よやくする",
     "meanings": {
       "vi": "đặt trước",
@@ -13090,7 +13090,7 @@
   },
   {
     "id": "n5_0726",
-    "kanji": "Tập)（する）",
+    "kanji": "練習する",
     "kana": "れんしゅうする",
     "meanings": {
       "vi": "luyện tập",
@@ -13162,7 +13162,7 @@
   },
   {
     "id": "n5_0730",
-    "kanji": "Dạng)でした",
+    "kanji": "お疲れ様でした",
     "kana": "おつかれさまでした",
     "meanings": {
       "vi": "anh/ chị làm việc vất vả rồi.",
@@ -13198,10 +13198,10 @@
   },
   {
     "id": "n5_0732",
-    "kanji": "Trương)ってください",
+    "kanji": "頑張ってください",
     "kana": "がんばってください",
     "meanings": {
-      "vi": "cốgắng lên.",
+      "vi": "cố gắng lên.",
       "en": ""
     },
     "pos": "expression",
@@ -13558,7 +13558,7 @@
   },
   {
     "id": "n5_0752",
-    "kanji": "Ý)（する）",
+    "kanji": "注意する",
     "kana": "ちゅういする",
     "meanings": {
       "vi": "chú ý; nhắc nhở (người khác)",
@@ -13576,7 +13576,7 @@
   },
   {
     "id": "n5_0753",
-    "kanji": "Cách)（する）",
+    "kanji": "合格する",
     "kana": "ごうかくする",
     "meanings": {
       "vi": "đỗ￿",
@@ -13594,7 +13594,7 @@
   },
   {
     "id": "n5_0754",
-    "kanji": "Hoạt)（する）",
+    "kanji": "生活する",
     "kana": "せいかつする",
     "meanings": {
       "vi": "sinh sống, sinh hoạt",
@@ -13612,7 +13612,7 @@
   },
   {
     "id": "n5_0755",
-    "kanji": "Nghiệp)（する）",
+    "kanji": "残業する",
     "kana": "ざんぎょうする",
     "meanings": {
       "vi": "tăng ca",
@@ -13630,7 +13630,7 @@
   },
   {
     "id": "n5_0756",
-    "kanji": "Trương)（する）",
+    "kanji": "出張する",
     "kana": "しゅっちょうする",
     "meanings": {
       "vi": "đi công tác",
@@ -13833,7 +13833,7 @@
     "kanji": "帰ってくる",
     "kana": "かえってくる",
     "meanings": {
-      "vi": "vềđến",
+      "vi": "về đến",
       "en": ""
     },
     "pos": "verb-group3",
@@ -14211,10 +14211,10 @@
   },
   {
     "id": "n5_0788",
-    "kanji": "Động)（する）",
+    "kanji": "運動する",
     "kana": "うんどうする",
     "meanings": {
-      "vi": "vận động, tập thểdục",
+      "vi": "vận động, tập thể dục",
       "en": ""
     },
     "pos": "verb-group3",
@@ -14899,7 +14899,7 @@
   },
   {
     "id": "n5_0826",
-    "kanji": "Hôn)（する）",
+    "kanji": "結婚する",
     "kana": "けっこんする",
     "meanings": {
       "vi": "kết hôn",
@@ -14917,7 +14917,7 @@
   },
   {
     "id": "n5_0827",
-    "kanji": "Sản)（する）",
+    "kanji": "生産する",
     "kana": "せいさんする",
     "meanings": {
       "vi": "sản xuất",
@@ -14971,7 +14971,7 @@
   },
   {
     "id": "n5_0830",
-    "kanji": "Dạng)です",
+    "kanji": "ご苦労様です",
     "kana": "ごくろうさまです",
     "meanings": {
       "vi": "Bạn đã làm việc vất vả rồi (chỉ có",
@@ -15296,7 +15296,7 @@
   {
     "id": "n5_0848",
     "kanji": "ふわふわ",
-    "kana": "ふわふわふわふわ",
+    "kana": "ふわふわ",
     "meanings": {
       "vi": "mềm, bông xốp",
       "en": ""
@@ -15405,10 +15405,10 @@
   },
   {
     "id": "n5_0854",
-    "kanji": "Thoái)（する）",
+    "kanji": "早退する",
     "kana": "そうたいする",
     "meanings": {
-      "vi": "vềsớm",
+      "vi": "về sớm",
       "en": ""
     },
     "pos": "verb-group3",
@@ -15423,7 +15423,7 @@
   },
   {
     "id": "n5_0855",
-    "kanji": "Lý)（する）",
+    "kanji": "料理する",
     "kana": "りょうりする",
     "meanings": {
       "vi": "nấu ăn",
@@ -15441,7 +15441,7 @@
   },
   {
     "id": "n5_0856",
-    "kanji": "Trước)（する）",
+    "kanji": "試着する",
     "kana": "しちゃくする",
     "meanings": {
       "vi": "mặc thử (quần áo...)",
@@ -15459,7 +15459,7 @@
   },
   {
     "id": "n5_0857",
-    "kanji": "Lạc)（する）",
+    "kanji": "連絡する",
     "kana": "れんらくする",
     "meanings": {
       "vi": "liên lạc",
@@ -15477,7 +15477,7 @@
   },
   {
     "id": "n5_0858",
-    "kanji": "Gia)（する）",
+    "kanji": "参加する",
     "kana": "さんかする",
     "meanings": {
       "vi": "tham gia",
@@ -15968,7 +15968,7 @@
   },
   {
     "id": "n5_0885",
-    "kanji": "Nhận)（する）",
+    "kanji": "確認する",
     "kana": "かくにんする",
     "meanings": {
       "vi": "xác nhận ∼",
@@ -16312,7 +16312,7 @@
   },
   {
     "id": "n5_0904",
-    "kanji": "Nội)（する）",
+    "kanji": "案内する",
     "kana": "あんないする",
     "meanings": {
       "vi": "hướng dẫn",
@@ -16330,10 +16330,10 @@
   },
   {
     "id": "n5_0905",
-    "kanji": "Viện)（する）",
+    "kanji": "応援する",
     "kana": "おうえんする",
     "meanings": {
-      "vi": "cổvũ, ủng hộ",
+      "vi": "cổ vũ, ủng hộ",
       "en": ""
     },
     "pos": "verb-group3",
@@ -16348,7 +16348,7 @@
   },
   {
     "id": "n5_0906",
-    "kanji": "Phối)（する）",
+    "kanji": "心配する",
     "kana": "しんぱいする",
     "meanings": {
       "vi": "lo lắng",
@@ -16384,7 +16384,7 @@
   },
   {
     "id": "n5_0908",
-    "kanji": "Đãi)（する）",
+    "kanji": "招待する",
     "kana": "しょうたいする",
     "meanings": {
       "vi": "mời, rủ",
@@ -16402,7 +16402,7 @@
   },
   {
     "id": "n5_0909",
-    "kanji": "Thành)（する）",
+    "kanji": "完成する",
     "kana": "かんせいする",
     "meanings": {
       "vi": "hoàn thành",
@@ -16852,7 +16852,7 @@
   },
   {
     "id": "n5_0934",
-    "kanji": "Nghiệp)（する）",
+    "kanji": "営業する",
     "kana": "えいぎょうする",
     "meanings": {
       "vi": "kinh doanh, buôn bán",
@@ -16870,7 +16870,7 @@
   },
   {
     "id": "n5_0935",
-    "kanji": "Sự)（する）",
+    "kanji": "工事する",
     "kana": "こうじする",
     "meanings": {
       "vi": "thi công, sửa chữa",
@@ -16888,7 +16888,7 @@
   },
   {
     "id": "n5_0936",
-    "kanji": "Xuất)（する）",
+    "kanji": "外出する",
     "kana": "がいしゅつする",
     "meanings": {
       "vi": "đi ra ngoài",
@@ -16981,7 +16981,7 @@
     "kanji": "（∼年、∼日）前",
     "kana": "ねんにちまえ",
     "meanings": {
-      "vi": "∼trước (Trước ￿là từ chỉ khoảng",
+      "vi": "∼trước (Trước 前 là từ chỉ khoảng thời gian)",
       "en": ""
     },
     "pos": "noun",
@@ -17145,7 +17145,7 @@
     "kanji": "書類",
     "kana": "しょるい",
     "meanings": {
-      "vi": "giấy tờ, hồsơ",
+      "vi": "giấy tờ, hồ sơ",
       "en": ""
     },
     "pos": "noun",
@@ -17568,25 +17568,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_0974",
-    "kanji": "（～）出",
-    "kana": "をでる",
-    "meanings": {
-      "vi": "ra (khỏi phòng/ khỏi nhà)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -17683,60 +17665,6 @@
     "examples": []
   },
   {
-    "id": "n5_0980",
-    "kanji": "一昨日 (totoi)",
-    "kana": "お",
-    "meanings": {
-      "vi": "hôm kia",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 5,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_0981",
-    "kanji": "/",
-    "kana": "ゴールデンウィークゴールデンウイーク",
-    "meanings": {
-      "vi": "tuần lễ vàng",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 2,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_0982",
-    "kanji": "二十日 (hatsu ka)",
-    "kana": "",
-    "meanings": {
-      "vi": "ngày 20",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_0983",
     "kanji": "あっち",
     "kana": "",
@@ -17820,7 +17748,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 7,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -17892,25 +17820,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_0992",
-    "kanji": "―",
-    "kana": "パーティ",
-    "meanings": {
-      "vi": "bữa tiệc",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 3,
+    "chapter": 2,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -17946,7 +17856,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -17965,42 +17875,6 @@
     "adjType": null,
     "jlptLevel": "N5",
     "chapter": 10,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_0996",
-    "kanji": "（～）始",
-    "kana": "がはじまる",
-    "meanings": {
-      "vi": "(～) bắt đầu",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_0997",
-    "kanji": "（～）入",
-    "kana": "にはいる",
-    "meanings": {
-      "vi": "vào",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -18061,44 +17935,8 @@
     "examples": []
   },
   {
-    "id": "n5_1001",
-    "kanji": "（～）洗",
-    "kana": "をあらう",
-    "meanings": {
-      "vi": "rửa",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1002",
-    "kanji": "（～）吸",
-    "kana": "をすう",
-    "meanings": {
-      "vi": "hút (thuốc)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1003",
-    "kanji": "（～）気付",
+    "kanji": "気をつける",
     "kana": "にきをつける",
     "meanings": {
       "vi": "chú ý",
@@ -18109,96 +17947,6 @@
     "adjType": null,
     "jlptLevel": "N5",
     "chapter": 11,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1004",
-    "kanji": "（）",
-    "kana": "する",
-    "meanings": {
-      "vi": "chú ý",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 14,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1005",
-    "kanji": "（～）合格（）",
-    "kana": "にごうかくする",
-    "meanings": {
-      "vi": "đỗ～",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 11,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1006",
-    "kanji": "（～）置",
-    "kana": "をおく",
-    "meanings": {
-      "vi": "đặt",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1007",
-    "kanji": "（～）探",
-    "kana": "をさがす",
-    "meanings": {
-      "vi": "tìm kiếm",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1008",
-    "kanji": "（～）付",
-    "kana": "につく",
-    "meanings": {
-      "vi": "มี dính, có gắn ~",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -18223,153 +17971,9 @@
     "examples": []
   },
   {
-    "id": "n5_1010",
-    "kanji": "（～/）触",
-    "kana": "をにさわる",
-    "meanings": {
-      "vi": "sờ, chạm",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1011",
-    "kanji": "（）取",
-    "kana": "メモをとる",
-    "meanings": {
-      "vi": "ghi chép",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1012",
-    "kanji": "（～）試着（）",
-    "kana": "をしちゃくする",
-    "meanings": {
-      "vi": "mặc thử (quần áo...)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1013",
-    "kanji": "（～）参加（）",
-    "kana": "にさんかする",
-    "meanings": {
-      "vi": "tham gia",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1014",
-    "kanji": "（～）",
-    "kana": "をくれる",
-    "meanings": {
-      "vi": "cho",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1015",
-    "kanji": "（～）案内（）",
-    "kana": "をあんないする",
-    "meanings": {
-      "vi": "hướng dẫn",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1016",
-    "kanji": "（～）応援（）",
-    "kana": "をおうえんする",
-    "meanings": {
-      "vi": "cổ vũ, ủng hộ",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1017",
-    "kanji": "（～）心配（）",
-    "kana": "をしんぱいする",
-    "meanings": {
-      "vi": "lo lắng",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1018",
     "kanji": "自販機(自動販売機）",
-    "kana": "じはんきじどうはんばいき",
+    "kana": "じはんき",
     "meanings": {
       "vi": "máy bán hàng tự động",
       "en": ""
@@ -18378,7 +17982,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 14,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -18421,83 +18025,11 @@
     "examples": []
   },
   {
-    "id": "n5_1021",
-    "kanji": "（～）乗",
-    "kana": "にのる",
-    "meanings": {
-      "vi": "lên (tàu, xe,.. )",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1022",
-    "kanji": "晴 (hare)",
-    "kana": "れ",
-    "meanings": {
-      "vi": "nắng",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 2,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1023",
-    "kanji": "曇 (kumori)",
-    "kana": "り",
-    "meanings": {
-      "vi": "âm u, nhiều mây",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 2,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1024",
     "kanji": "冷蔵庫",
     "kana": "れいぞうこ",
     "meanings": {
       "vi": "tủ lạnh",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 5,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1025",
-    "kanji": "男c子",
-    "kana": "おとのこ",
-    "meanings": {
-      "vi": "bé trai",
       "en": ""
     },
     "pos": "unknown",
@@ -18529,42 +18061,6 @@
     "examples": []
   },
   {
-    "id": "n5_1027",
-    "kanji": "（～）遅",
-    "kana": "におくれる",
-    "meanings": {
-      "vi": "muộn",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1028",
-    "kanji": "用事／用",
-    "kana": "ようじよう",
-    "meanings": {
-      "vi": "việc bận, việc",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 14,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1029",
     "kanji": "日本料理",
     "kana": "にほんりょうり",
@@ -18584,7 +18080,7 @@
   },
   {
     "id": "n5_1030",
-    "kanji": "一人暮",
+    "kanji": "一人暮らし",
     "kana": "ひとりぐらし",
     "meanings": {
       "vi": "sống 1 mình",
@@ -18620,7 +18116,7 @@
   },
   {
     "id": "n5_1032",
-    "kanji": "電話",
+    "kanji": "電話します",
     "kana": "でんわします",
     "meanings": {
       "vi": "gọi điện thoại",
@@ -18638,7 +18134,7 @@
   },
   {
     "id": "n5_1033",
-    "kanji": "勉強（）",
+    "kanji": "勉強します",
     "kana": "べんきょうします",
     "meanings": {
       "vi": "học",
@@ -18649,168 +18145,6 @@
     "adjType": null,
     "jlptLevel": "N5",
     "chapter": 6,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1034",
-    "kanji": "（/）帰",
-    "kana": "へにかえります",
-    "meanings": {
-      "vi": "về, trở về",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1035",
-    "kanji": "（/）行",
-    "kana": "へにいきます",
-    "meanings": {
-      "vi": "đi",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1036",
-    "kanji": "（/）来",
-    "kana": "へにきます",
-    "meanings": {
-      "vi": "đến",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1037",
-    "kanji": "（）買",
-    "kana": "をかいます",
-    "meanings": {
-      "vi": "mua ～",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 6,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1038",
-    "kanji": "（）読",
-    "kana": "をよみます",
-    "meanings": {
-      "vi": "đọc",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1039",
-    "kanji": "（）聞 ①Nghe",
-    "kana": "をききます",
-    "meanings": {
-      "vi": "②Hỏi",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 6,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1040",
-    "kanji": "（～）飲",
-    "kana": "をのみます",
-    "meanings": {
-      "vi": "uống",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1041",
-    "kanji": "（）食",
-    "kana": "をたべます",
-    "meanings": {
-      "vi": "ăn",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1042",
-    "kanji": "（）見",
-    "kana": "をみます",
-    "meanings": {
-      "vi": "xem, nhìn",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -18835,26 +18169,8 @@
     "examples": []
   },
   {
-    "id": "n5_1044",
-    "kanji": "（人）会",
-    "kana": "ひとにあいます",
-    "meanings": {
-      "vi": "gặp",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1045",
-    "kanji": "説明（）",
+    "kanji": "説明します",
     "kana": "せつめいします",
     "meanings": {
       "vi": "giải thích",
@@ -18871,81 +18187,9 @@
     "examples": []
   },
   {
-    "id": "n5_1046",
-    "kanji": "（～）泳",
-    "kana": "をおよぎます",
-    "meanings": {
-      "vi": "bơi",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1047",
-    "kanji": "（～）運",
-    "kana": "をはこびます",
-    "meanings": {
-      "vi": "vận chuyển, bê, vác",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1048",
-    "kanji": "（～）持",
-    "kana": "をもちます",
-    "meanings": {
-      "vi": "có, cầm",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1049",
-    "kanji": "（～）弾",
-    "kana": "をひきます",
-    "meanings": {
-      "vi": "đánh, chơi",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1050",
-    "kanji": "人気 (人気)",
-    "kana": "にんきにんきがあります",
+    "kanji": "人気があります",
+    "kana": "にんきがあります",
     "meanings": {
       "vi": "sự yêu thích (được yêu thích)",
       "en": ""
@@ -18954,187 +18198,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1051",
-    "kanji": "（～）描",
-    "kana": "をかきます",
-    "meanings": {
-      "vi": "vẽ",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1052",
-    "kanji": "（～）作",
-    "kana": "をつくります",
-    "meanings": {
-      "vi": "làm, tạo ra",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1053",
-    "kanji": "（山）登",
-    "kana": "やまにのぼります",
-    "meanings": {
-      "vi": "leo (núi)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1054",
-    "kanji": "（～）片付",
-    "kana": "をかたづけます",
-    "meanings": {
-      "vi": "sắp xếp",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1055",
-    "kanji": "（～）育",
-    "kana": "をそだてます",
-    "meanings": {
-      "vi": "nuôi dạy, nuôi dưỡng, nuôi trồng",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1056",
-    "kanji": "（～）集",
-    "kana": "をあつめます",
-    "meanings": {
-      "vi": "thu thập, sưu tầm",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1057",
-    "kanji": "（～）建",
-    "kana": "をたてます",
-    "meanings": {
-      "vi": "xây dựng",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1058",
-    "kanji": "（～）運転",
-    "kana": "をうんてんします",
-    "meanings": {
-      "vi": "lái xe",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1059",
-    "kanji": "（～）待",
-    "kana": "をまつ",
-    "meanings": {
-      "vi": "chờ",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1060",
-    "kanji": "（～）慣",
-    "kana": "になれる",
-    "meanings": {
-      "vi": "quen, quen thuộc (với～)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 8,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -19142,7 +18206,7 @@
   },
   {
     "id": "n5_1061",
-    "kanji": "頑張",
+    "kanji": "頑張る",
     "kana": "がんばる",
     "meanings": {
       "vi": "cố gắng",
@@ -19160,7 +18224,7 @@
   },
   {
     "id": "n5_1062",
-    "kanji": "（～）間合",
+    "kanji": "間に合う",
     "kana": "にまにあう",
     "meanings": {
       "vi": "kịp, kịp giờ",
@@ -19177,170 +18241,8 @@
     "examples": []
   },
   {
-    "id": "n5_1063",
-    "kanji": "（～）予約（）",
-    "kana": "をよやくする",
-    "meanings": {
-      "vi": "đặt trước",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 11,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1064",
-    "kanji": "（～）回",
-    "kana": "をまわす",
-    "meanings": {
-      "vi": "xoay tròn, vung tròn (thứ gì đó)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1065",
-    "kanji": "（～）調",
-    "kana": "をしらべる",
-    "meanings": {
-      "vi": "tra cứu, tìm hiểu",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1066",
-    "kanji": "（～）通",
-    "kana": "にかよう",
-    "meanings": {
-      "vi": "đi lại",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1067",
-    "kanji": "（～）習",
-    "kana": "をならう",
-    "meanings": {
-      "vi": "học",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1068",
-    "kanji": "（～）住",
-    "kana": "にすむ",
-    "meanings": {
-      "vi": "sống",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1069",
-    "kanji": "（～）知",
-    "kana": "をしる",
-    "meanings": {
-      "vi": "biết",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1070",
-    "kanji": "（～）結婚",
-    "kana": "とけっこんする",
-    "meanings": {
-      "vi": "kết hôn",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 12,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1071",
-    "kanji": "（～）生産（)",
-    "kana": "をせいさんする",
-    "meanings": {
-      "vi": "sản xuất",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 12,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1072",
-    "kanji": "（～）持帰",
+    "kanji": "持って帰る",
     "kana": "をもってかえる",
     "meanings": {
       "vi": "mang về",
@@ -19357,299 +18259,11 @@
     "examples": []
   },
   {
-    "id": "n5_1073",
-    "kanji": "（～）開",
-    "kana": "をあける",
-    "meanings": {
-      "vi": "mở",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1074",
-    "kanji": "（～）早退（）",
-    "kana": "をそうたいする",
-    "meanings": {
-      "vi": "về sớm",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1075",
-    "kanji": "（～）料理（）",
-    "kana": "をりょうりする",
-    "meanings": {
-      "vi": "nấu ăn",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1076",
-    "kanji": "（～）手伝",
+    "kanji": "手伝う",
     "kana": "をてつだう",
     "meanings": {
       "vi": "giúp đỡ",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1077",
-    "kanji": "（～）拭",
-    "kana": "をふく",
-    "meanings": {
-      "vi": "lau (bàn...)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1078",
-    "kanji": "（場所）並",
-    "kana": "ばしょにならぶ",
-    "meanings": {
-      "vi": "xếp hàng (ở ～)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1079",
-    "kanji": "取",
-    "kana": "コピーをとる",
-    "meanings": {
-      "vi": "photo",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1080",
-    "kanji": "（～）貸",
-    "kana": "をかす",
-    "meanings": {
-      "vi": "cho vay, cho mượn",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1081",
-    "kanji": "（～～）見",
-    "kana": "をにみせる",
-    "meanings": {
-      "vi": "cho (ai) xem ～",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1082",
-    "kanji": "（～～）届",
-    "kana": "をにとどける",
-    "meanings": {
-      "vi": "gửi, đưa ～đến (ai đó)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1083",
-    "kanji": "（～）教",
-    "kana": "をおしえる",
-    "meanings": {
-      "vi": "dạy, chỉ bảo, cho biết",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1084",
-    "kanji": "（～）忘",
-    "kana": "をわすれる",
-    "meanings": {
-      "vi": "quên",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1085",
-    "kanji": "（～）確認（）",
-    "kana": "をかくにんする",
-    "meanings": {
-      "vi": "xác nhận ～",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 13,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1086",
-    "kanji": "（～）（）",
-    "kana": "にメールする",
-    "meanings": {
-      "vi": "gửi mail",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1087",
-    "kanji": "（～）起",
-    "kana": "をおこす",
-    "meanings": {
-      "vi": "đánh thức",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1088",
-    "kanji": "（～）褒",
-    "kana": "をほめる",
-    "meanings": {
-      "vi": "khen",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1089",
-    "kanji": "（～）招待（）",
-    "kana": "をしょうたいする",
-    "meanings": {
-      "vi": "mời",
       "en": ""
     },
     "pos": "unknown",
@@ -19674,25 +18288,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1091",
-    "kanji": "（～）飼",
-    "kana": "をかう",
-    "meanings": {
-      "vi": "nuôi (chó, mèo, thú nuôi...)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 14,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -19753,42 +18349,6 @@
     "examples": []
   },
   {
-    "id": "n5_1095",
-    "kanji": "少",
-    "kana": "すこし",
-    "meanings": {
-      "vi": "một chút",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 3,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1096",
-    "kanji": "đây",
-    "kana": "",
-    "meanings": {
-      "vi": "nhưng",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1097",
     "kanji": "これ",
     "kana": "",
@@ -19843,60 +18403,6 @@
     "examples": []
   },
   {
-    "id": "n5_1100",
-    "kanji": "何 (/)",
-    "kana": "なんなに",
-    "meanings": {
-      "vi": "cái gì",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1101",
-    "kanji": "～",
-    "kana": "この",
-    "meanings": {
-      "vi": "cái ～ này",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 2,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1102",
-    "kanji": "男con人",
-    "kana": "おとのひと",
-    "meanings": {
-      "vi": "đàn ông, con trai",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 4,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
     "id": "n5_1103",
     "kanji": "外国人",
     "kana": "がいこくじん",
@@ -19909,24 +18415,6 @@
     "adjType": null,
     "jlptLevel": "N5",
     "chapter": 4,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1104",
-    "kanji": "はさはみ",
-    "kana": "",
-    "meanings": {
-      "vi": "cái kéo",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 5,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -19962,7 +18450,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 7,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -20034,7 +18522,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 10,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -20042,7 +18530,7 @@
   },
   {
     "id": "n5_1111",
-    "kanji": "引出",
+    "kanji": "引き出す",
     "kana": "ひきだす",
     "meanings": {
       "vi": "rút (tiền), kéo ra",
@@ -20053,24 +18541,6 @@
     "adjType": null,
     "jlptLevel": "N5",
     "chapter": 10,
-    "tags": [],
-    "homophones": [],
-    "relatedWords": [],
-    "examples": []
-  },
-  {
-    "id": "n5_1112",
-    "kanji": "（～）下",
-    "kana": "をおろす",
-    "meanings": {
-      "vi": "rút (tiền)",
-      "en": ""
-    },
-    "pos": "unknown",
-    "verbGroup": null,
-    "adjType": null,
-    "jlptLevel": "N5",
-    "chapter": 0,
     "tags": [],
     "homophones": [],
     "relatedWords": [],
@@ -20142,7 +18612,7 @@
     "verbGroup": null,
     "adjType": null,
     "jlptLevel": "N5",
-    "chapter": 0,
+    "chapter": 14,
     "tags": [],
     "homophones": [],
     "relatedWords": [],

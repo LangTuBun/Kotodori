@@ -35,7 +35,14 @@ function splitRuns(text: string): Run[] {
 // Aligns a kanji+okurigana string against its full reading by anchoring on the
 // literal (non-kanji) runs — auxiliary text that has no counterpart in `kana`
 // (e.g. a leading （〜を） note) is left outside the ruby entirely.
-function alignFurigana(kanji: string, kana: string): Segment[] {
+//
+// Returns null when a kanji run's reading boundary can't be located (its
+// next literal doesn't appear in `kana` at all — e.g. a mid-string "(", "～",
+// or "、" that's punctuation, not part of the pronunciation). Guessing here
+// previously dumped the *entire remaining reading* onto that one kanji run;
+// since the true split is unknowable without a dictionary, the caller falls
+// back to plain text rather than showing a confidently-wrong alignment.
+function alignFurigana(kanji: string, kana: string): Segment[] | null {
   const runs = splitRuns(kanji)
   const segments: Segment[] = []
   let pos = 0
@@ -58,7 +65,8 @@ function alignFurigana(kanji: string, kana: string): Segment[] {
     let end = kana.length
     if (nextLiteral) {
       const idx = kana.indexOf(nextLiteral.text, pos)
-      if (idx !== -1) end = idx
+      if (idx === -1) return null
+      end = idx
     }
     const reading = kana.slice(pos, end)
     segments.push({ text: run.text, reading: reading || undefined })
@@ -74,6 +82,9 @@ export function Furigana({ kanji, kana, className = "" }: FuriganaProps) {
   }
 
   const segments = alignFurigana(kanji, kana)
+  if (!segments) {
+    return <span className={`jp ${className}`}>{kanji}</span>
+  }
 
   return (
     <span className={`jp ${className}`}>

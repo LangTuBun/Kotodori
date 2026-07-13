@@ -104,7 +104,7 @@ export function VocabBrowser() {
                     </div>
                     <div className="flex flex-col items-end gap-1">
                       <PosTag pos={v.pos} verbGroup={v.verbGroup} />
-                      {card && (
+                      {card.state !== 'new' && (
                         <span className={`text-xs font-bold px-1.5 py-0.5 border border-current ${
                           card.state === 'mastered' ? 'text-green' :
                           card.state === 'review' ? 'text-yellow' :
@@ -168,7 +168,7 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
       {/* SRS actions */}
       <div className="p-6 border-b-3 border-ink">
         <div className="text-xs font-bold uppercase tracking-wider text-muted mb-3">
-          {card ? `State: ${card.state} · ${card.reviewCount} reviews` : 'Not studied yet'}
+          {card.state !== 'new' ? `State: ${card.state} · ${card.reviewCount} reviews` : 'Not studied yet'}
         </div>
         <div className="grid grid-cols-4 gap-2">
           {[
