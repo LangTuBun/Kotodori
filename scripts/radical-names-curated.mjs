@@ -72,4 +72,10 @@ export const curatedRadicalNames = {
   "疒": "nạch",
   "丙": "bính",
   "龰": "chỉ",
+  "⺍": "tiểu",
+  "冖": "mịch",
+  "夫": "phu",
+  "灬": "hỏa",
+  "幺": "yêu",
+  "夂": "truy",
 }

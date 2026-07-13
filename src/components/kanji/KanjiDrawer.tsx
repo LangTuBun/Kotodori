@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import kanjivgJson from "@/data/n5/kanjivg.json"
 import radicalNamesJson from "@/data/n5/radical-names.json"
-import type { KanjiVgData, RadicalNamesData } from "@/types"
+import type { KanjiVgComponent, KanjiVgData, RadicalNamesData } from "@/types"
 import { AnimatedKanjiSvg } from "./AnimatedKanjiSvg"
 
 const kanjivgData = kanjivgJson as KanjiVgData
@@ -12,6 +12,34 @@ const POSITION_LABELS: Record<string, string> = {
   kamae: "bao quanh", kamaec: "bao quanh",
   nyo: "bao góc", nyoc: "bao góc",
   tare: "rủ xuống", tarec: "rủ xuống",
+}
+
+interface GroupedComponent {
+  element: string
+  count: number
+  isRadical: boolean
+  positions: string[]
+}
+
+// Components can repeat (e.g. 森 → 木 木 木, from three separate SVG groups).
+// Collapse same-element occurrences into one tag with a ×N multiplier —
+// lighter than trying to lay tags out spatially, and it's what the
+// "[ 木 - Mộc ] ×3" format calls for.
+function groupComponents(components: KanjiVgComponent[]): GroupedComponent[] {
+  const order: string[] = []
+  const map = new Map<string, GroupedComponent>()
+  for (const comp of components) {
+    let g = map.get(comp.element)
+    if (!g) {
+      g = { element: comp.element, count: 0, isRadical: false, positions: [] }
+      map.set(comp.element, g)
+      order.push(comp.element)
+    }
+    g.count++
+    if (comp.isRadical) g.isRadical = true
+    if (comp.position && !g.positions.includes(comp.position)) g.positions.push(comp.position)
+  }
+  return order.map(el => map.get(el)!)
 }
 
 function ReplayIcon() {
@@ -54,6 +82,10 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
   }, [open, onClose])
 
   const entry = displayChar ? kanjivgData[displayChar] : undefined
+  const groupedComponents = useMemo(
+    () => (entry ? groupComponents(entry.components) : []),
+    [entry]
+  )
 
   return (
     <>
@@ -105,34 +137,35 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
               </button>
             </div>
 
-            {entry.components.length > 0 && (
+            {groupedComponents.length > 0 && (
               <div className="mt-5">
                 <div className="text-xs font-black uppercase tracking-wider text-muted mb-2">Bộ thủ / thành phần</div>
-                <ul className="space-y-1.5">
-                  {entry.components.map((comp, i) => {
-                    const name = radicalNames[comp.element]
+                <div className="flex flex-wrap gap-1.5 p-2 border-2 border-ink/10" style={{ backgroundColor: "rgb(255,255,255)" }}>
+                  {groupedComponents.map(g => {
+                    const name = radicalNames[g.element]
+                    const positionLabel = g.positions.length === 1 ? (POSITION_LABELS[g.positions[0]] ?? g.positions[0]) : null
                     return (
-                      <li key={i} className="flex items-center gap-2 text-sm border-2 border-ink px-2 py-1.5">
-                        <span className="text-lg jp font-bold shrink-0" style={{ color: "#2e3257" }}>{comp.element}</span>
-                        <span className="flex-1 min-w-0">
-                          {name ? (
-                            <span className="font-bold">{name.hanviet}</span>
-                          ) : (
-                            <span className="text-muted italic">chưa rõ tên</span>
-                          )}
-                          {comp.isRadical && (
-                            <span className="ml-1.5 text-[9px] font-black uppercase tracking-wider px-1 py-0.5 border border-ink/30 text-muted">
-                              bộ
-                            </span>
-                          )}
-                        </span>
-                        {comp.position && (
-                          <span className="text-[10px] font-bold text-muted shrink-0">{POSITION_LABELS[comp.position] ?? comp.position}</span>
-                        )}
-                      </li>
+                      <span
+                        key={g.element}
+                        title={positionLabel ?? undefined}
+                        className="group inline-flex items-center gap-1 px-2 py-1 border-2 text-sm font-bold jp cursor-default transition-colors"
+                        style={{ borderColor: "#627d9a", color: "#627d9a" }}
+                        onMouseEnter={e => {
+                          e.currentTarget.style.borderColor = "#2e3257"
+                          e.currentTarget.style.color = "#2e3257"
+                        }}
+                        onMouseLeave={e => {
+                          e.currentTarget.style.borderColor = "#627d9a"
+                          e.currentTarget.style.color = "#627d9a"
+                        }}
+                      >
+                        [ {g.element}{name ? ` - ${name.hanviet}` : ""} ]
+                        {g.count > 1 && <span className="font-black">×{g.count}</span>}
+                        {g.isRadical && <span className="text-[8px] font-black align-super">bộ</span>}
+                      </span>
                     )
                   })}
-                </ul>
+                </div>
               </div>
             )}
           </div>
