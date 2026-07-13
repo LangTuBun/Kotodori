@@ -143,6 +143,27 @@ export interface KanjiChapter {
   groups: KanjiGroup[]
 }
 
+export interface KanjiVgComponent {
+  element: string
+  position: string | null
+  isRadical: boolean
+}
+
+export interface KanjiVgEntry {
+  viewBox: string
+  strokes: string[]
+  components: KanjiVgComponent[]
+}
+
+export type KanjiVgData = Record<string, KanjiVgEntry>
+
+export interface RadicalNameEntry {
+  hanviet: string
+  curated: boolean
+}
+
+export type RadicalNamesData = Record<string, RadicalNameEntry>
+
 export interface CounterRow {
   number: string
   kanji: string

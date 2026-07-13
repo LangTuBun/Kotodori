@@ -1,0 +1,450 @@
+{
+  "一": {
+    "hanviet": "Nhất",
+    "curated": false
+  },
+  "乙": {
+    "hanviet": "ất",
+    "curated": true
+  },
+  "二": {
+    "hanviet": "Nhị",
+    "curated": false
+  },
+  "亠": {
+    "hanviet": "đầu",
+    "curated": true
+  },
+  "八": {
+    "hanviet": "Bát",
+    "curated": false
+  },
+  "囗": {
+    "hanviet": "vi",
+    "curated": true
+  },
+  "儿": {
+    "hanviet": "nhân (chân người)",
+    "curated": true
+  },
+  "十": {
+    "hanviet": "Thập",
+    "curated": false
+  },
+  "丿": {
+    "hanviet": "phiệt",
+    "curated": true
+  },
+  "火": {
+    "hanviet": "Hỏa",
+    "curated": false
+  },
+  "冂": {
+    "hanviet": "quynh",
+    "curated": true
+  },
+  "白": {
+    "hanviet": "Bạch",
+    "curated": false
+  },
+  "雨": {
+    "hanviet": "Vũ",
+    "curated": false
+  },
+  "田": {
+    "hanviet": "Điền",
+    "curated": false
+  },
+  "禾": {
+    "hanviet": "hòa",
+    "curated": true
+  },
+  "氵": {
+    "hanviet": "thủy",
+    "curated": true
+  },
+  "永": {
+    "hanviet": "vĩnh",
+    "curated": true
+  },
+  "水": {
+    "hanviet": "Thủy",
+    "curated": false
+  },
+  "丶": {
+    "hanviet": "chủ",
+    "curated": true
+  },
+  "云": {
+    "hanviet": "vân",
+    "curated": true
+  },
+  "日": {
+    "hanviet": "Nhật",
+    "curated": false
+  },
+  "月": {
+    "hanviet": "Nguyệt",
+    "curated": false
+  },
+  "小": {
+    "hanviet": "Tiểu",
+    "curated": false
+  },
+  "大": {
+    "hanviet": "Đại",
+    "curated": false
+  },
+  "木": {
+    "hanviet": "Mộc",
+    "curated": false
+  },
+  "林": {
+    "hanviet": "Lâm",
+    "curated": false
+  },
+  "亻": {
+    "hanviet": "nhân",
+    "curated": true
+  },
+  "本": {
+    "hanviet": "Bản",
+    "curated": false
+  },
+  "髟": {
+    "hanviet": "tiêu",
+    "curated": true
+  },
+  "友": {
+    "hanviet": "Hữu",
+    "curated": false
+  },
+  "土": {
+    "hanviet": "Thổ",
+    "curated": false
+  },
+  "長": {
+    "hanviet": "Trường",
+    "curated": false
+  },
+  "卜": {
+    "hanviet": "bốc",
+    "curated": true
+  },
+  "丨": {
+    "hanviet": "cổn",
+    "curated": true
+  },
+  "丆": {
+    "hanviet": "hán",
+    "curated": true
+  },
+  "口": {
+    "hanviet": "Khẩu",
+    "curated": false
+  },
+  "工": {
+    "hanviet": "công",
+    "curated": true
+  },
+  "又": {
+    "hanviet": "hựu",
+    "curated": true
+  },
+  "夕": {
+    "hanviet": "Tịch",
+    "curated": false
+  },
+  "見": {
+    "hanviet": "Kiến",
+    "curated": false
+  },
+  "彳": {
+    "hanviet": "xích",
+    "curated": true
+  },
+  "金": {
+    "hanviet": "Kim",
+    "curated": false
+  },
+  "米": {
+    "hanviet": "Mễ",
+    "curated": false
+  },
+  "前": {
+    "hanviet": "Tiền",
+    "curated": false
+  },
+  "刂": {
+    "hanviet": "đao",
+    "curated": true
+  },
+  "帚": {
+    "hanviet": "trửu",
+    "curated": true
+  },
+  "艮": {
+    "hanviet": "cấn",
+    "curated": true
+  },
+  "食": {
+    "hanviet": "Thực",
+    "curated": false
+  },
+  "飠": {
+    "hanviet": "thực",
+    "curated": true
+  },
+  "欠": {
+    "hanviet": "khiếm",
+    "curated": true
+  },
+  "人": {
+    "hanviet": "Nhân",
+    "curated": false
+  },
+  "反": {
+    "hanviet": "phản",
+    "curated": true
+  },
+  "牛": {
+    "hanviet": "Ngưu",
+    "curated": false
+  },
+  "干": {
+    "hanviet": "can",
+    "curated": true
+  },
+  "勿": {
+    "hanviet": "vật",
+    "curated": true
+  },
+  "子": {
+    "hanviet": "Tử",
+    "curated": false
+  },
+  "生": {
+    "hanviet": "Sinh",
+    "curated": false
+  },
+  "气": {
+    "hanviet": "khí",
+    "curated": true
+  },
+  "乂": {
+    "hanviet": "nghệ",
+    "curated": true
+  },
+  "毛": {
+    "hanviet": "Mao",
+    "curated": false
+  },
+  "手": {
+    "hanviet": "Thủ",
+    "curated": false
+  },
+  "父": {
+    "hanviet": "Phụ",
+    "curated": false
+  },
+  "毋": {
+    "hanviet": "vô",
+    "curated": true
+  },
+  "毎": {
+    "hanviet": "Mỗi",
+    "curated": false
+  },
+  "⺌": {
+    "hanviet": "tiểu",
+    "curated": true
+  },
+  "兀": {
+    "hanviet": "ngột",
+    "curated": true
+  },
+  "立": {
+    "hanviet": "Lập",
+    "curated": false
+  },
+  "音": {
+    "hanviet": "Âm",
+    "curated": false
+  },
+  "斤": {
+    "hanviet": "cân",
+    "curated": true
+  },
+  "千": {
+    "hanviet": "Thiên",
+    "curated": false
+  },
+  "里": {
+    "hanviet": "lý",
+    "curated": true
+  },
+  "門": {
+    "hanviet": "Môn",
+    "curated": false
+  },
+  "耳": {
+    "hanviet": "Nhĩ",
+    "curated": false
+  },
+  "車": {
+    "hanviet": "Xa",
+    "curated": false
+  },
+  "軍": {
+    "hanviet": "quân",
+    "curated": true
+  },
+  "⻌": {
+    "hanviet": "sước",
+    "curated": true
+  },
+  "寸": {
+    "hanviet": "thốn",
+    "curated": true
+  },
+  "寺": {
+    "hanviet": "Tự",
+    "curated": false
+  },
+  "艹": {
+    "hanviet": "thảo",
+    "curated": true
+  },
+  "何": {
+    "hanviet": "Hà",
+    "curated": false
+  },
+  "可": {
+    "hanviet": "khả",
+    "curated": true
+  },
+  "目": {
+    "hanviet": "Mục",
+    "curated": false
+  },
+  "罒": {
+    "hanviet": "võng",
+    "curated": true
+  },
+  "貝": {
+    "hanviet": "bối",
+    "curated": true
+  },
+  "入": {
+    "hanviet": "Nhập",
+    "curated": false
+  },
+  "肉": {
+    "hanviet": "Nhục",
+    "curated": false
+  },
+  "言": {
+    "hanviet": "Ngôn",
+    "curated": false
+  },
+  "舌": {
+    "hanviet": "thiệt",
+    "curated": true
+  },
+  "山": {
+    "hanviet": "Sơn",
+    "curated": false
+  },
+  "凵": {
+    "hanviet": "khảm",
+    "curated": true
+  },
+  "央": {
+    "hanviet": "ương",
+    "curated": true
+  },
+  "力": {
+    "hanviet": "lực",
+    "curated": true
+  },
+  "宀": {
+    "hanviet": "miên",
+    "curated": true
+  },
+  "女": {
+    "hanviet": "Nữ",
+    "curated": false
+  },
+  "丁": {
+    "hanviet": "đinh",
+    "curated": true
+  },
+  "士": {
+    "hanviet": "sĩ",
+    "curated": true
+  },
+  "匕": {
+    "hanviet": "chủy",
+    "curated": true
+  },
+  "売": {
+    "hanviet": "Mại",
+    "curated": false
+  },
+  "廿": {
+    "hanviet": "chấp",
+    "curated": true
+  },
+  "化": {
+    "hanviet": "hóa",
+    "curated": true
+  },
+  "酉": {
+    "hanviet": "dậu",
+    "curated": true
+  },
+  "西": {
+    "hanviet": "Tây",
+    "curated": false
+  },
+  "早": {
+    "hanviet": "Tảo",
+    "curated": false
+  },
+  "聿": {
+    "hanviet": "duật",
+    "curated": true
+  },
+  "川": {
+    "hanviet": "Xuyên",
+    "curated": false
+  },
+  "礻": {
+    "hanviet": "thị",
+    "curated": true
+  },
+  "刀": {
+    "hanviet": "đao",
+    "curated": true
+  },
+  "方": {
+    "hanviet": "Phương",
+    "curated": false
+  },
+  "豕": {
+    "hanviet": "thỉ",
+    "curated": true
+  },
+  "疒": {
+    "hanviet": "nạch",
+    "curated": true
+  },
+  "丙": {
+    "hanviet": "bính",
+    "curated": true
+  },
+  "龰": {
+    "hanviet": "chỉ",
+    "curated": true
+  }
+}

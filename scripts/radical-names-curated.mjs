@@ -1,0 +1,75 @@
+// Hand-supplied Hán Việt names for KanjiVG decomposition components that are
+// NOT themselves one of kanji.json's 158 "leading kanji" anchors (so their
+// hanviet can't be auto-filled from the existing textbook data — see
+// build-radical-names.mjs). These are mostly classical Kangxi radical forms
+// (bộ thủ) and their compressed/positional variants (氵 = variant of 水,
+// 亻 = variant of 人, etc). No automated source exists for this mapping;
+// values come from standard Hán Việt radical naming and are flagged
+// `curated: true` in the output for spot-check, same pattern as
+// vocab-additions.mjs.
+//
+// A handful of very rare/private-use variant glyphs KanjiVG emits (⺕, 𠦝,
+// 𠂇, 𠂉, 圣, 𠂊, 冋) are deliberately left out — low confidence, and each
+// occurs only once across the anchor set — so the UI falls back to showing
+// the bare character with no gloss rather than a guessed name.
+export const curatedRadicalNames = {
+  "亠": "đầu",
+  "儿": "nhân (chân người)",
+  "丿": "phiệt",
+  "艹": "thảo",
+  "氵": "thủy",
+  "丶": "chủ",
+  "冂": "quynh",
+  "亻": "nhân",
+  "卜": "bốc",
+  "彳": "xích",
+  "干": "can",
+  "毋": "vô",
+  "乙": "ất",
+  "囗": "vi",
+  "云": "vân",
+  "丨": "cổn",
+  "飠": "thực",
+  "欠": "khiếm",
+  "央": "ương",
+  "宀": "miên",
+  "禾": "hòa",
+  "永": "vĩnh",
+  "髟": "tiêu",
+  "丆": "hán",
+  "工": "công",
+  "又": "hựu",
+  "刂": "đao",
+  "帚": "trửu",
+  "艮": "cấn",
+  "反": "phản",
+  "勿": "vật",
+  "气": "khí",
+  "乂": "nghệ",
+  "⺌": "tiểu",
+  "兀": "ngột",
+  "斤": "cân",
+  "里": "lý",
+  "軍": "quân",
+  "⻌": "sước",
+  "寸": "thốn",
+  "可": "khả",
+  "罒": "võng",
+  "貝": "bối",
+  "舌": "thiệt",
+  "凵": "khảm",
+  "力": "lực",
+  "丁": "đinh",
+  "士": "sĩ",
+  "匕": "chủy",
+  "廿": "chấp",
+  "化": "hóa",
+  "酉": "dậu",
+  "聿": "duật",
+  "礻": "thị",
+  "刀": "đao",
+  "豕": "thỉ",
+  "疒": "nạch",
+  "丙": "bính",
+  "龰": "chỉ",
+}

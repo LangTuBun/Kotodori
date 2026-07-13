@@ -3,6 +3,7 @@ import kanjiData from "@/data/n5/kanji.json"
 import type { KanjiChapter, KanjiGroup } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { cleanReadings, onkunTone } from "@/lib/kanji"
+import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 
 const chapters = kanjiData.chapters as KanjiChapter[]
 
@@ -17,6 +18,7 @@ function accentFor(i: number) {
 export function Kanji() {
   const [chapter, setChapter] = useState<number | null>(1)
   const [search, setSearch] = useState("")
+  const [selectedAnchor, setSelectedAnchor] = useState<string | null>(null)
 
   const totalWords = useMemo(() => chapters.reduce((a, c) => a + c.wordCount, 0), [])
 
@@ -87,16 +89,24 @@ export function Kanji() {
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
             {filteredGroups.map(({ chapterNum, group }, i) => (
-              <KanjiGroupCard key={group.id} group={group} chapterNum={chapterNum} accent={accentFor(i)} />
+              <KanjiGroupCard
+                key={group.id}
+                group={group}
+                chapterNum={chapterNum}
+                accent={accentFor(i)}
+                onAnchorClick={() => setSelectedAnchor(group.anchor)}
+              />
             ))}
           </div>
         </div>
       </div>
+
+      <KanjiDrawer char={selectedAnchor} onClose={() => setSelectedAnchor(null)} />
     </div>
   )
 }
 
-function KanjiGroupCard({ group, chapterNum, accent }: { group: KanjiGroup; chapterNum: number; accent: string }) {
+function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick }: { group: KanjiGroup; chapterNum: number; accent: string; onAnchorClick: () => void }) {
   const on = cleanReadings(group.onyomi)
   const kun = cleanReadings(group.kunyomi)
 
@@ -107,7 +117,13 @@ function KanjiGroupCard({ group, chapterNum, accent }: { group: KanjiGroup; chap
     >
       {/* Header: leading kanji */}
       <div className="flex items-start gap-3 mb-2 pb-2 border-b-2 border-ink/10">
-        <div className="text-4xl font-black jp leading-none shrink-0 pt-0.5">{group.anchor}</div>
+        <button
+          onClick={onAnchorClick}
+          title="Xem hoạt hình nét chữ"
+          className="appearance-none bg-transparent border-0 p-0 m-0 text-4xl font-black jp leading-none shrink-0 pt-0.5 cursor-pointer transition-transform hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-ink/40 rounded-sm"
+        >
+          {group.anchor}
+        </button>
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between gap-2">
             {group.hanviet && (
