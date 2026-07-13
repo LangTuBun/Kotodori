@@ -20,7 +20,7 @@ export function Sidebar() {
   const due = getDueCards().length
 
   return (
-    <aside className="w-64 min-h-screen border-r-3 border-ink bg-surface flex flex-col">
+    <aside className="w-64 h-screen overflow-y-auto border-r-3 border-ink bg-surface flex flex-col">
       {/* Logo */}
       <div className="border-b-3 border-ink p-6">
         <div className="text-3xl font-black tracking-tighter">

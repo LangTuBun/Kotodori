@@ -47,7 +47,7 @@ export function Kanji() {
 
   return (
     <div className="flex h-screen overflow-hidden">
-      <div className="flex-1 flex flex-col overflow-hidden">
+      <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-ink flex gap-3 bg-surface flex-wrap items-center">
           <input
@@ -81,7 +81,7 @@ export function Kanji() {
         </div>
 
         {/* Groups grid */}
-        <div className="flex-1 overflow-y-auto p-4">
+        <div className="flex-1 min-h-0 overflow-y-auto p-4 pb-10">
           {filteredGroups.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">Không tìm thấy kanji nào.</div>
           )}
