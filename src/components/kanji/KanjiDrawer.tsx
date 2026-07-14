@@ -4,6 +4,7 @@ import radicalNamesJson from "@/data/n5/radical-names.json"
 import type { KanjiVgComponent, KanjiVgData, RadicalNamesData } from "@/types"
 import { AnimatedKanjiSvg } from "./AnimatedKanjiSvg"
 import { useTranslation } from "@/lib/useTranslation"
+import { hanVietForChar } from "@/lib/kanji"
 
 const kanjivgData = kanjivgJson as KanjiVgData
 const radicalNames = radicalNamesJson as RadicalNamesData
@@ -34,6 +35,20 @@ function groupComponents(components: KanjiVgComponent[]): GroupedComponent[] {
     if (comp.position && !g.positions.includes(comp.position)) g.positions.push(comp.position)
   }
   return order.map(el => map.get(el)!)
+}
+
+function HanVietBadge({ hanviet, label }: { hanviet: string; label: string }) {
+  return (
+    <div
+      className="flex items-center justify-center gap-2 px-4 py-2 border-2"
+      style={{ backgroundColor: "rgb(255,255,255)", borderColor: "#627d9a" }}
+    >
+      <span className="text-[10px] font-black uppercase tracking-widest" style={{ color: "#627d9a" }}>
+        {label}
+      </span>
+      <span className="text-xl font-black" style={{ color: "#2e3257" }}>{hanviet}</span>
+    </div>
+  )
 }
 
 function ReplayIcon() {
@@ -84,6 +99,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
   }, [open, onClose])
 
   const entry = displayChar ? kanjivgData[displayChar] : undefined
+  const hanviet = displayChar ? hanVietForChar(displayChar) : undefined
   const groupedComponents = useMemo(
     () => (entry ? groupComponents(entry.components) : []),
     [entry]
@@ -118,8 +134,13 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
         </div>
 
         {!entry && displayChar && (
-          <div className="p-6 text-center text-muted font-bold text-sm">
-            {t('kanjiDrawer.noAnimation')}
+          <div className="p-6 text-center">
+            <div className="text-muted font-bold text-sm mb-4">
+              {t('kanjiDrawer.noAnimation')}
+            </div>
+            {hanviet && (
+              <HanVietBadge hanviet={hanviet} label={t('kanjiDrawer.hanvietLabel')} />
+            )}
           </div>
         )}
 
@@ -133,6 +154,12 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
                 className="w-full aspect-square"
               />
             </div>
+
+            {hanviet && (
+              <div className="mt-3">
+                <HanVietBadge hanviet={hanviet} label={t('kanjiDrawer.hanvietLabel')} />
+              </div>
+            )}
 
             <div className="flex justify-center mt-3">
               <button

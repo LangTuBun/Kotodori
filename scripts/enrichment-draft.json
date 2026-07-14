@@ -1,0 +1,5562 @@
+[
+  {
+    "id": "k1_g1",
+    "anchor": "一",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "一",
+        "kana": "いち",
+        "hanviet": "Nhất",
+        "meaning_en": "one; 1",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "一番",
+        "kana": "いちばん",
+        "hanviet": "Nhất Phiên",
+        "meaning_en": "number one; first",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "一緒",
+        "kana": "いっしょ",
+        "hanviet": "Nhất Tự",
+        "meaning_en": "(doing) together",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g2",
+    "anchor": "二",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "二",
+        "kana": "に",
+        "hanviet": "Nhị",
+        "meaning_en": "two; 2",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g3",
+    "anchor": "三",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "三",
+        "kana": "さん",
+        "hanviet": "Tam",
+        "meaning_en": "three; 3",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "三味線",
+        "kana": "しゃみせん",
+        "hanviet": "Tam Vị Tuyến",
+        "meaning_en": "shamisen; samisen",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g4",
+    "anchor": "四",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "四",
+        "kana": "し",
+        "hanviet": "Tứ",
+        "meaning_en": "four; 4",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "四季",
+        "kana": "しき",
+        "hanviet": "Tứ Quý",
+        "meaning_en": "the four seasons",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "四捨五入",
+        "kana": "ししゃごにゅう",
+        "hanviet": "Tứ Xả Ngũ Nhập",
+        "meaning_en": "rounding (off; a number); rounding half away from zero",
+        "onkun": "On--On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g5",
+    "anchor": "五",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "五",
+        "kana": "ご",
+        "hanviet": "Ngũ",
+        "meaning_en": "five; 5",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "五十音",
+        "kana": "ごじゅうおん",
+        "hanviet": "Ngũ Thập Âm",
+        "meaning_en": "the Japanese syllabary",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "五輪",
+        "kana": "ごりん",
+        "hanviet": "Ngũ Luân",
+        "meaning_en": "Olympic Games; Olympics",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g6",
+    "anchor": "六",
+    "chapter": 1,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "六",
+        "kana": "ろく",
+        "hanviet": "Lục",
+        "meaning_en": "six; 6",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g7",
+    "anchor": "七",
+    "chapter": 1,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "七",
+        "kana": "しち",
+        "hanviet": "Thất",
+        "meaning_en": "seven",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "七夕",
+        "kana": "たなばた",
+        "hanviet": "Thất Tịch",
+        "meaning_en": "Star Festival (held in July or August); Tanabata",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g8",
+    "anchor": "八",
+    "chapter": 1,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "八",
+        "kana": "はち",
+        "hanviet": "Bát",
+        "meaning_en": "eight; 8",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "八百屋",
+        "kana": "やおや",
+        "hanviet": "Bát Bách Ốc",
+        "meaning_en": "greengrocer; fruit and vegetable shop",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "八つ当たり",
+        "kana": "やつあたり",
+        "hanviet": "Bát Đương",
+        "meaning_en": "venting one's anger (on someone or something); taking out one's anger on",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g9",
+    "anchor": "九",
+    "chapter": 1,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "九",
+        "kana": "きゅう",
+        "hanviet": "Cửu",
+        "meaning_en": "nine; 9",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "九州",
+        "kana": "きゅうしゅう",
+        "hanviet": "Cửu Châu",
+        "meaning_en": "Kyūshū (southernmost of the four main islands of Japan)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "九重",
+        "kana": "ここのえ",
+        "hanviet": "Cửu Trọng",
+        "meaning_en": "ninefold",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g10",
+    "anchor": "十",
+    "chapter": 1,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "十",
+        "kana": "じゅう",
+        "hanviet": "Thập",
+        "meaning_en": "ten; 10",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "十分",
+        "kana": "じゅうぶん",
+        "hanviet": "Thập Phân",
+        "meaning_en": "enough; sufficient",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "十字路",
+        "kana": "じゅうじろ",
+        "hanviet": "Thập Tự Lộ",
+        "meaning_en": "crossroads; intersection",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "十字架",
+        "kana": "じゅうじか",
+        "hanviet": "Thập Tự Giá",
+        "meaning_en": "cross (for crucifixion); the Cross (of Christ)",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g11",
+    "anchor": "百",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "百科事典",
+        "kana": "ひゃっかじてん",
+        "hanviet": "Bách Khoa Sự Điển",
+        "meaning_en": "encyclopedia; encyclopaedia",
+        "onkun": "On--On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "百姓",
+        "kana": "ひゃくしょう",
+        "hanviet": "Bách Tính",
+        "meaning_en": "farmer; peasant",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "百貨店",
+        "kana": "ひゃっかてん",
+        "hanviet": "Bách Hóa Điếm",
+        "meaning_en": "department store",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g12",
+    "anchor": "千",
+    "chapter": 1,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "千",
+        "kana": "せん",
+        "hanviet": "Thiên",
+        "meaning_en": "thousand; 1,000",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "千里",
+        "kana": "せんり",
+        "hanviet": "Thiên Lý",
+        "meaning_en": "1000 ri; (a) long distance",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "千円札",
+        "kana": "せんえんさつ",
+        "hanviet": "Thiên Viên Trát",
+        "meaning_en": "1,000 yen bill",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "千島列島",
+        "kana": "ちしまれっとう",
+        "hanviet": "Thiên Đảo Liệt Đảo",
+        "meaning_en": "Kurile Islands",
+        "onkun": "Kun--Kun--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g13",
+    "anchor": "万",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "万",
+        "kana": "まん",
+        "hanviet": "Vạn",
+        "meaning_en": "10,000; ten thousand",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "万能",
+        "kana": "ばんのう",
+        "hanviet": "Vạn Năng",
+        "meaning_en": "all-purpose; utility",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "万引き",
+        "kana": "まんびき",
+        "hanviet": "Vạn Dẫn",
+        "meaning_en": "shoplifting; shoplifter",
+        "onkun": "On--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k1_g14",
+    "anchor": "円",
+    "chapter": 1,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "円安",
+        "kana": "えんやす",
+        "hanviet": "Viên An",
+        "meaning_en": "depreciation of the yen; weak yen",
+        "onkun": "On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "円相場",
+        "kana": "えんそうば",
+        "hanviet": "Viên Tương Trường",
+        "meaning_en": "yen exchange rate",
+        "onkun": "On--On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "円卓",
+        "kana": "えんたく",
+        "hanviet": "Viên Trác",
+        "meaning_en": "round table",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k2_g1",
+    "anchor": "火",
+    "chapter": 2,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "火災",
+        "kana": "かさい",
+        "hanviet": "Hỏa Tai",
+        "meaning_en": "conflagration; fire",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "火山",
+        "kana": "かざん",
+        "hanviet": "Hỏa Sơn",
+        "meaning_en": "volcano",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "火星",
+        "kana": "かせい",
+        "hanviet": "Hỏa Tinh",
+        "meaning_en": "Mars (planet)",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k2_g3",
+    "anchor": "秋",
+    "chapter": 2,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "秋季",
+        "kana": "しゅうき",
+        "hanviet": "Thu Quý",
+        "meaning_en": "fall season; autumn season",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "秋口",
+        "kana": "あきぐち",
+        "hanviet": "Thu Khẩu",
+        "meaning_en": "beginning of autumn; beginning of fall",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k2_g6",
+    "anchor": "水",
+    "chapter": 2,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "水泳",
+        "kana": "すいえい",
+        "hanviet": "Thủy Vịnh",
+        "meaning_en": "swimming",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "水素",
+        "kana": "すいそ",
+        "hanviet": "Thủy Tố",
+        "meaning_en": "hydrogen (H)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "水分",
+        "kana": "すいぶん",
+        "hanviet": "Thủy Phân",
+        "meaning_en": "water; liquid",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "水蒸気",
+        "kana": "すいじょうき",
+        "hanviet": "Thủy Chưng Khí",
+        "meaning_en": "water vapour; water vapor",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k2_g7",
+    "anchor": "雨",
+    "chapter": 2,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "雨戸",
+        "kana": "あまど",
+        "hanviet": "Vũ Hộ",
+        "meaning_en": "sliding storm shutter",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "雨天",
+        "kana": "うてん",
+        "hanviet": "Vũ Thiên",
+        "meaning_en": "rainy weather",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "雨季",
+        "kana": "うき",
+        "hanviet": "Vũ Quý",
+        "meaning_en": "rainy season",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k2_g8",
+    "anchor": "電",
+    "chapter": 2,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "電報",
+        "kana": "でんぽう",
+        "hanviet": "Điện Báo",
+        "meaning_en": "telegram",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "電子",
+        "kana": "でんし",
+        "hanviet": "Điện Tử",
+        "meaning_en": "electron",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k2_g9",
+    "anchor": "雪",
+    "chapter": 2,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "雪崩",
+        "kana": "なだれ",
+        "hanviet": "Tuyết Băng",
+        "meaning_en": "avalanche; snowslide",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "雪解け",
+        "kana": "ゆきどけ",
+        "hanviet": "Tuyết Giải",
+        "meaning_en": "thawing of snow; thaw",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "雪辱",
+        "kana": "せつじょく",
+        "hanviet": "Tuyết Nhục",
+        "meaning_en": "vindication of honour; vindication of honor",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k2_g10",
+    "anchor": "雲",
+    "chapter": 2,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "雲行き",
+        "kana": "くもゆき",
+        "hanviet": "Vân Hành",
+        "meaning_en": "weather; look of the sky",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "雲雀",
+        "kana": "ひばり",
+        "hanviet": "Vân Tước",
+        "meaning_en": "skylark (Alauda arvensis)",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g1",
+    "anchor": "日",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "日",
+        "kana": "にち",
+        "hanviet": "Nhật",
+        "meaning_en": "Sunday",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "日",
+        "kana": "ひ",
+        "hanviet": "Nhật",
+        "meaning_en": "day; days",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "日記",
+        "kana": "にっき",
+        "hanviet": "Nhật Ký",
+        "meaning_en": "diary; journal",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g2",
+    "anchor": "白",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "白状",
+        "kana": "はくじょう",
+        "hanviet": "Bạch Trạng",
+        "meaning_en": "confession",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "白衣",
+        "kana": "はくい",
+        "hanviet": "Bạch Y",
+        "meaning_en": "white clothes; white robe",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "白書",
+        "kana": "はくしょ",
+        "hanviet": "Bạch Thư",
+        "meaning_en": "white paper (government report)",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g3",
+    "anchor": "早",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "早",
+        "kana": "はや",
+        "hanviet": "Tảo",
+        "meaning_en": "already; now",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "早口",
+        "kana": "はやくち",
+        "hanviet": "Tảo Khẩu",
+        "meaning_en": "fast-talking; rapid talking",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "早速",
+        "kana": "さっそく",
+        "hanviet": "Tảo Tốc",
+        "meaning_en": "at once; immediately",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g4",
+    "anchor": "月",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "月曜",
+        "kana": "げつよう",
+        "hanviet": "Nguyệt Diệu",
+        "meaning_en": "Monday",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "月給",
+        "kana": "げっきゅう",
+        "hanviet": "Nguyệt Cấp",
+        "meaning_en": "monthly salary",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "月末",
+        "kana": "げつまつ",
+        "hanviet": "Nguyệt Mạt",
+        "meaning_en": "end of the month",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g5",
+    "anchor": "明",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "明け方",
+        "kana": "あけがた",
+        "hanviet": "Minh Phương",
+        "meaning_en": "dawn; daybreak",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "明らか",
+        "kana": "あきらか",
+        "hanviet": "Minh",
+        "meaning_en": "clear; obvious",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "明かり",
+        "kana": "あかり",
+        "hanviet": "Minh",
+        "meaning_en": "light; glow",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g6",
+    "anchor": "朝",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "朝ごはん",
+        "kana": "あさごはん",
+        "hanviet": "Triêu",
+        "meaning_en": "breakfast",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "朝鮮",
+        "kana": "ちょうせん",
+        "hanviet": "Triêu Tiên",
+        "meaning_en": "Korea",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "朝鮮半島",
+        "kana": "ちょうせんはんとう",
+        "hanviet": "Triêu Tiên Bán Đảo",
+        "meaning_en": "Korean peninsula",
+        "onkun": "On--On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g7",
+    "anchor": "大",
+    "chapter": 3,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "大人",
+        "kana": "おとな",
+        "hanviet": "Đại Nhân",
+        "meaning_en": "adult; grown-up",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "大使館",
+        "kana": "たいしかん",
+        "hanviet": "Đại Sử Quán",
+        "meaning_en": "embassy",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "大",
+        "kana": "だい",
+        "hanviet": "Đại",
+        "meaning_en": "large; big",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "大",
+        "kana": "おお",
+        "hanviet": "Đại",
+        "meaning_en": "large; big",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g9",
+    "anchor": "太",
+    "chapter": 3,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "太鼓",
+        "kana": "たいこ",
+        "hanviet": "Thái Cổ",
+        "meaning_en": "drum",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "太る",
+        "kana": "ふとる",
+        "hanviet": "Thái",
+        "meaning_en": "to put on weight; to gain weight",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "太平洋",
+        "kana": "たいへいよう",
+        "hanviet": "Thái Bình Dương",
+        "meaning_en": "Pacific Ocean",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "太陽系",
+        "kana": "たいようけい",
+        "hanviet": "Thái Dương Hệ",
+        "meaning_en": "solar system",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g10",
+    "anchor": "小",
+    "chapter": 3,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "小",
+        "kana": "しょう",
+        "hanviet": "Tiểu",
+        "meaning_en": "smallness; small item",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "小",
+        "kana": "こ",
+        "hanviet": "Tiểu",
+        "meaning_en": "small; little",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g11",
+    "anchor": "少",
+    "chapter": 3,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "少ない",
+        "kana": "すくない",
+        "hanviet": "Thiểu",
+        "meaning_en": "few; little",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "少",
+        "kana": "しょう",
+        "hanviet": "Thiểu",
+        "meaning_en": "small; little",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "少年",
+        "kana": "しょうねん",
+        "hanviet": "Thiếu Niên",
+        "meaning_en": "boy",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "少女",
+        "kana": "しょうじょ",
+        "hanviet": "Thiếu Nữ",
+        "meaning_en": "girl (usu. between 7 and 17); young lady",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g12",
+    "anchor": "京",
+    "chapter": 3,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "京阪",
+        "kana": "けいはん",
+        "hanviet": "Kinh Phản",
+        "meaning_en": "Kyoto and Osaka; Kyoto-Osaka area",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g13",
+    "anchor": "少",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "少し",
+        "kana": "すこし",
+        "hanviet": "Thiểu",
+        "meaning_en": "a little; a bit",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "少",
+        "kana": "しょう",
+        "hanviet": "Thiểu",
+        "meaning_en": "small; little",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "少々",
+        "kana": "しょうしょう",
+        "hanviet": "Thiểu Thiểu",
+        "meaning_en": "a little; a bit",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k3_g14",
+    "anchor": "東",
+    "chapter": 3,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "東西",
+        "kana": "とうざい",
+        "hanviet": "Đông Tây",
+        "meaning_en": "east and west",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "東部",
+        "kana": "とうぶ",
+        "hanviet": "Đông Bộ",
+        "meaning_en": "eastern part; the east (of a region)",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k4_g1",
+    "anchor": "木",
+    "chapter": 4,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "木綿",
+        "kana": "もめん",
+        "hanviet": "Mộc Miên",
+        "meaning_en": "cotton (material)",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "木星",
+        "kana": "もくせい",
+        "hanviet": "Mộc Tinh",
+        "meaning_en": "Jupiter (planet)",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k4_g2",
+    "anchor": "林",
+    "chapter": 4,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "林檎",
+        "kana": "りんご",
+        "hanviet": "Lâm",
+        "meaning_en": "apple (fruit)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "林立",
+        "kana": "りんりつ",
+        "hanviet": "Lâm Lập",
+        "meaning_en": "standing close together; bristling (with)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "林道",
+        "kana": "りんどう",
+        "hanviet": "Lâm Đạo",
+        "meaning_en": "path through forest; woodland path",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "林野庁",
+        "kana": "りんやちょう",
+        "hanviet": "Lâm Dã Sảnh",
+        "meaning_en": "Forestry Agency",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k4_g4",
+    "anchor": "本",
+    "chapter": 4,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "本",
+        "kana": "ほん",
+        "hanviet": "Bản",
+        "meaning_en": "book; volume",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "本棚",
+        "kana": "ほんだな",
+        "hanviet": "Bản Bằng",
+        "meaning_en": "bookshelves; bookshelf",
+        "onkun": "On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "本当",
+        "kana": "ほんとう",
+        "hanviet": "Bản Đương",
+        "meaning_en": "truth; reality",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k4_g5",
+    "anchor": "体",
+    "chapter": 4,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "体温",
+        "kana": "たいおん",
+        "hanviet": "Thể Ôn",
+        "meaning_en": "body temperature",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "体育",
+        "kana": "たいいく",
+        "hanviet": "Thể Dục",
+        "meaning_en": "physical education; PE",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "体操",
+        "kana": "たいそう",
+        "hanviet": "Thể Thao",
+        "meaning_en": "gymnastics; physical exercises",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "体積",
+        "kana": "たいせき",
+        "hanviet": "Thể Tích",
+        "meaning_en": "capacity; volume",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k4_g6",
+    "anchor": "休",
+    "chapter": 4,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "休む",
+        "kana": "やすむ",
+        "hanviet": "Hưu",
+        "meaning_en": "to be absent; to take a day off",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "休暇",
+        "kana": "きゅうか",
+        "hanviet": "Hưu Hạ",
+        "meaning_en": "holiday; vacation",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "休憩",
+        "kana": "きゅうけい",
+        "hanviet": "Hưu Khế",
+        "meaning_en": "rest; break",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k4_g7",
+    "anchor": "長",
+    "chapter": 4,
+    "currentCount": 6,
+    "items": [
+      {
+        "kanji": "長",
+        "kana": "ちょう",
+        "hanviet": "Trưởng",
+        "meaning_en": "head; chief",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k4_g8",
+    "anchor": "髪",
+    "chapter": 4,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "髪型",
+        "kana": "かみがた",
+        "hanviet": "Phát Hình",
+        "meaning_en": "hair style; coiffure",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g1",
+    "anchor": "土",
+    "chapter": 5,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "土産",
+        "kana": "みやげ",
+        "hanviet": "Thổ Sản",
+        "meaning_en": "local specialty or souvenir bought as a gift while travelling",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "土手",
+        "kana": "どて",
+        "hanviet": "Thổ Thủ",
+        "meaning_en": "embankment; bank",
+        "onkun": "On--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g2",
+    "anchor": "上",
+    "chapter": 5,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "上げる",
+        "kana": "あげる",
+        "hanviet": "Thượng",
+        "meaning_en": "to raise; to elevate",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "上手",
+        "kana": "じょうず",
+        "hanviet": "Thượng Thủ",
+        "meaning_en": "skillful; skilled",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g3",
+    "anchor": "下",
+    "chapter": 5,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "下さい",
+        "kana": "ください",
+        "hanviet": "Hạ",
+        "meaning_en": "please (give me)",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "下がる",
+        "kana": "さがる",
+        "hanviet": "Hạ",
+        "meaning_en": "to come down; to go down",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g4",
+    "anchor": "不",
+    "chapter": 5,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "不味い",
+        "kana": "まずい",
+        "hanviet": "Bất Vị",
+        "meaning_en": "bad(-tasting); unpalatable",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "不",
+        "kana": "ふ",
+        "hanviet": "Bất",
+        "meaning_en": "un-; non-",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g5",
+    "anchor": "石",
+    "chapter": 5,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "石鹸",
+        "kana": "せっけん",
+        "hanviet": "Thạch",
+        "meaning_en": "soap",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "石垣",
+        "kana": "いしがき",
+        "hanviet": "Thạch",
+        "meaning_en": "stone wall",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g6",
+    "anchor": "右",
+    "chapter": 5,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "右足",
+        "kana": "みぎあし",
+        "hanviet": "Hữu Túc",
+        "meaning_en": "right foot",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "右上",
+        "kana": "みぎうえ",
+        "hanviet": "Hữu Thượng",
+        "meaning_en": "upper right",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "右腕",
+        "kana": "みぎうで",
+        "hanviet": "Hữu Oản",
+        "meaning_en": "right arm",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g7",
+    "anchor": "左",
+    "chapter": 5,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "左利き",
+        "kana": "ひだりきき",
+        "hanviet": "Tả Lợi",
+        "meaning_en": "left-handedness; left-handed person",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "左様なら",
+        "kana": "さようなら",
+        "hanviet": "Tả Dạng",
+        "meaning_en": "farewell; adieu",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "左腕",
+        "kana": "ひだりうで",
+        "hanviet": "Tả Oản",
+        "meaning_en": "left arm",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g8",
+    "anchor": "友",
+    "chapter": 5,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "友好",
+        "kana": "ゆうこう",
+        "hanviet": "Hữu Hảo",
+        "meaning_en": "friendship",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g9",
+    "anchor": "夕",
+    "chapter": 5,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "夕",
+        "kana": "ゆう",
+        "hanviet": "Tịch",
+        "meaning_en": "evening",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "夕焼け",
+        "kana": "ゆうやけ",
+        "hanviet": "Tịch Thiêu",
+        "meaning_en": "evening glow; red sunset",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "夕刊",
+        "kana": "ゆうかん",
+        "hanviet": "Tịch San",
+        "meaning_en": "evening edition (of a daily newspaper); evening paper",
+        "onkun": "Kun--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g10",
+    "anchor": "親",
+    "chapter": 5,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "親指",
+        "kana": "おやゆび",
+        "hanviet": "Thân Chỉ",
+        "meaning_en": "thumb",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "親戚",
+        "kana": "しんせき",
+        "hanviet": "Thân Thích",
+        "meaning_en": "relative; relation",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "親類",
+        "kana": "しんるい",
+        "hanviet": "Thân Loại",
+        "meaning_en": "relative; relation",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g11",
+    "anchor": "多",
+    "chapter": 5,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "多",
+        "kana": "た",
+        "hanviet": "Đa",
+        "meaning_en": "multi-",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "多数決",
+        "kana": "たすうけつ",
+        "hanviet": "Đa Số Quyết",
+        "meaning_en": "majority decision; majority vote",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "多少",
+        "kana": "たしょう",
+        "hanviet": "Đa Thiểu",
+        "meaning_en": "a little; some",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g12",
+    "anchor": "名",
+    "chapter": 5,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "名",
+        "kana": "な",
+        "hanviet": "Danh",
+        "meaning_en": "name; given name",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "名所",
+        "kana": "めいしょ",
+        "hanviet": "Danh Sở",
+        "meaning_en": "famous place; noted place",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "名物",
+        "kana": "めいぶつ",
+        "hanviet": "Danh Vật",
+        "meaning_en": "famous product; special product",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "名詞",
+        "kana": "めいし",
+        "hanviet": "Danh Từ",
+        "meaning_en": "noun",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k5_g13",
+    "anchor": "外",
+    "chapter": 5,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "外国人",
+        "kana": "がいこくじん",
+        "hanviet": "Ngoại Quốc Nhân",
+        "meaning_en": "foreigner; foreign citizen",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "外交",
+        "kana": "がいこう",
+        "hanviet": "Ngoại Giao",
+        "meaning_en": "diplomacy",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "外出",
+        "kana": "がいしゅつ",
+        "hanviet": "Ngoại Xuất",
+        "meaning_en": "going out; outing",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "外す",
+        "kana": "はずす",
+        "hanviet": "Ngoại",
+        "meaning_en": "to remove; to take off",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g1",
+    "anchor": "金",
+    "chapter": 6,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "黄金",
+        "kana": "おうごん",
+        "hanviet": "Hoàng Kim",
+        "meaning_en": "gold (Au)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "金",
+        "kana": "きん",
+        "hanviet": "Kim",
+        "meaning_en": "gold (metal)",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g2",
+    "anchor": "行",
+    "chapter": 6,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "行く",
+        "kana": "いく",
+        "hanviet": "Hành",
+        "meaning_en": "to go; to move (towards)",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "行",
+        "kana": "ぎょう",
+        "hanviet": "Hành",
+        "meaning_en": "line (of text); row",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "行動",
+        "kana": "こうどう",
+        "hanviet": "Hành Động",
+        "meaning_en": "action; conduct",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "行列",
+        "kana": "ぎょうれつ",
+        "hanviet": "Hành Liệt",
+        "meaning_en": "line; queue",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g3",
+    "anchor": "半",
+    "chapter": 6,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "半ば",
+        "kana": "なかば",
+        "hanviet": "Bán",
+        "meaning_en": "middle; halfway",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "半端",
+        "kana": "はんぱ",
+        "hanviet": "Bán Đoan",
+        "meaning_en": "remnant; fragment",
+        "onkun": "On--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g4",
+    "anchor": "米",
+    "chapter": 6,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "米価",
+        "kana": "べいか",
+        "hanviet": "Mễ Giá",
+        "meaning_en": "rice price",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g5",
+    "anchor": "来",
+    "chapter": 6,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "来月",
+        "kana": "らいげつ",
+        "hanviet": "Lai Nguyệt",
+        "meaning_en": "next month",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "来る",
+        "kana": "くる",
+        "hanviet": "Lai",
+        "meaning_en": "to come (spatially or temporally); to approach",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g6",
+    "anchor": "前",
+    "chapter": 6,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "前提",
+        "kana": "ぜんてい",
+        "hanviet": "Tiền Đề",
+        "meaning_en": "condition; assumption",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "前進",
+        "kana": "ぜんしん",
+        "hanviet": "Tiền Tiến",
+        "meaning_en": "advance; moving forward",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "前者",
+        "kana": "ぜんしゃ",
+        "hanviet": "Tiền Giả",
+        "meaning_en": "the former; the first",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "前後",
+        "kana": "ぜんご",
+        "hanviet": "Tiền Hậu",
+        "meaning_en": "front and rear; front and back",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g7",
+    "anchor": "帰",
+    "chapter": 6,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "帰る",
+        "kana": "かえる",
+        "hanviet": "Quy",
+        "meaning_en": "to return; to come home",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "帰り",
+        "kana": "かえり",
+        "hanviet": "Quy",
+        "meaning_en": "return; coming back",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "帰宅",
+        "kana": "きたく",
+        "hanviet": "Quy Trạch",
+        "meaning_en": "returning home; going home",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "帰す",
+        "kana": "かえす",
+        "hanviet": "Quy",
+        "meaning_en": "to send (someone) back; to send (someone) home",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g8",
+    "anchor": "良",
+    "chapter": 6,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "良",
+        "kana": "りょう",
+        "hanviet": "Lương",
+        "meaning_en": "good (quality, condition, etc.)",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "良質",
+        "kana": "りょうしつ",
+        "hanviet": "Lương Chất",
+        "meaning_en": "good quality; fine quality",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "良識",
+        "kana": "りょうしき",
+        "hanviet": "Lương Thức",
+        "meaning_en": "good sense",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g9",
+    "anchor": "食",
+    "chapter": 6,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "食堂",
+        "kana": "しょくどう",
+        "hanviet": "Thực Đường",
+        "meaning_en": "dining room; dining hall",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "食べる",
+        "kana": "たべる",
+        "hanviet": "Thực",
+        "meaning_en": "to eat",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "食",
+        "kana": "しょく",
+        "hanviet": "Thực",
+        "meaning_en": "food; foodstuff",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g10",
+    "anchor": "飲",
+    "chapter": 6,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "飲み込む",
+        "kana": "のみこむ",
+        "hanviet": "Ẩm",
+        "meaning_en": "to swallow; to gulp down",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "飲料",
+        "kana": "いんりょう",
+        "hanviet": "Ẩm Liệu",
+        "meaning_en": "beverage; drink",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k6_g11",
+    "anchor": "飯",
+    "chapter": 6,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "飯",
+        "kana": "めし",
+        "hanviet": "Phạn",
+        "meaning_en": "cooked rice",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g1",
+    "anchor": "今",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "今日",
+        "kana": "きょう",
+        "hanviet": "Kim Nhật",
+        "meaning_en": "today; this day",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "今朝",
+        "kana": "けさ",
+        "hanviet": "Kim Triêu",
+        "meaning_en": "this morning",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "今年",
+        "kana": "ことし",
+        "hanviet": "Kim Niên",
+        "meaning_en": "this year",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g2",
+    "anchor": "会",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "会う",
+        "kana": "あう",
+        "hanviet": "Hội",
+        "meaning_en": "to meet; to encounter",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "会",
+        "kana": "かい",
+        "hanviet": "Hội",
+        "meaning_en": "meeting; assembly",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "会話",
+        "kana": "かいわ",
+        "hanviet": "Hội Thoại",
+        "meaning_en": "conversation; talk",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g3",
+    "anchor": "合",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "合",
+        "kana": "ごう",
+        "hanviet": "Hợp",
+        "meaning_en": "gō; traditional unit of volume, approx. 180 ml",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "合図",
+        "kana": "あいず",
+        "hanviet": "Hợp Đồ",
+        "meaning_en": "sign; signal",
+        "onkun": "Kun--On",
+        "flags": []
+      },
+      {
+        "kanji": "合同",
+        "kana": "ごうどう",
+        "hanviet": "Hợp Đồng",
+        "meaning_en": "combination; union",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g4",
+    "anchor": "口",
+    "chapter": 7,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "口紅",
+        "kana": "くちべに",
+        "hanviet": "Khẩu Hồng",
+        "meaning_en": "lipstick",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "口実",
+        "kana": "こうじつ",
+        "hanviet": "Khẩu Thực",
+        "meaning_en": "excuse; pretext",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "口頭",
+        "kana": "こうとう",
+        "hanviet": "Khẩu Đầu",
+        "meaning_en": "oral; verbal",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "口笛",
+        "kana": "くちぶえ",
+        "hanviet": "Khẩu Địch",
+        "meaning_en": "whistle (sound made with the lips)",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g5",
+    "anchor": "中",
+    "chapter": 7,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "中学校",
+        "kana": "ちゅうがっこう",
+        "hanviet": "Trung Học Hiệu",
+        "meaning_en": "junior high school; middle school",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "中心",
+        "kana": "ちゅうしん",
+        "hanviet": "Trung Tâm",
+        "meaning_en": "center; centre",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g6",
+    "anchor": "古",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "古墳",
+        "kana": "こふん",
+        "hanviet": "Cổ Phần",
+        "meaning_en": "ancient burial mound; barrow",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "古着",
+        "kana": "ふるぎ",
+        "hanviet": "Cổ Trước",
+        "meaning_en": "old clothes; secondhand clothing",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g7",
+    "anchor": "牛",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "牛丼",
+        "kana": "ぎゅうどん",
+        "hanviet": "Ngưu",
+        "meaning_en": "gyudon; rice covered with sliced beef, usu. with fried onion",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g8",
+    "anchor": "物",
+    "chapter": 7,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "物",
+        "kana": "もの",
+        "hanviet": "Vật",
+        "meaning_en": "thing; object",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "物価",
+        "kana": "ぶっか",
+        "hanviet": "Vật Giá",
+        "meaning_en": "prices of commodities; prices (in general)",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g9",
+    "anchor": "年",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "年寄り",
+        "kana": "としより",
+        "hanviet": "Niên Ký",
+        "meaning_en": "old person; elderly person",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "年齢",
+        "kana": "ねんれい",
+        "hanviet": "Niên Linh",
+        "meaning_en": "age; years",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "年代",
+        "kana": "ねんだい",
+        "hanviet": "Niên Đại",
+        "meaning_en": "age; era",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g10",
+    "anchor": "午",
+    "chapter": 7,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "午",
+        "kana": "うま",
+        "hanviet": "Ngọ",
+        "meaning_en": "the Horse (seventh sign of the Chinese zodiac)",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "午前中",
+        "kana": "ごぜんちゅう",
+        "hanviet": "Ngọ Tiền Trung",
+        "meaning_en": "in the morning; during the morning",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g11",
+    "anchor": "年",
+    "chapter": 7,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "年",
+        "kana": "とし",
+        "hanviet": "Niên",
+        "meaning_en": "year",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "年",
+        "kana": "ねん",
+        "hanviet": "Niên",
+        "meaning_en": "year",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g12",
+    "anchor": "生",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "生",
+        "kana": "なま",
+        "hanviet": "Sinh",
+        "meaning_en": "raw; uncooked",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "生活",
+        "kana": "せいかつ",
+        "hanviet": "Sinh Hoạt",
+        "meaning_en": "life; living",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "生きる",
+        "kana": "いきる",
+        "hanviet": "Sinh",
+        "meaning_en": "to live; to exist",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g13",
+    "anchor": "気",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "気",
+        "kana": "き",
+        "hanviet": "Khí",
+        "meaning_en": "spirit; mind",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "気分",
+        "kana": "きぶん",
+        "hanviet": "Khí Phân",
+        "meaning_en": "feeling; mood",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "気候",
+        "kana": "きこう",
+        "hanviet": "Khí Hậu",
+        "meaning_en": "climate",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g14",
+    "anchor": "子",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "子",
+        "kana": "こ",
+        "hanviet": "Tử",
+        "meaning_en": "child; kid",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "子",
+        "kana": "ね",
+        "hanviet": "Tử",
+        "meaning_en": "the Rat (first sign of the Chinese zodiac)",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "子孫",
+        "kana": "しそん",
+        "hanviet": "Tử Tôn",
+        "meaning_en": "descendant; progeny",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g15",
+    "anchor": "漢",
+    "chapter": 7,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "漢方薬",
+        "kana": "かんぽうやく",
+        "hanviet": "Hán Phương Dược",
+        "meaning_en": "Chinese herbal medicine",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "漢語",
+        "kana": "かんご",
+        "hanviet": "Hán Ngữ",
+        "meaning_en": "Japanese word of Chinese origin; Sino-Japanese word",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "漢和",
+        "kana": "かんわ",
+        "hanviet": "Hán Hòa",
+        "meaning_en": "China and Japan",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k7_g16",
+    "anchor": "学",
+    "chapter": 7,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "学生",
+        "kana": "がくせい",
+        "hanviet": "Học Sinh",
+        "meaning_en": "student (esp. a university student)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "学",
+        "kana": "がく",
+        "hanviet": "Học",
+        "meaning_en": "learning; scholarship",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "学者",
+        "kana": "がくしゃ",
+        "hanviet": "Học Giả",
+        "meaning_en": "scholar; academic",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g2",
+    "anchor": "毛",
+    "chapter": 8,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "毛皮",
+        "kana": "けがわ",
+        "hanviet": "Mao Bì",
+        "meaning_en": "fur; skin",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g3",
+    "anchor": "父",
+    "chapter": 8,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "父親",
+        "kana": "ちちおや",
+        "hanviet": "Phụ Thân",
+        "meaning_en": "father",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "父母",
+        "kana": "ふぼ",
+        "hanviet": "Phụ Mẫu",
+        "meaning_en": "father and mother; parents",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "父さん",
+        "kana": "とうさん",
+        "hanviet": "Phụ",
+        "meaning_en": "father; dad",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "父子",
+        "kana": "ふし",
+        "hanviet": "Phụ Tử",
+        "meaning_en": "father and child; father and son",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g4",
+    "anchor": "交",
+    "chapter": 8,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "交流",
+        "kana": "こうりゅう",
+        "hanviet": "Giao Lưu",
+        "meaning_en": "exchange (e.g. cultural); interchange",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "交渉",
+        "kana": "こうしょう",
+        "hanviet": "Giao Thiệp",
+        "meaning_en": "negotiations; bargaining",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "交換",
+        "kana": "こうかん",
+        "hanviet": "Giao Hoán",
+        "meaning_en": "exchange; interchange",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "交際",
+        "kana": "こうさい",
+        "hanviet": "Giao Tế",
+        "meaning_en": "company; friendship",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g5",
+    "anchor": "高",
+    "chapter": 8,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "高",
+        "kana": "たか",
+        "hanviet": "Cao",
+        "meaning_en": "quantity; amount",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "高等学校",
+        "kana": "こうとうがっこう",
+        "hanviet": "Cao Đẳng Học Hiệu",
+        "meaning_en": "senior high school; high school",
+        "onkun": "On--On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "高価",
+        "kana": "こうか",
+        "hanviet": "Cao Giá",
+        "meaning_en": "highly priced; expensive",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g6",
+    "anchor": "母",
+    "chapter": 8,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "母親",
+        "kana": "ははおや",
+        "hanviet": "Mẫu Thân",
+        "meaning_en": "mother",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "母校",
+        "kana": "ぼこう",
+        "hanviet": "Mẫu Hiệu",
+        "meaning_en": "alma mater",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "母さん",
+        "kana": "かあさん",
+        "hanviet": "Mẫu",
+        "meaning_en": "mother",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "母乳",
+        "kana": "ぼにゅう",
+        "hanviet": "Mẫu Nhũ",
+        "meaning_en": "mother's milk",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g7",
+    "anchor": "毎",
+    "chapter": 8,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "毎年",
+        "kana": "まいとし",
+        "hanviet": "Mỗi Niên",
+        "meaning_en": "every year; yearly",
+        "onkun": "On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "毎月",
+        "kana": "まいつき",
+        "hanviet": "Mỗi Nguyệt",
+        "meaning_en": "every month; each month",
+        "onkun": "On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "毎",
+        "kana": "まい",
+        "hanviet": "Mỗi",
+        "meaning_en": "every (usu. with events, e.g. every weekend); each",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g8",
+    "anchor": "海",
+    "chapter": 8,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "海運",
+        "kana": "かいうん",
+        "hanviet": "Hải Vận",
+        "meaning_en": "maritime transport; shipping",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "海峡",
+        "kana": "かいきょう",
+        "hanviet": "Hải Hạp",
+        "meaning_en": "channel (e.g. between two land masses); strait",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "海流",
+        "kana": "かいりゅう",
+        "hanviet": "Hải Lưu",
+        "meaning_en": "ocean current",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g9",
+    "anchor": "元",
+    "chapter": 8,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "元気",
+        "kana": "げんき",
+        "hanviet": "Nguyên Khí",
+        "meaning_en": "lively; full of spirit",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "元素",
+        "kana": "げんそ",
+        "hanviet": "Nguyên Tố",
+        "meaning_en": "element; chemical element",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "元来",
+        "kana": "がんらい",
+        "hanviet": "Nguyên Lai",
+        "meaning_en": "originally; essentially",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g10",
+    "anchor": "兄",
+    "chapter": 8,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "兄ちゃん",
+        "kana": "にいちゃん",
+        "hanviet": "Huynh",
+        "meaning_en": "(one's) older brother",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "兄さん",
+        "kana": "にいさん",
+        "hanviet": "Huynh",
+        "meaning_en": "older brother; elder brother",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g11",
+    "anchor": "先",
+    "chapter": 8,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "先輩",
+        "kana": "せんぱい",
+        "hanviet": "Tiên Bối",
+        "meaning_en": "senior (at school, work, etc.); superior",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "先祖",
+        "kana": "せんぞ",
+        "hanviet": "Tiên Tổ",
+        "meaning_en": "ancestor; forefather",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "先日",
+        "kana": "せんじつ",
+        "hanviet": "Tiên Nhật",
+        "meaning_en": "the other day; a few days ago",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k8_g12",
+    "anchor": "光",
+    "chapter": 8,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "光沢",
+        "kana": "こうたく",
+        "hanviet": "Quang Trạch",
+        "meaning_en": "brilliance; polish",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "光景",
+        "kana": "こうけい",
+        "hanviet": "Quang Cảnh",
+        "meaning_en": "scene; spectacle",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "光学",
+        "kana": "こうがく",
+        "hanviet": "Quang Học",
+        "meaning_en": "optics",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g1",
+    "anchor": "立",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "立つ",
+        "kana": "たつ",
+        "hanviet": "Lập",
+        "meaning_en": "to stand (up); to rise",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "立派",
+        "kana": "りっぱ",
+        "hanviet": "Lập Phái",
+        "meaning_en": "splendid; fine",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "立てる",
+        "kana": "たてる",
+        "hanviet": "Lập",
+        "meaning_en": "to stand up; to put up",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g2",
+    "anchor": "音",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "音楽",
+        "kana": "おんがく",
+        "hanviet": "Âm Nhạc",
+        "meaning_en": "music",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "音色",
+        "kana": "ねいろ",
+        "hanviet": "Âm Sắc",
+        "meaning_en": "tone color; tone colour",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "音質",
+        "kana": "おんしつ",
+        "hanviet": "Âm Chất",
+        "meaning_en": "tone quality; sound quality",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g3",
+    "anchor": "暗",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "暗殺",
+        "kana": "あんさつ",
+        "hanviet": "Ám Sát",
+        "meaning_en": "assassination",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "暗示",
+        "kana": "あんじ",
+        "hanviet": "Ám Thị",
+        "meaning_en": "hint; suggestion",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "暗礁",
+        "kana": "あんしょう",
+        "hanviet": "Ám Tiêu",
+        "meaning_en": "reef; sunken rock",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g4",
+    "anchor": "新",
+    "chapter": 9,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "新",
+        "kana": "しん",
+        "hanviet": "Tân",
+        "meaning_en": "new; neo-",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "新鮮",
+        "kana": "しんせん",
+        "hanviet": "Tân Tiên",
+        "meaning_en": "fresh",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g5",
+    "anchor": "親",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "親指",
+        "kana": "おやゆび",
+        "hanviet": "Thân Chỉ",
+        "meaning_en": "thumb",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "親友",
+        "kana": "しんゆう",
+        "hanviet": "Thân Hữu",
+        "meaning_en": "close friend; bosom friend",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "親戚",
+        "kana": "しんせき",
+        "hanviet": "Thân Thích",
+        "meaning_en": "relative; relation",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g6",
+    "anchor": "耳",
+    "chapter": 9,
+    "currentCount": 2,
+    "items": [
+      {
+        "kanji": "耳元",
+        "kana": "みみもと",
+        "hanviet": "Nhĩ Nguyên",
+        "meaning_en": "close to the ear",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "耳障り",
+        "kana": "みみざわり",
+        "hanviet": "Nhĩ Chướng",
+        "meaning_en": "hard (on the ears); offensive (to the ear)",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "耳より",
+        "kana": "みみより",
+        "hanviet": "Nhĩ",
+        "meaning_en": "welcome (news); inviting",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g7",
+    "anchor": "門",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "門前",
+        "kana": "もんぜん",
+        "hanviet": "Môn Tiền",
+        "meaning_en": "before the gate; in front of the gate",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "門戸",
+        "kana": "もんこ",
+        "hanviet": "Môn Hộ",
+        "meaning_en": "door",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g8",
+    "anchor": "聞",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "聞こえる",
+        "kana": "きこえる",
+        "hanviet": "Văn",
+        "meaning_en": "to be heard; to be audible",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "聞かす",
+        "kana": "きかす",
+        "hanviet": "Văn",
+        "meaning_en": "to let (someone) hear; to tell (e.g. a story)",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g9",
+    "anchor": "間",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "狭間",
+        "kana": "はざま",
+        "hanviet": "Hiệp Gian",
+        "meaning_en": "gap; narrow space between things",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "間に合う",
+        "kana": "まにあう",
+        "hanviet": "Gian Hợp",
+        "meaning_en": "to be in time (for)",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "間違える",
+        "kana": "まちがえる",
+        "hanviet": "Gian Vi",
+        "meaning_en": "to make a mistake (in); to commit an error",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g10",
+    "anchor": "車",
+    "chapter": 9,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "車庫",
+        "kana": "しゃこ",
+        "hanviet": "Xa Khố",
+        "meaning_en": "garage; carport",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "車輪",
+        "kana": "しゃりん",
+        "hanviet": "Xa Luân",
+        "meaning_en": "(vehicle) wheel",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "車掌",
+        "kana": "しゃしょう",
+        "hanviet": "Xa Chưởng",
+        "meaning_en": "(train) conductor",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g11",
+    "anchor": "運",
+    "chapter": 9,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "運",
+        "kana": "うん",
+        "hanviet": "Vận",
+        "meaning_en": "fortune; luck",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "運動",
+        "kana": "うんどう",
+        "hanviet": "Vận Động",
+        "meaning_en": "exercise; physical training",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g12",
+    "anchor": "軽",
+    "chapter": 9,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "軽",
+        "kana": "けい",
+        "hanviet": "Khinh",
+        "meaning_en": "light (e.g. aircraft, truck)",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "軽率",
+        "kana": "けいそつ",
+        "hanviet": "Khinh Suất",
+        "meaning_en": "rash; thoughtless",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "軽快",
+        "kana": "けいかい",
+        "hanviet": "Khinh Khoái",
+        "meaning_en": "light (of movements); nimble",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "軽蔑",
+        "kana": "けいべつ",
+        "hanviet": "Khinh Miệt",
+        "meaning_en": "contempt; scorn",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k9_g13",
+    "anchor": "重",
+    "chapter": 9,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "重力",
+        "kana": "じゅうりょく",
+        "hanviet": "Trọng Lực",
+        "meaning_en": "gravity; gravitation",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "重大",
+        "kana": "じゅうだい",
+        "hanviet": "Trọng Đại",
+        "meaning_en": "serious; important",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "重視",
+        "kana": "じゅうし",
+        "hanviet": "Trọng Thị",
+        "meaning_en": "regarding as important; attaching importance to",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "重役",
+        "kana": "じゅうやく",
+        "hanviet": "Trọng Dịch",
+        "meaning_en": "(company) director; executive",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g2",
+    "anchor": "時",
+    "chapter": 10,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "時間",
+        "kana": "じかん",
+        "hanviet": "Thời Gian",
+        "meaning_en": "time",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "時",
+        "kana": "とき",
+        "hanviet": "Thời",
+        "meaning_en": "time; hour",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "時",
+        "kana": "じ",
+        "hanviet": "Thời",
+        "meaning_en": "hour; o'clock",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "時間割",
+        "kana": "じかんわり",
+        "hanviet": "Thời Gian Cát",
+        "meaning_en": "timetable (esp. a weekly school timetable); schedule",
+        "onkun": "On--On--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g3",
+    "anchor": "待",
+    "chapter": 10,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "待合室",
+        "kana": "まちあいしつ",
+        "hanviet": "Đãi Hợp Thất",
+        "meaning_en": "waiting room",
+        "onkun": "Kun--Kun--On",
+        "flags": []
+      },
+      {
+        "kanji": "待ち合わせる",
+        "kana": "まちあわせる",
+        "hanviet": "Đãi Hợp",
+        "meaning_en": "to rendezvous; to meet at a prearranged place and time",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "待ち望む",
+        "kana": "まちのぞむ",
+        "hanviet": "Đãi Vọng",
+        "meaning_en": "to wait eagerly for; to look forward to",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g4",
+    "anchor": "何",
+    "chapter": 10,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "何時も",
+        "kana": "いつも",
+        "hanviet": "Hà Thời",
+        "meaning_en": "always; all the time",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g5",
+    "anchor": "荷",
+    "chapter": 10,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "荷造り",
+        "kana": "にづくり",
+        "hanviet": "Hà Tạo",
+        "meaning_en": "packing; baling",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "荷台",
+        "kana": "にだい",
+        "hanviet": "Hà Đài",
+        "meaning_en": "(truck) load-carrying tray; (bicycle) luggage carrier",
+        "onkun": "Kun--On",
+        "flags": []
+      },
+      {
+        "kanji": "荷札",
+        "kana": "にふだ",
+        "hanviet": "Hà Trát",
+        "meaning_en": "label; tag",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g6",
+    "anchor": "歌",
+    "chapter": 10,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "歌う",
+        "kana": "うたう",
+        "hanviet": "Ca",
+        "meaning_en": "to sing",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "歌舞伎",
+        "kana": "かぶき",
+        "hanviet": "Ca Vũ Kỹ",
+        "meaning_en": "kabuki; traditional form of drama and music performed by male actors wearing makeup mainly in white and red",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g7",
+    "anchor": "目",
+    "chapter": 10,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "目",
+        "kana": "め",
+        "hanviet": "Mục",
+        "meaning_en": "eye; eyeball",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "目標",
+        "kana": "もくひょう",
+        "hanviet": "Mục Tiêu",
+        "meaning_en": "goal; target",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "目印",
+        "kana": "めじるし",
+        "hanviet": "Mục Ấn",
+        "meaning_en": "mark (for quick identification or recognition); sign",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "目指す",
+        "kana": "めざす",
+        "hanviet": "Mục Chỉ",
+        "meaning_en": "to aim at (for, to do, to become); to try for",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g8",
+    "anchor": "自",
+    "chapter": 10,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "自転車",
+        "kana": "じてんしゃ",
+        "hanviet": "Tự Chuyển Xa",
+        "meaning_en": "bicycle; bike",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "自動車",
+        "kana": "じどうしゃ",
+        "hanviet": "Tự Động Xa",
+        "meaning_en": "car; automobile",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "自分",
+        "kana": "じぶん",
+        "hanviet": "Tự Phân",
+        "meaning_en": "myself; yourself",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "自由",
+        "kana": "じゆう",
+        "hanviet": "Tự Do",
+        "meaning_en": "freedom; liberty",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g9",
+    "anchor": "見",
+    "chapter": 10,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "見る",
+        "kana": "みる",
+        "hanviet": "Kiến",
+        "meaning_en": "to see; to look",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "見せる",
+        "kana": "みせる",
+        "hanviet": "Kiến",
+        "meaning_en": "to show; to display",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g10",
+    "anchor": "買",
+    "chapter": 10,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "買収",
+        "kana": "ばいしゅう",
+        "hanviet": "Mãi Thu",
+        "meaning_en": "acquisition (esp. corporate); buy-out",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "買い手",
+        "kana": "かいて",
+        "hanviet": "Mãi Thủ",
+        "meaning_en": "buyer",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "買い占める",
+        "kana": "かいしめる",
+        "hanviet": "Mãi Chiếm",
+        "meaning_en": "to buy up",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "買い",
+        "kana": "かい",
+        "hanviet": "Mãi",
+        "meaning_en": "buying; shopping",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k10_g11",
+    "anchor": "具",
+    "chapter": 10,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "具",
+        "kana": "ぐ",
+        "hanviet": "Cụ",
+        "meaning_en": "tool; means",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "具体化",
+        "kana": "ぐたいか",
+        "hanviet": "Cụ Thể Hóa",
+        "meaning_en": "embodiment; materialization",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "具体",
+        "kana": "ぐたい",
+        "hanviet": "Cụ Thể",
+        "meaning_en": "concreteness; embodiment",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g2",
+    "anchor": "入",
+    "chapter": 11,
+    "currentCount": 6,
+    "items": [
+      {
+        "kanji": "入る",
+        "kana": "はいる",
+        "hanviet": "Nhập",
+        "meaning_en": "to enter; to come in",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g3",
+    "anchor": "内",
+    "chapter": 11,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "内閣",
+        "kana": "ないかく",
+        "hanviet": "Nội Các",
+        "meaning_en": "cabinet (of a government); ministry",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "内線",
+        "kana": "ないせん",
+        "hanviet": "Nội Tuyến",
+        "meaning_en": "phone extension; indoor wiring",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "内部",
+        "kana": "ないぶ",
+        "hanviet": "Nội Bộ",
+        "meaning_en": "interior; inside",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g4",
+    "anchor": "肉",
+    "chapter": 11,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "肉体",
+        "kana": "にくたい",
+        "hanviet": "Nhục Thể",
+        "meaning_en": "the body; the flesh",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "肉親",
+        "kana": "にくしん",
+        "hanviet": "Nhục Thân",
+        "meaning_en": "blood relationship; blood relative",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g5",
+    "anchor": "山",
+    "chapter": 11,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "山脈",
+        "kana": "さんみゃく",
+        "hanviet": "Sơn Mạch",
+        "meaning_en": "mountain range; mountain belt",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "山岳",
+        "kana": "さんがく",
+        "hanviet": "Sơn Nhạc",
+        "meaning_en": "mountain chain; mountains",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "山火事",
+        "kana": "やまかじ",
+        "hanviet": "Sơn Hỏa Sự",
+        "meaning_en": "forest fire; wildfire",
+        "onkun": "Kun--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g6",
+    "anchor": "出",
+    "chapter": 11,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "出来る",
+        "kana": "できる",
+        "hanviet": "Xuất Lai",
+        "meaning_en": "to be able to do; to be possible",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "出る",
+        "kana": "でる",
+        "hanviet": "Xuất",
+        "meaning_en": "to leave; to exit",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "出す",
+        "kana": "だす",
+        "hanviet": "Xuất",
+        "meaning_en": "to take out; to get out",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g7",
+    "anchor": "言",
+    "chapter": 11,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "言う",
+        "kana": "いう",
+        "hanviet": "Ngôn",
+        "meaning_en": "to say; to utter",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "言",
+        "kana": "げん",
+        "hanviet": "Ngôn",
+        "meaning_en": "word; remark",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "言わば",
+        "kana": "いわば",
+        "hanviet": "Ngôn",
+        "meaning_en": "so to speak; so to call it",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "言葉遣い",
+        "kana": "ことばづかい",
+        "hanviet": "Ngôn Diệp Khiển",
+        "meaning_en": "speech; expression",
+        "onkun": "Kun--Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g8",
+    "anchor": "話",
+    "chapter": 11,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "話",
+        "kana": "はなし",
+        "hanviet": "Thoại",
+        "meaning_en": "talk; speech",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "話す",
+        "kana": "はなす",
+        "hanviet": "Thoại",
+        "meaning_en": "to talk; to speak",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "話題",
+        "kana": "わだい",
+        "hanviet": "Thoại Đề",
+        "meaning_en": "topic; subject",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "話し合う",
+        "kana": "はなしあう",
+        "hanviet": "Thoại Hợp",
+        "meaning_en": "to discuss; to talk together",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k11_g9",
+    "anchor": "英",
+    "chapter": 11,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "英",
+        "kana": "えい",
+        "hanviet": "Anh",
+        "meaning_en": "United Kingdom; Britain",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "英文",
+        "kana": "えいぶん",
+        "hanviet": "Anh Văn",
+        "meaning_en": "English writing; English sentence",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "英雄",
+        "kana": "えいゆう",
+        "hanviet": "Anh Hùng",
+        "meaning_en": "hero; heroine",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "英文学",
+        "kana": "えいぶんがく",
+        "hanviet": "Anh Văn Học",
+        "meaning_en": "English(-language) literature",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g1",
+    "anchor": "田",
+    "chapter": 12,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "田",
+        "kana": "た",
+        "hanviet": "Điền",
+        "meaning_en": "rice field",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "田園",
+        "kana": "でんえん",
+        "hanviet": "Điền Viên",
+        "meaning_en": "the country; countryside",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "田植え",
+        "kana": "たうえ",
+        "hanviet": "Điền Thực",
+        "meaning_en": "rice planting",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g2",
+    "anchor": "男",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "男",
+        "kana": "おとこ",
+        "hanviet": "Nam",
+        "meaning_en": "man; male",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "男子",
+        "kana": "だんし",
+        "hanviet": "Nam Tử",
+        "meaning_en": "boy",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "男女",
+        "kana": "だんじょ",
+        "hanviet": "Nam Nữ",
+        "meaning_en": "men and women; man and woman",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g3",
+    "anchor": "町",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "町中",
+        "kana": "まちなか",
+        "hanviet": "Đinh Trung",
+        "meaning_en": "downtown",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "町並み",
+        "kana": "まちなみ",
+        "hanviet": "Đinh Tịnh",
+        "meaning_en": "townscape; street (of stores and houses)",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "町民",
+        "kana": "ちょうみん",
+        "hanviet": "Đinh Dân",
+        "meaning_en": "townsman; townswoman",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "町外れ",
+        "kana": "まちはずれ",
+        "hanviet": "Đinh Ngoại",
+        "meaning_en": "outskirts (of a town); edge (of a town)",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g4",
+    "anchor": "魚",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "魚類",
+        "kana": "ぎょるい",
+        "hanviet": "Ngư Loại",
+        "meaning_en": "fish; fishes",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "魚介類",
+        "kana": "ぎょかいるい",
+        "hanviet": "Ngư Giới Loại",
+        "meaning_en": "marine products; seafood",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g5",
+    "anchor": "女",
+    "chapter": 12,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "女",
+        "kana": "おんな",
+        "hanviet": "Nữ",
+        "meaning_en": "woman; female",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "女王",
+        "kana": "じょおう",
+        "hanviet": "Nữ Vương",
+        "meaning_en": "queen",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "女優",
+        "kana": "じょゆう",
+        "hanviet": "Nữ Ưu",
+        "meaning_en": "actress; female actor",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g6",
+    "anchor": "好",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "好き",
+        "kana": "すき",
+        "hanviet": "Hảo",
+        "meaning_en": "liking; being fond of",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "好む",
+        "kana": "このむ",
+        "hanviet": "Hảo",
+        "meaning_en": "to like; to prefer",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "好き嫌い",
+        "kana": "すききらい",
+        "hanviet": "Hảo Hiềm",
+        "meaning_en": "likes and dislikes; tastes",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "好き好き",
+        "kana": "すきずき",
+        "hanviet": "Hảo Hảo",
+        "meaning_en": "matter of taste",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g7",
+    "anchor": "安",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "安定",
+        "kana": "あんてい",
+        "hanviet": "An Định",
+        "meaning_en": "stability; steadiness",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "安全",
+        "kana": "あんぜん",
+        "hanviet": "An Toàn",
+        "meaning_en": "safety; security",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "安心",
+        "kana": "あんしん",
+        "hanviet": "An Tâm",
+        "meaning_en": "peace of mind; relief",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "安静",
+        "kana": "あんせい",
+        "hanviet": "An Tĩnh",
+        "meaning_en": "rest; quiet",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g8",
+    "anchor": "大",
+    "chapter": 12,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "大人",
+        "kana": "おとな",
+        "hanviet": "Đại Nhân",
+        "meaning_en": "adult; grown-up",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "大使館",
+        "kana": "たいしかん",
+        "hanviet": "Đại Sử Quán",
+        "meaning_en": "embassy",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "大",
+        "kana": "だい",
+        "hanviet": "Đại",
+        "meaning_en": "large; big",
+        "onkun": "On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g9",
+    "anchor": "安",
+    "chapter": 12,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "安い",
+        "kana": "やすい",
+        "hanviet": "An",
+        "meaning_en": "cheap; inexpensive",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "安心",
+        "kana": "あんしん",
+        "hanviet": "An Tâm",
+        "meaning_en": "peace of mind; relief",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "安易",
+        "kana": "あんい",
+        "hanviet": "An Dị",
+        "meaning_en": "easy; simple",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g10",
+    "anchor": "売",
+    "chapter": 12,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "売買",
+        "kana": "ばいばい",
+        "hanviet": "Mại Mãi",
+        "meaning_en": "trade; buying and selling",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "売れる",
+        "kana": "うれる",
+        "hanviet": "Mại",
+        "meaning_en": "to sell (well)",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "売り上げ",
+        "kana": "うりあげ",
+        "hanviet": "Mại Thượng",
+        "meaning_en": "amount sold; sales",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g11",
+    "anchor": "読",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "読み",
+        "kana": "よみ",
+        "hanviet": "Đọc",
+        "meaning_en": "reading",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "読者",
+        "kana": "どくしゃ",
+        "hanviet": "Độc Giả",
+        "meaning_en": "reader",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "読み上げる",
+        "kana": "よみあげる",
+        "hanviet": "Đọc Thượng",
+        "meaning_en": "to read out; to read aloud",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "読み書き",
+        "kana": "よみかき",
+        "hanviet": "Đọc Thư",
+        "meaning_en": "reading and writing",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g12",
+    "anchor": "売",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "売る",
+        "kana": "うる",
+        "hanviet": "Mại",
+        "meaning_en": "to sell",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "売り場",
+        "kana": "うりば",
+        "hanviet": "Mại Trường",
+        "meaning_en": "selling area; counter",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "売れる",
+        "kana": "うれる",
+        "hanviet": "Mại",
+        "meaning_en": "to sell (well)",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "売り上げ",
+        "kana": "うりあげ",
+        "hanviet": "Mại Thượng",
+        "meaning_en": "amount sold; sales",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k12_g13",
+    "anchor": "読",
+    "chapter": 12,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "読む",
+        "kana": "よむ",
+        "hanviet": "Đọc",
+        "meaning_en": "to read",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "読書",
+        "kana": "どくしょ",
+        "hanviet": "Độc Thư",
+        "meaning_en": "reading (books)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "読み",
+        "kana": "よみ",
+        "hanviet": "Đọc",
+        "meaning_en": "reading",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "読み上げる",
+        "kana": "よみあげる",
+        "hanviet": "Đọc Thượng",
+        "meaning_en": "to read out; to read aloud",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g1",
+    "anchor": "世",
+    "chapter": 13,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "世",
+        "kana": "よ",
+        "hanviet": "Thế",
+        "meaning_en": "world; society",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "世代",
+        "kana": "せだい",
+        "hanviet": "Thế Đại",
+        "meaning_en": "generation",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g2",
+    "anchor": "電",
+    "chapter": 13,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "電報",
+        "kana": "でんぽう",
+        "hanviet": "Điện Báo",
+        "meaning_en": "telegram",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "電子",
+        "kana": "でんし",
+        "hanviet": "Điện Tử",
+        "meaning_en": "electron",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "電池",
+        "kana": "でんち",
+        "hanviet": "Điện Trì",
+        "meaning_en": "battery; cell",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g3",
+    "anchor": "東",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "東西",
+        "kana": "とうざい",
+        "hanviet": "Đông Tây",
+        "meaning_en": "east and west",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "東北",
+        "kana": "とうほく",
+        "hanviet": "Đông Bắc",
+        "meaning_en": "north-east",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "東京",
+        "kana": "とうきょう",
+        "hanviet": "Đông Kinh",
+        "meaning_en": "Tokyo",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g4",
+    "anchor": "映",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "映像",
+        "kana": "えいぞう",
+        "hanviet": "Ảnh Tượng",
+        "meaning_en": "image (on a screen); picture (e.g. on a TV)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "映す",
+        "kana": "うつす",
+        "hanviet": "Ảnh",
+        "meaning_en": "to project; to reflect",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "映える",
+        "kana": "はえる",
+        "hanviet": "Ảnh",
+        "meaning_en": "to shine; to glow",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "映し出す",
+        "kana": "うつしだす",
+        "hanviet": "Ảnh Xuất",
+        "meaning_en": "to project; to show (on a screen)",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g5",
+    "anchor": "北",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "北極圏",
+        "kana": "ほっきょくけん",
+        "hanviet": "Bắc Cực Quyển",
+        "meaning_en": "Arctic Circle; the Arctic",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "北上",
+        "kana": "ほくじょう",
+        "hanviet": "Bắc Thượng",
+        "meaning_en": "going north",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "北欧",
+        "kana": "ほくおう",
+        "hanviet": "Bắc Âu",
+        "meaning_en": "Northern Europe; Nordic countries",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "北海",
+        "kana": "ほっかい",
+        "hanviet": "Bắc Hải",
+        "meaning_en": "northern sea",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g6",
+    "anchor": "花",
+    "chapter": 13,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "花粉",
+        "kana": "かふん",
+        "hanviet": "Hoa Phấn",
+        "meaning_en": "pollen",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "花嫁",
+        "kana": "はなよめ",
+        "hanviet": "Hoa Giá",
+        "meaning_en": "bride",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "花壇",
+        "kana": "かだん",
+        "hanviet": "Hoa Đàn",
+        "meaning_en": "flower bed",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g7",
+    "anchor": "茶",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "茶色",
+        "kana": "ちゃいろ",
+        "hanviet": "Trà Sắc",
+        "meaning_en": "brown; light brown",
+        "onkun": "On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "茶碗",
+        "kana": "ちゃわん",
+        "hanviet": "Trà Oản",
+        "meaning_en": "rice bowl; tea cup",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "茶",
+        "kana": "ちゃ",
+        "hanviet": "Trà",
+        "meaning_en": "tea",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "茶道",
+        "kana": "さどう",
+        "hanviet": "Trà Đạo",
+        "meaning_en": "tea ceremony; Way of Tea",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g8",
+    "anchor": "草",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "草履",
+        "kana": "ぞうり",
+        "hanviet": "Thảo Lý",
+        "meaning_en": "zori; traditional Japanese thonged sandals",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "草案",
+        "kana": "そうあん",
+        "hanviet": "Thảo Án",
+        "meaning_en": "draft (for a speech, bill, etc.)",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g9",
+    "anchor": "西",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "西暦",
+        "kana": "せいれき",
+        "hanviet": "Tây Lịch",
+        "meaning_en": "Common Era; CE",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "西瓜",
+        "kana": "すいか",
+        "hanviet": "Tây Qua",
+        "meaning_en": "watermelon (Citrullus lanatus)",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g10",
+    "anchor": "酒",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "酒",
+        "kana": "さけ",
+        "hanviet": "Tửu",
+        "meaning_en": "alcohol; sake",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "酒類",
+        "kana": "しゅるい",
+        "hanviet": "Tửu Loại",
+        "meaning_en": "alcoholic drinks; liquor",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "酒屋",
+        "kana": "さかや",
+        "hanviet": "Tửu Ốc",
+        "meaning_en": "liquor store; wine shop",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "酒造",
+        "kana": "しゅぞう",
+        "hanviet": "Tửu Tạo",
+        "meaning_en": "brewing (sake); distilling (e.g. whisky)",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g11",
+    "anchor": "書",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "書斎",
+        "kana": "しょさい",
+        "hanviet": "Thư Trai",
+        "meaning_en": "study; library",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "書店",
+        "kana": "しょてん",
+        "hanviet": "Thư Điếm",
+        "meaning_en": "bookshop; bookstore",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "書評",
+        "kana": "しょひょう",
+        "hanviet": "Thư Bình",
+        "meaning_en": "book review",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "書物",
+        "kana": "しょもつ",
+        "hanviet": "Thư Vật",
+        "meaning_en": "book; volume",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g12",
+    "anchor": "梅",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "梅雨",
+        "kana": "つゆ",
+        "hanviet": "Mai Vũ",
+        "meaning_en": "(East Asian) rainy season (in Japan, usu. from early June to mid-July)",
+        "onkun": "Ate",
+        "flags": []
+      },
+      {
+        "kanji": "梅雨明け",
+        "kana": "つゆあけ",
+        "hanviet": "Mai Vũ Minh",
+        "meaning_en": "end of the rainy season",
+        "onkun": "Ate",
+        "flags": []
+      },
+      {
+        "kanji": "梅雨入り",
+        "kana": "つゆいり",
+        "hanviet": "Mai Vũ Nhập",
+        "meaning_en": "entering the rainy season; beginning of the rainy season",
+        "onkun": "Ate",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g13",
+    "anchor": "書",
+    "chapter": 13,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "書く",
+        "kana": "かく",
+        "hanviet": "Thư",
+        "meaning_en": "to write; to compose",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "書斎",
+        "kana": "しょさい",
+        "hanviet": "Thư Trai",
+        "meaning_en": "study; library",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "書評",
+        "kana": "しょひょう",
+        "hanviet": "Thư Bình",
+        "meaning_en": "book review",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g14",
+    "anchor": "川",
+    "chapter": 13,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "川沿い",
+        "kana": "かわぞい",
+        "hanviet": "Xuyên Duyên",
+        "meaning_en": "along the river; riverside",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "川上",
+        "kana": "かわかみ",
+        "hanviet": "Xuyên Thượng",
+        "meaning_en": "upper reaches of a river; upstream",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k13_g15",
+    "anchor": "南",
+    "chapter": 13,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "南瓜",
+        "kana": "かぼちゃ",
+        "hanviet": "Nam Qua",
+        "meaning_en": "pumpkin (Cucurbita sp.); squash",
+        "onkun": "Juku",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g1",
+    "anchor": "方",
+    "chapter": 14,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "方言",
+        "kana": "ほうげん",
+        "hanviet": "Phương Ngôn",
+        "meaning_en": "dialect; provincialism",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "方程式",
+        "kana": "ほうていしき",
+        "hanviet": "Phương Trình Thức",
+        "meaning_en": "equation; formula",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "方々",
+        "kana": "かたがた",
+        "hanviet": "Phương Phương",
+        "meaning_en": "people; (all) persons",
+        "onkun": "Kun--Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g2",
+    "anchor": "旅",
+    "chapter": 14,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "旅",
+        "kana": "たび",
+        "hanviet": "Lữ",
+        "meaning_en": "travel; trip",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "旅客",
+        "kana": "りょかく",
+        "hanviet": "Lữ Khách",
+        "meaning_en": "passenger",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "旅券",
+        "kana": "りょけん",
+        "hanviet": "Lữ Khoán",
+        "meaning_en": "passport",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "旅客機",
+        "kana": "りょかくき",
+        "hanviet": "Lữ Khách Cơ",
+        "meaning_en": "passenger plane",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g4",
+    "anchor": "社",
+    "chapter": 14,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "社説",
+        "kana": "しゃせつ",
+        "hanviet": "Xã Thuyết",
+        "meaning_en": "editorial; leading article",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "社会科学",
+        "kana": "しゃかいかがく",
+        "hanviet": "Xã Hội Khoa Học",
+        "meaning_en": "social science",
+        "onkun": "On--On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "社交",
+        "kana": "しゃこう",
+        "hanviet": "Xã Giao",
+        "meaning_en": "social life; social intercourse",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g5",
+    "anchor": "分",
+    "chapter": 14,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "分かる",
+        "kana": "わかる",
+        "hanviet": "Phân",
+        "meaning_en": "to understand; to comprehend",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "分析",
+        "kana": "ぶんせき",
+        "hanviet": "Phân Tích",
+        "meaning_en": "analysis",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "分布",
+        "kana": "ぶんぷ",
+        "hanviet": "Phân Bố",
+        "meaning_en": "distribution",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "分裂",
+        "kana": "ぶんれつ",
+        "hanviet": "Phân Liệt",
+        "meaning_en": "split; division",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g6",
+    "anchor": "気",
+    "chapter": 14,
+    "currentCount": 5,
+    "items": [
+      {
+        "kanji": "気候",
+        "kana": "きこう",
+        "hanviet": "Khí Hậu",
+        "meaning_en": "climate",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "気圧",
+        "kana": "きあつ",
+        "hanviet": "Khí Át",
+        "meaning_en": "atmospheric pressure; air pressure",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g7",
+    "anchor": "同",
+    "chapter": 14,
+    "currentCount": 4,
+    "items": [
+      {
+        "kanji": "同",
+        "kana": "どう",
+        "hanviet": "Đồng",
+        "meaning_en": "the same; the said",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "同情",
+        "kana": "どうじょう",
+        "hanviet": "Đồng Tình",
+        "meaning_en": "sympathy; compassion",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "同調",
+        "kana": "どうちょう",
+        "hanviet": "Đồng Điều",
+        "meaning_en": "conformity; alignment",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g8",
+    "anchor": "病",
+    "chapter": 14,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "病気",
+        "kana": "びょうき",
+        "hanviet": "Bệnh Khí",
+        "meaning_en": "illness (usu. excluding minor ailments, e.g. common cold); disease",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "病",
+        "kana": "やまい",
+        "hanviet": "Bệnh",
+        "meaning_en": "illness; disease",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "病む",
+        "kana": "やむ",
+        "hanviet": "Bệnh",
+        "meaning_en": "to fall ill",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "病弱",
+        "kana": "びょうじゃく",
+        "hanviet": "Bệnh Nhược",
+        "meaning_en": "weak (constitution); sickly",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g9",
+    "anchor": "後",
+    "chapter": 14,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "後",
+        "kana": "あと",
+        "hanviet": "Hậu",
+        "meaning_en": "behind; rear",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "後",
+        "kana": "ご",
+        "hanviet": "Hậu",
+        "meaning_en": "after",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "後",
+        "kana": "のち",
+        "hanviet": "Hậu",
+        "meaning_en": "later; afterwards",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "後者",
+        "kana": "こうしゃ",
+        "hanviet": "Hậu Giả",
+        "meaning_en": "the latter; the second",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g10",
+    "anchor": "足",
+    "chapter": 14,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "足跡",
+        "kana": "あしあと",
+        "hanviet": "Túc Tích",
+        "meaning_en": "footprints",
+        "onkun": "Kun--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "足す",
+        "kana": "たす",
+        "hanviet": "Túc",
+        "meaning_en": "to add (numbers)",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "足る",
+        "kana": "たる",
+        "hanviet": "Túc",
+        "meaning_en": "to be sufficient; to be enough",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "足し算",
+        "kana": "たしざん",
+        "hanviet": "Túc Toán",
+        "meaning_en": "addition",
+        "onkun": "Kun--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k14_g11",
+    "anchor": "高",
+    "chapter": 14,
+    "currentCount": 3,
+    "items": [
+      {
+        "kanji": "高",
+        "kana": "たか",
+        "hanviet": "Cao",
+        "meaning_en": "quantity; amount",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "高等学校",
+        "kana": "こうとうがっこう",
+        "hanviet": "Cao Đẳng Học Hiệu",
+        "meaning_en": "senior high school; high school",
+        "onkun": "On--On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "高校",
+        "kana": "こうこう",
+        "hanviet": "Cao Hiệu",
+        "meaning_en": "senior high school; high school",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "高校生",
+        "kana": "こうこうせい",
+        "hanviet": "Cao Hiệu Sinh",
+        "meaning_en": "senior high school student",
+        "onkun": "On--On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g1",
+    "anchor": "駅",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "駅",
+        "kana": "えき",
+        "hanviet": "Dịch",
+        "meaning_en": "railway station; train station",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "駅弁",
+        "kana": "えきべん",
+        "hanviet": "Dịch Biện",
+        "meaning_en": "boxed lunch bought at a station (often a local specialty)",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "駅前",
+        "kana": "えきまえ",
+        "hanviet": "Dịch Tiền",
+        "meaning_en": "in front of a station",
+        "onkun": "On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "駅員",
+        "kana": "えきいん",
+        "hanviet": "Dịch Viên",
+        "meaning_en": "(train) station attendant; station employee",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "駅長",
+        "kana": "えきちょう",
+        "hanviet": "Dịch Trưởng",
+        "meaning_en": "station master",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "駅伝",
+        "kana": "えきでん",
+        "hanviet": "Dịch Truyền",
+        "meaning_en": "long-distance relay race",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g2",
+    "anchor": "空",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "空",
+        "kana": "そら",
+        "hanviet": "Không",
+        "meaning_en": "sky; the air",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "空",
+        "kana": "から",
+        "hanviet": "Không",
+        "meaning_en": "emptiness; being empty",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "空港",
+        "kana": "くうこう",
+        "hanviet": "Không Cảng",
+        "meaning_en": "airport",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "空想",
+        "kana": "くうそう",
+        "hanviet": "Không Tưởng",
+        "meaning_en": "daydream; fantasy",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "空気",
+        "kana": "くうき",
+        "hanviet": "Không Khí",
+        "meaning_en": "air; atmosphere",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "空き",
+        "kana": "あき",
+        "hanviet": "Không",
+        "meaning_en": "space; room",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "空中",
+        "kana": "くうちゅう",
+        "hanviet": "Không Trung",
+        "meaning_en": "(in) the air; midair",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g3",
+    "anchor": "語",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "語",
+        "kana": "ご",
+        "hanviet": "Ngữ",
+        "meaning_en": "word; term",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "語り",
+        "kana": "かたり",
+        "hanviet": "Ngữ",
+        "meaning_en": "talk; recital",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "語源",
+        "kana": "ごげん",
+        "hanviet": "Ngữ Nguyên",
+        "meaning_en": "origin of a word; derivation of a word",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "語彙",
+        "kana": "ごい",
+        "hanviet": "Ngữ Vị",
+        "meaning_en": "vocabulary; lexicon",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "語る",
+        "kana": "かたる",
+        "hanviet": "Ngữ",
+        "meaning_en": "to talk about; to speak of",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "語学",
+        "kana": "ごがく",
+        "hanviet": "Ngữ Học",
+        "meaning_en": "study of foreign languages",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "語らう",
+        "kana": "かたらう",
+        "hanviet": "Ngữ",
+        "meaning_en": "to talk; to tell",
+        "onkun": "Kun",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g4",
+    "anchor": "校",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "校長",
+        "kana": "こうちょう",
+        "hanviet": "Hiệu Trưởng",
+        "meaning_en": "principal; head teacher",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "校舎",
+        "kana": "こうしゃ",
+        "hanviet": "Hiệu Xá",
+        "meaning_en": "school building; schoolhouse",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "校庭",
+        "kana": "こうてい",
+        "hanviet": "Hiệu Đình",
+        "meaning_en": "schoolyard; school playground",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "校歌",
+        "kana": "こうか",
+        "hanviet": "Hiệu Ca",
+        "meaning_en": "school song; college song",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "校則",
+        "kana": "こうそく",
+        "hanviet": "Hiệu Tắc",
+        "meaning_en": "school rules; school regulations",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "校門",
+        "kana": "こうもん",
+        "hanviet": "Hiệu Môn",
+        "meaning_en": "school gate",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g5",
+    "anchor": "国",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "国",
+        "kana": "くに",
+        "hanviet": "Quốc",
+        "meaning_en": "country; state",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "国際",
+        "kana": "こくさい",
+        "hanviet": "Quốc Tế",
+        "meaning_en": "international",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "国境",
+        "kana": "こっきょう",
+        "hanviet": "Quốc Cảnh",
+        "meaning_en": "border (between countries); national border",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "国民",
+        "kana": "こくみん",
+        "hanviet": "Quốc Dân",
+        "meaning_en": "people (of a country); nation",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "国家",
+        "kana": "こっか",
+        "hanviet": "Quốc Gia",
+        "meaning_en": "state; country",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "国語",
+        "kana": "こくご",
+        "hanviet": "Quốc Ngữ",
+        "meaning_en": "national language",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "国籍",
+        "kana": "こくせき",
+        "hanviet": "Quốc Tịch",
+        "meaning_en": "nationality; citizenship",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g6",
+    "anchor": "週",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "週",
+        "kana": "しゅう",
+        "hanviet": "Chu",
+        "meaning_en": "week",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "週間",
+        "kana": "しゅうかん",
+        "hanviet": "Chu Gian",
+        "meaning_en": "week",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "週末",
+        "kana": "しゅうまつ",
+        "hanviet": "Chu Mạt",
+        "meaning_en": "weekend",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "週刊誌",
+        "kana": "しゅうかんし",
+        "hanviet": "Chu San Chí",
+        "meaning_en": "weekly (publication); weekly magazine",
+        "onkun": "On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "週休",
+        "kana": "しゅうきゅう",
+        "hanviet": "Chu Hưu",
+        "meaning_en": "weekly holiday",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "週明け",
+        "kana": "しゅうあけ",
+        "hanviet": "Chu Minh",
+        "meaning_en": "beginning of next week (usu. Monday); early next week",
+        "onkun": "On--Kun",
+        "flags": []
+      },
+      {
+        "kanji": "週内",
+        "kana": "しゅうない",
+        "hanviet": "Chu Nội",
+        "meaning_en": "by the end of this week; within the week",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g7",
+    "anchor": "天",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "天気",
+        "kana": "てんき",
+        "hanviet": "Thiên Khí",
+        "meaning_en": "weather",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "天",
+        "kana": "てん",
+        "hanviet": "Thiên",
+        "meaning_en": "sky",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "天気予報",
+        "kana": "てんきよほう",
+        "hanviet": "Thiên Khí Dự Báo",
+        "meaning_en": "weather forecast; weather report",
+        "onkun": "On--On--On--On",
+        "flags": []
+      },
+      {
+        "kanji": "天皇",
+        "kana": "てんのう",
+        "hanviet": "Thiên Hoàng",
+        "meaning_en": "Emperor of Japan",
+        "onkun": "Juku",
+        "flags": []
+      },
+      {
+        "kanji": "天才",
+        "kana": "てんさい",
+        "hanviet": "Thiên Tài",
+        "meaning_en": "genius; prodigy",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "天国",
+        "kana": "てんごく",
+        "hanviet": "Thiên Quốc",
+        "meaning_en": "paradise; heaven",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "天体",
+        "kana": "てんたい",
+        "hanviet": "Thiên Thể",
+        "meaning_en": "heavenly body; celestial body",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g8",
+    "anchor": "店",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "店",
+        "kana": "みせ",
+        "hanviet": "Điếm",
+        "meaning_en": "store; shop",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "店",
+        "kana": "てん",
+        "hanviet": "Điếm",
+        "meaning_en": "store; shop",
+        "onkun": "On",
+        "flags": []
+      },
+      {
+        "kanji": "店員",
+        "kana": "てんいん",
+        "hanviet": "Điếm Viên",
+        "meaning_en": "employee (of a store); shop assistant",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "店主",
+        "kana": "てんしゅ",
+        "hanviet": "Điếm Chủ",
+        "meaning_en": "shopkeeper; storekeeper",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "店長",
+        "kana": "てんちょう",
+        "hanviet": "Điếm Trưởng",
+        "meaning_en": "shop manager",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "店舗",
+        "kana": "てんぽ",
+        "hanviet": "Điếm Phố",
+        "meaning_en": "shop; store",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "店頭",
+        "kana": "てんとう",
+        "hanviet": "Điếm Đầu",
+        "meaning_en": "shopfront; storefront",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "k15_g9",
+    "anchor": "道",
+    "chapter": 15,
+    "currentCount": 0,
+    "items": [
+      {
+        "kanji": "道",
+        "kana": "みち",
+        "hanviet": "Đạo",
+        "meaning_en": "road; path",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "道具",
+        "kana": "どうぐ",
+        "hanviet": "Đạo Cụ",
+        "meaning_en": "tool; implement",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "道路",
+        "kana": "どうろ",
+        "hanviet": "Đạo Lộ",
+        "meaning_en": "road; highway",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "道徳",
+        "kana": "どうとく",
+        "hanviet": "Đạo Đức",
+        "meaning_en": "morals; morality",
+        "onkun": "On--On",
+        "flags": []
+      },
+      {
+        "kanji": "道順",
+        "kana": "みちじゅん",
+        "hanviet": "Đạo Thuận",
+        "meaning_en": "route; way",
+        "onkun": "Kun--On",
+        "flags": []
+      },
+      {
+        "kanji": "道のり",
+        "kana": "みちのり",
+        "hanviet": "Đạo",
+        "meaning_en": "distance; journey",
+        "onkun": "Kun",
+        "flags": []
+      },
+      {
+        "kanji": "道理",
+        "kana": "どうり",
+        "hanviet": "Đạo Lý",
+        "meaning_en": "reason; logic",
+        "onkun": "On--On",
+        "flags": []
+      }
+    ]
+  }
+]

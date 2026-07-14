@@ -1,4 +1,44 @@
+import kanjiJson from "@/data/n5/kanji.json"
+import hanVietDictionary from "@/data/hanviet-dictionary.json"
+import type { KanjiChapter } from "@/types"
+
 export const MAX_READINGS_SHOWN = 4
+
+const KANJI_CHAR_RE = /[一-鿿㐀-䶿々]/
+
+// kanji.json only stores Hán Việt per *word* (e.g. "四日" -> "Tứ Nhật"), not
+// per character. But each word's hanviet is a space-separated reading per
+// kanji character in that word (kana/okurigana contribute no syllable), so
+// zipping the word's kanji-only characters against its split hanviet
+// recovers a per-character index. Mismatched counts (rare hanviet
+// annotations that aren't a clean 1:1 split) are skipped rather than
+// guessed. This only covers ~355/635 kanji (whatever appears in kanji.json);
+// hanviet-dictionary.json is the primary, curated-for-full-coverage source
+// (see scripts note in that file's generation) and is checked first.
+function buildHanVietIndex(): Record<string, string> {
+  const map: Record<string, string> = {}
+  const consider = (kanji: string | null | undefined, hanviet: string | null | undefined) => {
+    if (!kanji || !hanviet) return
+    const chars = [...kanji].filter(ch => KANJI_CHAR_RE.test(ch))
+    const syllables = hanviet.trim().split(/\s+/).filter(Boolean)
+    if (chars.length === 0 || chars.length !== syllables.length) return
+    chars.forEach((ch, i) => { if (!(ch in map)) map[ch] = syllables[i] })
+  }
+  for (const chapter of kanjiJson.chapters as KanjiChapter[]) {
+    for (const group of chapter.groups) {
+      consider(group.anchor, group.hanviet)
+      for (const word of group.words) consider(word.kanji, word.hanviet)
+    }
+  }
+  return map
+}
+
+const HANVIET_INDEX = buildHanVietIndex()
+const HANVIET_DICTIONARY = hanVietDictionary as Record<string, string>
+
+export function hanVietForChar(char: string): string | undefined {
+  return HANVIET_DICTIONARY[char] ?? HANVIET_INDEX[char]
+}
 
 export function onkunTone(onkun: string): string {
   if (onkun.includes('Juku') || onkun.includes('Ate')) return '#9333ea'

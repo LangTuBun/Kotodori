@@ -169,6 +169,7 @@
     "componentsTitle": "Bộ thủ / thành phần",
     "radicalBadge": "bộ",
     "noAnimation": "Chưa có hoạt hình nét chữ cho chữ này.",
+    "hanvietLabel": "Hán Việt",
     "ariaLabel": "Hoạt hình nét chữ {char}",
     "positions": {
       "left": "trái",
