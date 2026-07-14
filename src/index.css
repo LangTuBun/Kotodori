@@ -1,54 +1,101 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0a0a0a;
-  --color-paper: #fafaf7;
-  --color-yellow: #ffe600;
-  --color-red: #ff2d2d;
-  --color-green: #00cc66;
-  --color-blue: #0057ff;
-  --color-surface: #f0ede6;
-  --color-muted: #6b6b6b;
+  --color-ink: #111111;
+  --color-paper: #f4f4f0;
+  --color-yellow: #b8860b;
+  --color-red: #e61919;
+  --color-green: #2f5d42;
+  --color-blue: #2c4a63;
+  --color-surface: #eae8e3;
+  --color-muted: #63615c;
 
   --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-display: 'Archivo Black', 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --font-jp: 'Noto Sans JP', sans-serif;
 }
 
-/* border-3 is not a Tailwind v4 default — define it here */
+/* Structural theme tokens.
+   RAW = Swiss Industrial Print: warm matte paper, carbon ink, hazard red as
+   the loud accent; amber/green are desaturated instrument-panel tones
+   reserved for functional classification (streak, mastery, grammar tags),
+   never decoration.
+   NEO = Blueprint Schematic: cool pale-blue drafting paper, navy ink, same
+   hazard red, but blue/cyan becomes the dominant structural accent instead
+   of amber — same monospace-telemetry DNA (JetBrains Mono labels, Archivo
+   Black numerals), just a cooler print substrate rather than a dark CRT.
+   Both modes reject border-radius and tilt entirely — 90 degree corners,
+   rigid grid, no playful rotation. */
+:root {
+  --radius: 0px;
+  --radius-sm: 0px;
+  --border-w: 2px;
+  --tilt: 0deg;
+}
+
+[data-theme="neobrutalism"] {
+  --color-ink: #0b1220;
+  --color-paper: #eef1f5;
+  --color-yellow: #c78a00;
+  --color-red: #e2231a;
+  --color-green: #157a45;
+  --color-blue: #0e6ea6;
+  --color-surface: #dfe5ec;
+  --color-muted: #5c6773;
+
+  --radius: 0px;
+  --radius-sm: 0px;
+  --border-w: 2px;
+  --tilt: 0deg;
+}
+
+/* border-3 is not a Tailwind v4 default — define it here.
+   Width + radius both read theme tokens; radius is pinned to 0 in both
+   themes so every bordered surface stays a hard 90-degree edge. */
 @utility border-3 {
-  border-width: 3px;
+  border-width: var(--border-w);
+  border-radius: var(--radius);
 }
 @utility border-t-3 {
-  border-top-width: 3px;
+  border-top-width: var(--border-w);
 }
 @utility border-b-3 {
-  border-bottom-width: 3px;
+  border-bottom-width: var(--border-w);
 }
 @utility border-l-3 {
-  border-left-width: 3px;
+  border-left-width: var(--border-w);
 }
 @utility border-r-3 {
-  border-right-width: 3px;
+  border-right-width: var(--border-w);
 }
 @utility border-x-3 {
-  border-left-width: 3px;
-  border-right-width: 3px;
+  border-left-width: var(--border-w);
+  border-right-width: var(--border-w);
+}
+
+/* No-op in both themes now (--tilt: 0deg) — kept so existing call sites
+   don't need to be touched if tilt is ever reintroduced per-theme. */
+@utility tilt-card {
+  transform: rotate(var(--tilt));
 }
 
 * { box-sizing: border-box; }
 
 html {
   font-family: 'Space Grotesk', system-ui, sans-serif;
-  background-color: #fafaf7;
-  color: #0a0a0a;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-variant-numeric: tabular-nums;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-body { margin: 0; padding: 0; min-height: 100vh; }
+body { margin: 0; padding: 0; min-height: 100vh; position: relative; }
 
 .jp { font-family: 'Noto Sans JP', sans-serif; }
 
 ruby { font-family: 'Noto Sans JP', sans-serif; }
-rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: #6b6b6b; }
+rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--color-muted); }
 
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(4px); }
@@ -57,10 +104,36 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: #6b6b6b
 .animate-fade-in { animation: fade-in 0.25s ease-out; }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #f0ede6; }
-::-webkit-scrollbar-thumb { background: #0a0a0a; }
+::-webkit-scrollbar-track { background: var(--color-surface); }
+::-webkit-scrollbar-thumb { background: var(--color-ink); }
 
-:focus-visible { outline: 3px solid #ffe600; outline-offset: 2px; }
+:focus-visible { outline: 3px solid var(--color-red); outline-offset: 2px; }
+
+/* Mechanical noise — a fixed, low-opacity grain over the whole viewport so
+   neither substrate reads as a flat digital fill. Present in both themes. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Drafting-table grid — Blueprint Schematic (NEO) only. Faint blue
+   crosshatch instead of the dark-mode scanlines this used to be. */
+[data-theme="neobrutalism"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(14, 110, 166, 0.06), rgba(14, 110, 166, 0.06) 1px, transparent 1px, transparent 24px),
+    repeating-linear-gradient(90deg, rgba(14, 110, 166, 0.06), rgba(14, 110, 166, 0.06) 1px, transparent 1px, transparent 24px);
+}
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }

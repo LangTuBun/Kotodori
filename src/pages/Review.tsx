@@ -106,15 +106,31 @@ export function Review() {
 
   const current = queue[idx]
 
+  // Again/Hard requeue the card a few cards ahead so it resurfaces later in
+  // this same session (Anki-style relearning), instead of only coming back
+  // whenever its FSRS nextReview date is up. Good/Easy don't requeue — those
+  // ratings are trusted to the normal schedule.
+  const REQUEUE_GAP = 4
+
   // Split so a keyboard rating can flash the button before the card actually
   // advances (mouse clicks advance immediately — see RatingBar).
   const commitRating = (rating: number) => {
     if (!current) return
     reviewCard(current.id, current.cardType, rating)
     setReviewed(r => r + 1)
+    if (rating === RATING.AGAIN || rating === RATING.HARD) {
+      setQueue(q => {
+        const insertAt = Math.min(q.length, idx + 1 + REQUEUE_GAP)
+        const next = [...q]
+        next.splice(insertAt, 0, current)
+        return next
+      })
+    }
   }
-  const advanceCard = () => {
-    if (idx + 1 >= queue.length) {
+  const advanceCard = (rating: number) => {
+    const requeued = rating === RATING.AGAIN || rating === RATING.HARD
+    const nextLength = queue.length + (requeued ? 1 : 0)
+    if (idx + 1 >= nextLength) {
       setPhase('done')
     } else {
       setIdx(i => i + 1)
@@ -146,7 +162,7 @@ export function Review() {
         <div className="border-b-3 border-ink pb-6 mb-8">
           <h1 className="text-5xl font-black">{t('review.done')}</h1>
         </div>
-        <div className="border-3 border-ink p-8 shadow-[5px_5px_0px_#00cc66] text-center">
+        <div className="border-3 border-ink p-8 shadow-[5px_5px_0px_var(--color-green)] text-center">
           <div className="text-7xl font-black mb-3">{reviewed}</div>
           <div className="text-sm font-bold uppercase tracking-wider text-muted mb-6">
             {mode === 'vocab' ? t('review.wordsReviewed') : t('review.kanjiReviewed')}
@@ -210,7 +226,7 @@ function ReviewSetup({
         <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">{t('review.chooseScope')}</p>
       </div>
 
-      <div className="border-3 border-ink shadow-[6px_6px_0px_#0a0a0a] bg-paper">
+      <div className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] bg-paper">
         {/* Mode tabs */}
         <div className="grid grid-cols-2 border-b-3 border-ink">
           <button
@@ -304,7 +320,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${active ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+      className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
     >
       {children}
     </button>
@@ -316,7 +332,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
   const { t, localize } = useTranslation()
   return (
     <div
-      className="border-3 border-ink shadow-[6px_6px_0px_#0a0a0a] p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[8px_8px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[8px_8px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -374,7 +390,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
 
   return (
     <div
-      className="border-3 border-ink shadow-[6px_6px_0px_#0a0a0a] p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[8px_8px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[8px_8px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -393,7 +409,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
         <>
           <div className="flex items-center gap-2 mb-3">
             {word.hanviet && (
-              <span className="text-sm font-black px-2 py-1 border-2 border-ink bg-surface">{word.hanviet}</span>
+              <span className="text-sm font-black px-2 py-1 border-2 border-ink rounded-[var(--radius-sm)] bg-surface">{word.hanviet}</span>
             )}
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color: onkunTone(word.onkun) }}>
               {word.onkun}
@@ -450,7 +466,7 @@ function isTypingTarget(el: Element | null): boolean {
 
 function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
   flipped: boolean; onFlip: () => void
-  onRate: (rating: number) => void; onAdvance: () => void
+  onRate: (rating: number) => void; onAdvance: (rating: number) => void
 }) {
   const [flashRating, setFlashRating] = useState<number | null>(null)
   const [flashFlip, setFlashFlip] = useState(false)
@@ -465,7 +481,9 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
       if (isTypingTarget(document.activeElement)) return
 
       if (!flipped) {
-        if (e.key !== ' ' && e.code !== 'Space') return
+        const isSpace = e.key === ' ' || e.code === 'Space'
+        const isEnter = e.key === 'Enter'
+        if (!isSpace && !isEnter) return
         e.preventDefault()
         setFlashFlip(true)
         onFlip()
@@ -478,7 +496,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
       setFlashRating(match.rating)
       onRate(match.rating)
       // Hold the flash long enough to be seen before the card advances.
-      setTimeout(onAdvance, 150)
+      setTimeout(() => onAdvance(match.rating), 150)
     }
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
@@ -516,7 +534,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
           className={`relative flex flex-col gap-0.5 py-3 transition-all ${
             flashRating === rating ? 'shadow-none translate-x-0.5 translate-y-0.5' : ''
           }`}
-          onClick={() => { onRate(rating); onAdvance() }}
+          onClick={() => { onRate(rating); onAdvance(rating) }}
         >
           <span className="absolute top-1 left-1.5 text-[10px] font-bold opacity-50">{key}</span>
           <span className="font-black">{t(`review.rating.${labelKey}`)}</span>

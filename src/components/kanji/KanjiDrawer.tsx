@@ -132,7 +132,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
               <button
                 onClick={() => setReplayKey(k => k + 1)}
                 title={t('kanjiDrawer.replay')}
-                className="flex items-center gap-1.5 px-3 py-1.5 border-2 border-ink font-bold text-xs uppercase tracking-wider cursor-pointer hover:bg-surface transition-colors"
+                className="flex items-center gap-1.5 px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-bold text-xs uppercase tracking-wider cursor-pointer hover:bg-surface transition-colors"
               >
                 <ReplayIcon />
                 {t('kanjiDrawer.replay')}

@@ -4,9 +4,9 @@ export function onkunTone(onkun: string): string {
   if (onkun.includes('Juku') || onkun.includes('Ate')) return '#9333ea'
   const hasOn = onkun.includes('On')
   const hasKun = onkun.includes('Kun')
-  if (hasOn && hasKun) return '#6b6b6b'
-  if (hasOn) return '#0057ff'
-  return '#00cc66'
+  if (hasOn && hasKun) return 'var(--color-muted)'
+  if (hasOn) return 'var(--color-blue)'
+  return 'var(--color-green)'
 }
 
 // kanjiapi.dev marks bound-form readings with a leading/trailing "-"

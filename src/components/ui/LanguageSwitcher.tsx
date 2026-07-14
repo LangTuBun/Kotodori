@@ -10,14 +10,14 @@ export function LanguageSwitcher() {
   const { lang, setLang } = useTranslation()
 
   return (
-    <div role="group" aria-label="Language" className="inline-flex border-2 border-ink">
+    <div role="group" aria-label="Language" className="inline-flex border-2 border-ink rounded-[var(--radius-sm)] overflow-hidden">
       {OPTIONS.map(({ value, label }, i) => (
         <button
           key={value}
           type="button"
           aria-pressed={lang === value}
           onClick={() => setLang(value)}
-          className={`px-2.5 py-1 text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
+          className={`px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
             i > 0 ? 'border-l-2 border-ink' : ''
           } ${lang === value ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
         >

@@ -2,6 +2,7 @@
 import { useVocabStore } from "@/store/vocab-store"
 import { Furigana } from "@/components/ui/Furigana"
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher"
+import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher"
 import { useTranslation } from "@/lib/useTranslation"
 
 const nav = [
@@ -27,27 +28,30 @@ export function Sidebar() {
       {/* Logo */}
       <div className="border-b-3 border-ink p-6">
         <div className="flex items-start justify-between gap-2">
-          <div className="text-3xl font-black tracking-tighter">
+          <div className="text-3xl font-display tracking-tighter">
             <Furigana kanji="言鳥" kana="ことどり" />
           </div>
-          <LanguageSwitcher />
+          <div className="flex flex-col items-end gap-1">
+            <LanguageSwitcher />
+            <ThemeSwitcher />
+          </div>
         </div>
-        <div className="text-xs font-bold uppercase tracking-widest text-muted mt-1">KOTODORI</div>
+        <div className="font-mono text-xs font-bold uppercase tracking-widest text-muted mt-1">[ KOTODORI ]</div>
       </div>
 
       {/* Streak */}
-      <div className="border-b-3 border-ink p-4 flex items-center gap-3 bg-yellow">
+      <div className="border-b-3 border-ink p-4 flex items-center gap-3 bg-yellow tilt-card">
         <div>
-          <div className="text-xl font-black">{streak}</div>
-          <div className="text-xs font-bold uppercase tracking-wider">{t('sidebar.dayStreak')}</div>
+          <div className="font-display text-xl">{streak}</div>
+          <div className="font-mono text-xs font-bold uppercase tracking-wider">{t('sidebar.dayStreak')}</div>
         </div>
       </div>
 
       {/* Due alert */}
       {due > 0 && (
         <div className="border-b-3 border-ink p-3 bg-red text-paper flex items-center gap-2">
-          <span className="font-black text-lg">{due}</span>
-          <span className="text-xs font-bold uppercase tracking-wider">{t('sidebar.cardsDueNow')}</span>
+          <span className="font-display text-lg">{due}</span>
+          <span className="font-mono text-xs font-bold uppercase tracking-wider">{t('sidebar.cardsDueNow')}</span>
         </div>
       )}
 
@@ -63,7 +67,7 @@ export function Sidebar() {
                 "flex items-center gap-3 px-4 py-2.5 border-3 transition-all duration-100",
                 isActive
                   ? "border-ink bg-ink text-paper shadow-none translate-x-0.5 translate-y-0.5"
-                  : "border-transparent hover:border-ink hover:shadow-[3px_3px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5",
+                  : "border-transparent hover:border-ink hover:shadow-[3px_3px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5",
               ].join(" ")
             }
           >
@@ -71,7 +75,7 @@ export function Sidebar() {
               <div className="font-black text-sm leading-tight">
                 <Furigana kanji={label} kana={kana} />
               </div>
-              <div className="text-xs font-bold uppercase tracking-wider opacity-60">{t(`nav.${key}`)}</div>
+              <div className="font-mono text-xs font-bold uppercase tracking-wider opacity-60">{t(`nav.${key}`)}</div>
             </div>
           </NavLink>
         ))}
@@ -85,9 +89,9 @@ export function Sidebar() {
           { label: t('common.stats.review'), val: stats.review },
           { label: t('common.stats.new'), val: stats.new },
         ].map(({ label, val }) => (
-          <div key={label} className="bg-paper border-2 border-ink p-2 text-center">
-            <div className="text-lg font-black">{val}</div>
-            <div className="text-xs uppercase tracking-wider text-muted">{label}</div>
+          <div key={label} className="bg-paper border-2 border-ink rounded-[var(--radius-sm)] p-2 text-center">
+            <div className="font-display text-lg">{val}</div>
+            <div className="font-mono text-xs uppercase tracking-wider text-muted">{label}</div>
           </div>
         ))}
       </div>

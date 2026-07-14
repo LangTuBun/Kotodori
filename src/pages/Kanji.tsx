@@ -10,7 +10,7 @@ const chapters = kanjiData.chapters as KanjiChapter[]
 
 const ACCENTS = ['yellow', 'blue', 'red', 'green'] as const
 const ACCENT_HEX: Record<string, string> = {
-  yellow: '#ffe600', blue: '#0057ff', red: '#ff2d2d', green: '#00cc66',
+  yellow: 'var(--color-yellow)', blue: 'var(--color-blue)', red: 'var(--color-red)', green: 'var(--color-green)',
 }
 function accentFor(i: number) {
   return ACCENTS[i % ACCENTS.length]
@@ -69,7 +69,7 @@ export function Kanji() {
         <div className="px-4 py-3 border-b-3 border-ink bg-paper flex gap-2 flex-wrap">
           <button
             onClick={() => setChapter(null)}
-            className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${chapter === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapter === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
             {t('common.all')}
           </button>
@@ -77,7 +77,7 @@ export function Kanji() {
             <button
               key={c.chapter}
               onClick={() => setChapter(prev => prev === c.chapter ? null : c.chapter)}
-              className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${chapter === c.chapter ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+              className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapter === c.chapter ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
             >
               {t('common.chapterN', { n: c.chapter })} <span className="opacity-60">({c.wordCount})</span>
             </button>
@@ -130,7 +130,7 @@ function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick }: { group: K
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between gap-2">
             {group.hanviet && (
-              <span className="text-xs font-black px-1.5 py-0.5 border-2 border-ink bg-surface shrink-0">{group.hanviet}</span>
+              <span className="text-xs font-black px-1.5 py-0.5 border-2 border-ink rounded-[var(--radius-sm)] bg-surface shrink-0">{group.hanviet}</span>
             )}
             <span className="text-[10px] font-bold text-muted shrink-0">Ch.{chapterNum}</span>
           </div>

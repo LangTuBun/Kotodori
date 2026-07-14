@@ -6,7 +6,7 @@ const data = countersData as CountersData
 
 const ACCENTS = ['yellow', 'blue', 'red', 'green'] as const
 const ACCENT_HEX: Record<string, string> = {
-  yellow: '#ffe600', blue: '#0057ff', red: '#ff2d2d', green: '#00cc66',
+  yellow: 'var(--color-yellow)', blue: 'var(--color-blue)', red: 'var(--color-red)', green: 'var(--color-green)',
 }
 function accentFor(i: number) {
   return ACCENTS[i % ACCENTS.length]
@@ -40,13 +40,13 @@ export function Counters() {
       </div>
 
       {data.bigNumberExamples.length > 0 && (
-        <div className="mt-6 border-3 border-ink bg-yellow/20 shadow-[5px_5px_0px_#0a0a0a] p-6">
+        <div className="mt-6 border-3 border-ink bg-yellow/20 shadow-[5px_5px_0px_var(--color-ink)] p-6">
           <div className="text-xs font-black uppercase tracking-widest mb-4">
             {t('counters.bigExamplesTitle')}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {data.bigNumberExamples.map((ex, i) => (
-              <div key={i} className="border-2 border-ink bg-paper p-4">
+              <div key={i} className="border-2 border-ink rounded-[var(--radius-sm)] bg-paper p-4">
                 <div className="jp text-xl font-black">{ex.kanji}</div>
                 <div className="jp text-sm mt-1 text-muted">{ex.kana}</div>
                 <div className="text-xs mt-1 italic text-muted">{ex.romaji}</div>
@@ -63,14 +63,14 @@ export function Counters() {
 function CounterTable({ category, accent, columnLabels }: { category: CounterCategory; accent: string; columnLabels: Record<CounterColumn, string> }) {
   return (
     <div
-      className="h-full border-3 border-ink bg-paper shadow-[4px_4px_0px_#0a0a0a] overflow-hidden flex flex-col"
+      className="h-full border-3 border-ink bg-paper shadow-[4px_4px_0px_var(--color-ink)] overflow-hidden flex flex-col"
       style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
     >
       <div className="px-4 py-3 border-b-3 border-ink bg-surface">
         <div className="flex items-baseline justify-between gap-2">
           <h3 className="font-black text-sm uppercase tracking-wide">{category.shortTitle}</h3>
           {category.counter && (
-            <span className="jp text-sm font-black shrink-0 border-2 border-ink bg-paper px-1.5 py-0.5">
+            <span className="jp text-sm font-black shrink-0 border-2 border-ink rounded-[var(--radius-sm)] bg-paper px-1.5 py-0.5">
               {category.counter}{category.counterKana ? ` ・ ${category.counterKana}` : ''}
             </span>
           )}

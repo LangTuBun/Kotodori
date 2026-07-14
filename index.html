@@ -7,9 +7,18 @@
     <title>KOTODORI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <script>
+      try {
+        var saved = JSON.parse(localStorage.getItem('kotodori-settings') || 'null')
+        var theme = saved && saved.state && saved.state.theme
+        document.documentElement.dataset.theme = theme === 'neobrutalism' ? 'neobrutalism' : 'brutalism'
+      } catch (e) {
+        document.documentElement.dataset.theme = 'brutalism'
+      }
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

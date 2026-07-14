@@ -12,10 +12,10 @@ const grammar = grammarData as GrammarPoint[]
 const HEADER_RUBY = '<ruby>動詞<rp>(</rp><rt>どうし</rt><rp>)</rp></ruby>の<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>'
 
 const GROUP_ACCENT: Record<string, string> = {
-  "1": "#ffe600", "2": "#0057ff", "3": "#ff2d2d", all: "#00cc66", neg: "#6b6b6b",
+  "1": "var(--color-yellow)", "2": "var(--color-blue)", "3": "var(--color-red)", all: "var(--color-green)", neg: "var(--color-muted)",
 }
 function groupAccent(g: number | string) {
-  return GROUP_ACCENT[String(g)] ?? "#0a0a0a"
+  return GROUP_ACCENT[String(g)] ?? "var(--color-ink)"
 }
 
 export function VerbForms() {
@@ -50,7 +50,7 @@ export function VerbForms() {
         {/* Group overview */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           {data.groups.map(g => (
-            <div key={g.id} className="border-3 border-ink bg-paper shadow-[4px_4px_0px_#0a0a0a]">
+            <div key={g.id} className="border-3 border-ink bg-paper shadow-[4px_4px_0px_var(--color-ink)]">
               <div className="p-3 border-b-3 border-ink flex items-center gap-2" style={{ backgroundColor: groupAccent(g.id) }}>
                 <span className="font-black text-sm">{g.name}</span>
               </div>
@@ -58,7 +58,7 @@ export function VerbForms() {
                 <p className="text-xs text-muted mb-2">{g.note}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {g.sample.map((s, i) => (
-                    <span key={i} className="text-xs font-bold border-2 border-ink px-1.5 py-0.5" title={s.vi}>
+                    <span key={i} className="text-xs font-bold border-2 border-ink rounded-[var(--radius-sm)] px-1.5 py-0.5" title={s.vi}>
                       <Ruby text={s.masu} html={s.masuRuby} />
                     </span>
                   ))}
@@ -75,7 +75,7 @@ export function VerbForms() {
               key={f.id}
               onClick={() => setActiveForm(f.id)}
               className={`px-3 py-2 border-3 border-ink font-black text-xs uppercase tracking-wider cursor-pointer transition-all ${
-                activeForm === f.id ? 'bg-ink text-paper' : 'bg-paper hover:shadow-[3px_3px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5'
+                activeForm === f.id ? 'bg-ink text-paper' : 'bg-paper hover:shadow-[3px_3px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5'
               }`}
             >
               <div className="text-sm"><Ruby text={f.titleJa} html={f.titleJaRuby} /></div>
@@ -133,7 +133,7 @@ export function VerbForms() {
           {form.examples.length > 0 && (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-5">
               {form.examples.map((ex, i) => (
-                <div key={i} className="border-2 border-ink p-2 bg-paper" style={{ borderLeftWidth: '4px', borderLeftColor: groupAccent(ex.group) }}>
+                <div key={i} className="border-2 border-ink rounded-[var(--radius-sm)] p-2 bg-paper" style={{ borderLeftWidth: '4px', borderLeftColor: groupAccent(ex.group) }}>
                   <div className="text-xs text-muted"><Ruby text={ex.masu} html={ex.masuRuby} /></div>
                   <div className="font-black text-sm">→ <Ruby text={ex.result} html={ex.resultRuby} /></div>
                   {ex.resultNeg && (
@@ -180,8 +180,8 @@ export function VerbForms() {
                   <button
                     key={g.id}
                     onClick={() => navigate(`/grammar?point=${g.id}`)}
-                    className="group shrink-0 w-56 text-left border-3 border-ink bg-paper p-3 cursor-pointer transition-all hover:shadow-[4px_4px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5"
-                    style={{ borderLeftWidth: '6px', borderLeftColor: '#0057ff' }}
+                    className="group shrink-0 w-56 text-left border-3 border-ink bg-paper p-3 cursor-pointer transition-all hover:shadow-[4px_4px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+                    style={{ borderLeftWidth: '6px', borderLeftColor: 'var(--color-blue)' }}
                   >
                     <div className="flex items-start justify-between gap-2">
                       <div className="jp font-bold text-sm leading-snug">
@@ -209,7 +209,7 @@ export function VerbForms() {
             <span className="text-sm font-black text-muted w-4 text-center">{showCheatSheet ? '−' : '+'}</span>
           </button>
           {showCheatSheet && (
-            <div className="border-3 border-ink bg-paper overflow-x-auto shadow-[4px_4px_0px_#0a0a0a]">
+            <div className="border-3 border-ink bg-paper overflow-x-auto shadow-[4px_4px_0px_var(--color-ink)]">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-3 border-ink bg-ink text-paper">
@@ -239,7 +239,7 @@ export function VerbForms() {
           <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.keyExceptions')}</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {data.keyExceptions.map((e, i) => (
-              <div key={i} className="text-sm font-bold border-2 border-ink bg-paper px-3 py-2">
+              <div key={i} className="text-sm font-bold border-2 border-ink rounded-[var(--radius-sm)] bg-paper px-3 py-2">
                 <Ruby text={e} html={data.keyExceptionsRuby?.[i]} />
               </div>
             ))}

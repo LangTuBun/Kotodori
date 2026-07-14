@@ -6,25 +6,25 @@ interface PosTagProps {
 }
 
 const colors: Record<string, string> = {
-  'verb-group1': '#0057ff',
-  'verb-group2': '#0057ff',
-  'verb-group3': '#0057ff',
-  'adj-i': '#00cc66',
-  'adj-na': '#00cc66',
-  'noun': '#ffe600',
-  'adverb': '#ff2d2d',
-  'expression': '#9333ea',
-  'conjunction': '#9333ea',
+  'verb-group1': 'var(--color-blue)',
+  'verb-group2': 'var(--color-blue)',
+  'verb-group3': 'var(--color-blue)',
+  'adj-i': 'var(--color-green)',
+  'adj-na': 'var(--color-green)',
+  'noun': 'var(--color-yellow)',
+  'adverb': 'var(--color-red)',
+  'expression': 'var(--color-muted)',
+  'conjunction': 'var(--color-muted)',
 }
 
 export function PosTag({ pos, verbGroup }: PosTagProps) {
-  const bg = colors[pos] ?? '#6b6b6b'
+  const bg = colors[pos] ?? 'var(--color-muted)'
   const label = getPosLabel(pos, verbGroup)
-  const textColor = pos === 'noun' ? '#0a0a0a' : '#fafaf7'
+  const textColor = pos === 'noun' ? 'var(--color-ink)' : 'var(--color-paper)'
   return (
     <span
-      className="inline-block text-xs font-bold uppercase tracking-widest px-2 py-0.5 border-2 border-ink"
-      style={{ backgroundColor: bg, color: textColor, fontFamily: 'Space Grotesk, sans-serif' }}
+      className="font-mono inline-block text-xs font-bold uppercase tracking-widest px-2 py-0.5 border-2 border-ink rounded-[var(--radius-sm)]"
+      style={{ backgroundColor: bg, color: textColor }}
     >
       {label}
     </span>

@@ -146,7 +146,7 @@ const groups: SoundGroup[] = (() => {
 function WordCard({ entry, revealed }: { entry: VocabEntry; revealed: boolean }) {
   const { localize } = useTranslation()
   return (
-    <div className="border-3 border-ink shadow-[3px_3px_0px_#0a0a0a] p-4 flex-1 min-w-[140px] bg-paper">
+    <div className="border-3 border-ink shadow-[3px_3px_0px_var(--color-ink)] p-4 flex-1 min-w-[140px] bg-paper">
       <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
       <div className="text-2xl font-black jp mt-3 mb-2">
         {revealed
@@ -188,7 +188,7 @@ export function Homophones() {
             {t('homophones.backToList')}
           </Button>
 
-          <div className="border-3 border-ink shadow-[6px_6px_0px_#ffe600] p-8 mb-6">
+          <div className="border-3 border-ink shadow-[6px_6px_0px_var(--color-yellow)] p-8 mb-6">
             <div className="text-center mb-6">
               <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">
                 {selected.readings.length > 1 ? t('homophones.similarSound') : t('homophones.identicalReading')}
@@ -234,7 +234,7 @@ export function Homophones() {
       ) : (
         <>
           {/* Stats + random */}
-          <div className="border-3 border-ink p-6 shadow-[5px_5px_0px_#ffe600] mb-8 flex items-center justify-between gap-4">
+          <div className="border-3 border-ink p-6 shadow-[5px_5px_0px_var(--color-yellow)] mb-8 flex items-center justify-between gap-4">
             <div className="flex gap-8">
               <div>
                 <div className="font-black text-2xl">{trueHomophones.length}</div>
@@ -293,7 +293,7 @@ function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; o
   return (
     <button
       onClick={onSelect}
-      className="border-3 border-ink p-4 text-left shadow-[3px_3px_0px_#0a0a0a] hover:shadow-[5px_5px_0px_#ffe600] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all bg-paper"
+      className="border-3 border-ink p-4 text-left shadow-[3px_3px_0px_var(--color-ink)] hover:shadow-[5px_5px_0px_var(--color-yellow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all bg-paper"
     >
       <div className="flex items-start gap-3">
         <div className="text-xs font-black text-muted w-6 shrink-0 pt-1">{idx + 1}</div>

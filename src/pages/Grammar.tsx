@@ -14,7 +14,7 @@ const verbForms = (verbFormsData as unknown as VerbFormsData).forms
 
 const ACCENTS = ['yellow', 'blue', 'red', 'green'] as const
 const ACCENT_HEX: Record<string, string> = {
-  yellow: '#ffe600', blue: '#0057ff', red: '#ff2d2d', green: '#00cc66',
+  yellow: 'var(--color-yellow)', blue: 'var(--color-blue)', red: 'var(--color-red)', green: 'var(--color-green)',
 }
 function accentFor(order: number) {
   return ACCENTS[(order - 1) % ACCENTS.length]
@@ -98,7 +98,7 @@ export function Grammar() {
         <div className="px-4 py-3 border-b-3 border-ink bg-paper flex gap-2 flex-wrap">
           <button
             onClick={() => setCat(null)}
-            className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${cat === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
             {t('common.all')}
           </button>
@@ -106,7 +106,7 @@ export function Grammar() {
             <button
               key={c.slug}
               onClick={() => setCat(prev => prev === c.slug ? null : c.slug)}
-              className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+              className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
               title={c.title}
             >
               {c.romanNumeral} <span className="opacity-60">({c.count})</span>
@@ -125,7 +125,7 @@ export function Grammar() {
               <button
                 key={f.id}
                 onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
-                className={`px-3 py-1.5 border-2 border-ink font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
+                className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
                 title={f.title}
               >
                 {f.titleJa}
@@ -168,7 +168,7 @@ export function Grammar() {
                   className="w-full flex items-center gap-3 mb-3 text-left cursor-pointer group"
                 >
                   <span
-                    className="text-xs font-black px-2 py-1 border-2 border-ink shrink-0"
+                    className="text-xs font-black px-2 py-1 border-2 border-ink rounded-[var(--radius-sm)] shrink-0"
                     style={{ backgroundColor: ACCENT_HEX[accent] }}
                   >
                     {c.romanNumeral}
@@ -203,7 +203,7 @@ export function Grammar() {
           <div className="p-6 border-b-3 border-ink">
             <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-black px-2 py-0.5 border-2 border-ink" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
+              <span className="text-xs font-black px-2 py-0.5 border-2 border-ink rounded-[var(--radius-sm)]" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
                 {categories.find(c => c.slug === selected.category)?.romanNumeral}
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-muted">#{selected.num} · {categories.find(c => c.slug === selected.category)?.title}</span>
@@ -249,7 +249,7 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
       <button
         onClick={onClick}
         className={`w-full text-left p-3 border-3 transition-all duration-100 cursor-pointer ${
-          selected ? 'border-ink bg-ink text-paper' : 'border-ink bg-paper hover:shadow-[4px_4px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5'
+          selected ? 'border-ink bg-ink text-paper' : 'border-ink bg-paper hover:shadow-[4px_4px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5'
         }`}
         style={!selected ? { borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] } : undefined}
       >
@@ -281,7 +281,7 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
       {/* Hover preview */}
       {ex && (
         <div className="pointer-events-none absolute left-0 right-0 top-full mt-1.5 z-30 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150">
-          <div className="bg-ink text-paper border-3 border-ink shadow-[4px_4px_0px_#0a0a0a] p-3">
+          <div className="bg-ink text-paper border-3 border-ink shadow-[4px_4px_0px_var(--color-ink)] p-3">
             <div className="font-bold text-sm leading-snug">
               <Ruby text={ex.ja} html={ex.jaRuby} />
             </div>

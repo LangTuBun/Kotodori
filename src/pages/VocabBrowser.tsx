@@ -55,7 +55,7 @@ export function VocabBrowser() {
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('vocab.searchPlaceholder')}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_#0057ff]"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
           />
           <select
             value={chapter ?? ""}
@@ -216,7 +216,7 @@ function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
               const hw = (vocabData as VocabEntry[]).find(v => v.id === id)
               if (!hw) return null
               return (
-                <div key={id} className="border-3 border-ink px-3 py-1 shadow-[2px_2px_0px_#0a0a0a]">
+                <div key={id} className="border-3 border-ink px-3 py-1 shadow-[2px_2px_0px_var(--color-ink)]">
                   <div className="font-bold"><Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} /></div>
                   <div className="text-xs text-muted">{localize(hw.meanings).slice(0, 20)}</div>
                 </div>

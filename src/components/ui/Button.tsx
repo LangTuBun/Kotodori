@@ -28,10 +28,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         className={[
           'inline-flex items-center justify-center gap-2',
           'border-3 border-ink',
-          'font-bold uppercase tracking-wider',
-          'shadow-[3px_3px_0px_#0a0a0a]',
+          'font-mono font-bold uppercase tracking-wider',
+          'shadow-[3px_3px_0px_var(--color-ink)]',
           'transition-all duration-100',
-          'hover:shadow-[5px_5px_0px_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5',
+          'hover:shadow-[5px_5px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5',
           'active:shadow-none active:translate-x-0.5 active:translate-y-0.5',
           'cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none',
           variants[variant],
