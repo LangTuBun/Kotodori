@@ -50,7 +50,7 @@ export function VerbForms() {
         {/* Group overview */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           {data.groups.map(g => (
-            <div key={g.id} className="border-3 border-ink bg-paper shadow-[4px_4px_0px_var(--color-ink)]">
+            <div key={g.id} className="border-3 border-ink bg-paper shadow-[4px_4px_0px_var(--color-ink)] overflow-hidden">
               <div className="p-3 border-b-3 border-ink flex items-center gap-2" style={{ backgroundColor: groupAccent(g.id) }}>
                 <span className="font-black text-sm">{g.name}</span>
               </div>

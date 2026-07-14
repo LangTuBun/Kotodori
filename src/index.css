@@ -1,53 +1,52 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #111111;
-  --color-paper: #f4f4f0;
-  --color-yellow: #b8860b;
-  --color-red: #e61919;
-  --color-green: #2f5d42;
-  --color-blue: #2c4a63;
-  --color-surface: #eae8e3;
-  --color-muted: #63615c;
+  --color-ink: #0a0a0a;
+  --color-paper: #fafaf7;
+  --color-yellow: #ffe600;
+  --color-red: #ff2d2d;
+  --color-green: #00cc66;
+  --color-blue: #0057ff;
+  --color-surface: #f0ede6;
+  --color-muted: #6b6b6b;
 
   --font-sans: 'Space Grotesk', system-ui, sans-serif;
-  --font-display: 'Archivo Black', 'Space Grotesk', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Grotesk', system-ui, sans-serif;
   --font-jp: 'Noto Sans JP', sans-serif;
 }
 
 /* Structural theme tokens.
-   RAW = Swiss Industrial Print: warm matte paper, carbon ink, hazard red as
-   the loud accent; amber/green are desaturated instrument-panel tones
-   reserved for functional classification (streak, mastery, grammar tags),
-   never decoration.
-   NEO = Blueprint Schematic: cool pale-blue drafting paper, navy ink, same
-   hazard red, but blue/cyan becomes the dominant structural accent instead
-   of amber — same monospace-telemetry DNA (JetBrains Mono labels, Archivo
-   Black numerals), just a cooler print substrate rather than a dark CRT.
-   Both modes reject border-radius and tilt entirely — 90 degree corners,
-   rigid grid, no playful rotation. */
+   RAW = classic Brutalism: pure primary colors (stark yellow/red/green/blue),
+   black ink, off-white paper, zero radius, thick 3px borders, hard offset
+   shadows. No texture, no monospace — just raw, unpolished, high-contrast.
+   NEO = Neobrutalism: cream paper, hot coral red, vivid yellow, mint green,
+   periwinkle blue. Thick rounded borders, hard offset shadows, a touch of
+   playful tilt on accent cards. The two are deliberately built from
+   different color families (stark primaries vs. candy pastel-vivid) and
+   different geometry (sharp vs. rounded) so they read as distinct moods,
+   not variations on one palette. */
 :root {
   --radius: 0px;
   --radius-sm: 0px;
-  --border-w: 2px;
+  --border-w: 3px;
   --tilt: 0deg;
 }
 
 [data-theme="neobrutalism"] {
-  --color-ink: #0b1220;
-  --color-paper: #eef1f5;
-  --color-yellow: #c78a00;
-  --color-red: #e2231a;
-  --color-green: #157a45;
-  --color-blue: #0e6ea6;
-  --color-surface: #dfe5ec;
-  --color-muted: #5c6773;
+  --color-ink: #171412;
+  --color-paper: #fff9ec;
+  --color-yellow: #ffd93d;
+  --color-red: #ff6b6b;
+  --color-green: #5fd68a;
+  --color-blue: #8c86ff;
+  --color-surface: #f5efe0;
+  --color-muted: #8a8478;
 
-  --radius: 0px;
-  --radius-sm: 0px;
-  --border-w: 2px;
-  --tilt: 0deg;
+  --radius: 16px;
+  --radius-sm: 8px;
+  --border-w: 4px;
+  --tilt: -1deg;
 }
 
 /* border-3 is not a Tailwind v4 default — define it here.
@@ -107,33 +106,7 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--c
 ::-webkit-scrollbar-track { background: var(--color-surface); }
 ::-webkit-scrollbar-thumb { background: var(--color-ink); }
 
-:focus-visible { outline: 3px solid var(--color-red); outline-offset: 2px; }
-
-/* Mechanical noise — a fixed, low-opacity grain over the whole viewport so
-   neither substrate reads as a flat digital fill. Present in both themes. */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-  opacity: 0.035;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-/* Drafting-table grid — Blueprint Schematic (NEO) only. Faint blue
-   crosshatch instead of the dark-mode scanlines this used to be. */
-[data-theme="neobrutalism"] body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 9998;
-  pointer-events: none;
-  background-image:
-    repeating-linear-gradient(0deg, rgba(14, 110, 166, 0.06), rgba(14, 110, 166, 0.06) 1px, transparent 1px, transparent 24px),
-    repeating-linear-gradient(90deg, rgba(14, 110, 166, 0.06), rgba(14, 110, 166, 0.06) 1px, transparent 1px, transparent 24px);
-}
+:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: 2px; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }

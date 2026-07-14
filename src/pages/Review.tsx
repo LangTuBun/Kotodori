@@ -190,7 +190,7 @@ export function Review() {
         >
           ×
         </button>
-        <div className="flex-1 h-4 bg-surface border-3 border-ink">
+        <div className="flex-1 h-4 bg-surface border-3 border-ink overflow-hidden">
           <div className="h-full bg-yellow transition-all duration-300" style={{ width: `${progress}%` }} />
         </div>
         <span className="font-black text-sm whitespace-nowrap">{idx + 1} / {queue.length}</span>
@@ -226,7 +226,7 @@ function ReviewSetup({
         <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">{t('review.chooseScope')}</p>
       </div>
 
-      <div className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] bg-paper">
+      <div className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] bg-paper overflow-hidden">
         {/* Mode tabs */}
         <div className="grid grid-cols-2 border-b-3 border-ink">
           <button

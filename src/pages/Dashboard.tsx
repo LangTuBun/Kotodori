@@ -29,7 +29,7 @@ export function Dashboard() {
       </div>
 
       {/* Top stats row */}
-      <div className="grid grid-cols-4 gap-0 mb-8 border-3 border-ink shadow-[5px_5px_0px_var(--color-ink)]">
+      <div className="grid grid-cols-4 gap-0 mb-8 border-3 border-ink shadow-[5px_5px_0px_var(--color-ink)] overflow-hidden">
         {[
           { label: t('dashboard.streakLabel'), value: streak, suffix: t('dashboard.streakSuffix'), bg: "var(--color-yellow)", text: "var(--color-ink)" },
           { label: t('dashboard.totalWordsLabel'), value: stats.total, suffix: "", bg: "var(--color-ink)", text: "var(--color-paper)" },
@@ -82,7 +82,7 @@ export function Dashboard() {
           <span className="font-mono font-black text-sm uppercase tracking-wider">{t('dashboard.progress')}</span>
           <span className="font-display">{Math.round((stats.mastered / stats.total) * 100)}%</span>
         </div>
-        <div className="h-6 bg-surface border-3 border-ink">
+        <div className="h-6 bg-surface border-3 border-ink overflow-hidden">
           <div
             className="h-full bg-green transition-all duration-500"
             style={{ width: `${(stats.mastered / stats.total) * 100}%` }}
@@ -96,7 +96,7 @@ export function Dashboard() {
       </Card>
 
       {/* SRS breakdown */}
-      <div className="grid grid-cols-4 gap-0 border-3 border-ink shadow-[4px_4px_0px_var(--color-ink)]">
+      <div className="grid grid-cols-4 gap-0 border-3 border-ink shadow-[4px_4px_0px_var(--color-ink)] overflow-hidden">
         {[
           { label: t('common.stats.new'), count: stats.new, color: "var(--color-muted)" },
           { label: t('common.stats.learning'), count: stats.learning, color: "var(--color-blue)" },
