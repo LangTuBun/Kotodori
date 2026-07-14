@@ -1,7 +1,10 @@
+import { useTranslation } from "@/lib/useTranslation"
+
 interface FuriganaProps {
   kanji: string
   kana?: string
   className?: string
+  onKanjiClick?: (char: string) => void
 }
 
 // CJK ideographs + the 々 iteration mark (treated as part of the preceding kanji run)
@@ -76,14 +79,52 @@ function alignFurigana(kanji: string, kana: string): Segment[] | null {
   return segments
 }
 
-export function Furigana({ kanji, kana, className = "" }: FuriganaProps) {
+// Splits `text` into per-character spans, making kanji characters clickable
+// (used for the stroke-order drawer) while leaving kana untouched. Reuses
+// KANJI_RE rather than a second parser so clickability never drifts from the
+// ruby-alignment logic above.
+function renderClickable(text: string, onKanjiClick: (char: string) => void, title?: string) {
+  return [...text].map((ch, i) =>
+    KANJI_RE.test(ch) ? (
+      <span
+        key={i}
+        role="button"
+        tabIndex={0}
+        title={title}
+        onClick={e => { e.stopPropagation(); onKanjiClick(ch) }}
+        onKeyDown={e => {
+          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); e.stopPropagation(); onKanjiClick(ch) }
+        }}
+        className="cursor-pointer rounded-sm transition-colors hover:bg-yellow/40"
+      >
+        {ch}
+      </span>
+    ) : (
+      <span key={i}>{ch}</span>
+    )
+  )
+}
+
+export function Furigana({ kanji, kana, className = "", onKanjiClick }: FuriganaProps) {
+  const { t } = useTranslation()
+  const kanjiTitle = onKanjiClick ? t('kanji.viewStrokeAnim') : undefined
+
   if (!kana || kanji === kana || !HAS_KANJI_RE.test(kanji)) {
-    return <span className={`jp ${className}`}>{kanji || kana}</span>
+    const text = kanji || kana || ""
+    return (
+      <span className={`jp ${className}`}>
+        {onKanjiClick ? renderClickable(text, onKanjiClick, kanjiTitle) : text}
+      </span>
+    )
   }
 
   const segments = alignFurigana(kanji, kana)
   if (!segments) {
-    return <span className={`jp ${className}`}>{kanji}</span>
+    return (
+      <span className={`jp ${className}`}>
+        {onKanjiClick ? renderClickable(kanji, onKanjiClick, kanjiTitle) : kanji}
+      </span>
+    )
   }
 
   return (
@@ -91,7 +132,7 @@ export function Furigana({ kanji, kana, className = "" }: FuriganaProps) {
       {segments.map((seg, i) =>
         seg.reading ? (
           <ruby key={i}>
-            {seg.text}
+            {onKanjiClick ? renderClickable(seg.text, onKanjiClick, kanjiTitle) : seg.text}
             <rt>{seg.reading}</rt>
           </ruby>
         ) : (

@@ -104,9 +104,8 @@
     "allChapters": "Tất cả chương",
     "allPos": "Tất cả loại từ",
     "unknownChapter": "Chưa rõ chương",
-    "selectWord": "Chọn một từ",
-    "stateReviews": "Trạng thái: {state} · {count} lượt ôn",
-    "notStudied": "Chưa học",
+    "prevWord": "Từ trước (←)",
+    "nextWord": "Từ sau (→)",
     "homophones": "Từ đồng âm"
   },
   "grammar": {
@@ -169,6 +168,7 @@
     "replay": "Xem lại",
     "componentsTitle": "Bộ thủ / thành phần",
     "radicalBadge": "bộ",
+    "noAnimation": "Chưa có hoạt hình nét chữ cho chữ này.",
     "ariaLabel": "Hoạt hình nét chữ {char}",
     "positions": {
       "left": "trái",

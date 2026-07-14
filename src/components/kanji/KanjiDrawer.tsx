@@ -117,6 +117,12 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
           </button>
         </div>
 
+        {!entry && displayChar && (
+          <div className="p-6 text-center text-muted font-bold text-sm">
+            {t('kanjiDrawer.noAnimation')}
+          </div>
+        )}
+
         {entry && (
           <div className="p-4">
             <div className="border-3 border-ink" style={{ backgroundColor: "rgb(255,255,255)" }}>

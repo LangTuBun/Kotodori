@@ -1,12 +1,16 @@
-// Fetches KanjiVG stroke-order SVGs for every unique "leading kanji" anchor in
-// kanji.json and distills each into: ordered stroke path data (document order
-// == stroke order) + a recursive radical/component decomposition (walks the
-// full <g> nesting so repeated components hidden behind an intermediate
-// sub-group — e.g. 森's three 木 — aren't lost; see collectComponents below
-// for the expand-vs-leaf rule). Components may repeat in the output array;
-// grouping/counting duplicates for display (e.g. "木 ×3") is a UI concern.
+// Fetches KanjiVG stroke-order SVGs for every kanji character that appears
+// anywhere in the app's data — vocabulary.json entries, plus kanji.json's
+// leading-kanji anchors and member words — and distills each into: ordered
+// stroke path data (document order == stroke order) + a recursive
+// radical/component decomposition (walks the full <g> nesting so repeated
+// components hidden behind an intermediate sub-group — e.g. 森's three 木 —
+// aren't lost; see collectComponents below for the expand-vs-leaf rule).
+// Components may repeat in the output array; grouping/counting duplicates
+// for display (e.g. "木 ×3") is a UI concern.
 // Source: https://github.com/KanjiVG/kanjivg (CC BY-SA 3.0, Ulrich Apel).
-// Re-run after kanji.json's anchor set changes (i.e. after build-kanji.mjs).
+// Merges into the existing kanjivg.json rather than overwriting it — already
+// -fetched characters are skipped. Re-run after vocabulary.json or
+// kanji.json gain new kanji.
 import { readFileSync, writeFileSync } from "node:fs"
 import { fileURLToPath } from "node:url"
 import path from "node:path"
@@ -14,7 +18,12 @@ import path from "node:path"
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, "..")
 const kanjiJsonPath = path.join(root, "src/data/n5/kanji.json")
+const vocabJsonPath = path.join(root, "src/data/n5/vocabulary.json")
 const outPath = path.join(root, "src/data/n5/kanjivg.json")
+
+// Same CJK ranges Furigana.tsx uses to decide what's clickable, so the
+// fetched data always covers exactly what the UI can ask for.
+const KANJI_RE = /[一-鿿㐀-䶿々]/
 
 const KANJIVG_BASE = "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji"
 const CONCURRENCY = 8
@@ -176,16 +185,37 @@ async function fetchOne(char) {
   }
 }
 
-async function main() {
-  const kanjiData = JSON.parse(readFileSync(kanjiJsonPath, "utf8"))
-  const anchors = new Set()
-  for (const chapter of kanjiData.chapters) {
-    for (const group of chapter.groups) anchors.add(group.anchor)
-  }
-  const list = [...anchors]
-  console.log(`Fetching KanjiVG data for ${list.length} unique anchor kanji...`)
+function collectChars(text, set) {
+  for (const ch of text || "") if (KANJI_RE.test(ch)) set.add(ch)
+}
 
-  const result = {}
+function main() {
+  const kanjiData = JSON.parse(readFileSync(kanjiJsonPath, "utf8"))
+  const vocabData = JSON.parse(readFileSync(vocabJsonPath, "utf8"))
+  const existing = JSON.parse(readFileSync(outPath, "utf8"))
+
+  const chars = new Set()
+  for (const v of vocabData) collectChars(v.kanji, chars)
+  for (const chapter of kanjiData.chapters) {
+    for (const group of chapter.groups) {
+      chars.add(group.anchor)
+      for (const word of group.words) collectChars(word.kanji, chars)
+    }
+  }
+
+  const list = [...chars].filter(ch => !(ch in existing))
+  console.log(`${chars.size} unique kanji in app data, ${list.length} not yet in kanjivg.json.`)
+  if (list.length === 0) {
+    console.log("Nothing to fetch.")
+    return
+  }
+  console.log(`Fetching KanjiVG data for ${list.length} kanji...`)
+
+  return runFetch(list, existing)
+}
+
+async function runFetch(list, existing) {
+  const result = { ...existing }
   const misses = []
   let i = 0
   async function worker() {
@@ -201,7 +231,7 @@ async function main() {
   await Promise.all(Array.from({ length: CONCURRENCY }, worker))
 
   writeFileSync(outPath, JSON.stringify(result, null, 2) + "\n", "utf8")
-  console.log(`Wrote ${Object.keys(result).length}/${list.length} entries to ${path.relative(root, outPath)}`)
+  console.log(`Wrote ${Object.keys(result).length} total entries (${list.length - misses.length} newly fetched) to ${path.relative(root, outPath)}`)
   if (misses.length > 0) {
     console.log(`\n${misses.length} miss(es):`)
     for (const miss of misses) console.log(`  ${miss.char}: ${miss.error}`)

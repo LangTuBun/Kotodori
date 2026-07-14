@@ -104,9 +104,8 @@
     "allChapters": "All chapters",
     "allPos": "All POS",
     "unknownChapter": "Unknown chapter",
-    "selectWord": "Select a word",
-    "stateReviews": "State: {state} · {count} reviews",
-    "notStudied": "Not studied yet",
+    "prevWord": "Previous word (←)",
+    "nextWord": "Next word (→)",
     "homophones": "Homophones"
   },
   "grammar": {
@@ -169,6 +168,7 @@
     "replay": "Replay",
     "componentsTitle": "Radicals / components",
     "radicalBadge": "rad",
+    "noAnimation": "No stroke animation available for this character yet.",
     "ariaLabel": "Stroke animation for {char}",
     "positions": {
       "left": "left",

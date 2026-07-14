@@ -1,12 +1,17 @@
-﻿import { useState, useMemo } from "react"
+﻿import { useState, useMemo, useEffect } from "react"
 import vocabData from "@/data/n5/vocabulary.json"
 import type { VocabEntry } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
-import { Button } from "@/components/ui/Button"
 import { useVocabStore } from "@/store/vocab-store"
-import { RATING } from "@/lib/srs"
 import { useTranslation } from "@/lib/useTranslation"
+import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
+
+function isTypingTarget(el: Element | null): boolean {
+  if (!el) return false
+  const tag = el.tagName
+  return tag === "INPUT" || tag === "TEXTAREA" || (el as HTMLElement).isContentEditable
+}
 
 const vocab = vocabData as VocabEntry[]
 const CHAPTERS = Array.from(new Set(vocab.map(v => v.chapter).filter(Boolean))).sort((a,b) => a-b)
@@ -16,8 +21,8 @@ export function VocabBrowser() {
   const [search, setSearch] = useState("")
   const [chapter, setChapter] = useState<number | null>(null)
   const [pos, setPos] = useState<string | null>(null)
-  const [selected, setSelected] = useState<VocabEntry | null>(null)
-  const { getCard, reviewCard } = useVocabStore()
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
+  const { getCard } = useVocabStore()
   const { t, localize } = useTranslation()
 
   const filtered = useMemo(() => {
@@ -48,7 +53,7 @@ export function VocabBrowser() {
   return (
     <div className="flex h-screen overflow-hidden">
       {/* List panel */}
-      <div className="flex-1 flex flex-col overflow-hidden border-r-3 border-ink">
+      <div className="flex-1 flex flex-col overflow-hidden">
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-ink flex gap-3 flex-wrap bg-surface">
           <input
@@ -90,17 +95,18 @@ export function VocabBrowser() {
               </div>
               {items.map(v => {
                 const card = getCard(v.id)
+                const isSelected = selectedIndex !== null && filtered[selectedIndex]?.id === v.id
                 return (
                   <button
                     key={v.id}
-                    onClick={() => setSelected(v)}
-                    className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${selected?.id === v.id ? 'bg-ink text-paper' : ''}`}
+                    onClick={() => setSelectedIndex(filtered.findIndex(x => x.id === v.id))}
+                    className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${isSelected ? 'bg-ink text-paper' : ''}`}
                   >
                     <div className="flex-1">
                       <div className="font-bold text-lg jp leading-tight">
                         <Furigana kanji={v.kanji} kana={v.kana} />
                       </div>
-                      <div className={`text-xs mt-0.5 ${selected?.id === v.id ? 'text-paper/70' : 'text-muted'}`}>
+                      <div className={`text-xs mt-0.5 ${isSelected ? 'text-paper/70' : 'text-muted'}`}>
                         {localize(v.meanings).slice(0, 60)}
                       </div>
                     </div>
@@ -124,107 +130,142 @@ export function VocabBrowser() {
         </div>
       </div>
 
-      {/* Detail panel */}
-      {selected ? (
-        <VocabDetail vocab={selected} onClose={() => setSelected(null)} reviewCard={reviewCard} getCard={getCard} />
-      ) : (
-        <div className="w-80 hidden lg:flex items-center justify-center text-muted">
-          <div className="text-center p-8">
-            <div className="text-6xl jp mb-4">言</div>
-            <div className="font-bold text-sm uppercase tracking-wider">{t('vocab.selectWord')}</div>
-          </div>
-        </div>
+      {/* Detail modal */}
+      {selectedIndex !== null && filtered[selectedIndex] && (
+        <VocabModal
+          vocab={filtered[selectedIndex]}
+          index={selectedIndex}
+          total={filtered.length}
+          onPrev={() => setSelectedIndex(i => (i !== null && i > 0 ? i - 1 : i))}
+          onNext={() => setSelectedIndex(i => (i !== null && i < filtered.length - 1 ? i + 1 : i))}
+          onClose={() => setSelectedIndex(null)}
+        />
       )}
     </div>
   )
 }
 
-function VocabDetail({ vocab, onClose, reviewCard, getCard }: {
+function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
   vocab: VocabEntry
+  index: number
+  total: number
+  onPrev: () => void
+  onNext: () => void
   onClose: () => void
-  reviewCard: (id: string, cardType: string, rating: number) => void
-  getCard: (id: string) => any
 }) {
-  const card = getCard(vocab.id)
   const { t, localize } = useTranslation()
+  const [selectedKanji, setSelectedKanji] = useState<string | null>(null)
+  const hasPrev = index > 0
+  const hasNext = index < total - 1
+
+  // A stroke-order drawing left open shouldn't linger behind a different word.
+  useEffect(() => setSelectedKanji(null), [vocab.id])
+
+  useEffect(() => {
+    function onKeyDown(e: KeyboardEvent) {
+      if (isTypingTarget(document.activeElement)) return
+      // While the kanji drawer is open, let its own Escape handler close it
+      // first rather than closing both layers on one keypress.
+      if (selectedKanji !== null) return
+      if (e.key === "Escape") { onClose(); return }
+      if (e.key === "ArrowLeft" && hasPrev) { e.preventDefault(); onPrev(); return }
+      if (e.key === "ArrowRight" && hasNext) { e.preventDefault(); onNext() }
+    }
+    window.addEventListener("keydown", onKeyDown)
+    return () => window.removeEventListener("keydown", onKeyDown)
+  }, [selectedKanji, hasPrev, hasNext, onPrev, onNext, onClose])
 
   return (
-    <div className="w-96 flex-shrink-0 overflow-y-auto bg-paper">
-      {/* Header */}
-      <div className="p-6 border-b-3 border-ink">
-        <div className="flex justify-between items-start mb-4">
-          <PosTag pos={vocab.pos} verbGroup={vocab.verbGroup} />
-          <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">×</button>
-        </div>
-        <div className="text-5xl font-black jp leading-none mb-3">
-          <Furigana kanji={vocab.kanji} kana={vocab.kana} />
-        </div>
-        {vocab.kanji !== vocab.kana && vocab.kana && (
-          <div className="text-xl jp text-muted font-bold">{vocab.kana}</div>
-        )}
-        <div className="font-bold text-lg mt-3">{localize(vocab.meanings)}</div>
-        {vocab.chapter > 0 && (
-          <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{t('common.chapterN', { n: vocab.chapter })}</div>
-        )}
-      </div>
-
-      {/* SRS actions */}
-      <div className="p-6 border-b-3 border-ink">
-        <div className="text-xs font-bold uppercase tracking-wider text-muted mb-3">
-          {card.state !== 'new' ? t('vocab.stateReviews', { state: card.state, count: card.reviewCount }) : t('vocab.notStudied')}
-        </div>
-        <div className="grid grid-cols-4 gap-2">
-          {[
-            { labelKey: 'again', rating: RATING.AGAIN, color: 'red' },
-            { labelKey: 'hard', rating: RATING.HARD, color: 'secondary' },
-            { labelKey: 'good', rating: RATING.GOOD, color: 'green' },
-            { labelKey: 'easy', rating: RATING.EASY, color: 'yellow' },
-          ].map(({ labelKey, rating, color }) => (
-            <Button
-              key={labelKey}
-              variant={color as any}
-              size="sm"
-              className="text-xs"
-              onClick={() => reviewCard(vocab.id, 'word', rating)}
+    <>
+      <div
+        onClick={onClose}
+        aria-hidden="true"
+        className="fixed inset-0 z-30 bg-ink/30 backdrop-blur-sm"
+      />
+      <div className="fixed inset-0 z-30 flex items-center justify-center p-4 pointer-events-none">
+        <div
+          role="dialog"
+          aria-modal="true"
+          onClick={e => e.stopPropagation()}
+          className="pointer-events-auto w-full max-w-lg max-h-[85vh] overflow-y-auto border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] bg-paper"
+        >
+          {/* List navigation */}
+          <div className="flex items-center gap-3 p-3 border-b-3 border-ink bg-surface">
+            <button
+              onClick={onPrev}
+              disabled={!hasPrev}
+              title={t('vocab.prevWord')}
+              className="w-8 h-8 border-2 border-ink font-black flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
-              {t(`review.rating.${labelKey}`)}
-            </Button>
-          ))}
+              ‹
+            </button>
+            <div className="flex-1 text-center text-xs font-bold uppercase tracking-wider text-muted">
+              {index + 1} / {total}
+            </div>
+            <button
+              onClick={onNext}
+              disabled={!hasNext}
+              title={t('vocab.nextWord')}
+              className="w-8 h-8 border-2 border-ink font-black flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            >
+              ›
+            </button>
+          </div>
+
+          {/* Header */}
+          <div className="p-6 border-b-3 border-ink">
+            <div className="flex justify-between items-start mb-4">
+              <PosTag pos={vocab.pos} verbGroup={vocab.verbGroup} />
+              <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">×</button>
+            </div>
+            <div className="text-5xl font-black jp leading-none mb-3">
+              <Furigana kanji={vocab.kanji} kana={vocab.kana} onKanjiClick={setSelectedKanji} />
+            </div>
+            {vocab.kanji !== vocab.kana && vocab.kana && (
+              <div className="text-xl jp text-muted font-bold">{vocab.kana}</div>
+            )}
+            <div className="font-bold text-lg mt-3">{localize(vocab.meanings)}</div>
+            {vocab.chapter > 0 && (
+              <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{t('common.chapterN', { n: vocab.chapter })}</div>
+            )}
+          </div>
+
+          {/* Examples */}
+          {vocab.examples.length > 0 && (
+            <div className="p-6 border-b-3 border-ink">
+              <div className="text-xs font-black uppercase tracking-wider mb-4">{t('common.examples')}</div>
+              {vocab.examples.map((ex, i) => (
+                <div key={i} className="mb-4 last:mb-0">
+                  <div className="jp font-bold text-base">{ex.ja}</div>
+                  {ex.kana && <div className="jp text-xs text-muted mt-0.5">{ex.kana}</div>}
+                  <div className="text-sm text-muted mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Homophones */}
+          {vocab.homophones.length > 0 && (
+            <div className="p-6">
+              <div className="text-xs font-black uppercase tracking-wider mb-3">{t('vocab.homophones')}</div>
+              <div className="flex flex-wrap gap-2">
+                {vocab.homophones.map(id => {
+                  const hw = (vocabData as VocabEntry[]).find(v => v.id === id)
+                  if (!hw) return null
+                  return (
+                    <div key={id} className="border-3 border-ink px-3 py-1 shadow-[2px_2px_0px_var(--color-ink)]">
+                      <div className="font-bold"><Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} /></div>
+                      <div className="text-xs text-muted">{localize(hw.meanings).slice(0, 20)}</div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
-      {/* Examples */}
-      {vocab.examples.length > 0 && (
-        <div className="p-6 border-b-3 border-ink">
-          <div className="text-xs font-black uppercase tracking-wider mb-4">{t('common.examples')}</div>
-          {vocab.examples.map((ex, i) => (
-            <div key={i} className="mb-4 last:mb-0">
-              <div className="jp font-bold text-base">{ex.ja}</div>
-              {ex.kana && <div className="jp text-xs text-muted mt-0.5">{ex.kana}</div>}
-              <div className="text-sm text-muted mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Homophones */}
-      {vocab.homophones.length > 0 && (
-        <div className="p-6">
-          <div className="text-xs font-black uppercase tracking-wider mb-3">{t('vocab.homophones')}</div>
-          <div className="flex flex-wrap gap-2">
-            {vocab.homophones.map(id => {
-              const hw = (vocabData as VocabEntry[]).find(v => v.id === id)
-              if (!hw) return null
-              return (
-                <div key={id} className="border-3 border-ink px-3 py-1 shadow-[2px_2px_0px_var(--color-ink)]">
-                  <div className="font-bold"><Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} /></div>
-                  <div className="text-xs text-muted">{localize(hw.meanings).slice(0, 20)}</div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      )}
-    </div>
+      <KanjiDrawer char={selectedKanji} onClose={() => setSelectedKanji(null)} />
+    </>
   )
 }
