@@ -2,25 +2,19 @@ import { useMemo, useState } from "react"
 import kanjiData from "@/data/n5/kanji.json"
 import type { KanjiChapter, KanjiGroup } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
-import { cleanReadings, onkunTone } from "@/lib/kanji"
+import { ACCENT_HEX, accentFor, cleanReadings, onkunTone } from "@/lib/kanji"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
+import { KanjiGroupModal } from "@/components/kanji/KanjiGroupModal"
 import { useTranslation } from "@/lib/useTranslation"
 
 const chapters = kanjiData.chapters as KanjiChapter[]
-
-const ACCENTS = ['yellow', 'blue', 'red', 'green'] as const
-const ACCENT_HEX: Record<string, string> = {
-  yellow: 'var(--color-yellow)', blue: 'var(--color-blue)', red: 'var(--color-red)', green: 'var(--color-green)',
-}
-function accentFor(i: number) {
-  return ACCENTS[i % ACCENTS.length]
-}
 
 export function Kanji() {
   const { t } = useTranslation()
   const [chapter, setChapter] = useState<number | null>(1)
   const [search, setSearch] = useState("")
   const [selectedAnchor, setSelectedAnchor] = useState<string | null>(null)
+  const [selectedGroupIndex, setSelectedGroupIndex] = useState<number | null>(null)
 
   const totalWords = useMemo(() => chapters.reduce((a, c) => a + c.wordCount, 0), [])
 
@@ -97,6 +91,7 @@ export function Kanji() {
                 chapterNum={chapterNum}
                 accent={accentFor(i)}
                 onAnchorClick={() => setSelectedAnchor(group.anchor)}
+                onCardClick={() => setSelectedGroupIndex(i)}
               />
             ))}
           </div>
@@ -104,24 +99,39 @@ export function Kanji() {
       </div>
 
       <KanjiDrawer char={selectedAnchor} onClose={() => setSelectedAnchor(null)} />
+
+      {selectedGroupIndex !== null && filteredGroups[selectedGroupIndex] && (
+        <KanjiGroupModal
+          items={filteredGroups}
+          index={selectedGroupIndex}
+          onIndexChange={setSelectedGroupIndex}
+          onClose={() => setSelectedGroupIndex(null)}
+          onAnchorClick={setSelectedAnchor}
+          strokeDrawerOpen={selectedAnchor !== null}
+        />
+      )}
     </div>
   )
 }
 
-function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick }: { group: KanjiGroup; chapterNum: number; accent: string; onAnchorClick: () => void }) {
+function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick, onCardClick }: { group: KanjiGroup; chapterNum: number; accent: string; onAnchorClick: () => void; onCardClick: () => void }) {
   const { t } = useTranslation()
   const on = cleanReadings(group.onyomi)
   const kun = cleanReadings(group.kunyomi)
 
   return (
     <div
-      className="bg-paper border-3 border-ink p-3"
+      onClick={onCardClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onCardClick() } }}
+      className="bg-paper border-3 border-ink p-3 cursor-pointer transition-shadow hover:shadow-[4px_4px_0px_var(--color-ink)]"
       style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
     >
       {/* Header: leading kanji */}
       <div className="flex items-start gap-3 mb-2 pb-2 border-b-2 border-ink/10">
         <button
-          onClick={onAnchorClick}
+          onClick={e => { e.stopPropagation(); onAnchorClick() }}
           title={t('kanji.viewStrokeAnim')}
           className="appearance-none bg-transparent border-0 p-0 m-0 text-4xl font-black jp leading-none shrink-0 pt-0.5 cursor-pointer transition-transform hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-ink/40 rounded-sm"
         >

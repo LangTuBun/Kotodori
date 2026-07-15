@@ -135,7 +135,10 @@
     "groupsCount": "{n} leading-kanji groups",
     "noResults": "No kanji found.",
     "viewStrokeAnim": "View stroke animation",
-    "unknownReading": "Reading unknown"
+    "unknownReading": "Reading unknown",
+    "prevGroup": "Previous group (←)",
+    "nextGroup": "Next group (→)",
+    "relatedWords": "Related words"
   },
   "counters": {
     "columns": {
@@ -146,7 +149,8 @@
       "meaning": "Meaning",
       "note": "Note"
     },
-    "bigExamplesTitle": "Real examples with larger numbers"
+    "bigExamplesTitle": "Real examples with larger numbers",
+    "exceptionLegend": "Red cells: irregular / sound-changed readings worth memorizing"
   },
   "homophones": {
     "title": "Homophones",

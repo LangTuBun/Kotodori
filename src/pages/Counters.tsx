@@ -29,6 +29,10 @@ export function Counters() {
         <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">N5 · 助数詞</div>
         <h1 className="text-5xl font-black tracking-tighter">{data.title}</h1>
         <p className="text-muted font-bold text-sm mt-3 max-w-2xl leading-relaxed">{data.intro}</p>
+        <div className="flex items-center gap-2 mt-4">
+          <span className="inline-block w-3.5 h-3.5 border-2 border-ink bg-red/20 shrink-0" />
+          <span className="text-xs font-bold text-muted">{t('counters.exceptionLegend')}</span>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
@@ -98,17 +102,21 @@ function CounterTable({ category, accent, columnLabels }: { category: CounterCat
             {category.rows.map((row, i) => (
               <tr
                 key={i}
-                className={`border-b border-ink/20 last:border-0 transition-colors ${row.isQuestion ? 'bg-yellow/20' : 'hover:bg-surface'}`}
+                className={`border-b border-ink/20 last:border-0 transition-colors ${
+                  row.isQuestion ? 'bg-yellow/20' : row.isException ? 'bg-red/10' : 'hover:bg-surface'
+                }`}
               >
                 {category.columns.map(col => {
                   const value = row[col]
                   const isJp = col === 'kanji' || col === 'kana'
                   const emphasize = row.isQuestion && (col === 'kanji' || col === 'meaning')
+                  const flag = row.isException && (col === 'kanji' || col === 'kana')
                   return (
                     <td
                       key={col}
                       className={`px-3 py-2.5 whitespace-nowrap ${isJp ? 'jp' : ''} ${
                         emphasize ? 'font-black text-green' :
+                        flag ? 'font-black text-red' :
                         col === 'kanji' ? 'font-bold' :
                         col === 'kana' ? 'text-muted' :
                         'text-muted text-xs'

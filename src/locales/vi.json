@@ -135,7 +135,10 @@
     "groupsCount": "{n} nhóm chữ dẫn đầu",
     "noResults": "Không tìm thấy kanji nào.",
     "viewStrokeAnim": "Xem hoạt hình nét chữ",
-    "unknownReading": "Không rõ âm đọc"
+    "unknownReading": "Không rõ âm đọc",
+    "prevGroup": "Nhóm trước (←)",
+    "nextGroup": "Nhóm sau (→)",
+    "relatedWords": "Từ vựng liên quan"
   },
   "counters": {
     "columns": {
@@ -146,7 +149,8 @@
       "meaning": "Nghĩa",
       "note": "Ghi chú"
     },
-    "bigExamplesTitle": "Ví dụ thực tế ghép số lớn"
+    "bigExamplesTitle": "Ví dụ thực tế ghép số lớn",
+    "exceptionLegend": "Ô đỏ: cách đọc biến âm / bất quy tắc cần ghi nhớ kỹ"
   },
   "homophones": {
     "title": "Từ đồng âm",

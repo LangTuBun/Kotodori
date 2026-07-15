@@ -172,6 +172,7 @@ export interface CounterRow {
   meaning?: string
   note?: string
   isQuestion?: boolean
+  isException?: boolean
 }
 
 export type CounterColumn = 'number' | 'kanji' | 'kana' | 'romaji' | 'meaning' | 'note'
