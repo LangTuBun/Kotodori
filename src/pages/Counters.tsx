@@ -14,7 +14,7 @@ function accentFor(i: number) {
 }
 
 export function Counters() {
-  const { t } = useTranslation()
+  const { t, localize } = useTranslation()
   const COLUMN_LABELS: Record<CounterColumn, string> = {
     number: t('counters.columns.number'),
     kanji: t('counters.columns.kanji'),
@@ -24,15 +24,15 @@ export function Counters() {
     note: t('counters.columns.note'),
   }
   return (
-    <div className="relative p-8 max-w-6xl overflow-hidden">
+    <div className="relative p-4 sm:p-8 max-w-6xl overflow-hidden">
       <Watermark char="数" />
       {/* Header */}
-      <div className="border-b-3 border-ink pb-8 mb-8">
+      <div className="border-b-3 border-structural pb-8 mb-8">
         <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">N5 · 助数詞</div>
-        <h1 className="text-5xl font-black tracking-tighter">{data.title}</h1>
-        <p className="text-muted font-bold text-sm mt-3 max-w-2xl leading-relaxed">{data.intro}</p>
+        <h1 className="text-[clamp(2rem,8vw,3rem)] font-black tracking-tighter">{localize(data.title)}</h1>
+        <p className="text-muted font-bold text-sm mt-3 max-w-2xl leading-relaxed">{localize(data.intro)}</p>
         <div className="flex items-center gap-2 mt-4">
-          <span className="inline-block w-3.5 h-3.5 border-2 border-ink bg-red/20 shrink-0" />
+          <span className="inline-block w-3.5 h-3.5 border-2 border-structural bg-red/20 shrink-0" />
           <span className="text-xs font-bold text-muted">{t('counters.exceptionLegend')}</span>
         </div>
       </div>
@@ -40,23 +40,23 @@ export function Counters() {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
         {data.categories.map((cat, i) => (
           <div key={cat.id} className={cat.wide ? 'md:col-span-2 xl:col-span-3' : ''}>
-            <CounterTable category={cat} accent={accentFor(i)} columnLabels={COLUMN_LABELS} />
+            <CounterTable category={cat} accent={accentFor(i)} columnLabels={COLUMN_LABELS} localize={localize} />
           </div>
         ))}
       </div>
 
       {data.bigNumberExamples.length > 0 && (
-        <div className="mt-6 border-3 border-ink bg-yellow/20 shadow-[5px_5px_0px_var(--color-ink)] p-6">
+        <div className="mt-6 border-3 border-structural bg-yellow/20 shadow-[var(--shadow-brutal)] p-6">
           <div className="text-xs font-black uppercase tracking-widest mb-4">
             {t('counters.bigExamplesTitle')}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {data.bigNumberExamples.map((ex, i) => (
-              <div key={i} className="border-2 border-ink rounded-[var(--radius-sm)] bg-paper p-4">
+              <div key={i} className="border-2 border-structural rounded-[var(--radius-sm)] bg-paper p-4">
                 <div className="jp text-xl font-black">{ex.kanji}</div>
                 <div className="jp text-sm mt-1 text-muted">{ex.kana}</div>
                 <div className="text-xs mt-1 italic text-muted">{ex.romaji}</div>
-                <div className="text-sm mt-2 font-bold text-green">{ex.meaning}</div>
+                <div className="text-sm mt-2 font-bold text-green">{localize(ex.meaning)}</div>
               </div>
             ))}
           </div>
@@ -66,30 +66,30 @@ export function Counters() {
   )
 }
 
-function CounterTable({ category, accent, columnLabels }: { category: CounterCategory; accent: string; columnLabels: Record<CounterColumn, string> }) {
+function CounterTable({ category, accent, columnLabels, localize }: { category: CounterCategory; accent: string; columnLabels: Record<CounterColumn, string>; localize: (m: { vi: string; en: string } | undefined | null) => string }) {
   return (
     <div
-      className="h-full border-3 border-ink bg-paper shadow-[4px_4px_0px_var(--color-ink)] overflow-hidden flex flex-col"
+      className="h-full border-3 border-structural bg-paper shadow-[var(--shadow-brutal)] overflow-hidden flex flex-col"
       style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
     >
-      <div className="px-4 py-3 border-b-3 border-ink bg-surface">
+      <div className="px-4 py-3 border-b-3 border-structural bg-surface">
         <div className="flex items-baseline justify-between gap-2">
-          <h3 className="font-black text-sm uppercase tracking-wide">{category.shortTitle}</h3>
+          <h3 className="font-black text-sm uppercase tracking-wide">{localize(category.shortTitle)}</h3>
           {category.counter && (
-            <span className="jp text-sm font-black shrink-0 border-2 border-ink rounded-[var(--radius-sm)] bg-paper px-1.5 py-0.5">
+            <span className="jp text-sm font-black shrink-0 border-2 border-structural rounded-[var(--radius-sm)] bg-paper px-1.5 py-0.5">
               {category.counter}{category.counterKana ? ` ・ ${category.counterKana}` : ''}
             </span>
           )}
         </div>
         {category.usage && (
-          <p className="text-xs mt-1.5 leading-relaxed text-muted font-bold">{category.usage}</p>
+          <p className="text-xs mt-1.5 leading-relaxed text-muted font-bold">{localize(category.usage)}</p>
         )}
       </div>
 
       <div className="overflow-x-auto flex-1">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="border-b-3 border-ink bg-surface">
+            <tr className="border-b-3 border-structural bg-surface">
               {category.columns.map(col => (
                 <th
                   key={col}
@@ -109,7 +109,10 @@ function CounterTable({ category, accent, columnLabels }: { category: CounterCat
                 }`}
               >
                 {category.columns.map(col => {
-                  const value = row[col]
+                  const raw = row[col]
+                  const value: string | undefined = (col === 'meaning' || col === 'note')
+                    ? localize(raw as { vi: string; en: string } | undefined)
+                    : raw as string | undefined
                   const isJp = col === 'kanji' || col === 'kana'
                   const emphasize = row.isQuestion && (col === 'kanji' || col === 'meaning')
                   const flag = row.isException && (col === 'kanji' || col === 'kana')
@@ -124,7 +127,7 @@ function CounterTable({ category, accent, columnLabels }: { category: CounterCat
                         'text-muted text-xs'
                       }`}
                     >
-                      {value ?? '—'}
+                      {value || '—'}
                     </td>
                   )
                 })}
@@ -135,8 +138,8 @@ function CounterTable({ category, accent, columnLabels }: { category: CounterCat
       </div>
 
       {category.footnote && (
-        <div className="px-4 py-2.5 text-xs border-t-3 border-ink bg-surface leading-relaxed text-muted font-bold">
-          {category.footnote}
+        <div className="px-4 py-2.5 text-xs border-t-3 border-structural bg-surface leading-relaxed text-muted font-bold">
+          {localize(category.footnote)}
         </div>
       )}
     </div>

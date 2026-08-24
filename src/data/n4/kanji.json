@@ -11,7 +11,7 @@
           "kana": null,
           "hanviet": "Lực",
           "meaning": {
-            "vi": "",
+            "vi": "Sức mạnh, lực",
             "en": "Strength, power"
           },
           "onkun": "Kun",
@@ -29,7 +29,7 @@
               "kana": "ちから",
               "hanviet": "Lực",
               "meaning": {
-                "vi": "",
+                "vi": "Sức mạnh",
                 "en": "Strength, power"
               },
               "onkun": "Kun"
@@ -39,7 +39,7 @@
               "kana": "きょうりょく",
               "hanviet": "Hiệp Lực",
               "meaning": {
-                "vi": "",
+                "vi": "Hợp tác, hiệp lực",
                 "en": "Cooperation"
               },
               "onkun": "On--On"
@@ -52,7 +52,7 @@
           "kana": null,
           "hanviet": "Động",
           "meaning": {
-            "vi": "",
+            "vi": "Di chuyển, hoạt động",
             "en": "Move, activity"
           },
           "onkun": "Kun",
@@ -69,7 +69,7 @@
               "kana": "うごきます",
               "hanviet": "Động",
               "meaning": {
-                "vi": "",
+                "vi": "Cử động, chuyển động",
                 "en": "To move"
               },
               "onkun": "Kun"
@@ -79,7 +79,7 @@
               "kana": "うんどうします",
               "hanviet": "Vận Động",
               "meaning": {
-                "vi": "",
+                "vi": "Vận động, thể dục",
                 "en": "To exercise"
               },
               "onkun": "On--On"
@@ -89,7 +89,7 @@
               "kana": "じどう",
               "hanviet": "Tự Động",
               "meaning": {
-                "vi": "",
+                "vi": "Tự động",
                 "en": "Automatic"
               },
               "onkun": "On--On"
@@ -99,7 +99,7 @@
               "kana": "どうが",
               "hanviet": "Động Họa",
               "meaning": {
-                "vi": "",
+                "vi": "Video, clip",
                 "en": "Video, clip"
               },
               "onkun": "On--On"
@@ -109,7 +109,7 @@
               "kana": "どうぶつ",
               "hanviet": "Động Vật",
               "meaning": {
-                "vi": "",
+                "vi": "Động vật",
                 "en": "Animal"
               },
               "onkun": "On--On"
@@ -119,7 +119,7 @@
               "kana": "かんどう",
               "hanviet": "Cảm Động",
               "meaning": {
-                "vi": "",
+                "vi": "Cảm động, ấn tượng",
                 "en": "To be moved, impressed"
               },
               "onkun": "On--On"
@@ -129,7 +129,7 @@
               "kana": "ふどうさん",
               "hanviet": "Bất Động Sản",
               "meaning": {
-                "vi": "",
+                "vi": "Bất động sản",
                 "en": "Real estate"
               },
               "onkun": "On--On--On"
@@ -142,7 +142,7 @@
           "kana": null,
           "hanviet": "Động",
           "meaning": {
-            "vi": "",
+            "vi": "Làm việc (lao động)",
             "en": "To work, labor"
           },
           "onkun": "Kun",
@@ -158,7 +158,7 @@
               "kana": "はたらきます",
               "hanviet": "Động",
               "meaning": {
-                "vi": "",
+                "vi": "Làm việc",
                 "en": "To work"
               },
               "onkun": "Kun"
@@ -171,7 +171,7 @@
           "kana": null,
           "hanviet": "Tri",
           "meaning": {
-            "vi": "",
+            "vi": "Biết, hiểu biết",
             "en": "To know"
           },
           "onkun": "Kun",
@@ -188,7 +188,7 @@
               "kana": "しります",
               "hanviet": "Tri",
               "meaning": {
-                "vi": "",
+                "vi": "Biết",
                 "en": "To know, find out"
               },
               "onkun": "Kun"
@@ -198,7 +198,7 @@
               "kana": "おしらせ",
               "hanviet": "Tri",
               "meaning": {
-                "vi": "",
+                "vi": "Thông báo",
                 "en": "Notice, announcement"
               },
               "onkun": "Kun"
@@ -208,7 +208,7 @@
               "kana": "しりあい",
               "hanviet": "Tri Hợp",
               "meaning": {
-                "vi": "",
+                "vi": "Người quen",
                 "en": "Acquaintance"
               },
               "onkun": "Kun--Kun"
@@ -218,7 +218,7 @@
               "kana": "しょうち",
               "hanviet": "Thừa Tri",
               "meaning": {
-                "vi": "",
+                "vi": "Đồng ý, hiểu rõ",
                 "en": "To agree, understand, consent"
               },
               "onkun": "On--On"
@@ -231,7 +231,7 @@
           "kana": null,
           "hanviet": "Đoản",
           "meaning": {
-            "vi": "",
+            "vi": "Ngắn",
             "en": "Short"
           },
           "onkun": "Kun",
@@ -247,7 +247,7 @@
               "kana": "みじかい",
               "hanviet": "Đoản",
               "meaning": {
-                "vi": "",
+                "vi": "Ngắn",
                 "en": "Short"
               },
               "onkun": "Kun"
@@ -257,7 +257,7 @@
               "kana": "たんき",
               "hanviet": "Đoản Khí",
               "meaning": {
-                "vi": "",
+                "vi": "Nóng nảy, dễ nổi nóng",
                 "en": "Short-tempered"
               },
               "onkun": "On--On"
@@ -270,7 +270,7 @@
           "kana": null,
           "hanviet": "Y",
           "meaning": {
-            "vi": "",
+            "vi": "Y học, thầy thuốc",
             "en": "Medicine, doctor"
           },
           "onkun": "On",
@@ -288,7 +288,7 @@
               "kana": "いしゃ",
               "hanviet": "Y Giả",
               "meaning": {
-                "vi": "",
+                "vi": "Bác sĩ",
                 "en": "Doctor"
               },
               "onkun": "On--On"
@@ -298,7 +298,7 @@
               "kana": "はいしゃ",
               "hanviet": "Xỉ Y Giả",
               "meaning": {
-                "vi": "",
+                "vi": "Nha sĩ",
                 "en": "Dentist"
               },
               "onkun": "Kun--On--On"
@@ -308,7 +308,7 @@
               "kana": "いがく",
               "hanviet": "Y Học",
               "meaning": {
-                "vi": "",
+                "vi": "Y học",
                 "en": "Medicine (the study of)"
               },
               "onkun": "On--On"
@@ -321,7 +321,7 @@
           "kana": null,
           "hanviet": "Mãnh",
           "meaning": {
-            "vi": "",
+            "vi": "Cái đĩa",
             "en": "Plate"
           },
           "onkun": "Kun",
@@ -337,7 +337,7 @@
               "kana": "おさら",
               "hanviet": "Mãnh",
               "meaning": {
-                "vi": "",
+                "vi": "Chiếc đĩa",
                 "en": "Plate, dish"
               },
               "onkun": "Kun"
@@ -350,7 +350,7 @@
           "kana": null,
           "hanviet": "Huyết",
           "meaning": {
-            "vi": "",
+            "vi": "Máu",
             "en": "Blood"
           },
           "onkun": "Kun",
@@ -366,7 +366,7 @@
               "kana": "ち",
               "hanviet": "Huyết",
               "meaning": {
-                "vi": "",
+                "vi": "Máu",
                 "en": "Blood"
               },
               "onkun": "Kun"
@@ -386,7 +386,7 @@
           "kana": null,
           "hanviet": "Công",
           "meaning": {
-            "vi": "",
+            "vi": "Công nghiệp, công trình",
             "en": "Industry, construction"
           },
           "onkun": "On",
@@ -402,7 +402,7 @@
               "kana": "こうじ",
               "hanviet": "Công Sự",
               "meaning": {
-                "vi": "",
+                "vi": "Thi công, công trình",
                 "en": "Construction work"
               },
               "onkun": "On--On"
@@ -412,7 +412,7 @@
               "kana": "こうじょう",
               "hanviet": "Công Trường",
               "meaning": {
-                "vi": "",
+                "vi": "Nhà máy",
                 "en": "Factory"
               },
               "onkun": "On--On"
@@ -425,7 +425,7 @@
           "kana": null,
           "hanviet": "Không",
           "meaning": {
-            "vi": "",
+            "vi": "Bầu trời, trống rỗng",
             "en": "Sky, empty"
           },
           "onkun": "Kun",
@@ -448,7 +448,7 @@
               "kana": "そら",
               "hanviet": "Không",
               "meaning": {
-                "vi": "",
+                "vi": "Bầu trời",
                 "en": "Sky"
               },
               "onkun": "Kun"
@@ -458,7 +458,7 @@
               "kana": "くうこう",
               "hanviet": "Không Cảng",
               "meaning": {
-                "vi": "",
+                "vi": "Sân bay",
                 "en": "Airport"
               },
               "onkun": "On--On"
@@ -468,7 +468,7 @@
               "kana": "くうき",
               "hanviet": "Không Khí",
               "meaning": {
-                "vi": "",
+                "vi": "Không khí",
                 "en": "Air"
               },
               "onkun": "On--On"
@@ -481,7 +481,7 @@
           "kana": null,
           "hanviet": "Thí",
           "meaning": {
-            "vi": "",
+            "vi": "Thử, thi cử",
             "en": "Try, test"
           },
           "onkun": "On",
@@ -498,7 +498,7 @@
               "kana": "しけん",
               "hanviet": "Thí Nghiệm",
               "meaning": {
-                "vi": "",
+                "vi": "Kỳ thi",
                 "en": "Exam, test"
               },
               "onkun": "On--On"
@@ -508,7 +508,7 @@
               "kana": "しあい",
               "hanviet": "Thí Hợp",
               "meaning": {
-                "vi": "",
+                "vi": "Trận thi đấu",
                 "en": "Match, competition"
               },
               "onkun": "On--Kun"
@@ -518,7 +518,7 @@
               "kana": "しちゃくします",
               "hanviet": "Thí Trước",
               "meaning": {
-                "vi": "",
+                "vi": "Mặc thử",
                 "en": "To try on (clothes)"
               },
               "onkun": "On--On"
@@ -531,7 +531,7 @@
           "kana": null,
           "hanviet": "Kế",
           "meaning": {
-            "vi": "",
+            "vi": "Đo lường, kế hoạch",
             "en": "Measure, plan"
           },
           "onkun": "Kun",
@@ -548,7 +548,7 @@
               "kana": "とけい",
               "hanviet": "Thời Kế",
               "meaning": {
-                "vi": "",
+                "vi": "Đồng hồ",
                 "en": "Clock, watch"
               },
               "onkun": "Juku"
@@ -558,7 +558,7 @@
               "kana": "うでどけい",
               "hanviet": "Oản Thời Kế",
               "meaning": {
-                "vi": "",
+                "vi": "Đồng hồ đeo tay",
                 "en": "Wristwatch"
               },
               "onkun": "Kun--Juku"
@@ -568,7 +568,7 @@
               "kana": "けいさん",
               "hanviet": "Kế Toán",
               "meaning": {
-                "vi": "",
+                "vi": "Tính toán",
                 "en": "Calculation"
               },
               "onkun": "On--On"
@@ -578,7 +578,7 @@
               "kana": "けいかく",
               "hanviet": "Kế Họa",
               "meaning": {
-                "vi": "",
+                "vi": "Kế hoạch",
                 "en": "Plan"
               },
               "onkun": "On--On"
@@ -591,7 +591,7 @@
           "kana": null,
           "hanviet": "Thuyết",
           "meaning": {
-            "vi": "",
+            "vi": "Thuyết minh, giải thích",
             "en": "Explain, theory"
           },
           "onkun": "On",
@@ -608,7 +608,7 @@
               "kana": "しょうせつ",
               "hanviet": "Tiểu Thuyết",
               "meaning": {
-                "vi": "",
+                "vi": "Tiểu thuyết",
                 "en": "Novel"
               },
               "onkun": "On--On"
@@ -618,7 +618,7 @@
               "kana": "せつめい",
               "hanviet": "Thuyết Minh",
               "meaning": {
-                "vi": "",
+                "vi": "Giải thích",
                 "en": "Explanation"
               },
               "onkun": "On--On"
@@ -628,7 +628,7 @@
               "kana": "せつめいかい",
               "hanviet": "Thuyết Minh Hội",
               "meaning": {
-                "vi": "",
+                "vi": "Buổi hướng dẫn/giải thích",
                 "en": "Briefing session"
               },
               "onkun": "On--On--On"
@@ -638,7 +638,7 @@
               "kana": "せつめいしょ",
               "hanviet": "Thuyết Minh Thư",
               "meaning": {
-                "vi": "",
+                "vi": "Sách hướng dẫn",
                 "en": "Instruction manual"
               },
               "onkun": "On--On--On"
@@ -651,7 +651,7 @@
           "kana": null,
           "hanviet": "Tâm",
           "meaning": {
-            "vi": "",
+            "vi": "Trái tim, tâm hồn",
             "en": "Heart, mind"
           },
           "onkun": "On",
@@ -668,7 +668,7 @@
               "kana": "あんしんします",
               "hanviet": "An Tâm",
               "meaning": {
-                "vi": "",
+                "vi": "Yên tâm, an tâm",
                 "en": "To feel relieved, at ease"
               },
               "onkun": "On--On"
@@ -678,7 +678,7 @@
               "kana": "しんぱいします",
               "hanviet": "Tâm Phối",
               "meaning": {
-                "vi": "",
+                "vi": "Lo lắng",
                 "en": "To worry"
               },
               "onkun": "On--On"
@@ -691,7 +691,7 @@
           "kana": null,
           "hanviet": "Tư",
           "meaning": {
-            "vi": "",
+            "vi": "Suy nghĩ",
             "en": "Think"
           },
           "onkun": "Kun",
@@ -709,7 +709,7 @@
               "kana": "おもいます",
               "hanviet": "Tư",
               "meaning": {
-                "vi": "",
+                "vi": "Nghĩ, cảm thấy",
                 "en": "To think, feel"
               },
               "onkun": "Kun"
@@ -719,7 +719,7 @@
               "kana": "おもいだします",
               "hanviet": "Tư Xuất",
               "meaning": {
-                "vi": "",
+                "vi": "Nhớ ra",
                 "en": "To recall, remember"
               },
               "onkun": "Kun--Kun"
@@ -729,7 +729,7 @@
               "kana": "ふしぎ",
               "hanviet": "Bất Tư Nghị",
               "meaning": {
-                "vi": "",
+                "vi": "Kỳ lạ, khó hiểu",
                 "en": "Strange, mysterious"
               },
               "onkun": "On--On--On"
@@ -742,7 +742,7 @@
           "kana": null,
           "hanviet": "Tính",
           "meaning": {
-            "vi": "",
+            "vi": "Tính chất, giới tính",
             "en": "Nature, gender"
           },
           "onkun": "On",
@@ -759,7 +759,7 @@
               "kana": "じょせい",
               "hanviet": "Nữ Tính",
               "meaning": {
-                "vi": "",
+                "vi": "Nữ giới, phụ nữ",
                 "en": "Woman, female"
               },
               "onkun": "On--On"
@@ -769,7 +769,7 @@
               "kana": "だんせい",
               "hanviet": "Nam Tính",
               "meaning": {
-                "vi": "",
+                "vi": "Nam giới, đàn ông",
                 "en": "Man, male"
               },
               "onkun": "On--On"
@@ -779,7 +779,7 @@
               "kana": "せいかく",
               "hanviet": "Tính Cách",
               "meaning": {
-                "vi": "",
+                "vi": "Tính cách",
                 "en": "Personality"
               },
               "onkun": "On--On"
@@ -792,7 +792,7 @@
           "kana": null,
           "hanviet": "Địa",
           "meaning": {
-            "vi": "",
+            "vi": "Đất, mặt đất",
             "en": "Earth, ground"
           },
           "onkun": "On",
@@ -807,7 +807,7 @@
               "kana": "ちず",
               "hanviet": "Địa Đồ",
               "meaning": {
-                "vi": "",
+                "vi": "Bản đồ",
                 "en": "Map"
               },
               "onkun": "On--On"
@@ -817,7 +817,7 @@
               "kana": "ちかてつ",
               "hanviet": "Địa Hạ Thiết",
               "meaning": {
-                "vi": "",
+                "vi": "Tàu điện ngầm",
                 "en": "Subway"
               },
               "onkun": "On--On--On"
@@ -827,7 +827,7 @@
               "kana": "じめん",
               "hanviet": "Địa Diện",
               "meaning": {
-                "vi": "",
+                "vi": "Mặt đất",
                 "en": "Ground"
               },
               "onkun": "On--On"
@@ -837,7 +837,7 @@
               "kana": "じしん",
               "hanviet": "Địa Chấn",
               "meaning": {
-                "vi": "",
+                "vi": "Động đất",
                 "en": "Earthquake"
               },
               "onkun": "On--On"
@@ -850,7 +850,7 @@
           "kana": null,
           "hanviet": "Trì",
           "meaning": {
-            "vi": "",
+            "vi": "Cái ao",
             "en": "Pond"
           },
           "onkun": "Kun",
@@ -866,7 +866,7 @@
               "kana": "いけ",
               "hanviet": "Trì",
               "meaning": {
-                "vi": "",
+                "vi": "Ao",
                 "en": "Pond"
               },
               "onkun": "Kun"
@@ -876,7 +876,7 @@
               "kana": "でんち",
               "hanviet": "Điện Trì",
               "meaning": {
-                "vi": "",
+                "vi": "Cục pin",
                 "en": "Battery"
               },
               "onkun": "On--On"
@@ -896,7 +896,7 @@
           "kana": null,
           "hanviet": "Công",
           "meaning": {
-            "vi": "",
+            "vi": "Công cộng, công bằng",
             "en": "Public, fair"
           },
           "onkun": "On",
@@ -913,7 +913,7 @@
               "kana": "こうえん",
               "hanviet": "Công Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Công viên",
                 "en": "Park"
               },
               "onkun": "On--On"
@@ -923,7 +923,7 @@
               "kana": "しゅじんこう",
               "hanviet": "Chủ Nhân Công",
               "meaning": {
-                "vi": "",
+                "vi": "Nhân vật chính",
                 "en": "Main character, protagonist"
               },
               "onkun": "On--On--On"
@@ -936,7 +936,7 @@
           "kana": null,
           "hanviet": "Quảng",
           "meaning": {
-            "vi": "",
+            "vi": "Rộng",
             "en": "Wide"
           },
           "onkun": "Kun",
@@ -956,7 +956,7 @@
               "kana": "ひろい",
               "hanviet": "Quảng",
               "meaning": {
-                "vi": "",
+                "vi": "Rộng",
                 "en": "Wide, spacious"
               },
               "onkun": "Kun"
@@ -966,7 +966,7 @@
               "kana": "こうこく",
               "hanviet": "Quảng Cáo",
               "meaning": {
-                "vi": "",
+                "vi": "Quảng cáo",
                 "en": "Advertisement"
               },
               "onkun": "On--On"
@@ -979,7 +979,7 @@
           "kana": null,
           "hanviet": "Khứ",
           "meaning": {
-            "vi": "",
+            "vi": "Quá khứ, rời đi",
             "en": "Past, leave"
           },
           "onkun": "On",
@@ -997,7 +997,7 @@
               "kana": "きょねん",
               "hanviet": "Khứ Niên",
               "meaning": {
-                "vi": "",
+                "vi": "Năm ngoái",
                 "en": "Last year"
               },
               "onkun": "On--On"
@@ -1010,7 +1010,7 @@
           "kana": null,
           "hanviet": "Chuyển",
           "meaning": {
-            "vi": "",
+            "vi": "Lăn, xoay chuyển",
             "en": "Roll, turn"
           },
           "onkun": "Kun",
@@ -1033,7 +1033,7 @@
               "kana": "ころびます",
               "hanviet": "Chuyển",
               "meaning": {
-                "vi": "",
+                "vi": "Ngã, té",
                 "en": "To fall, trip"
               },
               "onkun": "Kun"
@@ -1043,7 +1043,7 @@
               "kana": "うんてんします",
               "hanviet": "Vận Chuyển",
               "meaning": {
-                "vi": "",
+                "vi": "Lái xe",
                 "en": "To drive"
               },
               "onkun": "On--On"
@@ -1053,7 +1053,7 @@
               "kana": "うんてんしゅ",
               "hanviet": "Vận Chuyển Thủ",
               "meaning": {
-                "vi": "",
+                "vi": "Tài xế, người lái xe",
                 "en": "Driver"
               },
               "onkun": "On--On--On"
@@ -1063,7 +1063,7 @@
               "kana": "じてんしゃ",
               "hanviet": "Tự Chuyển Xa",
               "meaning": {
-                "vi": "",
+                "vi": "Xe đạp",
                 "en": "Bicycle"
               },
               "onkun": "On--On--On"
@@ -1076,7 +1076,7 @@
           "kana": null,
           "hanviet": "Viễn",
           "meaning": {
-            "vi": "",
+            "vi": "Xa",
             "en": "Far"
           },
           "onkun": "Kun",
@@ -1093,7 +1093,7 @@
               "kana": "とおい",
               "hanviet": "Viễn",
               "meaning": {
-                "vi": "",
+                "vi": "Xa",
                 "en": "Far"
               },
               "onkun": "Kun"
@@ -1106,7 +1106,7 @@
           "kana": null,
           "hanviet": "Viên",
           "meaning": {
-            "vi": "",
+            "vi": "Vườn, công viên",
             "en": "Garden, park"
           },
           "onkun": "On",
@@ -1122,7 +1122,7 @@
               "kana": "こうえん",
               "hanviet": "Công Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Công viên",
                 "en": "Park"
               },
               "onkun": "On--On"
@@ -1132,7 +1132,7 @@
               "kana": "ゆうえんち",
               "hanviet": "Du Viên Địa",
               "meaning": {
-                "vi": "",
+                "vi": "Khu vui chơi",
                 "en": "Amusement park"
               },
               "onkun": "On--On--On"
@@ -1142,7 +1142,7 @@
               "kana": "どうぶつえん",
               "hanviet": "Động Vật Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Sở thú",
                 "en": "Zoo"
               },
               "onkun": "On--On--On"
@@ -1152,7 +1152,7 @@
               "kana": "ほいくえん",
               "hanviet": "Bảo Dục Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Nhà trẻ",
                 "en": "Nursery school"
               },
               "onkun": "On--On--On"
@@ -1165,7 +1165,7 @@
           "kana": null,
           "hanviet": "Đài",
           "meaning": {
-            "vi": "",
+            "vi": "Cái bệ, giá đỡ, đài",
             "en": "Stand, platform"
           },
           "onkun": "On",
@@ -1184,7 +1184,7 @@
               "kana": "だいどころ",
               "hanviet": "Đài Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Nhà bếp",
                 "en": "Kitchen"
               },
               "onkun": "On--Kun"
@@ -1194,7 +1194,7 @@
               "kana": "たいふう",
               "hanviet": "Đài Phong",
               "meaning": {
-                "vi": "",
+                "vi": "Bão",
                 "en": "Typhoon"
               },
               "onkun": "On--On"
@@ -1207,7 +1207,7 @@
           "kana": null,
           "hanviet": "Thủy",
           "meaning": {
-            "vi": "",
+            "vi": "Bắt đầu",
             "en": "Begin"
           },
           "onkun": "Kun",
@@ -1225,7 +1225,7 @@
               "kana": "はじめます",
               "hanviet": "Thủy",
               "meaning": {
-                "vi": "",
+                "vi": "Bắt đầu [cái gì đó]",
                 "en": "To begin (something)"
               },
               "onkun": "Kun"
@@ -1235,7 +1235,7 @@
               "kana": "はじまります",
               "hanviet": "Thủy",
               "meaning": {
-                "vi": "",
+                "vi": "[Cái gì đó] bắt đầu",
                 "en": "(Something) begins"
               },
               "onkun": "Kun"
@@ -1245,7 +1245,7 @@
               "kana": "かいし",
               "hanviet": "Khai Thủy",
               "meaning": {
-                "vi": "",
+                "vi": "Bắt đầu, khởi đầu",
                 "en": "Start, commencement"
               },
               "onkun": "On--On"
@@ -1258,7 +1258,7 @@
           "kana": null,
           "hanviet": "Trị",
           "meaning": {
-            "vi": "",
+            "vi": "Cai trị, chữa trị, bình phục",
             "en": "Govern, cure"
           },
           "onkun": "Kun",
@@ -1278,7 +1278,7 @@
               "kana": "なおします",
               "hanviet": "Trị",
               "meaning": {
-                "vi": "",
+                "vi": "Chữa, trị bệnh",
                 "en": "To cure, treat"
               },
               "onkun": "Kun"
@@ -1288,7 +1288,7 @@
               "kana": "なおります",
               "hanviet": "Trị",
               "meaning": {
-                "vi": "",
+                "vi": "Khỏi [bệnh], lành [vết thương]",
                 "en": "To heal, recover"
               },
               "onkun": "Kun"
@@ -1298,7 +1298,7 @@
               "kana": "せいじ",
               "hanviet": "Chính Trị",
               "meaning": {
-                "vi": "",
+                "vi": "Chính trị",
                 "en": "Politics"
               },
               "onkun": "On--On"
@@ -1311,7 +1311,7 @@
           "kana": null,
           "hanviet": "Chính",
           "meaning": {
-            "vi": "",
+            "vi": "Đúng đắn, chính xác",
             "en": "Correct, right"
           },
           "onkun": "Kun",
@@ -1331,7 +1331,7 @@
               "kana": "ただしい",
               "hanviet": "Chính",
               "meaning": {
-                "vi": "",
+                "vi": "Đúng, chính xác",
                 "en": "Correct, right"
               },
               "onkun": "Kun"
@@ -1341,7 +1341,7 @@
               "kana": "おしょうがつ",
               "hanviet": "Chính Nguyệt",
               "meaning": {
-                "vi": "",
+                "vi": "Tết",
                 "en": "New Year"
               },
               "onkun": "On--On"
@@ -1354,7 +1354,7 @@
           "kana": null,
           "hanviet": "Chính",
           "meaning": {
-            "vi": "",
+            "vi": "Chính trị, chính sách",
             "en": "Politics, policy"
           },
           "onkun": "On",
@@ -1371,7 +1371,7 @@
               "kana": "せいじ",
               "hanviet": "Chính Trị",
               "meaning": {
-                "vi": "",
+                "vi": "Chính trị",
                 "en": "Politics"
               },
               "onkun": "On--On"
@@ -1391,7 +1391,7 @@
           "kana": null,
           "hanviet": "Vương",
           "meaning": {
-            "vi": "",
+            "vi": "Vua",
             "en": "King"
           },
           "onkun": "On",
@@ -1406,7 +1406,7 @@
               "kana": "おうさま",
               "hanviet": "Vương Dạng",
               "meaning": {
-                "vi": "",
+                "vi": "Nhà vua",
                 "en": "King"
               },
               "onkun": "On--Kun"
@@ -1419,7 +1419,7 @@
           "kana": null,
           "hanviet": "Ngọc",
           "meaning": {
-            "vi": "",
+            "vi": "Viên ngọc, quả bóng tròn",
             "en": "Jewel, ball"
           },
           "onkun": "Kun",
@@ -1437,7 +1437,7 @@
               "kana": "おとしだま",
               "hanviet": "Niên Ngọc",
               "meaning": {
-                "vi": "",
+                "vi": "Tiền mừng tuổi",
                 "en": "New Year's money gift"
               },
               "onkun": "Kun--Kun"
@@ -1447,7 +1447,7 @@
               "kana": "めだまやき",
               "hanviet": "Mục Ngọc Thiêu",
               "meaning": {
-                "vi": "",
+                "vi": "Trứng ốp la",
                 "en": "Fried egg, sunny-side up"
               },
               "onkun": "Kun--Kun--Kun"
@@ -1460,7 +1460,7 @@
           "kana": null,
           "hanviet": "Quốc",
           "meaning": {
-            "vi": "",
+            "vi": "Đất nước",
             "en": "Country"
           },
           "onkun": "Kun",
@@ -1476,7 +1476,7 @@
               "kana": "くに",
               "hanviet": "Quốc",
               "meaning": {
-                "vi": "",
+                "vi": "Đất nước",
                 "en": "Country"
               },
               "onkun": "Kun"
@@ -1486,7 +1486,7 @@
               "kana": "がいこく",
               "hanviet": "Ngoại Quốc",
               "meaning": {
-                "vi": "",
+                "vi": "Nước ngoài",
                 "en": "Foreign country"
               },
               "onkun": "On--On"
@@ -1496,7 +1496,7 @@
               "kana": "がいこくご",
               "hanviet": "Ngoại Quốc Ngữ",
               "meaning": {
-                "vi": "",
+                "vi": "Ngoại ngữ",
                 "en": "Foreign language"
               },
               "onkun": "On--On--On"
@@ -1506,7 +1506,7 @@
               "kana": "こくさい",
               "hanviet": "Quốc Tế",
               "meaning": {
-                "vi": "",
+                "vi": "Quốc tế",
                 "en": "International"
               },
               "onkun": "On--On"
@@ -1519,7 +1519,7 @@
           "kana": null,
           "hanviet": "Chủ",
           "meaning": {
-            "vi": "",
+            "vi": "Chủ nhân, chủ yếu",
             "en": "Master, main"
           },
           "onkun": "Kun",
@@ -1539,7 +1539,7 @@
               "kana": "かいぬし",
               "hanviet": "Tự Chủ",
               "meaning": {
-                "vi": "",
+                "vi": "Chủ nuôi",
                 "en": "Pet owner"
               },
               "onkun": "Kun--Kun"
@@ -1549,7 +1549,7 @@
               "kana": "ごしゅじん",
               "hanviet": "Chủ Nhân",
               "meaning": {
-                "vi": "",
+                "vi": "Chồng [người khác]",
                 "en": "(Someone else's) husband"
               },
               "onkun": "On--On"
@@ -1559,7 +1559,7 @@
               "kana": "しゅじんこう",
               "hanviet": "Chủ Nhân Công",
               "meaning": {
-                "vi": "",
+                "vi": "Nhân vật chính",
                 "en": "Main character, protagonist"
               },
               "onkun": "On--On--On"
@@ -1572,7 +1572,7 @@
           "kana": null,
           "hanviet": "Trú",
           "meaning": {
-            "vi": "",
+            "vi": "Sinh sống, cư trú",
             "en": "Reside"
           },
           "onkun": "Kun",
@@ -1592,7 +1592,7 @@
               "kana": "すみます",
               "hanviet": "Trú",
               "meaning": {
-                "vi": "",
+                "vi": "Sống, sinh sống",
                 "en": "To live, reside"
               },
               "onkun": "Kun"
@@ -1602,7 +1602,7 @@
               "kana": "じゅうしょ",
               "hanviet": "Trú Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Địa chỉ",
                 "en": "Address"
               },
               "onkun": "On--On"
@@ -1615,7 +1615,7 @@
           "kana": null,
           "hanviet": "Sở",
           "meaning": {
-            "vi": "",
+            "vi": "Nơi chốn, địa điểm",
             "en": "Place"
           },
           "onkun": "Kun",
@@ -1634,7 +1634,7 @@
               "kana": "ところ",
               "hanviet": "Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Nơi, chỗ",
                 "en": "Place"
               },
               "onkun": "Kun"
@@ -1644,7 +1644,7 @@
               "kana": "だいどころ",
               "hanviet": "Đài Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Bếp, phòng bếp",
                 "en": "Kitchen"
               },
               "onkun": "On--Kun"
@@ -1654,7 +1654,7 @@
               "kana": "じゅうしょ",
               "hanviet": "Trú Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Nơi ở, địa chỉ",
                 "en": "Address"
               },
               "onkun": "On--On"
@@ -1664,7 +1664,7 @@
               "kana": "しやくしょ",
               "hanviet": "Thị Dịch Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Tòa thị chính",
                 "en": "City hall"
               },
               "onkun": "On--On--On"
@@ -1674,7 +1674,7 @@
               "kana": "きんじょ",
               "hanviet": "Cận Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Hàng xóm, khu lân cận",
                 "en": "Neighborhood, nearby area"
               },
               "onkun": "On--On"
@@ -1687,7 +1687,7 @@
           "kana": null,
           "hanviet": "Cận",
           "meaning": {
-            "vi": "",
+            "vi": "Gần",
             "en": "Near"
           },
           "onkun": "Kun",
@@ -1704,7 +1704,7 @@
               "kana": "ちかい",
               "hanviet": "Cận",
               "meaning": {
-                "vi": "",
+                "vi": "Gần, sát",
                 "en": "Near, close"
               },
               "onkun": "Kun"
@@ -1714,7 +1714,7 @@
               "kana": "ちかづきます",
               "hanviet": "Cận",
               "meaning": {
-                "vi": "",
+                "vi": "Lại gần, tiếp cận",
                 "en": "To approach, get closer"
               },
               "onkun": "Kun"
@@ -1724,7 +1724,7 @@
               "kana": "さいきん",
               "hanviet": "Tối Cận",
               "meaning": {
-                "vi": "",
+                "vi": "Gần đây, dạo này",
                 "en": "Recently"
               },
               "onkun": "On--On"
@@ -1734,7 +1734,7 @@
               "kana": "きんじょ",
               "hanviet": "Cận Sở",
               "meaning": {
-                "vi": "",
+                "vi": "Hàng xóm, khu lân cận",
                 "en": "Neighborhood, nearby area"
               },
               "onkun": "On--On"
@@ -1747,7 +1747,7 @@
           "kana": null,
           "hanviet": "Biên",
           "meaning": {
-            "vi": "",
+            "vi": "Vùng xung quanh, ven",
             "en": "Vicinity, area"
           },
           "onkun": "On",
@@ -1764,7 +1764,7 @@
               "kana": "このへん",
               "hanviet": "Biên",
               "meaning": {
-                "vi": "",
+                "vi": "Vùng này, khu vực này",
                 "en": "Around here"
               },
               "onkun": "On"
@@ -1777,7 +1777,7 @@
           "kana": null,
           "hanviet": "Thiết",
           "meaning": {
-            "vi": "",
+            "vi": "Cắt, sắc bén",
             "en": "Cut"
           },
           "onkun": "Kun",
@@ -1803,7 +1803,7 @@
               "kana": "きります",
               "hanviet": "Thiết",
               "meaning": {
-                "vi": "",
+                "vi": "Cắt, cứa; ngắt nguồn điện, điện thoại",
                 "en": "To cut; to hang up (phone)"
               },
               "onkun": "Kun"
@@ -1813,7 +1813,7 @@
               "kana": "きっぷ",
               "hanviet": "Thiết Phù",
               "meaning": {
-                "vi": "",
+                "vi": "Vé",
                 "en": "Ticket"
               },
               "onkun": "Juku"
@@ -1823,7 +1823,7 @@
               "kana": "きって",
               "hanviet": "Thiết Thủ",
               "meaning": {
-                "vi": "",
+                "vi": "Con tem",
                 "en": "Postage stamp"
               },
               "onkun": "Juku"
@@ -1833,7 +1833,7 @@
               "kana": "しめきり",
               "hanviet": "Đế Thiết",
               "meaning": {
-                "vi": "",
+                "vi": "Hạn chót",
                 "en": "Deadline"
               },
               "onkun": "Kun--Kun"
@@ -1843,7 +1843,7 @@
               "kana": "しんせつ",
               "hanviet": "Thân Thiết",
               "meaning": {
-                "vi": "",
+                "vi": "Thân thiện, tử tế",
                 "en": "Kind, friendly"
               },
               "onkun": "On--On"
@@ -1853,7 +1853,7 @@
               "kana": "たいせつ",
               "hanviet": "Đại Thiết",
               "meaning": {
-                "vi": "",
+                "vi": "Quan trọng",
                 "en": "Important"
               },
               "onkun": "On--On"
@@ -1873,7 +1873,7 @@
           "kana": null,
           "hanviet": "Miễn",
           "meaning": {
-            "vi": "",
+            "vi": "Cố gắng (học tập)",
             "en": "Endeavor, study"
           },
           "onkun": "On",
@@ -1889,7 +1889,7 @@
               "kana": "べんきょうします",
               "hanviet": "Miễn Cường",
               "meaning": {
-                "vi": "",
+                "vi": "Học",
                 "en": "To study"
               },
               "onkun": "On--On"
@@ -1902,7 +1902,7 @@
           "kana": null,
           "hanviet": "Vãn",
           "meaning": {
-            "vi": "",
+            "vi": "Buổi tối, đêm",
             "en": "Evening"
           },
           "onkun": "On",
@@ -1916,7 +1916,7 @@
               "kana": "こんばん",
               "hanviet": "Kim Vãn",
               "meaning": {
-                "vi": "",
+                "vi": "Tối nay",
                 "en": "Tonight"
               },
               "onkun": "On--On"
@@ -1926,7 +1926,7 @@
               "kana": "まいばん",
               "hanviet": "Mỗi Vãn",
               "meaning": {
-                "vi": "",
+                "vi": "Hàng tối, mỗi tối",
                 "en": "Every night"
               },
               "onkun": "On--On"
@@ -1936,7 +1936,7 @@
               "kana": "ばんごはん",
               "hanviet": "Vãn Phạn",
               "meaning": {
-                "vi": "",
+                "vi": "Cơm tối",
                 "en": "Dinner"
               },
               "onkun": "On--On"
@@ -1949,7 +1949,7 @@
           "kana": null,
           "hanviet": "Sắc",
           "meaning": {
-            "vi": "",
+            "vi": "Màu sắc",
             "en": "Color"
           },
           "onkun": "Kun",
@@ -1966,7 +1966,7 @@
               "kana": "いろ",
               "hanviet": "Sắc",
               "meaning": {
-                "vi": "",
+                "vi": "Màu sắc",
                 "en": "Color"
               },
               "onkun": "Kun"
@@ -1976,7 +1976,7 @@
               "kana": "いろいろな",
               "hanviet": "Sắc",
               "meaning": {
-                "vi": "",
+                "vi": "Nhiều [loại]",
                 "en": "Various"
               },
               "onkun": "Juku"
@@ -1986,7 +1986,7 @@
               "kana": "ちゃいろ",
               "hanviet": "Trà Sắc",
               "meaning": {
-                "vi": "",
+                "vi": "Màu nâu",
                 "en": "Brown"
               },
               "onkun": "On--Kun"
@@ -1996,7 +1996,7 @@
               "kana": "けしき",
               "hanviet": "Cảnh Sắc",
               "meaning": {
-                "vi": "",
+                "vi": "Phong cảnh",
                 "en": "Scenery"
               },
               "onkun": "Juku"
@@ -2009,7 +2009,7 @@
           "kana": null,
           "hanviet": "Phát",
           "meaning": {
-            "vi": "",
+            "vi": "Xuất phát, phát triển",
             "en": "Depart, emit"
           },
           "onkun": "On",
@@ -2030,7 +2030,7 @@
               "kana": "はつめい",
               "hanviet": "Phát Minh",
               "meaning": {
-                "vi": "",
+                "vi": "Phát minh",
                 "en": "Invention"
               },
               "onkun": "On--On"
@@ -2040,7 +2040,7 @@
               "kana": "はっけん",
               "hanviet": "Phát Kiến",
               "meaning": {
-                "vi": "",
+                "vi": "Phát kiến, phát hiện",
                 "en": "Discovery"
               },
               "onkun": "On--On"
@@ -2050,7 +2050,7 @@
               "kana": "しゅっぱつ",
               "hanviet": "Xuất Phát",
               "meaning": {
-                "vi": "",
+                "vi": "Xuất phát",
                 "en": "Departure"
               },
               "onkun": "On--On"
@@ -2060,7 +2060,7 @@
               "kana": "はつおん",
               "hanviet": "Phát Âm",
               "meaning": {
-                "vi": "",
+                "vi": "Phát âm",
                 "en": "Pronunciation"
               },
               "onkun": "On--On"
@@ -2070,7 +2070,7 @@
               "kana": "はつばい",
               "hanviet": "Phát Mại",
               "meaning": {
-                "vi": "",
+                "vi": "Mở bán",
                 "en": "On sale, release"
               },
               "onkun": "On--On"
@@ -2083,7 +2083,7 @@
           "kana": null,
           "hanviet": "Hoàng",
           "meaning": {
-            "vi": "",
+            "vi": "Màu vàng",
             "en": "Yellow"
           },
           "onkun": "Kun",
@@ -2101,7 +2101,7 @@
               "kana": "きいろ",
               "hanviet": "Hoàng Sắc",
               "meaning": {
-                "vi": "",
+                "vi": "Màu vàng",
                 "en": "Yellow (noun)"
               },
               "onkun": "Kun--Kun"
@@ -2111,7 +2111,7 @@
               "kana": "きいろい",
               "hanviet": "Hoàng Sắc",
               "meaning": {
-                "vi": "",
+                "vi": "Vàng",
                 "en": "Yellow (adjective)"
               },
               "onkun": "Kun--Kun"
@@ -2124,7 +2124,7 @@
           "kana": null,
           "hanviet": "Trùng",
           "meaning": {
-            "vi": "",
+            "vi": "Côn trùng, sâu bọ",
             "en": "Insect"
           },
           "onkun": "Kun",
@@ -2141,7 +2141,7 @@
               "kana": "むし",
               "hanviet": "Trùng",
               "meaning": {
-                "vi": "",
+                "vi": "Côn trùng, con sâu",
                 "en": "Insect, bug"
               },
               "onkun": "Kun"
@@ -2154,7 +2154,7 @@
           "kana": null,
           "hanviet": "Phong",
           "meaning": {
-            "vi": "",
+            "vi": "Gió, phong cách",
             "en": "Wind, style"
           },
           "onkun": "Kun",
@@ -2172,7 +2172,7 @@
               "kana": "かぜ",
               "hanviet": "Phong",
               "meaning": {
-                "vi": "",
+                "vi": "Gió",
                 "en": "Wind"
               },
               "onkun": "Kun"
@@ -2182,7 +2182,7 @@
               "kana": "かぜ",
               "hanviet": "Phong Tà",
               "meaning": {
-                "vi": "",
+                "vi": "Cảm cúm",
                 "en": "Cold (illness)"
               },
               "onkun": "Juku"
@@ -2192,7 +2192,7 @@
               "kana": "たいふう",
               "hanviet": "Đài Phong",
               "meaning": {
-                "vi": "",
+                "vi": "Bão",
                 "en": "Typhoon"
               },
               "onkun": "On--On"
@@ -2205,7 +2205,7 @@
           "kana": null,
           "hanviet": "Cường",
           "meaning": {
-            "vi": "",
+            "vi": "Mạnh mẽ, cố ép",
             "en": "Strong"
           },
           "onkun": "Kun",
@@ -2226,7 +2226,7 @@
               "kana": "つよい",
               "hanviet": "Cường",
               "meaning": {
-                "vi": "",
+                "vi": "Mạnh",
                 "en": "Strong"
               },
               "onkun": "Kun"
@@ -2236,7 +2236,7 @@
               "kana": "べんきょう",
               "hanviet": "Miễn Cường",
               "meaning": {
-                "vi": "",
+                "vi": "Học tập",
                 "en": "Study"
               },
               "onkun": "On--On"
@@ -2249,7 +2249,7 @@
           "kana": null,
           "hanviet": "Du",
           "meaning": {
-            "vi": "",
+            "vi": "Dầu",
             "en": "Oil"
           },
           "onkun": "Kun",
@@ -2266,7 +2266,7 @@
               "kana": "あぶら",
               "hanviet": "Du",
               "meaning": {
-                "vi": "",
+                "vi": "Dầu",
                 "en": "Oil"
               },
               "onkun": "Kun"
@@ -2276,7 +2276,7 @@
               "kana": "せきゆ",
               "hanviet": "Thạch Du",
               "meaning": {
-                "vi": "",
+                "vi": "Dầu mỏ",
                 "en": "Petroleum"
               },
               "onkun": "On--On"
@@ -2289,7 +2289,7 @@
           "kana": null,
           "hanviet": "Quyết",
           "meaning": {
-            "vi": "",
+            "vi": "Quyết định",
             "en": "Decide"
           },
           "onkun": "Kun",
@@ -2308,7 +2308,7 @@
               "kana": "きめます",
               "hanviet": "Quyết",
               "meaning": {
-                "vi": "",
+                "vi": "Quyết định [cái gì đó]",
                 "en": "To decide (something)"
               },
               "onkun": "Kun"
@@ -2318,7 +2318,7 @@
               "kana": "きまります",
               "hanviet": "Quyết",
               "meaning": {
-                "vi": "",
+                "vi": "[Cái gì đó] được quyết định",
                 "en": "(Something) is decided"
               },
               "onkun": "Kun"
@@ -2331,7 +2331,7 @@
           "kana": null,
           "hanviet": "Hán",
           "meaning": {
-            "vi": "",
+            "vi": "Chữ Hán, nước Hán",
             "en": "Han (China), kanji"
           },
           "onkun": "On",
@@ -2345,7 +2345,7 @@
               "kana": "かんじ",
               "hanviet": "Hán Tự",
               "meaning": {
-                "vi": "",
+                "vi": "Chữ Hán",
                 "en": "Kanji, Chinese character"
               },
               "onkun": "On--On"
@@ -2365,7 +2365,7 @@
           "kana": null,
           "hanviet": "Chỉ",
           "meaning": {
-            "vi": "",
+            "vi": "Dừng lại",
             "en": "Stop"
           },
           "onkun": "Kun",
@@ -2394,7 +2394,7 @@
               "kana": "とまります",
               "hanviet": "Chỉ",
               "meaning": {
-                "vi": "",
+                "vi": "[Xe] dừng, đỗ",
                 "en": "(Something) stops"
               },
               "onkun": "Kun"
@@ -2404,7 +2404,7 @@
               "kana": "やみます",
               "hanviet": "Chỉ",
               "meaning": {
-                "vi": "",
+                "vi": "Ngừng, dừng lại, tạnh [mưa]",
                 "en": "To stop, let up (rain)"
               },
               "onkun": "Kun"
@@ -2414,7 +2414,7 @@
               "kana": "ちゅうし",
               "hanviet": "Trung Chỉ",
               "meaning": {
-                "vi": "",
+                "vi": "Hủy bỏ, ngừng [giữa chừng]",
                 "en": "Cancellation, suspension"
               },
               "onkun": "On--On"
@@ -2427,7 +2427,7 @@
           "kana": null,
           "hanviet": "Bộ",
           "meaning": {
-            "vi": "",
+            "vi": "Đi bộ",
             "en": "Walk"
           },
           "onkun": "Kun",
@@ -2446,7 +2446,7 @@
               "kana": "あるきます",
               "hanviet": "Bộ",
               "meaning": {
-                "vi": "",
+                "vi": "Đi bộ",
                 "en": "To walk"
               },
               "onkun": "Kun"
@@ -2456,7 +2456,7 @@
               "kana": "さんぽします",
               "hanviet": "Tản Bộ",
               "meaning": {
-                "vi": "",
+                "vi": "Đi dạo, tản bộ",
                 "en": "To take a walk"
               },
               "onkun": "On--On"
@@ -2469,7 +2469,7 @@
           "kana": null,
           "hanviet": "Lịch",
           "meaning": {
-            "vi": "",
+            "vi": "Lý lịch, lịch sử qua đi",
             "en": "Pass through, history"
           },
           "onkun": "On",
@@ -2484,7 +2484,7 @@
               "kana": "れきし",
               "hanviet": "Lịch Sử",
               "meaning": {
-                "vi": "",
+                "vi": "Lịch sử",
                 "en": "History"
               },
               "onkun": "On--On"
@@ -2497,7 +2497,7 @@
           "kana": null,
           "hanviet": "Sử",
           "meaning": {
-            "vi": "",
+            "vi": "Lịch sử",
             "en": "History"
           },
           "onkun": "On",
@@ -2511,7 +2511,7 @@
               "kana": "れきし",
               "hanviet": "Lịch Sử",
               "meaning": {
-                "vi": "",
+                "vi": "Lịch sử",
                 "en": "History"
               },
               "onkun": "On--On"
@@ -2524,7 +2524,7 @@
           "kana": null,
           "hanviet": "Sử",
           "meaning": {
-            "vi": "",
+            "vi": "Sử dụng, sai khiến",
             "en": "Use, envoy"
           },
           "onkun": "Kun",
@@ -2543,7 +2543,7 @@
               "kana": "つかいます",
               "hanviet": "Sử",
               "meaning": {
-                "vi": "",
+                "vi": "Sử dụng",
                 "en": "To use"
               },
               "onkun": "Kun"
@@ -2553,7 +2553,7 @@
               "kana": "たいしかん",
               "hanviet": "Đại Sử Quán",
               "meaning": {
-                "vi": "",
+                "vi": "Đại sứ quán",
                 "en": "Embassy"
               },
               "onkun": "On--On--On"
@@ -2563,7 +2563,7 @@
               "kana": "しようします",
               "hanviet": "Sử Dụng",
               "meaning": {
-                "vi": "",
+                "vi": "Sử dụng",
                 "en": "To use, utilize"
               },
               "onkun": "On--On"
@@ -2576,7 +2576,7 @@
           "kana": null,
           "hanviet": "Phẩm",
           "meaning": {
-            "vi": "",
+            "vi": "Sản phẩm, phẩm chất",
             "en": "Product, quality"
           },
           "onkun": "On",
@@ -2593,7 +2593,7 @@
               "kana": "しょうひん",
               "hanviet": "Thương Phẩm",
               "meaning": {
-                "vi": "",
+                "vi": "Sản phẩm",
                 "en": "Merchandise, product"
               },
               "onkun": "On--On"
@@ -2603,7 +2603,7 @@
               "kana": "けしょうひん",
               "hanviet": "Hóa Trang Phẩm",
               "meaning": {
-                "vi": "",
+                "vi": "Mỹ phẩm",
                 "en": "Cosmetics"
               },
               "onkun": "On--On--On"
@@ -2616,7 +2616,7 @@
           "kana": null,
           "hanviet": "Hiệu",
           "meaning": {
-            "vi": "",
+            "vi": "Số hiệu, dấu hiệu",
             "en": "Number, sign"
           },
           "onkun": "On",
@@ -2633,7 +2633,7 @@
               "kana": "しんごう",
               "hanviet": "Tín Hiệu",
               "meaning": {
-                "vi": "",
+                "vi": "Tín hiệu, đèn giao thông",
                 "en": "Traffic light, signal"
               },
               "onkun": "On--On"
@@ -2643,7 +2643,7 @@
               "kana": "でんわばんごう",
               "hanviet": "Điện Thoại Phiên Hiệu",
               "meaning": {
-                "vi": "",
+                "vi": "Số điện thoại",
                 "en": "Phone number"
               },
               "onkun": "On--On--On--On"
@@ -2653,7 +2653,7 @@
               "kana": "あんしょうばんごう",
               "hanviet": "Ám Chứng Phiên Hiệu",
               "meaning": {
-                "vi": "",
+                "vi": "Mật khẩu",
                 "en": "PIN code"
               },
               "onkun": "On--On--On--On"
@@ -2666,7 +2666,7 @@
           "kana": null,
           "hanviet": "Vị",
           "meaning": {
-            "vi": "",
+            "vi": "Vị giác, hương vị",
             "en": "Taste"
           },
           "onkun": "Kun",
@@ -2683,7 +2683,7 @@
               "kana": "あじ",
               "hanviet": "Vị",
               "meaning": {
-                "vi": "",
+                "vi": "Mùi vị",
                 "en": "Taste, flavor"
               },
               "onkun": "Kun"
@@ -2693,7 +2693,7 @@
               "kana": "いみ",
               "hanviet": "Ý Vị",
               "meaning": {
-                "vi": "",
+                "vi": "Ý nghĩa",
                 "en": "Meaning"
               },
               "onkun": "On--On"
@@ -2703,7 +2703,7 @@
               "kana": "きょうみ",
               "hanviet": "Hứng Vị",
               "meaning": {
-                "vi": "",
+                "vi": "Hứng thú",
                 "en": "Interest"
               },
               "onkun": "On--On"
@@ -2713,7 +2713,7 @@
               "kana": "ちょうみりょう",
               "hanviet": "Điều Vị Liệu",
               "meaning": {
-                "vi": "",
+                "vi": "Gia vị",
                 "en": "Seasoning, condiment"
               },
               "onkun": "On--On--On"
@@ -2726,7 +2726,7 @@
           "kana": null,
           "hanviet": "Nghiên",
           "meaning": {
-            "vi": "",
+            "vi": "Mài dũa, nghiên cứu",
             "en": "Study, research"
           },
           "onkun": "On",
@@ -2742,7 +2742,7 @@
               "kana": "けんきゅう",
               "hanviet": "Nghiên Cứu",
               "meaning": {
-                "vi": "",
+                "vi": "Nghiên cứu",
                 "en": "Research"
               },
               "onkun": "On--On"
@@ -2752,7 +2752,7 @@
               "kana": "けんきゅうしゃ",
               "hanviet": "Nghiên Cứu Giả",
               "meaning": {
-                "vi": "",
+                "vi": "Nhà nghiên cứu",
                 "en": "Researcher"
               },
               "onkun": "On--On--On"
@@ -2765,7 +2765,7 @@
           "kana": null,
           "hanviet": "Hoàn",
           "meaning": {
-            "vi": "",
+            "vi": "Tròn, viên tròn",
             "en": "Round, circle"
           },
           "onkun": "Kun",
@@ -2783,7 +2783,7 @@
               "kana": "まる",
               "hanviet": "Hoàn",
               "meaning": {
-                "vi": "",
+                "vi": "Hình tròn",
                 "en": "Circle"
               },
               "onkun": "Kun"
@@ -2796,7 +2796,7 @@
           "kana": null,
           "hanviet": "Cứu",
           "meaning": {
-            "vi": "",
+            "vi": "Nghiên cứu đến cùng",
             "en": "Investigate thoroughly"
           },
           "onkun": "On",
@@ -2813,7 +2813,7 @@
               "kana": "けんきゅう",
               "hanviet": "Nghiên Cứu",
               "meaning": {
-                "vi": "",
+                "vi": "Nghiên cứu",
                 "en": "Research"
               },
               "onkun": "On--On"
@@ -2823,7 +2823,7 @@
               "kana": "けんきゅうしゃ",
               "hanviet": "Nghiên Cứu Giả",
               "meaning": {
-                "vi": "",
+                "vi": "Nhà nghiên cứu",
                 "en": "Researcher"
               },
               "onkun": "On--On--On"
@@ -2836,7 +2836,7 @@
           "kana": null,
           "hanviet": "Cốc",
           "meaning": {
-            "vi": "",
+            "vi": "Thung lũng",
             "en": "Valley"
           },
           "onkun": "Kun",
@@ -2852,7 +2852,7 @@
               "kana": "たに",
               "hanviet": "Cốc",
               "meaning": {
-                "vi": "",
+                "vi": "Thung lũng",
                 "en": "Valley"
               },
               "onkun": "Kun"
@@ -2865,7 +2865,7 @@
           "kana": null,
           "hanviet": "Thuyền",
           "meaning": {
-            "vi": "",
+            "vi": "Tàu, thuyền",
             "en": "Ship, boat"
           },
           "onkun": "Kun",
@@ -2882,7 +2882,7 @@
               "kana": "ふね",
               "hanviet": "Thuyền",
               "meaning": {
-                "vi": "",
+                "vi": "Con thuyền, tàu",
                 "en": "Ship, boat"
               },
               "onkun": "Kun"
@@ -2902,7 +2902,7 @@
           "kana": null,
           "hanviet": "Lý",
           "meaning": {
-            "vi": "",
+            "vi": "Làng quê, đơn vị dặm",
             "en": "Village, ri (unit)"
           },
           "onkun": "Kun",
@@ -2918,7 +2918,7 @@
               "kana": "さといも",
               "hanviet": "Lý Vu",
               "meaning": {
-                "vi": "",
+                "vi": "Khoai sọ",
                 "en": "Taro"
               },
               "onkun": "Kun--Kun"
@@ -2928,7 +2928,7 @@
               "kana": "ばんりのちょうじょう",
               "hanviet": "Vạn Lý Trường Thành",
               "meaning": {
-                "vi": "",
+                "vi": "Vạn Lý Trường Thành",
                 "en": "The Great Wall of China"
               },
               "onkun": "On--On--On--On"
@@ -2941,7 +2941,7 @@
           "kana": null,
           "hanviet": "Lý",
           "meaning": {
-            "vi": "",
+            "vi": "Lý do, đạo lý, logic",
             "en": "Reason, logic"
           },
           "onkun": "On",
@@ -2957,7 +2957,7 @@
               "kana": "りょうり",
               "hanviet": "Liệu Lý",
               "meaning": {
-                "vi": "",
+                "vi": "Món ăn",
                 "en": "Dish, cooking"
               },
               "onkun": "On--On"
@@ -2967,7 +2967,7 @@
               "kana": "しゅうり",
               "hanviet": "Tu Lý",
               "meaning": {
-                "vi": "",
+                "vi": "Sửa chữa",
                 "en": "Repair"
               },
               "onkun": "On--On"
@@ -2980,7 +2980,7 @@
           "kana": null,
           "hanviet": "Dã",
           "meaning": {
-            "vi": "",
+            "vi": "Đồng nội, hoang dã",
             "en": "Field, wild"
           },
           "onkun": "On",
@@ -2998,7 +2998,7 @@
               "kana": "やさい",
               "hanviet": "Dã Thái",
               "meaning": {
-                "vi": "",
+                "vi": "Rau",
                 "en": "Vegetable"
               },
               "onkun": "On--On"
@@ -3008,7 +3008,7 @@
               "kana": "やきゅう",
               "hanviet": "Dã Cầu",
               "meaning": {
-                "vi": "",
+                "vi": "Bóng chày",
                 "en": "Baseball"
               },
               "onkun": "On--On"
@@ -3021,7 +3021,7 @@
           "kana": null,
           "hanviet": "Nhược",
           "meaning": {
-            "vi": "",
+            "vi": "Trẻ trung",
             "en": "Young"
           },
           "onkun": "Kun",
@@ -3044,7 +3044,7 @@
               "kana": "わかい",
               "hanviet": "Nhược",
               "meaning": {
-                "vi": "",
+                "vi": "Trẻ trung",
                 "en": "Young"
               },
               "onkun": "Kun"
@@ -3057,7 +3057,7 @@
           "kana": null,
           "hanviet": "Thái",
           "meaning": {
-            "vi": "",
+            "vi": "Rau cỏ",
             "en": "Vegetable, greens"
           },
           "onkun": "On",
@@ -3073,7 +3073,7 @@
               "kana": "やさい",
               "hanviet": "Dã Thái",
               "meaning": {
-                "vi": "",
+                "vi": "Rau",
                 "en": "Vegetable"
               },
               "onkun": "On--On"
@@ -3086,7 +3086,7 @@
           "kana": null,
           "hanviet": "Phiên",
           "meaning": {
-            "vi": "",
+            "vi": "Lượt, thứ tự",
             "en": "Number, order, watch"
           },
           "onkun": "On",
@@ -3102,7 +3102,7 @@
               "kana": "いちばん",
               "hanviet": "Nhất Phiên",
               "meaning": {
-                "vi": "",
+                "vi": "Số 1, nhất",
                 "en": "Number one, the most"
               },
               "onkun": "On--On"
@@ -3112,7 +3112,7 @@
               "kana": "こうばん",
               "hanviet": "Giao Phiên",
               "meaning": {
-                "vi": "",
+                "vi": "Đồn cảnh sát",
                 "en": "Police box"
               },
               "onkun": "On--On"
@@ -3122,7 +3122,7 @@
               "kana": "ばんぐみ",
               "hanviet": "Phiên Tổ",
               "meaning": {
-                "vi": "",
+                "vi": "Chương trình [truyền hình]",
                 "en": "TV program"
               },
               "onkun": "On--Kun"
@@ -3132,7 +3132,7 @@
               "kana": "でんわばんごう",
               "hanviet": "Điện Thoại Phiên Hiệu",
               "meaning": {
-                "vi": "",
+                "vi": "Số điện thoại",
                 "en": "Phone number"
               },
               "onkun": "On--On--On--On"
@@ -3142,7 +3142,7 @@
               "kana": "あんしょうばんごう",
               "hanviet": "Ám Chứng Phiên Hiệu",
               "meaning": {
-                "vi": "",
+                "vi": "Mật khẩu",
                 "en": "PIN code"
               },
               "onkun": "On--On--On--On"
@@ -3155,7 +3155,7 @@
           "kana": null,
           "hanviet": "Liệu",
           "meaning": {
-            "vi": "",
+            "vi": "Nguyên liệu, phí",
             "en": "Fee, material"
           },
           "onkun": "On",
@@ -3169,7 +3169,7 @@
               "kana": "むりょう",
               "hanviet": "Vô Liệu",
               "meaning": {
-                "vi": "",
+                "vi": "Miễn phí",
                 "en": "Free of charge"
               },
               "onkun": "On--On"
@@ -3179,7 +3179,7 @@
               "kana": "りょうり",
               "hanviet": "Liệu Lý",
               "meaning": {
-                "vi": "",
+                "vi": "Món ăn, nấu ăn",
                 "en": "Dish, cooking"
               },
               "onkun": "On--On"
@@ -3189,7 +3189,7 @@
               "kana": "ちょうみりょう",
               "hanviet": "Điều Vị Liệu",
               "meaning": {
-                "vi": "",
+                "vi": "Gia vị",
                 "en": "Seasoning, condiment"
               },
               "onkun": "On--On--On"
@@ -3199,7 +3199,7 @@
               "kana": "ざいりょう",
               "hanviet": "Tài Liệu",
               "meaning": {
-                "vi": "",
+                "vi": "Nguyên liệu, vật liệu, tài liệu",
                 "en": "Ingredient, material"
               },
               "onkun": "On--On"
@@ -3209,7 +3209,7 @@
               "kana": "きゅうりょう",
               "hanviet": "Cấp Liệu",
               "meaning": {
-                "vi": "",
+                "vi": "Lương",
                 "en": "Salary"
               },
               "onkun": "On--On"
@@ -3219,7 +3219,7 @@
               "kana": "しょくりょうひん",
               "hanviet": "Thực Liệu Phẩm",
               "meaning": {
-                "vi": "",
+                "vi": "Thực phẩm",
                 "en": "Groceries, foodstuffs"
               },
               "onkun": "On--On--On"
@@ -3232,7 +3232,7 @@
           "kana": null,
           "hanviet": "Ốc",
           "meaning": {
-            "vi": "",
+            "vi": "Bên trong sâu",
             "en": "Interior, depths"
           },
           "onkun": "Kun",
@@ -3250,7 +3250,7 @@
               "kana": "おくさん",
               "hanviet": "Ốc",
               "meaning": {
-                "vi": "",
+                "vi": "Vợ [người khác]",
                 "en": "(Someone else's) wife"
               },
               "onkun": "Kun"
@@ -3263,7 +3263,7 @@
           "kana": null,
           "hanviet": "Điểu",
           "meaning": {
-            "vi": "",
+            "vi": "Con chim",
             "en": "Bird"
           },
           "onkun": "Kun",
@@ -3279,7 +3279,7 @@
               "kana": "とり",
               "hanviet": "Điểu",
               "meaning": {
-                "vi": "",
+                "vi": "Con chim",
                 "en": "Bird"
               },
               "onkun": "Kun"
@@ -3292,7 +3292,7 @@
           "kana": null,
           "hanviet": "Minh",
           "meaning": {
-            "vi": "",
+            "vi": "Hót, kêu, gáy",
             "en": "Cry, chirp, ring"
           },
           "onkun": "Kun",
@@ -3310,7 +3310,7 @@
               "kana": "なきます",
               "hanviet": "Minh",
               "meaning": {
-                "vi": "",
+                "vi": "[Mèo, chim...] kêu, hót",
                 "en": "To cry, chirp (animal)"
               },
               "onkun": "Kun"
@@ -3320,7 +3320,7 @@
               "kana": "なります",
               "hanviet": "Minh",
               "meaning": {
-                "vi": "",
+                "vi": "[Chuông] reo",
                 "en": "To ring (bell)"
               },
               "onkun": "Kun"
@@ -3333,7 +3333,7 @@
           "kana": null,
           "hanviet": "Đảo",
           "meaning": {
-            "vi": "",
+            "vi": "Hòn đảo",
             "en": "Island"
           },
           "onkun": "Kun",
@@ -3349,7 +3349,7 @@
               "kana": "しま",
               "hanviet": "Đảo",
               "meaning": {
-                "vi": "",
+                "vi": "Hòn đảo",
                 "en": "Island"
               },
               "onkun": "Kun"
@@ -3369,7 +3369,7 @@
           "kana": null,
           "hanviet": "Hóa",
           "meaning": {
-            "vi": "",
+            "vi": "Biến hóa, thay đổi",
             "en": "Change, -ify"
           },
           "onkun": "On",
@@ -3389,7 +3389,7 @@
               "kana": "ぶんか",
               "hanviet": "Văn Hóa",
               "meaning": {
-                "vi": "",
+                "vi": "Văn hóa",
                 "en": "Culture"
               },
               "onkun": "On--On"
@@ -3399,7 +3399,7 @@
               "kana": "けしょう",
               "hanviet": "Hóa Trang",
               "meaning": {
-                "vi": "",
+                "vi": "Trang điểm",
                 "en": "Makeup"
               },
               "onkun": "On--On"
@@ -3409,7 +3409,7 @@
               "kana": "けしょうひん",
               "hanviet": "Hóa Trang Phẩm",
               "meaning": {
-                "vi": "",
+                "vi": "Mỹ phẩm",
                 "en": "Cosmetics"
               },
               "onkun": "On--On--On"
@@ -3422,7 +3422,7 @@
           "kana": null,
           "hanviet": "Tiện",
           "meaning": {
-            "vi": "",
+            "vi": "Tiện lợi, bưu điện",
             "en": "Convenient, mail"
           },
           "onkun": "On",
@@ -3439,7 +3439,7 @@
               "kana": "ふべん",
               "hanviet": "Bất Tiện",
               "meaning": {
-                "vi": "",
+                "vi": "Bất tiện",
                 "en": "Inconvenient"
               },
               "onkun": "On--On"
@@ -3449,7 +3449,7 @@
               "kana": "べんり",
               "hanviet": "Tiện Lợi",
               "meaning": {
-                "vi": "",
+                "vi": "Tiện lợi",
                 "en": "Convenient"
               },
               "onkun": "On--On"
@@ -3459,7 +3459,7 @@
               "kana": "ゆうびんきょく",
               "hanviet": "Bưu Tiện Cục",
               "meaning": {
-                "vi": "",
+                "vi": "Bưu điện",
                 "en": "Post office"
               },
               "onkun": "On--On--On"
@@ -3469,7 +3469,7 @@
               "kana": "たくはいびん",
               "hanviet": "Trạch Phối Tiện",
               "meaning": {
-                "vi": "",
+                "vi": "Dịch vụ chuyển phát nhanh tận nhà",
                 "en": "Home delivery service"
               },
               "onkun": "On--On--On"
@@ -3482,7 +3482,7 @@
           "kana": null,
           "hanviet": "Hệ",
           "meaning": {
-            "vi": "",
+            "vi": "Quan hệ, người phụ trách",
             "en": "Relation, in charge of"
           },
           "onkun": "Kun",
@@ -3499,7 +3499,7 @@
               "kana": "かかりのひと",
               "hanviet": "Hệ Nhân",
               "meaning": {
-                "vi": "",
+                "vi": "Người phụ trách",
                 "en": "Person in charge"
               },
               "onkun": "Kun--Kun"
@@ -3512,7 +3512,7 @@
           "kana": null,
           "hanviet": "Túc",
           "meaning": {
-            "vi": "",
+            "vi": "Trọ lại, chỗ ở",
             "en": "Lodge, stay"
           },
           "onkun": "On",
@@ -3530,7 +3530,7 @@
               "kana": "しゅくだい",
               "hanviet": "Túc Đề",
               "meaning": {
-                "vi": "",
+                "vi": "Bài tập về nhà",
                 "en": "Homework"
               },
               "onkun": "On--On"
@@ -3543,7 +3543,7 @@
           "kana": null,
           "hanviet": "Tư",
           "meaning": {
-            "vi": "",
+            "vi": "Tôi, riêng tư",
             "en": "I, private"
           },
           "onkun": "Kun",
@@ -3560,7 +3560,7 @@
               "kana": "わたし",
               "hanviet": "Tư",
               "meaning": {
-                "vi": "",
+                "vi": "Tôi",
                 "en": "I, me"
               },
               "onkun": "Kun"
@@ -3573,7 +3573,7 @@
           "kana": null,
           "hanviet": "Lợi",
           "meaning": {
-            "vi": "",
+            "vi": "Lợi ích, tiện lợi",
             "en": "Benefit, advantage"
           },
           "onkun": "On",
@@ -3589,7 +3589,7 @@
               "kana": "べんり",
               "hanviet": "Tiện Lợi",
               "meaning": {
-                "vi": "",
+                "vi": "Tiện lợi",
                 "en": "Convenient"
               },
               "onkun": "On--On"
@@ -3599,7 +3599,7 @@
               "kana": "りよう",
               "hanviet": "Lợi Dụng",
               "meaning": {
-                "vi": "",
+                "vi": "Sử dụng, tận dụng, lợi dụng",
                 "en": "Use, utilization"
               },
               "onkun": "On--On"
@@ -3612,7 +3612,7 @@
           "kana": null,
           "hanviet": "Khoa",
           "meaning": {
-            "vi": "",
+            "vi": "Khoa học, phân khoa",
             "en": "Branch of study"
           },
           "onkun": "On",
@@ -3626,7 +3626,7 @@
               "kana": "かがく",
               "hanviet": "Khoa Học",
               "meaning": {
-                "vi": "",
+                "vi": "Khoa học",
                 "en": "Science"
               },
               "onkun": "On--On"
@@ -3636,7 +3636,7 @@
               "kana": "きょうかしょ",
               "hanviet": "Giáo Khoa Thư",
               "meaning": {
-                "vi": "",
+                "vi": "Sách giáo khoa",
                 "en": "Textbook"
               },
               "onkun": "On--On--On"
@@ -3649,7 +3649,7 @@
           "kana": null,
           "hanviet": "Nhan",
           "meaning": {
-            "vi": "",
+            "vi": "Khuôn mặt",
             "en": "Face"
           },
           "onkun": "Kun",
@@ -3665,7 +3665,7 @@
               "kana": "かお",
               "hanviet": "Nhan",
               "meaning": {
-                "vi": "",
+                "vi": "Gương mặt, khuôn mặt",
                 "en": "Face"
               },
               "onkun": "Kun"
@@ -3678,7 +3678,7 @@
           "kana": null,
           "hanviet": "Đề",
           "meaning": {
-            "vi": "",
+            "vi": "Đề tài, vấn đề",
             "en": "Topic, subject"
           },
           "onkun": "On",
@@ -3692,7 +3692,7 @@
               "kana": "もんだい",
               "hanviet": "Vấn Đề",
               "meaning": {
-                "vi": "",
+                "vi": "Vấn đề",
                 "en": "Problem, question"
               },
               "onkun": "On--On"
@@ -3702,7 +3702,7 @@
               "kana": "しゅくだい",
               "hanviet": "Túc Đề",
               "meaning": {
-                "vi": "",
+                "vi": "Bài tập về nhà",
                 "en": "Homework"
               },
               "onkun": "On--On"
@@ -3712,7 +3712,7 @@
               "kana": "たべほうだい",
               "hanviet": "Thực Phóng Đề",
               "meaning": {
-                "vi": "",
+                "vi": "Ăn thỏa thích, buffet",
                 "en": "All-you-can-eat"
               },
               "onkun": "Kun--On--On"
@@ -3725,7 +3725,7 @@
           "kana": null,
           "hanviet": "Tốc",
           "meaning": {
-            "vi": "",
+            "vi": "Nhanh chóng, tốc độ",
             "en": "Fast, speed"
           },
           "onkun": "Kun",
@@ -3744,7 +3744,7 @@
               "kana": "はやい",
               "hanviet": "Tốc",
               "meaning": {
-                "vi": "",
+                "vi": "Nhanh",
                 "en": "Fast"
               },
               "onkun": "Kun"
@@ -3757,7 +3757,7 @@
           "kana": null,
           "hanviet": "Thông",
           "meaning": {
-            "vi": "",
+            "vi": "Đi qua, thông hiểu",
             "en": "Pass through, understand"
           },
           "onkun": "Kun",
@@ -3781,7 +3781,7 @@
               "kana": "かよいます",
               "hanviet": "Thông",
               "meaning": {
-                "vi": "",
+                "vi": "Đi lại [đến một địa điểm nào đó thường xuyên]",
                 "en": "To commute, attend regularly"
               },
               "onkun": "Kun"
@@ -3791,7 +3791,7 @@
               "kana": "こうつう",
               "hanviet": "Giao Thông",
               "meaning": {
-                "vi": "",
+                "vi": "Giao thông",
                 "en": "Traffic, transportation"
               },
               "onkun": "On--On"
@@ -3804,7 +3804,7 @@
           "kana": null,
           "hanviet": "Chu",
           "meaning": {
-            "vi": "",
+            "vi": "Tuần lễ",
             "en": "Week"
           },
           "onkun": "On",
@@ -3818,7 +3818,7 @@
               "kana": "せんしゅう",
               "hanviet": "Tiên Chu",
               "meaning": {
-                "vi": "",
+                "vi": "Tuần trước",
                 "en": "Last week"
               },
               "onkun": "On--On"
@@ -3828,7 +3828,7 @@
               "kana": "こんしゅう",
               "hanviet": "Kim Chu",
               "meaning": {
-                "vi": "",
+                "vi": "Tuần này",
                 "en": "This week"
               },
               "onkun": "On--On"
@@ -3838,7 +3838,7 @@
               "kana": "しゅうまつ",
               "hanviet": "Chu Mạt",
               "meaning": {
-                "vi": "",
+                "vi": "Cuối tuần",
                 "en": "Weekend"
               },
               "onkun": "On--On"
@@ -3848,7 +3848,7 @@
               "kana": "らいしゅう",
               "hanviet": "Lai Chu",
               "meaning": {
-                "vi": "",
+                "vi": "Tuần sau",
                 "en": "Next week"
               },
               "onkun": "On--On"
@@ -3858,7 +3858,7 @@
               "kana": "さらいしゅう",
               "hanviet": "Tái Lai Chu",
               "meaning": {
-                "vi": "",
+                "vi": "Tuần sau nữa",
                 "en": "The week after next"
               },
               "onkun": "On--On--On"
@@ -3878,7 +3878,7 @@
           "kana": null,
           "hanviet": "Phu",
           "meaning": {
-            "vi": "",
+            "vi": "Chồng",
             "en": "Husband"
           },
           "onkun": "Kun",
@@ -3897,7 +3897,7 @@
               "kana": "おっと",
               "hanviet": "Phu",
               "meaning": {
-                "vi": "",
+                "vi": "Chồng [mình]",
                 "en": "Husband (own)"
               },
               "onkun": "Kun"
@@ -3907,7 +3907,7 @@
               "kana": "だいじょうぶ",
               "hanviet": "Đại Trượng Phu",
               "meaning": {
-                "vi": "",
+                "vi": "Ổn, không sao",
                 "en": "Okay, fine, no problem"
               },
               "onkun": "On--On--On"
@@ -3920,7 +3920,7 @@
           "kana": null,
           "hanviet": "Thiết",
           "meaning": {
-            "vi": "",
+            "vi": "Sắt, đường sắt",
             "en": "Iron"
           },
           "onkun": "On",
@@ -3936,7 +3936,7 @@
               "kana": "ちかてつ",
               "hanviet": "Địa Hạ Thiết",
               "meaning": {
-                "vi": "",
+                "vi": "Tàu điện ngầm",
                 "en": "Subway"
               },
               "onkun": "On--On--On"
@@ -3949,7 +3949,7 @@
           "kana": null,
           "hanviet": "Muội",
           "meaning": {
-            "vi": "",
+            "vi": "Em gái",
             "en": "Younger sister"
           },
           "onkun": "Kun",
@@ -3965,7 +3965,7 @@
               "kana": "いもうと",
               "hanviet": "Muội",
               "meaning": {
-                "vi": "",
+                "vi": "Em gái",
                 "en": "Younger sister (own)"
               },
               "onkun": "Kun"
@@ -3975,7 +3975,7 @@
               "kana": "いもうとさん",
               "hanviet": "Muội",
               "meaning": {
-                "vi": "",
+                "vi": "Em gái [người khác]",
                 "en": "Younger sister (someone else's)"
               },
               "onkun": "Kun"
@@ -3985,7 +3985,7 @@
               "kana": "しまい",
               "hanviet": "Tỷ Muội",
               "meaning": {
-                "vi": "",
+                "vi": "Chị em gái",
                 "en": "Sisters"
               },
               "onkun": "On--On"
@@ -3998,7 +3998,7 @@
           "kana": null,
           "hanviet": "Tỷ",
           "meaning": {
-            "vi": "",
+            "vi": "Chị gái",
             "en": "Older sister"
           },
           "onkun": "Kun",
@@ -4015,7 +4015,7 @@
               "kana": "あね",
               "hanviet": "Tỷ",
               "meaning": {
-                "vi": "",
+                "vi": "Chị gái",
                 "en": "Older sister (own)"
               },
               "onkun": "Kun"
@@ -4025,7 +4025,7 @@
               "kana": "おねえさん",
               "hanviet": "Tỷ",
               "meaning": {
-                "vi": "",
+                "vi": "Chị gái [người khác]",
                 "en": "Older sister (someone else's)"
               },
               "onkun": "Kun"
@@ -4035,7 +4035,7 @@
               "kana": "しまい",
               "hanviet": "Tỷ Muội",
               "meaning": {
-                "vi": "",
+                "vi": "Chị em gái",
                 "en": "Sisters"
               },
               "onkun": "On--On"
@@ -4048,7 +4048,7 @@
           "kana": null,
           "hanviet": "Thê",
           "meaning": {
-            "vi": "",
+            "vi": "Vợ",
             "en": "Wife"
           },
           "onkun": "Kun",
@@ -4064,7 +4064,7 @@
               "kana": "つま",
               "hanviet": "Thê",
               "meaning": {
-                "vi": "",
+                "vi": "Vợ [mình]",
                 "en": "Wife (own)"
               },
               "onkun": "Kun"
@@ -4077,7 +4077,7 @@
           "kana": null,
           "hanviet": "Thiên",
           "meaning": {
-            "vi": "",
+            "vi": "Trời, thiên nhiên",
             "en": "Sky, heaven"
           },
           "onkun": "On",
@@ -4095,7 +4095,7 @@
               "kana": "てんき",
               "hanviet": "Thiên Khí",
               "meaning": {
-                "vi": "",
+                "vi": "Thời tiết",
                 "en": "Weather"
               },
               "onkun": "On--On"
@@ -4105,7 +4105,7 @@
               "kana": "てんきよほう",
               "hanviet": "Thiên Khí Dự Báo",
               "meaning": {
-                "vi": "",
+                "vi": "Dự báo thời tiết",
                 "en": "Weather forecast"
               },
               "onkun": "On--On--On--On"
@@ -4118,7 +4118,7 @@
           "kana": null,
           "hanviet": "Tống",
           "meaning": {
-            "vi": "",
+            "vi": "Gửi đi, đưa tiễn",
             "en": "Send"
           },
           "onkun": "Kun",
@@ -4134,7 +4134,7 @@
               "kana": "おくります",
               "hanviet": "Tống",
               "meaning": {
-                "vi": "",
+                "vi": "Gửi, tiễn [người]",
                 "en": "To send; to see (someone) off"
               },
               "onkun": "Kun"
@@ -4147,7 +4147,7 @@
           "kana": null,
           "hanviet": "Đệ",
           "meaning": {
-            "vi": "",
+            "vi": "Em trai",
             "en": "Younger brother"
           },
           "onkun": "Kun",
@@ -4165,7 +4165,7 @@
               "kana": "おとうと",
               "hanviet": "Đệ",
               "meaning": {
-                "vi": "",
+                "vi": "Em trai",
                 "en": "Younger brother (own)"
               },
               "onkun": "Kun"
@@ -4175,7 +4175,7 @@
               "kana": "おとうとさん",
               "hanviet": "Đệ",
               "meaning": {
-                "vi": "",
+                "vi": "Em trai [người khác]",
                 "en": "Younger brother (someone else's)"
               },
               "onkun": "Kun"
@@ -4185,7 +4185,7 @@
               "kana": "きょうだい",
               "hanviet": "Huynh Đệ",
               "meaning": {
-                "vi": "",
+                "vi": "Anh chị em",
                 "en": "Siblings"
               },
               "onkun": "On--On"
@@ -4198,7 +4198,7 @@
           "kana": null,
           "hanviet": "Dẫn",
           "meaning": {
-            "vi": "",
+            "vi": "Kéo, rút",
             "en": "Pull"
           },
           "onkun": "Kun",
@@ -4215,7 +4215,7 @@
               "kana": "ひきます",
               "hanviet": "Dẫn",
               "meaning": {
-                "vi": "",
+                "vi": "Kéo",
                 "en": "To pull"
               },
               "onkun": "Kun"
@@ -4225,7 +4225,7 @@
               "kana": "ひきだし",
               "hanviet": "Dẫn Xuất",
               "meaning": {
-                "vi": "",
+                "vi": "Ngăn kéo",
                 "en": "Drawer"
               },
               "onkun": "Kun--Kun"
@@ -4235,7 +4235,7 @@
               "kana": "ひきだします",
               "hanviet": "Dẫn Xuất",
               "meaning": {
-                "vi": "",
+                "vi": "Rút [tiền]",
                 "en": "To withdraw (money)"
               },
               "onkun": "Kun--Kun"
@@ -4245,7 +4245,7 @@
               "kana": "ひっこします",
               "hanviet": "Dẫn Việt",
               "meaning": {
-                "vi": "",
+                "vi": "Chuyển nhà",
                 "en": "To move (house)"
               },
               "onkun": "Kun--Kun"
@@ -4258,7 +4258,7 @@
           "kana": null,
           "hanviet": "Nhược",
           "meaning": {
-            "vi": "",
+            "vi": "Yếu",
             "en": "Weak"
           },
           "onkun": "Kun",
@@ -4277,7 +4277,7 @@
               "kana": "よわい",
               "hanviet": "Nhược",
               "meaning": {
-                "vi": "",
+                "vi": "Yếu",
                 "en": "Weak"
               },
               "onkun": "Kun"
@@ -4290,7 +4290,7 @@
           "kana": null,
           "hanviet": "Khảo",
           "meaning": {
-            "vi": "",
+            "vi": "Suy nghĩ, khảo sát",
             "en": "Think, consider"
           },
           "onkun": "Kun",
@@ -4307,7 +4307,7 @@
               "kana": "かんがえます",
               "hanviet": "Khảo",
               "meaning": {
-                "vi": "",
+                "vi": "Suy nghĩ",
                 "en": "To think, consider"
               },
               "onkun": "Kun"
@@ -4320,7 +4320,7 @@
           "kana": null,
           "hanviet": "Giả",
           "meaning": {
-            "vi": "",
+            "vi": "Người",
             "en": "Person"
           },
           "onkun": "On",
@@ -4336,7 +4336,7 @@
               "kana": "いしゃ",
               "hanviet": "Y Giả",
               "meaning": {
-                "vi": "",
+                "vi": "Bác sĩ",
                 "en": "Doctor"
               },
               "onkun": "On--On"
@@ -4346,7 +4346,7 @@
               "kana": "けんきゅうしゃ",
               "hanviet": "Nghiên Cứu Giả",
               "meaning": {
-                "vi": "",
+                "vi": "Nhà nghiên cứu",
                 "en": "Researcher"
               },
               "onkun": "On--On--On"
@@ -4356,7 +4356,7 @@
               "kana": "はいしゃ",
               "hanviet": "Xỉ Y Giả",
               "meaning": {
-                "vi": "",
+                "vi": "Nha sĩ",
                 "en": "Dentist"
               },
               "onkun": "Kun--On--On"
@@ -4369,7 +4369,7 @@
           "kana": null,
           "hanviet": "Đô",
           "meaning": {
-            "vi": "",
+            "vi": "Thủ đô, đô thị",
             "en": "Capital, metropolis"
           },
           "onkun": "On",
@@ -4386,7 +4386,7 @@
               "kana": "つごう",
               "hanviet": "Đô Hợp",
               "meaning": {
-                "vi": "",
+                "vi": "Sự thuận tiện, điều kiện",
                 "en": "Convenience, circumstances"
               },
               "onkun": "On--On"
@@ -4396,7 +4396,7 @@
               "kana": "とかい",
               "hanviet": "Đô Hội",
               "meaning": {
-                "vi": "",
+                "vi": "Thành phố, đô thị",
                 "en": "City, urban area"
               },
               "onkun": "On--On"
@@ -4409,7 +4409,7 @@
           "kana": null,
           "hanviet": "Thử",
           "meaning": {
-            "vi": "",
+            "vi": "Nóng (thời tiết)",
             "en": "Hot (weather)"
           },
           "onkun": "Kun",
@@ -4425,7 +4425,7 @@
               "kana": "あつい",
               "hanviet": "Thử",
               "meaning": {
-                "vi": "",
+                "vi": "Nóng [thời tiết]",
                 "en": "Hot (weather)"
               },
               "onkun": "Kun"
@@ -4445,7 +4445,7 @@
           "kana": null,
           "hanviet": "Khai",
           "meaning": {
-            "vi": "",
+            "vi": "Mở",
             "en": "Open"
           },
           "onkun": "Kun",
@@ -4466,7 +4466,7 @@
               "kana": "あきます",
               "hanviet": "Khai",
               "meaning": {
-                "vi": "",
+                "vi": "[Cái gì đó] mở",
                 "en": "(Something) opens"
               },
               "onkun": "Kun"
@@ -4476,7 +4476,7 @@
               "kana": "あけます",
               "hanviet": "Khai",
               "meaning": {
-                "vi": "",
+                "vi": "Mở [cái gì đó]",
                 "en": "To open (something)"
               },
               "onkun": "Kun"
@@ -4486,7 +4486,7 @@
               "kana": "かいし",
               "hanviet": "Khai Thủy",
               "meaning": {
-                "vi": "",
+                "vi": "Bắt đầu, khởi đầu",
                 "en": "Start, commencement"
               },
               "onkun": "On--On"
@@ -4496,7 +4496,7 @@
               "kana": "かいさい",
               "hanviet": "Khai Thôi",
               "meaning": {
-                "vi": "",
+                "vi": "Tổ chức, khai mạc",
                 "en": "Holding (an event)"
               },
               "onkun": "On--On"
@@ -4509,7 +4509,7 @@
           "kana": null,
           "hanviet": "Bế",
           "meaning": {
-            "vi": "",
+            "vi": "Đóng",
             "en": "Close"
           },
           "onkun": "Kun",
@@ -4529,7 +4529,7 @@
               "kana": "しまります",
               "hanviet": "Bế",
               "meaning": {
-                "vi": "",
+                "vi": "[Cái gì đó] đóng",
                 "en": "(Something) closes"
               },
               "onkun": "Kun"
@@ -4539,7 +4539,7 @@
               "kana": "しめます",
               "hanviet": "Bế",
               "meaning": {
-                "vi": "",
+                "vi": "Đóng [cái gì đó]",
                 "en": "To close (something)"
               },
               "onkun": "Kun"
@@ -4549,7 +4549,7 @@
               "kana": "とじます",
               "hanviet": "Bế",
               "meaning": {
-                "vi": "",
+                "vi": "Đóng, nhắm [mắt]",
                 "en": "To close, shut (eyes, book)"
               },
               "onkun": "Kun"
@@ -4562,7 +4562,7 @@
           "kana": null,
           "hanviet": "Vấn",
           "meaning": {
-            "vi": "",
+            "vi": "Hỏi, câu hỏi",
             "en": "Ask, question"
           },
           "onkun": "On",
@@ -4580,7 +4580,7 @@
               "kana": "もんだい",
               "hanviet": "Vấn Đề",
               "meaning": {
-                "vi": "",
+                "vi": "Vấn đề, câu hỏi",
                 "en": "Problem, question"
               },
               "onkun": "On--On"
@@ -4590,7 +4590,7 @@
               "kana": "しつもん",
               "hanviet": "Chất Vấn",
               "meaning": {
-                "vi": "",
+                "vi": "Câu hỏi, thắc mắc",
                 "en": "Question"
               },
               "onkun": "On--On"
@@ -4600,7 +4600,7 @@
               "kana": "ぎもん",
               "hanviet": "Nghi Vấn",
               "meaning": {
-                "vi": "",
+                "vi": "Nghi vấn",
                 "en": "Doubt, question"
               },
               "onkun": "On--On"
@@ -4613,7 +4613,7 @@
           "kana": null,
           "hanviet": "Chất",
           "meaning": {
-            "vi": "",
+            "vi": "Chất lượng, bản chất, hỏi",
             "en": "Quality, nature"
           },
           "onkun": "On",
@@ -4634,7 +4634,7 @@
               "kana": "しつもん",
               "hanviet": "Chất Vấn",
               "meaning": {
-                "vi": "",
+                "vi": "Câu hỏi, thắc mắc",
                 "en": "Question"
               },
               "onkun": "On--On"
@@ -4647,7 +4647,7 @@
           "kana": null,
           "hanviet": "Thải",
           "meaning": {
-            "vi": "",
+            "vi": "Cho vay, cho mượn",
             "en": "Lend"
           },
           "onkun": "Kun",
@@ -4665,7 +4665,7 @@
               "kana": "かします",
               "hanviet": "Thải",
               "meaning": {
-                "vi": "",
+                "vi": "Cho vay, cho mượn",
                 "en": "To lend"
               },
               "onkun": "Kun"
@@ -4678,7 +4678,7 @@
           "kana": null,
           "hanviet": "Viên",
           "meaning": {
-            "vi": "",
+            "vi": "Thành viên, nhân viên",
             "en": "Member, staff"
           },
           "onkun": "On",
@@ -4692,7 +4692,7 @@
               "kana": "しゃいん",
               "hanviet": "Xã Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Nhân viên công ty",
                 "en": "Company employee"
               },
               "onkun": "On--On"
@@ -4702,7 +4702,7 @@
               "kana": "てんいん",
               "hanviet": "Điếm Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Nhân viên cửa hàng",
                 "en": "Store clerk"
               },
               "onkun": "On--On"
@@ -4712,7 +4712,7 @@
               "kana": "えきいん",
               "hanviet": "Dịch Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Nhân viên nhà ga",
                 "en": "Station staff"
               },
               "onkun": "On--On"
@@ -4722,7 +4722,7 @@
               "kana": "かいしゃいん",
               "hanviet": "Hội Xã Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Nhân viên công ty",
                 "en": "Company employee"
               },
               "onkun": "On--On--On"
@@ -4732,7 +4732,7 @@
               "kana": "ぜんいん",
               "hanviet": "Toàn Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Tất cả mọi người",
                 "en": "Everyone, all members"
               },
               "onkun": "On--On"
@@ -4745,7 +4745,7 @@
           "kana": null,
           "hanviet": "Điếm",
           "meaning": {
-            "vi": "",
+            "vi": "Cửa hàng, tiệm",
             "en": "Shop"
           },
           "onkun": "Kun",
@@ -4762,7 +4762,7 @@
               "kana": "みせ",
               "hanviet": "Điếm",
               "meaning": {
-                "vi": "",
+                "vi": "Cửa hàng, tiệm",
                 "en": "Shop, store"
               },
               "onkun": "Kun"
@@ -4772,7 +4772,7 @@
               "kana": "てんいん",
               "hanviet": "Điếm Viên",
               "meaning": {
-                "vi": "",
+                "vi": "Nhân viên cửa hàng",
                 "en": "Store clerk"
               },
               "onkun": "On--On"
@@ -4782,7 +4782,7 @@
               "kana": "てんちょう",
               "hanviet": "Điếm Trường",
               "meaning": {
-                "vi": "",
+                "vi": "Quản lý / trưởng cửa hàng",
                 "en": "Store manager"
               },
               "onkun": "On--On"
@@ -4792,7 +4792,7 @@
               "kana": "きっさてん",
               "hanviet": "Khiết Trà Điếm",
               "meaning": {
-                "vi": "",
+                "vi": "Quán cà phê, quán giải khát",
                 "en": "Coffee shop, cafe"
               },
               "onkun": "On--On--On"
@@ -4805,7 +4805,7 @@
           "kana": null,
           "hanviet": "Độ",
           "meaning": {
-            "vi": "",
+            "vi": "Mức độ, lần, nhiệt độ",
             "en": "Degree, time(s)"
           },
           "onkun": "On",
@@ -4824,7 +4824,7 @@
               "kana": "こんど",
               "hanviet": "Kim Độ",
               "meaning": {
-                "vi": "",
+                "vi": "Lần tới",
                 "en": "Next time"
               },
               "onkun": "On--On"
@@ -4834,7 +4834,7 @@
               "kana": "おんど",
               "hanviet": "Ôn Độ",
               "meaning": {
-                "vi": "",
+                "vi": "Nhiệt độ",
                 "en": "Temperature"
               },
               "onkun": "On--On"
@@ -4844,7 +4844,7 @@
               "kana": "したく",
               "hanviet": "Chi Độ",
               "meaning": {
-                "vi": "",
+                "vi": "Chuẩn bị, sửa soạn",
                 "en": "Preparation"
               },
               "onkun": "On--On"
@@ -4854,7 +4854,7 @@
               "kana": "なんどでも",
               "hanviet": "Hà Độ",
               "meaning": {
-                "vi": "",
+                "vi": "Nhiều lần, bao lần",
                 "en": "As many times as you like"
               },
               "onkun": "Kun--On"
@@ -4867,7 +4867,7 @@
           "kana": null,
           "hanviet": "Hắc",
           "meaning": {
-            "vi": "",
+            "vi": "Màu đen",
             "en": "Black"
           },
           "onkun": "Kun",
@@ -4885,7 +4885,7 @@
               "kana": "くろ",
               "hanviet": "Hắc",
               "meaning": {
-                "vi": "",
+                "vi": "Màu đen",
                 "en": "Black (noun)"
               },
               "onkun": "Kun"
@@ -4895,7 +4895,7 @@
               "kana": "くろい",
               "hanviet": "Hắc",
               "meaning": {
-                "vi": "",
+                "vi": "Đen",
                 "en": "Black (adjective)"
               },
               "onkun": "Kun"
@@ -4905,7 +4905,7 @@
               "kana": "まっくろ",
               "hanviet": "Chân Hắc",
               "meaning": {
-                "vi": "",
+                "vi": "Đen thui, đen sì",
                 "en": "Pitch black"
               },
               "onkun": "Kun--Kun"
@@ -4915,7 +4915,7 @@
               "kana": "こくばん",
               "hanviet": "Hắc Bản",
               "meaning": {
-                "vi": "",
+                "vi": "Bảng đen",
                 "en": "Blackboard"
               },
               "onkun": "On--On"
@@ -4928,7 +4928,7 @@
           "kana": null,
           "hanviet": "Điểm",
           "meaning": {
-            "vi": "",
+            "vi": "Điểm số, dấu chấm",
             "en": "Point, mark"
           },
           "onkun": "On",
@@ -4950,7 +4950,7 @@
               "kana": "てん",
               "hanviet": "Điểm",
               "meaning": {
-                "vi": "",
+                "vi": "Điểm",
                 "en": "Point"
               },
               "onkun": "On"
@@ -4960,7 +4960,7 @@
               "kana": "てんすう",
               "hanviet": "Điểm Số",
               "meaning": {
-                "vi": "",
+                "vi": "Điểm số",
                 "en": "Score, points"
               },
               "onkun": "On--On"
@@ -4970,7 +4970,7 @@
               "kana": "こうさてん",
               "hanviet": "Giao Sai Điểm",
               "meaning": {
-                "vi": "",
+                "vi": "Ngã tư, điểm giao nhau",
                 "en": "Intersection"
               },
               "onkun": "On--On--On"
@@ -4983,7 +4983,7 @@
           "kana": null,
           "hanviet": "Nhiên",
           "meaning": {
-            "vi": "",
+            "vi": "Tự nhiên, cố nhiên",
             "en": "Naturally, so"
           },
           "onkun": "On",
@@ -5003,7 +5003,7 @@
               "kana": "ぜんぜん",
               "hanviet": "Toàn Nhiên",
               "meaning": {
-                "vi": "",
+                "vi": "Hoàn toàn",
                 "en": "Not at all / entirely"
               },
               "onkun": "On--On"
@@ -5013,7 +5013,7 @@
               "kana": "しぜん",
               "hanviet": "Tự Nhiên",
               "meaning": {
-                "vi": "",
+                "vi": "Tự nhiên",
                 "en": "Nature"
               },
               "onkun": "On--On"

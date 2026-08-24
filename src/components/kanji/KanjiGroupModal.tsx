@@ -59,15 +59,15 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
           aria-modal="true"
           aria-label={t('kanjiDrawer.ariaLabel', { char: group.anchor })}
           onClick={e => e.stopPropagation()}
-          className="pointer-events-auto w-full max-w-3xl max-h-[85vh] overflow-y-auto border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] bg-paper"
+          className="pointer-events-auto w-full max-w-3xl max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper"
         >
           {/* List navigation */}
-          <div className="flex items-center gap-3 p-3 border-b-3 border-ink bg-surface">
+          <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">
             <button
               onClick={() => onIndexChange(index - 1)}
               disabled={!hasPrev}
               title={t('kanji.prevGroup')}
-              className="w-8 h-8 border-2 border-ink font-black flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ‹
             </button>
@@ -78,7 +78,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
               onClick={() => onIndexChange(index + 1)}
               disabled={!hasNext}
               title={t('kanji.nextGroup')}
-              className="w-8 h-8 border-2 border-ink font-black flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ›
             </button>
@@ -86,21 +86,21 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
 
           {/* Header: anchor + Hán Việt + On/Kun */}
           <div
-            className="border-b-3 border-ink p-6"
+            className="border-b-3 border-structural p-4 sm:p-6"
             style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
           >
             <div className="flex items-start justify-between gap-4">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <button
                   onClick={() => onAnchorClick(group.anchor)}
                   title={t('kanji.viewStrokeAnim')}
-                  className="appearance-none bg-transparent border-0 p-0 m-0 text-7xl font-black jp leading-none shrink-0 cursor-pointer transition-transform hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-ink/40 rounded-sm"
+                  className="appearance-none bg-transparent border-0 p-0 m-0 text-[clamp(2.5rem,12vw,4.5rem)] font-black jp leading-none shrink-0 cursor-pointer transition-transform hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-ink/40 rounded-sm"
                 >
                   {group.anchor}
                 </button>
                 <div className="pt-2">
                   {group.hanviet && (
-                    <span className="text-sm font-black px-2 py-1 border-2 border-ink rounded-[var(--radius-sm)] bg-surface inline-block">
+                    <span className="text-sm font-black px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] bg-surface inline-block">
                       {group.hanviet}
                     </span>
                   )}
@@ -147,7 +147,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
           </div>
 
           {/* Vocabulary list */}
-          <div className="p-6">
+          <div className="p-4 sm:p-6">
             <div className="text-xs font-black uppercase tracking-wider text-muted mb-3">
               {t('kanji.relatedWords')}
             </div>
@@ -155,7 +155,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
               {group.words.map((w, i) => (
                 <div
                   key={i}
-                  className="border-2 border-ink/15 p-3 flex flex-col gap-1 transition-shadow hover:border-ink hover:shadow-[3px_3px_0px_var(--color-ink)]"
+                  className="border-2 border-ink/15 p-3 flex flex-col gap-1 transition-shadow hover:border-structural hover:shadow-[var(--shadow-brutal)]"
                 >
                   <div className="flex items-start justify-between gap-2">
                     <span className="jp font-bold text-lg leading-snug">

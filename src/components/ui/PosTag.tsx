@@ -23,7 +23,7 @@ export function PosTag({ pos, verbGroup }: PosTagProps) {
   const textColor = pos === 'noun' ? 'var(--color-ink)' : 'var(--color-paper)'
   return (
     <span
-      className="font-mono inline-block text-xs font-bold uppercase tracking-widest px-2 py-0.5 border-2 border-ink rounded-[var(--radius-sm)]"
+      className="font-mono inline-block text-xs font-bold uppercase tracking-widest px-2 py-0.5 border-2 border-structural rounded-[var(--radius-sm)]"
       style={{ backgroundColor: bg, color: textColor }}
     >
       {label}

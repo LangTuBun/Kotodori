@@ -38,7 +38,7 @@ export function VerbForms() {
   )
 
   return (
-    <div className="h-screen overflow-y-auto">
+    <div className="h-full overflow-y-auto">
       <div className="relative max-w-5xl mx-auto p-6 overflow-hidden">
         <Watermark char="動" />
         {/* Header */}
@@ -52,15 +52,15 @@ export function VerbForms() {
         {/* Group overview */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           {data.groups.map(g => (
-            <div key={g.id} className="border-3 border-ink bg-paper shadow-[4px_4px_0px_var(--color-ink)] overflow-hidden">
-              <div className="p-3 border-b-3 border-ink flex items-center gap-2" style={{ backgroundColor: groupAccent(g.id) }}>
-                <span className="font-black text-sm">{g.name}</span>
+            <div key={g.id} className="border-3 border-structural bg-paper shadow-[var(--shadow-brutal)] overflow-hidden">
+              <div className="p-3 border-b-3 border-structural flex items-center gap-2" style={{ backgroundColor: groupAccent(g.id) }}>
+                <span className="font-black text-sm">{localize(g.name)}</span>
               </div>
               <div className="p-3">
-                <p className="text-xs text-muted mb-2">{g.note}</p>
+                <p className="text-xs text-muted mb-2">{localize(g.note)}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {g.sample.map((s, i) => (
-                    <span key={i} className="text-xs font-bold border-2 border-ink rounded-[var(--radius-sm)] px-1.5 py-0.5" title={s.vi}>
+                    <span key={i} className="text-xs font-bold border-2 border-structural rounded-[var(--radius-sm)] px-1.5 py-0.5" title={localize(s.meaning)}>
                       <Ruby text={s.masu} html={s.masuRuby} />
                     </span>
                   ))}
@@ -71,17 +71,17 @@ export function VerbForms() {
         </div>
 
         {/* Form tab navigator */}
-        <div className="flex gap-2 flex-wrap mb-6 border-b-3 border-ink pb-4">
+        <div className="flex gap-2 flex-wrap mb-6 border-b-3 border-structural pb-4">
           {data.forms.map(f => (
             <button
               key={f.id}
               onClick={() => setActiveForm(f.id)}
-              className={`px-3 py-2 border-3 border-ink font-black text-xs uppercase tracking-wider cursor-pointer transition-all ${
-                activeForm === f.id ? 'bg-ink text-paper' : 'bg-paper hover:shadow-[3px_3px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5'
+              className={`px-3 py-2 border-3 font-black text-xs uppercase tracking-wider cursor-pointer transition-all ${
+                activeForm === f.id ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5'
               }`}
             >
               <div className="text-sm"><Ruby text={f.titleJa} html={f.titleJaRuby} /></div>
-              <div className="opacity-70 text-[10px]">{f.title}</div>
+              <div className="opacity-70 text-[10px]">{localize(f.title)}</div>
             </button>
           ))}
         </div>
@@ -91,28 +91,31 @@ export function VerbForms() {
           <div className="mb-4">
             <div className="flex items-baseline gap-3">
               <span className="text-2xl font-black"><Ruby text={form.titleJa} html={form.titleJaRuby} /></span>
-              <span className="text-lg font-black">{form.title}</span>
+              <span className="text-lg font-black">{localize(form.title)}</span>
             </div>
-            <p className="text-sm text-muted mt-1">{form.meaning}</p>
+            <p className="text-sm text-muted mt-1">{localize(form.meaning)}</p>
           </div>
 
           {/* Rules per group */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-5">
-            {form.rules.map((r, i) => (
-              <div key={i} className="border-3 border-ink bg-paper p-3" style={{ borderLeftWidth: '6px', borderLeftColor: groupAccent(r.group) }}>
-                <div className="text-[10px] font-black uppercase tracking-wider text-muted mb-1">{groupLabel(r.group)}</div>
-                <div className="font-bold text-sm"><Ruby text={r.rule} html={r.ruleRuby} /></div>
-                {r.note && <div className="text-xs text-muted mt-1"><Ruby text={r.note} html={r.noteRuby} /></div>}
-              </div>
-            ))}
+            {form.rules.map((r, i) => {
+              const note = localize(r.note)
+              return (
+                <div key={i} className="border-3 border-structural bg-paper p-3" style={{ borderLeftWidth: '6px', borderLeftColor: groupAccent(r.group) }}>
+                  <div className="text-[10px] font-black uppercase tracking-wider text-muted mb-1">{groupLabel(r.group)}</div>
+                  <div className="font-bold text-sm"><Ruby text={localize(r.rule)} html={localize(r.ruleRuby)} /></div>
+                  {note && <div className="text-xs text-muted mt-1"><Ruby text={note} html={localize(r.noteRuby)} /></div>}
+                </div>
+              )
+            })}
           </div>
 
           {/* Group 1 special endings table (て/た forms) */}
           {form.group1Endings && (
-            <div className="border-3 border-ink bg-paper mb-5 overflow-x-auto">
+            <div className="border-3 border-structural bg-paper mb-5 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b-3 border-ink bg-surface">
+                  <tr className="border-b-3 border-structural bg-surface">
                     <th className="text-left p-2 font-black text-xs uppercase">{t('verbForms.masuEnding')}</th>
                     <th className="text-left p-2 font-black text-xs uppercase">→</th>
                     <th className="text-left p-2 font-black text-xs uppercase">{t('common.examples')}</th>
@@ -135,7 +138,7 @@ export function VerbForms() {
           {form.examples.length > 0 && (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-5">
               {form.examples.map((ex, i) => (
-                <div key={i} className="border-2 border-ink rounded-[var(--radius-sm)] p-2 bg-paper" style={{ borderLeftWidth: '4px', borderLeftColor: groupAccent(ex.group) }}>
+                <div key={i} className="border-2 border-structural rounded-[var(--radius-sm)] p-2 bg-paper" style={{ borderLeftWidth: '4px', borderLeftColor: groupAccent(ex.group) }}>
                   <div className="text-xs text-muted"><Ruby text={ex.masu} html={ex.masuRuby} /></div>
                   <div className="font-black text-sm">→ <Ruby text={ex.result} html={ex.resultRuby} /></div>
                   {ex.resultNeg && (
@@ -150,12 +153,12 @@ export function VerbForms() {
 
           {/* Sentence examples */}
           {form.sentenceExamples.length > 0 && (
-            <div className="border-3 border-ink bg-yellow/20 p-4 mb-5">
+            <div className="border-3 border-structural bg-yellow/20 p-4 mb-5">
               <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.sentenceExamples')}</div>
               {form.sentenceExamples.map((s, i) => (
                 <div key={i} className="mb-3 last:mb-0">
                   <div className="font-bold"><Ruby text={s.ja} html={s.jaRuby} /></div>
-                  <div className="text-sm text-muted">{s.vi}</div>
+                  <div className="text-sm text-muted">{localize(s.meaning)}</div>
                 </div>
               ))}
             </div>
@@ -167,7 +170,7 @@ export function VerbForms() {
               <div className="text-xs font-black uppercase tracking-wider mb-2 text-red">{t('verbForms.exceptions')}</div>
               {form.exceptions.map((e, i) => (
                 <div key={i} className="text-sm font-bold">
-                  <Ruby text={e} html={form.exceptionsRuby?.[i]} />
+                  <Ruby text={localize(e)} html={localize(form.exceptionsRuby?.[i])} />
                 </div>
               ))}
             </div>
@@ -182,7 +185,7 @@ export function VerbForms() {
                   <button
                     key={g.id}
                     onClick={() => navigate(`/grammar?point=${g.id}`)}
-                    className="group shrink-0 w-56 text-left border-3 border-ink bg-paper p-3 cursor-pointer transition-all hover:shadow-[4px_4px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+                    className="group shrink-0 w-56 text-left border-3 border-structural bg-paper p-3 cursor-pointer transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
                     style={{ borderLeftWidth: '6px', borderLeftColor: 'var(--color-blue)' }}
                   >
                     <div className="flex items-start justify-between gap-2">
@@ -211,12 +214,12 @@ export function VerbForms() {
             <span className="text-sm font-black text-muted w-4 text-center">{showCheatSheet ? '−' : '+'}</span>
           </button>
           {showCheatSheet && (
-            <div className="border-3 border-ink bg-paper overflow-x-auto shadow-[4px_4px_0px_var(--color-ink)]">
+            <div className="border-3 border-structural bg-paper overflow-x-auto shadow-[var(--shadow-brutal)]">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-3 border-ink bg-ink text-paper">
                     {data.cheatSheet.headers.map((h, i) => (
-                      <th key={i} className="text-left p-3 font-black text-xs uppercase tracking-wider">{h}</th>
+                      <th key={i} className="text-left p-3 font-black text-xs uppercase tracking-wider">{localize(h)}</th>
                     ))}
                   </tr>
                 </thead>
@@ -225,7 +228,7 @@ export function VerbForms() {
                     <tr key={i} className="border-b border-ink/20 last:border-0 hover:bg-surface">
                       {row.map((cell, j) => (
                         <td key={j} className={`p-3 ${j === 0 ? 'font-black' : 'font-bold'}`}>
-                          <Ruby text={cell} html={data.cheatSheet.rowsRuby?.[i]?.[j]} />
+                          <Ruby text={localize(cell)} html={localize(data.cheatSheet.rowsRuby?.[i]?.[j])} />
                         </td>
                       ))}
                     </tr>
@@ -237,12 +240,12 @@ export function VerbForms() {
         </div>
 
         {/* Key exceptions */}
-        <div className="border-3 border-ink bg-surface p-4 mb-6">
+        <div className="border-3 border-structural bg-surface p-4 mb-6">
           <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.keyExceptions')}</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {data.keyExceptions.map((e, i) => (
-              <div key={i} className="text-sm font-bold border-2 border-ink rounded-[var(--radius-sm)] bg-paper px-3 py-2">
-                <Ruby text={e} html={data.keyExceptionsRuby?.[i]} />
+              <div key={i} className="text-sm font-bold border-2 border-structural rounded-[var(--radius-sm)] bg-paper px-3 py-2">
+                <Ruby text={localize(e)} html={localize(data.keyExceptionsRuby?.[i])} />
               </div>
             ))}
           </div>

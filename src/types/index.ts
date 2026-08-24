@@ -50,22 +50,22 @@ export interface GrammarCategory {
 export interface VerbGroupSample {
   masu: string
   masuRuby?: string
-  vi: string
+  meaning: { vi: string; en: string }
 }
 
 export interface VerbGroup {
   id: number
-  name: string
-  note: string
+  name: { vi: string; en: string }
+  note: { vi: string; en: string }
   sample: VerbGroupSample[]
 }
 
 export interface VerbFormRule {
   group: number | string
-  rule: string
-  ruleRuby?: string
-  note: string
-  noteRuby?: string
+  rule: { vi: string; en: string }
+  ruleRuby?: { vi: string; en: string }
+  note: { vi: string; en: string }
+  noteRuby?: { vi: string; en: string }
 }
 
 export interface VerbFormExample {
@@ -90,29 +90,29 @@ export interface VerbGroup1Ending {
 export interface VerbFormSentenceExample {
   ja: string
   jaRuby?: string
-  vi: string
+  meaning: { vi: string; en: string }
 }
 
 export interface VerbForm {
   id: string
-  title: string
+  title: { vi: string; en: string }
   titleJa: string
   titleJaRuby?: string
-  meaning: string
+  meaning: { vi: string; en: string }
   rules: VerbFormRule[]
   group1Endings?: VerbGroup1Ending[]
   examples: VerbFormExample[]
   sentenceExamples: VerbFormSentenceExample[]
-  exceptions: string[]
-  exceptionsRuby?: string[]
+  exceptions: { vi: string; en: string }[]
+  exceptionsRuby?: { vi: string; en: string }[]
 }
 
 export interface VerbFormsData {
   groups: VerbGroup[]
   forms: VerbForm[]
-  cheatSheet: { headers: string[]; rows: string[][]; rowsRuby?: string[][] }
-  keyExceptions: string[]
-  keyExceptionsRuby?: string[]
+  cheatSheet: { headers: { vi: string; en: string }[]; rows: { vi: string; en: string }[][]; rowsRuby?: { vi: string; en: string }[][] }
+  keyExceptions: { vi: string; en: string }[]
+  keyExceptionsRuby?: { vi: string; en: string }[]
 }
 
 export interface HomophoneGroup {
@@ -176,8 +176,8 @@ export interface CounterRow {
   kanji: string
   kana: string
   romaji?: string
-  meaning?: string
-  note?: string
+  meaning?: { vi: string; en: string }
+  note?: { vi: string; en: string }
   isQuestion?: boolean
   isException?: boolean
 }
@@ -186,14 +186,14 @@ export type CounterColumn = 'number' | 'kanji' | 'kana' | 'romaji' | 'meaning' |
 
 export interface CounterCategory {
   id: string
-  title: string
-  shortTitle: string
+  title: { vi: string; en: string }
+  shortTitle: { vi: string; en: string }
   counter?: string
   counterKana?: string
-  usage?: string
+  usage?: { vi: string; en: string }
   columns: CounterColumn[]
   rows: CounterRow[]
-  footnote?: string
+  footnote?: { vi: string; en: string }
   wide?: boolean
 }
 
@@ -201,12 +201,12 @@ export interface CounterBigNumberExample {
   kanji: string
   kana: string
   romaji: string
-  meaning: string
+  meaning: { vi: string; en: string }
 }
 
 export interface CountersData {
-  title: string
-  intro: string
+  title: { vi: string; en: string }
+  intro: { vi: string; en: string }
   categories: CounterCategory[]
   bigNumberExamples: CounterBigNumberExample[]
 }
@@ -216,8 +216,12 @@ export type SRSState = 'new' | 'learning' | 'review' | 'mastered'
 export interface SRSCard {
   vocabId: string
   cardType: string
-  stability: number
-  difficulty: number
+  // Classic SM-2 (SuperMemo-2) fields -- see src/lib/srs.ts. Replaced this
+  // session's FSRS-inspired stability/difficulty fields at the user's
+  // request (personal project, explicitly OK with resetting all schedules).
+  interval: number
+  repetition: number
+  easeFactor: number
   lastReview: string | null
   nextReview: string | null
   reviewCount: number

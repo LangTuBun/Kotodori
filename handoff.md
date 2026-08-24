@@ -5,6 +5,192 @@
 
 ---
 
+## Session: Dark-theme border audit (most recent)
+
+The Chrome extension reconnected after the batch below was written, so the
+"no live browser verification" caveat that used to sit here no longer applies
+-- watermarks and the localization work were checked live in Gold and confirmed
+correct (see the "Final migration & polish batch" section right below).
+
+Separately, a border-token migration (`--tori-structural`/`border-structural`,
+replacing raw `border-ink` on structural card/container borders so they don't
+blaze full-opacity cream/white on dark papers) had **already been done** in the
+original Tori-rebrand session -- `index.css`'s tokens and `Card.tsx`/
+`Button.tsx`/`Sidebar.tsx`/`Dashboard.tsx`/`Grammar.tsx`/`Kanji.tsx`/
+`Review.tsx`/`VocabBrowser.tsx` already used it before this pass started. A
+second report (from what looked like a separate/duplicate session, pasted into
+chat) claimed to have just done that exact migration across those same 8
+files -- checked byte-for-byte against disk and `git status`, and none of it
+was new; the files matched what was already committed. Worth knowing that
+report wasn't describing real new work.
+
+What *was* real: even the "already migrated" files had gaps (Grammar.tsx's
+`STUDY TIPS` button and hover-preview shadow), and several pages were never
+touched by that original pass at all -- `VerbForms.tsx` (11 instances, entirely
+unmigrated), `Counters.tsx` (9, entirely unmigrated), `Homophones.tsx` (8),
+`KanjiGroupModal.tsx` (7), `InkCabinet.tsx` (6 of 8 -- the swatch-picker's own
+"selected" ring deliberately kept `border-ink`, see below), `LevelSwitcher.tsx`
++ `LanguageSwitcher.tsx` (rendered in the Sidebar header on every page),
+`PosTag.tsx` (rendered on nearly every word/vocab card app-wide), `Landing.tsx`
+footer, and more gaps in `Review.tsx`/`VocabBrowser.tsx` beyond what the first
+pass covered. Caught by loading Gold theme live and zooming into a cheat-sheet
+table on `/verb-forms` that had an obviously bright white border where every
+other border on the page was correctly muted -- then grepped the whole `src`
+tree for `border-ink[^/]` and `shadow-[...var(--color-ink)...]` and fixed every
+real hit, file by file, verified in the browser after.
+
+**Rule applied throughout**: `border-ink` (full ink, no opacity modifier) stays
+correct only when the surface is genuinely inverted (`bg-ink text-paper`) --
+active nav items, active filter chips, selected tab/mode buttons, the cheat-
+sheet's own header row. Everywhere else (plain `bg-paper`/`bg-surface`/accent-
+tinted structural cards) it became `border-structural`, and any
+`shadow-[Npx_Npx_0px_var(--color-ink)]` alongside it became `var(--shadow-brutal)`
+/ `var(--shadow-brutal-hover)`. Existing `border-ink/NN` (already-dimmed via a
+Tailwind opacity suffix, e.g. `border-ink/15`, `border-ink/20`) was left alone
+-- that's a pre-existing, working pattern for subtle dividers, not the "blazing
+neon strip" bug. One deliberate exception: `InkCabinet.tsx`'s paper-swatch
+"currently selected" ring stays full `border-ink` even though its background
+isn't inverted -- a selection indicator's job is to stand out regardless of
+theme (same reasoning as the app's `:focus-visible` outline always using the
+accent color), and dimming it to `border-structural` would make it barely
+distinguishable from the unselected `border-ink/20` swatches, actively making
+the picker harder to use.
+
+Also fixed in passing: `Kanji.tsx`'s chapter-label chip read `Ch.N5 1` (no
+space) instead of `Ch. N5 1` -- a hardcoded `Ch.{chapterLabel}` string, unrelated
+to this bug class, noticed while zoomed in on an unrelated screenshot.
+
+Files touched this pass: `VerbForms.tsx`, `Counters.tsx`, `Homophones.tsx`,
+`KanjiGroupModal.tsx`, `InkCabinet.tsx`, `LevelSwitcher.tsx`,
+`LanguageSwitcher.tsx`, `PosTag.tsx`, `Landing.tsx`, `Grammar.tsx`, `Review.tsx`,
+`VocabBrowser.tsx`, `Kanji.tsx` (label fix only). `npm run build` green
+throughout; `oxlint` shows only the same pre-existing warnings from before this
+pass. Live-verified in Gold across Dashboard, VocabBrowser, Review (setup +
+detail drawer), Grammar (list + category-title localization + detail drawer),
+Kanji (N5/N4/all + group modal + chapter-15 collision labels), VerbForms
+(cheat sheet + key exceptions), Counters, Homophones (list + challenge mode),
+and Settings (InkCabinet full mode). Not separately re-checked on the other 8
+themes -- Gold was the one flagged as broken, and the fix is a single shared
+CSS token, so the other 3 dark themes (Dusk/Ink/Indigo) should benefit
+identically, but that's inference, not a screenshot.
+
+---
+
+## Session: Final migration & polish batch
+
+Executed the "Tori App — Final Migration & Polish" plan. `npm run build` is green
+throughout.
+
+- **Font-mixing bug fixed**: `index.css`'s font strategy was inverted from
+  "Zen first, Be Vietnam Pro fallback" (per-glyph mixing whenever Vietnamese
+  and Japanese shared a line) to `--font-sans` (Be Vietnam Pro, handles VI
+  diacritics natively) as the default body font everywhere, with `--font-jp`
+  (Zen) reserved for `.jp`-tagged elements only. Swept every `.jp` call site
+  app-wide to confirm none wrap non-Japanese text; found and fixed one
+  (`Landing.tsx`'s English tagline had a stray `jp` class that was silently
+  winning over a `font-sans` override, because Tailwind v4 utilities live in
+  `@layer utilities` and unlayered custom CSS like `.jp` always beats layered
+  utilities regardless of source order).
+- **`GrammarCategory.title` + grammar `tips` localized**: was a plain
+  `string` (the one field in `grammar-categories.json` that never got the
+  `{vi,en}` treatment) -- broken in *both* directions, since N5's 14 titles/
+  4 tips were Vietnamese-only and N4's 10 titles/5 tips (authored this
+  session) were English-only. Schema-changed to `{vi,en}`, translated both
+  directions, updated all 4 render sites in `Grammar.tsx`.
+- **`verb-forms.json` + `Counters.tsx`/`counters.json` fully localized** to
+  `{vi,en}`: groups, forms, rules, sentence examples, exceptions, cheat
+  sheet, key exceptions (verb-forms) and title/intro/category
+  title-shortTitle-usage-footnote/row meaning-note/big-number examples
+  (counters). verb-forms.json was the harder of the two: most of its fields
+  render through `<Ruby text={x} html={xRuby}/>`, which renders `html`
+  verbatim via `dangerouslySetInnerHTML` and **ignores `text` entirely**
+  whenever `html` is set -- so translating only the plain field would have
+  had zero visible effect wherever a `*Ruby` sibling existed. Every such
+  sibling got its own EN translation too (`scripts/localize-verb-forms.mjs`),
+  with the embedded `<ruby>` tags (language-neutral Japanese conjugation
+  examples) left byte-identical between languages. `VerbGroupSample.vi` and
+  `VerbFormSentenceExample.vi` were renamed to `meaning: {vi,en}` (a field
+  literally named `vi` whose value became `{vi,en}` would have been
+  confusing). See `scripts/localize-counters.mjs` for the simpler,
+  non-Ruby-coupled counters.json pass.
+- **`hanviet-dictionary.json` backfilled** (16 new entries, 928→944):
+  9 N4 characters (嘘 咳 掛 叶 淹 甥 姪 叱 剥) + 7 remaining N5 gaps
+  (雀 檎 鹸 垣 丼 碗 瓜). **Deliberately did NOT add** 々 or 込 despite the
+  plan listing both -- both were already investigated and excluded on
+  purpose in an earlier session (々 is the iteration mark, not a real
+  character, and was once falsely resolved to "Thiểu"; 込 is kokuji with no
+  Chinese-origin reading to assign). Re-adding them would have reintroduced
+  an already-fixed bug. Readings sourced from `scripts/saroma-map.json`
+  where present (掛/垣/丼 confirmed that way) and hand-supplied from
+  Sino-Vietnamese phonetic-series knowledge otherwise -- 甥 ("Sanh") and 檎
+  ("Cầm") are flagged lower-confidence in the script's own comments.
+- **N4 kanji `meaning.vi` backfilled** (110 groups / 268 words, was `""`
+  throughout). Re-parsed `../../N4_Grammar_and_Kanji_Summary-Final.md`'s
+  original markdown table directly (`scripts/backfill-n4-kanji-vi.mjs`) --
+  110 rows in the source, matched 1:1 against `n4/kanji.json`'s 110 groups
+  by anchor character (all 110 anchors confirmed unique first), with each
+  word matched within its group by kanji+kana pair. Hard-fails on any
+  unmatched group/word or on clobbering an already-non-empty `meaning.vi`;
+  ran clean on the first attempt, all 110+268 matched.
+- **Watermarks added to the 4 two-pane pages** that skipped them last
+  session (`VocabBrowser` 語, `Grammar` 法, `Kanji` 字, `Review` 復) by
+  wrapping each page's left/main panel in `relative overflow-hidden` and
+  reusing the existing `Watermark` component. **Grammar deliberately uses 法
+  instead of the plan's suggested 文** -- `Grammar.tsx`'s empty-state right
+  panel (nothing selected) already shows a giant 文; using it again for the
+  toolbar watermark would double up whenever nothing's selected. 法 pairs
+  with the existing 文 to spell 文法 (bunpou, "grammar"). **Not visually
+  verified** -- see the top-of-section note.
+- **N4 kanji review mode enabled** in `Review.tsx` (previously hard-gated
+  `N5`-only). The real risk here, flagged before writing any code: N5's
+  chapter 15 ("N5 supplement") and N4's chapter 15 (Bai 15) both use the
+  identical `k15_g1..k15_gN` group-id scheme (8 real collisions, confirmed
+  by set-intersecting both files' group ids) -- Kanji.tsx already worked
+  around this at the UI layer with `${src}-${id}` keys, but kanji-mode SRS
+  review card ids (`${group.id}::w${wordIndex}`) would have inherited the
+  same collision the moment N4 became reachable. Fixed by tagging every
+  kanji chapter with its source level (`taggedKanjiChapters(level)`) and
+  keying review cards `${src}:${group.id}::w${wordIndex}`. **This changes
+  every existing kanji-mode card id** -- acceptable only because it landed
+  in the same batch as the SM-2 reset below (see there for why that's fine).
+  Removed the now-dead `kanjiModeAvailable`/N5-only gating UI.
+- **SRS algorithm swapped from FSRS-inspired to classic SM-2** (`srs.ts`,
+  `SRSCard` type, `vocab-store.ts`). The plan called this "switching back to
+  SM-2," but the app never had SM-2 -- `srs.ts` was FSRS-inspired
+  (stability/difficulty) from the start; flagged this to the user before
+  touching anything (`AskUserQuestion`) since persisted SRS cards use those
+  fields and a silent schema change would corrupt every card. User's answer:
+  personal project, fine to reset every schedule, wanted SM-2 specifically
+  because they're not familiar with FSRS ("more like the OG enjoyer").
+  Implemented straight SM-2 (`interval`/`repetition`/`easeFactor`,
+  2.5 starting ease, floor 1.3), with the app's 4-button AGAIN/HARD/GOOD/EASY
+  UI mapped onto SM-2's 0-5 quality scale as 0/3/4/5 (same mapping Anki's own
+  SM-2-derived scheduler uses) for the ease-factor formula specifically --
+  the interval-branching logic itself still keys off the raw 4-button rating
+  per the plan's literal spec. **Persist key renamed** `kotodori-vocab` ->
+  `tori-vocab` (not `tori-settings`-style migrated-forward) so old
+  stability/difficulty-shaped cards are cleanly abandoned rather than
+  silently merged into the new field shape -- this was the deliberate,
+  approved reset, not an accident. Sanity-tested the scheduler standalone
+  (Node, outside the app) before trusting it: intervals grow 1→6→15→38→95 on
+  repeated GOOD, an AGAIN mid-sequence correctly drops repetition to 0 and
+  the ease factor by exactly 0.8 (matches the SM-2 quality=0 formula by
+  hand), and recovery afterward behaves sanely.
+- **N5 vocabulary `meanings.en` (1031/1031) intentionally NOT translated**
+  this batch -- the plan said "verify and fill any missing meanings.en";
+  checking first (before writing anything) found N4's 759 already fully
+  filled (done in the prior session) but N5's genuinely 100% empty, not a
+  stale doc claim. Flagged to the user as a translation job bigger than
+  everything else in this plan combined; user chose to skip it for now and
+  do the rest of the plan. **Still open** -- see below.
+- **Not done / explicitly out of scope this batch**: "Paper Brutalism
+  polish across all tabs" (the plan's own vaguest item -- "match the
+  Dashboard" isn't independently checkable; left alone rather than guessing
+  at a redesign) and any further theme/typeface visual QA beyond what's
+  already documented lower in this file.
+
+---
+
 ## Session: Tori rebrand + Paper Brutalism + N4 grammar/kanji (this session)
 
 Executed `implementation_plan_2.md` (Kotodori → Tori rename + Paper Brutalism reskin

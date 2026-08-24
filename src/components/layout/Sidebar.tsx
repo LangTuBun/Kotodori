@@ -19,7 +19,13 @@ const nav = [
   { to: "/settings",   label: "設定",       kana: "せってい",        key: "settings" },
 ]
 
-export function Sidebar() {
+interface SidebarProps {
+  /** Mobile-drawer open state. Ignored at `lg`+ where the sidebar is always visible. */
+  open: boolean
+  onClose: () => void
+}
+
+export function Sidebar({ open, onClose }: SidebarProps) {
   const { streak, getStats } = useVocabStore()
   // getStats()/getDueCards() read the current level internally
   // (vocab-store.ts's currentLevelVocab()), but that's a plain read, not a
@@ -35,17 +41,39 @@ export function Sidebar() {
 
   return (
     <aside
-      className="w-64 h-screen overflow-y-auto border-r-3 flex flex-col"
-      style={{ background: 'var(--tori-bg-sidebar)', borderColor: 'var(--tori-sb-border)' }}
+      className={[
+        "fixed lg:static inset-y-0 left-0 z-40 w-64 max-w-[85vw] h-dvh overflow-y-auto border-r-3 flex flex-col",
+        "transition-transform duration-300 ease-out lg:translate-x-0",
+        open ? "translate-x-0" : "-translate-x-full",
+      ].join(" ")}
+      style={{
+        background: 'var(--tori-bg-sidebar)',
+        borderColor: 'var(--tori-sb-border)',
+        // Landscape on a notched iPhone can put the notch/rounded corner
+        // over the drawer's left edge -- no-op in portrait (inset is 0).
+        paddingLeft: 'env(safe-area-inset-left)',
+      }}
     >
-      {/* Logo */}
-      <div className="border-b-3 border-structural p-6">
+      {/* Logo -- extra top padding on mobile covers the drawer sitting flush
+          against the top edge, under the iPhone notch/Dynamic Island. */}
+      <div
+        className="border-b-3 border-structural p-6"
+        style={{ paddingTop: "max(1.5rem, env(safe-area-inset-top))" }}
+      >
         <div className="flex items-start justify-between gap-2">
-          <Link to="/welcome" className="text-3xl font-display tracking-tighter hover:opacity-70 transition-opacity" title="About Tori">
+          <Link to="/welcome" className="text-3xl font-display tracking-tighter hover:opacity-70 transition-opacity" title="About Tori" onClick={onClose}>
             <Furigana kanji="鳥" kana="とり" />
           </Link>
-          <div className="flex flex-col items-end gap-1">
+          <div className="flex items-start gap-2">
             <LanguageSwitcher />
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Close menu"
+              className="lg:hidden w-7 h-7 border-2 border-structural flex items-center justify-center shrink-0 cursor-pointer font-mono text-sm leading-none"
+            >
+              ×
+            </button>
           </div>
         </div>
         <div className="flex items-center justify-between gap-2 mt-2">
@@ -82,6 +110,7 @@ export function Sidebar() {
             key={to}
             to={to}
             end={to === "/"}
+            onClick={onClose}
             className={({ isActive }) =>
               [
                 "nav-item flex items-center gap-3 px-4 py-2.5 border-3 transition-all duration-100",

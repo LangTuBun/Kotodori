@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport-fit=cover lets the CSS below read env(safe-area-inset-*) so
+         the mobile header/drawer sit clear of the iPhone notch/Dynamic
+         Island and side curves in landscape, instead of being tucked under
+         them. maximum-scale/user-scalable stay default (1.0, allowed) --
+         pinch-zoom is left enabled; only per-input auto-zoom is handled
+         separately (see index.css's 16px mobile input rule). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#efe7d8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- "Add to Home Screen" on iOS: standalone chrome, no browser UI. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tori" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <title>TORI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

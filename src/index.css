@@ -206,10 +206,33 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
   font-size: var(--text-base, 1rem);
+  /* iOS Safari's default long-press/tap feedback (grey flash + callout
+     menu) reads as broken on brutalist card-lift buttons that already have
+     their own hover/active treatment. */
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
 }
+
+/* ---------- iPhone / touch refinements ----------
+   Not decoration -- these fix real iOS Safari behaviors that don't show up
+   in a desktop browser at any window width, so they're easy to miss. */
+
+/* iOS Safari zooms the whole page in when a focused input's computed
+   font-size is under 16px. Every search/select control uses text-sm
+   (14px), which is fine as a design choice on desktop but triggers that
+   zoom on a phone -- so bump to 16px only below `sm`, where it matters. */
+@media (max-width: 639px) {
+  input, select, textarea { font-size: 16px; }
+}
+
+/* touch-action: manipulation drops the ~300ms tap delay and, more
+   importantly, stops double-tap-to-zoom from firing on rapid taps across
+   the review flashcard / rating buttons -- a real interaction, not a
+   performance nicety. */
+button, a, [role="button"] { touch-action: manipulation; }
 
 /* Ambient theme-tinted glow + paper grain, ported from Tori. Both sit at
    z-index 0 behind app content (Layout/Sidebar are already stacked above

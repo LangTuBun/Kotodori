@@ -130,7 +130,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
         role="dialog"
         aria-modal="true"
         aria-label={displayChar ? t('kanjiDrawer.ariaLabel', { char: displayChar }) : undefined}
-        className={`fixed top-0 right-0 z-50 h-screen w-full sm:w-[420px] border-l-3 shadow-[-6px_0px_0px_rgba(10,10,10,0.15)] transition-transform duration-300 ease-out overflow-y-auto ${
+        className={`fixed top-0 right-0 z-50 h-dvh w-full sm:w-[420px] border-l-3 shadow-[-6px_0px_0px_rgba(10,10,10,0.15)] transition-transform duration-300 ease-out overflow-y-auto ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         style={{ backgroundColor: "rgb(255,255,255)", color: DRAWER_INK, borderColor: DRAWER_INK }}

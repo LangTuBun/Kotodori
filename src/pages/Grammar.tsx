@@ -4,6 +4,7 @@ import verbFormsData from "@/data/n5/verb-forms.json"
 import { getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
 import type { GrammarPoint, VerbFormsData } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
+import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
 
@@ -91,9 +92,13 @@ export function Grammar() {
   const visibleCategories = categories.filter(c => byCategory.has(c.slug))
 
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-full overflow-hidden">
       {/* Main list */}
-      <div className="flex-1 flex flex-col overflow-hidden">
+      <div className="flex-1 flex flex-col overflow-hidden relative">
+        {/* Uses 法 rather than 文 here -- the empty-state right panel (below)
+            already shows a giant 文, and the two would visually double up
+            whenever nothing is selected. 文法 (bunpou) = "grammar" together. */}
+        <Watermark char="法" />
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 bg-surface flex-wrap items-center">
           <div role="group" aria-label="JLPT level" className="inline-flex border-2 border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
@@ -119,7 +124,7 @@ export function Grammar() {
           />
           <button
             onClick={() => setShowTips(s => !s)}
-            className={`px-3 py-2 border-3 border-ink font-bold text-xs uppercase tracking-wider cursor-pointer transition-all ${showTips ? 'bg-ink text-paper' : 'bg-paper hover:bg-yellow'}`}
+            className={`px-3 py-2 border-3 font-bold text-xs uppercase tracking-wider cursor-pointer transition-all ${showTips ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:bg-yellow'}`}
           >
             {t('grammar.tips')}
           </button>
@@ -160,7 +165,7 @@ export function Grammar() {
                 key={f.id}
                 onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
                 className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
-                title={f.title}
+                title={localize(f.title)}
               >
                 {f.titleJa}
               </button>
@@ -231,9 +236,10 @@ export function Grammar() {
         </div>
       </div>
 
-      {/* Detail drawer */}
+      {/* Detail drawer -- full-screen overlay below `lg` (there's no room for
+          a second pane at phone/tablet widths), a fixed side panel at `lg`+ */}
       {selected ? (
-        <div className="w-96 flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-structural">
+        <div className="fixed inset-0 z-40 lg:static lg:z-auto lg:w-96 lg:flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-structural">
           <div className="p-6 border-b-3 border-structural">
             <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
             <div className="flex items-center gap-2 mb-2">
@@ -312,10 +318,12 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
         </div>
       </button>
 
-      {/* Hover preview */}
+      {/* Hover preview -- sticky-hover on tap reads as broken on touch, and
+          the same content is already one tap away in the detail drawer, so
+          this only shows at `lg`+ where a real mouse hover is available. */}
       {ex && (
-        <div className="pointer-events-none absolute left-0 right-0 top-full mt-1.5 z-30 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150">
-          <div className="bg-ink text-paper border-3 border-ink shadow-[4px_4px_0px_var(--color-ink)] p-3">
+        <div className="hidden lg:block pointer-events-none absolute left-0 right-0 top-full mt-1.5 z-30 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150">
+          <div className="bg-ink text-paper border-3 border-ink shadow-[var(--shadow-brutal)] p-3">
             <div className="font-bold text-sm leading-snug">
               <Ruby text={ex.ja} html={ex.jaRuby} />
             </div>

@@ -73,7 +73,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
         )}
       </div>
 
-      <div role="group" aria-label="Structural theme" className="inline-flex border-2 border-ink overflow-hidden w-fit">
+      <div role="group" aria-label="Structural theme" className="inline-flex border-2 border-structural overflow-hidden w-fit">
         {STRUCTURAL.map((s, i) => (
           <button
             key={s.id}
@@ -82,7 +82,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
             onClick={() => setTheme(s.id)}
             className={[
               "px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors",
-              i > 0 ? "border-l-2 border-ink" : "",
+              i > 0 ? "border-l-2 border-structural" : "",
               theme === s.id ? "bg-ink text-paper" : "bg-paper hover:bg-surface",
             ].join(" ")}
           >
@@ -97,7 +97,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
             <p className="font-mono text-xs font-bold uppercase tracking-widest text-muted mb-3">
               <span className="jp mr-2 text-sm normal-case">密度</span>Density
             </p>
-            <div className="inline-flex border-2 border-ink overflow-hidden">
+            <div className="inline-flex border-2 border-structural overflow-hidden">
               {DENSITIES.map((d, i) => (
                 <button
                   key={d.id}
@@ -105,7 +105,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
                   onClick={() => setDensity(d.id)}
                   className={[
                     "px-4 py-2 font-mono text-xs font-bold uppercase tracking-wider cursor-pointer transition-colors",
-                    i > 0 ? "border-l-2 border-ink" : "",
+                    i > 0 ? "border-l-2 border-structural" : "",
                     density === d.id ? "bg-ink text-paper" : "bg-paper hover:bg-surface",
                   ].join(" ")}
                 >
@@ -124,11 +124,11 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
             <button
               type="button"
               onClick={() => setTypeSans(!typeSans)}
-              className="card-lift flex items-center gap-4 border-2 border-ink bg-paper px-5 py-4 w-full text-left cursor-pointer"
+              className="card-lift flex items-center gap-4 border-2 border-structural bg-paper px-5 py-4 w-full text-left cursor-pointer"
             >
-              <span className={`relative w-11 h-6 border-2 border-ink shrink-0 ${typeSans ? "bg-accent" : "bg-surface"}`}>
+              <span className={`relative w-11 h-6 border-2 border-structural shrink-0 ${typeSans ? "bg-accent" : "bg-surface"}`}>
                 <span
-                  className={`absolute top-0.5 size-4 bg-paper border border-ink transition-[left] duration-200 ${
+                  className={`absolute top-0.5 size-4 bg-paper border border-structural transition-[left] duration-200 ${
                     typeSans ? "left-[22px]" : "left-0.5"
                   }`}
                 />

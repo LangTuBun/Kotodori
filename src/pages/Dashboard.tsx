@@ -23,11 +23,11 @@ export function Dashboard() {
   const grammarCount = getGrammar(level).length
 
   return (
-    <div className="relative p-8 max-w-5xl overflow-hidden">
+    <div className="relative p-4 sm:p-8 max-w-5xl overflow-hidden">
       <Watermark char="今" />
       {/* Header */}
       <Reveal index={0} className="relative border-b-3 border-structural pb-8 mb-8">
-        <h1 className="text-6xl font-black tracking-tighter leading-none">
+        <h1 className="text-4xl sm:text-6xl font-black tracking-tighter leading-none">
           <Ruby text="今日も" html={HEADING_LINE1_RUBY} /><br />
           <Ruby text="頑張ろう" html={HEADING_LINE2_RUBY} />
         </h1>
@@ -36,8 +36,10 @@ export function Dashboard() {
         </p>
       </Reveal>
 
-      {/* Top stats row */}
-      <Reveal index={1} className="grid grid-cols-4 gap-0 mb-8 border-3 border-structural shadow-[var(--shadow-brutal)] overflow-hidden">
+      {/* Top stats row -- 2 cols on phones (else long labels like
+          "REVIEWED" overflow their cell and get clipped by overflow-hidden
+          below), 4 cols from `sm` up. */}
+      <Reveal index={1} className="grid grid-cols-2 sm:grid-cols-4 gap-0 mb-8 border-3 border-structural shadow-[var(--shadow-brutal)] overflow-hidden">
         {[
           { label: t('dashboard.streakLabel'), value: streak, suffix: t('dashboard.streakSuffix'), bg: "var(--color-yellow)", text: "var(--color-ink)" },
           { label: t('dashboard.totalWordsLabel'), value: stats.total, suffix: "", bg: "var(--color-ink)", text: "var(--color-paper)" },
@@ -46,17 +48,22 @@ export function Dashboard() {
         ].map(({ label, value, suffix, bg, text }, i) => (
           <div
             key={label}
-            className={`p-6 ${i < 3 ? 'border-r-3 border-structural' : ''}`}
+            className={[
+              "p-4 sm:p-6 border-structural",
+              (i === 0 || i === 2) ? "border-r-3" : "",
+              i === 1 ? "sm:border-r-3" : "",
+              (i === 0 || i === 1) ? "border-b-3 sm:border-b-0" : "",
+            ].join(" ")}
             style={{ backgroundColor: bg, color: text }}
           >
-            <div className="font-display text-4xl">{value}{suffix}</div>
-            <div className="font-mono text-xs font-bold uppercase tracking-widest mt-1 opacity-70">{label}</div>
+            <div className="font-display text-3xl sm:text-4xl">{value}{suffix}</div>
+            <div className="font-mono text-xs font-bold uppercase tracking-widest mt-1 opacity-70 break-words">{label}</div>
           </div>
         ))}
       </Reveal>
 
       {/* Queue cards */}
-      <Reveal index={2} className="grid grid-cols-3 gap-6 mb-8">
+      <Reveal index={2} className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
         <Card accent={dueCount > 0 ? 'red' : null} className="p-6">
           <div className="font-display text-5xl mb-2">{dueCount}</div>
           <div className="font-mono text-xs font-bold uppercase tracking-widest text-muted mb-4">{t('dashboard.cardsDue')}</div>
@@ -104,16 +111,24 @@ export function Dashboard() {
       </Card></Reveal>
 
       {/* SRS breakdown */}
-      <Reveal index={4} className="grid grid-cols-4 gap-0 border-3 border-structural shadow-[var(--shadow-brutal)] overflow-hidden">
+      <Reveal index={4} className="grid grid-cols-2 sm:grid-cols-4 gap-0 border-3 border-structural shadow-[var(--shadow-brutal)] overflow-hidden">
         {[
           { label: t('common.stats.new'), count: stats.new, color: "var(--color-muted)" },
           { label: t('common.stats.learning'), count: stats.learning, color: "var(--color-blue)" },
           { label: t('common.stats.review'), count: stats.review, color: "var(--color-yellow)" },
           { label: t('common.stats.mastered'), count: stats.mastered, color: "var(--color-green)" },
         ].map(({ label, count, color }, i) => (
-          <div key={label} className={`p-5 text-center ${i < 3 ? 'border-r-3 border-structural' : ''}`}>
+          <div
+            key={label}
+            className={[
+              "p-4 sm:p-5 text-center border-structural",
+              (i === 0 || i === 2) ? "border-r-3" : "",
+              i === 1 ? "sm:border-r-3" : "",
+              (i === 0 || i === 1) ? "border-b-3 sm:border-b-0" : "",
+            ].join(" ")}
+          >
             <div className="font-display text-3xl" style={{ color }}>{count}</div>
-            <div className="font-mono text-xs uppercase font-bold tracking-wider text-muted mt-1">{label}</div>
+            <div className="font-mono text-xs uppercase font-bold tracking-wider text-muted mt-1 break-words">{label}</div>
           </div>
         ))}
       </Reveal>

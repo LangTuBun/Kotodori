@@ -2,112 +2,184 @@
   "groups": [
     {
       "id": 1,
-      "name": "Nhóm 1 (Godan)",
-      "note": "Kết thúc bằng ～います (mọi động từ ます không thuộc nhóm 2/3, kể cả một số động từ đuôi ～えます, ～びます hiếm gặp)",
+      "name": {
+        "vi": "Nhóm 1 (Godan)",
+        "en": "Group 1 (Godan)"
+      },
+      "note": {
+        "vi": "Kết thúc bằng ～います (mọi động từ ます không thuộc nhóm 2/3, kể cả một số động từ đuôi ～えます, ～びます hiếm gặp)",
+        "en": "Ends in ～います (every ます verb not in group 2/3, including a handful of rarer ～えます/～びます verbs)"
+      },
       "sample": [
         {
           "masu": "行きます",
-          "vi": "Đi",
-          "masuRuby": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます"
+          "masuRuby": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます",
+          "meaning": {
+            "vi": "Đi",
+            "en": "Go"
+          }
         },
         {
           "masu": "帰ります",
-          "vi": "Về",
-          "masuRuby": "<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります"
+          "masuRuby": "<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります",
+          "meaning": {
+            "vi": "Về",
+            "en": "Return"
+          }
         },
         {
           "masu": "読みます",
-          "vi": "Đọc",
-          "masuRuby": "<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます"
+          "masuRuby": "<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます",
+          "meaning": {
+            "vi": "Đọc",
+            "en": "Read"
+          }
         },
         {
           "masu": "書きます",
-          "vi": "Viết",
-          "masuRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きます"
+          "masuRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きます",
+          "meaning": {
+            "vi": "Viết",
+            "en": "Write"
+          }
         },
         {
           "masu": "買います",
-          "vi": "Mua",
-          "masuRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います"
+          "masuRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います",
+          "meaning": {
+            "vi": "Mua",
+            "en": "Buy"
+          }
         },
         {
           "masu": "話します",
-          "vi": "Nói",
-          "masuRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します"
+          "masuRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します",
+          "meaning": {
+            "vi": "Nói",
+            "en": "Speak"
+          }
         },
         {
           "masu": "持ちます",
-          "vi": "Cầm",
-          "masuRuby": "<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>ちます"
+          "masuRuby": "<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>ちます",
+          "meaning": {
+            "vi": "Cầm",
+            "en": "Hold"
+          }
         },
         {
           "masu": "飲みます",
-          "vi": "Uống",
-          "masuRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます"
+          "masuRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます",
+          "meaning": {
+            "vi": "Uống",
+            "en": "Drink"
+          }
         }
       ]
     },
     {
       "id": 2,
-      "name": "Nhóm 2 (Ichidan)",
-      "note": "Đa số kết thúc bằng ～えます, một số kết thúc bằng ～います",
+      "name": {
+        "vi": "Nhóm 2 (Ichidan)",
+        "en": "Group 2 (Ichidan)"
+      },
+      "note": {
+        "vi": "Đa số kết thúc bằng ～えます, một số kết thúc bằng ～います",
+        "en": "Mostly ends in ～えます, with some ～います verbs too"
+      },
       "sample": [
         {
           "masu": "食べます",
-          "vi": "Ăn",
-          "masuRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます"
+          "masuRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます",
+          "meaning": {
+            "vi": "Ăn",
+            "en": "Eat"
+          }
         },
         {
           "masu": "寝ます",
-          "vi": "Ngủ",
-          "masuRuby": "<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ます"
+          "masuRuby": "<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ます",
+          "meaning": {
+            "vi": "Ngủ",
+            "en": "Sleep"
+          }
         },
         {
           "masu": "起きます",
-          "vi": "Thức dậy",
-          "masuRuby": "<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きます"
+          "masuRuby": "<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きます",
+          "meaning": {
+            "vi": "Thức dậy",
+            "en": "Wake up"
+          }
         },
         {
           "masu": "見ます",
-          "vi": "Xem",
-          "masuRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます"
+          "masuRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます",
+          "meaning": {
+            "vi": "Xem",
+            "en": "Watch"
+          }
         },
         {
           "masu": "浴びます",
-          "vi": "Tắm",
-          "masuRuby": "<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びます"
+          "masuRuby": "<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びます",
+          "meaning": {
+            "vi": "Tắm",
+            "en": "Bathe"
+          }
         }
       ]
     },
     {
       "id": 3,
-      "name": "Nhóm 3 (Bất quy tắc)",
-      "note": "Chỉ gồm します/来ます và các động từ ghép N+します",
+      "name": {
+        "vi": "Nhóm 3 (Bất quy tắc)",
+        "en": "Group 3 (Irregular)"
+      },
+      "note": {
+        "vi": "Chỉ gồm します/来ます và các động từ ghép N+します",
+        "en": "Just します/来ます and N+します compound verbs"
+      },
       "sample": [
         {
           "masu": "します",
-          "vi": "Làm",
-          "masuRuby": "します"
+          "masuRuby": "します",
+          "meaning": {
+            "vi": "Làm",
+            "en": "Do"
+          }
         },
         {
           "masu": "来ます（きます）",
-          "vi": "Đến",
-          "masuRuby": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます（きます）"
+          "masuRuby": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます（きます）",
+          "meaning": {
+            "vi": "Đến",
+            "en": "Come"
+          }
         },
         {
           "masu": "勉強します",
-          "vi": "Học",
-          "masuRuby": "<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>します"
+          "masuRuby": "<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>します",
+          "meaning": {
+            "vi": "Học",
+            "en": "Study"
+          }
         },
         {
           "masu": "買い物します",
-          "vi": "Mua sắm",
-          "masuRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>い<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby>します"
+          "masuRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>い<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby>します",
+          "meaning": {
+            "vi": "Mua sắm",
+            "en": "Shop"
+          }
         },
         {
           "masu": "旅行します",
-          "vi": "Du lịch",
-          "masuRuby": "<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>します"
+          "masuRuby": "<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>します",
+          "meaning": {
+            "vi": "Du lịch",
+            "en": "Travel"
+          }
         }
       ]
     }
@@ -115,30 +187,72 @@
   "forms": [
     {
       "id": "dictionary",
-      "title": "Thể từ điển",
+      "title": {
+        "vi": "Thể từ điển",
+        "en": "Dictionary form"
+      },
       "titleJa": "辞書形",
-      "meaning": "Dạng gốc dùng trong từ điển, nói chuyện với bạn bè/người thân, và đứng trước rất nhiều mẫu ngữ pháp (きる, ことができる, まえに...).",
+      "meaning": {
+        "vi": "Dạng gốc dùng trong từ điển, nói chuyện với bạn bè/người thân, và đứng trước rất nhiều mẫu ngữ pháp (きる, ことができる, まえに...).",
+        "en": "The base form used in dictionaries, casual speech with friends/family, and in front of many grammar patterns (きる, ことができる, まえに...)."
+      },
       "rules": [
         {
           "group": 1,
-          "rule": "います → う",
-          "note": "",
-          "ruleRuby": "います → う",
-          "noteRuby": ""
+          "rule": {
+            "vi": "います → う",
+            "en": "います → う"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "います → う",
+            "en": "います → う"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 2,
-          "rule": "ます → る",
-          "note": "",
-          "ruleRuby": "ます → る",
-          "noteRuby": ""
+          "rule": {
+            "vi": "ます → る",
+            "en": "ます → る"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "ます → る",
+            "en": "ます → る"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 3,
-          "rule": "bất quy tắc",
-          "note": "します→する、来ます→来る",
-          "ruleRuby": "bất quy tắc",
-          "noteRuby": "します→する、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る"
+          "rule": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "note": {
+            "vi": "します→する、来ます→来る",
+            "en": "します→する、来ます→来る"
+          },
+          "ruleRuby": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "noteRuby": {
+            "vi": "します→する、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る",
+            "en": "します→する、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る"
+          }
         }
       ],
       "examples": [
@@ -234,30 +348,72 @@
     },
     {
       "id": "nai",
-      "title": "Thể phủ định",
+      "title": {
+        "vi": "Thể phủ định",
+        "en": "Negative form"
+      },
       "titleJa": "ない形",
-      "meaning": "Không...",
+      "meaning": {
+        "vi": "Không...",
+        "en": "Don't / doesn't..."
+      },
       "rules": [
         {
           "group": 1,
-          "rule": "います → あない",
-          "note": "riêng động từ đuôi ～います → ～わない (không phải ～あない)",
-          "ruleRuby": "います → あない",
-          "noteRuby": "riêng động từ đuôi ～います → ～わない (không phải ～あない)"
+          "rule": {
+            "vi": "います → あない",
+            "en": "います → あない"
+          },
+          "note": {
+            "vi": "riêng động từ đuôi ～います → ～わない (không phải ～あない)",
+            "en": "except for verbs ending in ～います → ～わない (not ～あない)"
+          },
+          "ruleRuby": {
+            "vi": "います → あない",
+            "en": "います → あない"
+          },
+          "noteRuby": {
+            "vi": "riêng động từ đuôi ～います → ～わない (không phải ～あない)",
+            "en": "except for verbs ending in ～います → ～わない (not ～あない)"
+          }
         },
         {
           "group": 2,
-          "rule": "ます → ない",
-          "note": "",
-          "ruleRuby": "ます → ない",
-          "noteRuby": ""
+          "rule": {
+            "vi": "ます → ない",
+            "en": "ます → ない"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "ます → ない",
+            "en": "ます → ない"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 3,
-          "rule": "bất quy tắc",
-          "note": "します→しない、来ます→来ない",
-          "ruleRuby": "bất quy tắc",
-          "noteRuby": "します→しない、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ない"
+          "rule": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "note": {
+            "vi": "します→しない、来ます→来ない",
+            "en": "します→しない、来ます→来ない"
+          },
+          "ruleRuby": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "noteRuby": {
+            "vi": "します→しない、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ない",
+            "en": "します→しない、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ない"
+          }
         }
       ],
       "examples": [
@@ -342,44 +498,95 @@
       "sentenceExamples": [
         {
           "ja": "今日は学校へ行かない。",
-          "vi": "Hôm nay tôi không đi học.",
-          "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かない。"
+          "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かない。",
+          "meaning": {
+            "vi": "Hôm nay tôi không đi học.",
+            "en": "I'm not going to school today."
+          }
         }
       ],
       "exceptions": [
-        "買います → 買わない（không phải 買あない）"
+        {
+          "vi": "買います → 買わない（không phải 買あない）",
+          "en": "買います → 買わない (not 買あない)"
+        }
       ],
       "titleJaRuby": "ない<ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>",
       "exceptionsRuby": [
-        "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います → <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わない（không phải <ruby>買<rp>(</rp><rt>がい</rt><rp>)</rp></ruby>あない）"
+        {
+          "vi": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います → <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わない（không phải <ruby>買<rp>(</rp><rt>がい</rt><rp>)</rp></ruby>あない）",
+          "en": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います → <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わない (not <ruby>買<rp>(</rp><rt>がい</rt><rp>)</rp></ruby>あない)"
+        }
       ]
     },
     {
       "id": "ta",
-      "title": "Thể quá khứ",
+      "title": {
+        "vi": "Thể quá khứ",
+        "en": "Past form"
+      },
       "titleJa": "た形",
-      "meaning": "Đã...",
+      "meaning": {
+        "vi": "Đã...",
+        "en": "Did..."
+      },
       "rules": [
         {
           "group": 1,
-          "rule": "quy tắc theo đuôi âm — xem bảng bên dưới",
-          "note": "giống hệt quy tắc thể て nhưng đổi て/で → た/だ",
-          "ruleRuby": "quy tắc theo đuôi âm — xem bảng bên dưới",
-          "noteRuby": "giống hệt quy tắc thể て nhưng đổi て/で → た/だ"
+          "rule": {
+            "vi": "quy tắc theo đuôi âm — xem bảng bên dưới",
+            "en": "sound-ending rule — see the table below"
+          },
+          "note": {
+            "vi": "giống hệt quy tắc thể て nhưng đổi て/で → た/だ",
+            "en": "identical to the て-form rule, just swap て/で → た/だ"
+          },
+          "ruleRuby": {
+            "vi": "quy tắc theo đuôi âm — xem bảng bên dưới",
+            "en": "sound-ending rule — see the table below"
+          },
+          "noteRuby": {
+            "vi": "giống hệt quy tắc thể て nhưng đổi て/で → た/だ",
+            "en": "identical to the て-form rule, just swap て/で → た/だ"
+          }
         },
         {
           "group": 2,
-          "rule": "ます → た",
-          "note": "",
-          "ruleRuby": "ます → た",
-          "noteRuby": ""
+          "rule": {
+            "vi": "ます → た",
+            "en": "ます → た"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "ます → た",
+            "en": "ます → た"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 3,
-          "rule": "bất quy tắc",
-          "note": "します→した、来ます→来た",
-          "ruleRuby": "bất quy tắc",
-          "noteRuby": "します→した、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>た"
+          "rule": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "note": {
+            "vi": "します→した、来ます→来た",
+            "en": "します→した、来ます→来た"
+          },
+          "ruleRuby": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "noteRuby": {
+            "vi": "します→した、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>た",
+            "en": "します→した、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>た"
+          }
         }
       ],
       "group1Endings": [
@@ -457,44 +664,95 @@
       "sentenceExamples": [
         {
           "ja": "昨日映画を見た。",
-          "vi": "Hôm qua tôi đã xem phim.",
-          "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby><ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>た。"
+          "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby><ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>た。",
+          "meaning": {
+            "vi": "Hôm qua tôi đã xem phim.",
+            "en": "I watched a movie yesterday."
+          }
         }
       ],
       "exceptions": [
-        "行きます → 行った（không theo quy tắc きます→いた）"
+        {
+          "vi": "行きます → 行った（không theo quy tắc きます→いた）",
+          "en": "行きます → 行った (doesn't follow the きます→いた rule)"
+        }
       ],
       "titleJaRuby": "た<ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>",
       "exceptionsRuby": [
-        "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>った（không theo quy tắc きます→いた）"
+        {
+          "vi": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>った（không theo quy tắc きます→いた）",
+          "en": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>った (doesn't follow the きます→いた rule)"
+        }
       ]
     },
     {
       "id": "te",
-      "title": "Thể て",
+      "title": {
+        "vi": "Thể て",
+        "en": "Te form"
+      },
       "titleJa": "て形",
-      "meaning": "Và... / Hãy.../ Đang.../ Xin phép... / Liên kết nhiều hành động",
+      "meaning": {
+        "vi": "Và... / Hãy.../ Đang.../ Xin phép... / Liên kết nhiều hành động",
+        "en": "And... / Please.../ -ing.../ May I.../ Linking multiple actions"
+      },
       "rules": [
         {
           "group": 1,
-          "rule": "quy tắc theo đuôi âm — xem bảng bên dưới",
-          "note": "",
-          "ruleRuby": "quy tắc theo đuôi âm — xem bảng bên dưới",
-          "noteRuby": ""
+          "rule": {
+            "vi": "quy tắc theo đuôi âm — xem bảng bên dưới",
+            "en": "sound-ending rule — see the table below"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "quy tắc theo đuôi âm — xem bảng bên dưới",
+            "en": "sound-ending rule — see the table below"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 2,
-          "rule": "ます → て",
-          "note": "",
-          "ruleRuby": "ます → て",
-          "noteRuby": ""
+          "rule": {
+            "vi": "ます → て",
+            "en": "ます → て"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "ます → て",
+            "en": "ます → て"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 3,
-          "rule": "bất quy tắc",
-          "note": "します→して、来ます→来て",
-          "ruleRuby": "bất quy tắc",
-          "noteRuby": "します→して、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>て"
+          "rule": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "note": {
+            "vi": "します→して、来ます→来て",
+            "en": "します→して、来ます→来て"
+          },
+          "ruleRuby": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "noteRuby": {
+            "vi": "します→して、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>て",
+            "en": "します→して、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>て"
+          }
         }
       ],
       "group1Endings": [
@@ -586,54 +844,111 @@
       "sentenceExamples": [
         {
           "ja": "朝起きて、ご飯を食べて、学校へ行きます。",
-          "vi": "Sáng thức dậy, ăn sáng rồi đi học.",
-          "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べて、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
+          "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べて、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+          "meaning": {
+            "vi": "Sáng thức dậy, ăn sáng rồi đi học.",
+            "en": "I wake up, eat breakfast, then go to school."
+          }
         },
         {
           "ja": "本を読んで寝ます。",
-          "vi": "Đọc sách rồi đi ngủ.",
-          "jaRuby": "<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んで<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ます。"
+          "jaRuby": "<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>んで<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ます。",
+          "meaning": {
+            "vi": "Đọc sách rồi đi ngủ.",
+            "en": "I read a book, then go to sleep."
+          }
         },
         {
           "ja": "先生、もう一度言ってください。",
-          "vi": "Thầy/Cô vui lòng nói lại một lần nữa.",
-          "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>、もう<ruby>一度<rp>(</rp><rt>いちど</rt><rp>)</rp></ruby><ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ってください。"
+          "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>、もう<ruby>一度<rp>(</rp><rt>いちど</rt><rp>)</rp></ruby><ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ってください。",
+          "meaning": {
+            "vi": "Thầy/Cô vui lòng nói lại một lần nữa.",
+            "en": "Teacher, please say that once more."
+          }
         }
       ],
       "exceptions": [
-        "行きます → 行って（không phải 行いて）"
+        {
+          "vi": "行きます → 行って（không phải 行いて）",
+          "en": "行きます → 行って (not 行いて)"
+        }
       ],
       "titleJaRuby": "て<ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>",
       "exceptionsRuby": [
-        "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>って（không phải <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>いて）"
+        {
+          "vi": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>って（không phải <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>いて）",
+          "en": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>って (not <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>いて)"
+        }
       ]
     },
     {
       "id": "potential",
-      "title": "Thể khả năng",
+      "title": {
+        "vi": "Thể khả năng",
+        "en": "Potential form"
+      },
       "titleJa": "可能形",
-      "meaning": "Có thể làm...",
+      "meaning": {
+        "vi": "Có thể làm...",
+        "en": "Can do..."
+      },
       "rules": [
         {
           "group": 1,
-          "rule": "います → えます",
-          "note": "",
-          "ruleRuby": "います → えます",
-          "noteRuby": ""
+          "rule": {
+            "vi": "います → えます",
+            "en": "います → えます"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "います → えます",
+            "en": "います → えます"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 2,
-          "rule": "ます → られます",
-          "note": "",
-          "ruleRuby": "ます → られます",
-          "noteRuby": ""
+          "rule": {
+            "vi": "ます → られます",
+            "en": "ます → られます"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "ます → られます",
+            "en": "ます → られます"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 3,
-          "rule": "bất quy tắc",
-          "note": "します→できます、来ます→来られます",
-          "ruleRuby": "bất quy tắc",
-          "noteRuby": "します→できます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます"
+          "rule": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "note": {
+            "vi": "します→できます、来ます→来られます",
+            "en": "します→できます、来ます→来られます"
+          },
+          "ruleRuby": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "noteRuby": {
+            "vi": "します→できます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます",
+            "en": "します→できます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます"
+          }
         }
       ],
       "examples": [
@@ -725,35 +1040,65 @@
       "sentenceExamples": [
         {
           "ja": "私は日本語が話せます。",
-          "vi": "Tôi có thể nói tiếng Nhật.",
-          "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>せます。"
+          "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>せます。",
+          "meaning": {
+            "vi": "Tôi có thể nói tiếng Nhật.",
+            "en": "I can speak Japanese."
+          }
         },
         {
           "ja": "今日は映画が見られます。",
-          "vi": "Hôm nay tôi có thể xem phim.",
-          "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>が<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>られます。"
+          "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>が<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>られます。",
+          "meaning": {
+            "vi": "Hôm nay tôi có thể xem phim.",
+            "en": "I can watch a movie today."
+          }
         }
       ],
       "exceptions": [
-        "します → できます（không phải する dạng khả năng thông thường）"
+        {
+          "vi": "します → できます（không phải する dạng khả năng thông thường）",
+          "en": "します → できます (not する's ordinary potential form)"
+        }
       ],
       "titleJaRuby": "<ruby>可能<rp>(</rp><rt>かのう</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>",
       "exceptionsRuby": [
-        "します → できます（không phải する dạng khả năng thông thường）"
+        {
+          "vi": "します → できます（không phải する dạng khả năng thông thường）",
+          "en": "します → できます (not する's ordinary potential form)"
+        }
       ]
     },
     {
       "id": "potential-past",
-      "title": "Thể khả năng quá khứ",
+      "title": {
+        "vi": "Thể khả năng quá khứ",
+        "en": "Past potential form"
+      },
       "titleJa": "可能形の過去",
-      "meaning": "Đã có thể / đã không thể làm...",
+      "meaning": {
+        "vi": "Đã có thể / đã không thể làm...",
+        "en": "Was / wasn't able to do..."
+      },
       "rules": [
         {
           "group": "all",
-          "rule": "V(khả năng)ます → V(khả năng)た形／なかった",
-          "note": "chia thể khả năng thành nhóm 2 rồi áp quy tắc た/ない như bình thường",
-          "ruleRuby": "V(khả năng)ます → V(khả năng)た<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>／なかった",
-          "noteRuby": "chia thể khả năng thành nhóm 2 rồi áp quy tắc た/ない như bình thường"
+          "rule": {
+            "vi": "V(khả năng)ます → V(khả năng)た形／なかった",
+            "en": "V(potential)ます → V(potential)た form／なかった"
+          },
+          "note": {
+            "vi": "chia thể khả năng thành nhóm 2 rồi áp quy tắc た/ない như bình thường",
+            "en": "conjugate the potential form as a group-2 verb, then apply the normal た/ない rule"
+          },
+          "ruleRuby": {
+            "vi": "V(khả năng)ます → V(khả năng)た<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>／なかった",
+            "en": "V(potential)ます → V(potential)た<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>／なかった"
+          },
+          "noteRuby": {
+            "vi": "chia thể khả năng thành nhóm 2 rồi áp quy tắc た/ない như bình thường",
+            "en": "conjugate the potential form as a group-2 verb, then apply the normal た/ない rule"
+          }
         }
       ],
       "examples": [
@@ -788,8 +1133,11 @@
       "sentenceExamples": [
         {
           "ja": "昨日寝られなかった。",
-          "vi": "Hôm qua tôi không ngủ được.",
-          "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby><ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>られなかった。"
+          "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby><ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>られなかった。",
+          "meaning": {
+            "vi": "Hôm qua tôi không ngủ được.",
+            "en": "I wasn't able to sleep last night."
+          }
         }
       ],
       "exceptions": [],
@@ -798,30 +1146,72 @@
     },
     {
       "id": "volitional",
-      "title": "Thể ý chí",
+      "title": {
+        "vi": "Thể ý chí",
+        "en": "Volitional form"
+      },
       "titleJa": "意向形",
-      "meaning": "Hãy... / Cùng... / Tôi sẽ...",
+      "meaning": {
+        "vi": "Hãy... / Cùng... / Tôi sẽ...",
+        "en": "Let's... / Shall we... / I will..."
+      },
       "rules": [
         {
           "group": 1,
-          "rule": "います → おう",
-          "note": "",
-          "ruleRuby": "います → おう",
-          "noteRuby": ""
+          "rule": {
+            "vi": "います → おう",
+            "en": "います → おう"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "います → おう",
+            "en": "います → おう"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 2,
-          "rule": "ます → よう",
-          "note": "",
-          "ruleRuby": "ます → よう",
-          "noteRuby": ""
+          "rule": {
+            "vi": "ます → よう",
+            "en": "ます → よう"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "ます → よう",
+            "en": "ます → よう"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 3,
-          "rule": "bất quy tắc",
-          "note": "します→しよう、来ます→来よう",
-          "ruleRuby": "bất quy tắc",
-          "noteRuby": "します→しよう、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>よう"
+          "rule": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "note": {
+            "vi": "します→しよう、来ます→来よう",
+            "en": "します→しよう、来ます→来よう"
+          },
+          "ruleRuby": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "noteRuby": {
+            "vi": "します→しよう、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>よう",
+            "en": "します→しよう、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>よう"
+          }
         }
       ],
       "examples": [
@@ -878,13 +1268,19 @@
       "sentenceExamples": [
         {
           "ja": "一緒に行こう。",
-          "vi": "Cùng đi nhé.",
-          "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>こう。"
+          "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>こう。",
+          "meaning": {
+            "vi": "Cùng đi nhé.",
+            "en": "Let's go together."
+          }
         },
         {
           "ja": "疲れたから休もう。",
-          "vi": "Mệt rồi, nghỉ thôi.",
-          "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れたから<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>もう。"
+          "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れたから<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>もう。",
+          "meaning": {
+            "vi": "Mệt rồi, nghỉ thôi.",
+            "en": "I'm tired, let's take a break."
+          }
         }
       ],
       "exceptions": [],
@@ -893,37 +1289,91 @@
     },
     {
       "id": "ba",
-      "title": "Thể điều kiện",
+      "title": {
+        "vi": "Thể điều kiện",
+        "en": "Conditional form"
+      },
       "titleJa": "ば形",
-      "meaning": "Nếu...",
+      "meaning": {
+        "vi": "Nếu...",
+        "en": "If..."
+      },
       "rules": [
         {
           "group": 1,
-          "rule": "います → えば",
-          "note": "",
-          "ruleRuby": "います → えば",
-          "noteRuby": ""
+          "rule": {
+            "vi": "います → えば",
+            "en": "います → えば"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "います → えば",
+            "en": "います → えば"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 2,
-          "rule": "ます → れば",
-          "note": "",
-          "ruleRuby": "ます → れば",
-          "noteRuby": ""
+          "rule": {
+            "vi": "ます → れば",
+            "en": "ます → れば"
+          },
+          "note": {
+            "vi": "",
+            "en": ""
+          },
+          "ruleRuby": {
+            "vi": "ます → れば",
+            "en": "ます → れば"
+          },
+          "noteRuby": {
+            "vi": "",
+            "en": ""
+          }
         },
         {
           "group": 3,
-          "rule": "bất quy tắc",
-          "note": "します→すれば、来ます→来れば",
-          "ruleRuby": "bất quy tắc",
-          "noteRuby": "します→すれば、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>れば"
+          "rule": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "note": {
+            "vi": "します→すれば、来ます→来れば",
+            "en": "します→すれば、来ます→来れば"
+          },
+          "ruleRuby": {
+            "vi": "bất quy tắc",
+            "en": "irregular"
+          },
+          "noteRuby": {
+            "vi": "します→すれば、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>れば",
+            "en": "します→すれば、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>れば"
+          }
         },
         {
           "group": "neg",
-          "rule": "ない → なければ",
-          "note": "行かない → 行かなければ",
-          "ruleRuby": "ない → なければ",
-          "noteRuby": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かない → <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなければ"
+          "rule": {
+            "vi": "ない → なければ",
+            "en": "ない → なければ"
+          },
+          "note": {
+            "vi": "行かない → 行かなければ",
+            "en": "行かない → 行かなければ"
+          },
+          "ruleRuby": {
+            "vi": "ない → なければ",
+            "en": "ない → なければ"
+          },
+          "noteRuby": {
+            "vi": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かない → <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなければ",
+            "en": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かない → <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなければ"
+          }
         }
       ],
       "examples": [
@@ -987,8 +1437,11 @@
       "sentenceExamples": [
         {
           "ja": "時間があれば行きます。",
-          "vi": "Nếu có thời gian thì tôi sẽ đi.",
-          "jaRuby": "<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>があれば<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
+          "jaRuby": "<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>があれば<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+          "meaning": {
+            "vi": "Nếu có thời gian thì tôi sẽ đi.",
+            "en": "I'll go if I have time."
+          }
         }
       ],
       "exceptions": [],
@@ -998,112 +1451,322 @@
   ],
   "cheatSheet": {
     "headers": [
-      "Thể",
-      "Nhóm 1",
-      "Nhóm 2",
-      "Nhóm 3"
+      {
+        "vi": "Thể",
+        "en": "Form"
+      },
+      {
+        "vi": "Nhóm 1",
+        "en": "Group 1"
+      },
+      {
+        "vi": "Nhóm 2",
+        "en": "Group 2"
+      },
+      {
+        "vi": "Nhóm 3",
+        "en": "Group 3"
+      }
     ],
     "rows": [
       [
-        "Dictionary (từ điển)",
-        "～う",
-        "～る",
-        "する・来る"
+        {
+          "vi": "Dictionary (từ điển)",
+          "en": "Dictionary"
+        },
+        {
+          "vi": "～う",
+          "en": "～う"
+        },
+        {
+          "vi": "～る",
+          "en": "～る"
+        },
+        {
+          "vi": "する・来る",
+          "en": "する・来る"
+        }
       ],
       [
-        "ない (phủ định)",
-        "～あない／わない",
-        "～ない",
-        "しない・来ない"
+        {
+          "vi": "ない (phủ định)",
+          "en": "ない (negative)"
+        },
+        {
+          "vi": "～あない／わない",
+          "en": "～あない／わない"
+        },
+        {
+          "vi": "～ない",
+          "en": "～ない"
+        },
+        {
+          "vi": "しない・来ない",
+          "en": "しない・来ない"
+        }
       ],
       [
-        "Potential (khả năng)",
-        "～える",
-        "～られる",
-        "できる・来られる"
+        {
+          "vi": "Potential (khả năng)",
+          "en": "Potential"
+        },
+        {
+          "vi": "～える",
+          "en": "～える"
+        },
+        {
+          "vi": "～られる",
+          "en": "～られる"
+        },
+        {
+          "vi": "できる・来られる",
+          "en": "できる・来られる"
+        }
       ],
       [
-        "た (quá khứ)",
-        "quy tắc đặc biệt (xem bảng て/た)",
-        "～た",
-        "した・来た"
+        {
+          "vi": "た (quá khứ)",
+          "en": "た (past)"
+        },
+        {
+          "vi": "quy tắc đặc biệt (xem bảng て/た)",
+          "en": "special rule (see て/た table)"
+        },
+        {
+          "vi": "～た",
+          "en": "～た"
+        },
+        {
+          "vi": "した・来た",
+          "en": "した・来た"
+        }
       ],
       [
-        "て (nối tiếp)",
-        "quy tắc đặc biệt (xem bảng て/た)",
-        "～て",
-        "して・来て"
+        {
+          "vi": "て (nối tiếp)",
+          "en": "て (connective)"
+        },
+        {
+          "vi": "quy tắc đặc biệt (xem bảng て/た)",
+          "en": "special rule (see て/た table)"
+        },
+        {
+          "vi": "～て",
+          "en": "～て"
+        },
+        {
+          "vi": "して・来て",
+          "en": "して・来て"
+        }
       ],
       [
-        "Volitional (ý chí)",
-        "～おう",
-        "～よう",
-        "しよう・来よう"
+        {
+          "vi": "Volitional (ý chí)",
+          "en": "Volitional"
+        },
+        {
+          "vi": "～おう",
+          "en": "～おう"
+        },
+        {
+          "vi": "～よう",
+          "en": "～よう"
+        },
+        {
+          "vi": "しよう・来よう",
+          "en": "しよう・来よう"
+        }
       ],
       [
-        "ば (điều kiện)",
-        "～えば",
-        "～れば",
-        "すれば・来れば"
+        {
+          "vi": "ば (điều kiện)",
+          "en": "ば (conditional)"
+        },
+        {
+          "vi": "～えば",
+          "en": "～えば"
+        },
+        {
+          "vi": "～れば",
+          "en": "～れば"
+        },
+        {
+          "vi": "すれば・来れば",
+          "en": "すれば・来れば"
+        }
       ]
     ],
     "rowsRuby": [
       [
-        "Dictionary (từ điển)",
-        "～う",
-        "～る",
-        "する・<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る"
+        {
+          "vi": "Dictionary (từ điển)",
+          "en": "Dictionary"
+        },
+        {
+          "vi": "～う",
+          "en": "～う"
+        },
+        {
+          "vi": "～る",
+          "en": "～る"
+        },
+        {
+          "vi": "する・<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る",
+          "en": "する・<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る"
+        }
       ],
       [
-        "ない (phủ định)",
-        "～あない／わない",
-        "～ない",
-        "しない・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ない"
+        {
+          "vi": "ない (phủ định)",
+          "en": "ない (negative)"
+        },
+        {
+          "vi": "～あない／わない",
+          "en": "～あない／わない"
+        },
+        {
+          "vi": "～ない",
+          "en": "～ない"
+        },
+        {
+          "vi": "しない・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ない",
+          "en": "しない・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ない"
+        }
       ],
       [
-        "Potential (khả năng)",
-        "～える",
-        "～られる",
-        "できる・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる"
+        {
+          "vi": "Potential (khả năng)",
+          "en": "Potential"
+        },
+        {
+          "vi": "～える",
+          "en": "～える"
+        },
+        {
+          "vi": "～られる",
+          "en": "～られる"
+        },
+        {
+          "vi": "できる・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる",
+          "en": "できる・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる"
+        }
       ],
       [
-        "た (quá khứ)",
-        "quy tắc đặc biệt (xem bảng て/た)",
-        "～た",
-        "した・<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>た"
+        {
+          "vi": "た (quá khứ)",
+          "en": "た (past)"
+        },
+        {
+          "vi": "quy tắc đặc biệt (xem bảng て/た)",
+          "en": "special rule (see て/た table)"
+        },
+        {
+          "vi": "～た",
+          "en": "～た"
+        },
+        {
+          "vi": "した・<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>た",
+          "en": "した・<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>た"
+        }
       ],
       [
-        "て (nối tiếp)",
-        "quy tắc đặc biệt (xem bảng て/た)",
-        "～て",
-        "して・<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>て"
+        {
+          "vi": "て (nối tiếp)",
+          "en": "て (connective)"
+        },
+        {
+          "vi": "quy tắc đặc biệt (xem bảng て/た)",
+          "en": "special rule (see て/た table)"
+        },
+        {
+          "vi": "～て",
+          "en": "～て"
+        },
+        {
+          "vi": "して・<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>て",
+          "en": "して・<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>て"
+        }
       ],
       [
-        "Volitional (ý chí)",
-        "～おう",
-        "～よう",
-        "しよう・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>よう"
+        {
+          "vi": "Volitional (ý chí)",
+          "en": "Volitional"
+        },
+        {
+          "vi": "～おう",
+          "en": "～おう"
+        },
+        {
+          "vi": "～よう",
+          "en": "～よう"
+        },
+        {
+          "vi": "しよう・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>よう",
+          "en": "しよう・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>よう"
+        }
       ],
       [
-        "ば (điều kiện)",
-        "～えば",
-        "～れば",
-        "すれば・<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>れば"
+        {
+          "vi": "ば (điều kiện)",
+          "en": "ば (conditional)"
+        },
+        {
+          "vi": "～えば",
+          "en": "～えば"
+        },
+        {
+          "vi": "～れば",
+          "en": "～れば"
+        },
+        {
+          "vi": "すれば・<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>れば",
+          "en": "すれば・<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>れば"
+        }
       ]
     ]
   },
   "keyExceptions": [
-    "行きます → 行って（thể て）",
-    "行きます → 行った（thể た）",
-    "買います → 買わない（thể ない, không phải 買あない）",
-    "します → できる（thể khả năng, không chia theo quy tắc thường）",
-    "来ます → 来られる（thể khả năng）"
+    {
+      "vi": "行きます → 行って（thể て）",
+      "en": "行きます → 行って (て form)"
+    },
+    {
+      "vi": "行きます → 行った（thể た）",
+      "en": "行きます → 行った (た form)"
+    },
+    {
+      "vi": "買います → 買わない（thể ない, không phải 買あない）",
+      "en": "買います → 買わない (ない form, not 買あない)"
+    },
+    {
+      "vi": "します → できる（thể khả năng, không chia theo quy tắc thường）",
+      "en": "します → できる (potential form, doesn't conjugate by the normal rule)"
+    },
+    {
+      "vi": "来ます → 来られる（thể khả năng）",
+      "en": "来ます → 来られる (potential form)"
+    }
   ],
   "keyExceptionsRuby": [
-    "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>って（thể て）",
-    "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>った（thể た）",
-    "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います → <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わない（thể ない, không phải <ruby>買<rp>(</rp><rt>がい</rt><rp>)</rp></ruby>あない）",
-    "します → できる（thể khả năng, không chia theo quy tắc thường）",
-    "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます → <ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる（thể khả năng）"
+    {
+      "vi": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>って（thể て）",
+      "en": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>って (て form)"
+    },
+    {
+      "vi": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>った（thể た）",
+      "en": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます → <ruby>行<rp>(</rp><rt>おこな</rt><rp>)</rp></ruby>った (た form)"
+    },
+    {
+      "vi": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います → <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わない（thể ない, không phải <ruby>買<rp>(</rp><rt>がい</rt><rp>)</rp></ruby>あない）",
+      "en": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います → <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わない (ない form, not <ruby>買<rp>(</rp><rt>がい</rt><rp>)</rp></ruby>あない)"
+    },
+    {
+      "vi": "します → できる（thể khả năng, không chia theo quy tắc thường）",
+      "en": "します → できる (potential form, doesn't conjugate by the normal rule)"
+    },
+    {
+      "vi": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます → <ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる（thể khả năng）",
+      "en": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます → <ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる (potential form)"
+    }
   ]
 }

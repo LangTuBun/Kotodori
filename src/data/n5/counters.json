@@ -1,336 +1,1722 @@
 {
-  "title": "Tổng hợp các cách đếm trong tiếng Nhật",
-  "intro": "Số, người, đồ vật, động vật, tiền, ngày tháng, giờ phút và tuổi — tổng hợp đầy đủ lượng từ (助数詞) và các trường hợp đọc số biến âm/bất quy tắc thường gặp ở trình độ N5.",
+  "title": {
+    "vi": "Tổng hợp các cách đếm trong tiếng Nhật",
+    "en": "A complete guide to counting in Japanese"
+  },
+  "intro": {
+    "vi": "Số, người, đồ vật, động vật, tiền, ngày tháng, giờ phút và tuổi — tổng hợp đầy đủ lượng từ (助数詞) và các trường hợp đọc số biến âm/bất quy tắc thường gặp ở trình độ N5.",
+    "en": "Numbers, people, objects, animals, money, dates, time, and age -- a full rundown of Japanese counters (助数詞) and the sound-shift/irregular readings most commonly seen at N5 level."
+  },
   "categories": [
     {
       "id": "basic-numbers",
-      "title": "1. Số đếm cơ bản và Đếm số lớn",
-      "shortTitle": "Số đếm cơ bản",
-      "usage": "Nền tảng để ghép với các lượng từ khác. Tiếng Nhật nhóm số lớn theo hàng vạn (4 chữ số 0 — 万) thay vì hàng nghìn như tiếng Việt.",
-      "columns": ["number", "kanji", "kana", "romaji", "note"],
+      "title": {
+        "vi": "1. Số đếm cơ bản và Đếm số lớn",
+        "en": "1. Basic numbers and large-number counting"
+      },
+      "shortTitle": {
+        "vi": "Số đếm cơ bản",
+        "en": "Basic numbers"
+      },
+      "usage": {
+        "vi": "Nền tảng để ghép với các lượng từ khác. Tiếng Nhật nhóm số lớn theo hàng vạn (4 chữ số 0 — 万) thay vì hàng nghìn như tiếng Việt.",
+        "en": "The foundation for combining with every other counter. Japanese groups large numbers by 万 (10,000s) rather than by thousands the way English does."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "romaji",
+        "note"
+      ],
       "wide": true,
-      "footnote": "Các ô đỏ (300/600/800 và 3.000/8.000) có biến âm đặc biệt ở phụ âm đầu của 百/千 — không đọc ghép trực tiếp như các số khác.",
+      "footnote": {
+        "vi": "Các ô đỏ (300/600/800 và 3.000/8.000) có biến âm đặc biệt ở phụ âm đầu của 百/千 — không đọc ghép trực tiếp như các số khác.",
+        "en": "The red cells (300/600/800 and 3,000/8,000) have a special sound shift on the leading consonant of 百/千 -- they don't attach directly the way the other numbers do."
+      },
       "rows": [
-        { "number": "1", "kanji": "一", "kana": "いち", "romaji": "ichi" },
-        { "number": "2", "kanji": "二", "kana": "に", "romaji": "ni" },
-        { "number": "3", "kanji": "三", "kana": "さん", "romaji": "san" },
-        { "number": "4", "kanji": "四", "kana": "よん / し", "romaji": "yon / shi" },
-        { "number": "5", "kanji": "五", "kana": "ご", "romaji": "go" },
-        { "number": "6", "kanji": "六", "kana": "ろく", "romaji": "roku" },
-        { "number": "7", "kanji": "七", "kana": "なな / しち", "romaji": "nana / shichi" },
-        { "number": "8", "kanji": "八", "kana": "はち", "romaji": "hachi" },
-        { "number": "9", "kanji": "九", "kana": "きゅう / く", "romaji": "kyuu / ku" },
-        { "number": "10", "kanji": "十", "kana": "じゅう", "romaji": "juu" },
-        { "number": "100", "kanji": "百", "kana": "ひゃく", "romaji": "hyaku" },
-        { "number": "300", "kanji": "三百", "kana": "さんびゃく", "romaji": "sanbyaku", "note": "ひゃく→びゃく", "isException": true },
-        { "number": "600", "kanji": "六百", "kana": "ろっぴゃく", "romaji": "roppyaku", "note": "ひゃく→ぴゃく (âm ngắt)", "isException": true },
-        { "number": "800", "kanji": "八百", "kana": "はっぴゃく", "romaji": "happyaku", "note": "ひゃく→ぴゃく (âm ngắt)", "isException": true },
-        { "number": "1,000", "kanji": "千", "kana": "せん", "romaji": "sen" },
-        { "number": "3,000", "kanji": "三千", "kana": "さんぜん", "romaji": "sanzen", "note": "せん→ぜん", "isException": true },
-        { "number": "8,000", "kanji": "八千", "kana": "はっせん", "romaji": "hassen", "note": "せん→っせん (âm ngắt)", "isException": true },
-        { "number": "10,000", "kanji": "一万", "kana": "いちまん", "romaji": "ichiman", "note": "1 vạn" },
-        { "number": "100,000", "kanji": "十万", "kana": "じゅうまん", "romaji": "juuman", "note": "10 vạn" },
-        { "number": "1,000,000", "kanji": "百万", "kana": "ひゃくまん", "romaji": "hyakuman", "note": "100 vạn" }
+        {
+          "number": "1",
+          "kanji": "一",
+          "kana": "いち",
+          "romaji": "ichi"
+        },
+        {
+          "number": "2",
+          "kanji": "二",
+          "kana": "に",
+          "romaji": "ni"
+        },
+        {
+          "number": "3",
+          "kanji": "三",
+          "kana": "さん",
+          "romaji": "san"
+        },
+        {
+          "number": "4",
+          "kanji": "四",
+          "kana": "よん / し",
+          "romaji": "yon / shi"
+        },
+        {
+          "number": "5",
+          "kanji": "五",
+          "kana": "ご",
+          "romaji": "go"
+        },
+        {
+          "number": "6",
+          "kanji": "六",
+          "kana": "ろく",
+          "romaji": "roku"
+        },
+        {
+          "number": "7",
+          "kanji": "七",
+          "kana": "なな / しち",
+          "romaji": "nana / shichi"
+        },
+        {
+          "number": "8",
+          "kanji": "八",
+          "kana": "はち",
+          "romaji": "hachi"
+        },
+        {
+          "number": "9",
+          "kanji": "九",
+          "kana": "きゅう / く",
+          "romaji": "kyuu / ku"
+        },
+        {
+          "number": "10",
+          "kanji": "十",
+          "kana": "じゅう",
+          "romaji": "juu"
+        },
+        {
+          "number": "100",
+          "kanji": "百",
+          "kana": "ひゃく",
+          "romaji": "hyaku"
+        },
+        {
+          "number": "300",
+          "kanji": "三百",
+          "kana": "さんびゃく",
+          "romaji": "sanbyaku",
+          "note": {
+            "vi": "ひゃく→びゃく",
+            "en": "ひゃく→びゃく"
+          },
+          "isException": true
+        },
+        {
+          "number": "600",
+          "kanji": "六百",
+          "kana": "ろっぴゃく",
+          "romaji": "roppyaku",
+          "note": {
+            "vi": "ひゃく→ぴゃく (âm ngắt)",
+            "en": "ひゃく→ぴゃく (gemination)"
+          },
+          "isException": true
+        },
+        {
+          "number": "800",
+          "kanji": "八百",
+          "kana": "はっぴゃく",
+          "romaji": "happyaku",
+          "note": {
+            "vi": "ひゃく→ぴゃく (âm ngắt)",
+            "en": "ひゃく→ぴゃく (gemination)"
+          },
+          "isException": true
+        },
+        {
+          "number": "1,000",
+          "kanji": "千",
+          "kana": "せん",
+          "romaji": "sen"
+        },
+        {
+          "number": "3,000",
+          "kanji": "三千",
+          "kana": "さんぜん",
+          "romaji": "sanzen",
+          "note": {
+            "vi": "せん→ぜん",
+            "en": "せん→ぜん"
+          },
+          "isException": true
+        },
+        {
+          "number": "8,000",
+          "kanji": "八千",
+          "kana": "はっせん",
+          "romaji": "hassen",
+          "note": {
+            "vi": "せん→っせん (âm ngắt)",
+            "en": "せん→っせん (gemination)"
+          },
+          "isException": true
+        },
+        {
+          "number": "10,000",
+          "kanji": "一万",
+          "kana": "いちまん",
+          "romaji": "ichiman",
+          "note": {
+            "vi": "1 vạn",
+            "en": "1 man (万)"
+          }
+        },
+        {
+          "number": "100,000",
+          "kanji": "十万",
+          "kana": "じゅうまん",
+          "romaji": "juuman",
+          "note": {
+            "vi": "10 vạn",
+            "en": "10 man (万)"
+          }
+        },
+        {
+          "number": "1,000,000",
+          "kanji": "百万",
+          "kana": "ひゃくまん",
+          "romaji": "hyakuman",
+          "note": {
+            "vi": "100 vạn",
+            "en": "100 man (万)"
+          }
+        }
       ]
     },
     {
       "id": "people",
-      "title": "2. Cách đếm người (人 - にん)",
-      "shortTitle": "Đếm người",
+      "title": {
+        "vi": "2. Cách đếm người (人 - にん)",
+        "en": "2. Counting people (人 - にん)"
+      },
+      "shortTitle": {
+        "vi": "Đếm người",
+        "en": "Counting people"
+      },
       "counter": "人",
       "counterKana": "にん",
-      "columns": ["number", "kanji", "kana", "meaning"],
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "meaning"
+      ],
       "rows": [
-        { "number": "1", "kanji": "1人", "kana": "ひとり", "meaning": "1 người" },
-        { "number": "2", "kanji": "2人", "kana": "ふたり", "meaning": "2 người" },
-        { "number": "3", "kanji": "3人", "kana": "さんにん", "meaning": "3 người" },
-        { "number": "4", "kanji": "4人", "kana": "よにん", "meaning": "4 người" },
-        { "number": "5", "kanji": "5人", "kana": "ごにん", "meaning": "5 người" },
-        { "number": "6", "kanji": "6人", "kana": "ろくにん", "meaning": "6 người" },
-        { "number": "7", "kanji": "7人", "kana": "ななにん / しちにん", "meaning": "7 người" },
-        { "number": "8", "kanji": "8人", "kana": "はちにん", "meaning": "8 người" },
-        { "number": "9", "kanji": "9人", "kana": "きゅうにん / くにん", "meaning": "9 người" },
-        { "number": "10", "kanji": "10人", "kana": "じゅうにん", "meaning": "10 người" },
-        { "number": "11", "kanji": "11人", "kana": "じゅういちにん", "meaning": "11 người" },
-        { "number": "Hỏi", "kanji": "何人", "kana": "なんにん", "meaning": "Mấy người?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1人",
+          "kana": "ひとり",
+          "meaning": {
+            "vi": "1 người",
+            "en": "1 person"
+          }
+        },
+        {
+          "number": "2",
+          "kanji": "2人",
+          "kana": "ふたり",
+          "meaning": {
+            "vi": "2 người",
+            "en": "2 people"
+          }
+        },
+        {
+          "number": "3",
+          "kanji": "3人",
+          "kana": "さんにん",
+          "meaning": {
+            "vi": "3 người",
+            "en": "3 people"
+          }
+        },
+        {
+          "number": "4",
+          "kanji": "4人",
+          "kana": "よにん",
+          "meaning": {
+            "vi": "4 người",
+            "en": "4 people"
+          }
+        },
+        {
+          "number": "5",
+          "kanji": "5人",
+          "kana": "ごにん",
+          "meaning": {
+            "vi": "5 người",
+            "en": "5 people"
+          }
+        },
+        {
+          "number": "6",
+          "kanji": "6人",
+          "kana": "ろくにん",
+          "meaning": {
+            "vi": "6 người",
+            "en": "6 people"
+          }
+        },
+        {
+          "number": "7",
+          "kanji": "7人",
+          "kana": "ななにん / しちにん",
+          "meaning": {
+            "vi": "7 người",
+            "en": "7 people"
+          }
+        },
+        {
+          "number": "8",
+          "kanji": "8人",
+          "kana": "はちにん",
+          "meaning": {
+            "vi": "8 người",
+            "en": "8 people"
+          }
+        },
+        {
+          "number": "9",
+          "kanji": "9人",
+          "kana": "きゅうにん / くにん",
+          "meaning": {
+            "vi": "9 người",
+            "en": "9 people"
+          }
+        },
+        {
+          "number": "10",
+          "kanji": "10人",
+          "kana": "じゅうにん",
+          "meaning": {
+            "vi": "10 người",
+            "en": "10 people"
+          }
+        },
+        {
+          "number": "11",
+          "kanji": "11人",
+          "kana": "じゅういちにん",
+          "meaning": {
+            "vi": "11 người",
+            "en": "11 people"
+          }
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何人",
+          "kana": "なんにん",
+          "meaning": {
+            "vi": "Mấy người?",
+            "en": "How many people?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "generic-small",
-      "title": "3. Cách đếm đồ vật nhỏ, chung chung (つ)",
-      "shortTitle": "Đồ vật chung chung",
+      "title": {
+        "vi": "3. Cách đếm đồ vật nhỏ, chung chung (つ)",
+        "en": "3. Counting small, generic objects (つ)"
+      },
+      "shortTitle": {
+        "vi": "Đồ vật chung chung",
+        "en": "Generic objects"
+      },
       "counter": "つ",
-      "usage": "Dùng cho các đồ vật không có lượng từ cụ thể hoặc hình dáng không rõ ràng.",
-      "columns": ["number", "kanji", "kana", "meaning"],
-      "footnote": "Từ số 11 trở đi, chỉ cần dùng số đếm cơ bản mà không thêm \"つ\".",
+      "usage": {
+        "vi": "Dùng cho các đồ vật không có lượng từ cụ thể hoặc hình dáng không rõ ràng.",
+        "en": "Used for objects with no specific counter, or an unclear/irregular shape."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "meaning"
+      ],
+      "footnote": {
+        "vi": "Từ số 11 trở đi, chỉ cần dùng số đếm cơ bản mà không thêm \"つ\".",
+        "en": "From 11 onward, just use the plain number without adding \"つ\"."
+      },
       "rows": [
-        { "number": "1", "kanji": "1つ", "kana": "ひとつ", "meaning": "1 cái" },
-        { "number": "2", "kanji": "2つ", "kana": "ふたつ", "meaning": "2 cái" },
-        { "number": "3", "kanji": "3つ", "kana": "みっつ", "meaning": "3 cái" },
-        { "number": "4", "kanji": "4つ", "kana": "よっつ", "meaning": "4 cái" },
-        { "number": "5", "kanji": "5つ", "kana": "いつつ", "meaning": "5 cái" },
-        { "number": "6", "kanji": "6つ", "kana": "むっつ", "meaning": "6 cái" },
-        { "number": "7", "kanji": "7つ", "kana": "ななつ", "meaning": "7 cái" },
-        { "number": "8", "kanji": "8つ", "kana": "やっつ", "meaning": "8 cái" },
-        { "number": "9", "kanji": "9つ", "kana": "ここのつ", "meaning": "9 cái" },
-        { "number": "10", "kanji": "10", "kana": "とお", "meaning": "10 cái" },
-        { "number": "11", "kanji": "11", "kana": "じゅういち", "meaning": "11 cái" },
-        { "number": "Hỏi", "kanji": "いくつ", "kana": "いくつ", "meaning": "Mấy cái?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1つ",
+          "kana": "ひとつ",
+          "meaning": {
+            "vi": "1 cái",
+            "en": "1 item"
+          }
+        },
+        {
+          "number": "2",
+          "kanji": "2つ",
+          "kana": "ふたつ",
+          "meaning": {
+            "vi": "2 cái",
+            "en": "2 items"
+          }
+        },
+        {
+          "number": "3",
+          "kanji": "3つ",
+          "kana": "みっつ",
+          "meaning": {
+            "vi": "3 cái",
+            "en": "3 items"
+          }
+        },
+        {
+          "number": "4",
+          "kanji": "4つ",
+          "kana": "よっつ",
+          "meaning": {
+            "vi": "4 cái",
+            "en": "4 items"
+          }
+        },
+        {
+          "number": "5",
+          "kanji": "5つ",
+          "kana": "いつつ",
+          "meaning": {
+            "vi": "5 cái",
+            "en": "5 items"
+          }
+        },
+        {
+          "number": "6",
+          "kanji": "6つ",
+          "kana": "むっつ",
+          "meaning": {
+            "vi": "6 cái",
+            "en": "6 items"
+          }
+        },
+        {
+          "number": "7",
+          "kanji": "7つ",
+          "kana": "ななつ",
+          "meaning": {
+            "vi": "7 cái",
+            "en": "7 items"
+          }
+        },
+        {
+          "number": "8",
+          "kanji": "8つ",
+          "kana": "やっつ",
+          "meaning": {
+            "vi": "8 cái",
+            "en": "8 items"
+          }
+        },
+        {
+          "number": "9",
+          "kanji": "9つ",
+          "kana": "ここのつ",
+          "meaning": {
+            "vi": "9 cái",
+            "en": "9 items"
+          }
+        },
+        {
+          "number": "10",
+          "kanji": "10",
+          "kana": "とお",
+          "meaning": {
+            "vi": "10 cái",
+            "en": "10 items"
+          }
+        },
+        {
+          "number": "11",
+          "kanji": "11",
+          "kana": "じゅういち",
+          "meaning": {
+            "vi": "11 cái",
+            "en": "11 items"
+          }
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "いくつ",
+          "kana": "いくつ",
+          "meaning": {
+            "vi": "Mấy cái?",
+            "en": "How many items?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "small-animals",
-      "title": "4. Cách đếm động vật nhỏ (匹 - ひき)",
-      "shortTitle": "Động vật nhỏ",
+      "title": {
+        "vi": "4. Cách đếm động vật nhỏ (匹 - ひき)",
+        "en": "4. Counting small animals (匹 - ひき)"
+      },
+      "shortTitle": {
+        "vi": "Động vật nhỏ",
+        "en": "Small animals"
+      },
       "counter": "匹",
       "counterKana": "ひき",
-      "usage": "Dùng cho chó, mèo, cá, côn trùng...",
-      "columns": ["number", "kanji", "kana", "meaning"],
+      "usage": {
+        "vi": "Dùng cho chó, mèo, cá, côn trùng...",
+        "en": "Used for dogs, cats, fish, insects, etc."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "meaning"
+      ],
       "rows": [
-        { "number": "1", "kanji": "1匹", "kana": "いっぴき", "meaning": "1 con" },
-        { "number": "2", "kanji": "2匹", "kana": "にひき", "meaning": "2 con" },
-        { "number": "3", "kanji": "3匹", "kana": "さんびき", "meaning": "3 con" },
-        { "number": "4", "kanji": "4匹", "kana": "よんひき", "meaning": "4 con" },
-        { "number": "5", "kanji": "5匹", "kana": "ごひき", "meaning": "5 con" },
-        { "number": "6", "kanji": "6匹", "kana": "ろっぴき", "meaning": "6 con" },
-        { "number": "7", "kanji": "7匹", "kana": "ななひき", "meaning": "7 con" },
-        { "number": "8", "kanji": "8匹", "kana": "はっぴき", "meaning": "8 con" },
-        { "number": "9", "kanji": "9匹", "kana": "きゅうひき", "meaning": "9 con" },
-        { "number": "10", "kanji": "10匹", "kana": "じゅっぴき", "meaning": "10 con" },
-        { "number": "11", "kanji": "11匹", "kana": "じゅういっぴき", "meaning": "11 con" },
-        { "number": "Hỏi", "kanji": "何匹", "kana": "なんびき", "meaning": "Mấy con?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1匹",
+          "kana": "いっぴき",
+          "meaning": {
+            "vi": "1 con",
+            "en": "1 animal"
+          }
+        },
+        {
+          "number": "2",
+          "kanji": "2匹",
+          "kana": "にひき",
+          "meaning": {
+            "vi": "2 con",
+            "en": "2 animals"
+          }
+        },
+        {
+          "number": "3",
+          "kanji": "3匹",
+          "kana": "さんびき",
+          "meaning": {
+            "vi": "3 con",
+            "en": "3 animals"
+          }
+        },
+        {
+          "number": "4",
+          "kanji": "4匹",
+          "kana": "よんひき",
+          "meaning": {
+            "vi": "4 con",
+            "en": "4 animals"
+          }
+        },
+        {
+          "number": "5",
+          "kanji": "5匹",
+          "kana": "ごひき",
+          "meaning": {
+            "vi": "5 con",
+            "en": "5 animals"
+          }
+        },
+        {
+          "number": "6",
+          "kanji": "6匹",
+          "kana": "ろっぴき",
+          "meaning": {
+            "vi": "6 con",
+            "en": "6 animals"
+          }
+        },
+        {
+          "number": "7",
+          "kanji": "7匹",
+          "kana": "ななひき",
+          "meaning": {
+            "vi": "7 con",
+            "en": "7 animals"
+          }
+        },
+        {
+          "number": "8",
+          "kanji": "8匹",
+          "kana": "はっぴき",
+          "meaning": {
+            "vi": "8 con",
+            "en": "8 animals"
+          }
+        },
+        {
+          "number": "9",
+          "kanji": "9匹",
+          "kana": "きゅうひき",
+          "meaning": {
+            "vi": "9 con",
+            "en": "9 animals"
+          }
+        },
+        {
+          "number": "10",
+          "kanji": "10匹",
+          "kana": "じゅっぴき",
+          "meaning": {
+            "vi": "10 con",
+            "en": "10 animals"
+          }
+        },
+        {
+          "number": "11",
+          "kanji": "11匹",
+          "kana": "じゅういっぴき",
+          "meaning": {
+            "vi": "11 con",
+            "en": "11 animals"
+          }
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何匹",
+          "kana": "なんびき",
+          "meaning": {
+            "vi": "Mấy con?",
+            "en": "How many animals?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "flat-thin",
-      "title": "5a. Đếm vật mỏng, dẹt (枚 - まい)",
-      "shortTitle": "Vật mỏng, dẹt",
+      "title": {
+        "vi": "5a. Đếm vật mỏng, dẹt (枚 - まい)",
+        "en": "5a. Counting flat, thin objects (枚 - まい)"
+      },
+      "shortTitle": {
+        "vi": "Vật mỏng, dẹt",
+        "en": "Flat, thin objects"
+      },
       "counter": "枚",
       "counterKana": "まい",
-      "usage": "Dùng cho: Giấy, áo mi, đĩa CD, vé...",
-      "columns": ["kanji", "kana", "meaning"],
-      "footnote": "Cứ thêm số đếm cơ bản + まい.",
+      "usage": {
+        "vi": "Dùng cho: Giấy, áo mi, đĩa CD, vé...",
+        "en": "Used for: paper, shirts, CDs, tickets, etc."
+      },
+      "columns": [
+        "kanji",
+        "kana",
+        "meaning"
+      ],
+      "footnote": {
+        "vi": "Cứ thêm số đếm cơ bản + まい.",
+        "en": "Just add the basic number + まい."
+      },
       "rows": [
-        { "number": "1", "kanji": "1枚", "kana": "いちまい", "meaning": "1 chiếc" },
-        { "number": "2", "kanji": "2枚", "kana": "にまい", "meaning": "2 chiếc" },
-        { "number": "Hỏi", "kanji": "何枚", "kana": "なんまい", "meaning": "Mấy tờ/cái?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1枚",
+          "kana": "いちまい",
+          "meaning": {
+            "vi": "1 chiếc",
+            "en": "1 sheet"
+          }
+        },
+        {
+          "number": "2",
+          "kanji": "2枚",
+          "kana": "にまい",
+          "meaning": {
+            "vi": "2 chiếc",
+            "en": "2 sheets"
+          }
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何枚",
+          "kana": "なんまい",
+          "meaning": {
+            "vi": "Mấy tờ/cái?",
+            "en": "How many sheets?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "long-cylindrical",
-      "title": "5b. Đếm vật dài, hình trụ (本 - ほん)",
-      "shortTitle": "Vật dài, hình trụ",
+      "title": {
+        "vi": "5b. Đếm vật dài, hình trụ (本 - ほん)",
+        "en": "5b. Counting long, cylindrical objects (本 - ほん)"
+      },
+      "shortTitle": {
+        "vi": "Vật dài, hình trụ",
+        "en": "Long, cylindrical objects"
+      },
       "counter": "本",
       "counterKana": "ほん",
-      "usage": "Dùng cho: Bút, chai, lọ, cái ô, cái cây... (lưu ý có biến âm)",
-      "columns": ["kanji", "kana", "meaning"],
+      "usage": {
+        "vi": "Dùng cho: Bút, chai, lọ, cái ô, cái cây... (lưu ý có biến âm)",
+        "en": "Used for: pens, bottles, umbrellas, trees, etc. (note: has sound shifts)"
+      },
+      "columns": [
+        "kanji",
+        "kana",
+        "meaning"
+      ],
       "rows": [
-        { "number": "1", "kanji": "1本", "kana": "いっぽん", "meaning": "1 cái" },
-        { "number": "2", "kanji": "2本", "kana": "にほん", "meaning": "2 cái" },
-        { "number": "3", "kanji": "3本", "kana": "さんぼん", "meaning": "3 cái" },
-        { "number": "4", "kanji": "4本", "kana": "よんほん", "meaning": "4 cái" },
-        { "number": "6", "kanji": "6本", "kana": "ろっぽん", "meaning": "6 cái" },
-        { "number": "8", "kanji": "8本", "kana": "はっぽん", "meaning": "8 cái" },
-        { "number": "10", "kanji": "10本", "kana": "じゅっぽん", "meaning": "10 cái" },
-        { "number": "Hỏi", "kanji": "何本", "kana": "なんぼん", "meaning": "Mấy cái?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1本",
+          "kana": "いっぽん",
+          "meaning": {
+            "vi": "1 cái",
+            "en": "1 item"
+          }
+        },
+        {
+          "number": "2",
+          "kanji": "2本",
+          "kana": "にほん",
+          "meaning": {
+            "vi": "2 cái",
+            "en": "2 items"
+          }
+        },
+        {
+          "number": "3",
+          "kanji": "3本",
+          "kana": "さんぼん",
+          "meaning": {
+            "vi": "3 cái",
+            "en": "3 items"
+          }
+        },
+        {
+          "number": "4",
+          "kanji": "4本",
+          "kana": "よんほん",
+          "meaning": {
+            "vi": "4 cái",
+            "en": "4 items"
+          }
+        },
+        {
+          "number": "6",
+          "kanji": "6本",
+          "kana": "ろっぽん",
+          "meaning": {
+            "vi": "6 cái",
+            "en": "6 items"
+          }
+        },
+        {
+          "number": "8",
+          "kanji": "8本",
+          "kana": "はっぽん",
+          "meaning": {
+            "vi": "8 cái",
+            "en": "8 items"
+          }
+        },
+        {
+          "number": "10",
+          "kanji": "10本",
+          "kana": "じゅっぽん",
+          "meaning": {
+            "vi": "10 cái",
+            "en": "10 items"
+          }
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何本",
+          "kana": "なんぼん",
+          "meaning": {
+            "vi": "Mấy cái?",
+            "en": "How many items?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "machines-vehicles",
-      "title": "5c. Đếm máy móc, xe cộ (台 - だい)",
-      "shortTitle": "Máy móc, xe cộ",
+      "title": {
+        "vi": "5c. Đếm máy móc, xe cộ (台 - だい)",
+        "en": "5c. Counting machines and vehicles (台 - だい)"
+      },
+      "shortTitle": {
+        "vi": "Máy móc, xe cộ",
+        "en": "Machines, vehicles"
+      },
       "counter": "台",
       "counterKana": "だい",
-      "usage": "Dùng cho: Tivi, máy tính, ô tô, xe đạp...",
-      "columns": ["kanji", "kana", "meaning"],
-      "footnote": "Cứ thêm số đếm cơ bản + だい.",
+      "usage": {
+        "vi": "Dùng cho: Tivi, máy tính, ô tô, xe đạp...",
+        "en": "Used for: TVs, computers, cars, bicycles, etc."
+      },
+      "columns": [
+        "kanji",
+        "kana",
+        "meaning"
+      ],
+      "footnote": {
+        "vi": "Cứ thêm số đếm cơ bản + だい.",
+        "en": "Just add the basic number + だい."
+      },
       "rows": [
-        { "number": "1", "kanji": "1台", "kana": "いちだい", "meaning": "1 chiếc" },
-        { "number": "2", "kanji": "2台", "kana": "にだい", "meaning": "2 chiếc" },
-        { "number": "Hỏi", "kanji": "何台", "kana": "なんだい", "meaning": "Mấy chiếc?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1台",
+          "kana": "いちだい",
+          "meaning": {
+            "vi": "1 chiếc",
+            "en": "1 unit"
+          }
+        },
+        {
+          "number": "2",
+          "kanji": "2台",
+          "kana": "にだい",
+          "meaning": {
+            "vi": "2 chiếc",
+            "en": "2 units"
+          }
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何台",
+          "kana": "なんだい",
+          "meaning": {
+            "vi": "Mấy chiếc?",
+            "en": "How many units?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "books",
-      "title": "5d. Đếm sách vở (冊 - さつ)",
-      "shortTitle": "Sách vở",
+      "title": {
+        "vi": "5d. Đếm sách vở (冊 - さつ)",
+        "en": "5d. Counting books (冊 - さつ)"
+      },
+      "shortTitle": {
+        "vi": "Sách vở",
+        "en": "Books"
+      },
       "counter": "冊",
       "counterKana": "さつ",
-      "usage": "Dùng cho: Sách, vở, tạp chí, từ điển... (lưu ý có biến âm)",
-      "columns": ["kanji", "kana", "meaning"],
+      "usage": {
+        "vi": "Dùng cho: Sách, vở, tạp chí, từ điển... (lưu ý có biến âm)",
+        "en": "Used for: books, notebooks, magazines, dictionaries, etc. (note: has sound shifts)"
+      },
+      "columns": [
+        "kanji",
+        "kana",
+        "meaning"
+      ],
       "rows": [
-        { "number": "1", "kanji": "1冊", "kana": "いっさつ", "meaning": "1 cuốn" },
-        { "number": "2", "kanji": "2冊", "kana": "にさつ", "meaning": "2 cuốn" },
-        { "number": "3", "kanji": "3冊", "kana": "さんさつ", "meaning": "3 cuốn" },
-        { "number": "8", "kanji": "8冊", "kana": "はっさつ", "meaning": "8 cuốn" },
-        { "number": "10", "kanji": "10冊", "kana": "じゅっさつ", "meaning": "10 cuốn" },
-        { "number": "Hỏi", "kanji": "何冊", "kana": "なんさつ", "meaning": "Mấy cuốn?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1冊",
+          "kana": "いっさつ",
+          "meaning": {
+            "vi": "1 cuốn",
+            "en": "1 copy"
+          }
+        },
+        {
+          "number": "2",
+          "kanji": "2冊",
+          "kana": "にさつ",
+          "meaning": {
+            "vi": "2 cuốn",
+            "en": "2 copies"
+          }
+        },
+        {
+          "number": "3",
+          "kanji": "3冊",
+          "kana": "さんさつ",
+          "meaning": {
+            "vi": "3 cuốn",
+            "en": "3 copies"
+          }
+        },
+        {
+          "number": "8",
+          "kanji": "8冊",
+          "kana": "はっさつ",
+          "meaning": {
+            "vi": "8 cuốn",
+            "en": "8 copies"
+          }
+        },
+        {
+          "number": "10",
+          "kanji": "10冊",
+          "kana": "じゅっさつ",
+          "meaning": {
+            "vi": "10 cuốn",
+            "en": "10 copies"
+          }
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何冊",
+          "kana": "なんさつ",
+          "meaning": {
+            "vi": "Mấy cuốn?",
+            "en": "How many copies?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "money",
-      "title": "6. Cách đếm tiền (円 - えん)",
-      "shortTitle": "Đếm tiền",
+      "title": {
+        "vi": "6. Cách đếm tiền (円 - えん)",
+        "en": "6. Counting money (円 - えん)"
+      },
+      "shortTitle": {
+        "vi": "Đếm tiền",
+        "en": "Counting money"
+      },
       "counter": "円",
       "counterKana": "えん",
-      "usage": "Quy tắc đơn giản: Số đếm + えん.",
-      "columns": ["number", "kanji", "kana", "romaji"],
-      "footnote": "Đối với giá tiền, thay vì hỏi bằng \"何\" (cái gì), người Nhật dùng \"いくら\" — Bao nhiêu tiền.",
+      "usage": {
+        "vi": "Quy tắc đơn giản: Số đếm + えん.",
+        "en": "Simple rule: number + えん."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "romaji"
+      ],
+      "footnote": {
+        "vi": "Đối với giá tiền, thay vì hỏi bằng \"何\" (cái gì), người Nhật dùng \"いくら\" — Bao nhiêu tiền.",
+        "en": "For prices, instead of asking with \"何\" (what), Japanese uses \"いくら\" -- how much."
+      },
       "rows": [
-        { "number": "1 Yên", "kanji": "1円", "kana": "いちえん", "romaji": "ichi en" },
-        { "number": "10 Yên", "kanji": "10円", "kana": "じゅうえん", "romaji": "juu en" },
-        { "number": "100 Yên", "kanji": "100円", "kana": "ひゃくえん", "romaji": "hyaku en" },
-        { "number": "1,000 Yên", "kanji": "1000円", "kana": "せんえん", "romaji": "sen en" },
-        { "number": "10,000 Yên", "kanji": "1万円", "kana": "いちまんえん", "romaji": "ichiman en" },
-        { "number": "100,000 Yên", "kanji": "10万円", "kana": "じゅうまんえん", "romaji": "juuman en" },
-        { "number": "1,000,000 Yên", "kanji": "100万円", "kana": "ひゃくまんえん", "romaji": "hyakuman en" },
-        { "number": "Hỏi", "kanji": "いくら", "kana": "いくら", "romaji": "ikura", "meaning": "Bao nhiêu tiền?", "isQuestion": true }
+        {
+          "number": "1 Yên",
+          "kanji": "1円",
+          "kana": "いちえん",
+          "romaji": "ichi en"
+        },
+        {
+          "number": "10 Yên",
+          "kanji": "10円",
+          "kana": "じゅうえん",
+          "romaji": "juu en"
+        },
+        {
+          "number": "100 Yên",
+          "kanji": "100円",
+          "kana": "ひゃくえん",
+          "romaji": "hyaku en"
+        },
+        {
+          "number": "1,000 Yên",
+          "kanji": "1000円",
+          "kana": "せんえん",
+          "romaji": "sen en"
+        },
+        {
+          "number": "10,000 Yên",
+          "kanji": "1万円",
+          "kana": "いちまんえん",
+          "romaji": "ichiman en"
+        },
+        {
+          "number": "100,000 Yên",
+          "kanji": "10万円",
+          "kana": "じゅうまんえん",
+          "romaji": "juuman en"
+        },
+        {
+          "number": "1,000,000 Yên",
+          "kanji": "100万円",
+          "kana": "ひゃくまんえん",
+          "romaji": "hyakuman en"
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "いくら",
+          "kana": "いくら",
+          "romaji": "ikura",
+          "meaning": {
+            "vi": "Bao nhiêu tiền?",
+            "en": "How much money?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "calendar-days",
-      "title": "7. Ngày trong tháng (日 - にち)",
-      "shortTitle": "Ngày trong tháng",
+      "title": {
+        "vi": "7. Ngày trong tháng (日 - にち)",
+        "en": "7. Days of the month (日 - にち)"
+      },
+      "shortTitle": {
+        "vi": "Ngày trong tháng",
+        "en": "Days of the month"
+      },
       "counter": "日",
       "counterKana": "にち",
-      "usage": "Mùng 1 đến mùng 10 là các từ đọc riêng, không theo quy tắc — phải học thuộc. Từ 11 trở đi theo quy tắc số Hán + にち, TRỪ 14, 20 và 24.",
-      "columns": ["number", "kanji", "kana", "romaji", "note"],
+      "usage": {
+        "vi": "Mùng 1 đến mùng 10 là các từ đọc riêng, không theo quy tắc — phải học thuộc. Từ 11 trở đi theo quy tắc số Hán + にち, TRỪ 14, 20 và 24.",
+        "en": "The 1st through the 10th each have their own irregular reading that must be memorized. From the 11th onward it follows the Sino-Japanese number + にち rule, EXCEPT for 14, 20, and 24."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "romaji",
+        "note"
+      ],
       "wide": true,
-      "footnote": "Quy tắc chung từ 11 trở đi (trừ 14/20/24): số đếm âm Hán (音読み) + にち. Ví dụ: 15 = じゅうご + にち = じゅうごにち.",
+      "footnote": {
+        "vi": "Quy tắc chung từ 11 trở đi (trừ 14/20/24): số đếm âm Hán (音読み) + にち. Ví dụ: 15 = じゅうご + にち = じゅうごにち.",
+        "en": "The general rule from the 11th onward (except 14/20/24): Sino-Japanese reading (音読み) + にち. Example: 15 = じゅうご + にち = じゅうごにち."
+      },
       "rows": [
-        { "number": "1", "kanji": "一日", "kana": "ついたち", "romaji": "tsuitachi", "isException": true },
-        { "number": "2", "kanji": "二日", "kana": "ふつか", "romaji": "futsuka", "isException": true },
-        { "number": "3", "kanji": "三日", "kana": "みっか", "romaji": "mikka", "isException": true },
-        { "number": "4", "kanji": "四日", "kana": "よっか", "romaji": "yokka", "isException": true },
-        { "number": "5", "kanji": "五日", "kana": "いつか", "romaji": "itsuka", "isException": true },
-        { "number": "6", "kanji": "六日", "kana": "むいか", "romaji": "muika", "isException": true },
-        { "number": "7", "kanji": "七日", "kana": "なのか", "romaji": "nanoka", "isException": true },
-        { "number": "8", "kanji": "八日", "kana": "ようか", "romaji": "youka", "isException": true },
-        { "number": "9", "kanji": "九日", "kana": "ここのか", "romaji": "kokonoka", "isException": true },
-        { "number": "10", "kanji": "十日", "kana": "とおか", "romaji": "tooka", "isException": true },
-        { "number": "11", "kanji": "十一日", "kana": "じゅういちにち", "romaji": "juuichinichi" },
-        { "number": "12", "kanji": "十二日", "kana": "じゅうににち", "romaji": "juuninichi" },
-        { "number": "13", "kanji": "十三日", "kana": "じゅうさんにち", "romaji": "juusannichi" },
-        { "number": "14", "kanji": "十四日", "kana": "じゅうよっか", "romaji": "juuyokka", "note": "không phải じゅうよんにち", "isException": true },
-        { "number": "15", "kanji": "十五日", "kana": "じゅうごにち", "romaji": "juugonichi" },
-        { "number": "16", "kanji": "十六日", "kana": "じゅうろくにち", "romaji": "juurokunichi" },
-        { "number": "17", "kanji": "十七日", "kana": "じゅうしちにち", "romaji": "juushichinichi" },
-        { "number": "18", "kanji": "十八日", "kana": "じゅうはちにち", "romaji": "juuhachinichi" },
-        { "number": "19", "kanji": "十九日", "kana": "じゅうくにち", "romaji": "juukunichi" },
-        { "number": "20", "kanji": "二十日", "kana": "はつか", "romaji": "hatsuka", "note": "không phải にじゅうにち", "isException": true },
-        { "number": "21", "kanji": "二十一日", "kana": "にじゅういちにち", "romaji": "nijuuichinichi" },
-        { "number": "22", "kanji": "二十二日", "kana": "にじゅうににち", "romaji": "nijuuninichi" },
-        { "number": "23", "kanji": "二十三日", "kana": "にじゅうさんにち", "romaji": "nijuusannichi" },
-        { "number": "24", "kanji": "二十四日", "kana": "にじゅうよっか", "romaji": "nijuuyokka", "note": "không phải にじゅうよんにち", "isException": true },
-        { "number": "25", "kanji": "二十五日", "kana": "にじゅうごにち", "romaji": "nijuugonichi" },
-        { "number": "26", "kanji": "二十六日", "kana": "にじゅうろくにち", "romaji": "nijuurokunichi" },
-        { "number": "27", "kanji": "二十七日", "kana": "にじゅうしちにち", "romaji": "nijuushichinichi" },
-        { "number": "28", "kanji": "二十八日", "kana": "にじゅうはちにち", "romaji": "nijuuhachinichi" },
-        { "number": "29", "kanji": "二十九日", "kana": "にじゅうくにち", "romaji": "nijuukunichi" },
-        { "number": "30", "kanji": "三十日", "kana": "さんじゅうにち", "romaji": "sanjuunichi" },
-        { "number": "31", "kanji": "三十一日", "kana": "さんじゅういちにち", "romaji": "sanjuuichinichi" },
-        { "number": "Hỏi", "kanji": "何日", "kana": "なんにち", "romaji": "nannichi", "meaning": "Ngày mấy?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "一日",
+          "kana": "ついたち",
+          "romaji": "tsuitachi",
+          "isException": true
+        },
+        {
+          "number": "2",
+          "kanji": "二日",
+          "kana": "ふつか",
+          "romaji": "futsuka",
+          "isException": true
+        },
+        {
+          "number": "3",
+          "kanji": "三日",
+          "kana": "みっか",
+          "romaji": "mikka",
+          "isException": true
+        },
+        {
+          "number": "4",
+          "kanji": "四日",
+          "kana": "よっか",
+          "romaji": "yokka",
+          "isException": true
+        },
+        {
+          "number": "5",
+          "kanji": "五日",
+          "kana": "いつか",
+          "romaji": "itsuka",
+          "isException": true
+        },
+        {
+          "number": "6",
+          "kanji": "六日",
+          "kana": "むいか",
+          "romaji": "muika",
+          "isException": true
+        },
+        {
+          "number": "7",
+          "kanji": "七日",
+          "kana": "なのか",
+          "romaji": "nanoka",
+          "isException": true
+        },
+        {
+          "number": "8",
+          "kanji": "八日",
+          "kana": "ようか",
+          "romaji": "youka",
+          "isException": true
+        },
+        {
+          "number": "9",
+          "kanji": "九日",
+          "kana": "ここのか",
+          "romaji": "kokonoka",
+          "isException": true
+        },
+        {
+          "number": "10",
+          "kanji": "十日",
+          "kana": "とおか",
+          "romaji": "tooka",
+          "isException": true
+        },
+        {
+          "number": "11",
+          "kanji": "十一日",
+          "kana": "じゅういちにち",
+          "romaji": "juuichinichi"
+        },
+        {
+          "number": "12",
+          "kanji": "十二日",
+          "kana": "じゅうににち",
+          "romaji": "juuninichi"
+        },
+        {
+          "number": "13",
+          "kanji": "十三日",
+          "kana": "じゅうさんにち",
+          "romaji": "juusannichi"
+        },
+        {
+          "number": "14",
+          "kanji": "十四日",
+          "kana": "じゅうよっか",
+          "romaji": "juuyokka",
+          "note": {
+            "vi": "không phải じゅうよんにち",
+            "en": "not じゅうよんにち"
+          },
+          "isException": true
+        },
+        {
+          "number": "15",
+          "kanji": "十五日",
+          "kana": "じゅうごにち",
+          "romaji": "juugonichi"
+        },
+        {
+          "number": "16",
+          "kanji": "十六日",
+          "kana": "じゅうろくにち",
+          "romaji": "juurokunichi"
+        },
+        {
+          "number": "17",
+          "kanji": "十七日",
+          "kana": "じゅうしちにち",
+          "romaji": "juushichinichi"
+        },
+        {
+          "number": "18",
+          "kanji": "十八日",
+          "kana": "じゅうはちにち",
+          "romaji": "juuhachinichi"
+        },
+        {
+          "number": "19",
+          "kanji": "十九日",
+          "kana": "じゅうくにち",
+          "romaji": "juukunichi"
+        },
+        {
+          "number": "20",
+          "kanji": "二十日",
+          "kana": "はつか",
+          "romaji": "hatsuka",
+          "note": {
+            "vi": "không phải にじゅうにち",
+            "en": "not にじゅうにち"
+          },
+          "isException": true
+        },
+        {
+          "number": "21",
+          "kanji": "二十一日",
+          "kana": "にじゅういちにち",
+          "romaji": "nijuuichinichi"
+        },
+        {
+          "number": "22",
+          "kanji": "二十二日",
+          "kana": "にじゅうににち",
+          "romaji": "nijuuninichi"
+        },
+        {
+          "number": "23",
+          "kanji": "二十三日",
+          "kana": "にじゅうさんにち",
+          "romaji": "nijuusannichi"
+        },
+        {
+          "number": "24",
+          "kanji": "二十四日",
+          "kana": "にじゅうよっか",
+          "romaji": "nijuuyokka",
+          "note": {
+            "vi": "không phải にじゅうよんにち",
+            "en": "not にじゅうよんにち"
+          },
+          "isException": true
+        },
+        {
+          "number": "25",
+          "kanji": "二十五日",
+          "kana": "にじゅうごにち",
+          "romaji": "nijuugonichi"
+        },
+        {
+          "number": "26",
+          "kanji": "二十六日",
+          "kana": "にじゅうろくにち",
+          "romaji": "nijuurokunichi"
+        },
+        {
+          "number": "27",
+          "kanji": "二十七日",
+          "kana": "にじゅうしちにち",
+          "romaji": "nijuushichinichi"
+        },
+        {
+          "number": "28",
+          "kanji": "二十八日",
+          "kana": "にじゅうはちにち",
+          "romaji": "nijuuhachinichi"
+        },
+        {
+          "number": "29",
+          "kanji": "二十九日",
+          "kana": "にじゅうくにち",
+          "romaji": "nijuukunichi"
+        },
+        {
+          "number": "30",
+          "kanji": "三十日",
+          "kana": "さんじゅうにち",
+          "romaji": "sanjuunichi"
+        },
+        {
+          "number": "31",
+          "kanji": "三十一日",
+          "kana": "さんじゅういちにち",
+          "romaji": "sanjuuichinichi"
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何日",
+          "kana": "なんにち",
+          "romaji": "nannichi",
+          "meaning": {
+            "vi": "Ngày mấy?",
+            "en": "Which day?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "calendar-months",
-      "title": "8. Tháng trong năm (月 - がつ)",
-      "shortTitle": "Tháng trong năm",
+      "title": {
+        "vi": "8. Tháng trong năm (月 - がつ)",
+        "en": "8. Months of the year (月 - がつ)"
+      },
+      "shortTitle": {
+        "vi": "Tháng trong năm",
+        "en": "Months of the year"
+      },
       "counter": "月",
       "counterKana": "がつ",
-      "usage": "Hầu hết ghép số đếm âm Hán + がつ, nhưng 4, 7, 9 KHÔNG theo quy tắc thông thường.",
-      "columns": ["number", "kanji", "kana", "romaji", "note"],
+      "usage": {
+        "vi": "Hầu hết ghép số đếm âm Hán + がつ, nhưng 4, 7, 9 KHÔNG theo quy tắc thông thường.",
+        "en": "Most months combine the Sino-Japanese number + がつ, but 4, 7, and 9 do NOT follow the usual rule."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "romaji",
+        "note"
+      ],
       "rows": [
-        { "number": "1", "kanji": "一月", "kana": "いちがつ", "romaji": "ichigatsu" },
-        { "number": "2", "kanji": "二月", "kana": "にがつ", "romaji": "nigatsu" },
-        { "number": "3", "kanji": "三月", "kana": "さんがつ", "romaji": "sangatsu" },
-        { "number": "4", "kanji": "四月", "kana": "しがつ", "romaji": "shigatsu", "note": "không phải よんがつ", "isException": true },
-        { "number": "5", "kanji": "五月", "kana": "ごがつ", "romaji": "gogatsu" },
-        { "number": "6", "kanji": "六月", "kana": "ろくがつ", "romaji": "rokugatsu" },
-        { "number": "7", "kanji": "七月", "kana": "しちがつ", "romaji": "shichigatsu", "note": "không phải なながつ", "isException": true },
-        { "number": "8", "kanji": "八月", "kana": "はちがつ", "romaji": "hachigatsu" },
-        { "number": "9", "kanji": "九月", "kana": "くがつ", "romaji": "kugatsu", "note": "không phải きゅうがつ", "isException": true },
-        { "number": "10", "kanji": "十月", "kana": "じゅうがつ", "romaji": "juugatsu" },
-        { "number": "11", "kanji": "十一月", "kana": "じゅういちがつ", "romaji": "juuichigatsu" },
-        { "number": "12", "kanji": "十二月", "kana": "じゅうにがつ", "romaji": "juunigatsu" },
-        { "number": "Hỏi", "kanji": "何月", "kana": "なんがつ", "romaji": "nangatsu", "meaning": "Tháng mấy?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "一月",
+          "kana": "いちがつ",
+          "romaji": "ichigatsu"
+        },
+        {
+          "number": "2",
+          "kanji": "二月",
+          "kana": "にがつ",
+          "romaji": "nigatsu"
+        },
+        {
+          "number": "3",
+          "kanji": "三月",
+          "kana": "さんがつ",
+          "romaji": "sangatsu"
+        },
+        {
+          "number": "4",
+          "kanji": "四月",
+          "kana": "しがつ",
+          "romaji": "shigatsu",
+          "note": {
+            "vi": "không phải よんがつ",
+            "en": "not よんがつ"
+          },
+          "isException": true
+        },
+        {
+          "number": "5",
+          "kanji": "五月",
+          "kana": "ごがつ",
+          "romaji": "gogatsu"
+        },
+        {
+          "number": "6",
+          "kanji": "六月",
+          "kana": "ろくがつ",
+          "romaji": "rokugatsu"
+        },
+        {
+          "number": "7",
+          "kanji": "七月",
+          "kana": "しちがつ",
+          "romaji": "shichigatsu",
+          "note": {
+            "vi": "không phải なながつ",
+            "en": "not なながつ"
+          },
+          "isException": true
+        },
+        {
+          "number": "8",
+          "kanji": "八月",
+          "kana": "はちがつ",
+          "romaji": "hachigatsu"
+        },
+        {
+          "number": "9",
+          "kanji": "九月",
+          "kana": "くがつ",
+          "romaji": "kugatsu",
+          "note": {
+            "vi": "không phải きゅうがつ",
+            "en": "not きゅうがつ"
+          },
+          "isException": true
+        },
+        {
+          "number": "10",
+          "kanji": "十月",
+          "kana": "じゅうがつ",
+          "romaji": "juugatsu"
+        },
+        {
+          "number": "11",
+          "kanji": "十一月",
+          "kana": "じゅういちがつ",
+          "romaji": "juuichigatsu"
+        },
+        {
+          "number": "12",
+          "kanji": "十二月",
+          "kana": "じゅうにがつ",
+          "romaji": "juunigatsu"
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何月",
+          "kana": "なんがつ",
+          "romaji": "nangatsu",
+          "meaning": {
+            "vi": "Tháng mấy?",
+            "en": "Which month?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "hours",
-      "title": "9. Giờ (時 - じ)",
-      "shortTitle": "Giờ",
+      "title": {
+        "vi": "9. Giờ (時 - じ)",
+        "en": "9. Hours (時 - じ)"
+      },
+      "shortTitle": {
+        "vi": "Giờ",
+        "en": "Hours"
+      },
       "counter": "時",
       "counterKana": "じ",
-      "usage": "Số đếm âm Hán + じ, nhưng 4, 7, 9 KHÔNG theo quy tắc thông thường.",
-      "columns": ["number", "kanji", "kana", "romaji", "note"],
+      "usage": {
+        "vi": "Số đếm âm Hán + じ, nhưng 4, 7, 9 KHÔNG theo quy tắc thông thường.",
+        "en": "Sino-Japanese number + じ, but 4, 7, and 9 do NOT follow the usual rule."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "romaji",
+        "note"
+      ],
       "rows": [
-        { "number": "1", "kanji": "1時", "kana": "いちじ", "romaji": "ichiji" },
-        { "number": "2", "kanji": "2時", "kana": "にじ", "romaji": "niji" },
-        { "number": "3", "kanji": "3時", "kana": "さんじ", "romaji": "sanji" },
-        { "number": "4", "kanji": "4時", "kana": "よじ", "romaji": "yoji", "note": "không phải よんじ", "isException": true },
-        { "number": "5", "kanji": "5時", "kana": "ごじ", "romaji": "goji" },
-        { "number": "6", "kanji": "6時", "kana": "ろくじ", "romaji": "rokuji" },
-        { "number": "7", "kanji": "7時", "kana": "しちじ", "romaji": "shichiji", "note": "không phải ななじ", "isException": true },
-        { "number": "8", "kanji": "8時", "kana": "はちじ", "romaji": "hachiji" },
-        { "number": "9", "kanji": "9時", "kana": "くじ", "romaji": "kuji", "note": "không phải きゅうじ", "isException": true },
-        { "number": "10", "kanji": "10時", "kana": "じゅうじ", "romaji": "juuji" },
-        { "number": "11", "kanji": "11時", "kana": "じゅういちじ", "romaji": "juuichiji" },
-        { "number": "12", "kanji": "12時", "kana": "じゅうにじ", "romaji": "juuniji" },
-        { "number": "Hỏi", "kanji": "何時", "kana": "なんじ", "romaji": "nanji", "meaning": "Mấy giờ?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1時",
+          "kana": "いちじ",
+          "romaji": "ichiji"
+        },
+        {
+          "number": "2",
+          "kanji": "2時",
+          "kana": "にじ",
+          "romaji": "niji"
+        },
+        {
+          "number": "3",
+          "kanji": "3時",
+          "kana": "さんじ",
+          "romaji": "sanji"
+        },
+        {
+          "number": "4",
+          "kanji": "4時",
+          "kana": "よじ",
+          "romaji": "yoji",
+          "note": {
+            "vi": "không phải よんじ",
+            "en": "not よんじ"
+          },
+          "isException": true
+        },
+        {
+          "number": "5",
+          "kanji": "5時",
+          "kana": "ごじ",
+          "romaji": "goji"
+        },
+        {
+          "number": "6",
+          "kanji": "6時",
+          "kana": "ろくじ",
+          "romaji": "rokuji"
+        },
+        {
+          "number": "7",
+          "kanji": "7時",
+          "kana": "しちじ",
+          "romaji": "shichiji",
+          "note": {
+            "vi": "không phải ななじ",
+            "en": "not ななじ"
+          },
+          "isException": true
+        },
+        {
+          "number": "8",
+          "kanji": "8時",
+          "kana": "はちじ",
+          "romaji": "hachiji"
+        },
+        {
+          "number": "9",
+          "kanji": "9時",
+          "kana": "くじ",
+          "romaji": "kuji",
+          "note": {
+            "vi": "không phải きゅうじ",
+            "en": "not きゅうじ"
+          },
+          "isException": true
+        },
+        {
+          "number": "10",
+          "kanji": "10時",
+          "kana": "じゅうじ",
+          "romaji": "juuji"
+        },
+        {
+          "number": "11",
+          "kanji": "11時",
+          "kana": "じゅういちじ",
+          "romaji": "juuichiji"
+        },
+        {
+          "number": "12",
+          "kanji": "12時",
+          "kana": "じゅうにじ",
+          "romaji": "juuniji"
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何時",
+          "kana": "なんじ",
+          "romaji": "nanji",
+          "meaning": {
+            "vi": "Mấy giờ?",
+            "en": "What time?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "minutes",
-      "title": "10. Phút (分 - ふん / ぷん)",
-      "shortTitle": "Phút",
+      "title": {
+        "vi": "10. Phút (分 - ふん / ぷん)",
+        "en": "10. Minutes (分 - ふん / ぷん)"
+      },
+      "shortTitle": {
+        "vi": "Phút",
+        "en": "Minutes"
+      },
       "counter": "分",
       "counterKana": "ふん・ぷん",
-      "usage": "分 đọc là ぷん sau các số 1, 3, 4, 6, 8, 10 (âm bật hơi/âm ngắt); các số còn lại đọc là ふん bình thường.",
-      "columns": ["number", "kanji", "kana", "romaji"],
-      "footnote": "Mẹo nhớ: 1・3・4・6・8・10 phân → ぷん (đọc căng); còn lại → ふん (đọc thường).",
+      "usage": {
+        "vi": "分 đọc là ぷん sau các số 1, 3, 4, 6, 8, 10 (âm bật hơi/âm ngắt); các số còn lại đọc là ふん bình thường.",
+        "en": "分 is read ぷん after 1, 3, 4, 6, 8, 10 (a gemination/aspirated shift); every other number reads it as the plain ふん."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "romaji"
+      ],
+      "footnote": {
+        "vi": "Mẹo nhớ: 1・3・4・6・8・10 phân → ぷん (đọc căng); còn lại → ふん (đọc thường).",
+        "en": "Memory aid: 1・3・4・6・8・10 minutes → ぷん (crisp); everything else → ふん (plain)."
+      },
       "rows": [
-        { "number": "1", "kanji": "1分", "kana": "いっぷん", "romaji": "ippun", "isException": true },
-        { "number": "2", "kanji": "2分", "kana": "にふん", "romaji": "nifun" },
-        { "number": "3", "kanji": "3分", "kana": "さんぷん", "romaji": "sanpun", "isException": true },
-        { "number": "4", "kanji": "4分", "kana": "よんぷん", "romaji": "yonpun", "isException": true },
-        { "number": "5", "kanji": "5分", "kana": "ごふん", "romaji": "gofun" },
-        { "number": "6", "kanji": "6分", "kana": "ろっぷん", "romaji": "roppun", "isException": true },
-        { "number": "7", "kanji": "7分", "kana": "ななふん", "romaji": "nanafun" },
-        { "number": "8", "kanji": "8分", "kana": "はっぷん", "romaji": "happun", "isException": true },
-        { "number": "9", "kanji": "9分", "kana": "きゅうふん", "romaji": "kyuufun" },
-        { "number": "10", "kanji": "10分", "kana": "じゅっぷん", "romaji": "juppun", "isException": true },
-        { "number": "11", "kanji": "11分", "kana": "じゅういっぷん", "romaji": "juuippun" },
-        { "number": "Hỏi", "kanji": "何分", "kana": "なんぷん", "romaji": "nanpun", "meaning": "Mấy phút?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1分",
+          "kana": "いっぷん",
+          "romaji": "ippun",
+          "isException": true
+        },
+        {
+          "number": "2",
+          "kanji": "2分",
+          "kana": "にふん",
+          "romaji": "nifun"
+        },
+        {
+          "number": "3",
+          "kanji": "3分",
+          "kana": "さんぷん",
+          "romaji": "sanpun",
+          "isException": true
+        },
+        {
+          "number": "4",
+          "kanji": "4分",
+          "kana": "よんぷん",
+          "romaji": "yonpun",
+          "isException": true
+        },
+        {
+          "number": "5",
+          "kanji": "5分",
+          "kana": "ごふん",
+          "romaji": "gofun"
+        },
+        {
+          "number": "6",
+          "kanji": "6分",
+          "kana": "ろっぷん",
+          "romaji": "roppun",
+          "isException": true
+        },
+        {
+          "number": "7",
+          "kanji": "7分",
+          "kana": "ななふん",
+          "romaji": "nanafun"
+        },
+        {
+          "number": "8",
+          "kanji": "8分",
+          "kana": "はっぷん",
+          "romaji": "happun",
+          "isException": true
+        },
+        {
+          "number": "9",
+          "kanji": "9分",
+          "kana": "きゅうふん",
+          "romaji": "kyuufun"
+        },
+        {
+          "number": "10",
+          "kanji": "10分",
+          "kana": "じゅっぷん",
+          "romaji": "juppun",
+          "isException": true
+        },
+        {
+          "number": "11",
+          "kanji": "11分",
+          "kana": "じゅういっぷん",
+          "romaji": "juuippun"
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何分",
+          "kana": "なんぷん",
+          "romaji": "nanpun",
+          "meaning": {
+            "vi": "Mấy phút?",
+            "en": "How many minutes?"
+          },
+          "isQuestion": true
+        }
       ]
     },
     {
       "id": "age",
-      "title": "11. Tuổi (歳 - さい)",
-      "shortTitle": "Tuổi",
+      "title": {
+        "vi": "11. Tuổi (歳 - さい)",
+        "en": "11. Age (歳 - さい)"
+      },
+      "shortTitle": {
+        "vi": "Tuổi",
+        "en": "Age"
+      },
       "counter": "歳",
       "counterKana": "さい",
-      "usage": "Số đếm + さい, có âm ngắt ở 1/8/10. Riêng 20 tuổi có cách đọc hoàn toàn đặc biệt: はたち.",
-      "columns": ["number", "kanji", "kana", "romaji", "note"],
+      "usage": {
+        "vi": "Số đếm + さい, có âm ngắt ở 1/8/10. Riêng 20 tuổi có cách đọc hoàn toàn đặc biệt: はたち.",
+        "en": "Number + さい, with gemination at 1/8/10. 20 years old has its own completely irregular reading: はたち."
+      },
+      "columns": [
+        "number",
+        "kanji",
+        "kana",
+        "romaji",
+        "note"
+      ],
       "rows": [
-        { "number": "1", "kanji": "1歳", "kana": "いっさい", "romaji": "issai", "isException": true },
-        { "number": "2", "kanji": "2歳", "kana": "にさい", "romaji": "nisai" },
-        { "number": "3", "kanji": "3歳", "kana": "さんさい", "romaji": "sansai" },
-        { "number": "4", "kanji": "4歳", "kana": "よんさい", "romaji": "yonsai" },
-        { "number": "5", "kanji": "5歳", "kana": "ごさい", "romaji": "gosai" },
-        { "number": "6", "kanji": "6歳", "kana": "ろくさい", "romaji": "rokusai" },
-        { "number": "7", "kanji": "7歳", "kana": "ななさい", "romaji": "nanasai" },
-        { "number": "8", "kanji": "8歳", "kana": "はっさい", "romaji": "hassai", "isException": true },
-        { "number": "9", "kanji": "9歳", "kana": "きゅうさい", "romaji": "kyuusai" },
-        { "number": "10", "kanji": "10歳", "kana": "じゅっさい", "romaji": "jussai", "isException": true },
-        { "number": "20", "kanji": "二十歳", "kana": "はたち", "romaji": "hatachi", "note": "cách đọc đặc biệt, không phải にじゅっさい", "isException": true },
-        { "number": "Hỏi", "kanji": "何歳", "kana": "なんさい", "romaji": "nansai", "meaning": "Bao nhiêu tuổi?", "isQuestion": true }
+        {
+          "number": "1",
+          "kanji": "1歳",
+          "kana": "いっさい",
+          "romaji": "issai",
+          "isException": true
+        },
+        {
+          "number": "2",
+          "kanji": "2歳",
+          "kana": "にさい",
+          "romaji": "nisai"
+        },
+        {
+          "number": "3",
+          "kanji": "3歳",
+          "kana": "さんさい",
+          "romaji": "sansai"
+        },
+        {
+          "number": "4",
+          "kanji": "4歳",
+          "kana": "よんさい",
+          "romaji": "yonsai"
+        },
+        {
+          "number": "5",
+          "kanji": "5歳",
+          "kana": "ごさい",
+          "romaji": "gosai"
+        },
+        {
+          "number": "6",
+          "kanji": "6歳",
+          "kana": "ろくさい",
+          "romaji": "rokusai"
+        },
+        {
+          "number": "7",
+          "kanji": "7歳",
+          "kana": "ななさい",
+          "romaji": "nanasai"
+        },
+        {
+          "number": "8",
+          "kanji": "8歳",
+          "kana": "はっさい",
+          "romaji": "hassai",
+          "isException": true
+        },
+        {
+          "number": "9",
+          "kanji": "9歳",
+          "kana": "きゅうさい",
+          "romaji": "kyuusai"
+        },
+        {
+          "number": "10",
+          "kanji": "10歳",
+          "kana": "じゅっさい",
+          "romaji": "jussai",
+          "isException": true
+        },
+        {
+          "number": "20",
+          "kanji": "二十歳",
+          "kana": "はたち",
+          "romaji": "hatachi",
+          "note": {
+            "vi": "cách đọc đặc biệt, không phải にじゅっさい",
+            "en": "special reading, not にじゅっさい"
+          },
+          "isException": true
+        },
+        {
+          "number": "Hỏi",
+          "kanji": "何歳",
+          "kana": "なんさい",
+          "romaji": "nansai",
+          "meaning": {
+            "vi": "Bao nhiêu tuổi?",
+            "en": "How old?"
+          },
+          "isQuestion": true
+        }
       ]
     }
   ],
   "bigNumberExamples": [
-    { "kanji": "一万五千", "kana": "いちまんごせん", "romaji": "ichi man go sen", "meaning": "15.000 (1 vạn 5 ngàn)" },
-    { "kanji": "十五万", "kana": "じゅうごまん", "romaji": "juu go man", "meaning": "150.000 (15 vạn)" },
-    { "kanji": "百二十五万", "kana": "ひゃくにじゅうごまん", "romaji": "hyaku ni juu go man", "meaning": "1.250.000 (125 vạn)" }
+    {
+      "kanji": "一万五千",
+      "kana": "いちまんごせん",
+      "romaji": "ichi man go sen",
+      "meaning": {
+        "vi": "15.000 (1 vạn 5 ngàn)",
+        "en": "15,000 (1 man 5 thousand)"
+      }
+    },
+    {
+      "kanji": "十五万",
+      "kana": "じゅうごまん",
+      "romaji": "juu go man",
+      "meaning": {
+        "vi": "150.000 (15 vạn)",
+        "en": "150,000 (15 man)"
+      }
+    },
+    {
+      "kanji": "百二十五万",
+      "kana": "ひゃくにじゅうごまん",
+      "romaji": "hyaku ni juu go man",
+      "meaning": {
+        "vi": "1.250.000 (125 vạn)",
+        "en": "1,250,000 (125 man)"
+      }
+    }
   ]
 }

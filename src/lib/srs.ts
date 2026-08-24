@@ -1,42 +1,47 @@
-﻿import type { SRSCard } from "@/types"
+import type { SRSCard } from "@/types"
+
+// Classic SM-2 (SuperMemo-2) scheduler -- replaced this session's
+// FSRS-inspired stability/difficulty scheduler at the user's explicit
+// request (personal project; the previous algorithm wasn't SM-2, despite
+// an initial "switch back to SM-2" framing -- see handoff.md).
 
 const AGAIN = 1, HARD = 2, GOOD = 3, EASY = 4
 
-function daysBetween(a: Date, b: Date): number {
-  return Math.round((b.getTime() - a.getTime()) / (1000 * 60 * 60 * 24))
-}
+// Standard SM-2 uses a 0-5 quality scale; this app's UI only exposes 4
+// Anki-style buttons. Map them the same way Anki's own SM-2-derived
+// scheduler does: AGAIN is a full lapse (q=0), and HARD/GOOD/EASY are all
+// "correct" recalls of increasing quality (q=3/4/5) -- used only to drive
+// the ease-factor adjustment below, not the interval branching itself.
+const QUALITY: Record<number, number> = { [AGAIN]: 0, [HARD]: 3, [GOOD]: 4, [EASY]: 5 }
 
 export function scheduleCard(card: SRSCard, rating: number): SRSCard {
-  const now = new Date()
-  const next = new Date()
-  let { stability, difficulty, lapseCount, reviewCount } = card
+  let { interval, repetition, easeFactor, lapseCount, reviewCount } = card
+  const quality = QUALITY[rating] ?? 3
 
-  if (card.state === 'new') {
-    if (rating === AGAIN) { stability = 0.4; difficulty = 0.8 }
-    else if (rating === HARD) { stability = 0.7; difficulty = 0.6 }
-    else if (rating === GOOD) { stability = 1; difficulty = 0.3 }
-    else { stability = 1.5; difficulty = 0.15 }
+  if (rating === AGAIN) {
+    repetition = 0
+    interval = 1
+    lapseCount += 1
   } else {
-    const retrievability = Math.exp(-daysBetween(new Date(card.lastReview!), now) / stability)
-    if (rating === AGAIN) {
-      lapseCount += 1
-      stability = Math.max(0.5, stability * 0.2)
-      difficulty = Math.min(1, difficulty + 0.2)
-    } else {
-      const factor = rating === HARD ? 0.8 : rating === EASY ? 1.3 : 1.0
-      stability = stability * (1 + 0.9 * Math.exp(0.1 * (1 - retrievability)) * factor)
-      difficulty = Math.max(0.1, difficulty - 0.03 * (rating - 3))
-    }
+    if (repetition === 0) interval = 1
+    else if (repetition === 1) interval = 6
+    else interval = Math.max(1, Math.round(interval * easeFactor))
+    repetition += 1
   }
 
-  const interval = Math.max(1, Math.round(stability * 9 / difficulty))
+  // SM-2's ease-factor update, applied every review (correct or not).
+  easeFactor = Math.max(1.3, easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)))
+
+  const now = new Date()
+  const next = new Date()
   next.setDate(now.getDate() + interval)
   reviewCount += 1
 
   return {
     ...card,
-    stability,
-    difficulty,
+    interval,
+    repetition,
+    easeFactor,
     lapseCount,
     reviewCount,
     lastReview: now.toISOString(),

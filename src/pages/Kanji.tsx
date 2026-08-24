@@ -7,6 +7,7 @@ import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 import { KanjiGroupModal } from "@/components/kanji/KanjiGroupModal"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
+import { Watermark } from "@/components/ui/ScreenHeader"
 
 // N5's textbook chapters run 1-15 and N4's run 15-24 (both numbered after
 // their own curriculum's Bai/chapter, per their own source material) -- so
@@ -75,8 +76,9 @@ export function Kanji() {
   }, [visibleChapters, search])
 
   return (
-    <div className="flex h-screen overflow-hidden">
-      <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
+    <div className="flex h-full overflow-hidden">
+      <div className="flex-1 flex flex-col min-h-0 overflow-hidden relative">
+        <Watermark char="字" />
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 bg-surface flex-wrap items-center">
           <div role="group" aria-label="JLPT level" className="inline-flex border-2 border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
@@ -192,7 +194,7 @@ function KanjiGroupCard({ group, chapterLabel, accent, onAnchorClick, onCardClic
             {group.hanviet && (
               <span className="text-xs font-black px-1.5 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] bg-surface shrink-0">{group.hanviet}</span>
             )}
-            <span className="text-[10px] font-bold text-muted shrink-0">Ch.{chapterLabel}</span>
+            <span className="text-[10px] font-bold text-muted shrink-0">Ch. {chapterLabel}</span>
           </div>
 
           {/* Real On'yomi / Kun'yomi kana readings */}

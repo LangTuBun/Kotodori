@@ -20,7 +20,7 @@ export function Landing() {
   const replayKey = useMemo(() => Date.now(), [])
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-dvh">
       {/* Hero */}
       <section className="relative overflow-hidden px-8 pt-20 pb-24 flex flex-col items-center text-center gap-8">
         <Reveal index={0} className="w-40 h-40 md:w-56 md:h-56">
@@ -94,7 +94,7 @@ export function Landing() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t-3 border-ink px-8 py-8 flex items-center justify-between font-mono text-xs uppercase tracking-widest text-muted">
+      <footer className="border-t-3 border-structural px-8 py-8 flex items-center justify-between font-mono text-xs uppercase tracking-widest text-muted">
         <span>TORI · 鳥</span>
         <span>minh khang</span>
       </footer>

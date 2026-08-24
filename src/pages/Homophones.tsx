@@ -153,7 +153,7 @@ function computeGroups(level: Level): SoundGroup[] {
 function WordCard({ entry, revealed }: { entry: VocabEntry; revealed: boolean }) {
   const { localize } = useTranslation()
   return (
-    <div className="border-3 border-ink shadow-[3px_3px_0px_var(--color-ink)] p-4 flex-1 min-w-[140px] bg-paper">
+    <div className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 flex-1 min-w-[140px] bg-paper">
       <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
       <div className="text-2xl font-black jp mt-3 mb-2">
         {revealed
@@ -181,11 +181,11 @@ export function Homophones() {
   const soundAlikes = groups.filter(g => g.readings.length > 1)
 
   return (
-    <div className="relative p-8 max-w-4xl overflow-hidden">
+    <div className="relative p-4 sm:p-8 max-w-4xl overflow-hidden">
       <Watermark char="音" />
       {/* Header */}
-      <div className="border-b-3 border-ink pb-8 mb-8">
-        <h1 className="text-5xl font-black tracking-tighter">{t('homophones.title')}</h1>
+      <div className="border-b-3 border-structural pb-8 mb-8">
+        <h1 className="text-[clamp(2rem,8vw,3rem)] font-black tracking-tighter">{t('homophones.title')}</h1>
         <p className="text-muted font-bold text-sm uppercase tracking-widest mt-2">
           {t('homophones.subtitle')}
         </p>
@@ -198,7 +198,7 @@ export function Homophones() {
             {t('homophones.backToList')}
           </Button>
 
-          <div className="border-3 border-ink shadow-[6px_6px_0px_var(--color-yellow)] p-8 mb-6">
+          <div className="border-3 border-structural shadow-[6px_6px_0px_var(--color-yellow)] p-4 sm:p-8 mb-6">
             <div className="text-center mb-6">
               <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">
                 {selected.readings.length > 1 ? t('homophones.similarSound') : t('homophones.identicalReading')}
@@ -206,7 +206,7 @@ export function Homophones() {
               {/* Show all distinct readings */}
               <div className="flex gap-3 justify-center flex-wrap mb-2">
                 {selected.readings.map(r => (
-                  <div key={r} className="text-5xl font-black jp">{r}</div>
+                  <div key={r} className="text-4xl sm:text-5xl font-black jp">{r}</div>
                 ))}
               </div>
               {selected.readings.length > 1 && (
@@ -244,7 +244,7 @@ export function Homophones() {
       ) : (
         <>
           {/* Stats + random */}
-          <div className="border-3 border-ink p-6 shadow-[5px_5px_0px_var(--color-yellow)] mb-8 flex items-center justify-between gap-4">
+          <div className="border-3 border-structural p-6 shadow-[5px_5px_0px_var(--color-yellow)] mb-8 flex items-center justify-between gap-4">
             <div className="flex gap-8">
               <div>
                 <div className="font-black text-2xl">{trueHomophones.length}</div>
@@ -268,7 +268,7 @@ export function Homophones() {
             <>
               <div className="text-xs font-black uppercase tracking-widest mb-3 flex items-center gap-3">
                 <span>{t('homophones.exactHomophones')}</span>
-                <div className="flex-1 border-t-3 border-ink" />
+                <div className="flex-1 border-t-3 border-structural" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
                 {trueHomophones.map((g, i) => (
@@ -283,7 +283,7 @@ export function Homophones() {
             <>
               <div className="text-xs font-black uppercase tracking-widest mb-3 flex items-center gap-3">
                 <span>{t('homophones.soundAlikes')}</span>
-                <div className="flex-1 border-t-3 border-ink" />
+                <div className="flex-1 border-t-3 border-structural" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {soundAlikes.map((g, i) => (
@@ -303,7 +303,7 @@ function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; o
   return (
     <button
       onClick={onSelect}
-      className="border-3 border-ink p-4 text-left shadow-[3px_3px_0px_var(--color-ink)] hover:shadow-[5px_5px_0px_var(--color-yellow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all bg-paper"
+      className="border-3 border-structural p-4 text-left shadow-[var(--shadow-brutal)] hover:shadow-[5px_5px_0px_var(--color-yellow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all bg-paper"
     >
       <div className="flex items-start gap-3">
         <div className="text-xs font-black text-muted w-6 shrink-0 pt-1">{idx + 1}</div>
@@ -318,7 +318,7 @@ function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; o
           </div>
           <div className="flex flex-wrap gap-1.5">
             {group.entries.map(e => (
-              <span key={e.id} className="text-xs border border-ink px-2 py-0.5 font-bold">
+              <span key={e.id} className="text-xs border border-structural px-2 py-0.5 font-bold">
                 <Furigana kanji={e.kanji || e.kana} kana={e.kana} />
               </span>
             ))}

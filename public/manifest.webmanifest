@@ -1,0 +1,15 @@
+{
+  "name": "Tori — Japanese Study",
+  "short_name": "Tori",
+  "description": "N5/N4 vocabulary, grammar, kanji, and spaced-repetition review.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#efe7d8",
+  "theme_color": "#efe7d8",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

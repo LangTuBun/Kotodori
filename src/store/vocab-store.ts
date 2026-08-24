@@ -37,8 +37,9 @@ function makeDefaultCard(vocabId: string, cardType = 'kanji-meaning'): SRSCard {
   return {
     vocabId,
     cardType,
-    stability: 0,
-    difficulty: 0.3,
+    interval: 0,
+    repetition: 0,
+    easeFactor: 2.5, // SM-2's standard starting ease factor
     lastReview: null,
     nextReview: null,
     reviewCount: 0,
@@ -120,6 +121,13 @@ export const useVocabStore = create<VocabStore>()(
         return counts
       },
     }),
-    { name: 'kotodori-vocab' }
+    // Renamed from 'kotodori-vocab': the SM-2 schema swap this session
+    // changes every SRSCard field, so old localStorage data under the old
+    // key is deliberately abandoned rather than migrated -- the user
+    // explicitly OK'd a full reset ("no harm... I'm not familiar with
+    // FSRS, I'm more like the OG [SM-2] enjoyer"). Reusing the old key
+    // would have silently mixed the new field shape with leftover
+    // stability/difficulty values on every previously-reviewed card.
+    { name: 'tori-vocab' }
   )
 )

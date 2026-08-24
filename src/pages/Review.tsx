@@ -9,13 +9,27 @@ import { RATING } from "@/lib/srs"
 import { onkunTone } from "@/lib/kanji"
 import { useTranslation } from "@/lib/useTranslation"
 import { vocabForLevel } from "@/data/vocab"
-import kanjiData from "@/data/n5/kanji.json"
+import { n5KanjiChapters, n4KanjiChapters } from "@/data/kanji"
 import type { VocabEntry, KanjiChapter, KanjiGroup, KanjiWord, SRSCard } from "@/types"
+import { Watermark } from "@/components/ui/ScreenHeader"
+import type { Level } from "@/store/settings-store"
 
-// Kanji-mode review and the N5 textbook chapter filter are both sourced
-// from n5/kanji.json, which has no N4 counterpart -- kanji mode is
-// N5-scope-only (see mode reset in Review()).
-const kanjiChapters = kanjiData.chapters as KanjiChapter[]
+// N5's chapter 15 ("N5 supplement") and N4's chapter 15 (Bai 15) both use
+// the identical k15_gN group-id scheme (see Kanji.tsx's own src-tagging for
+// the same collision) -- so kanji-mode review card ids are tagged with
+// their source level too, e.g. "N5:k15_g1::w0" vs "N4:k15_g1::w0". This
+// changes every existing kanji-mode SRS card id; that's fine only because
+// this session's SM-2 migration (see srs.ts) already resets every card's
+// schedule regardless of id, per the user's explicit go-ahead -- don't
+// repeat this rename casually once cards are live under the new scheme.
+type Src = 'N5' | 'N4'
+function taggedKanjiChapters(level: Level): Array<KanjiChapter & { src: Src }> {
+  const n5 = n5KanjiChapters.map(c => ({ ...c, src: 'N5' as const }))
+  const n4 = n4KanjiChapters.map(c => ({ ...c, src: 'N4' as const }))
+  if (level === 'N5') return n5
+  if (level === 'N4') return n4
+  return [...n5, ...n4]
+}
 const CHAPTERS = Array.from({ length: 14 }, (_, i) => i + 1)
 const COUNT_PRESETS = [10, 20, 30, 50] as const
 
@@ -48,12 +62,8 @@ export function Review() {
   const level = useSettingsStore(s => s.level)
   const { t } = useTranslation()
 
-  // Kanji-mode review has no N4 data behind it -- force vocab mode outside
-  // N5 scope rather than silently rendering an empty kanji pool.
-  const kanjiModeAvailable = level === 'N5'
-  const [mode, setModeState] = useState<Mode>('vocab')
-  const setMode = (m: Mode) => setModeState(kanjiModeAvailable ? m : 'vocab')
-  useEffect(() => { if (!kanjiModeAvailable) setModeState('vocab') }, [kanjiModeAvailable])
+  const [mode, setMode] = useState<Mode>('vocab')
+  const kanjiChapters = useMemo(() => taggedKanjiChapters(level), [level])
 
   const vocab = useMemo(() => vocabForLevel(level), [level])
   const POS_LIST = useMemo(() => Array.from(new Set(vocab.map(v => v.pos))).sort(), [vocab])
@@ -93,12 +103,12 @@ export function Review() {
       if (chapter !== null && c.chapter !== chapter) continue
       for (const g of c.groups) {
         g.words.forEach((word, wi) => {
-          result.push({ id: `${g.id}::w${wi}`, word, group: g, chapterNum: c.chapter })
+          result.push({ id: `${c.src}:${g.id}::w${wi}`, word, group: g, chapterNum: c.chapter })
         })
       }
     }
     return result
-  }, [chapter])
+  }, [chapter, kanjiChapters])
 
   const poolIds = mode === 'vocab' ? vocabPool.map(v => v.id) : kanjiPool.map(x => x.id)
   const poolSize = poolIds.length
@@ -172,7 +182,7 @@ export function Review() {
   if (phase === 'setup') {
     return (
       <ReviewSetup
-        mode={mode} setMode={setMode} kanjiModeAvailable={kanjiModeAvailable}
+        mode={mode} setMode={setMode}
         chapter={chapter} setChapter={setChapter} chapterFilterAvailable={chapterFilterAvailable}
         category={category} setCategory={setCategory} categoryFilterAvailable={categoryFilterAvailable} categories={CATEGORIES}
         pos={pos} setPos={setPos} posList={POS_LIST}
@@ -185,12 +195,12 @@ export function Review() {
 
   if (phase === 'done') {
     return (
-      <div className="p-8 max-w-xl">
-        <div className="border-b-3 border-ink pb-6 mb-8">
-          <h1 className="text-5xl font-black">{t('review.done')}</h1>
+      <div className="p-4 sm:p-8 max-w-xl">
+        <div className="border-b-3 border-structural pb-6 mb-8">
+          <h1 className="text-[clamp(2rem,8vw,3rem)] font-black">{t('review.done')}</h1>
         </div>
-        <div className="border-3 border-ink p-8 shadow-[5px_5px_0px_var(--color-green)] text-center">
-          <div className="text-7xl font-black mb-3">{reviewed}</div>
+        <div className="border-3 border-structural p-4 sm:p-8 shadow-[5px_5px_0px_var(--color-green)] text-center">
+          <div className="text-5xl sm:text-7xl font-black mb-3">{reviewed}</div>
           <div className="text-sm font-bold uppercase tracking-wider text-muted mb-6">
             {mode === 'vocab' ? t('review.wordsReviewed') : t('review.kanjiReviewed')}
           </div>
@@ -207,13 +217,13 @@ export function Review() {
   const progress = (idx / queue.length) * 100
 
   return (
-    <div className="p-8 max-w-2xl">
+    <div className="p-4 sm:p-8 max-w-2xl">
       {/* Progress */}
       <div className="flex items-center gap-4 mb-8">
         <button
           onClick={backToSetup}
           title={t('review.changeFilter')}
-          className="shrink-0 w-9 h-9 border-3 border-ink font-black flex items-center justify-center hover:bg-surface transition-colors"
+          className="shrink-0 w-9 h-9 border-3 border-structural font-black flex items-center justify-center hover:bg-surface transition-colors"
         >
           ×
         </button>
@@ -235,14 +245,14 @@ export function Review() {
 }
 
 function ReviewSetup({
-  mode, setMode, kanjiModeAvailable,
+  mode, setMode,
   chapter, setChapter, chapterFilterAvailable,
   category, setCategory, categoryFilterAvailable, categories,
   pos, setPos, posList,
   countPreset, setCountPreset,
   poolSize, dueCount, effectiveCount, onStart,
 }: {
-  mode: Mode; setMode: (m: Mode) => void; kanjiModeAvailable: boolean
+  mode: Mode; setMode: (m: Mode) => void
   chapter: number | null; setChapter: (c: number | null) => void; chapterFilterAvailable: boolean
   category: string | null; setCategory: (c: string | null) => void; categoryFilterAvailable: boolean; categories: string[]
   pos: string | null; setPos: (p: string | null) => void; posList: string[]
@@ -252,26 +262,25 @@ function ReviewSetup({
 }) {
   const { t } = useTranslation()
   return (
-    <div className="p-8 max-w-3xl">
-      <div className="border-b-3 border-ink pb-6 mb-8">
-        <h1 className="text-5xl font-black">{t('review.title')}</h1>
+    <div className="relative p-4 sm:p-8 max-w-3xl overflow-hidden">
+      <Watermark char="復" />
+      <div className="border-b-3 border-structural pb-6 mb-8">
+        <h1 className="text-[clamp(2rem,8vw,3rem)] font-black">{t('review.title')}</h1>
         <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">{t('review.chooseScope')}</p>
       </div>
 
       <div className="border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper overflow-hidden">
         {/* Mode tabs */}
-        <div className="grid grid-cols-2 border-b-3 border-ink">
+        <div className="grid grid-cols-2 border-b-3 border-structural">
           <button
             onClick={() => setMode('vocab')}
-            className={`py-4 border-r-3 border-ink font-black text-sm uppercase tracking-wider cursor-pointer transition-all ${mode === 'vocab' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`py-4 border-r-3 border-structural font-black text-sm uppercase tracking-wider cursor-pointer transition-all ${mode === 'vocab' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
             {t('review.vocabTab')}
           </button>
           <button
-            onClick={() => kanjiModeAvailable && setMode('kanji')}
-            disabled={!kanjiModeAvailable}
-            title={kanjiModeAvailable ? undefined : t('review.kanjiModeN5Only')}
-            className={`py-4 font-black text-sm uppercase tracking-wider transition-all ${mode === 'kanji' ? 'bg-ink text-paper' : kanjiModeAvailable ? 'hover:bg-surface cursor-pointer' : 'opacity-40 cursor-not-allowed'}`}
+            onClick={() => setMode('kanji')}
+            className={`py-4 font-black text-sm uppercase tracking-wider transition-all cursor-pointer ${mode === 'kanji' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
             {t('review.kanjiTab')} <span className="opacity-60 normal-case font-bold">(漢字)</span>
           </button>
@@ -330,7 +339,7 @@ function ReviewSetup({
         </div>
 
         {/* Summary + start */}
-        <div className="border-t-3 border-ink p-6 bg-surface flex flex-wrap items-center justify-between gap-4">
+        <div className="border-t-3 border-structural p-6 bg-surface flex flex-wrap items-center justify-between gap-4">
           <div className="text-sm font-bold">
             {poolSize === 0 ? (
               <span className="text-red">{mode === 'vocab' ? t('review.noMatchWords') : t('review.noMatchKanji')}</span>
@@ -380,7 +389,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
   const { t, localize } = useTranslation()
   return (
     <div
-      className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[8px_8px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -389,7 +398,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
             {cardType === 'meaning' ? t('review.whatMeaning') :
              cardType === 'reading' ? t('review.howRead') : t('review.whatWord')}
           </div>
-          <div className="text-6xl font-black jp leading-none mb-4">
+          <div className="text-[clamp(2.25rem,10vw,3.75rem)] font-black jp leading-none mb-4 break-words">
             {cardType === 'meaning' ? (
               <Furigana kanji={entry.kanji} kana={entry.kana} />
             ) : cardType === 'reading' ? (
@@ -408,7 +417,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
       ) : (
         <>
           <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
-          <div className="text-5xl font-black jp leading-none my-4">
+          <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-none my-4 break-words">
             <Furigana kanji={entry.kanji} kana={entry.kana} />
           </div>
           <div className="text-2xl font-bold mb-2">{localize(entry.meanings)}</div>
@@ -419,7 +428,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
             <div className="text-xs text-muted font-bold uppercase">{entry.category}</div>
           )}
           {entry.examples.length > 0 && (
-            <div className="mt-6 text-left w-full border-t-3 border-ink pt-4">
+            <div className="mt-6 text-left w-full border-t-3 border-structural pt-4">
               <div className="jp text-sm font-bold">{entry.examples[0].ja}</div>
               <div className="text-xs text-muted mt-1">{localize({ vi: entry.examples[0].vi, en: entry.examples[0].en })}</div>
             </div>
@@ -441,7 +450,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
 
   return (
     <div
-      className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[8px_8px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -449,7 +458,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
           <div className="text-xs font-bold uppercase tracking-widest text-muted mb-6">
             {t('review.kanjiQuestion')}
           </div>
-          <div className="text-6xl font-black jp leading-[2.2] mb-4">
+          <div className="text-[clamp(2.25rem,10vw,3.75rem)] font-black jp leading-[2.2] mb-4 break-words">
             <Furigana kanji={word.kanji} kana={word.kana} />
           </div>
           <div className="mt-8 text-xs text-muted font-bold uppercase tracking-wider">
@@ -460,14 +469,14 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
         <>
           <div className="flex items-center gap-2 mb-3">
             {word.hanviet && (
-              <span className="text-sm font-black px-2 py-1 border-2 border-ink rounded-[var(--radius-sm)] bg-surface">{word.hanviet}</span>
+              <span className="text-sm font-black px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] bg-surface">{word.hanviet}</span>
             )}
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color: onkunTone(word.onkun) }}>
               {word.onkun}
             </span>
             <span className="text-xs text-muted font-bold uppercase ml-auto">{t('common.chapterN', { n: chapterNum })}</span>
           </div>
-          <div className="text-5xl font-black jp leading-[2] mb-4">
+          <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-[2] mb-4 break-words">
             <Furigana kanji={word.kanji} kana={word.kana} />
           </div>
           <div className="text-2xl font-bold mb-2">{localize(word.meaning)}</div>
@@ -476,7 +485,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
           </div>
 
           {siblings.length > 0 && (
-            <div className="mt-6 text-left w-full border-t-3 border-ink pt-4">
+            <div className="mt-6 text-left w-full border-t-3 border-structural pt-4">
               <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-2">{t('review.siblingWords')}</div>
               <ul className="space-y-1.5">
                 {siblings.map((w, i) => (
@@ -577,7 +586,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
     )
   }
   return (
-    <div className="grid grid-cols-4 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
       {RATING_BUTTONS.map(({ key, labelKey, sub, rating, variant }) => (
         <Button
           key={labelKey}

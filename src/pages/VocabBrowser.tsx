@@ -7,6 +7,7 @@ import { useVocabStore } from "@/store/vocab-store"
 import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
+import { Watermark } from "@/components/ui/ScreenHeader"
 
 function isTypingTarget(el: Element | null): boolean {
   if (!el) return false
@@ -72,9 +73,10 @@ export function VocabBrowser() {
   }, [filtered, level])
 
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex h-full overflow-hidden">
       {/* List panel */}
-      <div className="flex-1 flex flex-col overflow-hidden">
+      <div className="flex-1 flex flex-col overflow-hidden relative">
+        <Watermark char="語" />
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 flex-wrap bg-surface">
           <input
@@ -210,7 +212,7 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
           role="dialog"
           aria-modal="true"
           onClick={e => e.stopPropagation()}
-          className="pointer-events-auto w-full max-w-lg max-h-[85vh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper"
+          className="pointer-events-auto w-full max-w-lg max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper"
         >
           {/* List navigation */}
           <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">
@@ -218,7 +220,7 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
               onClick={onPrev}
               disabled={!hasPrev}
               title={t('vocab.prevWord')}
-              className="w-8 h-8 border-2 border-ink font-black flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ‹
             </button>
@@ -229,19 +231,19 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
               onClick={onNext}
               disabled={!hasNext}
               title={t('vocab.nextWord')}
-              className="w-8 h-8 border-2 border-ink font-black flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ›
             </button>
           </div>
 
           {/* Header */}
-          <div className="p-6 border-b-3 border-structural">
+          <div className="p-4 sm:p-6 border-b-3 border-structural">
             <div className="flex justify-between items-start mb-4">
               <PosTag pos={vocab.pos} verbGroup={vocab.verbGroup} />
               <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">×</button>
             </div>
-            <div className="text-5xl font-black jp leading-none mb-3">
+            <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-none mb-3 break-words">
               <Furigana kanji={vocab.kanji} kana={vocab.kana} onKanjiClick={setSelectedKanji} />
             </div>
             {vocab.kanji !== vocab.kana && vocab.kana && (
@@ -258,7 +260,7 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
 
           {/* Examples */}
           {vocab.examples.length > 0 && (
-            <div className="p-6 border-b-3 border-ink">
+            <div className="p-6 border-b-3 border-structural">
               <div className="text-xs font-black uppercase tracking-wider mb-4">{t('common.examples')}</div>
               {vocab.examples.map((ex, i) => (
                 <div key={i} className="mb-4 last:mb-0">
