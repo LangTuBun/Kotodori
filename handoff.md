@@ -20,15 +20,21 @@ want to know what already went wrong once.
 - **N5**: 1031 vocab entries, 135 grammar points (14 categories), verb-forms
   (3 groups × 8 conjugations + cheat sheet), 15 kanji chapters (179 groups /
   1159 words / 167 anchors), 11 counter categories, 24 homophone groups.
-- **N4**: 759 vocab entries, 68 grammar points (10 categories), 110 kanji
+- **N4**: 770 vocab entries, 68 grammar points (10 categories), 110 kanji
   groups / 268 words across 10 chapters. No verb-forms or counters source
-  material exists for N4 — those two pages stay N5-only.
+  material exists for N4 — those two pages stay N5-only. 424 vocab entries
+  carry a real textbook `chapter` (15-24 only, see Known Gaps); the rest
+  carry `category` only.
 - Every bilingual field (`{vi, en}`) is filled **except** `meanings.en` on all
   1031 N5 vocab entries — see **Known Gaps**, this is deliberate and deferred,
   not forgotten.
 - `hanviet-dictionary.json`: 944 characters. Deliberately missing 々 (iteration
   mark, not a real character) and 込 (kokuji, no Chinese-origin reading) — see
   **Gotchas**.
+- `furigana-map.json`: 960 pure-kanji-compound entries (`"kanji/kana": string[]
+  | null`) letting `<Furigana>` ruby each kanji individually (教師 → きょう＋し)
+  instead of one reading spanning the whole compound. Built once by
+  `build-furigana-map.mjs` — see **Gotchas** for when to re-run it.
 
 ### Core infrastructure
 - **SRS**: classic SM-2 (`src/lib/srs.ts`) — `interval`/`repetition`/`easeFactor`
@@ -81,8 +87,10 @@ output) but worth watching the first real build for surprises.
   twice by the user ("skip for now, do everything else"). Don't just do this
   unprompted — it's a large translation job, ask first.
 - **N4 counters** — no source material exists; `/counters` stays N5-only.
-- **N4 chapter numbers** — N4 vocab carries `category` (thematic section)
-  only, no real textbook chapter (source isn't chaptered).
+- **N4 chapter numbers** — only Bài 15-24 sourced so far (chapters 1-14 and
+  25-33 still have no chaptered source, `category` only — see Data Pipeline
+  Provenance for how the 15-24 backfill + the 11 words it turned up missing
+  were handled). Get the rest of the chapters chaptered when available.
 - **N4 `verbGroup`** — heuristic (pattern-based), not textbook-verified like
   N5's. Probably fine for casual use, not verified for a "conjugate this"
   drill.
@@ -130,6 +138,11 @@ output) but worth watching the first real build for surprises.
 - **`h-screen`/`vh` vs `h-dvh`/`dvh`**: use the `d`-prefixed variants for
   anything that needs to actually fit the visible viewport on iOS Safari —
   plain `vh` includes the space behind the collapsible URL bar.
+- **Adding a pure-kanji-compound vocab word (2+ kanji, no okurigana) won't
+  get per-character furigana until `build-furigana-map.mjs` is re-run** —
+  it's a build-time map (`furigana-map.json`), not computed at render time.
+  Harmless to skip (falls back to one whole-word ruby, same as jukujikun),
+  but re-run it if the new word's furigana looks off.
 
 ---
 
@@ -166,6 +179,7 @@ tori/
     data/
       vocab.ts, kanji.ts, grammar.ts  ← per-domain n5X/n4X/allX/XForLevel(level) helpers
       hanviet-dictionary.json         ← flat {char: Hán Việt reading}, 944 entries
+      furigana-map.json               ← per-kanji reading splits, 960 entries
       n5/  vocabulary.json, grammar.json + grammar-categories.json, verb-forms.json,
            kanji.json, kanjivg.json, radical-names.json, counters.json, homophones.json (unused)
       n4/  vocabulary.json, grammar.json + grammar-categories.json, kanji.json
@@ -211,7 +225,19 @@ detail if you need to actually touch it.
   in this pipeline is id-stability-guarded (validates against the exact
   source string it was written for, aborts on mismatch) after an earlier
   near-miss where a source-row shift would have silently mis-applied fixes
-  to the wrong word.
+  to the wrong word. **`chapter` (15-24 only, 424 entries)** was backfilled
+  afterward from a second, chaptered source (`TuVung_va_Hyougen_N4_Bai15_24.md`,
+  outer `Nihongo/` folder) via `apply-n4-chapters.mjs` — matches each source
+  row to its existing entry by kana, falling back to a bracket/whitespace
+  -stripped "core kanji" comparison for kana collisions; re-runnable, never
+  adds an entry, only tags existing ones. Of the source's ~445 rows, 9 were
+  judged redundant with an entry the app already had (right/left-side,
+  "this/that person" honorifics, a `～用` grammar pattern, a noun/verb-suru
+  near-duplicate) and intentionally skipped; the other 11 were genuine gaps
+  — added by hand as `n4_0766-n4_0776` (`add-n4-bai15-24-missing-words.mjs`,
+  one-shot, not idempotent) since 2 of them (紹介／質問) trace back to rows
+  the *original* build silently dropped (bare `（する）`, headword lost).
+  Chapters 1-14 and 25-33 still have no chaptered source.
 - **N4 kanji** (`n4/kanji.json`): built from `N4_Grammar_and_Kanji_Summary-
   Final.md`'s tables (`scripts/n4-kanji-source.mjs` + `build-n4-kanji.mjs`),
   110 groups keyed one-per-anchor. `meaning.vi` was backfilled later by
@@ -225,6 +251,14 @@ detail if you need to actually touch it.
   several times as new characters were introduced (N5 enrichment, N4 vocab,
   N4 kanji). 944 entries currently; 々/込 deliberately excluded (see
   Gotchas).
+- **Furigana map** (`furigana-map.json`): built by `build-furigana-map.mjs`
+  from every pure-kanji compound across N5+N4 vocab and kanji.json word
+  lists — a backtracking search over each character's on/kun readings
+  (`all-readings.json`, kanjiapi-sourced) plus rendaku/sokuon variants finds
+  a per-character split; jukujikun/irregular readings (明日/あした, ...) that
+  can't split get `null` (rendered as one whole-word ruby, same as a real
+  dictionary). ~96% split automatically; the rest are a hand-verified
+  override table in the script. Re-run after adding vocab.
 - **Furigana Ruby HTML** (`*Ruby` fields on grammar/verb-forms): generated
   build-time via `kuroshiro`+`kuromoji`, hand-corrected for known analyzer
   misreadings. Neither package is an active runtime dependency — this was a

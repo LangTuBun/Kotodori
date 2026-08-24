@@ -15,13 +15,35 @@ function isTypingTarget(el: Element | null): boolean {
   return tag === "INPUT" || tag === "TEXTAREA" || (el as HTMLElement).isContentEditable
 }
 
-// N5 entries group by textbook chapter; N4 entries have no chapter (see
-// VocabEntry.chapter) and group by their thematic `category` instead.
-// 'all' scope groups everything under a single flat bucket rather than
-// trying to interleave two different taxonomies.
+// N5 entries always carry a textbook chapter. N4 entries carry a chapter
+// only where a chaptered source has backfilled one (currently Bài 15-24,
+// see apply-n4-chapters.mjs) -- group those by chapter just like N5, and
+// fall back to the thematic `category` for the rest (chapters 1-14 & 25-33,
+// not sourced yet). As more N4 chapters get backfilled, more of the
+// category buckets convert to chapter buckets over time.
 function groupKey(v: VocabEntry): string {
-  if (v.jlptLevel === 'N4') return v.category ?? '?'
-  return v.chapter !== undefined && v.chapter > 0 ? String(v.chapter) : '?'
+  if (v.chapter !== undefined && v.chapter > 0) return String(v.chapter)
+  return v.category ?? '?'
+}
+
+// Chapter-number keys sort numerically and come first (matching N5's plain
+// numeric ordering); category-name keys sort alphabetically after them;
+// '?' (genuinely untagged) always comes last.
+function compareGroupKeys(a: string, b: string): number {
+  if (a === '?') return 1
+  if (b === '?') return -1
+  const numA = Number(a)
+  const numB = Number(b)
+  const aIsChapter = a !== '' && !Number.isNaN(numA)
+  const bIsChapter = b !== '' && !Number.isNaN(numB)
+  if (aIsChapter && bIsChapter) return numA - numB
+  if (aIsChapter) return -1
+  if (bIsChapter) return 1
+  return a.localeCompare(b)
+}
+
+function isChapterKey(k: string): boolean {
+  return k !== '' && k !== '?' && !Number.isNaN(Number(k))
 }
 
 export function VocabBrowser() {
@@ -35,11 +57,13 @@ export function VocabBrowser() {
 
   const vocab = useMemo(() => vocabForLevel(level), [level])
   const CHAPTERS = useMemo(
-    () => Array.from(new Set(vocab.map(groupKey))).sort((a, b) =>
-      level !== 'N5' ? a.localeCompare(b) : Number(a) - Number(b)
-    ),
-    [vocab, level]
+    () => Array.from(new Set(vocab.map(groupKey))).sort(compareGroupKeys),
+    [vocab]
   )
+  // N4 (and 'all', which mixes both levels) can list both chapter numbers
+  // and category names -- only fall back to the plain "All categories"
+  // label when there's genuinely no chapter data to show alongside it.
+  const hasChapterKeys = useMemo(() => CHAPTERS.some(isChapterKey), [CHAPTERS])
   const POS_LIST = useMemo(() => Array.from(new Set(vocab.map(v => v.pos))).sort(), [vocab])
 
   // Reset the group filter across a level switch -- a chapter number from
@@ -65,12 +89,8 @@ export function VocabBrowser() {
       if (!map.has(k)) map.set(k, [])
       map.get(k)!.push(v)
     }
-    return [...map.entries()].sort(([a], [b]) => {
-      if (a === '?') return 1
-      if (b === '?') return -1
-      return level === 'N4' ? a.localeCompare(b) : Number(a) - Number(b)
-    })
-  }, [filtered, level])
+    return [...map.entries()].sort(([a], [b]) => compareGroupKeys(a, b))
+  }, [filtered])
 
   return (
     <div className="flex h-full overflow-hidden">
@@ -90,9 +110,11 @@ export function VocabBrowser() {
             onChange={e => setChapter(e.target.value || null)}
             className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
           >
-            <option value="">{level !== 'N5' ? t('vocab.allCategories') : t('vocab.allChapters')}</option>
+            <option value="">
+              {level === 'N5' ? t('vocab.allChapters') : hasChapterKeys ? t('vocab.allChaptersCategories') : t('vocab.allCategories')}
+            </option>
             {CHAPTERS.map(c => (
-              <option key={c} value={c}>{level !== 'N5' ? c : t('common.chapterN', { n: c })}</option>
+              <option key={c} value={c}>{isChapterKey(c) ? t('common.chapterN', { n: c }) : c}</option>
             ))}
           </select>
           <select
@@ -115,7 +137,7 @@ export function VocabBrowser() {
           {groupedByChapter.map(([chapterNum, items]) => (
             <div key={chapterNum}>
               <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">
-                <span>{chapterNum === '?' ? t('vocab.unknownChapter') : level === 'N5' ? t('common.chapterN', { n: chapterNum }) : chapterNum}</span>
+                <span>{chapterNum === '?' ? t('vocab.unknownChapter') : isChapterKey(chapterNum) ? t('common.chapterN', { n: chapterNum }) : chapterNum}</span>
                 <span className="text-paper/60 font-bold">{items.length}</span>
               </div>
               {items.map(v => {
