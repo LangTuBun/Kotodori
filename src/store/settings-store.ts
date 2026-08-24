@@ -52,7 +52,7 @@ function applyTypeSans(typeSans: boolean) {
 export const useSettingsStore = create<SettingsStore>()(
   persist(
     (set, get) => ({
-      lang: 'en',
+      lang: 'vi',
       setLang: (lang) => set({ lang }),
       toggleLang: () => set({ lang: get().lang === 'vi' ? 'en' : 'vi' }),
       theme: 'brutalism',
