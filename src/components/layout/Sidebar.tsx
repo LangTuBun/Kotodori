@@ -57,28 +57,40 @@ export function Sidebar({ open, onClose }: SidebarProps) {
       {/* Logo -- extra top padding on mobile covers the drawer sitting flush
           against the top edge, under the iPhone notch/Dynamic Island. */}
       <div
-        className="border-b-3 border-structural p-6"
-        style={{ paddingTop: "max(1.5rem, env(safe-area-inset-top))" }}
+        className="border-b-3 border-structural p-5"
+        style={{ paddingTop: "max(1.25rem, env(safe-area-inset-top))" }}
       >
-        <div className="flex items-start justify-between gap-2">
-          <Link to="/welcome" className="text-3xl font-display tracking-tighter hover:opacity-70 transition-opacity" title="About Tori" onClick={onClose}>
-            <Furigana kanji="鳥" kana="とり" />
+        <div className="flex items-center justify-between gap-2">
+          <Link
+            to="/welcome"
+            onClick={onClose}
+            title="About Tori"
+            className="flex items-center gap-3 group hover:opacity-80 transition-opacity min-w-0"
+          >
+            <span className="text-3xl font-display leading-none shrink-0">
+              <Furigana kanji="鳥" kana="とり" />
+            </span>
+            <div className="flex flex-col min-w-0">
+              <span className="font-mono text-xs font-black uppercase tracking-widest text-ink group-hover:text-accent transition-colors whitespace-nowrap">
+                [ TORI ]
+              </span>
+              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-muted opacity-70 whitespace-nowrap">
+                JLPT N5 / N4
+              </span>
+            </div>
           </Link>
-          <div className="flex items-start gap-2">
-            <LanguageSwitcher />
-            <button
-              type="button"
-              onClick={onClose}
-              aria-label="Close menu"
-              className="lg:hidden w-7 h-7 border-2 border-structural flex items-center justify-center shrink-0 cursor-pointer font-mono text-sm leading-none"
-            >
-              ×
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close menu"
+            className="lg:hidden w-8 h-8 border-2 border-structural flex items-center justify-center shrink-0 cursor-pointer font-mono text-base font-bold leading-none hover:bg-surface"
+          >
+            ×
+          </button>
         </div>
-        <div className="flex items-center justify-between gap-2 mt-2">
-          <div className="font-mono text-xs font-bold uppercase tracking-widest text-muted">[ TORI ]</div>
+        <div className="flex items-center justify-between gap-2 mt-4 pt-3 border-t border-structural/20">
           <LevelSwitcher />
+          <LanguageSwitcher />
         </div>
       </div>
 

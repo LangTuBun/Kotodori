@@ -38,9 +38,14 @@ export function Layout() {
           <span className="block h-0.5 w-5 mx-auto bg-current" />
           <span className="block h-0.5 w-5 mx-auto bg-current" />
         </button>
-        <span className="text-2xl font-display tracking-tighter">
-          <Furigana kanji="鳥" kana="とり" />
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="text-2xl font-display tracking-tighter leading-none">
+            <Furigana kanji="鳥" kana="とり" />
+          </span>
+          <span className="font-mono text-xs font-black uppercase tracking-widest text-muted whitespace-nowrap">
+            [ TORI ]
+          </span>
+        </div>
       </header>
 
       <div className="flex flex-1 min-h-0 overflow-hidden">
