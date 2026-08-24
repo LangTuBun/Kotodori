@@ -11,6 +11,13 @@ interface AnimatedKanjiSvgProps {
   background?: string
   guideColor?: string
   strokeColor?: string
+  /** Guide layer opacity. The guide renders instantly (unanimated) behind
+   *  the animated ink layer -- if the two colors ever end up the same (e.g.
+   *  `--color-structural` *is* full ink in the light themes, not a muted
+   *  tone), a guideColor/strokeColor pair alone can't guarantee contrast, so
+   *  this dims the guide independently and actually guarantees the draw-in
+   *  reads as an animation instead of a static, already-finished glyph. */
+  guideOpacity?: number
 }
 
 const GUIDE_COLOR = "#627d9a"
@@ -30,6 +37,7 @@ export function AnimatedKanjiSvg({
   background = "rgb(255,255,255)",
   guideColor = GUIDE_COLOR,
   strokeColor = STROKE_COLOR,
+  guideOpacity = 1,
 }: AnimatedKanjiSvgProps) {
   const pathRefs = useRef<Array<SVGPathElement | null>>([])
 
@@ -55,7 +63,7 @@ export function AnimatedKanjiSvg({
 
   return (
     <svg viewBox={viewBox} className={className} style={{ backgroundColor: background }}>
-      <g fill="none" stroke={guideColor} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <g fill="none" stroke={guideColor} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" opacity={guideOpacity}>
         {strokes.map((d, i) => (
           <path key={`guide-${i}`} d={d} />
         ))}

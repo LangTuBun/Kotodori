@@ -32,7 +32,8 @@ export function Landing() {
               strokeMs={420}
               className="w-full h-full"
               background="transparent"
-              guideColor="var(--color-structural)"
+              guideColor="var(--color-muted)"
+              guideOpacity={0.4}
               strokeColor="var(--color-ink)"
             />
           )}

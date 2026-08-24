@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
 import { useVocabStore } from "@/store/vocab-store"
 import { useSettingsStore } from "@/store/settings-store"
 import { Button } from "@/components/ui/Button"
@@ -20,8 +21,16 @@ export function Dashboard() {
   const dueCount = getDueCards().length
   const newCount = getNewCards(10).length
   const grammarCount = getGrammar(level).length
-  const today = new Date()
-  const dateLabel = `${today.getMonth() + 1}月${today.getDate()}日（${WEEKDAY_KANJI[today.getDay()]}）`
+
+  // Ticks every 30s -- enough to keep the HH:MM clock honest without a
+  // per-second re-render for a number nobody's watching that closely.
+  const [now, setNow] = useState(() => new Date())
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 30_000)
+    return () => clearInterval(id)
+  }, [])
+  const dateLabel = `${now.getMonth() + 1}月${now.getDate()}日（${WEEKDAY_KANJI[now.getDay()]}）`
+  const timeLabel = now.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', hour12: false })
 
   return (
     <div className="relative p-4 sm:p-8 max-w-5xl overflow-hidden">
@@ -34,6 +43,8 @@ export function Dashboard() {
         </h1>
         <p className="font-mono text-muted font-bold mt-3 uppercase tracking-widest text-sm">
           {t('dashboard.subtitle', { level: LEVEL_LABEL[level] })}
+          <span className="mx-2 opacity-40">·</span>
+          <span className="tabular-nums normal-case tracking-normal">{timeLabel}</span>
         </p>
       </Reveal>
 
