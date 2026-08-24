@@ -20,6 +20,9 @@ dist
 dist-ssr
 *.local
 
+# Self-host config (see .env.example)
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

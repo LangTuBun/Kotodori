@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+.git
+.gitignore
+*.log
+handoff.md
+.env
+.env.*
+!.env.example
+.vscode
+.claude
+.codex
+.agents

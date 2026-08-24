@@ -1,0 +1,11 @@
+services:
+  tori:
+    build: .
+    image: tori:local
+    container_name: tori
+    restart: unless-stopped
+    ports:
+      # Host port is configurable via .env (see .env.example) so it doesn't
+      # collide with anything else already running on the Proxmox host --
+      # the container itself always listens on 80.
+      - "${TORI_PORT:-8080}:80"
