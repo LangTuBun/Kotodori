@@ -75,7 +75,7 @@ export function VocabBrowser() {
   return (
     <div className="flex h-full overflow-hidden">
       {/* List panel */}
-      <div className="flex-1 flex flex-col overflow-hidden relative">
+      <div className="flex-1 flex flex-col min-h-0 overflow-hidden relative">
         <Watermark char="語" />
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 flex-wrap bg-surface">

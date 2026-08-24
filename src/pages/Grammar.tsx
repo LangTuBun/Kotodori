@@ -7,6 +7,7 @@ import { Ruby } from "@/components/ui/Ruby"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
+import { CollapsibleFilters } from "@/components/ui/CollapsibleFilters"
 
 // requiredVerbForm cross-links only exist for N5 grammar (verb-forms.json is
 // N5-only, see handoff.md) -- the pill filter and its badges are simply
@@ -133,50 +134,61 @@ export function Grammar() {
           </div>
         </div>
 
-        {/* Category chips */}
-        <div className="px-4 py-3 border-b-3 border-structural bg-paper flex gap-2 flex-wrap">
-          <button
-            onClick={() => setCat(null)}
-            className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
-          >
-            {t('common.all')}
-          </button>
-          {categories.map(c => (
+        {/* Category + verb-form filters (collapsible on mobile) */}
+        <CollapsibleFilters
+          label="Filters"
+          activeLabel={
+            [cat ? categories.find(c => c.slug === cat)?.romanNumeral : null,
+             verbForm ? verbForms.find(f => f.id === verbForm)?.titleJa : null]
+              .filter(Boolean).join(' · ') || t('common.all')
+          }
+          isFiltered={cat !== null || verbForm !== null}
+        >
+          {/* Category chips */}
+          <div className="w-full flex gap-2 flex-wrap">
             <button
-              key={c.slug}
-              onClick={() => setCat(prev => prev === c.slug ? null : c.slug)}
-              className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
-              title={localize(c.title)}
+              onClick={() => setCat(null)}
+              className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
             >
-              {c.romanNumeral} <span className="opacity-60">({c.count})</span>
+              {t('common.all')}
             </button>
-          ))}
-        </div>
-
-        {/* Verb-form pill filter */}
-        <div className="px-4 py-3 border-b-3 border-structural bg-paper flex items-center gap-2 flex-wrap">
-          <span className="text-[10px] font-black uppercase tracking-widest shrink-0 text-muted">
-            {t('grammar.filterByVerbForm')}
-          </span>
-          {verbForms.map(f => {
-            const active = verbForm === f.id
-            return (
+            {categories.map(c => (
               <button
-                key={f.id}
-                onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
-                className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
-                title={localize(f.title)}
+                key={c.slug}
+                onClick={() => setCat(prev => prev === c.slug ? null : c.slug)}
+                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+                title={localize(c.title)}
               >
-                {f.titleJa}
+                {c.romanNumeral} <span className="opacity-60">({c.count})</span>
               </button>
-            )
-          })}
-          {verbForm && (
-            <button onClick={() => setVerbForm(null)} className="text-xs font-bold text-muted hover:text-red underline cursor-pointer">
-              {t('grammar.clearFilter')}
-            </button>
-          )}
-        </div>
+            ))}
+          </div>
+
+          {/* Verb-form pill filter */}
+          <div className="w-full flex items-center gap-2 flex-wrap pt-2 mt-1 border-t border-ink/10">
+            <span className="text-[10px] font-black uppercase tracking-widest shrink-0 text-muted">
+              {t('grammar.filterByVerbForm')}
+            </span>
+            {verbForms.map(f => {
+              const active = verbForm === f.id
+              return (
+                <button
+                  key={f.id}
+                  onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
+                  className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
+                  title={localize(f.title)}
+                >
+                  {f.titleJa}
+                </button>
+              )
+            })}
+            {verbForm && (
+              <button onClick={() => setVerbForm(null)} className="text-xs font-bold text-muted hover:text-red underline cursor-pointer">
+                {t('grammar.clearFilter')}
+              </button>
+            )}
+          </div>
+        </CollapsibleFilters>
 
         {showTips && (
           <div className="px-4 py-3 border-b-3 border-structural bg-yellow/30">

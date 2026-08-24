@@ -8,6 +8,7 @@ import { KanjiGroupModal } from "@/components/kanji/KanjiGroupModal"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
 import { Watermark } from "@/components/ui/ScreenHeader"
+import { CollapsibleFilters } from "@/components/ui/CollapsibleFilters"
 
 // N5's textbook chapters run 1-15 and N4's run 15-24 (both numbered after
 // their own curriculum's Bai/chapter, per their own source material) -- so
@@ -108,7 +109,19 @@ export function Kanji() {
         </div>
 
         {/* Chapter chips */}
-        <div className="px-4 py-3 border-b-3 border-structural bg-paper flex gap-2 flex-wrap">
+        <CollapsibleFilters
+          label={t('common.chapterN', { n: '' }).replace(/\s*$/, '')}
+          activeLabel={
+            chapterKey === null
+              ? t('common.all')
+              : (() => {
+                  const ch = chapters.find(c => `${c.src}-${c.chapter}` === chapterKey)
+                  if (!ch) return t('common.all')
+                  return `${level === 'all' ? ch.src + ' ' : ''}${t('common.chapterN', { n: ch.chapter })} (${ch.wordCount})`
+                })()
+          }
+          isFiltered={chapterKey !== null}
+        >
           <button
             onClick={() => setChapterKey(null)}
             className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapterKey === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
@@ -128,7 +141,7 @@ export function Kanji() {
               </button>
             )
           })}
-        </div>
+        </CollapsibleFilters>
 
         {/* Groups grid */}
         <div className="flex-1 min-h-0 overflow-y-auto p-4 pb-10">
