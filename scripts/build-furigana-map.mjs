@@ -38,6 +38,23 @@ const root = path.join(__dirname, "..")
 const readings = JSON.parse(fs.readFileSync(path.join(__dirname, "all-readings.json"), "utf8"))
 const n5Vocab = JSON.parse(fs.readFileSync(path.join(root, "src/data/n5/vocabulary.json"), "utf8"))
 const n4Vocab = JSON.parse(fs.readFileSync(path.join(root, "src/data/n4/vocabulary.json"), "utf8"))
+const n5Kanji = JSON.parse(fs.readFileSync(path.join(root, "src/data/n5/kanji.json"), "utf8"))
+const n4Kanji = JSON.parse(fs.readFileSync(path.join(root, "src/data/n4/kanji.json"), "utf8"))
+
+// kanji.json's per-anchor words[] lists are a separate, larger word pool
+// than vocabulary.json (~2.5x more entries, limited overlap -- see
+// Homophones.tsx's buildPool, which draws from both for the same reason).
+// Kanji.tsx and KanjiGroupModal render these through <Furigana> too, so the
+// map has to cover them or those pages keep the old whole-run rendering.
+function kanjiJsonWords(kanjiData) {
+  const words = []
+  for (const chapter of kanjiData.chapters) {
+    for (const group of chapter.groups) {
+      for (const w of group.words) words.push(w)
+    }
+  }
+  return words
+}
 
 const KANJI_RE = /[一-鿿㐀-䶿々]/
 
@@ -52,25 +69,35 @@ function kataToHira(s) {
 
 // "ひと.つ" -> "ひと" (kanji-reading part only, drop okurigana after '.')
 // "ひと-" / "-り" -> "ひと" / "り" (strip position-marker dashes)
-function cleanReading(r) {
+//
+// Also returns a second "full" form with the dot removed entirely (parts
+// joined). Most kun entries list the dot specifically to mark where
+// okurigana *would* begin in the verb/adjective form (焼く -> "や.く"), but
+// some compound nouns are conventionally written with that okurigana
+// absorbed into the kanji itself (焼肉, not 焼き肉; 建物, not 建て物) --
+// kanjidic captures this as a *separate* kun entry with the okurigana
+// already folded in (e.g. 建 lists both "た.てる" and "た.て"). Taking the
+// dot-removed form of a short entry like "た.て" recovers "たて", the
+// correct compound-noun reading; taking it for "た.てる" just produces the
+// unused "たてる", which harmlessly never matches.
+function cleanReadings(r) {
   let s = r.replace(/^-/, "").replace(/-$/, "")
   const dot = s.indexOf(".")
-  if (dot !== -1) s = s.slice(0, dot)
-  return kataToHira(s)
+  if (dot === -1) return [kataToHira(s)]
+  return [kataToHira(s.slice(0, dot)), kataToHira(s.slice(0, dot) + s.slice(dot + 1))]
 }
 
 const RENDAKU = {
-  か: "が", き: "ぎ", く: "ぐ", け: "げ", こ: "ご",
-  さ: "ざ", し: "じ", す: "ず", せ: "ぜ", そ: "ぞ",
-  た: "だ", ち: "ぢ", つ: "づ", て: "で", と: "ど",
-  は: "ば", ひ: "び", ふ: "ぶ", へ: "べ", ほ: "ぼ",
+  か: ["が"], き: ["ぎ"], く: ["ぐ"], け: ["げ"], こ: ["ご"],
+  さ: ["ざ"], し: ["じ"], す: ["ず"], せ: ["ぜ"], そ: ["ぞ"],
+  た: ["だ"], ち: ["ぢ", "じ"], つ: ["づ", "ず"], て: ["で"], と: ["ど"],
+  は: ["ば"], ひ: ["び"], ふ: ["ぶ"], へ: ["べ"], ほ: ["ぼ"],
 }
 const HANDAKU = { は: "ぱ", ひ: "ぴ", ふ: "ぷ", へ: "ぺ", ほ: "ぽ" }
 
-function rendakuVariant(reading) {
+function rendakuVariants(reading) {
   const first = reading[0]
-  if (RENDAKU[first]) return RENDAKU[first] + reading.slice(1)
-  return null
+  return (RENDAKU[first] || []).map(v => v + reading.slice(1))
 }
 function handakuVariant(reading) {
   const first = reading[0]
@@ -78,25 +105,29 @@ function handakuVariant(reading) {
   return null
 }
 
+// ち/き/く/つ can contract to っ before the next character's reading
+// (学(がく) + 校(こう) -> がっこう). Applies even to a bare single-mora
+// reading (切(き) + 符(ぷ) -> きっぷ).
 const SOKUON_TRIGGERS = new Set(["く", "き", "ち", "つ"])
 function sokuonVariant(reading) {
   const last = reading[reading.length - 1]
-  if (reading.length >= 2 && SOKUON_TRIGGERS.has(last)) {
+  if (SOKUON_TRIGGERS.has(last)) {
     return reading.slice(0, -1) + "っ"
   }
   return null
 }
 
-// Base (unclean-deduped) candidate readings for a character, from its own
-// on/kun entry. Does not include rendaku/sokuon/々 handling -- callers add
-// those as needed per position.
+// Base candidate readings for a character, from its own on/kun entry. Does
+// not include rendaku/sokuon/々 handling -- callers add those as needed per
+// position.
 function baseCandidates(ch) {
   const entry = readings[ch]
   if (!entry) return []
   const set = new Set()
   for (const r of [...(entry.on || []), ...(entry.kun || [])]) {
-    const c = cleanReading(r)
-    if (c) set.add(c)
+    for (const c of cleanReadings(r)) {
+      if (c) set.add(c)
+    }
   }
   return [...set]
 }
@@ -107,8 +138,7 @@ function expandCandidates(base, { isFirst, isLast }) {
   const set = new Set(base)
   if (!isFirst) {
     for (const c of base) {
-      const rv = rendakuVariant(c)
-      if (rv) set.add(rv)
+      for (const rv of rendakuVariants(c)) set.add(rv)
       const hv = handakuVariant(c)
       if (hv) set.add(hv)
     }
@@ -149,31 +179,64 @@ function trySplit(chars, kana) {
   return null
 }
 
-// Hand-verified jukujikun / irregular readings that the character-reading
-// search either can't split (no per-character correspondence exists) or
-// could mis-split by coincidence. `null` = always render as one whole-word
-// ruby.
+// Hand-verified overrides, checked against the actual N5+N4 vocab set.
+// Two kinds:
+//   - explicit splits for compounds whose per-character boundary is known
+//     but isn't recoverable from on/kun data (irregular contractions like
+//     日 -> に in 日本, or け for 景 in 景色 -- both real, dictionary-attested
+//     readings, just not ones kanjidic records as a distinct kun/on)
+//   - `null` for genuine jukujikun, where the reading doesn't correspond to
+//     individual characters at all (明日/あした, 大人/おとな, ...) -- always
+//     rendered as one whole-word ruby, same as a real dictionary would.
 const OVERRIDES = {
-  "明日/あした": null,
+  "日本/にほん": ["に", "ほん"],
+  "日本人/にほんじん": ["に", "ほん", "じん"],
+  "日本語/にほんご": ["に", "ほん", "ご"],
+  "日本食/にほんしょく": ["に", "ほん", "しょく"],
+  "日本料理/にほんりょうり": ["に", "ほん", "りょう", "り"],
+  "景色/けしき": ["け", "しき"],
+  // き+ふ(->ぷ) gains an inserted geminate (きっぷ/きって) rather than 切's
+  // own trailing mora contracting into one -- the search only models
+  // trailing-mora contraction, not mora insertion, so these need a literal
+  // split.
+  "切符/きっぷ": ["きっ", "ぷ"],
+  "切手/きって": ["きっ", "て"],
+  // 植える's masu-stem うえ used as a noun -- kanjidic only lists the verb
+  // form "う.える" for 植, not a separate stem-only kun entry the way 建/焼
+  // do, so the dot-removal trick above can't recover "うえ" on its own.
+  "植木/うえき": ["うえ", "き"],
+
   "今日/きょう": null,
+  "明日/あした": null,
+  "明後日/あさって": null,
   "昨日/きのう": null,
+  "一昨日/おととい": null,
+  "今朝/けさ": null,
   "一日/ついたち": null,
+  "二日/ふつか": null,
+  "二日前/ふつかまえ": null,
   "二十日/はつか": null,
-  "大人/おとな": null,
   "今年/ことし": null,
-  "上手/じょうず": null,
+  "一昨年/おととし": null,
+  "大人/おとな": null,
+  "部屋/へや": null,
   "下手/へた": null,
-  "眼鏡/めがね": null,
-  "土産/みやげ": null,
-  "友達/ともだち": null,
-  "一人/ひとり": null,
-  "二人/ふたり": null,
+  "時計/とけい": null,
+  "腕時計/うでどけい": null,
+  "風邪/かぜ": null,
+  "相撲/すもう": null,
+  "息子/むすこ": null,
+  "真面目/まじめ": null,
+  "果物/くだもの": null,
   "八百屋/やおや": null,
-  "七夕/たなばた": null,
-  "為替/かわせ": null,
-  "小豆/あずき": null,
-  "博士/はかせ": null,
-  "迷子/まいご": null,
+  // Data bugs, not jukujikun -- pre-existing corruption in the source JSON,
+  // not this script's job to fix. null just keeps today's whole-word
+  // fallback rather than compounding the corruption into a bogus split.
+  // 仕事: kana is doubled ("しごとおしごと" instead of "しごと").
+  "仕事/しごとおしごと": null,
+  // 学院: kanji field is missing its leading 大 (kana/hanviet/meaning are
+  // all for 大学院 "graduate school"; 学院 alone means "institute").
+  "学院/だいがくいん": null,
 }
 
 function buildMap(entries) {
@@ -190,6 +253,7 @@ function buildMap(entries) {
     if (key in OVERRIDES) {
       map[key] = OVERRIDES[key]
       if (OVERRIDES[key] === null) jukujikun.push(key)
+      else splitOk.push(key)
       continue
     }
 
@@ -211,7 +275,7 @@ function buildMap(entries) {
   return { map, jukujikun, splitOk }
 }
 
-const allEntries = [...n5Vocab, ...n4Vocab]
+const allEntries = [...n5Vocab, ...n4Vocab, ...kanjiJsonWords(n5Kanji), ...kanjiJsonWords(n4Kanji)]
 const { map, jukujikun, splitOk } = buildMap(allEntries)
 
 const outPath = path.join(root, "src/data/furigana-map.json")

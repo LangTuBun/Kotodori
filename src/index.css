@@ -263,7 +263,7 @@ body::after {
 .jp { font-family: var(--font-jp); }
 .mincho { font-family: var(--font-display); }
 
-ruby { font-family: var(--font-jp); }
+ruby { font-family: var(--font-jp); ruby-align: center; ruby-overhang: none; }
 rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--color-muted); }
 
 /* ---------- Density & type preferences ---------- */

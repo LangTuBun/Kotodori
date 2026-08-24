@@ -1,4 +1,7 @@
 import { useTranslation } from "@/lib/useTranslation"
+import furiganaMap from "@/data/furigana-map.json"
+
+const FURIGANA_MAP = furiganaMap as Record<string, string[] | null>
 
 interface FuriganaProps {
   kanji: string
@@ -72,6 +75,25 @@ function alignFurigana(kanji: string, kana: string): Segment[] | null {
       end = idx
     }
     const reading = kana.slice(pos, end)
+
+    // Multi-character kanji runs (pure compounds like 教師) would otherwise
+    // get one ruby spanning the whole run, which the browser centers over
+    // all the characters -- overflowing onto neighbors. Look up a
+    // per-character split from the build-time furigana map; entries with no
+    // split (jukujikun like 明日/あした) fall through to the old whole-run
+    // behavior below.
+    const runChars = [...run.text]
+    if (runChars.length > 1) {
+      const split = FURIGANA_MAP[`${run.text}/${reading}`]
+      if (split && split.length === runChars.length) {
+        for (let j = 0; j < runChars.length; j++) {
+          segments.push({ text: runChars[j], reading: split[j] || undefined })
+        }
+        pos = end
+        continue
+      }
+    }
+
     segments.push({ text: run.text, reading: reading || undefined })
     pos = end
   }
