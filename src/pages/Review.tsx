@@ -13,6 +13,7 @@ import { n5KanjiChapters, n4KanjiChapters } from "@/data/kanji"
 import type { VocabEntry, KanjiChapter, KanjiGroup, KanjiWord, SRSCard } from "@/types"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import type { Level } from "@/store/settings-store"
+import { groupKey, compareGroupKeys, isChapterKey } from "@/lib/vocab-grouping"
 
 // N5's chapter 15 ("N5 supplement") and N4's chapter 15 (Bai 15) both use
 // the identical k15_gN group-id scheme (see Kanji.tsx's own src-tagging for
@@ -30,7 +31,6 @@ function taggedKanjiChapters(level: Level): Array<KanjiChapter & { src: Src }> {
   if (level === 'N4') return n4
   return [...n5, ...n4]
 }
-const CHAPTERS = Array.from({ length: 14 }, (_, i) => i + 1)
 const COUNT_PRESETS = [10, 20, 30, 50] as const
 
 type Mode = 'vocab' | 'kanji'
@@ -67,20 +67,30 @@ export function Review() {
 
   const vocab = useMemo(() => vocabForLevel(level), [level])
   const POS_LIST = useMemo(() => Array.from(new Set(vocab.map(v => v.pos))).sort(), [vocab])
-  // N5 entries carry a textbook chapter; N4 entries carry a thematic
-  // category instead (see VocabEntry.category). 'all' scope skips both
-  // axes rather than trying to reconcile two different taxonomies.
-  const chapterFilterAvailable = level === 'N5'
-  const categoryFilterAvailable = level === 'N4'
-  const CATEGORIES = useMemo(
-    () => categoryFilterAvailable ? Array.from(new Set(vocab.map(v => v.category).filter((c): c is string => !!c))) : [],
-    [vocab, categoryFilterAvailable]
+  // Same chapter/category grouping VocabBrowser uses: chapter number where
+  // one's been backfilled (N5 always, N4 for Bài 15-24), thematic category
+  // otherwise -- one unified filter axis instead of picking a single scheme
+  // per level (which is what left N4 without a chapter option at all).
+  const GROUPS = useMemo(() => Array.from(new Set(vocab.map(groupKey))).sort(compareGroupKeys), [vocab])
+  const hasChapterKeys = useMemo(() => GROUPS.some(isChapterKey), [GROUPS])
+  const allChapterKeys = useMemo(() => GROUPS.every(isChapterKey), [GROUPS])
+
+  // Kanji-mode chapters are always plain numbers (no category fallback --
+  // every kanji entry is chaptered), so this stays a separate numeric axis
+  // rather than folding into `group` above.
+  const kanjiChapterNums = useMemo(
+    () => Array.from(new Set(kanjiChapters.map(c => c.chapter))).sort((a, b) => a - b),
+    [kanjiChapters]
   )
 
-  const [chapter, setChapter] = useState<number | null>(null)
-  const [category, setCategory] = useState<string | null>(null)
+  const [group, setGroup] = useState<string | null>(null)
+  const [kanjiChapter, setKanjiChapter] = useState<number | null>(null)
   const [pos, setPos] = useState<string | null>(null)
   const [countPreset, setCountPreset] = useState<number | 'all'>(20)
+
+  // A chapter number or category name from one level has no meaning after
+  // switching levels (matches VocabBrowser's same reset).
+  useEffect(() => { setGroup(null); setKanjiChapter(null); setPos(null) }, [level])
 
   const [phase, setPhase] = useState<Phase>('setup')
   const [queue, setQueue] = useState<ReviewCard[]>([])
@@ -90,17 +100,16 @@ export function Review() {
 
   const vocabPool = useMemo(
     () => vocab.filter(v =>
-      (!chapterFilterAvailable || chapter === null || v.chapter === chapter) &&
-      (!categoryFilterAvailable || category === null || v.category === category) &&
+      (group === null || groupKey(v) === group) &&
       (pos === null || v.pos === pos)
     ),
-    [vocab, chapter, category, pos, chapterFilterAvailable, categoryFilterAvailable]
+    [vocab, group, pos]
   )
 
   const kanjiPool = useMemo(() => {
     const result: KanjiPoolEntry[] = []
     for (const c of kanjiChapters) {
-      if (chapter !== null && c.chapter !== chapter) continue
+      if (kanjiChapter !== null && c.chapter !== kanjiChapter) continue
       for (const g of c.groups) {
         g.words.forEach((word, wi) => {
           result.push({ id: `${c.src}:${g.id}::w${wi}`, word, group: g, chapterNum: c.chapter })
@@ -108,7 +117,7 @@ export function Review() {
       }
     }
     return result
-  }, [chapter, kanjiChapters])
+  }, [kanjiChapter, kanjiChapters])
 
   const poolIds = mode === 'vocab' ? vocabPool.map(v => v.id) : kanjiPool.map(x => x.id)
   const poolSize = poolIds.length
@@ -183,8 +192,8 @@ export function Review() {
     return (
       <ReviewSetup
         mode={mode} setMode={setMode}
-        chapter={chapter} setChapter={setChapter} chapterFilterAvailable={chapterFilterAvailable}
-        category={category} setCategory={setCategory} categoryFilterAvailable={categoryFilterAvailable} categories={CATEGORIES}
+        group={group} setGroup={setGroup} groups={GROUPS} hasChapterKeys={hasChapterKeys} allChapterKeys={allChapterKeys}
+        kanjiChapter={kanjiChapter} setKanjiChapter={setKanjiChapter} kanjiChapterNums={kanjiChapterNums}
         pos={pos} setPos={setPos} posList={POS_LIST}
         countPreset={countPreset} setCountPreset={setCountPreset}
         poolSize={poolSize} dueCount={dueCount} effectiveCount={effectiveCount}
@@ -246,21 +255,27 @@ export function Review() {
 
 function ReviewSetup({
   mode, setMode,
-  chapter, setChapter, chapterFilterAvailable,
-  category, setCategory, categoryFilterAvailable, categories,
+  group, setGroup, groups, hasChapterKeys, allChapterKeys,
+  kanjiChapter, setKanjiChapter, kanjiChapterNums,
   pos, setPos, posList,
   countPreset, setCountPreset,
   poolSize, dueCount, effectiveCount, onStart,
 }: {
   mode: Mode; setMode: (m: Mode) => void
-  chapter: number | null; setChapter: (c: number | null) => void; chapterFilterAvailable: boolean
-  category: string | null; setCategory: (c: string | null) => void; categoryFilterAvailable: boolean; categories: string[]
+  group: string | null; setGroup: (g: string | null) => void; groups: string[]; hasChapterKeys: boolean; allChapterKeys: boolean
+  kanjiChapter: number | null; setKanjiChapter: (c: number | null) => void; kanjiChapterNums: number[]
   pos: string | null; setPos: (p: string | null) => void; posList: string[]
   countPreset: number | 'all'; setCountPreset: (c: number | 'all') => void
   poolSize: number; dueCount: number; effectiveCount: number
   onStart: () => void
 }) {
   const { t } = useTranslation()
+  // "Chapter" when every group key is a chapter number (N5), "Chapter /
+  // Category" when it's a mix (N4, all), "Category" if somehow no chapter
+  // keys exist at all -- mirrors VocabBrowser's own dropdown-label logic.
+  const groupLabel = allChapterKeys
+    ? t('review.chapterLabel')
+    : hasChapterKeys ? t('review.chapterCategoryLabel') : t('review.categoryLabel')
   return (
     <div className="relative p-4 sm:p-8 max-w-3xl overflow-hidden">
       <Watermark char="復" />
@@ -287,26 +302,27 @@ function ReviewSetup({
         </div>
 
         <div className="p-6 space-y-6">
-          {/* Chapter filter (N5) / Category filter (N4) */}
-          {chapterFilterAvailable && (
-            <FilterSection label={t('review.chapterLabel')}>
+          {/* Vocab: unified chapter/category filter (same grouping as
+              VocabBrowser). Kanji: plain chapter filter -- every kanji entry
+              is chaptered on both levels, so this is always available. */}
+          {mode === 'vocab' ? (
+            <FilterSection label={groupLabel}>
               <ChipRow>
-                <Chip active={chapter === null} onClick={() => setChapter(null)}>{t('common.all')}</Chip>
-                {CHAPTERS.map(c => (
-                  <Chip key={c} active={chapter === c} onClick={() => setChapter(chapter === c ? null : c)}>
-                    {t('common.chapterN', { n: c })}
+                <Chip active={group === null} onClick={() => setGroup(null)}>{t('common.all')}</Chip>
+                {groups.map(g => (
+                  <Chip key={g} active={group === g} onClick={() => setGroup(group === g ? null : g)}>
+                    {g === '?' ? t('vocab.unknownChapter') : isChapterKey(g) ? t('common.chapterN', { n: g }) : g}
                   </Chip>
                 ))}
               </ChipRow>
             </FilterSection>
-          )}
-          {categoryFilterAvailable && (
-            <FilterSection label={t('review.categoryLabel')}>
+          ) : (
+            <FilterSection label={t('review.chapterLabel')}>
               <ChipRow>
-                <Chip active={category === null} onClick={() => setCategory(null)}>{t('common.all')}</Chip>
-                {categories.map(c => (
-                  <Chip key={c} active={category === c} onClick={() => setCategory(category === c ? null : c)}>
-                    {c}
+                <Chip active={kanjiChapter === null} onClick={() => setKanjiChapter(null)}>{t('common.all')}</Chip>
+                {kanjiChapterNums.map(c => (
+                  <Chip key={c} active={kanjiChapter === c} onClick={() => setKanjiChapter(kanjiChapter === c ? null : c)}>
+                    {t('common.chapterN', { n: c })}
                   </Chip>
                 ))}
               </ChipRow>

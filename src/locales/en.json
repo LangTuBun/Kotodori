@@ -69,6 +69,7 @@
     "kanjiModeN5Only": "Kanji mode is N5-only",
     "chapterLabel": "Chapter",
     "categoryLabel": "Category",
+    "chapterCategoryLabel": "Chapter / Category",
     "posLabel": "Word Type",
     "countLabel": "Count",
     "wordsSuffix": "words",
