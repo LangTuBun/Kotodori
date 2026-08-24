@@ -43,7 +43,7 @@ export interface GrammarCategory {
   slug: string
   romanNumeral: string
   order: number
-  title: string
+  title: { vi: string; en: string }
   count: number
 }
 

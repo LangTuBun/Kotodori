@@ -141,7 +141,7 @@ export function Grammar() {
               key={c.slug}
               onClick={() => setCat(prev => prev === c.slug ? null : c.slug)}
               className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
-              title={c.title}
+              title={localize(c.title)}
             >
               {c.romanNumeral} <span className="opacity-60">({c.count})</span>
             </button>
@@ -176,10 +176,10 @@ export function Grammar() {
         {showTips && (
           <div className="px-4 py-3 border-b-3 border-structural bg-yellow/30">
             <ul className="space-y-1.5">
-              {tips.map((t, i) => (
+              {tips.map((tip, i) => (
                 <li key={i} className="text-sm flex gap-2">
                   <span className="font-black">•</span>
-                  <span>{t}</span>
+                  <span>{localize(tip)}</span>
                 </li>
               ))}
             </ul>
@@ -207,7 +207,7 @@ export function Grammar() {
                   >
                     {c.romanNumeral}
                   </span>
-                  <span className="font-black text-base flex-1 group-hover:underline">{c.title}</span>
+                  <span className="font-black text-base flex-1 group-hover:underline">{localize(c.title)}</span>
                   <span className="text-xs font-bold text-muted">{items.length}</span>
                   <span className="text-sm font-black text-muted w-4 text-center">{isCollapsed ? '+' : '−'}</span>
                 </button>
@@ -240,7 +240,7 @@ export function Grammar() {
               <span className="text-xs font-black px-2 py-0.5 border-2 border-structural rounded-[var(--radius-sm)]" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
                 {categories.find(c => c.slug === selected.category)?.romanNumeral}
               </span>
-              <span className="text-xs font-bold uppercase tracking-wider text-muted">#{selected.num} · {categories.find(c => c.slug === selected.category)?.title}</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-muted">#{selected.num} · {localize(categories.find(c => c.slug === selected.category)?.title)}</span>
             </div>
             <div className="text-3xl font-black leading-tight mb-3">
               <Ruby text={selected.pattern} html={selected.patternRuby} />

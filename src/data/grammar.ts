@@ -16,8 +16,8 @@ export const n5GrammarCategories = n5CategoriesJson.categories as GrammarCategor
 export const n4GrammarCategories = n4CategoriesJson.categories as GrammarCategory[]
 export const allGrammarCategories: GrammarCategory[] = [...n5GrammarCategories, ...n4GrammarCategories]
 
-export const n5GrammarTips = n5CategoriesJson.tips as string[]
-export const n4GrammarTips = n4CategoriesJson.tips as string[]
+export const n5GrammarTips = n5CategoriesJson.tips as { vi: string; en: string }[]
+export const n4GrammarTips = n4CategoriesJson.tips as { vi: string; en: string }[]
 
 export function getGrammar(level: Level): GrammarPoint[] {
   if (level === "N5") return n5Grammar
@@ -31,7 +31,7 @@ export function getGrammarCategories(level: Level): GrammarCategory[] {
   return allGrammarCategories
 }
 
-export function getGrammarTips(level: Level): string[] {
+export function getGrammarTips(level: Level): { vi: string; en: string }[] {
   if (level === "N5") return n5GrammarTips
   if (level === "N4") return n4GrammarTips
   return [...n5GrammarTips, ...n4GrammarTips]

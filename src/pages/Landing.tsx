@@ -40,7 +40,7 @@ export function Landing() {
           </h1>
         </Reveal>
         <Reveal index={2}>
-          <p className="text-lg md:text-xl text-muted max-w-xl jp lowercase font-sans normal-case">
+          <p className="text-lg md:text-xl text-muted max-w-xl lowercase">
             learn japanese, in your own time.
           </p>
         </Reveal>
