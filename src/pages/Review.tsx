@@ -206,7 +206,7 @@ export function Review() {
           </div>
           <div className="flex gap-3 justify-center">
             <Button variant="yellow" onClick={backToSetup}>{t('review.continueReview')}</Button>
-            <Button onClick={() => navigate('/')}>{t('review.dashboardBtn')}</Button>
+            <Button onClick={() => navigate('/dashboard')}>{t('review.dashboardBtn')}</Button>
           </div>
         </div>
       </div>

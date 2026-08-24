@@ -8,11 +8,11 @@ import { Furigana } from "@/components/ui/Furigana"
 import kanjivg from "@/data/n5/kanjivg.json"
 
 const FEATURES: { glyph: string; ja: string; title: string; description: string; href: string }[] = [
-  { glyph: "語", ja: "単語", title: "Vocabulary", description: "1,700+ N5 & N4 words with SRS review, furigana, and Hán Việt notes.", href: "/vocab" },
-  { glyph: "文", ja: "文法", title: "Grammar", description: "200+ N5 & N4 patterns, categorized and cross-linked to verb forms.", href: "/grammar" },
-  { glyph: "字", ja: "漢字", title: "Kanji", description: "Stroke-order animation, radical breakdowns, and compound words.", href: "/kanji" },
-  { glyph: "動", ja: "動詞", title: "Verb Forms", description: "Every conjugation, grouped by verb class with worked examples.", href: "/verb-forms" },
-  { glyph: "数", ja: "数え方", title: "Counters", description: "Every counter word and its phonetic exceptions, in one table.", href: "/counters" },
+  { glyph: "語", ja: "単語", title: "Vocabulary", description: "N5 & N4 words, SRS review, furigana, Hán Việt notes.", href: "/vocab" },
+  { glyph: "文", ja: "文法", title: "Grammar", description: "N5 & N4 patterns, cross-linked to verb forms.", href: "/grammar" },
+  { glyph: "字", ja: "漢字", title: "Kanji", description: "Stroke order, radical breakdowns, compound words.", href: "/kanji" },
+  { glyph: "動", ja: "動詞", title: "Verb Forms", description: "Every conjugation, grouped by verb class.", href: "/verb-forms" },
+  { glyph: "数", ja: "数え方", title: "Counters", description: "Counter words and their phonetic exceptions.", href: "/counters" },
 ]
 
 export function Landing() {
@@ -31,6 +31,9 @@ export function Landing() {
               replayKey={replayKey}
               strokeMs={420}
               className="w-full h-full"
+              background="transparent"
+              guideColor="var(--color-structural)"
+              strokeColor="var(--color-ink)"
             />
           )}
         </Reveal>
@@ -40,13 +43,13 @@ export function Landing() {
           </h1>
         </Reveal>
         <Reveal index={2}>
-          <p className="text-lg md:text-xl text-muted max-w-xl lowercase">
-            learn japanese, in your own time.
+          <p className="font-mono text-xs tracking-[0.16em] text-muted font-bold uppercase">
+            N5 / N4 · 個人学習ログ
           </p>
         </Reveal>
         <Reveal index={3}>
           <Link
-            to="/"
+            to="/dashboard"
             className="inline-flex items-center gap-2 border-3 border-ink bg-ink text-paper px-7 py-3.5 font-mono font-bold uppercase tracking-wider shadow-[var(--shadow-brutal)] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-none active:translate-x-0.5 active:translate-y-0.5 transition-all duration-100"
           >
             Enter Dashboard →
@@ -79,11 +82,11 @@ export function Landing() {
         </div>
       </section>
 
-      {/* Live theme picker demo */}
+      {/* Theme picker */}
       <section className="px-8 pb-24 max-w-3xl mx-auto">
         <Reveal index={0}>
           <p className="font-mono text-xs tracking-[0.16em] text-accent font-bold uppercase mb-8 text-center">
-            <span className="jp mr-2 normal-case">紙</span>· NINE PAPERS
+            <span className="jp mr-2 normal-case">紙</span>· THEME
           </p>
         </Reveal>
         <Reveal index={1}>

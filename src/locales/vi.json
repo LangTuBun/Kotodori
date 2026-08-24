@@ -45,7 +45,7 @@
     "cardsDueNow": "thẻ đến hạn"
   },
   "dashboard": {
-    "subtitle": "Hôm nay cũng cố gắng nhé",
+    "subtitle": "Nhật trình học {level}",
     "streakLabel": "Chuỗi ngày",
     "streakSuffix": " ngày",
     "totalWordsLabel": "Tổng số từ",
@@ -53,7 +53,7 @@
     "reviewedLabel": "Đã ôn",
     "cardsDue": "Thẻ đến hạn",
     "reviewNow": "Ôn ngay",
-    "allDone": "Xong hết rồi!",
+    "allDone": "Không có thẻ đến hạn",
     "newWords": "Từ mới",
     "learnNew": "Học từ mới",
     "grammarPoints": "Mẫu ngữ pháp",

@@ -45,7 +45,7 @@
     "cardsDueNow": "cards due now"
   },
   "dashboard": {
-    "subtitle": "Let's study Japanese today",
+    "subtitle": "{level} study log",
     "streakLabel": "Streak",
     "streakSuffix": " days",
     "totalWordsLabel": "Total Words",
@@ -53,7 +53,7 @@
     "reviewedLabel": "Reviewed",
     "cardsDue": "Cards Due",
     "reviewNow": "Review Now",
-    "allDone": "All done!",
+    "allDone": "No cards due",
     "newWords": "New Words",
     "learnNew": "Learn New",
     "grammarPoints": "Grammar Points",

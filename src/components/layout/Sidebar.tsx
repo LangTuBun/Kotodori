@@ -8,7 +8,7 @@ import { InkCabinet } from "@/components/ui/InkCabinet"
 import { useTranslation } from "@/lib/useTranslation"
 
 const nav = [
-  { to: "/",           label: "ホーム",     kana: "ホーム",         key: "home" },
+  { to: "/dashboard",  label: "ホーム",     kana: "ホーム",         key: "home" },
   { to: "/vocab",      label: "単語",       kana: "たんご",         key: "vocabulary" },
   { to: "/review",     label: "復習",       kana: "ふくしゅう",      key: "review" },
   { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        key: "grammar" },
@@ -62,7 +62,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
       >
         <div className="flex items-center justify-between gap-2">
           <Link
-            to="/welcome"
+            to="/"
             onClick={onClose}
             title="About Tori"
             className="flex items-center gap-3 group hover:opacity-80 transition-opacity min-w-0"
@@ -121,7 +121,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
           <NavLink
             key={to}
             to={to}
-            end={to === "/"}
+            end={to === "/dashboard"}
             onClick={onClose}
             className={({ isActive }) =>
               [

@@ -3,14 +3,13 @@ import { useVocabStore } from "@/store/vocab-store"
 import { useSettingsStore } from "@/store/settings-store"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
-import { Ruby } from "@/components/ui/Ruby"
 import { Reveal } from "@/components/ui/Reveal"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { getGrammar } from "@/data/grammar"
 import { useTranslation } from "@/lib/useTranslation"
 
-const HEADING_LINE1_RUBY = '<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>も'
-const HEADING_LINE2_RUBY = '<ruby>頑張<rp>(</rp><rt>がんば</rt><rp>)</rp></ruby>ろう'
+// 日 -> 土, indexed by Date#getDay() -- purely decorative kanji, not tied to i18n.
+const WEEKDAY_KANJI = ['日', '月', '火', '水', '木', '金', '土']
 const LEVEL_LABEL: Record<string, string> = { N5: 'N5', N4: 'N4', all: 'N5+N4' }
 
 export function Dashboard() {
@@ -21,18 +20,20 @@ export function Dashboard() {
   const dueCount = getDueCards().length
   const newCount = getNewCards(10).length
   const grammarCount = getGrammar(level).length
+  const today = new Date()
+  const dateLabel = `${today.getMonth() + 1}月${today.getDate()}日（${WEEKDAY_KANJI[today.getDay()]}）`
 
   return (
     <div className="relative p-4 sm:p-8 max-w-5xl overflow-hidden">
       <Watermark char="今" />
-      {/* Header */}
+      {/* Header -- today's date instead of a cheer-you-on line; still big/
+          bold/kanji-forward, just not addressed to an audience of one. */}
       <Reveal index={0} className="relative border-b-3 border-structural pb-8 mb-8">
-        <h1 className="text-4xl sm:text-6xl font-black tracking-tighter leading-none">
-          <Ruby text="今日も" html={HEADING_LINE1_RUBY} /><br />
-          <Ruby text="頑張ろう" html={HEADING_LINE2_RUBY} />
+        <h1 className="jp text-4xl sm:text-6xl font-black tracking-tighter leading-none">
+          {dateLabel}
         </h1>
         <p className="font-mono text-muted font-bold mt-3 uppercase tracking-widest text-sm">
-          {t('dashboard.subtitle')}
+          {t('dashboard.subtitle', { level: LEVEL_LABEL[level] })}
         </p>
       </Reveal>
 

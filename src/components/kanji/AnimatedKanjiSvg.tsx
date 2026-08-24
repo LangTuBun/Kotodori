@@ -6,6 +6,11 @@ interface AnimatedKanjiSvgProps {
   replayKey: number
   strokeMs?: number
   className?: string
+  /** Defaults reproduce the fixed white practice-sheet look (KanjiDrawer).
+   *  Pass "transparent" + theme tokens to blend into a themed page instead. */
+  background?: string
+  guideColor?: string
+  strokeColor?: string
 }
 
 const GUIDE_COLOR = "#627d9a"
@@ -16,7 +21,16 @@ const STROKE_COLOR = "#2e3257"
 // `strokes` (new kanji) or `replayKey` (Replay button) changes. Refs stay
 // stable across replays — paths are never remounted — so the "hide, then
 // reveal on the next frame" reset never flashes the fully-drawn kanji first.
-export function AnimatedKanjiSvg({ strokes, viewBox, replayKey, strokeMs = 500, className = "" }: AnimatedKanjiSvgProps) {
+export function AnimatedKanjiSvg({
+  strokes,
+  viewBox,
+  replayKey,
+  strokeMs = 500,
+  className = "",
+  background = "rgb(255,255,255)",
+  guideColor = GUIDE_COLOR,
+  strokeColor = STROKE_COLOR,
+}: AnimatedKanjiSvgProps) {
   const pathRefs = useRef<Array<SVGPathElement | null>>([])
 
   useLayoutEffect(() => {
@@ -40,13 +54,13 @@ export function AnimatedKanjiSvg({ strokes, viewBox, replayKey, strokeMs = 500, 
   }, [strokes, replayKey, strokeMs])
 
   return (
-    <svg viewBox={viewBox} className={className} style={{ backgroundColor: "rgb(255,255,255)" }}>
-      <g fill="none" stroke={GUIDE_COLOR} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <svg viewBox={viewBox} className={className} style={{ backgroundColor: background }}>
+      <g fill="none" stroke={guideColor} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
         {strokes.map((d, i) => (
           <path key={`guide-${i}`} d={d} />
         ))}
       </g>
-      <g fill="none" stroke={STROKE_COLOR} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round">
+      <g fill="none" stroke={strokeColor} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round">
         {strokes.map((d, i) => (
           <path
             key={`stroke-${i}`}

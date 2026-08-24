@@ -15,9 +15,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="welcome" element={<Landing />} />
+        {/* Landing is the site's entry point -- accessing the site always
+            hits this first. "welcome" kept as a redirect for old bookmarks
+            (the Sidebar logo used to link there). */}
+        <Route path="/" element={<Landing />} />
+        <Route path="welcome" element={<Navigate to="/" replace />} />
         <Route element={<Layout />}>
-          <Route index element={<Dashboard />} />
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="vocab" element={<VocabBrowser />} />
           <Route path="review" element={<Review />} />
           <Route path="grammar" element={<Grammar />} />
@@ -26,7 +30,7 @@ export default function App() {
           <Route path="counters" element={<Counters />} />
           <Route path="homophones" element={<Homophones />} />
           <Route path="settings" element={<Settings />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Route>
       </Routes>
     </BrowserRouter>
