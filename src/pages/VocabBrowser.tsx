@@ -1,9 +1,10 @@
-﻿import { useState, useMemo, useEffect } from "react"
-import vocabData from "@/data/n5/vocabulary.json"
+import { useState, useMemo, useEffect } from "react"
+import { vocabForLevel, allVocab } from "@/data/vocab"
 import type { VocabEntry } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
 import { useVocabStore } from "@/store/vocab-store"
+import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 
@@ -13,21 +14,40 @@ function isTypingTarget(el: Element | null): boolean {
   return tag === "INPUT" || tag === "TEXTAREA" || (el as HTMLElement).isContentEditable
 }
 
-const vocab = vocabData as VocabEntry[]
-const CHAPTERS = Array.from(new Set(vocab.map(v => v.chapter).filter(Boolean))).sort((a,b) => a-b)
-const POS_LIST = Array.from(new Set(vocab.map(v => v.pos))).sort()
+// N5 entries group by textbook chapter; N4 entries have no chapter (see
+// VocabEntry.chapter) and group by their thematic `category` instead.
+// 'all' scope groups everything under a single flat bucket rather than
+// trying to interleave two different taxonomies.
+function groupKey(v: VocabEntry): string {
+  if (v.jlptLevel === 'N4') return v.category ?? '?'
+  return v.chapter !== undefined && v.chapter > 0 ? String(v.chapter) : '?'
+}
 
 export function VocabBrowser() {
   const [search, setSearch] = useState("")
-  const [chapter, setChapter] = useState<number | null>(null)
+  const [chapter, setChapter] = useState<string | null>(null)
   const [pos, setPos] = useState<string | null>(null)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const { getCard } = useVocabStore()
+  const level = useSettingsStore(s => s.level)
   const { t, localize } = useTranslation()
+
+  const vocab = useMemo(() => vocabForLevel(level), [level])
+  const CHAPTERS = useMemo(
+    () => Array.from(new Set(vocab.map(groupKey))).sort((a, b) =>
+      level !== 'N5' ? a.localeCompare(b) : Number(a) - Number(b)
+    ),
+    [vocab, level]
+  )
+  const POS_LIST = useMemo(() => Array.from(new Set(vocab.map(v => v.pos))).sort(), [vocab])
+
+  // Reset the group filter across a level switch -- a chapter number from
+  // N5 or a category name from N4 has no meaning once vocab has switched.
+  useEffect(() => setChapter(null), [level])
 
   const filtered = useMemo(() => {
     return vocab.filter(v => {
-      if (chapter !== null && v.chapter !== chapter) return false
+      if (chapter !== null && groupKey(v) !== chapter) return false
       if (pos !== null && v.pos !== pos) return false
       if (search) {
         const q = search.toLowerCase()
@@ -35,45 +55,48 @@ export function VocabBrowser() {
       }
       return true
     })
-  }, [search, chapter, pos])
+  }, [vocab, search, chapter, pos])
 
   const groupedByChapter = useMemo(() => {
-    const map = new Map<number, VocabEntry[]>()
+    const map = new Map<string, VocabEntry[]>()
     for (const v of filtered) {
-      if (!map.has(v.chapter)) map.set(v.chapter, [])
-      map.get(v.chapter)!.push(v)
+      const k = groupKey(v)
+      if (!map.has(k)) map.set(k, [])
+      map.get(k)!.push(v)
     }
     return [...map.entries()].sort(([a], [b]) => {
-      if (a === 0) return 1
-      if (b === 0) return -1
-      return a - b
+      if (a === '?') return 1
+      if (b === '?') return -1
+      return level === 'N4' ? a.localeCompare(b) : Number(a) - Number(b)
     })
-  }, [filtered])
+  }, [filtered, level])
 
   return (
     <div className="flex h-screen overflow-hidden">
       {/* List panel */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Toolbar */}
-        <div className="p-4 border-b-3 border-ink flex gap-3 flex-wrap bg-surface">
+        <div className="p-4 border-b-3 border-structural flex gap-3 flex-wrap bg-surface">
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('vocab.searchPlaceholder')}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
           />
           <select
             value={chapter ?? ""}
-            onChange={e => setChapter(e.target.value ? Number(e.target.value) : null)}
-            className="px-3 py-2 border-3 border-ink font-bold text-sm bg-paper cursor-pointer"
+            onChange={e => setChapter(e.target.value || null)}
+            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
           >
-            <option value="">{t('vocab.allChapters')}</option>
-            {CHAPTERS.map(c => <option key={c} value={c}>{t('common.chapterN', { n: c })}</option>)}
+            <option value="">{level !== 'N5' ? t('vocab.allCategories') : t('vocab.allChapters')}</option>
+            {CHAPTERS.map(c => (
+              <option key={c} value={c}>{level !== 'N5' ? c : t('common.chapterN', { n: c })}</option>
+            ))}
           </select>
           <select
             value={pos ?? ""}
             onChange={e => setPos(e.target.value || null)}
-            className="px-3 py-2 border-3 border-ink font-bold text-sm bg-paper cursor-pointer"
+            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
           >
             <option value="">{t('vocab.allPos')}</option>
             {POS_LIST.map(p => <option key={p} value={p}>{t(`pos.${p}`)}</option>)}
@@ -81,7 +104,7 @@ export function VocabBrowser() {
         </div>
 
         {/* Count */}
-        <div className="px-4 py-2 border-b-3 border-ink bg-paper text-xs font-bold uppercase tracking-wider text-muted">
+        <div className="px-4 py-2 border-b-3 border-structural bg-paper text-xs font-bold uppercase tracking-wider text-muted">
           {t('common.wordsCount', { n: filtered.length })}
         </div>
 
@@ -90,7 +113,7 @@ export function VocabBrowser() {
           {groupedByChapter.map(([chapterNum, items]) => (
             <div key={chapterNum}>
               <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">
-                <span>{chapterNum === 0 ? t('vocab.unknownChapter') : t('common.chapterN', { n: chapterNum })}</span>
+                <span>{chapterNum === '?' ? t('vocab.unknownChapter') : level === 'N5' ? t('common.chapterN', { n: chapterNum }) : chapterNum}</span>
                 <span className="text-paper/60 font-bold">{items.length}</span>
               </div>
               {items.map(v => {
@@ -187,10 +210,10 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
           role="dialog"
           aria-modal="true"
           onClick={e => e.stopPropagation()}
-          className="pointer-events-auto w-full max-w-lg max-h-[85vh] overflow-y-auto border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] bg-paper"
+          className="pointer-events-auto w-full max-w-lg max-h-[85vh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper"
         >
           {/* List navigation */}
-          <div className="flex items-center gap-3 p-3 border-b-3 border-ink bg-surface">
+          <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">
             <button
               onClick={onPrev}
               disabled={!hasPrev}
@@ -213,7 +236,7 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
           </div>
 
           {/* Header */}
-          <div className="p-6 border-b-3 border-ink">
+          <div className="p-6 border-b-3 border-structural">
             <div className="flex justify-between items-start mb-4">
               <PosTag pos={vocab.pos} verbGroup={vocab.verbGroup} />
               <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">×</button>
@@ -225,8 +248,11 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
               <div className="text-xl jp text-muted font-bold">{vocab.kana}</div>
             )}
             <div className="font-bold text-lg mt-3">{localize(vocab.meanings)}</div>
-            {vocab.chapter > 0 && (
+            {vocab.chapter !== undefined && vocab.chapter > 0 && (
               <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{t('common.chapterN', { n: vocab.chapter })}</div>
+            )}
+            {vocab.category && (
+              <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{vocab.category}</div>
             )}
           </div>
 
@@ -250,10 +276,10 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
               <div className="text-xs font-black uppercase tracking-wider mb-3">{t('vocab.homophones')}</div>
               <div className="flex flex-wrap gap-2">
                 {vocab.homophones.map(id => {
-                  const hw = (vocabData as VocabEntry[]).find(v => v.id === id)
+                  const hw = allVocab.find(v => v.id === id)
                   if (!hw) return null
                   return (
-                    <div key={id} className="border-3 border-ink px-3 py-1 shadow-[2px_2px_0px_var(--color-ink)]">
+                    <div key={id} className="border-3 border-structural px-3 py-1 shadow-[var(--shadow-brutal)]">
                       <div className="font-bold"><Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} /></div>
                       <div className="text-xs text-muted">{localize(hw.meanings).slice(0, 20)}</div>
                     </div>

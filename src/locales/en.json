@@ -37,7 +37,8 @@
     "verbForms": "Verb Forms",
     "kanji": "Kanji",
     "counters": "Counters",
-    "homophones": "Homophones"
+    "homophones": "Homophones",
+    "settings": "Settings"
   },
   "sidebar": {
     "dayStreak": "Day streak",
@@ -57,7 +58,7 @@
     "learnNew": "Learn New",
     "grammarPoints": "Grammar Points",
     "studyGrammar": "Study Grammar",
-    "progress": "N5 Progress",
+    "progress": "{level} Progress",
     "masteredCount": "{mastered} / {total} mastered"
   },
   "review": {
@@ -65,7 +66,9 @@
     "chooseScope": "Choose review scope",
     "vocabTab": "Vocabulary",
     "kanjiTab": "Kanji",
+    "kanjiModeN5Only": "Kanji mode is N5-only",
     "chapterLabel": "Chapter",
+    "categoryLabel": "Category",
     "posLabel": "Word Type",
     "countLabel": "Count",
     "wordsSuffix": "words",
@@ -102,6 +105,7 @@
   "vocab": {
     "searchPlaceholder": "Search kanji, kana, meaning...",
     "allChapters": "All chapters",
+    "allCategories": "All categories",
     "allPos": "All POS",
     "unknownChapter": "Unknown chapter",
     "prevWord": "Previous word (←)",

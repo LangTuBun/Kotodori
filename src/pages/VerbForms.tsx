@@ -5,6 +5,7 @@ import grammarData from "@/data/n5/grammar.json"
 import type { VerbFormsData, GrammarPoint } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
 import { useTranslation } from "@/lib/useTranslation"
+import { Watermark } from "@/components/ui/ScreenHeader"
 
 const data = verbFormsData as unknown as VerbFormsData
 const grammar = grammarData as GrammarPoint[]
@@ -38,7 +39,8 @@ export function VerbForms() {
 
   return (
     <div className="h-screen overflow-y-auto">
-      <div className="max-w-5xl mx-auto p-6">
+      <div className="relative max-w-5xl mx-auto p-6 overflow-hidden">
+        <Watermark char="動" />
         {/* Header */}
         <div className="mb-6">
           <div className="text-4xl font-black leading-tight">

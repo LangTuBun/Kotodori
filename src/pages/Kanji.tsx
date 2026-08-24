@@ -1,32 +1,62 @@
-import { useMemo, useState } from "react"
-import kanjiData from "@/data/n5/kanji.json"
-import type { KanjiChapter, KanjiGroup } from "@/types"
+import { useEffect, useMemo, useState } from "react"
+import type { KanjiGroup } from "@/types"
+import { n5KanjiChapters, n4KanjiChapters } from "@/data/kanji"
 import { Furigana } from "@/components/ui/Furigana"
 import { ACCENT_HEX, accentFor, cleanReadings, onkunTone } from "@/lib/kanji"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 import { KanjiGroupModal } from "@/components/kanji/KanjiGroupModal"
 import { useTranslation } from "@/lib/useTranslation"
+import { useSettingsStore, type Level } from "@/store/settings-store"
 
-const chapters = kanjiData.chapters as KanjiChapter[]
+// N5's textbook chapters run 1-15 and N4's run 15-24 (both numbered after
+// their own curriculum's Bai/chapter, per their own source material) -- so
+// "chapter 15" exists in both. Every chapter/group is tagged with its
+// source level below so 'all' scope never collides the two under one key.
+type Src = 'N5' | 'N4'
+interface TaggedChapter { src: Src; chapter: number; wordCount: number; groups: KanjiGroup[] }
+
+function taggedChapters(level: Level): TaggedChapter[] {
+  const n5 = n5KanjiChapters.map(c => ({ src: 'N5' as const, chapter: c.chapter, wordCount: c.wordCount, groups: c.groups }))
+  const n4 = n4KanjiChapters.map(c => ({ src: 'N4' as const, chapter: c.chapter, wordCount: c.wordCount, groups: c.groups }))
+  if (level === 'N5') return n5
+  if (level === 'N4') return n4
+  return [...n5, ...n4]
+}
+
+const LEVELS: { value: Level; label: string }[] = [
+  { value: 'N5', label: 'N5' },
+  { value: 'N4', label: 'N4' },
+  { value: 'all', label: 'N5+N4' },
+]
 
 export function Kanji() {
   const { t } = useTranslation()
-  const [chapter, setChapter] = useState<number | null>(1)
+  const level = useSettingsStore(s => s.level)
+  const setLevel = useSettingsStore(s => s.setLevel)
+  const chapters = useMemo(() => taggedChapters(level), [level])
+  const [chapterKey, setChapterKey] = useState<string | null>(null)
   const [search, setSearch] = useState("")
   const [selectedAnchor, setSelectedAnchor] = useState<string | null>(null)
   const [selectedGroupIndex, setSelectedGroupIndex] = useState<number | null>(null)
 
-  const totalWords = useMemo(() => chapters.reduce((a, c) => a + c.wordCount, 0), [])
+  // A chapter selection from before a level switch may no longer exist in
+  // the new chapter set -- reset to "all chapters" rather than filtering to
+  // nothing (or, worse, matching an unrelated chapter of the same number).
+  useEffect(() => {
+    setChapterKey(null)
+  }, [level])
 
-  const visibleChapters = chapter === null ? chapters : chapters.filter(c => c.chapter === chapter)
+  const totalWords = useMemo(() => chapters.reduce((a, c) => a + c.wordCount, 0), [chapters])
+
+  const visibleChapters = chapterKey === null ? chapters : chapters.filter(c => `${c.src}-${c.chapter}` === chapterKey)
 
   const filteredGroups = useMemo(() => {
     const q = search.trim().toLowerCase()
-    const result: Array<{ chapterNum: number; group: KanjiGroup }> = []
+    const result: Array<{ src: Src; chapterNum: number; group: KanjiGroup }> = []
     for (const c of visibleChapters) {
       for (const g of c.groups) {
         if (!q) {
-          result.push({ chapterNum: c.chapter, group: g })
+          result.push({ src: c.src, chapterNum: c.chapter, group: g })
           continue
         }
         const hit =
@@ -34,10 +64,11 @@ export function Kanji() {
           g.words.some(w =>
             w.kanji.toLowerCase().includes(q) ||
             w.kana.toLowerCase().includes(q) ||
-            w.meaning.toLowerCase().includes(q) ||
+            w.meaning.vi.toLowerCase().includes(q) ||
+            w.meaning.en.toLowerCase().includes(q) ||
             w.hanviet.toLowerCase().includes(q)
           )
-        if (hit) result.push({ chapterNum: c.chapter, group: g })
+        if (hit) result.push({ src: c.src, chapterNum: c.chapter, group: g })
       }
     }
     return result
@@ -47,35 +78,54 @@ export function Kanji() {
     <div className="flex h-screen overflow-hidden">
       <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
         {/* Toolbar */}
-        <div className="p-4 border-b-3 border-ink flex gap-3 bg-surface flex-wrap items-center">
+        <div className="p-4 border-b-3 border-structural flex gap-3 bg-surface flex-wrap items-center">
+          <div role="group" aria-label="JLPT level" className="inline-flex border-2 border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
+            {LEVELS.map(({ value, label }, i) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={level === value}
+                onClick={() => setLevel(value)}
+                className={`px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
+                  i > 0 ? 'border-l-2 border-structural' : ''
+                } ${level === value ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('kanji.searchPlaceholder')}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-bold text-sm bg-paper focus:outline-none"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-bold text-sm bg-paper focus:outline-none"
           />
           <div className="w-full text-xs font-bold uppercase tracking-wider text-muted">
-            {t('common.wordsCount', { n: chapter === null ? totalWords : (visibleChapters[0]?.wordCount ?? 0) })} · {t('kanji.groupsCount', { n: filteredGroups.length })}
+            {t('common.wordsCount', { n: chapterKey === null ? totalWords : (visibleChapters[0]?.wordCount ?? 0) })} · {t('kanji.groupsCount', { n: filteredGroups.length })}
           </div>
         </div>
 
         {/* Chapter chips */}
-        <div className="px-4 py-3 border-b-3 border-ink bg-paper flex gap-2 flex-wrap">
+        <div className="px-4 py-3 border-b-3 border-structural bg-paper flex gap-2 flex-wrap">
           <button
-            onClick={() => setChapter(null)}
-            className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapter === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            onClick={() => setChapterKey(null)}
+            className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapterKey === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
           >
             {t('common.all')}
           </button>
-          {chapters.map(c => (
-            <button
-              key={c.chapter}
-              onClick={() => setChapter(prev => prev === c.chapter ? null : c.chapter)}
-              className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapter === c.chapter ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
-            >
-              {t('common.chapterN', { n: c.chapter })} <span className="opacity-60">({c.wordCount})</span>
-            </button>
-          ))}
+          {chapters.map(c => {
+            const key = `${c.src}-${c.chapter}`
+            return (
+              <button
+                key={key}
+                onClick={() => setChapterKey(prev => prev === key ? null : key)}
+                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapterKey === key ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+              >
+                {level === 'all' && <span className="opacity-60">{c.src} </span>}
+                {t('common.chapterN', { n: c.chapter })} <span className="opacity-60">({c.wordCount})</span>
+              </button>
+            )
+          })}
         </div>
 
         {/* Groups grid */}
@@ -84,11 +134,11 @@ export function Kanji() {
             <div className="text-center text-muted py-12 font-bold">{t('kanji.noResults')}</div>
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
-            {filteredGroups.map(({ chapterNum, group }, i) => (
+            {filteredGroups.map(({ src, chapterNum, group }, i) => (
               <KanjiGroupCard
-                key={group.id}
+                key={`${src}-${group.id}`}
                 group={group}
-                chapterNum={chapterNum}
+                chapterLabel={level === 'all' ? `${src} ${chapterNum}` : `${chapterNum}`}
                 accent={accentFor(i)}
                 onAnchorClick={() => setSelectedAnchor(group.anchor)}
                 onCardClick={() => setSelectedGroupIndex(i)}
@@ -114,8 +164,8 @@ export function Kanji() {
   )
 }
 
-function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick, onCardClick }: { group: KanjiGroup; chapterNum: number; accent: string; onAnchorClick: () => void; onCardClick: () => void }) {
-  const { t } = useTranslation()
+function KanjiGroupCard({ group, chapterLabel, accent, onAnchorClick, onCardClick }: { group: KanjiGroup; chapterLabel: string; accent: string; onAnchorClick: () => void; onCardClick: () => void }) {
+  const { t, localize } = useTranslation()
   const on = cleanReadings(group.onyomi)
   const kun = cleanReadings(group.kunyomi)
 
@@ -125,7 +175,7 @@ function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick, onCardClick 
       role="button"
       tabIndex={0}
       onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onCardClick() } }}
-      className="bg-paper border-3 border-ink p-3 cursor-pointer transition-shadow hover:shadow-[4px_4px_0px_var(--color-ink)]"
+      className="bg-paper border-3 border-structural p-3 cursor-pointer transition-shadow hover:shadow-[var(--shadow-brutal)]"
       style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
     >
       {/* Header: leading kanji */}
@@ -140,9 +190,9 @@ function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick, onCardClick 
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between gap-2">
             {group.hanviet && (
-              <span className="text-xs font-black px-1.5 py-0.5 border-2 border-ink rounded-[var(--radius-sm)] bg-surface shrink-0">{group.hanviet}</span>
+              <span className="text-xs font-black px-1.5 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] bg-surface shrink-0">{group.hanviet}</span>
             )}
-            <span className="text-[10px] font-bold text-muted shrink-0">Ch.{chapterNum}</span>
+            <span className="text-[10px] font-bold text-muted shrink-0">Ch.{chapterLabel}</span>
           </div>
 
           {/* Real On'yomi / Kun'yomi kana readings */}
@@ -173,7 +223,7 @@ function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick, onCardClick 
           </div>
 
           {group.meaning && (
-            <div className="text-sm text-muted mt-1">{group.meaning}</div>
+            <div className="text-sm text-muted mt-1">{localize(group.meaning)}</div>
           )}
         </div>
       </div>
@@ -186,7 +236,7 @@ function KanjiGroupCard({ group, chapterNum, accent, onAnchorClick, onCardClick 
               <Furigana kanji={w.kanji} kana={w.kana} />
             </span>
             <span className="flex-1 min-w-0 leading-snug">
-              <span>{w.meaning}</span>
+              <span>{localize(w.meaning)}</span>
               <span className="text-muted text-xs ml-1.5">({w.hanviet})</span>
             </span>
             <span className="text-[10px] font-bold uppercase tracking-wider shrink-0 pt-0.5" style={{ color: onkunTone(w.onkun) }}>

@@ -462,5 +462,153 @@
   "夂": {
     "hanviet": "truy",
     "curated": true
+  },
+  "交": {
+    "hanviet": "Giao",
+    "curated": false
+  },
+  "雲": {
+    "hanviet": "Vân",
+    "curated": false
+  },
+  "三": {
+    "hanviet": "Tam",
+    "curated": false
+  },
+  "九": {
+    "hanviet": "Cửu",
+    "curated": false
+  },
+  "間": {
+    "hanviet": "Gian",
+    "curated": false
+  },
+  "犬": {
+    "hanviet": "Khuyển",
+    "curated": false
+  },
+  "七": {
+    "hanviet": "Thất",
+    "curated": false
+  },
+  "今": {
+    "hanviet": "Kim",
+    "curated": false
+  },
+  "具": {
+    "hanviet": "Cụ",
+    "curated": false
+  },
+  "少": {
+    "hanviet": "Thiểu",
+    "curated": false
+  },
+  "自": {
+    "hanviet": "Tự",
+    "curated": false
+  },
+  "分": {
+    "hanviet": "Phân",
+    "curated": false
+  },
+  "不": {
+    "hanviet": "Bất",
+    "curated": false
+  },
+  "重": {
+    "hanviet": "Trọng",
+    "curated": false
+  },
+  "古": {
+    "hanviet": "Cổ",
+    "curated": false
+  },
+  "会": {
+    "hanviet": "Hội",
+    "curated": false
+  },
+  "北": {
+    "hanviet": "Bắc",
+    "curated": false
+  },
+  "京": {
+    "hanviet": "Kinh",
+    "curated": false
+  },
+  "石": {
+    "hanviet": "Thạch",
+    "curated": false
+  },
+  "東": {
+    "hanviet": "Đông",
+    "curated": false
+  },
+  "元": {
+    "hanviet": "Nguyên",
+    "curated": false
+  },
+  "先": {
+    "hanviet": "Tiên",
+    "curated": false
+  },
+  "中": {
+    "hanviet": "Trung",
+    "curated": false
+  },
+  "安": {
+    "hanviet": "An",
+    "curated": false
+  },
+  "足": {
+    "hanviet": "Túc",
+    "curated": false
+  },
+  "合": {
+    "hanviet": "Hợp",
+    "curated": false
+  },
+  "魚": {
+    "hanviet": "Ngư",
+    "curated": false
+  },
+  "家": {
+    "hanviet": "Gia",
+    "curated": false
+  },
+  "行": {
+    "hanviet": "Hành",
+    "curated": false
+  },
+  "右": {
+    "hanviet": "Hữu",
+    "curated": false
+  },
+  "内": {
+    "hanviet": "Nội",
+    "curated": false
+  },
+  "太": {
+    "hanviet": "Thái",
+    "curated": false
+  },
+  "同": {
+    "hanviet": "Đồng",
+    "curated": false
+  },
+  "男": {
+    "hanviet": "Nam",
+    "curated": false
+  },
+  "良": {
+    "hanviet": "Lương",
+    "curated": false
+  },
+  "兄": {
+    "hanviet": "Huynh",
+    "curated": false
+  },
+  "午": {
+    "hanviet": "Ngọ",
+    "curated": false
   }
 }

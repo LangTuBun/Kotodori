@@ -1,0 +1,5357 @@
+[
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 1,
+    "fused": "きっと",
+    "meaning": "nhất định, chắc chắn"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 2,
+    "fused": "もしかしたら",
+    "meaning": "Có lẽ"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 3,
+    "fused": "ボーナス",
+    "meaning": "tiền thưởng, phần thưởng"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 4,
+    "fused": "しかも",
+    "meaning": "hơn nữa"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 5,
+    "fused": "もっと",
+    "meaning": "hơn, nữa"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 6,
+    "fused": "なかなか",
+    "meaning": "mãi mà （không）～"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 7,
+    "fused": "～度ど",
+    "meaning": "độ C"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 8,
+    "fused": "ちゃんと",
+    "meaning": "đầy đủ"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 9,
+    "fused": "給料きゅうりょう",
+    "meaning": "tiền lương"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 10,
+    "fused": "値ね段だん",
+    "meaning": "giá tiền"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 11,
+    "fused": "家や賃ちん",
+    "meaning": "tiền nhà"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 12,
+    "fused": "～代だい",
+    "meaning": "tiền （điện, nước…） đứng sau Danh từ, và hoạt động như 1 danh từ."
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 13,
+    "fused": "すっかり",
+    "meaning": "hoàn toàn"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 14,
+    "fused": "現金げんきん",
+    "meaning": "tiền mặt"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 15,
+    "fused": "～以下 いか",
+    "meaning": "từ ～ trở xuống"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 16,
+    "fused": "～以い上 じょう",
+    "meaning": "từ ～ trở lên"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 17,
+    "fused": "～以い内ない",
+    "meaning": "trong vòng～"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 18,
+    "fused": "はっきり",
+    "meaning": "rõ ràng"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 19,
+    "fused": "どんどん",
+    "meaning": "nhanh chóng"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 20,
+    "fused": "だんだん",
+    "meaning": "dần dần"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 21,
+    "fused": "おつり",
+    "meaning": "tiền thừa"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 22,
+    "fused": "金額きんがく",
+    "meaning": "khoản tiền, số tiền"
+  },
+  {
+    "sectionNum": 1,
+    "sectionTitle": "Lượng từ, Từ chỉ mức độ & Phó từ",
+    "stt": 23,
+    "fused": "代だい金きん",
+    "meaning": "tiền mua đồ, tiền phải thanh toán"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 1,
+    "fused": "ハイキング",
+    "meaning": "leo núi dã ngoại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 2,
+    "fused": "上あがる",
+    "meaning": "leo lên; tăng lên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 3,
+    "fused": "事故じこ",
+    "meaning": "tai nạn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 4,
+    "fused": "留守るす",
+    "meaning": "vắng nhà"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 5,
+    "fused": "旅行りょこう客きゃく",
+    "meaning": "khách du lịch"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 6,
+    "fused": "入いり口ぐち",
+    "meaning": "lối vào"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 7,
+    "fused": "風邪かぜ",
+    "meaning": "cảm lạnh, cảm cúm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 8,
+    "fused": "ガソリン",
+    "meaning": "xăng, dầu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 9,
+    "fused": "真まっ暗くら",
+    "meaning": "tối om"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 10,
+    "fused": "同おなじ",
+    "meaning": "giống, giống nhau"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 11,
+    "fused": "届とどく",
+    "meaning": "được gửi đến, đưa đến"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 12,
+    "fused": "すぐに",
+    "meaning": "ngay lập tức, lập tức"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 13,
+    "fused": "だいぶ",
+    "meaning": "khá là, đáng kể"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 14,
+    "fused": "（お）花はな見み",
+    "meaning": "sự ngắm hoa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 15,
+    "fused": "最初さいしょ",
+    "meaning": "đầu tiên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 16,
+    "fused": "うそ",
+    "meaning": "lời nói dối"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 17,
+    "fused": "火事かじ",
+    "meaning": "hoả hoạn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 18,
+    "fused": "イギリス",
+    "meaning": "nước Anh"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 19,
+    "fused": "オリンピック",
+    "meaning": "thế vận hội Olympic"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 20,
+    "fused": "羨うらやましい",
+    "meaning": "ngưỡng mộ, ghen tị"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 21,
+    "fused": "売うれる",
+    "meaning": "① bán đắt hàng, bán chạy ② nổi tiếng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 22,
+    "fused": "生うまれる",
+    "meaning": "được sinh ra"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 23,
+    "fused": "お礼れい",
+    "meaning": "lời/ quà cảm ơn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 24,
+    "fused": "用よう事じ",
+    "meaning": "việc quan trọng, việc bận"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 25,
+    "fused": "形かたち",
+    "meaning": "hình dáng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 26,
+    "fused": "引ひっ越こす",
+    "meaning": "chuyển nhà"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 27,
+    "fused": "意味いみ",
+    "meaning": "ý nghĩa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 28,
+    "fused": "調ちょう子し（がいい/悪わるい）",
+    "meaning": "tình trạng （tốt/xấu）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 29,
+    "fused": "ミュージカル",
+    "meaning": "nhạc kịch"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 30,
+    "fused": "チャット",
+    "meaning": "chat, tán gẫu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 31,
+    "fused": "大おおきな",
+    "meaning": "to, lớn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 32,
+    "fused": "注ちゅう文もん",
+    "meaning": "gọi món, đặt mua"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 33,
+    "fused": "貿易ぼうえき",
+    "meaning": "ngoại thương, thương mại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 34,
+    "fused": "着き物もの",
+    "meaning": "kimono"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 35,
+    "fused": "具ぐ合あい",
+    "meaning": "tình trạng sức khoẻ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 36,
+    "fused": "気き分ぶん",
+    "meaning": "tâm trạng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 37,
+    "fused": "なんで",
+    "meaning": "tại sao"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 38,
+    "fused": "だから",
+    "meaning": "Bởi vậy, vậy nên..."
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 39,
+    "fused": "（お）風呂ふろ",
+    "meaning": "bồn tắm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 40,
+    "fused": "優やさしい",
+    "meaning": "tử tế, tốt bụng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 41,
+    "fused": "幸しあわせ",
+    "meaning": "hạnh phúc"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 42,
+    "fused": "（を）間ま違ちがえる",
+    "meaning": "nhầm ,sai"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 43,
+    "fused": "取とれる",
+    "meaning": "bung ra"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 44,
+    "fused": "折おれる",
+    "meaning": "gãy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 45,
+    "fused": "消きえる",
+    "meaning": "（điện, đèn,..）tắt"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 46,
+    "fused": "もう少すこしで",
+    "meaning": "thêm một chút"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 47,
+    "fused": "気き持もち",
+    "meaning": "tâm trạng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 48,
+    "fused": "前髪まえがみ",
+    "meaning": "tóc mái"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 49,
+    "fused": "電でん気き",
+    "meaning": "điện"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 50,
+    "fused": "黒板こくばん",
+    "meaning": "bảng đen"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 51,
+    "fused": "壁かべ",
+    "meaning": "bức tường"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 52,
+    "fused": "冷房れいぼう",
+    "meaning": "chế độ lạnh của điều hòa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 53,
+    "fused": "エアコン",
+    "meaning": "điều hòa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 54,
+    "fused": "（～を）換かえる",
+    "meaning": "đổi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 55,
+    "fused": "タイマー",
+    "meaning": "hẹn giờ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 56,
+    "fused": "暖あたたまる・温あたたまる",
+    "meaning": "ấm lên, nóng lên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 57,
+    "fused": "つく",
+    "meaning": "（điện, đèn…） bật"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 58,
+    "fused": "冷ひえる",
+    "meaning": "lạnh"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 59,
+    "fused": "予よ定てい",
+    "meaning": "dự định, kế hoạch"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 60,
+    "fused": "変かわる",
+    "meaning": "được thay đổi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 61,
+    "fused": "植うわる",
+    "meaning": "được trồng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 62,
+    "fused": "植うえる",
+    "meaning": "trồng （cây）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 63,
+    "fused": "並ならべる",
+    "meaning": "sắp xếp"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 64,
+    "fused": "子こ",
+    "meaning": "đứa trẻ/ con"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 65,
+    "fused": "美び術じゅつ館かん",
+    "meaning": "bảo tàng mỹ thuật"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 66,
+    "fused": "歴れき史し",
+    "meaning": "lịch sử"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 67,
+    "fused": "絵え本ほん",
+    "meaning": "truyện tranh, truyện ehon"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 68,
+    "fused": "化け粧しょう品ひん",
+    "meaning": "mỹ phẩm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 69,
+    "fused": "法律ほうりつ",
+    "meaning": "pháp luật"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 70,
+    "fused": "茶色ちゃいろ",
+    "meaning": "màu nâu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 71,
+    "fused": "ネックレス",
+    "meaning": "vòng cổ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 72,
+    "fused": "ピアス",
+    "meaning": "khuyên tai"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 73,
+    "fused": "若わかい",
+    "meaning": "trẻ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 74,
+    "fused": "におい",
+    "meaning": "mùi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 75,
+    "fused": "味あじ",
+    "meaning": "vị"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 76,
+    "fused": "感かんじ",
+    "meaning": "cảm giác"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 77,
+    "fused": "石いし",
+    "meaning": "cục đá"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 78,
+    "fused": "声こえ",
+    "meaning": "giọng nói, tiếng kêu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 79,
+    "fused": "背せ中なか",
+    "meaning": "lưng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 80,
+    "fused": "材料ざいりょう",
+    "meaning": "vật liệu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 81,
+    "fused": "けんか",
+    "meaning": "cãi nhau"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 82,
+    "fused": "変へん",
+    "meaning": "lạ, kỳ quặc"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 83,
+    "fused": "聞きこえる",
+    "meaning": "nghe thấy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 84,
+    "fused": "見みえる",
+    "meaning": "nhìn thấy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 85,
+    "fused": "文ぶん",
+    "meaning": "câu văn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 86,
+    "fused": "歯は医い者しゃ",
+    "meaning": "nha sĩ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 87,
+    "fused": "イタリア",
+    "meaning": "nước Ý"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 88,
+    "fused": "ビジネス",
+    "meaning": "kinh doanh"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 89,
+    "fused": "メニュー",
+    "meaning": "thực đơn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 90,
+    "fused": "恥はずかしい",
+    "meaning": "xấu hổ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 91,
+    "fused": "もったいない",
+    "meaning": "lãng phí, phí hoài"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 92,
+    "fused": "面倒めんどう",
+    "meaning": "phiền phức"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 93,
+    "fused": "ラッキー",
+    "meaning": "may mắn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 94,
+    "fused": "半額はんがく",
+    "meaning": "nửa giá"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 95,
+    "fused": "森もり",
+    "meaning": "rừng rậm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 96,
+    "fused": "番組ばんぐみ",
+    "meaning": "chương trình （truyền hình）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 97,
+    "fused": "詳くわしい",
+    "meaning": "chi tiết, tường tận"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 98,
+    "fused": "見みつかる",
+    "meaning": "tìm thấy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 99,
+    "fused": "鳴なく",
+    "meaning": "kêu, hót, hú"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 100,
+    "fused": "光ひかる",
+    "meaning": "tỏa sáng, phát sáng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 101,
+    "fused": "ちなみに",
+    "meaning": "nhân tiện, tiện thể"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 102,
+    "fused": "熱中ねっちゅう症しょう",
+    "meaning": "say nắng, cảm nắng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 103,
+    "fused": "逆ぎゃく",
+    "meaning": "ngược lại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 104,
+    "fused": "出で口ぐち",
+    "meaning": "lối ra"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 105,
+    "fused": "見み合あわせ",
+    "meaning": "tạm dừng để quan sát"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 106,
+    "fused": "税ぜい込こみ",
+    "meaning": "gồm cả thuế"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 107,
+    "fused": "消しょう費ひ税ぜい",
+    "meaning": "thuế tiêu thụ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 108,
+    "fused": "熱あつい",
+    "meaning": "nóng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 109,
+    "fused": "（〜に）合あう",
+    "meaning": "khớp, đúng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 110,
+    "fused": "逃にげる",
+    "meaning": "chạy trốn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 111,
+    "fused": "どういう",
+    "meaning": "như thế nào"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 112,
+    "fused": "伝統でんとう的てき",
+    "meaning": "tính truyền thống"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 113,
+    "fused": "方言ほうげん",
+    "meaning": "tiếng địa phương"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 114,
+    "fused": "道どう具ぐ",
+    "meaning": "dụng cụ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 115,
+    "fused": "カレンダー",
+    "meaning": "tờ lịch, lịch"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 116,
+    "fused": "セロテープ",
+    "meaning": "băng dính trong"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 117,
+    "fused": "フォーク",
+    "meaning": "chiếc dĩa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 118,
+    "fused": "バンジージャンプ",
+    "meaning": "nhảy bungee"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 119,
+    "fused": "手て袋ぶくろ",
+    "meaning": "găng tay"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 120,
+    "fused": "～方かた こちらの方かた",
+    "meaning": "あの方かた ngài, vị, vị này, vị đó"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 121,
+    "fused": "近所きんじょ",
+    "meaning": "lân cận, hàng xóm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 122,
+    "fused": "作文さくぶん",
+    "meaning": "bài văn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 123,
+    "fused": "シャーペン",
+    "meaning": "bút chì kim"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 124,
+    "fused": "ティッシュ",
+    "meaning": "khăn giấy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 125,
+    "fused": "折おり紙がみ",
+    "meaning": "gấp giấy, origami"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 126,
+    "fused": "都合つごう",
+    "meaning": "sự thuận tiện về hoàn cảnh"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 127,
+    "fused": "文もん句く",
+    "meaning": "lời phàn nàn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 128,
+    "fused": "アドバイス",
+    "meaning": "lời khuyên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 129,
+    "fused": "スピーチ",
+    "meaning": "bài phát biểu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 130,
+    "fused": "太ふとる",
+    "meaning": "béo, mập"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 131,
+    "fused": "痩やせる",
+    "meaning": "gầy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 132,
+    "fused": "おわび",
+    "meaning": "lời xin lỗi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 133,
+    "fused": "建けん築ちく家か",
+    "meaning": "kiến trúc sư"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 134,
+    "fused": "物語ものがたり",
+    "meaning": "truyện cổ tích"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 135,
+    "fused": "チーム",
+    "meaning": "đội, team"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 136,
+    "fused": "はずかしい",
+    "meaning": "xấu hổ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 137,
+    "fused": "ほえる",
+    "meaning": "sủa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 138,
+    "fused": "嘘うそ",
+    "meaning": "lời nói dối"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 139,
+    "fused": "目め玉だま焼やき",
+    "meaning": "trứng ốp-la"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 140,
+    "fused": "咳せき",
+    "meaning": "ho"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 141,
+    "fused": "戦争せんそう",
+    "meaning": "chiến tranh"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 142,
+    "fused": "熱ねつ",
+    "meaning": "cơn sốt"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 143,
+    "fused": "ストレス",
+    "meaning": "căng thẳng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 144,
+    "fused": "真まっ黒くろ",
+    "meaning": "đen thui, đen sì"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 145,
+    "fused": "ひどい",
+    "meaning": "quá đáng, quá quắt"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 146,
+    "fused": "偉えらい",
+    "meaning": "siêu, đỉnh, vĩ đại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 147,
+    "fused": "（嘘うそを）つく",
+    "meaning": "nói （dối）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 148,
+    "fused": "転ころぶ",
+    "meaning": "ngã, lăn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 149,
+    "fused": "驚おどろく",
+    "meaning": "ngạc nhiên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 150,
+    "fused": "気きになる",
+    "meaning": "để ý, bận tâm; thích"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 151,
+    "fused": "焼やける",
+    "meaning": "cháy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 152,
+    "fused": "（鍵かぎを）掛かける",
+    "meaning": "khoá （chìa khoá）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 153,
+    "fused": "故こ障しょう（する）",
+    "meaning": "bị hỏng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 154,
+    "fused": "画が面めん",
+    "meaning": "màn hình"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 155,
+    "fused": "しわ",
+    "meaning": "nếp nhăn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 156,
+    "fused": "疲つかれ",
+    "meaning": "sự mệt mỏi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 157,
+    "fused": "骨ほね",
+    "meaning": "xương"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 158,
+    "fused": "持もち運はこび",
+    "meaning": "mang theo"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 159,
+    "fused": "二ふつ日か酔よい",
+    "meaning": "say nguội"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 160,
+    "fused": "ココナッツオイル",
+    "meaning": "dầu dừa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 161,
+    "fused": "ヒール",
+    "meaning": "gót giày"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 162,
+    "fused": "プラスチック",
+    "meaning": "nhựa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 163,
+    "fused": "最高さいこう",
+    "meaning": "cao nhất; tuyệt vời"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 164,
+    "fused": "やわらかい",
+    "meaning": "mềm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 165,
+    "fused": "燃もえる",
+    "meaning": "cháy được, bốc cháy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 166,
+    "fused": "滑すべる",
+    "meaning": "trơn trượt"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 167,
+    "fused": "ネクタイ",
+    "meaning": "cà-vạt"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 168,
+    "fused": "テーマ",
+    "meaning": "chủ đề"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 169,
+    "fused": "パスタ",
+    "meaning": "mì pasta"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 170,
+    "fused": "ステーキ",
+    "meaning": "steak, bít-tết"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 171,
+    "fused": "サンドイッチ",
+    "meaning": "san-uých"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 172,
+    "fused": "急きゅう",
+    "meaning": "đột ngột, đột nhiên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 173,
+    "fused": "納豆なっとう",
+    "meaning": "Natto, đậu tương lên men"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 174,
+    "fused": "暖房だんぼう",
+    "meaning": "máy sưởi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 175,
+    "fused": "水道すいどう",
+    "meaning": "nước máy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 176,
+    "fused": "睡眠すいみん",
+    "meaning": "giấc ngủ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 177,
+    "fused": "アイデア",
+    "meaning": "ý tưởng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 178,
+    "fused": "無駄むだ",
+    "meaning": "lãng phí"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 179,
+    "fused": "（年としを）取とる",
+    "meaning": "già đi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 180,
+    "fused": "大体だいたい",
+    "meaning": "đại khái"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 181,
+    "fused": "できるだけ",
+    "meaning": "trong phạm vi có thể, trong khả năng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 182,
+    "fused": "なるべく",
+    "meaning": "trong phạm vi có thể, trong khả năng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 183,
+    "fused": "大だい統とう領りょう",
+    "meaning": "tổng thống"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 184,
+    "fused": "大学院だいがくいん",
+    "meaning": "cao học"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 185,
+    "fused": "奨しょう学がく金きん",
+    "meaning": "học bổng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 186,
+    "fused": "山やま登のぼり",
+    "meaning": "sự leo núi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 187,
+    "fused": "食しょく材ざい",
+    "meaning": "nguyên liệu nấu ăn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 188,
+    "fused": "ピンク",
+    "meaning": "màu hồng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 189,
+    "fused": "（試し験けんを）受うける",
+    "meaning": "tham dự （kỳ thi）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 190,
+    "fused": "警察けいさつ",
+    "meaning": "cảnh sát"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 191,
+    "fused": "論文ろんぶん",
+    "meaning": "bài luận, luận văn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 192,
+    "fused": "カーテン",
+    "meaning": "rèm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 193,
+    "fused": "しっかり",
+    "meaning": "hẳn hoi, chắc chắn, kỹ càng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 194,
+    "fused": "ちょうど",
+    "meaning": "vừa đủ, vừa khéo"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 195,
+    "fused": "元もとの場ば所しょ",
+    "meaning": "chỗ cũ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 196,
+    "fused": "講こう義ぎ",
+    "meaning": "bài giảng （trình độ đại học trở lên）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 197,
+    "fused": "意い見けん",
+    "meaning": "ý kiến"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 198,
+    "fused": "蓋ふた",
+    "meaning": "nắp"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 199,
+    "fused": "缶かん",
+    "meaning": "cái lon"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 200,
+    "fused": "悪口わるぐち",
+    "meaning": "nói xấu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 201,
+    "fused": "ルール",
+    "meaning": "quy tắc, quy định"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 202,
+    "fused": "ラベル",
+    "meaning": "nhãn mác"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 203,
+    "fused": "ペットボトル",
+    "meaning": "chai nhựa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 204,
+    "fused": "サービス",
+    "meaning": "dịch vụ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 205,
+    "fused": "充じゅう電でん器き",
+    "meaning": "củ sạc, ổ sạc"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 206,
+    "fused": "暗証あんしょう番号ばんごう",
+    "meaning": "mật khẩu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 207,
+    "fused": "シャンプー",
+    "meaning": "dầu gội"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 208,
+    "fused": "リンス",
+    "meaning": "dầu xả"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 209,
+    "fused": "ドイツ",
+    "meaning": "nước Đức"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 210,
+    "fused": "残のこる",
+    "meaning": "còn lại, sót lại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 211,
+    "fused": "つい",
+    "meaning": "lỡ, trót"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 212,
+    "fused": "疑ぎ問もん",
+    "meaning": "nghi vấn, câu hỏi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 213,
+    "fused": "駐ちゅう車しゃ場じょう",
+    "meaning": "chỗ gửi xe"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 214,
+    "fused": "様よう子す",
+    "meaning": "trạng thái"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 215,
+    "fused": "物価ぶっか",
+    "meaning": "vật giá"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 216,
+    "fused": "世せ界かい中じゅう",
+    "meaning": "trên toàn thế giới"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 217,
+    "fused": "健康けんこう",
+    "meaning": "sức khoẻ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 218,
+    "fused": "会かい場じょう",
+    "meaning": "hội trường"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 219,
+    "fused": "筆箱ふでばこ",
+    "meaning": "hộp bút"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 220,
+    "fused": "ストーブ",
+    "meaning": "lò sưởi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 221,
+    "fused": "インフルエンザ",
+    "meaning": "bệnh cúm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 222,
+    "fused": "決きまる",
+    "meaning": "được quyết định"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 223,
+    "fused": "近ちかづく",
+    "meaning": "lại gần, đến gần"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 224,
+    "fused": "離はなれる",
+    "meaning": "rời xa, cách xa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 225,
+    "fused": "少すこしずつ",
+    "meaning": "từng chút một"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 226,
+    "fused": "課か題だい",
+    "meaning": "bài tập; nhiệm vụ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 227,
+    "fused": "塾じゅく",
+    "meaning": "trường luyện thi, lớp học thêm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 228,
+    "fused": "技ぎ術じゅつ",
+    "meaning": "kỹ thuật"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 229,
+    "fused": "後輩こうはい",
+    "meaning": "đàn em"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 230,
+    "fused": "悲かなしむ",
+    "meaning": "đau buồn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 231,
+    "fused": "（（人ひと）を（場ば所しょ）に/まで） 迎むかえに来くる",
+    "meaning": "đến ～đón ai đó"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 232,
+    "fused": "～部ぶ",
+    "meaning": "～ bản, bộ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 233,
+    "fused": "上じょう司し",
+    "meaning": "cấp trên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 234,
+    "fused": "体育たいいく",
+    "meaning": "thể dục"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 235,
+    "fused": "バイオリン",
+    "meaning": "đàn vĩ cầm, violin"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 236,
+    "fused": "バレエ",
+    "meaning": "múa ba lê"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 237,
+    "fused": "まず",
+    "meaning": "trước tiên, trước hết"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 238,
+    "fused": "連絡れんらく先さき",
+    "meaning": "địa chỉ liên lạc"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 239,
+    "fused": "ニックネーム",
+    "meaning": "nickname, biệt danh"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 240,
+    "fused": "フロント",
+    "meaning": "quầy lễ tân"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 241,
+    "fused": "ポスター",
+    "meaning": "poster, áp-phích"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 242,
+    "fused": "お客きゃく様さま",
+    "meaning": "quý khách"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 243,
+    "fused": "保ほ険けん証しょう",
+    "meaning": "thẻ bảo hiểm, sổ bảo hiểm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 244,
+    "fused": "満席まんせき",
+    "meaning": "kín chỗ, hết chỗ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 245,
+    "fused": "丸まる",
+    "meaning": "hình tròn, khoanh tròn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 246,
+    "fused": "答こたえ",
+    "meaning": "câu trả lời"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 247,
+    "fused": "正ただしい",
+    "meaning": "chính xác"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 248,
+    "fused": "泊とまる",
+    "meaning": "trú lại, trọ lại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 249,
+    "fused": "（丸まるを）つける",
+    "meaning": "khoanh （tròn）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 250,
+    "fused": "少々しょうしょう",
+    "meaning": "một chút"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 251,
+    "fused": "小しょう学がっ校こう",
+    "meaning": "trường tiểu học"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 252,
+    "fused": "中ちゅう学がっ校こう",
+    "meaning": "trường trung học cơ sở"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 253,
+    "fused": "耳みみ",
+    "meaning": "tai"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 254,
+    "fused": "電卓でんたく",
+    "meaning": "máy tính cầm tay"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 255,
+    "fused": "ゆかた",
+    "meaning": "Yukata （1 trang phục truyền thống Nhật Bản）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 256,
+    "fused": "エレベーター",
+    "meaning": "thang máy"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 257,
+    "fused": "隠かくれる",
+    "meaning": "trốn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 258,
+    "fused": "筋きんトレ",
+    "meaning": "luyện tập cơ bắp"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 259,
+    "fused": "次つぎ",
+    "meaning": "tiếp theo"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 260,
+    "fused": "ロシア",
+    "meaning": "nước Nga"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 261,
+    "fused": "アフリカ",
+    "meaning": "châu Phi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 262,
+    "fused": "いつごろ",
+    "meaning": "khoảng khi nào?"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 263,
+    "fused": "生いきる",
+    "meaning": "sống"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 264,
+    "fused": "ところで",
+    "meaning": "nhân tiện, à này （từ nối chuyển chủ đề）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 265,
+    "fused": "玄げん関かん",
+    "meaning": "khu lối vào, khu vực cửa ra vào"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 266,
+    "fused": "生いけ花ばな",
+    "meaning": "nghệ thuật cắm hoa"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 267,
+    "fused": "茶さ道どう",
+    "meaning": "trà đạo"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 268,
+    "fused": "宝たからくじ",
+    "meaning": "xổ số"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 269,
+    "fused": "不ふ安あん",
+    "meaning": "bất an, lo lắng"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 270,
+    "fused": "話はなし合あう",
+    "meaning": "nói chuyện với nhau"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 271,
+    "fused": "いる（要いる）",
+    "meaning": "cần thiết"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 272,
+    "fused": "（宝たからくじに/が）当あたる",
+    "meaning": "trúng （xổ số）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 273,
+    "fused": "絶対ぜったい（に）",
+    "meaning": "tuyệt đối"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 274,
+    "fused": "有休ゆうきゅう",
+    "meaning": "nghỉ phép có lương"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 275,
+    "fused": "キャンプ",
+    "meaning": "cắm trại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 276,
+    "fused": "細ほそい",
+    "meaning": "thon, mảnh mai"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 277,
+    "fused": "危き険けん",
+    "meaning": "sự nguy hiểm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 278,
+    "fused": "屋根やね",
+    "meaning": "mái nhà"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 279,
+    "fused": "理り由ゆう",
+    "meaning": "nguyên nhân, lý do"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 280,
+    "fused": "キャンプ場じょう",
+    "meaning": "nơi cắm trại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 281,
+    "fused": "メーカー",
+    "meaning": "nhà sản xuất"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 282,
+    "fused": "タイプ",
+    "meaning": "kiểu, loại, chủng loại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 283,
+    "fused": "点/～点",
+    "meaning": "điểm （điểm số bài kiểm tra）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 284,
+    "fused": "（点/～点てん）を取とる",
+    "meaning": "được ～ điểm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 285,
+    "fused": "どんなに",
+    "meaning": "cho dù có… đến mức nào thì…"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 286,
+    "fused": "いくら",
+    "meaning": "dù có… bao nhiêu đi nữa thì vẫn…"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 287,
+    "fused": "もし",
+    "meaning": "nếu, nếu như"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 288,
+    "fused": "つまみ",
+    "meaning": "cái núm, nút điều khiển"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 289,
+    "fused": "紅葉こうよう",
+    "meaning": "cây thích/ cây phong"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 290,
+    "fused": "機き会かい",
+    "meaning": "cơ hội"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 291,
+    "fused": "角かど",
+    "meaning": "góc"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 292,
+    "fused": "橋はし",
+    "meaning": "cây cầu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 293,
+    "fused": "葉/葉っぱ",
+    "meaning": "lá"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 294,
+    "fused": "貯たまる",
+    "meaning": "tích lại"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 295,
+    "fused": "まっすぐ",
+    "meaning": "thẳng tắp"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 296,
+    "fused": "～億おく",
+    "meaning": "～trăm triệu"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 297,
+    "fused": "～側がわ",
+    "meaning": "phía ～"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 298,
+    "fused": "（事故じこなどを）起おこす",
+    "meaning": "gây ra （tai nạn）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 299,
+    "fused": "進すすむ",
+    "meaning": "tiến lên"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 300,
+    "fused": "少すくなくとも",
+    "meaning": "ít nhất thì"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 301,
+    "fused": "最低さいていでも",
+    "meaning": "tối thiểu, bét nhất thì cũng phải （cụm từ này được sử dụng như 1 Adv.）"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 302,
+    "fused": "先方せんぽう",
+    "meaning": "đối tác"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 303,
+    "fused": "欠航けっこう",
+    "meaning": "huỷ chuyến bay"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 304,
+    "fused": "国際こくさい",
+    "meaning": "quốc tế"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 305,
+    "fused": "発音はつおん",
+    "meaning": "phát âm"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 306,
+    "fused": "（お）刺身さしみ",
+    "meaning": "sashimi"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 307,
+    "fused": "定てい食しょく",
+    "meaning": "suất ăn"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 308,
+    "fused": "部下ぶか",
+    "meaning": "cấp dưới"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 309,
+    "fused": "全すべて",
+    "meaning": "toàn bộ"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 310,
+    "fused": "一",
+    "meaning": "NHẤT"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 311,
+    "fused": "食べるたべる",
+    "meaning": "Ăn, uống"
+  },
+  {
+    "sectionNum": 10,
+    "sectionTitle": "Khác",
+    "stt": 312,
+    "fused": "行くだりく",
+    "meaning": "Đi"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 1,
+    "fused": "よろしい",
+    "meaning": "được, tốt （lịch sự của 良い）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 2,
+    "fused": "敬けい語ご",
+    "meaning": "kính ngữ"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 3,
+    "fused": "（～を）折おる",
+    "meaning": "bẻ, gập"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 4,
+    "fused": "治なおる",
+    "meaning": "khỏi （bệnh, ốm）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 5,
+    "fused": "直なおる",
+    "meaning": "được sửa"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 6,
+    "fused": "ご存ぞん知じ",
+    "meaning": "biết （kính ngữ của 知る）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 7,
+    "fused": "（～を）ご覧らんになる",
+    "meaning": "nhìn （kính ngữ của 見みる）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 8,
+    "fused": "（～を）召めし上あがる",
+    "meaning": "xơi, dùng bữa, uống… （kính ngữ của 食べる、飲む）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 9,
+    "fused": "おっしゃる",
+    "meaning": "nói （kính ngữ của 言いう）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 10,
+    "fused": "なさる",
+    "meaning": "làm （kính ngữ của する）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 11,
+    "fused": "お宅たく",
+    "meaning": "nhà （khi nói đến nhà của người bề trên）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 12,
+    "fused": "さきほど",
+    "meaning": "ban nãy, lúc nãy ★cách nói lịch sự của「さっき」"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 13,
+    "fused": "のちほど",
+    "meaning": "sau đó"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 14,
+    "fused": "（～に）お目めにかかる",
+    "meaning": "gặp mặt"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 15,
+    "fused": "（～を）いただく",
+    "meaning": "ăn, uống, nhận"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 16,
+    "fused": "伺うかがう",
+    "meaning": "hỏi, đến thăm"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 17,
+    "fused": "おる",
+    "meaning": "ở （cách nói khiêm tốn của いる）"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 18,
+    "fused": "（～を）いたします（いたす）",
+    "meaning": "khiêm nhường ngữ của する"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 19,
+    "fused": "ございます （ござる）",
+    "meaning": "khiêm nhường ngữ của 「あります」"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 20,
+    "fused": "参まいります（参まいる）",
+    "meaning": "đi, đến"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 21,
+    "fused": "申もうします（申もうす）",
+    "meaning": "nói"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 22,
+    "fused": "（～を）申もうし上あげる",
+    "meaning": "khiêm nhường ngữ「言いう」"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 23,
+    "fused": "（～を）存ぞんじます （存じる）",
+    "meaning": "khiêm nhường ngữ của biết「知しる」và nghĩ, cảm thấy「思おもう」"
+  },
+  {
+    "sectionNum": 2,
+    "sectionTitle": "Kính ngữ & Khiêm nhường ngữ",
+    "stt": 24,
+    "fused": "（～を）存ぞんじ上あげる",
+    "meaning": "khiêm nhường ngữ của「知る」「思う」"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 1,
+    "fused": "叶かなう",
+    "meaning": "（ước mơ） thành hiện thực"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 2,
+    "fused": "調ちょう味み料りょう",
+    "meaning": "gia vị"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 3,
+    "fused": "できる",
+    "meaning": "hoàn thành"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 4,
+    "fused": "～市し",
+    "meaning": "thành phố"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 5,
+    "fused": "砂さ糖とう",
+    "meaning": "đường, đường ăn"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 6,
+    "fused": "牛乳ぎゅうにゅう",
+    "meaning": "sữa bò"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 7,
+    "fused": "チラシ",
+    "meaning": "tờ rơi quảng cáo"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 8,
+    "fused": "（コーヒーを） 入いれる/淹いれる",
+    "meaning": "pha （cà phê）"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 9,
+    "fused": "塩しお",
+    "meaning": "muối"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 10,
+    "fused": "日に本ほん食しょく",
+    "meaning": "món ăn Nhật"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 11,
+    "fused": "道どう路ろ",
+    "meaning": "con đường"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 12,
+    "fused": "しょうゆ",
+    "meaning": "nước tương shoyu"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 13,
+    "fused": "ソース",
+    "meaning": "nước xốt"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 14,
+    "fused": "みかん",
+    "meaning": "quả quýt"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 15,
+    "fused": "コーヒーカップ",
+    "meaning": "cốc cà phê"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 16,
+    "fused": "メロン",
+    "meaning": "quả dưa lưới"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 17,
+    "fused": "結果けっか",
+    "meaning": "kết quả"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 18,
+    "fused": "（ソースを）掛かける",
+    "meaning": "rưới （nước xốt）"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 19,
+    "fused": "ハンバーガー",
+    "meaning": "bánh hamburger"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 20,
+    "fused": "スパゲッティ",
+    "meaning": "mỳ spaghetti"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 21,
+    "fused": "郊外こうがい",
+    "meaning": "ngoại thành, ngoại ô"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 22,
+    "fused": "豚肉ぶたにく",
+    "meaning": "thịt lợn"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 23,
+    "fused": "（道まちに）迷まよう",
+    "meaning": "lạc （đường）"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 24,
+    "fused": "成績せいせき",
+    "meaning": "thành tích"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 25,
+    "fused": "踏ふみ切きり",
+    "meaning": "Đoạn đường giao với đường sắt"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 26,
+    "fused": "たまねぎ",
+    "meaning": "hành tây"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 27,
+    "fused": "線せん",
+    "meaning": "đường kẻ, đường thẳng"
+  },
+  {
+    "sectionNum": 3,
+    "sectionTitle": "Danh từ - Đồ ăn, Thức uống",
+    "stt": 28,
+    "fused": "（お） 刺身さしみ定てい食しょく",
+    "meaning": "suất cơm sashimi"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 1,
+    "fused": "本物ほんもの",
+    "meaning": "hàng thật, đồ thật"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 2,
+    "fused": "台風たいふう",
+    "meaning": "cơn bão"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 3,
+    "fused": "洗濯せんたく物もの",
+    "meaning": "đồ bẩn cần giặt, đồ đã giặt"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 4,
+    "fused": "込こむ",
+    "meaning": "đông đúc, chen lấn"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 5,
+    "fused": "乾かわく",
+    "meaning": "khô"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 6,
+    "fused": "止やむ",
+    "meaning": "dừng; tạnh （mưa）"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 7,
+    "fused": "雷かみなり",
+    "meaning": "sấm sét"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 8,
+    "fused": "（傘かさを）差さす",
+    "meaning": "giương （ô）"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 9,
+    "fused": "地じ震しん",
+    "meaning": "động đất"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 10,
+    "fused": "教きょう科か書しょ",
+    "meaning": "sách giáo khoa"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 11,
+    "fused": "電でん池ち",
+    "meaning": "cục pin"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 12,
+    "fused": "天てん気き予よ報ほう",
+    "meaning": "dự báo thời tiết"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 13,
+    "fused": "興きょう味み",
+    "meaning": "hứng thú"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 14,
+    "fused": "確たしか",
+    "meaning": "hình như, nếu không nhầm thì ~"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 15,
+    "fused": "砂すな",
+    "meaning": "cát"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 16,
+    "fused": "ひも",
+    "meaning": "sợi dây"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 17,
+    "fused": "コンセント",
+    "meaning": "ổ cắm"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 18,
+    "fused": "くちびる",
+    "meaning": "đôi môi"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 19,
+    "fused": "温おん度ど",
+    "meaning": "nhiệt độ"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 20,
+    "fused": "棚たな",
+    "meaning": "tủ, giá..."
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 21,
+    "fused": "パズル",
+    "meaning": "đồ chơi xếp hình"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 22,
+    "fused": "データ",
+    "meaning": "dữ liệu"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 23,
+    "fused": "育そだつ",
+    "meaning": "được nuôi nấng"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 24,
+    "fused": "（お風呂ふろ・お湯ゆが）沸わく",
+    "meaning": "（nước bồn tắm, nước ấm） sôi lên"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 25,
+    "fused": "帽ぼう子し",
+    "meaning": "cái mũ"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 26,
+    "fused": "上うわ着ぎ",
+    "meaning": "áo khoác"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 27,
+    "fused": "靴下くつした",
+    "meaning": "tất"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 28,
+    "fused": "サングラス",
+    "meaning": "kính râm, kính mát"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 29,
+    "fused": "音おと",
+    "meaning": "âm thanh"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 30,
+    "fused": "花はな火び",
+    "meaning": "pháo hoa"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 31,
+    "fused": "動物どうぶつ園えん",
+    "meaning": "vườn bách thú"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 32,
+    "fused": "川かわ",
+    "meaning": "dòng sông"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 33,
+    "fused": "くさい",
+    "meaning": "hôi, thối"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 34,
+    "fused": "無理むり",
+    "meaning": "không thể, quá sức"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 35,
+    "fused": "島しま",
+    "meaning": "hòn đảo"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 36,
+    "fused": "林はやし",
+    "meaning": "khu rừng"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 37,
+    "fused": "税ぜい抜ぬき",
+    "meaning": "không gồm thuế"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 38,
+    "fused": "わざわざ",
+    "meaning": "cất công"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 39,
+    "fused": "おもちゃ",
+    "meaning": "đồ chơi"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 40,
+    "fused": "ぬいぐるみ",
+    "meaning": "thú nhồi bông"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 41,
+    "fused": "作さ業ぎょう",
+    "meaning": "công việc"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 42,
+    "fused": "セーター",
+    "meaning": "áo len"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 43,
+    "fused": "締しめ切きり",
+    "meaning": "hạn chót, deadline"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 44,
+    "fused": "空くう気き",
+    "meaning": "không khí"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 45,
+    "fused": "汗あせ",
+    "meaning": "mồ hôi"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 46,
+    "fused": "ガラス",
+    "meaning": "kính"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 47,
+    "fused": "コンクリート",
+    "meaning": "bê tông"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 48,
+    "fused": "ゴム",
+    "meaning": "gôm, cao su"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 49,
+    "fused": "忘年会ぼうねんかい",
+    "meaning": "tiệc tất niên"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 50,
+    "fused": "腰こし",
+    "meaning": "eo lưng, hông"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 51,
+    "fused": "混こむ",
+    "meaning": "đông đúc, đông"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 52,
+    "fused": "旅行りょこう会社がいしゃ",
+    "meaning": "công ty du lịch"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 53,
+    "fused": "ヘルメット",
+    "meaning": "mũ bảo hiểm"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 54,
+    "fused": "ペット",
+    "meaning": "thú nuôi"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 55,
+    "fused": "和わ食しょく",
+    "meaning": "đồ ăn Nhật"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 56,
+    "fused": "ガイドブック",
+    "meaning": "sách hướng dẫn"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 57,
+    "fused": "できる",
+    "meaning": "đã xong, đã chín （đồ ăn, sản phẩm）"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 58,
+    "fused": "教きょう育いく",
+    "meaning": "giáo dục"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 59,
+    "fused": "コート",
+    "meaning": "áo khoác"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 60,
+    "fused": "高校こうこう",
+    "meaning": "trường trung học phổ thông"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 61,
+    "fused": "コピー機き",
+    "meaning": "máy phô-tô"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 62,
+    "fused": "（汗あせを）かく",
+    "meaning": "đổ/ toát （mồ hôi）"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 63,
+    "fused": "相す撲もう",
+    "meaning": "môn đấu vật sumo"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 64,
+    "fused": "ボタン",
+    "meaning": "khuy áo, Nút bấm"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 65,
+    "fused": "忘わすれ物もの",
+    "meaning": "đồ bỏ quên"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 66,
+    "fused": "図ず",
+    "meaning": "hình vẽ, biểu đồ..."
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 67,
+    "fused": "大雨おおあめ",
+    "meaning": "cơn mưa to"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 68,
+    "fused": "契約書けいやくしょ",
+    "meaning": "hợp đồng"
+  },
+  {
+    "sectionNum": 4,
+    "sectionTitle": "Danh từ - Đồ vật, Động thực vật",
+    "stt": 69,
+    "fused": "本ほん",
+    "meaning": "Sách"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 1,
+    "fused": "遊園ゆうえん地ち",
+    "meaning": "khu giải trí"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 2,
+    "fused": "救急きゅうきゅう車しゃ",
+    "meaning": "xe cấp cứu"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 3,
+    "fused": "平日へいじつ",
+    "meaning": "ngày thường"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 4,
+    "fused": "今週こんしゅう末まつ",
+    "meaning": "cuối tuần này"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 5,
+    "fused": "（人ひとを）（場ば所しょ・イベントに）誘さそう",
+    "meaning": "rủ, mời （ai đó） đến （địa điểm / sự kiện）"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 6,
+    "fused": "交通こうつう",
+    "meaning": "giao thông"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 7,
+    "fused": "将しょう来らい",
+    "meaning": "tương lai"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 8,
+    "fused": "場ば所しょ",
+    "meaning": "địa điểm, nơi"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 9,
+    "fused": "デート",
+    "meaning": "hẹn hò, buổi hẹn"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 10,
+    "fused": "ドラッグストア",
+    "meaning": "hiệu thuốc"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 11,
+    "fused": "船ふね",
+    "meaning": "thuyền"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 12,
+    "fused": "神社じんじゃ",
+    "meaning": "ngôi đền"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 13,
+    "fused": "寺てら",
+    "meaning": "ngôi chùa"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 14,
+    "fused": "階段かいだん",
+    "meaning": "cầu thang"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 15,
+    "fused": "エスカレーター",
+    "meaning": "cầu thang cuốn"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 16,
+    "fused": "季き節せつ",
+    "meaning": "mùa"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 17,
+    "fused": "（乗のり物ものに）酔よう",
+    "meaning": "say （tàu, xe...）"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 18,
+    "fused": "再さ来らい週しゅう",
+    "meaning": "tuần sau nữa"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 19,
+    "fused": "新年しんねん会かい",
+    "meaning": "tiệc đầu năm"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 20,
+    "fused": "石せっけん",
+    "meaning": "xà phòng, xà bông"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 21,
+    "fused": "連れん休きゅう",
+    "meaning": "kỳ nghỉ, nghỉ liền nhiều ngày"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 22,
+    "fused": "説明せつめい会かい",
+    "meaning": "buổi giải thích （về 1 vấn đề gì đó）"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 23,
+    "fused": "午ご前ぜん中ちゅう",
+    "meaning": "trong buổi sáng"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 24,
+    "fused": "（目めが）覚さめる",
+    "meaning": "tỉnh dậy, thức dậy"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 25,
+    "fused": "乗のり場ば",
+    "meaning": "điểm bắt xe （buýt, taxi…）"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 26,
+    "fused": "アラーム",
+    "meaning": "báo thức"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 27,
+    "fused": "会かい議ぎ室しつ",
+    "meaning": "phòng họp"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 28,
+    "fused": "発表はっぴょう会かい",
+    "meaning": "buổi trình diễn （của học viên）"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 29,
+    "fused": "屋おく上じょう",
+    "meaning": "sân thượng"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 30,
+    "fused": "電でん気き屋や",
+    "meaning": "cửa hàng đồ điện"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 31,
+    "fused": "春はる",
+    "meaning": "mùa xuân"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 32,
+    "fused": "夏なつ",
+    "meaning": "mùa hè"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 33,
+    "fused": "秋あき",
+    "meaning": "mùa thu"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 34,
+    "fused": "冬ふゆ",
+    "meaning": "mùa đông"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 35,
+    "fused": "夕方ゆうがた",
+    "meaning": "chiều tối"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 36,
+    "fused": "信号しんごう",
+    "meaning": "tín hiệu đèn giao thông"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 37,
+    "fused": "～つ目め",
+    "meaning": "thứ （tự） ～"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 38,
+    "fused": "乗のり換かえ",
+    "meaning": "đổi （tàu/ xe）"
+  },
+  {
+    "sectionNum": 5,
+    "sectionTitle": "Danh từ - Địa điểm, Phương tiện, Thời gian",
+    "stt": 39,
+    "fused": "先日せんじつ",
+    "meaning": "hôm trước"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 1,
+    "fused": "彼かれ",
+    "meaning": "anh ấy, ông ấy…; bạn trai"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 2,
+    "fused": "旅館りょかん",
+    "meaning": "lữ quán, nhà trọ kiểu Nhật"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 3,
+    "fused": "有名人ゆうめいじん",
+    "meaning": "người nổi tiếng"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 4,
+    "fused": "赤あかちゃん",
+    "meaning": "em bé, trẻ sơ sinh"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 5,
+    "fused": "知しり合あい",
+    "meaning": "người quen"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 6,
+    "fused": "選手せんしゅ",
+    "meaning": "tuyển thủ"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 7,
+    "fused": "同どう僚りょう",
+    "meaning": "đồng nghiệp"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 8,
+    "fused": "アイドル",
+    "meaning": "thần tượng"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 9,
+    "fused": "研究けんきゅう者しゃ",
+    "meaning": "nhà nghiên cứu"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 10,
+    "fused": "看かん護ご師し",
+    "meaning": "y tá"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 11,
+    "fused": "お金かね持もち",
+    "meaning": "người giàu, đại gia"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 12,
+    "fused": "メイド",
+    "meaning": "người giúp việc"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 13,
+    "fused": "お年とし寄より",
+    "meaning": "người cao tuổi"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 14,
+    "fused": "奥おくさん",
+    "meaning": "vợ （người khác）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 15,
+    "fused": "男性だんせい",
+    "meaning": "nam giới"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 16,
+    "fused": "女性じょせい",
+    "meaning": "nữ giới"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 17,
+    "fused": "奥様おくさま",
+    "meaning": "vợ, phu nhân （người khác）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 18,
+    "fused": "夫おっと",
+    "meaning": "chồng （mình）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 19,
+    "fused": "妻つま",
+    "meaning": "vợ （mình）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 20,
+    "fused": "甥おい/甥おいっ子",
+    "meaning": "cháu trai （con của anh chị em）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 21,
+    "fused": "姪めい/姪めいっ子",
+    "meaning": "cháu gái （con của anh chị em）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 22,
+    "fused": "保ほ育いく園えん",
+    "meaning": "nhà trẻ"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 23,
+    "fused": "数かず",
+    "meaning": "con số"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 24,
+    "fused": "留りゅう学がく生せい",
+    "meaning": "lưu học sinh, du học sinh"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 25,
+    "fused": "生せい徒と",
+    "meaning": "học sinh"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 26,
+    "fused": "息子むすこ",
+    "meaning": "con trai"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 27,
+    "fused": "娘むすめ",
+    "meaning": "con gái"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 28,
+    "fused": "工場こうじょう",
+    "meaning": "công xưởng, nhà máy"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 29,
+    "fused": "～名めい",
+    "meaning": "～người （Đếm người）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 30,
+    "fused": "小しょう学がく生せい",
+    "meaning": "học sinh tiểu học"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 31,
+    "fused": "中ちゅう学がく生せい",
+    "meaning": "học sinh trung học cơ sở"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 32,
+    "fused": "高校生こうこうせい",
+    "meaning": "học sinh trung học phổ thông"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 33,
+    "fused": "数すう字じ",
+    "meaning": "chữ số, con số"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 34,
+    "fused": "お子こさん",
+    "meaning": "con （của người khác）"
+  },
+  {
+    "sectionNum": 6,
+    "sectionTitle": "Danh từ - Con người, Gia đình, Xã hội",
+    "stt": 35,
+    "fused": "お手て洗あらい",
+    "meaning": "nhà vệ sinh"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 1,
+    "fused": "厳きびしい",
+    "meaning": "nghiêm khắc, khắt khe"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 2,
+    "fused": "痛いたい",
+    "meaning": "đau, đau đớn"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 3,
+    "fused": "遠とおい",
+    "meaning": "xa"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 4,
+    "fused": "苦にがい",
+    "meaning": "（vị） đắng"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 5,
+    "fused": "うれしい",
+    "meaning": "vui vẻ"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 6,
+    "fused": "強つよい",
+    "meaning": "mạnh, mạnh mẽ"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 7,
+    "fused": "弱よわい",
+    "meaning": "yếu, yếu đuối"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 8,
+    "fused": "悲かなしい",
+    "meaning": "buồn bã"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 9,
+    "fused": "暗くらい",
+    "meaning": "tối, u ám"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 10,
+    "fused": "暖あたたかい",
+    "meaning": "ấm"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 11,
+    "fused": "薄うすい",
+    "meaning": "mỏng, nhạt"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 12,
+    "fused": "厚あつい",
+    "meaning": "dày"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 13,
+    "fused": "白しろい",
+    "meaning": "màu trắng, trắng"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 14,
+    "fused": "うるさい",
+    "meaning": "ầm ỹ, ồn ào"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 15,
+    "fused": "茶色ちゃいろい",
+    "meaning": "（màu） nâu"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 16,
+    "fused": "黄き色いろい",
+    "meaning": "（màu） vàng"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 17,
+    "fused": "青あおい",
+    "meaning": "（màu） xanh da trời"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 18,
+    "fused": "つまらない",
+    "meaning": "chán"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 19,
+    "fused": "しょっぱい",
+    "meaning": "mặn"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 20,
+    "fused": "冷つめたい",
+    "meaning": "lạnh （cảm giác）"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 21,
+    "fused": "危あぶない",
+    "meaning": "nguy hiểm"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 22,
+    "fused": "ぬるい",
+    "meaning": "âm ấm"
+  },
+  {
+    "sectionNum": 7,
+    "sectionTitle": "Tính từ đuôi -i",
+    "stt": 23,
+    "fused": "うまい",
+    "meaning": "ngon"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 1,
+    "fused": "真面目まじめ",
+    "meaning": "nghiêm túc, chăm chỉ"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 2,
+    "fused": "大切たいせつ",
+    "meaning": "quan trọng"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 3,
+    "fused": "すばらしい",
+    "meaning": "tuyệt vời"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 4,
+    "fused": "安全あんぜん",
+    "meaning": "an toàn"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 5,
+    "fused": "大だい事じ",
+    "meaning": "quan trọng"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 6,
+    "fused": "最悪さいあく",
+    "meaning": "tồi tệ, tệ nhất, xấu nhất"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 7,
+    "fused": "高こう級きゅう",
+    "meaning": "cao cấp"
+  },
+  {
+    "sectionNum": 8,
+    "sectionTitle": "Tính từ đuôi -na",
+    "stt": 8,
+    "fused": "平へい気き",
+    "meaning": "bình thản, bình tĩnh"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 1,
+    "fused": "下さがる",
+    "meaning": "giảm xuống; hạ xuống"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 2,
+    "fused": "（～を）楽たのしむ",
+    "meaning": "tận hưởng; mong chờ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 3,
+    "fused": "（～を）返かえす",
+    "meaning": "trả lại"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 4,
+    "fused": "成功せいこうする",
+    "meaning": "thành công"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 5,
+    "fused": "中ちゅう止し（する）",
+    "meaning": "dừng, hoãn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 6,
+    "fused": "失敗しっぱい（する）",
+    "meaning": "thất bại"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 7,
+    "fused": "（風邪かぜを）引ひく",
+    "meaning": "bị （cảm lạnh）, trúng （gió）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 8,
+    "fused": "集あつまる",
+    "meaning": "tập trung"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 9,
+    "fused": "なくなる",
+    "meaning": "mất, biến mất, hết"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 10,
+    "fused": "（～に/～と）ぶつかる",
+    "meaning": "va phải, đụng phải"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 11,
+    "fused": "（を）怪我けが（する）",
+    "meaning": "bị thương"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 12,
+    "fused": "昼ひる寝ね",
+    "meaning": "ngủ trưa"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 13,
+    "fused": "（～に）勝かつ",
+    "meaning": "thắng, chiến thắng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 14,
+    "fused": "亡なくなる",
+    "meaning": "mất, qua đời"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 15,
+    "fused": "（～と）別わかれる",
+    "meaning": "chia tay"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 16,
+    "fused": "（～に）負まける",
+    "meaning": "thua, bại trận"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 17,
+    "fused": "（～を）辞やめる",
+    "meaning": "từ bỏ; nghỉ （việc）, bỏ （học）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 18,
+    "fused": "優ゆう勝しょうする",
+    "meaning": "vô địch"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 19,
+    "fused": "びっくりする",
+    "meaning": "giật mình"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 20,
+    "fused": "おすすめ（する）",
+    "meaning": "giới thiệu, khuyến nghị"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 21,
+    "fused": "こうやって",
+    "meaning": "làm như thế này, như thế này thì..."
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 22,
+    "fused": "（～に）似合にあう",
+    "meaning": "hợp với ~"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 23,
+    "fused": "（～に）興きょう味みがある",
+    "meaning": "có hứng thú với～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 24,
+    "fused": "（～を）始はじめる",
+    "meaning": "bắt đầu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 25,
+    "fused": "（～を）利り用よう（する）",
+    "meaning": "sử dụng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 26,
+    "fused": "（する）",
+    "meaning": "giới thiệu ～ （với ai đó）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 27,
+    "fused": "（～を）カット（する）",
+    "meaning": "cắt, chia"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 28,
+    "fused": "（○○円えんも）する",
+    "meaning": "tốn （OO yên）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 29,
+    "fused": "切きれる",
+    "meaning": "bị gãy, bị đứt,～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 30,
+    "fused": "ゴール（する）",
+    "meaning": "ghi bàn, ghi điểm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 31,
+    "fused": "（～を）切きる",
+    "meaning": "cắt ～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 32,
+    "fused": "（～を）塗ぬる",
+    "meaning": "bôi （thuốc）, quét （sơn）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 33,
+    "fused": "（～を）冷ひやす",
+    "meaning": "làm lạnh"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 34,
+    "fused": "（～を）分わける",
+    "meaning": "chia, phân loại"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 35,
+    "fused": "（～を）温あたためる/暖あたためる",
+    "meaning": "làm ấm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 36,
+    "fused": "寝室しんしつ",
+    "meaning": "phòng ngủ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 37,
+    "fused": "（お風呂ふろ・お湯ゆを）沸わかす",
+    "meaning": "（bồn tắm, nước ấm） làm nóng, đun nóng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 38,
+    "fused": "（～を）治なおす",
+    "meaning": "chữa khỏi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 39,
+    "fused": "落おとす",
+    "meaning": "làm rơi, đánh rơi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 40,
+    "fused": "（～を）汚よごす",
+    "meaning": "làm bẩn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 41,
+    "fused": "（～を）消けす",
+    "meaning": "tắt / xóa"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 42,
+    "fused": "（～を）乾かわかす",
+    "meaning": "làm khô, hong khô"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 43,
+    "fused": "（～を）破やぶる",
+    "meaning": "làm rách"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 44,
+    "fused": "（～を）売うる",
+    "meaning": "bán"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 45,
+    "fused": "（～を）壊こわす",
+    "meaning": "làm hỏng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 46,
+    "fused": "（～を）割わる",
+    "meaning": "làm vỡ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 47,
+    "fused": "（～を）倒たおす",
+    "meaning": "① chặt đổ, đốn ngã… ② đánh gục, hạ gục （ai đó）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 48,
+    "fused": "（～を）捨すてる",
+    "meaning": "vứt"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 49,
+    "fused": "（～を）助たすける",
+    "meaning": "giúp đỡ, cứu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 50,
+    "fused": "（～を）止とめる",
+    "meaning": "cản, ngăn, đỗ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 51,
+    "fused": "緊張きんちょう（する）",
+    "meaning": "căng thẳng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 52,
+    "fused": "（～を）貼はる",
+    "meaning": "dán"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 53,
+    "fused": "（～を）飾かざる",
+    "meaning": "trang trí"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 54,
+    "fused": "（～を）変かえる",
+    "meaning": "thay đổi, đổi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 55,
+    "fused": "（～を）開かい始し（する）",
+    "meaning": "bắt đầu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 56,
+    "fused": "（～を）見みつける",
+    "meaning": "tìm thấy"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 57,
+    "fused": "（～を）研究けんきゅう（する）",
+    "meaning": "nghiên cứu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 58,
+    "fused": "（～を）輸ゆ入にゅう（する）",
+    "meaning": "nhập khẩu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 59,
+    "fused": "（～を）輸ゆ出しゅつ（する）",
+    "meaning": "xuất khẩu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 60,
+    "fused": "（～を）外はずす",
+    "meaning": "tháo ～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 61,
+    "fused": "（～を）取とる",
+    "meaning": "tháo, bỏ ～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 62,
+    "fused": "（～を）履はく",
+    "meaning": "mặc （quần, váy...）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 63,
+    "fused": "（～を）巻まく",
+    "meaning": "quàng, quấn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 64,
+    "fused": "（～を）被かぶる",
+    "meaning": "đội～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 65,
+    "fused": "（～を）かける",
+    "meaning": "đeo （kính）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 66,
+    "fused": "（～を）つける",
+    "meaning": "đeo （trang sức）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 67,
+    "fused": "増ふえる",
+    "meaning": "tăng lên"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 68,
+    "fused": "減へる",
+    "meaning": "giảm xuống"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 69,
+    "fused": "（～を）焼やく",
+    "meaning": "nướng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 70,
+    "fused": "（～を）喜よろこぶ",
+    "meaning": "vui mừng, phấn khởi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 71,
+    "fused": "（～を）しゃべる",
+    "meaning": "nói chuyện"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 72,
+    "fused": "考かんがえる",
+    "meaning": "suy nghĩ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 73,
+    "fused": "（～を）続つづける",
+    "meaning": "tiếp tục"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 74,
+    "fused": "セール",
+    "meaning": "giảm giá, sale"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 75,
+    "fused": "（～を）取とる",
+    "meaning": "lấy, bắt, biểu thị～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 76,
+    "fused": "さわぐ",
+    "meaning": "làm ồn, huyên náo"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 77,
+    "fused": "（～を）盗ぬすむ",
+    "meaning": "ăn cắp, lấy trộm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 78,
+    "fused": "（～を）諦あきらめる",
+    "meaning": "bỏ cuộc, từ bỏ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 79,
+    "fused": "録ろく画が（する）",
+    "meaning": "băng ghi hình, sự ghi hình"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 80,
+    "fused": "（～を）流ながす",
+    "meaning": "xả, làm chảy đi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 81,
+    "fused": "（～に）近ちかづく",
+    "meaning": "đến gần"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 82,
+    "fused": "火傷やけど（する）",
+    "meaning": "bị bỏng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 83,
+    "fused": "（～を）飲いん食しょく（する）",
+    "meaning": "ăn uống"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 84,
+    "fused": "（～を）禁きん止し（する）",
+    "meaning": "cấm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 85,
+    "fused": "避ひ難なん（する）",
+    "meaning": "lánh nạn, tránh nạn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 86,
+    "fused": "遅ち延えん（する）",
+    "meaning": "trì hoãn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 87,
+    "fused": "無理むり（する）",
+    "meaning": "gắng sức, cố sức"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 88,
+    "fused": "（～を）検索けんさく（する）",
+    "meaning": "tìm kiếm, tra cứu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 89,
+    "fused": "（～を）ラッピング（する）",
+    "meaning": "bao, gói"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 90,
+    "fused": "（～を）お祝いわい（する）",
+    "meaning": "chúc mừng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 91,
+    "fused": "（～を）配くばる",
+    "meaning": "phân phát, phân phối"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 92,
+    "fused": "（～を）直なおす",
+    "meaning": "sửa ～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 93,
+    "fused": "親切しんせつにする",
+    "meaning": "đối xử tử tế （với ai）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 94,
+    "fused": "（～を）教おそわる",
+    "meaning": "được dạy"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 95,
+    "fused": "（～を）預あずかる",
+    "meaning": "giữ, trông"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 96,
+    "fused": "（A語ごを）（B語ごに）翻訳ほんやく（する）",
+    "meaning": "biên dịch"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 97,
+    "fused": "（～を）交換こうかん（する）",
+    "meaning": "đổi, trao đổi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 98,
+    "fused": "長なが生いき（する）",
+    "meaning": "sống thọ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 99,
+    "fused": "（～を）かむ",
+    "meaning": "cắn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 100,
+    "fused": "（～を）なぐる",
+    "meaning": "đấm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 101,
+    "fused": "（～を）叱しかる",
+    "meaning": "mắng mỏ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 102,
+    "fused": "（～を）行おこなう",
+    "meaning": "tiến hành, tổ chức"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 103,
+    "fused": "（～を）怒おこる",
+    "meaning": "nổi giận, tức giận"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 104,
+    "fused": "（～を）踏ふむ",
+    "meaning": "giẫm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 105,
+    "fused": "（～を）いじめる",
+    "meaning": "bắt nạt"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 106,
+    "fused": "（～を）リサイクル（する）",
+    "meaning": "tái chế"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 107,
+    "fused": "（～を）発見はっけん（する）",
+    "meaning": "phát hiện"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 108,
+    "fused": "（～を）発明はつめい（する）",
+    "meaning": "phát minh"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 109,
+    "fused": "（～を）開催かいさい（する）",
+    "meaning": "tổ chức"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 110,
+    "fused": "発売はつばい（する）",
+    "meaning": "mở bán"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 111,
+    "fused": "勝かっ手てに",
+    "meaning": "tự ý, tự tiện （làm gì đó）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 112,
+    "fused": "（する）",
+    "meaning": "hỏi, đặt câu hỏi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 113,
+    "fused": "入にゅう院いん（する）",
+    "meaning": "nhập viện"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 114,
+    "fused": "貯金ちょきん（する）",
+    "meaning": "tiết kiệm tiền"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 115,
+    "fused": "自じ分ぶんで",
+    "meaning": "tự mình"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 116,
+    "fused": "（～を）決きめる",
+    "meaning": "quyết định"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 117,
+    "fused": "禁煙きんえん（する）",
+    "meaning": "cấm hút thuốc"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 118,
+    "fused": "早はや起おき（する）",
+    "meaning": "dậy sớm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 119,
+    "fused": "（～に）賛成さんせい（する）",
+    "meaning": "tán thành"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 120,
+    "fused": "（～と）離り婚こん（する）",
+    "meaning": "ly hôn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 121,
+    "fused": "（～を）踊おどる",
+    "meaning": "nhảy múa"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 122,
+    "fused": "（～に）あいさつ（する）",
+    "meaning": "chào hỏi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 123,
+    "fused": "（～に）チャレンジ（する）",
+    "meaning": "thử sức"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 124,
+    "fused": "（～を）チェック（する）",
+    "meaning": "kiểm tra; soát lại"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 125,
+    "fused": "（～を）録音ろくおん（する）",
+    "meaning": "ghi âm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 126,
+    "fused": "（～を）予よ習しゅう（する）",
+    "meaning": "soạn bài, chuẩn bị bài trước"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 127,
+    "fused": "食たべ放題ほうだい",
+    "meaning": "ăn thoải mái, ăn buffet"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 128,
+    "fused": "（～を）思おもい出だす",
+    "meaning": "nhớ ra"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 129,
+    "fused": "（～を）渡わたす",
+    "meaning": "trao, đưa～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 130,
+    "fused": "（～に）乗のり換かえる",
+    "meaning": "đổi （tàu, chuyến xe～）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 131,
+    "fused": "（～に）進学しんがく（する）",
+    "meaning": "học lên～（trình độ cao hơn）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 132,
+    "fused": "（～を）キャンセル（する）",
+    "meaning": "huỷ bỏ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 133,
+    "fused": "（～に）就職しゅうしょくする",
+    "meaning": "bắt đầu công việc ở ～, có được công việc ở ～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 134,
+    "fused": "（～を）知しらせる",
+    "meaning": "cho biết, thông báo"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 135,
+    "fused": "（～を）出しゅっ発ぱつ（する）",
+    "meaning": "xuất phát"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 136,
+    "fused": "（～を）実験じっけん（する）",
+    "meaning": "thực nghiệm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 137,
+    "fused": "（～を）整せい理り（する）",
+    "meaning": "chỉnh lý, sắp xếp lại"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 138,
+    "fused": "ジョギング（する）",
+    "meaning": "chạy bộ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 139,
+    "fused": "眠ねむる",
+    "meaning": "ngủ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 140,
+    "fused": "（～を）迎むかえに行いく",
+    "meaning": "đi đón"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 141,
+    "fused": "（～を）選えらぶ",
+    "meaning": "lựa chọn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 142,
+    "fused": "（～に）向むかう",
+    "meaning": "hướng đến, đi đến ～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 143,
+    "fused": "（～に）戻もどる",
+    "meaning": "trở về, quay lại"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 144,
+    "fused": "（～に）申もうし込こむ",
+    "meaning": "đăng ký"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 145,
+    "fused": "（～を）降おりる",
+    "meaning": "xuống （tàu, xe…）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 146,
+    "fused": "（～を）修しゅう理り（する）",
+    "meaning": "sửa, chỉnh sửa"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 147,
+    "fused": "支し度たく（する）",
+    "meaning": "chuẩn bị"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 148,
+    "fused": "（場ば所しょを）渡わたる",
+    "meaning": "đi qua, băng qua （1 địa điểm）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 149,
+    "fused": "（～を）戻もどす",
+    "meaning": "để trở lại"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 150,
+    "fused": "（～を）剥はがす",
+    "meaning": "bóc"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 151,
+    "fused": "（～を）終おわらせる",
+    "meaning": "kết thúc"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 152,
+    "fused": "（～を）充じゅん電でん（する）",
+    "meaning": "sạc điện"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 153,
+    "fused": "（～を）復ふく習しゅう（する）",
+    "meaning": "ôn tập"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 154,
+    "fused": "（～を）そのままにする",
+    "meaning": "để nguyên như thế"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 155,
+    "fused": "（～に）気きがつく",
+    "meaning": "để ý đến, nhận ra"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 156,
+    "fused": "（～を）用よう意い（する）",
+    "meaning": "chuẩn bị"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 157,
+    "fused": "自じ由ゆう",
+    "meaning": "tự do"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 158,
+    "fused": "（～を）拾ひろう",
+    "meaning": "nhặt"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 159,
+    "fused": "（～を）学まなぶ",
+    "meaning": "học"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 160,
+    "fused": "（～を）経験けいけん（する）",
+    "meaning": "trải nghiệm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 161,
+    "fused": "（人ひとに～を）頼たのむ",
+    "meaning": "nhờ ai đó làm gì"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 162,
+    "fused": "（～を）写うつす",
+    "meaning": "sao chép, chép bài"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 163,
+    "fused": "感動かんどう（する）",
+    "meaning": "cảm động"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 164,
+    "fused": "（～を）支し払はらう",
+    "meaning": "chi trả, thanh toán"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 165,
+    "fused": "（する）",
+    "meaning": "phát biểu"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 166,
+    "fused": "（～を）自じ慢まんする",
+    "meaning": "tự mãn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 167,
+    "fused": "（～を）しまう",
+    "meaning": "cất đi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 168,
+    "fused": "（～を）過すごす",
+    "meaning": "trải qua"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 169,
+    "fused": "（～を）確たしかめる",
+    "meaning": "xác nhận"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 170,
+    "fused": "（～に）相談そうだん（する）",
+    "meaning": "bàn bạc"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 171,
+    "fused": "（～を）見学けんがく（する）",
+    "meaning": "kiến tập, đi đâu đó với mục đích học tập"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 172,
+    "fused": "（～を）契約けいやく（する）",
+    "meaning": "hợp đồng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 173,
+    "fused": "（～を）購こう入にゅう（する）",
+    "meaning": "mua"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 174,
+    "fused": "（（する）",
+    "meaning": "nhập học"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 175,
+    "fused": "（～年ねん、～日にち）前まえ",
+    "meaning": "～trước （Trước 前 là từ chỉ khoảng thời gian）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 176,
+    "fused": "（～を）（人ひとに）任まかせる",
+    "meaning": "giao phó, bàn giao... （cho ai đó）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 177,
+    "fused": "お見み舞まい",
+    "meaning": "đi thăm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 178,
+    "fused": "（～を）押おす",
+    "meaning": "ấn; nhấn; bấm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 179,
+    "fused": "（熱ねつを）出だす",
+    "meaning": "bị （sốt）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 180,
+    "fused": "（～を）楽たのしみにする",
+    "meaning": "mong chờ, mong đợi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 181,
+    "fused": "（～を）許ゆるす",
+    "meaning": "tha thứ; cho phép"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 182,
+    "fused": "（～を）謝あやまる",
+    "meaning": "xin lỗi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 183,
+    "fused": "帰き国こく（する）",
+    "meaning": "về nước"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 184,
+    "fused": "不ふ動どう産さん屋や",
+    "meaning": "công ty/ người làm bất động sản"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 185,
+    "fused": "（～を）減へらす",
+    "meaning": "giảm đi"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 186,
+    "fused": "曲まがる",
+    "meaning": "rẽ"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 187,
+    "fused": "（～を）知しらせる",
+    "meaning": "cho biết, thông báo"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 188,
+    "fused": "お茶ちゃをする",
+    "meaning": "uống trà"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 189,
+    "fused": "（（する）",
+    "meaning": "đàm phán, thương lượng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 190,
+    "fused": "（～を）マッサージ（する）",
+    "meaning": "mát xa"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 191,
+    "fused": "（～を）測はかる",
+    "meaning": "đo đạc （chiều dài, diện tích...）*"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 192,
+    "fused": "（～を）混まぜる",
+    "meaning": "trộn lẫn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 193,
+    "fused": "（～に）満足まんぞく（する）",
+    "meaning": "mãn nguyện, thỏa mãn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 194,
+    "fused": "（～を）計画けいかく（する）",
+    "meaning": "lên kế hoạch"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 195,
+    "fused": "（～を）希き望ぼう（する）",
+    "meaning": "mong muốn, ước muốn"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 196,
+    "fused": "（～を）想像そうぞう（する）",
+    "meaning": "tưởng tượng"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 197,
+    "fused": "（～を）予よ想そう（する）",
+    "meaning": "dự đoán"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 198,
+    "fused": "（～を）やる",
+    "meaning": "tưới （nước）"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 199,
+    "fused": "（～を）祈いのる",
+    "meaning": "cầu nguyện"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 200,
+    "fused": "（～を）貯ためる",
+    "meaning": "tiết kiệm"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 201,
+    "fused": "わくわくする",
+    "meaning": "háo hức"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 202,
+    "fused": "（～を）発売はつばい（する）",
+    "meaning": "bắt đầu bán, phát hành～"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 203,
+    "fused": "（～に）寄よる",
+    "meaning": "ghé qua"
+  },
+  {
+    "sectionNum": 9,
+    "sectionTitle": "Động từ",
+    "stt": 204,
+    "fused": "（～を）伝つたえる",
+    "meaning": "truyền đạt"
+  }
+]

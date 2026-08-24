@@ -1,4 +1,4 @@
-﻿import { type ButtonHTMLAttributes, forwardRef } from "react"
+import { type ButtonHTMLAttributes, forwardRef } from "react"
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'yellow' | 'red' | 'green' | 'ghost'
@@ -7,9 +7,9 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants: Record<string, string> = {
   primary:   'bg-ink text-paper hover:bg-ink',
-  secondary: 'bg-paper text-ink',
+  secondary: 'bg-card text-ink',
   yellow:    'bg-yellow text-ink',
-  red:       'bg-red text-paper',
+  red:       'bg-accent text-accent-fg',
   green:     'bg-green text-paper',
   ghost:     'bg-transparent text-ink border-transparent shadow-none hover:bg-surface',
 }
@@ -27,11 +27,11 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         className={[
           'inline-flex items-center justify-center gap-2',
-          'border-3 border-ink',
+          'border-3 border-structural',
           'font-mono font-bold uppercase tracking-wider',
-          'shadow-[3px_3px_0px_var(--color-ink)]',
+          'shadow-[var(--shadow-brutal)]',
           'transition-all duration-100',
-          'hover:shadow-[5px_5px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5',
+          'hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5',
           'active:shadow-none active:translate-x-0.5 active:translate-y-0.5',
           'cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none',
           variants[variant],

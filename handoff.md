@@ -1,7 +1,260 @@
-# KOTODORI — Build Status
+# TORI — Build Status
 
-> Japanese JLPT N5 personal learning platform
+> Japanese JLPT N5 + N4 personal learning platform (renamed from Kotodori this session)
 > Stack: React 19 + Vite 8 + TypeScript + Tailwind CSS v4 + React Router v7 + Zustand
+
+---
+
+## Session: Tori rebrand + Paper Brutalism + N4 grammar/kanji (this session)
+
+Executed `implementation_plan_2.md` (Kotodori → Tori rename + Paper Brutalism reskin
++ N4 grammar/kanji integration) end to end. **`npm run build` is green** after every
+phase, and this session ended with an actual browser pass (Chrome via
+Playwright/CDP) once the tool became available -- Dashboard, Kanji (N5+N4+all,
+including opening `KanjiDrawer` on a dark theme), Grammar (N4 level + detail
+drawer), VocabBrowser (N4 English meanings), Landing (`/welcome`), and Settings
+were all visually checked in both **Gold** (the user's stated favorite, dark) and
+**Sakura** (light) papers, plus the RAW/NEO structural toggle. Everything rendered
+correctly; the only real bug the pass caught was the `KanjiDrawer` dark-theme
+legibility issue described below, which is fixed and was re-verified live in Gold
+after the fix. (One tooling quirk, not an app bug: the screenshot tool intermittently
+returned a blank/stale frame or timed out on the first capture after a navigation --
+confirmed via direct DOM/computed-style inspection each time that the page was
+actually rendered correctly; a second screenshot after a short wait always showed
+it. Not investigated further since it's a CDP capture issue, not application code.)
+Not checked: the other 7 papers (Paper/Matcha/Sumi/Dusk/Ink/Indigo -- Washi and
+Sakura and Gold were), density/typeface toggles' visual effect (wired and clickable,
+outcome not screenshotted), and the two-pane pages this session skipped watermarks
+on (Review, and the un-scrolled parts of VocabBrowser/Grammar/Kanji).
+
+### Rename (Part A)
+- `package.json` name, `index.html` `<title>`, boot script, Sidebar logo (`鳥`/`とり`,
+  `[ TORI ]`), favicon (new bird-motif SVG, same brutalist-card construction as the
+  old 言 glyph).
+- Settings persist key renamed `kotodori-settings` → `tori-settings`, with a one-time
+  localStorage migration in `index.html`'s boot script (copies the old blob forward
+  if the new key doesn't exist yet, before Zustand's `persist` middleware reads it).
+- **`kotodori-vocab` (the SRS persist key, in `vocab-store.ts`) was deliberately left
+  unrenamed.** It holds real review history, not settings; a blind rename would
+  orphan every user's SRS progress on next load. Not a "Kotodori" text leak since
+  it's never user-visible — just a localStorage key.
+- Default `lang` flipped `'vi'` → `'en'` in `settings-store.ts` (Part F1).
+
+### Paper Brutalism (Part B/C)
+- `src/index.css` fully rewritten: 9 paper themes ported **verbatim** from
+  `../../Tori/src/app/globals.css` (Washi/Paper/Matcha/Sakura/Sumi light, Dusk/Ink/
+  Indigo/Gold-leaf dark) as `:root`/`.theme-*` CSS custom properties, remapped into
+  Kotodori's existing Tailwind v4 `@theme` color/font tokens (`--color-ink` →
+  `var(--tori-text)`, etc.) so every pre-existing `bg-paper`/`text-ink`/`bg-yellow`
+  call site picked up the new palette with **zero changes at those call sites**.
+  Structural tokens (`--border-w`/`--radius`/`--tilt`) kept RAW (2px, sharp) vs NEO
+  (3px, rounded, slight tilt) exactly as before, just re-scaled per the plan.
+  Paper-grain SVG texture + ambient glow gradients, all 16 keyframes, and the
+  brutalist utility classes (`.card-lift`, `.reveal`, `.acc-island`, etc.) ported too.
+- **`.reveal` was changed from Tori's auto-animate-on-mount behavior to an
+  IntersectionObserver-gated `.reveal.in` pattern** (matches the plan's C4 spec more
+  than Tori's own CSS, which the plan's spec text actually contradicts slightly --
+  see `src/components/ui/Reveal.tsx`). `--i` (inline per instance) staggers the
+  delay.
+- New components: `Reveal.tsx`, `ScreenHeader.tsx` (+ `Watermark`), `InkCabinet.tsx`
+  (9 paper swatches + RAW/NEO toggle, compact mode for the Sidebar / full mode with
+  density + typeface toggle for Settings) -- all ported from Tori's equivalents but
+  rewritten against this app's Zustand store instead of Tori's raw-localStorage
+  `src/lib/settings.ts`, and with no `lucide-react`/`cn`/shadcn dependency (none of
+  those are installed here; used inline SVG + the same conditional-class-string
+  style as the existing `Button`/`Card`).
+- `settings-store.ts` gained `paper`/`density`/`typeSans` (persisted, same
+  `tori-settings` blob) with setters that also apply/remove the corresponding
+  `<html>` classes directly (mirroring Tori's imperative `applyTheme`/etc.). The
+  boot script in `index.html` reads all of these **out of the parsed `tori-settings`
+  blob** (not separate top-level localStorage keys, which the plan's own B9 sketch
+  and Files-Summary section disagreed on) -- this was a deliberate fix flagged
+  before implementation, avoiding a FOUC bug.
+- `Card.tsx`/`Button.tsx`/`Sidebar.tsx`/`Layout.tsx` reskinned per the plan (C1-C3,
+  C7): `--shadow-brutal`/`--shadow-brutal-hover` (ink-tinted via `color-mix`)
+  replace the old flat `var(--color-ink)` shadow; accent cards get a tinted shadow
+  instead. `ThemeSwitcher.tsx` **deleted** (its RAW/NEO toggle is now inside
+  `InkCabinet`, which replaced it in the Sidebar; nothing else referenced it).
+  `Layout.tsx` wraps `<Outlet>` in `.view-enter`, keyed on `location.pathname`, for
+  the page-transition animation.
+- **`KanjiDrawer.tsx` fix (found post-hoc, not in the original plan):** this panel is
+  deliberately theme-independent (always a hardcoded white Kanagawa-styled surface,
+  predates the paper-theme system). Before this session that was safe because
+  Kotodori only had light themes; introducing 4 dark papers meant its `text-muted`/
+  `border-ink`/etc. Tailwind classes (which now resolve to near-white on dark
+  papers) rendered **white-on-white** against its hardcoded white background. Fixed
+  by pinning every text/border color inside the drawer to fixed literals
+  (`DRAWER_INK`/`DRAWER_MUTED`/`DRAWER_ACCENT`/`DRAWER_HAIRLINE` constants at the
+  top of the file) decoupled from the theme cascade entirely, same treatment the
+  Hán Việt badge already had. **`KanjiGroupModal.tsx` did NOT need this fix** -- it
+  already used theme-reactive `bg-paper`/`border-ink`/`text-muted` throughout (no
+  hardcoded white), so it already adapts correctly across all 9 themes.
+- New pages: `Landing.tsx` (route `/welcome`, reachable via the Sidebar logo link --
+  wasn't linked from anywhere in the first pass, fixed) -- hero with a live
+  `AnimatedKanjiSvg` stroke-order draw of 鳥, feature grid, a **live, functional**
+  `InkCabinet` as the theme-picker demo (not a decorative mockup), footer with the
+  `minh khang` signature. `Settings.tsx` (route `/settings`, linked from Sidebar
+  nav) -- full `InkCabinet` + language + level switchers.
+- Per-page watermarks (Part C8) were only added to the **single-column** pages
+  (`Dashboard` 今, `Counters` 数, `Homophones` 音, `VerbForms` 動) where a fixed-
+  position giant kanji is safe to eyeball-place without a browser. **Skipped on the
+  two-pane list+detail pages** (`VocabBrowser`, `Grammar`, `Kanji`, `Review`) --
+  `Watermark`'s `absolute`/`right-0` positioning could plausibly collide with the
+  detail panel on those layouts, and that couldn't be verified without a browser.
+  Dashboard also got `Reveal`-wrapped sections (staggered load-in); the other three
+  did not (time-boxed).
+
+### N4 Grammar (Part D) -- `src/data/n4/grammar.json` + `grammar-categories.json`
+- **68 grammar points** (`g_136`-`g_203`), 10 categories (Roman numerals XV-XXIV),
+  chapters 15-24 -- transcribed from `../../N4_Grammar_and_Kanji_Summary-Final.md`
+  and validated: id sequence, category counts (6/6/7/6/4/7/7/7/11/7 = 68), and every
+  `jaRuby`/`patternRuby` string checked (ruby tags balanced, and the plain-text
+  reconstruction after stripping `<ruby>/<rt>/<rp>` tags exactly equals `examples[0].ja`)
+  via a one-off Node script before considering the file done.
+- The source MD has **no example sentences** (only a pattern + Vietnamese gloss per
+  point) -- every `examples[0]` (`ja`/`kana`/`vi`/`en`/`jaRuby`) is **authored
+  content**, written to match N5's own convention of exactly 1 example per point
+  (`kana` left `""` throughout, matching every N5 entry). `jaRuby`/`patternRuby` are
+  hand-marked-up `<ruby>` HTML, not run through kuroshiro/kuromoji (neither package
+  is installed in this repo -- handoff's "Furigana pipeline" section describes a
+  one-time N5-era script, not a live dependency).
+- `meaning.en`/`explanation.en` are translations of the hand-authored
+  `meaning.vi`/`explanation.vi` (the latter pulled from the MD's own numbered
+  Vietnamese descriptions where available).
+
+### N4 Kanji (Part E) -- `src/data/n4/kanji.json`
+- **110 groups / 268 words / 10 chapters** (15-24), one group per anchor kanji
+  (matching N5's convention -- the MD's own `15.1`/`15.2` sub-numbering is a
+  different, unrelated axis and was **not** used as the grouping key). The plan's
+  own "~108" kanji-count estimate was wrong for 4 chapters; recounting directly from
+  the MD's tables gives 110, confirmed by chapter-by-chapter tally
+  (8/10/11/9/11/13/11/12/14/11).
+- **Script-built, not hand-typed** (`scripts/n4-kanji-source.mjs` -> hand-transcribed
+  `[kanji, meaningEn, [[word, kana, wordMeaningEn], ...]]` per anchor, translated
+  from the MD's Vietnamese inline -->
+  `scripts/build-n4-kanji.mjs` computes everything else):
+  - **hanviet** (per word): joins `hanviet-dictionary.json` per kanji character.
+  - **onyomi/kunyomi** (per anchor): looked up from `scripts/all-readings.json`
+    (kanjiapi.dev cache).
+  - **onkun tag** (per word, e.g. `"On--Kun"`): `scripts/onkun-classifier.mjs`'s
+    `classifyWord`, same classifier N5's kanji pipeline uses.
+  - **group-level onkun**: the classified type of the *anchor character's own
+    token* within `words[0]` (verified against real N5 examples first, e.g. anchor
+    土 in 土曜日 classifies "On" because 土 itself reads ど there -- not just
+    "words[0].onkun as a whole string").
+  - Hard-fails (throws) if any word doesn't classify, rather than writing a
+    placeholder -- caught 9 real cases (時計/腕時計/切符/切手/色んな/景色/風邪,
+    true jukujikun the classifier can't derive character-by-character, plus 係の人
+    and お姉さん, which are a classifier limitation -- bare-vs-implied-okurigana
+    kun reading and an honorific kun variant, respectively -- not irregular
+    readings). All 9 hand-resolved in `ONKUN_OVERRIDES` in the build script, each
+    keyed by the exact `[kanji, kana]` pair so a source-data edit can't silently
+    misapply the wrong override.
+  - **`all-readings.json` and `hanviet-dictionary.json` both extended** (8 new
+    characters each: 係協承政芋血谷辺) -- these 8 were missing from both caches
+    entirely; readings/Hán Việt supplied from general knowledge (no network access
+    this session to hit kanjiapi.dev directly), same "additive backfill" pattern as
+    the existing `backfill-n4-hanviet.mjs`/`fetch-secondary-kanji-data.mjs`.
+- **Real collision found and fixed, not in the plan:** N5's chapter 15 (the
+  "N5 supplement" chapter added in an earlier session) and N4's chapter 15 (Bài 15,
+  this session) are **both legitimately numbered 15** -- each numbered after its own
+  curriculum, not a shared sequence. Worse, both chapters' groups use the identical
+  `k15_g1`...`k15_gN` id scheme, so N5 chapter 15 and N4 chapter 15 fully collide on
+  both `chapter` number *and* group `id` prefix. This only matters when `level ===
+  'all'` combines both datasets. Fixed in `Kanji.tsx` (not in the data -- the ids
+  stay as computed, changing them would ripple into SRS card keys) by tagging every
+  chapter/group with its source level (`src: 'N5' | 'N4'`) at the page-state layer,
+  keying chapter chips and the group-card React `key` by `${src}-${chapter}` /
+  `${src}-${group.id}` instead of the raw number/id, and labelling chips `N5 15` /
+  `N4 15` in `'all'` scope so they're visually distinguishable too. **Kanji-mode SRS
+  review is still N5-only** (per the pre-existing scope cut), so this collision
+  never reaches `vocab-store.ts`'s card keys today -- but if N4 kanji review is ever
+  added, the same `${src}-${id}` discipline will be needed there too.
+- `src/data/kanji.ts` (new, mirrors `data/vocab.ts`'s pattern):
+  `n5KanjiChapters`/`n4KanjiChapters`/`allKanjiChapters`/`getKanjiChapters(level)`.
+  `src/data/grammar.ts` (new, same pattern) for grammar + categories + tips.
+  `Grammar.tsx` and `Kanji.tsx` both gained the N5/N4/All level switcher (Part D3/E2)
+  reading/writing the *global* `useSettingsStore` level (same store Sidebar's
+  `LevelSwitcher` and Vocab/Review/Homophones already used) -- switching level on
+  any page now affects all of them consistently. A stale category/chapter selection
+  is reset on level switch (was pointing at a slug/number that may not exist in the
+  new level's data).
+- **Verb Forms / Counters stay N5-only** (no N4 source for either exists) --
+  unchanged from before this session. Grammar's verb-form pill filter still only
+  cross-references N5's `requiredVerbForm` data; it's simply inert (never matches)
+  on N4/all-scope points rather than hidden.
+
+### Translations (Part F) -- what got done and what deliberately didn't
+- **N5 grammar `meaning.en` + `examples[0].en` (135/135 + 130/135)** -- filled via
+  `scripts/n5-grammar-en.mjs` (hand-translated, keyed by id) +
+  `scripts/apply-n5-grammar-en.mjs` (hard-fails on any id set mismatch, or on
+  clobbering an already-non-empty field). The 5 examples left blank
+  (`g_061_1`/`g_069`/`g_073`/`g_076`/`g_091`) are conjugation-table rows with no
+  real Vietnamese example sentence to translate either -- not a gap, matches the
+  source. `explanation.vi`/`.en` were left empty on all 135 (they always were; no
+  Vietnamese explanation text exists anywhere to translate from for N5).
+- **N4 vocabulary `meanings.en` (759/759)** -- filled via `scripts/n4-vocab-en.mjs` +
+  `scripts/apply-n4-vocab-en.mjs`, same hard-fail-on-id-mismatch discipline.
+  **Found and fixed a real id-alignment bug while building this list**: the source
+  has 6 gapped/dropped ids (`n4_0587`, `n4_0673`-`4`, `n4_0726`, `n4_0735`,
+  `n4_0748`, `n4_0750` -- rows dropped earlier for lost headwords/duplicates, see
+  the pre-existing N4 vocab pipeline notes below), so a naive "translate row N as
+  id n4_{N}" assumption silently drifts by one past each gap. Caught by a
+  post-hoc script that diffed the translation list's keys against
+  `vocabulary.json`'s real ids (`node -e` one-liner, not kept) *before* running the
+  apply script -- the apply script's own hard-fail on id-set mismatch would also
+  have caught it, just less precisely (whole-file failure vs. exact key names).
+- **N5 + N4 kanji `meaning` schema change + full translation -- DONE, in a follow-up
+  pass after the section above was originally written.** This was flagged as a
+  decision needing the user's input (translating in place would have destroyed the
+  Vietnamese gloss, paired with `hanviet` in the UI); asked via `AskUserQuestion`,
+  user picked the schema-change option. What happened:
+  - `KanjiWord.meaning` / `KanjiGroup.meaning` in `src/types/index.ts` changed from
+    `string` / `string | null` to `{ vi: string; en: string }` / `{...} | null`
+    (matching `GrammarPoint.meaning` / `VocabEntry.meanings`, which were always
+    `{vi,en}` -- the plain string was the odd one out).
+  - `scripts/migrate-kanji-meaning-schema.mjs` (idempotent) reshaped both
+    `n5/kanji.json` (1159 word + 58 group meanings, existing string treated as
+    `vi`, `en` seeded `""`) and `n4/kanji.json` (268 word + 110 group meanings,
+    existing string treated as `en` since N4 kanji was authored English-only per
+    the implementation plan -- **N4's `meaning.vi` is deliberately left `""`**,
+    not backfilled from the source MD; out of scope of the decision this migration
+    was for).
+  - Every consumer updated to read `{vi,en}` via `localize()` instead of the raw
+    string: `Kanji.tsx` (2 render sites + the search-filter, which now checks both
+    `.vi` and `.en`), `KanjiGroupModal.tsx` (2 sites), `Review.tsx`'s
+    `KanjiCardView` (2 sites, needed adding `localize` to its `useTranslation()`
+    destructure), `Homophones.tsx` (its kanji.json-merge line built a *fake*
+    `{vi: w.meaning, en: ''}` wrapper before the migration -- now `w.meaning` already
+    *is* that shape, so it's just `meanings: w.meaning`).
+  - **N5's English translated in full**: `scripts/n5-kanji-en.mjs` (1217
+    hand-translated strings, positional -- not id-keyed, learned from the N4
+    vocab id-alignment bug above -- array order matches a
+    chapters→groups→[group-meaning-if-any, then words] traversal) +
+    `scripts/apply-n5-kanji-en.mjs` (walks the same traversal, hard-fails on any
+    length mismatch or on clobbering an already-filled `.en`). 58 group meanings +
+    1159 word meanings, all filled, zero left empty.
+  - Browser-verified (Chrome via CDP) after the fact: `/kanji` in EN shows e.g.
+    "Alone, by oneself (Nhất Nhân)" -- English meaning + Hán Việt badge, exactly the
+    pairing the schema change was meant to preserve -- and toggling to VI shows the
+    original Vietnamese unchanged, confirming no data was lost in the migration.
+- `en.json`/`vi.json` gained one new key (`nav.settings`) for the new Settings page;
+  no other locale gaps were found (`grep`-checked, none of the "Kotodori" rename
+  touched locale content since neither file ever mentioned the app name).
+
+### Not done this session (still open)
+- Watermarks/reveals on `VocabBrowser`/`Grammar`/`Kanji`/`Review` (two-pane layouts,
+  skipped pending visual verification -- see Part C8 above; the level switchers and
+  data on these pages *were* browser-verified, just not the watermark placement
+  since none was added).
+- 6 of the 9 papers (Paper/Matcha/Sumi/Dusk/Ink/Indigo) and the density/typeface
+  toggles' visual effect were not screenshotted (Washi, Sakura, and Gold were, plus
+  RAW/NEO) -- wired correctly and clicking them works, just not eyeballed.
+- **N4 kanji `meaning.vi` is empty** (see the schema-change entry above) -- N4
+  kanji was never authored with Vietnamese in this app's data, only in the
+  original source MD. Backfilling it would mean re-deriving from
+  `N4_Grammar_and_Kanji_Summary-Final.md`, same class of work as the N5 pass
+  above, just not done this round.
 
 ---
 
@@ -65,6 +318,29 @@ For future re-runs (e.g. if more anchors or a higher per-anchor word target are 
 - [x] Document `<title>` is `KOTODORI` (dropped the `— N5` suffix)
 - [x] Custom favicon (`public/favicon.svg`) — brutalist card (paper bg, 3px black border, hard offset shadow, matching the `Card` component) containing a blocky 言 (koto, "word") glyph built from flat rects rather than `<text>`/a font (renders identically regardless of installed fonts, stays legible at 16px) — dot in `#627d9a`, bars + mouth box in `#2e3257`
 
+### N4 Integration (originally vocab-only this section describes; grammar+kanji added in the Tori-rebrand session above)
+Split the app from N5-only into a level-aware N5/N4 platform. **Update:** N4 grammar (68 points) and kanji (110 groups) were added in the later "Tori rebrand" session at the top of this file — `/grammar` and `/kanji` are now level-aware. `/verb-forms` and `/counters` still have no N4 source material and remain N5-only.
+
+- [x] **`src/data/n4/vocabulary.json`** — **759 entries**, built from `../../TuVung_N4_DungMori.md` (a single Dungmori word list, 10 thematic sections — note the doc's own section numbering is non-sequential, "10. Khác" appears second — 765 raw rows after parsing). **No PDF source this time** (unlike N5's PDF+MD merge) and no textbook-chapter structure — see schema notes below.
+- [x] **Fused-furigana-string splitting pipeline** (the hard part) — the source glues kanji directly to its reading with no separator (`給料きゅうりょう`, `入いり口ぐち`, `（～を）出でる`), unlike anything the N5 pipeline had to parse. Key insight: annotation is per contiguous-kanji-*run* (a jukugo with no okurigana between characters gets one combined trailing reading block, e.g. 給料+きゅうりょう; a kanji broken up by real okurigana gets its own reading right where it sits, e.g. 入+いり+口+ぐち) — so `kana` is nearly free (strip kanji + scaffolding) and `kanji` is reading-match consumption per run, reusing `onkun-classifier.mjs`'s rendaku/han-dakuten/gemination-tolerant `matchesPrefix` (newly exported for reuse, previously internal-only). Scaffolding (`（...）` usage-notes at any nesting depth, a leading `～`/`∼`) is excluded from `kana` but kept — with its own internal furigana equally stripped — in `kanji`, matching the existing N5 convention (verified against real `n5/vocabulary.json` rows like `（～を）描きます` before trusting the rule). Pipeline, in order:
+  1. `scripts/parse-n4-md.mjs` → `scripts/n4-raw-rows.json` (mechanical table extraction + noise cleanup: strips zero-width-space corruption — same corruption *class* as N5's embedded U+FFFF bug, different codepoint — `★` decoration markers, half/full-width paren normalization; per-section STT contiguity as a free integrity check).
+  2. `scripts/fetch-n4-readings.mjs` — extends `scripts/all-readings.json` (kanjiapi.dev on/kun cache) with the 192 kanji the N4 word list introduces beyond N5's set.
+  3. `scripts/split-n4-fused.mjs` (the splitter module) + `scripts/build-n4-draft.mjs` (runs every row through it, assigns POS — see below — writes `scripts/n4-draft.json`) — went through two real bugs before landing at 3.3% flagged (down from an initial 28%): (a) matching reading per-individual-kanji instead of per-contiguous-run broke every 2+-kanji compound with no internal okurigana (給料 etc.); (b) alternate-spelling rows (`入れる/淹いれる`, `甥おい/甥おいっ子`) duplicated the reading into `kana` until a `/`／`・`-triggered suppression flag was added.
+  4. `scripts/assemble-n4-vocab.mjs` — applies 24 hand-resolved overrides (irregular/jukujikun readings no on-kun lookup can derive: 二日酔い ふつかよい, 世界中 せかいじゅう *(documented kanjiapi gap — see onkun-classifier.mjs's own header comment, which names 日本 に as exactly this class)*, 相撲 すもう, 息子 むすこ, 火傷 やけど, 真面目 まじめ; a couple of source typos: じゅん→じゅう for 充電; 3 rows whose fused string used a *different*, non-furigana encoding the splitter can't handle at all — reconstructed from the meaning + real dictionary form; plus 5 more found by the bare-vs-dotted-kun scan below), drops 5 rows where the source literally lost the headword (only `（する）` scaffolding survived — unrecoverable without guessing, so dropped rather than invented) plus 1 exact duplicate row, shapes everything into `VocabEntry`, and cross-checks against N5 for same-kanji+kana overlaps (8 found, kept — legitimate cross-level review words, not corruption).
+  5. **Independent cross-validation** (`onkun-classifier.mjs`'s `classifyWord`, the *other* direction — verify a finished kanji/kana pair rather than derive one) caught one more real bug the splitter's own flags missed (真面目 partially matched then got stuck, leaving a stray `じめ` suffix) — same "don't trust one pass" discipline as N5's `assemble-enrichment.mjs` hard-fail. This validator shares a blind spot with the splitter (see next point), so it didn't catch everything either.
+  6. **Bare-vs-dotted-kun bug class** (found post-assembly, via a separate advisor-flagged review pass, not the checks above) — kanjiapi sometimes lists a kun reading twice for one character: a dotted form marking exactly where okurigana starts (`う.まれる`, core `う`) *and* a bare dot-less form that's really an alternate/compound-only spelling (`うまれ`). Naive longest-match prefers the bare one whenever it scores longer, swallowing real okurigana into the "reading" and dropping it from `kanji` (生うまれる → `生る` instead of `生まれる`). First fix attempt was a blanket "always prefer dotted" rule in `bestMatch` — measured against every row before trusting it (a throwaway `diff-dotted-fix.mjs` script), and it was a **net regression**: 4 genuine fixes vs. 8 newly-broken previously-correct words (入り口 → 入り口ち, 彼 → 彼れ, etc.), and it still didn't fully fix 生 (produced "生れる"). Reverted. Replaced with a precise, evidence-based detector (`detect-bare-over-dotted.mjs`, deleted after use) that instruments the *actual* shipped matching logic and logs only the specific decision points where a bare candidate outscored an available dotted one — 14 across all 765 rows, of which 9 were already correct as shipped (咳, 次, 彼, 最悪, 交換, 勝手に, 支度, 刺身 ×2 — single-kanji or fully-kanji words where the bare reading was actually right) and only 5 were genuine bugs (生まれる, 折り紙, 話し合う, （～に）勝つ, お見舞い) — now hand-overridden.
+  7. **ID-stability guard** added to both override tables (`assemble-n4-vocab.mjs`'s `OVERRIDES`/`DROP_IDS`, `build-n4-draft.mjs`'s `POS_OVERRIDES`) after the fix above made clear how easy the tables were to silently mis-apply: ids are assigned by row position in `n4-raw-rows.json`, so a source row added/removed/reordered would shift every id downstream and land an override on the wrong word with no error — and `n4_XXXX` is also the persisted SRS card key, so a silent shift orphans review history too. Each override now carries the exact `fused` string it was written against; both scripts validate every entry before running and `process.exit(1)` on any mismatch (verified working by deliberately tampering a row and confirming the abort, then restoring) — same discipline as N5's `rebuild-dungmori-block.mjs` ("STALE ids not found (aborting)").
+- [x] **POS classification** (no source data for this at all, unlike N5's textbook-derived groups) — per-word pattern heuristic (verb godan/ichidan/suru-conjugation shape, adjective `-i` ending, katakana-loanword → noun) layered under each section's bias, replacing an initial per-section-only assignment once cross-checking surfaced real nouns/verbs mixed into every section including the "noun" ones (叶う, 掛ける, 込む were section-labeled "Danh từ" but are verbs). `verbGroup` (1/2/3) is a **heuristic call** for anything not already `する`-conjugating — standard -iru/-eru-is-ichidan rule with a small hardcoded godan-exception list (いる/要る, しゃべる, etc.) — not textbook-verified like N5's groups; flagged as a lower-confidence dimension below. Zero `pos: 'unknown'` in the final set (down from 101 mid-pipeline) via a small hand-classified override table for the pure-kana words the pattern heuristics can't safely resolve (adverbs like だいぶ/まっすぐ that coincidentally end in a verb-shaped mora).
+- [x] **Schema**: `VocabEntry.chapter` is now **optional** (was required `number`) and a new optional `category?: string` was added. N4's source isn't a chaptered textbook (just 10 thematic sections, and the doc's own section order doesn't match a real curriculum sequence) — rather than force real N4 `chapter` numbers with nothing to source them from (and risk manufacturing the exact kind of fake-structure corruption N5's cleanup history spent three sessions unwinding), N4 entries carry `category` (the section title) and omit `chapter` entirely. Real textbook chapters can be added later as a non-destructive pass (same pattern as `add-n5-supplement.mjs` bolting on chapter 15 without touching the original 14) once/if a chaptered N4 source shows up.
+- [x] **Level-aware app wiring** — `useSettingsStore` gained `level: 'N5' | 'N4' | 'all'` (global, persisted, next to `lang`/`theme`) + `<LevelSwitcher>` (`src/components/ui/LevelSwitcher.tsx`, same 3-segment-toggle pattern as `LanguageSwitcher`) in the Sidebar header. New `src/data/vocab.ts` is the single place that knows about both `n5/vocabulary.json` and `n4/vocabulary.json` (`n5Vocab`/`n4Vocab`/`allVocab`/`vocabForLevel(level)`) — every page that used to `import vocabData from "@/data/n5/vocabulary.json"` now imports from here instead, so the split stays a one-place concern.
+  - `vocab-store.ts`'s no-arg `getDueCards()`/`getNewCards()`/`getStats()` (what Sidebar's due-badge/mini-stats and Dashboard read) now resolve the current level via a direct `useSettingsStore.getState()` read inside the store (a plain cross-store function call, not a subscription — settings-store never imports vocab-store back, so no cycle) rather than requiring every caller to thread a level param through. The existing scope-aware `*For(ids)` variants (Review's chapter/POS-filtered pools) are untouched.
+  - **Review** (`/review`): pool now derives from `vocabForLevel(level)`; chapter filter (N5 textbook chapters) and a new category filter (N4 thematic sections) are mutually exclusive on the level, both hidden in `'all'` scope (reconciling two taxonomies into one filter axis was out of scope this pass — `'all'` just skips both and filters on POS only). **Kanji-mode review is forced to vocab-mode outside N5 scope** (`kanjiData`/`kanji.json` has no N4 counterpart) — the Kanji tab is visibly disabled rather than silently producing an empty pool.
+  - **VocabBrowser** (`/vocab`): grouping switches axis with the entry's own `jlptLevel` (chapter number for N5 rows, `category` string for N4 rows) via a `groupKey()` helper, so `'all'` scope's mixed list groups each word correctly regardless of which level it's from; group-filter dropdown resets across a level switch (a stale chapter number or category name from the old level has no meaning in the new one).
+  - **Homophones** (`/homophones`): its group computation (previously a module-level `const groups = (() => {...})()` IIFE run once at import) is now a `computeGroups(level)` function called through `useMemo` inside the component, since the candidate pool it builds from depends on the level toggle. `kanji.json`'s supplementary words (all synthesized as `jlptLevel: 'N5'`) are excluded from the pool entirely in N4-only scope rather than silently leaking N5 content into what should be an N4-only view.
+  - **Dashboard**'s progress-bar label is now `"{level} Progress"` (interpolated `dashboard.progress` key) instead of hardcoded "N5 Progress" — the rest of Dashboard needed zero code changes since it already reads through the now-level-aware `vocab-store` methods.
+  - `/kanji`, `/grammar`, `/verb-forms`, `/counters` are unchanged and stay N5-only (no N4 source data exists for any of them) — the level switcher stays visible globally (simpler than conditionally hiding it per-page) but has no effect there since those pages never read `level`.
+- [x] **Kanji-asset backfill for N4-only characters** — `fetch-kanjivg.mjs` now also scans `n4/vocabulary.json` for its character list (previously N5-only sources); re-run added **192 newly-fetched stroke-order entries** (937 total, up from 745). New `scripts/backfill-n4-hanviet.mjs` (same lookup logic as `fetch-secondary-kanji-data.mjs` — the cached 2136-Jouyou table in `saroma-map.json` — just pointed at N4 instead of the N5 enrichment draft) added **183 new Hán Việt entries** (9 obscure characters still unresolved: 嘘 咳 掛 叶 淹 甥 姪 叱 剥 — same class of gap as N5's existing 7, not in the reference table). `build-radical-names.mjs` was re-run too (component-decomposition Hán Việt names); coverage dropped in *percentage* terms (153/531 named, was denser at the old ~167-anchor scale) simply because 937 characters decompose into far more distinct components than 167 did — the UI already tolerates an unnamed component by showing the bare character, so this is a known, expected, non-blocking gap rather than a regression.
+
 ---
 
 ## What's NOT Done (Further Plan)
@@ -87,7 +363,10 @@ For future re-runs (e.g. if more anchors or a higher per-anchor word target are 
 - [ ] **Furigana toggle** (global hide/show)
 - [ ] **Export/import progress** (SRS state as JSON)
 - [ ] **Knowledge graph visualization** (vocab → grammar → homophone, `d3`/`react-force-graph`)
-- [ ] **N4 expansion** (data pipeline already generalizes)
+- [x] **N4 grammar/kanji-anchor-groups** — DONE, see the "Tori rebrand" session at the top of this file (`n4/grammar.json`, `n4/kanji.json`). `/grammar` and `/kanji` are level-aware now.
+- [ ] **N4 counters** — still no N4 counters source material; `/counters` stays N5-only.
+- [ ] **N4 `chapter` numbers** — N4 entries currently carry only `category` (thematic section), no real textbook chapter (see schema note above) — needs an actual chaptered N4 source to map words against.
+- [ ] **N4 `verbGroup` accuracy** — unlike N5's textbook-sourced groups, N4's group1/2/3 is a heuristic call (standard -iru/-eru-is-ichidan pattern + a small hardcoded exception list) with no ground truth to verify against. Probably fine for casual use; worth a spot-check pass before trusting it for a "conjugate this" drill.
 - [ ] **Radical breakdown click-through** — component tags in the Kanji drawer are currently display-only; could later jump to that component's own anchor group if one exists
 - [ ] **Remaining Hán Việt gaps** — 7 obscure characters (雀 檎 鹸 垣 丼 碗 瓜) encountered during N5 enrichment aren't in the 2136-Jouyou reference table used to build `hanviet-dictionary.json`. A few *words* containing them already have a hand-written partial gloss (e.g. 茶碗 → "Trà Oản", 牛丼 → "Ngưu"), but the bare characters aren't in the standalone dictionary. Low priority — would need a second reference source or manual lookup.
 
@@ -102,6 +381,11 @@ For future re-runs (e.g. if more anchors or a higher per-anchor word target are 
 - **Hán Việt dictionary gaps**: 9 characters have no entry in `hanviet-dictionary.json` — 々 and 込 (deliberate, see Data Pipeline), plus 7 obscure characters not in the reference table used to build it (see Further Plan above)
 - **English vocab meanings empty** — see Further Plan above
 - Neither the Vocab Browser modal, the Kanji click-through, nor the EN/VI toggle has been checked in a live browser this session (no browser tool available) — worth a manual pass, especially: Prev/Next at list boundaries, Escape behavior with a stroke drawer open on top of the vocab modal, and the EN/VI toggle against a few Kanji-mode review cards
+- **N4 integration (this session) — browser-verified via Playwright** across N5/N4/all-level scopes (Sidebar level switcher, Dashboard progress label, Review's chapter-vs-category filter swap, VocabBrowser's group-axis switch). This is *how* the Sidebar reactivity bug (stats not updating on level switch — see Data Pipeline / `vocab-store.ts`) was actually found and fixed, not caught by reading the code. One honest residual: the screenshots were taken *before* the 5 bare-vs-dotted-kun word corrections below landed, so they show slightly earlier data — not re-verified after, but those 5 changes only affect `kanji`/`kana` string content on specific entries, not any rendering path, so this is low-risk.
+- **N4 `meanings.en`** — same gap as N5, empty on all 759 entries.
+- **N4 Hán Việt dictionary gaps** — 9 characters (嘘 咳 掛 叶 淹 甥 姪 叱 剥) have no entry, same class as N5's pre-existing 7 (not in the 2136-Jouyou reference table).
+- **N4 `verbGroup` is heuristic, not textbook-verified** — see Further Plan above.
+- **`n4_0307` (`（点/～点）を取る`) kana is `をとる`** — looks odd (starts with a particle) but is faithful to the source: unlike every other `（～を）verb` scaffolding row in this dataset, this one writes the を *outside* the closing paren, so it's genuinely core content, not excluded scaffolding. Left as-is rather than special-cased.
 
 ---
 
@@ -116,35 +400,44 @@ kotodori/
   src/
     index.css                 ← Tailwind v4 @theme + @utility border-3
     App.tsx / main.tsx
-    types/index.ts             ← VocabEntry, GrammarPoint, GrammarCategory, VerbGroup,
-                                  VerbForm, VerbFormsData, HomophoneGroup, SRSCard,
-                                  CounterCategory/Row/Data, KanjiGroup/Word/Chapter,
-                                  KanjiVgComponent/Entry/Data, RadicalNamesData
+    types/index.ts             ← VocabEntry (chapter?: optional, category?: new), GrammarPoint,
+                                  GrammarCategory, VerbGroup, VerbForm, VerbFormsData,
+                                  HomophoneGroup, SRSCard, CounterCategory/Row/Data,
+                                  KanjiGroup/Word/Chapter, KanjiVgComponent/Entry/Data, RadicalNamesData
     lib/
       srs.ts / japanese.ts / kanji.ts   ← FSRS scheduler / POS+reading helpers /
                                            On-Kun pill logic + hanVietForChar()/buildHanVietIndex()
       i18n.ts / useTranslation.ts        ← EN/VI dot-path lookup + interpolation
     store/
-      vocab-store.ts           ← Zustand + persist (SRS)
-      settings-store.ts        ← Zustand + persist (lang, theme)
+      vocab-store.ts           ← Zustand + persist (SRS); no-arg get*/getStats() now level-aware
+                                  (reads useSettingsStore.getState().level internally)
+      settings-store.ts        ← Zustand + persist (lang, theme, level: N5|N4|all — new this session)
     data/
-      hanviet-dictionary.json   ← flat {char: Hán Việt reading} map, 737 entries
+      vocab.ts                  ← NEW this session: n5Vocab/n4Vocab/allVocab/vocabForLevel(level) —
+                                   the one place that knows about both level's vocabulary.json
+      hanviet-dictionary.json   ← flat {char: Hán Việt reading} map, 920 entries (+183 this session)
       n5/
         vocabulary.json          ← 1031 entries
         grammar.json / grammar-categories.json
         verb-forms.json
         homophones.json          ← unused; Homophones.tsx computes live from vocabulary.json
         kanji.json                ← 15 chapters / 179 leading-kanji groups / 1159 words / 167 unique anchors
-        kanjivg.json               ← per-character stroke paths + component decomposition, 745 characters
-        radical-names.json         ← Hán Việt names for decomposition components
+        kanjivg.json               ← per-character stroke paths + component decomposition,
+                                     937 characters (+192 this session, now covers N4 too — see note)
+        radical-names.json         ← Hán Việt names for decomposition components (153/531, sparser now)
         counters.json
+      n4/                         ← NEW this session
+        vocabulary.json            ← 759 entries, vocab-only (no grammar/kanji/counters yet)
     components/
       layout/     Layout.tsx, Sidebar.tsx
-      ui/         Button.tsx, Card.tsx, Furigana.tsx, Ruby.tsx, PosTag.tsx, LanguageSwitcher.tsx
+      ui/         Button.tsx, Card.tsx, Furigana.tsx, Ruby.tsx, PosTag.tsx,
+                   LanguageSwitcher.tsx, LevelSwitcher.tsx (new this session)
       kanji/      AnimatedKanjiSvg.tsx, KanjiDrawer.tsx, KanjiGroupModal.tsx
     pages/
       Dashboard.tsx, VocabBrowser.tsx, Review.tsx, Grammar.tsx,
       VerbForms.tsx, Kanji.tsx, Counters.tsx, Homophones.tsx
+                 ← Dashboard/VocabBrowser/Review/Homophones are level-aware now (see N4 Integration);
+                   Grammar/VerbForms/Kanji/Counters unchanged, still N5-only
   scripts/
     build-kanji.mjs             ← kanjis.tex -> kanji.json (original 158-anchor build)
     add-readings.mjs            ← kanjiapi.dev On/Kun readings -> every current anchor
@@ -170,5 +463,22 @@ kotodori/
     fetch-kanjivg.mjs           ← KanjiVG SVGs -> kanjivg.json (strokes + components); merge-safe,
                                    sources its character list from all app data, not just anchors
     radical-names-curated.mjs   ← hand-curated Hán Việt names for non-anchor components
-    build-radical-names.mjs     ← merges anchor + curated names -> radical-names.json
+    build-radical-names.mjs     ← merges anchor + curated names -> radical-names.json; re-run after
+                                   fetch-kanjivg.mjs changes the component set (N4 added ~380 new ones)
+
+    --- N4 vocab pipeline (this session) ---
+    parse-n4-md.mjs             ← ../../TuVung_N4_DungMori.md -> n4-raw-rows.json (mechanical extraction)
+    fetch-n4-readings.mjs       ← extends all-readings.json with N4's ~192 new kanji
+    split-n4-fused.mjs          ← reusable module: splits one fused kanji+furigana string into {kanji,kana}
+    build-n4-draft.mjs          ← runs every row through split-n4-fused.mjs, assigns POS/verbGroup,
+                                   flags anything uncertain -> n4-draft.json
+    assemble-n4-vocab.mjs       ← applies 24 hand-resolved overrides (each id-stability-guarded
+                                   against the exact source string it was written against) + drops
+                                   6 rows, shapes into VocabEntry, cross-checks vs N5
+                                   -> ../src/data/n4/vocabulary.json
+    n4-raw-rows.json / n4-draft.json  ← intermediate artifacts, kept for provenance (same convention
+                                        as the N5 enrichment-*.json files above)
+    backfill-n4-hanviet.mjs     ← extends hanviet-dictionary.json for N4-introduced characters
+                                   (same saroma-map.json lookup as fetch-secondary-kanji-data.mjs,
+                                   just pointed at n4/vocabulary.json instead of the N5 enrichment draft)
 ```

@@ -8,11 +8,14 @@ import { VerbForms } from "@/pages/VerbForms"
 import { Homophones } from "@/pages/Homophones"
 import { Kanji } from "@/pages/Kanji"
 import { Counters } from "@/pages/Counters"
+import { Settings } from "@/pages/Settings"
+import { Landing } from "@/pages/Landing"
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="welcome" element={<Landing />} />
         <Route element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="vocab" element={<VocabBrowser />} />
@@ -22,6 +25,7 @@ export default function App() {
           <Route path="kanji" element={<Kanji />} />
           <Route path="counters" element={<Counters />} />
           <Route path="homophones" element={<Homophones />} />
+          <Route path="settings" element={<Settings />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

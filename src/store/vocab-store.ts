@@ -2,7 +2,19 @@
 import { persist } from "zustand/middleware"
 import type { SRSCard } from "@/types"
 import { scheduleCard, isDue } from "@/lib/srs"
-import vocabData from "@/data/n5/vocabulary.json"
+import { vocabForLevel } from "@/data/vocab"
+import { useSettingsStore } from "@/store/settings-store"
+
+// The no-arg get*Cards()/getStats() methods below are the "current level"
+// convenience surface Sidebar/Dashboard use -- they read the active level
+// from settings-store directly (a plain cross-store read, not a subscribe;
+// settings-store never imports this store back, so no cycle) rather than
+// requiring every caller to thread the level through. Anything that needs a
+// specific/custom scope (Review's chapter+POS filters, a combined N5+N4
+// pool) should keep using the *For(ids) variants instead.
+function currentLevelVocab() {
+  return vocabForLevel(useSettingsStore.getState().level)
+}
 
 interface VocabStore {
   cards: Record<string, SRSCard>
@@ -48,11 +60,11 @@ export const useVocabStore = create<VocabStore>()(
       },
 
       getDueCards: () => {
-        return get().getDueCardsFor((vocabData as any[]).map(v => v.id)).slice(0, 50)
+        return get().getDueCardsFor(currentLevelVocab().map(v => v.id)).slice(0, 50)
       },
 
       getNewCards: (limit = 10) => {
-        return get().getNewCardsFor((vocabData as any[]).map(v => v.id), limit)
+        return get().getNewCardsFor(currentLevelVocab().map(v => v.id), limit)
       },
 
       getDueCardsFor: (ids) => {
@@ -96,7 +108,7 @@ export const useVocabStore = create<VocabStore>()(
 
       getStats: () => {
         const { cards } = get()
-        const all = vocabData as any[]
+        const all = currentLevelVocab()
         const counts = { total: all.length, new: 0, learning: 0, review: 0, mastered: 0 }
         for (const v of all) {
           const c = cards[v.id]

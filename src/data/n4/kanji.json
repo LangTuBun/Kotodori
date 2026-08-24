@@ -1,0 +1,5026 @@
+{
+  "chapters": [
+    {
+      "chapter": 15,
+      "groupCount": 8,
+      "wordCount": 21,
+      "groups": [
+        {
+          "id": "k15_g1",
+          "anchor": "力",
+          "kana": null,
+          "hanviet": "Lực",
+          "meaning": {
+            "vi": "",
+            "en": "Strength, power"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "リイ",
+            "リキ",
+            "リョク"
+          ],
+          "kunyomi": [
+            "ちから"
+          ],
+          "words": [
+            {
+              "kanji": "力",
+              "kana": "ちから",
+              "hanviet": "Lực",
+              "meaning": {
+                "vi": "",
+                "en": "Strength, power"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "協力",
+              "kana": "きょうりょく",
+              "hanviet": "Hiệp Lực",
+              "meaning": {
+                "vi": "",
+                "en": "Cooperation"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k15_g2",
+          "anchor": "動",
+          "kana": null,
+          "hanviet": "Động",
+          "meaning": {
+            "vi": "",
+            "en": "Move, activity"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ドウ"
+          ],
+          "kunyomi": [
+            "うご.かす",
+            "うご.く"
+          ],
+          "words": [
+            {
+              "kanji": "動きます",
+              "kana": "うごきます",
+              "hanviet": "Động",
+              "meaning": {
+                "vi": "",
+                "en": "To move"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "運動します",
+              "kana": "うんどうします",
+              "hanviet": "Vận Động",
+              "meaning": {
+                "vi": "",
+                "en": "To exercise"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "自動",
+              "kana": "じどう",
+              "hanviet": "Tự Động",
+              "meaning": {
+                "vi": "",
+                "en": "Automatic"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "動画",
+              "kana": "どうが",
+              "hanviet": "Động Họa",
+              "meaning": {
+                "vi": "",
+                "en": "Video, clip"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "動物",
+              "kana": "どうぶつ",
+              "hanviet": "Động Vật",
+              "meaning": {
+                "vi": "",
+                "en": "Animal"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "感動",
+              "kana": "かんどう",
+              "hanviet": "Cảm Động",
+              "meaning": {
+                "vi": "",
+                "en": "To be moved, impressed"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "不動産",
+              "kana": "ふどうさん",
+              "hanviet": "Bất Động Sản",
+              "meaning": {
+                "vi": "",
+                "en": "Real estate"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k15_g3",
+          "anchor": "働",
+          "kana": null,
+          "hanviet": "Động",
+          "meaning": {
+            "vi": "",
+            "en": "To work, labor"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ドウ"
+          ],
+          "kunyomi": [
+            "はたら.く"
+          ],
+          "words": [
+            {
+              "kanji": "働きます",
+              "kana": "はたらきます",
+              "hanviet": "Động",
+              "meaning": {
+                "vi": "",
+                "en": "To work"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k15_g4",
+          "anchor": "知",
+          "kana": null,
+          "hanviet": "Tri",
+          "meaning": {
+            "vi": "",
+            "en": "To know"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "チ"
+          ],
+          "kunyomi": [
+            "し.らせる",
+            "し.る"
+          ],
+          "words": [
+            {
+              "kanji": "知ります",
+              "kana": "しります",
+              "hanviet": "Tri",
+              "meaning": {
+                "vi": "",
+                "en": "To know, find out"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "お知らせ",
+              "kana": "おしらせ",
+              "hanviet": "Tri",
+              "meaning": {
+                "vi": "",
+                "en": "Notice, announcement"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "知り合い",
+              "kana": "しりあい",
+              "hanviet": "Tri Hợp",
+              "meaning": {
+                "vi": "",
+                "en": "Acquaintance"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "承知",
+              "kana": "しょうち",
+              "hanviet": "Thừa Tri",
+              "meaning": {
+                "vi": "",
+                "en": "To agree, understand, consent"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k15_g5",
+          "anchor": "短",
+          "kana": null,
+          "hanviet": "Đoản",
+          "meaning": {
+            "vi": "",
+            "en": "Short"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "タン"
+          ],
+          "kunyomi": [
+            "みじか.い"
+          ],
+          "words": [
+            {
+              "kanji": "短い",
+              "kana": "みじかい",
+              "hanviet": "Đoản",
+              "meaning": {
+                "vi": "",
+                "en": "Short"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "短気",
+              "kana": "たんき",
+              "hanviet": "Đoản Khí",
+              "meaning": {
+                "vi": "",
+                "en": "Short-tempered"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k15_g6",
+          "anchor": "医",
+          "kana": null,
+          "hanviet": "Y",
+          "meaning": {
+            "vi": "",
+            "en": "Medicine, doctor"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "イ"
+          ],
+          "kunyomi": [
+            "い.する",
+            "い.やす",
+            "くすし"
+          ],
+          "words": [
+            {
+              "kanji": "医者",
+              "kana": "いしゃ",
+              "hanviet": "Y Giả",
+              "meaning": {
+                "vi": "",
+                "en": "Doctor"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "歯医者",
+              "kana": "はいしゃ",
+              "hanviet": "Xỉ Y Giả",
+              "meaning": {
+                "vi": "",
+                "en": "Dentist"
+              },
+              "onkun": "Kun--On--On"
+            },
+            {
+              "kanji": "医学",
+              "kana": "いがく",
+              "hanviet": "Y Học",
+              "meaning": {
+                "vi": "",
+                "en": "Medicine (the study of)"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k15_g7",
+          "anchor": "皿",
+          "kana": null,
+          "hanviet": "Mãnh",
+          "meaning": {
+            "vi": "",
+            "en": "Plate"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ベイ"
+          ],
+          "kunyomi": [
+            "さら"
+          ],
+          "words": [
+            {
+              "kanji": "お皿",
+              "kana": "おさら",
+              "hanviet": "Mãnh",
+              "meaning": {
+                "vi": "",
+                "en": "Plate, dish"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k15_g8",
+          "anchor": "血",
+          "kana": null,
+          "hanviet": "Huyết",
+          "meaning": {
+            "vi": "",
+            "en": "Blood"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ケツ"
+          ],
+          "kunyomi": [
+            "ち"
+          ],
+          "words": [
+            {
+              "kanji": "血",
+              "kana": "ち",
+              "hanviet": "Huyết",
+              "meaning": {
+                "vi": "",
+                "en": "Blood"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "groupCount": 10,
+      "wordCount": 30,
+      "groups": [
+        {
+          "id": "k16_g1",
+          "anchor": "工",
+          "kana": null,
+          "hanviet": "Công",
+          "meaning": {
+            "vi": "",
+            "en": "Industry, construction"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ク",
+            "グ",
+            "コウ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "工事",
+              "kana": "こうじ",
+              "hanviet": "Công Sự",
+              "meaning": {
+                "vi": "",
+                "en": "Construction work"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "工場",
+              "kana": "こうじょう",
+              "hanviet": "Công Trường",
+              "meaning": {
+                "vi": "",
+                "en": "Factory"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g2",
+          "anchor": "空",
+          "kana": null,
+          "hanviet": "Không",
+          "meaning": {
+            "vi": "",
+            "en": "Sky, empty"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "クウ"
+          ],
+          "kunyomi": [
+            "あ.き",
+            "あ.く",
+            "あ.ける",
+            "から",
+            "す.かす",
+            "す.く",
+            "そら",
+            "むな.しい"
+          ],
+          "words": [
+            {
+              "kanji": "空",
+              "kana": "そら",
+              "hanviet": "Không",
+              "meaning": {
+                "vi": "",
+                "en": "Sky"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "空港",
+              "kana": "くうこう",
+              "hanviet": "Không Cảng",
+              "meaning": {
+                "vi": "",
+                "en": "Airport"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "空気",
+              "kana": "くうき",
+              "hanviet": "Không Khí",
+              "meaning": {
+                "vi": "",
+                "en": "Air"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g3",
+          "anchor": "試",
+          "kana": null,
+          "hanviet": "Thí",
+          "meaning": {
+            "vi": "",
+            "en": "Try, test"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "こころ.みる",
+            "ため.す"
+          ],
+          "words": [
+            {
+              "kanji": "試験",
+              "kana": "しけん",
+              "hanviet": "Thí Nghiệm",
+              "meaning": {
+                "vi": "",
+                "en": "Exam, test"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "試合",
+              "kana": "しあい",
+              "hanviet": "Thí Hợp",
+              "meaning": {
+                "vi": "",
+                "en": "Match, competition"
+              },
+              "onkun": "On--Kun"
+            },
+            {
+              "kanji": "試着します",
+              "kana": "しちゃくします",
+              "hanviet": "Thí Trước",
+              "meaning": {
+                "vi": "",
+                "en": "To try on (clothes)"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g4",
+          "anchor": "計",
+          "kana": null,
+          "hanviet": "Kế",
+          "meaning": {
+            "vi": "",
+            "en": "Measure, plan"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ケイ"
+          ],
+          "kunyomi": [
+            "はか.らう",
+            "はか.る"
+          ],
+          "words": [
+            {
+              "kanji": "時計",
+              "kana": "とけい",
+              "hanviet": "Thời Kế",
+              "meaning": {
+                "vi": "",
+                "en": "Clock, watch"
+              },
+              "onkun": "Juku"
+            },
+            {
+              "kanji": "腕時計",
+              "kana": "うでどけい",
+              "hanviet": "Oản Thời Kế",
+              "meaning": {
+                "vi": "",
+                "en": "Wristwatch"
+              },
+              "onkun": "Kun--Juku"
+            },
+            {
+              "kanji": "計算",
+              "kana": "けいさん",
+              "hanviet": "Kế Toán",
+              "meaning": {
+                "vi": "",
+                "en": "Calculation"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "計画",
+              "kana": "けいかく",
+              "hanviet": "Kế Họa",
+              "meaning": {
+                "vi": "",
+                "en": "Plan"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g5",
+          "anchor": "説",
+          "kana": null,
+          "hanviet": "Thuyết",
+          "meaning": {
+            "vi": "",
+            "en": "Explain, theory"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "セツ",
+            "ゼイ"
+          ],
+          "kunyomi": [
+            "と.く"
+          ],
+          "words": [
+            {
+              "kanji": "小説",
+              "kana": "しょうせつ",
+              "hanviet": "Tiểu Thuyết",
+              "meaning": {
+                "vi": "",
+                "en": "Novel"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "説明",
+              "kana": "せつめい",
+              "hanviet": "Thuyết Minh",
+              "meaning": {
+                "vi": "",
+                "en": "Explanation"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "説明会",
+              "kana": "せつめいかい",
+              "hanviet": "Thuyết Minh Hội",
+              "meaning": {
+                "vi": "",
+                "en": "Briefing session"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "説明書",
+              "kana": "せつめいしょ",
+              "hanviet": "Thuyết Minh Thư",
+              "meaning": {
+                "vi": "",
+                "en": "Instruction manual"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g6",
+          "anchor": "心",
+          "kana": null,
+          "hanviet": "Tâm",
+          "meaning": {
+            "vi": "",
+            "en": "Heart, mind"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "シン"
+          ],
+          "kunyomi": [
+            "-ごころ",
+            "こころ"
+          ],
+          "words": [
+            {
+              "kanji": "安心します",
+              "kana": "あんしんします",
+              "hanviet": "An Tâm",
+              "meaning": {
+                "vi": "",
+                "en": "To feel relieved, at ease"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "心配します",
+              "kana": "しんぱいします",
+              "hanviet": "Tâm Phối",
+              "meaning": {
+                "vi": "",
+                "en": "To worry"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g7",
+          "anchor": "思",
+          "kana": null,
+          "hanviet": "Tư",
+          "meaning": {
+            "vi": "",
+            "en": "Think"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "おぼ.す",
+            "おも.う",
+            "おもえら.く"
+          ],
+          "words": [
+            {
+              "kanji": "思います",
+              "kana": "おもいます",
+              "hanviet": "Tư",
+              "meaning": {
+                "vi": "",
+                "en": "To think, feel"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "思い出します",
+              "kana": "おもいだします",
+              "hanviet": "Tư Xuất",
+              "meaning": {
+                "vi": "",
+                "en": "To recall, remember"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "不思議",
+              "kana": "ふしぎ",
+              "hanviet": "Bất Tư Nghị",
+              "meaning": {
+                "vi": "",
+                "en": "Strange, mysterious"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g8",
+          "anchor": "性",
+          "kana": null,
+          "hanviet": "Tính",
+          "meaning": {
+            "vi": "",
+            "en": "Nature, gender"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ショウ",
+            "セイ"
+          ],
+          "kunyomi": [
+            "さが"
+          ],
+          "words": [
+            {
+              "kanji": "女性",
+              "kana": "じょせい",
+              "hanviet": "Nữ Tính",
+              "meaning": {
+                "vi": "",
+                "en": "Woman, female"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "男性",
+              "kana": "だんせい",
+              "hanviet": "Nam Tính",
+              "meaning": {
+                "vi": "",
+                "en": "Man, male"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "性格",
+              "kana": "せいかく",
+              "hanviet": "Tính Cách",
+              "meaning": {
+                "vi": "",
+                "en": "Personality"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g9",
+          "anchor": "地",
+          "kana": null,
+          "hanviet": "Địa",
+          "meaning": {
+            "vi": "",
+            "en": "Earth, ground"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ジ",
+            "チ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "地図",
+              "kana": "ちず",
+              "hanviet": "Địa Đồ",
+              "meaning": {
+                "vi": "",
+                "en": "Map"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "地下鉄",
+              "kana": "ちかてつ",
+              "hanviet": "Địa Hạ Thiết",
+              "meaning": {
+                "vi": "",
+                "en": "Subway"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "地面",
+              "kana": "じめん",
+              "hanviet": "Địa Diện",
+              "meaning": {
+                "vi": "",
+                "en": "Ground"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "地震",
+              "kana": "じしん",
+              "hanviet": "Địa Chấn",
+              "meaning": {
+                "vi": "",
+                "en": "Earthquake"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k16_g10",
+          "anchor": "池",
+          "kana": null,
+          "hanviet": "Trì",
+          "meaning": {
+            "vi": "",
+            "en": "Pond"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "チ"
+          ],
+          "kunyomi": [
+            "いけ"
+          ],
+          "words": [
+            {
+              "kanji": "池",
+              "kana": "いけ",
+              "hanviet": "Trì",
+              "meaning": {
+                "vi": "",
+                "en": "Pond"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "電池",
+              "kana": "でんち",
+              "hanviet": "Điện Trì",
+              "meaning": {
+                "vi": "",
+                "en": "Battery"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "groupCount": 11,
+      "wordCount": 25,
+      "groups": [
+        {
+          "id": "k17_g1",
+          "anchor": "公",
+          "kana": null,
+          "hanviet": "Công",
+          "meaning": {
+            "vi": "",
+            "en": "Public, fair"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ク",
+            "コウ"
+          ],
+          "kunyomi": [
+            "おおやけ"
+          ],
+          "words": [
+            {
+              "kanji": "公園",
+              "kana": "こうえん",
+              "hanviet": "Công Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Park"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "主人公",
+              "kana": "しゅじんこう",
+              "hanviet": "Chủ Nhân Công",
+              "meaning": {
+                "vi": "",
+                "en": "Main character, protagonist"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g2",
+          "anchor": "広",
+          "kana": null,
+          "hanviet": "Quảng",
+          "meaning": {
+            "vi": "",
+            "en": "Wide"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "ひろ.い",
+            "ひろ.がる",
+            "ひろ.げる",
+            "ひろ.まる",
+            "ひろ.める"
+          ],
+          "words": [
+            {
+              "kanji": "広い",
+              "kana": "ひろい",
+              "hanviet": "Quảng",
+              "meaning": {
+                "vi": "",
+                "en": "Wide, spacious"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "広告",
+              "kana": "こうこく",
+              "hanviet": "Quảng Cáo",
+              "meaning": {
+                "vi": "",
+                "en": "Advertisement"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g3",
+          "anchor": "去",
+          "kana": null,
+          "hanviet": "Khứ",
+          "meaning": {
+            "vi": "",
+            "en": "Past, leave"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "キョ",
+            "コ"
+          ],
+          "kunyomi": [
+            "-さ.る",
+            "さ.る"
+          ],
+          "words": [
+            {
+              "kanji": "去年",
+              "kana": "きょねん",
+              "hanviet": "Khứ Niên",
+              "meaning": {
+                "vi": "",
+                "en": "Last year"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g4",
+          "anchor": "転",
+          "kana": null,
+          "hanviet": "Chuyển",
+          "meaning": {
+            "vi": "",
+            "en": "Roll, turn"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "テン"
+          ],
+          "kunyomi": [
+            "うたた",
+            "うつ.る",
+            "くる.めく",
+            "ころ.がす",
+            "ころ.がる",
+            "ころ.げる",
+            "ころ.ぶ",
+            "まろ.ぶ"
+          ],
+          "words": [
+            {
+              "kanji": "転びます",
+              "kana": "ころびます",
+              "hanviet": "Chuyển",
+              "meaning": {
+                "vi": "",
+                "en": "To fall, trip"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "運転します",
+              "kana": "うんてんします",
+              "hanviet": "Vận Chuyển",
+              "meaning": {
+                "vi": "",
+                "en": "To drive"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "運転手",
+              "kana": "うんてんしゅ",
+              "hanviet": "Vận Chuyển Thủ",
+              "meaning": {
+                "vi": "",
+                "en": "Driver"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "自転車",
+              "kana": "じてんしゃ",
+              "hanviet": "Tự Chuyển Xa",
+              "meaning": {
+                "vi": "",
+                "en": "Bicycle"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g5",
+          "anchor": "遠",
+          "kana": null,
+          "hanviet": "Viễn",
+          "meaning": {
+            "vi": "",
+            "en": "Far"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "エン",
+            "オン"
+          ],
+          "kunyomi": [
+            "とお.い"
+          ],
+          "words": [
+            {
+              "kanji": "遠い",
+              "kana": "とおい",
+              "hanviet": "Viễn",
+              "meaning": {
+                "vi": "",
+                "en": "Far"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k17_g6",
+          "anchor": "園",
+          "kana": null,
+          "hanviet": "Viên",
+          "meaning": {
+            "vi": "",
+            "en": "Garden, park"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "エン"
+          ],
+          "kunyomi": [
+            "その"
+          ],
+          "words": [
+            {
+              "kanji": "公園",
+              "kana": "こうえん",
+              "hanviet": "Công Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Park"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "遊園地",
+              "kana": "ゆうえんち",
+              "hanviet": "Du Viên Địa",
+              "meaning": {
+                "vi": "",
+                "en": "Amusement park"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "動物園",
+              "kana": "どうぶつえん",
+              "hanviet": "Động Vật Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Zoo"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "保育園",
+              "kana": "ほいくえん",
+              "hanviet": "Bảo Dục Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Nursery school"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g7",
+          "anchor": "台",
+          "kana": null,
+          "hanviet": "Đài",
+          "meaning": {
+            "vi": "",
+            "en": "Stand, platform"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "タイ",
+            "ダイ"
+          ],
+          "kunyomi": [
+            "うてな",
+            "つかさ",
+            "われ"
+          ],
+          "words": [
+            {
+              "kanji": "台所",
+              "kana": "だいどころ",
+              "hanviet": "Đài Sở",
+              "meaning": {
+                "vi": "",
+                "en": "Kitchen"
+              },
+              "onkun": "On--Kun"
+            },
+            {
+              "kanji": "台風",
+              "kana": "たいふう",
+              "hanviet": "Đài Phong",
+              "meaning": {
+                "vi": "",
+                "en": "Typhoon"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g8",
+          "anchor": "始",
+          "kana": null,
+          "hanviet": "Thủy",
+          "meaning": {
+            "vi": "",
+            "en": "Begin"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "-はじ.める",
+            "はじ.まる",
+            "はじ.める"
+          ],
+          "words": [
+            {
+              "kanji": "始めます",
+              "kana": "はじめます",
+              "hanviet": "Thủy",
+              "meaning": {
+                "vi": "",
+                "en": "To begin (something)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "始まります",
+              "kana": "はじまります",
+              "hanviet": "Thủy",
+              "meaning": {
+                "vi": "",
+                "en": "(Something) begins"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "開始",
+              "kana": "かいし",
+              "hanviet": "Khai Thủy",
+              "meaning": {
+                "vi": "",
+                "en": "Start, commencement"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g9",
+          "anchor": "治",
+          "kana": null,
+          "hanviet": "Trị",
+          "meaning": {
+            "vi": "",
+            "en": "Govern, cure"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ジ",
+            "チ"
+          ],
+          "kunyomi": [
+            "おさ.める",
+            "おさ.まる",
+            "なお.る",
+            "なお.す"
+          ],
+          "words": [
+            {
+              "kanji": "治します",
+              "kana": "なおします",
+              "hanviet": "Trị",
+              "meaning": {
+                "vi": "",
+                "en": "To cure, treat"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "治ります",
+              "kana": "なおります",
+              "hanviet": "Trị",
+              "meaning": {
+                "vi": "",
+                "en": "To heal, recover"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "政治",
+              "kana": "せいじ",
+              "hanviet": "Chính Trị",
+              "meaning": {
+                "vi": "",
+                "en": "Politics"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g10",
+          "anchor": "正",
+          "kana": null,
+          "hanviet": "Chính",
+          "meaning": {
+            "vi": "",
+            "en": "Correct, right"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ショウ",
+            "セイ"
+          ],
+          "kunyomi": [
+            "ただ.しい",
+            "ただ.す",
+            "まさ",
+            "まさ.に"
+          ],
+          "words": [
+            {
+              "kanji": "正しい",
+              "kana": "ただしい",
+              "hanviet": "Chính",
+              "meaning": {
+                "vi": "",
+                "en": "Correct, right"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "お正月",
+              "kana": "おしょうがつ",
+              "hanviet": "Chính Nguyệt",
+              "meaning": {
+                "vi": "",
+                "en": "New Year"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k17_g11",
+          "anchor": "政",
+          "kana": null,
+          "hanviet": "Chính",
+          "meaning": {
+            "vi": "",
+            "en": "Politics, policy"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "セイ",
+            "ショウ"
+          ],
+          "kunyomi": [
+            "まつりごと"
+          ],
+          "words": [
+            {
+              "kanji": "政治",
+              "kana": "せいじ",
+              "hanviet": "Chính Trị",
+              "meaning": {
+                "vi": "",
+                "en": "Politics"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "groupCount": 9,
+      "wordCount": 28,
+      "groups": [
+        {
+          "id": "k18_g1",
+          "anchor": "王",
+          "kana": null,
+          "hanviet": "Vương",
+          "meaning": {
+            "vi": "",
+            "en": "King"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "-ノウ",
+            "オウ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "王様",
+              "kana": "おうさま",
+              "hanviet": "Vương Dạng",
+              "meaning": {
+                "vi": "",
+                "en": "King"
+              },
+              "onkun": "On--Kun"
+            }
+          ]
+        },
+        {
+          "id": "k18_g2",
+          "anchor": "玉",
+          "kana": null,
+          "hanviet": "Ngọc",
+          "meaning": {
+            "vi": "",
+            "en": "Jewel, ball"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ギョク"
+          ],
+          "kunyomi": [
+            "-だま",
+            "たま",
+            "たま-"
+          ],
+          "words": [
+            {
+              "kanji": "お年玉",
+              "kana": "おとしだま",
+              "hanviet": "Niên Ngọc",
+              "meaning": {
+                "vi": "",
+                "en": "New Year's money gift"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "目玉焼き",
+              "kana": "めだまやき",
+              "hanviet": "Mục Ngọc Thiêu",
+              "meaning": {
+                "vi": "",
+                "en": "Fried egg, sunny-side up"
+              },
+              "onkun": "Kun--Kun--Kun"
+            }
+          ]
+        },
+        {
+          "id": "k18_g3",
+          "anchor": "国",
+          "kana": null,
+          "hanviet": "Quốc",
+          "meaning": {
+            "vi": "",
+            "en": "Country"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "コク"
+          ],
+          "kunyomi": [
+            "くに"
+          ],
+          "words": [
+            {
+              "kanji": "国",
+              "kana": "くに",
+              "hanviet": "Quốc",
+              "meaning": {
+                "vi": "",
+                "en": "Country"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "外国",
+              "kana": "がいこく",
+              "hanviet": "Ngoại Quốc",
+              "meaning": {
+                "vi": "",
+                "en": "Foreign country"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "外国語",
+              "kana": "がいこくご",
+              "hanviet": "Ngoại Quốc Ngữ",
+              "meaning": {
+                "vi": "",
+                "en": "Foreign language"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "国際",
+              "kana": "こくさい",
+              "hanviet": "Quốc Tế",
+              "meaning": {
+                "vi": "",
+                "en": "International"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k18_g4",
+          "anchor": "主",
+          "kana": null,
+          "hanviet": "Chủ",
+          "meaning": {
+            "vi": "",
+            "en": "Master, main"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シュ",
+            "シュウ",
+            "ス"
+          ],
+          "kunyomi": [
+            "あるじ",
+            "おも",
+            "ぬし"
+          ],
+          "words": [
+            {
+              "kanji": "飼い主",
+              "kana": "かいぬし",
+              "hanviet": "Tự Chủ",
+              "meaning": {
+                "vi": "",
+                "en": "Pet owner"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "ご主人",
+              "kana": "ごしゅじん",
+              "hanviet": "Chủ Nhân",
+              "meaning": {
+                "vi": "",
+                "en": "(Someone else's) husband"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "主人公",
+              "kana": "しゅじんこう",
+              "hanviet": "Chủ Nhân Công",
+              "meaning": {
+                "vi": "",
+                "en": "Main character, protagonist"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k18_g5",
+          "anchor": "住",
+          "kana": null,
+          "hanviet": "Trú",
+          "meaning": {
+            "vi": "",
+            "en": "Reside"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ジュウ",
+            "チュウ",
+            "ヂュウ"
+          ],
+          "kunyomi": [
+            "-ず.まい",
+            "す.まう",
+            "す.む"
+          ],
+          "words": [
+            {
+              "kanji": "住みます",
+              "kana": "すみます",
+              "hanviet": "Trú",
+              "meaning": {
+                "vi": "",
+                "en": "To live, reside"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "住所",
+              "kana": "じゅうしょ",
+              "hanviet": "Trú Sở",
+              "meaning": {
+                "vi": "",
+                "en": "Address"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k18_g6",
+          "anchor": "所",
+          "kana": null,
+          "hanviet": "Sở",
+          "meaning": {
+            "vi": "",
+            "en": "Place"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ショ"
+          ],
+          "kunyomi": [
+            "-ところ",
+            "とこ",
+            "ところ",
+            "どころ"
+          ],
+          "words": [
+            {
+              "kanji": "所",
+              "kana": "ところ",
+              "hanviet": "Sở",
+              "meaning": {
+                "vi": "",
+                "en": "Place"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "台所",
+              "kana": "だいどころ",
+              "hanviet": "Đài Sở",
+              "meaning": {
+                "vi": "",
+                "en": "Kitchen"
+              },
+              "onkun": "On--Kun"
+            },
+            {
+              "kanji": "住所",
+              "kana": "じゅうしょ",
+              "hanviet": "Trú Sở",
+              "meaning": {
+                "vi": "",
+                "en": "Address"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "市役所",
+              "kana": "しやくしょ",
+              "hanviet": "Thị Dịch Sở",
+              "meaning": {
+                "vi": "",
+                "en": "City hall"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "近所",
+              "kana": "きんじょ",
+              "hanviet": "Cận Sở",
+              "meaning": {
+                "vi": "",
+                "en": "Neighborhood, nearby area"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k18_g7",
+          "anchor": "近",
+          "kana": null,
+          "hanviet": "Cận",
+          "meaning": {
+            "vi": "",
+            "en": "Near"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "キン",
+            "コン"
+          ],
+          "kunyomi": [
+            "ちか.い"
+          ],
+          "words": [
+            {
+              "kanji": "近い",
+              "kana": "ちかい",
+              "hanviet": "Cận",
+              "meaning": {
+                "vi": "",
+                "en": "Near, close"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "近づきます",
+              "kana": "ちかづきます",
+              "hanviet": "Cận",
+              "meaning": {
+                "vi": "",
+                "en": "To approach, get closer"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "最近",
+              "kana": "さいきん",
+              "hanviet": "Tối Cận",
+              "meaning": {
+                "vi": "",
+                "en": "Recently"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "近所",
+              "kana": "きんじょ",
+              "hanviet": "Cận Sở",
+              "meaning": {
+                "vi": "",
+                "en": "Neighborhood, nearby area"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k18_g8",
+          "anchor": "辺",
+          "kana": null,
+          "hanviet": "Biên",
+          "meaning": {
+            "vi": "",
+            "en": "Vicinity, area"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ヘン"
+          ],
+          "kunyomi": [
+            "あた.り",
+            "べ"
+          ],
+          "words": [
+            {
+              "kanji": "この辺",
+              "kana": "このへん",
+              "hanviet": "Biên",
+              "meaning": {
+                "vi": "",
+                "en": "Around here"
+              },
+              "onkun": "On"
+            }
+          ]
+        },
+        {
+          "id": "k18_g9",
+          "anchor": "切",
+          "kana": null,
+          "hanviet": "Thiết",
+          "meaning": {
+            "vi": "",
+            "en": "Cut"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "サイ",
+            "セツ"
+          ],
+          "kunyomi": [
+            "-き.り",
+            "-き.る",
+            "-き.れ",
+            "-き.れる",
+            "-ぎ.り",
+            "-ぎ.れ",
+            "き.り",
+            "き.る",
+            "き.れ",
+            "き.れる"
+          ],
+          "words": [
+            {
+              "kanji": "切ります",
+              "kana": "きります",
+              "hanviet": "Thiết",
+              "meaning": {
+                "vi": "",
+                "en": "To cut; to hang up (phone)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "切符",
+              "kana": "きっぷ",
+              "hanviet": "Thiết Phù",
+              "meaning": {
+                "vi": "",
+                "en": "Ticket"
+              },
+              "onkun": "Juku"
+            },
+            {
+              "kanji": "切手",
+              "kana": "きって",
+              "hanviet": "Thiết Thủ",
+              "meaning": {
+                "vi": "",
+                "en": "Postage stamp"
+              },
+              "onkun": "Juku"
+            },
+            {
+              "kanji": "締め切り",
+              "kana": "しめきり",
+              "hanviet": "Đế Thiết",
+              "meaning": {
+                "vi": "",
+                "en": "Deadline"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "親切",
+              "kana": "しんせつ",
+              "hanviet": "Thân Thiết",
+              "meaning": {
+                "vi": "",
+                "en": "Kind, friendly"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "大切",
+              "kana": "たいせつ",
+              "hanviet": "Đại Thiết",
+              "meaning": {
+                "vi": "",
+                "en": "Important"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "groupCount": 11,
+      "wordCount": 26,
+      "groups": [
+        {
+          "id": "k19_g1",
+          "anchor": "勉",
+          "kana": null,
+          "hanviet": "Miễn",
+          "meaning": {
+            "vi": "",
+            "en": "Endeavor, study"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ベン"
+          ],
+          "kunyomi": [
+            "つと.める"
+          ],
+          "words": [
+            {
+              "kanji": "勉強します",
+              "kana": "べんきょうします",
+              "hanviet": "Miễn Cường",
+              "meaning": {
+                "vi": "",
+                "en": "To study"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k19_g2",
+          "anchor": "晩",
+          "kana": null,
+          "hanviet": "Vãn",
+          "meaning": {
+            "vi": "",
+            "en": "Evening"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "バン"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "今晩",
+              "kana": "こんばん",
+              "hanviet": "Kim Vãn",
+              "meaning": {
+                "vi": "",
+                "en": "Tonight"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "毎晩",
+              "kana": "まいばん",
+              "hanviet": "Mỗi Vãn",
+              "meaning": {
+                "vi": "",
+                "en": "Every night"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "晩ご飯",
+              "kana": "ばんごはん",
+              "hanviet": "Vãn Phạn",
+              "meaning": {
+                "vi": "",
+                "en": "Dinner"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k19_g3",
+          "anchor": "色",
+          "kana": null,
+          "hanviet": "Sắc",
+          "meaning": {
+            "vi": "",
+            "en": "Color"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シキ",
+            "ショク"
+          ],
+          "kunyomi": [
+            "いろ"
+          ],
+          "words": [
+            {
+              "kanji": "色",
+              "kana": "いろ",
+              "hanviet": "Sắc",
+              "meaning": {
+                "vi": "",
+                "en": "Color"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "色んな",
+              "kana": "いろいろな",
+              "hanviet": "Sắc",
+              "meaning": {
+                "vi": "",
+                "en": "Various"
+              },
+              "onkun": "Juku"
+            },
+            {
+              "kanji": "茶色",
+              "kana": "ちゃいろ",
+              "hanviet": "Trà Sắc",
+              "meaning": {
+                "vi": "",
+                "en": "Brown"
+              },
+              "onkun": "On--Kun"
+            },
+            {
+              "kanji": "景色",
+              "kana": "けしき",
+              "hanviet": "Cảnh Sắc",
+              "meaning": {
+                "vi": "",
+                "en": "Scenery"
+              },
+              "onkun": "Juku"
+            }
+          ]
+        },
+        {
+          "id": "k19_g4",
+          "anchor": "発",
+          "kana": null,
+          "hanviet": "Phát",
+          "meaning": {
+            "vi": "",
+            "en": "Depart, emit"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ハツ",
+            "ホツ"
+          ],
+          "kunyomi": [
+            "あば.く",
+            "おこ.る",
+            "た.つ",
+            "つか.わす",
+            "はな.つ"
+          ],
+          "words": [
+            {
+              "kanji": "発明",
+              "kana": "はつめい",
+              "hanviet": "Phát Minh",
+              "meaning": {
+                "vi": "",
+                "en": "Invention"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "発見",
+              "kana": "はっけん",
+              "hanviet": "Phát Kiến",
+              "meaning": {
+                "vi": "",
+                "en": "Discovery"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "出発",
+              "kana": "しゅっぱつ",
+              "hanviet": "Xuất Phát",
+              "meaning": {
+                "vi": "",
+                "en": "Departure"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "発音",
+              "kana": "はつおん",
+              "hanviet": "Phát Âm",
+              "meaning": {
+                "vi": "",
+                "en": "Pronunciation"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "発売",
+              "kana": "はつばい",
+              "hanviet": "Phát Mại",
+              "meaning": {
+                "vi": "",
+                "en": "On sale, release"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k19_g5",
+          "anchor": "黄",
+          "kana": null,
+          "hanviet": "Hoàng",
+          "meaning": {
+            "vi": "",
+            "en": "Yellow"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "オウ",
+            "コウ"
+          ],
+          "kunyomi": [
+            "き",
+            "こ-"
+          ],
+          "words": [
+            {
+              "kanji": "黄色",
+              "kana": "きいろ",
+              "hanviet": "Hoàng Sắc",
+              "meaning": {
+                "vi": "",
+                "en": "Yellow (noun)"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "黄色い",
+              "kana": "きいろい",
+              "hanviet": "Hoàng Sắc",
+              "meaning": {
+                "vi": "",
+                "en": "Yellow (adjective)"
+              },
+              "onkun": "Kun--Kun"
+            }
+          ]
+        },
+        {
+          "id": "k19_g6",
+          "anchor": "虫",
+          "kana": null,
+          "hanviet": "Trùng",
+          "meaning": {
+            "vi": "",
+            "en": "Insect"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "キ",
+            "チュウ"
+          ],
+          "kunyomi": [
+            "むし"
+          ],
+          "words": [
+            {
+              "kanji": "虫",
+              "kana": "むし",
+              "hanviet": "Trùng",
+              "meaning": {
+                "vi": "",
+                "en": "Insect, bug"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k19_g7",
+          "anchor": "風",
+          "kana": null,
+          "hanviet": "Phong",
+          "meaning": {
+            "vi": "",
+            "en": "Wind, style"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "フ",
+            "フウ"
+          ],
+          "kunyomi": [
+            "かざ-",
+            "かぜ"
+          ],
+          "words": [
+            {
+              "kanji": "風",
+              "kana": "かぜ",
+              "hanviet": "Phong",
+              "meaning": {
+                "vi": "",
+                "en": "Wind"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "風邪",
+              "kana": "かぜ",
+              "hanviet": "Phong Tà",
+              "meaning": {
+                "vi": "",
+                "en": "Cold (illness)"
+              },
+              "onkun": "Juku"
+            },
+            {
+              "kanji": "台風",
+              "kana": "たいふう",
+              "hanviet": "Đài Phong",
+              "meaning": {
+                "vi": "",
+                "en": "Typhoon"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k19_g8",
+          "anchor": "強",
+          "kana": null,
+          "hanviet": "Cường",
+          "meaning": {
+            "vi": "",
+            "en": "Strong"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "キョウ",
+            "ゴウ"
+          ],
+          "kunyomi": [
+            "こわ.い",
+            "し.いる",
+            "つよ.い",
+            "つよ.まる",
+            "つよ.める"
+          ],
+          "words": [
+            {
+              "kanji": "強い",
+              "kana": "つよい",
+              "hanviet": "Cường",
+              "meaning": {
+                "vi": "",
+                "en": "Strong"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "勉強",
+              "kana": "べんきょう",
+              "hanviet": "Miễn Cường",
+              "meaning": {
+                "vi": "",
+                "en": "Study"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k19_g9",
+          "anchor": "油",
+          "kana": null,
+          "hanviet": "Du",
+          "meaning": {
+            "vi": "",
+            "en": "Oil"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ユ",
+            "ユウ"
+          ],
+          "kunyomi": [
+            "あぶら"
+          ],
+          "words": [
+            {
+              "kanji": "油",
+              "kana": "あぶら",
+              "hanviet": "Du",
+              "meaning": {
+                "vi": "",
+                "en": "Oil"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "石油",
+              "kana": "せきゆ",
+              "hanviet": "Thạch Du",
+              "meaning": {
+                "vi": "",
+                "en": "Petroleum"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k19_g10",
+          "anchor": "決",
+          "kana": null,
+          "hanviet": "Quyết",
+          "meaning": {
+            "vi": "",
+            "en": "Decide"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ケツ"
+          ],
+          "kunyomi": [
+            "-ぎ.め",
+            "き.まる",
+            "き.める",
+            "さ.く"
+          ],
+          "words": [
+            {
+              "kanji": "決めます",
+              "kana": "きめます",
+              "hanviet": "Quyết",
+              "meaning": {
+                "vi": "",
+                "en": "To decide (something)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "決まります",
+              "kana": "きまります",
+              "hanviet": "Quyết",
+              "meaning": {
+                "vi": "",
+                "en": "(Something) is decided"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k19_g11",
+          "anchor": "漢",
+          "kana": null,
+          "hanviet": "Hán",
+          "meaning": {
+            "vi": "",
+            "en": "Han (China), kanji"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "カン"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "漢字",
+              "kana": "かんじ",
+              "hanviet": "Hán Tự",
+              "meaning": {
+                "vi": "",
+                "en": "Kanji, Chinese character"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "groupCount": 13,
+      "wordCount": 26,
+      "groups": [
+        {
+          "id": "k20_g1",
+          "anchor": "止",
+          "kana": null,
+          "hanviet": "Chỉ",
+          "meaning": {
+            "vi": "",
+            "en": "Stop"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "-さ.し",
+            "-さ.す",
+            "-と.める",
+            "-ど.まり",
+            "-ど.め",
+            "-や.む",
+            "と.まる",
+            "と.める",
+            "とど.まる",
+            "とど.め",
+            "とど.める",
+            "や.む",
+            "や.める",
+            "よ.す"
+          ],
+          "words": [
+            {
+              "kanji": "止まります",
+              "kana": "とまります",
+              "hanviet": "Chỉ",
+              "meaning": {
+                "vi": "",
+                "en": "(Something) stops"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "止みます",
+              "kana": "やみます",
+              "hanviet": "Chỉ",
+              "meaning": {
+                "vi": "",
+                "en": "To stop, let up (rain)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "中止",
+              "kana": "ちゅうし",
+              "hanviet": "Trung Chỉ",
+              "meaning": {
+                "vi": "",
+                "en": "Cancellation, suspension"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g2",
+          "anchor": "歩",
+          "kana": null,
+          "hanviet": "Bộ",
+          "meaning": {
+            "vi": "",
+            "en": "Walk"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "フ",
+            "ブ",
+            "ホ"
+          ],
+          "kunyomi": [
+            "あゆ.む",
+            "ある.く"
+          ],
+          "words": [
+            {
+              "kanji": "歩きます",
+              "kana": "あるきます",
+              "hanviet": "Bộ",
+              "meaning": {
+                "vi": "",
+                "en": "To walk"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "散歩します",
+              "kana": "さんぽします",
+              "hanviet": "Tản Bộ",
+              "meaning": {
+                "vi": "",
+                "en": "To take a walk"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g3",
+          "anchor": "歴",
+          "kana": null,
+          "hanviet": "Lịch",
+          "meaning": {
+            "vi": "",
+            "en": "Pass through, history"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "レキ",
+            "レッキ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "歴史",
+              "kana": "れきし",
+              "hanviet": "Lịch Sử",
+              "meaning": {
+                "vi": "",
+                "en": "History"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g4",
+          "anchor": "史",
+          "kana": null,
+          "hanviet": "Sử",
+          "meaning": {
+            "vi": "",
+            "en": "History"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "歴史",
+              "kana": "れきし",
+              "hanviet": "Lịch Sử",
+              "meaning": {
+                "vi": "",
+                "en": "History"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g5",
+          "anchor": "使",
+          "kana": null,
+          "hanviet": "Sử",
+          "meaning": {
+            "vi": "",
+            "en": "Use, envoy"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "-つか.い",
+            "-づか.い",
+            "つか.い",
+            "つか.う"
+          ],
+          "words": [
+            {
+              "kanji": "使います",
+              "kana": "つかいます",
+              "hanviet": "Sử",
+              "meaning": {
+                "vi": "",
+                "en": "To use"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "大使館",
+              "kana": "たいしかん",
+              "hanviet": "Đại Sử Quán",
+              "meaning": {
+                "vi": "",
+                "en": "Embassy"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "使用します",
+              "kana": "しようします",
+              "hanviet": "Sử Dụng",
+              "meaning": {
+                "vi": "",
+                "en": "To use, utilize"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g6",
+          "anchor": "品",
+          "kana": null,
+          "hanviet": "Phẩm",
+          "meaning": {
+            "vi": "",
+            "en": "Product, quality"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ヒン",
+            "ホン"
+          ],
+          "kunyomi": [
+            "しな"
+          ],
+          "words": [
+            {
+              "kanji": "商品",
+              "kana": "しょうひん",
+              "hanviet": "Thương Phẩm",
+              "meaning": {
+                "vi": "",
+                "en": "Merchandise, product"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "化粧品",
+              "kana": "けしょうひん",
+              "hanviet": "Hóa Trang Phẩm",
+              "meaning": {
+                "vi": "",
+                "en": "Cosmetics"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g7",
+          "anchor": "号",
+          "kana": null,
+          "hanviet": "Hiệu",
+          "meaning": {
+            "vi": "",
+            "en": "Number, sign"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ゴウ"
+          ],
+          "kunyomi": [
+            "さけ.ぶ",
+            "よびな"
+          ],
+          "words": [
+            {
+              "kanji": "信号",
+              "kana": "しんごう",
+              "hanviet": "Tín Hiệu",
+              "meaning": {
+                "vi": "",
+                "en": "Traffic light, signal"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "電話番号",
+              "kana": "でんわばんごう",
+              "hanviet": "Điện Thoại Phiên Hiệu",
+              "meaning": {
+                "vi": "",
+                "en": "Phone number"
+              },
+              "onkun": "On--On--On--On"
+            },
+            {
+              "kanji": "暗証番号",
+              "kana": "あんしょうばんごう",
+              "hanviet": "Ám Chứng Phiên Hiệu",
+              "meaning": {
+                "vi": "",
+                "en": "PIN code"
+              },
+              "onkun": "On--On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g8",
+          "anchor": "味",
+          "kana": null,
+          "hanviet": "Vị",
+          "meaning": {
+            "vi": "",
+            "en": "Taste"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ミ"
+          ],
+          "kunyomi": [
+            "あじ",
+            "あじ.わう"
+          ],
+          "words": [
+            {
+              "kanji": "味",
+              "kana": "あじ",
+              "hanviet": "Vị",
+              "meaning": {
+                "vi": "",
+                "en": "Taste, flavor"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "意味",
+              "kana": "いみ",
+              "hanviet": "Ý Vị",
+              "meaning": {
+                "vi": "",
+                "en": "Meaning"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "興味",
+              "kana": "きょうみ",
+              "hanviet": "Hứng Vị",
+              "meaning": {
+                "vi": "",
+                "en": "Interest"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "調味料",
+              "kana": "ちょうみりょう",
+              "hanviet": "Điều Vị Liệu",
+              "meaning": {
+                "vi": "",
+                "en": "Seasoning, condiment"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g9",
+          "anchor": "研",
+          "kana": null,
+          "hanviet": "Nghiên",
+          "meaning": {
+            "vi": "",
+            "en": "Study, research"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ケン"
+          ],
+          "kunyomi": [
+            "と.ぐ"
+          ],
+          "words": [
+            {
+              "kanji": "研究",
+              "kana": "けんきゅう",
+              "hanviet": "Nghiên Cứu",
+              "meaning": {
+                "vi": "",
+                "en": "Research"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "研究者",
+              "kana": "けんきゅうしゃ",
+              "hanviet": "Nghiên Cứu Giả",
+              "meaning": {
+                "vi": "",
+                "en": "Researcher"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g10",
+          "anchor": "丸",
+          "kana": null,
+          "hanviet": "Hoàn",
+          "meaning": {
+            "vi": "",
+            "en": "Round, circle"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ガン"
+          ],
+          "kunyomi": [
+            "まる",
+            "まる.める",
+            "まる.い"
+          ],
+          "words": [
+            {
+              "kanji": "丸",
+              "kana": "まる",
+              "hanviet": "Hoàn",
+              "meaning": {
+                "vi": "",
+                "en": "Circle"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k20_g11",
+          "anchor": "究",
+          "kana": null,
+          "hanviet": "Cứu",
+          "meaning": {
+            "vi": "",
+            "en": "Investigate thoroughly"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "キュウ",
+            "ク"
+          ],
+          "kunyomi": [
+            "きわ.める"
+          ],
+          "words": [
+            {
+              "kanji": "研究",
+              "kana": "けんきゅう",
+              "hanviet": "Nghiên Cứu",
+              "meaning": {
+                "vi": "",
+                "en": "Research"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "研究者",
+              "kana": "けんきゅうしゃ",
+              "hanviet": "Nghiên Cứu Giả",
+              "meaning": {
+                "vi": "",
+                "en": "Researcher"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k20_g12",
+          "anchor": "谷",
+          "kana": null,
+          "hanviet": "Cốc",
+          "meaning": {
+            "vi": "",
+            "en": "Valley"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "コク"
+          ],
+          "kunyomi": [
+            "たに"
+          ],
+          "words": [
+            {
+              "kanji": "谷",
+              "kana": "たに",
+              "hanviet": "Cốc",
+              "meaning": {
+                "vi": "",
+                "en": "Valley"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k20_g13",
+          "anchor": "船",
+          "kana": null,
+          "hanviet": "Thuyền",
+          "meaning": {
+            "vi": "",
+            "en": "Ship, boat"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "セン"
+          ],
+          "kunyomi": [
+            "ふね",
+            "ふな-"
+          ],
+          "words": [
+            {
+              "kanji": "船",
+              "kana": "ふね",
+              "hanviet": "Thuyền",
+              "meaning": {
+                "vi": "",
+                "en": "Ship, boat"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "groupCount": 11,
+      "wordCount": 24,
+      "groups": [
+        {
+          "id": "k21_g1",
+          "anchor": "里",
+          "kana": null,
+          "hanviet": "Lý",
+          "meaning": {
+            "vi": "",
+            "en": "Village, ri (unit)"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "リ"
+          ],
+          "kunyomi": [
+            "さと"
+          ],
+          "words": [
+            {
+              "kanji": "里芋",
+              "kana": "さといも",
+              "hanviet": "Lý Vu",
+              "meaning": {
+                "vi": "",
+                "en": "Taro"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "万里の長城",
+              "kana": "ばんりのちょうじょう",
+              "hanviet": "Vạn Lý Trường Thành",
+              "meaning": {
+                "vi": "",
+                "en": "The Great Wall of China"
+              },
+              "onkun": "On--On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k21_g2",
+          "anchor": "理",
+          "kana": null,
+          "hanviet": "Lý",
+          "meaning": {
+            "vi": "",
+            "en": "Reason, logic"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "リ"
+          ],
+          "kunyomi": [
+            "ことわり"
+          ],
+          "words": [
+            {
+              "kanji": "料理",
+              "kana": "りょうり",
+              "hanviet": "Liệu Lý",
+              "meaning": {
+                "vi": "",
+                "en": "Dish, cooking"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "修理",
+              "kana": "しゅうり",
+              "hanviet": "Tu Lý",
+              "meaning": {
+                "vi": "",
+                "en": "Repair"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k21_g3",
+          "anchor": "野",
+          "kana": null,
+          "hanviet": "Dã",
+          "meaning": {
+            "vi": "",
+            "en": "Field, wild"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ショ",
+            "ヤ"
+          ],
+          "kunyomi": [
+            "の",
+            "の-"
+          ],
+          "words": [
+            {
+              "kanji": "野菜",
+              "kana": "やさい",
+              "hanviet": "Dã Thái",
+              "meaning": {
+                "vi": "",
+                "en": "Vegetable"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "野球",
+              "kana": "やきゅう",
+              "hanviet": "Dã Cầu",
+              "meaning": {
+                "vi": "",
+                "en": "Baseball"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k21_g4",
+          "anchor": "若",
+          "kana": null,
+          "hanviet": "Nhược",
+          "meaning": {
+            "vi": "",
+            "en": "Young"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ジャク",
+            "ニャク",
+            "ニャ"
+          ],
+          "kunyomi": [
+            "わか.い",
+            "わか-",
+            "も.しくわ",
+            "も.し",
+            "も.しくは",
+            "ごと.し"
+          ],
+          "words": [
+            {
+              "kanji": "若い",
+              "kana": "わかい",
+              "hanviet": "Nhược",
+              "meaning": {
+                "vi": "",
+                "en": "Young"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k21_g5",
+          "anchor": "菜",
+          "kana": null,
+          "hanviet": "Thái",
+          "meaning": {
+            "vi": "",
+            "en": "Vegetable, greens"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "サイ"
+          ],
+          "kunyomi": [
+            "な"
+          ],
+          "words": [
+            {
+              "kanji": "野菜",
+              "kana": "やさい",
+              "hanviet": "Dã Thái",
+              "meaning": {
+                "vi": "",
+                "en": "Vegetable"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k21_g6",
+          "anchor": "番",
+          "kana": null,
+          "hanviet": "Phiên",
+          "meaning": {
+            "vi": "",
+            "en": "Number, order, watch"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "バン"
+          ],
+          "kunyomi": [
+            "つが.い"
+          ],
+          "words": [
+            {
+              "kanji": "一番",
+              "kana": "いちばん",
+              "hanviet": "Nhất Phiên",
+              "meaning": {
+                "vi": "",
+                "en": "Number one, the most"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "交番",
+              "kana": "こうばん",
+              "hanviet": "Giao Phiên",
+              "meaning": {
+                "vi": "",
+                "en": "Police box"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "番組",
+              "kana": "ばんぐみ",
+              "hanviet": "Phiên Tổ",
+              "meaning": {
+                "vi": "",
+                "en": "TV program"
+              },
+              "onkun": "On--Kun"
+            },
+            {
+              "kanji": "電話番号",
+              "kana": "でんわばんごう",
+              "hanviet": "Điện Thoại Phiên Hiệu",
+              "meaning": {
+                "vi": "",
+                "en": "Phone number"
+              },
+              "onkun": "On--On--On--On"
+            },
+            {
+              "kanji": "暗証番号",
+              "kana": "あんしょうばんごう",
+              "hanviet": "Ám Chứng Phiên Hiệu",
+              "meaning": {
+                "vi": "",
+                "en": "PIN code"
+              },
+              "onkun": "On--On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k21_g7",
+          "anchor": "料",
+          "kana": null,
+          "hanviet": "Liệu",
+          "meaning": {
+            "vi": "",
+            "en": "Fee, material"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "リョウ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "無料",
+              "kana": "むりょう",
+              "hanviet": "Vô Liệu",
+              "meaning": {
+                "vi": "",
+                "en": "Free of charge"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "料理",
+              "kana": "りょうり",
+              "hanviet": "Liệu Lý",
+              "meaning": {
+                "vi": "",
+                "en": "Dish, cooking"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "調味料",
+              "kana": "ちょうみりょう",
+              "hanviet": "Điều Vị Liệu",
+              "meaning": {
+                "vi": "",
+                "en": "Seasoning, condiment"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "材料",
+              "kana": "ざいりょう",
+              "hanviet": "Tài Liệu",
+              "meaning": {
+                "vi": "",
+                "en": "Ingredient, material"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "給料",
+              "kana": "きゅうりょう",
+              "hanviet": "Cấp Liệu",
+              "meaning": {
+                "vi": "",
+                "en": "Salary"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "食料品",
+              "kana": "しょくりょうひん",
+              "hanviet": "Thực Liệu Phẩm",
+              "meaning": {
+                "vi": "",
+                "en": "Groceries, foodstuffs"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k21_g8",
+          "anchor": "奥",
+          "kana": null,
+          "hanviet": "Ốc",
+          "meaning": {
+            "vi": "",
+            "en": "Interior, depths"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "オウ"
+          ],
+          "kunyomi": [
+            "おく",
+            "おく.まる",
+            "くま"
+          ],
+          "words": [
+            {
+              "kanji": "奥さん",
+              "kana": "おくさん",
+              "hanviet": "Ốc",
+              "meaning": {
+                "vi": "",
+                "en": "(Someone else's) wife"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k21_g9",
+          "anchor": "鳥",
+          "kana": null,
+          "hanviet": "Điểu",
+          "meaning": {
+            "vi": "",
+            "en": "Bird"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "チョウ"
+          ],
+          "kunyomi": [
+            "とり"
+          ],
+          "words": [
+            {
+              "kanji": "鳥",
+              "kana": "とり",
+              "hanviet": "Điểu",
+              "meaning": {
+                "vi": "",
+                "en": "Bird"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k21_g10",
+          "anchor": "鳴",
+          "kana": null,
+          "hanviet": "Minh",
+          "meaning": {
+            "vi": "",
+            "en": "Cry, chirp, ring"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "メイ"
+          ],
+          "kunyomi": [
+            "な.く",
+            "な.る",
+            "な.らす"
+          ],
+          "words": [
+            {
+              "kanji": "鳴きます",
+              "kana": "なきます",
+              "hanviet": "Minh",
+              "meaning": {
+                "vi": "",
+                "en": "To cry, chirp (animal)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "鳴ります",
+              "kana": "なります",
+              "hanviet": "Minh",
+              "meaning": {
+                "vi": "",
+                "en": "To ring (bell)"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k21_g11",
+          "anchor": "島",
+          "kana": null,
+          "hanviet": "Đảo",
+          "meaning": {
+            "vi": "",
+            "en": "Island"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "トウ"
+          ],
+          "kunyomi": [
+            "しま"
+          ],
+          "words": [
+            {
+              "kanji": "島",
+              "kana": "しま",
+              "hanviet": "Đảo",
+              "meaning": {
+                "vi": "",
+                "en": "Island"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "groupCount": 12,
+      "wordCount": 26,
+      "groups": [
+        {
+          "id": "k22_g1",
+          "anchor": "化",
+          "kana": null,
+          "hanviet": "Hóa",
+          "meaning": {
+            "vi": "",
+            "en": "Change, -ify"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "カ",
+            "ケ"
+          ],
+          "kunyomi": [
+            "け.する",
+            "ば.かす",
+            "ば.ける",
+            "ふ.ける"
+          ],
+          "words": [
+            {
+              "kanji": "文化",
+              "kana": "ぶんか",
+              "hanviet": "Văn Hóa",
+              "meaning": {
+                "vi": "",
+                "en": "Culture"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "化粧",
+              "kana": "けしょう",
+              "hanviet": "Hóa Trang",
+              "meaning": {
+                "vi": "",
+                "en": "Makeup"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "化粧品",
+              "kana": "けしょうひん",
+              "hanviet": "Hóa Trang Phẩm",
+              "meaning": {
+                "vi": "",
+                "en": "Cosmetics"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k22_g2",
+          "anchor": "便",
+          "kana": null,
+          "hanviet": "Tiện",
+          "meaning": {
+            "vi": "",
+            "en": "Convenient, mail"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ビン",
+            "ベン"
+          ],
+          "kunyomi": [
+            "たよ.り"
+          ],
+          "words": [
+            {
+              "kanji": "不便",
+              "kana": "ふべん",
+              "hanviet": "Bất Tiện",
+              "meaning": {
+                "vi": "",
+                "en": "Inconvenient"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "便利",
+              "kana": "べんり",
+              "hanviet": "Tiện Lợi",
+              "meaning": {
+                "vi": "",
+                "en": "Convenient"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "郵便局",
+              "kana": "ゆうびんきょく",
+              "hanviet": "Bưu Tiện Cục",
+              "meaning": {
+                "vi": "",
+                "en": "Post office"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "宅配便",
+              "kana": "たくはいびん",
+              "hanviet": "Trạch Phối Tiện",
+              "meaning": {
+                "vi": "",
+                "en": "Home delivery service"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k22_g3",
+          "anchor": "係",
+          "kana": null,
+          "hanviet": "Hệ",
+          "meaning": {
+            "vi": "",
+            "en": "Relation, in charge of"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ケイ"
+          ],
+          "kunyomi": [
+            "かか.り",
+            "かか.る"
+          ],
+          "words": [
+            {
+              "kanji": "係の人",
+              "kana": "かかりのひと",
+              "hanviet": "Hệ Nhân",
+              "meaning": {
+                "vi": "",
+                "en": "Person in charge"
+              },
+              "onkun": "Kun--Kun"
+            }
+          ]
+        },
+        {
+          "id": "k22_g4",
+          "anchor": "宿",
+          "kana": null,
+          "hanviet": "Túc",
+          "meaning": {
+            "vi": "",
+            "en": "Lodge, stay"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "シュク"
+          ],
+          "kunyomi": [
+            "やど",
+            "やど.す",
+            "やど.る"
+          ],
+          "words": [
+            {
+              "kanji": "宿題",
+              "kana": "しゅくだい",
+              "hanviet": "Túc Đề",
+              "meaning": {
+                "vi": "",
+                "en": "Homework"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k22_g5",
+          "anchor": "私",
+          "kana": null,
+          "hanviet": "Tư",
+          "meaning": {
+            "vi": "",
+            "en": "I, private"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "わたくし",
+            "わたし"
+          ],
+          "words": [
+            {
+              "kanji": "私",
+              "kana": "わたし",
+              "hanviet": "Tư",
+              "meaning": {
+                "vi": "",
+                "en": "I, me"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k22_g6",
+          "anchor": "利",
+          "kana": null,
+          "hanviet": "Lợi",
+          "meaning": {
+            "vi": "",
+            "en": "Benefit, advantage"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "リ"
+          ],
+          "kunyomi": [
+            "き.く"
+          ],
+          "words": [
+            {
+              "kanji": "便利",
+              "kana": "べんり",
+              "hanviet": "Tiện Lợi",
+              "meaning": {
+                "vi": "",
+                "en": "Convenient"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "利用",
+              "kana": "りよう",
+              "hanviet": "Lợi Dụng",
+              "meaning": {
+                "vi": "",
+                "en": "Use, utilization"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k22_g7",
+          "anchor": "科",
+          "kana": null,
+          "hanviet": "Khoa",
+          "meaning": {
+            "vi": "",
+            "en": "Branch of study"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "カ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "科学",
+              "kana": "かがく",
+              "hanviet": "Khoa Học",
+              "meaning": {
+                "vi": "",
+                "en": "Science"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "教科書",
+              "kana": "きょうかしょ",
+              "hanviet": "Giáo Khoa Thư",
+              "meaning": {
+                "vi": "",
+                "en": "Textbook"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k22_g8",
+          "anchor": "顔",
+          "kana": null,
+          "hanviet": "Nhan",
+          "meaning": {
+            "vi": "",
+            "en": "Face"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ガン"
+          ],
+          "kunyomi": [
+            "かお"
+          ],
+          "words": [
+            {
+              "kanji": "顔",
+              "kana": "かお",
+              "hanviet": "Nhan",
+              "meaning": {
+                "vi": "",
+                "en": "Face"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k22_g9",
+          "anchor": "題",
+          "kana": null,
+          "hanviet": "Đề",
+          "meaning": {
+            "vi": "",
+            "en": "Topic, subject"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ダイ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "問題",
+              "kana": "もんだい",
+              "hanviet": "Vấn Đề",
+              "meaning": {
+                "vi": "",
+                "en": "Problem, question"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "宿題",
+              "kana": "しゅくだい",
+              "hanviet": "Túc Đề",
+              "meaning": {
+                "vi": "",
+                "en": "Homework"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "食べ放題",
+              "kana": "たべほうだい",
+              "hanviet": "Thực Phóng Đề",
+              "meaning": {
+                "vi": "",
+                "en": "All-you-can-eat"
+              },
+              "onkun": "Kun--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k22_g10",
+          "anchor": "速",
+          "kana": null,
+          "hanviet": "Tốc",
+          "meaning": {
+            "vi": "",
+            "en": "Fast, speed"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ソク"
+          ],
+          "kunyomi": [
+            "すみ.やか",
+            "はや-",
+            "はや.い",
+            "はや.める"
+          ],
+          "words": [
+            {
+              "kanji": "速い",
+              "kana": "はやい",
+              "hanviet": "Tốc",
+              "meaning": {
+                "vi": "",
+                "en": "Fast"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k22_g11",
+          "anchor": "通",
+          "kana": null,
+          "hanviet": "Thông",
+          "meaning": {
+            "vi": "",
+            "en": "Pass through, understand"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ツ",
+            "ツウ"
+          ],
+          "kunyomi": [
+            "-とお.り",
+            "-どお.し",
+            "-どお.り",
+            "かよ.う",
+            "とお.し",
+            "とお.す",
+            "とお.り",
+            "とお.る"
+          ],
+          "words": [
+            {
+              "kanji": "通います",
+              "kana": "かよいます",
+              "hanviet": "Thông",
+              "meaning": {
+                "vi": "",
+                "en": "To commute, attend regularly"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "交通",
+              "kana": "こうつう",
+              "hanviet": "Giao Thông",
+              "meaning": {
+                "vi": "",
+                "en": "Traffic, transportation"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k22_g12",
+          "anchor": "週",
+          "kana": null,
+          "hanviet": "Chu",
+          "meaning": {
+            "vi": "",
+            "en": "Week"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "シュウ"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "先週",
+              "kana": "せんしゅう",
+              "hanviet": "Tiên Chu",
+              "meaning": {
+                "vi": "",
+                "en": "Last week"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "今週",
+              "kana": "こんしゅう",
+              "hanviet": "Kim Chu",
+              "meaning": {
+                "vi": "",
+                "en": "This week"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "週末",
+              "kana": "しゅうまつ",
+              "hanviet": "Chu Mạt",
+              "meaning": {
+                "vi": "",
+                "en": "Weekend"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "来週",
+              "kana": "らいしゅう",
+              "hanviet": "Lai Chu",
+              "meaning": {
+                "vi": "",
+                "en": "Next week"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "再来週",
+              "kana": "さらいしゅう",
+              "hanviet": "Tái Lai Chu",
+              "meaning": {
+                "vi": "",
+                "en": "The week after next"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 23,
+      "groupCount": 14,
+      "wordCount": 28,
+      "groups": [
+        {
+          "id": "k23_g1",
+          "anchor": "夫",
+          "kana": null,
+          "hanviet": "Phu",
+          "meaning": {
+            "vi": "",
+            "en": "Husband"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "フ",
+            "フウ",
+            "ブ"
+          ],
+          "kunyomi": [
+            "おっと",
+            "それ"
+          ],
+          "words": [
+            {
+              "kanji": "夫",
+              "kana": "おっと",
+              "hanviet": "Phu",
+              "meaning": {
+                "vi": "",
+                "en": "Husband (own)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "大丈夫",
+              "kana": "だいじょうぶ",
+              "hanviet": "Đại Trượng Phu",
+              "meaning": {
+                "vi": "",
+                "en": "Okay, fine, no problem"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g2",
+          "anchor": "鉄",
+          "kana": null,
+          "hanviet": "Thiết",
+          "meaning": {
+            "vi": "",
+            "en": "Iron"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "テツ"
+          ],
+          "kunyomi": [
+            "くろがね"
+          ],
+          "words": [
+            {
+              "kanji": "地下鉄",
+              "kana": "ちかてつ",
+              "hanviet": "Địa Hạ Thiết",
+              "meaning": {
+                "vi": "",
+                "en": "Subway"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g3",
+          "anchor": "妹",
+          "kana": null,
+          "hanviet": "Muội",
+          "meaning": {
+            "vi": "",
+            "en": "Younger sister"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "マイ"
+          ],
+          "kunyomi": [
+            "いもうと"
+          ],
+          "words": [
+            {
+              "kanji": "妹",
+              "kana": "いもうと",
+              "hanviet": "Muội",
+              "meaning": {
+                "vi": "",
+                "en": "Younger sister (own)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "妹さん",
+              "kana": "いもうとさん",
+              "hanviet": "Muội",
+              "meaning": {
+                "vi": "",
+                "en": "Younger sister (someone else's)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "姉妹",
+              "kana": "しまい",
+              "hanviet": "Tỷ Muội",
+              "meaning": {
+                "vi": "",
+                "en": "Sisters"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g4",
+          "anchor": "姉",
+          "kana": null,
+          "hanviet": "Tỷ",
+          "meaning": {
+            "vi": "",
+            "en": "Older sister"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "あね",
+            "はは"
+          ],
+          "words": [
+            {
+              "kanji": "姉",
+              "kana": "あね",
+              "hanviet": "Tỷ",
+              "meaning": {
+                "vi": "",
+                "en": "Older sister (own)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "お姉さん",
+              "kana": "おねえさん",
+              "hanviet": "Tỷ",
+              "meaning": {
+                "vi": "",
+                "en": "Older sister (someone else's)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "姉妹",
+              "kana": "しまい",
+              "hanviet": "Tỷ Muội",
+              "meaning": {
+                "vi": "",
+                "en": "Sisters"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g5",
+          "anchor": "妻",
+          "kana": null,
+          "hanviet": "Thê",
+          "meaning": {
+            "vi": "",
+            "en": "Wife"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "サイ"
+          ],
+          "kunyomi": [
+            "つま"
+          ],
+          "words": [
+            {
+              "kanji": "妻",
+              "kana": "つま",
+              "hanviet": "Thê",
+              "meaning": {
+                "vi": "",
+                "en": "Wife (own)"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k23_g6",
+          "anchor": "天",
+          "kana": null,
+          "hanviet": "Thiên",
+          "meaning": {
+            "vi": "",
+            "en": "Sky, heaven"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "テン"
+          ],
+          "kunyomi": [
+            "あま-",
+            "あまつ",
+            "あめ"
+          ],
+          "words": [
+            {
+              "kanji": "天気",
+              "kana": "てんき",
+              "hanviet": "Thiên Khí",
+              "meaning": {
+                "vi": "",
+                "en": "Weather"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "天気予報",
+              "kana": "てんきよほう",
+              "hanviet": "Thiên Khí Dự Báo",
+              "meaning": {
+                "vi": "",
+                "en": "Weather forecast"
+              },
+              "onkun": "On--On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g7",
+          "anchor": "送",
+          "kana": null,
+          "hanviet": "Tống",
+          "meaning": {
+            "vi": "",
+            "en": "Send"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ソウ"
+          ],
+          "kunyomi": [
+            "おく.る"
+          ],
+          "words": [
+            {
+              "kanji": "送ります",
+              "kana": "おくります",
+              "hanviet": "Tống",
+              "meaning": {
+                "vi": "",
+                "en": "To send; to see (someone) off"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k23_g8",
+          "anchor": "弟",
+          "kana": null,
+          "hanviet": "Đệ",
+          "meaning": {
+            "vi": "",
+            "en": "Younger brother"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ダイ",
+            "テイ",
+            "デ"
+          ],
+          "kunyomi": [
+            "おとうと"
+          ],
+          "words": [
+            {
+              "kanji": "弟",
+              "kana": "おとうと",
+              "hanviet": "Đệ",
+              "meaning": {
+                "vi": "",
+                "en": "Younger brother (own)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "弟さん",
+              "kana": "おとうとさん",
+              "hanviet": "Đệ",
+              "meaning": {
+                "vi": "",
+                "en": "Younger brother (someone else's)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "兄弟",
+              "kana": "きょうだい",
+              "hanviet": "Huynh Đệ",
+              "meaning": {
+                "vi": "",
+                "en": "Siblings"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g9",
+          "anchor": "引",
+          "kana": null,
+          "hanviet": "Dẫn",
+          "meaning": {
+            "vi": "",
+            "en": "Pull"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "イン"
+          ],
+          "kunyomi": [
+            "ひ.く",
+            "ひ.ける"
+          ],
+          "words": [
+            {
+              "kanji": "引きます",
+              "kana": "ひきます",
+              "hanviet": "Dẫn",
+              "meaning": {
+                "vi": "",
+                "en": "To pull"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "引き出し",
+              "kana": "ひきだし",
+              "hanviet": "Dẫn Xuất",
+              "meaning": {
+                "vi": "",
+                "en": "Drawer"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "引き出します",
+              "kana": "ひきだします",
+              "hanviet": "Dẫn Xuất",
+              "meaning": {
+                "vi": "",
+                "en": "To withdraw (money)"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "引っ越します",
+              "kana": "ひっこします",
+              "hanviet": "Dẫn Việt",
+              "meaning": {
+                "vi": "",
+                "en": "To move (house)"
+              },
+              "onkun": "Kun--Kun"
+            }
+          ]
+        },
+        {
+          "id": "k23_g10",
+          "anchor": "弱",
+          "kana": null,
+          "hanviet": "Nhược",
+          "meaning": {
+            "vi": "",
+            "en": "Weak"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ジャク"
+          ],
+          "kunyomi": [
+            "よわ.い",
+            "よわ.まる",
+            "よわ.める",
+            "よわ.る"
+          ],
+          "words": [
+            {
+              "kanji": "弱い",
+              "kana": "よわい",
+              "hanviet": "Nhược",
+              "meaning": {
+                "vi": "",
+                "en": "Weak"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k23_g11",
+          "anchor": "考",
+          "kana": null,
+          "hanviet": "Khảo",
+          "meaning": {
+            "vi": "",
+            "en": "Think, consider"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "かんが.える",
+            "かんが.え"
+          ],
+          "words": [
+            {
+              "kanji": "考えます",
+              "kana": "かんがえます",
+              "hanviet": "Khảo",
+              "meaning": {
+                "vi": "",
+                "en": "To think, consider"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k23_g12",
+          "anchor": "者",
+          "kana": null,
+          "hanviet": "Giả",
+          "meaning": {
+            "vi": "",
+            "en": "Person"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "シャ"
+          ],
+          "kunyomi": [
+            "もの"
+          ],
+          "words": [
+            {
+              "kanji": "医者",
+              "kana": "いしゃ",
+              "hanviet": "Y Giả",
+              "meaning": {
+                "vi": "",
+                "en": "Doctor"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "研究者",
+              "kana": "けんきゅうしゃ",
+              "hanviet": "Nghiên Cứu Giả",
+              "meaning": {
+                "vi": "",
+                "en": "Researcher"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "歯医者",
+              "kana": "はいしゃ",
+              "hanviet": "Xỉ Y Giả",
+              "meaning": {
+                "vi": "",
+                "en": "Dentist"
+              },
+              "onkun": "Kun--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g13",
+          "anchor": "都",
+          "kana": null,
+          "hanviet": "Đô",
+          "meaning": {
+            "vi": "",
+            "en": "Capital, metropolis"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ツ",
+            "ト"
+          ],
+          "kunyomi": [
+            "みやこ"
+          ],
+          "words": [
+            {
+              "kanji": "都合",
+              "kana": "つごう",
+              "hanviet": "Đô Hợp",
+              "meaning": {
+                "vi": "",
+                "en": "Convenience, circumstances"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "都会",
+              "kana": "とかい",
+              "hanviet": "Đô Hội",
+              "meaning": {
+                "vi": "",
+                "en": "City, urban area"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k23_g14",
+          "anchor": "暑",
+          "kana": null,
+          "hanviet": "Thử",
+          "meaning": {
+            "vi": "",
+            "en": "Hot (weather)"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ショ"
+          ],
+          "kunyomi": [
+            "あつ.い"
+          ],
+          "words": [
+            {
+              "kanji": "暑い",
+              "kana": "あつい",
+              "hanviet": "Thử",
+              "meaning": {
+                "vi": "",
+                "en": "Hot (weather)"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 24,
+      "groupCount": 11,
+      "wordCount": 34,
+      "groups": [
+        {
+          "id": "k24_g1",
+          "anchor": "開",
+          "kana": null,
+          "hanviet": "Khai",
+          "meaning": {
+            "vi": "",
+            "en": "Open"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "カイ"
+          ],
+          "kunyomi": [
+            "-びら.き",
+            "あ.く",
+            "あ.ける",
+            "ひら.き",
+            "ひら.く",
+            "ひら.ける"
+          ],
+          "words": [
+            {
+              "kanji": "開きます",
+              "kana": "あきます",
+              "hanviet": "Khai",
+              "meaning": {
+                "vi": "",
+                "en": "(Something) opens"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "開けます",
+              "kana": "あけます",
+              "hanviet": "Khai",
+              "meaning": {
+                "vi": "",
+                "en": "To open (something)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "開始",
+              "kana": "かいし",
+              "hanviet": "Khai Thủy",
+              "meaning": {
+                "vi": "",
+                "en": "Start, commencement"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "開催",
+              "kana": "かいさい",
+              "hanviet": "Khai Thôi",
+              "meaning": {
+                "vi": "",
+                "en": "Holding (an event)"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g2",
+          "anchor": "閉",
+          "kana": null,
+          "hanviet": "Bế",
+          "meaning": {
+            "vi": "",
+            "en": "Close"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "ヘイ"
+          ],
+          "kunyomi": [
+            "し.まる",
+            "し.める",
+            "た.てる",
+            "と.ざす",
+            "と.じる"
+          ],
+          "words": [
+            {
+              "kanji": "閉まります",
+              "kana": "しまります",
+              "hanviet": "Bế",
+              "meaning": {
+                "vi": "",
+                "en": "(Something) closes"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "閉めます",
+              "kana": "しめます",
+              "hanviet": "Bế",
+              "meaning": {
+                "vi": "",
+                "en": "To close (something)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "閉じます",
+              "kana": "とじます",
+              "hanviet": "Bế",
+              "meaning": {
+                "vi": "",
+                "en": "To close, shut (eyes, book)"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k24_g3",
+          "anchor": "問",
+          "kana": null,
+          "hanviet": "Vấn",
+          "meaning": {
+            "vi": "",
+            "en": "Ask, question"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "モン"
+          ],
+          "kunyomi": [
+            "と.い",
+            "と.う",
+            "とん"
+          ],
+          "words": [
+            {
+              "kanji": "問題",
+              "kana": "もんだい",
+              "hanviet": "Vấn Đề",
+              "meaning": {
+                "vi": "",
+                "en": "Problem, question"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "質問",
+              "kana": "しつもん",
+              "hanviet": "Chất Vấn",
+              "meaning": {
+                "vi": "",
+                "en": "Question"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "疑問",
+              "kana": "ぎもん",
+              "hanviet": "Nghi Vấn",
+              "meaning": {
+                "vi": "",
+                "en": "Doubt, question"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g4",
+          "anchor": "質",
+          "kana": null,
+          "hanviet": "Chất",
+          "meaning": {
+            "vi": "",
+            "en": "Quality, nature"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "シチ",
+            "シツ",
+            "チ"
+          ],
+          "kunyomi": [
+            "ただ.す",
+            "たち",
+            "もと",
+            "わりふ"
+          ],
+          "words": [
+            {
+              "kanji": "質問",
+              "kana": "しつもん",
+              "hanviet": "Chất Vấn",
+              "meaning": {
+                "vi": "",
+                "en": "Question"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g5",
+          "anchor": "貸",
+          "kana": null,
+          "hanviet": "Thải",
+          "meaning": {
+            "vi": "",
+            "en": "Lend"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "タイ"
+          ],
+          "kunyomi": [
+            "か.し-",
+            "か.す",
+            "かし-"
+          ],
+          "words": [
+            {
+              "kanji": "貸します",
+              "kana": "かします",
+              "hanviet": "Thải",
+              "meaning": {
+                "vi": "",
+                "en": "To lend"
+              },
+              "onkun": "Kun"
+            }
+          ]
+        },
+        {
+          "id": "k24_g6",
+          "anchor": "員",
+          "kana": null,
+          "hanviet": "Viên",
+          "meaning": {
+            "vi": "",
+            "en": "Member, staff"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "イン"
+          ],
+          "kunyomi": [],
+          "words": [
+            {
+              "kanji": "社員",
+              "kana": "しゃいん",
+              "hanviet": "Xã Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Company employee"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "店員",
+              "kana": "てんいん",
+              "hanviet": "Điếm Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Store clerk"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "駅員",
+              "kana": "えきいん",
+              "hanviet": "Dịch Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Station staff"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "会社員",
+              "kana": "かいしゃいん",
+              "hanviet": "Hội Xã Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Company employee"
+              },
+              "onkun": "On--On--On"
+            },
+            {
+              "kanji": "全員",
+              "kana": "ぜんいん",
+              "hanviet": "Toàn Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Everyone, all members"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g7",
+          "anchor": "店",
+          "kana": null,
+          "hanviet": "Điếm",
+          "meaning": {
+            "vi": "",
+            "en": "Shop"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "テン"
+          ],
+          "kunyomi": [
+            "たな",
+            "みせ"
+          ],
+          "words": [
+            {
+              "kanji": "店",
+              "kana": "みせ",
+              "hanviet": "Điếm",
+              "meaning": {
+                "vi": "",
+                "en": "Shop, store"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "店員",
+              "kana": "てんいん",
+              "hanviet": "Điếm Viên",
+              "meaning": {
+                "vi": "",
+                "en": "Store clerk"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "店長",
+              "kana": "てんちょう",
+              "hanviet": "Điếm Trường",
+              "meaning": {
+                "vi": "",
+                "en": "Store manager"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "喫茶店",
+              "kana": "きっさてん",
+              "hanviet": "Khiết Trà Điếm",
+              "meaning": {
+                "vi": "",
+                "en": "Coffee shop, cafe"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g8",
+          "anchor": "度",
+          "kana": null,
+          "hanviet": "Độ",
+          "meaning": {
+            "vi": "",
+            "en": "Degree, time(s)"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "タク",
+            "ト",
+            "ド"
+          ],
+          "kunyomi": [
+            "-た.い",
+            "たび"
+          ],
+          "words": [
+            {
+              "kanji": "今度",
+              "kana": "こんど",
+              "hanviet": "Kim Độ",
+              "meaning": {
+                "vi": "",
+                "en": "Next time"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "温度",
+              "kana": "おんど",
+              "hanviet": "Ôn Độ",
+              "meaning": {
+                "vi": "",
+                "en": "Temperature"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "支度",
+              "kana": "したく",
+              "hanviet": "Chi Độ",
+              "meaning": {
+                "vi": "",
+                "en": "Preparation"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "何度でも",
+              "kana": "なんどでも",
+              "hanviet": "Hà Độ",
+              "meaning": {
+                "vi": "",
+                "en": "As many times as you like"
+              },
+              "onkun": "Kun--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g9",
+          "anchor": "黒",
+          "kana": null,
+          "hanviet": "Hắc",
+          "meaning": {
+            "vi": "",
+            "en": "Black"
+          },
+          "onkun": "Kun",
+          "onyomi": [
+            "コク"
+          ],
+          "kunyomi": [
+            "くろ",
+            "くろ.い",
+            "くろ.ずむ"
+          ],
+          "words": [
+            {
+              "kanji": "黒",
+              "kana": "くろ",
+              "hanviet": "Hắc",
+              "meaning": {
+                "vi": "",
+                "en": "Black (noun)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "黒い",
+              "kana": "くろい",
+              "hanviet": "Hắc",
+              "meaning": {
+                "vi": "",
+                "en": "Black (adjective)"
+              },
+              "onkun": "Kun"
+            },
+            {
+              "kanji": "真っ黒",
+              "kana": "まっくろ",
+              "hanviet": "Chân Hắc",
+              "meaning": {
+                "vi": "",
+                "en": "Pitch black"
+              },
+              "onkun": "Kun--Kun"
+            },
+            {
+              "kanji": "黒板",
+              "kana": "こくばん",
+              "hanviet": "Hắc Bản",
+              "meaning": {
+                "vi": "",
+                "en": "Blackboard"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g10",
+          "anchor": "点",
+          "kana": null,
+          "hanviet": "Điểm",
+          "meaning": {
+            "vi": "",
+            "en": "Point, mark"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "テン"
+          ],
+          "kunyomi": [
+            "さ.す",
+            "た.てる",
+            "つ.く",
+            "つ.ける",
+            "とぼ.す",
+            "とも.す",
+            "ぼち"
+          ],
+          "words": [
+            {
+              "kanji": "点",
+              "kana": "てん",
+              "hanviet": "Điểm",
+              "meaning": {
+                "vi": "",
+                "en": "Point"
+              },
+              "onkun": "On"
+            },
+            {
+              "kanji": "点数",
+              "kana": "てんすう",
+              "hanviet": "Điểm Số",
+              "meaning": {
+                "vi": "",
+                "en": "Score, points"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "交差点",
+              "kana": "こうさてん",
+              "hanviet": "Giao Sai Điểm",
+              "meaning": {
+                "vi": "",
+                "en": "Intersection"
+              },
+              "onkun": "On--On--On"
+            }
+          ]
+        },
+        {
+          "id": "k24_g11",
+          "anchor": "然",
+          "kana": null,
+          "hanviet": "Nhiên",
+          "meaning": {
+            "vi": "",
+            "en": "Naturally, so"
+          },
+          "onkun": "On",
+          "onyomi": [
+            "ゼン",
+            "ネン"
+          ],
+          "kunyomi": [
+            "さ",
+            "しか",
+            "しか.し",
+            "しか.り"
+          ],
+          "words": [
+            {
+              "kanji": "全然",
+              "kana": "ぜんぜん",
+              "hanviet": "Toàn Nhiên",
+              "meaning": {
+                "vi": "",
+                "en": "Not at all / entirely"
+              },
+              "onkun": "On--On"
+            },
+            {
+              "kanji": "自然",
+              "kana": "しぜん",
+              "hanviet": "Tự Nhiên",
+              "meaning": {
+                "vi": "",
+                "en": "Nature"
+              },
+              "onkun": "On--On"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

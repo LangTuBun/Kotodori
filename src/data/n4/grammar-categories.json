@@ -1,0 +1,21 @@
+{
+  "categories": [
+    { "slug": "conjecture", "romanNumeral": "XV", "order": 15, "title": "Conjecture and Expectation", "titleJa": "推量と期待", "count": 6 },
+    { "slug": "hearsay-opinion", "romanNumeral": "XVI", "order": 16, "title": "Hearsay, Resemblance, and Opinion", "titleJa": "伝聞・類似・意見", "count": 6 },
+    { "slug": "explanatory", "romanNumeral": "XVII", "order": 17, "title": "Explanatory んです", "titleJa": "説明の「んです」", "count": 7 },
+    { "slug": "appearance-change", "romanNumeral": "XVIII", "order": 18, "title": "Appearance and State Change", "titleJa": "様態と変化", "count": 6 },
+    { "slug": "transitive-intransitive", "romanNumeral": "XIX", "order": 19, "title": "Transitive and Intransitive Verbs", "titleJa": "自動詞と他動詞", "count": 4 },
+    { "slug": "noun-modification", "romanNumeral": "XX", "order": 20, "title": "Noun Modification and Perception", "titleJa": "名詞修飾と知覚", "count": 7 },
+    { "slug": "nominalization", "romanNumeral": "XXI", "order": 21, "title": "Nominalization with の", "titleJa": "「の」の名詞化", "count": 7 },
+    { "slug": "commands-quotation", "romanNumeral": "XXII", "order": 22, "title": "Commands, Prohibitions, and Quotation", "titleJa": "命令・禁止・引用", "count": 7 },
+    { "slug": "passive-receiving", "romanNumeral": "XXIII", "order": 23, "title": "Passive and Giving/Receiving", "titleJa": "受身と授受表現", "count": 11 },
+    { "slug": "cause-degree", "romanNumeral": "XXIV", "order": 24, "title": "Cause, Manner, and Degree", "titleJa": "原因・様態・程度", "count": 7 }
+  ],
+  "tips": [
+    "Chapters XV-XVI (conjecture and hearsay) form one family: でしょう/だろう, かもしれない, みたいだ, ようだ, はずだ, らしい, そうだ all express degrees of certainty — drill them side by side rather than in isolation.",
+    "んです (XVII) is a register, not a new meaning: it recasts a plain statement as background explanation or invites one. Practice converting a plain-form sentence into its んです form.",
+    "そう/にする/になる (XVIII) split into two axes: そう is appearance-based conjecture (visual judgment), while にする/になる is state change (chosen vs. natural) — don't conflate them.",
+    "Relative clauses (XX) are the single biggest structural jump in N4: any plain-form clause can modify a noun directly, with no relative pronoun. Build long noun phrases from short ones first.",
+    "The giving/receiving + passive block (XXIII) is the densest chapter (11 points) — learn the verb pairs (貸す/借りる, 教える/教わる) before the passive forms; the passive builds directly on the same directionality logic."
+  ]
+}

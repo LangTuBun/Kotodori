@@ -1,6 +1,7 @@
 import countersData from "@/data/n5/counters.json"
 import type { CountersData, CounterCategory, CounterColumn } from "@/types"
 import { useTranslation } from "@/lib/useTranslation"
+import { Watermark } from "@/components/ui/ScreenHeader"
 
 const data = countersData as CountersData
 
@@ -23,7 +24,8 @@ export function Counters() {
     note: t('counters.columns.note'),
   }
   return (
-    <div className="p-8 max-w-6xl">
+    <div className="relative p-8 max-w-6xl overflow-hidden">
+      <Watermark char="数" />
       {/* Header */}
       <div className="border-b-3 border-ink pb-8 mb-8">
         <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">N5 · 助数詞</div>

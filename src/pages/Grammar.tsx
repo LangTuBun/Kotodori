@@ -1,16 +1,22 @@
 import { useEffect, useMemo, useState } from "react"
 import { useSearchParams } from "react-router-dom"
-import grammarData from "@/data/n5/grammar.json"
-import categoriesData from "@/data/n5/grammar-categories.json"
 import verbFormsData from "@/data/n5/verb-forms.json"
-import type { GrammarPoint, GrammarCategory, VerbFormsData } from "@/types"
+import { getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
+import type { GrammarPoint, VerbFormsData } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
 import { useTranslation } from "@/lib/useTranslation"
+import { useSettingsStore, type Level } from "@/store/settings-store"
 
-const grammar = grammarData as GrammarPoint[]
-const categories = categoriesData.categories as GrammarCategory[]
-const tips = categoriesData.tips as string[]
+// requiredVerbForm cross-links only exist for N5 grammar (verb-forms.json is
+// N5-only, see handoff.md) -- the pill filter and its badges are simply
+// inert (never match) on N4/all-scope grammar points rather than hidden.
 const verbForms = (verbFormsData as unknown as VerbFormsData).forms
+
+const LEVELS: { value: Level; label: string }[] = [
+  { value: 'N5', label: 'N5' },
+  { value: 'N4', label: 'N4' },
+  { value: 'all', label: 'N5+N4' },
+]
 
 const ACCENTS = ['yellow', 'blue', 'red', 'green'] as const
 const ACCENT_HEX: Record<string, string> = {
@@ -23,12 +29,25 @@ function accentFor(order: number) {
 export function Grammar() {
   const { t, localize } = useTranslation()
   const [searchParams, setSearchParams] = useSearchParams()
+  const level = useSettingsStore(s => s.level)
+  const setLevel = useSettingsStore(s => s.setLevel)
+  const grammar = useMemo(() => getGrammar(level), [level])
+  const categories = useMemo(() => getGrammarCategories(level), [level])
+  const tips = useMemo(() => getGrammarTips(level), [level])
   const [search, setSearch] = useState("")
   const [cat, setCat] = useState<string | null>(null)
   const [verbForm, setVerbForm] = useState<string | null>(null)
   const [selected, setSelected] = useState<GrammarPoint | null>(null)
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({})
   const [showTips, setShowTips] = useState(false)
+
+  // A stale category/point selection from before a level switch has no
+  // meaning in the new level's category set -- clear it rather than showing
+  // a detail drawer or filter chip for a point that's no longer listed.
+  useEffect(() => {
+    setCat(null)
+    setSelected(null)
+  }, [level])
 
   // Cross-navigation from the Verb Forms tab: /grammar?point=<id> opens
   // that point's detail drawer and makes sure its category is expanded.
@@ -58,7 +77,7 @@ export function Grammar() {
       }
       return true
     })
-  }, [search, cat, verbForm])
+  }, [grammar, search, cat, verbForm])
 
   const byCategory = useMemo(() => {
     const map = new Map<string, GrammarPoint[]>()
@@ -76,12 +95,27 @@ export function Grammar() {
       {/* Main list */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Toolbar */}
-        <div className="p-4 border-b-3 border-ink flex gap-3 bg-surface flex-wrap items-center">
+        <div className="p-4 border-b-3 border-structural flex gap-3 bg-surface flex-wrap items-center">
+          <div role="group" aria-label="JLPT level" className="inline-flex border-2 border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
+            {LEVELS.map(({ value, label }, i) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={level === value}
+                onClick={() => setLevel(value)}
+                className={`px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
+                  i > 0 ? 'border-l-2 border-structural' : ''
+                } ${level === value ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
           <input
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('grammar.searchPlaceholder')}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-ink font-bold text-sm bg-paper focus:outline-none"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-bold text-sm bg-paper focus:outline-none"
           />
           <button
             onClick={() => setShowTips(s => !s)}
@@ -95,10 +129,10 @@ export function Grammar() {
         </div>
 
         {/* Category chips */}
-        <div className="px-4 py-3 border-b-3 border-ink bg-paper flex gap-2 flex-wrap">
+        <div className="px-4 py-3 border-b-3 border-structural bg-paper flex gap-2 flex-wrap">
           <button
             onClick={() => setCat(null)}
-            className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === null ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
           >
             {t('common.all')}
           </button>
@@ -106,7 +140,7 @@ export function Grammar() {
             <button
               key={c.slug}
               onClick={() => setCat(prev => prev === c.slug ? null : c.slug)}
-              className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+              className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
               title={c.title}
             >
               {c.romanNumeral} <span className="opacity-60">({c.count})</span>
@@ -115,7 +149,7 @@ export function Grammar() {
         </div>
 
         {/* Verb-form pill filter */}
-        <div className="px-4 py-3 border-b-3 border-ink bg-paper flex items-center gap-2 flex-wrap">
+        <div className="px-4 py-3 border-b-3 border-structural bg-paper flex items-center gap-2 flex-wrap">
           <span className="text-[10px] font-black uppercase tracking-widest shrink-0 text-muted">
             {t('grammar.filterByVerbForm')}
           </span>
@@ -125,7 +159,7 @@ export function Grammar() {
               <button
                 key={f.id}
                 onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
-                className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
+                className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
                 title={f.title}
               >
                 {f.titleJa}
@@ -140,7 +174,7 @@ export function Grammar() {
         </div>
 
         {showTips && (
-          <div className="px-4 py-3 border-b-3 border-ink bg-yellow/30">
+          <div className="px-4 py-3 border-b-3 border-structural bg-yellow/30">
             <ul className="space-y-1.5">
               {tips.map((t, i) => (
                 <li key={i} className="text-sm flex gap-2">
@@ -168,7 +202,7 @@ export function Grammar() {
                   className="w-full flex items-center gap-3 mb-3 text-left cursor-pointer group"
                 >
                   <span
-                    className="text-xs font-black px-2 py-1 border-2 border-ink rounded-[var(--radius-sm)] shrink-0"
+                    className="text-xs font-black px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] shrink-0"
                     style={{ backgroundColor: ACCENT_HEX[accent] }}
                   >
                     {c.romanNumeral}
@@ -199,11 +233,11 @@ export function Grammar() {
 
       {/* Detail drawer */}
       {selected ? (
-        <div className="w-96 flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-ink">
-          <div className="p-6 border-b-3 border-ink">
+        <div className="w-96 flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-structural">
+          <div className="p-6 border-b-3 border-structural">
             <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-black px-2 py-0.5 border-2 border-ink rounded-[var(--radius-sm)]" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
+              <span className="text-xs font-black px-2 py-0.5 border-2 border-structural rounded-[var(--radius-sm)]" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
                 {categories.find(c => c.slug === selected.category)?.romanNumeral}
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-muted">#{selected.num} · {categories.find(c => c.slug === selected.category)?.title}</span>
@@ -229,7 +263,7 @@ export function Grammar() {
           )}
         </div>
       ) : (
-        <div className="w-80 hidden lg:flex items-center justify-center text-muted flex-shrink-0 border-l-3 border-ink">
+        <div className="w-80 hidden lg:flex items-center justify-center text-muted flex-shrink-0 border-l-3 border-structural">
           <div className="text-center p-8">
             <div className="text-6xl jp mb-4">文</div>
             <div className="font-bold text-sm uppercase tracking-wider">{t('grammar.selectPrompt')}</div>
@@ -249,7 +283,7 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
       <button
         onClick={onClick}
         className={`w-full text-left p-3 border-3 transition-all duration-100 cursor-pointer ${
-          selected ? 'border-ink bg-ink text-paper' : 'border-ink bg-paper hover:shadow-[4px_4px_0px_var(--color-ink)] hover:-translate-x-0.5 hover:-translate-y-0.5'
+          selected ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal)] hover:-translate-x-0.5 hover:-translate-y-0.5'
         }`}
         style={!selected ? { borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] } : undefined}
       >

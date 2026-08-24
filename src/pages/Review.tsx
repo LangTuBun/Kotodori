@@ -1,20 +1,22 @@
 import { useEffect, useMemo, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useVocabStore } from "@/store/vocab-store"
+import { useSettingsStore } from "@/store/settings-store"
 import { Button } from "@/components/ui/Button"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
 import { RATING } from "@/lib/srs"
 import { onkunTone } from "@/lib/kanji"
 import { useTranslation } from "@/lib/useTranslation"
-import vocabData from "@/data/n5/vocabulary.json"
+import { vocabForLevel } from "@/data/vocab"
 import kanjiData from "@/data/n5/kanji.json"
 import type { VocabEntry, KanjiChapter, KanjiGroup, KanjiWord, SRSCard } from "@/types"
 
-const vocab = vocabData as VocabEntry[]
+// Kanji-mode review and the N5 textbook chapter filter are both sourced
+// from n5/kanji.json, which has no N4 counterpart -- kanji mode is
+// N5-scope-only (see mode reset in Review()).
 const kanjiChapters = kanjiData.chapters as KanjiChapter[]
 const CHAPTERS = Array.from({ length: 14 }, (_, i) => i + 1)
-const POS_LIST = Array.from(new Set(vocab.map(v => v.pos))).sort()
 const COUNT_PRESETS = [10, 20, 30, 50] as const
 
 type Mode = 'vocab' | 'kanji'
@@ -43,10 +45,30 @@ function shuffle<T>(arr: T[]): T[] {
 export function Review() {
   const navigate = useNavigate()
   const { getDueCardsFor, getNewCardsFor, getScheduledCardsFor, reviewCard, updateStreak } = useVocabStore()
+  const level = useSettingsStore(s => s.level)
   const { t } = useTranslation()
 
-  const [mode, setMode] = useState<Mode>('vocab')
+  // Kanji-mode review has no N4 data behind it -- force vocab mode outside
+  // N5 scope rather than silently rendering an empty kanji pool.
+  const kanjiModeAvailable = level === 'N5'
+  const [mode, setModeState] = useState<Mode>('vocab')
+  const setMode = (m: Mode) => setModeState(kanjiModeAvailable ? m : 'vocab')
+  useEffect(() => { if (!kanjiModeAvailable) setModeState('vocab') }, [kanjiModeAvailable])
+
+  const vocab = useMemo(() => vocabForLevel(level), [level])
+  const POS_LIST = useMemo(() => Array.from(new Set(vocab.map(v => v.pos))).sort(), [vocab])
+  // N5 entries carry a textbook chapter; N4 entries carry a thematic
+  // category instead (see VocabEntry.category). 'all' scope skips both
+  // axes rather than trying to reconcile two different taxonomies.
+  const chapterFilterAvailable = level === 'N5'
+  const categoryFilterAvailable = level === 'N4'
+  const CATEGORIES = useMemo(
+    () => categoryFilterAvailable ? Array.from(new Set(vocab.map(v => v.category).filter((c): c is string => !!c))) : [],
+    [vocab, categoryFilterAvailable]
+  )
+
   const [chapter, setChapter] = useState<number | null>(null)
+  const [category, setCategory] = useState<string | null>(null)
   const [pos, setPos] = useState<string | null>(null)
   const [countPreset, setCountPreset] = useState<number | 'all'>(20)
 
@@ -57,8 +79,12 @@ export function Review() {
   const [reviewed, setReviewed] = useState(0)
 
   const vocabPool = useMemo(
-    () => vocab.filter(v => (chapter === null || v.chapter === chapter) && (pos === null || v.pos === pos)),
-    [chapter, pos]
+    () => vocab.filter(v =>
+      (!chapterFilterAvailable || chapter === null || v.chapter === chapter) &&
+      (!categoryFilterAvailable || category === null || v.category === category) &&
+      (pos === null || v.pos === pos)
+    ),
+    [vocab, chapter, category, pos, chapterFilterAvailable, categoryFilterAvailable]
   )
 
   const kanjiPool = useMemo(() => {
@@ -146,9 +172,10 @@ export function Review() {
   if (phase === 'setup') {
     return (
       <ReviewSetup
-        mode={mode} setMode={setMode}
-        chapter={chapter} setChapter={setChapter}
-        pos={pos} setPos={setPos}
+        mode={mode} setMode={setMode} kanjiModeAvailable={kanjiModeAvailable}
+        chapter={chapter} setChapter={setChapter} chapterFilterAvailable={chapterFilterAvailable}
+        category={category} setCategory={setCategory} categoryFilterAvailable={categoryFilterAvailable} categories={CATEGORIES}
+        pos={pos} setPos={setPos} posList={POS_LIST}
         countPreset={countPreset} setCountPreset={setCountPreset}
         poolSize={poolSize} dueCount={dueCount} effectiveCount={effectiveCount}
         onStart={startSession}
@@ -190,7 +217,7 @@ export function Review() {
         >
           ×
         </button>
-        <div className="flex-1 h-4 bg-surface border-3 border-ink overflow-hidden">
+        <div className="flex-1 h-4 bg-surface border-3 border-structural overflow-hidden">
           <div className="h-full bg-yellow transition-all duration-300" style={{ width: `${progress}%` }} />
         </div>
         <span className="font-black text-sm whitespace-nowrap">{idx + 1} / {queue.length}</span>
@@ -208,12 +235,17 @@ export function Review() {
 }
 
 function ReviewSetup({
-  mode, setMode, chapter, setChapter, pos, setPos, countPreset, setCountPreset,
+  mode, setMode, kanjiModeAvailable,
+  chapter, setChapter, chapterFilterAvailable,
+  category, setCategory, categoryFilterAvailable, categories,
+  pos, setPos, posList,
+  countPreset, setCountPreset,
   poolSize, dueCount, effectiveCount, onStart,
 }: {
-  mode: Mode; setMode: (m: Mode) => void
-  chapter: number | null; setChapter: (c: number | null) => void
-  pos: string | null; setPos: (p: string | null) => void
+  mode: Mode; setMode: (m: Mode) => void; kanjiModeAvailable: boolean
+  chapter: number | null; setChapter: (c: number | null) => void; chapterFilterAvailable: boolean
+  category: string | null; setCategory: (c: string | null) => void; categoryFilterAvailable: boolean; categories: string[]
+  pos: string | null; setPos: (p: string | null) => void; posList: string[]
   countPreset: number | 'all'; setCountPreset: (c: number | 'all') => void
   poolSize: number; dueCount: number; effectiveCount: number
   onStart: () => void
@@ -226,7 +258,7 @@ function ReviewSetup({
         <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">{t('review.chooseScope')}</p>
       </div>
 
-      <div className="border-3 border-ink shadow-[6px_6px_0px_var(--color-ink)] bg-paper overflow-hidden">
+      <div className="border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper overflow-hidden">
         {/* Mode tabs */}
         <div className="grid grid-cols-2 border-b-3 border-ink">
           <button
@@ -236,32 +268,48 @@ function ReviewSetup({
             {t('review.vocabTab')}
           </button>
           <button
-            onClick={() => setMode('kanji')}
-            className={`py-4 font-black text-sm uppercase tracking-wider cursor-pointer transition-all ${mode === 'kanji' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            onClick={() => kanjiModeAvailable && setMode('kanji')}
+            disabled={!kanjiModeAvailable}
+            title={kanjiModeAvailable ? undefined : t('review.kanjiModeN5Only')}
+            className={`py-4 font-black text-sm uppercase tracking-wider transition-all ${mode === 'kanji' ? 'bg-ink text-paper' : kanjiModeAvailable ? 'hover:bg-surface cursor-pointer' : 'opacity-40 cursor-not-allowed'}`}
           >
             {t('review.kanjiTab')} <span className="opacity-60 normal-case font-bold">(漢字)</span>
           </button>
         </div>
 
         <div className="p-6 space-y-6">
-          {/* Chapter filter */}
-          <FilterSection label={t('review.chapterLabel')}>
-            <ChipRow>
-              <Chip active={chapter === null} onClick={() => setChapter(null)}>{t('common.all')}</Chip>
-              {CHAPTERS.map(c => (
-                <Chip key={c} active={chapter === c} onClick={() => setChapter(chapter === c ? null : c)}>
-                  {t('common.chapterN', { n: c })}
-                </Chip>
-              ))}
-            </ChipRow>
-          </FilterSection>
+          {/* Chapter filter (N5) / Category filter (N4) */}
+          {chapterFilterAvailable && (
+            <FilterSection label={t('review.chapterLabel')}>
+              <ChipRow>
+                <Chip active={chapter === null} onClick={() => setChapter(null)}>{t('common.all')}</Chip>
+                {CHAPTERS.map(c => (
+                  <Chip key={c} active={chapter === c} onClick={() => setChapter(chapter === c ? null : c)}>
+                    {t('common.chapterN', { n: c })}
+                  </Chip>
+                ))}
+              </ChipRow>
+            </FilterSection>
+          )}
+          {categoryFilterAvailable && (
+            <FilterSection label={t('review.categoryLabel')}>
+              <ChipRow>
+                <Chip active={category === null} onClick={() => setCategory(null)}>{t('common.all')}</Chip>
+                {categories.map(c => (
+                  <Chip key={c} active={category === c} onClick={() => setCategory(category === c ? null : c)}>
+                    {c}
+                  </Chip>
+                ))}
+              </ChipRow>
+            </FilterSection>
+          )}
 
           {/* Category filter (vocab only) */}
           {mode === 'vocab' && (
             <FilterSection label={t('review.posLabel')}>
               <ChipRow>
                 <Chip active={pos === null} onClick={() => setPos(null)}>{t('common.all')}</Chip>
-                {POS_LIST.map(p => (
+                {posList.map(p => (
                   <Chip key={p} active={pos === p} onClick={() => setPos(pos === p ? null : p)}>
                     {t(`pos.${p}`)}
                   </Chip>
@@ -320,7 +368,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1.5 border-2 border-ink rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+      className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
     >
       {children}
     </button>
@@ -364,8 +412,11 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
             <Furigana kanji={entry.kanji} kana={entry.kana} />
           </div>
           <div className="text-2xl font-bold mb-2">{localize(entry.meanings)}</div>
-          {entry.chapter > 0 && (
+          {entry.chapter !== undefined && entry.chapter > 0 && (
             <div className="text-xs text-muted font-bold uppercase">{t('common.chapterN', { n: entry.chapter })}</div>
+          )}
+          {entry.category && (
+            <div className="text-xs text-muted font-bold uppercase">{entry.category}</div>
           )}
           {entry.examples.length > 0 && (
             <div className="mt-6 text-left w-full border-t-3 border-ink pt-4">
@@ -381,7 +432,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
 
 function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipped: boolean; onFlip: () => void }) {
   const { word, group, chapterNum } = card
-  const { t } = useTranslation()
+  const { t, localize } = useTranslation()
   // Real example sentences don't exist yet for individual kanji words (or
   // for vocab entries in general — vocabulary.json's examples[] is empty
   // app-wide), so context comes from real sibling words in the same
@@ -419,7 +470,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
           <div className="text-5xl font-black jp leading-[2] mb-4">
             <Furigana kanji={word.kanji} kana={word.kana} />
           </div>
-          <div className="text-2xl font-bold mb-2">{word.meaning}</div>
+          <div className="text-2xl font-bold mb-2">{localize(word.meaning)}</div>
           <div className="text-xs text-muted font-bold uppercase tracking-wider">
             {t('review.sameGroup')} <span className="jp text-sm text-ink">{group.anchor}</span>
           </div>
@@ -434,7 +485,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
                       <Furigana kanji={w.kanji} kana={w.kana} />
                     </span>
                     <span className="flex-1 min-w-0 leading-snug">
-                      <span>{w.meaning}</span>
+                      <span>{localize(w.meaning)}</span>
                       <span className="text-muted text-xs ml-1.5">({w.hanviet})</span>
                     </span>
                     <span className="text-[10px] font-bold uppercase tracking-wider shrink-0 pt-0.5" style={{ color: onkunTone(w.onkun) }}>

@@ -20,7 +20,7 @@ interface KanjiGroupModalProps {
 }
 
 export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchorClick, strokeDrawerOpen }: KanjiGroupModalProps) {
-  const { t } = useTranslation()
+  const { t, localize } = useTranslation()
   const total = items.length
   const current = items[index]
   const hasPrev = index > 0
@@ -105,7 +105,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
                     </span>
                   )}
                   {group.meaning && (
-                    <div className="text-sm text-muted mt-2">{group.meaning}</div>
+                    <div className="text-sm text-muted mt-2">{localize(group.meaning)}</div>
                   )}
                   <div className="text-[10px] font-bold uppercase tracking-wider text-muted mt-1">
                     {t('common.chapterN', { n: chapterNum })}
@@ -166,7 +166,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
                     </span>
                   </div>
                   <div className="text-sm text-muted leading-snug">
-                    {w.meaning} <span className="text-xs ml-1">({w.hanviet})</span>
+                    {localize(w.meaning)} <span className="text-xs ml-1">({w.hanviet})</span>
                   </div>
                 </div>
               ))}

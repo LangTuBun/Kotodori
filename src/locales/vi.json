@@ -37,7 +37,8 @@
     "verbForms": "Chia động từ",
     "kanji": "Kanji",
     "counters": "Đếm số",
-    "homophones": "Từ đồng âm"
+    "homophones": "Từ đồng âm",
+    "settings": "Cài đặt"
   },
   "sidebar": {
     "dayStreak": "Chuỗi ngày",
@@ -57,7 +58,7 @@
     "learnNew": "Học từ mới",
     "grammarPoints": "Mẫu ngữ pháp",
     "studyGrammar": "Học ngữ pháp",
-    "progress": "Tiến độ N5",
+    "progress": "Tiến độ {level}",
     "masteredCount": "{mastered} / {total} đã thuộc"
   },
   "review": {
@@ -65,7 +66,9 @@
     "chooseScope": "Chọn phạm vi ôn tập",
     "vocabTab": "Từ vựng",
     "kanjiTab": "Kanji",
+    "kanjiModeN5Only": "Chế độ Kanji chỉ áp dụng cho N5",
     "chapterLabel": "Chương",
+    "categoryLabel": "Chủ đề",
     "posLabel": "Loại từ",
     "countLabel": "Số lượng",
     "wordsSuffix": "từ",
@@ -102,6 +105,7 @@
   "vocab": {
     "searchPlaceholder": "Tìm kanji, kana, nghĩa...",
     "allChapters": "Tất cả chương",
+    "allCategories": "Tất cả chủ đề",
     "allPos": "Tất cả loại từ",
     "unknownChapter": "Chưa rõ chương",
     "prevWord": "Từ trước (←)",

@@ -4,20 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOTODORI</title>
+    <title>TORI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <script>
-      try {
-        var saved = JSON.parse(localStorage.getItem('kotodori-settings') || 'null')
-        var theme = saved && saved.state && saved.state.theme
-        document.documentElement.dataset.theme = theme === 'neobrutalism' ? 'neobrutalism' : 'brutalism'
-      } catch (e) {
-        document.documentElement.dataset.theme = 'brutalism'
-      }
+      (function () {
+        try {
+          var h = document.documentElement;
+
+          // Migrate the old Kotodori settings blob forward, once, before
+          // anything reads 'tori-settings'.
+          var oldSettings = localStorage.getItem('kotodori-settings');
+          if (oldSettings && !localStorage.getItem('tori-settings')) {
+            localStorage.setItem('tori-settings', oldSettings);
+          }
+
+          var saved = JSON.parse(localStorage.getItem('tori-settings') || 'null');
+          var state = saved && saved.state;
+
+          // Paper theme
+          var paper = state && state.paper;
+          if (paper && paper !== 'washi') h.classList.add('theme-' + paper);
+
+          // Density
+          var density = state && state.density;
+          if (density && density !== 'normal') h.classList.add('density-' + density);
+
+          // Typeface
+          if (state && state.typeSans) h.classList.add('type-sans');
+
+          // Structural theme (RAW / NEO)
+          var structural = state && state.theme;
+          h.dataset.theme = structural === 'neobrutalism' ? 'neobrutalism' : 'brutalism';
+        } catch (e) {
+          document.documentElement.dataset.theme = 'brutalism';
+        }
+      })();
     </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

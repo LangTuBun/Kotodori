@@ -7,7 +7,7 @@
 // derive; callers should treat a null result, or a word containing a
 // known multi-reading character, as needing manual review rather than
 // trusting the output blindly.
-const KANJI_RE = /[一-鿿㐀-䶿々]/
+export const KANJI_RE = /[一-鿿㐀-䶿々]/
 
 export function katakanaToHiragana(s) {
   return s.replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60))
@@ -32,7 +32,7 @@ const HANDAKU_MAP = { は: "ぱ", ひ: "ぴ", ふ: "ぷ", へ: "ぺ", ほ: "ぽ"
 // -- which one a given compound uses isn't predictable from the reading
 // alone (電報 でんぽう vs 番犬 ばんけん), so both must be tried, not just
 // whichever map happens to be checked first.
-function voicedVariants(s) {
+export function voicedVariants(s) {
   if (!s) return [s]
   const first = s[0]
   const rest = s.slice(1)
@@ -45,7 +45,7 @@ function voicedVariants(s) {
 // Does `remaining` (the unconsumed suffix of the word's kana) plausibly start
 // with `candidateReading`, tolerating rendaku/han-dakuten on the first mora
 // and a trailing geminate (small tsu) the candidate reading doesn't spell?
-function matchesPrefix(remaining, candidateReading) {
+export function matchesPrefix(remaining, candidateReading) {
   const core = coreReading(candidateReading)
   if (!core) return 0
   const variants = voicedVariants(core)

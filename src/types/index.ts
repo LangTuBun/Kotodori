@@ -7,7 +7,14 @@
   verbGroup: number | null
   adjType: string | null
   jlptLevel: string
-  chapter: number
+  // N5 words carry a textbook `chapter` (1-15, source: kanjis.tex chapters
+  // + the N5-supplement chapter). N4's source is a thematic word list, not
+  // a chaptered textbook -- those entries carry `category` instead and
+  // omit `chapter` until a real chaptered N4 source shows up. Never treat
+  // a missing chapter as chapter 0 -- 0 is a corruption signal in this
+  // codebase's history, not a valid "no chapter" value.
+  chapter?: number
+  category?: string
   tags: string[]
   homophones: string[]
   relatedWords: string[]
@@ -119,7 +126,7 @@ export interface KanjiWord {
   kanji: string
   kana: string
   hanviet: string
-  meaning: string
+  meaning: { vi: string; en: string }
   onkun: string
   curated?: boolean
 }
@@ -129,7 +136,7 @@ export interface KanjiGroup {
   anchor: string
   kana: string | null
   hanviet: string | null
-  meaning: string | null
+  meaning: { vi: string; en: string } | null
   onkun: string | null
   onyomi: string[]
   kunyomi: string[]

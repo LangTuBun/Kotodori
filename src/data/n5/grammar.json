@@ -5,7 +5,7 @@
     "pattern": "(N1は) N2です",
     "meaning": {
       "vi": "N1 là N2",
-      "en": ""
+      "en": "N1 is N2"
     },
     "category": "noun-copula",
     "jlptLevel": "N5",
@@ -21,7 +21,7 @@
         "ja": "リンさんは学生です。",
         "kana": "",
         "vi": "Bạn Linh là sinh viên.",
-        "en": "",
+        "en": "Linh is a student.",
         "jaRuby": "リンさんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -36,7 +36,7 @@
     "pattern": "(N1は) N2ですか",
     "meaning": {
       "vi": "N1 có phải là N2 không?",
-      "en": ""
+      "en": "Is N1 N2?"
     },
     "category": "noun-copula",
     "jlptLevel": "N5",
@@ -52,7 +52,7 @@
         "ja": "ズンさんは教師ですか。",
         "kana": "",
         "vi": "Anh Dũng là giáo viên đúng không?",
-        "en": "",
+        "en": "Is Dung a teacher?",
         "jaRuby": "ズンさんは<ruby>教師<rp>(</rp><rt>きょうし</rt><rp>)</rp></ruby>ですか。"
       }
     ],
@@ -67,7 +67,7 @@
     "pattern": "Nも",
     "meaning": {
       "vi": "N cũng",
-      "en": ""
+      "en": "N too, N also"
     },
     "category": "noun-copula",
     "jlptLevel": "N5",
@@ -83,7 +83,7 @@
         "ja": "私はベトナム人です。マイさんもベトナム人です。",
         "kana": "",
         "vi": "Tôi là người Việt. Mai cũng là người Việt.",
-        "en": "",
+        "en": "I'm Vietnamese. Mai is Vietnamese too.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。マイさんもベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -98,7 +98,7 @@
     "pattern": "N1は N2じゃないです/じゃありません/ではありません",
     "meaning": {
       "vi": "N1 không phải N2",
-      "en": ""
+      "en": "N1 is not N2"
     },
     "category": "noun-copula",
     "jlptLevel": "N5",
@@ -114,7 +114,7 @@
         "ja": "リンさんは中国人じゃないです。",
         "kana": "",
         "vi": "Bạn Linh không phải là người Trung Quốc.",
-        "en": "",
+        "en": "Linh is not Chinese.",
         "jaRuby": "リンさんは<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>じゃないです。"
       }
     ],
@@ -129,7 +129,7 @@
     "pattern": "(N1は) N2でした",
     "meaning": {
       "vi": "N1 (đã) là N2 (quá khứ)",
-      "en": ""
+      "en": "N1 was N2 (past)"
     },
     "category": "noun-copula",
     "jlptLevel": "N5",
@@ -145,7 +145,7 @@
         "ja": "昨日は晴れでした。",
         "kana": "",
         "vi": "Hôm qua trời nắng.",
-        "en": "",
+        "en": "It was sunny yesterday.",
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>晴<rp>(</rp><rt>は</rt><rp>)</rp></ruby>れでした。"
       }
     ],
@@ -160,7 +160,7 @@
     "pattern": "(N1は) N2じゃなかったです/じゃありませんでした",
     "meaning": {
       "vi": "N1 (đã) không phải N2",
-      "en": ""
+      "en": "N1 was not N2 (past)"
     },
     "category": "noun-copula",
     "jlptLevel": "N5",
@@ -176,7 +176,7 @@
         "ja": "昨日は雨じゃなかったですよ。",
         "kana": "",
         "vi": "Hôm qua trời không mưa đâu.",
-        "en": "",
+        "en": "It wasn't rainy yesterday.",
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>じゃなかったですよ。"
       }
     ],
@@ -191,7 +191,7 @@
     "pattern": "(N1は) N2でN3です",
     "meaning": {
       "vi": "N1 là N2 và N3 (liệt kê)",
-      "en": ""
+      "en": "N1 is N2 and N3 (listing)"
     },
     "category": "noun-copula",
     "jlptLevel": "N5",
@@ -207,7 +207,7 @@
         "ja": "リーさんは日本語学校の学生で、中国人です。",
         "kana": "",
         "vi": "Bạn Lý là học sinh trường Nhật ngữ và là người Trung Quốc.",
-        "en": "",
+        "en": "Ly is a student at a Japanese language school, and is Chinese.",
         "jaRuby": "リーさんは<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>で、<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -222,7 +222,7 @@
     "pattern": "N(は)いくらですか",
     "meaning": {
       "vi": "N bao nhiêu tiền?",
-      "en": ""
+      "en": "How much is N?"
     },
     "category": "no-questions",
     "jlptLevel": "N5",
@@ -238,7 +238,7 @@
         "ja": "この辞書はいくらですか。",
         "kana": "",
         "vi": "Cuốn từ điển này giá bao nhiêu?",
-        "en": "",
+        "en": "How much is this dictionary?",
         "jaRuby": "この<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>はいくらですか。"
       }
     ],
@@ -253,7 +253,7 @@
     "pattern": "N1は何ですか",
     "meaning": {
       "vi": "N1 là cái gì?",
-      "en": ""
+      "en": "What is N1?"
     },
     "category": "no-questions",
     "jlptLevel": "N5",
@@ -269,7 +269,7 @@
         "ja": "お仕事は何ですか。",
         "kana": "",
         "vi": "Công việc của bạn là gì?",
-        "en": "",
+        "en": "What's your job?",
         "jaRuby": "お<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか。"
       }
     ],
@@ -284,7 +284,7 @@
     "pattern": "誰の N2ですか",
     "meaning": {
       "vi": "N2 của ai?",
-      "en": ""
+      "en": "Whose N2 is it?"
     },
     "category": "no-questions",
     "jlptLevel": "N5",
@@ -300,7 +300,7 @@
         "ja": "これ、誰の傘ですか。",
         "kana": "",
         "vi": "Đây là ô của ai vậy?",
-        "en": "",
+        "en": "Whose umbrella is this?",
         "jaRuby": "これ、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>ですか。"
       }
     ],
@@ -315,7 +315,7 @@
     "pattern": "何の N2ですか",
     "meaning": {
       "vi": "N2 về cái gì?",
-      "en": ""
+      "en": "N2 about what?"
     },
     "category": "no-questions",
     "jlptLevel": "N5",
@@ -331,7 +331,7 @@
         "ja": "それは何の辞書ですか。",
         "kana": "",
         "vi": "Đó là từ điển gì vậy?",
-        "en": "",
+        "en": "What is that dictionary about?",
         "jaRuby": "それは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>ですか。"
       }
     ],
@@ -346,7 +346,7 @@
     "pattern": "どこの N2ですか",
     "meaning": {
       "vi": "N2 xuất xứ ở đâu?",
-      "en": ""
+      "en": "Where is N2 from?"
     },
     "category": "no-questions",
     "jlptLevel": "N5",
@@ -362,7 +362,7 @@
         "ja": "すしはどこの料理ですか。",
         "kana": "",
         "vi": "Sushi là món ăn ở đâu?",
-        "en": "",
+        "en": "Where is sushi from?",
         "jaRuby": "すしはどこの<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>ですか。"
       }
     ],
@@ -377,7 +377,7 @@
     "pattern": "何の N2ですか",
     "meaning": {
       "vi": "N2 làm từ gì?",
-      "en": ""
+      "en": "N2 made of what?"
     },
     "category": "no-questions",
     "jlptLevel": "N5",
@@ -393,7 +393,7 @@
         "ja": "これはぶどうとチョコレートのお菓子です。",
         "kana": "",
         "vi": "Đây là kẹo làm từ nho và sô cô la.",
-        "en": "",
+        "en": "This is candy made of grapes and chocolate.",
         "jaRuby": "これはぶどうとチョコレートのお<ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -408,7 +408,7 @@
     "pattern": "N1の N2",
     "meaning": {
       "vi": "N2 thuộc N1",
-      "en": ""
+      "en": "N2 belonging to N1"
     },
     "category": "no-questions",
     "jlptLevel": "N5",
@@ -424,7 +424,7 @@
         "ja": "リンさんはABC日本語学校の学生です。",
         "kana": "",
         "vi": "Bạn Linh là học viên trường Nhật ngữ ABC.",
-        "en": "",
+        "en": "Linh is a student at ABC Japanese School.",
         "jaRuby": "リンさんはABC<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -439,7 +439,7 @@
     "pattern": "~ね",
     "meaning": {
       "vi": "~ nhỉ? (xác nhận lại)",
-      "en": ""
+      "en": "~, right? (confirming)"
     },
     "category": "sentence-particles",
     "jlptLevel": "N5",
@@ -455,7 +455,7 @@
         "ja": "8時からですね。",
         "kana": "",
         "vi": "Từ 8 giờ nhỉ.",
-        "en": "",
+        "en": "It's from 8 o'clock, right?",
         "jaRuby": "8<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>からですね。"
       }
     ],
@@ -470,7 +470,7 @@
     "pattern": "~よ",
     "meaning": {
       "vi": "~ đấy (thông báo điều mới)",
-      "en": ""
+      "en": "~, you know (new information)"
     },
     "category": "sentence-particles",
     "jlptLevel": "N5",
@@ -486,7 +486,7 @@
         "ja": "今日、図書館は休みですよ。",
         "kana": "",
         "vi": "Hôm nay thư viện đóng cửa đấy.",
-        "en": "",
+        "en": "The library is closed today, you know.",
         "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みですよ。"
       }
     ],
@@ -501,7 +501,7 @@
     "pattern": "~よね",
     "meaning": {
       "vi": "~ đúng không nhỉ?",
-      "en": ""
+      "en": "~, right? (double-checking)"
     },
     "category": "sentence-particles",
     "jlptLevel": "N5",
@@ -517,7 +517,7 @@
         "ja": "明日は15日ですよね。",
         "kana": "",
         "vi": "Ngày mai là ngày 15 nhỉ?",
-        "en": "",
+        "en": "Tomorrow is the 15th, right?",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は15<ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby>ですよね。"
       }
     ],
@@ -532,7 +532,7 @@
     "pattern": "Nは何時から何時までですか",
     "meaning": {
       "vi": "N từ mấy giờ đến mấy giờ?",
-      "en": ""
+      "en": "What time does N run from/to?"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -548,7 +548,7 @@
         "ja": "病院は何時から何時までですか。",
         "kana": "",
         "vi": "Bệnh viện làm việc từ mấy giờ đến mấy giờ?",
-        "en": "",
+        "en": "What time is the hospital open from and until?",
         "jaRuby": "<ruby>病院<rp>(</rp><rt>びょういん</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか。"
       }
     ],
@@ -563,7 +563,7 @@
     "pattern": "(Nは)Aいです",
     "meaning": {
       "vi": "N có tính chất A (い)",
-      "en": ""
+      "en": "N has quality A (i-adjective)"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -579,7 +579,7 @@
         "ja": "この図書館は広いです。",
         "kana": "",
         "vi": "Thư viện này rộng.",
-        "en": "",
+        "en": "This library is spacious.",
         "jaRuby": "この<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>いです。"
       }
     ],
@@ -594,7 +594,7 @@
     "pattern": "(Nは)Aくないです",
     "meaning": {
       "vi": "N không có tính chất A",
-      "en": ""
+      "en": "N does not have quality A"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -610,7 +610,7 @@
         "ja": "明日は忙しくないです。",
         "kana": "",
         "vi": "Ngày mai tôi không bận.",
-        "en": "",
+        "en": "I'm not busy tomorrow.",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しくないです。"
       }
     ],
@@ -625,7 +625,7 @@
     "pattern": "(Nは)Aなです",
     "meaning": {
       "vi": "N có tính chất A (な)",
-      "en": ""
+      "en": "N has quality A (na-adjective)"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -641,7 +641,7 @@
         "ja": "私の町はまあまあ便利です。",
         "kana": "",
         "vi": "Thành phố này khá tiện lợi.",
-        "en": "",
+        "en": "My town is fairly convenient.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>はまあまあ<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -656,7 +656,7 @@
     "pattern": "(Nは)Aなじゃないです/じゃありません",
     "meaning": {
       "vi": "N không có tính chất A",
-      "en": ""
+      "en": "N does not have quality A"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -672,7 +672,7 @@
         "ja": "私の部屋はあまりきれいじゃありません。",
         "kana": "",
         "vi": "Phòng tôi không đẹp lắm.",
-        "en": "",
+        "en": "My room isn't very clean.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>はあまりきれいじゃありません。"
       }
     ],
@@ -687,7 +687,7 @@
     "pattern": "(Nは)Aい/Aなですか",
     "meaning": {
       "vi": "N có A không?",
-      "en": ""
+      "en": "Is N A?"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -703,7 +703,7 @@
         "ja": "日本は今、寒いですか。",
         "kana": "",
         "vi": "Nhật Bản bây giờ có lạnh không?",
-        "en": "",
+        "en": "Is Japan cold right now?",
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>は<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>寒<rp>(</rp><rt>さむ</rt><rp>)</rp></ruby>いですか。"
       }
     ],
@@ -718,7 +718,7 @@
     "pattern": "(Nは)Aいくて+Aい/Aなです",
     "meaning": {
       "vi": "Nối tính từ い",
-      "en": ""
+      "en": "Linking i-adjectives"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -734,7 +734,7 @@
         "ja": "この本は難しくてあまり面白くないです。",
         "kana": "",
         "vi": "Cuốn sách này khó và không thú vị lắm.",
-        "en": "",
+        "en": "This book is difficult and not very interesting.",
         "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくてあまり<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>くないです。"
       }
     ],
@@ -749,7 +749,7 @@
     "pattern": "(Nは)Aなで+Aな/Aいです",
     "meaning": {
       "vi": "Nối tính từ な",
-      "en": ""
+      "en": "Linking na-adjectives"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -765,7 +765,7 @@
         "ja": "日本語の授業はとてもにぎやかで楽しいです。",
         "kana": "",
         "vi": "Giờ học tiếng Nhật rất sôi động và vui vẻ.",
-        "en": "",
+        "en": "Japanese class is very lively and fun.",
         "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>の<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>はとてもにぎやかで<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しいです。"
       }
     ],
@@ -780,7 +780,7 @@
     "pattern": "(Nは)どうですか",
     "meaning": {
       "vi": "N thì thế nào?",
-      "en": ""
+      "en": "How is N?"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -796,7 +796,7 @@
         "ja": "東京の生活はどうですか。",
         "kana": "",
         "vi": "Cuộc sống ở Tokyo thế nào?",
-        "en": "",
+        "en": "How is life in Tokyo?",
         "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>の<ruby>生活<rp>(</rp><rt>せいかつ</rt><rp>)</rp></ruby>はどうですか。"
       }
     ],
@@ -811,7 +811,7 @@
     "pattern": "(Nは)Aいかったです/Aいくなかったです",
     "meaning": {
       "vi": "Tính từ い quá khứ",
-      "en": ""
+      "en": "i-adjective, past tense"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -827,7 +827,7 @@
         "ja": "先週は忙しかったです。",
         "kana": "",
         "vi": "Tuần trước thì bận rộn.",
-        "en": "",
+        "en": "Last week was busy.",
         "jaRuby": "<ruby>先週<rp>(</rp><rt>せんしゅう</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったです。"
       }
     ],
@@ -842,7 +842,7 @@
     "pattern": "(Nは)Aなでした/Aなじゃなかったです",
     "meaning": {
       "vi": "Tính từ な quá khứ",
-      "en": ""
+      "en": "na-adjective, past tense"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -858,7 +858,7 @@
         "ja": "昔、父はとてもハンサムでした。",
         "kana": "",
         "vi": "Ngày xưa bố tôi rất đẹp trai.",
-        "en": "",
+        "en": "My father used to be very handsome.",
         "jaRuby": "<ruby>昔<rp>(</rp><rt>むかし</rt><rp>)</rp></ruby>、<ruby>父<rp>(</rp><rt>ちち</rt><rp>)</rp></ruby>はとてもハンサムでした。"
       }
     ],
@@ -873,7 +873,7 @@
     "pattern": "どんなNですか？→ AいN/AなN",
     "meaning": {
       "vi": "N như thế nào? -> N (A)",
-      "en": ""
+      "en": "What kind of N is it? -> A N"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -889,7 +889,7 @@
         "ja": "小さくてかわいいお店です。",
         "kana": "",
         "vi": "Nó là cửa hàng nhỏ và đáng yêu.",
-        "en": "",
+        "en": "It's a small, cute shop.",
         "jaRuby": "<ruby>小<rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さくてかわいいお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -904,7 +904,7 @@
     "pattern": "~が~",
     "meaning": {
       "vi": "~ nhưng ~",
-      "en": ""
+      "en": "~, but ~"
     },
     "category": "adjectives",
     "jlptLevel": "N5",
@@ -920,7 +920,7 @@
         "ja": "この店はとても安くておいしいですが、あまり有名じゃありません。",
         "kana": "",
         "vi": "Quán này rất rẻ và ngon nhưng không nổi tiếng lắm.",
-        "en": "",
+        "en": "This shop is very cheap and delicious, but not very famous.",
         "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はとても<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>くておいしいですが、あまり<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>じゃありません。"
       }
     ],
@@ -935,7 +935,7 @@
     "pattern": "N1で 疑問詞 が一番Aですか",
     "meaning": {
       "vi": "Trong N1, ai/gì A nhất?",
-      "en": ""
+      "en": "Among N1, who/what is the most A?"
     },
     "category": "comparison",
     "jlptLevel": "N5",
@@ -951,7 +951,7 @@
         "ja": "このクラスで誰が一番背が高いですか。",
         "kana": "",
         "vi": "Trong lớp này ai cao nhất?",
-        "en": "",
+        "en": "Who is the tallest in this class?",
         "jaRuby": "このクラスで<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>が<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby><ruby>背<rp>(</rp><rt>せ</rt><rp>)</rp></ruby>が<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いですか。"
       }
     ],
@@ -966,7 +966,7 @@
     "pattern": "N1とN2(と)、どっち/どちらがAですか",
     "meaning": {
       "vi": "N1 và N2 cái nào A hơn?",
-      "en": ""
+      "en": "Which is more A, N1 or N2?"
     },
     "category": "comparison",
     "jlptLevel": "N5",
@@ -982,7 +982,7 @@
         "ja": "コーヒーと紅茶と、どちらが好きですか。",
         "kana": "",
         "vi": "Cà phê và trà, bạn thích cái nào hơn?",
-        "en": "",
+        "en": "Which do you like more, coffee or tea?",
         "jaRuby": "コーヒーと<ruby>紅茶<rp>(</rp><rt>こうちゃ</rt><rp>)</rp></ruby>と、どちらが<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きですか。"
       }
     ],
@@ -997,7 +997,7 @@
     "pattern": "N1(は) N2よりAです",
     "meaning": {
       "vi": "N1 A hơn N2",
-      "en": ""
+      "en": "N1 is more A than N2"
     },
     "category": "comparison",
     "jlptLevel": "N5",
@@ -1013,7 +1013,7 @@
         "ja": "東京は大阪より人が多いです。",
         "kana": "",
         "vi": "Tokyo thì đông người hơn Osaka.",
-        "en": "",
+        "en": "Tokyo has more people than Osaka.",
         "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>は<ruby>大阪<rp>(</rp><rt>おおさか</rt><rp>)</rp></ruby>より<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>いです。"
       }
     ],
@@ -1028,7 +1028,7 @@
     "pattern": "Thể thường của N/A (だ thay です)",
     "meaning": {
       "vi": "Dạng thân mật",
-      "en": ""
+      "en": "Plain form of N/adjective (だ instead of です)"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1044,7 +1044,7 @@
         "ja": "明日は休みだ。",
         "kana": "",
         "vi": "Ngày mai nghỉ.",
-        "en": "",
+        "en": "Tomorrow is a day off.",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みだ。"
       }
     ],
@@ -1059,7 +1059,7 @@
     "pattern": "(N1は) từ nghi vấn/N2/A?",
     "meaning": {
       "vi": "Nghi vấn thể thường",
-      "en": ""
+      "en": "Plain-form question"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1075,7 +1075,7 @@
         "ja": "1人暮らしは大変？",
         "kana": "",
         "vi": "Sống một mình thì vất vả đúng không?",
-        "en": "",
+        "en": "Is living alone hard?",
         "jaRuby": "1<ruby>人<rp>(</rp><rt>にん</rt><rp>)</rp></ruby><ruby>暮<rp>(</rp><rt>く</rt><rp>)</rp></ruby>らしは<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>？"
       }
     ],
@@ -1090,7 +1090,7 @@
     "pattern": "(N1は) N2/A(だよ/だね/だよね)",
     "meaning": {
       "vi": "Khẳng định thể thường",
-      "en": ""
+      "en": "Plain-form affirmation"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1106,7 +1106,7 @@
         "ja": "うん。ベトナムのコーヒーだよ。",
         "kana": "",
         "vi": "Đúng vậy. Cà phê Việt Nam đấy.",
-        "en": "",
+        "en": "Yeah. It's Vietnamese coffee.",
         "jaRuby": "うん。ベトナムのコーヒーだよ。"
       }
     ],
@@ -1121,7 +1121,7 @@
     "pattern": "(N1は) N2/Aなじゃない？",
     "meaning": {
       "vi": "Chẳng phải ~ sao?",
-      "en": ""
+      "en": "Isn't it ~?"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1137,7 +1137,7 @@
         "ja": "これ、ベトナム語じゃない？",
         "kana": "",
         "vi": "Đây chẳng phải là tiếng Việt hay sao?",
-        "en": "",
+        "en": "Isn't this Vietnamese?",
         "jaRuby": "これ、ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>じゃない？"
       }
     ],
@@ -1152,7 +1152,7 @@
     "pattern": "(N1は) N2/Aなじゃない",
     "meaning": {
       "vi": "N1 không phải/không A",
-      "en": ""
+      "en": "N1 is not/isn't A"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1168,7 +1168,7 @@
         "ja": "ううん、ベトナム語じゃないよ。",
         "kana": "",
         "vi": "Không, không phải tiếng Việt đâu.",
-        "en": "",
+        "en": "No, it's not Vietnamese.",
         "jaRuby": "ううん、ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>じゃないよ。"
       }
     ],
@@ -1183,7 +1183,7 @@
     "pattern": "(N1は) N2/Aだった？/Aなだった",
     "meaning": {
       "vi": "Nghi vấn/khẳng định thể thường quá khứ",
-      "en": ""
+      "en": "Plain-form past question/statement"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1199,7 +1199,7 @@
         "ja": "ダナンはどんな町だった？",
         "kana": "",
         "vi": "Đà Nẵng là thành phố như thế nào?",
-        "en": "",
+        "en": "What kind of city was Da Nang?",
         "jaRuby": "ダナンはどんな<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>だった？"
       }
     ],
@@ -1214,7 +1214,7 @@
     "pattern": "N1は N2/Aなじゃなかった",
     "meaning": {
       "vi": "Phủ định thể thường quá khứ",
-      "en": ""
+      "en": "Plain-form past negative"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1230,7 +1230,7 @@
         "ja": "大変じゃなかったよ。楽しかったよ。",
         "kana": "",
         "vi": "Không vất vả đâu. Rất vui.",
-        "en": "",
+        "en": "It wasn't hard. It was fun.",
         "jaRuby": "<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>じゃなかったよ。<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しかったよ。"
       }
     ],
@@ -1245,7 +1245,7 @@
     "pattern": "(Nは)Aい？",
     "meaning": {
       "vi": "Nghi vấn thể thường tính từ い",
-      "en": ""
+      "en": "Plain-form i-adjective question"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1261,7 +1261,7 @@
         "ja": "ベトナム語は難しい？",
         "kana": "",
         "vi": "Tiếng Việt có khó không?",
-        "en": "",
+        "en": "Is Vietnamese difficult?",
         "jaRuby": "ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しい？"
       }
     ],
@@ -1276,7 +1276,7 @@
     "pattern": "(Nは)Aい",
     "meaning": {
       "vi": "Khẳng định thể thường tính từ い",
-      "en": ""
+      "en": "Plain-form i-adjective statement"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1292,7 +1292,7 @@
         "ja": "うん、ちょっと難しい。",
         "kana": "",
         "vi": "Ừ, hơi khó.",
-        "en": "",
+        "en": "Yeah, it's a bit difficult.",
         "jaRuby": "うん、ちょっと<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しい。"
       }
     ],
@@ -1307,7 +1307,7 @@
     "pattern": "~けど~",
     "meaning": {
       "vi": "nhưng ~ (thân mật)",
-      "en": ""
+      "en": "~ but ~ (casual)"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1323,7 +1323,7 @@
         "ja": "このレストラン、おいしいけど高いよね。",
         "kana": "",
         "vi": "Nhà hàng này ngon nhưng đắt nhỉ.",
-        "en": "",
+        "en": "This restaurant is tasty, but expensive, isn't it.",
         "jaRuby": "このレストラン、おいしいけど<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いよね。"
       }
     ],
@@ -1338,7 +1338,7 @@
     "pattern": "(Nは)Aいかった",
     "meaning": {
       "vi": "Khẳng định tính từ い quá khứ (thân mật)",
-      "en": ""
+      "en": "i-adjective past, casual"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1354,7 +1354,7 @@
         "ja": "昨日は楽しかったね。",
         "kana": "",
         "vi": "Hôm qua vui nhỉ.",
-        "en": "",
+        "en": "Yesterday was fun, wasn't it.",
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しかったね。"
       }
     ],
@@ -1369,7 +1369,7 @@
     "pattern": "(Nは)Aいくなかった",
     "meaning": {
       "vi": "Phủ định tính từ い (mọi thì, thân mật)",
-      "en": ""
+      "en": "i-adjective negative (any tense, casual)"
     },
     "category": "plain-form",
     "jlptLevel": "N5",
@@ -1385,7 +1385,7 @@
         "ja": "今日は昨日より暑くないね。",
         "kana": "",
         "vi": "Hôm nay thì không nóng hơn hôm qua nhỉ.",
-        "en": "",
+        "en": "Today isn't hotter than yesterday, is it.",
         "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>より<ruby>暑<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>くないね。"
       }
     ],
@@ -1400,7 +1400,7 @@
     "pattern": "N(は)ありますか",
     "meaning": {
       "vi": "Có N (đồ vật) không?",
-      "en": ""
+      "en": "Is there N (an object)?"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1416,7 +1416,7 @@
         "ja": "タイ語の本はありますか。",
         "kana": "",
         "vi": "Ở đây có sách tiếng Thái không?",
-        "en": "",
+        "en": "Do you have a Thai-language book?",
         "jaRuby": "タイ<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>の<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>はありますか。"
       }
     ],
@@ -1431,7 +1431,7 @@
     "pattern": "N1(sự vật)は N2(địa điểm)です/にあります",
     "meaning": {
       "vi": "N1 có ở N2",
-      "en": ""
+      "en": "N1 is located at N2"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1447,7 +1447,7 @@
         "ja": "スマホは机の上にあります。",
         "kana": "",
         "vi": "Điện thoại có ở trên bàn.",
-        "en": "",
+        "en": "The phone is on the desk.",
         "jaRuby": "スマホは<ruby>机<rp>(</rp><rt>つくえ</rt><rp>)</rp></ruby>の<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にあります。"
       }
     ],
@@ -1462,7 +1462,7 @@
     "pattern": "N1(địa điểm)に N2(sự vật)があります",
     "meaning": {
       "vi": "Ở N1 có N2",
-      "en": ""
+      "en": "There is N2 at N1"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1478,7 +1478,7 @@
         "ja": "ベッドの上にかばんがあります。",
         "kana": "",
         "vi": "Ở trên giường có cái cặp.",
-        "en": "",
+        "en": "There's a bag on the bed.",
         "jaRuby": "ベッドの<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にかばんがあります。"
       }
     ],
@@ -1493,7 +1493,7 @@
     "pattern": "(Nは)いますか",
     "meaning": {
       "vi": "Có N (người/động vật) không?",
-      "en": ""
+      "en": "Is N (a person/animal) here?"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1509,7 +1509,7 @@
         "ja": "マインさんはいますか？",
         "kana": "",
         "vi": "Có chị Mai ở đây không?",
-        "en": "",
+        "en": "Is Mai here?",
         "jaRuby": "マインさんはいますか？"
       }
     ],
@@ -1524,7 +1524,7 @@
     "pattern": "N1(người/vật)は N2(địa điểm)にいます",
     "meaning": {
       "vi": "N1 có ở N2",
-      "en": ""
+      "en": "N1 is at N2"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1540,7 +1540,7 @@
         "ja": "猫はいすの下にいます。",
         "kana": "",
         "vi": "Con mèo đang ở dưới ghế.",
-        "en": "",
+        "en": "The cat is under the chair.",
         "jaRuby": "<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>はいすの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>にいます。"
       }
     ],
@@ -1555,7 +1555,7 @@
     "pattern": "N1(địa điểm)に N2(người/vật)がいます",
     "meaning": {
       "vi": "Ở N1 có N2",
-      "en": ""
+      "en": "There is N2 at N1"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1571,7 +1571,7 @@
         "ja": "あそこに猫がいますよ。",
         "kana": "",
         "vi": "Đằng kia có một chú mèo đấy.",
-        "en": "",
+        "en": "There's a cat over there.",
         "jaRuby": "あそこに<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>がいますよ。"
       }
     ],
@@ -1586,7 +1586,7 @@
     "pattern": "Nには/にも~",
     "meaning": {
       "vi": "N có/cũng có",
-      "en": ""
+      "en": "N has / also has ~"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1602,7 +1602,7 @@
         "ja": "日本には高い山がたくさんあります。",
         "kana": "",
         "vi": "Ở Nhật có rất nhiều ngọn núi cao.",
-        "en": "",
+        "en": "Japan has many tall mountains.",
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>には<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>い<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>がたくさんあります。"
       }
     ],
@@ -1617,7 +1617,7 @@
     "pattern": "N1とN2",
     "meaning": {
       "vi": "N1 và N2 (liệt kê cùng loại)",
-      "en": ""
+      "en": "N1 and N2 (same-category listing)"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1633,7 +1633,7 @@
         "ja": "私の家には、犬と鳥がいます。",
         "kana": "",
         "vi": "Nhà tôi có chó và chim.",
-        "en": "",
+        "en": "My house has a dog and a bird.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には、<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>と<ruby>鳥<rp>(</rp><rt>とり</rt><rp>)</rp></ruby>がいます。"
       }
     ],
@@ -1648,7 +1648,7 @@
     "pattern": "Số lượng từ + います/あります",
     "meaning": {
       "vi": "Có (số lượng) N",
-      "en": ""
+      "en": "Quantity + there is/are"
     },
     "category": "existence",
     "jlptLevel": "N5",
@@ -1664,7 +1664,7 @@
         "ja": "私の家には犬が2匹と、猫が1匹います。",
         "kana": "",
         "vi": "Nhà tôi có 2 con chó và 1 con mèo.",
-        "en": "",
+        "en": "My house has 2 dogs and 1 cat.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>が2<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>と、<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>が1<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>います。"
       }
     ],
@@ -1679,7 +1679,7 @@
     "pattern": "Vます/Vました",
     "meaning": {
       "vi": "V hiện tại-tương lai / quá khứ",
-      "en": ""
+      "en": "V, present/future or past"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1695,7 +1695,7 @@
         "ja": "毎朝コーヒーを飲みます。",
         "kana": "",
         "vi": "Mỗi sáng tôi uống cà phê.",
-        "en": "",
+        "en": "I drink coffee every morning.",
         "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>コーヒーを<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます。"
       }
     ],
@@ -1710,7 +1710,7 @@
     "pattern": "~時に+V",
     "meaning": {
       "vi": "V vào lúc ~ giờ",
-      "en": ""
+      "en": "V at ~ o'clock"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1726,7 +1726,7 @@
         "ja": "3時に出かけます。",
         "kana": "",
         "vi": "Tôi sẽ ra ngoài lúc 3 giờ.",
-        "en": "",
+        "en": "I'll go out at 3 o'clock.",
         "jaRuby": "3<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かけます。"
       }
     ],
@@ -1741,7 +1741,7 @@
     "pattern": "~時間/分+V",
     "meaning": {
       "vi": "V trong ~ tiếng/phút",
-      "en": ""
+      "en": "V for ~ hours/minutes"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1757,7 +1757,7 @@
         "ja": "昨日10時間働きました。",
         "kana": "",
         "vi": "Hôm qua tôi đã làm việc 10 tiếng.",
-        "en": "",
+        "en": "I worked 10 hours yesterday.",
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>10<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby><ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きました。"
       }
     ],
@@ -1772,7 +1772,7 @@
     "pattern": "~から~まで~V",
     "meaning": {
       "vi": "V từ ~ đến ~",
-      "en": ""
+      "en": "V from ~ to ~"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1788,7 +1788,7 @@
         "ja": "今朝は10時まで寝ました。",
         "kana": "",
         "vi": "Sáng nay tôi đã ngủ đến 10 giờ.",
-        "en": "",
+        "en": "I slept until 10 o'clock this morning.",
         "jaRuby": "<ruby>今朝<rp>(</rp><rt>けさ</rt><rp>)</rp></ruby>は10<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>まで<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ました。"
       }
     ],
@@ -1803,7 +1803,7 @@
     "pattern": "Vません/Vませんでした",
     "meaning": {
       "vi": "Không V / Đã không V",
-      "en": ""
+      "en": "Do not V / did not V"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1819,7 +1819,7 @@
         "ja": "昨日は勉強しませんでした。",
         "kana": "",
         "vi": "Hôm qua tôi đã không học bài.",
-        "en": "",
+        "en": "I didn't study yesterday.",
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しませんでした。"
       }
     ],
@@ -1834,7 +1834,7 @@
     "pattern": "N(địa điểm)へ/に帰ります",
     "meaning": {
       "vi": "Trở về địa điểm N",
-      "en": ""
+      "en": "Return to place N"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1850,7 +1850,7 @@
         "ja": "7時に家へ帰ります。",
         "kana": "",
         "vi": "Tôi về nhà lúc 7 giờ.",
-        "en": "",
+        "en": "I go home at 7 o'clock.",
         "jaRuby": "7<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>へ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります。"
       }
     ],
@@ -1865,7 +1865,7 @@
     "pattern": "N(địa điểm)へ/に行きます",
     "meaning": {
       "vi": "Đi tới/đến địa điểm N",
-      "en": ""
+      "en": "Go to place N"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1881,7 +1881,7 @@
         "ja": "明日、学校に行きます。",
         "kana": "",
         "vi": "Ngày mai tôi đi đến trường.",
-        "en": "",
+        "en": "I'll go to school tomorrow.",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
       }
     ],
@@ -1896,7 +1896,7 @@
     "pattern": "N(địa điểm)へ/に来ます",
     "meaning": {
       "vi": "Đến địa điểm N (về phía người nói)",
-      "en": ""
+      "en": "Come to place N (toward the speaker)"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1912,7 +1912,7 @@
         "ja": "友達が私の家に来ます。",
         "kana": "",
         "vi": "Bạn tôi sẽ đến nhà tôi.",
-        "en": "",
+        "en": "My friend is coming to my house.",
         "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。"
       }
     ],
@@ -1927,7 +1927,7 @@
     "pattern": "N(địa điểm)でV",
     "meaning": {
       "vi": "V ở tại N",
-      "en": ""
+      "en": "V at place N"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1943,7 +1943,7 @@
         "ja": "食堂で食べました。",
         "kana": "",
         "vi": "Tôi đã ăn ở nhà ăn.",
-        "en": "",
+        "en": "I ate at the cafeteria.",
         "jaRuby": "<ruby>食堂<rp>(</rp><rt>しょくどう</rt><rp>)</rp></ruby>で<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました。"
       }
     ],
@@ -1958,7 +1958,7 @@
     "pattern": "NをV",
     "meaning": {
       "vi": "V tác động đến N",
-      "en": ""
+      "en": "V acting on N"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -1974,7 +1974,7 @@
         "ja": "新聞を読みます。",
         "kana": "",
         "vi": "Tôi đọc báo.",
-        "en": "",
+        "en": "I read the newspaper.",
         "jaRuby": "<ruby>新聞<rp>(</rp><rt>しんぶん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます。"
       }
     ],
@@ -1989,7 +1989,7 @@
     "pattern": "NとV",
     "meaning": {
       "vi": "V cùng với N",
-      "en": ""
+      "en": "V together with N"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2005,7 +2005,7 @@
         "ja": "友達と映画を見ます。",
         "kana": "",
         "vi": "Tôi xem phim cùng bạn.",
-        "en": "",
+        "en": "I watch a movie with a friend.",
         "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>と<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。"
       }
     ],
@@ -2020,7 +2020,7 @@
     "pattern": "N1とかN2(とか)/N1やN2(など)",
     "meaning": {
       "vi": "Nào là N1, nào là N2",
-      "en": ""
+      "en": "Things like N1, N2, etc."
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2036,7 +2036,7 @@
         "ja": "週末は掃除とか洗濯とかをします。",
         "kana": "",
         "vi": "Cuối tuần tôi làm nào là dọn dẹp nào là giặt giũ.",
-        "en": "",
+        "en": "On weekends I do things like cleaning and laundry.",
         "jaRuby": "<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby>は<ruby>掃除<rp>(</rp><rt>そうじ</rt><rp>)</rp></ruby>とか<ruby>洗濯<rp>(</rp><rt>せんたく</rt><rp>)</rp></ruby>とかをします。"
       }
     ],
@@ -2051,7 +2051,7 @@
     "pattern": "どこ/だれ/何+か+Vか",
     "meaning": {
       "vi": "Có V đâu đó/ai đó/gì đó không?",
-      "en": ""
+      "en": "Is there V-ing somewhere/someone/something?"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2067,7 +2067,7 @@
         "ja": "部屋に誰かいますか。",
         "kana": "",
         "vi": "Trong phòng có ai đó không?",
-        "en": "",
+        "en": "Is there someone in the room?",
         "jaRuby": "<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>に<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かいますか。"
       }
     ],
@@ -2082,7 +2082,7 @@
     "pattern": "どこ/だれ/何+も+V(phủ định)",
     "meaning": {
       "vi": "Chẳng/không V cả",
-      "en": ""
+      "en": "Not V anywhere/anyone/anything at all"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2098,7 +2098,7 @@
         "ja": "今日はどこも行きません。",
         "kana": "",
         "vi": "Hôm nay tôi chẳng đi đâu cả.",
-        "en": "",
+        "en": "I'm not going anywhere today.",
         "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>はどこも<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きません。"
       }
     ],
@@ -2113,7 +2113,7 @@
     "pattern": "Nを(số lượng)ください/お願いします",
     "meaning": {
       "vi": "Hãy cho tôi (số lượng) N",
-      "en": ""
+      "en": "Please give me (quantity) N"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2129,7 +2129,7 @@
         "ja": "チョコレートのケーキを1個ください。",
         "kana": "",
         "vi": "Hãy cho tôi 1 bánh kem sô cô la.",
-        "en": "",
+        "en": "One piece of chocolate cake, please.",
         "jaRuby": "チョコレートのケーキを1<ruby>個<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ください。"
       }
     ],
@@ -2144,7 +2144,7 @@
     "pattern": "(thời gian)に+tần suất/số lượng+V",
     "meaning": {
       "vi": "V ~ lần trong khoảng thời gian",
-      "en": ""
+      "en": "V ~ times per (time period)"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2160,7 +2160,7 @@
         "ja": "1年に1回、旅行します。",
         "kana": "",
         "vi": "Một năm tôi đi du lịch một lần.",
-        "en": "",
+        "en": "I travel once a year.",
         "jaRuby": "1<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby>に1<ruby>回<rp>(</rp><rt>かい</rt><rp>)</rp></ruby>、<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>します。"
       }
     ],
@@ -2175,7 +2175,7 @@
     "pattern": "Vませんか/Vましょう",
     "meaning": {
       "vi": "Cùng V không?/Cùng V nhé",
-      "en": ""
+      "en": "Shall we V? / Let's V"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2191,7 +2191,7 @@
         "ja": "一緒に昼ご飯を食べませんか。",
         "kana": "",
         "vi": "Chúng ta cùng ăn trưa không?",
-        "en": "",
+        "en": "Shall we have lunch together?",
         "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>昼<rp>(</rp><rt>ひる</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べませんか。"
       }
     ],
@@ -2206,7 +2206,7 @@
     "pattern": "Nが欲しいです",
     "meaning": {
       "vi": "Muốn có N (cho bản thân)",
-      "en": ""
+      "en": "Want N (for oneself)"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2222,7 +2222,7 @@
         "ja": "新しいスマホが欲しいです。",
         "kana": "",
         "vi": "Tôi muốn có một chiếc điện thoại mới.",
-        "en": "",
+        "en": "I want a new smartphone.",
         "jaRuby": "<ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しいスマホが<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいです。"
       }
     ],
@@ -2237,7 +2237,7 @@
     "pattern": "(N1へ/に)+Vます/N2に 行きます/来ます/帰ります",
     "meaning": {
       "vi": "Đi để V (mục đích di chuyển)",
-      "en": ""
+      "en": "Go/come to V (purpose of movement)"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2253,7 +2253,7 @@
         "ja": "図書館へ本を借りに行きます。",
         "kana": "",
         "vi": "Tôi đi thư viện để mượn sách.",
-        "en": "",
+        "en": "I go to the library to borrow books.",
         "jaRuby": "<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>へ<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>借<rp>(</rp><rt>か</rt><rp>)</rp></ruby>りに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
       }
     ],
@@ -2268,7 +2268,7 @@
     "pattern": "Nが/をVたいです",
     "meaning": {
       "vi": "Muốn V",
-      "en": ""
+      "en": "Want to V"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2284,7 +2284,7 @@
         "ja": "日本へ旅行に行きたいです。",
         "kana": "",
         "vi": "Tôi muốn đi du lịch Nhật Bản.",
-        "en": "",
+        "en": "I want to travel to Japan.",
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>へ<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいです。"
       }
     ],
@@ -2299,7 +2299,7 @@
     "pattern": "Vます+方",
     "meaning": {
       "vi": "Cách V",
-      "en": ""
+      "en": "How to V"
     },
     "category": "masu-form",
     "jlptLevel": "N5",
@@ -2315,7 +2315,7 @@
         "ja": "この漢字の読み方が分かりません。",
         "kana": "",
         "vi": "Tôi không biết cách đọc chữ Hán này.",
-        "en": "",
+        "en": "I don't know how to read this kanji.",
         "jaRuby": "この<ruby>漢字<rp>(</rp><rt>かんじ</rt><rp>)</rp></ruby>の<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>み<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>が<ruby>分<rp>(</rp><rt>わ</rt><rp>)</rp></ruby>かりません。"
       }
     ],
@@ -2330,7 +2330,7 @@
     "pattern": "Động từ khả năng (可能形)",
     "meaning": {
       "vi": "Nhóm 1→えます, Nhóm 2→られます, Nhóm 3 riêng",
-      "en": ""
+      "en": "Potential verb form: group 1 -> えます, group 2 -> られます, group 3 irregular"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2363,7 +2363,7 @@
     "pattern": "(Nは)~がV(khả năng)",
     "meaning": {
       "vi": "N có thể làm V",
-      "en": ""
+      "en": "N can V"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2379,7 +2379,7 @@
         "ja": "私は日本語が話せます。",
         "kana": "",
         "vi": "Tôi có thể nói tiếng Nhật.",
-        "en": "",
+        "en": "I can speak Japanese.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>せます。"
       }
     ],
@@ -2396,7 +2396,7 @@
     "pattern": "N(phương tiện)でV",
     "meaning": {
       "vi": "Làm V bằng N",
-      "en": ""
+      "en": "V by means of N"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2412,7 +2412,7 @@
         "ja": "箸でフォーを食べます。",
         "kana": "",
         "vi": "Ăn phở bằng đũa.",
-        "en": "",
+        "en": "Eat pho with chopsticks.",
         "jaRuby": "<ruby>箸<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>でフォーを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。"
       }
     ],
@@ -2427,7 +2427,7 @@
     "pattern": "かかります",
     "meaning": {
       "vi": "Tốn/mất ~ tiền/thời gian",
-      "en": ""
+      "en": "It takes ~ (money/time)"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2443,7 +2443,7 @@
         "ja": "学校まで30分かかります。",
         "kana": "",
         "vi": "Đến trường mất 30 phút.",
-        "en": "",
+        "en": "It takes 30 minutes to school.",
         "jaRuby": "<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>まで30<ruby>分<rp>(</rp><rt>ふん</rt><rp>)</rp></ruby>かかります。"
       }
     ],
@@ -2458,7 +2458,7 @@
     "pattern": "Số tiền/thời gian+くらいです/で+V(khả năng)",
     "meaning": {
       "vi": "Khoảng... có thể V",
-      "en": ""
+      "en": "About... can V"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2474,7 +2474,7 @@
         "ja": "1万円くらいで買えます。",
         "kana": "",
         "vi": "Có thể mua với khoảng 10 nghìn yên.",
-        "en": "",
+        "en": "You can buy it for about 10,000 yen.",
         "jaRuby": "1<ruby>万<rp>(</rp><rt>まん</rt><rp>)</rp></ruby><ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>くらいで<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>えます。"
       }
     ],
@@ -2491,7 +2491,7 @@
     "pattern": "N1はN2が好き・嫌い/上手・下手/得意・苦手だ・です",
     "meaning": {
       "vi": "N1 thích/ghét/giỏi/kém N2",
-      "en": ""
+      "en": "N1 likes/dislikes/is good at/bad at N2"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2507,7 +2507,7 @@
         "ja": "私は料理が上手です。",
         "kana": "",
         "vi": "Tôi giỏi nấu ăn.",
-        "en": "",
+        "en": "I'm good at cooking.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>です。"
       }
     ],
@@ -2522,7 +2522,7 @@
     "pattern": "~から~",
     "meaning": {
       "vi": "Vì ~ nên ~",
-      "en": ""
+      "en": "Because ~, so ~"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2538,7 +2538,7 @@
         "ja": "疲れましたから、早く寝ます。",
         "kana": "",
         "vi": "Vì mệt nên tôi ngủ sớm.",
-        "en": "",
+        "en": "Because I'm tired, I'll go to bed early.",
         "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れましたから、<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ます。"
       }
     ],
@@ -2553,7 +2553,7 @@
     "pattern": "N1はN2がAです",
     "meaning": {
       "vi": "N1 có N2 mang tính chất A",
-      "en": ""
+      "en": "N1's N2 is A"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2569,7 +2569,7 @@
         "ja": "この店はコーヒーがおいしいです。",
         "kana": "",
         "vi": "Cửa hàng này có cà phê ngon.",
-        "en": "",
+        "en": "This shop's coffee is delicious.",
         "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はコーヒーがおいしいです。"
       }
     ],
@@ -2584,7 +2584,7 @@
     "pattern": "N1がN2/Aです/NがVます",
     "meaning": {
       "vi": "Nhấn mạnh chủ thể",
-      "en": ""
+      "en": "Emphasizing the subject"
     },
     "category": "potential-verbs",
     "jlptLevel": "N5",
@@ -2600,7 +2600,7 @@
         "ja": "誰が来ますか。田中さんが来ます。",
         "kana": "",
         "vi": "Ai sẽ đến? Anh Tanaka sẽ đến.",
-        "en": "",
+        "en": "Who's coming? Tanaka is coming.",
         "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>が<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ますか。<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんが<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。"
       }
     ],
@@ -2615,7 +2615,7 @@
     "pattern": "Thể từ điển (Vる)",
     "meaning": {
       "vi": "Thể thường của Vます",
-      "en": ""
+      "en": "Dictionary form (plain form of ます)"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2648,7 +2648,7 @@
     "pattern": "Vる？",
     "meaning": {
       "vi": "Nghi vấn thể thường (lên giọng)",
-      "en": ""
+      "en": "Plain-form question (rising intonation)"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2664,7 +2664,7 @@
         "ja": "明日、来る？",
         "kana": "",
         "vi": "Ngày mai bạn đến chứ?",
-        "en": "",
+        "en": "Are you coming tomorrow?",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る？"
       }
     ],
@@ -2681,7 +2681,7 @@
     "pattern": "Vる+こと/Nができる",
     "meaning": {
       "vi": "Có thể làm V/N",
-      "en": ""
+      "en": "Can do V/N"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2697,7 +2697,7 @@
         "ja": "私はピアノを弾くことができます。",
         "kana": "",
         "vi": "Tôi có thể chơi đàn piano.",
-        "en": "",
+        "en": "I can play the piano.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はピアノを<ruby>弾<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>くことができます。"
       }
     ],
@@ -2714,7 +2714,7 @@
     "pattern": "Vる+ことです",
     "meaning": {
       "vi": "Danh từ hóa động từ",
-      "en": ""
+      "en": "Nominalizing a verb"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2730,7 +2730,7 @@
         "ja": "私の趣味は料理をすることです。",
         "kana": "",
         "vi": "Sở thích của tôi là nấu ăn.",
-        "en": "",
+        "en": "My hobby is cooking.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>趣味<rp>(</rp><rt>しゅみ</rt><rp>)</rp></ruby>は<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>をすることです。"
       }
     ],
@@ -2747,7 +2747,7 @@
     "pattern": "Thể ない (Vない)",
     "meaning": {
       "vi": "Phủ định thể thường",
-      "en": ""
+      "en": "Plain negative form"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2780,7 +2780,7 @@
     "pattern": "(一緒に)Vない？",
     "meaning": {
       "vi": "Cùng V không? (thân mật)",
-      "en": ""
+      "en": "Shall we V (together)? (casual)"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2796,7 +2796,7 @@
         "ja": "一緒に映画を見ない？",
         "kana": "",
         "vi": "Cùng xem phim không?",
-        "en": "",
+        "en": "Want to watch a movie together?",
         "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ない？"
       }
     ],
@@ -2813,7 +2813,7 @@
     "pattern": "V(khả năng)る/ V(khả năng)ない",
     "meaning": {
       "vi": "Thể từ điển/ない của động từ khả năng",
-      "en": ""
+      "en": "Dictionary/negative form of the potential verb"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2829,7 +2829,7 @@
         "ja": "泳げる/泳げない",
         "kana": "",
         "vi": "có thể/không thể bơi",
-        "en": "",
+        "en": "can swim / can't swim",
         "jaRuby": "<ruby>泳<rp>(</rp><rt>およ</rt><rp>)</rp></ruby>げる/<ruby>泳<rp>(</rp><rt>およ</rt><rp>)</rp></ruby>げない"
       }
     ],
@@ -2846,7 +2846,7 @@
     "pattern": "Thể た (Vた)",
     "meaning": {
       "vi": "Thể thường của Vました",
-      "en": ""
+      "en": "Plain past form (た-form)"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2879,7 +2879,7 @@
     "pattern": "V(khả năng)た/なかった",
     "meaning": {
       "vi": "Thể た của động từ khả năng",
-      "en": ""
+      "en": "Past/negative-past of the potential verb"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2895,7 +2895,7 @@
         "ja": "昨日は早く起きられた。",
         "kana": "",
         "vi": "Hôm qua tôi đã có thể dậy sớm.",
-        "en": "",
+        "en": "I was able to get up early yesterday.",
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きられた。"
       }
     ],
@@ -2912,7 +2912,7 @@
     "pattern": "~Vたい (thể thường)",
     "meaning": {
       "vi": "Vたい/Vたい？/Vたくない/Vたかった",
-      "en": ""
+      "en": "Plain form of たい: V-たい / V-たい？/ V-たくない / V-たかった"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2928,7 +2928,7 @@
         "ja": "沖縄に行きたい。でも、お金がなくて行けなかった。",
         "kana": "",
         "vi": "Tôi muốn đi Okinawa. Nhưng vì không có tiền nên đã không đi được.",
-        "en": "",
+        "en": "I want to go to Okinawa. But I couldn't go because I had no money.",
         "jaRuby": "<ruby>沖縄<rp>(</rp><rt>おきなわ</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたい。でも、お<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>がなくて<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>けなかった。"
       }
     ],
@@ -2943,7 +2943,7 @@
     "pattern": "Vよう (thể ý chí)",
     "meaning": {
       "vi": "Thể thường của Vましょう",
-      "en": ""
+      "en": "Volitional form (plain form of ましょう)"
     },
     "category": "verb-forms-basic",
     "jlptLevel": "N5",
@@ -2959,7 +2959,7 @@
         "ja": "そろそろ帰ろう。",
         "kana": "",
         "vi": "Về thôi nào.",
-        "en": "",
+        "en": "Let's head home now.",
         "jaRuby": "そろそろ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ろう。"
       }
     ],
@@ -2976,7 +2976,7 @@
     "pattern": "V1る/Nの+前に、V2",
     "meaning": {
       "vi": "Trước khi V1/N thì V2",
-      "en": ""
+      "en": "Before V1/N, V2"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -2992,7 +2992,7 @@
         "ja": "寝る前に、歯を磨きます。",
         "kana": "",
         "vi": "Trước khi ngủ, tôi đánh răng.",
-        "en": "",
+        "en": "I brush my teeth before I sleep.",
         "jaRuby": "<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>る<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、<ruby>歯<rp>(</rp><rt>は</rt><rp>)</rp></ruby>を<ruby>磨<rp>(</rp><rt>みが</rt><rp>)</rp></ruby>きます。"
       }
     ],
@@ -3009,7 +3009,7 @@
     "pattern": "V1た/Nの+後で、V2",
     "meaning": {
       "vi": "Sau khi V1/N thì V2",
-      "en": ""
+      "en": "After V1/N, V2"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3025,7 +3025,7 @@
         "ja": "仕事の後で、ジムに行きます。",
         "kana": "",
         "vi": "Sau khi làm việc, tôi đi tập gym.",
-        "en": "",
+        "en": "I go to the gym after work.",
         "jaRuby": "<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>の<ruby>後<rp>(</rp><rt>のち</rt><rp>)</rp></ruby>で、ジムに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
       }
     ],
@@ -3042,7 +3042,7 @@
     "pattern": "V1たら、V2",
     "meaning": {
       "vi": "Sau khi V1 thì V2 (điều kiện)",
-      "en": ""
+      "en": "Once V1 happens, V2 (conditional)"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3058,7 +3058,7 @@
         "ja": "家に着いたら、電話してください。",
         "kana": "",
         "vi": "Sau khi về đến nhà, hãy gọi điện cho tôi.",
-        "en": "",
+        "en": "Please call me once you get home.",
         "jaRuby": "<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>着<rp>(</rp><rt>つ</rt><rp>)</rp></ruby>いたら、<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>してください。"
       }
     ],
@@ -3075,7 +3075,7 @@
     "pattern": "Vたばかりだ",
     "meaning": {
       "vi": "Vừa mới V",
-      "en": ""
+      "en": "Just V-ed"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3091,7 +3091,7 @@
         "ja": "この会社に入ったばかりです。",
         "kana": "",
         "vi": "Tôi vừa mới vào công ty này.",
-        "en": "",
+        "en": "I just joined this company.",
         "jaRuby": "この<ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby>に<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>ったばかりです。"
       }
     ],
@@ -3108,7 +3108,7 @@
     "pattern": "Vたことがあります",
     "meaning": {
       "vi": "Đã từng V",
-      "en": ""
+      "en": "Have V-ed before"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3124,7 +3124,7 @@
         "ja": "日本に行ったことがあります。",
         "kana": "",
         "vi": "Tôi đã từng đi Nhật Bản.",
-        "en": "",
+        "en": "I've been to Japan before.",
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ったことがあります。"
       }
     ],
@@ -3141,7 +3141,7 @@
     "pattern": "Thể ば (Vば/Aいければ)",
     "meaning": {
       "vi": "Thể điều kiện",
-      "en": ""
+      "en": "ば conditional form"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3157,7 +3157,7 @@
         "ja": "飲めば/高ければ",
         "kana": "",
         "vi": "nếu uống / nếu cao",
-        "en": "",
+        "en": "if (I) drink / if (it's) tall",
         "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>めば/<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>ければ"
       }
     ],
@@ -3174,7 +3174,7 @@
     "pattern": "Vば/Aいければ~",
     "meaning": {
       "vi": "Nếu ~ thì sẽ ~",
-      "en": ""
+      "en": "If V/A, then ~"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3190,7 +3190,7 @@
         "ja": "安ければ、買います。",
         "kana": "",
         "vi": "Nếu rẻ thì tôi sẽ mua.",
-        "en": "",
+        "en": "If it's cheap, I'll buy it.",
         "jaRuby": "<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ければ、<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います。"
       }
     ],
@@ -3207,7 +3207,7 @@
     "pattern": "Từ nghi vấn+ば、~か",
     "meaning": {
       "vi": "Nên (làm gì) thì ~ (xin lời khuyên)",
-      "en": ""
+      "en": "If one does what, then ~? (asking for advice)"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3223,7 +3223,7 @@
         "ja": "どうすれば、日本語が上手になりますか。",
         "kana": "",
         "vi": "Nên làm thế nào để giỏi tiếng Nhật hơn?",
-        "en": "",
+        "en": "What should I do to get better at Japanese?",
         "jaRuby": "どうすれば、<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりますか。"
       }
     ],
@@ -3240,7 +3240,7 @@
     "pattern": "Vなければ、~",
     "meaning": {
       "vi": "Nếu không ~ thì không ~",
-      "en": ""
+      "en": "If not V, then not ~"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3256,7 +3256,7 @@
         "ja": "練習しなければ、上手になりません。",
         "kana": "",
         "vi": "Nếu không luyện tập thì sẽ không giỏi lên được.",
-        "en": "",
+        "en": "If you don't practice, you won't improve.",
         "jaRuby": "<ruby>練習<rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>しなければ、<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりません。"
       }
     ],
@@ -3274,7 +3274,7 @@
     "pattern": "Vなければなりません/いけません/Vないといけません",
     "meaning": {
       "vi": "Phải làm V",
-      "en": ""
+      "en": "Must V"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3290,7 +3290,7 @@
         "ja": "明日までにレポートを出さなければなりません。",
         "kana": "",
         "vi": "Tôi phải nộp báo cáo trước ngày mai.",
-        "en": "",
+        "en": "I have to submit the report by tomorrow.",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>までにレポートを<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>さなければなりません。"
       }
     ],
@@ -3307,7 +3307,7 @@
     "pattern": "Vなきゃ、~",
     "meaning": {
       "vi": "Nếu không ~ thì không ~ (rút gọn)",
-      "en": ""
+      "en": "If not ~, then not ~ (contracted)"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3323,7 +3323,7 @@
         "ja": "早く行かなきゃ、間に合わないよ。",
         "kana": "",
         "vi": "Không đi nhanh thì không kịp đâu.",
-        "en": "",
+        "en": "If you don't hurry, you won't make it.",
         "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなきゃ、<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>わないよ。"
       }
     ],
@@ -3340,7 +3340,7 @@
     "pattern": "Vなきゃいけない",
     "meaning": {
       "vi": "Phải làm V (văn nói)",
-      "en": ""
+      "en": "Must V (spoken)"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3356,7 +3356,7 @@
         "ja": "もう帰らなきゃいけない。",
         "kana": "",
         "vi": "Tôi phải về rồi.",
-        "en": "",
+        "en": "I have to go home now.",
         "jaRuby": "もう<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>らなきゃいけない。"
       }
     ],
@@ -3373,7 +3373,7 @@
     "pattern": "V/Aい/Aな/N(thể thường)+なら",
     "meaning": {
       "vi": "Nếu thì ~ (nhắc lại lời đối phương)",
-      "en": ""
+      "en": "If ~, then ~ (echoing what the other person said)"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3389,7 +3389,7 @@
         "ja": "日本に行くなら、京都がおすすめです。",
         "kana": "",
         "vi": "Nếu đi Nhật thì tôi khuyên nên đến Kyoto.",
-        "en": "",
+        "en": "If you're going to Japan, I recommend Kyoto.",
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くなら、<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>がおすすめです。"
       }
     ],
@@ -3404,7 +3404,7 @@
     "pattern": "Aな/N+なら",
     "meaning": {
       "vi": "Nếu thì ~ (chỉ với N và tính từ な)",
-      "en": ""
+      "en": "If ~, then ~ (na-adjectives and nouns only)"
     },
     "category": "sequence-conditional",
     "jlptLevel": "N5",
@@ -3420,7 +3420,7 @@
         "ja": "暇なら、手伝ってください。",
         "kana": "",
         "vi": "Nếu rảnh thì hãy giúp tôi với.",
-        "en": "",
+        "en": "If you're free, please help me.",
         "jaRuby": "<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なら、<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってください。"
       }
     ],
@@ -3435,7 +3435,7 @@
     "pattern": "Thể て (Vて)",
     "meaning": {
       "vi": "Quy tắc chia (って/んで/いて/いで/して/来て...)",
-      "en": ""
+      "en": "て-form conjugation rules"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3468,7 +3468,7 @@
     "pattern": "V1て、V2て、…V",
     "meaning": {
       "vi": "V1 rồi V2, ...V",
-      "en": ""
+      "en": "V1, then V2, ... then V"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3484,7 +3484,7 @@
         "ja": "朝起きて、シャワーを浴びて、朝ご飯を食べます。",
         "kana": "",
         "vi": "Sáng dậy, tắm, rồi ăn sáng.",
-        "en": "",
+        "en": "I get up, take a shower, then eat breakfast.",
         "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、シャワーを<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びて、<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。"
       }
     ],
@@ -3501,7 +3501,7 @@
     "pattern": "V1てから V2",
     "meaning": {
       "vi": "Sau khi V1 thì V2",
-      "en": ""
+      "en": "After V1, V2"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3517,7 +3517,7 @@
         "ja": "宿題をしてから、テレビを見ます。",
         "kana": "",
         "vi": "Sau khi làm bài tập xong thì tôi xem tivi.",
-        "en": "",
+        "en": "After finishing my homework, I watch TV.",
         "jaRuby": "<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>をしてから、テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。"
       }
     ],
@@ -3534,7 +3534,7 @@
     "pattern": "~Vている",
     "meaning": {
       "vi": "Đang V",
-      "en": ""
+      "en": "Is V-ing"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3550,7 +3550,7 @@
         "ja": "今、雨が降っています。",
         "kana": "",
         "vi": "Bây giờ trời đang mưa.",
-        "en": "",
+        "en": "It's raining right now.",
         "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>っています。"
       }
     ],
@@ -3567,7 +3567,7 @@
     "pattern": "NがVて+います",
     "meaning": {
       "vi": "N đang V (trước mắt)",
-      "en": ""
+      "en": "N is V-ing (in front of you)"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3583,7 +3583,7 @@
         "ja": "子供が公園で遊んでいます。",
         "kana": "",
         "vi": "Trẻ con đang chơi ở công viên.",
-        "en": "",
+        "en": "Children are playing at the park.",
         "jaRuby": "<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>が<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>で<ruby>遊<rp>(</rp><rt>あそ</rt><rp>)</rp></ruby>んでいます。"
       }
     ],
@@ -3600,7 +3600,7 @@
     "pattern": "NがVています",
     "meaning": {
       "vi": "N thường V (thói quen)",
-      "en": ""
+      "en": "N usually V-s (habit)"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3616,7 +3616,7 @@
         "ja": "私は毎朝走っています。",
         "kana": "",
         "vi": "Mỗi sáng tôi đều chạy bộ.",
-        "en": "",
+        "en": "I go running every morning.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby><ruby>走<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>っています。"
       }
     ],
@@ -3633,7 +3633,7 @@
     "pattern": "NがVている",
     "meaning": {
       "vi": "N đang V (trạng thái, kết quả)",
-      "en": ""
+      "en": "N is in a V-ed state (result)"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3649,7 +3649,7 @@
         "ja": "窓が開いています。",
         "kana": "",
         "vi": "Cửa sổ đang mở.",
-        "en": "",
+        "en": "The window is open.",
         "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>が<ruby>開<rp>(</rp><rt>ひら</rt><rp>)</rp></ruby>いています。"
       }
     ],
@@ -3666,7 +3666,7 @@
     "pattern": "Vて+います",
     "meaning": {
       "vi": "Đang V (duy trì lâu dài)",
-      "en": ""
+      "en": "Is V-ing (long-term, ongoing)"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3682,7 +3682,7 @@
         "ja": "私はハノイに住んでいます。",
         "kana": "",
         "vi": "Tôi đang sống ở Hà Nội.",
-        "en": "",
+        "en": "I live in Hanoi.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はハノイに<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいます。"
       }
     ],
@@ -3699,7 +3699,7 @@
     "pattern": "Nを知っていますか",
     "meaning": {
       "vi": "Bạn có biết N không?",
-      "en": ""
+      "en": "Do you know N?"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3715,7 +3715,7 @@
         "ja": "田中さんを知っていますか。",
         "kana": "",
         "vi": "Bạn có biết anh Tanaka không?",
-        "en": "",
+        "en": "Do you know Tanaka?",
         "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか。"
       }
     ],
@@ -3732,7 +3732,7 @@
     "pattern": "Nでも+いい/大丈夫です/かまわないです",
     "meaning": {
       "vi": "N cũng được/ổn",
-      "en": ""
+      "en": "N is fine too / is okay"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3748,7 +3748,7 @@
         "ja": "お茶でもいいです。",
         "kana": "",
         "vi": "Trà cũng được.",
-        "en": "",
+        "en": "Tea is fine too.",
         "jaRuby": "お<ruby>茶<rp>(</rp><rt>ちゃ</rt><rp>)</rp></ruby>でもいいです。"
       }
     ],
@@ -3763,7 +3763,7 @@
     "pattern": "Vてもいいですか/だいじょうぶですか/かまわないですか",
     "meaning": {
       "vi": "V có được không? (xin phép)",
-      "en": ""
+      "en": "Is it okay to V? (asking permission)"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3779,7 +3779,7 @@
         "ja": "ここに座ってもいいですか。",
         "kana": "",
         "vi": "Tôi ngồi đây có được không?",
-        "en": "",
+        "en": "Is it okay if I sit here?",
         "jaRuby": "ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>ってもいいですか。"
       }
     ],
@@ -3796,7 +3796,7 @@
     "pattern": "Vてもいいです",
     "meaning": {
       "vi": "V cũng được (cho phép)",
-      "en": ""
+      "en": "It's okay to V (permission)"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3812,7 +3812,7 @@
         "ja": "写真を撮ってもいいです。",
         "kana": "",
         "vi": "Chụp ảnh cũng được.",
-        "en": "",
+        "en": "It's okay to take photos.",
         "jaRuby": "<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってもいいです。"
       }
     ],
@@ -3829,7 +3829,7 @@
     "pattern": "Vなくてもいいです",
     "meaning": {
       "vi": "Không V cũng được",
-      "en": ""
+      "en": "It's okay not to V"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3845,7 +3845,7 @@
         "ja": "明日は来なくてもいいです。",
         "kana": "",
         "vi": "Ngày mai không đến cũng được.",
-        "en": "",
+        "en": "You don't have to come tomorrow.",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>なくてもいいです。"
       }
     ],
@@ -3863,7 +3863,7 @@
     "pattern": "Vて+ください/Vない+で+ください",
     "meaning": {
       "vi": "Hãy V/Xin đừng V",
-      "en": ""
+      "en": "Please V / Please don't V"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3879,7 +3879,7 @@
         "ja": "ここに名前を書いてください。ここに座らないでください。",
         "kana": "",
         "vi": "Hãy viết tên vào đây. Xin đừng ngồi ở đây.",
-        "en": "",
+        "en": "Please write your name here. Please don't sit here.",
         "jaRuby": "ここに<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてください。ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>らないでください。"
       }
     ],
@@ -3897,7 +3897,7 @@
     "pattern": "Vてくれますか（→Vてくれる？）",
     "meaning": {
       "vi": "Bạn có thể V cho tôi không?",
-      "en": ""
+      "en": "Can you V for me?"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3913,7 +3913,7 @@
         "ja": "ちょっと手伝ってくれる？",
         "kana": "",
         "vi": "Bạn giúp tôi một chút được không?",
-        "en": "",
+        "en": "Can you help me for a bit?",
         "jaRuby": "ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれる？"
       }
     ],
@@ -3930,7 +3930,7 @@
     "pattern": "Vて+くれませんか/くださいませんか",
     "meaning": {
       "vi": "Bạn có thể V cho tôi không? (lịch sự)",
-      "en": ""
+      "en": "Could you V for me? (polite)"
     },
     "category": "te-form",
     "jlptLevel": "N5",
@@ -3946,7 +3946,7 @@
         "ja": "窓を閉めてくださいませんか。",
         "kana": "",
         "vi": "Bạn có thể đóng cửa sổ giúp tôi không?",
-        "en": "",
+        "en": "Could you close the window for me?",
         "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めてくださいませんか。"
       }
     ],
@@ -3963,7 +3963,7 @@
     "pattern": "N1は/が(私に) N2をくれる",
     "meaning": {
       "vi": "N1 cho tôi N2",
-      "en": ""
+      "en": "N1 gives me N2"
     },
     "category": "giving-receiving",
     "jlptLevel": "N5",
@@ -3979,7 +3979,7 @@
         "ja": "友達が私に本をくれました。",
         "kana": "",
         "vi": "Bạn tôi cho tôi một cuốn sách.",
-        "en": "",
+        "en": "My friend gave me a book.",
         "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>をくれました。"
       }
     ],
@@ -3994,7 +3994,7 @@
     "pattern": "Nは/が(私に)~Vてくれる",
     "meaning": {
       "vi": "N làm V cho tôi",
-      "en": ""
+      "en": "N does V for me"
     },
     "category": "giving-receiving",
     "jlptLevel": "N5",
@@ -4010,7 +4010,7 @@
         "ja": "先生が日本語を教えてくれました。",
         "kana": "",
         "vi": "Thầy giáo đã dạy tiếng Nhật cho tôi.",
-        "en": "",
+        "en": "My teacher taught me Japanese.",
         "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>が<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えてくれました。"
       }
     ],
@@ -4027,7 +4027,7 @@
     "pattern": "N1は/が N2に N3をあげる",
     "meaning": {
       "vi": "N1 tặng N2 (đồ vật) N3",
-      "en": ""
+      "en": "N1 gives N2 (thing) to N3"
     },
     "category": "giving-receiving",
     "jlptLevel": "N5",
@@ -4043,7 +4043,7 @@
         "ja": "私は妹に花をあげました。",
         "kana": "",
         "vi": "Tôi đã tặng hoa cho em gái.",
-        "en": "",
+        "en": "I gave flowers to my younger sister.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>妹<rp>(</rp><rt>いもうと</rt><rp>)</rp></ruby>に<ruby>花<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>をあげました。"
       }
     ],
@@ -4058,7 +4058,7 @@
     "pattern": "N1は/が N2にVてあげる",
     "meaning": {
       "vi": "N1 làm gì đó cho N2",
-      "en": ""
+      "en": "N1 does something for N2"
     },
     "category": "giving-receiving",
     "jlptLevel": "N5",
@@ -4074,7 +4074,7 @@
         "ja": "私は友達に本を貸してあげました。",
         "kana": "",
         "vi": "Tôi đã cho bạn mượn sách.",
-        "en": "",
+        "en": "I lent my friend a book.",
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>してあげました。"
       }
     ],
@@ -4091,7 +4091,7 @@
     "pattern": "Vましょうか/Vようか",
     "meaning": {
       "vi": "Để tôi V nhé",
-      "en": ""
+      "en": "Shall I V for you?"
     },
     "category": "giving-receiving",
     "jlptLevel": "N5",
@@ -4107,7 +4107,7 @@
         "ja": "荷物を持ちましょうか。",
         "kana": "",
         "vi": "Để tôi xách đồ cho nhé.",
-        "en": "",
+        "en": "Shall I carry your luggage?",
         "jaRuby": "<ruby>荷物<rp>(</rp><rt>にもつ</rt><rp>)</rp></ruby>を<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>ちましょうか。"
       }
     ],
@@ -4124,7 +4124,7 @@
     "pattern": "N/số từ+しか~Vません/Vない",
     "meaning": {
       "vi": "Chỉ có N (đi với phủ định)",
-      "en": ""
+      "en": "Only N (with a negative)"
     },
     "category": "special-particles",
     "jlptLevel": "N5",
@@ -4140,7 +4140,7 @@
         "ja": "財布に1000円しかありません。",
         "kana": "",
         "vi": "Trong ví chỉ có 1000 yên.",
-        "en": "",
+        "en": "I only have 1000 yen in my wallet.",
         "jaRuby": "<ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>に1000<ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>しかありません。"
       }
     ],
@@ -4155,7 +4155,7 @@
     "pattern": "N/số từ+だけ~",
     "meaning": {
       "vi": "Chỉ N",
-      "en": ""
+      "en": "Only N"
     },
     "category": "special-particles",
     "jlptLevel": "N5",
@@ -4171,7 +4171,7 @@
         "ja": "今日は水だけ飲みました。",
         "kana": "",
         "vi": "Hôm nay tôi chỉ uống nước lọc.",
-        "en": "",
+        "en": "Today I only drank water.",
         "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby>だけ<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みました。"
       }
     ],
@@ -4186,7 +4186,7 @@
     "pattern": "N(chủ đề)は~",
     "meaning": {
       "vi": "は thay thế を, が khi làm chủ đề",
-      "en": ""
+      "en": "は replacing を/が as the topic marker"
     },
     "category": "special-particles",
     "jlptLevel": "N5",
@@ -4202,7 +4202,7 @@
         "ja": "この本は昨日読みました。",
         "kana": "",
         "vi": "Cuốn sách này thì hôm qua tôi đã đọc rồi.",
-        "en": "",
+        "en": "This book, I read yesterday.",
         "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby><ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みました。"
       }
     ],
@@ -4217,7 +4217,7 @@
     "pattern": "N1は~が/けど、N2は~",
     "meaning": {
       "vi": "N1 thì... còn N2 thì... (so sánh)",
-      "en": ""
+      "en": "N1 is ~ but N2 is ~ (contrast)"
     },
     "category": "special-particles",
     "jlptLevel": "N5",
@@ -4233,7 +4233,7 @@
         "ja": "兄は背が高いですが、弟は低いです。",
         "kana": "",
         "vi": "Anh trai thì cao, còn em trai thì thấp.",
-        "en": "",
+        "en": "My older brother is tall, but my younger brother is short.",
         "jaRuby": "<ruby>兄<rp>(</rp><rt>あに</rt><rp>)</rp></ruby>は<ruby>背<rp>(</rp><rt>せ</rt><rp>)</rp></ruby>が<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いですが、<ruby>弟<rp>(</rp><rt>おとうと</rt><rp>)</rp></ruby>は<ruby>低<rp>(</rp><rt>ひく</rt><rp>)</rp></ruby>いです。"
       }
     ],
@@ -4248,7 +4248,7 @@
     "pattern": "Aい/Aな+さ",
     "meaning": {
       "vi": "Danh từ hóa tính từ (高い→高さ)",
-      "en": ""
+      "en": "Nominalizing an adjective (高い -> 高さ)"
     },
     "category": "special-particles",
     "jlptLevel": "N5",
@@ -4264,7 +4264,7 @@
         "ja": "この山の高さはどのくらいですか。",
         "kana": "",
         "vi": "Độ cao của ngọn núi này là bao nhiêu?",
-        "en": "",
+        "en": "How tall is this mountain?",
         "jaRuby": "この<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>の<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>さはどのくらいですか。"
       }
     ],

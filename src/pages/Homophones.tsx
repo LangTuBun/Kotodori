@@ -1,13 +1,14 @@
-import { useState } from "react"
-import vocabData from "@/data/n5/vocabulary.json"
+import { useMemo, useState } from "react"
+import { vocabForLevel } from "@/data/vocab"
 import kanjiData from "@/data/n5/kanji.json"
 import type { VocabEntry, KanjiChapter } from "@/types"
 import { Button } from "@/components/ui/Button"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
 import { useTranslation } from "@/lib/useTranslation"
+import { useSettingsStore, type Level } from "@/store/settings-store"
+import { Watermark } from "@/components/ui/ScreenHeader"
 
-const vocab = vocabData as VocabEntry[]
 const kanjiChapters = kanjiData.chapters as KanjiChapter[]
 
 // Normalize kana for similarity matching:
@@ -56,16 +57,20 @@ function hasRealKanjiField(kanji: string | undefined): kanji is string {
 // sparse to catch. Synthesized entries get a full VocabEntry shape (stable
 // id, pos:'unknown', empty examples/tags) so WordCard/PosTag/keys behave
 // exactly like a real vocab entry.
-function buildPool(): VocabEntry[] {
+function buildPool(level: Level): VocabEntry[] {
   const seen = new Set<string>()
   const pool: VocabEntry[] = []
-  for (const v of vocab) {
+  for (const v of vocabForLevel(level)) {
     if (!hasRealKanjiField(v.kanji)) continue
     const key = v.kanji + '|' + v.kana
     if (seen.has(key)) continue
     seen.add(key)
     pool.push(v)
   }
+  // kanji.json's supplementary words are N5-only (synthesized jlptLevel
+  // 'N5' below) -- skip them entirely in N4-only scope so the pool doesn't
+  // silently leak N5 content into a supposedly-N4 view.
+  if (level === 'N4') return pool
   for (const chapter of kanjiChapters) {
     for (const group of chapter.groups) {
       for (const w of group.words) {
@@ -77,7 +82,7 @@ function buildPool(): VocabEntry[] {
           id: `kj_${w.kanji}_${w.kana}`,
           kanji: w.kanji,
           kana: w.kana,
-          meanings: { vi: w.meaning, en: '' },
+          meanings: w.meaning,
           pos: 'unknown',
           verbGroup: null,
           adjType: null,
@@ -102,9 +107,11 @@ interface SoundGroup {
   difficultyScore: number
 }
 
-// Compute groups at module load — cheap, runs once
-const groups: SoundGroup[] = (() => {
-  const pool = buildPool()
+// Recomputed per level (see useMemo in Homophones()) rather than once at
+// module load, since the pool it's built from now depends on the level
+// toggle -- still cheap enough to redo on a level switch.
+function computeGroups(level: Level): SoundGroup[] {
+  const pool = buildPool(level)
   const map = new Map<string, VocabEntry[]>()
   for (const v of pool) {
     if (!v.kana || v.kana.length < 2) continue
@@ -141,7 +148,7 @@ const groups: SoundGroup[] = (() => {
     if (aDistinct !== bDistinct) return bDistinct - aDistinct
     return b.entries.length - a.entries.length
   })
-})()
+}
 
 function WordCard({ entry, revealed }: { entry: VocabEntry; revealed: boolean }) {
   const { localize } = useTranslation()
@@ -165,14 +172,17 @@ function WordCard({ entry, revealed }: { entry: VocabEntry; revealed: boolean })
 
 export function Homophones() {
   const { t } = useTranslation()
+  const level = useSettingsStore(s => s.level)
   const [selected, setSelected] = useState<SoundGroup | null>(null)
   const [revealed, setRevealed] = useState(false)
 
+  const groups = useMemo(() => computeGroups(level), [level])
   const trueHomophones = groups.filter(g => g.readings.length === 1)
   const soundAlikes = groups.filter(g => g.readings.length > 1)
 
   return (
-    <div className="p-8 max-w-4xl">
+    <div className="relative p-8 max-w-4xl overflow-hidden">
+      <Watermark char="音" />
       {/* Header */}
       <div className="border-b-3 border-ink pb-8 mb-8">
         <h1 className="text-5xl font-black tracking-tighter">{t('homophones.title')}</h1>

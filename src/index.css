@@ -1,57 +1,163 @@
 @import "tailwindcss";
 
-@theme {
-  --color-ink: #0a0a0a;
-  --color-paper: #fafaf7;
-  --color-yellow: #ffe600;
-  --color-red: #ff2d2d;
-  --color-green: #00cc66;
-  --color-blue: #0057ff;
-  --color-surface: #f0ede6;
-  --color-muted: #6b6b6b;
+/* ============================================================
+   Tori theme variables — 9 paper palettes, ported verbatim from
+   Tori's globals.css (lines 58-187). Class on <html>; default
+   (no class) = Washi. Each theme sets the same ~19-variable
+   contract so every other layer below can stay theme-agnostic.
+   ============================================================ */
 
-  --font-sans: 'Space Grotesk', system-ui, sans-serif;
-  --font-display: 'Space Grotesk', system-ui, sans-serif;
-  --font-mono: 'Space Grotesk', system-ui, sans-serif;
-  --font-jp: 'Noto Sans JP', sans-serif;
+:root {
+  --tori-bg: #efe7d8;
+  --tori-bg-card: #fbf6ed;
+  --tori-bg-2: #e7ddca;
+  --tori-bg-sidebar: #eae0cf;
+  --tori-border: #2a211621;
+  --tori-hairline: #2a211612;
+  --tori-sb-border: #2a21161a;
+  --tori-text: #221b12;
+  --tori-text-muted: #635a4b;
+  --tori-dim: #726655;
+  --tori-accent: #be4327;
+  --tori-accent-fg: #fff;
+  --tori-accent-soft: #be43271a;
+  --tori-gold: #9c6f18;
+  --tori-jade: #2c8a62;
+  --tori-hanko: #be4327;
+  --tori-glow-1: #be432712;
+  --tori-glow-2: #b08c3c0f;
+  --tori-scheme: light;
+  /* Light themes: structural borders = full ink (brutalist) */
+  --tori-structural: var(--tori-text);
 }
 
-/* Structural theme tokens.
-   RAW = classic Brutalism: pure primary colors (stark yellow/red/green/blue),
-   black ink, off-white paper, zero radius, thick 3px borders, hard offset
-   shadows. No texture, no monospace — just raw, unpolished, high-contrast.
-   NEO = Neobrutalism: cream paper, hot coral red, vivid yellow, mint green,
-   periwinkle blue. Thick rounded borders, hard offset shadows, a touch of
-   playful tilt on accent cards. The two are deliberately built from
-   different color families (stark primaries vs. candy pastel-vivid) and
-   different geometry (sharp vs. rounded) so they read as distinct moods,
-   not variations on one palette. */
+.theme-paper {
+  --tori-bg: #f4eee4; --tori-bg-card: #fbf7ef; --tori-bg-2: #efe8db; --tori-bg-sidebar: #ede5d6;
+  --tori-border: #2d261c1f; --tori-hairline: #2d261c12; --tori-sb-border: #2d261c17;
+  --tori-text: #2a2118; --tori-text-muted: #6e6456; --tori-dim: #766a5b;
+  --tori-accent: #c8472a; --tori-accent-fg: #fff; --tori-accent-soft: #c8472a1a;
+  --tori-gold: #b07a1e; --tori-jade: #2f8f66; --tori-hanko: #c8472a;
+  --tori-glow-1: #c8472a0f; --tori-glow-2: #b07a1e0d; --tori-scheme: light;
+}
+.theme-matcha {
+  --tori-bg: #e6e9d8; --tori-bg-card: #f3f5e9; --tori-bg-2: #dde1cd; --tori-bg-sidebar: #e1e4d2;
+  --tori-border: #22261621; --tori-hairline: #22261612; --tori-sb-border: #2226161a;
+  --tori-text: #1e241a; --tori-text-muted: #555d45; --tori-dim: #5b6445;
+  --tori-accent: #b5481f; --tori-accent-fg: #fff; --tori-accent-soft: #b5481f1a;
+  --tori-gold: #8f6a16; --tori-jade: #2c8a62; --tori-hanko: #b5481f;
+  --tori-glow-1: #6e964612; --tori-glow-2: #b08c3c0d; --tori-scheme: light;
+}
+.theme-sakura {
+  --tori-bg: #f3e4e4; --tori-bg-card: #fcf1f1; --tori-bg-2: #ecd8d9; --tori-bg-sidebar: #f0dedf;
+  --tori-border: #301c201f; --tori-hairline: #301c2012; --tori-sb-border: #301c2017;
+  --tori-text: #2a1d20; --tori-text-muted: #6a5458; --tori-dim: #77595e;
+  --tori-accent: #c23a48; --tori-accent-fg: #fff; --tori-accent-soft: #c23a481a;
+  --tori-gold: #a06a2a; --tori-jade: #2f8a63; --tori-hanko: #c23a48;
+  --tori-glow-1: #d6829614; --tori-glow-2: #96b46e0d; --tori-scheme: light;
+}
+.theme-sumi {
+  --tori-bg: #f4f2ec; --tori-bg-card: #fcfbf6; --tori-bg-2: #eae7df; --tori-bg-sidebar: #efece4;
+  --tori-border: #14110c29; --tori-hairline: #14110c14; --tori-sb-border: #14110c1f;
+  --tori-text: #14110c; --tori-text-muted: #544e46; --tori-dim: #6e675e;
+  --tori-accent: #be4327; --tori-accent-fg: #fff; --tori-accent-soft: #be432717;
+  --tori-gold: #8a6516; --tori-jade: #2c8a62; --tori-hanko: #be4327;
+  --tori-glow-1: #14110c09; --tori-glow-2: #14110c06; --tori-scheme: light;
+}
+.theme-dusk {
+  --tori-bg: #11131f; --tori-bg-card: #191c2c; --tori-bg-2: #1f2336; --tori-bg-sidebar: #0c0e17;
+  --tori-border: #e0e4f51a; --tori-hairline: #e0e4f50f; --tori-sb-border: #e0e4f512;
+  --tori-text: #e6e8f4; --tori-text-muted: #909ab5; --tori-dim: #767e93;
+  --tori-accent: #ef6a45; --tori-accent-fg: #1a1420; --tori-accent-soft: #ef6a4524;
+  --tori-gold: #e0b15a; --tori-jade: #57c08f; --tori-hanko: #ef6a45;
+  --tori-glow-1: #ef6a451a; --tori-glow-2: #6074dc1a; --tori-scheme: dark;
+  /* Dark themes: mute structural borders — no blinding white edges */
+  --tori-structural: color-mix(in srgb, var(--tori-text) 28%, transparent);
+}
+.theme-ink {
+  --tori-bg: #0a090d; --tori-bg-card: #131218; --tori-bg-2: #1a1820; --tori-bg-sidebar: #060509;
+  --tori-border: #f5f2ed1f; --tori-hairline: #f5f2ed12; --tori-sb-border: #f5f2ed14;
+  --tori-text: #f5f2ed; --tori-text-muted: #a39bac; --tori-dim: #7d7689;
+  --tori-accent: #e2552e; --tori-accent-fg: #16140f; --tori-accent-soft: #e2552e24;
+  --tori-gold: #c9a35f; --tori-jade: #59b98d; --tori-hanko: #e2552e;
+  --tori-glow-1: #e2552e1f; --tori-glow-2: #785ac80f; --tori-scheme: dark;
+  --tori-structural: color-mix(in srgb, var(--tori-text) 28%, transparent);
+}
+.theme-ai {
+  --tori-bg: #0f1a2b; --tori-bg-card: #16243a; --tori-bg-2: #1d2d47; --tori-bg-sidebar: #0a1320;
+  --tori-border: #d6e2f51c; --tori-hairline: #d6e2f50f; --tori-sb-border: #d6e2f514;
+  --tori-text: #e8eef7; --tori-text-muted: #95a6bf; --tori-dim: #8090aa;
+  --tori-accent: #f2724e; --tori-accent-fg: #1a1008; --tori-accent-soft: #f2724e24;
+  --tori-gold: #e0b15a; --tori-jade: #57c08f; --tori-hanko: #f2724e;
+  --tori-glow-1: #5078d21f; --tori-glow-2: #f2724e12; --tori-scheme: dark;
+  --tori-structural: color-mix(in srgb, var(--tori-text) 28%, transparent);
+}
+.theme-gold {
+  --tori-bg: #14110a; --tori-bg-card: #1f1a10; --tori-bg-2: #2a2315; --tori-bg-sidebar: #0e0c07;
+  --tori-border: #e8d6a01f; --tori-hairline: #e8d6a012; --tori-sb-border: #e8d6a017;
+  --tori-text: #f6efdc; --tori-text-muted: #b8aa83; --tori-dim: #998c69;
+  --tori-accent: #d4a843; --tori-accent-fg: #1a160c; --tori-accent-soft: #d4a84326;
+  --tori-gold: #e6c46a; --tori-jade: #5fb98a; --tori-hanko: #e2552e;
+  --tori-glow-1: #d4a8431f; --tori-glow-2: #b07a2812; --tori-scheme: dark;
+  /* Gold: borders use muted gold-tinted ink, not blinding cream-white */
+  --tori-structural: color-mix(in srgb, var(--tori-text) 28%, transparent);
+}
+
+/* ============================================================
+   Tailwind v4 token mapping — Tori variables -> Kotodori's
+   existing Tailwind color/font vocabulary, so every call site
+   that already reads bg-paper / text-ink / bg-yellow / etc. picks
+   up the paper-theme values with zero changes at those sites.
+   ============================================================ */
+
+@theme {
+  --color-ink: var(--tori-text);
+  --color-paper: var(--tori-bg);
+  --color-surface: var(--tori-bg-2);
+  --color-muted: var(--tori-text-muted);
+  --color-yellow: var(--tori-gold);
+  --color-red: var(--tori-accent);
+  --color-green: var(--tori-jade);
+  --color-blue: var(--tori-dim);
+  --color-card: var(--tori-bg-card);
+  --color-border: var(--tori-border);
+  --color-accent: var(--tori-accent);
+  --color-accent-fg: var(--tori-accent-fg);
+  /* Structural = full ink on light themes, muted on dark themes.
+     Use border-structural / text-structural instead of border-ink
+     for any surface that should breathe on dark papers. */
+  --color-structural: var(--tori-structural);
+
+  --font-sans: 'Zen Kaku Gothic New', system-ui, sans-serif;
+  --font-display: 'Zen Old Mincho', Georgia, serif;
+  --font-jp: 'Zen Old Mincho', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* ============================================================
+   Structural tokens — the brutalist DNA. RAW (default) = thin
+   paper-brutal borders + hard offset shadows tinted to the
+   current paper's ink color. NEO = thicker rounded borders, a
+   touch of tilt on accent cards.
+   ============================================================ */
 :root {
+  --border-w: 2px;
   --radius: 0px;
   --radius-sm: 0px;
-  --border-w: 3px;
   --tilt: 0deg;
+  /* Shadows use structural color so dark themes don't cast blinding white offsets */
+  --shadow-brutal: 3px 3px 0px color-mix(in srgb, var(--tori-structural) 70%, transparent);
+  --shadow-brutal-hover: 5px 5px 0px color-mix(in srgb, var(--tori-structural) 55%, transparent);
 }
-
 [data-theme="neobrutalism"] {
-  --color-ink: #171412;
-  --color-paper: #fff9ec;
-  --color-yellow: #ffd93d;
-  --color-red: #ff6b6b;
-  --color-green: #5fd68a;
-  --color-blue: #8c86ff;
-  --color-surface: #f5efe0;
-  --color-muted: #8a8478;
-
-  --radius: 16px;
-  --radius-sm: 8px;
-  --border-w: 4px;
+  --border-w: 3px;
+  --radius: 14px;
+  --radius-sm: 7px;
   --tilt: -1deg;
 }
 
 /* border-3 is not a Tailwind v4 default — define it here.
-   Width + radius both read theme tokens; radius is pinned to 0 in both
-   themes so every bordered surface stays a hard 90-degree edge. */
+   Width + radius both read theme tokens; every bordered surface
+   stays flush in RAW and picks up soft rounding in NEO. */
 @utility border-3 {
   border-width: var(--border-w);
   border-radius: var(--radius);
@@ -73,8 +179,7 @@
   border-right-width: var(--border-w);
 }
 
-/* No-op in both themes now (--tilt: 0deg) — kept so existing call sites
-   don't need to be touched if tilt is ever reintroduced per-theme. */
+/* No-op in RAW (--tilt: 0deg), a slight playful lean in NEO. */
 @utility tilt-card {
   transform: rotate(var(--tilt));
 }
@@ -82,32 +187,148 @@
 * { box-sizing: border-box; }
 
 html {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
-  background-color: var(--color-paper);
-  color: var(--color-ink);
+  font-family: var(--font-sans);
+  background-color: var(--tori-bg);
+  color: var(--tori-text);
   font-variant-numeric: tabular-nums;
+  color-scheme: var(--tori-scheme);
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-body { margin: 0; padding: 0; min-height: 100vh; position: relative; }
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  font-size: var(--text-base, 1rem);
+}
 
-.jp { font-family: 'Noto Sans JP', sans-serif; }
+/* Ambient theme-tinted glow + paper grain, ported from Tori. Both sit at
+   z-index 0 behind app content (Layout/Sidebar are already stacked above
+   this via normal document flow — nothing else needs a z-index bump). */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 720px at 88% -8%, var(--tori-glow-1), transparent 60%),
+    radial-gradient(900px 640px at -6% 108%, var(--tori-glow-2), transparent 60%);
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
 
-ruby { font-family: 'Noto Sans JP', sans-serif; }
+#root { position: relative; z-index: 1; }
+
+.jp { font-family: var(--font-jp); }
+.mincho { font-family: var(--font-display); }
+
+ruby { font-family: var(--font-jp); }
 rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--color-muted); }
 
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: none; }
+/* ---------- Density & type preferences ---------- */
+.density-compact { --dens: 0.78; --gap: 0.625rem; --p-card: 0.875rem; --text-base: 0.9375rem; }
+.density-sparse  { --dens: 1.3;  --gap: 1.5rem;   --p-card: 1.75rem;  --text-base: 1.0625rem; }
+.type-sans { --font-jp: var(--font-sans); --font-display: var(--font-sans); }
+
+.theme-transition, .theme-transition * {
+  transition: background-color 240ms ease, border-color 240ms ease, color 240ms ease,
+    fill 240ms ease, stroke 240ms ease, box-shadow 240ms ease !important;
 }
+
+::selection { background: var(--tori-accent-soft); color: var(--tori-text); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--tori-text-muted);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 99px;
+}
+
+:focus-visible { outline: 3px solid var(--tori-accent); outline-offset: 2px; }
+
+/* ============================================================
+   Keyframes — ported from Tori globals.css lines 262-277.
+   ============================================================ */
+@keyframes fade-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes fadeUp { 0% { opacity: 0; transform: translateY(16px); } 100% { opacity: 1; transform: none; } }
+@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes floaty { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-10px) rotate(1.5deg); } }
+@keyframes enterRise { 0% { opacity: 0; transform: translateY(12px); } 100% { opacity: 1; transform: none; } }
+@keyframes drawEnso { 100% { stroke-dashoffset: 0.07px; } }
+@keyframes gradeIn { 0% { opacity: 0; transform: translate(-50%, -50%) scale(0.6); } 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
+@keyframes stampIn { 0% { opacity: 0; transform: scale(1.8) rotate(-12deg); } 60% { opacity: 1; transform: scale(0.92) rotate(3deg); } 100% { opacity: 1; transform: scale(1) rotate(0deg); } }
+@keyframes ensoBloom { 0% { opacity: 0; transform: scale(0.5); } 30% { opacity: 0.12; } 100% { opacity: 0; transform: scale(1.5); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-8px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-6px); } 80% { transform: translateX(6px); } }
+@keyframes speakPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+@keyframes navSettle { 0% { transform: translateY(0); } 38% { transform: translateY(-3px); } 100% { transform: translateY(0); } }
+@keyframes inkBloom { 0% { opacity: 0; transform: scale(0.2); } 18% { opacity: 0.24; } 55% { opacity: 0.14; } 100% { opacity: 0; transform: scale(7); } }
+@keyframes inkWord { 0% { opacity: 0; transform: translateY(6px); } 100% { opacity: 0.92; transform: none; } }
+@keyframes inkWash { 0% { opacity: 0; } 30% { opacity: 0.08; } 100% { opacity: 0.055; } }
+@keyframes accDrop { 0% { opacity: 0; transform: translateY(-8px); } 100% { opacity: 1; transform: none; } }
+@keyframes flickPop { 0% { opacity: 0; transform: translate(-50%, -50%) scale(0.55); } 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
+
+/* ============================================================
+   Utilities
+   ============================================================ */
 .animate-fade-in { animation: fade-in 0.25s ease-out; }
+/* .reveal starts hidden; Reveal.tsx's IntersectionObserver adds .in once the
+   element enters the viewport. --i (set inline per instance) staggers the
+   delay so a row of Reveals cascades instead of firing all at once. */
+.reveal { opacity: 0; }
+.reveal.in { animation: fadeUp 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: calc(var(--i, 0) * 80ms); }
+.view-enter { animation: enterRise 0.42s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
 
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--color-surface); }
-::-webkit-scrollbar-thumb { background: var(--color-ink); }
+.card-lift {
+  box-shadow: var(--shadow-1, 0 1px 2px rgba(0,0,0,.05));
+  transition: transform 0.28s cubic-bezier(0.2, 0.7, 0.2, 1), border-color 0.28s, background 0.28s, box-shadow 0.28s;
+}
+.card-lift:hover { border-color: var(--tori-accent); transform: translateY(-3px); box-shadow: var(--shadow-brutal-hover); }
+.card-lift:active { transform: scale(0.985); }
 
-:focus-visible { outline: 3px solid var(--color-yellow); outline-offset: 2px; }
+.go { opacity: 0; transform: translateX(-5px); transition: opacity 0.24s, transform 0.24s; }
+.card-lift:hover .go, .idx-row:hover .go { opacity: 1; transform: translateX(0); }
+
+.nav-item { transition: color 0.18s, background 0.18s, transform 0.12s; }
+.nav-item:active { transform: scale(0.97); }
+.nav-settle { animation: navSettle 0.5s cubic-bezier(0.34, 1.5, 0.5, 1); }
+
+.idx-row { transition: background 0.22s, padding-left 0.22s; }
+.idx-row:hover { background: var(--tori-accent-soft); }
+
+.anim-speak-pulse { animation: speakPulse 0.5s ease-in-out infinite; }
+.anim-shake { animation: shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both; }
+.stamp-in { animation: stampIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.enso-bloom { animation: ensoBloom 1.5s ease-out forwards; }
+.enso-ring { stroke-dasharray: 1; stroke-dashoffset: 1px; animation: drawEnso 1.15s cubic-bezier(0.3, 0.7, 0.2, 1) forwards; }
+.enso-grade { animation: gradeIn 0.6s cubic-bezier(0.34, 1.5, 0.5, 1) 0.62s both; }
+.floaty { animation: floaty 7s ease-in-out infinite; }
+
+/* Accordion — smooth height with no JS measurement */
+.acc-island { border: 1px solid var(--tori-border); background: var(--tori-bg-card); transition: box-shadow 0.28s, transform 0.28s; }
+.acc-island:hover { box-shadow: var(--shadow-brutal); transform: translateY(-1px); }
+.acc-island.open { box-shadow: var(--shadow-brutal); }
+.acc-head { width: 100%; padding: calc(16px * var(--dens, 1)) calc(20px * var(--dens, 1)); cursor: pointer; text-align: left; background: none; border: none; display: flex; align-items: center; gap: 16px; }
+.acc-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.34s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.acc-body.open { grid-template-rows: 1fr; }
+.acc-body-inner { overflow: hidden; }
+.acc-body-pad { padding: 0 calc(20px * var(--dens, 1)) calc(18px * var(--dens, 1)); }
+.acc-chev { transition: transform 0.34s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.acc-island.open .acc-chev { transform: rotate(180deg); }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
+  .kvg-path { stroke-dasharray: none !important; stroke-dashoffset: 0 !important; }
+  .reveal { opacity: 1 !important; }
 }
