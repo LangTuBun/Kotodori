@@ -6745,27 +6745,103 @@
         "jaRuby": "<ruby>鈴木<rp>(</rp><rt>すずき</rt><rp>)</rp></ruby>くんに<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>をもらいました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_102",
+      "g_187"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "A wa B ni/kara N o morau",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "AはBに/から N を + もらう／もらいます",
+        "exampleStr": "私 ＋ は田中さんに花をもらいました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that A receives a thing from B, framed from the receiver's viewpoint",
+      "speakerStance": "Neutral, but implies gratitude toward the giver"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "もらう (viewpoint: receiver) vs くれる (g_102, viewpoint: giver toward speaker) -- same event, different grammatical subject",
+        "description": {
+          "vi": "もらう và くれる (g_102) có thể mô tả CÙNG một sự việc (田中さんが私に花をくれた = 私は田中さんに花をもらった), nhưng chủ ngữ khác nhau: くれる lấy NGƯỜI CHO làm chủ ngữ, もらう lấy NGƯỜI NHẬN làm chủ ngữ. Chọn động từ nào phụ thuộc vào việc muốn nhấn mạnh ai.",
+          "en": "もらう and くれる (g_102) can describe the SAME event (田中さんが私に花をくれた = 私は田中さんに花をもらった), but with different subjects: くれる takes the GIVER as subject, もらう takes the RECEIVER as subject. Which verb to use depends on who you want to emphasize."
+        },
+        "relatedGrammarId": "g_102"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "鈴木くんに本をもらいました。",
-        "jaRuby": "<ruby>鈴木<rp>(</rp><rt>すずき</rt><rp>)</rp></ruby>くんに<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>をもらいました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã được bạn Suzuki tặng cho một quyển sách.",
-        "en": "I received a book from Suzuki.",
+        "ja": "私は田中さんに花をもらいました。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんに<ruby>花<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>をもらいました。",
+        "kana": "わたしはたなかさんにはなをもらいました。",
+        "romaji": "Watashi wa Tanaka-san ni hana o moraimashita.",
+        "vi": "Tôi đã nhận được hoa từ bạn Tanaka.",
+        "en": "I received flowers from Tanaka.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "私は (người nhận, chủ ngữ) 田中さんに (người cho) 花をもらいました.",
+          "en": "私は (the receiver, subject) 田中さんに (the giver) 花をもらいました."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "友達からいい情報をもらいました。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>からいい<ruby>情報<rp>(</rp><rt>じょうほう</rt><rp>)</rp></ruby>をもらいました。",
+        "kana": "ともだちからいいじょうほうをもらいました。",
+        "romaji": "Tomodachi kara ii jouhou o moraimashita.",
+        "vi": "Tôi đã nhận được thông tin hữu ích từ bạn.",
+        "en": "I got some useful information from my friend.",
+        "contextualExplanation": {
+          "vi": "から thay に khi nhấn mạnh \"nguồn gốc\" hơn là người cho trực tiếp.",
+          "en": "から replaces に when emphasizing the \"source\" rather than the direct giver."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "誕生日に何をもらいましたか。",
+        "jaRuby": "<ruby>誕生日<rp>(</rp><rt>たんじょうび</rt><rp>)</rp></ruby>に<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をもらいましたか。",
+        "kana": "たんじょうびになにをもらいましたか。",
+        "romaji": "Tanjoubi ni nani o moraimashita ka.",
+        "vi": "Sinh nhật bạn nhận được gì?",
+        "en": "What did you receive for your birthday?",
+        "contextualExplanation": {
+          "vi": "もらいましたか hỏi về món quà đã nhận, từ góc nhìn người nhận.",
+          "en": "もらいましたか asks about a received gift, from the receiver's viewpoint."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "まだ返事をもらっていません。",
+        "jaRuby": "まだ<ruby>返事<rp>(</rp><rt>へんじ</rt><rp>)</rp></ruby>をもらっていません。",
+        "kana": "まだへんじをもらっていません。",
+        "romaji": "Mada henji o moratte imasen.",
+        "vi": "Tôi vẫn chưa nhận được phản hồi.",
+        "en": "I haven't received a reply yet.",
+        "contextualExplanation": {
+          "vi": "もらっていません (ている phủ định) diễn tả tình trạng chưa nhận được điều gì.",
+          "en": "もらっていません (negative ている) expresses the state of not yet having received something."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "祖父からこの時計をもらいました。",
+        "jaRuby": "<ruby>祖父<rp>(</rp><rt>そふ</rt><rp>)</rp></ruby>からこの<ruby>時計<rp>(</rp><rt>とけい</rt><rp>)</rp></ruby>をもらいました。",
+        "kana": "そふからこのとけいをもらいました。",
+        "romaji": "Sofu kara kono tokei o moraimashita.",
+        "vi": "Tôi được ông tôi cho chiếc đồng hồ này.",
+        "en": "I got this watch from my grandfather.",
+        "contextualExplanation": {
+          "vi": "もらう cũng dùng cho vật có giá trị lâu dài (không chỉ quà tặng nhất thời), như một món đồ được truyền lại.",
+          "en": "もらう also applies to a lasting item (not just a one-time gift), like a handed-down possession."
         }
       }
     ],
@@ -6798,27 +6874,101 @@
         "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>をいただきました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_186"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "A wa B ni N o itadaku",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "AはBに N を + いただく／いただきます",
+        "exampleStr": "私 ＋ は先生に本をいただきました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "written"
+      ],
+      "intent": "The humble form of もらう -- receiving something from a superior/respected person",
+      "speakerStance": "Humble, showing deference toward the giver"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "いただく is humble (lowers the speaker), not honorific (which would raise the OTHER person's action)",
+        "description": {
+          "vi": "いただく thuộc nhóm KHIÊM NHƯỜNG NGỮ (謙譲語) -- hạ thấp hành động của CHÍNH NGƯỜI NÓI (tôi nhận được một cách khiêm tốn), khác với kính ngữ (尊敬語) vốn nâng cao hành động của NGƯỜI KHÁC (như くださる, tôn kính hành động \"cho\" của đối phương).",
+          "en": "いただく belongs to the HUMBLE speech (謙譲語) category -- it lowers the SPEAKER'S OWN action (humbly receiving), different from honorific speech (尊敬語), which elevates SOMEONE ELSE'S action (like くださる, honoring the other person's act of giving)."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "先生に辞書をいただきました。",
-        "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>をいただきました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã được thầy tặng cho một quyển từ điển.",
-        "en": "I received a dictionary from my teacher.",
+        "ja": "先生に本をいただきました。",
+        "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>をいただきました。",
+        "kana": "せんせいにほんをいただきました。",
+        "romaji": "Sensei ni hon o itadakimashita.",
+        "vi": "Tôi đã được thầy tặng cho một cuốn sách.",
+        "en": "I received a book from my teacher.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "いただきました khiêm tốn hóa hành động nhận, phù hợp vì người cho là bề trên (giáo viên).",
+          "en": "いただきました humbly frames the receiving, fitting since the giver is a superior (teacher)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "部長に貴重なアドバイスをいただきました。",
+        "jaRuby": "<ruby>部長<rp>(</rp><rt>ぶちょう</rt><rp>)</rp></ruby>に<ruby>貴重<rp>(</rp><rt>きちょう</rt><rp>)</rp></ruby>なアドバイスをいただきました。",
+        "kana": "ぶちょうにきちょうなアドバイスをいただきました。",
+        "romaji": "Buchou ni kichou na adobaisu o itadakimashita.",
+        "vi": "Tôi đã được trưởng phòng cho lời khuyên quý báu.",
+        "en": "I received valuable advice from the department head.",
+        "contextualExplanation": {
+          "vi": "いただきました rất phổ biến trong ngữ cảnh công việc trang trọng khi nói về cấp trên.",
+          "en": "いただきました is very common in a formal work context when talking about a superior."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "お客様からお手紙をいただいたことがありますか。",
+        "jaRuby": "お<ruby>客様<rp>(</rp><rt>きゃくさま</rt><rp>)</rp></ruby>からお<ruby>手紙<rp>(</rp><rt>てがみ</rt><rp>)</rp></ruby>をいただいたことがありますか。",
+        "kana": "おきゃくさまからおてがみをいただいたことがありますか。",
+        "romaji": "Okyakusama kara otegami o itadaita koto ga arimasu ka.",
+        "vi": "Bạn đã từng được khách hàng viết thư cho chưa?",
+        "en": "Have you ever received a letter from a customer?",
+        "contextualExplanation": {
+          "vi": "いただいた kết hợp với ことがあります (g_083) để hỏi về trải nghiệm.",
+          "en": "いただいた combines with ことがあります (g_083) to ask about an experience."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "申し訳ございませんが、まだお返事をいただいておりません。",
+        "jaRuby": "<ruby>申<rp>(</rp><rt>もう</rt><rp>)</rp></ruby>し<ruby>訳<rp>(</rp><rt>わけ</rt><rp>)</rp></ruby>ございませんが、まだお<ruby>返事<rp>(</rp><rt>へんじ</rt><rp>)</rp></ruby>をいただいておりません。",
+        "kana": "もうしわけございませんが、まだおへんじをいただいておりません。",
+        "romaji": "Moushiwake gozaimasen ga, mada ohenji o itadaite orimasen.",
+        "vi": "Xin lỗi, chúng tôi vẫn chưa nhận được phản hồi từ quý khách.",
+        "en": "I'm sorry, but we haven't yet received your reply.",
+        "contextualExplanation": {
+          "vi": "いただいておりません (khiêm nhường ngữ đầy đủ) rất trang trọng, dùng trong thư từ/email kinh doanh.",
+          "en": "いただいておりません (fully humble speech) is very formal, used in business correspondence/emails."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "このお土産は、社長からいただいたものです。",
+        "jaRuby": "このお<ruby>土産<rp>(</rp><rt>みやげ</rt><rp>)</rp></ruby>は、<ruby>社長<rp>(</rp><rt>しゃちょう</rt><rp>)</rp></ruby>からいただいたものです。",
+        "kana": "このおみやげは、しゃちょうからいただいたものです。",
+        "romaji": "Kono omiyage wa, shachou kara itadaita mono desu.",
+        "vi": "Món quà lưu niệm này là do giám đốc tặng.",
+        "en": "This souvenir is something I received from the president.",
+        "contextualExplanation": {
+          "vi": "いただいたもの (mệnh đề bổ nghĩa cho もの) kết hợp với kiến thức mệnh đề bổ nghĩa danh từ (g_165).",
+          "en": "いただいたもの (a clause modifying もの) combines with the noun-modification knowledge (g_165)."
         }
       }
     ],
@@ -6851,27 +7001,103 @@
         "jaRuby": "<ruby>鈴木<rp>(</rp><rt>すずき</rt><rp>)</rp></ruby>くんに<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>してもらいました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_103",
+      "g_189"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "A wa B ni/kara V-te morau",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + もらう",
+        "exampleStr": "手伝う → 手伝って ＋ もらいます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that A has/gets B to do an action as a favor, framed from A's (the beneficiary's) viewpoint",
+      "speakerStance": "Neutral, but implies gratitude toward the person who did the action"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "てもらう (viewpoint: beneficiary) vs てくれる (g_103, viewpoint: giver toward speaker) -- describing the same favor from two angles",
+        "description": {
+          "vi": "てもらう và てくれる (g_103) mô tả CÙNG một sự việc từ hai góc nhìn: てくれる lấy NGƯỜI LÀM ƠN làm chủ ngữ (田中さんが手伝ってくれた), てもらう lấy NGƯỜI ĐƯỢC GIÚP làm chủ ngữ (私は田中さんに手伝ってもらった). Cả hai đều ngụ ý biết ơn.",
+          "en": "てもらう and てくれる (g_103) describe the SAME event from two angles: てくれる takes the PERSON DOING THE FAVOR as subject (田中さんが手伝ってくれた), てもらう takes the PERSON BENEFITING as subject (私は田中さんに手伝ってもらった). Both imply gratitude."
+        },
+        "relatedGrammarId": "g_103"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "鈴木くんに本を貸してもらいました。",
-        "jaRuby": "<ruby>鈴木<rp>(</rp><rt>すずき</rt><rp>)</rp></ruby>くんに<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>してもらいました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã được bạn Suzuki cho mượn sách.",
-        "en": "Suzuki lent me a book as a favor.",
+        "ja": "私は田中さんに引っ越しを手伝ってもらいました。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんに<ruby>引<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>っ<ruby>越<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>しを<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってもらいました。",
+        "kana": "わたしはたなかさんにひっこしをてつだってもらいました。",
+        "romaji": "Watashi wa Tanaka-san ni hikkoshi o tetsudatte moraimashita.",
+        "vi": "Tôi đã nhờ bạn Tanaka giúp chuyển nhà.",
+        "en": "I had Tanaka help me move.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "私は (người được giúp, chủ ngữ) 田中さんに (người làm ơn) 手伝ってもらいました.",
+          "en": "私は (the beneficiary, subject) 田中さんに (the helper) 手伝ってもらいました."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "先輩に日本語を直してもらいました。",
+        "jaRuby": "<ruby>先輩<rp>(</rp><rt>せんぱい</rt><rp>)</rp></ruby>に<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>直<rp>(</rp><rt>なお</rt><rp>)</rp></ruby>してもらいました。",
+        "kana": "せんぱいににほんごをなおしてもらいました。",
+        "romaji": "Senpai ni nihongo o naoshite moraimashita.",
+        "vi": "Tôi đã được đàn anh sửa giúp tiếng Nhật.",
+        "en": "I had my senpai correct my Japanese.",
+        "contextualExplanation": {
+          "vi": "てもらいました cũng dùng khi được người khác sửa/chỉnh giúp một điều gì đó.",
+          "en": "てもらいました also applies when someone corrects/fixes something for you."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "誰かに教えてもらいましたか。",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かに<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えてもらいましたか。",
+        "kana": "だれかにおしえてもらいましたか。",
+        "romaji": "Dareka ni oshiete moraimashita ka.",
+        "vi": "Bạn đã được ai dạy cho chưa?",
+        "en": "Did someone teach you (that)?",
+        "contextualExplanation": {
+          "vi": "てもらいましたか hỏi xem ai đó đã nhận được sự giúp đỡ cụ thể chưa.",
+          "en": "てもらいましたか asks whether someone has received specific help."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "忙しかったので、誰にも手伝ってもらえませんでした。",
+        "jaRuby": "<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったので、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>にも<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってもらえませんでした。",
+        "kana": "いそがしかったので、だれにもてつだってもらえませんでした。",
+        "romaji": "Isogashikatta node, dare ni mo tetsudatte moraemasen deshita.",
+        "vi": "Vì mọi người bận nên tôi đã không nhờ được ai giúp cả.",
+        "en": "Since everyone was busy, I couldn't get anyone to help me.",
+        "contextualExplanation": {
+          "vi": "てもらえませんでした (thể khả năng + phủ định) diễn tả không thể nhận được sự giúp đỡ.",
+          "en": "てもらえませんでした (potential + negative) expresses being unable to receive help."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どもに絵を描いてもらいました。とても上手でした。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもに<ruby>絵<rp>(</rp><rt>え</rt><rp>)</rp></ruby>を<ruby>描<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてもらいました。とても<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>でした。",
+        "kana": "こどもにえをかいてもらいました。とてもじょうずでした。",
+        "romaji": "Kodomo ni e o kaite moraimashita. Totemo jouzu deshita.",
+        "vi": "Tôi đã nhờ đứa trẻ vẽ tranh cho. Vẽ đẹp lắm.",
+        "en": "I had a child draw a picture for me. It was very good.",
+        "contextualExplanation": {
+          "vi": "てもらいました cũng dùng được khi người được nhờ không nhất thiết cao hơn vai vế (trẻ em), miễn là hành động có lợi cho người nói.",
+          "en": "てもらいました also works when the helper isn't necessarily of higher status (a child), as long as the action benefits the speaker."
         }
       }
     ],
@@ -6904,27 +7130,102 @@
         "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えていただきました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_188"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "A wa B ni/kara V-te itadaku",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + いただく",
+        "exampleStr": "説明する → 説明して ＋ いただきました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "written"
+      ],
+      "intent": "The humble form of てもらう -- having a superior/respected person do something as a favor",
+      "speakerStance": "Humble, showing deference"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "ていただく is the most polite/humble way to describe receiving help -- standard in business Japanese",
+        "description": {
+          "vi": "ていただく là cách khiêm tốn nhất để nói về việc được người khác giúp đỡ -- gần như bắt buộc trong môi trường công sở/kinh doanh khi nhắc đến hành động của khách hàng, cấp trên hoặc đối tác.",
+          "en": "ていただく is the most humble way to describe receiving help -- nearly mandatory in business/office settings when referring to the actions of a customer, superior, or partner."
+        },
+        "relatedGrammarId": "g_188"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
         "ja": "先生に日本語を教えていただきました。",
         "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えていただきました。",
-        "kana": "",
-        "romaji": "",
+        "kana": "せんせいににほんごをおしえていただきました。",
+        "romaji": "Sensei ni nihongo o oshiete itadakimashita.",
         "vi": "Tôi đã được thầy dạy cho tiếng Nhật.",
-        "en": "I was taught Japanese by my teacher.",
+        "en": "My teacher was kind enough to teach me Japanese.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "ていただきました khiêm tốn hóa việc được thầy giáo dạy, phù hợp với vai vế bề trên.",
+          "en": "ていただきました humbly frames being taught by the teacher, fitting the superior relationship."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "お客様にアンケートにお答えいただきました。",
+        "jaRuby": "お<ruby>客様<rp>(</rp><rt>きゃくさま</rt><rp>)</rp></ruby>にアンケートにお<ruby>答<rp>(</rp><rt>こた</rt><rp>)</rp></ruby>えいただきました。",
+        "kana": "おきゃくさまにアンケートにおこたえいただきました。",
+        "romaji": "Okyakusama ni ankeeto ni okotae itadakimashita.",
+        "vi": "Chúng tôi đã nhận được sự trả lời khảo sát từ quý khách.",
+        "en": "Our customers were kind enough to answer the survey.",
+        "contextualExplanation": {
+          "vi": "お答えいただきました dùng お + thân ます + いただく, một mẫu khiêm nhường ngữ chuẩn mực.",
+          "en": "お答えいただきました uses お + masu-stem + いただく, a standard humble-speech pattern."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "先生に推薦状を書いていただけますか。",
+        "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>推薦状<rp>(</rp><rt>すいせんじょう</rt><rp>)</rp></ruby>を<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いていただけますか。",
+        "kana": "せんせいにすいせんじょうをかいていただけますか。",
+        "romaji": "Sensei ni suisenjou o kaite itadakemasu ka.",
+        "vi": "Thầy có thể viết thư giới thiệu cho em được không ạ?",
+        "en": "Could you please write me a letter of recommendation?",
+        "contextualExplanation": {
+          "vi": "ていただけますか (thể khả năng) là mẫu xin nhờ vả cực kỳ lịch sự với người trên.",
+          "en": "ていただけますか (potential form) is an extremely polite way to ask a superior for a favor."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "まだご確認いただいておりません。",
+        "jaRuby": "まだご<ruby>確認<rp>(</rp><rt>かくにん</rt><rp>)</rp></ruby>いただいておりません。",
+        "kana": "まだごかくにんいただいておりません。",
+        "romaji": "Mada gokakunin itadaite orimasen.",
+        "vi": "Chúng tôi vẫn chưa nhận được sự xác nhận từ quý khách.",
+        "en": "We have not yet received your confirmation.",
+        "contextualExplanation": {
+          "vi": "ご確認いただいておりません rất trang trọng, dùng trong email/thư từ kinh doanh.",
+          "en": "ご確認いただいておりません is very formal, used in business emails/correspondence."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "このイベントには、多くの方にご参加いただきました。",
+        "jaRuby": "このイベントには、<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>くの<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>にご<ruby>参加<rp>(</rp><rt>さんか</rt><rp>)</rp></ruby>いただきました。",
+        "kana": "このイベントには、おおくのかたにごさんかいただきました。",
+        "romaji": "Kono ibento ni wa, ooku no kata ni gosanka itadakimashita.",
+        "vi": "Sự kiện này đã nhận được sự tham gia của rất nhiều người.",
+        "en": "Many people were kind enough to participate in this event.",
+        "contextualExplanation": {
+          "vi": "ご参加いただきました dùng để cảm ơn nhóm người tham dự một cách trang trọng, phổ biến trong bài phát biểu/thông báo.",
+          "en": "ご参加いただきました formally thanks a group of participants, common in speeches/announcements."
         }
       }
     ],
@@ -6957,27 +7258,108 @@
         "jaRuby": "すみません、これを<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってもらえませんか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_101",
+      "g_188",
+      "g_189"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-te moraemasenka / itadakemasenka",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + もらえませんか",
+        "exampleStr": "手伝う → 手伝って ＋ もらえませんか"
+      },
+      {
+        "pos": "verb",
+        "form": "て-form + いただけませんか",
+        "exampleStr": "手伝う → 手伝って ＋ いただけませんか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite"
+      ],
+      "intent": "A polite request, phrased as asking whether one could receive the favor of the action",
+      "speakerStance": "Deferential, requesting"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "てもらえませんか/ていただけませんか sit at the top of the politeness ladder for requests, above てくれませんか (g_101)",
+        "description": {
+          "vi": "So với てくれませんか (g_101), てもらえませんか/ていただけませんか lịch sự hơn một bậc vì dùng động từ もらう/いただく (nhận) thay vì くれる (cho) -- đặt trọng tâm vào việc \"tôi xin phép được nhận ơn huệ này\", khiêm tốn hơn. ていただけませんか là mức lịch sự cao nhất trong toàn bộ nhóm mẫu câu nhờ vả.",
+          "en": "Compared to てくれませんか (g_101), てもらえませんか/ていただけませんか sit one step higher in politeness, since they use もらう/いただく (\"receive\") instead of くれる (\"give\") -- framing it as \"may I receive this favor\", which is more humble. ていただけませんか is the highest politeness level in this entire request family."
+        },
+        "relatedGrammarId": "g_101"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "すみません、これを手伝ってもらえませんか。",
-        "jaRuby": "すみません、これを<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってもらえませんか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Xin lỗi, bạn có thể giúp tôi việc này được không?",
-        "en": "Excuse me, could you help me with this?",
+        "ja": "すみません、ちょっと手伝ってもらえませんか。",
+        "jaRuby": "すみません、ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってもらえませんか。",
+        "kana": "すみません、ちょっとてつだってもらえませんか。",
+        "romaji": "Sumimasen, chotto tetsudatte moraemasen ka.",
+        "vi": "Xin lỗi, bạn có thể giúp tôi một chút không?",
+        "en": "Excuse me, could you help me out a bit?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "てもらえませんか lịch sự, phù hợp khi nhờ vả người không quá thân.",
+          "en": "てもらえませんか is polite, fitting when asking a favor of someone not too close."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "もう少し詳しくご説明いただけませんか。",
+        "jaRuby": "もう<ruby>少<rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby>詳<rp>(</rp><rt>くわ</rt><rp>)</rp></ruby>しくご<ruby>説明<rp>(</rp><rt>せつめい</rt><rp>)</rp></ruby>いただけませんか。",
+        "kana": "もうすこしくわしくごせつめいいただけませんか。",
+        "romaji": "Mou sukoshi kuwashiku gosetsumei itadakemasen ka.",
+        "vi": "Anh/chị có thể giải thích chi tiết hơn một chút được không ạ?",
+        "en": "Could you please explain in a bit more detail?",
+        "contextualExplanation": {
+          "vi": "いただけませんか là mức lịch sự cao nhất, phù hợp khi nhờ vả cấp trên/khách hàng.",
+          "en": "いただけませんか is the highest politeness level, fitting when asking a favor of a superior/customer."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "窓を閉めてもらえませんか。",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めてもらえませんか。",
+        "kana": "まどをしめてもらえませんか。",
+        "romaji": "Mado o shimete moraemasen ka.",
+        "vi": "Bạn đóng cửa sổ giúp tôi được không?",
+        "en": "Could you close the window for me?",
+        "contextualExplanation": {
+          "vi": "Cấu trúc tương tự てくれませんか (g_101), nhưng nhấn mạnh việc \"tôi được nhận\" thay vì \"bạn cho tôi\".",
+          "en": "A structure similar to てくれませんか (g_101), but emphasizing \"I receive\" rather than \"you give me\"."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "ちょっと待ってもらえる？",
+        "jaRuby": "ちょっと<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>ってもらえる？",
+        "kana": "ちょっとまってもらえる？",
+        "romaji": "Chotto matte moraeru?",
+        "vi": "Đợi mình một chút được không?",
+        "en": "Could you wait a moment?",
+        "contextualExplanation": {
+          "vi": "もらえる？ (khẳng định + lên giọng) là biến thể thân mật hơn của mẫu nhờ vả này.",
+          "en": "もらえる？ (affirmative + rising intonation) is a more casual variant of this request pattern."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "お手数ですが、こちらにサインをいただけませんか。",
+        "jaRuby": "お<ruby>手数<rp>(</rp><rt>てすう</rt><rp>)</rp></ruby>ですが、こちらにサインをいただけませんか。",
+        "kana": "おてすうですが、こちらにサインをいただけませんか。",
+        "romaji": "Otesuu desu ga, kochira ni sain o itadakemasen ka.",
+        "vi": "Phiền anh/chị ký vào đây được không ạ?",
+        "en": "Sorry for the trouble, but could you sign here?",
+        "contextualExplanation": {
+          "vi": "いただけませんか cũng kết hợp được với danh từ (サイン, không phải động từ), khi mượn cấu trúc để xin một VẬT/HÀNH ĐỘNG cụ thể -- xem thêm てほしい (g_191).",
+          "en": "いただけませんか also combines with a noun (サイン, not a verb) when borrowing the structure to ask for a specific item/action -- see also てほしい (g_191)."
         }
       }
     ],
@@ -7010,27 +7392,102 @@
         "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>夏<rp>(</rp><rt>なつ</rt><rp>)</rp></ruby>になってほしいです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_078"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-te hoshii",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + ほしい",
+        "exampleStr": "来る → 来て ＋ ほしいです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual"
+      ],
+      "intent": "Expressing that the speaker wants someone else to do something",
+      "speakerStance": "Subjective desire, directed at another person's action"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "てほしい (\"want someone to do\") vs たい (g_078, \"want to do myself\")",
+        "description": {
+          "vi": "てほしい diễn tả mong muốn NGƯỜI KHÁC làm gì đó cho mình (来てほしい = \"muốn ai đó đến\"), khác hẳn たい (g_078, muốn TỰ MÌNH làm một hành động). Cả hai đều là tính từ い và chia giống nhau, nhưng chủ thể của hành động mong muốn hoàn toàn khác.",
+          "en": "てほしい expresses wanting SOMEONE ELSE to do something (来てほしい = \"want someone to come\"), completely different from たい (g_078, wanting to do an action ONESELF). Both are i-adjectives and conjugate the same way, but the subject of the desired action is entirely different."
+        },
+        "relatedGrammarId": "g_078"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "早く夏になってほしいです。",
-        "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>夏<rp>(</rp><rt>なつ</rt><rp>)</rp></ruby>になってほしいです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi mong mùa hè đến sớm.",
-        "en": "I want summer to come soon.",
+        "ja": "早く来てほしいです。",
+        "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>てほしいです。",
+        "kana": "はやくきてほしいです。",
+        "romaji": "Hayaku kite hoshii desu.",
+        "vi": "Tôi muốn bạn đến sớm.",
+        "en": "I want you to come soon.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "来て (hành động của người khác) + ほしいです diễn tả mong muốn của người nói.",
+          "en": "来て (someone else's action) + ほしいです expresses the speaker's wish."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この問題について、みなさんに考えてほしいです。",
+        "jaRuby": "この<ruby>問題<rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>について、みなさんに<ruby>考<rp>(</rp><rt>かんが</rt><rp>)</rp></ruby>えてほしいです。",
+        "kana": "このもんだいについて、みなさんにかんがえてほしいです。",
+        "romaji": "Kono mondai ni tsuite, minasan ni kangaete hoshii desu.",
+        "vi": "Tôi mong mọi người suy nghĩ về vấn đề này.",
+        "en": "I want everyone to think about this issue.",
+        "contextualExplanation": {
+          "vi": "てほしい cũng dùng trong ngữ cảnh trang trọng, kêu gọi hành động từ một nhóm người.",
+          "en": "てほしい also works in a formal context, calling for action from a group of people."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "もう二度と嘘をついてほしくないです。",
+        "jaRuby": "もう<ruby>二度<rp>(</rp><rt>にど</rt><rp>)</rp></ruby>と<ruby>嘘<rp>(</rp><rt>うそ</rt><rp>)</rp></ruby>をついてほしくないです。",
+        "kana": "もうにどとうそをついてほしくないです。",
+        "romaji": "Mou nido to uso o tsuite hoshikunai desu.",
+        "vi": "Tôi không muốn bạn nói dối thêm lần nào nữa.",
+        "en": "I don't want you to lie again.",
+        "contextualExplanation": {
+          "vi": "ほしくない (phủ định, chia như tính từ い) diễn tả mong muốn ai đó KHÔNG làm gì.",
+          "en": "ほしくない (negative, conjugated like an i-adjective) expresses wanting someone NOT to do something."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "私に何をしてほしいですか。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしてほしいですか。",
+        "kana": "わたしになにをしてほしいですか。",
+        "romaji": "Watashi ni nani o shite hoshii desu ka.",
+        "vi": "Bạn muốn tôi làm gì?",
+        "en": "What do you want me to do?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi hỏi trực tiếp về mong muốn của người nghe đối với hành động của người nói.",
+          "en": "A question directly asking about the listener's desire regarding the speaker's action."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どもには、健康に育ってほしいと思っています。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもには、<ruby>健康<rp>(</rp><rt>けんこう</rt><rp>)</rp></ruby>に<ruby>育<rp>(</rp><rt>そだ</rt><rp>)</rp></ruby>ってほしいと<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>っています。",
+        "kana": "こどもには、けんこうにそだってほしいとおもっています。",
+        "romaji": "Kodomo ni wa, kenkou ni sodatte hoshii to omotte imasu.",
+        "vi": "Tôi mong con mình lớn lên khỏe mạnh.",
+        "en": "I hope my child grows up healthy.",
+        "contextualExplanation": {
+          "vi": "てほしいと思っています kết hợp với と思う (g_147) để diễn đạt một ước muốn sâu sắc, lâu dài.",
+          "en": "てほしいと思っています combines with と思う (g_147) to express a deep, long-term wish."
         }
       }
     ],
