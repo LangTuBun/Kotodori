@@ -7520,27 +7520,108 @@
         "jaRuby": "<ruby>兄<rp>(</rp><rt>あに</rt><rp>)</rp></ruby>に<ruby>自転車<rp>(</rp><rt>じてんしゃ</rt><rp>)</rp></ruby>を<ruby>借<rp>(</rp><rt>か</rt><rp>)</rp></ruby>りました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_186",
+      "g_193"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "A ga B ni N o kasu/oshieru/azukeru <-> B ga A ni/kara N o kariru/osowaru/azukaru",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "AがBに N を + 貸す／教える／預ける",
+        "exampleStr": "私 ＋ が友達に本を貸す"
+      },
+      {
+        "pos": "verb",
+        "form": "BがAに/から N を + 借りる／教わる／預かる",
+        "exampleStr": "友達 ＋ が私から本を借りる"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing the same transaction from opposite directions with a paired pair of verbs",
+      "speakerStance": "Neutral, structural -- choice of verb determines whose viewpoint is centered"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Like もらう/くれる, these pairs describe ONE event from two directions -- learn them as fixed pairs, not translated word-by-word",
+        "description": {
+          "vi": "Giống cặp もらう/くれる, các cặp động từ này (貸す⇔借りる、教える⇔教わる、預ける⇔預かる) mô tả CÙNG một giao dịch từ hai hướng ngược nhau. Không nên dịch từng từ riêng lẻ sang tiếng Việt/Anh rồi ghép lại -- cần học thuộc từng cặp như một đơn vị.",
+          "en": "Like もらう/くれる, these verb pairs (貸す⇔借りる, 教える⇔教わる, 預ける⇔預かる) describe ONE transaction from opposite directions. Don't translate each word separately and reassemble -- learn each pair as a unit."
+        },
+        "relatedGrammarId": "g_186"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "兄に自転車を借りました。",
-        "jaRuby": "<ruby>兄<rp>(</rp><rt>あに</rt><rp>)</rp></ruby>に<ruby>自転車<rp>(</rp><rt>じてんしゃ</rt><rp>)</rp></ruby>を<ruby>借<rp>(</rp><rt>か</rt><rp>)</rp></ruby>りました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã mượn xe đạp của anh trai.",
-        "en": "I borrowed a bicycle from my brother.",
+        "ja": "私は友達に本を貸しました。友達は私に本を借りました。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>しました。<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>は<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>借<rp>(</rp><rt>か</rt><rp>)</rp></ruby>りました。",
+        "kana": "わたしはともだちにほんをかしました。ともだちはわたしにほんをかりました。",
+        "romaji": "Watashi wa tomodachi ni hon o kashimashita. Tomodachi wa watashi ni hon o karimashita.",
+        "vi": "Tôi đã cho bạn mượn sách. Bạn đã mượn sách của tôi.",
+        "en": "I lent my friend a book. My friend borrowed a book from me.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Cùng một sự việc, hai câu với chủ ngữ khác nhau: 貸す (người cho mượn) và 借りる (người mượn).",
+          "en": "The same event, two sentences with different subjects: 貸す (the lender) and 借りる (the borrower)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中さんに料理の作り方を教わりました。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんに<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>の<ruby>作<rp>(</rp><rt>つく</rt><rp>)</rp></ruby>り<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>を<ruby>教<rp>(</rp><rt>おそ</rt><rp>)</rp></ruby>わりました。",
+        "kana": "たなかさんにりょうりのつくりかたをおそわりました。",
+        "romaji": "Tanaka-san ni ryouri no tsukurikata o osowarimashita.",
+        "vi": "Tôi đã được bạn Tanaka chỉ cho cách nấu ăn.",
+        "en": "I learned how to cook from Tanaka.",
+        "contextualExplanation": {
+          "vi": "教わりました (từ góc nhìn người học) tương ứng với 田中さんが教えました (từ góc nhìn người dạy).",
+          "en": "教わりました (from the learner's viewpoint) corresponds to 田中さんが教えました (from the teacher's viewpoint)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "荷物を預かっていただけますか。",
+        "jaRuby": "<ruby>荷物<rp>(</rp><rt>にもつ</rt><rp>)</rp></ruby>を<ruby>預<rp>(</rp><rt>あず</rt><rp>)</rp></ruby>かっていただけますか。",
+        "kana": "にもつをあずかっていただけますか。",
+        "romaji": "Nimotsu o azukatte itadakemasu ka.",
+        "vi": "Anh/chị có thể giữ hành lý giúp tôi được không?",
+        "en": "Could you keep my luggage for me?",
+        "contextualExplanation": {
+          "vi": "預かる (giữ giúp) kết hợp với ていただけますか (g_190) trong lời nhờ vả lịch sự.",
+          "en": "預かる (\"keep for someone\") combines with ていただけますか (g_190) in a polite request."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "まだ誰にも貸していません。",
+        "jaRuby": "まだ<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>にも<ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>していません。",
+        "kana": "まだだれにもかしていません。",
+        "romaji": "Mada dare ni mo kashite imasen.",
+        "vi": "Tôi vẫn chưa cho ai mượn cả.",
+        "en": "I haven't lent it to anyone yet.",
+        "contextualExplanation": {
+          "vi": "貸していません phủ định việc cho mượn, giữ nguyên chủ ngữ là người sở hữu vật.",
+          "en": "貸していません negates lending, with the subject staying as the owner of the item."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どもを1時間、祖母に預けました。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもを1<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>、<ruby>祖母<rp>(</rp><rt>そぼ</rt><rp>)</rp></ruby>に<ruby>預<rp>(</rp><rt>あず</rt><rp>)</rp></ruby>けました。",
+        "kana": "こどもをいちじかん、そぼにあずけました。",
+        "romaji": "Kodomo o ichijikan, sobo ni azukemashita.",
+        "vi": "Tôi đã gửi con cho bà trông trong 1 tiếng.",
+        "en": "I left my child with my grandmother for an hour.",
+        "contextualExplanation": {
+          "vi": "預ける mở rộng nghĩa sang việc \"gửi gắm\" người (không chỉ đồ vật), một cách dùng đặc biệt cần lưu ý.",
+          "en": "預ける extends to \"entrusting\" a person (not just an object), a special use worth noting."
         }
       }
     ],
@@ -7573,27 +7654,112 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby><ruby>母<rp>(</rp><rt>はは</rt><rp>)</rp></ruby>に<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>こされます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_061_1",
+      "g_194"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(ukemikei)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Group 1: う-row → あ-row + れる",
+        "exampleStr": "書く → 書かれる"
+      },
+      {
+        "pos": "verb",
+        "form": "Group 2: drop る + られる",
+        "exampleStr": "食べる → 食べられる"
+      },
+      {
+        "pos": "verb",
+        "form": "Group 3: irregular",
+        "exampleStr": "する → される／来る → 来られる"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Explaining how to conjugate a verb into its passive form",
+      "speakerStance": "Neutral, instructional/reference"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "Group 2's passive form is IDENTICAL to its potential form (られる) -- context alone tells them apart",
+        "description": {
+          "vi": "Ở nhóm 2, thể bị động (食べられる = \"bị ăn\") và thể khả năng (食べられる = \"có thể ăn\") có hình thức HOÀN TOÀN GIỐNG NHAU -- chỉ phân biệt được qua ngữ cảnh, không có dấu hiệu ngữ pháp riêng. Đây là điểm gây nhầm lẫn nhiều nhất khi học thể bị động.",
+          "en": "For Group 2, the passive form (食べられる = \"is eaten\") and the potential form (食べられる = \"can eat\") are IDENTICAL in shape -- only context distinguishes them, with no separate grammatical marker. This is the single most confusing point when learning the passive."
+        },
+        "relatedGrammarId": "g_061_1"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私は毎朝母に起こされます。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby><ruby>母<rp>(</rp><rt>はは</rt><rp>)</rp></ruby>に<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>こされます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Mỗi sáng tôi đều bị mẹ gọi dậy.",
-        "en": "I am woken up by my mother every morning.",
+        "ja": "書く（Group1）→ 書かれる",
+        "jaRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>く（Group1）→ <ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かれる",
+        "kana": "かく → かかれる",
+        "romaji": "Kaku → kakareru",
+        "vi": "Viết → bị/được viết",
+        "en": "To write → to be written",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Nhóm 1: く (hàng う) đổi thành か (hàng あ) rồi thêm れる.",
+          "en": "Group 1: く (u-row) becomes か (a-row), then れる is added."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "食べる（Group2）→ 食べられる",
+        "jaRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる（Group2）→ <ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べられる",
+        "kana": "たべる → たべられる",
+        "romaji": "Taberu → taberareru",
+        "vi": "Ăn → bị/được ăn",
+        "en": "To eat → to be eaten",
+        "contextualExplanation": {
+          "vi": "Nhóm 2: bỏ る, thêm られる -- lưu ý giống hệt thể khả năng về hình thức.",
+          "en": "Group 2: drop る, add られる -- note this looks identical to the potential form."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "する（Group3）→ される",
+        "kana": "する → される",
+        "romaji": "Suru → sareru",
+        "vi": "Làm → bị/được làm",
+        "en": "To do → to be done",
+        "contextualExplanation": {
+          "vi": "する chia đều đặn thành される.",
+          "en": "する conjugates regularly to される."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "来る（Group3）→ 来られる",
+        "jaRuby": "<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る（Group3）→ <ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる",
+        "kana": "くる → こられる",
+        "romaji": "Kuru → korareru",
+        "vi": "Đến → bị (ai đó) đến",
+        "en": "To come → (for someone) to have someone come",
+        "contextualExplanation": {
+          "vi": "来る bất quy tắc: đọc こ (không phải く) trước られる, giống thể khả năng.",
+          "en": "来る is irregular: read こ (not く) before られる, just like the potential form."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "飲む（Group1）→ 飲まれる",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む（Group1）→ <ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>まれる",
+        "kana": "のむ → のまれる",
+        "romaji": "Nomu → nomareru",
+        "vi": "Uống → bị uống",
+        "en": "To drink → to be drunk",
+        "contextualExplanation": {
+          "vi": "む (hàng う) đổi thành ま (hàng あ) rồi thêm れる, theo đúng quy tắc nhóm 1.",
+          "en": "む (u-row) becomes ま (a-row), then れる is added, following the Group 1 rule."
         }
       }
     ],
@@ -7626,27 +7792,102 @@
         "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>な<ruby>作家<rp>(</rp><rt>さっか</rt><rp>)</rp></ruby>に<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かれました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_193",
+      "g_195"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "B wa/ga A ni V-rareru (chokusetsu ukemi)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "B（đối tượng bị tác động）は/が A（chủ thể tác động）に + thể bị động",
+        "exampleStr": "私 ＋ は先生に褒められました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing an action from the receiving end -- B is directly affected by A's action",
+      "speakerStance": "Neutral, but centers the experience of the one affected"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Direct passive mirrors the active sentence closely -- を becomes は/が, に marks the agent",
+        "description": {
+          "vi": "Bị động trực tiếp gần như là \"đảo ngược\" câu chủ động: đối tượng của tha động từ (先生が私を褒めました) trở thành CHỦ NGỮ của câu bị động (私が先生に褒められました), を→が/は, người thực hiện hành động đánh dấu bằng に.",
+          "en": "The direct passive closely mirrors \"flipping\" an active sentence: a transitive verb's object (先生が私を褒めました) becomes the SUBJECT of the passive sentence (私が先生に褒められました), を→が/は, and the agent is marked with に."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この本は有名な作家に書かれました。",
-        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>な<ruby>作家<rp>(</rp><rt>さっか</rt><rp>)</rp></ruby>に<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かれました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Quyển sách này được viết bởi một nhà văn nổi tiếng.",
-        "en": "This book was written by a famous author.",
+        "ja": "私は先生に褒められました。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>褒<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>められました。",
+        "kana": "わたしはせんせいにほめられました。",
+        "romaji": "Watashi wa sensei ni homeraremashita.",
+        "vi": "Tôi đã được thầy khen.",
+        "en": "I was praised by my teacher.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "私は (người bị tác động) 先生に (người thực hiện) 褒められました (thể bị động).",
+          "en": "私は (the affected person) 先生に (the agent) 褒められました (passive form)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "その本は有名な作家に書かれました。",
+        "jaRuby": "その<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>な<ruby>作家<rp>(</rp><rt>さっか</rt><rp>)</rp></ruby>に<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かれました。",
+        "kana": "そのほんはゆうめいなさっかにかかれました。",
+        "romaji": "Sono hon wa yuumei na sakka ni kakaremashita.",
+        "vi": "Cuốn sách đó được viết bởi một nhà văn nổi tiếng.",
+        "en": "That book was written by a famous author.",
+        "contextualExplanation": {
+          "vi": "その本は (đối tượng bị tác động) làm chủ ngữ, nhấn mạnh vào cuốn sách hơn là tác giả.",
+          "en": "その本は (the affected object) is the subject, emphasizing the book more than the author."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "誰に呼ばれましたか。",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>に<ruby>呼<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>ばれましたか。",
+        "kana": "だれによばれましたか。",
+        "romaji": "Dare ni yobaremashita ka.",
+        "vi": "Bạn đã được ai gọi vậy?",
+        "en": "Who called you (over)?",
+        "contextualExplanation": {
+          "vi": "誰に hỏi về người thực hiện hành động trong câu bị động.",
+          "en": "誰に asks about the agent in a passive sentence."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "誰にも招待されませんでした。",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>にも<ruby>招待<rp>(</rp><rt>しょうたい</rt><rp>)</rp></ruby>されませんでした。",
+        "kana": "だれにもしょうたいされませんでした。",
+        "romaji": "Dare ni mo shoutai saremasen deshita.",
+        "vi": "Tôi đã không được ai mời cả.",
+        "en": "I wasn't invited by anyone.",
+        "contextualExplanation": {
+          "vi": "誰にも + phủ định (g_053) kết hợp với thể bị động để nói \"không ai làm gì với tôi cả\".",
+          "en": "誰にも + negative (g_053) combines with the passive to say \"no one did anything [to me]\"."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼は多くの人に尊敬されています。",
+        "jaRuby": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>は<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>くの<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby>尊敬<rp>(</rp><rt>そんけい</rt><rp>)</rp></ruby>されています。",
+        "kana": "かれはおおくのひとにそんけいされています。",
+        "romaji": "Kare wa ooku no hito ni sonkei sarete imasu.",
+        "vi": "Anh ấy được nhiều người kính trọng.",
+        "en": "He is respected by many people.",
+        "contextualExplanation": {
+          "vi": "されています (bị động + ている) diễn tả một trạng thái được duy trì lâu dài, không phải một lần.",
+          "en": "されています (passive + ている) expresses a long-standing state, not a one-time event."
         }
       }
     ],
@@ -7679,27 +7920,103 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>で<ruby>隣<rp>(</rp><rt>となり</rt><rp>)</rp></ruby>の<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby>足<rp>(</rp><rt>あし</rt><rp>)</rp></ruby>を<ruby>踏<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>まれました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_194",
+      "g_196"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "B wa/ga A ni N o V-rareru (kansetsu/meiwaku ukemi)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "B（người bị ảnh hưởng）は/が A（chủ thể）に N を + thể bị động",
+        "exampleStr": "私 ＋ は隣の人にタバコを吸われました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing being negatively affected by someone else's action, even when that action wasn't directly done \"to\" B",
+      "speakerStance": "Expresses annoyance/inconvenience/suffering from an indirect effect"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This \"adversative passive\" has no direct equivalent in English -- it always carries a negative feeling",
+        "description": {
+          "vi": "Bị động gián tiếp (迷惑受身) không có cấu trúc tương đương trực tiếp trong tiếng Anh hay tiếng Việt -- nó diễn tả việc B bị ẢNH HƯỞNG TIÊU CỰC bởi hành động của A, dù hành động đó không nhắm thẳng vào B (私は隣の人にタバコを吸われました = \"tôi khó chịu vì người bên cạnh hút thuốc\", dù người đó không hút thuốc \"vào\" tôi). LUÔN mang sắc thái phàn nàn/khó chịu.",
+          "en": "The \"adversative passive\" (迷惑受身) has no direct equivalent in English or Vietnamese -- it expresses B being NEGATIVELY AFFECTED by A's action, even though the action wasn't aimed at B (私は隣の人にタバコを吸われました = \"I was bothered by my neighbor smoking\", even though they weren't smoking \"at\" me). ALWAYS carries a nuance of complaint/annoyance."
+        },
+        "relatedGrammarId": "g_194"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私は電車で隣の人に足を踏まれました。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>で<ruby>隣<rp>(</rp><rt>となり</rt><rp>)</rp></ruby>の<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby>足<rp>(</rp><rt>あし</rt><rp>)</rp></ruby>を<ruby>踏<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>まれました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã bị người bên cạnh giẫm vào chân trên tàu điện.",
-        "en": "I had my foot stepped on by the person next to me on the train.",
+        "ja": "電車の中で隣の人にタバコを吸われました。",
+        "jaRuby": "<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>の<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>で<ruby>隣<rp>(</rp><rt>となり</rt><rp>)</rp></ruby>の<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>にタバコを<ruby>吸<rp>(</rp><rt>す</rt><rp>)</rp></ruby>われました。",
+        "kana": "でんしゃのなかでとなりのひとにタバコをすわれました。",
+        "romaji": "Densha no naka de tonari no hito ni tabako o suwaremashita.",
+        "vi": "Tôi bị khó chịu vì người bên cạnh hút thuốc trên tàu điện.",
+        "en": "I was bothered by the person next to me smoking on the train.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "người bên cạnh hút thuốc không nhắm vào tôi, nhưng tôi vẫn bị ảnh hưởng tiêu cực -- đó là điểm cốt lõi của bị động gián tiếp.",
+          "en": "The neighbor smoking wasn't aimed at me, but I was still negatively affected -- that's the core of the adversative passive."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "出張中に、子どもに熱を出されて大変でした。",
+        "jaRuby": "<ruby>出張中<rp>(</rp><rt>しゅっちょうちゅう</rt><rp>)</rp></ruby>に、<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもに<ruby>熱<rp>(</rp><rt>ねつ</rt><rp>)</rp></ruby>を<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>されて<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>でした。",
+        "kana": "しゅっちょうちゅうに、こどもにねつをだされてたいへんでした。",
+        "romaji": "Shucchouchuu ni, kodomo ni netsu o dasarete taihen deshita.",
+        "vi": "Trong lúc đi công tác, con tôi bị sốt khiến tôi vất vả.",
+        "en": "While I was away on a business trip, my child got a fever, which was hard on me.",
+        "contextualExplanation": {
+          "vi": "子どもに熱を出されて diễn tả sự bất tiện do con ốm gây ra cho người nói (không phải con \"làm\" gì xấu, chỉ là gây phiền toái).",
+          "en": "子どもに熱を出されて expresses the inconvenience caused by the child's illness for the speaker (the child didn't \"do\" anything bad, it just caused trouble)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "誰かに財布を盗まれたんですか。",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かに<ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>を<ruby>盗<rp>(</rp><rt>ぬす</rt><rp>)</rp></ruby>まれたんですか。",
+        "kana": "だれかにさいふをぬすまれたんですか。",
+        "romaji": "Dareka ni saifu o nusumareta n desu ka.",
+        "vi": "Bạn bị ai đó lấy trộm ví à?",
+        "en": "Did someone steal your wallet?",
+        "contextualExplanation": {
+          "vi": "Ở đây ví THỰC SỰ là mục tiêu bị lấy, nhưng vẫn thuộc dạng gián tiếp vì を giữ nguyên (財布を), khác với bị động trực tiếp (財布が盗まれた).",
+          "en": "Here the wallet IS the actual target taken, but it's still the indirect type since を stays (財布を), different from the direct passive (財布が盗まれた)."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今日は誰にも邪魔されませんでした。集中できました。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>にも<ruby>邪魔<rp>(</rp><rt>じゃま</rt><rp>)</rp></ruby>されませんでした。<ruby>集中<rp>(</rp><rt>しゅうちゅう</rt><rp>)</rp></ruby>できました。",
+        "kana": "きょうはだれにもじゃまされませんでした。しゅうちゅうできました。",
+        "romaji": "Kyou wa dare ni mo jama saremasen deshita. Shuuchuu dekimashita.",
+        "vi": "Hôm nay tôi không bị ai làm phiền cả. Tôi đã tập trung được.",
+        "en": "No one bothered me today. I was able to concentrate.",
+        "contextualExplanation": {
+          "vi": "邪魔されませんでした phủ định việc bị làm phiền -- không có cảm giác khó chịu khi không có ai gây phiền toái.",
+          "en": "邪魔されませんでした negates being bothered -- no annoyance when no one causes trouble."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "雨に降られて、服が濡れてしまいました。",
+        "jaRuby": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>に<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>られて、<ruby>服<rp>(</rp><rt>ふく</rt><rp>)</rp></ruby>が<ruby>濡<rp>(</rp><rt>ぬ</rt><rp>)</rp></ruby>れてしまいました。",
+        "kana": "あめにふられて、ふくがぬれてしまいました。",
+        "romaji": "Ame ni furarete, fuku ga nurete shimaimashita.",
+        "vi": "Tôi bị dính mưa nên quần áo ướt hết.",
+        "en": "I got caught in the rain, and my clothes got wet.",
+        "contextualExplanation": {
+          "vi": "雨に降られて là ví dụ kinh điển: mưa không \"làm gì\" cố ý, nhưng người nói vẫn chịu ảnh hưởng tiêu cực -- ngay cả hiện tượng tự nhiên cũng dùng được với bị động gián tiếp.",
+          "en": "雨に降られて is a classic example: rain doesn't \"do\" anything intentionally, but the speaker is still negatively affected -- even a natural phenomenon can use the adversative passive."
         }
       }
     ],
@@ -7732,27 +8049,104 @@
         "jaRuby": "<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>はベルによって<ruby>発明<rp>(</rp><rt>はつめい</rt><rp>)</rp></ruby>されました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_194",
+      "g_195"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N wa/ga (A ni yotte) V-rareru (mu-seibutsu shugo no ukemi)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "N（vật/khái niệm）は/が（Aによって）+ thể bị động",
+        "exampleStr": "この橋 ＋ は100年前に建てられました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "written",
+        "neutral"
+      ],
+      "intent": "Describing an inanimate subject as the result of someone's action -- common for inventions, discoveries, historical facts",
+      "speakerStance": "Neutral, objective/factual -- no emotional nuance (unlike the adversative passive)"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This passive is emotionally neutral -- the opposite of the adversative passive (g_195)",
+        "description": {
+          "vi": "Khác hoàn toàn với bị động gián tiếp (g_195, luôn mang sắc thái khó chịu), bị động ở đây HOÀN TOÀN TRUNG TÍNH -- chỉ đơn thuần mô tả sự thật khách quan (một vật được tạo ra/phát hiện bởi ai đó). によって (bởi) thường thay に khi tác giả/người phát minh được nêu rõ, đặc biệt trong văn viết trang trọng.",
+          "en": "Completely different from the adversative passive (g_195, always carrying annoyance), the passive here is PURELY NEUTRAL -- simply describing an objective fact (something created/discovered by someone). によって (\"by\") commonly replaces に when the creator/inventor is specified, especially in formal writing."
+        },
+        "relatedGrammarId": "g_195"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "電話はベルによって発明されました。",
-        "jaRuby": "<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>はベルによって<ruby>発明<rp>(</rp><rt>はつめい</rt><rp>)</rp></ruby>されました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Điện thoại đã được phát minh bởi Bell.",
-        "en": "The telephone was invented by Bell.",
+        "ja": "この橋は100年前に建てられました。",
+        "jaRuby": "この<ruby>橋<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>は100<ruby>年前<rp>(</rp><rt>ねんまえ</rt><rp>)</rp></ruby>に<ruby>建<rp>(</rp><rt>た</rt><rp>)</rp></ruby>てられました。",
+        "kana": "このはしはひゃくねんまえにたてられました。",
+        "romaji": "Kono hashi wa hyakunen mae ni taterare mashita.",
+        "vi": "Cây cầu này được xây từ 100 năm trước.",
+        "en": "This bridge was built 100 years ago.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "建てられました mô tả sự thật khách quan, không mang cảm xúc tiêu cực nào.",
+          "en": "建てられました describes an objective fact, with no negative emotion."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "電話は1876年にベルによって発明されました。",
+        "jaRuby": "<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>は1876<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby>にベルによって<ruby>発明<rp>(</rp><rt>はつめい</rt><rp>)</rp></ruby>されました。",
+        "kana": "でんわはせんはっぴゃくななじゅうろくねんにベルによってはつめいされました。",
+        "romaji": "Denwa wa sen-happyaku-nanajuu-roku-nen ni Beru ni yotte hatsumei saremashita.",
+        "vi": "Điện thoại được phát minh bởi Bell vào năm 1876.",
+        "en": "The telephone was invented by Bell in 1876.",
+        "contextualExplanation": {
+          "vi": "によって (thay に) nêu rõ người phát minh trong bối cảnh lịch sử/khoa học trang trọng.",
+          "en": "によって (replacing に) specifies the inventor in a formal historical/scientific context."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "この小説はいつ書かれましたか。",
+        "jaRuby": "この<ruby>小説<rp>(</rp><rt>しょうせつ</rt><rp>)</rp></ruby>はいつ<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かれましたか。",
+        "kana": "このしょうせつはいつかかれましたか。",
+        "romaji": "Kono shousetsu wa itsu kakaremashita ka.",
+        "vi": "Cuốn tiểu thuyết này được viết khi nào vậy?",
+        "en": "When was this novel written?",
+        "contextualExplanation": {
+          "vi": "いつ hỏi về thời điểm của một sự kiện lịch sử/sáng tạo khách quan.",
+          "en": "いつ asks about the timing of an objective historical/creative event."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "この事実はまだ発見されていません。",
+        "jaRuby": "この<ruby>事実<rp>(</rp><rt>じじつ</rt><rp>)</rp></ruby>はまだ<ruby>発見<rp>(</rp><rt>はっけん</rt><rp>)</rp></ruby>されていません。",
+        "kana": "このじじつはまだはっけんされていません。",
+        "romaji": "Kono jijitsu wa mada hakken sarete imasen.",
+        "vi": "Sự thật này vẫn chưa được phát hiện.",
+        "en": "This fact hasn't been discovered yet.",
+        "contextualExplanation": {
+          "vi": "されていません phủ định trạng thái đã hoàn thành của một khám phá/phát minh.",
+          "en": "されていません negates the completed state of a discovery/invention."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "日本では、お正月にお雑煮が食べられます。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>では、お<ruby>正月<rp>(</rp><rt>しょうがつ</rt><rp>)</rp></ruby>にお<ruby>雑煮<rp>(</rp><rt>ぞうに</rt><rp>)</rp></ruby>が<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べられます。",
+        "kana": "にほんでは、おしょうがつにおぞうにがたべられます。",
+        "romaji": "Nihon dewa, oshougatsu ni ozouni ga taberaremasu.",
+        "vi": "Ở Nhật, món ozoni được ăn vào dịp Tết.",
+        "en": "In Japan, ozoni is eaten on New Year's.",
+        "contextualExplanation": {
+          "vi": "Bị động vô sinh chủ ngữ cũng mở rộng sang mô tả phong tục/tập quán văn hóa chung, không chỉ vật thể lịch sử cụ thể.",
+          "en": "The inanimate-subject passive also extends to describing general cultural customs/practices, not just specific historical objects."
         }
       }
     ],
