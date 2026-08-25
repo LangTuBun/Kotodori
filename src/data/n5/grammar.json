@@ -15543,30 +15543,115 @@
         "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_094_4",
+      "g_176"
+    ],
     "tags": [],
     "patternRuby": "Nを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N o shitte imasu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "N + を知っていますか",
+        "exampleStr": "あの人 ＋ を知っていますか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking whether the listener knows/is aware of something",
+      "speakerStance": "Neutral, information-seeking"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "The negative is 知りません, not 知っていません",
+        "description": {
+          "vi": "Dù khẳng định dùng 知っています (thể ている, xem g_094_4), phủ định LẠI dùng 知りません (không phải 知っていません). Đây là ngoại lệ đặc biệt cần nhớ riêng, khác với quy tắc phủ định thông thường của ている.",
+          "en": "Even though the affirmative uses 知っています (ている-form, see g_094_4), the negative is 知りません (NOT 知っていません). This is a special exception worth memorizing separately, breaking the usual negation pattern of ている."
+        },
+        "examples": [
+          {
+            "incorrect": "すみません、知っていません。",
+            "correct": "すみません、知りません。",
+            "explanation": {
+              "vi": "Phủ định của 知っている luôn là 知らない/知りません, không phải 知っていない.",
+              "en": "The negative of 知っている is always 知らない/知りません, never 知っていない."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "田中さんを知っていますか。",
-        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bạn có biết anh Tanaka không?",
-        "en": "Do you know Tanaka?",
+        "ja": "あの人を知っていますか。",
+        "jaRuby": "あの<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>を<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか。",
+        "kana": "あのひとをしっていますか。",
+        "romaji": "Ano hito o shitte imasu ka.",
+        "vi": "Bạn có biết người đó không?",
+        "en": "Do you know that person?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "知っていますか hỏi về sự hiểu biết/nhận biết.",
+          "en": "知っていますか asks about knowledge/awareness."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この近くにいいレストランを知っていますか。",
+        "jaRuby": "この<ruby>近<rp>(</rp><rt>ちか</rt><rp>)</rp></ruby>くにいいレストランを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか。",
+        "kana": "このちかくにいいレストランをしっていますか。",
+        "romaji": "Kono chikaku ni ii resutoran o shitte imasu ka.",
+        "vi": "Bạn có biết nhà hàng nào ngon gần đây không?",
+        "en": "Do you know a good restaurant nearby?",
+        "contextualExplanation": {
+          "vi": "知っていますか cũng dùng để hỏi thông tin gợi ý.",
+          "en": "知っていますか also asks for a recommendation."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "すみません、その道は知りません。",
+        "jaRuby": "すみません、その<ruby>道<rp>(</rp><rt>みち</rt><rp>)</rp></ruby>は<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>りません。",
+        "kana": "すみません、そのみちはしりません。",
+        "romaji": "Sumimasen, sono michi wa shirimasen.",
+        "vi": "Xin lỗi, tôi không biết đường đó.",
+        "en": "Sorry, I don't know that road.",
+        "contextualExplanation": {
+          "vi": "知りません (không phải 知っていません) là dạng phủ định chuẩn.",
+          "en": "知りません (never 知っていません) is the standard negative form."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "この歌、知ってる？",
+        "jaRuby": "この<ruby>歌<rp>(</rp><rt>うた</rt><rp>)</rp></ruby>、<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>ってる？",
+        "kana": "このうた、しってる？",
+        "romaji": "Kono uta, shitteru?",
+        "vi": "Bài hát này bạn biết không?",
+        "en": "Do you know this song?",
+        "contextualExplanation": {
+          "vi": "知ってる (rút gọn của 知っている) rất phổ biến trong văn nói thân mật.",
+          "en": "知ってる (contracted from 知っている) is very common in casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "田中さんが結婚したことを知っていましたか。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんが<ruby>結婚<rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>したことを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていましたか。",
+        "kana": "たなかさんがけっこんしたことをしっていましたか。",
+        "romaji": "Tanaka-san ga kekkon shita koto o shitte imashita ka.",
+        "vi": "Bạn có biết là Tanaka đã kết hôn không?",
+        "en": "Did you know that Tanaka got married?",
+        "contextualExplanation": {
+          "vi": "こと danh từ hóa cả mệnh đề để làm tân ngữ cho 知っています -- xem g_176.",
+          "en": "こと nominalizes the whole clause to serve as the object of 知っています -- see g_176."
         }
       }
     ],
@@ -15602,24 +15687,94 @@
     "tags": [],
     "patternRuby": "Nでも+いい/<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>です/かまわないです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N demo ii/daijoubu/kamawanai desu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "N + でも + いい/大丈夫/かまわない + です",
+        "exampleStr": "水 ＋ でもいいです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that N is an acceptable option, without necessarily being the ideal one",
+      "speakerStance": "Accommodating, flexible"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "でも here means \"even\" (making N a low-bar acceptable option), not the conjunction \"but\"",
+        "description": {
+          "vi": "でも ở đây là trợ từ kết hợp で+も, mang nghĩa \"ngay cả... cũng được\" -- KHÁC với でも đứng đầu câu mang nghĩa \"nhưng\". Đừng nhầm hai cách dùng này.",
+          "en": "でも here is the particle combination で+も, meaning \"even... is fine\" -- DIFFERENT from sentence-initial でも meaning \"but\". Don't confuse the two uses."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "お茶でもいいです。",
-        "jaRuby": "お<ruby>茶<rp>(</rp><rt>ちゃ</rt><rp>)</rp></ruby>でもいいです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Trà cũng được.",
-        "en": "Tea is fine too.",
+        "ja": "水でもいいです。",
+        "jaRuby": "<ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby>でもいいです。",
+        "kana": "みずでもいいです。",
+        "romaji": "Mizu demo ii desu.",
+        "vi": "Nước lọc cũng được.",
+        "en": "Water is fine too.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "水でも nghĩa \"ngay cả nước (thứ đơn giản nhất) cũng chấp nhận được\".",
+          "en": "水でも means \"even water (the simplest option) is acceptable\"."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "明日でも大丈夫です。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>でも<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>です。",
+        "kana": "あしたでもだいじょうぶです。",
+        "romaji": "Ashita demo daijoubu desu.",
+        "vi": "Mai cũng được ạ.",
+        "en": "Tomorrow works too.",
+        "contextualExplanation": {
+          "vi": "大丈夫 nhẹ nhàng, lịch sự, thường thay cho いい trong tình huống trang trọng hơn.",
+          "en": "大丈夫 is softer/more polite, often replacing いい in a more formal situation."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "これでもかまわないですか。",
+        "kana": "これでもかまわないですか。",
+        "romaji": "Kore demo kamawanai desu ka.",
+        "vi": "Cái này cũng được không ạ?",
+        "en": "Would this be okay too?",
+        "contextualExplanation": {
+          "vi": "かまわない (không sao) là lựa chọn thứ ba, ít trang trọng hơn 大丈夫 một chút.",
+          "en": "かまわない (\"doesn't matter\") is the third option, a touch less formal than 大丈夫."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "コーヒーでもいい？",
+        "kana": "コーヒーでもいい？",
+        "romaji": "Koohii demo ii?",
+        "vi": "Cà phê cũng được không?",
+        "en": "Is coffee okay too?",
+        "contextualExplanation": {
+          "vi": "です lược bỏ trong hội thoại thân mật.",
+          "en": "です drops in casual conversation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どもでも読める本です。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもでも<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>める<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>です。",
+        "kana": "こどもでもよめるほんです。",
+        "romaji": "Kodomo demo yomeru hon desu.",
+        "vi": "Đây là cuốn sách mà trẻ em cũng đọc được.",
+        "en": "This is a book that even children can read.",
+        "contextualExplanation": {
+          "vi": "でも cũng kết hợp được với động từ khả năng để nhấn mạnh mức độ dễ dàng.",
+          "en": "でも also combines with a potential verb to emphasize ease/accessibility."
         }
       }
     ],
@@ -15651,30 +15806,105 @@
         "jaRuby": "ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>ってもいいですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_098_1",
+      "g_098_2"
+    ],
     "tags": [],
     "patternRuby": "Vてもいいですか/だいじょうぶですか/かまわないですか",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-temo ii/daijoubu/kamawanai desu ka",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + もいいですか",
+        "exampleStr": "座る → 座って ＋ もいいですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking permission to do something",
+      "speakerStance": "Deferential, seeking approval"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "てもいいですか vs てもよろしいですか -- politeness level",
+        "description": {
+          "vi": "てもいいですか là mức lịch sự chuẩn mực. てもよろしいですか lịch sự và trang trọng hơn hẳn, phù hợp khi xin phép cấp trên hoặc trong ngữ cảnh dịch vụ khách hàng.",
+          "en": "てもいいですか is the standard polite level. てもよろしいですか is notably more formal/polite, fitting when asking a superior or in a customer-service context."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
         "ja": "ここに座ってもいいですか。",
         "jaRuby": "ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>ってもいいですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi ngồi đây có được không?",
-        "en": "Is it okay if I sit here?",
+        "kana": "ここにすわってもいいですか。",
+        "romaji": "Koko ni suwattemo ii desu ka.",
+        "vi": "Tôi ngồi đây được không?",
+        "en": "May I sit here?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "座って (thể て) + もいいですか xin phép làm hành động.",
+          "en": "座って (te-form) + もいいですか asks permission for the action."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "お名前を伺ってもよろしいですか。",
+        "jaRuby": "お<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>伺<rp>(</rp><rt>うかが</rt><rp>)</rp></ruby>ってもよろしいですか。",
+        "kana": "おなまえをうかがってもよろしいですか。",
+        "romaji": "Onamae o ukagattemo yoroshii desu ka.",
+        "vi": "Cho tôi hỏi tên của anh/chị được không ạ?",
+        "en": "May I ask your name?",
+        "contextualExplanation": {
+          "vi": "てもよろしいですか rất trang trọng, thường dùng trong ngữ cảnh dịch vụ/công việc.",
+          "en": "てもよろしいですか is very formal, common in service/business contexts."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "写真を撮ってもいいですか。",
+        "jaRuby": "<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってもいいですか。",
+        "kana": "しゃしんをとってもいいですか。",
+        "romaji": "Shashin o tottemo ii desu ka.",
+        "vi": "Tôi chụp ảnh được không?",
+        "en": "May I take a photo?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi xin phép rất phổ biến khi đi du lịch/tham quan.",
+          "en": "A very common permission question when traveling/sightseeing."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "ちょっと使ってもいい？",
+        "jaRuby": "ちょっと<ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>ってもいい？",
+        "kana": "ちょっとつかってもいい？",
+        "romaji": "Chotto tsukattemo ii?",
+        "vi": "Cho mượn dùng một chút được không?",
+        "en": "Can I use this for a bit?",
+        "contextualExplanation": {
+          "vi": "です lược bỏ trong hội thoại thân mật, chỉ lên giọng cuối câu.",
+          "en": "です drops in casual conversation, only rising intonation remains."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "ここに車を止めてもかまわないですか。",
+        "jaRuby": "ここに<ruby>車<rp>(</rp><rt>くるま</rt><rp>)</rp></ruby>を<ruby>止<rp>(</rp><rt>と</rt><rp>)</rp></ruby>めてもかまわないですか。",
+        "kana": "ここにくるまをとめてもかまわないですか。",
+        "romaji": "Koko ni kuruma o tometemo kamawanai desu ka.",
+        "vi": "Đỗ xe ở đây có được không?",
+        "en": "Would it be okay to park my car here?",
+        "contextualExplanation": {
+          "vi": "かまわないですか cũng dùng được để xin phép, ngang mức lịch sự với いいですか.",
+          "en": "かまわないですか also asks permission, at roughly the same politeness level as いいですか."
         }
       }
     ],
@@ -15706,30 +15936,106 @@
         "jaRuby": "<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってもいいです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_097",
+      "g_098_2"
+    ],
     "tags": [],
     "patternRuby": "Vてもいいです",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-temo ii desu",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + もいいです",
+        "exampleStr": "座る → 座って ＋ もいいです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Granting permission -- \"it's okay to do X\"",
+      "speakerStance": "Permissive, granting approval"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This is the answer form to g_097's question, not a request",
+        "description": {
+          "vi": "Đây là câu TRẢ LỜI cho câu hỏi xin phép ở g_097 (bỏ か ở cuối) -- dùng khi CHO PHÉP người khác làm gì, không phải để xin phép.",
+          "en": "This is the ANSWER form to the permission question in g_097 (drop the か) -- used to GRANT permission to someone else, not to ask for it."
+        },
+        "relatedGrammarId": "g_097"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "写真を撮ってもいいです。",
-        "jaRuby": "<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってもいいです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Chụp ảnh cũng được.",
-        "en": "It's okay to take photos.",
+        "ja": "はい、ここに座ってもいいです。",
+        "jaRuby": "はい、ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>ってもいいです。",
+        "kana": "はい、ここにすわってもいいです。",
+        "romaji": "Hai, koko ni suwattemo ii desu.",
+        "vi": "Vâng, ngồi đây cũng được.",
+        "en": "Yes, you may sit here.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Câu trả lời khẳng định cho phép hành động.",
+          "en": "An affirmative reply granting permission."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この資料はコピーしてもいいです。",
+        "jaRuby": "この<ruby>資料<rp>(</rp><rt>しりょう</rt><rp>)</rp></ruby>はコピーしてもいいです。",
+        "kana": "このしりょうはコピーしてもいいです。",
+        "romaji": "Kono shiryou wa kopii shitemo ii desu.",
+        "vi": "Tài liệu này có thể sao chép.",
+        "en": "You're allowed to copy this document.",
+        "contextualExplanation": {
+          "vi": "てもいいです cũng dùng để thông báo quy định cho phép.",
+          "en": "てもいいです also announces a rule that permits something."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "好きな時間に来てもいいですよ。",
+        "jaRuby": "<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きな<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>てもいいですよ。",
+        "kana": "すきなじかんにきてもいいですよ。",
+        "romaji": "Suki na jikan ni kitemo ii desu yo.",
+        "vi": "Bạn đến vào giờ nào cũng được đấy.",
+        "en": "You can come at any time you like.",
+        "contextualExplanation": {
+          "vi": "よ thêm vào để nhấn mạnh thông tin cho phép.",
+          "en": "よ adds emphasis to the granted permission."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "これ、使ってもいいよ。",
+        "jaRuby": "これ、<ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>ってもいいよ。",
+        "kana": "これ、つかってもいいよ。",
+        "romaji": "Kore, tsukattemo ii yo.",
+        "vi": "Cái này dùng cũng được đấy.",
+        "en": "You can use this, it's fine.",
+        "contextualExplanation": {
+          "vi": "です lược bỏ trong hội thoại thân mật.",
+          "en": "です drops in casual conversation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "質問があれば、いつでも聞いてもいいです。",
+        "jaRuby": "<ruby>質問<rp>(</rp><rt>しつもん</rt><rp>)</rp></ruby>があれば、いつでも<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いてもいいです。",
+        "kana": "しつもんがあれば、いつでもきいてもいいです。",
+        "romaji": "Shitsumon ga areba, itsudemo kiitemo ii desu.",
+        "vi": "Nếu có câu hỏi, bạn có thể hỏi bất cứ lúc nào.",
+        "en": "If you have questions, you can ask any time.",
+        "contextualExplanation": {
+          "vi": "いつでも (bất cứ khi nào) + てもいいです mở rộng phạm vi cho phép.",
+          "en": "いつでも (\"any time\") + てもいいです broadens the scope of the permission."
         }
       }
     ],
@@ -15761,31 +16067,107 @@
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>なくてもいいです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_088",
+      "g_098_1"
+    ],
     "tags": [],
     "patternRuby": "Vなくてもいいです",
     "requiredVerbForm": [
       "nai",
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-nakutemo ii desu",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "ない-form → なくてもいいです",
+        "exampleStr": "行かない → 行かなくてもいいです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that an action is not required -- \"it's okay not to do X\"",
+      "speakerStance": "Reassuring, removing an obligation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "なくてもいい (\"don't need to\") is the direct opposite of なければならない (\"must\", g_088), not just its negation",
+        "description": {
+          "vi": "なくてもいいです đảo ngược hoàn toàn nghĩa vụ ở g_088 (なければなりません = \"phải làm\"), thành \"không cần làm cũng được\". Đây là cặp đối lập quan trọng cần phân biệt rõ, tránh nhầm với てはいけません (cấm, mạnh hơn nhiều).",
+          "en": "なくてもいいです fully reverses the obligation in g_088 (なければなりません = \"must do\"), into \"don't need to do\". This is an important opposite pair to keep distinct from てはいけません (prohibited, much stronger)."
+        },
+        "relatedGrammarId": "g_088"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
         "ja": "明日は来なくてもいいです。",
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>なくてもいいです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ngày mai không đến cũng được.",
-        "en": "You don't have to come tomorrow.",
+        "kana": "あしたはこなくてもいいです。",
+        "romaji": "Ashita wa konakutemo ii desu.",
+        "vi": "Mai không cần đến cũng được.",
+        "en": "You don't need to come tomorrow.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "来なくてもいいです nói rõ hành động là tùy chọn, không bắt buộc.",
+          "en": "来なくてもいいです makes the action optional, not mandatory."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "心配しなくてもいいですよ。",
+        "jaRuby": "<ruby>心配<rp>(</rp><rt>しんぱい</rt><rp>)</rp></ruby>しなくてもいいですよ。",
+        "kana": "しんぱいしなくてもいいですよ。",
+        "romaji": "Shinpai shinakutemo ii desu yo.",
+        "vi": "Không cần lo lắng đâu.",
+        "en": "You don't need to worry.",
+        "contextualExplanation": {
+          "vi": "なくてもいいです cũng dùng để trấn an, gỡ bỏ áp lực.",
+          "en": "なくてもいいです also works to reassure and remove pressure."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "今日は残業しなくてもいいですか。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>残業<rp>(</rp><rt>ざんぎょう</rt><rp>)</rp></ruby>しなくてもいいですか。",
+        "kana": "きょうはざんぎょうしなくてもいいですか。",
+        "romaji": "Kyou wa zangyou shinakutemo ii desu ka.",
+        "vi": "Hôm nay không cần làm thêm giờ được không ạ?",
+        "en": "Is it okay if I don't work overtime today?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi xác nhận xem một nghĩa vụ có được miễn hay không.",
+          "en": "A question confirming whether an obligation is waived."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "無理に食べなくてもいいよ。",
+        "jaRuby": "<ruby>無理<rp>(</rp><rt>むり</rt><rp>)</rp></ruby>に<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べなくてもいいよ。",
+        "kana": "むりにたべなくてもいいよ。",
+        "romaji": "Muri ni tabenakutemo ii yo.",
+        "vi": "Không cần ép mình ăn đâu.",
+        "en": "You don't have to force yourself to eat.",
+        "contextualExplanation": {
+          "vi": "無理に (miễn cưỡng) nhấn mạnh việc không cần gượng ép làm gì.",
+          "en": "無理に (\"forcibly\") emphasizes not needing to push oneself."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "全部食べなくてもいいですが、少しは食べてください。",
+        "jaRuby": "<ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby><ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べなくてもいいですが、<ruby>少<rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>しは<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べてください。",
+        "kana": "ぜんぶたべなくてもいいですが、すこしはたべてください。",
+        "romaji": "Zenbu tabenakutemo ii desu ga, sukoshi wa tabete kudasai.",
+        "vi": "Không cần ăn hết cũng được, nhưng hãy ăn một chút nhé.",
+        "en": "You don't need to eat it all, but please eat a little.",
+        "contextualExplanation": {
+          "vi": "なくてもいいですが nối với が để đưa ra một yêu cầu nhỏ hơn thay thế.",
+          "en": "なくてもいいですが links with が to offer a smaller alternative request."
         }
       }
     ],
@@ -15817,31 +16199,111 @@
         "jaRuby": "ここに<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてください。ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>らないでください。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_054",
+      "g_073"
+    ],
     "tags": [],
     "patternRuby": "Vて+ください/Vない+で+ください",
     "requiredVerbForm": [
       "nai",
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-te kudasai / V-naide kudasai",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + ください",
+        "exampleStr": "待つ → 待って ＋ ください"
+      },
+      {
+        "pos": "verb",
+        "form": "ない-form + でください",
+        "exampleStr": "待たない → 待たない ＋ でください"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Making a polite request or instruction, affirmative or negative",
+      "speakerStance": "Direct but polite -- can sound like an instruction/command in formal contexts"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "てください can sound like an instruction/command, not always a soft request",
+        "description": {
+          "vi": "てください tuy lịch sự về hình thức nhưng vẫn mang tính RA LỆNH/hướng dẫn (giáo viên với học sinh, bảng chỉ dẫn...). Với người trên hoặc để nhờ vả tế nhị hơn, nên dùng ていただけますか/てもらえますか (ngoài N5 nhưng hữu ích để biết).",
+          "en": "てください, while formally polite, still carries an INSTRUCTING/commanding tone (teacher to student, signage...). For a superior or a more delicate request, ていただけますか/てもらえますか (beyond N5 but useful to know) is gentler."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "ここに名前を書いてください。ここに座らないでください。",
-        "jaRuby": "ここに<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてください。ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>らないでください。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hãy viết tên vào đây. Xin đừng ngồi ở đây.",
-        "en": "Please write your name here. Please don't sit here.",
+        "ja": "ちょっと待ってください。",
+        "jaRuby": "ちょっと<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>ってください。",
+        "kana": "ちょっとまってください。",
+        "romaji": "Chotto matte kudasai.",
+        "vi": "Xin đợi một chút.",
+        "en": "Please wait a moment.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "待って (thể て) + ください yêu cầu lịch sự.",
+          "en": "待って (te-form) + ください makes a polite request."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "こちらにお名前を書いてください。",
+        "jaRuby": "こちらにお<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてください。",
+        "kana": "こちらにおなまえをかいてください。",
+        "romaji": "Kochira ni onamae o kaite kudasai.",
+        "vi": "Xin hãy viết tên của bạn vào đây.",
+        "en": "Please write your name here.",
+        "contextualExplanation": {
+          "vi": "てください rất phổ biến trong hướng dẫn/thủ tục hành chính.",
+          "en": "てください is very common in procedural/administrative instructions."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "ここに車を止めないでください。",
+        "jaRuby": "ここに<ruby>車<rp>(</rp><rt>くるま</rt><rp>)</rp></ruby>を<ruby>止<rp>(</rp><rt>と</rt><rp>)</rp></ruby>めないでください。",
+        "kana": "ここにくるまをとめないでください。",
+        "romaji": "Koko ni kuruma o tomenaide kudasai.",
+        "vi": "Xin đừng đỗ xe ở đây.",
+        "en": "Please don't park here.",
+        "contextualExplanation": {
+          "vi": "ないでください yêu cầu KHÔNG làm gì, thường thấy trên biển báo.",
+          "en": "ないでください requests NOT doing something, common on signs."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "もう一度言ってください。",
+        "jaRuby": "もう<ruby>一度<rp>(</rp><rt>いちど</rt><rp>)</rp></ruby><ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ってください。",
+        "kana": "もういちどいってください。",
+        "romaji": "Mou ichido itte kudasai.",
+        "vi": "Xin hãy nói lại một lần nữa.",
+        "en": "Please say that again.",
+        "contextualExplanation": {
+          "vi": "てください rất hữu ích trong lớp học khi cần nhờ giảng lại.",
+          "en": "てください is very useful in class when asking for a repeat."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "心配しないでください。大丈夫です。",
+        "jaRuby": "<ruby>心配<rp>(</rp><rt>しんぱい</rt><rp>)</rp></ruby>しないでください。<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>です。",
+        "kana": "しんぱいしないでください。だいじょうぶです。",
+        "romaji": "Shinpai shinaide kudasai. Daijoubu desu.",
+        "vi": "Xin đừng lo lắng. Mọi chuyện ổn cả.",
+        "en": "Please don't worry. It's okay.",
+        "contextualExplanation": {
+          "vi": "ないでください cũng dùng để trấn an, không chỉ ra lệnh cấm.",
+          "en": "ないでください also works to reassure, not only to prohibit."
         }
       }
     ],
@@ -15873,30 +16335,105 @@
         "jaRuby": "ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれる？"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_101",
+      "g_103"
+    ],
     "tags": [],
     "patternRuby": "Vてくれますか（→Vてくれる？）",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-te kuremasu ka",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + くれますか",
+        "exampleStr": "手伝う → 手伝って ＋ くれますか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual"
+      ],
+      "intent": "Asking someone to do a favor for the speaker",
+      "speakerStance": "Requesting, framing the action as a favor toward the speaker"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "くれる always implies the favor benefits the speaker (or someone in their in-group)",
+        "description": {
+          "vi": "くれる luôn ngụ ý hành động MANG LỢI cho người nói (hoặc người trong \"nhóm\" của người nói) -- khác với あげる (cho người khác, không phải mình). てくれますか nhấn mạnh sự biết ơn ngầm ẩn trong lời nhờ vả.",
+          "en": "くれる always implies the favor BENEFITS the speaker (or someone in the speaker's in-group) -- different from あげる (giving to someone else, not the speaker). てくれますか carries an implicit sense of gratitude in the request."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "ちょっと手伝ってくれる？",
-        "jaRuby": "ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれる？",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bạn giúp tôi một chút được không?",
-        "en": "Can you help me for a bit?",
+        "ja": "ちょっと手伝ってくれますか。",
+        "jaRuby": "ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれますか。",
+        "kana": "ちょっとてつだってくれますか。",
+        "romaji": "Chotto tetsudatte kuremasu ka.",
+        "vi": "Bạn giúp mình một chút được không?",
+        "en": "Could you help me out a bit?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "手伝って (thể て) + くれますか nhờ vả, hành động mang lợi cho người nói.",
+          "en": "手伝って (te-form) + くれますか requests a favor benefiting the speaker."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "写真を撮ってくれる？",
+        "jaRuby": "<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってくれる？",
+        "kana": "しゃしんをとってくれる？",
+        "romaji": "Shashin o totte kureru?",
+        "vi": "Chụp giúp tôi tấm ảnh được không?",
+        "en": "Could you take a photo for me?",
+        "contextualExplanation": {
+          "vi": "くれる (thể thường) + lên giọng tạo câu hỏi thân mật.",
+          "en": "くれる (plain form) + rising intonation forms a casual question."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "ちょっと待ってくれる？",
+        "jaRuby": "ちょっと<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>ってくれる？",
+        "kana": "ちょっとまってくれる？",
+        "romaji": "Chotto matte kureru?",
+        "vi": "Đợi mình một chút được không?",
+        "en": "Can you wait a moment for me?",
+        "contextualExplanation": {
+          "vi": "Cách hỏi nhờ vả rất tự nhiên giữa bạn bè.",
+          "en": "A very natural way to ask a favor between friends."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "これ、開けてくれない？",
+        "jaRuby": "これ、<ruby>開<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>けてくれない？",
+        "kana": "これ、あけてくれない？",
+        "romaji": "Kore, akete kurenai?",
+        "vi": "Mở cái này giúp mình được không?",
+        "en": "Could you open this for me?",
+        "contextualExplanation": {
+          "vi": "てくれない？ (phủ định + lên giọng) cũng là cách nhờ vả nhẹ nhàng, phổ biến trong văn nói.",
+          "en": "てくれない？ (negative + rising intonation) is also a soft way to ask a favor, common in speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "妹が宿題を手伝ってくれました。",
+        "jaRuby": "<ruby>妹<rp>(</rp><rt>いもうと</rt><rp>)</rp></ruby>が<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>を<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれました。",
+        "kana": "いもうとがしゅくだいをてつだってくれました。",
+        "romaji": "Imouto ga shukudai o tetsudatte kuremashita.",
+        "vi": "Em gái tôi đã giúp tôi làm bài tập.",
+        "en": "My sister helped me with my homework.",
+        "contextualExplanation": {
+          "vi": "Không phải câu hỏi -- てくれました kể lại một hành động đã xảy ra mang lợi cho người nói (xem g_103).",
+          "en": "Not a question -- てくれました reports a completed action that benefited the speaker (see g_103)."
         }
       }
     ],
@@ -15928,30 +16465,109 @@
         "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めてくださいませんか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_100"
+    ],
     "tags": [],
     "patternRuby": "Vて+くれませんか/くださいませんか",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-te kuremasenka / kudasaimasenka",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + くれませんか",
+        "exampleStr": "手伝う → 手伝って ＋ くれませんか"
+      },
+      {
+        "pos": "verb",
+        "form": "て-form + くださいませんか",
+        "exampleStr": "手伝う → 手伝って ＋ くださいませんか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite"
+      ],
+      "intent": "Making a more polite/deferential request than g_100's てくれますか",
+      "speakerStance": "Deferential, softened request"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "The negative question form is what makes this softer and more deferential",
+        "description": {
+          "vi": "Đổi từ câu khẳng định (くれますか) sang câu hỏi phủ định (くれませんか) làm lời nhờ vả nghe nhẹ nhàng, khiêm tốn hơn -- một quy luật lịch sự phổ biến trong tiếng Nhật (câu hỏi phủ định thường lịch sự hơn khẳng định).",
+          "en": "Switching from an affirmative question (くれますか) to a negative one (くれませんか) makes the request sound gentler and more humble -- a common politeness pattern in Japanese (a negative question often reads as more polite than an affirmative one)."
+        },
+        "relatedGrammarId": "g_100"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "窓を閉めてくださいませんか。",
-        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めてくださいませんか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bạn có thể đóng cửa sổ giúp tôi không?",
-        "en": "Could you close the window for me?",
+        "ja": "すみません、ちょっと手伝ってくれませんか。",
+        "jaRuby": "すみません、ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれませんか。",
+        "kana": "すみません、ちょっとてつだってくれませんか。",
+        "romaji": "Sumimasen, chotto tetsudatte kuremasen ka.",
+        "vi": "Xin lỗi, bạn có thể giúp tôi một chút không?",
+        "en": "Excuse me, could you possibly help me out?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "くれませんか (phủ định) nghe khiêm tốn hơn くれますか.",
+          "en": "くれませんか (negative) reads more humble than くれますか."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "もう少し詳しく説明してくださいませんか。",
+        "jaRuby": "もう<ruby>少<rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby>詳<rp>(</rp><rt>くわ</rt><rp>)</rp></ruby>しく<ruby>説明<rp>(</rp><rt>せつめい</rt><rp>)</rp></ruby>してくださいませんか。",
+        "kana": "もうすこしくわしくせつめいしてくださいませんか。",
+        "romaji": "Mou sukoshi kuwashiku setsumei shite kudasaimasen ka.",
+        "vi": "Anh/chị có thể giải thích chi tiết hơn một chút được không ạ?",
+        "en": "Could you please explain in a bit more detail?",
+        "contextualExplanation": {
+          "vi": "てくださいませんか là mức lịch sự cao nhất trong nhóm mẫu câu nhờ vả này.",
+          "en": "てくださいませんか is the highest politeness level in this request family."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "窓を閉めてくれませんか。",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めてくれませんか。",
+        "kana": "まどをしめてくれませんか。",
+        "romaji": "Mado o shimete kuremasen ka.",
+        "vi": "Đóng cửa sổ giúp tôi được không?",
+        "en": "Could you close the window?",
+        "contextualExplanation": {
+          "vi": "Lời nhờ vả lịch sự thường gặp trong công việc hoặc với người không thân.",
+          "en": "A polite request common at work or with someone not close."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "荷物、持ってくれない？",
+        "jaRuby": "<ruby>荷物<rp>(</rp><rt>にもつ</rt><rp>)</rp></ruby>、<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>ってくれない？",
+        "kana": "にもつ、もってくれない？",
+        "romaji": "Nimotsu, motte kurenai?",
+        "vi": "Cầm hộ đồ mình được không?",
+        "en": "Could you carry this for me?",
+        "contextualExplanation": {
+          "vi": "Ở mức thân mật, chỉ cần dùng くれない？ (phủ định thể thường) như g_100.",
+          "en": "At the casual level, just くれない？ (plain-form negative) works, as in g_100."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "恐れ入りますが、静かにしてくださいませんか。",
+        "jaRuby": "<ruby>恐<rp>(</rp><rt>おそ</rt><rp>)</rp></ruby>れ<ruby>入<rp>(</rp><rt>い</rt><rp>)</rp></ruby>りますが、<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かにしてくださいませんか。",
+        "kana": "おそれいりますが、しずかにしてくださいませんか。",
+        "romaji": "Osoreirimasu ga, shizuka ni shite kudasaimasen ka.",
+        "vi": "Xin lỗi làm phiền, anh/chị có thể giữ trật tự được không ạ?",
+        "en": "I'm sorry to bother you, but could you please be quiet?",
+        "contextualExplanation": {
+          "vi": "恐れ入りますが mở đầu càng làm tăng mức độ lịch sự, phù hợp khi nhắc nhở người lạ.",
+          "en": "恐れ入りますが as an opener adds even more politeness, fitting when addressing a stranger."
         }
       }
     ],
