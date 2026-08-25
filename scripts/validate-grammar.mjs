@@ -79,6 +79,20 @@ for (const g of all) {
       if (isEnriched && ex.ja && KANJI_RE.test(ex.ja) && !ex.jaRuby) {
         errors.push(`${label}: "ja" contains kanji but "jaRuby" is missing`)
       }
+      // Hand-authored <ruby> HTML is exactly the kind of thing a typo slips
+      // into unnoticed (stray space breaking a closing tag, a dropped
+      // character, mismatched tag counts) -- verify structurally: stripping
+      // all <rt>/<rp> reading annotations and the <ruby></ruby> wrapper tags
+      // themselves must reconstruct `ja` exactly, character for character.
+      if (ex.jaRuby) {
+        const stripped = ex.jaRuby
+          .replace(/<rt>.*?<\/rt>/g, '')
+          .replace(/<rp>.*?<\/rp>/g, '')
+          .replace(/<\/?ruby>/g, '')
+        if (stripped !== ex.ja) {
+          errors.push(`${label}: jaRuby does not reconstruct to "ja" when stripped -- got "${stripped}" vs "${ex.ja}"`)
+        }
+      }
     })
   }
 

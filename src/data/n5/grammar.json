@@ -172,28 +172,122 @@
         "jaRuby": "ズンさんは<ruby>教師<rp>(</rp><rt>きょうし</rt><rp>)</rp></ruby>ですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_001",
+      "g_028_2"
+    ],
     "tags": [],
     "patternRuby": "(N1は) N2ですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N1 wa) N2 desu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Dictionary form + か",
+        "exampleStr": "学生 ＋ ですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking someone to confirm or identify what/who something is",
+      "speakerStance": "Neutral yes/no inquiry"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "No word-order inversion, unlike English yes/no questions",
+        "description": {
+          "vi": "Tiếng Nhật không đảo trật tự từ như tiếng Anh (\"Is this a pen?\"). Chỉ cần thêm か vào cuối câu khẳng định là thành câu hỏi, giữ nguyên trật tự N1は N2です.",
+          "en": "Japanese never inverts word order the way English does (\"Is this a pen?\"). Just append か to the end of the affirmative sentence -- N1 は N2 です stays in the same order."
+        },
+        "examples": [
+          {
+            "incorrect": "ですか、田中さんは学生？",
+            "correct": "田中さんは学生ですか。",
+            "explanation": {
+              "vi": "Không đảo trật tự, chỉ thêm か ở cuối.",
+              "en": "No inversion -- just append か at the end."
+            }
+          }
+        ]
+      },
+      {
+        "type": "nuance_trap",
+        "title": "In casual speech, rising intonation alone can replace か",
+        "description": {
+          "vi": "Trong văn nói thân mật, có thể bỏ か và chỉ lên giọng ở cuối câu (学生？) để hỏi -- xem g_028_2.",
+          "en": "In casual spoken Japanese, か is often dropped entirely and replaced by just a rising intonation at the end (学生？) -- see g_028_2 for the plain-form question pattern."
+        },
+        "relatedGrammarId": "g_028_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "ズンさんは教師ですか。",
-        "jaRuby": "ズンさんは<ruby>教師<rp>(</rp><rt>きょうし</rt><rp>)</rp></ruby>ですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Anh Dũng là giáo viên đúng không?",
-        "en": "Is Dung a teacher?",
+        "ja": "田中さんは学生ですか。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>ですか。",
+        "kana": "たなかさんはがくせいですか。",
+        "romaji": "Tanaka-san wa gakusei desu ka.",
+        "vi": "Bạn Tanaka có phải là sinh viên không?",
+        "en": "Is Tanaka a student?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Câu hỏi cơ bản: thêm か vào cuối N2です.",
+          "en": "Basic question: append か to the end of N2です."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "失礼ですが、お名前は何ですか。",
+        "jaRuby": "<ruby>失礼<rp>(</rp><rt>しつれい</rt><rp>)</rp></ruby>ですが、お<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "しつれいですが、おなまえはなんですか。",
+        "romaji": "Shitsurei desu ga, onamae wa nan desu ka.",
+        "vi": "Xin lỗi, cho tôi hỏi tên của bạn là gì?",
+        "en": "Excuse me, may I ask your name?",
+        "contextualExplanation": {
+          "vi": "失礼ですが làm câu hỏi trở nên lịch sự, nhã nhặn hơn.",
+          "en": "Prefacing with 失礼ですが softens the question into a polite, considerate one."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "これ、田中さんのかばんじゃないですか。",
+        "jaRuby": "これ、<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんのかばんじゃないですか。",
+        "kana": "これ、たなかさんのかばんじゃないですか。",
+        "romaji": "Kore, Tanaka-san no kaban janai desu ka.",
+        "vi": "Cái này không phải là túi của Tanaka à?",
+        "en": "Isn't this Tanaka's bag?",
+        "contextualExplanation": {
+          "vi": "じゃないですか ở đây không phải phủ định thật, mà là câu hỏi tu từ mang nghĩa \"phải không nhỉ?\".",
+          "en": "じゃないですか here is not a true negative -- it's a tag-question (\"isn't it...?\") seeking confirmation."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "A：それ、新しいスマホ？　B：うん、そうだよ。",
+        "jaRuby": "A：それ、<ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しいスマホ？　B：うん、そうだよ。",
+        "kana": "A：それ、あたらしいスマホ？　B：うん、そうだよ。",
+        "romaji": "A: Sore, atarashii sumaho? B: Un, sou da yo.",
+        "vi": "A: Đó là điện thoại mới hả? B: Ừ, đúng vậy.",
+        "en": "A: Is that a new phone? B: Yeah, it is.",
+        "contextualExplanation": {
+          "vi": "か được lược bỏ, chỉ lên giọng ở cuối câu -- xem g_028_2.",
+          "en": "か is dropped entirely; only the rising intonation marks the question -- see g_028_2."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "すみません、駅はどこですか。",
+        "jaRuby": "すみません、<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>はどこですか。",
+        "kana": "すみません、えきはどこですか。",
+        "romaji": "Sumimasen, eki wa doko desu ka.",
+        "vi": "Xin lỗi, nhà ga ở đâu vậy?",
+        "en": "Excuse me, where's the station?",
+        "contextualExplanation": {
+          "vi": "N2 có thể là một từ nghi vấn (どこ) thay vì danh từ cụ thể, kết hợp với です/か.",
+          "en": "N2 can be a question word (どこ) instead of a concrete noun, still combined with です/か."
         }
       }
     ],
@@ -225,28 +319,114 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。マイさんもベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_001"
+    ],
     "tags": [],
     "patternRuby": "Nも",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N mo",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Bare noun (replaces は/が/を)",
+        "particle": "も",
+        "exampleStr": "私 ＋ も"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "casual"
+      ],
+      "intent": "Adding an item to a previously mentioned set (\"too/also\")",
+      "speakerStance": "Neutral addition/inclusion"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "も replaces は/が/を, it does not stack with them",
+        "description": {
+          "vi": "も thay thế hoàn toàn は、が、を (không dùng chung: ✗ をも, ✗ はも). Với các trợ từ khác (に、で、へ...) thì も được thêm vào sau: にも、でも.",
+          "en": "も fully replaces は/が/を -- they never combine (✗ をも, ✗ はも). With other particles (に, で, へ...) も is added after them instead: にも, でも."
+        },
+        "examples": [
+          {
+            "incorrect": "私をもりんごを食べます。",
+            "correct": "私もりんごを食べます。",
+            "explanation": {
+              "vi": "も thay thế を/は, không dùng cùng lúc.",
+              "en": "も replaces を/は -- they don't co-occur."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私はベトナム人です。マイさんもベトナム人です。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。マイさんもベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi là người Việt. Mai cũng là người Việt.",
-        "en": "I'm Vietnamese. Mai is Vietnamese too.",
+        "ja": "私は学生です。田中さんも学生です。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんも<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。",
+        "kana": "わたしはがくせいです。たなかさんもがくせいです。",
+        "romaji": "Watashi wa gakusei desu. Tanaka-san mo gakusei desu.",
+        "vi": "Tôi là sinh viên. Tanaka cũng là sinh viên.",
+        "en": "I'm a student. Tanaka is a student too.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "も thay thế は để thêm田中さん vào nhóm \"sinh viên\".",
+          "en": "も replaces は to add Tanaka to the \"student\" group already mentioned."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "コーヒーもお願いします。",
+        "jaRuby": "コーヒーも<ruby>お願<rp>(</rp><rt>おねが</rt><rp>)</rp></ruby>いします。",
+        "kana": "コーヒーもおねがいします。",
+        "romaji": "Koohii mo onegai shimasu.",
+        "vi": "Cho tôi thêm cà phê nữa ạ.",
+        "en": "Coffee as well, please.",
+        "contextualExplanation": {
+          "vi": "も thay thế を, gọi thêm một món nữa ngoài món đã gọi.",
+          "en": "も replaces を here, ordering coffee in addition to something already ordered."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "お金がありません。時間もありません。",
+        "jaRuby": "お<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>がありません。<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>もありません。",
+        "kana": "おかねがありません。じかんもありません。",
+        "romaji": "Okane ga arimasen. Jikan mo arimasen.",
+        "vi": "Không có tiền. Cũng không có thời gian.",
+        "en": "I have no money. I have no time either.",
+        "contextualExplanation": {
+          "vi": "も cũng dùng được trong câu phủ định với nghĩa \"cũng không\".",
+          "en": "も works in negative sentences too, with the meaning \"not... either\"."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "A：疲れた。　B：私も。",
+        "jaRuby": "A：<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れた。　B：<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>も。",
+        "kana": "A：つかれた。　B：わたしも。",
+        "romaji": "A: Tsukareta. B: Watashi mo.",
+        "vi": "A: Mệt quá. B: Tôi cũng vậy.",
+        "en": "A: I'm tired. B: Me too.",
+        "contextualExplanation": {
+          "vi": "私も có thể dùng một mình như câu trả lời ngắn, nghĩa \"tôi cũng vậy\".",
+          "en": "私も alone is a common short reply meaning \"me too\"."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "教室に山田さんも鈴木さんもいます。",
+        "jaRuby": "<ruby>教室<rp>(</rp><rt>きょうしつ</rt><rp>)</rp></ruby>に<ruby>山田<rp>(</rp><rt>やまだ</rt><rp>)</rp></ruby>さんも<ruby>鈴木<rp>(</rp><rt>すずき</rt><rp>)</rp></ruby>さんもいます。",
+        "kana": "きょうしつにやまださんもすずきさんもいます。",
+        "romaji": "Kyoushitsu ni Yamada-san mo Suzuki-san mo imasu.",
+        "vi": "Trong lớp học có cả bạn Yamada và bạn Suzuki.",
+        "en": "Both Yamada and Suzuki are in the classroom.",
+        "contextualExplanation": {
+          "vi": "も có thể lặp lại N1もN2も để nhấn mạnh \"cả... lẫn...\".",
+          "en": "も can repeat as N1もN2も to emphasize \"both... and...\"."
         }
       }
     ],
@@ -278,28 +458,116 @@
         "jaRuby": "リンさんは<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>じゃないです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_001",
+      "g_030_2"
+    ],
     "tags": [],
     "patternRuby": "N1は N2じゃないです/じゃありません/ではありません",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 wa N2 janai desu / janai arimasen / dewa arimasen",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Dictionary form",
+        "particle": "じゃないです",
+        "exampleStr": "学生 ＋ じゃないです"
+      },
+      {
+        "pos": "noun",
+        "form": "Dictionary form",
+        "particle": "じゃありません",
+        "exampleStr": "学生 ＋ じゃありません"
+      },
+      {
+        "pos": "noun",
+        "form": "Dictionary form",
+        "particle": "ではありません",
+        "exampleStr": "学生 ＋ ではありません"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Denying that N1 is N2",
+      "speakerStance": "Neutral, objective negation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Three negative forms, same meaning, different formality",
+        "description": {
+          "vi": "じゃないです、じゃありません、ではありません đều đúng ngữ pháp và cùng nghĩa. では là dạng viết/trang trọng hơn じゃ (じゃ = では nói tắt trong văn nói). じゃありません/ではありません nghe lịch sự/chỉn chu hơn một chút so với じゃないです.",
+          "en": "じゃないです, じゃありません, and ではありません are all correct and mean the same thing. では is the more formal/written contraction source of spoken じゃ. じゃありません/ではありません read slightly more polished than じゃないです, though all three are acceptable in polite speech."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "リンさんは中国人じゃないです。",
-        "jaRuby": "リンさんは<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>じゃないです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bạn Linh không phải là người Trung Quốc.",
-        "en": "Linh is not Chinese.",
+        "ja": "田中さんは先生じゃないです。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>じゃないです。",
+        "kana": "たなかさんはせんせいじゃないです。",
+        "romaji": "Tanaka-san wa sensei janai desu.",
+        "vi": "Bạn Tanaka không phải là giáo viên.",
+        "en": "Tanaka is not a teacher.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Dạng phủ định phổ biến nhất trong văn nói: N2じゃないです.",
+          "en": "The most common spoken negative form: N2じゃないです."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "申し訳ございませんが、こちらは禁煙席ではありません。",
+        "jaRuby": "<ruby>申<rp>(</rp><rt>もう</rt><rp>)</rp></ruby>し<ruby>訳<rp>(</rp><rt>わけ</rt><rp>)</rp></ruby>ございませんが、こちらは<ruby>禁煙<rp>(</rp><rt>きんえん</rt><rp>)</rp></ruby><ruby>席<rp>(</rp><rt>せき</rt><rp>)</rp></ruby>ではありません。",
+        "kana": "もうしわけございませんが、こちらはきんえんせきではありません。",
+        "romaji": "Moushiwake gozaimasen ga, kochira wa kin'en seki dewa arimasen.",
+        "vi": "Xin lỗi, đây không phải là khu vực cấm hút thuốc.",
+        "en": "I'm sorry, but this isn't a non-smoking seat.",
+        "contextualExplanation": {
+          "vi": "ではありません lịch sự hơn, phù hợp trong ngữ cảnh trang trọng như dịch vụ khách hàng.",
+          "en": "ではありません is the more formal choice, fitting a customer-service context."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "田中さんは学生じゃありませんか。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>じゃありませんか。",
+        "kana": "たなかさんはがくせいじゃありませんか。",
+        "romaji": "Tanaka-san wa gakusei ja arimasen ka.",
+        "vi": "Bạn Tanaka không phải là sinh viên à?",
+        "en": "Isn't Tanaka a student?",
+        "contextualExplanation": {
+          "vi": "Thêm か vào cuối câu phủ định tạo câu hỏi tu từ mang tính xác nhận.",
+          "en": "Adding か to the negative forms a confirming tag question."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "これ、私のじゃない。",
+        "jaRuby": "これ、<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>のじゃない。",
+        "kana": "これ、わたしのじゃない。",
+        "romaji": "Kore, watashi no janai.",
+        "vi": "Cái này không phải của tôi.",
+        "en": "This isn't mine.",
+        "contextualExplanation": {
+          "vi": "Trong văn nói thân mật, です được lược bỏ: N2じゃない -- xem g_030_2.",
+          "en": "In casual speech です drops entirely: N2じゃない -- see g_030_2 for the full plain-form negative."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "それは私の傘じゃなくて、山田さんのです。",
+        "jaRuby": "それは<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>じゃなくて、<ruby>山田<rp>(</rp><rt>やまだ</rt><rp>)</rp></ruby>さんのです。",
+        "kana": "それはわたしのかさじゃなくて、やまださんのです。",
+        "romaji": "Sore wa watashi no kasa janakute, Yamada-san no desu.",
+        "vi": "Cái đó không phải ô của tôi, mà là của bạn Yamada.",
+        "en": "That's not my umbrella -- it's Yamada's.",
+        "contextualExplanation": {
+          "vi": "じゃなくて (thể て của phủ định) nối hai mệnh đề để đối chiếu \"không phải A mà là B\".",
+          "en": "じゃなくて (te-form of the negative) links two clauses for \"not A, but B\"."
         }
       }
     ],
@@ -331,28 +599,104 @@
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>晴<rp>(</rp><rt>は</rt><rp>)</rp></ruby>れでした。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_001",
+      "g_010",
+      "g_031"
+    ],
     "tags": [],
     "patternRuby": "(N1は) N2でした",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N1 wa) N2 deshita",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Dictionary form + でした",
+        "exampleStr": "学生 ＋ でした"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that N1 used to be/was N2 in the past",
+      "speakerStance": "Neutral, factual statement about the past"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "でした is one word -- don't conjugate です itself",
+        "description": {
+          "vi": "Người học hay viết nhầm \"ですた\" hoặc chia です như động từ thông thường. Quá khứ của です luôn là でした (một khối cố định).",
+          "en": "Learners sometimes try \"desu-ta\" or otherwise conjugate です as if it were a regular verb. The past tense of です is always the fixed form でした."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "昨日は晴れでした。",
-        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>晴<rp>(</rp><rt>は</rt><rp>)</rp></ruby>れでした。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hôm qua trời nắng.",
-        "en": "It was sunny yesterday.",
+        "ja": "去年、田中さんは学生でした。",
+        "jaRuby": "<ruby>去年<rp>(</rp><rt>きょねん</rt><rp>)</rp></ruby>、<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>でした。",
+        "kana": "きょねん、たなかさんはがくせいでした。",
+        "romaji": "Kyonen, Tanaka-san wa gakusei deshita.",
+        "vi": "Năm ngoái, bạn Tanaka là sinh viên.",
+        "en": "Last year, Tanaka was a student.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "でした đánh dấu N2 (sinh viên) là sự thật ở quá khứ.",
+          "en": "でした marks N2 (student) as a fact that was true in the past."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "昨日はお休みでしたか。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>はお<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みでしたか。",
+        "kana": "きのうはおやすみでしたか。",
+        "romaji": "Kinou wa oyasumi deshita ka.",
+        "vi": "Hôm qua bạn nghỉ à?",
+        "en": "Were you off yesterday?",
+        "contextualExplanation": {
+          "vi": "でした + か tạo câu hỏi lịch sự về quá khứ.",
+          "en": "でした + か forms a polite question about the past."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "子どものとき、あまり元気じゃなかったです。でも、病気じゃありませんでした。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どものとき、あまり<ruby>元気<rp>(</rp><rt>げんき</rt><rp>)</rp></ruby>じゃなかったです。でも、<ruby>病気<rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>じゃありませんでした。",
+        "kana": "こどものとき、あまりげんきじゃなかったです。でも、びょうきじゃありませんでした。",
+        "romaji": "Kodomo no toki, amari genki janakatta desu. Demo, byouki ja arimasen deshita.",
+        "vi": "Hồi nhỏ tôi không khỏe lắm. Nhưng cũng không phải là bị bệnh.",
+        "en": "As a child I wasn't very energetic. But I wasn't sick either.",
+        "contextualExplanation": {
+          "vi": "So sánh hai dạng phủ định quá khứ: じゃなかったです và じゃありませんでした (xem g_010).",
+          "en": "Contrasts the two past-negative forms: じゃなかったです and じゃありませんでした (see g_010)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "A：昨日、暇だった？　B：ううん、忙しかった。",
+        "jaRuby": "A：<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>、<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>だった？　B：ううん、<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかった。",
+        "kana": "A：きのう、ひまだった？　B：ううん、いそがしかった。",
+        "romaji": "A: Kinou, hima datta? B: Uun, isogashikatta.",
+        "vi": "A: Hôm qua rảnh không? B: Không, bận lắm.",
+        "en": "A: Were you free yesterday? B: No, I was busy.",
+        "contextualExplanation": {
+          "vi": "Thể thường của でした là だった -- xem g_031.",
+          "en": "The plain-form counterpart of でした is だった -- see g_031."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "天気予報では雨でしたが、実際は晴れでした。",
+        "jaRuby": "<ruby>天気予報<rp>(</rp><rt>てんきよほう</rt><rp>)</rp></ruby>では<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>でしたが、<ruby>実際<rp>(</rp><rt>じっさい</rt><rp>)</rp></ruby>は<ruby>晴<rp>(</rp><rt>は</rt><rp>)</rp></ruby>れでした。",
+        "kana": "てんきよほうではあめでしたが、じっさいははれでした。",
+        "romaji": "Tenkiyohou dewa ame deshita ga, jissai wa hare deshita.",
+        "vi": "Dự báo thời tiết nói là mưa, nhưng thực tế trời nắng.",
+        "en": "The forecast said rain, but it actually turned out sunny.",
+        "contextualExplanation": {
+          "vi": "でした dùng lặp lại hai lần để đối chiếu hai sự thật quá khứ khác nhau.",
+          "en": "でした repeats to contrast two different past facts."
         }
       }
     ],
@@ -384,28 +728,119 @@
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>じゃなかったですよ。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_004",
+      "g_009",
+      "g_032"
+    ],
     "tags": [],
     "patternRuby": "(N1は) N2じゃなかったです/じゃありませんでした",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N1 wa) N2 janakatta desu / ja arimasen deshita / dewa arimasen deshita",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Dictionary form + じゃなかったです",
+        "exampleStr": "学生 ＋ じゃなかったです"
+      },
+      {
+        "pos": "noun",
+        "form": "Dictionary form + じゃありませんでした",
+        "exampleStr": "学生 ＋ じゃありませんでした"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Denying that N1 used to be N2 in the past",
+      "speakerStance": "Neutral, factual negation about the past"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "The でした moves, it doesn't double up",
+        "description": {
+          "vi": "Không viết じゃないでした (sai): でした không đi ngay sau ない. Phải chọn một trong hai công thức: じゃなかったです (chia quá khứ ở なかった) hoặc じゃありませんでした (chia quá khứ ở でした).",
+          "en": "✗ じゃないでした is wrong -- でした never attaches directly after ない. Pick one of the two valid patterns: じゃなかったです (past marked on なかった) or じゃありませんでした (past marked on でした)."
+        },
+        "examples": [
+          {
+            "incorrect": "学生じゃないでした。",
+            "correct": "学生じゃなかったです。",
+            "explanation": {
+              "vi": "でした không ghép trực tiếp sau ない.",
+              "en": "でした never attaches directly to ない."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "昨日は雨じゃなかったですよ。",
-        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>じゃなかったですよ。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hôm qua trời không mưa đâu.",
-        "en": "It wasn't rainy yesterday.",
+        "ja": "子どものとき、田中さんは元気じゃなかったです。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どものとき、<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>元気<rp>(</rp><rt>げんき</rt><rp>)</rp></ruby>じゃなかったです。",
+        "kana": "こどものとき、たなかさんはげんきじゃなかったです。",
+        "romaji": "Kodomo no toki, Tanaka-san wa genki janakatta desu.",
+        "vi": "Hồi nhỏ, bạn Tanaka không khỏe.",
+        "en": "As a child, Tanaka wasn't healthy.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Dạng phủ định quá khứ phổ biến trong văn nói: じゃなかったです.",
+          "en": "The common spoken past-negative form: じゃなかったです."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "会議は今日じゃありませんでした。明日でした。",
+        "jaRuby": "<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>は<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>じゃありませんでした。<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>でした。",
+        "kana": "かいぎはきょうじゃありませんでした。あしたでした。",
+        "romaji": "Kaigi wa kyou ja arimasen deshita. Ashita deshita.",
+        "vi": "Cuộc họp không phải là hôm nay. Là ngày mai.",
+        "en": "The meeting wasn't today. It was tomorrow.",
+        "contextualExplanation": {
+          "vi": "じゃありませんでした lịch sự/rành mạch hơn một chút, hay dùng trong ngữ cảnh công việc.",
+          "en": "じゃありませんでした reads a touch more formal/precise, common in work contexts."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "テストは難しくなかったですか。",
+        "jaRuby": "テストは<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくなかったですか。",
+        "kana": "テストはむずかしくなかったですか。",
+        "romaji": "Tesuto wa muzukashikunakatta desu ka.",
+        "vi": "Bài kiểm tra không khó à?",
+        "en": "Wasn't the test hard?",
+        "contextualExplanation": {
+          "vi": "Ví dụ so sánh: đây là phủ định quá khứ của tính từ đuôi い (難しくなかったです), khác cấu trúc danh từ nhưng cùng chức năng hỏi xác nhận.",
+          "en": "For contrast: this is the i-adjective past-negative (難しくなかったです, see g_022), same confirming-question function but a different formation."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "あの映画、あんまり面白くなかった。でも、つまらない映画じゃなかったよ。",
+        "jaRuby": "あの<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>、あんまり<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>くなかった。でも、つまらない<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>じゃなかったよ。",
+        "kana": "あのえいが、あんまりおもしろくなかった。でも、つまらないえいがじゃなかったよ。",
+        "romaji": "Ano eiga, anmari omoshirokunakatta. Demo, tsumaranai eiga janakatta yo.",
+        "vi": "Bộ phim đó không hay lắm. Nhưng cũng không phải phim chán đâu.",
+        "en": "That movie wasn't very interesting. But it wasn't a boring movie either.",
+        "contextualExplanation": {
+          "vi": "Thể thường của じゃなかったです là じゃなかった -- xem g_032.",
+          "en": "The plain-form counterpart of じゃなかったです is じゃなかった -- see g_032."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "実は、彼は日本人じゃなくて、韓国人じゃなかったです。台湾人でした。",
+        "jaRuby": "<ruby>実<rp>(</rp><rt>じつ</rt><rp>)</rp></ruby>は、<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>は<ruby>日本人<rp>(</rp><rt>にほんじん</rt><rp>)</rp></ruby>じゃなくて、<ruby>韓国人<rp>(</rp><rt>かんこくじん</rt><rp>)</rp></ruby>じゃなかったです。<ruby>台湾人<rp>(</rp><rt>たいわんじん</rt><rp>)</rp></ruby>でした。",
+        "kana": "じつは、かれはにほんじんじゃなくて、かんこくじんじゃなかったです。たいわんじんでした。",
+        "romaji": "Jitsu wa, kare wa nihonjin janakute, kankokujin janakatta desu. Taiwanjin deshita.",
+        "vi": "Thực ra anh ấy không phải người Nhật, cũng không phải người Hàn. Anh ấy là người Đài Loan.",
+        "en": "Actually, he wasn't Japanese, and he wasn't Korean either. He was Taiwanese.",
+        "contextualExplanation": {
+          "vi": "Có thể nối nhiều mệnh đề phủ định (じゃなくて... じゃなかったです) trước khi đưa ra sự thật đúng.",
+          "en": "Multiple negative clauses can chain (じゃなくて... じゃなかったです) before the actual fact."
         }
       }
     ],
@@ -437,28 +872,104 @@
         "jaRuby": "リーさんは<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>で、<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>です。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_001",
+      "g_018",
+      "g_019"
+    ],
     "tags": [],
     "patternRuby": "(N1は) N2でN3です",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N1 wa) N2 de N3 desu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Dictionary form + で (linking) + N3です",
+        "exampleStr": "学生 ＋ で ＋ 19歳です"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Listing two facts about N1 in one sentence",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This で is the noun/na-adjective linking form, not the particle で (\"by means of/at\")",
+        "description": {
+          "vi": "で ở đây là thể liên kết của です (giống thể て của tính từ な), không phải trợ từ で chỉ địa điểm/phương tiện. Đừng nhầm với N(địa điểm)でV.",
+          "en": "This で is the connective form of です (parallel to the te-form for na-adjectives), not the particle で marking place/means. Don't confuse it with N(place)でV constructions."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "リーさんは日本語学校の学生で、中国人です。",
-        "jaRuby": "リーさんは<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>で、<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>です。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bạn Lý là học sinh trường Nhật ngữ và là người Trung Quốc.",
-        "en": "Ly is a student at a Japanese language school, and is Chinese.",
+        "ja": "田中さんは学生で、19歳です。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>で、19<ruby>歳<rp>(</rp><rt>さい</rt><rp>)</rp></ruby>です。",
+        "kana": "たなかさんはがくせいで、じゅうきゅうさいです。",
+        "romaji": "Tanaka-san wa gakusei de, juukyuu-sai desu.",
+        "vi": "Bạn Tanaka là sinh viên, 19 tuổi.",
+        "en": "Tanaka is a student, and is 19 years old.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "で nối hai mệnh đề danh từ về cùng một chủ thể.",
+          "en": "で links two noun-predicate clauses about the same subject."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中と申します。会社員で、営業部におります。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>と<ruby>申<rp>(</rp><rt>もう</rt><rp>)</rp></ruby>します。<ruby>会社員<rp>(</rp><rt>かいしゃいん</rt><rp>)</rp></ruby>で、<ruby>営業部<rp>(</rp><rt>えいぎょうぶ</rt><rp>)</rp></ruby>におります。",
+        "kana": "たなかともうします。かいしゃいんで、えいぎょうぶにおります。",
+        "romaji": "Tanaka to moushimasu. Kaishain de, eigyoubu ni orimasu.",
+        "vi": "Tôi tên là Tanaka. Là nhân viên công ty, làm ở bộ phận kinh doanh.",
+        "en": "My name is Tanaka. I'm a company employee, working in the sales department.",
+        "contextualExplanation": {
+          "vi": "で thường dùng khi tự giới thiệu để liệt kê thông tin về bản thân.",
+          "en": "で is common in self-introductions to list facts about oneself in sequence."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "田中さんは学生じゃなくて、会社員です。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>じゃなくて、<ruby>会社員<rp>(</rp><rt>かいしゃいん</rt><rp>)</rp></ruby>です。",
+        "kana": "たなかさんはがくせいじゃなくて、かいしゃいんです。",
+        "romaji": "Tanaka-san wa gakusei janakute, kaishain desu.",
+        "vi": "Bạn Tanaka không phải sinh viên, mà là nhân viên công ty.",
+        "en": "Tanaka isn't a student -- they're a company employee.",
+        "contextualExplanation": {
+          "vi": "Ở dạng phủ định, で đổi thành じゃなくて để nối \"không phải A mà là B\".",
+          "en": "In the negative, で becomes じゃなくて for \"not A, but B\"."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "これ、私のかばんで、それは弟のだよ。",
+        "jaRuby": "これ、<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>のかばんで、それは<ruby>弟<rp>(</rp><rt>おとうと</rt><rp>)</rp></ruby>のだよ。",
+        "kana": "これ、わたしのかばんで、それはおとうとのだよ。",
+        "romaji": "Kore, watashi no kaban de, sore wa otouto no da yo.",
+        "vi": "Cái này là túi của tôi, còn cái đó là của em trai tôi.",
+        "en": "This is my bag, and that one is my brother's.",
+        "contextualExplanation": {
+          "vi": "で cũng dùng được để đối chiếu hai vật khác nhau trong một câu.",
+          "en": "で can also link two contrasting items within one sentence."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "今日は休みで、明日も休みです。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みで、<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>も<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みです。",
+        "kana": "きょうはやすみで、あしたもやすみです。",
+        "romaji": "Kyou wa yasumi de, ashita mo yasumi desu.",
+        "vi": "Hôm nay nghỉ, ngày mai cũng nghỉ.",
+        "en": "Today is a day off, and tomorrow is too.",
+        "contextualExplanation": {
+          "vi": "で có thể nối hai câu có cùng chủ đề diễn ra liên tiếp về mặt thời gian.",
+          "en": "で can link two clauses on the same topic occurring in temporal sequence."
         }
       }
     ],
@@ -494,24 +1005,94 @@
     "tags": [],
     "patternRuby": "N(は)いくらですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N (wa) ikura desu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Dictionary form (は)いくらですか",
+        "exampleStr": "これ ＋ （は）いくらですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking the price of something",
+      "speakerStance": "Neutral practical inquiry"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "いくら asks for price/amount, not いくつ (how many/how old)",
+        "description": {
+          "vi": "いくら chuyên hỏi giá tiền hoặc số lượng không đếm được. いくつ mới dùng để hỏi số lượng đếm được hoặc tuổi. Dễ nhầm vì phát âm gần giống nhau.",
+          "en": "いくら specifically asks about price or an uncountable amount. いくつ asks about a countable quantity or age. Easy to mix up because they sound similar."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この辞書はいくらですか。",
-        "jaRuby": "この<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>はいくらですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Cuốn từ điển này giá bao nhiêu?",
-        "en": "How much is this dictionary?",
+        "ja": "このかばんはいくらですか。",
+        "kana": "このかばんはいくらですか。",
+        "romaji": "Kono kaban wa ikura desu ka.",
+        "vi": "Cái túi này giá bao nhiêu?",
+        "en": "How much is this bag?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "いくらですか hỏi giá của một vật cụ thể.",
+          "en": "いくらですか asks the price of a specific item."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "すみません、この時計はいくらでしょうか。",
+        "jaRuby": "すみません、この<ruby>時計<rp>(</rp><rt>とけい</rt><rp>)</rp></ruby>はいくらでしょうか。",
+        "kana": "すみません、このとけいはいくらでしょうか。",
+        "romaji": "Sumimasen, kono tokei wa ikura deshou ka.",
+        "vi": "Xin lỗi, chiếc đồng hồ này giá bao nhiêu ạ?",
+        "en": "Excuse me, how much is this watch, please?",
+        "contextualExplanation": {
+          "vi": "でしょうか lịch sự và nhẹ nhàng hơn ですか, thường dùng khi hỏi người bán hàng.",
+          "en": "でしょうか is softer and more polite than ですか, common when asking a shop clerk."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "全部でいくらですか。",
+        "jaRuby": "<ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby>でいくらですか。",
+        "kana": "ぜんぶでいくらですか。",
+        "romaji": "Zenbu de ikura desu ka.",
+        "vi": "Tổng cộng bao nhiêu tiền vậy?",
+        "en": "How much is it all together?",
+        "contextualExplanation": {
+          "vi": "全部で + いくらですか hỏi tổng số tiền của nhiều món.",
+          "en": "全部で + いくらですか asks for the total price of multiple items."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このTシャツ、いくら？",
+        "kana": "このティーシャツ、いくら？",
+        "romaji": "Kono T-shatsu, ikura?",
+        "vi": "Cái áo thun này bao nhiêu vậy?",
+        "en": "How much is this T-shirt?",
+        "contextualExplanation": {
+          "vi": "Trong văn nói thân mật, は và です đều có thể lược bỏ, chỉ còn いくら？.",
+          "en": "In casual speech, both は and です can drop entirely, leaving just いくら？."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "一泊いくらぐらいですか。",
+        "jaRuby": "<ruby>一泊<rp>(</rp><rt>いっぱく</rt><rp>)</rp></ruby>いくらぐらいですか。",
+        "kana": "いっぱくいくらぐらいですか。",
+        "romaji": "Ippaku ikura gurai desu ka.",
+        "vi": "Một đêm khoảng bao nhiêu tiền?",
+        "en": "About how much is it for one night?",
+        "contextualExplanation": {
+          "vi": "いくら thường đi kèm ぐらい/くらい khi hỏi mức giá ước chừng.",
+          "en": "いくら is commonly paired with ぐらい/くらい when asking for an approximate price."
         }
       }
     ],
@@ -543,28 +1124,102 @@
         "jaRuby": "お<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_011_2"
+    ],
     "tags": [],
     "patternRuby": "N1は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 wa nan desu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(N1は)＋何ですか",
+        "exampleStr": "これ ＋ は何ですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking what something is",
+      "speakerStance": "Neutral, information-seeking"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "何 reads なに or なん depending on what follows",
+        "description": {
+          "vi": "何 đọc là なん trước です/だ、danh từ đếm (何人、何時) và một số âm đầu (だ、な、た、の). Đọc là なに trong hầu hết các trường hợp khác (何を、何が、何か).",
+          "en": "何 is read なん before です/だ, before counters (何人, 何時), and before certain sounds (だ, な, た, の). It's read なに in most other cases (何を, 何が, 何か)."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "お仕事は何ですか。",
-        "jaRuby": "お<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Công việc của bạn là gì?",
-        "en": "What's your job?",
+        "ja": "これは何ですか。",
+        "jaRuby": "これは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "これはなんですか。",
+        "romaji": "Kore wa nan desu ka.",
+        "vi": "Đây là cái gì vậy?",
+        "en": "What is this?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "何 đọc là なん vì đứng trước です.",
+          "en": "何 is read なん because it comes right before です."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "お仕事は何ですか。",
+        "jaRuby": "お<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "おしごとはなんですか。",
+        "romaji": "Oshigoto wa nan desu ka.",
+        "vi": "Công việc của bạn là gì?",
+        "en": "What do you do (for work)?",
+        "contextualExplanation": {
+          "vi": "お仕事 lịch sự hơn 仕事 khi hỏi về công việc của người khác.",
+          "en": "お仕事 is the polite form of 仕事 when asking about someone else's job."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "好きな食べ物は何ですか。",
+        "jaRuby": "<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きな<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べ<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "すきなたべものはなんですか。",
+        "romaji": "Suki na tabemono wa nan desu ka.",
+        "vi": "Món ăn bạn thích là món gì?",
+        "en": "What's your favorite food?",
+        "contextualExplanation": {
+          "vi": "N1 có thể là một cụm danh từ dài hơn (好きな食べ物) chứ không chỉ một từ.",
+          "en": "N1 can be a longer noun phrase (好きな食べ物), not just a single word."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "それ、何？",
+        "jaRuby": "それ、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>？",
+        "kana": "それ、なに？",
+        "romaji": "Sore, nani?",
+        "vi": "Cái đó là gì vậy?",
+        "en": "What's that?",
+        "contextualExplanation": {
+          "vi": "Trong văn nói ngắn gọn, は/です được lược bỏ và 何 đọc なに (không đứng ngay trước です nữa).",
+          "en": "In short casual speech は/です drop, and 何 is read なに since it no longer directly precedes です."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "これは何の本ですか。",
+        "jaRuby": "これは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "これはなんのほんですか。",
+        "romaji": "Kore wa nan no hon desu ka.",
+        "vi": "Đây là sách về gì vậy?",
+        "en": "What kind of book is this (about)?",
+        "contextualExplanation": {
+          "vi": "何の + N hỏi về nội dung/loại của N -- xem g_011_2.",
+          "en": "何の + N asks about N's content/type -- see g_011_2."
         }
       }
     ],
@@ -596,28 +1251,102 @@
         "jaRuby": "これ、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>ですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_011_5"
+    ],
     "tags": [],
     "patternRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の N2ですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "dare no N2 desu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "誰の + N2ですか",
+        "exampleStr": "誰の ＋ かばんですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking who owns something",
+      "speakerStance": "Neutral, information-seeking"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "誰の vs どなたの (polite)",
+        "description": {
+          "vi": "誰 là cách hỏi trung tính, どなた là cách hỏi lịch sự hơn khi nói với/về người lớn tuổi, cấp trên hoặc khách hàng.",
+          "en": "誰 is the neutral way to ask \"who\". どなた is the more polite equivalent, used with elders, superiors, or customers."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "これ、誰の傘ですか。",
-        "jaRuby": "これ、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>ですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Đây là ô của ai vậy?",
-        "en": "Whose umbrella is this?",
+        "ja": "これは誰のかばんですか。",
+        "jaRuby": "これは<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>のかばんですか。",
+        "kana": "これはだれのかばんですか。",
+        "romaji": "Kore wa dare no kaban desu ka.",
+        "vi": "Cái túi này là của ai vậy?",
+        "en": "Whose bag is this?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "誰の + N2 hỏi chủ sở hữu của N2.",
+          "en": "誰の + N2 asks who owns N2."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "こちらはどなたの傘ですか。",
+        "jaRuby": "こちらはどなたの<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>ですか。",
+        "kana": "こちらはどなたのかさですか。",
+        "romaji": "Kochira wa donata no kasa desu ka.",
+        "vi": "Đây là ô của vị nào ạ?",
+        "en": "Whose umbrella is this (may I ask)?",
+        "contextualExplanation": {
+          "vi": "どなた lịch sự hơn 誰, phù hợp khi nói với khách hoặc người lạ.",
+          "en": "どなた is the polite equivalent of 誰, fitting when speaking to guests or strangers."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "この本は誰のですか。",
+        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>のですか。",
+        "kana": "このほんはだれのですか。",
+        "romaji": "Kono hon wa dare no desu ka.",
+        "vi": "Quyển sách này là của ai vậy?",
+        "en": "Whose is this book?",
+        "contextualExplanation": {
+          "vi": "N2 có thể lược bỏ khi đã rõ trong ngữ cảnh, chỉ còn 誰の (の đóng vai trò thay thế danh từ) -- xem g_011_5.",
+          "en": "N2 can be omitted when clear from context, leaving just 誰の (の standing in for the noun) -- see g_011_5."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "これ、誰の？",
+        "jaRuby": "これ、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の？",
+        "kana": "これ、だれの？",
+        "romaji": "Kore, dare no?",
+        "vi": "Cái này của ai vậy?",
+        "en": "Whose is this?",
+        "contextualExplanation": {
+          "vi": "は/です được lược bỏ trong văn nói thân mật.",
+          "en": "は/です drop entirely in casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "今、誰の番ですか。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の<ruby>番<rp>(</rp><rt>ばん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "いま、だれのばんですか。",
+        "romaji": "Ima, dare no ban desu ka.",
+        "vi": "Bây giờ là đến lượt ai vậy?",
+        "en": "Whose turn is it now?",
+        "contextualExplanation": {
+          "vi": "誰の không chỉ hỏi sở hữu vật chất mà còn dùng với danh từ trừu tượng như 番 (lượt).",
+          "en": "誰の isn't limited to physical ownership -- it also pairs with abstract nouns like 番 (turn)."
         }
       }
     ],
@@ -649,28 +1378,104 @@
         "jaRuby": "それは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>ですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_007",
+      "g_011_4"
+    ],
     "tags": [],
     "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "nan no N2 desu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "何の + N2ですか",
+        "exampleStr": "何の ＋ 本ですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking what N2 is about (topic/content)",
+      "speakerStance": "Neutral, information-seeking"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "何の N asks about content/topic, not identity",
+        "description": {
+          "vi": "何の本ですか hỏi về NỘI DUNG cuốn sách (sách về chủ đề gì), khác với 何ですか (hỏi đây là VẬT GÌ). Đây cũng là một trong ba nghĩa của 何の -- xem thêm g_011_4 (chất liệu).",
+          "en": "何の本ですか asks about the book's CONTENT/topic, different from plain 何ですか (asking what the object itself is). 何の also covers material -- see g_011_4."
+        },
+        "relatedGrammarId": "g_011_4"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "それは何の辞書ですか。",
-        "jaRuby": "それは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>ですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Đó là từ điển gì vậy?",
-        "en": "What is that dictionary about?",
+        "ja": "これは何の本ですか。",
+        "jaRuby": "これは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "これはなんのほんですか。",
+        "romaji": "Kore wa nan no hon desu ka.",
+        "vi": "Đây là sách về gì vậy?",
+        "en": "What is this book about?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "何の本 hỏi về chủ đề/nội dung của cuốn sách.",
+          "en": "何の本 asks about the book's subject/content."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "失礼ですが、これは何の会議でしょうか。",
+        "jaRuby": "<ruby>失礼<rp>(</rp><rt>しつれい</rt><rp>)</rp></ruby>ですが、これは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>でしょうか。",
+        "kana": "しつれいですが、これはなんのかいぎでしょうか。",
+        "romaji": "Shitsurei desu ga, kore wa nan no kaigi deshou ka.",
+        "vi": "Xin lỗi, đây là cuộc họp về vấn đề gì ạ?",
+        "en": "Excuse me, what is this meeting about?",
+        "contextualExplanation": {
+          "vi": "でしょうか lịch sự hơn ですか trong ngữ cảnh công việc trang trọng.",
+          "en": "でしょうか is more polite than ですか in a formal work context."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "何の授業ですか。",
+        "jaRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>ですか。",
+        "kana": "なんのじゅぎょうですか。",
+        "romaji": "Nan no jugyou desu ka.",
+        "vi": "Đây là tiết học môn gì vậy?",
+        "en": "What class/subject is this?",
+        "contextualExplanation": {
+          "vi": "Có thể lược bỏ chủ ngữ khi đã rõ đang nói về gì (ví dụ chỉ vào thời khóa biểu).",
+          "en": "The subject can be dropped when it's already clear (e.g. pointing at a schedule)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "それ、何の映画？",
+        "jaRuby": "それ、<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>？",
+        "kana": "それ、なんのえいが？",
+        "romaji": "Sore, nan no eiga?",
+        "vi": "Đó là phim về gì vậy?",
+        "en": "What's that movie about?",
+        "contextualExplanation": {
+          "vi": "は/です lược bỏ trong văn nói thân mật.",
+          "en": "は/です drop in casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "これは何のためのボタンですか。",
+        "jaRuby": "これは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>のためのボタンですか。",
+        "kana": "これはなんのためのボタンですか。",
+        "romaji": "Kore wa nan no tame no botan desu ka.",
+        "vi": "Đây là cái nút để làm gì vậy?",
+        "en": "What is this button for?",
+        "contextualExplanation": {
+          "vi": "何のための + N mở rộng cấu trúc để hỏi về mục đích, không chỉ chủ đề.",
+          "en": "何のための + N extends the pattern to ask purpose, not just topic."
         }
       }
     ],
@@ -706,24 +1511,96 @@
     "tags": [],
     "patternRuby": "どこの N2ですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "doko no N2 desu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "どこの + N2ですか",
+        "exampleStr": "どこの ＋ 会社ですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking where N2 is from (origin, maker, brand)",
+      "speakerStance": "Neutral, information-seeking"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "どこの vs どこで -- origin/maker vs. location of action",
+        "description": {
+          "vi": "どこの + N hỏi N2 xuất xứ/thuộc về đâu (どこの車 = xe hãng nào/nước nào). どこで + V hỏi hành động diễn ra ở đâu -- hai cấu trúc khác chức năng, dễ nhầm vì đều bắt đầu bằng どこ.",
+          "en": "どこの + N asks where N2 originates from or belongs to (どこの車 = \"a car from where/which maker\"). どこで + V asks where an action takes place -- different function, easy to confuse since both start with どこ."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "すしはどこの料理ですか。",
-        "jaRuby": "すしはどこの<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>ですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Sushi là món ăn ở đâu?",
-        "en": "Where is sushi from?",
+        "ja": "これはどこの車ですか。",
+        "jaRuby": "これはどこの<ruby>車<rp>(</rp><rt>くるま</rt><rp>)</rp></ruby>ですか。",
+        "kana": "これはどこのくるまですか。",
+        "romaji": "Kore wa doko no kuruma desu ka.",
+        "vi": "Xe này là xe hãng/nước nào?",
+        "en": "Where's this car from (which country/maker)?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "どこの車 hỏi về nguồn gốc/hãng sản xuất của chiếc xe.",
+          "en": "どこの車 asks about the car's country or maker of origin."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "失礼ですが、どちらの会社の方ですか。",
+        "jaRuby": "<ruby>失礼<rp>(</rp><rt>しつれい</rt><rp>)</rp></ruby>ですが、どちらの<ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby>の<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>ですか。",
+        "kana": "しつれいですが、どちらのかいしゃのかたですか。",
+        "romaji": "Shitsurei desu ga, dochira no kaisha no kata desu ka.",
+        "vi": "Xin lỗi, anh/chị là người của công ty nào ạ?",
+        "en": "Excuse me, which company are you from?",
+        "contextualExplanation": {
+          "vi": "どちら lịch sự hơn どこ, thường dùng khi hỏi về nơi làm việc của người khác.",
+          "en": "どちら is the polite equivalent of どこ, common when asking about someone's workplace."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "これはどこの国のお菓子ですか。",
+        "jaRuby": "これはどこの<ruby>国<rp>(</rp><rt>くに</rt><rp>)</rp></ruby>のお<ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>ですか。",
+        "kana": "これはどこのくにのおかしですか。",
+        "romaji": "Kore wa doko no kuni no okashi desu ka.",
+        "vi": "Đây là bánh kẹo của nước nào vậy?",
+        "en": "What country is this snack from?",
+        "contextualExplanation": {
+          "vi": "どこの có thể kết hợp thêm 国 để hỏi rõ hơn về quốc gia xuất xứ.",
+          "en": "どこの can combine with 国 to ask specifically about the country of origin."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "その傘、どこの？",
+        "jaRuby": "その<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>、どこの？",
+        "kana": "そのかさ、どこの？",
+        "romaji": "Sono kasa, doko no?",
+        "vi": "Cái ô đó của hãng nào vậy?",
+        "en": "Where's that umbrella from (which brand)?",
+        "contextualExplanation": {
+          "vi": "N2 lược bỏ khi đã rõ đang chỉ vào vật gì.",
+          "en": "N2 is dropped when it's clear from pointing at the item."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "田中さんはどこの出身ですか。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんはどこの<ruby>出身<rp>(</rp><rt>しゅっしん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "たなかさんはどこのしゅっしんですか。",
+        "romaji": "Tanaka-san wa doko no shusshin desu ka.",
+        "vi": "Bạn Tanaka quê ở đâu vậy?",
+        "en": "Where is Tanaka from (hometown)?",
+        "contextualExplanation": {
+          "vi": "どこの出身ですか là cách hỏi quê quán rất phổ biến.",
+          "en": "どこの出身ですか is the standard way to ask someone's hometown."
         }
       }
     ],
@@ -755,28 +1632,103 @@
         "jaRuby": "これはぶどうとチョコレートのお<ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>です。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_011_2"
+    ],
     "tags": [],
     "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "nan no N2 desu ka (material)",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "何の + N2ですか",
+        "exampleStr": "何の ＋ 肉ですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking what N2 is made of",
+      "speakerStance": "Neutral, information-seeking"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Same 何の, a different sense than g_011_2",
+        "description": {
+          "vi": "何の cùng cấu trúc với g_011_2 (hỏi chủ đề) nhưng ở đây mang nghĩa \"làm bằng gì/thành phần gì\" -- ý nghĩa cụ thể phụ thuộc vào N2 (肉=thịt gì, 木=gỗ gì...).",
+          "en": "何の has the same form as g_011_2 (asking topic) but here asks \"made of what/what kind of ingredient\" -- the specific sense depends on N2 (肉 = what kind of meat, 木 = what kind of wood...)."
+        },
+        "relatedGrammarId": "g_011_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "これはぶどうとチョコレートのお菓子です。",
-        "jaRuby": "これはぶどうとチョコレートのお<ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>です。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Đây là kẹo làm từ nho và sô cô la.",
-        "en": "This is candy made of grapes and chocolate.",
+        "ja": "これは何の肉ですか。",
+        "jaRuby": "これは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>肉<rp>(</rp><rt>にく</rt><rp>)</rp></ruby>ですか。",
+        "kana": "これはなんのにくですか。",
+        "romaji": "Kore wa nan no niku desu ka.",
+        "vi": "Đây là thịt gì vậy?",
+        "en": "What kind of meat is this?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "何の肉 hỏi loại thịt (bò, gà, heo...).",
+          "en": "何の肉 asks what kind of meat it is (beef, chicken, pork...)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "すみません、これは何の油で揚げていますか。",
+        "jaRuby": "すみません、これは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>油<rp>(</rp><rt>あぶら</rt><rp>)</rp></ruby>で<ruby>揚<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>げていますか。",
+        "kana": "すみません、これはなんのあぶらであげていますか。",
+        "romaji": "Sumimasen, kore wa nan no abura de agete imasu ka.",
+        "vi": "Xin lỗi, món này chiên bằng dầu gì vậy?",
+        "en": "Excuse me, what kind of oil is this fried in?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi lịch sự thường gặp tại nhà hàng, hỏi thành phần nguyên liệu.",
+          "en": "A common polite restaurant question asking about an ingredient."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "このテーブルは何の木でできていますか。",
+        "jaRuby": "このテーブルは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>木<rp>(</rp><rt>き</rt><rp>)</rp></ruby>でできていますか。",
+        "kana": "このテーブルはなんのきでできていますか。",
+        "romaji": "Kono teeburu wa nan no ki de dekite imasu ka.",
+        "vi": "Cái bàn này làm bằng gỗ gì vậy?",
+        "en": "What kind of wood is this table made of?",
+        "contextualExplanation": {
+          "vi": "何の + chất liệu + でできていますか là mẫu câu hỏi chất liệu rất tự nhiên.",
+          "en": "何の + material + でできていますか is the natural pattern for asking what something is made of."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このジュース、何の味？",
+        "jaRuby": "このジュース、<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>味<rp>(</rp><rt>あじ</rt><rp>)</rp></ruby>？",
+        "kana": "このジュース、なんのあじ？",
+        "romaji": "Kono juusu, nan no aji?",
+        "vi": "Nước ép này vị gì vậy?",
+        "en": "What flavor is this juice?",
+        "contextualExplanation": {
+          "vi": "何の味 hỏi hương vị, cùng nhóm nghĩa \"thành phần/chất liệu\".",
+          "en": "何の味 asks about flavor, in the same \"material/ingredient\" sense."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "その指輪、何の石ですか。",
+        "jaRuby": "その<ruby>指輪<rp>(</rp><rt>ゆびわ</rt><rp>)</rp></ruby>、<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>石<rp>(</rp><rt>いし</rt><rp>)</rp></ruby>ですか。",
+        "kana": "そのゆびわ、なんのいしですか。",
+        "romaji": "Sono yubiwa, nan no ishi desu ka.",
+        "vi": "Chiếc nhẫn đó đính đá gì vậy?",
+        "en": "What kind of stone is on that ring?",
+        "contextualExplanation": {
+          "vi": "Cấu trúc mở rộng cho bất kỳ vật liệu/thành phần cụ thể nào.",
+          "en": "The pattern extends to any specific material or component."
         }
       }
     ],
@@ -808,28 +1760,103 @@
         "jaRuby": "リンさんはABC<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_011_1"
+    ],
     "tags": [],
     "patternRuby": "N1の N2",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 no N2",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "N1 + の + N2",
+        "exampleStr": "田中さん ＋ の ＋ かばん"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "casual"
+      ],
+      "intent": "Marking N2 as belonging to, made by, or otherwise associated with N1",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "の can stand in for the noun itself (drop N2)",
+        "description": {
+          "vi": "Khi N2 đã rõ trong ngữ cảnh, có thể lược bỏ N2 và chỉ giữ N1の (の đóng vai trò như đại từ thay thế) -- ví dụ これは私のです thay vì これは私のかばんです.",
+          "en": "When N2 is clear from context, it can be dropped entirely, leaving just N1の -- の then acts as a pronoun standing in for the noun, e.g. これは私のです instead of これは私のかばんです."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "リンさんはABC日本語学校の学生です。",
-        "jaRuby": "リンさんはABC<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bạn Linh là học viên trường Nhật ngữ ABC.",
-        "en": "Linh is a student at ABC Japanese School.",
+        "ja": "これは田中さんのかばんです。",
+        "jaRuby": "これは<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんのかばんです。",
+        "kana": "これはたなかさんのかばんです。",
+        "romaji": "Kore wa Tanaka-san no kaban desu.",
+        "vi": "Đây là túi của bạn Tanaka.",
+        "en": "This is Tanaka's bag.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "の nối N1（田中さん）và N2（かばん）, biểu thị sở hữu.",
+          "en": "の links N1 (Tanaka) and N2 (bag), marking possession."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "こちらは日本語の先生です。",
+        "jaRuby": "こちらは<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>の<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>です。",
+        "kana": "こちらはにほんごのせんせいです。",
+        "romaji": "Kochira wa nihongo no sensei desu.",
+        "vi": "Đây là giáo viên tiếng Nhật.",
+        "en": "This is a Japanese-language teacher.",
+        "contextualExplanation": {
+          "vi": "の cũng nối được N1 trừu tượng (日本語) với N2 để mô tả loại/lĩnh vực.",
+          "en": "の also links an abstract N1 (日本語) to N2 to describe a type/field."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "これは誰のですか。",
+        "jaRuby": "これは<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>のですか。",
+        "kana": "これはだれのですか。",
+        "romaji": "Kore wa dare no desu ka.",
+        "vi": "Cái này là của ai vậy?",
+        "en": "Whose is this?",
+        "contextualExplanation": {
+          "vi": "N2 lược bỏ vì đã rõ đang chỉ vào vật gì -- の đứng một mình thay thế danh từ.",
+          "en": "N2 is dropped since the object is clear from pointing -- の stands alone as a pronoun."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "それ、私の。",
+        "jaRuby": "それ、<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の。",
+        "kana": "それ、わたしの。",
+        "romaji": "Sore, watashi no.",
+        "vi": "Cái đó của tôi.",
+        "en": "That's mine.",
+        "contextualExplanation": {
+          "vi": "は/です lược bỏ, chỉ còn 私の đóng vai trò cả sở hữu lẫn đại từ.",
+          "en": "は/です drop entirely; 私の alone functions as both possessive and pronoun."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "木のテーブルが好きです。",
+        "jaRuby": "<ruby>木<rp>(</rp><rt>き</rt><rp>)</rp></ruby>のテーブルが<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きです。",
+        "kana": "きのテーブルがすきです。",
+        "romaji": "Ki no teeburu ga suki desu.",
+        "vi": "Tôi thích bàn gỗ.",
+        "en": "I like wooden tables.",
+        "contextualExplanation": {
+          "vi": "の cũng dùng để chỉ chất liệu (木のテーブル = bàn làm bằng gỗ), một cách dùng rất linh hoạt.",
+          "en": "の can also mark material (木のテーブル = \"table [made] of wood\") -- a very flexible use."
         }
       }
     ],
@@ -861,28 +1888,107 @@
         "jaRuby": "8<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>からですね。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_008_2",
+      "g_008_3"
+    ],
     "tags": [],
     "patternRuby": "~ね",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~ ne",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "End of any sentence (plain or polite)",
+        "particle": "ね",
+        "exampleStr": "いい天気です ＋ ね"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual",
+        "spoken"
+      ],
+      "intent": "Inviting agreement or confirming shared feeling/knowledge with the listener",
+      "emotionalNuance": "Warm, softening -- signals \"I assume you feel/know this too\"",
+      "speakerStance": "Seeking emotional alignment, not new information"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "ね assumes the listener already shares the information; よ does not",
+        "description": {
+          "vi": "ね dùng khi người nói tin rằng người nghe cũng biết/cảm nhận điều đó (mời đồng cảm). よ dùng khi người nói đưa ra thông tin MỚI mà người nghe chưa biết. Dùng nhầm よ khi nói về thời tiết đang thấy chung (nên dùng ね) có thể nghe hơi \"dạy đời\".",
+          "en": "ね is used when the speaker assumes the listener already knows/feels the same thing (inviting agreement). よ is for genuinely NEW information the listener doesn't have yet. Using よ about shared, obvious information (like weather both people can see) can sound oddly assertive or lecturing."
+        },
+        "relatedGrammarId": "g_008_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "8時からですね。",
-        "jaRuby": "8<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>からですね。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Từ 8 giờ nhỉ.",
-        "en": "It's from 8 o'clock, right?",
+        "ja": "今日はいい天気ですね。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>はいい<ruby>天気<rp>(</rp><rt>てんき</rt><rp>)</rp></ruby>ですね。",
+        "kana": "きょうはいいてんきですね。",
+        "romaji": "Kyou wa ii tenki desu ne.",
+        "vi": "Hôm nay thời tiết đẹp nhỉ.",
+        "en": "Nice weather today, isn't it?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "ね mời người nghe đồng tình về một điều cả hai đều thấy rõ.",
+          "en": "ね invites agreement about something both speakers can observe."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "お仕事、お疲れさまでしたね。",
+        "jaRuby": "お<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>、お<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れさまでしたね。",
+        "kana": "おしごと、おつかれさまでしたね。",
+        "romaji": "Oshigoto, otsukaresama deshita ne.",
+        "vi": "Công việc vất vả rồi nhỉ.",
+        "en": "You must be tired from work, huh.",
+        "contextualExplanation": {
+          "vi": "ね làm câu nói trở nên ấm áp, thể hiện sự đồng cảm.",
+          "en": "ね adds warmth here, expressing empathy toward the listener."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "田中さんも来ますよね？",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんも<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ますよね？",
+        "kana": "たなかさんもきますよね？",
+        "romaji": "Tanaka-san mo kimasu yo ne?",
+        "vi": "Tanaka cũng sẽ đến chứ nhỉ?",
+        "en": "Tanaka's coming too, right?",
+        "contextualExplanation": {
+          "vi": "So sánh với よね (g_008_3): kết hợp cả xác nhận thông tin lẫn mời đồng tình.",
+          "en": "For contrast, よね (g_008_3) combines both confirming information and inviting agreement."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "これ、おいしいね。",
+        "jaRuby": "これ、おいしいね。",
+        "kana": "これ、おいしいね。",
+        "romaji": "Kore, oishii ne.",
+        "vi": "Cái này ngon nhỉ.",
+        "en": "This is tasty, isn't it.",
+        "contextualExplanation": {
+          "vi": "ね rất phổ biến trong nhận xét thân mật để mời người nghe đồng tình.",
+          "en": "ね is extremely common in casual remarks, inviting the listener to agree."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "ちょっと待ってくださいね。",
+        "jaRuby": "ちょっと<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>ってくださいね。",
+        "kana": "ちょっとまってくださいね。",
+        "romaji": "Chotto matte kudasai ne.",
+        "vi": "Đợi một chút nhé.",
+        "en": "Please wait a moment, okay?",
+        "contextualExplanation": {
+          "vi": "ね sau lời yêu cầu làm giọng điệu mềm mại, thân thiện hơn thay vì ra lệnh cộc lốc.",
+          "en": "ね after a request softens the tone into something friendlier than a bare command."
         }
       }
     ],
@@ -914,28 +2020,106 @@
         "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みですよ。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_008_1",
+      "g_008_3"
+    ],
     "tags": [],
     "patternRuby": "~よ",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~ yo",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "End of any sentence (plain or polite)",
+        "particle": "よ",
+        "exampleStr": "雨が降っています ＋ よ"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual",
+        "spoken"
+      ],
+      "intent": "Asserting new information the listener doesn't already have",
+      "emotionalNuance": "Can sound pushy or condescending if overused with someone who already knows, or with superiors",
+      "speakerStance": "Confident assertion of information"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "Overusing よ with superiors can sound like you're lecturing them",
+        "description": {
+          "vi": "よ khẳng định điều người nghe chưa biết -- dùng với cấp trên/người lớn tuổi về điều họ hiển nhiên đã biết có thể nghe như đang dạy đời họ. Trong ngữ cảnh trang trọng, cân nhắc bỏ よ hoặc dùng cách diễn đạt khác.",
+          "en": "よ asserts something the listener doesn't know -- using it with a superior/elder about something they obviously already know can come across as lecturing them. In formal contexts, consider dropping よ or rephrasing."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "今日、図書館は休みですよ。",
-        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みですよ。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hôm nay thư viện đóng cửa đấy.",
-        "en": "The library is closed today, you know.",
+        "ja": "雨が降っていますよ。",
+        "jaRuby": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>っていますよ。",
+        "kana": "あめがふっていますよ。",
+        "romaji": "Ame ga futte imasu yo.",
+        "vi": "Trời đang mưa đấy.",
+        "en": "It's raining, you know.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "よ báo cho người nghe một thông tin họ có thể chưa để ý.",
+          "en": "よ alerts the listener to information they may not have noticed."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "このお店、とてもおいしいですよ。",
+        "jaRuby": "このお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>、とてもおいしいですよ。",
+        "kana": "このおみせ、とてもおいしいですよ。",
+        "romaji": "Kono omise, totemo oishii desu yo.",
+        "vi": "Quán này ngon lắm đấy ạ.",
+        "en": "This restaurant is really good, I should tell you.",
+        "contextualExplanation": {
+          "vi": "よ dùng khi chia sẻ thông tin/gợi ý hữu ích mà người nghe chưa biết.",
+          "en": "よ fits when sharing a useful tip the listener doesn't have yet."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今日は休みじゃないですよ。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みじゃないですよ。",
+        "kana": "きょうはやすみじゃないですよ。",
+        "romaji": "Kyou wa yasumi janai desu yo.",
+        "vi": "Hôm nay không nghỉ đâu đấy.",
+        "en": "Today isn't a holiday, you know.",
+        "contextualExplanation": {
+          "vi": "よ dùng để sửa một hiểu lầm của người nghe (họ tưởng hôm nay nghỉ).",
+          "en": "よ corrects a listener's mistaken assumption (that today is a holiday)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "もう時間だよ！",
+        "jaRuby": "もう<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>だよ！",
+        "kana": "もうじかんだよ！",
+        "romaji": "Mou jikan da yo!",
+        "vi": "Hết giờ rồi đấy!",
+        "en": "It's already time, you know!",
+        "contextualExplanation": {
+          "vi": "よ nhấn mạnh, thúc giục trong tình huống gấp gáp.",
+          "en": "よ adds urgency and emphasis in a pressing situation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "あ、財布が落ちましたよ。",
+        "jaRuby": "あ、<ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>が<ruby>落<rp>(</rp><rt>お</rt><rp>)</rp></ruby>ちましたよ。",
+        "kana": "あ、さいふがおちましたよ。",
+        "romaji": "A, saifu ga ochimashita yo.",
+        "vi": "A, bạn làm rơi ví rồi kìa!",
+        "en": "Oh, you dropped your wallet!",
+        "contextualExplanation": {
+          "vi": "よ rất tự nhiên khi báo tin gấp, quan trọng cho người nghe (họ chắc chắn chưa biết).",
+          "en": "よ is very natural when alerting someone to something urgent they definitely don't know yet."
         }
       }
     ],
@@ -967,28 +2151,106 @@
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は15<ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby>ですよね。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_008_1",
+      "g_008_2"
+    ],
     "tags": [],
     "patternRuby": "~よね",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~ yo ne",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "End of any sentence (plain or polite)",
+        "particle": "よね",
+        "exampleStr": "田中さんも来ます ＋ よね"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual",
+        "spoken"
+      ],
+      "intent": "Double-checking a piece of information while still assuming the listener also knows it",
+      "speakerStance": "Mostly confident, but seeking a light confirmation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "よね sits between よ (new info) and ね (pure agreement)",
+        "description": {
+          "vi": "よね kết hợp よ (khẳng định) và ね (mời xác nhận) -- dùng khi người nói khá chắc chắn về thông tin nhưng vẫn muốn người nghe xác nhận lại. Khác ね thuần túy (chỉ mời đồng cảm, không hỏi xác nhận thông tin).",
+          "en": "よね blends よ (assertion) and ね (inviting confirmation) -- used when the speaker is fairly confident about something but still wants the listener to double-check it. Different from plain ね, which only invites emotional agreement, not fact-checking."
+        },
+        "relatedGrammarId": "g_008_1"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "明日は15日ですよね。",
-        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は15<ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby>ですよね。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ngày mai là ngày 15 nhỉ?",
-        "en": "Tomorrow is the 15th, right?",
+        "ja": "会議は3時からですよね？",
+        "jaRuby": "<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>は3<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>からですよね？",
+        "kana": "かいぎはさんじからですよね？",
+        "romaji": "Kaigi wa san-ji kara desu yo ne?",
+        "vi": "Cuộc họp bắt đầu từ 3 giờ đúng không nhỉ?",
+        "en": "The meeting starts at 3, right?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "よね xác nhận lại một thông tin mà người nói khá chắc nhưng muốn kiểm tra.",
+          "en": "よね double-checks information the speaker is fairly sure of but wants verified."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中さんは日本語がお上手ですよね。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>がお<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>ですよね。",
+        "kana": "たなかさんはにほんごがおじょうずですよね。",
+        "romaji": "Tanaka-san wa nihongo ga ojouzu desu yo ne.",
+        "vi": "Anh Tanaka giỏi tiếng Nhật nhỉ.",
+        "en": "You're good at Japanese, aren't you.",
+        "contextualExplanation": {
+          "vi": "よね cũng dùng để khen kèm mời đồng tình, giọng điệu thân thiện.",
+          "en": "よね also works for a friendly compliment that invites agreement."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "これで大丈夫ですよね？",
+        "jaRuby": "これで<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>ですよね？",
+        "kana": "これでだいじょうぶですよね？",
+        "romaji": "Kore de daijoubu desu yo ne?",
+        "vi": "Thế này được rồi đúng không nhỉ?",
+        "en": "This should be fine, right?",
+        "contextualExplanation": {
+          "vi": "よね rất hay dùng để xin xác nhận trước khi quyết định điều gì.",
+          "en": "よね is very common when seeking confirmation before finalizing a decision."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "その映画、面白かったよね。",
+        "jaRuby": "その<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>、<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>かったよね。",
+        "kana": "そのえいが、おもしろかったよね。",
+        "romaji": "Sono eiga, omoshirokatta yo ne.",
+        "vi": "Bộ phim đó hay nhỉ.",
+        "en": "That movie was good, wasn't it.",
+        "contextualExplanation": {
+          "vi": "よね nhắc lại một kỷ niệm chung, vừa khẳng định vừa mời đồng tình.",
+          "en": "よね recalls a shared memory, both asserting and inviting agreement."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "鍵、ちゃんと閉めたよね？",
+        "jaRuby": "<ruby>鍵<rp>(</rp><rt>かぎ</rt><rp>)</rp></ruby>、ちゃんと<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めたよね？",
+        "kana": "かぎ、ちゃんとしめたよね？",
+        "romaji": "Kagi, chanto shimeta yo ne?",
+        "vi": "Khóa cửa cẩn thận rồi đúng không nhỉ?",
+        "en": "You locked the door properly, right?",
+        "contextualExplanation": {
+          "vi": "よね còn dùng để tự nhắc bản thân hoặc kiểm tra lại một hành động đã làm.",
+          "en": "よね can also be used to double-check on oneself or verify a completed action."
         }
       }
     ],
@@ -1020,28 +2282,102 @@
         "jaRuby": "<ruby>病院<rp>(</rp><rt>びょういん</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_047"
+    ],
     "tags": [],
     "patternRuby": "Nは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N wa nanji kara nanji made desu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "は何時から何時までですか",
+        "exampleStr": "銀行 ＋ は何時から何時までですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking the operating hours or duration of something",
+      "speakerStance": "Neutral, practical inquiry"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "から and まで attach directly to the time, not to a verb",
+        "description": {
+          "vi": "から (từ) và まで (đến) đi ngay sau danh từ thời gian (何時から), không cần trợ động từ đứng giữa. Đây là mẫu câu cố định để hỏi khung giờ hoạt động.",
+          "en": "から (from) and まで (until) attach directly after the time noun (何時から), no verb needed in between. This is a fixed pattern for asking operating hours/duration."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "病院は何時から何時までですか。",
-        "jaRuby": "<ruby>病院<rp>(</rp><rt>びょういん</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bệnh viện làm việc từ mấy giờ đến mấy giờ?",
-        "en": "What time is the hospital open from and until?",
+        "ja": "銀行は何時から何時までですか。",
+        "jaRuby": "<ruby>銀行<rp>(</rp><rt>ぎんこう</rt><rp>)</rp></ruby>は<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>から<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>までですか。",
+        "kana": "ぎんこうはなんじからなんじまでですか。",
+        "romaji": "Ginkou wa nanji kara nanji made desu ka.",
+        "vi": "Ngân hàng mở cửa từ mấy giờ đến mấy giờ?",
+        "en": "What are the bank's hours (from when to when)?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Câu hỏi mẫu về khung giờ hoạt động của một địa điểm.",
+          "en": "The standard question pattern for asking a place's operating hours."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "すみません、お店は何時から何時までですか。",
+        "jaRuby": "すみません、お<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>は<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>から<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>までですか。",
+        "kana": "すみません、おみせはなんじからなんじまでですか。",
+        "romaji": "Sumimasen, omise wa nanji kara nanji made desu ka.",
+        "vi": "Xin lỗi, cửa hàng mở cửa từ mấy giờ đến mấy giờ ạ?",
+        "en": "Excuse me, what are the shop's hours?",
+        "contextualExplanation": {
+          "vi": "すみません mở đầu câu hỏi lịch sự khi hỏi người lạ.",
+          "en": "すみません politely opens the question when asking a stranger."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "授業は何曜日から何曜日までありますか。",
+        "jaRuby": "<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>は<ruby>何曜日<rp>(</rp><rt>なんようび</rt><rp>)</rp></ruby>から<ruby>何曜日<rp>(</rp><rt>なんようび</rt><rp>)</rp></ruby>までありますか。",
+        "kana": "じゅぎょうはなんようびからなんようびまでありますか。",
+        "romaji": "Jugyou wa nan'youbi kara nan'youbi made arimasu ka.",
+        "vi": "Lớp học diễn ra từ thứ mấy đến thứ mấy vậy?",
+        "en": "From what day to what day are classes held?",
+        "contextualExplanation": {
+          "vi": "から～まで cũng áp dụng được cho các đơn vị thời gian khác như ngày trong tuần.",
+          "en": "から～まで extends to other time units too, like days of the week."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このお店、何時から何時まで？",
+        "jaRuby": "このお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>、<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>から<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>まで？",
+        "kana": "このおみせ、なんじからなんじまで？",
+        "romaji": "Kono omise, nanji kara nanji made?",
+        "vi": "Quán này mở từ mấy giờ đến mấy giờ vậy?",
+        "en": "What are this shop's hours?",
+        "contextualExplanation": {
+          "vi": "は/です có thể lược bỏ trong văn nói thân mật, giữ nguyên から～まで.",
+          "en": "は/です can drop in casual speech, while から～まで stays intact."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "夏休みは7月から9月までです。",
+        "jaRuby": "<ruby>夏休<rp>(</rp><rt>なつやす</rt><rp>)</rp></ruby>みは7<ruby>月<rp>(</rp><rt>がつ</rt><rp>)</rp></ruby>から9<ruby>月<rp>(</rp><rt>がつ</rt><rp>)</rp></ruby>までです。",
+        "kana": "なつやすみはしちがつからくがつまでです。",
+        "romaji": "Natsuyasumi wa shichigatsu kara kugatsu made desu.",
+        "vi": "Kỳ nghỉ hè kéo dài từ tháng 7 đến tháng 9.",
+        "en": "Summer break runs from July to September.",
+        "contextualExplanation": {
+          "vi": "から～まで cũng dùng để trả lời (không chỉ để hỏi), áp dụng cho khoảng tháng.",
+          "en": "から～まで also works as an answer (not just a question), here spanning months."
         }
       }
     ],
@@ -1073,28 +2409,103 @@
         "jaRuby": "この<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>いです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_014",
+      "g_015"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aいです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-i desu",
+    "formationRules": [
+      {
+        "pos": "i-adj",
+        "form": "Dictionary form + です",
+        "exampleStr": "高い ＋ です"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing a quality of N using an i-adjective",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "い-adjectives already end in い -- です here is a politeness marker, not a copula gluing them together",
+        "description": {
+          "vi": "Khác với danh từ/tính từ な (cần です để nối), tính từ đuôi い đã hoàn chỉnh về mặt ngữ pháp (高い đã là câu hoàn chỉnh). です chỉ thêm sắc thái lịch sự, không đóng vai trò \"là\" như với danh từ.",
+          "en": "Unlike nouns/na-adjectives (which need です to complete the sentence), an i-adjective is already grammatically complete on its own (高い alone is a full sentence). です here only adds politeness -- it doesn't function as \"is/am/are\" the way it does with nouns."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この図書館は広いです。",
-        "jaRuby": "この<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>いです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Thư viện này rộng.",
-        "en": "This library is spacious.",
+        "ja": "この店は高いです。",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>は<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いです。",
+        "kana": "このみせはたかいです。",
+        "romaji": "Kono mise wa takai desu.",
+        "vi": "Cửa hàng này đắt.",
+        "en": "This shop is expensive.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Tính từ 高い giữ nguyên hình thức, chỉ thêm です để lịch sự.",
+          "en": "The adjective 高い stays as-is; です is only added for politeness."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "このケーキはとてもおいしいです。",
+        "jaRuby": "このケーキはとてもおいしいです。",
+        "kana": "このケーキはとてもおいしいです。",
+        "romaji": "Kono keeki wa totemo oishii desu.",
+        "vi": "Bánh này rất ngon.",
+        "en": "This cake is very delicious.",
+        "contextualExplanation": {
+          "vi": "とても bổ nghĩa cho tính từ để nhấn mạnh mức độ.",
+          "en": "とても modifies the adjective to add emphasis of degree."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "この本は面白いですか。",
+        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>いですか。",
+        "kana": "このほんはおもしろいですか。",
+        "romaji": "Kono hon wa omoshiroi desu ka.",
+        "vi": "Quyển sách này có hay không?",
+        "en": "Is this book interesting?",
+        "contextualExplanation": {
+          "vi": "Thêm か để hỏi, giống cấu trúc danh từ.",
+          "en": "Adding か forms a question, the same as with nouns."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このラーメン、辛い！",
+        "jaRuby": "このラーメン、<ruby>辛<rp>(</rp><rt>から</rt><rp>)</rp></ruby>い！",
+        "kana": "このラーメン、からい！",
+        "romaji": "Kono raamen, karai!",
+        "vi": "Mì này cay quá!",
+        "en": "This ramen is spicy!",
+        "contextualExplanation": {
+          "vi": "です có thể lược bỏ trong văn nói thân mật vì tính từ い đã hoàn chỉnh.",
+          "en": "です can be dropped in casual speech since the i-adjective is already grammatically complete."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "かわいい犬ですね。",
+        "jaRuby": "かわいい<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>ですね。",
+        "kana": "かわいいいぬですね。",
+        "romaji": "Kawaii inu desu ne.",
+        "vi": "Con chó dễ thương nhỉ.",
+        "en": "What a cute dog.",
+        "contextualExplanation": {
+          "vi": "Tính từ い cũng bổ nghĩa trực tiếp cho danh từ đứng trước です như bình thường (không cần trợ từ nối).",
+          "en": "The i-adjective also modifies a noun directly before です, no connecting particle needed."
         }
       }
     ],
@@ -1126,28 +2537,113 @@
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しくないです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_013",
+      "g_022"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aくないです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-kunai desu",
+    "formationRules": [
+      {
+        "pos": "i-adj",
+        "form": "い → く + ないです",
+        "exampleStr": "高い → 高く ＋ ないです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Denying that N has quality A",
+      "speakerStance": "Neutral negation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "いい becomes よくない, not いくない",
+        "description": {
+          "vi": "いい (tốt) là ngoại lệ duy nhất: khi chia phủ định phải dùng dạng cổ よい → よくない, không phải いくない. Đây là lỗi rất phổ biến với người mới học.",
+          "en": "いい (\"good\") is the one true irregular: its negative uses the archaic root よい → よくない, never いくない. This is one of the most common beginner mistakes."
+        },
+        "examples": [
+          {
+            "incorrect": "このカレーはいくないです。",
+            "correct": "このカレーはよくないです。",
+            "explanation": {
+              "vi": "いい luôn chia phủ định từ gốc よい.",
+              "en": "いい always conjugates its negative from the root よい."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "明日は忙しくないです。",
-        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しくないです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ngày mai tôi không bận.",
-        "en": "I'm not busy tomorrow.",
+        "ja": "この店は高くないです。",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>は<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>くないです。",
+        "kana": "このみせはたかくないです。",
+        "romaji": "Kono mise wa takakunai desu.",
+        "vi": "Cửa hàng này không đắt.",
+        "en": "This shop isn't expensive.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "高い → 高く + ないです, thay い bằng く trước khi thêm ない.",
+          "en": "高い → 高く + ないです -- replace い with く before adding ない."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "今日の天気はあまりよくないです。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>の<ruby>天気<rp>(</rp><rt>てんき</rt><rp>)</rp></ruby>はあまりよくないです。",
+        "kana": "きょうのてんきはあまりよくないです。",
+        "romaji": "Kyou no tenki wa amari yokunai desu.",
+        "vi": "Thời tiết hôm nay không tốt lắm.",
+        "en": "The weather isn't very good today.",
+        "contextualExplanation": {
+          "vi": "Ví dụ ngoại lệ いい → よくない.",
+          "en": "The irregular case: いい → よくない."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "このかばんは重くないですか。",
+        "jaRuby": "このかばんは<ruby>重<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>くないですか。",
+        "kana": "このかばんはおもくないですか。",
+        "romaji": "Kono kaban wa omokunai desu ka.",
+        "vi": "Cái túi này không nặng à?",
+        "en": "Isn't this bag heavy?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi tu từ dùng phủ định + か để xác nhận.",
+          "en": "A confirming tag question using negative + か."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このテスト、難しくない。",
+        "jaRuby": "このテスト、<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくない。",
+        "kana": "このテスト、むずかしくない。",
+        "romaji": "Kono tesuto, muzukashikunai.",
+        "vi": "Bài kiểm tra này không khó.",
+        "en": "This test isn't hard.",
+        "contextualExplanation": {
+          "vi": "です lược bỏ trong văn nói thân mật, chỉ còn 難しくない.",
+          "en": "です drops in casual speech, leaving just 難しくない."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "駅から遠くないので、歩いて行けます。",
+        "jaRuby": "<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>から<ruby>遠<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>くないので、<ruby>歩<rp>(</rp><rt>ある</rt><rp>)</rp></ruby>いて<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>けます。",
+        "kana": "えきからとおくないので、あるいていけます。",
+        "romaji": "Eki kara tookunai node, aruite ikemasu.",
+        "vi": "Vì không xa nhà ga nên có thể đi bộ được.",
+        "en": "Since it's not far from the station, you can walk there.",
+        "contextualExplanation": {
+          "vi": "Dạng phủ định く + ない cũng nối được với ので để giải thích lý do.",
+          "en": "The く + ない negative also connects to ので to give a reason."
         }
       }
     ],
@@ -1179,28 +2675,113 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>はまあまあ<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>です。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_013",
+      "g_016"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aなです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-na desu",
+    "formationRules": [
+      {
+        "pos": "na-adj",
+        "form": "Stem + です",
+        "exampleStr": "元気 ＋ です"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing a quality of N using a na-adjective",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "Don't add な before です -- な only appears before a noun",
+        "description": {
+          "vi": "な chỉ xuất hiện khi tính từ な đứng trước danh từ để bổ nghĩa (元気な人). Khi đứng cuối câu với です, chỉ dùng thân từ trần trụi: 元気です (không phải 元気なです).",
+          "en": "な only appears when the na-adjective modifies a following noun (元気な人). At the end of a sentence with です, use the bare stem only: 元気です (never 元気なです)."
+        },
+        "examples": [
+          {
+            "incorrect": "田中さんは元気なです。",
+            "correct": "田中さんは元気です。",
+            "explanation": {
+              "vi": "Không thêm な trước です.",
+              "en": "Never add な before です."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私の町はまあまあ便利です。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>はまあまあ<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>です。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Thành phố này khá tiện lợi.",
-        "en": "My town is fairly convenient.",
+        "ja": "田中さんは元気です。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>元気<rp>(</rp><rt>げんき</rt><rp>)</rp></ruby>です。",
+        "kana": "たなかさんはげんきです。",
+        "romaji": "Tanaka-san wa genki desu.",
+        "vi": "Bạn Tanaka khỏe.",
+        "en": "Tanaka is well.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Thân từ 元気 gắn trực tiếp với です, không có な ở giữa.",
+          "en": "The bare stem 元気 attaches directly to です, no な in between."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この町はとても静かです。",
+        "jaRuby": "この<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>はとても<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かです。",
+        "kana": "このまちはとてもしずかです。",
+        "romaji": "Kono machi wa totemo shizuka desu.",
+        "vi": "Thị trấn này rất yên tĩnh.",
+        "en": "This town is very quiet.",
+        "contextualExplanation": {
+          "vi": "とても bổ nghĩa mức độ, đứng trước tính từ な.",
+          "en": "とても modifies degree, placed before the na-adjective."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "駅の周りは便利ですか。",
+        "jaRuby": "<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>の<ruby>周<rp>(</rp><rt>まわ</rt><rp>)</rp></ruby>りは<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>ですか。",
+        "kana": "えきのまわりはべんりですか。",
+        "romaji": "Eki no mawari wa benri desu ka.",
+        "vi": "Xung quanh nhà ga có tiện lợi không?",
+        "en": "Is the area around the station convenient?",
+        "contextualExplanation": {
+          "vi": "Thêm か vào cuối để hỏi, giống danh từ và tính từ い.",
+          "en": "Adding か forms a question, same as with nouns and i-adjectives."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "この歌手、有名だよ。",
+        "jaRuby": "この<ruby>歌手<rp>(</rp><rt>かしゅ</rt><rp>)</rp></ruby>、<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>だよ。",
+        "kana": "このかしゅ、ゆうめいだよ。",
+        "romaji": "Kono kashu, yuumei da yo.",
+        "vi": "Ca sĩ này nổi tiếng đấy.",
+        "en": "This singer is famous, you know.",
+        "contextualExplanation": {
+          "vi": "Trong văn nói thân mật, です đổi thành だ (thể thường) -- xem g_028_1.",
+          "en": "In casual speech です becomes だ (plain form) -- see g_028_1."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼女はダンスが上手です。",
+        "jaRuby": "<ruby>彼女<rp>(</rp><rt>かのじょ</rt><rp>)</rp></ruby>はダンスが<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>です。",
+        "kana": "かのじょはダンスがじょうずです。",
+        "romaji": "Kanojo wa dansu ga jouzu desu.",
+        "vi": "Cô ấy giỏi múa.",
+        "en": "She's good at dancing.",
+        "contextualExplanation": {
+          "vi": "上手 là một trong nhiều tính từ な kết thúc bằng が (kỹ năng), không phải thành phần lạ của mẫu câu.",
+          "en": "上手 is one of several na-adjectives paired with が (skill-related), not an exception to the pattern itself."
         }
       }
     ],
@@ -1232,28 +2813,109 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>はあまりきれいじゃありません。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_004",
+      "g_015"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aなじゃないです/じゃありません",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-na janai desu / janai arimasen",
+    "formationRules": [
+      {
+        "pos": "na-adj",
+        "form": "Stem + じゃないです",
+        "exampleStr": "元気 ＋ じゃないです"
+      },
+      {
+        "pos": "na-adj",
+        "form": "Stem + じゃありません",
+        "exampleStr": "元気 ＋ じゃありません"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Denying that N has quality A (na-adjective)",
+      "speakerStance": "Neutral negation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "na-adjective negation is identical in shape to noun negation (g_004)",
+        "description": {
+          "vi": "Về mặt hình thức, phủ định tính từ な giống hệt phủ định danh từ (じゃないです/じゃありません) -- vì cả hai đều gắn trực tiếp vào です mà không qua な. Ghi nhớ điều này giúp không phải học riêng hai quy tắc.",
+          "en": "na-adjective negation is formally identical to noun negation (じゃないです/じゃありません) -- both attach directly to です without going through な. Recognizing this means one rule covers both, not two separate ones."
+        },
+        "relatedGrammarId": "g_004"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私の部屋はあまりきれいじゃありません。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>はあまりきれいじゃありません。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Phòng tôi không đẹp lắm.",
-        "en": "My room isn't very clean.",
+        "ja": "この町は静かじゃないです。",
+        "jaRuby": "この<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>は<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かじゃないです。",
+        "kana": "このまちはしずかじゃないです。",
+        "romaji": "Kono machi wa shizuka janai desu.",
+        "vi": "Thị trấn này không yên tĩnh.",
+        "en": "This town isn't quiet.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Thân từ 静か + じゃないです, giống hệt cấu trúc phủ định danh từ.",
+          "en": "Bare stem 静か + じゃないです, formally identical to noun negation."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "今日は暇じゃありません。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>じゃありません。",
+        "kana": "きょうはひまじゃありません。",
+        "romaji": "Kyou wa hima ja arimasen.",
+        "vi": "Hôm nay tôi không rảnh.",
+        "en": "I'm not free today.",
+        "contextualExplanation": {
+          "vi": "じゃありません lịch sự/rành mạch hơn một chút so với じゃないです.",
+          "en": "じゃありません reads slightly more formal/precise than じゃないです."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "駅は遠くじゃないですか。",
+        "jaRuby": "<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>は<ruby>遠<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>くじゃないですか。",
+        "kana": "えきはとおくじゃないですか。",
+        "romaji": "Eki wa tookuja nai desu ka.",
+        "vi": "Nhà ga không xa à?",
+        "en": "Isn't the station far?",
+        "contextualExplanation": {
+          "vi": "遠く (danh từ hóa từ 遠い) + じゃないですか cũng theo cùng khuôn mẫu phủ định danh từ/な.",
+          "en": "遠く (a nominalized form of 遠い) + じゃないですか still follows the same noun/な-adjective negation pattern."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このアプリ、便利じゃない。",
+        "jaRuby": "このアプリ、<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>じゃない。",
+        "kana": "このアプリ、べんりじゃない。",
+        "romaji": "Kono apuri, benri janai.",
+        "vi": "App này không tiện lợi.",
+        "en": "This app isn't convenient.",
+        "contextualExplanation": {
+          "vi": "です lược bỏ trong văn nói thân mật -- xem g_030_1/030_2.",
+          "en": "です drops in casual speech -- see g_030_1/g_030_2."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼は真面目じゃないけど、いい人です。",
+        "jaRuby": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>は<ruby>真面目<rp>(</rp><rt>まじめ</rt><rp>)</rp></ruby>じゃないけど、いい<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>です。",
+        "kana": "かれはまじめじゃないけど、いいひとです。",
+        "romaji": "Kare wa majime janai kedo, ii hito desu.",
+        "vi": "Anh ấy không nghiêm túc lắm nhưng là người tốt.",
+        "en": "He's not that serious, but he's a good person.",
+        "contextualExplanation": {
+          "vi": "じゃない có thể nối với けど (nhưng) để đối chiếu hai đặc điểm.",
+          "en": "じゃない can link with けど (\"but\") to contrast two traits."
         }
       }
     ],
@@ -1285,28 +2947,108 @@
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>は<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>寒<rp>(</rp><rt>さむ</rt><rp>)</rp></ruby>いですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_013",
+      "g_015"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aい/Aなですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-i / A-na desu ka",
+    "formationRules": [
+      {
+        "pos": "i-adj",
+        "form": "Dictionary form + ですか",
+        "exampleStr": "高い ＋ ですか"
+      },
+      {
+        "pos": "na-adj",
+        "form": "Stem + ですか",
+        "exampleStr": "元気 ＋ ですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking whether N has quality A",
+      "speakerStance": "Neutral inquiry"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "Neither adjective type inverts word order or adds an extra question word",
+        "description": {
+          "vi": "Cả tính từ い và な đều chỉ cần thêm か ở cuối, không đảo trật tự, không thêm từ để hỏi nào khác. Cấu trúc y hệt câu khẳng định + か.",
+          "en": "Both i-adjectives and na-adjectives simply add か at the end -- no inversion, no extra question word needed. The structure is exactly the affirmative sentence + か."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "日本は今、寒いですか。",
-        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>は<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>寒<rp>(</rp><rt>さむ</rt><rp>)</rp></ruby>いですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nhật Bản bây giờ có lạnh không?",
-        "en": "Is Japan cold right now?",
+        "ja": "この映画は面白いですか。",
+        "jaRuby": "この<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>は<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>いですか。",
+        "kana": "このえいがはおもしろいですか。",
+        "romaji": "Kono eiga wa omoshiroi desu ka.",
+        "vi": "Bộ phim này có hay không?",
+        "en": "Is this movie interesting?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Tính từ い + ですか để hỏi.",
+          "en": "i-adjective + ですか forms the question."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この地域は安全ですか。",
+        "jaRuby": "この<ruby>地域<rp>(</rp><rt>ちいき</rt><rp>)</rp></ruby>は<ruby>安全<rp>(</rp><rt>あんぜん</rt><rp>)</rp></ruby>ですか。",
+        "kana": "このちいきはあんぜんですか。",
+        "romaji": "Kono chiiki wa anzen desu ka.",
+        "vi": "Khu vực này có an toàn không?",
+        "en": "Is this area safe?",
+        "contextualExplanation": {
+          "vi": "Tính từ な + ですか theo cùng khuôn mẫu.",
+          "en": "na-adjective + ですか follows the same pattern."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "この問題は難しくないですか。",
+        "jaRuby": "この<ruby>問題<rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくないですか。",
+        "kana": "このもんだいはむずかしくないですか。",
+        "romaji": "Kono mondai wa muzukashikunai desu ka.",
+        "vi": "Vấn đề này không khó à?",
+        "en": "Isn't this problem hard?",
+        "contextualExplanation": {
+          "vi": "Kết hợp phủ định (くない) với か tạo câu hỏi xác nhận.",
+          "en": "Combining the negative (くない) with か forms a confirming question."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このアイス、甘い？",
+        "jaRuby": "このアイス、<ruby>甘<rp>(</rp><rt>あま</rt><rp>)</rp></ruby>い？",
+        "kana": "このアイス、あまい？",
+        "romaji": "Kono aisu, amai?",
+        "vi": "Cây kem này ngọt không?",
+        "en": "Is this ice cream sweet?",
+        "contextualExplanation": {
+          "vi": "か và です lược bỏ, chỉ lên giọng ở cuối câu.",
+          "en": "Both か and です are dropped, relying only on rising intonation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "この靴、サイズは大丈夫ですか。",
+        "jaRuby": "この<ruby>靴<rp>(</rp><rt>くつ</rt><rp>)</rp></ruby>、サイズは<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>ですか。",
+        "kana": "このくつ、サイズはだいじょうぶですか。",
+        "romaji": "Kono kutsu, saizu wa daijoubu desu ka.",
+        "vi": "Đôi giày này có vừa size không?",
+        "en": "Is the size okay on these shoes?",
+        "contextualExplanation": {
+          "vi": "大丈夫 là tính từ な rất thông dụng để hỏi \"có ổn không\" trong nhiều ngữ cảnh.",
+          "en": "大丈夫 is a very common na-adjective for asking \"is it okay\" across many contexts."
         }
       }
     ],
@@ -1338,28 +3080,103 @@
         "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくてあまり<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>くないです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_019",
+      "g_146"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aいくて+Aい/Aなです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-kute + A-i / A-na desu",
+    "formationRules": [
+      {
+        "pos": "i-adj",
+        "form": "い → くて (linking) + second adjective",
+        "exampleStr": "安い → 安くて ＋ おいしいです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Listing two or more qualities of the same subject",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "いい becomes よくて when linking, same irregularity as the negative",
+        "description": {
+          "vi": "いい cũng bất quy tắc khi chia thể て: よくて (không phải いくて) -- giống ngoại lệ ở dạng phủ định (よくない).",
+          "en": "いい is irregular in its te-form too: よくて (never いくて) -- the same irregularity seen in its negative (よくない)."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この本は難しくてあまり面白くないです。",
-        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくてあまり<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>くないです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Cuốn sách này khó và không thú vị lắm.",
-        "en": "This book is difficult and not very interesting.",
+        "ja": "このレストランは安くておいしいです。",
+        "jaRuby": "このレストランは<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>くておいしいです。",
+        "kana": "このレストランはやすくておいしいです。",
+        "romaji": "Kono resutoran wa yasukute oishii desu.",
+        "vi": "Nhà hàng này rẻ mà ngon.",
+        "en": "This restaurant is cheap and delicious.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "安い → 安くて nối với tính từ thứ hai おいしい.",
+          "en": "安い → 安くて links to the second adjective おいしい."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この部屋は広くて明るいです。",
+        "jaRuby": "この<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>は<ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>くて<ruby>明<rp>(</rp><rt>あか</rt><rp>)</rp></ruby>るいです。",
+        "kana": "このへやはひろくてあかるいです。",
+        "romaji": "Kono heya wa hirokute akarui desu.",
+        "vi": "Căn phòng này rộng và sáng.",
+        "en": "This room is spacious and bright.",
+        "contextualExplanation": {
+          "vi": "Có thể nối hai tính từ い tích cực để mô tả liên tiếp.",
+          "en": "Two positive i-adjectives can chain to describe something in sequence."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "この店は安くないし、おいしくないです。",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>は<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>くないし、おいしくないです。",
+        "kana": "このみせはやすくないし、おいしくないです。",
+        "romaji": "Kono mise wa yasukunai shi, oishikunai desu.",
+        "vi": "Quán này không rẻ mà cũng không ngon.",
+        "en": "This place isn't cheap and isn't good either.",
+        "contextualExplanation": {
+          "vi": "Khi cả hai vế đều phủ định, thường dùng し (xem g_146) thay vì くて.",
+          "en": "When both clauses are negative, し (see g_146) is more natural than くて."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "この犬、小さくてかわいい！",
+        "jaRuby": "この<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>、<ruby>小<rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さくてかわいい！",
+        "kana": "このいぬ、ちいさくてかわいい！",
+        "romaji": "Kono inu, chiisakute kawaii!",
+        "vi": "Con chó này nhỏ mà dễ thương!",
+        "en": "This dog is small and cute!",
+        "contextualExplanation": {
+          "vi": "です có thể lược bỏ trong câu cảm thán thân mật.",
+          "en": "です can drop in a casual exclamatory sentence."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼女は真面目で優しいです。",
+        "jaRuby": "<ruby>彼女<rp>(</rp><rt>かのじょ</rt><rp>)</rp></ruby>は<ruby>真面目<rp>(</rp><rt>まじめ</rt><rp>)</rp></ruby>で<ruby>優<rp>(</rp><rt>やさ</rt><rp>)</rp></ruby>しいです。",
+        "kana": "かのじょはまじめでやさしいです。",
+        "romaji": "Kanojo wa majime de yasashii desu.",
+        "vi": "Cô ấy nghiêm túc mà dịu dàng.",
+        "en": "She's serious and kind.",
+        "contextualExplanation": {
+          "vi": "Khi tính từ đầu tiên là な (真面目), thể nối là で, không phải くて -- xem g_019.",
+          "en": "When the first adjective is a na-adjective (真面目), the linking form is で, not くて -- see g_019."
         }
       }
     ],
@@ -1391,28 +3208,104 @@
         "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>の<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>はとてもにぎやかで<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しいです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_012",
+      "g_018"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aなで+Aな/Aいです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-na de + A-na / A-i desu",
+    "formationRules": [
+      {
+        "pos": "na-adj",
+        "form": "Stem + で (linking) + second adjective",
+        "exampleStr": "静か → 静かで ＋ きれいです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Listing two or more qualities where the first is a na-adjective",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This で is the same connective で as g_012, not the particle で",
+        "description": {
+          "vi": "で ở đây nối tính từ な giống hệt cách で nối danh từ (g_012, N2で N3です) -- cùng một cơ chế ngữ pháp, không phải trợ từ で chỉ nơi chốn/phương tiện.",
+          "en": "This で links na-adjectives the same way で links nouns (g_012, N2で N3です) -- same grammatical mechanism, not the place/means particle で."
+        },
+        "relatedGrammarId": "g_012"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "日本語の授業はとてもにぎやかで楽しいです。",
-        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>の<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>はとてもにぎやかで<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しいです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Giờ học tiếng Nhật rất sôi động và vui vẻ.",
-        "en": "Japanese class is very lively and fun.",
+        "ja": "この公園は静かできれいです。",
+        "jaRuby": "この<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>は<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かできれいです。",
+        "kana": "このこうえんはしずかできれいです。",
+        "romaji": "Kono kouen wa shizuka de kirei desu.",
+        "vi": "Công viên này yên tĩnh mà đẹp.",
+        "en": "This park is quiet and pretty.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "静か → 静かで nối với tính từ な thứ hai きれい.",
+          "en": "静か → 静かで links to the second na-adjective きれい."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中さんは親切で真面目です。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>親切<rp>(</rp><rt>しんせつ</rt><rp>)</rp></ruby>で<ruby>真面目<rp>(</rp><rt>まじめ</rt><rp>)</rp></ruby>です。",
+        "kana": "たなかさんはしんせつでまじめです。",
+        "romaji": "Tanaka-san wa shinsetsu de majime desu.",
+        "vi": "Bạn Tanaka tốt bụng và nghiêm túc.",
+        "en": "Tanaka is kind and serious.",
+        "contextualExplanation": {
+          "vi": "Hai tính từ な liên tiếp mô tả tính cách.",
+          "en": "Two consecutive na-adjectives describing personality."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "このホテルは便利じゃなくて、駅から遠いです。",
+        "jaRuby": "このホテルは<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>じゃなくて、<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>から<ruby>遠<rp>(</rp><rt>とお</rt><rp>)</rp></ruby>いです。",
+        "kana": "このホテルはべんりじゃなくて、えきからとおいです。",
+        "romaji": "Kono hoteru wa benri janakute, eki kara tooi desu.",
+        "vi": "Khách sạn này không tiện lợi, lại xa nhà ga.",
+        "en": "This hotel isn't convenient, and it's far from the station.",
+        "contextualExplanation": {
+          "vi": "Ở thể phủ định, で đổi thành じゃなくて, giống cấu trúc danh từ (g_012).",
+          "en": "In the negative, で becomes じゃなくて, matching the noun pattern in g_012."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このカフェ、おしゃれで落ち着く。",
+        "jaRuby": "このカフェ、おしゃれで<ruby>落<rp>(</rp><rt>お</rt><rp>)</rp></ruby>ち<ruby>着<rp>(</rp><rt>つ</rt><rp>)</rp></ruby>く。",
+        "kana": "このカフェ、おしゃれでおちつく。",
+        "romaji": "Kono kafe, oshare de ochitsuku.",
+        "vi": "Quán cà phê này sang mà yên tĩnh.",
+        "en": "This cafe is stylish and calming.",
+        "contextualExplanation": {
+          "vi": "Tính từ な cũng nối được với động từ (落ち着く) chứ không chỉ tính từ.",
+          "en": "A na-adjective can also link to a verb (落ち着く), not only another adjective."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼は元気で明るい人です。",
+        "jaRuby": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>は<ruby>元気<rp>(</rp><rt>げんき</rt><rp>)</rp></ruby>で<ruby>明<rp>(</rp><rt>あか</rt><rp>)</rp></ruby>るい<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>です。",
+        "kana": "かれはげんきであかるいひとです。",
+        "romaji": "Kare wa genki de akarui hito desu.",
+        "vi": "Anh ấy là người vui vẻ và tươi sáng.",
+        "en": "He's an energetic, cheerful person.",
+        "contextualExplanation": {
+          "vi": "Có thể trộn tính từ な (元気で) và い (明るい) trong cùng một chuỗi mô tả.",
+          "en": "A na-adjective (元気で) and an i-adjective (明るい) can mix in the same descriptive chain."
         }
       }
     ],
@@ -1448,24 +3341,96 @@
     "tags": [],
     "patternRuby": "(Nは)どうですか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) dou desu ka",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "(Nは) + どうですか",
+        "exampleStr": "味 ＋ はどうですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking for an opinion, impression, or suggestion about N",
+      "speakerStance": "Open-ended, inviting a subjective response"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "どうですか vs いかがですか -- same question, different politeness",
+        "description": {
+          "vi": "いかがですか là cách nói lịch sự hơn của どうですか, thường dùng khi mời đồ ăn/thức uống cho khách hoặc hỏi ý kiến cấp trên.",
+          "en": "いかがですか is the more polite version of どうですか, commonly used when offering food/drink to a guest or asking a superior's opinion."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "東京の生活はどうですか。",
-        "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>の<ruby>生活<rp>(</rp><rt>せいかつ</rt><rp>)</rp></ruby>はどうですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Cuộc sống ở Tokyo thế nào?",
-        "en": "How is life in Tokyo?",
+        "ja": "この料理の味はどうですか。",
+        "jaRuby": "この<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>の<ruby>味<rp>(</rp><rt>あじ</rt><rp>)</rp></ruby>はどうですか。",
+        "kana": "このりょうりのあじはどうですか。",
+        "romaji": "Kono ryouri no aji wa dou desu ka.",
+        "vi": "Món ăn này vị thế nào?",
+        "en": "How does this dish taste?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "どうですか hỏi cảm nhận/ý kiến chung về một điều gì đó.",
+          "en": "どうですか asks for a general impression/opinion about something."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "コーヒーはいかがですか。",
+        "jaRuby": "コーヒーはいかがですか。",
+        "kana": "コーヒーはいかがですか。",
+        "romaji": "Koohii wa ikaga desu ka.",
+        "vi": "Anh/chị dùng cà phê nhé?",
+        "en": "Would you like some coffee?",
+        "contextualExplanation": {
+          "vi": "いかがですか lịch sự hơn どうですか, thường dùng khi mời khách.",
+          "en": "いかがですか is the more polite version, common when offering something to a guest."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "日本の生活はどうですか。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>の<ruby>生活<rp>(</rp><rt>せいかつ</rt><rp>)</rp></ruby>はどうですか。",
+        "kana": "にほんのせいかつはどうですか。",
+        "romaji": "Nihon no seikatsu wa dou desu ka.",
+        "vi": "Cuộc sống ở Nhật thế nào?",
+        "en": "How's life in Japan?",
+        "contextualExplanation": {
+          "vi": "どうですか hỏi được về trải nghiệm/tình hình chung, không chỉ vật cụ thể.",
+          "en": "どうですか works for asking about an overall experience/situation, not only physical things."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "この服、どう？",
+        "jaRuby": "この<ruby>服<rp>(</rp><rt>ふく</rt><rp>)</rp></ruby>、どう？",
+        "kana": "このふく、どう？",
+        "romaji": "Kono fuku, dou?",
+        "vi": "Bộ đồ này thế nào?",
+        "en": "What do you think of this outfit?",
+        "contextualExplanation": {
+          "vi": "は/です lược bỏ trong văn nói thân mật, chỉ còn どう？.",
+          "en": "は/です drop in casual speech, leaving just どう？."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "週末、映画はどうですか。",
+        "jaRuby": "<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby>、<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>はどうですか。",
+        "kana": "しゅうまつ、えいがはどうですか。",
+        "romaji": "Shuumatsu, eiga wa dou desu ka.",
+        "vi": "Cuối tuần đi xem phim thế nào nhỉ?",
+        "en": "How about a movie this weekend?",
+        "contextualExplanation": {
+          "vi": "どうですか cũng dùng để đề xuất/rủ rê, không chỉ hỏi ý kiến.",
+          "en": "どうですか can also function as a suggestion/invitation, not just an opinion question."
         }
       }
     ],
@@ -1497,28 +3462,127 @@
         "jaRuby": "<ruby>先週<rp>(</rp><rt>せんしゅう</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_013",
+      "g_014",
+      "g_035"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aいかったです/Aいくなかったです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-katta desu / A-kunakatta desu",
+    "formationRules": [
+      {
+        "pos": "i-adj",
+        "form": "い → かった (past)",
+        "exampleStr": "高い → 高かった ＋ です"
+      },
+      {
+        "pos": "i-adj",
+        "form": "い → くなかった (past negative)",
+        "exampleStr": "高い → 高くなかった ＋ です"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing a past quality of N, affirmative or negative",
+      "speakerStance": "Neutral, factual statement about the past"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "です comes AFTER かった/くなかった -- never conjugate です itself for i-adjectives",
+        "description": {
+          "vi": "Với tính từ い, chính tính từ chia thì quá khứ (かった/くなかった), です chỉ thêm lịch sự và LUÔN giữ nguyên です (không phải でした như danh từ). Nhầm thành 高いでした là lỗi rất phổ biến.",
+          "en": "With i-adjectives, the ADJECTIVE itself carries the past tense (かった/くなかった); です stays です for politeness and is never conjugated to でした the way nouns are. Writing 高いでした is a very common mistake."
+        },
+        "examples": [
+          {
+            "incorrect": "このケーキは高いでした。",
+            "correct": "このケーキは高かったです。",
+            "explanation": {
+              "vi": "Tính từ い tự chia quá khứ, です không đổi thành でした.",
+              "en": "The i-adjective itself carries the past tense; です does not become でした."
+            }
+          }
+        ]
+      },
+      {
+        "type": "false_friend",
+        "title": "いい's past is よかった, not いかった",
+        "description": {
+          "vi": "Giống các dạng khác của いい, quá khứ luôn chia từ gốc よい: よかった (không phải いかった).",
+          "en": "Just like いい's other forms, its past always conjugates from the root よい: よかった (never いかった)."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "先週は忙しかったです。",
-        "jaRuby": "<ruby>先週<rp>(</rp><rt>せんしゅう</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tuần trước thì bận rộn.",
-        "en": "Last week was busy.",
+        "ja": "昨日のテストは難しかったです。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>のテストは<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しかったです。",
+        "kana": "きのうのテストはむずかしかったです。",
+        "romaji": "Kinou no tesuto wa muzukashikatta desu.",
+        "vi": "Bài kiểm tra hôm qua khó.",
+        "en": "Yesterday's test was hard.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "難しい → 難しかった, です giữ nguyên không đổi.",
+          "en": "難しい → 難しかった; です stays unchanged."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "旅行はとても楽しかったです。",
+        "jaRuby": "<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>はとても<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しかったです。",
+        "kana": "りょこうはとてもたのしかったです。",
+        "romaji": "Ryokou wa totemo tanoshikatta desu.",
+        "vi": "Chuyến du lịch rất vui.",
+        "en": "The trip was a lot of fun.",
+        "contextualExplanation": {
+          "vi": "とても bổ nghĩa mức độ cho tính từ chia quá khứ.",
+          "en": "とても modifies degree on the past-tense adjective."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "昨日は天気がよくなかったです。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>天気<rp>(</rp><rt>てんき</rt><rp>)</rp></ruby>がよくなかったです。",
+        "kana": "きのうはてんきがよくなかったです。",
+        "romaji": "Kinou wa tenki ga yokunakatta desu.",
+        "vi": "Hôm qua thời tiết không tốt.",
+        "en": "The weather wasn't good yesterday.",
+        "contextualExplanation": {
+          "vi": "いい → よくなかった (không phải いくなかった), ngoại lệ quan trọng.",
+          "en": "いい → よくなかった (never いくなかった) -- an important irregular case."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "あの店、意外と安かった。",
+        "jaRuby": "あの<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>、<ruby>意外<rp>(</rp><rt>いがい</rt><rp>)</rp></ruby>と<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>かった。",
+        "kana": "あのみせ、いがいとやすかった。",
+        "romaji": "Ano mise, igai to yasukatta.",
+        "vi": "Quán đó rẻ hơn tôi tưởng.",
+        "en": "That place was cheaper than expected.",
+        "contextualExplanation": {
+          "vi": "です lược bỏ trong văn nói thân mật, chỉ còn 安かった -- xem g_035.",
+          "en": "です drops in casual speech, leaving just 安かった -- see g_035."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どものとき、この道はまだなかったです。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どものとき、この<ruby>道<rp>(</rp><rt>みち</rt><rp>)</rp></ruby>はまだなかったです。",
+        "kana": "こどものとき、このみちはまだなかったです。",
+        "romaji": "Kodomo no toki, kono michi wa mada nakatta desu.",
+        "vi": "Hồi nhỏ, con đường này chưa có.",
+        "en": "When I was a child, this road didn't exist yet.",
+        "contextualExplanation": {
+          "vi": "ない (không có, cũng là tính từ い) chia quá khứ theo cùng quy tắc: ない → なかった.",
+          "en": "ない (\"nonexistent\", itself an i-adjective) follows the same rule: ない → なかった."
         }
       }
     ],
@@ -1550,28 +3614,110 @@
         "jaRuby": "<ruby>昔<rp>(</rp><rt>むかし</rt><rp>)</rp></ruby>、<ruby>父<rp>(</rp><rt>ちち</rt><rp>)</rp></ruby>はとてもハンサムでした。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_009",
+      "g_010",
+      "g_031"
+    ],
     "tags": [],
     "patternRuby": "(Nは)Aなでした/Aなじゃなかったです",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) A-na deshita / A-na janakatta desu",
+    "formationRules": [
+      {
+        "pos": "na-adj",
+        "form": "Stem + でした",
+        "exampleStr": "静か ＋ でした"
+      },
+      {
+        "pos": "na-adj",
+        "form": "Stem + じゃなかったです",
+        "exampleStr": "静か ＋ じゃなかったです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing a past quality of N (na-adjective), affirmative or negative",
+      "speakerStance": "Neutral, factual statement about the past"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "na-adjective past tense behaves exactly like noun past tense",
+        "description": {
+          "vi": "Khác với tính từ い (tự chia quá khứ), tính từ な chia quá khứ giống hệt danh từ: です → でした, じゃないです → じゃなかったです. Vì cả hai đều dựa vào です để mang thông tin thời/thể.",
+          "en": "Unlike i-adjectives (which carry their own past tense), na-adjectives conjugate past tense exactly like nouns: です → でした, じゃないです → じゃなかったです -- because both rely on です to carry tense information."
+        },
+        "relatedGrammarId": "g_009"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "昔、父はとてもハンサムでした。",
-        "jaRuby": "<ruby>昔<rp>(</rp><rt>むかし</rt><rp>)</rp></ruby>、<ruby>父<rp>(</rp><rt>ちち</rt><rp>)</rp></ruby>はとてもハンサムでした。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ngày xưa bố tôi rất đẹp trai.",
-        "en": "My father used to be very handsome.",
+        "ja": "子どものとき、この町は静かでした。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どものとき、この<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>は<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かでした。",
+        "kana": "こどものとき、このまちはしずかでした。",
+        "romaji": "Kodomo no toki, kono machi wa shizuka deshita.",
+        "vi": "Hồi nhỏ, thị trấn này yên tĩnh.",
+        "en": "When I was a child, this town was quiet.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "静か + でした, cùng khuôn mẫu quá khứ như danh từ.",
+          "en": "静か + でした, the same past-tense pattern as with nouns."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "面接はとても大変でした。",
+        "jaRuby": "<ruby>面接<rp>(</rp><rt>めんせつ</rt><rp>)</rp></ruby>はとても<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>でした。",
+        "kana": "めんせつはとてもたいへんでした。",
+        "romaji": "Mensetsu wa totemo taihen deshita.",
+        "vi": "Buổi phỏng vấn rất vất vả.",
+        "en": "The interview was really tough.",
+        "contextualExplanation": {
+          "vi": "とても bổ nghĩa mức độ, giống các mẫu câu quá khứ khác.",
+          "en": "とても modifies degree, same as in other past-tense patterns."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "あのカフェはあまり有名じゃなかったです。",
+        "jaRuby": "あのカフェはあまり<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>じゃなかったです。",
+        "kana": "あのカフェはあまりゆうめいじゃなかったです。",
+        "romaji": "Ano kafe wa amari yuumei janakatta desu.",
+        "vi": "Quán cà phê đó không nổi tiếng lắm.",
+        "en": "That cafe wasn't very famous.",
+        "contextualExplanation": {
+          "vi": "じゃなかったです là phủ định quá khứ phổ biến trong văn nói.",
+          "en": "じゃなかったです is the common spoken past-negative form."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "あの先生、意外と親切だった。",
+        "jaRuby": "あの<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>、<ruby>意外<rp>(</rp><rt>いがい</rt><rp>)</rp></ruby>と<ruby>親切<rp>(</rp><rt>しんせつ</rt><rp>)</rp></ruby>だった。",
+        "kana": "あのせんせい、いがいとしんせつだった。",
+        "romaji": "Ano sensei, igai to shinsetsu datta.",
+        "vi": "Thầy đó tốt bụng hơn tôi tưởng.",
+        "en": "That teacher was kinder than I expected.",
+        "contextualExplanation": {
+          "vi": "Thể thường của でした là だった -- xem g_031.",
+          "en": "The plain-form counterpart of でした is だった -- see g_031."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "あの頃、この辺りは便利じゃなくて、不便でした。",
+        "jaRuby": "あの<ruby>頃<rp>(</rp><rt>ころ</rt><rp>)</rp></ruby>、この<ruby>辺<rp>(</rp><rt>あた</rt><rp>)</rp></ruby>りは<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>じゃなくて、<ruby>不便<rp>(</rp><rt>ふべん</rt><rp>)</rp></ruby>でした。",
+        "kana": "あのころ、このあたりはべんりじゃなくて、ふべんでした。",
+        "romaji": "Ano koro, kono atari wa benri janakute, fuben deshita.",
+        "vi": "Hồi đó, khu vực này không tiện lợi, mà bất tiện.",
+        "en": "Back then, this area wasn't convenient -- it was inconvenient.",
+        "contextualExplanation": {
+          "vi": "じゃなくて (thể て của phủ định) nối hai mệnh đề quá khứ để đối chiếu.",
+          "en": "じゃなくて (te-form of the negative) links two past clauses for contrast."
         }
       }
     ],
@@ -1603,28 +3749,118 @@
         "jaRuby": "<ruby>小<rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さくてかわいいお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>です。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_013",
+      "g_015"
+    ],
     "tags": [],
     "patternRuby": "どんなNですか？→ AいN/AなN",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "donna N desu ka -> A-i N / A-na N",
+    "formationRules": [
+      {
+        "pos": "i-adj",
+        "form": "Dictionary form + N (直接)",
+        "exampleStr": "面白い ＋ 映画"
+      },
+      {
+        "pos": "na-adj",
+        "form": "Stem + な + N",
+        "exampleStr": "静か ＋ な ＋ 町"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking what kind of N something is, and answering by directly modifying the noun",
+      "speakerStance": "Neutral, information-seeking"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "な only appears before the noun for na-adjectives, and never for i-adjectives",
+        "description": {
+          "vi": "Trước danh từ: tính từ い giữ nguyên (面白い映画), tính từ な PHẢI thêm な (静かな町). Đây là điểm khác biệt cốt lõi giữa hai loại tính từ, dễ nhầm khi mới học.",
+          "en": "Before a noun: i-adjectives stay as-is (面白い映画), while na-adjectives MUST insert な (静かな町). This is the core structural difference between the two adjective types, and a very common beginner slip."
+        },
+        "examples": [
+          {
+            "incorrect": "静か町",
+            "correct": "静かな町",
+            "explanation": {
+              "vi": "Tính từ な bắt buộc phải có な trước danh từ.",
+              "en": "na-adjectives require な before the noun."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "小さくてかわいいお店です。",
-        "jaRuby": "<ruby>小<rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さくてかわいいお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>です。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nó là cửa hàng nhỏ và đáng yêu.",
-        "en": "It's a small, cute shop.",
+        "ja": "A：どんな映画が好きですか。　B：面白い映画が好きです。",
+        "jaRuby": "A：どんな<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>が<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きですか。　B：<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>い<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>が<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きです。",
+        "kana": "A：どんなえいががすきですか。　B：おもしろいえいががすきです。",
+        "romaji": "A: Donna eiga ga suki desu ka. B: Omoshiroi eiga ga suki desu.",
+        "vi": "A: Bạn thích phim thể loại nào? B: Tôi thích phim hay/thú vị.",
+        "en": "A: What kind of movies do you like? B: I like interesting movies.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Tính từ い (面白い) bổ nghĩa trực tiếp cho danh từ, không cần thêm gì.",
+          "en": "The i-adjective (面白い) modifies the noun directly, nothing added."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "どんな町にお住まいですか。　静かな町に住んでいます。",
+        "jaRuby": "どんな<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>にお<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>まいですか。　<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かな<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>に<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいます。",
+        "kana": "どんなまちにおすまいですか。　しずかなまちにすんでいます。",
+        "romaji": "Donna machi ni osumai desu ka. Shizuka na machi ni sunde imasu.",
+        "vi": "Anh/chị sống ở khu vực như thế nào? Tôi sống ở một thị trấn yên tĩnh.",
+        "en": "What kind of area do you live in? I live in a quiet town.",
+        "contextualExplanation": {
+          "vi": "Tính từ な (静か) bắt buộc thêm な trước danh từ 町.",
+          "en": "The na-adjective (静か) requires な before the noun 町."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "どんな人が苦手ですか。",
+        "jaRuby": "どんな<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby>苦手<rp>(</rp><rt>にがて</rt><rp>)</rp></ruby>ですか。",
+        "kana": "どんなひとがにがてですか。",
+        "romaji": "Donna hito ga nigate desu ka.",
+        "vi": "Bạn ngại tiếp xúc với kiểu người như thế nào?",
+        "en": "What kind of people do you find difficult?",
+        "contextualExplanation": {
+          "vi": "どんな + N hỏi về đặc điểm/loại của N một cách mở.",
+          "en": "どんな + N is an open-ended question about N's characteristics/type."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "どんな人がタイプ？　優しい人がタイプ。",
+        "jaRuby": "どんな<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>がタイプ？　<ruby>優<rp>(</rp><rt>やさ</rt><rp>)</rp></ruby>しい<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>がタイプ。",
+        "kana": "どんなひとがタイプ？　やさしいひとがタイプ。",
+        "romaji": "Donna hito ga taipu? Yasashii hito ga taipu.",
+        "vi": "Bạn thích kiểu người như thế nào? Tôi thích người dịu dàng.",
+        "en": "What's your type? I like kind people.",
+        "contextualExplanation": {
+          "vi": "は/です lược bỏ trong hội thoại thân mật, giữ nguyên どんな + N.",
+          "en": "は/です drop in casual conversation while どんな + N stays intact."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "どんなに忙しくても、毎日運動します。",
+        "jaRuby": "どんなに<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しくても、<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby><ruby>運動<rp>(</rp><rt>うんどう</rt><rp>)</rp></ruby>します。",
+        "kana": "どんなにいそがしくても、まいにちうんどうします。",
+        "romaji": "Donna ni isogashikutemo, mainichi undou shimasu.",
+        "vi": "Dù bận đến đâu, tôi cũng tập thể dục mỗi ngày.",
+        "en": "No matter how busy I am, I exercise every day.",
+        "contextualExplanation": {
+          "vi": "どんなに (không phải どんな + N) là cách dùng khác của cùng từ gốc, mang nghĩa \"dù ~ đến mấy\" -- vượt ngoài phạm vi N5 nhưng hữu ích để nhận biết.",
+          "en": "どんなに (not どんな + N) is a different use of the same root, meaning \"no matter how...\" -- beyond N5 scope but useful to recognize."
         }
       }
     ],
@@ -1656,28 +3892,103 @@
         "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はとても<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>くておいしいですが、あまり<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>じゃありません。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_034"
+    ],
     "tags": [],
     "patternRuby": "~が~",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~ ga ~",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "Clause1 (polite/plain) + が + Clause2",
+        "exampleStr": "安いです ＋ が ＋ おいしくないです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "written"
+      ],
+      "intent": "Contrasting two clauses, or softening a statement before it",
+      "speakerStance": "Neutral, contrastive or cushioning"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "が does not always mean a strong \"but\" -- it often just softens or connects",
+        "description": {
+          "vi": "が nhẹ hơn \"nhưng\" trong tiếng Việt rất nhiều -- thường chỉ dùng để nối câu, làm giọng điệu mềm mại hơn trước khi hỏi/đề nghị (すみませんが...), không hẳn luôn mang nghĩa đối lập mạnh.",
+          "en": "が is much softer than \"but\" -- it's often just a clause connector that cushions a request/question (すみませんが...) rather than always signaling strong contrast."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この店はとても安くておいしいですが、あまり有名じゃありません。",
-        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はとても<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>くておいしいですが、あまり<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>じゃありません。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Quán này rất rẻ và ngon nhưng không nổi tiếng lắm.",
-        "en": "This shop is very cheap and delicious, but not very famous.",
+        "ja": "このお菓子は安いですが、おいしくないです。",
+        "jaRuby": "このお<ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>は<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>いですが、おいしくないです。",
+        "kana": "このおかしはやすいですが、おいしくないです。",
+        "romaji": "Kono okashi wa yasui desu ga, oishikunai desu.",
+        "vi": "Bánh kẹo này rẻ nhưng không ngon.",
+        "en": "This snack is cheap, but it isn't tasty.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "が nối hai vế đối lập rõ ràng: rẻ // không ngon.",
+          "en": "が links two clearly contrasting clauses: cheap // not tasty."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "すみませんが、写真を撮ってもらえますか。",
+        "jaRuby": "すみませんが、<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってもらえますか。",
+        "kana": "すみませんが、しゃしんをとってもらえますか。",
+        "romaji": "Sumimasen ga, shashin o totte moraemasu ka.",
+        "vi": "Xin lỗi, bạn có thể chụp giúp tôi tấm ảnh được không?",
+        "en": "Excuse me, could you take a photo for me?",
+        "contextualExplanation": {
+          "vi": "が sau すみません không mang nghĩa \"nhưng\" mà chỉ đệm câu, mở đầu lời nhờ vả.",
+          "en": "が after すみません doesn't mean \"but\" -- it just cushions the sentence before a request."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "日本語は難しいですが、面白いです。",
+        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しいですが、<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>いです。",
+        "kana": "にほんごはむずかしいですが、おもしろいです。",
+        "romaji": "Nihongo wa muzukashii desu ga, omoshiroi desu.",
+        "vi": "Tiếng Nhật khó nhưng thú vị.",
+        "en": "Japanese is hard, but it's interesting.",
+        "contextualExplanation": {
+          "vi": "が nối một tính chất tiêu cực và một tích cực trong cùng chủ đề.",
+          "en": "が links a negative and a positive trait about the same topic."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "行きたいけど、時間がない。",
+        "jaRuby": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいけど、<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>がない。",
+        "kana": "いきたいけど、じかんがない。",
+        "romaji": "Ikitai kedo, jikan ga nai.",
+        "vi": "Muốn đi nhưng không có thời gian.",
+        "en": "I want to go, but I don't have time.",
+        "contextualExplanation": {
+          "vi": "Trong văn nói thân mật, が thường thay bằng けど -- xem g_034.",
+          "en": "In casual speech が is commonly replaced by けど -- see g_034."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "これは私の意見ですが、参考にしてください。",
+        "jaRuby": "これは<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>意見<rp>(</rp><rt>いけん</rt><rp>)</rp></ruby>ですが、<ruby>参考<rp>(</rp><rt>さんこう</rt><rp>)</rp></ruby>にしてください。",
+        "kana": "これはわたしのいけんですが、さんこうにしてください。",
+        "romaji": "Kore wa watashi no iken desu ga, sankou ni shite kudasai.",
+        "vi": "Đây là ý kiến của tôi, mong bạn tham khảo.",
+        "en": "This is just my opinion, but please take it into consideration.",
+        "contextualExplanation": {
+          "vi": "が ở đây làm giọng điệu khiêm tốn hơn, không phải mâu thuẫn thật sự.",
+          "en": "が here softens the tone into modesty, not a real contradiction."
         }
       }
     ],
