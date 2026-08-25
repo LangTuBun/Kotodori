@@ -17,11 +17,14 @@ want to know what already went wrong once.
 ## Current State
 
 ### Data
-- **N5**: 1031 vocab entries, 135 grammar points (14 categories), verb-forms
-  (3 groups × 8 conjugations + cheat sheet), 15 kanji chapters (179 groups /
-  1159 words / 167 anchors), 11 counter categories, 24 homophone groups.
-- **N4**: 770 vocab entries, 68 grammar points (10 categories), 110 kanji
-  groups / 268 words across 10 chapters. No verb-forms or counters source
+- **N5**: 1031 vocab entries, 135 grammar points (14 categories, all fully
+  enriched under the Grammar Expansion V2 schema — see Core Infrastructure
+  below), verb-forms (3 groups × 8 conjugations + cheat sheet), 15 kanji
+  chapters (179 groups / 1159 words / 167 anchors), 11 counter categories,
+  24 homophone groups.
+- **N4**: 770 vocab entries, 68 grammar points (10 categories, all fully
+  enriched under the same V2 schema), 110 kanji groups / 268 words across
+  10 chapters. No verb-forms or counters source
   material exists for N4 — those two pages stay N5-only. 424 vocab entries
   carry a real textbook `chapter` (15-24 only, see Known Gaps); the rest
   carry `category` only.
@@ -43,8 +46,29 @@ want to know what already went wrong once.
   user-approved reset of all persisted SRS progress (not a migration).
 - **Level switch**: global `N5 | N4 | all` toggle (`useSettingsStore`), affects
   every page that has level-aware data.
+- **Grammar (Expansion V2)**: every V2 field (`formationRules`, `pragmatics`,
+  `notesAndPitfalls`, `richExamples`, `opposingGrammar`) is optional on the
+  existing `GrammarPoint` type rather than a parallel type — see the Data
+  Pipeline Provenance entry below for how it was built. Rendered via
+  `FormationMatrix` (per-POS conjugation table), `NotesAndTrapsCallout`
+  (false_friend/common_mistake shown inverted `bg-ink text-paper`,
+  nuance_trap softer/accent-bordered; supports incorrect→correct examples
+  and a `relatedGrammarId` jump link), and `InteractiveExampleCard` (4-6
+  `richExamples` per point across standard/polite/casual/negative/question/
+  edge_case categories, furigana/romaji toggle, collapsible bilingual
+  `contextualExplanation`, inactive audio-stub button — no audio assets
+  exist yet, see Known Gaps). Any inline `g_XXX` cross-reference in prose
+  (pitfall descriptions, example explanations) renders as a clickable jump
+  link via `LinkifiedText`, resolved against a global id→pattern map — never
+  hand-format these as raw ids or markup. The legacy single-example
+  `examples` field stays on every record for backward compat even though
+  `richExamples` is now primary. `validate-grammar.mjs --strict` is the
+  required check for this data; `tsc`/build alone can't catch a malformed
+  record since every V2 field is optional (see Gotchas).
 - **i18n**: EN/VI toggle, `t()`/`localize()` via `useTranslation()`. UI chrome
-  is fully bilingual; content bilinguality is per-field (see Data above).
+  is fully bilingual; content bilinguality is per-field (see Data above) —
+  every content field must actually carry both `vi` and `en`, not just
+  type-check as optional (see Gotchas).
 - **Theming**: 9 paper themes (5 light: Washi/Paper/Matcha/Sakura/Sumi; 4 dark:
   Dusk/Ink/Indigo/Gold) × RAW/NEO structural mode × density × typeface, all in
   `InkCabinet.tsx`, persisted to `localStorage` (`tori-settings`).
@@ -94,8 +118,12 @@ output) but worth watching the first real build for surprises.
 - **N4 `verbGroup`** — heuristic (pattern-based), not textbook-verified like
   N5's. Probably fine for casual use, not verified for a "conjugate this"
   drill.
-- **Audio pronunciation**, **kanji stroke-count field**, **review history
-  log / stats page**, **global search** — none built.
+- **Audio pronunciation** — none built. Grammar's `InteractiveExampleCard`
+  already has an inactive audio-stub button (`audioStub` field exists on the
+  schema, unset on every example) as a discoverable affordance for whenever
+  this gets wired up — don't mistake it for a real feature. **Kanji
+  stroke-count field**, **review history log / stats page**, **global
+  search** — none built.
 - **Remaining Hán Việt / radical-name long-tail gaps** — a handful of obscure
   characters/decomposition-components still have no name; UI already
   tolerates this (shows the bare character). Not worth chasing without a
@@ -143,6 +171,28 @@ output) but worth watching the first real build for surprises.
   it's a build-time map (`furigana-map.json`), not computed at render time.
   Harmless to skip (falls back to one whole-word ruby, same as jukujikun),
   but re-run it if the new word's furigana looks off.
+- **A grammar point's `richExamples[].jaRuby` is all-or-nothing**: if any
+  example's `ja` has kanji, it must have `jaRuby`, or the Furigana toggle
+  silently no-ops on that one card while the rest of the point works fine.
+  `validate-grammar.mjs` catches both a missing `jaRuby` and a structurally
+  broken one (stripping `<rt>/<rp>/<ruby>` must reconstruct `ja` exactly) —
+  a typo'd ruby tag (stray space, dropped character) is otherwise invisible
+  until someone happens to toggle furigana on that exact example.
+- **Every `{vi, en}` content field must actually carry both languages** —
+  a plain string type-checks fine on an optional field but silently shows
+  the wrong (or no) content under a localized label. This already shipped
+  once for `pragmatics.intent/speakerStance/emotionalNuance` (English-only
+  strings for a session, since fixed — see Data Pipeline Provenance).
+  `tsc`/build can't catch a content-shape drift like this; only
+  `validate-grammar.mjs` does, so run it (not just the build) after editing
+  any grammar content.
+- **`GrammarPoint.jlptLevel` and `VocabEntry.jlptLevel` are both plain
+  `string`, deliberately not narrowed to `'N5' | 'N4'`** — narrowing was
+  considered during the V2 schema work but dropped after checking real
+  usage (`Homophones.tsx` assigns a synthesized literal that would've been
+  fine, but the risk/reward wasn't worth it for a field nothing currently
+  exploits the wider type for). Don't narrow it without re-checking every
+  consumer.
 
 ---
 
@@ -164,7 +214,9 @@ tori/
     index.css               ← Tailwind v4 @theme, 9 paper themes as CSS custom
                                properties, iOS/touch fixes (16px input font on
                                mobile, tap-highlight, touch-action)
-    types/index.ts           ← VocabEntry, GrammarPoint/Category, VerbGroup/Form(s),
+    types/index.ts           ← VocabEntry, GrammarPoint/Category (+ V2: ConnectionRule,
+                                Pragmatics, GrammarPitfall, EnhancedGrammarExample,
+                                EnhancedGrammarPoint alias), VerbGroup/Form(s),
                                 HomophoneGroup, SRSCard (SM-2 shape), CounterCategory/
                                 Row/Data, KanjiGroup/Word/Chapter, KanjiVg*, RadicalNamesData
     lib/
@@ -186,7 +238,9 @@ tori/
     components/
       layout/   Layout.tsx (mobile drawer shell), Sidebar.tsx (drawer + safe-area)
       ui/       Button, Card, Furigana, Ruby, PosTag, LanguageSwitcher, LevelSwitcher,
-                InkCabinet, Reveal, ScreenHeader (+ Watermark)
+                InkCabinet, Reveal, ScreenHeader (+ Watermark), CollapsibleFilters,
+                FormationMatrix, NotesAndTrapsCallout, InteractiveExampleCard,
+                LinkifiedText
       kanji/    AnimatedKanjiSvg, KanjiDrawer, KanjiGroupModal
     pages/
       Dashboard, VocabBrowser, Review, Grammar, VerbForms, Kanji, Counters,
@@ -210,34 +264,24 @@ detail if you need to actually touch it.
   stragglers, doubled kana, `U+FFFF` noncharacter codepoints baked into
   `meanings.vi`). All resolved; zero known corruption remaining as of now.
 - **N5 kanji** (`n5/kanji.json`): built from a LaTeX source (`build-kanji.mjs`),
-  then grown twice — a "chapter 15" of 9 missing-but-standard N5 anchors
-  (`add-n5-supplement.mjs`), then an enrichment pass bringing every anchor
-  toward ~7 words each via Jisho-grounded candidates (`fetch-enrichment-*`
-  → `build-enrichment-draft.mjs` → `resolve-flagged.mjs` →
-  `assemble-enrichment.mjs` → `merge-enrichment.mjs`), validated by an
-  on/kun classifier (`onkun-classifier.mjs`, ~97.5% agreement against the
-  hand-labeled corpus) rather than trusted blind.
+  then grown twice — a small supplement of missing-but-standard N5 anchors,
+  then an enrichment pass bringing every anchor toward ~7 words each via
+  Jisho-grounded candidates, validated by an on/kun classifier
+  (`onkun-classifier.mjs`, ~97.5% agreement against the hand-labeled corpus)
+  rather than trusted blind. Full script chain in the scripts' own header
+  comments if you need to re-run part of it.
 - **N4 vocab** (`n4/vocabulary.json`): built from a different-shaped Dungmori
   markdown source with fused kanji+furigana strings (no separator between
-  the kanji and its reading) — `split-n4-fused.mjs` is the parser, run via
-  `build-n4-draft.mjs` → `assemble-n4-vocab.mjs`. POS/verbGroup assigned by
-  pattern heuristic (no source data for this at all). Every override table
-  in this pipeline is id-stability-guarded (validates against the exact
-  source string it was written for, aborts on mismatch) after an earlier
-  near-miss where a source-row shift would have silently mis-applied fixes
-  to the wrong word. **`chapter` (15-24 only, 424 entries)** was backfilled
-  afterward from a second, chaptered source (`TuVung_va_Hyougen_N4_Bai15_24.md`,
-  outer `Nihongo/` folder) via `apply-n4-chapters.mjs` — matches each source
-  row to its existing entry by kana, falling back to a bracket/whitespace
-  -stripped "core kanji" comparison for kana collisions; re-runnable, never
-  adds an entry, only tags existing ones. Of the source's ~445 rows, 9 were
-  judged redundant with an entry the app already had (right/left-side,
-  "this/that person" honorifics, a `～用` grammar pattern, a noun/verb-suru
-  near-duplicate) and intentionally skipped; the other 11 were genuine gaps
-  — added by hand as `n4_0766-n4_0776` (`add-n4-bai15-24-missing-words.mjs`,
-  one-shot, not idempotent) since 2 of them (紹介／質問) trace back to rows
-  the *original* build silently dropped (bare `（する）`, headword lost).
-  Chapters 1-14 and 25-33 still have no chaptered source.
+  the kanji and its reading) — `split-n4-fused.mjs` is the parser. POS/
+  verbGroup assigned by pattern heuristic (no source data for this at all).
+  Every override table in this pipeline is id-stability-guarded (validates
+  against the exact source string it was written for, aborts on mismatch).
+  **`chapter` (15-24 only, 424 entries)** was backfilled afterward from a
+  second, chaptered source via `apply-n4-chapters.mjs` (re-runnable, never
+  adds an entry, only tags existing ones by kana/kanji match); 11 genuine
+  gaps that source turned up were added by hand as `n4_0766-n4_0776`
+  (`add-n4-bai15-24-missing-words.mjs`, one-shot, not idempotent). Chapters
+  1-14 and 25-33 still have no chaptered source.
 - **N4 kanji** (`n4/kanji.json`): built from `N4_Grammar_and_Kanji_Summary-
   Final.md`'s tables (`scripts/n4-kanji-source.mjs` + `build-n4-kanji.mjs`),
   110 groups keyed one-per-anchor. `meaning.vi` was backfilled later by
@@ -263,6 +307,27 @@ detail if you need to actually touch it.
   build-time via `kuroshiro`+`kuromoji`, hand-corrected for known analyzer
   misreadings. Neither package is an active runtime dependency — this was a
   one-time generation step, not a live pipeline.
+- **Grammar Expansion V2** (`n5/grammar.json` + `n4/grammar.json`): schema
+  extended non-destructively — every new field is optional on the existing
+  `GrammarPoint` type rather than a parallel type, so no other consumer had
+  to change. `migrate-grammar-v2.mjs` idempotently scaffolds the fields
+  from the legacy `examples`; content for all 203 points (135 N5 + 68 N4)
+  was then hand-authored in category-grouped batches (`scripts/enrich-data/
+  *.mjs`, ~5-15 points each) and merged via `apply-enrichment.mjs` (only
+  rewrites a level's file if a batch actually touches an id in it, keeping
+  git diffs scoped to what changed). `richExamples[].jaRuby` was hand-
+  authored per example — not kuroshiro-generated, unlike the legacy
+  `*Ruby` fields described above — and is structurally validated rather
+  than trusted (see Gotchas). `pragmatics.intent/speakerStance/
+  emotionalNuance` shipped as English-only plain strings for one session
+  (a real bug — every other content field is `{vi, en}`); back-translated
+  via `patch-pragmatics-i18n.mjs` + `scripts/i18n-data/pragmatics-batch-
+  0{1..5}.mjs`. `validate-grammar.mjs --strict` is the required check for
+  this data (content completeness, jaRuby structural integrity, every
+  relatedGrammar/opposingGrammar/relatedGrammarId/inline-`g_XXX`-reference
+  id resolves and never appears in both relatedGrammar and opposingGrammar,
+  pragmatics fields are real `{vi, en}` pairs) — `tsc`/build alone can't
+  catch any of this since every V2 field is optional.
 - **Translations** (`meaning.en`/`meanings.en` fields across grammar,
   kanji, counters, verb-forms — everywhere except N5 vocab): hand-translated
   via positional (not id-keyed) scripts, each paired with a hard-fail
