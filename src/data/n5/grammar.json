@@ -5981,28 +5981,102 @@
         "jaRuby": "タイ<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>の<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>はありますか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_039"
+    ],
     "tags": [],
     "patternRuby": "N(は)ありますか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N (wa) arimasu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(inanimate object) + はありますか",
+        "exampleStr": "ペン ＋ はありますか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking whether an inanimate object/thing exists or is available",
+      "speakerStance": "Neutral, practical inquiry"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "あります is only for inanimate things -- います is for people/animals",
+        "description": {
+          "vi": "あります chỉ dùng cho vật vô tri (đồ vật, thực vật). Người/động vật luôn dùng います (xem g_039) -- nhầm lẫn hai động từ này là lỗi rất phổ biến.",
+          "en": "あります is used only for inanimate things (objects, plants). People/animals always use います (see g_039) -- mixing these two up is one of the most common beginner errors."
+        },
+        "relatedGrammarId": "g_039"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "タイ語の本はありますか。",
-        "jaRuby": "タイ<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>の<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>はありますか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ở đây có sách tiếng Thái không?",
-        "en": "Do you have a Thai-language book?",
+        "ja": "ペンはありますか。",
+        "kana": "ペンはありますか。",
+        "romaji": "Pen wa arimasu ka.",
+        "vi": "Có bút không?",
+        "en": "Do you have a pen?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "あります hỏi về sự tồn tại/sở hữu một vật.",
+          "en": "あります asks about the existence/availability of an object."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "すみません、コピー機はありますか。",
+        "jaRuby": "すみません、コピー<ruby>機<rp>(</rp><rt>き</rt><rp>)</rp></ruby>はありますか。",
+        "kana": "すみません、コピーきはありますか。",
+        "romaji": "Sumimasen, kopiiki wa arimasu ka.",
+        "vi": "Xin lỗi, ở đây có máy photocopy không ạ?",
+        "en": "Excuse me, is there a copy machine here?",
+        "contextualExplanation": {
+          "vi": "Cách hỏi lịch sự về tiện ích có sẵn tại một địa điểm.",
+          "en": "A polite way to ask about a facility available at a location."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "すみません、今日はもう席がありません。",
+        "jaRuby": "すみません、<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>はもう<ruby>席<rp>(</rp><rt>せき</rt><rp>)</rp></ruby>がありません。",
+        "kana": "すみません、きょうはもうせきがありません。",
+        "romaji": "Sumimasen, kyou wa mou seki ga arimasen.",
+        "vi": "Xin lỗi, hôm nay hết chỗ ngồi rồi.",
+        "en": "I'm sorry, there are no seats left today.",
+        "contextualExplanation": {
+          "vi": "ありません là phủ định của あります, dùng để báo hết hàng/hết chỗ.",
+          "en": "ありません is あります's negative, used to report something unavailable/sold out."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "ねえ、消しゴム、ある？",
+        "jaRuby": "ねえ、<ruby>消<rp>(</rp><rt>け</rt><rp>)</rp></ruby>しゴム、ある？",
+        "kana": "ねえ、けしゴム、ある？",
+        "romaji": "Nee, keshigomu, aru?",
+        "vi": "Này, có tẩy không?",
+        "en": "Hey, do you have an eraser?",
+        "contextualExplanation": {
+          "vi": "Thể thường của あります là ある -- xem g_069.",
+          "en": "The plain-form counterpart of あります is ある -- see g_069."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "今日、時間がありますか。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>がありますか。",
+        "kana": "きょう、じかんがありますか。",
+        "romaji": "Kyou, jikan ga arimasu ka.",
+        "vi": "Hôm nay bạn có thời gian không?",
+        "en": "Do you have time today?",
+        "contextualExplanation": {
+          "vi": "あります cũng dùng cho khái niệm trừu tượng như thời gian, không chỉ vật thể hữu hình.",
+          "en": "あります also applies to abstract concepts like time, not just physical objects."
         }
       }
     ],
@@ -6034,28 +6108,103 @@
         "jaRuby": "スマホは<ruby>机<rp>(</rp><rt>つくえ</rt><rp>)</rp></ruby>の<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にあります。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_038_2",
+      "g_037"
+    ],
     "tags": [],
     "patternRuby": "N1(sự vật)は N2(địa điểm)です/にあります",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 (mono) wa N2 (basho) desu / ni arimasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(vật) は (địa điểm)です/にあります",
+        "exampleStr": "トイレ ＋ はあそこにあります"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating the location of a known object",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "The object is topic (は) here; the place stays background information",
+        "description": {
+          "vi": "Ở mẫu này, VẬT là chủ đề chính (は), địa điểm chỉ là thông tin bổ sung. So sánh với g_038_2 -- ở đó địa điểm mới là chủ đề, vật là thông tin mới được nhấn mạnh bằng が.",
+          "en": "In this pattern, the OBJECT is the main topic (は); the location is supplementary info. Contrast with g_038_2 -- there the location is the topic, and the object is the new information emphasized with が."
+        },
+        "relatedGrammarId": "g_038_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "スマホは机の上にあります。",
-        "jaRuby": "スマホは<ruby>机<rp>(</rp><rt>つくえ</rt><rp>)</rp></ruby>の<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にあります。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Điện thoại có ở trên bàn.",
-        "en": "The phone is on the desk.",
+        "ja": "トイレはあそこにあります。",
+        "kana": "トイレはあそこにあります。",
+        "romaji": "Toire wa asoko ni arimasu.",
+        "vi": "Nhà vệ sinh ở đằng kia.",
+        "en": "The restroom is over there.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "トイレ (vật/địa điểm cụ thể đã biết) là chủ đề, あそこに nêu vị trí.",
+          "en": "トイレ (the known thing) is the topic; あそこに supplies its location."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "エレベーターは2階にございます。",
+        "jaRuby": "エレベーターは2<ruby>階<rp>(</rp><rt>かい</rt><rp>)</rp></ruby>にございます。",
+        "kana": "エレベーターはにかいにございます。",
+        "romaji": "Erebeetaa wa nikai ni gozaimasu.",
+        "vi": "Thang máy ở tầng 2 ạ.",
+        "en": "The elevator is on the 2nd floor.",
+        "contextualExplanation": {
+          "vi": "ございます là dạng kính ngữ của あります, dùng trong ngữ cảnh dịch vụ khách hàng.",
+          "en": "ございます is the honorific form of あります, common in customer-service contexts."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "ATMはこの建物の中にありますか。",
+        "jaRuby": "ATMはこの<ruby>建物<rp>(</rp><rt>たてもの</rt><rp>)</rp></ruby>の<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>にありますか。",
+        "kana": "エーティーエムはこのたてもののなかにありますか。",
+        "romaji": "ATM wa kono tatemono no naka ni arimasu ka.",
+        "vi": "Cây ATM có ở trong tòa nhà này không?",
+        "en": "Is there an ATM inside this building?",
+        "contextualExplanation": {
+          "vi": "Thêm か để hỏi về vị trí của một vật cụ thể.",
+          "en": "Adding か forms a question about a specific object's location."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "駅は駅前にあるよ。",
+        "jaRuby": "<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>は<ruby>駅前<rp>(</rp><rt>えきまえ</rt><rp>)</rp></ruby>にあるよ。",
+        "kana": "えきはえきまえにあるよ。",
+        "romaji": "Eki wa ekimae ni aru yo.",
+        "vi": "Nhà ga ở ngay trước ga đấy.",
+        "en": "The station is right by the station-front area.",
+        "contextualExplanation": {
+          "vi": "あります → ある ở thể thường trong văn nói thân mật.",
+          "en": "あります → ある in the plain casual form."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "私の家はこの近くです。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>はこの<ruby>近<rp>(</rp><rt>ちか</rt><rp>)</rp></ruby>くです。",
+        "kana": "わたしのいえはこのちかくです。",
+        "romaji": "Watashi no ie wa kono chikaku desu.",
+        "vi": "Nhà tôi ở gần đây.",
+        "en": "My house is near here.",
+        "contextualExplanation": {
+          "vi": "Với vị trí đơn giản, có thể dùng です thay vì にあります.",
+          "en": "For a simple location statement, です can substitute for にあります."
         }
       }
     ],
@@ -6087,28 +6236,103 @@
         "jaRuby": "ベッドの<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にかばんがあります。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_038_1"
+    ],
     "tags": [],
     "patternRuby": "N1(địa điểm)に N2(sự vật)があります",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 (basho) ni N2 (mono) ga arimasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(địa điểm)に (vật)があります",
+        "exampleStr": "公園 ＋ にベンチがあります"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating what exists at a given location",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "The location is topic (は/に) here; the object is new information (が)",
+        "description": {
+          "vi": "Ngược lại với g_038_1: ở mẫu này ĐỊA ĐIỂM là chủ đề đã biết, VẬT là thông tin mới, luôn đi kèm が (không phải は).",
+          "en": "The reverse of g_038_1: here the LOCATION is the known topic, and the OBJECT is new information, always marked with が (not は)."
+        },
+        "relatedGrammarId": "g_038_1"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "ベッドの上にかばんがあります。",
-        "jaRuby": "ベッドの<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にかばんがあります。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ở trên giường có cái cặp.",
-        "en": "There's a bag on the bed.",
+        "ja": "公園にベンチがあります。",
+        "jaRuby": "<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>にベンチがあります。",
+        "kana": "こうえんにベンチがあります。",
+        "romaji": "Kouen ni benchi ga arimasu.",
+        "vi": "Trong công viên có ghế đá.",
+        "en": "There's a bench in the park.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "公園に là địa điểm (chủ đề), ベンチが là vật mới được giới thiệu.",
+          "en": "公園に is the location (topic), ベンチが introduces the new object."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この近くにコンビニがありますか。",
+        "jaRuby": "この<ruby>近<rp>(</rp><rt>ちか</rt><rp>)</rp></ruby>くにコンビニがありますか。",
+        "kana": "このちかくにコンビニがありますか。",
+        "romaji": "Kono chikaku ni konbini ga arimasu ka.",
+        "vi": "Gần đây có cửa hàng tiện lợi không ạ?",
+        "en": "Is there a convenience store near here?",
+        "contextualExplanation": {
+          "vi": "Rất thường dùng để hỏi tiện ích gần một địa điểm.",
+          "en": "Very common for asking about a facility near a place."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "この駅の周りにはレストランがありません。",
+        "jaRuby": "この<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>の<ruby>周<rp>(</rp><rt>まわ</rt><rp>)</rp></ruby>りにはレストランがありません。",
+        "kana": "このえきのまわりにはレストランがありません。",
+        "romaji": "Kono eki no mawari ni wa resutoran ga arimasen.",
+        "vi": "Xung quanh nhà ga này không có nhà hàng.",
+        "en": "There aren't any restaurants around this station.",
+        "contextualExplanation": {
+          "vi": "には (kết hợp に và は) nhấn mạnh địa điểm là chủ đề đang so sánh/nhấn mạnh.",
+          "en": "には (combining に and は) emphasizes the location as a topic being highlighted/contrasted."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "冷蔵庫に卵がある？",
+        "jaRuby": "<ruby>冷蔵庫<rp>(</rp><rt>れいぞうこ</rt><rp>)</rp></ruby>に<ruby>卵<rp>(</rp><rt>たまご</rt><rp>)</rp></ruby>がある？",
+        "kana": "れいぞうこにたまごがある？",
+        "romaji": "Reizouko ni tamago ga aru?",
+        "vi": "Trong tủ lạnh có trứng không?",
+        "en": "Is there egg in the fridge?",
+        "contextualExplanation": {
+          "vi": "あります → ある trong văn nói thân mật.",
+          "en": "あります → ある in casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "来週、会議があります。",
+        "jaRuby": "<ruby>来週<rp>(</rp><rt>らいしゅう</rt><rp>)</rp></ruby>、<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>があります。",
+        "kana": "らいしゅう、かいぎがあります。",
+        "romaji": "Raishuu, kaigi ga arimasu.",
+        "vi": "Tuần sau có cuộc họp.",
+        "en": "There's a meeting next week.",
+        "contextualExplanation": {
+          "vi": "に(場所) có thể thay bằng thời gian để nói về sự kiện diễn ra.",
+          "en": "に(location) can be replaced by a time expression when talking about an event taking place."
         }
       }
     ],
@@ -6140,28 +6364,103 @@
         "jaRuby": "マインさんはいますか？"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_037"
+    ],
     "tags": [],
     "patternRuby": "(Nは)いますか",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(N wa) imasu ka",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(person/animal) + はいますか",
+        "exampleStr": "田中さん ＋ はいますか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking whether a person/animal is present",
+      "speakerStance": "Neutral, practical inquiry"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "います is only for living, moving beings -- あります is for inanimate things",
+        "description": {
+          "vi": "います chuyên dùng cho người/động vật (thực thể sống, di chuyển được). Đồ vật/thực vật luôn dùng あります (g_037) -- đây là cặp động từ dễ gây nhầm lẫn nhất khi mới học N5.",
+          "en": "います is exclusively for people/animals (living, mobile beings). Objects/plants always use あります (g_037) -- this pair is the single most commonly confused item at N5 level."
+        },
+        "relatedGrammarId": "g_037"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "マインさんはいますか？",
-        "jaRuby": "マインさんはいますか？",
-        "kana": "",
-        "romaji": "",
-        "vi": "Có chị Mai ở đây không?",
-        "en": "Is Mai here?",
+        "ja": "田中さんはいますか。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんはいますか。",
+        "kana": "たなかさんはいますか。",
+        "romaji": "Tanaka-san wa imasu ka.",
+        "vi": "Có bạn Tanaka ở đây không?",
+        "en": "Is Tanaka here?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "います hỏi về sự hiện diện của một người.",
+          "en": "います asks about a person's presence."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "恐れ入りますが、田中はおりますでしょうか。",
+        "jaRuby": "<ruby>恐<rp>(</rp><rt>おそ</rt><rp>)</rp></ruby>れ<ruby>入<rp>(</rp><rt>い</rt><rp>)</rp></ruby>りますが、<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>はおりますでしょうか。",
+        "kana": "おそれいりますが、たなかはおりますでしょうか。",
+        "romaji": "Osoreirimasu ga, Tanaka wa orimasu deshou ka.",
+        "vi": "Xin lỗi làm phiền, không biết anh Tanaka có ở đó không ạ?",
+        "en": "I'm sorry to bother you, but is Tanaka available?",
+        "contextualExplanation": {
+          "vi": "おります là thể khiêm nhường của います, dùng khi nói về người trong công ty mình với đối tác.",
+          "en": "おります is the humble form of います, used when referring to someone in one's own company to an outside party."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今、事務所には誰もいません。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>事務所<rp>(</rp><rt>じむしょ</rt><rp>)</rp></ruby>には<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>もいません。",
+        "kana": "いま、じむしょにはだれもいません。",
+        "romaji": "Ima, jimusho ni wa dare mo imasen.",
+        "vi": "Bây giờ trong văn phòng không có ai cả.",
+        "en": "There's no one in the office right now.",
+        "contextualExplanation": {
+          "vi": "誰も + いません (phủ định) nghĩa \"không có ai cả\" -- xem g_053.",
+          "en": "誰も + いません (negative) means \"no one at all\" -- see g_053."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "ねえ、猫、いる？",
+        "jaRuby": "ねえ、<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>、いる？",
+        "kana": "ねえ、ねこ、いる？",
+        "romaji": "Nee, neko, iru?",
+        "vi": "Này, có con mèo không?",
+        "en": "Hey, is there a cat around?",
+        "contextualExplanation": {
+          "vi": "Thể thường của います là いる -- xem g_069.",
+          "en": "The plain-form counterpart of います is いる -- see g_069."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "教室に学生が5人います。",
+        "jaRuby": "<ruby>教室<rp>(</rp><rt>きょうしつ</rt><rp>)</rp></ruby>に<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>が5<ruby>人<rp>(</rp><rt>にん</rt><rp>)</rp></ruby>います。",
+        "kana": "きょうしつにがくせいがごにんいます。",
+        "romaji": "Kyoushitsu ni gakusei ga gonin imasu.",
+        "vi": "Trong lớp học có 5 sinh viên.",
+        "en": "There are 5 students in the classroom.",
+        "contextualExplanation": {
+          "vi": "います kết hợp với số lượng người để đếm -- xem g_043_1_2.",
+          "en": "います pairs with a person-count to enumerate people -- see g_043_1_2."
         }
       }
     ],
@@ -6193,28 +6492,104 @@
         "jaRuby": "<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>はいすの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>にいます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_038_1",
+      "g_040_2"
+    ],
     "tags": [],
     "patternRuby": "N1(người/vật)は N2(địa điểm)にいます",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 (hito/mono) wa N2 (basho) ni imasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(người/vật sống) は (địa điểm)にいます",
+        "exampleStr": "田中さん ＋ は教室にいます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating the location of a known person/animal",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Same topic/new-info split as g_038_1, but for living beings",
+        "description": {
+          "vi": "Giống hệt cấu trúc g_038_1 nhưng dùng cho người/động vật: NGƯỜI là chủ đề đã biết (は), địa điểm là thông tin bổ sung.",
+          "en": "Mirrors g_038_1's structure but for living beings: the PERSON is the known topic (は), the location is supplementary information."
+        },
+        "relatedGrammarId": "g_038_1"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "猫はいすの下にいます。",
-        "jaRuby": "<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>はいすの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>にいます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Con mèo đang ở dưới ghế.",
-        "en": "The cat is under the chair.",
+        "ja": "田中さんは教室にいます。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>教室<rp>(</rp><rt>きょうしつ</rt><rp>)</rp></ruby>にいます。",
+        "kana": "たなかさんはきょうしつにいます。",
+        "romaji": "Tanaka-san wa kyoushitsu ni imasu.",
+        "vi": "Bạn Tanaka đang ở trong lớp học.",
+        "en": "Tanaka is in the classroom.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "田中さん (người đã biết) là chủ đề, 教室に nêu vị trí.",
+          "en": "田中さん (the known person) is the topic; 教室に supplies the location."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "部長は今、会議室におります。",
+        "jaRuby": "<ruby>部長<rp>(</rp><rt>ぶちょう</rt><rp>)</rp></ruby>は<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>会議室<rp>(</rp><rt>かいぎしつ</rt><rp>)</rp></ruby>におります。",
+        "kana": "ぶちょうはいま、かいぎしつにおります。",
+        "romaji": "Buchou wa ima, kaigishitsu ni orimasu.",
+        "vi": "Trưởng phòng hiện đang ở phòng họp.",
+        "en": "The department head is currently in the meeting room.",
+        "contextualExplanation": {
+          "vi": "おります (khiêm nhường) thay います khi nói về người trong tổ chức của mình.",
+          "en": "おります (humble) replaces います when referring to someone within one's own organization."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "お母さんはどこにいますか。",
+        "jaRuby": "お<ruby>母<rp>(</rp><rt>かあ</rt><rp>)</rp></ruby>さんはどこにいますか。",
+        "kana": "おかあさんはどこにいますか。",
+        "romaji": "Okaasan wa doko ni imasu ka.",
+        "vi": "Mẹ bạn đang ở đâu vậy?",
+        "en": "Where is your mother?",
+        "contextualExplanation": {
+          "vi": "どこ thay cho địa điểm cụ thể khi hỏi.",
+          "en": "どこ substitutes for the specific location when asking."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "弟は今、部屋にいるよ。",
+        "jaRuby": "<ruby>弟<rp>(</rp><rt>おとうと</rt><rp>)</rp></ruby>は<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>にいるよ。",
+        "kana": "おとうとはいま、へやにいるよ。",
+        "romaji": "Otouto wa ima, heya ni iru yo.",
+        "vi": "Em trai tôi đang ở trong phòng đấy.",
+        "en": "My brother is in his room right now.",
+        "contextualExplanation": {
+          "vi": "います → いる ở thể thường trong văn nói thân mật.",
+          "en": "います → いる in the plain casual form."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "犬は庭にいます。",
+        "jaRuby": "<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>は<ruby>庭<rp>(</rp><rt>にわ</rt><rp>)</rp></ruby>にいます。",
+        "kana": "いぬはにわにいます。",
+        "romaji": "Inu wa niwa ni imasu.",
+        "vi": "Con chó đang ở ngoài sân.",
+        "en": "The dog is in the yard.",
+        "contextualExplanation": {
+          "vi": "います cũng dùng cho động vật, không chỉ người.",
+          "en": "います also applies to animals, not just people."
         }
       }
     ],
@@ -6246,28 +6621,104 @@
         "jaRuby": "あそこに<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>がいますよ。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_038_2",
+      "g_040_1"
+    ],
     "tags": [],
     "patternRuby": "N1(địa điểm)に N2(người/vật)がいます",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 (basho) ni N2 (hito/mono) ga imasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(địa điểm)に (người/vật)がいます",
+        "exampleStr": "教室 ＋ に学生がいます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating who/what living being exists at a given location",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Mirrors g_038_2 for living beings: location is topic, person/animal is new info (が)",
+        "description": {
+          "vi": "Giống hệt g_038_2 nhưng dùng cho người/động vật: ĐỊA ĐIỂM là chủ đề đã biết, NGƯỜI/ĐỘNG VẬT là thông tin mới, luôn đi với が.",
+          "en": "Mirrors g_038_2 for living beings: the LOCATION is the known topic, the PERSON/ANIMAL is new information, always marked with が."
+        },
+        "relatedGrammarId": "g_038_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "あそこに猫がいますよ。",
-        "jaRuby": "あそこに<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>がいますよ。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Đằng kia có một chú mèo đấy.",
-        "en": "There's a cat over there.",
+        "ja": "教室に学生がいます。",
+        "jaRuby": "<ruby>教室<rp>(</rp><rt>きょうしつ</rt><rp>)</rp></ruby>に<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>がいます。",
+        "kana": "きょうしつにがくせいがいます。",
+        "romaji": "Kyoushitsu ni gakusei ga imasu.",
+        "vi": "Trong lớp học có sinh viên.",
+        "en": "There are students in the classroom.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "教室に là địa điểm (chủ đề), 学生が giới thiệu người mới.",
+          "en": "教室に is the location (topic), 学生が introduces the new person."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "受付に誰かいますか。",
+        "jaRuby": "<ruby>受付<rp>(</rp><rt>うけつけ</rt><rp>)</rp></ruby>に<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かいますか。",
+        "kana": "うけつけにだれかいますか。",
+        "romaji": "Uketsuke ni dareka imasu ka.",
+        "vi": "Có ai ở quầy lễ tân không?",
+        "en": "Is there anyone at the reception desk?",
+        "contextualExplanation": {
+          "vi": "誰か (ai đó) thay cho một người cụ thể khi hỏi về sự hiện diện.",
+          "en": "誰か (\"someone\") replaces a specific person when asking about presence."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "公園には誰もいません。",
+        "jaRuby": "<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>には<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>もいません。",
+        "kana": "こうえんにはだれもいません。",
+        "romaji": "Kouen ni wa dare mo imasen.",
+        "vi": "Trong công viên không có ai cả.",
+        "en": "There's no one in the park.",
+        "contextualExplanation": {
+          "vi": "には nhấn mạnh địa điểm đang được nói đến, kết hợp phủ định 誰も.",
+          "en": "には emphasizes the location under discussion, paired with the negative 誰も."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "公園に犬がいるよ。",
+        "jaRuby": "<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>に<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>がいるよ。",
+        "kana": "こうえんにいぬがいるよ。",
+        "romaji": "Kouen ni inu ga iru yo.",
+        "vi": "Trong công viên có con chó đấy.",
+        "en": "There's a dog in the park.",
+        "contextualExplanation": {
+          "vi": "います → いる trong văn nói thân mật.",
+          "en": "います → いる in casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "このクラスに外国人の学生が3人います。",
+        "jaRuby": "このクラスに<ruby>外国人<rp>(</rp><rt>がいこくじん</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>が3<ruby>人<rp>(</rp><rt>にん</rt><rp>)</rp></ruby>います。",
+        "kana": "このクラスにがいこくじんのがくせいがさんにんいます。",
+        "romaji": "Kono kurasu ni gaikokujin no gakusei ga sannin imasu.",
+        "vi": "Trong lớp này có 3 sinh viên nước ngoài.",
+        "en": "There are 3 international students in this class.",
+        "contextualExplanation": {
+          "vi": "います kết hợp số lượng người để đếm số lượng cụ thể -- xem g_043_1_2.",
+          "en": "います pairs with a person-count for a specific enumeration -- see g_043_1_2."
         }
       }
     ],
@@ -6299,28 +6750,103 @@
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>には<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>い<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>がたくさんあります。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_038_2",
+      "g_003"
+    ],
     "tags": [],
     "patternRuby": "Nには/にも~",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N ni wa / ni mo ~",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(địa điểm) + には／にも",
+        "exampleStr": "公園 ＋ には池があります"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Emphasizing or adding to what a location has",
+      "speakerStance": "Neutral, descriptive, sometimes contrastive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "には contrasts/emphasizes; にも adds (\"here too\")",
+        "description": {
+          "vi": "には thường ngụ ý so sánh/nhấn mạnh (đối lập với một địa điểm khác đã nhắc). にも nghĩa \"ở đây CŨNG có\", thêm vào một danh sách đã có trước đó.",
+          "en": "には often implies contrast/emphasis (against another location already mentioned). にも means \"here TOO\", adding to a list already established."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "日本には高い山がたくさんあります。",
-        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>には<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>い<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>がたくさんあります。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ở Nhật có rất nhiều ngọn núi cao.",
-        "en": "Japan has many tall mountains.",
+        "ja": "この公園には大きい池があります。",
+        "jaRuby": "この<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>には<ruby>大<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>きい<ruby>池<rp>(</rp><rt>いけ</rt><rp>)</rp></ruby>があります。",
+        "kana": "このこうえんにはおおきいいけがあります。",
+        "romaji": "Kono kouen ni wa ookii ike ga arimasu.",
+        "vi": "Công viên này có một hồ lớn.",
+        "en": "This park has a big pond.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "には nhấn mạnh đặc điểm nổi bật của địa điểm này.",
+          "en": "には emphasizes a notable feature of this particular location."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この店にはベジタリアン向けのメニューもございます。",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>にはベジタリアン<ruby>向<rp>(</rp><rt>む</rt><rp>)</rp></ruby>けのメニューもございます。",
+        "kana": "このみせにはベジタリアンむけのメニューもございます。",
+        "romaji": "Kono mise ni wa bejitarian-muke no menyuu mo gozaimasu.",
+        "vi": "Cửa hàng này cũng có thực đơn dành cho người ăn chay ạ.",
+        "en": "This restaurant also has a vegetarian menu.",
+        "contextualExplanation": {
+          "vi": "には…も kết hợp cả nhấn mạnh và thêm thông tin.",
+          "en": "には…も combines both emphasis and adding information."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "この図書館にも自習室がありますか。",
+        "jaRuby": "この<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>にも<ruby>自習室<rp>(</rp><rt>じしゅうしつ</rt><rp>)</rp></ruby>がありますか。",
+        "kana": "このとしょかんにもじしゅうしつがありますか。",
+        "romaji": "Kono toshokan ni mo jishuushitsu ga arimasu ka.",
+        "vi": "Thư viện này cũng có phòng tự học không?",
+        "en": "Does this library also have a self-study room?",
+        "contextualExplanation": {
+          "vi": "にも hỏi xem địa điểm này CŨNG có tiện ích như nơi khác đã nhắc.",
+          "en": "にも asks whether this location ALSO has a facility, like another already mentioned."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このアパートにはエレベーターがないよ。",
+        "jaRuby": "このアパートにはエレベーターがないよ。",
+        "kana": "このアパートにはエレベーターがないよ。",
+        "romaji": "Kono apaato ni wa erebeetaa ga nai yo.",
+        "vi": "Chung cư này không có thang máy đâu.",
+        "en": "This apartment doesn't have an elevator.",
+        "contextualExplanation": {
+          "vi": "には cũng dùng được với câu phủ định để nhấn mạnh điều thiếu.",
+          "en": "には also works with a negative to emphasize what's missing."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "この町には有名なお祭りがあります。",
+        "jaRuby": "この<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>には<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>なお<ruby>祭<rp>(</rp><rt>まつ</rt><rp>)</rp></ruby>りがあります。",
+        "kana": "このまちにはゆうめいなおまつりがあります。",
+        "romaji": "Kono machi ni wa yuumei na omatsuri ga arimasu.",
+        "vi": "Thị trấn này có lễ hội nổi tiếng.",
+        "en": "This town has a famous festival.",
+        "contextualExplanation": {
+          "vi": "には cũng dùng để giới thiệu đặc trưng nổi bật của một địa điểm, thường thấy trong văn giới thiệu.",
+          "en": "には is common in introductions/descriptions to highlight a location's distinguishing feature."
         }
       }
     ],
@@ -6352,28 +6878,104 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には、<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>と<ruby>鳥<rp>(</rp><rt>とり</rt><rp>)</rp></ruby>がいます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_051"
+    ],
     "tags": [],
     "patternRuby": "N1とN2",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N1 to N2",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "N1 + と + N2",
+        "exampleStr": "ペン ＋ と ＋ ノート"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "casual"
+      ],
+      "intent": "Listing a complete, closed set of same-category items (\"N1 and N2\")",
+      "speakerStance": "Neutral, exhaustive listing"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "と lists an exhaustive/closed set -- や implies \"and others\" (see g_051)",
+        "description": {
+          "vi": "と liệt kê ĐẦY ĐỦ, không còn vật nào khác. Khác với や (g_051), vốn ngụ ý còn những thứ khác không được nêu ra (\"và những thứ khác\").",
+          "en": "と lists a COMPLETE, exhaustive set -- nothing else exists beyond what's named. This differs from や (g_051), which implies unlisted items exist too (\"...and others\")."
+        },
+        "relatedGrammarId": "g_051"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私の家には、犬と鳥がいます。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には、<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>と<ruby>鳥<rp>(</rp><rt>とり</rt><rp>)</rp></ruby>がいます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nhà tôi có chó và chim.",
-        "en": "My house has a dog and a bird.",
+        "ja": "机の上にペンとノートがあります。",
+        "jaRuby": "<ruby>机<rp>(</rp><rt>つくえ</rt><rp>)</rp></ruby>の<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にペンとノートがあります。",
+        "kana": "つくえのうえにペンとノートがあります。",
+        "romaji": "Tsukue no ue ni pen to nooto ga arimasu.",
+        "vi": "Trên bàn có bút và vở (chỉ có hai thứ đó).",
+        "en": "There's a pen and a notebook on the desk.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "と liệt kê đầy đủ hai vật trên bàn, ngụ ý không có gì khác.",
+          "en": "と lists exactly two items on the desk, implying nothing else."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中さんと鈴木さんが来ます。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんと<ruby>鈴木<rp>(</rp><rt>すずき</rt><rp>)</rp></ruby>さんが<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。",
+        "kana": "たなかさんとすずきさんがきます。",
+        "romaji": "Tanaka-san to Suzuki-san ga kimasu.",
+        "vi": "Bạn Tanaka và bạn Suzuki sẽ đến.",
+        "en": "Tanaka and Suzuki are coming.",
+        "contextualExplanation": {
+          "vi": "と cũng dùng để liệt kê người, không chỉ đồ vật.",
+          "en": "と also lists people, not only objects."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "コーヒーと紅茶、どちらがいいですか。",
+        "jaRuby": "コーヒーと<ruby>紅茶<rp>(</rp><rt>こうちゃ</rt><rp>)</rp></ruby>、どちらがいいですか。",
+        "kana": "コーヒーとこうちゃ、どちらがいいですか。",
+        "romaji": "Koohii to koucha, dochira ga ii desu ka.",
+        "vi": "Cà phê và trà, bạn thích cái nào hơn?",
+        "en": "Coffee and tea -- which would you prefer?",
+        "contextualExplanation": {
+          "vi": "と cũng dùng để nêu ra hai lựa chọn cụ thể trước khi hỏi so sánh.",
+          "en": "と also names exactly two options before a comparison question."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "今日は財布と携帯だけ持ってきた。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>と<ruby>携帯<rp>(</rp><rt>けいたい</rt><rp>)</rp></ruby>だけ<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>ってきた。",
+        "kana": "きょうはさいふとけいたいだけもってきた。",
+        "romaji": "Kyou wa saifu to keitai dake motte kita.",
+        "vi": "Hôm nay tôi chỉ mang theo ví và điện thoại.",
+        "en": "Today I only brought my wallet and phone.",
+        "contextualExplanation": {
+          "vi": "だけ sau danh sách と nhấn mạnh \"chỉ có hai thứ này thôi\".",
+          "en": "だけ after the と-list emphasizes \"only these two things\"."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "私は妹と弟がいます。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>妹<rp>(</rp><rt>いもうと</rt><rp>)</rp></ruby>と<ruby>弟<rp>(</rp><rt>おとうと</rt><rp>)</rp></ruby>がいます。",
+        "kana": "わたしはいもうととおとうとがいます。",
+        "romaji": "Watashi wa imouto to otouto ga imasu.",
+        "vi": "Tôi có em gái và em trai.",
+        "en": "I have a younger sister and a younger brother.",
+        "contextualExplanation": {
+          "vi": "と kết hợp với います để liệt kê đầy đủ các thành viên gia đình.",
+          "en": "と combines with います to give a complete list of family members."
         }
       }
     ],
@@ -6405,28 +7007,114 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>が2<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>と、<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>が1<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>います。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_037",
+      "g_039",
+      "g_107"
+    ],
     "tags": [],
     "patternRuby": "Số lượng từ + います/あります",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(quantity) + imasu / arimasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "が + (số lượng) + います／あります",
+        "exampleStr": "学生 ＋ が5人 ＋ います"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating how many of something exist",
+      "speakerStance": "Neutral, factual quantification"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "The quantity word floats after が, with no を/particle attached to it",
+        "description": {
+          "vi": "Từ chỉ số lượng (5人、3冊...) đứng ngay sau danh từ+が, KHÔNG có trợ từ nào gắn vào chính nó (không phải 5人を、5人に). Đây là \"phó từ số lượng\" đặc biệt trong tiếng Nhật.",
+          "en": "The quantity word (5人, 3冊...) floats right after noun+が, with NO particle attached to the quantity word itself (never 5人を, 5人に). This is Japan's special \"floating quantifier\" behavior."
+        },
+        "examples": [
+          {
+            "incorrect": "学生が5人を います。",
+            "correct": "学生が5人います。",
+            "explanation": {
+              "vi": "Số lượng không gắn trợ từ.",
+              "en": "The quantity word takes no particle."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私の家には犬が2匹と、猫が1匹います。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>が2<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>と、<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>が1<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>います。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nhà tôi có 2 con chó và 1 con mèo.",
-        "en": "My house has 2 dogs and 1 cat.",
+        "ja": "教室に学生が20人います。",
+        "jaRuby": "<ruby>教室<rp>(</rp><rt>きょうしつ</rt><rp>)</rp></ruby>に<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>が20<ruby>人<rp>(</rp><rt>にん</rt><rp>)</rp></ruby>います。",
+        "kana": "きょうしつにがくせいがにじゅうにんいます。",
+        "romaji": "Kyoushitsu ni gakusei ga nijuu-nin imasu.",
+        "vi": "Trong lớp học có 20 sinh viên.",
+        "en": "There are 20 students in the classroom.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "20人 (số lượng người) đứng ngay sau が, trước います.",
+          "en": "20人 (a person-count) sits right after が, before います."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この図書館には本が10万冊あります。",
+        "jaRuby": "この<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>には<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>が10<ruby>万冊<rp>(</rp><rt>まんさつ</rt><rp>)</rp></ruby>あります。",
+        "kana": "このとしょかんにはほんがじゅうまんさつあります。",
+        "romaji": "Kono toshokan ni wa hon ga juuman-satsu arimasu.",
+        "vi": "Thư viện này có 100 nghìn cuốn sách.",
+        "en": "This library has 100,000 books.",
+        "contextualExplanation": {
+          "vi": "冊 là lượng từ đếm sách, kết hợp với あります cho vật vô tri.",
+          "en": "冊 is the counter for books, paired with あります for inanimate things."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "兄弟は何人いますか。",
+        "jaRuby": "<ruby>兄弟<rp>(</rp><rt>きょうだい</rt><rp>)</rp></ruby>は<ruby>何人<rp>(</rp><rt>なんにん</rt><rp>)</rp></ruby>いますか。",
+        "kana": "きょうだいはなんにんいますか。",
+        "romaji": "Kyoudai wa nannin imasu ka.",
+        "vi": "Bạn có mấy anh chị em?",
+        "en": "How many siblings do you have?",
+        "contextualExplanation": {
+          "vi": "何人 (bao nhiêu người) là từ hỏi số lượng người, theo cùng vị trí.",
+          "en": "何人 (\"how many people\") is the question word for a person-count, in the same position."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "猫が2匹いるよ。",
+        "jaRuby": "<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>が2<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>いるよ。",
+        "kana": "ねこがにひきいるよ。",
+        "romaji": "Neko ga nihiki iru yo.",
+        "vi": "Có 2 con mèo đấy.",
+        "en": "There are 2 cats.",
+        "contextualExplanation": {
+          "vi": "匹 đếm động vật nhỏ, kết hợp với います (thể thường いる) vì mèo là động vật.",
+          "en": "匹 counts small animals, paired with います (plain いる) since cats are living beings."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "かばんの中にペンが3本しかありません。",
+        "jaRuby": "かばんの<ruby>中<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>にペンが3<ruby>本<rp>(</rp><rt>ぼん</rt><rp>)</rp></ruby>しかありません。",
+        "kana": "かばんのなかにペンがさんぼんしかありません。",
+        "romaji": "Kaban no naka ni pen ga sanbon shika arimasen.",
+        "vi": "Trong túi chỉ có 3 cây bút thôi.",
+        "en": "There are only 3 pens in the bag.",
+        "contextualExplanation": {
+          "vi": "しか (chỉ) + phủ định cũng kết hợp được với cấu trúc số lượng để nhấn mạnh \"ít ỏi\" -- xem g_107.",
+          "en": "しか (\"only\") + negative also combines with the quantity structure to emphasize scarcity -- see g_107."
         }
       }
     ],
@@ -6458,28 +7146,109 @@
         "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>コーヒーを<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_048",
+      "g_094_1"
+    ],
     "tags": [],
     "patternRuby": "Vます/Vました",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-masu / V-mashita",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Masu-stem + ます (present/future)",
+        "exampleStr": "食べる → 食べ ＋ ます"
+      },
+      {
+        "pos": "verb",
+        "form": "Masu-stem + ました (past)",
+        "exampleStr": "食べる → 食べ ＋ ました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating an action in polite present/future or past tense",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "The ます-form present tense covers both \"now habitually\" and \"in the future\", never \"right now in progress\"",
+        "description": {
+          "vi": "Vます diễn tả thói quen hoặc hành động sẽ xảy ra trong tương lai, KHÔNG diễn tả hành động đang diễn ra ngay lúc nói (cần Vています, xem g_094_1).",
+          "en": "Vます covers habitual actions or future events -- it does NOT express an action happening right now (that needs Vています, see g_094_1)."
+        },
+        "relatedGrammarId": "g_094_1"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "毎朝コーヒーを飲みます。",
-        "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>コーヒーを<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Mỗi sáng tôi uống cà phê.",
-        "en": "I drink coffee every morning.",
+        "ja": "毎朝、パンを食べます。",
+        "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>、パンを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
+        "kana": "まいあさ、パンをたべます。",
+        "romaji": "Maiasa, pan o tabemasu.",
+        "vi": "Mỗi sáng tôi ăn bánh mì.",
+        "en": "I eat bread every morning.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "ます diễn tả thói quen lặp lại hằng ngày.",
+          "en": "ます expresses a repeated daily habit."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "来週、大阪へ行きます。",
+        "jaRuby": "<ruby>来週<rp>(</rp><rt>らいしゅう</rt><rp>)</rp></ruby>、<ruby>大阪<rp>(</rp><rt>おおさか</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+        "kana": "らいしゅう、おおさかへいきます。",
+        "romaji": "Raishuu, Oosaka e ikimasu.",
+        "vi": "Tuần sau tôi sẽ đi Osaka.",
+        "en": "I'm going to Osaka next week.",
+        "contextualExplanation": {
+          "vi": "Cùng một dạng ます nhưng diễn tả tương lai nhờ 来週.",
+          "en": "The same ます form here expresses the future thanks to 来週."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "昨日は勉強しませんでした。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しませんでした。",
+        "kana": "きのうはべんきょうしませんでした。",
+        "romaji": "Kinou wa benkyou shimasen deshita.",
+        "vi": "Hôm qua tôi đã không học bài.",
+        "en": "I didn't study yesterday.",
+        "contextualExplanation": {
+          "vi": "Phủ định quá khứ ませんでした được học chi tiết ở g_048.",
+          "en": "The past negative ませんでした is covered in detail at g_048."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "週末、何をしますか。",
+        "jaRuby": "<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby>、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしますか。",
+        "kana": "しゅうまつ、なにをしますか。",
+        "romaji": "Shuumatsu, nani o shimasu ka.",
+        "vi": "Cuối tuần bạn sẽ làm gì?",
+        "en": "What are you doing this weekend?",
+        "contextualExplanation": {
+          "vi": "ますか hỏi về kế hoạch/dự định tương lai.",
+          "en": "ますか asks about a future plan/intention."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "田中さんは毎日8時に起きます。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby>8<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きます。",
+        "kana": "たなかさんはまいにちはちじにおきます。",
+        "romaji": "Tanaka-san wa mainichi hachiji ni okimasu.",
+        "vi": "Tanaka dậy lúc 8 giờ mỗi ngày.",
+        "en": "Tanaka gets up at 8 every day.",
+        "contextualExplanation": {
+          "vi": "ます cũng dùng cho hành động của người khác, không chỉ bản thân người nói.",
+          "en": "ます also describes other people's actions, not just the speaker's own."
         }
       }
     ],
@@ -6511,28 +7280,103 @@
         "jaRuby": "3<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かけます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_046"
+    ],
     "tags": [],
     "patternRuby": "~<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に+V",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~ji ni + V",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(giờ) + に + Vます",
+        "exampleStr": "7時 ＋ に起きます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Specifying the exact clock time an action happens",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "に marks a fixed point in time, not a duration",
+        "description": {
+          "vi": "に chỉ dùng khi nói về MỘT THỜI ĐIỂM cụ thể (7時に), không dùng khi nói về KHOẢNG THỜI GIAN (7時間, không thêm に) -- xem g_046.",
+          "en": "に marks a specific POINT in time (7時に), never a DURATION (7時間, no に attached) -- see g_046."
+        },
+        "relatedGrammarId": "g_046"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "3時に出かけます。",
-        "jaRuby": "3<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かけます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi sẽ ra ngoài lúc 3 giờ.",
-        "en": "I'll go out at 3 o'clock.",
+        "ja": "毎朝7時に起きます。",
+        "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>7<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きます。",
+        "kana": "まいあさしちじにおきます。",
+        "romaji": "Maiasa shichiji ni okimasu.",
+        "vi": "Mỗi sáng tôi dậy lúc 7 giờ.",
+        "en": "I get up at 7 every morning.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "7時に xác định chính xác thời điểm dậy.",
+          "en": "7時に pins down the exact time of waking up."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "会議は3時に始まります。",
+        "jaRuby": "<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>は3<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>始<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>まります。",
+        "kana": "かいぎはさんじにはじまります。",
+        "romaji": "Kaigi wa sanji ni hajimarimasu.",
+        "vi": "Cuộc họp bắt đầu lúc 3 giờ.",
+        "en": "The meeting starts at 3.",
+        "contextualExplanation": {
+          "vi": "に cũng dùng cho lịch trình/sự kiện, không chỉ thói quen cá nhân.",
+          "en": "に also applies to schedules/events, not just personal habits."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "何時に寝ますか。",
+        "jaRuby": "<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>に<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ますか。",
+        "kana": "なんじにねますか。",
+        "romaji": "Nanji ni nemasu ka.",
+        "vi": "Bạn đi ngủ lúc mấy giờ?",
+        "en": "What time do you go to bed?",
+        "contextualExplanation": {
+          "vi": "何時 thay cho giờ cụ thể khi hỏi.",
+          "en": "何時 substitutes for the specific time when asking."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "12時に集合ね。",
+        "jaRuby": "12<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>集合<rp>(</rp><rt>しゅうごう</rt><rp>)</rp></ruby>ね。",
+        "kana": "じゅうにじにしゅうごうね。",
+        "romaji": "Juuniji ni shuugou ne.",
+        "vi": "12 giờ tập trung nhé.",
+        "en": "Let's meet up at 12.",
+        "contextualExplanation": {
+          "vi": "に vẫn giữ nguyên trong văn nói thân mật rút gọn.",
+          "en": "に stays intact even in a short casual instruction."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "9時に薬を飲んでください。",
+        "jaRuby": "9<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>薬<rp>(</rp><rt>くすり</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んでください。",
+        "kana": "くじにくすりをのんでください。",
+        "romaji": "Kuji ni kusuri o nonde kudasai.",
+        "vi": "Hãy uống thuốc lúc 9 giờ.",
+        "en": "Please take the medicine at 9.",
+        "contextualExplanation": {
+          "vi": "に cũng dùng được trong câu yêu cầu (てください).",
+          "en": "に also works within a request sentence (てください)."
         }
       }
     ],
@@ -6564,28 +7408,112 @@
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>10<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby><ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_045"
+    ],
     "tags": [],
     "patternRuby": "~<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>/<ruby>分<rp>(</rp><rt>ぶん</rt><rp>)</rp></ruby>+V",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~jikan/fun + V",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(khoảng thời gian, không に) + Vます",
+        "exampleStr": "2時間 ＋ 勉強します"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Specifying how long an action lasts",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "Never attach に to a duration",
+        "description": {
+          "vi": "2時間 (khoảng thời gian) KHÔNG được thêm に -- khác hẳn với thời điểm cụ thể ở g_045. Thêm に vào đây là lỗi rất phổ biến.",
+          "en": "2時間 (a duration) NEVER takes に -- unlike the specific time point in g_045. Adding に here is a very common mistake."
+        },
+        "examples": [
+          {
+            "incorrect": "2時間に勉強します。",
+            "correct": "2時間勉強します。",
+            "explanation": {
+              "vi": "Khoảng thời gian không đi kèm に.",
+              "en": "A duration takes no に."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "昨日10時間働きました。",
-        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>10<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby><ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hôm qua tôi đã làm việc 10 tiếng.",
-        "en": "I worked 10 hours yesterday.",
+        "ja": "毎日2時間勉強します。",
+        "jaRuby": "<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby>2<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby><ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>します。",
+        "kana": "まいにちにじかんべんきょうします。",
+        "romaji": "Mainichi nijikan benkyou shimasu.",
+        "vi": "Mỗi ngày tôi học 2 tiếng.",
+        "en": "I study for 2 hours every day.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "2時間 không có に, đứng trực tiếp trước động từ.",
+          "en": "2時間 takes no に and sits directly before the verb."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "会議は1時間くらい続きました。",
+        "jaRuby": "<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>は1<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>くらい<ruby>続<rp>(</rp><rt>つづ</rt><rp>)</rp></ruby>きました。",
+        "kana": "かいぎはいちじかんくらいつづきました。",
+        "romaji": "Kaigi wa ichijikan kurai tsuzukimashita.",
+        "vi": "Cuộc họp kéo dài khoảng 1 tiếng.",
+        "en": "The meeting lasted about an hour.",
+        "contextualExplanation": {
+          "vi": "くらい thêm vào để ước chừng khoảng thời gian.",
+          "en": "くらい adds an approximation to the duration."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "毎日どのくらい寝ますか。",
+        "jaRuby": "<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby>どのくらい<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ますか。",
+        "kana": "まいにちどのくらいねますか。",
+        "romaji": "Mainichi dono kurai nemasu ka.",
+        "vi": "Mỗi ngày bạn ngủ khoảng bao lâu?",
+        "en": "About how long do you sleep each day?",
+        "contextualExplanation": {
+          "vi": "どのくらい hỏi về khoảng thời gian, thay cho con số cụ thể.",
+          "en": "どのくらい asks about the duration, substituting for a specific number."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "3分待って。",
+        "jaRuby": "3<ruby>分<rp>(</rp><rt>ふん</rt><rp>)</rp></ruby><ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>って。",
+        "kana": "さんぷんまって。",
+        "romaji": "Sanpun matte.",
+        "vi": "Đợi 3 phút nhé.",
+        "en": "Wait 3 minutes.",
+        "contextualExplanation": {
+          "vi": "分 (phút) cũng theo cùng quy tắc không có に.",
+          "en": "分 (minutes) follows the same no-に rule."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "30分歩いて、駅に着きました。",
+        "jaRuby": "30<ruby>分<rp>(</rp><rt>ぷん</rt><rp>)</rp></ruby><ruby>歩<rp>(</rp><rt>ある</rt><rp>)</rp></ruby>いて、<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>に<ruby>着<rp>(</rp><rt>つ</rt><rp>)</rp></ruby>きました。",
+        "kana": "さんじゅっぷんあるいて、えきにつきました。",
+        "romaji": "Sanjuppun aruite, eki ni tsukimashita.",
+        "vi": "Đi bộ 30 phút thì đến ga.",
+        "en": "I walked for 30 minutes and arrived at the station.",
+        "contextualExplanation": {
+          "vi": "Khoảng thời gian cũng ghép được với thể て để nối hai hành động liên tiếp.",
+          "en": "A duration also combines with the te-form to sequence two actions."
         }
       }
     ],
@@ -6617,28 +7545,104 @@
         "jaRuby": "<ruby>今朝<rp>(</rp><rt>けさ</rt><rp>)</rp></ruby>は10<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>まで<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_005",
+      "g_045",
+      "g_046"
+    ],
     "tags": [],
     "patternRuby": "~から~まで~V",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~kara ~made V",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(thời gian/địa điểm)から～まで + V",
+        "exampleStr": "9時 ＋ から5時まで働きます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Specifying a range from a starting point to an ending point",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "から～まで works for both time and place ranges",
+        "description": {
+          "vi": "から～まで dùng được cả cho thời gian (9時から5時まで) và không gian (家から駅まで) -- cùng một cấu trúc cho cả hai loại phạm vi.",
+          "en": "から～まで works for both time ranges (9時から5時まで) and spatial ranges (家から駅まで) -- one structure covers both."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "今朝は10時まで寝ました。",
-        "jaRuby": "<ruby>今朝<rp>(</rp><rt>けさ</rt><rp>)</rp></ruby>は10<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>まで<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Sáng nay tôi đã ngủ đến 10 giờ.",
-        "en": "I slept until 10 o'clock this morning.",
+        "ja": "9時から5時まで働きます。",
+        "jaRuby": "9<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から5<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>まで<ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きます。",
+        "kana": "くじからごじまではたらきます。",
+        "romaji": "Kuji kara goji made hatarakimasu.",
+        "vi": "Tôi làm việc từ 9 giờ đến 5 giờ.",
+        "en": "I work from 9 to 5.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "から～まで xác lập khung giờ làm việc.",
+          "en": "から～まで establishes the working hours range."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "家から駅まで歩いて行きます。",
+        "jaRuby": "<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>から<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>まで<ruby>歩<rp>(</rp><rt>ある</rt><rp>)</rp></ruby>いて<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+        "kana": "いえからえきまであるいていきます。",
+        "romaji": "Ie kara eki made aruite ikimasu.",
+        "vi": "Tôi đi bộ từ nhà đến ga.",
+        "en": "I walk from my house to the station.",
+        "contextualExplanation": {
+          "vi": "から～まで ở đây đánh dấu phạm vi không gian, không phải thời gian.",
+          "en": "から～まで here marks a spatial range, not time."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "空港まではここからどのくらいですか。",
+        "jaRuby": "<ruby>空港<rp>(</rp><rt>くうこう</rt><rp>)</rp></ruby>まではここからどのくらいですか。",
+        "kana": "くうこうまではここからどのくらいですか。",
+        "romaji": "Kuukou made wa koko kara dono kurai desu ka.",
+        "vi": "Từ đây đến sân bay khoảng bao xa?",
+        "en": "How far is it from here to the airport?",
+        "contextualExplanation": {
+          "vi": "から/まで cũng tách ra dùng riêng lẻ khi một đầu mốc đã rõ (ここ).",
+          "en": "から/まで can also be used separately when one endpoint is already clear (ここ)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "月曜から金曜まで学校がある。",
+        "jaRuby": "<ruby>月曜<rp>(</rp><rt>げつよう</rt><rp>)</rp></ruby>から<ruby>金曜<rp>(</rp><rt>きんよう</rt><rp>)</rp></ruby>まで<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>がある。",
+        "kana": "げつようからきんようまでがっこうがある。",
+        "romaji": "Getsuyou kara kin'you made gakkou ga aru.",
+        "vi": "Từ thứ 2 đến thứ 6 có đi học.",
+        "en": "There's school from Monday to Friday.",
+        "contextualExplanation": {
+          "vi": "から～まで cũng áp dụng được cho các ngày trong tuần.",
+          "en": "から～まで also applies to days of the week."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どもから大人まで楽しめる映画です。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもから<ruby>大人<rp>(</rp><rt>おとな</rt><rp>)</rp></ruby>まで<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しめる<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>です。",
+        "kana": "こどもからおとなまでたのしめるえいがです。",
+        "romaji": "Kodomo kara otona made tanoshimeru eiga desu.",
+        "vi": "Đây là bộ phim mà từ trẻ em đến người lớn đều có thể thưởng thức.",
+        "en": "It's a movie that people from children to adults can enjoy.",
+        "contextualExplanation": {
+          "vi": "から～まで cũng dùng ẩn dụ để chỉ một phạm vi đối tượng, không chỉ thời gian/không gian vật lý.",
+          "en": "から～まで can also be used metaphorically for a range of people, not just physical time/space."
         }
       }
     ],
@@ -6670,28 +7674,109 @@
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しませんでした。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_044",
+      "g_009",
+      "g_010"
+    ],
     "tags": [],
     "patternRuby": "Vません/Vませんでした",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-masen / V-masen deshita",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Masu-stem + ません (present/future negative)",
+        "exampleStr": "食べる → 食べ ＋ ません"
+      },
+      {
+        "pos": "verb",
+        "form": "Masu-stem + ませんでした (past negative)",
+        "exampleStr": "食べる → 食べ ＋ ませんでした"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Denying an action, present/future or past",
+      "speakerStance": "Neutral, factual negation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "ませんでした is one unit -- don't double-mark the past",
+        "description": {
+          "vi": "Tương tự でした (g_009), でした ở đây gắn liền với ません thành một khối cố định, không tách rời hay chia lại.",
+          "en": "Just like でした in g_009, でした here fuses with ません into one fixed unit -- it's never split or re-conjugated."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "昨日は勉強しませんでした。",
-        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しませんでした。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hôm qua tôi đã không học bài.",
-        "en": "I didn't study yesterday.",
+        "ja": "朝ごはんを食べません。",
+        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ごはんを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べません。",
+        "kana": "あさごはんをたべません。",
+        "romaji": "Asagohan o tabemasen.",
+        "vi": "Tôi không ăn sáng.",
+        "en": "I don't eat breakfast.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "ません phủ định thói quen/hành động hiện tại-tương lai.",
+          "en": "ません negates a habitual/present-future action."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "明日は出かけません。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かけません。",
+        "kana": "あしたはでかけません。",
+        "romaji": "Ashita wa dekakemasen.",
+        "vi": "Ngày mai tôi sẽ không ra ngoài.",
+        "en": "I won't go out tomorrow.",
+        "contextualExplanation": {
+          "vi": "ません cũng phủ định kế hoạch tương lai.",
+          "en": "ません also negates a future plan."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "昨日は雨が降りませんでした。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>りませんでした。",
+        "kana": "きのうはあめがふりませんでした。",
+        "romaji": "Kinou wa ame ga furimasen deshita.",
+        "vi": "Hôm qua trời không mưa.",
+        "en": "It didn't rain yesterday.",
+        "contextualExplanation": {
+          "vi": "ませんでした phủ định hành động ở quá khứ.",
+          "en": "ませんでした negates an action in the past."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "昨日、学校へ行きませんでしたか。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きませんでしたか。",
+        "kana": "きのう、がっこうへいきませんでしたか。",
+        "romaji": "Kinou, gakkou e ikimasen deshita ka.",
+        "vi": "Hôm qua bạn không đi học à?",
+        "en": "Didn't you go to school yesterday?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi tu từ dùng phủ định quá khứ + か.",
+          "en": "A confirming question using the past negative + か."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "すみません、お酒は飲みません。",
+        "jaRuby": "すみません、お<ruby>酒<rp>(</rp><rt>さけ</rt><rp>)</rp></ruby>は<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みません。",
+        "kana": "すみません、おさけはのみません。",
+        "romaji": "Sumimasen, osake wa nomimasen.",
+        "vi": "Xin lỗi, tôi không uống rượu.",
+        "en": "Sorry, I don't drink alcohol.",
+        "contextualExplanation": {
+          "vi": "ません cũng dùng để lịch sự từ chối một lời mời.",
+          "en": "ません is also used to politely decline an offer."
         }
       }
     ],
@@ -6723,28 +7808,104 @@
         "jaRuby": "7<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>へ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_049_2",
+      "g_049_3"
+    ],
     "tags": [],
     "patternRuby": "N(địa điểm)へ/に<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N (basho) e/ni kaerimasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(địa điểm)へ/に + 帰ります",
+        "exampleStr": "国 ＋ へ帰ります"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating a return to a \"home base\" (home country, house)",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "帰る implies returning to a base -- 行く is any other movement (see g_049_2)",
+        "description": {
+          "vi": "帰る chuyên dùng cho việc quay VỀ một nơi được coi là \"gốc\" (nhà, quê hương, công ty mình làm) -- không dùng cho việc đi đến nơi mới. Nếu chỉ là \"đi đến\" một nơi bất kỳ, dùng 行く (g_049_2).",
+          "en": "帰る is specifically for returning to a place considered \"home base\" (house, home country, one's workplace) -- not for going to a new destination. For simply \"going to\" any place, use 行く (g_049_2)."
+        },
+        "relatedGrammarId": "g_049_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "7時に家へ帰ります。",
-        "jaRuby": "7<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>へ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi về nhà lúc 7 giờ.",
-        "en": "I go home at 7 o'clock.",
+        "ja": "毎年、夏に国へ帰ります。",
+        "jaRuby": "<ruby>毎年<rp>(</rp><rt>まいとし</rt><rp>)</rp></ruby>、<ruby>夏<rp>(</rp><rt>なつ</rt><rp>)</rp></ruby>に<ruby>国<rp>(</rp><rt>くに</rt><rp>)</rp></ruby>へ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります。",
+        "kana": "まいとし、なつにくにへかえります。",
+        "romaji": "Maitoshi, natsu ni kuni e kaerimasu.",
+        "vi": "Mỗi năm vào mùa hè, tôi về nước.",
+        "en": "Every year in the summer, I go back to my home country.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "国へ帰ります diễn tả việc quay về nơi gốc (quê hương).",
+          "en": "国へ帰ります expresses returning to one's home base (home country)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "何時に家へ帰りますか。",
+        "jaRuby": "<ruby>何時<rp>(</rp><rt>なんじ</rt><rp>)</rp></ruby>に<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>へ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>りますか。",
+        "kana": "なんじにいえへかえりますか。",
+        "romaji": "Nanji ni ie e kaerimasu ka.",
+        "vi": "Mấy giờ bạn về nhà?",
+        "en": "What time are you going home?",
+        "contextualExplanation": {
+          "vi": "家へ帰ります là cách dùng phổ biến nhất của 帰る trong đời sống hằng ngày.",
+          "en": "家へ帰ります is the most common everyday use of 帰る."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今日は遅くまで帰りません。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>遅<rp>(</rp><rt>おそ</rt><rp>)</rp></ruby>くまで<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>りません。",
+        "kana": "きょうはおそくまでかえりません。",
+        "romaji": "Kyou wa osoku made kaerimasen.",
+        "vi": "Hôm nay tôi sẽ về muộn.",
+        "en": "I won't be home until late today.",
+        "contextualExplanation": {
+          "vi": "帰りません (phủ định) cho biết chưa quay về trong khoảng thời gian nào đó.",
+          "en": "帰りません (negative) reports not returning within a given time frame."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "そろそろ帰る。",
+        "jaRuby": "そろそろ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>る。",
+        "kana": "そろそろかえる。",
+        "romaji": "Sorosoro kaeru.",
+        "vi": "Sắp về rồi đây.",
+        "en": "I'm about to head home.",
+        "contextualExplanation": {
+          "vi": "そろそろ + 帰る (thể thường) rất phổ biến khi báo hiệu chuẩn bị rời đi.",
+          "en": "そろそろ + plain-form 帰る is very common when signaling one's about to leave."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "会社に帰ってから、また出かけます。",
+        "jaRuby": "<ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby>に<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ってから、また<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かけます。",
+        "kana": "かいしゃにかえってから、またでかけます。",
+        "romaji": "Kaisha ni kaette kara, mata dekakemasu.",
+        "vi": "Sau khi về lại công ty, tôi sẽ ra ngoài lần nữa.",
+        "en": "After returning to the office, I'll head out again.",
+        "contextualExplanation": {
+          "vi": "帰る cũng dùng cho nơi làm việc mình thuộc về, không chỉ nhà riêng.",
+          "en": "帰る also applies to one's own workplace, not only one's house."
         }
       }
     ],
@@ -6776,28 +7937,104 @@
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_049_1",
+      "g_049_3",
+      "g_058"
+    ],
     "tags": [],
     "patternRuby": "N(địa điểm)へ/に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N (basho) e/ni ikimasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(địa điểm)へ/に + 行きます",
+        "exampleStr": "学校 ＋ へ行きます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating movement toward a destination, away from the speaker's current viewpoint",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "へ vs に after a destination -- nearly interchangeable at N5",
+        "description": {
+          "vi": "へ nhấn mạnh HƯỚNG di chuyển (một cách văn chương/rộng hơn), に nhấn mạnh ĐIỂM ĐẾN cụ thể -- ở trình độ N5, hai trợ từ này gần như dùng thay thế cho nhau.",
+          "en": "へ emphasizes DIRECTION of movement (a slightly more literary/broader nuance), に emphasizes the specific DESTINATION POINT -- at N5 level, the two are nearly interchangeable."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "明日、学校に行きます。",
-        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Ngày mai tôi đi đến trường.",
-        "en": "I'll go to school tomorrow.",
+        "ja": "毎日、学校へ行きます。",
+        "jaRuby": "<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby>、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+        "kana": "まいにち、がっこうへいきます。",
+        "romaji": "Mainichi, gakkou e ikimasu.",
+        "vi": "Mỗi ngày tôi đi học.",
+        "en": "I go to school every day.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "学校へ行きます diễn tả việc di chuyển đến trường như một thói quen.",
+          "en": "学校へ行きます expresses going to school as a habit."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "今度、京都に行きたいです。",
+        "jaRuby": "<ruby>今度<rp>(</rp><rt>こんど</rt><rp>)</rp></ruby>、<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいです。",
+        "kana": "こんど、きょうとにいきたいです。",
+        "romaji": "Kondo, Kyouto ni ikitai desu.",
+        "vi": "Lần tới tôi muốn đi Kyoto.",
+        "en": "I'd like to go to Kyoto sometime.",
+        "contextualExplanation": {
+          "vi": "に thay được cho へ, nhấn mạnh điểm đến cụ thể hơn.",
+          "en": "に can replace へ, with a slightly stronger focus on the specific destination."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "休みの日、どこへ行きますか。",
+        "jaRuby": "<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みの<ruby>日<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>、どこへ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きますか。",
+        "kana": "やすみのひ、どこへいきますか。",
+        "romaji": "Yasumi no hi, doko e ikimasu ka.",
+        "vi": "Ngày nghỉ bạn đi đâu?",
+        "en": "Where do you go on your days off?",
+        "contextualExplanation": {
+          "vi": "どこへ hỏi về địa điểm dự định đi đến.",
+          "en": "どこへ asks about an intended destination."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "今からコンビニ行く。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>からコンビニ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>く。",
+        "kana": "いまからコンビニいく。",
+        "romaji": "Ima kara konbini iku.",
+        "vi": "Giờ tôi đi cửa hàng tiện lợi đây.",
+        "en": "I'm going to the convenience store now.",
+        "contextualExplanation": {
+          "vi": "へ/に thường bị lược bỏ hoàn toàn trong văn nói rất thân mật.",
+          "en": "へ/に is often dropped entirely in very casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "友達と一緒に映画を見に行きます。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>と<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+        "kana": "ともだちといっしょにえいがをみにいきます。",
+        "romaji": "Tomodachi to issho ni eiga o mi ni ikimasu.",
+        "vi": "Tôi sẽ đi xem phim cùng bạn.",
+        "en": "I'm going to watch a movie with my friend.",
+        "contextualExplanation": {
+          "vi": "行きます cũng kết hợp với に + mục đích (見に) -- xem g_058.",
+          "en": "行きます also combines with に + purpose (見に) -- see g_058."
         }
       }
     ],
@@ -6829,28 +8066,105 @@
         "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_049_1",
+      "g_049_2",
+      "g_103"
+    ],
     "tags": [],
     "patternRuby": "N(địa điểm)へ/に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N (basho) e/ni kimasu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(địa điểm)へ/に + 来ます",
+        "exampleStr": "ここ ＋ へ来ます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating movement toward the speaker's (or reference point's) location",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "来る is always \"toward here\" -- 行く is always \"away from here\"",
+        "description": {
+          "vi": "来る chỉ dùng khi ai đó di chuyển VỀ PHÍA người nói (hoặc điểm quy chiếu của câu chuyện). Nếu di chuyển RA XA người nói, luôn dùng 行く, kể cả khi người thứ ba đang \"đi đến\" một nơi khác.",
+          "en": "来る is only used when someone moves TOWARD the speaker (or the story's reference point). Movement AWAY from the speaker always uses 行く, even when a third person is \"coming\" to some other place."
+        },
+        "relatedGrammarId": "g_049_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "友達が私の家に来ます。",
-        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bạn tôi sẽ đến nhà tôi.",
-        "en": "My friend is coming to my house.",
+        "ja": "明日、うちへ来ますか。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、うちへ<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ますか。",
+        "kana": "あした、うちへきますか。",
+        "romaji": "Ashita, uchi e kimasu ka.",
+        "vi": "Mai bạn có đến nhà tôi không?",
+        "en": "Are you coming to my place tomorrow?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "来ます vì người nghe sẽ di chuyển về phía người nói (うち = nhà người nói).",
+          "en": "来ます because the listener will move toward the speaker (うち = the speaker's home)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中さんはもうすぐこちらに来ます。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんはもうすぐこちらに<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。",
+        "kana": "たなかさんはもうすぐこちらにきます。",
+        "romaji": "Tanaka-san wa mou sugu kochira ni kimasu.",
+        "vi": "Anh Tanaka sắp đến chỗ này rồi.",
+        "en": "Tanaka will be here shortly.",
+        "contextualExplanation": {
+          "vi": "こちらに来ます diễn tả ai đó đang di chuyển về phía điểm quy chiếu (nơi người nói đang ở).",
+          "en": "こちらに来ます expresses someone moving toward the reference point (where the speaker is)."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今日、山田さんは来ません。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>山田<rp>(</rp><rt>やまだ</rt><rp>)</rp></ruby>さんは<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ません。",
+        "kana": "きょう、やまださんはきません。",
+        "romaji": "Kyou, Yamada-san wa kimasen.",
+        "vi": "Hôm nay bạn Yamada không đến.",
+        "en": "Yamada isn't coming today.",
+        "contextualExplanation": {
+          "vi": "来ません phủ định ai đó sẽ đến (không di chuyển về phía đây).",
+          "en": "来ません negates someone coming (not moving toward here)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "いつ日本に来ましたか。",
+        "jaRuby": "いつ<ruby>日本<rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ましたか。",
+        "kana": "いつにほんにきましたか。",
+        "romaji": "Itsu Nihon ni kimashita ka.",
+        "vi": "Bạn đến Nhật khi nào vậy?",
+        "en": "When did you come to Japan?",
+        "contextualExplanation": {
+          "vi": "来ました vì người nói đang ở Nhật -- điểm quy chiếu là nơi hội thoại diễn ra.",
+          "en": "来ました because the speaker is in Japan -- the reference point is where the conversation happens."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "友達が空港まで迎えに来てくれました。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>空港<rp>(</rp><rt>くうこう</rt><rp>)</rp></ruby>まで<ruby>迎<rp>(</rp><rt>むか</rt><rp>)</rp></ruby>えに<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>てくれました。",
+        "kana": "ともだちがくうこうまでむかえにきてくれました。",
+        "romaji": "Tomodachi ga kuukou made mukae ni kite kuremashita.",
+        "vi": "Bạn tôi đã đến sân bay đón tôi.",
+        "en": "My friend came to the airport to pick me up.",
+        "contextualExplanation": {
+          "vi": "来て kết hợp với くれました (làm cho tôi) và mục đích 迎えに -- xem g_058, g_103.",
+          "en": "来て combines with くれました (\"did for me\") and purpose 迎えに -- see g_058, g_103."
         }
       }
     ],
@@ -6882,28 +8196,104 @@
         "jaRuby": "<ruby>食堂<rp>(</rp><rt>しょくどう</rt><rp>)</rp></ruby>で<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_038_2",
+      "g_040_2"
+    ],
     "tags": [],
     "patternRuby": "N(địa điểm)でV",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N (basho) de V",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(địa điểm)で + V",
+        "exampleStr": "図書館 ＋ で勉強します"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Specifying where an action takes place",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "で (action location) vs に (existence location, g_038/g_040)",
+        "description": {
+          "vi": "で dùng cho địa điểm DIỄN RA HÀNH ĐỘNG (勉強します, 食べます...). に dùng cho địa điểm TỒN TẠI (あります/います) -- hai trợ từ này phục vụ hai loại câu hoàn toàn khác nhau, đừng dùng lẫn.",
+          "en": "で marks the location WHERE AN ACTION HAPPENS (勉強します, 食べます...). に marks the location of EXISTENCE (あります/います) -- these serve two entirely different sentence types; don't mix them up."
+        },
+        "relatedGrammarId": "g_038_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "食堂で食べました。",
-        "jaRuby": "<ruby>食堂<rp>(</rp><rt>しょくどう</rt><rp>)</rp></ruby>で<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã ăn ở nhà ăn.",
-        "en": "I ate at the cafeteria.",
+        "ja": "図書館で勉強します。",
+        "jaRuby": "<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>で<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>します。",
+        "kana": "としょかんでべんきょうします。",
+        "romaji": "Toshokan de benkyou shimasu.",
+        "vi": "Tôi học ở thư viện.",
+        "en": "I study at the library.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "図書館で đánh dấu nơi diễn ra hành động học.",
+          "en": "図書館で marks the location where the studying happens."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "このレストランで食事をしました。",
+        "jaRuby": "このレストランで<ruby>食事<rp>(</rp><rt>しょくじ</rt><rp>)</rp></ruby>をしました。",
+        "kana": "このレストランでしょくじをしました。",
+        "romaji": "Kono resutoran de shokuji o shimashita.",
+        "vi": "Tôi đã dùng bữa ở nhà hàng này.",
+        "en": "I had a meal at this restaurant.",
+        "contextualExplanation": {
+          "vi": "で cũng dùng được ở thì quá khứ, không đổi hình thức.",
+          "en": "で also works in the past tense, unchanged in form."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "どこで日本語を勉強しましたか。",
+        "jaRuby": "どこで<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しましたか。",
+        "kana": "どこでにほんごをべんきょうしましたか。",
+        "romaji": "Doko de nihongo o benkyou shimashita ka.",
+        "vi": "Bạn đã học tiếng Nhật ở đâu?",
+        "en": "Where did you study Japanese?",
+        "contextualExplanation": {
+          "vi": "どこで hỏi về nơi diễn ra hành động, không phải nơi tồn tại.",
+          "en": "どこで asks about where an action happened, not a location of existence."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "公園でお弁当食べようよ。",
+        "jaRuby": "<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>でお<ruby>弁当<rp>(</rp><rt>べんとう</rt><rp>)</rp></ruby><ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べようよ。",
+        "kana": "こうえんでおべんとうたべようよ。",
+        "romaji": "Kouen de obentou tabeyou yo.",
+        "vi": "Ăn cơm hộp ở công viên đi.",
+        "en": "Let's eat our bento in the park.",
+        "contextualExplanation": {
+          "vi": "で vẫn giữ nguyên trong lời rủ rê thân mật.",
+          "en": "で stays the same even in a casual invitation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "電話で予約をしました。",
+        "jaRuby": "<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>で<ruby>予約<rp>(</rp><rt>よやく</rt><rp>)</rp></ruby>をしました。",
+        "kana": "でんわでよやくをしました。",
+        "romaji": "Denwa de yoyaku o shimashita.",
+        "vi": "Tôi đã đặt chỗ qua điện thoại.",
+        "en": "I made the reservation by phone.",
+        "contextualExplanation": {
+          "vi": "で cũng mở rộng để chỉ phương tiện thực hiện hành động (điện thoại), không chỉ địa điểm vật lý.",
+          "en": "で also extends to the means by which an action is done (phone), not only a physical location."
         }
       }
     ],
@@ -6935,28 +8325,103 @@
         "jaRuby": "<ruby>新聞<rp>(</rp><rt>しんぶん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_050_1",
+      "g_050_3"
+    ],
     "tags": [],
     "patternRuby": "NをV",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N o V",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(đối tượng) + を + V (tha động từ)",
+        "exampleStr": "パン ＋ を食べます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Marking the direct object that a verb acts upon",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "を also marks the space traversed for movement verbs",
+        "description": {
+          "vi": "を không chỉ đánh dấu tân ngữ trực tiếp mà còn dùng để chỉ không gian được \"đi qua\" với động từ di chuyển (公園を歩きます = đi bộ qua công viên) -- một cách dùng đặc biệt cần ghi nhớ.",
+          "en": "を doesn't only mark a direct object -- it also marks the space \"traversed\" with movement verbs (公園を歩きます = \"walk through the park\") -- a special use worth remembering."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "新聞を読みます。",
-        "jaRuby": "<ruby>新聞<rp>(</rp><rt>しんぶん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đọc báo.",
-        "en": "I read the newspaper.",
+        "ja": "朝ごはんにパンを食べます。",
+        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ごはんにパンを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
+        "kana": "あさごはんにパンをたべます。",
+        "romaji": "Asagohan ni pan o tabemasu.",
+        "vi": "Tôi ăn bánh mì cho bữa sáng.",
+        "en": "I eat bread for breakfast.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "パンを đánh dấu tân ngữ trực tiếp của 食べます.",
+          "en": "パンを marks the direct object of 食べます."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "毎日、新聞を読みます。",
+        "jaRuby": "<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby>、<ruby>新聞<rp>(</rp><rt>しんぶん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます。",
+        "kana": "まいにち、しんぶんをよみます。",
+        "romaji": "Mainichi, shinbun o yomimasu.",
+        "vi": "Mỗi ngày tôi đọc báo.",
+        "en": "I read the newspaper every day.",
+        "contextualExplanation": {
+          "vi": "を luôn đứng ngay trước động từ tha động từ tương ứng.",
+          "en": "を always sits right before its corresponding transitive verb."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "何を勉強していますか。",
+        "jaRuby": "<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>を<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>していますか。",
+        "kana": "なにをべんきょうしていますか。",
+        "romaji": "Nani o benkyou shite imasu ka.",
+        "vi": "Bạn đang học gì vậy?",
+        "en": "What are you studying?",
+        "contextualExplanation": {
+          "vi": "何を thay cho tân ngữ cụ thể khi hỏi.",
+          "en": "何を substitutes for the specific object when asking."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "公園を散歩する。",
+        "jaRuby": "<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>を<ruby>散歩<rp>(</rp><rt>さんぽ</rt><rp>)</rp></ruby>する。",
+        "kana": "こうえんをさんぽする。",
+        "romaji": "Kouen o sanpo suru.",
+        "vi": "Đi dạo qua công viên.",
+        "en": "Take a walk through the park.",
+        "contextualExplanation": {
+          "vi": "を ở đây không phải tân ngữ mà chỉ không gian di chuyển qua -- một cách dùng đặc biệt của を.",
+          "en": "を here isn't a direct object -- it marks the space traversed, a special use of を."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "橋を渡って、まっすぐ行ってください。",
+        "jaRuby": "<ruby>橋<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>を<ruby>渡<rp>(</rp><rt>わた</rt><rp>)</rp></ruby>って、まっすぐ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ってください。",
+        "kana": "はしをわたって、まっすぐいってください。",
+        "romaji": "Hashi o watatte, massugu itte kudasai.",
+        "vi": "Hãy băng qua cầu rồi đi thẳng.",
+        "en": "Cross the bridge and go straight.",
+        "contextualExplanation": {
+          "vi": "を渡る (băng qua) là ví dụ điển hình khác của cách dùng を chỉ không gian di chuyển.",
+          "en": "を渡る (\"cross\") is another classic example of を marking traversed space."
         }
       }
     ],
@@ -6988,28 +8453,103 @@
         "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>と<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_050_1",
+      "g_050_2"
+    ],
     "tags": [],
     "patternRuby": "NとV",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N to V",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(người) + と + V",
+        "exampleStr": "友達 ＋ と話します"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Marking who an action is done together with",
+      "speakerStance": "Neutral, factual"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "と (accompaniment) requires a mutual/reciprocal action, unlike に (one-directional)",
+        "description": {
+          "vi": "と dùng cho hành động qua lại/cùng làm (話す, 会う, 遊ぶ) -- ngụ ý cả hai bên đều tham gia. Một số động từ một chiều lại cần に (tặng cho ai đó) chứ không phải と.",
+          "en": "と is for mutual/reciprocal actions (話す \"talk\", 会う \"meet\", 遊ぶ \"play\") -- implying both parties participate. Some one-directional verbs instead need に (e.g. giving something to someone), not と."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "友達と映画を見ます。",
-        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>と<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi xem phim cùng bạn.",
-        "en": "I watch a movie with a friend.",
+        "ja": "友達と話します。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>と<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します。",
+        "kana": "ともだちとはなします。",
+        "romaji": "Tomodachi to hanashimasu.",
+        "vi": "Tôi nói chuyện với bạn.",
+        "en": "I talk with my friend.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "友達と đánh dấu người cùng thực hiện hành động qua lại (nói chuyện).",
+          "en": "友達と marks the person sharing in the reciprocal action (talking)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "週末、家族と食事をします。",
+        "jaRuby": "<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby>、<ruby>家族<rp>(</rp><rt>かぞく</rt><rp>)</rp></ruby>と<ruby>食事<rp>(</rp><rt>しょくじ</rt><rp>)</rp></ruby>をします。",
+        "kana": "しゅうまつ、かぞくとしょくじをします。",
+        "romaji": "Shuumatsu, kazoku to shokuji o shimasu.",
+        "vi": "Cuối tuần tôi dùng bữa cùng gia đình.",
+        "en": "I have a meal with my family on weekends.",
+        "contextualExplanation": {
+          "vi": "と cũng dùng cho hoạt động chung như ăn uống.",
+          "en": "と also applies to shared activities like eating together."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "誰と映画を見ましたか。",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>と<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ましたか。",
+        "kana": "だれとえいがをみましたか。",
+        "romaji": "Dare to eiga o mimashita ka.",
+        "vi": "Bạn đã xem phim cùng ai?",
+        "en": "Who did you watch the movie with?",
+        "contextualExplanation": {
+          "vi": "誰と hỏi về người đồng hành, thay cho một tên cụ thể.",
+          "en": "誰と asks about the companion, substituting for a specific name."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "来週、田中と会う。",
+        "jaRuby": "<ruby>来週<rp>(</rp><rt>らいしゅう</rt><rp>)</rp></ruby>、<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>と<ruby>会<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>う。",
+        "kana": "らいしゅう、たなかとあう。",
+        "romaji": "Raishuu, Tanaka to au.",
+        "vi": "Tuần sau tôi gặp Tanaka.",
+        "en": "I'm meeting Tanaka next week.",
+        "contextualExplanation": {
+          "vi": "会う (gặp) là động từ điển hình cần と vì mang tính qua lại.",
+          "en": "会う (\"meet\") is a classic verb requiring と since meeting is inherently reciprocal."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "一人で行くより、誰かと行くほうが楽しいです。",
+        "jaRuby": "<ruby>一人<rp>(</rp><rt>ひとり</rt><rp>)</rp></ruby>で<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くより、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かと<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くほうが<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しいです。",
+        "kana": "ひとりでいくより、だれかといくほうがたのしいです。",
+        "romaji": "Hitori de iku yori, dareka to iku hou ga tanoshii desu.",
+        "vi": "Đi cùng ai đó vui hơn là đi một mình.",
+        "en": "Going with someone is more fun than going alone.",
+        "contextualExplanation": {
+          "vi": "誰かと (với ai đó) đối lập với 一人で (một mình, dùng で chứ không phải と).",
+          "en": "誰かと (\"with someone\") contrasts with 一人で (\"alone\", using で rather than と)."
         }
       }
     ],
