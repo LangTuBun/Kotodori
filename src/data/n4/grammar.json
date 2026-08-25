@@ -1730,27 +1730,126 @@
         "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>初<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めて<ruby>着物<rp>(</rp><rt>きもの</rt><rp>)</rp></ruby>を<ruby>着<rp>(</rp><rt>き</rt><rp>)</rp></ruby>たんです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_149",
+      "g_150"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "futsuukei + n desu (setsumei/shuchou)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Plain form + んです",
+        "exampleStr": "遅れる → 遅れる ＋ んです"
+      },
+      {
+        "pos": "i-adj",
+        "form": "Plain form + んです",
+        "exampleStr": "高い ＋ んです"
+      },
+      {
+        "pos": "na-adj",
+        "form": "Stem + な + んです",
+        "exampleStr": "静か ＋ な ＋ んです"
+      },
+      {
+        "pos": "noun",
+        "form": "N + な + んです",
+        "exampleStr": "休み ＋ な ＋ んです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual",
+        "spoken"
+      ],
+      "intent": "Providing background context or an explanatory assertion, framing a statement as \"here's the situation\"",
+      "speakerStance": "Emphatic, drawing the listener's attention to a fact behind what's visible"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "な before んです is required for na-adjectives and nouns -- same rule as ようだ/はず",
+        "description": {
+          "vi": "Giống ようだ (g_140) và はず (g_141), んです cần thêm な sau tính từ な và danh từ (元気なんです, 休みなんです), không được bỏ qua.",
+          "en": "Just like ようだ (g_140) and はず (g_141), んです requires な after a na-adjective and noun (元気なんです, 休みなんです) -- it can't be skipped."
+        }
+      },
+      {
+        "type": "nuance_trap",
+        "title": "んです adds emphasis/explanation -- overusing it can sound overly assertive or nosy",
+        "description": {
+          "vi": "んです nhấn mạnh rằng đây là một GIẢI THÍCH quan trọng, không chỉ là thông tin thường. Dùng quá nhiều (đặc biệt khi hỏi) có thể nghe như đang tò mò/xét nét. Câu khẳng định thường không cần んです nếu chỉ đơn giản kể sự việc.",
+          "en": "んです signals that this is a significant EXPLANATION, not just plain information. Overusing it (especially in questions) can sound nosy/prying. A plain statement often doesn't need んです if it's just relaying a fact."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "今日は初めて着物を着たんです。",
-        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>初<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めて<ruby>着物<rp>(</rp><rt>きもの</rt><rp>)</rp></ruby>を<ruby>着<rp>(</rp><rt>き</rt><rp>)</rp></ruby>たんです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hôm nay là lần đầu tiên tôi mặc kimono đấy.",
-        "en": "Actually, today is the first time I've worn a kimono.",
+        "ja": "すみません、電車が遅れたんです。",
+        "jaRuby": "すみません、<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>が<ruby>遅<rp>(</rp><rt>おく</rt><rp>)</rp></ruby>れたんです。",
+        "kana": "すみません、でんしゃがおくれたんです。",
+        "romaji": "Sumimasen, densha ga okureta n desu.",
+        "vi": "Xin lỗi, là do tàu điện bị trễ đấy ạ.",
+        "en": "Sorry, it's because the train was delayed.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "んです giải thích lý do đứng sau việc đến trễ (tình huống người nghe đã thấy).",
+          "en": "んです explains the reason behind being late (a situation the listener can already see)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "実は、来月引っ越すんです。",
+        "jaRuby": "<ruby>実<rp>(</rp><rt>じつ</rt><rp>)</rp></ruby>は、<ruby>来月<rp>(</rp><rt>らいげつ</rt><rp>)</rp></ruby><ruby>引<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>っ<ruby>越<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>すんです。",
+        "kana": "じつは、らいげつひっこすんです。",
+        "romaji": "Jitsu wa, raigetsu hikkosu n desu.",
+        "vi": "Thật ra, tháng sau tôi sẽ chuyển nhà đấy.",
+        "en": "Actually, I'm moving next month.",
+        "contextualExplanation": {
+          "vi": "実は + んです thường mở đầu một thông tin quan trọng/bí mật.",
+          "en": "実は + んです commonly opens up an important/private piece of information."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今日は元気じゃないんです。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>元気<rp>(</rp><rt>げんき</rt><rp>)</rp></ruby>じゃないんです。",
+        "kana": "きょうはげんきじゃないんです。",
+        "romaji": "Kyou wa genki janai n desu.",
+        "vi": "Hôm nay tôi không khỏe lắm đấy.",
+        "en": "I'm not feeling well today, actually.",
+        "contextualExplanation": {
+          "vi": "んです cũng dùng để giải thích lý do đằng sau vẻ ngoài khác thường (không tươi tỉnh).",
+          "en": "んです also explains the reason behind an unusual appearance (looking off)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "この服、実は自分で作ったんだ。",
+        "jaRuby": "この<ruby>服<rp>(</rp><rt>ふく</rt><rp>)</rp></ruby>、<ruby>実<rp>(</rp><rt>じつ</rt><rp>)</rp></ruby>は<ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby>で<ruby>作<rp>(</rp><rt>つく</rt><rp>)</rp></ruby>ったんだ。",
+        "kana": "このふく、じつはじぶんでつくったんだ。",
+        "romaji": "Kono fuku, jitsu wa jibun de tsukutta n da.",
+        "vi": "Bộ đồ này, thật ra là tôi tự may đấy.",
+        "en": "This outfit -- actually, I made it myself.",
+        "contextualExplanation": {
+          "vi": "んだ (thể thường của んです) trong hội thoại thân mật.",
+          "en": "んだ (the plain-form counterpart of んです) in casual conversation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どもの頃、この街に住んでいたんです。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもの<ruby>頃<rp>(</rp><rt>ころ</rt><rp>)</rp></ruby>、この<ruby>街<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>に<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいたんです。",
+        "kana": "こどものころ、このまちにすんでいたんです。",
+        "romaji": "Kodomo no koro, kono machi ni sunde ita n desu.",
+        "vi": "Hồi nhỏ, tôi từng sống ở thành phố này đấy.",
+        "en": "When I was a kid, I actually used to live in this city.",
+        "contextualExplanation": {
+          "vi": "んです cũng dùng để bổ sung một sự thật đáng chú ý về quá khứ, làm nền cho câu chuyện.",
+          "en": "んです also adds a noteworthy fact about the past, providing background for a story."
         }
       }
     ],
@@ -1783,27 +1882,102 @@
         "jaRuby": "<ruby>顔色<rp>(</rp><rt>かおいろ</rt><rp>)</rp></ruby>が<ruby>悪<rp>(</rp><rt>わる</rt><rp>)</rp></ruby>いですね。<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>あまり<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>なかったんです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_148",
+      "g_066"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "futsuukei + n desu (riyuu)",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "から/ので + んです",
+        "exampleStr": "疲れたから ＋ んです"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual"
+      ],
+      "intent": "Explaining the reason behind a visible situation or a preceding statement",
+      "speakerStance": "Emphatic, connecting a cause to an observed effect"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "んです here often follows から/ので to double down on \"this is WHY\"",
+        "description": {
+          "vi": "んです thường kết hợp với から hoặc ので để nhấn mạnh đây chính là LÝ DO cho một điều đã được nhắc đến hoặc quan sát thấy trước đó -- tạo thành cấu trúc \"vì... đấy\" mang tính giải thích rõ ràng hơn chỉ から/ので đơn thuần.",
+          "en": "んです often pairs with から or ので to emphasize this IS the reason for something already mentioned or observed -- forming a \"because..., you see\" structure that's more explanatory than から/ので alone."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "顔色が悪いですね。昨日あまり寝なかったんです。",
-        "jaRuby": "<ruby>顔色<rp>(</rp><rt>かおいろ</rt><rp>)</rp></ruby>が<ruby>悪<rp>(</rp><rt>わる</rt><rp>)</rp></ruby>いですね。<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>あまり<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>なかったんです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Sắc mặt cậu không tốt nhỉ. Vì hôm qua tôi ngủ không đủ giấc.",
-        "en": "You look pale. It's because I didn't sleep much yesterday.",
+        "ja": "疲れているんです。昨日、あまり寝られなかったので。",
+        "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れているんです。<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>、あまり<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>られなかったので。",
+        "kana": "つかれているんです。きのう、あまりねられなかったので。",
+        "romaji": "Tsukarete iru n desu. Kinou, amari nerarenakatta node.",
+        "vi": "Tôi đang mệt đấy. Vì hôm qua không ngủ được mấy.",
+        "en": "I'm tired. It's because I couldn't sleep much last night.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "んです đưa ra kết quả trước, ので theo sau bổ sung lý do.",
+          "en": "んです states the result first, ので afterward supplies the reason."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "時間がないので、行けないんです。",
+        "jaRuby": "<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>がないので、<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>けないんです。",
+        "kana": "じかんがないので、いけないんです。",
+        "romaji": "Jikan ga nai node, ikenai n desu.",
+        "vi": "Vì không có thời gian nên tôi không đi được đấy.",
+        "en": "Since I don't have time, I can't go.",
+        "contextualExplanation": {
+          "vi": "ので + んです ở cuối nhấn mạnh lý do một cách lịch sự.",
+          "en": "ので + んです at the end politely emphasizes the reason."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "どうして遅れたんですか。",
+        "jaRuby": "どうして<ruby>遅<rp>(</rp><rt>おく</rt><rp>)</rp></ruby>れたんですか。",
+        "kana": "どうしておくれたんですか。",
+        "romaji": "Doushite okureta n desu ka.",
+        "vi": "Sao lại đến trễ vậy?",
+        "en": "Why were you late?",
+        "contextualExplanation": {
+          "vi": "んですか hỏi rõ lý do đằng sau một tình huống đã quan sát thấy (đến trễ).",
+          "en": "んですか asks specifically for the reason behind an observed situation (being late)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "お金がないんだ。だから買えない。",
+        "jaRuby": "お<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>がないんだ。だから<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>えない。",
+        "kana": "おかねがないんだ。だからかえない。",
+        "romaji": "Okane ga nai n da. Dakara kaenai.",
+        "vi": "Tôi hết tiền rồi. Vì thế nên không mua được.",
+        "en": "I don't have money. That's why I can't buy it.",
+        "contextualExplanation": {
+          "vi": "んだ (thể thường) nhấn mạnh lý do trong hội thoại thân mật.",
+          "en": "んだ (plain form) emphasizes the reason in casual conversation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "体調が悪いんです。それで、今日は休みます。",
+        "jaRuby": "<ruby>体調<rp>(</rp><rt>たいちょう</rt><rp>)</rp></ruby>が<ruby>悪<rp>(</rp><rt>わる</rt><rp>)</rp></ruby>いんです。それで、<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みます。",
+        "kana": "たいちょうがわるいんです。それで、きょうはやすみます。",
+        "romaji": "Taichou ga warui n desu. Sorede, kyou wa yasumimasu.",
+        "vi": "Sức khỏe không tốt đấy. Vì vậy hôm nay tôi xin nghỉ.",
+        "en": "I'm not feeling well. So, I'm taking today off.",
+        "contextualExplanation": {
+          "vi": "んです cũng có thể đứng trước それで (vì vậy) để nêu lý do rồi mới đến kết quả.",
+          "en": "んです can also precede それで (\"so\"), stating the reason first, followed by the result."
         }
       }
     ],
@@ -1836,27 +2010,102 @@
         "jaRuby": "すみません、<ruby>道<rp>(</rp><rt>みち</rt><rp>)</rp></ruby>に<ruby>迷<rp>(</rp><rt>まよ</rt><rp>)</rp></ruby>ったんですが、<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>はどちらですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_148",
+      "g_190"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "futsuukei + n desu ga",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "んです + が",
+        "exampleStr": "相談したいことがある ＋ んですが"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual"
+      ],
+      "intent": "Providing background before a request or question, softening what follows",
+      "speakerStance": "Considerate, cushioning the upcoming request/question"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This が doesn't mean \"but\" -- it's a soft, trailing preamble",
+        "description": {
+          "vi": "が ở đây KHÔNG mang nghĩa \"nhưng\" mà chỉ là cách bỏ lửng câu để mềm mại hóa, thường được theo sau bằng một câu hỏi hoặc yêu cầu. んですが rất phổ biến khi mở đầu một tình huống cần giúp đỡ.",
+          "en": "が here does NOT mean \"but\" -- it's a soft, trailing device that cushions the sentence, typically followed by a question or request. んですが is very common when opening up a situation that needs help."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
+        "ja": "ちょっと相談したいことがあるんですが。",
+        "jaRuby": "ちょっと<ruby>相談<rp>(</rp><rt>そうだん</rt><rp>)</rp></ruby>したいことがあるんですが。",
+        "kana": "ちょっとそうだんしたいことがあるんですが。",
+        "romaji": "Chotto soudan shitai koto ga aru n desu ga.",
+        "vi": "Tôi có việc muốn trao đổi một chút...",
+        "en": "There's something I'd like to discuss with you…",
+        "contextualExplanation": {
+          "vi": "んですが mở đầu tình huống, để lửng, chờ người nghe hỏi/phản hồi.",
+          "en": "んですが opens the situation and trails off, waiting for the listener to respond."
+        }
+      },
+      {
+        "category": "polite",
         "ja": "すみません、道に迷ったんですが、駅はどちらですか。",
         "jaRuby": "すみません、<ruby>道<rp>(</rp><rt>みち</rt><rp>)</rp></ruby>に<ruby>迷<rp>(</rp><rt>まよ</rt><rp>)</rp></ruby>ったんですが、<ruby>駅<rp>(</rp><rt>えき</rt><rp>)</rp></ruby>はどちらですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Xin lỗi, tôi bị lạc đường, ga xe lửa ở hướng nào ạ?",
-        "en": "Excuse me, the thing is I'm lost — which way is the station?",
+        "kana": "すみません、みちにまよったんですが、えきはどちらですか。",
+        "romaji": "Sumimasen, michi ni mayotta n desu ga, eki wa dochira desu ka.",
+        "vi": "Xin lỗi, tôi bị lạc đường, không biết ga ở hướng nào ạ?",
+        "en": "Excuse me, I'm lost -- which way is the station?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "んですが cung cấp bối cảnh (bị lạc) trước khi đưa ra câu hỏi thật sự.",
+          "en": "んですが supplies context (being lost) before the actual question."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "予約を変更したいんですが、可能ですか。",
+        "jaRuby": "<ruby>予約<rp>(</rp><rt>よやく</rt><rp>)</rp></ruby>を<ruby>変更<rp>(</rp><rt>へんこう</rt><rp>)</rp></ruby>したいんですが、<ruby>可能<rp>(</rp><rt>かのう</rt><rp>)</rp></ruby>ですか。",
+        "kana": "よやくをへんこうしたいんですが、かのうですか。",
+        "romaji": "Yoyaku o henkou shitai n desu ga, kanou desu ka.",
+        "vi": "Tôi muốn đổi lịch đặt chỗ, có được không ạ?",
+        "en": "I'd like to change my reservation -- would that be possible?",
+        "contextualExplanation": {
+          "vi": "んですが rất phổ biến trong ngữ cảnh dịch vụ khách hàng để mở đầu một yêu cầu.",
+          "en": "んですが is very common in a customer-service context when opening a request."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "今、ちょっと時間ないんだけど、後で話せる？",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、ちょっと<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>ないんだけど、<ruby>後<rp>(</rp><rt>あと</rt><rp>)</rp></ruby>で<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>せる？",
+        "kana": "いま、ちょっとじかんないんだけど、あとではなせる？",
+        "romaji": "Ima, chotto jikan nai n dakedo, ato de hanaseru?",
+        "vi": "Giờ mình hơi bận, để lát nữa nói chuyện được không?",
+        "en": "I don't really have time right now -- can we talk later?",
+        "contextualExplanation": {
+          "vi": "んだけど là dạng thân mật của んですが, giữ nguyên chức năng đệm câu.",
+          "en": "んだけど is the casual form of んですが, keeping the same cushioning function."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "このシャツ、サイズが合わないんですが、返品できますか。",
+        "jaRuby": "このシャツ、サイズが<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>わないんですが、<ruby>返品<rp>(</rp><rt>へんぴん</rt><rp>)</rp></ruby>できますか。",
+        "kana": "このシャツ、サイズがあわないんですが、へんぴんできますか。",
+        "romaji": "Kono shatsu, saizu ga awanai n desu ga, henpin dekimasu ka.",
+        "vi": "Chiếc áo này không vừa size, tôi có thể trả hàng được không?",
+        "en": "This shirt doesn't fit -- can I return it?",
+        "contextualExplanation": {
+          "vi": "んですが trước một yêu cầu cụ thể trong ngữ cảnh mua sắm/dịch vụ.",
+          "en": "んですが before a specific request in a shopping/service context."
         }
       }
     ],
@@ -1889,27 +2138,103 @@
         "jaRuby": "<ruby>顔色<rp>(</rp><rt>かおいろ</rt><rp>)</rp></ruby>が<ruby>悪<rp>(</rp><rt>わる</rt><rp>)</rp></ruby>いですね。どうしたんですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_148",
+      "g_152",
+      "g_153"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "futsuukei + n desu ka (aite ni tsuite)",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "んですか (hỏi về tình huống của người nghe)",
+        "exampleStr": "疲れている ＋ んですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual"
+      ],
+      "intent": "Asking for the explanation behind something noticed about the listener",
+      "speakerStance": "Curious/concerned, prompted by an observation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "んですか signals \"I noticed something -- what's the story?\", different from a plain ですか question",
+        "description": {
+          "vi": "んですか luôn ngụ ý người nói đã QUAN SÁT thấy điều gì đó bất thường/đáng chú ý ở người nghe trước khi hỏi. Chỉ dùng ですか (không có ん) khi hỏi thông tin trung tính, chưa có manh mối gì trước đó.",
+          "en": "んですか always implies the speaker NOTICED something unusual/noteworthy about the listener before asking. Plain ですか (no ん) is used for a neutral question with no prior clue."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "顔色が悪いですね。どうしたんですか。",
-        "jaRuby": "<ruby>顔色<rp>(</rp><rt>かおいろ</rt><rp>)</rp></ruby>が<ruby>悪<rp>(</rp><rt>わる</rt><rp>)</rp></ruby>いですね。どうしたんですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Sắc mặt cậu không tốt nhỉ. Cậu bị làm sao vậy?",
-        "en": "You look pale. What's wrong?",
+        "ja": "顔色が悪いですね。大丈夫なんですか。",
+        "jaRuby": "<ruby>顔色<rp>(</rp><rt>かおいろ</rt><rp>)</rp></ruby>が<ruby>悪<rp>(</rp><rt>わる</rt><rp>)</rp></ruby>いですね。<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>なんですか。",
+        "kana": "かおいろがわるいですね。だいじょうぶなんですか。",
+        "romaji": "Kaoiro ga warui desu ne. Daijoubu na n desu ka.",
+        "vi": "Sắc mặt bạn không tốt nhỉ. Bạn có ổn không vậy?",
+        "en": "You look pale. Are you okay?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "んですか hỏi dựa trên quan sát (sắc mặt xấu) đã thấy ngay trước đó.",
+          "en": "んですか asks based on an observation (looking pale) just noted."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "どうして日本語がそんなに上手なんですか。",
+        "jaRuby": "どうして<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>がそんなに<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>なんですか。",
+        "kana": "どうしてにほんごがそんなにじょうずなんですか。",
+        "romaji": "Doushite nihongo ga sonna ni jouzu na n desu ka.",
+        "vi": "Sao bạn giỏi tiếng Nhật vậy?",
+        "en": "How come your Japanese is so good?",
+        "contextualExplanation": {
+          "vi": "んですか hỏi về lý do đằng sau một điều đáng chú ý ở người nghe (giỏi tiếng Nhật).",
+          "en": "んですか asks about the reason behind something noteworthy about the listener (being good at Japanese)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "今日、何かいいことがあったんですか。嬉しそうですね。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>かいいことがあったんですか。<ruby>嬉<rp>(</rp><rt>うれ</rt><rp>)</rp></ruby>しそうですね。",
+        "kana": "きょう、なにかいいことがあったんですか。うれしそうですね。",
+        "romaji": "Kyou, nanika ii koto ga atta n desu ka. Ureshisou desu ne.",
+        "vi": "Hôm nay có chuyện gì vui à? Trông bạn có vẻ vui vậy.",
+        "en": "Did something good happen today? You look happy.",
+        "contextualExplanation": {
+          "vi": "んですか theo sau một nhận xét về biểu hiện quan sát được (嬉しそう).",
+          "en": "んですか follows a remark about an observed expression (嬉しそう)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "どうしたの？何かあったの？",
+        "jaRuby": "どうしたの？<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>かあったの？",
+        "kana": "どうしたの？なにかあったの？",
+        "romaji": "Doushita no? Nanika atta no?",
+        "vi": "Sao vậy? Có chuyện gì à?",
+        "en": "What's wrong? Did something happen?",
+        "contextualExplanation": {
+          "vi": "の (thay cho んですか) là dạng thân mật, đặc biệt phổ biến trong lời hỏi thăm.",
+          "en": "の (replacing んですか) is the casual form, especially common when checking on someone."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "あれ、今日は車で来なかったんですか。",
+        "jaRuby": "あれ、<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>車<rp>(</rp><rt>くるま</rt><rp>)</rp></ruby>で<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>なかったんですか。",
+        "kana": "あれ、きょうはくるまでこなかったんですか。",
+        "romaji": "Are, kyou wa kuruma de konakatta n desu ka.",
+        "vi": "Ơ, hôm nay không lái xe đến à?",
+        "en": "Huh, you didn't come by car today?",
+        "contextualExplanation": {
+          "vi": "んですか cũng dùng khi nhận thấy điều khác thường so với lệ thường (thường lái xe nhưng hôm nay không thấy xe).",
+          "en": "んですか also fits when noticing a deviation from the usual (normally drives, but no car today)."
         }
       }
     ],
@@ -1942,27 +2267,103 @@
         "jaRuby": "この<ruby>漢字<rp>(</rp><rt>かんじ</rt><rp>)</rp></ruby>、どう<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>むんですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_151",
+      "g_153"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "futsuukei + n desu (ka) (wadai ni tsuite)",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "んです（か）（hỏi về chủ đề đang nói đến）",
+        "exampleStr": "休みだ ＋ んですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual"
+      ],
+      "intent": "Asking for more detail/explanation about a topic already introduced in the conversation",
+      "speakerStance": "Curious, following up on a topic"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This use follows up on a TOPIC (not the listener's personal state, unlike g_151)",
+        "description": {
+          "vi": "Khác với g_151 (hỏi về TÌNH TRẠNG của người nghe), ở đây んですか hỏi thêm chi tiết về một CHỦ ĐỀ đã được nhắc đến trong hội thoại (không nhất thiết liên quan trực tiếp đến người nghe).",
+          "en": "Unlike g_151 (asking about the listener's personal state), here んですか asks for more detail about a TOPIC already raised in conversation (not necessarily directly about the listener)."
+        },
+        "relatedGrammarId": "g_151"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この漢字、どう読むんですか。",
-        "jaRuby": "この<ruby>漢字<rp>(</rp><rt>かんじ</rt><rp>)</rp></ruby>、どう<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>むんですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Chữ Hán này đọc như thế nào vậy?",
-        "en": "How do you read this kanji?",
+        "ja": "A：明日、休みです。　B：そうなんですか。何をするんですか。",
+        "jaRuby": "A：<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みです。　B：そうなんですか。<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をするんですか。",
+        "kana": "A：あした、やすみです。　B：そうなんですか。なにをするんですか。",
+        "romaji": "A: Ashita, yasumi desu. B: Sou na n desu ka. Nani o suru n desu ka.",
+        "vi": "A: Mai tôi nghỉ. B: Vậy à? Bạn sẽ làm gì?",
+        "en": "A: I'm off tomorrow. B: Oh really? What are you going to do?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "B hỏi thêm chi tiết về chủ đề A vừa nêu (ngày nghỉ).",
+          "en": "B asks for more detail about the topic A just raised (the day off)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この映画、面白いんですか。",
+        "jaRuby": "この<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>、<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>いんですか。",
+        "kana": "このえいが、おもしろいんですか。",
+        "romaji": "Kono eiga, omoshiroi n desu ka.",
+        "vi": "Bộ phim này hay à?",
+        "en": "Is this movie good?",
+        "contextualExplanation": {
+          "vi": "んですか hỏi về một chủ đề đang được nhắc tới (bộ phim), không liên quan trực tiếp đến người nghe.",
+          "en": "んですか asks about a topic currently discussed (the movie), not directly about the listener."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "このイベントは毎年あるんですか。",
+        "jaRuby": "このイベントは<ruby>毎年<rp>(</rp><rt>まいとし</rt><rp>)</rp></ruby>あるんですか。",
+        "kana": "このイベントはまいとしあるんですか。",
+        "romaji": "Kono ibento wa maitoshi aru n desu ka.",
+        "vi": "Sự kiện này diễn ra hằng năm à?",
+        "en": "Does this event happen every year?",
+        "contextualExplanation": {
+          "vi": "んですか hỏi để làm rõ thông tin về chủ đề (sự kiện) vừa được nhắc đến.",
+          "en": "んですか asks to clarify information about the topic (the event) just mentioned."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "それ、いつから始まったの？",
+        "jaRuby": "それ、いつから<ruby>始<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>まったの？",
+        "kana": "それ、いつからはじまったの？",
+        "romaji": "Sore, itsu kara hajimatta no?",
+        "vi": "Cái đó bắt đầu từ khi nào vậy?",
+        "en": "When did that start?",
+        "contextualExplanation": {
+          "vi": "の (thân mật) hỏi thêm về chủ đề đang nói đến.",
+          "en": "の (casual) asks for more about the topic under discussion."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "このお店、いつもこんなに混んでいるんですか。",
+        "jaRuby": "このお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>、いつもこんなに<ruby>混<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>んでいるんですか。",
+        "kana": "このおみせ、いつもこんなにこんでいるんですか。",
+        "romaji": "Kono omise, itsumo konna ni konde iru n desu ka.",
+        "vi": "Quán này lúc nào cũng đông như vậy à?",
+        "en": "Is this shop always this crowded?",
+        "contextualExplanation": {
+          "vi": "んですか cũng dùng khi thắc mắc về một điều đang quan sát được (đông khách) trong ngữ cảnh chủ đề chung.",
+          "en": "んですか also works when curious about something currently observed (crowdedness), within a general-topic context."
         }
       }
     ],
@@ -1995,27 +2396,102 @@
         "jaRuby": "<ruby>外<rp>(</rp><rt>そと</rt><rp>)</rp></ruby>で<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>が<ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>いているんですが、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>かあったんですか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_151",
+      "g_152"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "futsuukei + n desu (ka) (me no mae no joukyou)",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "んです（か）（hỏi về tình huống trước mắt）",
+        "exampleStr": "止まっている ＋ んですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "casual"
+      ],
+      "intent": "Asking about what's currently happening right in front of the speaker",
+      "speakerStance": "Curious, prompted by an immediate visual/situational observation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "The three んです question uses (g_151/152/153) differ only by WHAT prompted the question, not by form",
+        "description": {
+          "vi": "Ba cách dùng んですか (g_151: về người nghe, g_152: về chủ đề, g_153: về tình huống trước mắt) đều CÙNG MỘT hình thức ngữ pháp -- điểm khác biệt chỉ nằm ở việc điều gì đã KÍCH HOẠT câu hỏi (quan sát về người, thông tin vừa nghe, hay cảnh tượng đang diễn ra).",
+          "en": "All three んですか uses (g_151: about the listener, g_152: about a topic, g_153: about the immediate situation) share the SAME grammatical form -- the only difference is WHAT PROMPTED the question (an observation about a person, information just heard, or a scene currently unfolding)."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "外で子供が泣いているんですが、何かあったんですか。",
-        "jaRuby": "<ruby>外<rp>(</rp><rt>そと</rt><rp>)</rp></ruby>で<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>が<ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>いているんですが、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>かあったんですか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Có đứa trẻ đang khóc ở ngoài kìa, có chuyện gì vậy?",
-        "en": "There's a child crying outside — did something happen?",
+        "ja": "あそこに人が集まっていますね。何があったんですか。",
+        "jaRuby": "あそこに<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby>集<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>まっていますね。<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>があったんですか。",
+        "kana": "あそこにひとがあつまっていますね。なにがあったんですか。",
+        "romaji": "Asoko ni hito ga atsumatte imasu ne. Nani ga atta n desu ka.",
+        "vi": "Đằng kia có người tụ tập nhỉ. Có chuyện gì xảy ra vậy?",
+        "en": "People are gathering over there. What happened?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "んですか hỏi về nguyên nhân của một cảnh tượng đang diễn ra trước mắt (đám đông).",
+          "en": "んですか asks about the cause of an unfolding scene right in front of the speaker (a crowd)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この機械、なぜ止まっているんですか。",
+        "jaRuby": "この<ruby>機械<rp>(</rp><rt>きかい</rt><rp>)</rp></ruby>、なぜ<ruby>止<rp>(</rp><rt>と</rt><rp>)</rp></ruby>まっているんですか。",
+        "kana": "このきかい、なぜとまっているんですか。",
+        "romaji": "Kono kikai, naze tomatte iru n desu ka.",
+        "vi": "Cái máy này sao lại dừng vậy?",
+        "en": "Why is this machine stopped?",
+        "contextualExplanation": {
+          "vi": "んですか hỏi ngay tại chỗ về tình trạng đang quan sát được (máy đang dừng).",
+          "en": "んですか asks on the spot about an observed state (the machine stopped)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "この部屋、なんでこんなに暑いんですか。",
+        "jaRuby": "この<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>、なんでこんなに<ruby>暑<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>いんですか。",
+        "kana": "このへや、なんでこんなにあついんですか。",
+        "romaji": "Kono heya, nande konna ni atsui n desu ka.",
+        "vi": "Sao căn phòng này nóng vậy?",
+        "en": "Why is this room so hot?",
+        "contextualExplanation": {
+          "vi": "んですか hỏi về tình huống đang cảm nhận được ngay lúc nói (nóng).",
+          "en": "んですか asks about a situation felt right now (the heat)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "あれ、電気ついてる。誰かいるの？",
+        "jaRuby": "あれ、<ruby>電気<rp>(</rp><rt>でんき</rt><rp>)</rp></ruby>ついてる。<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かいるの？",
+        "kana": "あれ、でんきついてる。だれかいるの？",
+        "romaji": "Are, denki tsuiteru. Dareka iru no?",
+        "vi": "Ơ, đèn sáng kìa. Có ai ở trong không vậy?",
+        "en": "Huh, the light's on. Is someone there?",
+        "contextualExplanation": {
+          "vi": "の (thân mật) hỏi về tình huống quan sát được ngay trước mắt.",
+          "en": "の (casual) asks about a situation observed right in front of the speaker."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "このドア、開かないんですけど、鍵がかかっているんですか。",
+        "jaRuby": "このドア、<ruby>開<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>かないんですけど、<ruby>鍵<rp>(</rp><rt>かぎ</rt><rp>)</rp></ruby>がかかっているんですか。",
+        "kana": "このドア、あかないんですけど、かぎがかかっているんですか。",
+        "romaji": "Kono doa, akanai n desu kedo, kagi ga kakatte iru n desu ka.",
+        "vi": "Cửa này không mở được, có phải bị khóa không?",
+        "en": "This door won't open -- is it locked?",
+        "contextualExplanation": {
+          "vi": "んですけど (mở đầu, xem g_150) + んですか (hỏi) cùng xuất hiện khi mô tả một vấn đề trước mắt rồi hỏi lý do.",
+          "en": "んですけど (opener, see g_150) + んですか (question) both appear when describing an immediate problem, then asking why."
         }
       }
     ],
@@ -2048,27 +2524,103 @@
         "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>三時間<rp>(</rp><rt>さんじかん</rt><rp>)</rp></ruby>も<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_003"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(number) + mo ~",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "(số lượng) + も",
+        "exampleStr": "10万円 ＋ も"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "casual"
+      ],
+      "intent": "Emphasizing that a quantity is larger/more than expected",
+      "speakerStance": "Expressing surprise at the magnitude"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "This emphatic も (with a number) is a different use from the additive も (g_003)",
+        "description": {
+          "vi": "も ở đây không mang nghĩa \"cũng\" như g_003 -- khi đi sau một con số, も nhấn mạnh số lượng đó LỚN HƠN dự kiến (\"tận\"). Đây là cách dùng も thứ hai cần phân biệt rõ với も thêm vào cơ bản.",
+          "en": "も here doesn't mean \"too/also\" as in g_003 -- when it follows a number, も emphasizes that the quantity is LARGER than expected (\"as many/much as\"). This is a second use of も, distinct from the basic additive one."
+        },
+        "relatedGrammarId": "g_003"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この本を三時間も読みました。",
-        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>三時間<rp>(</rp><rt>さんじかん</rt><rp>)</rp></ruby>も<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã đọc quyển sách này tận ba tiếng đồng hồ.",
-        "en": "I read this book for as long as three hours.",
+        "ja": "このかばんは10万円もしました。",
+        "jaRuby": "このかばんは10<ruby>万円<rp>(</rp><rt>まんえん</rt><rp>)</rp></ruby>もしました。",
+        "kana": "このかばんはじゅうまんえんもしました。",
+        "romaji": "Kono kaban wa juuman-en mo shimashita.",
+        "vi": "Cái túi này tận 100 nghìn yên đấy.",
+        "en": "This bag cost as much as 100,000 yen.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "も sau số tiền nhấn mạnh mức giá cao ngoài dự kiến.",
+          "en": "も after the amount emphasizes an unexpectedly high price."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "会議は3時間も続きました。",
+        "jaRuby": "<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>は3<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>も<ruby>続<rp>(</rp><rt>つづ</rt><rp>)</rp></ruby>きました。",
+        "kana": "かいぎはさんじかんもつづきました。",
+        "romaji": "Kaigi wa sanjikan mo tsuzukimashita.",
+        "vi": "Cuộc họp kéo dài tận 3 tiếng đồng hồ.",
+        "en": "The meeting went on for as long as 3 hours.",
+        "contextualExplanation": {
+          "vi": "も nhấn mạnh khoảng thời gian dài hơn mong đợi.",
+          "en": "も emphasizes a duration longer than expected."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "このパーティーに100人も来るんですか。",
+        "jaRuby": "このパーティーに100<ruby>人<rp>(</rp><rt>にん</rt><rp>)</rp></ruby>も<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>るんですか。",
+        "kana": "このパーティーにひゃくにんもくるんですか。",
+        "romaji": "Kono paatii ni hyakunin mo kuru n desu ka.",
+        "vi": "Bữa tiệc này có tận 100 người đến à?",
+        "en": "As many as 100 people are coming to this party?",
+        "contextualExplanation": {
+          "vi": "も cũng dùng để bày tỏ sự ngạc nhiên về số lượng người.",
+          "en": "も also expresses surprise at a large number of people."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "このケーキ、一人で3個も食べたの？",
+        "jaRuby": "このケーキ、<ruby>一人<rp>(</rp><rt>ひとり</rt><rp>)</rp></ruby>で3<ruby>個<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>も<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べたの？",
+        "kana": "このケーキ、ひとりでさんこもたべたの？",
+        "romaji": "Kono keeki, hitori de sanko mo tabeta no?",
+        "vi": "Bánh này, bạn ăn một mình tận 3 cái à?",
+        "en": "You ate as many as 3 of these cakes by yourself?",
+        "contextualExplanation": {
+          "vi": "も trong hội thoại thân mật, bày tỏ sự ngạc nhiên/trêu đùa.",
+          "en": "も in casual conversation, expressing surprise/teasing."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼は1日に10冊も本を読むそうです。",
+        "jaRuby": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>は1<ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby>に10<ruby>冊<rp>(</rp><rt>さつ</rt><rp>)</rp></ruby>も<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>むそうです。",
+        "kana": "かれはいちにちにじゅっさつもほんをよむそうです。",
+        "romaji": "Kare wa ichinichi ni jussatsu mo hon o yomu sou desu.",
+        "vi": "Nghe nói anh ấy đọc tận 10 cuốn sách một ngày.",
+        "en": "I heard he reads as many as 10 books a day.",
+        "contextualExplanation": {
+          "vi": "も kết hợp được với そうです (nghe nói, g_144) để truyền đạt một con số đáng kinh ngạc đã nghe được.",
+          "en": "も combines with そうです (hearsay, g_144) to relay an astonishing number one has heard."
         }
       }
     ],
