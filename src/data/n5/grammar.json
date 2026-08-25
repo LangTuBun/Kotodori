@@ -12568,30 +12568,120 @@
         "jaRuby": "<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>る<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、<ruby>歯<rp>(</rp><rt>は</rt><rp>)</rp></ruby>を<ruby>磨<rp>(</rp><rt>みが</rt><rp>)</rp></ruby>きます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_080_2",
+      "g_093"
+    ],
     "tags": [],
     "patternRuby": "V1る/Nの+<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、V2",
     "requiredVerbForm": [
       "dictionary"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V1-ru/N no mae ni, V2",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Dictionary form + 前に",
+        "exampleStr": "寝る ＋ 前に"
+      },
+      {
+        "pos": "noun",
+        "form": "N + の前に",
+        "exampleStr": "食事 ＋ の前に"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that V2 happens before V1/N",
+      "speakerStance": "Neutral, sequencing"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "V1 is always dictionary form before 前に, even if V2 is in the past",
+        "description": {
+          "vi": "Dù V2 ở thì quá khứ, V1 trước 前に vẫn LUÔN ở thể từ điển (không chia quá khứ) -- vì 前に chỉ mối quan hệ thời gian tương đối, không phải thời của cả câu.",
+          "en": "Even when V2 is in the past tense, V1 before 前に is ALWAYS in the dictionary form (never conjugated to past) -- because 前に marks a relative time relationship, not the tense of the whole sentence."
+        },
+        "examples": [
+          {
+            "incorrect": "寝た前に、歯を磨きました。",
+            "correct": "寝る前に、歯を磨きました。",
+            "explanation": {
+              "vi": "V1 trước 前に luôn ở thể từ điển.",
+              "en": "V1 before 前に is always dictionary form."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
         "ja": "寝る前に、歯を磨きます。",
         "jaRuby": "<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>る<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、<ruby>歯<rp>(</rp><rt>は</rt><rp>)</rp></ruby>を<ruby>磨<rp>(</rp><rt>みが</rt><rp>)</rp></ruby>きます。",
-        "kana": "",
-        "romaji": "",
+        "kana": "ねるまえに、はをみがきます。",
+        "romaji": "Neru mae ni, ha o migakimasu.",
         "vi": "Trước khi ngủ, tôi đánh răng.",
-        "en": "I brush my teeth before I sleep.",
+        "en": "I brush my teeth before going to bed.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "寝る (thể từ điển) + 前に đứng trước V2 để nêu trình tự.",
+          "en": "寝る (dictionary form) + 前に precedes V2 to establish sequence."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "食事の前に、手を洗ってください。",
+        "jaRuby": "<ruby>食事<rp>(</rp><rt>しょくじ</rt><rp>)</rp></ruby>の<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、<ruby>手<rp>(</rp><rt>て</rt><rp>)</rp></ruby>を<ruby>洗<rp>(</rp><rt>あら</rt><rp>)</rp></ruby>ってください。",
+        "kana": "しょくじのまえに、てをあらってください。",
+        "romaji": "Shokuji no mae ni, te o aratte kudasai.",
+        "vi": "Trước khi ăn, hãy rửa tay.",
+        "en": "Please wash your hands before eating.",
+        "contextualExplanation": {
+          "vi": "N + の前に dùng khi diễn tả trước một danh từ sự kiện.",
+          "en": "N + の前に is used before an event noun."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "出かける前に、何をしますか。",
+        "jaRuby": "<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かける<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしますか。",
+        "kana": "でかけるまえに、なにをしますか。",
+        "romaji": "Dekakeru mae ni, nani o shimasu ka.",
+        "vi": "Trước khi ra ngoài, bạn làm gì?",
+        "en": "What do you do before heading out?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi về thói quen thường theo mẫu 前に.",
+          "en": "A question about a habit commonly follows the 前に pattern."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "帰る前に、ちょっとコンビニ寄ろう。",
+        "jaRuby": "<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>る<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、ちょっとコンビニ<ruby>寄<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>ろう。",
+        "kana": "かえるまえに、ちょっとコンビニよろう。",
+        "romaji": "Kaeru mae ni, chotto konbini yorou.",
+        "vi": "Trước khi về, ghé cửa hàng tiện lợi một chút đi.",
+        "en": "Before heading home, let's stop by the convenience store.",
+        "contextualExplanation": {
+          "vi": "Cấu trúc giữ nguyên cả trong lời rủ rê thân mật.",
+          "en": "The structure stays the same even in a casual invitation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "5年前に日本に来ました。",
+        "jaRuby": "5<ruby>年前<rp>(</rp><rt>ねんまえ</rt><rp>)</rp></ruby>に<ruby>日本<rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ました。",
+        "kana": "ごねんまえににほんにきました。",
+        "romaji": "Gonen mae ni Nihon ni kimashita.",
+        "vi": "Tôi đã đến Nhật 5 năm trước.",
+        "en": "I came to Japan 5 years ago.",
+        "contextualExplanation": {
+          "vi": "数字+年前に (X năm trước) là cách dùng khác của 前に, không liên quan đến động từ V1.",
+          "en": "number+年前に (\"X years ago\") is a different use of 前に, unrelated to a V1 verb."
         }
       }
     ],
@@ -12623,30 +12713,111 @@
         "jaRuby": "<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>の<ruby>後<rp>(</rp><rt>のち</rt><rp>)</rp></ruby>で、ジムに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_080_1",
+      "g_093"
+    ],
     "tags": [],
     "patternRuby": "V1た/Nの+<ruby>後<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>で、V2",
     "requiredVerbForm": [
       "ta"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V1-ta/N no ato de, V2",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "た-form + 後で",
+        "exampleStr": "食べる → 食べた ＋ 後で"
+      },
+      {
+        "pos": "noun",
+        "form": "N + の後で",
+        "exampleStr": "食事 ＋ の後で"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that V2 happens after V1/N",
+      "speakerStance": "Neutral, sequencing"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "V1 uses た-form here, the opposite of 前に's dictionary form",
+        "description": {
+          "vi": "Ngược lại hoàn toàn với 前に (g_080_1, luôn dùng thể từ điển), 後で bắt buộc dùng thể た cho V1, phản ánh trực quan hành động ĐÃ hoàn tất trước khi V2 xảy ra.",
+          "en": "The exact opposite of 前に (g_080_1, always dictionary form), 後で requires the た-form for V1, intuitively reflecting that the action is ALREADY complete before V2 happens."
+        },
+        "relatedGrammarId": "g_080_1"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "仕事の後で、ジムに行きます。",
-        "jaRuby": "<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>の<ruby>後<rp>(</rp><rt>のち</rt><rp>)</rp></ruby>で、ジムに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Sau khi làm việc, tôi đi tập gym.",
-        "en": "I go to the gym after work.",
+        "ja": "食事をした後で、散歩します。",
+        "jaRuby": "<ruby>食事<rp>(</rp><rt>しょくじ</rt><rp>)</rp></ruby>をした<ruby>後<rp>(</rp><rt>あと</rt><rp>)</rp></ruby>で、<ruby>散歩<rp>(</rp><rt>さんぽ</rt><rp>)</rp></ruby>します。",
+        "kana": "しょくじをしたあとで、さんぽします。",
+        "romaji": "Shokuji o shita ato de, sanpo shimasu.",
+        "vi": "Sau khi ăn, tôi đi dạo.",
+        "en": "After eating, I go for a walk.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "した (thể た) + 後で nêu hành động đã xong trước khi V2 diễn ra.",
+          "en": "した (ta-form) + 後で marks the completed action before V2."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "仕事の後で、飲みに行きませんか。",
+        "jaRuby": "<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>の<ruby>後<rp>(</rp><rt>あと</rt><rp>)</rp></ruby>で、<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きませんか。",
+        "kana": "しごとのあとで、のみにいきませんか。",
+        "romaji": "Shigoto no ato de, nomi ni ikimasen ka.",
+        "vi": "Sau giờ làm, đi uống nước không?",
+        "en": "After work, would you like to go for a drink?",
+        "contextualExplanation": {
+          "vi": "N + の後で dùng trước một danh từ sự kiện.",
+          "en": "N + の後で is used before an event noun."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "授業が終わった後で、何をしますか。",
+        "jaRuby": "<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>が<ruby>終<rp>(</rp><rt>お</rt><rp>)</rp></ruby>わった<ruby>後<rp>(</rp><rt>あと</rt><rp>)</rp></ruby>で、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしますか。",
+        "kana": "じゅぎょうがおわったあとで、なにをしますか。",
+        "romaji": "Jugyou ga owatta ato de, nani o shimasu ka.",
+        "vi": "Sau khi tan học bạn làm gì?",
+        "en": "What do you do after class ends?",
+        "contextualExplanation": {
+          "vi": "終わった (thể た) + 後で hỏi về kế hoạch sau một sự kiện.",
+          "en": "終わった (ta-form) + 後で asks about a plan after an event."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "お風呂に入った後で、寝る。",
+        "jaRuby": "お<ruby>風呂<rp>(</rp><rt>ふろ</rt><rp>)</rp></ruby>に<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>った<ruby>後<rp>(</rp><rt>あと</rt><rp>)</rp></ruby>で、<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>る。",
+        "kana": "おふろにはいったあとで、ねる。",
+        "romaji": "Ofuro ni haitta ato de, neru.",
+        "vi": "Sau khi tắm xong, tôi đi ngủ.",
+        "en": "After taking a bath, I go to sleep.",
+        "contextualExplanation": {
+          "vi": "Cấu trúc giữ nguyên trong văn nói thân mật.",
+          "en": "The structure stays the same in casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "3年後で、卒業できると思います。",
+        "jaRuby": "3<ruby>年後<rp>(</rp><rt>ねんご</rt><rp>)</rp></ruby>で、<ruby>卒業<rp>(</rp><rt>そつぎょう</rt><rp>)</rp></ruby>できると<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>います。",
+        "kana": "さんねんごで、そつぎょうできるとおもいます。",
+        "romaji": "San-nen go de, sotsugyou dekiru to omoimasu.",
+        "vi": "Tôi nghĩ 3 năm sau tôi sẽ tốt nghiệp được.",
+        "en": "I think I'll be able to graduate in 3 years.",
+        "contextualExplanation": {
+          "vi": "数字+年後で (X năm sau) là cách dùng khác của 後で, không liên quan đến động từ V1.",
+          "en": "number+年後で (\"in X years\") is a different use of 後で, unrelated to a V1 verb."
         }
       }
     ],
@@ -12840,24 +13011,96 @@
     "requiredVerbForm": [
       "ta"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-ta bakari da",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "た-form + ばかりだ",
+        "exampleStr": "始める → 始めた ＋ ばかりだ"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Emphasizing that an action just happened, very recently",
+      "speakerStance": "Subjective sense of \"just now\" -- often used to explain a current state"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "ばかり measures subjective, felt recency -- not always a strict objective timeframe",
+        "description": {
+          "vi": "ばかり mang tính cảm nhận chủ quan về \"vừa mới\" -- có thể dùng cho việc xảy ra vài phút trước, nhưng cũng có thể dùng cho việc vài tháng trước nếu người nói vẫn cảm thấy nó \"còn mới\". Không có mốc thời gian cứng nhắc.",
+          "en": "ばかり expresses a subjective sense of \"just now\" -- it can apply to something minutes ago, but also to something months ago if the speaker still feels it as recent. There's no strict objective cutoff."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
         "ja": "この会社に入ったばかりです。",
         "jaRuby": "この<ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby>に<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>ったばかりです。",
-        "kana": "",
-        "romaji": "",
+        "kana": "このかいしゃにはいったばかりです。",
+        "romaji": "Kono kaisha ni haitta bakari desu.",
         "vi": "Tôi vừa mới vào công ty này.",
         "en": "I just joined this company.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "入った (thể た) + ばかりです nhấn mạnh việc vừa mới xảy ra.",
+          "en": "入った (ta-form) + ばかりです emphasizes something that just happened."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "ご飯を食べたばかりなので、お腹がいっぱいです。",
+        "jaRuby": "ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べたばかりなので、お<ruby>腹<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>がいっぱいです。",
+        "kana": "ごはんをたべたばかりなので、おなかがいっぱいです。",
+        "romaji": "Gohan o tabeta bakari na node, onaka ga ippai desu.",
+        "vi": "Vì vừa mới ăn cơm xong nên tôi no rồi.",
+        "en": "Since I just ate, I'm full.",
+        "contextualExplanation": {
+          "vi": "ばかりなので kết hợp lý do (vừa mới xảy ra) với kết quả hiện tại.",
+          "en": "ばかりなので links the reason (something just happened) to a current result."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "来たばかりですか。",
+        "jaRuby": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>たばかりですか。",
+        "kana": "きたばかりですか。",
+        "romaji": "Kita bakari desu ka.",
+        "vi": "Bạn vừa mới đến à?",
+        "en": "Did you just arrive?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi xác nhận về thời điểm gần đây của một hành động.",
+          "en": "A question confirming the recency of an action."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "この曲、聞いたばかりなのに、もう好きになった。",
+        "jaRuby": "この<ruby>曲<rp>(</rp><rt>きょく</rt><rp>)</rp></ruby>、<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いたばかりなのに、もう<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きになった。",
+        "kana": "このきょく、きいたばかりなのに、もうすきになった。",
+        "romaji": "Kono kyoku, kiita bakari na noni, mou suki ni natta.",
+        "vi": "Bài hát này mới nghe xong mà đã thích rồi.",
+        "en": "I just heard this song, but I already like it.",
+        "contextualExplanation": {
+          "vi": "ばかりなのに (vừa mới ~ vậy mà) nhấn mạnh sự nhanh chóng bất ngờ.",
+          "en": "ばかりなのに (\"just... yet already\") emphasizes a surprisingly quick change."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "日本語を習い始めたばかりで、まだ上手じゃないです。",
+        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>習<rp>(</rp><rt>なら</rt><rp>)</rp></ruby>い<ruby>始<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めたばかりで、まだ<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>じゃないです。",
+        "kana": "にほんごをならいはじめたばかりで、まだじょうずじゃないです。",
+        "romaji": "Nihongo o narai hajimeta bakari de, mada jouzu janai desu.",
+        "vi": "Tôi mới bắt đầu học tiếng Nhật nên chưa giỏi.",
+        "en": "I only recently started learning Japanese, so I'm not good yet.",
+        "contextualExplanation": {
+          "vi": "ばかりで dùng để nối, giải thích tình trạng hiện tại xuất phát từ việc \"mới bắt đầu\".",
+          "en": "ばかりで links to explain a current state stemming from \"just having started\"."
         }
       }
     ],
@@ -12895,24 +13138,96 @@
     "requiredVerbForm": [
       "ta"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-ta koto ga arimasu",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "た-form + ことがあります",
+        "exampleStr": "行く → 行った ＋ ことがあります"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that one has experienced something at least once",
+      "speakerStance": "Neutral, reporting past experience"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "ことがあります (experience) ≠ ことがある (a plain fact/possibility exists)",
+        "description": {
+          "vi": "ことがあります ở đây chuyên nói về TRẢI NGHIỆM đã từng có (đã từng làm gì đó ít nhất một lần). Đừng nhầm với cách dùng khác của こと + ある để diễn tả \"đôi khi xảy ra\" (V る/ますことがある, một mẫu khác ngoài N5).",
+          "en": "ことがあります here is specifically about past EXPERIENCE (having done something at least once). Don't confuse it with another use of こと + ある meaning \"sometimes happens\" (Vる/ますことがある, a different pattern beyond N5)."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "日本に行ったことがあります。",
-        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ったことがあります。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã từng đi Nhật Bản.",
+        "ja": "日本へ行ったことがあります。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>へ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ったことがあります。",
+        "kana": "にほんへいったことがあります。",
+        "romaji": "Nihon e itta koto ga arimasu.",
+        "vi": "Tôi đã từng đi Nhật.",
         "en": "I've been to Japan before.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "行った (thể た) + ことがあります diễn tả kinh nghiệm đã từng có.",
+          "en": "行った (ta-form) + ことがあります expresses a past experience."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "納豆を食べたことがありますか。",
+        "jaRuby": "<ruby>納豆<rp>(</rp><rt>なっとう</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べたことがありますか。",
+        "kana": "なっとうをたべたことがありますか。",
+        "romaji": "Nattou o tabeta koto ga arimasu ka.",
+        "vi": "Bạn đã từng ăn natto chưa?",
+        "en": "Have you ever eaten natto?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi rất phổ biến khi hỏi về trải nghiệm ẩm thực/văn hóa.",
+          "en": "A very common question when asking about a food/cultural experience."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "富士山に登ったことがありません。",
+        "jaRuby": "<ruby>富士山<rp>(</rp><rt>ふじさん</rt><rp>)</rp></ruby>に<ruby>登<rp>(</rp><rt>のぼ</rt><rp>)</rp></ruby>ったことがありません。",
+        "kana": "ふじさんにのぼったことがありません。",
+        "romaji": "Fujisan ni nobotta koto ga arimasen.",
+        "vi": "Tôi chưa từng leo núi Phú Sĩ.",
+        "en": "I've never climbed Mt. Fuji.",
+        "contextualExplanation": {
+          "vi": "ことがありません phủ định trải nghiệm, nghĩa \"chưa từng\".",
+          "en": "ことがありません negates the experience, meaning \"have never\"."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "この映画、見たことある！",
+        "jaRuby": "この<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>、<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>たことある！",
+        "kana": "このえいが、みたことある！",
+        "romaji": "Kono eiga, mita koto aru!",
+        "vi": "Phim này tôi từng xem rồi!",
+        "en": "I've seen this movie before!",
+        "contextualExplanation": {
+          "vi": "あります → ある ở thể thường trong văn nói thân mật.",
+          "en": "あります → ある in casual speech."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "一度だけ、飛行機に乗ったことがあります。",
+        "jaRuby": "<ruby>一度<rp>(</rp><rt>いちど</rt><rp>)</rp></ruby>だけ、<ruby>飛行機<rp>(</rp><rt>ひこうき</rt><rp>)</rp></ruby>に<ruby>乗<rp>(</rp><rt>の</rt><rp>)</rp></ruby>ったことがあります。",
+        "kana": "いちどだけ、ひこうきにのったことがあります。",
+        "romaji": "Ichido dake, hikouki ni notta koto ga arimasu.",
+        "vi": "Tôi chỉ mới đi máy bay một lần thôi.",
+        "en": "I've only ridden a plane once.",
+        "contextualExplanation": {
+          "vi": "一度だけ (chỉ một lần) thêm vào để làm rõ mức độ của trải nghiệm.",
+          "en": "一度だけ (\"only once\") adds precision about the extent of the experience."
         }
       }
     ],
@@ -12944,30 +13259,114 @@
         "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>めば/<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>ければ"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_085",
+      "g_061_1"
+    ],
     "tags": [],
     "patternRuby": "Thể ば (Vば/Aいければ)",
     "requiredVerbForm": [
       "ba"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(ba-form formation)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Group 1: う-row → え-row + ば",
+        "exampleStr": "書く → 書けば"
+      },
+      {
+        "pos": "verb",
+        "form": "Group 2: drop る + れば",
+        "exampleStr": "食べる → 食べれば"
+      },
+      {
+        "pos": "i-adj",
+        "form": "い → ければ",
+        "exampleStr": "安い → 安ければ"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Explaining how to conjugate a verb/i-adjective into its ば-conditional form",
+      "speakerStance": "Neutral, instructional/reference"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "The え-row substitution mirrors Group 1's potential form -- easy to conflate",
+        "description": {
+          "vi": "Với động từ nhóm 1, thể ば dùng CÙNG hàng え như thể khả năng (書く→書けば cũng giống 書ける), nhưng ば thêm vào sau chứ không phải ます. Dễ nhầm hai thể này vì âm giống nhau.",
+          "en": "For Group 1 verbs, the ば-form uses the SAME e-row substitution as the potential form (書く→書けば looks like 書ける), but ば attaches instead of ます. Easy to conflate the two since they sound alike."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "飲めば/高ければ",
-        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>めば/<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>ければ",
-        "kana": "",
-        "romaji": "",
-        "vi": "nếu uống / nếu cao",
-        "en": "if (I) drink / if (it's) tall",
+        "ja": "書く（Group1）→ 書けば",
+        "jaRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>く（Group1）→ <ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>けば",
+        "kana": "かく → かけば",
+        "romaji": "Kaku → kakeba",
+        "vi": "Viết → nếu viết",
+        "en": "To write → if (one) writes",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Nhóm 1: く (hàng う) đổi thành け (hàng え) rồi thêm ば.",
+          "en": "Group 1: く (u-row) becomes け (e-row), then ば is added."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "食べる（Group2）→ 食べれば",
+        "jaRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる（Group2）→ <ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べれば",
+        "kana": "たべる → たべれば",
+        "romaji": "Taberu → tabereba",
+        "vi": "Ăn → nếu ăn",
+        "en": "To eat → if (one) eats",
+        "contextualExplanation": {
+          "vi": "Nhóm 2: bỏ る, thêm れば.",
+          "en": "Group 2: drop る, add れば."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "安い（Aい）→ 安ければ",
+        "jaRuby": "<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>い（Aい）→ <ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ければ",
+        "kana": "やすい → やすければ",
+        "romaji": "Yasui → yasukereba",
+        "vi": "Rẻ → nếu rẻ",
+        "en": "Cheap → if (it's) cheap",
+        "contextualExplanation": {
+          "vi": "Tính từ い: bỏ い, thêm ければ.",
+          "en": "i-adjective: drop い, add ければ."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "する（Group3）→ すれば",
+        "kana": "する → すれば",
+        "romaji": "Suru → sureba",
+        "vi": "Làm → nếu làm",
+        "en": "To do → if (one) does",
+        "contextualExplanation": {
+          "vi": "する chia đều đặn thành すれば, không bất quy tắc như các thể khác.",
+          "en": "する conjugates regularly to すれば, unlike its irregularity in other forms."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "来る（Group3）→ 来れば",
+        "jaRuby": "<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る（Group3）→ <ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>れば",
+        "kana": "くる → くれば",
+        "romaji": "Kuru → kureba",
+        "vi": "Đến → nếu đến",
+        "en": "To come → if (one) comes",
+        "contextualExplanation": {
+          "vi": "来る chia thành 来れば, đọc く (giữ nguyên âm, không đổi như thể ない/た).",
+          "en": "来る conjugates to 来れば, keeping く (unlike its change in ない/た forms)."
         }
       }
     ],
@@ -12999,30 +13398,108 @@
         "jaRuby": "<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ければ、<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_081",
+      "g_084",
+      "g_112"
+    ],
     "tags": [],
     "patternRuby": "Vば/Aいければ~",
     "requiredVerbForm": [
       "ba"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-ba/A-i-kereba ~",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "ば-form + Clause2",
+        "exampleStr": "安ければ ＋ 買います"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "written"
+      ],
+      "intent": "Stating a hypothetical/general condition and its result",
+      "speakerStance": "Emphasizes the condition as a logical prerequisite, more so than たら"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "ば cannot be followed by a command/invitation in V2 (unlike たら)",
+        "description": {
+          "vi": "Khác với たら (g_081), ば KHÔNG thể theo sau bằng mệnh lệnh hoặc lời mời (行けば行こうよ là sai). ば phù hợp hơn cho quy luật chung, điều kiện logic khách quan.",
+          "en": "Unlike たら (g_081), ば CANNOT be followed by a command or invitation in V2 (行けば行こうよ is wrong). ば fits better for general rules and objective logical conditions."
+        },
+        "relatedGrammarId": "g_081"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
         "ja": "安ければ、買います。",
         "jaRuby": "<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ければ、<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います。",
-        "kana": "",
-        "romaji": "",
+        "kana": "やすければ、かいます。",
+        "romaji": "Yasukereba, kaimasu.",
         "vi": "Nếu rẻ thì tôi sẽ mua.",
         "en": "If it's cheap, I'll buy it.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "安ければ (điều kiện) + 買います (kết quả).",
+          "en": "安ければ (condition) + 買います (result)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "ボタンを押せば、ドアが開きます。",
+        "jaRuby": "ボタンを<ruby>押<rp>(</rp><rt>お</rt><rp>)</rp></ruby>せば、ドアが<ruby>開<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>きます。",
+        "kana": "ボタンをおせば、ドアがあきます。",
+        "romaji": "Botan o oseba, doa ga akimasu.",
+        "vi": "Nếu bấm nút thì cửa sẽ mở.",
+        "en": "If you press the button, the door opens.",
+        "contextualExplanation": {
+          "vi": "ば rất phù hợp để diễn tả quy luật/cơ chế hoạt động (một sự thật khách quan).",
+          "en": "ば fits well for expressing a mechanism/rule (an objective fact)."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "急がなければ、間に合いません。",
+        "jaRuby": "<ruby>急<rp>(</rp><rt>いそ</rt><rp>)</rp></ruby>がなければ、<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>いません。",
+        "kana": "いそがなければ、まにあいません。",
+        "romaji": "Isoganakereba, ma ni aimasen.",
+        "vi": "Nếu không nhanh lên thì sẽ không kịp.",
+        "en": "If we don't hurry, we won't make it in time.",
+        "contextualExplanation": {
+          "vi": "なければ (phủ định) + kết quả -- xem thêm g_087, g_088.",
+          "en": "なければ (negative) + result -- see also g_087, g_088."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "どうすれば、上手になれますか。",
+        "jaRuby": "どうすれば、<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になれますか。",
+        "kana": "どうすれば、じょうずになれますか。",
+        "romaji": "Dou sureba, jouzu ni naremasu ka.",
+        "vi": "Làm sao để giỏi lên được?",
+        "en": "What should I do to get better (at it)?",
+        "contextualExplanation": {
+          "vi": "どうすれば là mẫu câu hỏi xin lời khuyên rất phổ biến -- xem g_086.",
+          "en": "どうすれば is a very common way to ask for advice -- see g_086."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "天気がよければ、公園に行きましょう。",
+        "jaRuby": "<ruby>天気<rp>(</rp><rt>てんき</rt><rp>)</rp></ruby>がよければ、<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きましょう。",
+        "kana": "てんきがよければ、こうえんにいきましょう。",
+        "romaji": "Tenki ga yokereba, kouen ni ikimashou.",
+        "vi": "Nếu thời tiết đẹp thì đi công viên nhé.",
+        "en": "If the weather is nice, let's go to the park.",
+        "contextualExplanation": {
+          "vi": "いい chia thành よければ (không phải いければ) -- ngoại lệ quan trọng cần nhớ.",
+          "en": "いい conjugates to よければ (never いければ) -- an important exception to remember."
         }
       }
     ],
@@ -13054,30 +13531,105 @@
         "jaRuby": "どうすれば、<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりますか。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_084",
+      "g_085"
+    ],
     "tags": [],
     "patternRuby": "Từ nghi vấn+ば、~か",
     "requiredVerbForm": [
       "ba"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "gimonshi + ba, ~ ka",
+    "formationRules": [
+      {
+        "pos": "phrase",
+        "form": "(question word) + ば-clause + か",
+        "exampleStr": "どう ＋ すればいいですか"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Asking for advice on how to achieve a goal",
+      "speakerStance": "Seeking guidance, mildly uncertain"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "どうすればいいですか is the go-to formula for \"what should I do?\"",
+        "description": {
+          "vi": "どうすればいいですか (làm thế nào thì tốt?) là mẫu câu xin lời khuyên phổ biến nhất, kết hợp どう (câu hỏi cách thức) + すれば (điều kiện) + いいですか (có ổn không). Đáng ghi nhớ như một cụm cố định.",
+          "en": "どうすればいいですか (\"what should I do?\") is the single most common formula for asking advice, combining どう (how) + すれば (condition) + いいですか (is it good?). Worth memorizing as a fixed chunk."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "どうすれば、日本語が上手になりますか。",
-        "jaRuby": "どうすれば、<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりますか。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nên làm thế nào để giỏi tiếng Nhật hơn?",
-        "en": "What should I do to get better at Japanese?",
+        "ja": "日本語が上手になるには、どうすればいいですか。",
+        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になるには、どうすればいいですか。",
+        "kana": "にほんごがじょうずになるには、どうすればいいですか。",
+        "romaji": "Nihongo ga jouzu ni naru ni wa, dou sureba ii desu ka.",
+        "vi": "Để giỏi tiếng Nhật thì phải làm thế nào?",
+        "en": "What should I do to get good at Japanese?",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "どうすればいいですか là mẫu xin lời khuyên chuẩn mực.",
+          "en": "どうすればいいですか is the standard formula for asking advice."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この漢字は何と読めばいいですか。",
+        "jaRuby": "この<ruby>漢字<rp>(</rp><rt>かんじ</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>と<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>めばいいですか。",
+        "kana": "このかんじはなんとよめばいいですか。",
+        "romaji": "Kono kanji wa nan to yomeba ii desu ka.",
+        "vi": "Chữ Hán này đọc thế nào cho đúng?",
+        "en": "How should I read this kanji?",
+        "contextualExplanation": {
+          "vi": "何と読めば (đọc thế nào) là biến thể khác của mẫu này, thay どう bằng một từ nghi vấn khác.",
+          "en": "何と読めば (\"read how\") is a variant of the pattern, swapping どう for a different question word."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "いつ来ればいいですか。",
+        "jaRuby": "いつ<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>ればいいですか。",
+        "kana": "いつくればいいですか。",
+        "romaji": "Itsu kureba ii desu ka.",
+        "vi": "Khi nào đến thì được?",
+        "en": "When should I come?",
+        "contextualExplanation": {
+          "vi": "いつ (từ nghi vấn về thời điểm) cũng dùng được trong mẫu này.",
+          "en": "いつ (question word for time) also fits this pattern."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "これ、どうやればいいと思う？",
+        "jaRuby": "これ、どうやればいいと<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>う？",
+        "kana": "これ、どうやればいいとおもう？",
+        "romaji": "Kore, dou yareba ii to omou?",
+        "vi": "Cái này bạn nghĩ làm thế nào thì tốt?",
+        "en": "How do you think I should do this?",
+        "contextualExplanation": {
+          "vi": "どうやれば thân mật hơn một chút, hay dùng khi hỏi ý kiến bạn bè.",
+          "en": "どうやれば is a touch more casual, common when asking a friend's opinion."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "誰に聞けばわかりますか。",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>に<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>けばわかりますか。",
+        "kana": "だれにきけばわかりますか。",
+        "romaji": "Dare ni kikeba wakarimasu ka.",
+        "vi": "Hỏi ai thì biết được?",
+        "en": "Who should I ask to find out?",
+        "contextualExplanation": {
+          "vi": "誰に聞けば thay いいですか bằng わかりますか, mẫu vẫn giữ cấu trúc chung \"từ nghi vấn+ば, ~か\".",
+          "en": "誰に聞けば swaps いいですか for わかりますか, keeping the general \"question word + ば, ~か\" structure."
         }
       }
     ],
@@ -13109,31 +13661,107 @@
         "jaRuby": "<ruby>練習<rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>しなければ、<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりません。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_084",
+      "g_088"
+    ],
     "tags": [],
     "patternRuby": "Vなければ、~",
     "requiredVerbForm": [
       "nai",
       "ba"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-nakereba, ~",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "ない-form → なければ",
+        "exampleStr": "行かない → 行かなければ"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that if V doesn't happen, a negative result follows",
+      "speakerStance": "Neutral, logical conditional"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "なければ is the ば-conditional attached to the negative -- not a separate rule",
+        "description": {
+          "vi": "なければ đơn giản là thể ない (行かない) + ば (行かなければ) -- không có gì mới, chỉ áp dụng quy tắc ば-conditional (g_084) lên động từ đã ở dạng phủ định.",
+          "en": "なければ is simply the negative form (行かない) + ば (行かなければ) -- nothing new, just the ば-conditional rule (g_084) applied to an already-negative verb."
+        },
+        "relatedGrammarId": "g_084"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "練習しなければ、上手になりません。",
-        "jaRuby": "<ruby>練習<rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>しなければ、<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりません。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nếu không luyện tập thì sẽ không giỏi lên được.",
-        "en": "If you don't practice, you won't improve.",
+        "ja": "今すぐ行かなければ、遅れます。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>すぐ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなければ、<ruby>遅<rp>(</rp><rt>おく</rt><rp>)</rp></ruby>れます。",
+        "kana": "いますぐいかなければ、おくれます。",
+        "romaji": "Ima sugu ikanakereba, okuremasu.",
+        "vi": "Nếu không đi ngay bây giờ thì sẽ trễ.",
+        "en": "If we don't go right now, we'll be late.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "行かなければ (không đi) + kết quả tiêu cực (遅れます).",
+          "en": "行かなければ (not going) + a negative result (遅れます)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "早く起きなければ、朝ごはんが食べられません。",
+        "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きなければ、<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ごはんが<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べられません。",
+        "kana": "はやくおきなければ、あさごはんがたべられません。",
+        "romaji": "Hayaku okinakereba, asagohan ga taberaremasen.",
+        "vi": "Nếu không dậy sớm thì sẽ không ăn sáng được.",
+        "en": "If I don't wake up early, I won't be able to eat breakfast.",
+        "contextualExplanation": {
+          "vi": "なければ cũng kết hợp được với thể khả năng ở V2.",
+          "en": "なければ also combines with a potential verb in V2."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "今日中にやらなければ、いけませんか。",
+        "jaRuby": "<ruby>今日中<rp>(</rp><rt>きょうじゅう</rt><rp>)</rp></ruby>にやらなければ、いけませんか。",
+        "kana": "きょうじゅうにやらなければ、いけませんか。",
+        "romaji": "Kyoujuu ni yaranakereba, ikemasen ka.",
+        "vi": "Có phải làm xong trong hôm nay không?",
+        "en": "Does it have to be done today?",
+        "contextualExplanation": {
+          "vi": "なければいけませんか hỏi xem một điều kiện có bắt buộc hay không -- xem g_088.",
+          "en": "なければいけませんか asks whether a condition is mandatory -- see g_088."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "勉強しなければ、テストに落ちるよ。",
+        "jaRuby": "<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しなければ、テストに<ruby>落<rp>(</rp><rt>お</rt><rp>)</rp></ruby>ちるよ。",
+        "kana": "べんきょうしなければ、テストにおちるよ。",
+        "romaji": "Benkyou shinakereba, tesuto ni ochiru yo.",
+        "vi": "Nếu không học thì sẽ trượt bài kiểm tra đấy.",
+        "en": "If you don't study, you'll fail the test.",
+        "contextualExplanation": {
+          "vi": "なければ cũng dùng được như một lời cảnh báo thân mật.",
+          "en": "なければ also works as a casual warning."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "雨が降らなければ、洗濯物を外に干します。",
+        "jaRuby": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>らなければ、<ruby>洗濯物<rp>(</rp><rt>せんたくもの</rt><rp>)</rp></ruby>を<ruby>外<rp>(</rp><rt>そと</rt><rp>)</rp></ruby>に<ruby>干<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>します。",
+        "kana": "あめがふらなければ、せんたくものをそとにほします。",
+        "romaji": "Ame ga furanakereba, sentakumono o soto ni hoshimasu.",
+        "vi": "Nếu trời không mưa thì tôi sẽ phơi đồ ở ngoài.",
+        "en": "If it doesn't rain, I'll hang the laundry outside.",
+        "contextualExplanation": {
+          "vi": "なければ ở đây mang nghĩa tích cực (điều kiện thuận lợi), không chỉ dùng cho kết quả tiêu cực.",
+          "en": "なければ here carries a positive sense (a favorable condition), not only negative outcomes."
         }
       }
     ],
@@ -13165,30 +13793,111 @@
         "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>までにレポートを<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>さなければなりません。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_087",
+      "g_089",
+      "g_090"
+    ],
     "tags": [],
     "patternRuby": "Vなければなりません/いけません/Vないといけません",
     "requiredVerbForm": [
       "nai"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-nakereba narimasen / ikemasen / V-naito ikemasen",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "なければ + なりません／いけません",
+        "exampleStr": "行く → 行かなければなりません"
+      },
+      {
+        "pos": "verb",
+        "form": "ないと + いけません",
+        "exampleStr": "行く → 行かないといけません"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Expressing obligation -- \"must do\"",
+      "speakerStance": "Neutral, stating a requirement"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Literally \"if not X, it won't do\" -- a double negative expressing obligation",
+        "description": {
+          "vi": "Cấu trúc này về bản chất là \"nếu không làm X thì không được\" -- hai lần phủ định (なければ + なりません/いけません) tạo thành nghĩa \"phải làm\". Hiểu nghĩa đen giúp không bị bối rối bởi cấu trúc phức tạp này.",
+          "en": "This structure is literally \"if [you] don't X, it won't do\" -- a double negative (なければ + なりません/いけません) that produces the meaning \"must do\". Understanding the literal sense helps make sense of this otherwise complex-looking structure."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "明日までにレポートを出さなければなりません。",
-        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>までにレポートを<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>さなければなりません。",
-        "kana": "",
-        "romaji": "",
+        "ja": "毎日、薬を飲まなければなりません。",
+        "jaRuby": "<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby>、<ruby>薬<rp>(</rp><rt>くすり</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>まなければなりません。",
+        "kana": "まいにち、くすりをのまなければなりません。",
+        "romaji": "Mainichi, kusuri o nomanakereba narimasen.",
+        "vi": "Mỗi ngày tôi phải uống thuốc.",
+        "en": "I have to take medicine every day.",
+        "contextualExplanation": {
+          "vi": "なければなりません diễn tả nghĩa vụ bắt buộc, khá trang trọng.",
+          "en": "なければなりません expresses a mandatory obligation, fairly formal."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "明日までにレポートを出さなければいけません。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>までにレポートを<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>さなければいけません。",
+        "kana": "あしたまでにレポートをださなければいけません。",
+        "romaji": "Ashita made ni repooto o dasanakereba ikemasen.",
         "vi": "Tôi phải nộp báo cáo trước ngày mai.",
         "en": "I have to submit the report by tomorrow.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "なければいけません cũng diễn tả nghĩa vụ, thường dùng ngang hàng với なりません.",
+          "en": "なければいけません also expresses obligation, used roughly interchangeably with なりません."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "パスポートを持っていかなければなりませんか。",
+        "jaRuby": "パスポートを<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>っていかなければなりませんか。",
+        "kana": "パスポートをもっていかなければなりませんか。",
+        "romaji": "Pasupooto o motte ikanakereba narimasen ka.",
+        "vi": "Có phải mang theo hộ chiếu không?",
+        "en": "Do I have to bring my passport?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi về nghĩa vụ, thường dùng khi xác nhận thủ tục/quy định.",
+          "en": "A question about an obligation, common when confirming a procedure/rule."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "もう帰らないといけない。",
+        "jaRuby": "もう<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>らないといけない。",
+        "kana": "もうかえらないといけない。",
+        "romaji": "Mou kaeranaito ikenai.",
+        "vi": "Tôi phải về rồi.",
+        "en": "I have to head home now.",
+        "contextualExplanation": {
+          "vi": "ないと (ngắn gọn hơn なければ) rất phổ biến trong văn nói thân mật -- xem g_089, g_090.",
+          "en": "ないと (a shorter form of なければ) is very common in casual speech -- see g_089, g_090."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "子どもは学校に行かなければなりません。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもは<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなければなりません。",
+        "kana": "こどもはがっこうにいかなければなりません。",
+        "romaji": "Kodomo wa gakkou ni ikanakereba narimasen.",
+        "vi": "Trẻ em phải đi học.",
+        "en": "Children have to go to school.",
+        "contextualExplanation": {
+          "vi": "なければなりません cũng dùng cho nghĩa vụ mang tính xã hội/pháp lý, không chỉ cá nhân.",
+          "en": "なければなりません also applies to a social/legal obligation, not only a personal one."
         }
       }
     ],
@@ -13220,30 +13929,106 @@
         "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなきゃ、<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>わないよ。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_087",
+      "g_090"
+    ],
     "tags": [],
     "patternRuby": "Vなきゃ、~",
     "requiredVerbForm": [
       "nai"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-nakya, ~",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "なければ → なきゃ (contraction)",
+        "exampleStr": "行かなければ → 行かなきゃ"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "casual",
+        "spoken"
+      ],
+      "intent": "The casual, contracted spoken form of なければ",
+      "speakerStance": "Informal, familiar register"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "なきゃ is a pure sound contraction -- なければ shortened for speed in speech",
+        "description": {
+          "vi": "なきゃ chỉ là biến âm rút gọn của なければ (なければ → なきゃ) khi nói nhanh trong hội thoại -- không thay đổi nghĩa hay ngữ pháp, chỉ ngắn gọn hơn.",
+          "en": "なきゃ is purely a sound contraction of なければ (なければ → なきゃ) for speaking quickly in conversation -- no change in meaning or grammar, just shorter."
+        },
+        "relatedGrammarId": "g_087"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "早く行かなきゃ、間に合わないよ。",
-        "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなきゃ、<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>わないよ。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Không đi nhanh thì không kịp đâu.",
-        "en": "If you don't hurry, you won't make it.",
+        "ja": "もう行かなきゃ。",
+        "jaRuby": "もう<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなきゃ。",
+        "kana": "もういかなきゃ。",
+        "romaji": "Mou ikanakya.",
+        "vi": "Phải đi thôi.",
+        "en": "I gotta go.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "行かなきゃ (rút gọn của 行かなければ) rất phổ biến trong lời chào tạm biệt vội.",
+          "en": "行かなきゃ (contracted from 行かなければ) is very common in a hurried goodbye."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "早く宿題やらなきゃ。",
+        "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>やらなきゃ。",
+        "kana": "はやくしゅくだいやらなきゃ。",
+        "romaji": "Hayaku shukudai yaranakya.",
+        "vi": "Phải làm bài tập nhanh thôi.",
+        "en": "I need to do my homework quickly.",
+        "contextualExplanation": {
+          "vi": "なきゃ tự nhiên trong lời tự nhủ với bản thân.",
+          "en": "なきゃ is natural in a self-directed remark."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "これ、今日中にやらなきゃだめ？",
+        "jaRuby": "これ、<ruby>今日中<rp>(</rp><rt>きょうじゅう</rt><rp>)</rp></ruby>にやらなきゃだめ？",
+        "kana": "これ、きょうじゅうにやらなきゃだめ？",
+        "romaji": "Kore, kyoujuu ni yaranakya dame?",
+        "vi": "Cái này hôm nay phải làm xong không?",
+        "en": "Do I have to get this done today?",
+        "contextualExplanation": {
+          "vi": "なきゃだめ？ (だめ thay cho いけない) hỏi xem có bắt buộc không, rất thân mật.",
+          "en": "なきゃだめ？ (だめ replacing いけない) casually asks whether something's mandatory."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "心配しなくていいよ。",
+        "jaRuby": "<ruby>心配<rp>(</rp><rt>しんぱい</rt><rp>)</rp></ruby>しなくていいよ。",
+        "kana": "しんぱいしなくていいよ。",
+        "romaji": "Shinpai shinakute ii yo.",
+        "vi": "Không cần lo lắng đâu.",
+        "en": "You don't need to worry.",
+        "contextualExplanation": {
+          "vi": "なくていい (ngược lại với なきゃ) diễn tả \"không cần phải\" -- so sánh để thấy rõ cặp đối lập.",
+          "en": "なくていい (the opposite of なきゃ) expresses \"don't need to\" -- shown here for contrast."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "約束したから、行かなきゃ。",
+        "jaRuby": "<ruby>約束<rp>(</rp><rt>やくそく</rt><rp>)</rp></ruby>したから、<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなきゃ。",
+        "kana": "やくそくしたから、いかなきゃ。",
+        "romaji": "Yakusoku shita kara, ikanakya.",
+        "vi": "Vì đã hứa rồi nên phải đi thôi.",
+        "en": "Since I promised, I have to go.",
+        "contextualExplanation": {
+          "vi": "なきゃ cũng nối được với から để đưa ra lý do cho nghĩa vụ.",
+          "en": "なきゃ also links with から to give the reason for the obligation."
         }
       }
     ],
@@ -13275,30 +14060,106 @@
         "jaRuby": "もう<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>らなきゃいけない。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_088",
+      "g_089"
+    ],
     "tags": [],
     "patternRuby": "Vなきゃいけない",
     "requiredVerbForm": [
       "nai"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-nakya ikenai",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "なきゃ + いけない",
+        "exampleStr": "行く → 行かなきゃいけない"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "casual",
+        "spoken"
+      ],
+      "intent": "The casual, spoken counterpart of なければいけません -- expressing obligation",
+      "speakerStance": "Informal, familiar register"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "なきゃいけない fully spells out the obligation; bare なきゃ (g_089) often drops いけない entirely",
+        "description": {
+          "vi": "なきゃいけない giữ nguyên cả phần いけない (không được), trong khi なきゃ đơn lẻ (g_089) thường lược bỏ hẳn phần này khi ngữ cảnh đã đủ rõ. Cả hai đều tự nhiên trong văn nói.",
+          "en": "なきゃいけない spells out the full いけない (\"won't do\") part, while bare なきゃ alone (g_089) often drops it entirely when context makes it clear. Both are natural in speech."
+        },
+        "relatedGrammarId": "g_089"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "もう帰らなきゃいけない。",
-        "jaRuby": "もう<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>らなきゃいけない。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi phải về rồi.",
-        "en": "I have to go home now.",
+        "ja": "明日早く起きなきゃいけない。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby><ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きなきゃいけない。",
+        "kana": "あしたはやくおきなきゃいけない。",
+        "romaji": "Ashita hayaku okinakya ikenai.",
+        "vi": "Mai phải dậy sớm.",
+        "en": "I have to get up early tomorrow.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "なきゃいけない giữ nguyên cả cụm, nghe rõ ràng hơn なきゃ đơn lẻ.",
+          "en": "なきゃいけない keeps the full phrase, reading more explicit than bare なきゃ."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "そろそろ勉強しなきゃいけないな。",
+        "jaRuby": "そろそろ<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しなきゃいけないな。",
+        "kana": "そろそろべんきょうしなきゃいけないな。",
+        "romaji": "Sorosoro benkyou shinakya ikenai na.",
+        "vi": "Chắc phải học bài rồi đây.",
+        "en": "I really should start studying.",
+        "contextualExplanation": {
+          "vi": "な cuối câu thêm sắc thái tự nhủ, hơi miễn cưỡng.",
+          "en": "な at the end adds a musing, slightly reluctant nuance."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "これ、全部覚えなきゃいけないの？",
+        "jaRuby": "これ、<ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby><ruby>覚<rp>(</rp><rt>おぼ</rt><rp>)</rp></ruby>えなきゃいけないの？",
+        "kana": "これ、ぜんぶおぼえなきゃいけないの？",
+        "romaji": "Kore, zenbu oboenakya ikenai no?",
+        "vi": "Cái này phải học thuộc hết à?",
+        "en": "Do I have to memorize all of this?",
+        "contextualExplanation": {
+          "vi": "の cuối câu thêm sắc thái ngạc nhiên/than vãn nhẹ.",
+          "en": "の at the end adds a mildly surprised/complaining nuance."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今日は特にしなきゃいけないことはない。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>特<rp>(</rp><rt>とく</rt><rp>)</rp></ruby>にしなきゃいけないことはない。",
+        "kana": "きょうはとくにしなきゃいけないことはない。",
+        "romaji": "Kyou wa toku ni shinakya ikenai koto wa nai.",
+        "vi": "Hôm nay không có gì bắt buộc phải làm cả.",
+        "en": "There's nothing in particular I have to do today.",
+        "contextualExplanation": {
+          "vi": "しなきゃいけないこと (điều phải làm) cũng danh từ hóa được cả cụm bằng こと.",
+          "en": "しなきゃいけないこと (\"things I have to do\") also nominalizes the whole phrase with こと."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "会議に遅れそうだから、急がなきゃいけない。",
+        "jaRuby": "<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>に<ruby>遅<rp>(</rp><rt>おく</rt><rp>)</rp></ruby>れそうだから、<ruby>急<rp>(</rp><rt>いそ</rt><rp>)</rp></ruby>がなきゃいけない。",
+        "kana": "かいぎにおくれそうだから、いそがなきゃいけない。",
+        "romaji": "Kaigi ni okuresou dakara, isoganakya ikenai.",
+        "vi": "Vì có vẻ sắp trễ họp nên phải nhanh lên.",
+        "en": "Since it looks like I'll be late for the meeting, I need to hurry.",
+        "contextualExplanation": {
+          "vi": "なきゃいけない cũng nối tốt với lý do dựa trên phỏng đoán (そう).",
+          "en": "なきゃいけない also links well with a reason based on a guess (そう)."
         }
       }
     ],
@@ -13330,28 +14191,120 @@
         "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くなら、<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>がおすすめです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_081",
+      "g_113"
+    ],
     "tags": [],
     "patternRuby": "V/Aい/Aな/N(thể thường)+なら",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V/A-i/A-na/N (plain form) + nara",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Dictionary/nai/ta-form + なら",
+        "exampleStr": "行く ＋ なら"
+      },
+      {
+        "pos": "i-adj",
+        "form": "Dictionary form + なら",
+        "exampleStr": "安い ＋ なら"
+      },
+      {
+        "pos": "na-adj",
+        "form": "Stem + なら",
+        "exampleStr": "暇 ＋ なら"
+      },
+      {
+        "pos": "noun",
+        "form": "Bare noun + なら",
+        "exampleStr": "休み ＋ なら"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "spoken"
+      ],
+      "intent": "Responding to a condition just raised by the listener, offering advice/a reaction",
+      "speakerStance": "Reactive -- builds directly on what the other person just said"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "なら reacts to something already said -- unlike たら/ば/と, which don't require a prior statement",
+        "description": {
+          "vi": "なら khác biệt rõ rệt với 3 điều kiện còn lại: nó luôn PHẢN HỒI lại điều đối phương vừa nói, không phải một giả định tự khởi xướng. Cũng vì vậy, なら thường theo sau bằng lời khuyên/đề xuất (行くなら、電車がいいですよ).",
+          "en": "なら stands apart from the other three conditionals: it always RESPONDS to something the listener just said, rather than introducing a self-initiated hypothesis. Because of this, なら is commonly followed by advice/a suggestion (行くなら、電車がいいですよ)."
+        },
+        "relatedGrammarId": "g_081"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "日本に行くなら、京都がおすすめです。",
-        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くなら、<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>がおすすめです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nếu đi Nhật thì tôi khuyên nên đến Kyoto.",
-        "en": "If you're going to Japan, I recommend Kyoto.",
+        "ja": "A：京都に行きます。　B：京都に行くなら、この本がおすすめです。",
+        "jaRuby": "A：<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。　B：<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くなら、この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>がおすすめです。",
+        "kana": "A：きょうといきます。　B：きょうといくなら、このほんがおすすめです。",
+        "romaji": "A: Kyouto ni ikimasu. B: Kyouto ni iku nara, kono hon ga osusume desu.",
+        "vi": "A: Tôi sẽ đi Kyoto. B: Nếu đi Kyoto thì tôi gợi ý cuốn sách này.",
+        "en": "A: I'm going to Kyoto. B: If you're going to Kyoto, I recommend this book.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "B phản hồi trực tiếp điều A vừa nói bằng なら.",
+          "en": "B directly responds to what A just said, using なら."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "疲れているなら、少し休んだほうがいいですよ。",
+        "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れているなら、<ruby>少<rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>んだほうがいいですよ。",
+        "kana": "つかれているなら、すこしやすんだほうがいいですよ。",
+        "romaji": "Tsukarete iru nara, sukoshi yasunda hou ga ii desu yo.",
+        "vi": "Nếu bạn mệt thì nên nghỉ ngơi một chút.",
+        "en": "If you're tired, you should rest a bit.",
+        "contextualExplanation": {
+          "vi": "なら thường theo sau bằng lời khuyên (ほうがいい) -- một đặc trưng của cách dùng này.",
+          "en": "なら is commonly followed by advice (ほうがいい) -- a hallmark of this use."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "A：頭が痛いです。　B：それなら、薬を飲んだほうがいいですよ。",
+        "jaRuby": "A：<ruby>頭<rp>(</rp><rt>あたま</rt><rp>)</rp></ruby>が<ruby>痛<rp>(</rp><rt>いた</rt><rp>)</rp></ruby>いです。　B：それなら、<ruby>薬<rp>(</rp><rt>くすり</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んだほうがいいですよ。",
+        "kana": "A：あたまがいたいです。　B：それなら、くすりをのんだほうがいいですよ。",
+        "romaji": "A: Atama ga itai desu. B: Sore nara, kusuri o nonda hou ga ii desu yo.",
+        "vi": "A: Tôi đau đầu. B: Vậy thì bạn nên uống thuốc.",
+        "en": "A: I have a headache. B: In that case, you should take some medicine.",
+        "contextualExplanation": {
+          "vi": "それなら (nếu vậy thì) là dạng rút gọn rất thông dụng để phản hồi ngay điều vừa nghe.",
+          "en": "それなら (\"if that's the case\") is a very common contraction used to react immediately to what was just heard."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "A：お腹すいた。　B：お腹すいたなら、何か作ろうか。",
+        "jaRuby": "A：お<ruby>腹<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>すいた。　B：お<ruby>腹<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>すいたなら、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>か<ruby>作<rp>(</rp><rt>つく</rt><rp>)</rp></ruby>ろうか。",
+        "kana": "A：おなかすいた。　B：おなかすいたなら、なにかつくろうか。",
+        "romaji": "A: Onaka suita. B: Onaka suita nara, nanika tsukurou ka.",
+        "vi": "A: Đói bụng quá. B: Nếu đói thì mình nấu gì đó nhé.",
+        "en": "A: I'm hungry. B: If you're hungry, should I make something?",
+        "contextualExplanation": {
+          "vi": "なら cũng dùng được sau động từ ở thể た khi phản hồi ngay lập tức.",
+          "en": "なら also follows a ta-form verb when reacting immediately."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "日本語が上手なら、通訳の仕事もできますね。",
+        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>なら、<ruby>通訳<rp>(</rp><rt>つうやく</rt><rp>)</rp></ruby>の<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>もできますね。",
+        "kana": "にほんごがじょうずなら、つうやくのしごともできますね。",
+        "romaji": "Nihongo ga jouzu nara, tsuuyaku no shigoto mo dekimasu ne.",
+        "vi": "Nếu giỏi tiếng Nhật thì cũng làm được nghề phiên dịch nhỉ.",
+        "en": "If you're good at Japanese, you could even do interpreting work.",
+        "contextualExplanation": {
+          "vi": "なら sau tính từ な (上手) không cần thêm だ -- xem g_113 cho quy tắc riêng của な/N.",
+          "en": "なら after a na-adjective (上手) needs no extra だ -- see g_113 for na-adjective/noun-specific rules."
         }
       }
     ],
@@ -13383,28 +14336,118 @@
         "jaRuby": "<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なら、<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってください。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_112"
+    ],
     "tags": [],
     "patternRuby": "Aな/N+なら",
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "A-na/N + nara",
+    "formationRules": [
+      {
+        "pos": "na-adj",
+        "form": "Stem (no だ) + なら",
+        "exampleStr": "暇 ＋ なら"
+      },
+      {
+        "pos": "noun",
+        "form": "Bare noun (no だ) + なら",
+        "exampleStr": "休み ＋ なら"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "spoken"
+      ],
+      "intent": "The na-adjective/noun-specific case of なら (a narrower reminder of g_112)",
+      "speakerStance": "Reactive -- builds directly on what the other person just said"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "Never insert だ before なら with a na-adjective or noun",
+        "description": {
+          "vi": "Không giống です/だ, なら gắn TRỰC TIẾP vào thân な-tính từ/danh từ, không qua だ (暇だなら là sai, phải là 暇なら).",
+          "en": "Unlike です/だ, なら attaches DIRECTLY to the bare na-adjective/noun stem, with no だ in between (暇だなら is wrong; it must be 暇なら)."
+        },
+        "examples": [
+          {
+            "incorrect": "暇だなら、遊びに行きましょう。",
+            "correct": "暇なら、遊びに行きましょう。",
+            "explanation": {
+              "vi": "Không chèn だ trước なら.",
+              "en": "Never insert だ before なら."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "暇なら、手伝ってください。",
-        "jaRuby": "<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なら、<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってください。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Nếu rảnh thì hãy giúp tôi với.",
-        "en": "If you're free, please help me.",
+        "ja": "暇なら、遊びに行きましょう。",
+        "jaRuby": "<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なら、<ruby>遊<rp>(</rp><rt>あそ</rt><rp>)</rp></ruby>びに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きましょう。",
+        "kana": "ひまなら、あそびにいきましょう。",
+        "romaji": "Hima nara, asobi ni ikimashou.",
+        "vi": "Nếu rảnh thì đi chơi nhé.",
+        "en": "If you're free, let's go hang out.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "暇 (thân tính từ な, không だ) + なら.",
+          "en": "暇 (bare na-adjective stem, no だ) + なら."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "会議室が必要なら、こちらをお使いください。",
+        "jaRuby": "<ruby>会議室<rp>(</rp><rt>かいぎしつ</rt><rp>)</rp></ruby>が<ruby>必要<rp>(</rp><rt>ひつよう</rt><rp>)</rp></ruby>なら、こちらをお<ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>いください。",
+        "kana": "かいぎしつがひつようなら、こちらをおつかいください。",
+        "romaji": "Kaigishitsu ga hitsuyou nara, kochira o otsukai kudasai.",
+        "vi": "Nếu cần phòng họp thì hãy dùng phòng này.",
+        "en": "If you need a meeting room, please use this one.",
+        "contextualExplanation": {
+          "vi": "必要 (tính từ な) + なら theo cùng quy tắc.",
+          "en": "必要 (a na-adjective) + なら follows the same rule."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "休みなら、いつがいいですか。",
+        "jaRuby": "<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みなら、いつがいいですか。",
+        "kana": "やすみなら、いつがいいですか。",
+        "romaji": "Yasumi nara, itsu ga ii desu ka.",
+        "vi": "Nếu được nghỉ thì lúc nào là tốt nhất?",
+        "en": "If it's a day off, when would be good?",
+        "contextualExplanation": {
+          "vi": "休み (danh từ, không だ) + なら theo cùng quy tắc.",
+          "en": "休み (a noun, no だ) + なら follows the same rule."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "本当なら、教えてほしい。",
+        "jaRuby": "<ruby>本当<rp>(</rp><rt>ほんとう</rt><rp>)</rp></ruby>なら、<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えてほしい。",
+        "kana": "ほんとうなら、おしえてほしい。",
+        "romaji": "Hontou nara, oshiete hoshii.",
+        "vi": "Nếu là thật thì tôi muốn được cho biết.",
+        "en": "If it's true, I want you to tell me.",
+        "contextualExplanation": {
+          "vi": "本当 (danh từ) + なら trong hội thoại thân mật.",
+          "en": "本当 (a noun) + なら in casual conversation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "好きな食べ物なら、なんでも作れます。",
+        "jaRuby": "<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きな<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べ<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby>なら、なんでも<ruby>作<rp>(</rp><rt>つく</rt><rp>)</rp></ruby>れます。",
+        "kana": "すきなたべものなら、なんでもつくれます。",
+        "romaji": "Suki na tabemono nara, nandemo tsukuremasu.",
+        "vi": "Nếu là món ăn yêu thích thì tôi có thể nấu bất cứ món gì.",
+        "en": "If it's food you like, I can make anything.",
+        "contextualExplanation": {
+          "vi": "なら cũng gắn được sau một cụm danh từ dài hơn (好きな食べ物), không chỉ danh từ đơn.",
+          "en": "なら also attaches after a longer noun phrase (好きな食べ物), not only a single noun."
         }
       }
     ],
