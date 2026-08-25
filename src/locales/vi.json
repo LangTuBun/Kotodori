@@ -115,14 +115,60 @@
     "homophones": "Từ đồng âm"
   },
   "grammar": {
-    "searchPlaceholder": "Tìm mẫu câu, nghĩa, số thứ tự...",
+    "searchPlaceholder": "Tìm mẫu câu, nghĩa, romaji, thẻ tag...",
     "tips": "Mẹo ôn tập",
     "countOfTotal": "{filtered} / {total} mẫu câu",
     "filterByVerbForm": "Lọc theo thể động từ",
+    "filterByTone": "Lọc theo văn phong",
     "clearFilter": "Xóa lọc",
     "noResults": "Không tìm thấy mẫu câu nào.",
     "selectPrompt": "Chọn 1 mẫu câu",
-    "hoverHint": "hoặc di chuột qua thẻ để xem nhanh"
+    "hoverHint": "hoặc di chuột qua thẻ để xem nhanh",
+    "formation": {
+      "title": "Cách chia",
+      "pos": "Từ loại",
+      "form": "Thể",
+      "example": "Ví dụ"
+    },
+    "notes": {
+      "title": "Lưu ý & Bẫy ngữ pháp",
+      "type": {
+        "false_friend": "Dễ nhầm lẫn",
+        "common_mistake": "Lỗi thường gặp",
+        "nuance_trap": "Bẫy sắc thái"
+      }
+    },
+    "examples": {
+      "richTitle": "Ví dụ",
+      "explain": "Giải thích",
+      "showFurigana": "Furigana",
+      "showRomaji": "Romaji",
+      "category": {
+        "standard": "Cơ bản",
+        "casual": "Thân mật",
+        "polite": "Lịch sự",
+        "negative": "Phủ định",
+        "question": "Câu hỏi",
+        "edge_case": "Trường hợp đặc biệt"
+      }
+    },
+    "pragmatics": {
+      "title": "Sắc thái",
+      "intent": "Mục đích",
+      "stance": "Thái độ người nói",
+      "nuance": "Sắc thái cảm xúc"
+    },
+    "tone": {
+      "formal": "Trang trọng",
+      "casual": "Thân mật",
+      "polite": "Lịch sự",
+      "written": "Văn viết",
+      "spoken": "Văn nói",
+      "keigo": "Kính ngữ",
+      "neutral": "Trung tính"
+    },
+    "related": "Ngữ pháp liên quan",
+    "opposing": "Đối lập với"
   },
   "verbForms": {
     "subtitle": "Thể động từ — Bảng tra biến đổi động từ",

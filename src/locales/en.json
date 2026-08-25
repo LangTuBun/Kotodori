@@ -115,14 +115,60 @@
     "homophones": "Homophones"
   },
   "grammar": {
-    "searchPlaceholder": "Search patterns, meaning, number...",
+    "searchPlaceholder": "Search patterns, meaning, romaji, tags...",
     "tips": "Study tips",
     "countOfTotal": "{filtered} / {total} patterns",
     "filterByVerbForm": "Filter by verb form",
+    "filterByTone": "Filter by tone",
     "clearFilter": "Clear filter",
     "noResults": "No patterns found.",
     "selectPrompt": "Select a pattern",
-    "hoverHint": "or hover a card for a quick look"
+    "hoverHint": "or hover a card for a quick look",
+    "formation": {
+      "title": "Formation",
+      "pos": "Part of speech",
+      "form": "Form",
+      "example": "Example"
+    },
+    "notes": {
+      "title": "Notes & Pitfalls",
+      "type": {
+        "false_friend": "False friend",
+        "common_mistake": "Common mistake",
+        "nuance_trap": "Nuance trap"
+      }
+    },
+    "examples": {
+      "richTitle": "Examples",
+      "explain": "Explain",
+      "showFurigana": "Furigana",
+      "showRomaji": "Romaji",
+      "category": {
+        "standard": "Standard",
+        "casual": "Casual",
+        "polite": "Polite",
+        "negative": "Negative",
+        "question": "Question",
+        "edge_case": "Edge case"
+      }
+    },
+    "pragmatics": {
+      "title": "Nuance",
+      "intent": "Intent",
+      "stance": "Speaker stance",
+      "nuance": "Emotional nuance"
+    },
+    "tone": {
+      "formal": "Formal",
+      "casual": "Casual",
+      "polite": "Polite",
+      "written": "Written",
+      "spoken": "Spoken",
+      "keigo": "Keigo",
+      "neutral": "Neutral"
+    },
+    "related": "Related grammar",
+    "opposing": "Contrasts with"
   },
   "verbForms": {
     "subtitle": "Verb Forms — Verb Conjugation Cheat Sheet",

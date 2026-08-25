@@ -25,10 +25,126 @@
         "jaRuby": "リンさんは<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_002",
+      "g_004",
+      "g_028_1"
+    ],
     "tags": [],
     "patternRuby": "(N1は) N2です",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "(N1 wa) N2 desu",
+    "formationRules": [
+      {
+        "pos": "noun",
+        "form": "Dictionary form",
+        "exampleStr": "学生 ＋ です"
+      }
+    ],
+    "pragmatics": {
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Identifying or describing a person/thing by stating what it is",
+      "speakerStance": "Neutral, objective statement of fact"
+    },
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "は marks the topic, not necessarily the grammatical subject",
+        "description": {
+          "vi": "は đánh dấu chủ đề của câu (cái đang được nói tới), không phải lúc nào cũng là \"chủ ngữ\" theo nghĩa tiếng Việt. N1 thường được lược bỏ nếu đã rõ trong ngữ cảnh -- ví dụ khi trả lời một câu hỏi đã nêu rõ chủ đề.",
+          "en": "は marks what the sentence is about (the topic), which is often but not always the same as the subject. N1 is commonly dropped entirely when clear from context -- e.g. when answering a question that already established the topic."
+        },
+        "examples": [
+          {
+            "incorrect": "田中さんは田中さんです。",
+            "correct": "田中です。",
+            "explanation": {
+              "vi": "Khi trả lời câu hỏi \"Bạn là ai?\", không lặp lại chủ đề đã rõ -- chỉ cần nói phần thông tin mới.",
+              "en": "When answering \"Who are you?\", don't repeat the already-clear topic -- just state the new information."
+            }
+          }
+        ]
+      },
+      {
+        "type": "false_friend",
+        "title": "です is not a verb meaning \"to be\" in the Western sense",
+        "description": {
+          "vi": "です là trợ động từ lịch sự, không chia theo ngôi hay số như \"to be\" trong tiếng Anh. Nó chỉ đơn giản làm câu trở nên lịch sự, thể thường tương ứng là だ (thường lược bỏ).",
+          "en": "です is a polite copula, not a conjugating verb like English \"to be\" (am/is/are). It stays です regardless of person/number; its plain-form counterpart is だ (often omitted entirely in casual speech)."
+        }
+      }
+    ],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "田中さんは先生です。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>です。",
+        "kana": "たなかさんはせんせいです。",
+        "romaji": "Tanaka-san wa sensei desu.",
+        "vi": "Anh/chị Tanaka là giáo viên.",
+        "en": "Mr./Ms. Tanaka is a teacher.",
+        "contextualExplanation": {
+          "vi": "Câu khẳng định cơ bản: N1（田中さん）は N2（先生）です.",
+          "en": "Basic affirmative statement: N1 (Tanaka-san) は N2 (teacher) です."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "こちらは田中さんでいらっしゃいます。",
+        "jaRuby": "こちらは<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんでいらっしゃいます。",
+        "kana": "こちらはたなかさんでいらっしゃいます。",
+        "romaji": "Kochira wa Tanaka-san de irasshaimasu.",
+        "vi": "Đây là anh/chị Tanaka ạ.",
+        "en": "This is Mr./Ms. Tanaka.",
+        "contextualExplanation": {
+          "vi": "Ở mức độ trang trọng hơn (kính ngữ), です được thay bằng でいらっしゃいます khi giới thiệu người khác một cách kính trọng.",
+          "en": "At a more formal (keigo) register, です is replaced by でいらっしゃいます when respectfully introducing someone else -- beyond N5 level but useful to recognize."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "すみません、田中さんですか。",
+        "jaRuby": "すみません、<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんですか。",
+        "kana": "すみません、たなかさんですか。",
+        "romaji": "Sumimasen, Tanaka-san desu ka.",
+        "vi": "Xin lỗi, anh/chị có phải là Tanaka không?",
+        "en": "Excuse me, are you Mr./Ms. Tanaka?",
+        "contextualExplanation": {
+          "vi": "Thêm か vào cuối câu です để biến thành câu hỏi (xem g_002).",
+          "en": "Adding か after です turns the statement into a yes/no question (see g_002)."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "いいえ、田中さんじゃないです。山田です。",
+        "jaRuby": "いいえ、<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんじゃないです。<ruby>山田<rp>(</rp><rt>やまだ</rt><rp>)</rp></ruby>です。",
+        "kana": "いいえ、たなかさんじゃないです。やまだです。",
+        "romaji": "Iie, Tanaka-san janai desu. Yamada desu.",
+        "vi": "Không, tôi không phải là Tanaka. Tôi là Yamada.",
+        "en": "No, I'm not Tanaka. I'm Yamada.",
+        "contextualExplanation": {
+          "vi": "Thể phủ định じゃないです được học riêng ở g_004, đặt cạnh đây để đối chiếu.",
+          "en": "The negative form janai desu is its own point (g_004) -- shown here for contrast with the affirmative."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "それ、私の傘だ。",
+        "jaRuby": "それ、<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>だ。",
+        "kana": "それ、わたしのかさだ。",
+        "romaji": "Sore, watashi no kasa da.",
+        "vi": "Cái đó là ô của tôi.",
+        "en": "That's my umbrella.",
+        "contextualExplanation": {
+          "vi": "Trong hội thoại thân mật giữa bạn bè, です được thay bằng だ (thể thường) -- xem thêm g_028_1.",
+          "en": "In casual speech among friends, です is replaced by its plain-form counterpart だ -- see g_028_1 for the full plain-form pattern."
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_002",
@@ -59,7 +175,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2ですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ズンさんは教師ですか。",
+        "jaRuby": "ズンさんは<ruby>教師<rp>(</rp><rt>きょうし</rt><rp>)</rp></ruby>ですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Anh Dũng là giáo viên đúng không?",
+        "en": "Is Dung a teacher?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_003",
@@ -90,7 +228,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Nも",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私はベトナム人です。マイさんもベトナム人です。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。マイさんもベトナム<ruby>人<rp>(</rp><rt>じん</rt><rp>)</rp></ruby>です。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi là người Việt. Mai cũng là người Việt.",
+        "en": "I'm Vietnamese. Mai is Vietnamese too.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_004",
@@ -121,7 +281,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1は N2じゃないです/じゃありません/ではありません",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "リンさんは中国人じゃないです。",
+        "jaRuby": "リンさんは<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>じゃないです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn Linh không phải là người Trung Quốc.",
+        "en": "Linh is not Chinese.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_009",
@@ -152,7 +334,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2でした",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "昨日は晴れでした。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>晴<rp>(</rp><rt>は</rt><rp>)</rp></ruby>れでした。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm qua trời nắng.",
+        "en": "It was sunny yesterday.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_010",
@@ -183,7 +387,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2じゃなかったです/じゃありませんでした",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "昨日は雨じゃなかったですよ。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>じゃなかったですよ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm qua trời không mưa đâu.",
+        "en": "It wasn't rainy yesterday.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_012",
@@ -214,7 +440,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2でN3です",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "リーさんは日本語学校の学生で、中国人です。",
+        "jaRuby": "リーさんは<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>で、<ruby>中国人<rp>(</rp><rt>ちゅうごくじん</rt><rp>)</rp></ruby>です。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn Lý là học sinh trường Nhật ngữ và là người Trung Quốc.",
+        "en": "Ly is a student at a Japanese language school, and is Chinese.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_006",
@@ -245,7 +493,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(は)いくらですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この辞書はいくらですか。",
+        "jaRuby": "この<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>はいくらですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cuốn từ điển này giá bao nhiêu?",
+        "en": "How much is this dictionary?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_007",
@@ -276,7 +546,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "お仕事は何ですか。",
+        "jaRuby": "お<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>ですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Công việc của bạn là gì?",
+        "en": "What's your job?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_011_1",
@@ -307,7 +599,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の N2ですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "これ、誰の傘ですか。",
+        "jaRuby": "これ、<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>の<ruby>傘<rp>(</rp><rt>かさ</rt><rp>)</rp></ruby>ですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đây là ô của ai vậy?",
+        "en": "Whose umbrella is this?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_011_2",
@@ -338,7 +652,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "それは何の辞書ですか。",
+        "jaRuby": "それは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>ですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đó là từ điển gì vậy?",
+        "en": "What is that dictionary about?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_011_3",
@@ -369,7 +705,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "どこの N2ですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "すしはどこの料理ですか。",
+        "jaRuby": "すしはどこの<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>ですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Sushi là món ăn ở đâu?",
+        "en": "Where is sushi from?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_011_4",
@@ -400,7 +758,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>の N2ですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "これはぶどうとチョコレートのお菓子です。",
+        "jaRuby": "これはぶどうとチョコレートのお<ruby>菓子<rp>(</rp><rt>かし</rt><rp>)</rp></ruby>です。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đây là kẹo làm từ nho và sô cô la.",
+        "en": "This is candy made of grapes and chocolate.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_011_5",
@@ -431,7 +811,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1の N2",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "リンさんはABC日本語学校の学生です。",
+        "jaRuby": "リンさんはABC<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby><ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>の<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>です。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn Linh là học viên trường Nhật ngữ ABC.",
+        "en": "Linh is a student at ABC Japanese School.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_008_1",
@@ -462,7 +864,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~ね",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "8時からですね。",
+        "jaRuby": "8<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>からですね。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Từ 8 giờ nhỉ.",
+        "en": "It's from 8 o'clock, right?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_008_2",
@@ -493,7 +917,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~よ",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "今日、図書館は休みですよ。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みですよ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm nay thư viện đóng cửa đấy.",
+        "en": "The library is closed today, you know.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_008_3",
@@ -524,7 +970,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~よね",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "明日は15日ですよね。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は15<ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby>ですよね。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ngày mai là ngày 15 nhỉ?",
+        "en": "Tomorrow is the 15th, right?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_005",
@@ -555,7 +1023,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Nは<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "病院は何時から何時までですか。",
+        "jaRuby": "<ruby>病院<rp>(</rp><rt>びょういん</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>から<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby><ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>までですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bệnh viện làm việc từ mấy giờ đến mấy giờ?",
+        "en": "What time is the hospital open from and until?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_013",
@@ -586,7 +1076,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aいです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この図書館は広いです。",
+        "jaRuby": "この<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>は<ruby>広<rp>(</rp><rt>ひろ</rt><rp>)</rp></ruby>いです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Thư viện này rộng.",
+        "en": "This library is spacious.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_014",
@@ -617,7 +1129,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aくないです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "明日は忙しくないです。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しくないです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ngày mai tôi không bận.",
+        "en": "I'm not busy tomorrow.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_015",
@@ -648,7 +1182,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aなです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私の町はまあまあ便利です。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>はまあまあ<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>です。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Thành phố này khá tiện lợi.",
+        "en": "My town is fairly convenient.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_016",
@@ -679,7 +1235,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aなじゃないです/じゃありません",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私の部屋はあまりきれいじゃありません。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>はあまりきれいじゃありません。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Phòng tôi không đẹp lắm.",
+        "en": "My room isn't very clean.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_017",
@@ -710,7 +1288,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aい/Aなですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "日本は今、寒いですか。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>は<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>寒<rp>(</rp><rt>さむ</rt><rp>)</rp></ruby>いですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nhật Bản bây giờ có lạnh không?",
+        "en": "Is Japan cold right now?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_018",
@@ -741,7 +1341,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aいくて+Aい/Aなです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この本は難しくてあまり面白くないです。",
+        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくてあまり<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>くないです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cuốn sách này khó và không thú vị lắm.",
+        "en": "This book is difficult and not very interesting.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_019",
@@ -772,7 +1394,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aなで+Aな/Aいです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "日本語の授業はとてもにぎやかで楽しいです。",
+        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>の<ruby>授業<rp>(</rp><rt>じゅぎょう</rt><rp>)</rp></ruby>はとてもにぎやかで<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しいです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Giờ học tiếng Nhật rất sôi động và vui vẻ.",
+        "en": "Japanese class is very lively and fun.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_020",
@@ -803,7 +1447,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)どうですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "東京の生活はどうですか。",
+        "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>の<ruby>生活<rp>(</rp><rt>せいかつ</rt><rp>)</rp></ruby>はどうですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cuộc sống ở Tokyo thế nào?",
+        "en": "How is life in Tokyo?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_022",
@@ -834,7 +1500,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aいかったです/Aいくなかったです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "先週は忙しかったです。",
+        "jaRuby": "<ruby>先週<rp>(</rp><rt>せんしゅう</rt><rp>)</rp></ruby>は<ruby>忙<rp>(</rp><rt>いそが</rt><rp>)</rp></ruby>しかったです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tuần trước thì bận rộn.",
+        "en": "Last week was busy.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_023",
@@ -865,7 +1553,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aなでした/Aなじゃなかったです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "昔、父はとてもハンサムでした。",
+        "jaRuby": "<ruby>昔<rp>(</rp><rt>むかし</rt><rp>)</rp></ruby>、<ruby>父<rp>(</rp><rt>ちち</rt><rp>)</rp></ruby>はとてもハンサムでした。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ngày xưa bố tôi rất đẹp trai.",
+        "en": "My father used to be very handsome.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_024",
@@ -896,7 +1606,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "どんなNですか？→ AいN/AなN",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "小さくてかわいいお店です。",
+        "jaRuby": "<ruby>小<rp>(</rp><rt>ちい</rt><rp>)</rp></ruby>さくてかわいいお<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>です。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nó là cửa hàng nhỏ và đáng yêu.",
+        "en": "It's a small, cute shop.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_021",
@@ -927,7 +1659,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~が~",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この店はとても安くておいしいですが、あまり有名じゃありません。",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はとても<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>くておいしいですが、あまり<ruby>有名<rp>(</rp><rt>ゆうめい</rt><rp>)</rp></ruby>じゃありません。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Quán này rất rẻ và ngon nhưng không nổi tiếng lắm.",
+        "en": "This shop is very cheap and delicious, but not very famous.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_025",
@@ -958,7 +1712,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1で <ruby>疑問<rp>(</rp><rt>ぎもん</rt><rp>)</rp></ruby><ruby>詞<rp>(</rp><rt>ことば</rt><rp>)</rp></ruby> が<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby>Aですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "このクラスで誰が一番背が高いですか。",
+        "jaRuby": "このクラスで<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>が<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby><ruby>背<rp>(</rp><rt>せ</rt><rp>)</rp></ruby>が<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Trong lớp này ai cao nhất?",
+        "en": "Who is the tallest in this class?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_026",
@@ -989,7 +1765,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1とN2(と)、どっち/どちらがAですか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "コーヒーと紅茶と、どちらが好きですか。",
+        "jaRuby": "コーヒーと<ruby>紅茶<rp>(</rp><rt>こうちゃ</rt><rp>)</rp></ruby>と、どちらが<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>きですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cà phê và trà, bạn thích cái nào hơn?",
+        "en": "Which do you like more, coffee or tea?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_027",
@@ -1020,7 +1818,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1(は) N2よりAです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "東京は大阪より人が多いです。",
+        "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>は<ruby>大阪<rp>(</rp><rt>おおさか</rt><rp>)</rp></ruby>より<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>いです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tokyo thì đông người hơn Osaka.",
+        "en": "Tokyo has more people than Osaka.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_028_1",
@@ -1051,7 +1871,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Thể thường của N/A (だ thay です)",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "明日は休みだ。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みだ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ngày mai nghỉ.",
+        "en": "Tomorrow is a day off.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_028_2",
@@ -1082,7 +1924,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) từ nghi vấn/N2/A?",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "1人暮らしは大変？",
+        "jaRuby": "1<ruby>人<rp>(</rp><rt>にん</rt><rp>)</rp></ruby><ruby>暮<rp>(</rp><rt>く</rt><rp>)</rp></ruby>らしは<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Sống một mình thì vất vả đúng không?",
+        "en": "Is living alone hard?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_029",
@@ -1113,7 +1977,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2/A(だよ/だね/だよね)",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "うん。ベトナムのコーヒーだよ。",
+        "jaRuby": "うん。ベトナムのコーヒーだよ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đúng vậy. Cà phê Việt Nam đấy.",
+        "en": "Yeah. It's Vietnamese coffee.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_030_1",
@@ -1144,7 +2030,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2/Aなじゃない？",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "これ、ベトナム語じゃない？",
+        "jaRuby": "これ、ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>じゃない？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đây chẳng phải là tiếng Việt hay sao?",
+        "en": "Isn't this Vietnamese?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_030_2",
@@ -1175,7 +2083,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2/Aなじゃない",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ううん、ベトナム語じゃないよ。",
+        "jaRuby": "ううん、ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>じゃないよ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Không, không phải tiếng Việt đâu.",
+        "en": "No, it's not Vietnamese.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_031",
@@ -1206,7 +2136,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1は) N2/Aだった？/Aなだった",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ダナンはどんな町だった？",
+        "jaRuby": "ダナンはどんな<ruby>町<rp>(</rp><rt>まち</rt><rp>)</rp></ruby>だった？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đà Nẵng là thành phố như thế nào?",
+        "en": "What kind of city was Da Nang?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_032",
@@ -1237,7 +2189,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1は N2/Aなじゃなかった",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "大変じゃなかったよ。楽しかったよ。",
+        "jaRuby": "<ruby>大変<rp>(</rp><rt>たいへん</rt><rp>)</rp></ruby>じゃなかったよ。<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しかったよ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Không vất vả đâu. Rất vui.",
+        "en": "It wasn't hard. It was fun.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_033_1",
@@ -1268,7 +2242,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aい？",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ベトナム語は難しい？",
+        "jaRuby": "ベトナム<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しい？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tiếng Việt có khó không?",
+        "en": "Is Vietnamese difficult?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_033_2",
@@ -1299,7 +2295,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aい",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "うん、ちょっと難しい。",
+        "jaRuby": "うん、ちょっと<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しい。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ừ, hơi khó.",
+        "en": "Yeah, it's a bit difficult.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_034",
@@ -1330,7 +2348,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~けど~",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "このレストラン、おいしいけど高いよね。",
+        "jaRuby": "このレストラン、おいしいけど<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いよね。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nhà hàng này ngon nhưng đắt nhỉ.",
+        "en": "This restaurant is tasty, but expensive, isn't it.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_035",
@@ -1361,7 +2401,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aいかった",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "昨日は楽しかったね。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しかったね。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm qua vui nhỉ.",
+        "en": "Yesterday was fun, wasn't it.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_036",
@@ -1392,7 +2454,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)Aいくなかった",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "今日は昨日より暑くないね。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>より<ruby>暑<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>くないね。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm nay thì không nóng hơn hôm qua nhỉ.",
+        "en": "Today isn't hotter than yesterday, is it.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_037",
@@ -1423,7 +2507,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(は)ありますか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "タイ語の本はありますか。",
+        "jaRuby": "タイ<ruby>語<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>の<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>はありますか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ở đây có sách tiếng Thái không?",
+        "en": "Do you have a Thai-language book?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_038_1",
@@ -1454,7 +2560,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1(sự vật)は N2(địa điểm)です/にあります",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "スマホは机の上にあります。",
+        "jaRuby": "スマホは<ruby>机<rp>(</rp><rt>つくえ</rt><rp>)</rp></ruby>の<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にあります。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Điện thoại có ở trên bàn.",
+        "en": "The phone is on the desk.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_038_2",
@@ -1485,7 +2613,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1(địa điểm)に N2(sự vật)があります",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ベッドの上にかばんがあります。",
+        "jaRuby": "ベッドの<ruby>上<rp>(</rp><rt>うえ</rt><rp>)</rp></ruby>にかばんがあります。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ở trên giường có cái cặp.",
+        "en": "There's a bag on the bed.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_039",
@@ -1516,7 +2666,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(Nは)いますか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "マインさんはいますか？",
+        "jaRuby": "マインさんはいますか？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Có chị Mai ở đây không?",
+        "en": "Is Mai here?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_040_1",
@@ -1547,7 +2719,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1(người/vật)は N2(địa điểm)にいます",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "猫はいすの下にいます。",
+        "jaRuby": "<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>はいすの<ruby>下<rp>(</rp><rt>した</rt><rp>)</rp></ruby>にいます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Con mèo đang ở dưới ghế.",
+        "en": "The cat is under the chair.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_040_2",
@@ -1578,7 +2772,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1(địa điểm)に N2(người/vật)がいます",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "あそこに猫がいますよ。",
+        "jaRuby": "あそこに<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>がいますよ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đằng kia có một chú mèo đấy.",
+        "en": "There's a cat over there.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_041",
@@ -1609,7 +2825,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Nには/にも~",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "日本には高い山がたくさんあります。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>には<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>い<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>がたくさんあります。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ở Nhật có rất nhiều ngọn núi cao.",
+        "en": "Japan has many tall mountains.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_042",
@@ -1640,7 +2878,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1とN2",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私の家には、犬と鳥がいます。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には、<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>と<ruby>鳥<rp>(</rp><rt>とり</rt><rp>)</rp></ruby>がいます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nhà tôi có chó và chim.",
+        "en": "My house has a dog and a bird.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_043_1_2",
@@ -1671,7 +2931,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Số lượng từ + います/あります",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私の家には犬が2匹と、猫が1匹います。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>には<ruby>犬<rp>(</rp><rt>いぬ</rt><rp>)</rp></ruby>が2<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>と、<ruby>猫<rp>(</rp><rt>ねこ</rt><rp>)</rp></ruby>が1<ruby>匹<rp>(</rp><rt>ひき</rt><rp>)</rp></ruby>います。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nhà tôi có 2 con chó và 1 con mèo.",
+        "en": "My house has 2 dogs and 1 cat.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_044",
@@ -1702,7 +2984,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Vます/Vました",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "毎朝コーヒーを飲みます。",
+        "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>コーヒーを<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Mỗi sáng tôi uống cà phê.",
+        "en": "I drink coffee every morning.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_045",
@@ -1733,7 +3037,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に+V",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "3時に出かけます。",
+        "jaRuby": "3<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>かけます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi sẽ ra ngoài lúc 3 giờ.",
+        "en": "I'll go out at 3 o'clock.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_046",
@@ -1764,7 +3090,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>/<ruby>分<rp>(</rp><rt>ぶん</rt><rp>)</rp></ruby>+V",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "昨日10時間働きました。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>10<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby><ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm qua tôi đã làm việc 10 tiếng.",
+        "en": "I worked 10 hours yesterday.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_047",
@@ -1795,7 +3143,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~から~まで~V",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "今朝は10時まで寝ました。",
+        "jaRuby": "<ruby>今朝<rp>(</rp><rt>けさ</rt><rp>)</rp></ruby>は10<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>まで<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Sáng nay tôi đã ngủ đến 10 giờ.",
+        "en": "I slept until 10 o'clock this morning.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_048",
@@ -1826,7 +3196,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Vません/Vませんでした",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "昨日は勉強しませんでした。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しませんでした。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm qua tôi đã không học bài.",
+        "en": "I didn't study yesterday.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_049_1",
@@ -1857,7 +3249,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(địa điểm)へ/に<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "7時に家へ帰ります。",
+        "jaRuby": "7<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>へ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi về nhà lúc 7 giờ.",
+        "en": "I go home at 7 o'clock.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_049_2",
@@ -1888,7 +3302,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(địa điểm)へ/に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "明日、学校に行きます。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ngày mai tôi đi đến trường.",
+        "en": "I'll go to school tomorrow.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_049_3",
@@ -1919,7 +3355,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(địa điểm)へ/に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "友達が私の家に来ます。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn tôi sẽ đến nhà tôi.",
+        "en": "My friend is coming to my house.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_050_1",
@@ -1950,7 +3408,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(địa điểm)でV",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "食堂で食べました。",
+        "jaRuby": "<ruby>食堂<rp>(</rp><rt>しょくどう</rt><rp>)</rp></ruby>で<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi đã ăn ở nhà ăn.",
+        "en": "I ate at the cafeteria.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_050_2",
@@ -1981,7 +3461,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "NをV",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "新聞を読みます。",
+        "jaRuby": "<ruby>新聞<rp>(</rp><rt>しんぶん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi đọc báo.",
+        "en": "I read the newspaper.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_050_3",
@@ -2012,7 +3514,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "NとV",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "友達と映画を見ます。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>と<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi xem phim cùng bạn.",
+        "en": "I watch a movie with a friend.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_051",
@@ -2043,7 +3567,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1とかN2(とか)/N1やN2(など)",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "週末は掃除とか洗濯とかをします。",
+        "jaRuby": "<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby>は<ruby>掃除<rp>(</rp><rt>そうじ</rt><rp>)</rp></ruby>とか<ruby>洗濯<rp>(</rp><rt>せんたく</rt><rp>)</rp></ruby>とかをします。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cuối tuần tôi làm nào là dọn dẹp nào là giặt giũ.",
+        "en": "On weekends I do things like cleaning and laundry.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_052",
@@ -2074,7 +3620,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+か+Vか",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "部屋に誰かいますか。",
+        "jaRuby": "<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>に<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>かいますか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Trong phòng có ai đó không?",
+        "en": "Is there someone in the room?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_053",
@@ -2105,7 +3673,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "どこ/だれ/<ruby>何<rp>(</rp><rt>なん</rt><rp>)</rp></ruby>+も+V(phủ định)",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "今日はどこも行きません。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>はどこも<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きません。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm nay tôi chẳng đi đâu cả.",
+        "en": "I'm not going anywhere today.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_054",
@@ -2136,7 +3726,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Nを(số lượng)ください/お<ruby>願<rp>(</rp><rt>ねが</rt><rp>)</rp></ruby>いします",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "チョコレートのケーキを1個ください。",
+        "jaRuby": "チョコレートのケーキを1<ruby>個<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>ください。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hãy cho tôi 1 bánh kem sô cô la.",
+        "en": "One piece of chocolate cake, please.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_055",
@@ -2167,7 +3779,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(thời gian)に+tần suất/số lượng+V",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "1年に1回、旅行します。",
+        "jaRuby": "1<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby>に1<ruby>回<rp>(</rp><rt>かい</rt><rp>)</rp></ruby>、<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>します。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Một năm tôi đi du lịch một lần.",
+        "en": "I travel once a year.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_056",
@@ -2198,7 +3832,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Vませんか/Vましょう",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "一緒に昼ご飯を食べませんか。",
+        "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>昼<rp>(</rp><rt>ひる</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べませんか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Chúng ta cùng ăn trưa không?",
+        "en": "Shall we have lunch together?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_057",
@@ -2229,7 +3885,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Nが<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "新しいスマホが欲しいです。",
+        "jaRuby": "<ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しいスマホが<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しいです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi muốn có một chiếc điện thoại mới.",
+        "en": "I want a new smartphone.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_058",
@@ -2260,7 +3938,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "(N1へ/に)+Vます/N2に <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます/<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます/<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ります",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "図書館へ本を借りに行きます。",
+        "jaRuby": "<ruby>図書館<rp>(</rp><rt>としょかん</rt><rp>)</rp></ruby>へ<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>借<rp>(</rp><rt>か</rt><rp>)</rp></ruby>りに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi đi thư viện để mượn sách.",
+        "en": "I go to the library to borrow books.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_059",
@@ -2291,7 +3991,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Nが/をVたいです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "日本へ旅行に行きたいです。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>へ<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi muốn đi du lịch Nhật Bản.",
+        "en": "I want to travel to Japan.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_060",
@@ -2322,7 +4044,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Vます+<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この漢字の読み方が分かりません。",
+        "jaRuby": "この<ruby>漢字<rp>(</rp><rt>かんじ</rt><rp>)</rp></ruby>の<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>み<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>が<ruby>分<rp>(</rp><rt>わ</rt><rp>)</rp></ruby>かりません。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi không biết cách đọc chữ Hán này.",
+        "en": "I don't know how to read this kanji.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_061_1",
@@ -2355,7 +4099,29 @@
     "patternRuby": "Động từ khả năng (<ruby>可能<rp>(</rp><rt>かのう</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>がた</rt><rp>)</rp></ruby>)",
     "requiredVerbForm": [
       "potential"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "飲む→飲めます、食べる→食べられます、来る→来られます",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>めます、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べられます、<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます",
+        "kana": "",
+        "romaji": "",
+        "vi": "",
+        "en": "",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_061_2",
@@ -2388,7 +4154,29 @@
     "patternRuby": "(Nは)~がV(khả năng)",
     "requiredVerbForm": [
       "potential"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私は日本語が話せます。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>せます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi có thể nói tiếng Nhật.",
+        "en": "I can speak Japanese.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_062",
@@ -2419,7 +4207,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(phương tiện)でV",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "箸でフォーを食べます。",
+        "jaRuby": "<ruby>箸<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>でフォーを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ăn phở bằng đũa.",
+        "en": "Eat pho with chopsticks.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_063",
@@ -2450,7 +4260,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "かかります",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "学校まで30分かかります。",
+        "jaRuby": "<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>まで30<ruby>分<rp>(</rp><rt>ふん</rt><rp>)</rp></ruby>かかります。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Đến trường mất 30 phút.",
+        "en": "It takes 30 minutes to school.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_064",
@@ -2483,7 +4315,29 @@
     "patternRuby": "Số tiền/thời gian+くらいです/で+V(khả năng)",
     "requiredVerbForm": [
       "potential"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "1万円くらいで買えます。",
+        "jaRuby": "1<ruby>万<rp>(</rp><rt>まん</rt><rp>)</rp></ruby><ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>くらいで<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>えます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Có thể mua với khoảng 10 nghìn yên.",
+        "en": "You can buy it for about 10,000 yen.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_065",
@@ -2514,7 +4368,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1はN2が<ruby>好<rp>(</rp><rt>す</rt><rp>)</rp></ruby>き・<ruby>嫌<rp>(</rp><rt>きら</rt><rp>)</rp></ruby>い/<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>・<ruby>下手<rp>(</rp><rt>へた</rt><rp>)</rp></ruby>/<ruby>得意<rp>(</rp><rt>とくい</rt><rp>)</rp></ruby>・<ruby>苦手<rp>(</rp><rt>にがて</rt><rp>)</rp></ruby>だ・です",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私は料理が上手です。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>です。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi giỏi nấu ăn.",
+        "en": "I'm good at cooking.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_066",
@@ -2545,7 +4421,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~から~",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "疲れましたから、早く寝ます。",
+        "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れましたから、<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Vì mệt nên tôi ngủ sớm.",
+        "en": "Because I'm tired, I'll go to bed early.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_067",
@@ -2576,7 +4474,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1はN2がAです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この店はコーヒーがおいしいです。",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>はコーヒーがおいしいです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cửa hàng này có cà phê ngon.",
+        "en": "This shop's coffee is delicious.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_068",
@@ -2607,7 +4527,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1がN2/Aです/NがVます",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "誰が来ますか。田中さんが来ます。",
+        "jaRuby": "<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>が<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ますか。<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんが<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ai sẽ đến? Anh Tanaka sẽ đến.",
+        "en": "Who's coming? Tanaka is coming.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_069",
@@ -2640,7 +4582,29 @@
     "patternRuby": "Thể từ điển (Vる)",
     "requiredVerbForm": [
       "dictionary"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "飲みます→飲む、食べます→食べる",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる",
+        "kana": "",
+        "romaji": "",
+        "vi": "",
+        "en": "",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_070",
@@ -2673,7 +4637,29 @@
     "patternRuby": "Vる？",
     "requiredVerbForm": [
       "dictionary"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "明日、来る？",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>る？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ngày mai bạn đến chứ?",
+        "en": "Are you coming tomorrow?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_071",
@@ -2706,7 +4692,29 @@
     "patternRuby": "Vる+こと/Nができる",
     "requiredVerbForm": [
       "dictionary"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私はピアノを弾くことができます。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はピアノを<ruby>弾<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>くことができます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi có thể chơi đàn piano.",
+        "en": "I can play the piano.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_072",
@@ -2739,7 +4747,29 @@
     "patternRuby": "Vる+ことです",
     "requiredVerbForm": [
       "dictionary"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私の趣味は料理をすることです。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>の<ruby>趣味<rp>(</rp><rt>しゅみ</rt><rp>)</rp></ruby>は<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>をすることです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Sở thích của tôi là nấu ăn.",
+        "en": "My hobby is cooking.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_073",
@@ -2772,7 +4802,29 @@
     "patternRuby": "Thể ない (Vない)",
     "requiredVerbForm": [
       "nai"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "飲みません→飲まない、食べません→食べない",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みません→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>まない、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べません→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べない",
+        "kana": "",
+        "romaji": "",
+        "vi": "",
+        "en": "",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_074",
@@ -2805,7 +4857,29 @@
     "patternRuby": "(<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に)Vない？",
     "requiredVerbForm": [
       "nai"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "一緒に映画を見ない？",
+        "jaRuby": "<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>を<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ない？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cùng xem phim không?",
+        "en": "Want to watch a movie together?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_075",
@@ -2838,7 +4912,29 @@
     "patternRuby": "V(khả năng)る/ V(khả năng)ない",
     "requiredVerbForm": [
       "potential"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "泳げる/泳げない",
+        "jaRuby": "<ruby>泳<rp>(</rp><rt>およ</rt><rp>)</rp></ruby>げる/<ruby>泳<rp>(</rp><rt>およ</rt><rp>)</rp></ruby>げない",
+        "kana": "",
+        "romaji": "",
+        "vi": "có thể/không thể bơi",
+        "en": "can swim / can't swim",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_076",
@@ -2871,7 +4967,29 @@
     "patternRuby": "Thể た (Vた)",
     "requiredVerbForm": [
       "ta"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "飲みました→飲んだ、食べました→食べた",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みました→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んだ、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べました→<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べた",
+        "kana": "",
+        "romaji": "",
+        "vi": "",
+        "en": "",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_077",
@@ -2904,7 +5022,29 @@
     "patternRuby": "V(khả năng)た/なかった",
     "requiredVerbForm": [
       "potential-past"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "昨日は早く起きられた。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>は<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きられた。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm qua tôi đã có thể dậy sớm.",
+        "en": "I was able to get up early yesterday.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_078",
@@ -2935,7 +5075,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "~Vたい (thể thường)",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "沖縄に行きたい。でも、お金がなくて行けなかった。",
+        "jaRuby": "<ruby>沖縄<rp>(</rp><rt>おきなわ</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたい。でも、お<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>がなくて<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>けなかった。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi muốn đi Okinawa. Nhưng vì không có tiền nên đã không đi được.",
+        "en": "I want to go to Okinawa. But I couldn't go because I had no money.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_079",
@@ -2968,7 +5130,29 @@
     "patternRuby": "Vよう (thể ý chí)",
     "requiredVerbForm": [
       "volitional"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "そろそろ帰ろう。",
+        "jaRuby": "そろそろ<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ろう。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Về thôi nào.",
+        "en": "Let's head home now.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_080_1",
@@ -3001,7 +5185,29 @@
     "patternRuby": "V1る/Nの+<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、V2",
     "requiredVerbForm": [
       "dictionary"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "寝る前に、歯を磨きます。",
+        "jaRuby": "<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>る<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>に、<ruby>歯<rp>(</rp><rt>は</rt><rp>)</rp></ruby>を<ruby>磨<rp>(</rp><rt>みが</rt><rp>)</rp></ruby>きます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Trước khi ngủ, tôi đánh răng.",
+        "en": "I brush my teeth before I sleep.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_080_2",
@@ -3034,7 +5240,29 @@
     "patternRuby": "V1た/Nの+<ruby>後<rp>(</rp><rt>ご</rt><rp>)</rp></ruby>で、V2",
     "requiredVerbForm": [
       "ta"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "仕事の後で、ジムに行きます。",
+        "jaRuby": "<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>の<ruby>後<rp>(</rp><rt>のち</rt><rp>)</rp></ruby>で、ジムに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Sau khi làm việc, tôi đi tập gym.",
+        "en": "I go to the gym after work.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_081",
@@ -3062,12 +5290,135 @@
         "jaRuby": "<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>着<rp>(</rp><rt>つ</rt><rp>)</rp></ruby>いたら、<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>してください。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_084",
+      "g_085",
+      "g_112"
+    ],
     "tags": [],
     "patternRuby": "V1たら、V2",
     "requiredVerbForm": [
       "ta"
-    ]
+    ],
+    "patternRomaji": "V1-tara, V2",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "た-form (Vた) + ら",
+        "exampleStr": "降る → 降った ＋ ら"
+      },
+      {
+        "pos": "i-adj",
+        "form": "かった (past) + ら",
+        "exampleStr": "忙しい → 忙しかった ＋ ら"
+      },
+      {
+        "pos": "na-adj",
+        "form": "だった (past) + ら",
+        "exampleStr": "暇 → 暇だった ＋ ら"
+      },
+      {
+        "pos": "noun",
+        "form": "だった (past) + ら",
+        "exampleStr": "休み → 休みだった ＋ ら"
+      }
+    ],
+    "pragmatics": {
+      "tones": [
+        "neutral",
+        "polite",
+        "spoken"
+      ],
+      "intent": "Stating a condition and its result",
+      "speakerStance": "Presents V1 as a concrete, one-time trigger for V2; the most flexible and colloquial of the four conditionals"
+    },
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "たら vs と／ば／なら -- four conditionals, four different feels",
+        "description": {
+          "vi": "たら linh hoạt nhất, dùng được cho hầu hết mọi tình huống (kể cả yêu cầu, lời mời sau đó). と dùng cho quy luật/sự thật hiển nhiên (không dùng với mệnh lệnh ở V2). ば nhấn mạnh điều kiện logic/giả định. なら phản hồi lại điều đối phương vừa nói. Xem g_084/g_085 (ば) và g_112 (なら).",
+          "en": "たら is the most flexible and can be followed by almost anything in V2, including commands/invitations -- the default choice when unsure. と is for automatic/general truths (V2 cannot be a command). ば emphasizes a logical/hypothetical condition. なら responds to something the listener just said. See g_084/g_085 (ば) and g_112 (なら) for contrast."
+        },
+        "relatedGrammarId": "g_112"
+      },
+      {
+        "type": "common_mistake",
+        "title": "たら still marks a one-time/specific event, not a repeated habit",
+        "description": {
+          "vi": "Với sự thật khoa học hoặc quy luật luôn đúng (ví dụ: \"nước sôi ở 100 độ\"), と tự nhiên hơn たら. たら nghe như đang nói về một tình huống cụ thể.",
+          "en": "For scientific facts or rules that are always true (\"water boils at 100°C\"), と reads more naturally than たら, which implies a specific, one-off situation rather than a general law."
+        }
+      }
+    ],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "雨が降ったら、家にいます。",
+        "jaRuby": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>ったら、<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>にいます。",
+        "kana": "あめがふったら、いえにいます。",
+        "romaji": "Ame ga futtara, ie ni imasu.",
+        "vi": "Nếu trời mưa, tôi sẽ ở nhà.",
+        "en": "If it rains, I'll stay home.",
+        "contextualExplanation": {
+          "vi": "Điều kiện cụ thể cho một tình huống sắp tới: động từ 降る → thể た 降った ＋ ら.",
+          "en": "A concrete condition for an upcoming situation: verb 降る → た-form 降った ＋ ら."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "仕事が終わったら、何をしますか。",
+        "jaRuby": "<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>が<ruby>終<rp>(</rp><rt>お</rt><rp>)</rp></ruby>わったら、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしますか。",
+        "kana": "しごとがおわったら、なにをしますか。",
+        "romaji": "Shigoto ga owattara, nani o shimasu ka.",
+        "vi": "Khi xong việc rồi, bạn sẽ làm gì?",
+        "en": "Once you finish work, what will you do?",
+        "contextualExplanation": {
+          "vi": "たら cũng dùng được với ý nghĩa \"sau khi/ngay khi\" một sự kiện xảy ra.",
+          "en": "たら here carries the \"once/as soon as\" nuance in addition to plain \"if\"."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "疲れていなかったら、一緒に行きたいです。",
+        "jaRuby": "<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れていなかったら、<ruby>一緒<rp>(</rp><rt>いっしょ</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きたいです。",
+        "kana": "つかれていなかったら、いっしょにいきたいです。",
+        "romaji": "Tsukarete inakattara, issho ni ikitai desu.",
+        "vi": "Nếu tôi không mệt thì tôi muốn đi cùng.",
+        "en": "If I weren't tired, I'd want to go with you.",
+        "contextualExplanation": {
+          "vi": "Thể ない của 疲れている (疲れていない) chuyển thành たら: 疲れていなかったら.",
+          "en": "The negative te-iru form (疲れていない) conjugates the same way: 疲れていなかったら."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "A：明日、暇？　B：暇だったら、映画見に行こうよ。",
+        "jaRuby": "A：<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>、<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>？　B：<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>だったら、<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby><ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>こうよ。",
+        "kana": "A：あした、ひま？　B：ひまだったら、えいがみにいこうよ。",
+        "romaji": "A: Ashita, hima? B: Hima dattara, eiga mi ni ikou yo.",
+        "vi": "A: Mai rảnh không? B: Nếu rảnh thì đi xem phim đi.",
+        "en": "A: Free tomorrow? B: If you're free, let's go watch a movie.",
+        "contextualExplanation": {
+          "vi": "たら thường theo sau bằng lời mời/rủ rê (行こう) -- một điểm mà と không làm được.",
+          "en": "たら is commonly followed by an invitation (行こう) -- something と cannot do."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "ボタンを押したら、ドアが開きました。",
+        "jaRuby": "ボタンを<ruby>押<rp>(</rp><rt>お</rt><rp>)</rp></ruby>したら、ドアが<ruby>開<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>きました。",
+        "kana": "ボタンをおしたら、ドアがあきました。",
+        "romaji": "Botan o oshitara, doa ga akimashita.",
+        "vi": "Vừa bấm nút thì cửa mở ra.",
+        "en": "As soon as I pressed the button, the door opened.",
+        "contextualExplanation": {
+          "vi": "V2 ở thì quá khứ: たら có thể diễn tả một khám phá bất ngờ ngay sau khi V1 xảy ra, không chỉ là điều kiện giả định.",
+          "en": "V2 in past tense: たら can express a surprising discovery immediately after V1, not just a hypothetical condition."
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_082",
@@ -3100,7 +5451,29 @@
     "patternRuby": "Vたばかりだ",
     "requiredVerbForm": [
       "ta"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この会社に入ったばかりです。",
+        "jaRuby": "この<ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby>に<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>ったばかりです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi vừa mới vào công ty này.",
+        "en": "I just joined this company.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_083",
@@ -3133,7 +5506,29 @@
     "patternRuby": "Vたことがあります",
     "requiredVerbForm": [
       "ta"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "日本に行ったことがあります。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ったことがあります。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi đã từng đi Nhật Bản.",
+        "en": "I've been to Japan before.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_084",
@@ -3166,7 +5561,29 @@
     "patternRuby": "Thể ば (Vば/Aいければ)",
     "requiredVerbForm": [
       "ba"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "飲めば/高ければ",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>めば/<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>ければ",
+        "kana": "",
+        "romaji": "",
+        "vi": "nếu uống / nếu cao",
+        "en": "if (I) drink / if (it's) tall",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_085",
@@ -3199,7 +5616,29 @@
     "patternRuby": "Vば/Aいければ~",
     "requiredVerbForm": [
       "ba"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "安ければ、買います。",
+        "jaRuby": "<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ければ、<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nếu rẻ thì tôi sẽ mua.",
+        "en": "If it's cheap, I'll buy it.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_086",
@@ -3232,7 +5671,29 @@
     "patternRuby": "Từ nghi vấn+ば、~か",
     "requiredVerbForm": [
       "ba"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "どうすれば、日本語が上手になりますか。",
+        "jaRuby": "どうすれば、<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりますか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nên làm thế nào để giỏi tiếng Nhật hơn?",
+        "en": "What should I do to get better at Japanese?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_087",
@@ -3266,7 +5727,29 @@
     "requiredVerbForm": [
       "nai",
       "ba"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "練習しなければ、上手になりません。",
+        "jaRuby": "<ruby>練習<rp>(</rp><rt>れんしゅう</rt><rp>)</rp></ruby>しなければ、<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になりません。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nếu không luyện tập thì sẽ không giỏi lên được.",
+        "en": "If you don't practice, you won't improve.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_088",
@@ -3299,7 +5782,29 @@
     "patternRuby": "Vなければなりません/いけません/Vないといけません",
     "requiredVerbForm": [
       "nai"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "明日までにレポートを出さなければなりません。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>までにレポートを<ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>さなければなりません。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi phải nộp báo cáo trước ngày mai.",
+        "en": "I have to submit the report by tomorrow.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_089",
@@ -3332,7 +5837,29 @@
     "patternRuby": "Vなきゃ、~",
     "requiredVerbForm": [
       "nai"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "早く行かなきゃ、間に合わないよ。",
+        "jaRuby": "<ruby>早<rp>(</rp><rt>はや</rt><rp>)</rp></ruby>く<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かなきゃ、<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>わないよ。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Không đi nhanh thì không kịp đâu.",
+        "en": "If you don't hurry, you won't make it.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_090",
@@ -3365,7 +5892,29 @@
     "patternRuby": "Vなきゃいけない",
     "requiredVerbForm": [
       "nai"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "もう帰らなきゃいけない。",
+        "jaRuby": "もう<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>らなきゃいけない。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi phải về rồi.",
+        "en": "I have to go home now.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_112",
@@ -3396,7 +5945,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "V/Aい/Aな/N(thể thường)+なら",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "日本に行くなら、京都がおすすめです。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>くなら、<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>がおすすめです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nếu đi Nhật thì tôi khuyên nên đến Kyoto.",
+        "en": "If you're going to Japan, I recommend Kyoto.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_113",
@@ -3427,7 +5998,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Aな/N+なら",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "暇なら、手伝ってください。",
+        "jaRuby": "<ruby>暇<rp>(</rp><rt>ひま</rt><rp>)</rp></ruby>なら、<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってください。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Nếu rảnh thì hãy giúp tôi với.",
+        "en": "If you're free, please help me.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_091",
@@ -3460,7 +6053,29 @@
     "patternRuby": "Thể て (Vて)",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "買う→買って、飲む→飲んで、書く→書いて",
+        "jaRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>う→<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>って、<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んで、<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>く→<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いて",
+        "kana": "",
+        "romaji": "",
+        "vi": "",
+        "en": "",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_092",
@@ -3493,7 +6108,29 @@
     "patternRuby": "V1て、V2て、…V",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "朝起きて、シャワーを浴びて、朝ご飯を食べます。",
+        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、シャワーを<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びて、<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Sáng dậy, tắm, rồi ăn sáng.",
+        "en": "I get up, take a shower, then eat breakfast.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_093",
@@ -3526,7 +6163,29 @@
     "patternRuby": "V1てから V2",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "宿題をしてから、テレビを見ます。",
+        "jaRuby": "<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>をしてから、テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Sau khi làm bài tập xong thì tôi xem tivi.",
+        "en": "After finishing my homework, I watch TV.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_094_1",
@@ -3559,7 +6218,29 @@
     "patternRuby": "~Vている",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "今、雨が降っています。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>っています。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bây giờ trời đang mưa.",
+        "en": "It's raining right now.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_094_2",
@@ -3592,7 +6273,29 @@
     "patternRuby": "NがVて+います",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "子供が公園で遊んでいます。",
+        "jaRuby": "<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>が<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>で<ruby>遊<rp>(</rp><rt>あそ</rt><rp>)</rp></ruby>んでいます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Trẻ con đang chơi ở công viên.",
+        "en": "Children are playing at the park.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_094_3",
@@ -3625,7 +6328,29 @@
     "patternRuby": "NがVています",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私は毎朝走っています。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby><ruby>走<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>っています。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Mỗi sáng tôi đều chạy bộ.",
+        "en": "I go running every morning.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_094_4",
@@ -3658,7 +6383,29 @@
     "patternRuby": "NがVている",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "窓が開いています。",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>が<ruby>開<rp>(</rp><rt>ひら</rt><rp>)</rp></ruby>いています。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cửa sổ đang mở.",
+        "en": "The window is open.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_094_5",
@@ -3691,7 +6438,29 @@
     "patternRuby": "Vて+います",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私はハノイに住んでいます。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はハノイに<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいます。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi đang sống ở Hà Nội.",
+        "en": "I live in Hanoi.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_095",
@@ -3724,7 +6493,29 @@
     "patternRuby": "Nを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "田中さんを知っていますか。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていますか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn có biết anh Tanaka không?",
+        "en": "Do you know Tanaka?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_096",
@@ -3755,7 +6546,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Nでも+いい/<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>です/かまわないです",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "お茶でもいいです。",
+        "jaRuby": "お<ruby>茶<rp>(</rp><rt>ちゃ</rt><rp>)</rp></ruby>でもいいです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Trà cũng được.",
+        "en": "Tea is fine too.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_097",
@@ -3788,7 +6601,29 @@
     "patternRuby": "Vてもいいですか/だいじょうぶですか/かまわないですか",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ここに座ってもいいですか。",
+        "jaRuby": "ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>ってもいいですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi ngồi đây có được không?",
+        "en": "Is it okay if I sit here?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_098_1",
@@ -3821,7 +6656,29 @@
     "patternRuby": "Vてもいいです",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "写真を撮ってもいいです。",
+        "jaRuby": "<ruby>写真<rp>(</rp><rt>しゃしん</rt><rp>)</rp></ruby>を<ruby>撮<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ってもいいです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Chụp ảnh cũng được.",
+        "en": "It's okay to take photos.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_098_2",
@@ -3855,7 +6712,29 @@
     "requiredVerbForm": [
       "nai",
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "明日は来なくてもいいです。",
+        "jaRuby": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>は<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>なくてもいいです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Ngày mai không đến cũng được.",
+        "en": "You don't have to come tomorrow.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_099",
@@ -3889,7 +6768,29 @@
     "requiredVerbForm": [
       "nai",
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ここに名前を書いてください。ここに座らないでください。",
+        "jaRuby": "ここに<ruby>名前<rp>(</rp><rt>なまえ</rt><rp>)</rp></ruby>を<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてください。ここに<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>らないでください。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hãy viết tên vào đây. Xin đừng ngồi ở đây.",
+        "en": "Please write your name here. Please don't sit here.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_100",
@@ -3922,7 +6823,29 @@
     "patternRuby": "Vてくれますか（→Vてくれる？）",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "ちょっと手伝ってくれる？",
+        "jaRuby": "ちょっと<ruby>手伝<rp>(</rp><rt>てつだ</rt><rp>)</rp></ruby>ってくれる？",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn giúp tôi một chút được không?",
+        "en": "Can you help me for a bit?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_101",
@@ -3955,7 +6878,29 @@
     "patternRuby": "Vて+くれませんか/くださいませんか",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "窓を閉めてくださいませんか。",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>めてくださいませんか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn có thể đóng cửa sổ giúp tôi không?",
+        "en": "Could you close the window for me?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_102",
@@ -3986,7 +6931,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1は/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に) N2をくれる",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "友達が私に本をくれました。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>が<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>をくれました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Bạn tôi cho tôi một cuốn sách.",
+        "en": "My friend gave me a book.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_103",
@@ -4019,7 +6986,29 @@
     "patternRuby": "Nは/が(<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>に)~Vてくれる",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "先生が日本語を教えてくれました。",
+        "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>が<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えてくれました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Thầy giáo đã dạy tiếng Nhật cho tôi.",
+        "en": "My teacher taught me Japanese.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_104",
@@ -4050,7 +7039,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1は/が N2に N3をあげる",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私は妹に花をあげました。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>妹<rp>(</rp><rt>いもうと</rt><rp>)</rp></ruby>に<ruby>花<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>をあげました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi đã tặng hoa cho em gái.",
+        "en": "I gave flowers to my younger sister.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_105",
@@ -4083,7 +7094,29 @@
     "patternRuby": "N1は/が N2にVてあげる",
     "requiredVerbForm": [
       "te"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "私は友達に本を貸してあげました。",
+        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>してあげました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Tôi đã cho bạn mượn sách.",
+        "en": "I lent my friend a book.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_106",
@@ -4116,7 +7149,29 @@
     "patternRuby": "Vましょうか/Vようか",
     "requiredVerbForm": [
       "volitional"
-    ]
+    ],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "荷物を持ちましょうか。",
+        "jaRuby": "<ruby>荷物<rp>(</rp><rt>にもつ</rt><rp>)</rp></ruby>を<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>ちましょうか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Để tôi xách đồ cho nhé.",
+        "en": "Shall I carry your luggage?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_107",
@@ -4147,7 +7202,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N/số từ+しか~Vません/Vない",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "財布に1000円しかありません。",
+        "jaRuby": "<ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>に1000<ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>しかありません。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Trong ví chỉ có 1000 yên.",
+        "en": "I only have 1000 yen in my wallet.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_108",
@@ -4178,7 +7255,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N/số từ+だけ~",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "今日は水だけ飲みました。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>水<rp>(</rp><rt>みず</rt><rp>)</rp></ruby>だけ<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Hôm nay tôi chỉ uống nước lọc.",
+        "en": "Today I only drank water.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_109",
@@ -4209,7 +7308,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N(chủ đề)は~",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この本は昨日読みました。",
+        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby><ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みました。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Cuốn sách này thì hôm qua tôi đã đọc rồi.",
+        "en": "This book, I read yesterday.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_110",
@@ -4240,7 +7361,29 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "N1は~が/けど、N2は~",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "兄は背が高いですが、弟は低いです。",
+        "jaRuby": "<ruby>兄<rp>(</rp><rt>あに</rt><rp>)</rp></ruby>は<ruby>背<rp>(</rp><rt>せ</rt><rp>)</rp></ruby>が<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>いですが、<ruby>弟<rp>(</rp><rt>おとうと</rt><rp>)</rp></ruby>は<ruby>低<rp>(</rp><rt>ひく</rt><rp>)</rp></ruby>いです。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Anh trai thì cao, còn em trai thì thấp.",
+        "en": "My older brother is tall, but my younger brother is short.",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   },
   {
     "id": "g_111",
@@ -4271,6 +7414,28 @@
     "relatedGrammar": [],
     "tags": [],
     "patternRuby": "Aい/Aな+さ",
-    "requiredVerbForm": []
+    "requiredVerbForm": [],
+    "patternRomaji": "",
+    "formationRules": [],
+    "pragmatics": {
+      "tones": []
+    },
+    "notesAndPitfalls": [],
+    "richExamples": [
+      {
+        "category": "standard",
+        "ja": "この山の高さはどのくらいですか。",
+        "jaRuby": "この<ruby>山<rp>(</rp><rt>やま</rt><rp>)</rp></ruby>の<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>さはどのくらいですか。",
+        "kana": "",
+        "romaji": "",
+        "vi": "Độ cao của ngọn núi này là bao nhiêu?",
+        "en": "How tall is this mountain?",
+        "contextualExplanation": {
+          "vi": "",
+          "en": ""
+        }
+      }
+    ],
+    "opposingGrammar": []
   }
 ]

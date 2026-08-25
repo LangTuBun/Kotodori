@@ -24,10 +24,61 @@
   examples: Array<{ ja: string; kana: string; vi: string; en: string }>
 }
 
+// -- Grammar Expansion V2 -----------------------------------------------
+// Adds a deeper taxonomy (formation rules, pragmatics, pitfalls, rich
+// examples) on top of the original GrammarPoint fields below, rather than
+// a parallel "EnhancedGrammarPoint" the app would have to discriminate
+// between. New fields are optional so legacy/unmigrated records (and any
+// consumer that hasn't been updated) keep working untouched; migrated
+// records populate them. See scripts/migrate-grammar-v2.mjs.
+export type PosType = 'verb' | 'i-adj' | 'na-adj' | 'noun' | 'phrase'
+export type ToneType = 'formal' | 'casual' | 'polite' | 'written' | 'spoken' | 'keigo' | 'neutral'
+
+export interface ConnectionRule {
+  pos: PosType
+  form: string // e.g. 'Dictionary form (辞書形)', 'て-form', 'Stem (ます-stem)'
+  particle?: string // optional connecting particle, e.g. 'の', 'な'
+  exampleStr: string // e.g. '食べる ＋ ほうがいい'
+}
+
+export interface Pragmatics {
+  tones: ToneType[]
+  intent?: string // what the speaker achieves, e.g. 'Giving advice'
+  emotionalNuance?: string // e.g. 'Can sound bossy or condescending to superiors'
+  speakerStance?: string // e.g. 'Subjective opinion based on observation'
+}
+
+export interface GrammarPitfall {
+  type: 'false_friend' | 'common_mistake' | 'nuance_trap'
+  title: string
+  description: { vi: string; en: string }
+  examples?: {
+    incorrect: string
+    correct: string
+    explanation?: { vi: string; en: string }
+  }[]
+  relatedGrammarId?: string // id of the easily-confused pattern
+}
+
+export type ExampleCategory = 'standard' | 'casual' | 'polite' | 'negative' | 'question' | 'edge_case'
+
+export interface EnhancedGrammarExample {
+  category: ExampleCategory
+  ja: string
+  jaRuby?: string
+  kana: string
+  romaji: string
+  vi: string
+  en: string
+  contextualExplanation: { vi: string; en: string } // brief breakdown
+  audioStub?: string // e.g. 'g_136_ex1.mp3' or absent
+}
+
 export interface GrammarPoint {
   id: string
   num: string
   pattern: string
+  patternRomaji?: string
   patternRuby?: string
   meaning: { vi: string; en: string }
   category: string
@@ -40,7 +91,18 @@ export interface GrammarPoint {
   relatedGrammar: string[]
   tags: string[]
   requiredVerbForm: string[]
+
+  // Grammar Expansion V2 (optional -- absent/empty on unmigrated records)
+  formationRules?: ConnectionRule[]
+  pragmatics?: Pragmatics
+  notesAndPitfalls?: GrammarPitfall[]
+  richExamples?: EnhancedGrammarExample[]
+  opposingGrammar?: string[]
 }
+
+// Alias for spec-compliance with the Grammar Expansion V2 design doc --
+// same shape as GrammarPoint, since the new fields live on it directly.
+export type EnhancedGrammarPoint = GrammarPoint
 
 export interface GrammarCategory {
   slug: string

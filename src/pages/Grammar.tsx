@@ -1,13 +1,24 @@
 import { useEffect, useMemo, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import verbFormsData from "@/data/n5/verb-forms.json"
-import { getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
-import type { GrammarPoint, VerbFormsData } from "@/types"
+import { allGrammar, getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
+import type { GrammarPoint, ToneType, VerbFormsData } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
 import { CollapsibleFilters } from "@/components/ui/CollapsibleFilters"
+import { FormationMatrix } from "@/components/ui/FormationMatrix"
+import { NotesAndTrapsCallout } from "@/components/ui/NotesAndTrapsCallout"
+import { InteractiveExampleCard } from "@/components/ui/InteractiveExampleCard"
+
+// Cross-references (relatedGrammar/opposingGrammar/notesAndPitfalls[].relatedGrammarId)
+// can point across the N5/N4 boundary, so id -> pattern lookups always use the
+// full combined set rather than whatever `level` currently has selected.
+const patternById: Record<string, string> = Object.fromEntries(allGrammar.map(g => [g.id, g.pattern]))
+const grammarById: Record<string, GrammarPoint> = Object.fromEntries(allGrammar.map(g => [g.id, g]))
+
+const ALL_TONES: ToneType[] = ['formal', 'polite', 'casual', 'spoken', 'written', 'keigo', 'neutral']
 
 // requiredVerbForm cross-links only exist for N5 grammar (verb-forms.json is
 // N5-only, see handoff.md) -- the pill filter and its badges are simply
@@ -39,15 +50,30 @@ export function Grammar() {
   const [search, setSearch] = useState("")
   const [cat, setCat] = useState<string | null>(null)
   const [verbForm, setVerbForm] = useState<string | null>(null)
+  const [tone, setTone] = useState<ToneType | null>(null)
   const [selected, setSelected] = useState<GrammarPoint | null>(null)
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({})
   const [showTips, setShowTips] = useState(false)
+  const [showFurigana, setShowFurigana] = useState(true)
+  const [showRomaji, setShowRomaji] = useState(false)
+
+  // Jumps the detail drawer to another grammar point by id -- used by
+  // cross-reference links (notesAndPitfalls, relatedGrammar, opposingGrammar).
+  // Deliberately does not touch `level`/`cat`: the target may belong to the
+  // other JLPT level or a different category than what's currently listed,
+  // and the drawer renders fine either way (category badge just degrades to
+  // blank via the existing optional chaining below).
+  function jumpTo(id: string) {
+    const point = grammarById[id]
+    if (point) setSelected(point)
+  }
 
   // A stale category/point selection from before a level switch has no
   // meaning in the new level's category set -- clear it rather than showing
   // a detail drawer or filter chip for a point that's no longer listed.
   useEffect(() => {
     setCat(null)
+    setTone(null)
     setSelected(null)
   }, [level])
 
@@ -65,21 +91,31 @@ export function Grammar() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams])
 
+  // Which tones actually occur in the current level's data -- only render
+  // tone filter chips that could possibly match something.
+  const availableTones = useMemo(
+    () => ALL_TONES.filter(tn => grammar.some(g => g.pragmatics?.tones?.includes(tn))),
+    [grammar]
+  )
+
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
     return grammar.filter(g => {
       if (cat && g.category !== cat) return false
       if (verbForm && !g.requiredVerbForm?.includes(verbForm)) return false
+      if (tone && !g.pragmatics?.tones?.includes(tone)) return false
       if (q) {
         return (
           g.pattern.toLowerCase().includes(q) ||
           localize(g.meaning).toLowerCase().includes(q) ||
-          g.num.includes(q)
+          g.num.includes(q) ||
+          (g.patternRomaji?.toLowerCase().includes(q) ?? false) ||
+          (g.tags?.some(tg => tg.toLowerCase().includes(q)) ?? false)
         )
       }
       return true
     })
-  }, [grammar, search, cat, verbForm])
+  }, [grammar, search, cat, verbForm, tone])
 
   const byCategory = useMemo(() => {
     const map = new Map<string, GrammarPoint[]>()
@@ -139,10 +175,11 @@ export function Grammar() {
           label="Filters"
           activeLabel={
             [cat ? categories.find(c => c.slug === cat)?.romanNumeral : null,
-             verbForm ? verbForms.find(f => f.id === verbForm)?.titleJa : null]
+             verbForm ? verbForms.find(f => f.id === verbForm)?.titleJa : null,
+             tone ? t(`grammar.tone.${tone}`) : null]
               .filter(Boolean).join(' · ') || t('common.all')
           }
-          isFiltered={cat !== null || verbForm !== null}
+          isFiltered={cat !== null || verbForm !== null || tone !== null}
         >
           {/* Category chips */}
           <div className="w-full flex gap-2 flex-wrap">
@@ -188,6 +225,33 @@ export function Grammar() {
               </button>
             )}
           </div>
+
+          {/* Tone pill filter -- only shown once some enriched points carry
+              pragmatics.tones data for the current level. */}
+          {availableTones.length > 0 && (
+            <div className="w-full flex items-center gap-2 flex-wrap pt-2 mt-1 border-t border-ink/10">
+              <span className="text-[10px] font-black uppercase tracking-widest shrink-0 text-muted">
+                {t('grammar.filterByTone')}
+              </span>
+              {availableTones.map(tn => {
+                const active = tone === tn
+                return (
+                  <button
+                    key={tn}
+                    onClick={() => setTone(prev => prev === tn ? null : tn)}
+                    className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-green text-paper' : 'hover:bg-surface'}`}
+                  >
+                    {t(`grammar.tone.${tn}`)}
+                  </button>
+                )
+              })}
+              {tone && (
+                <button onClick={() => setTone(null)} className="text-xs font-bold text-muted hover:text-red underline cursor-pointer">
+                  {t('grammar.clearFilter')}
+                </button>
+              )}
+            </div>
+          )}
         </CollapsibleFilters>
 
         {showTips && (
@@ -204,7 +268,7 @@ export function Grammar() {
         )}
 
         {/* Category sections */}
-        <div key={`${cat}|${verbForm}|${search}`} className="flex-1 overflow-y-auto p-4 space-y-6 animate-fade-in">
+        <div key={`${cat}|${verbForm}|${tone}|${search}`} className="flex-1 overflow-y-auto p-4 space-y-6 animate-fade-in">
           {visibleCategories.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">{t('grammar.noResults')}</div>
           )}
@@ -260,14 +324,84 @@ export function Grammar() {
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-muted">#{selected.num} · {localize(categories.find(c => c.slug === selected.category)?.title)}</span>
             </div>
-            <div className="text-3xl font-black leading-tight mb-3">
+            <div className="text-3xl font-black leading-tight mb-1">
               <Ruby text={selected.pattern} html={selected.patternRuby} />
             </div>
+            {selected.patternRomaji && (
+              <div className="text-xs font-mono text-muted mb-2">{selected.patternRomaji}</div>
+            )}
             <div className="text-lg font-bold">{localize(selected.meaning)}</div>
+
+            {selected.pragmatics && selected.pragmatics.tones.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {selected.pragmatics.tones.map(tn => (
+                  <span key={tn} className="text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] text-muted">
+                    {t(`grammar.tone.${tn}`)}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
 
-          {selected.examples && selected.examples.length > 0 && (
-            <div className="p-6">
+          {selected.pragmatics && (selected.pragmatics.intent || selected.pragmatics.speakerStance || selected.pragmatics.emotionalNuance) && (
+            <div className="p-6 border-b-3 border-structural space-y-2">
+              <div className="text-xs font-black uppercase tracking-wider">{t('grammar.pragmatics.title')}</div>
+              {selected.pragmatics.intent && (
+                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.intent')}: </span>{selected.pragmatics.intent}</div>
+              )}
+              {selected.pragmatics.speakerStance && (
+                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.stance')}: </span>{selected.pragmatics.speakerStance}</div>
+              )}
+              {selected.pragmatics.emotionalNuance && (
+                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.nuance')}: </span>{selected.pragmatics.emotionalNuance}</div>
+              )}
+            </div>
+          )}
+
+          {selected.formationRules && selected.formationRules.length > 0 && (
+            <div className="p-6 border-b-3 border-structural">
+              <div className="text-xs font-black uppercase tracking-wider mb-3">{t('grammar.formation.title')}</div>
+              <FormationMatrix rules={selected.formationRules} />
+            </div>
+          )}
+
+          {selected.richExamples && selected.richExamples.length > 0 ? (
+            <div className="p-6 border-b-3 border-structural">
+              <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+                <div className="text-xs font-black uppercase tracking-wider">{t('grammar.examples.richTitle')}</div>
+                <div className="flex gap-1.5">
+                  <button
+                    type="button"
+                    aria-pressed={showFurigana}
+                    onClick={() => setShowFurigana(s => !s)}
+                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-all ${showFurigana ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                  >
+                    {t('grammar.examples.showFurigana')}
+                  </button>
+                  <button
+                    type="button"
+                    aria-pressed={showRomaji}
+                    onClick={() => setShowRomaji(s => !s)}
+                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-all ${showRomaji ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                  >
+                    {t('grammar.examples.showRomaji')}
+                  </button>
+                </div>
+              </div>
+              <div className="space-y-3">
+                {selected.richExamples.map((ex, i) => (
+                  <InteractiveExampleCard
+                    key={i}
+                    example={ex}
+                    showFurigana={showFurigana}
+                    showRomaji={showRomaji}
+                    accentHex={ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)]}
+                  />
+                ))}
+              </div>
+            </div>
+          ) : selected.examples && selected.examples.length > 0 && (
+            <div className="p-6 border-b-3 border-structural">
               <div className="text-xs font-black uppercase tracking-wider mb-4">{t('common.examples')}</div>
               {selected.examples.map((ex, i) => (
                 <div key={i} className="mb-5 last:mb-0 border-l-3 pl-4" style={{ borderColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
@@ -277,6 +411,42 @@ export function Grammar() {
                   {ex.vi && <div className="text-sm text-muted mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>}
                 </div>
               ))}
+            </div>
+          )}
+
+          {selected.notesAndPitfalls && selected.notesAndPitfalls.length > 0 && (
+            <div className="p-6 border-b-3 border-structural">
+              <div className="text-xs font-black uppercase tracking-wider mb-3">{t('grammar.notes.title')}</div>
+              <NotesAndTrapsCallout pitfalls={selected.notesAndPitfalls} onJumpTo={jumpTo} patternById={patternById} />
+            </div>
+          )}
+
+          {((selected.relatedGrammar && selected.relatedGrammar.length > 0) || (selected.opposingGrammar && selected.opposingGrammar.length > 0)) && (
+            <div className="p-6 space-y-3">
+              {selected.relatedGrammar && selected.relatedGrammar.length > 0 && (
+                <div>
+                  <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-1.5">{t('grammar.related')}</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {selected.relatedGrammar.map(id => (
+                      <button key={id} onClick={() => jumpTo(id)} className="jp px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-xs font-bold hover:bg-surface cursor-pointer">
+                        {patternById[id] ?? id}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {selected.opposingGrammar && selected.opposingGrammar.length > 0 && (
+                <div>
+                  <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-1.5">{t('grammar.opposing')}</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {selected.opposingGrammar.map(id => (
+                      <button key={id} onClick={() => jumpTo(id)} className="jp px-2 py-1 border-2 border-red/50 rounded-[var(--radius-sm)] text-xs font-bold text-red hover:bg-red/10 cursor-pointer">
+                        {patternById[id] ?? id}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
