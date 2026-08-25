@@ -1,5 +1,6 @@
 import type { GrammarPitfall } from "@/types"
 import { useTranslation } from "@/lib/useTranslation"
+import { LinkifiedText } from "@/components/ui/LinkifiedText"
 
 interface NotesAndTrapsCalloutProps {
   pitfalls: GrammarPitfall[]
@@ -37,7 +38,7 @@ export function NotesAndTrapsCallout({ pitfalls, onJumpTo, patternById }: NotesA
             </div>
             <div className="font-black text-sm mb-1.5 leading-snug">{p.title}</div>
             <div className={`text-sm leading-relaxed ${critical ? 'text-paper/85' : 'text-ink/80'}`}>
-              {localize(p.description)}
+              <LinkifiedText text={localize(p.description)} patternById={patternById ?? {}} onJumpTo={onJumpTo} />
             </div>
 
             {p.examples && p.examples.length > 0 && (

@@ -27,7 +27,19 @@ const all = [...n5, ...n4]
 const allIds = new Set(all.map(g => g.id))
 
 const KANJI_RE = /[一-鿿]/
+const GRAMMAR_ID_RE = /g_\d+(?:_\d+)*/g
 const errors = []
+
+// The UI (LinkifiedText) turns any "g_XXX" mention inside pitfall
+// descriptions / example contextualExplanation into a clickable jump link
+// resolved via this same id set -- an unknown id there would silently
+// render as dead/raw text instead of a link.
+function checkInlineGrammarRefs(text, label) {
+  if (!text) return
+  for (const m of text.matchAll(GRAMMAR_ID_RE)) {
+    if (!allIds.has(m[0])) errors.push(`${label}: inline reference to unknown id "${m[0]}"`)
+  }
+}
 let unenriched = 0
 let enrichedCount = 0
 
@@ -72,6 +84,8 @@ for (const g of all) {
       if (!ex.contextualExplanation?.vi?.trim()) errors.push(`${label}: missing contextualExplanation.vi`)
       if (!ex.contextualExplanation?.en?.trim()) errors.push(`${label}: missing contextualExplanation.en`)
       if (!ex.category) errors.push(`${label}: missing category`)
+      checkInlineGrammarRefs(ex.contextualExplanation?.vi, `${label}.contextualExplanation.vi`)
+      checkInlineGrammarRefs(ex.contextualExplanation?.en, `${label}.contextualExplanation.en`)
       // Every enriched example is authored with full ruby markup (a
       // deliberate all-or-nothing call -- see scripts/enrich-data/golden-sample.mjs
       // header -- so the Furigana toggle never silently no-ops on some
@@ -117,12 +131,30 @@ for (const g of all) {
     if (!pitfall.description?.vi?.trim() || !pitfall.description?.en?.trim()) {
       errors.push(`${g.id}: notesAndPitfalls "${pitfall.title}" missing description vi/en`)
     }
+    checkInlineGrammarRefs(pitfall.description?.vi, `${g.id}.notesAndPitfalls["${pitfall.title}"].description.vi`)
+    checkInlineGrammarRefs(pitfall.description?.en, `${g.id}.notesAndPitfalls["${pitfall.title}"].description.en`)
   }
 
   // -- formationRules content checks --
   for (const rule of g.formationRules || []) {
     if (!rule.pos || !rule.form || !rule.exampleStr) {
       errors.push(`${g.id}: formationRules entry missing pos/form/exampleStr`)
+    }
+  }
+
+  // -- pragmatics content checks --
+  // intent/speakerStance/emotionalNuance must be bilingual {vi, en} pairs,
+  // like every other content field -- a bare string here means the UI's
+  // Vietnamese-labeled section would show English content unconditionally.
+  if (g.pragmatics) {
+    for (const field of ['intent', 'speakerStance', 'emotionalNuance']) {
+      const val = g.pragmatics[field]
+      if (val === undefined) continue
+      if (typeof val === 'string') {
+        errors.push(`${g.id}: pragmatics.${field} is a plain string, not a {vi, en} pair`)
+      } else if (!val?.vi?.trim() || !val?.en?.trim()) {
+        errors.push(`${g.id}: pragmatics.${field} missing vi or en`)
+      }
     }
   }
 }

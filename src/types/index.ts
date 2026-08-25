@@ -43,9 +43,12 @@ export interface ConnectionRule {
 
 export interface Pragmatics {
   tones: ToneType[]
-  intent?: string // what the speaker achieves, e.g. 'Giving advice'
-  emotionalNuance?: string // e.g. 'Can sound bossy or condescending to superiors'
-  speakerStance?: string // e.g. 'Subjective opinion based on observation'
+  // Bilingual like every other content field (meaning, explanation,
+  // contextualExplanation...) -- these render under localized labels
+  // (t('grammar.pragmatics.*')), so the content itself must localize too.
+  intent?: { vi: string; en: string } // what the speaker achieves, e.g. 'Giving advice'
+  emotionalNuance?: { vi: string; en: string } // e.g. 'Can sound bossy or condescending to superiors'
+  speakerStance?: { vi: string; en: string } // e.g. 'Subjective opinion based on observation'
 }
 
 export interface GrammarPitfall {

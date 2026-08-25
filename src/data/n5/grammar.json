@@ -46,8 +46,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Identifying or describing a person/thing by stating what it is",
-      "speakerStance": "Neutral, objective statement of fact"
+      "intent": {
+        "vi": "Xác định hoặc mô tả một người/vật bằng cách nêu rõ đó là gì",
+        "en": "Identifying or describing a person/thing by stating what it is"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, phát biểu khách quan một sự thật",
+        "en": "Neutral, objective statement of fact"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -192,8 +198,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking someone to confirm or identify what/who something is",
-      "speakerStance": "Neutral yes/no inquiry"
+      "intent": {
+        "vi": "Yêu cầu người nghe xác nhận hoặc xác định ai/cái gì đó",
+        "en": "Asking someone to confirm or identify what/who something is"
+      },
+      "speakerStance": {
+        "vi": "Câu hỏi có/không trung tính",
+        "en": "Neutral yes/no inquiry"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -340,8 +352,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Adding an item to a previously mentioned set (\"too/also\")",
-      "speakerStance": "Neutral addition/inclusion"
+      "intent": {
+        "vi": "Thêm một mục vào một nhóm đã nhắc trước đó (\"cũng\")",
+        "en": "Adding an item to a previously mentioned set (\"too/also\")"
+      },
+      "speakerStance": {
+        "vi": "Bổ sung/liệt kê trung tính",
+        "en": "Neutral addition/inclusion"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -491,8 +509,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Denying that N1 is N2",
-      "speakerStance": "Neutral, objective negation"
+      "intent": {
+        "vi": "Phủ định rằng N1 là N2",
+        "en": "Denying that N1 is N2"
+      },
+      "speakerStance": {
+        "vi": "Phủ định khách quan, trung tính",
+        "en": "Neutral, objective negation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -620,8 +644,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that N1 used to be/was N2 in the past",
-      "speakerStance": "Neutral, factual statement about the past"
+      "intent": {
+        "vi": "Phát biểu rằng N1 từng là/đã là N2 trong quá khứ",
+        "en": "Stating that N1 used to be/was N2 in the past"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, phát biểu sự thật về quá khứ",
+        "en": "Neutral, factual statement about the past"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -754,8 +784,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Denying that N1 used to be N2 in the past",
-      "speakerStance": "Neutral, factual negation about the past"
+      "intent": {
+        "vi": "Phủ định rằng N1 từng là N2 trong quá khứ",
+        "en": "Denying that N1 used to be N2 in the past"
+      },
+      "speakerStance": {
+        "vi": "Phủ định khách quan về quá khứ",
+        "en": "Neutral, factual negation about the past"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -893,8 +929,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Listing two facts about N1 in one sentence",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Liệt kê hai sự thật về N1 trong cùng một câu",
+        "en": "Listing two facts about N1 in one sentence"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1018,8 +1060,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking the price of something",
-      "speakerStance": "Neutral practical inquiry"
+      "intent": {
+        "vi": "Hỏi giá của một thứ gì đó",
+        "en": "Asking the price of something"
+      },
+      "speakerStance": {
+        "vi": "Hỏi thông tin thực tế, trung tính",
+        "en": "Neutral practical inquiry"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1143,8 +1191,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking what something is",
-      "speakerStance": "Neutral, information-seeking"
+      "intent": {
+        "vi": "Hỏi một thứ gì đó là gì",
+        "en": "Asking what something is"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, tìm kiếm thông tin",
+        "en": "Neutral, information-seeking"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1270,8 +1324,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking who owns something",
-      "speakerStance": "Neutral, information-seeking"
+      "intent": {
+        "vi": "Hỏi ai là chủ sở hữu của một thứ gì đó",
+        "en": "Asking who owns something"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, tìm kiếm thông tin",
+        "en": "Neutral, information-seeking"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1398,8 +1458,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking what N2 is about (topic/content)",
-      "speakerStance": "Neutral, information-seeking"
+      "intent": {
+        "vi": "Hỏi N2 nói về điều gì (chủ đề/nội dung)",
+        "en": "Asking what N2 is about (topic/content)"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, tìm kiếm thông tin",
+        "en": "Neutral, information-seeking"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1524,8 +1590,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking where N2 is from (origin, maker, brand)",
-      "speakerStance": "Neutral, information-seeking"
+      "intent": {
+        "vi": "Hỏi N2 xuất xứ từ đâu (nguồn gốc, hãng sản xuất, thương hiệu)",
+        "en": "Asking where N2 is from (origin, maker, brand)"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, tìm kiếm thông tin",
+        "en": "Neutral, information-seeking"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1651,8 +1723,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking what N2 is made of",
-      "speakerStance": "Neutral, information-seeking"
+      "intent": {
+        "vi": "Hỏi N2 làm bằng chất liệu gì",
+        "en": "Asking what N2 is made of"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, tìm kiếm thông tin",
+        "en": "Neutral, information-seeking"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1780,8 +1858,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Marking N2 as belonging to, made by, or otherwise associated with N1",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Đánh dấu N2 thuộc về, do N1 làm ra, hoặc liên quan đến N1",
+        "en": "Marking N2 as belonging to, made by, or otherwise associated with N1"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -1910,9 +1994,18 @@
         "casual",
         "spoken"
       ],
-      "intent": "Inviting agreement or confirming shared feeling/knowledge with the listener",
-      "emotionalNuance": "Warm, softening -- signals \"I assume you feel/know this too\"",
-      "speakerStance": "Seeking emotional alignment, not new information"
+      "intent": {
+        "vi": "Mời người nghe đồng tình hoặc xác nhận cảm xúc/hiểu biết chung",
+        "en": "Inviting agreement or confirming shared feeling/knowledge with the listener"
+      },
+      "emotionalNuance": {
+        "vi": "Ấm áp, làm mềm câu nói -- ngụ ý \"tôi cho rằng bạn cũng cảm thấy/biết điều này\"",
+        "en": "Warm, softening -- signals \"I assume you feel/know this too\""
+      },
+      "speakerStance": {
+        "vi": "Tìm kiếm sự đồng điệu cảm xúc, không phải thông tin mới",
+        "en": "Seeking emotional alignment, not new information"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2042,9 +2135,18 @@
         "casual",
         "spoken"
       ],
-      "intent": "Asserting new information the listener doesn't already have",
-      "emotionalNuance": "Can sound pushy or condescending if overused with someone who already knows, or with superiors",
-      "speakerStance": "Confident assertion of information"
+      "intent": {
+        "vi": "Khẳng định một thông tin mới mà người nghe chưa biết",
+        "en": "Asserting new information the listener doesn't already have"
+      },
+      "emotionalNuance": {
+        "vi": "Có thể nghe như áp đặt/kẻ cả nếu dùng quá nhiều với người đã biết, hoặc với cấp trên",
+        "en": "Can sound pushy or condescending if overused with someone who already knows, or with superiors"
+      },
+      "speakerStance": {
+        "vi": "Khẳng định thông tin một cách tự tin",
+        "en": "Confident assertion of information"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2173,8 +2275,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Double-checking a piece of information while still assuming the listener also knows it",
-      "speakerStance": "Mostly confident, but seeking a light confirmation"
+      "intent": {
+        "vi": "Xác nhận lại một thông tin trong khi vẫn cho rằng người nghe cũng đã biết",
+        "en": "Double-checking a piece of information while still assuming the listener also knows it"
+      },
+      "speakerStance": {
+        "vi": "Khá tự tin, nhưng vẫn tìm kiếm sự xác nhận nhẹ nhàng",
+        "en": "Mostly confident, but seeking a light confirmation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2301,8 +2409,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking the operating hours or duration of something",
-      "speakerStance": "Neutral, practical inquiry"
+      "intent": {
+        "vi": "Hỏi giờ hoạt động hoặc thời lượng của điều gì đó",
+        "en": "Asking the operating hours or duration of something"
+      },
+      "speakerStance": {
+        "vi": "Hỏi thông tin thực tế, trung tính",
+        "en": "Neutral, practical inquiry"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2429,8 +2543,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing a quality of N using an i-adjective",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Mô tả một đặc điểm của N bằng tính từ đuôi い",
+        "en": "Describing a quality of N using an i-adjective"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2557,8 +2677,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Denying that N has quality A",
-      "speakerStance": "Neutral negation"
+      "intent": {
+        "vi": "Phủ định rằng N có đặc điểm A",
+        "en": "Denying that N has quality A"
+      },
+      "speakerStance": {
+        "vi": "Phủ định trung tính",
+        "en": "Neutral negation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2695,8 +2821,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing a quality of N using a na-adjective",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Mô tả một đặc điểm của N bằng tính từ đuôi な",
+        "en": "Describing a quality of N using a na-adjective"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2838,8 +2970,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Denying that N has quality A (na-adjective)",
-      "speakerStance": "Neutral negation"
+      "intent": {
+        "vi": "Phủ định rằng N có đặc điểm A (tính từ な)",
+        "en": "Denying that N has quality A (na-adjective)"
+      },
+      "speakerStance": {
+        "vi": "Phủ định trung tính",
+        "en": "Neutral negation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -2972,8 +3110,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking whether N has quality A",
-      "speakerStance": "Neutral inquiry"
+      "intent": {
+        "vi": "Hỏi xem N có đặc điểm A hay không",
+        "en": "Asking whether N has quality A"
+      },
+      "speakerStance": {
+        "vi": "Hỏi thông tin trung tính",
+        "en": "Neutral inquiry"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -3100,8 +3244,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Listing two or more qualities of the same subject",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Liệt kê hai hoặc nhiều đặc điểm của cùng một chủ thể",
+        "en": "Listing two or more qualities of the same subject"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -3228,8 +3378,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Listing two or more qualities where the first is a na-adjective",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Liệt kê hai hoặc nhiều đặc điểm, trong đó đặc điểm đầu tiên là tính từ な",
+        "en": "Listing two or more qualities where the first is a na-adjective"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -3354,8 +3510,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking for an opinion, impression, or suggestion about N",
-      "speakerStance": "Open-ended, inviting a subjective response"
+      "intent": {
+        "vi": "Hỏi ý kiến, ấn tượng, hoặc gợi ý về N",
+        "en": "Asking for an opinion, impression, or suggestion about N"
+      },
+      "speakerStance": {
+        "vi": "Mở, mời một câu trả lời mang tính chủ quan",
+        "en": "Open-ended, inviting a subjective response"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -3488,8 +3650,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing a past quality of N, affirmative or negative",
-      "speakerStance": "Neutral, factual statement about the past"
+      "intent": {
+        "vi": "Mô tả một đặc điểm của N trong quá khứ, khẳng định hoặc phủ định",
+        "en": "Describing a past quality of N, affirmative or negative"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, phát biểu sự thật về quá khứ",
+        "en": "Neutral, factual statement about the past"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -3640,8 +3808,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing a past quality of N (na-adjective), affirmative or negative",
-      "speakerStance": "Neutral, factual statement about the past"
+      "intent": {
+        "vi": "Mô tả một đặc điểm của N (tính từ な) trong quá khứ, khẳng định hoặc phủ định",
+        "en": "Describing a past quality of N (na-adjective), affirmative or negative"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, phát biểu sự thật về quá khứ",
+        "en": "Neutral, factual statement about the past"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -3774,8 +3948,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking what kind of N something is, and answering by directly modifying the noun",
-      "speakerStance": "Neutral, information-seeking"
+      "intent": {
+        "vi": "Hỏi N thuộc loại nào, rồi trả lời bằng cách bổ nghĩa trực tiếp cho danh từ",
+        "en": "Asking what kind of N something is, and answering by directly modifying the noun"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, tìm kiếm thông tin",
+        "en": "Neutral, information-seeking"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -3912,8 +4092,14 @@
         "neutral",
         "written"
       ],
-      "intent": "Contrasting two clauses, or softening a statement before it",
-      "speakerStance": "Neutral, contrastive or cushioning"
+      "intent": {
+        "vi": "Đối lập hai mệnh đề, hoặc làm mềm một câu nói trước khi nói tiếp",
+        "en": "Contrasting two clauses, or softening a statement before it"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính đối lập hoặc đệm câu",
+        "en": "Neutral, contrastive or cushioning"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4040,8 +4226,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking which item is the most A within a group",
-      "speakerStance": "Neutral, comparative inquiry"
+      "intent": {
+        "vi": "Hỏi vật/người nào là A nhất trong một nhóm",
+        "en": "Asking which item is the most A within a group"
+      },
+      "speakerStance": {
+        "vi": "Hỏi so sánh, trung tính",
+        "en": "Neutral, comparative inquiry"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4169,8 +4361,14 @@
         "casual",
         "neutral"
       ],
-      "intent": "Asking which of two specific items has more of quality A",
-      "speakerStance": "Neutral, comparative inquiry between exactly two options"
+      "intent": {
+        "vi": "Hỏi trong hai vật/người cụ thể, cái nào có đặc điểm A hơn",
+        "en": "Asking which of two specific items has more of quality A"
+      },
+      "speakerStance": {
+        "vi": "Hỏi so sánh trung tính giữa đúng hai lựa chọn",
+        "en": "Neutral, comparative inquiry between exactly two options"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4298,8 +4496,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that N1 has more of quality A than N2",
-      "speakerStance": "Neutral, comparative statement"
+      "intent": {
+        "vi": "Phát biểu rằng N1 có đặc điểm A hơn N2",
+        "en": "Stating that N1 has more of quality A than N2"
+      },
+      "speakerStance": {
+        "vi": "Phát biểu so sánh trung tính",
+        "en": "Neutral, comparative statement"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4431,8 +4635,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Stating a fact about N in casual/plain speech",
-      "speakerStance": "Informal, familiar register (friends, family, diary, inner monologue)"
+      "intent": {
+        "vi": "Phát biểu một sự thật về N trong văn nói/viết thân mật",
+        "en": "Stating a fact about N in casual/plain speech"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng (bạn bè, gia đình, nhật ký, độc thoại nội tâm)",
+        "en": "Informal, familiar register (friends, family, diary, inner monologue)"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4559,8 +4769,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Asking a yes/no question in casual speech",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Hỏi câu hỏi có/không trong văn nói thân mật",
+        "en": "Asking a yes/no question in casual speech"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4698,8 +4914,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Asserting/confirming a fact in casual speech, with the same nuance shades as g_008_1-3",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Khẳng định/xác nhận một sự thật trong văn nói thân mật, mang các sắc thái giống g_008_1-3",
+        "en": "Asserting/confirming a fact in casual speech, with the same nuance shades as g_008_1-3"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4827,8 +5049,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Asking a negative yes/no question or seeking confirmation, casually",
-      "speakerStance": "Informal, sometimes rhetorical (expecting agreement)"
+      "intent": {
+        "vi": "Hỏi câu hỏi có/không dạng phủ định hoặc tìm kiếm xác nhận, một cách thân mật",
+        "en": "Asking a negative yes/no question or seeking confirmation, casually"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, đôi khi mang tính tu từ (mong đợi sự đồng tình)",
+        "en": "Informal, sometimes rhetorical (expecting agreement)"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -4956,8 +5184,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Stating a negative fact in casual speech",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Phát biểu một sự thật phủ định trong văn nói thân mật",
+        "en": "Stating a negative fact in casual speech"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -5090,8 +5324,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Stating or asking about a past fact, casually",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Phát biểu hoặc hỏi về một sự thật trong quá khứ, một cách thân mật",
+        "en": "Stating or asking about a past fact, casually"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -5224,8 +5464,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Denying a past fact, casually",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Phủ định một sự thật trong quá khứ, một cách thân mật",
+        "en": "Denying a past fact, casually"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -5352,8 +5598,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Asking a yes/no question about an i-adjective quality, casually",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Hỏi câu hỏi có/không về một đặc điểm (tính từ い), một cách thân mật",
+        "en": "Asking a yes/no question about an i-adjective quality, casually"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -5479,8 +5731,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Stating an i-adjective quality, casually",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Phát biểu một đặc điểm (tính từ い), một cách thân mật",
+        "en": "Stating an i-adjective quality, casually"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -5606,8 +5864,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "The casual-speech counterpart of が (contrast/cushioning)",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Phiên bản thân mật trong văn nói của が (đối lập/đệm câu)",
+        "en": "The casual-speech counterpart of が (contrast/cushioning)"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -5735,8 +5999,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Describing a past quality of N, casually",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Mô tả một đặc điểm của N trong quá khứ, một cách thân mật",
+        "en": "Describing a past quality of N, casually"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -5873,8 +6143,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Denying a past quality of N, casually",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Phủ định một đặc điểm của N trong quá khứ, một cách thân mật",
+        "en": "Denying a past quality of N, casually"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6000,8 +6276,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking whether an inanimate object/thing exists or is available",
-      "speakerStance": "Neutral, practical inquiry"
+      "intent": {
+        "vi": "Hỏi xem một vật vô tri có tồn tại/có sẵn hay không",
+        "en": "Asking whether an inanimate object/thing exists or is available"
+      },
+      "speakerStance": {
+        "vi": "Hỏi thông tin thực tế, trung tính",
+        "en": "Neutral, practical inquiry"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6128,8 +6410,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating the location of a known object",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Phát biểu vị trí của một vật đã biết",
+        "en": "Stating the location of a known object"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6255,8 +6543,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating what exists at a given location",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Phát biểu những gì tồn tại tại một địa điểm cho trước",
+        "en": "Stating what exists at a given location"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6383,8 +6677,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking whether a person/animal is present",
-      "speakerStance": "Neutral, practical inquiry"
+      "intent": {
+        "vi": "Hỏi xem một người/động vật có mặt hay không",
+        "en": "Asking whether a person/animal is present"
+      },
+      "speakerStance": {
+        "vi": "Hỏi thông tin thực tế, trung tính",
+        "en": "Neutral, practical inquiry"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6512,8 +6812,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating the location of a known person/animal",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Phát biểu vị trí của một người/động vật đã biết",
+        "en": "Stating the location of a known person/animal"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6641,8 +6947,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating who/what living being exists at a given location",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Phát biểu ai/con gì tồn tại tại một địa điểm cho trước",
+        "en": "Stating who/what living being exists at a given location"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6770,8 +7082,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Emphasizing or adding to what a location has",
-      "speakerStance": "Neutral, descriptive, sometimes contrastive"
+      "intent": {
+        "vi": "Nhấn mạnh hoặc bổ sung thêm những gì một địa điểm có",
+        "en": "Emphasizing or adding to what a location has"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả, đôi khi đối lập",
+        "en": "Neutral, descriptive, sometimes contrastive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -6898,8 +7216,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Listing a complete, closed set of same-category items (\"N1 and N2\")",
-      "speakerStance": "Neutral, exhaustive listing"
+      "intent": {
+        "vi": "Liệt kê đầy đủ, khép kín các vật cùng loại (\"N1 và N2\")",
+        "en": "Listing a complete, closed set of same-category items (\"N1 and N2\")"
+      },
+      "speakerStance": {
+        "vi": "Liệt kê đầy đủ, trung tính",
+        "en": "Neutral, exhaustive listing"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7028,8 +7352,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating how many of something exist",
-      "speakerStance": "Neutral, factual quantification"
+      "intent": {
+        "vi": "Phát biểu số lượng của một thứ gì đó",
+        "en": "Stating how many of something exist"
+      },
+      "speakerStance": {
+        "vi": "Định lượng thực tế, trung tính",
+        "en": "Neutral, factual quantification"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7171,8 +7501,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating an action in polite present/future or past tense",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Phát biểu một hành động ở thì hiện tại/tương lai hoặc quá khứ, thể lịch sự",
+        "en": "Stating an action in polite present/future or past tense"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7299,8 +7635,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Specifying the exact clock time an action happens",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Xác định chính xác thời điểm (giờ) một hành động xảy ra",
+        "en": "Specifying the exact clock time an action happens"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7427,8 +7769,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Specifying how long an action lasts",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Xác định một hành động kéo dài bao lâu",
+        "en": "Specifying how long an action lasts"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7566,8 +7914,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Specifying a range from a starting point to an ending point",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Xác định một khoảng từ điểm bắt đầu đến điểm kết thúc",
+        "en": "Specifying a range from a starting point to an ending point"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7700,8 +8054,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Denying an action, present/future or past",
-      "speakerStance": "Neutral, factual negation"
+      "intent": {
+        "vi": "Phủ định một hành động, ở hiện tại/tương lai hoặc quá khứ",
+        "en": "Denying an action, present/future or past"
+      },
+      "speakerStance": {
+        "vi": "Phủ định thực tế, trung tính",
+        "en": "Neutral, factual negation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7828,8 +8188,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating a return to a \"home base\" (home country, house)",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Phát biểu việc quay về một \"nơi gốc\" (quê hương, nhà)",
+        "en": "Stating a return to a \"home base\" (home country, house)"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -7958,8 +8324,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating movement toward a destination, away from the speaker's current viewpoint",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Phát biểu việc di chuyển đến một điểm đến, rời xa góc nhìn hiện tại của người nói",
+        "en": "Stating movement toward a destination, away from the speaker's current viewpoint"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8087,8 +8459,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating movement toward the speaker's (or reference point's) location",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Phát biểu việc di chuyển về phía người nói (hoặc điểm quy chiếu)",
+        "en": "Stating movement toward the speaker's (or reference point's) location"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8216,8 +8594,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Specifying where an action takes place",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Xác định nơi một hành động diễn ra",
+        "en": "Specifying where an action takes place"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8345,8 +8729,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Marking the direct object that a verb acts upon",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Đánh dấu tân ngữ trực tiếp mà động từ tác động lên",
+        "en": "Marking the direct object that a verb acts upon"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8473,8 +8863,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Marking who an action is done together with",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Đánh dấu người cùng thực hiện một hành động",
+        "en": "Marking who an action is done together with"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8606,8 +9002,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Listing a few representative examples from an open-ended set",
-      "speakerStance": "Implies unlisted items also exist (\"things like...\")"
+      "intent": {
+        "vi": "Liệt kê một vài ví dụ tiêu biểu từ một tập hợp mở",
+        "en": "Listing a few representative examples from an open-ended set"
+      },
+      "speakerStance": {
+        "vi": "Ngụ ý còn những thứ khác chưa được liệt kê (\"những thứ như...\")",
+        "en": "Implies unlisted items also exist (\"things like...\")"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8734,8 +9136,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking whether something/somewhere/someone (unspecified) is the case",
-      "speakerStance": "Neutral, uncertain about details"
+      "intent": {
+        "vi": "Hỏi xem có tồn tại điều gì đó/ở đâu đó/ai đó (chưa xác định) hay không",
+        "en": "Asking whether something/somewhere/someone (unspecified) is the case"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, chưa chắc chắn về chi tiết",
+        "en": "Neutral, uncertain about details"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8862,8 +9270,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Denying something entirely (\"nowhere/no one/nothing at all\")",
-      "speakerStance": "Neutral, total negation"
+      "intent": {
+        "vi": "Phủ định hoàn toàn một điều gì đó (\"không đâu/không ai/không gì cả\")",
+        "en": "Denying something entirely (\"nowhere/no one/nothing at all\")"
+      },
+      "speakerStance": {
+        "vi": "Phủ định toàn bộ, trung tính",
+        "en": "Neutral, total negation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -8990,8 +9404,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Requesting a specific quantity of something (typically ordering/shopping)",
-      "speakerStance": "Neutral, polite request"
+      "intent": {
+        "vi": "Yêu cầu một số lượng cụ thể của thứ gì đó (thường khi gọi món/mua sắm)",
+        "en": "Requesting a specific quantity of something (typically ordering/shopping)"
+      },
+      "speakerStance": {
+        "vi": "Yêu cầu lịch sự, trung tính",
+        "en": "Neutral, polite request"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -9118,8 +9538,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Expressing how often something happens within a given time period",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Diễn tả tần suất xảy ra của điều gì đó trong một khoảng thời gian cho trước",
+        "en": "Expressing how often something happens within a given time period"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -9252,8 +9678,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Inviting someone to do something together, or proposing to do it together",
-      "speakerStance": "Warm, collaborative"
+      "intent": {
+        "vi": "Mời ai đó cùng làm gì đó, hoặc đề xuất cùng thực hiện",
+        "en": "Inviting someone to do something together, or proposing to do it together"
+      },
+      "speakerStance": {
+        "vi": "Ấm áp, mang tính hợp tác",
+        "en": "Warm, collaborative"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -9379,8 +9811,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Expressing that the speaker wants a thing (not an action)",
-      "speakerStance": "Subjective, personal desire"
+      "intent": {
+        "vi": "Diễn tả việc người nói muốn có một vật (không phải một hành động)",
+        "en": "Expressing that the speaker wants a thing (not an action)"
+      },
+      "speakerStance": {
+        "vi": "Chủ quan, mong muốn cá nhân",
+        "en": "Subjective, personal desire"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -9522,8 +9960,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating the purpose of a movement (go/come/return in order to do X)",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Phát biểu mục đích của việc di chuyển (đi/đến/về để làm X)",
+        "en": "Stating the purpose of a movement (go/come/return in order to do X)"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -9660,8 +10104,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Expressing the speaker's desire to perform an action",
-      "speakerStance": "Subjective, personal desire"
+      "intent": {
+        "vi": "Diễn tả mong muốn của người nói muốn thực hiện một hành động",
+        "en": "Expressing the speaker's desire to perform an action"
+      },
+      "speakerStance": {
+        "vi": "Chủ quan, mong muốn cá nhân",
+        "en": "Subjective, personal desire"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -9794,8 +10244,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Nominalizing a verb into \"the way/method of doing X\"",
-      "speakerStance": "Neutral, descriptive/instructional"
+      "intent": {
+        "vi": "Danh từ hóa một động từ thành \"cách/phương pháp làm X\"",
+        "en": "Nominalizing a verb into \"the way/method of doing X\""
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả/hướng dẫn",
+        "en": "Neutral, descriptive/instructional"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -9935,8 +10391,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Explaining how to conjugate a verb into its potential (\"can do\") form",
-      "speakerStance": "Neutral, instructional/reference"
+      "intent": {
+        "vi": "Giải thích cách chia một động từ thành thể khả năng (\"có thể làm\")",
+        "en": "Explaining how to conjugate a verb into its potential (\"can do\") form"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính hướng dẫn/tham khảo",
+        "en": "Neutral, instructional/reference"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10064,8 +10526,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that the subject is capable of doing something",
-      "speakerStance": "Neutral, factual capability statement"
+      "intent": {
+        "vi": "Phát biểu rằng chủ ngữ có khả năng làm điều gì đó",
+        "en": "Stating that the subject is capable of doing something"
+      },
+      "speakerStance": {
+        "vi": "Phát biểu khả năng thực tế, trung tính",
+        "en": "Neutral, factual capability statement"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10191,8 +10659,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Specifying the means/tool/method used to perform an action",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Xác định phương tiện/công cụ/cách thức dùng để thực hiện một hành động",
+        "en": "Specifying the means/tool/method used to perform an action"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10319,8 +10793,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating how much time or money something requires",
-      "speakerStance": "Neutral, factual"
+      "intent": {
+        "vi": "Phát biểu điều gì đó tốn bao nhiêu thời gian hoặc tiền bạc",
+        "en": "Stating how much time or money something requires"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, thực tế",
+        "en": "Neutral, factual"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10449,8 +10929,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating an approximate cost/time within which something can be done",
-      "speakerStance": "Neutral, approximating"
+      "intent": {
+        "vi": "Phát biểu mức chi phí/thời gian ước chừng để có thể làm được điều gì đó",
+        "en": "Stating an approximate cost/time within which something can be done"
+      },
+      "speakerStance": {
+        "vi": "Ước chừng, trung tính",
+        "en": "Neutral, approximating"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10576,8 +11062,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Expressing likes/dislikes or skill/lack of skill regarding N2",
-      "speakerStance": "Subjective evaluation/preference"
+      "intent": {
+        "vi": "Diễn tả sự thích/không thích hoặc giỏi/kém về N2",
+        "en": "Expressing likes/dislikes or skill/lack of skill regarding N2"
+      },
+      "speakerStance": {
+        "vi": "Đánh giá/sở thích mang tính chủ quan",
+        "en": "Subjective evaluation/preference"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10720,8 +11212,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Explaining the reason for a statement, subjectively",
-      "speakerStance": "Subjective, foregrounds the speaker's own reasoning"
+      "intent": {
+        "vi": "Giải thích lý do cho một phát biểu, mang tính chủ quan",
+        "en": "Explaining the reason for a statement, subjectively"
+      },
+      "speakerStance": {
+        "vi": "Chủ quan, nhấn mạnh lập luận riêng của người nói",
+        "en": "Subjective, foregrounds the speaker's own reasoning"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10848,8 +11346,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing a part/aspect (N2) belonging to N1",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Mô tả một bộ phận/khía cạnh (N2) thuộc về N1",
+        "en": "Describing a part/aspect (N2) belonging to N1"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -10977,8 +11481,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Emphasizing/identifying the specific subject, often answering a \"who/what\" question",
-      "speakerStance": "Focused, identifying"
+      "intent": {
+        "vi": "Nhấn mạnh/xác định rõ chủ ngữ cụ thể, thường trả lời câu hỏi \"ai/cái gì\"",
+        "en": "Emphasizing/identifying the specific subject, often answering a \"who/what\" question"
+      },
+      "speakerStance": {
+        "vi": "Tập trung, mang tính xác định",
+        "en": "Focused, identifying"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -11109,8 +11619,14 @@
         "spoken",
         "neutral"
       ],
-      "intent": "The base form used in casual speech and as the building block for other grammar patterns",
-      "speakerStance": "Neutral -- this is the citation/base form, tone depends on context"
+      "intent": {
+        "vi": "Thể cơ bản dùng trong văn nói thân mật và làm nền cho các mẫu ngữ pháp khác",
+        "en": "The base form used in casual speech and as the building block for other grammar patterns"
+      },
+      "speakerStance": {
+        "vi": "Trung tính -- đây là thể gốc/thể trích dẫn, sắc thái tùy ngữ cảnh",
+        "en": "Neutral -- this is the citation/base form, tone depends on context"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -11240,8 +11756,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Asking a yes/no question in casual speech using a verb",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Hỏi câu hỏi có/không trong văn nói thân mật bằng động từ",
+        "en": "Asking a yes/no question in casual speech using a verb"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -11376,8 +11898,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Expressing capability, as an alternative to the potential verb form",
-      "speakerStance": "Neutral, factual capability statement"
+      "intent": {
+        "vi": "Diễn tả khả năng, như một cách thay thế cho thể khả năng của động từ",
+        "en": "Expressing capability, as an alternative to the potential verb form"
+      },
+      "speakerStance": {
+        "vi": "Phát biểu khả năng thực tế, trung tính",
+        "en": "Neutral, factual capability statement"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -11507,8 +12035,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Turning a verb clause into a noun to serve as the sentence's subject/predicate",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Biến một mệnh đề động từ thành danh từ để làm chủ ngữ/vị ngữ của câu",
+        "en": "Turning a verb clause into a noun to serve as the sentence's subject/predicate"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -11648,8 +12182,14 @@
         "spoken",
         "neutral"
       ],
-      "intent": "The plain negative form, used in casual speech and as a base for many other patterns",
-      "speakerStance": "Neutral -- base form, tone depends on context"
+      "intent": {
+        "vi": "Thể phủ định thường, dùng trong văn nói thân mật và làm nền cho nhiều mẫu khác",
+        "en": "The plain negative form, used in casual speech and as a base for many other patterns"
+      },
+      "speakerStance": {
+        "vi": "Trung tính -- thể gốc, sắc thái tùy ngữ cảnh",
+        "en": "Neutral -- base form, tone depends on context"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -11788,8 +12328,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Casually inviting someone to do something together, echoing the nuance of ませんか",
-      "speakerStance": "Warm, collaborative, informal"
+      "intent": {
+        "vi": "Mời ai đó cùng làm gì đó một cách thân mật, mang sắc thái giống ませんか",
+        "en": "Casually inviting someone to do something together, echoing the nuance of ませんか"
+      },
+      "speakerStance": {
+        "vi": "Ấm áp, mang tính hợp tác, không trang trọng",
+        "en": "Warm, collaborative, informal"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -11920,8 +12466,14 @@
         "spoken",
         "neutral"
       ],
-      "intent": "Expressing capability/incapability in plain form",
-      "speakerStance": "Neutral -- base form for capability statements"
+      "intent": {
+        "vi": "Diễn tả khả năng/không có khả năng ở thể thường",
+        "en": "Expressing capability/incapability in plain form"
+      },
+      "speakerStance": {
+        "vi": "Trung tính -- thể gốc để phát biểu khả năng",
+        "en": "Neutral -- base form for capability statements"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -12061,8 +12613,14 @@
         "spoken",
         "neutral"
       ],
-      "intent": "The plain past-tense form, used in casual speech and as a base for many other patterns",
-      "speakerStance": "Neutral -- base form, tone depends on context"
+      "intent": {
+        "vi": "Thể quá khứ thường, dùng trong văn nói thân mật và làm nền cho nhiều mẫu khác",
+        "en": "The plain past-tense form, used in casual speech and as a base for many other patterns"
+      },
+      "speakerStance": {
+        "vi": "Trung tính -- thể gốc, sắc thái tùy ngữ cảnh",
+        "en": "Neutral -- base form, tone depends on context"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -12193,8 +12751,14 @@
         "spoken",
         "neutral"
       ],
-      "intent": "Expressing past capability/incapability in plain form",
-      "speakerStance": "Neutral -- base form for past capability statements"
+      "intent": {
+        "vi": "Diễn tả khả năng/không có khả năng trong quá khứ, ở thể thường",
+        "en": "Expressing past capability/incapability in plain form"
+      },
+      "speakerStance": {
+        "vi": "Trung tính -- thể gốc để phát biểu khả năng trong quá khứ",
+        "en": "Neutral -- base form for past capability statements"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -12320,8 +12884,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "Expressing desire to do something, in plain/casual speech",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Diễn tả mong muốn làm gì đó, ở thể thường/thân mật",
+        "en": "Expressing desire to do something, in plain/casual speech"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -12460,8 +13030,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "The plain-form counterpart of ましょう -- proposing an action or expressing one's own resolve",
-      "speakerStance": "Informal, familiar register; can also be a private resolve spoken to oneself"
+      "intent": {
+        "vi": "Thể thường tương ứng với ましょう -- đề xuất một hành động hoặc bày tỏ quyết tâm của bản thân",
+        "en": "The plain-form counterpart of ましょう -- proposing an action or expressing one's own resolve"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng; cũng có thể là lời tự nhủ riêng với chính mình",
+        "en": "Informal, familiar register; can also be a private resolve spoken to oneself"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -12595,8 +13171,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that V2 happens before V1/N",
-      "speakerStance": "Neutral, sequencing"
+      "intent": {
+        "vi": "Phát biểu rằng V2 xảy ra trước V1/N",
+        "en": "Stating that V2 happens before V1/N"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính trình tự",
+        "en": "Neutral, sequencing"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -12740,8 +13322,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that V2 happens after V1/N",
-      "speakerStance": "Neutral, sequencing"
+      "intent": {
+        "vi": "Phát biểu rằng V2 xảy ra sau V1/N",
+        "en": "Stating that V2 happens after V1/N"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính trình tự",
+        "en": "Neutral, sequencing"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -12888,8 +13476,14 @@
         "polite",
         "spoken"
       ],
-      "intent": "Stating a condition and its result",
-      "speakerStance": "Presents V1 as a concrete, one-time trigger for V2; the most flexible and colloquial of the four conditionals"
+      "intent": {
+        "vi": "Phát biểu một điều kiện và kết quả của nó",
+        "en": "Stating a condition and its result"
+      },
+      "speakerStance": {
+        "vi": "Coi V1 là một tác nhân cụ thể, xảy ra một lần dẫn đến V2; linh hoạt và thông dụng nhất trong bốn cách diễn đạt điều kiện",
+        "en": "Presents V1 as a concrete, one-time trigger for V2; the most flexible and colloquial of the four conditionals"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13024,8 +13618,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Emphasizing that an action just happened, very recently",
-      "speakerStance": "Subjective sense of \"just now\" -- often used to explain a current state"
+      "intent": {
+        "vi": "Nhấn mạnh một hành động vừa mới xảy ra gần đây",
+        "en": "Emphasizing that an action just happened, very recently"
+      },
+      "speakerStance": {
+        "vi": "Cảm nhận chủ quan về \"vừa mới\" -- thường dùng để giải thích một trạng thái hiện tại",
+        "en": "Subjective sense of \"just now\" -- often used to explain a current state"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13151,8 +13751,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that one has experienced something at least once",
-      "speakerStance": "Neutral, reporting past experience"
+      "intent": {
+        "vi": "Phát biểu rằng bản thân đã từng trải nghiệm điều gì đó ít nhất một lần",
+        "en": "Stating that one has experienced something at least once"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, kể lại trải nghiệm quá khứ",
+        "en": "Neutral, reporting past experience"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13291,8 +13897,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Explaining how to conjugate a verb/i-adjective into its ば-conditional form",
-      "speakerStance": "Neutral, instructional/reference"
+      "intent": {
+        "vi": "Giải thích cách chia một động từ/tính từ い thành thể điều kiện ば",
+        "en": "Explaining how to conjugate a verb/i-adjective into its ば-conditional form"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính hướng dẫn/tham khảo",
+        "en": "Neutral, instructional/reference"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13422,8 +14034,14 @@
         "neutral",
         "written"
       ],
-      "intent": "Stating a hypothetical/general condition and its result",
-      "speakerStance": "Emphasizes the condition as a logical prerequisite, more so than たら"
+      "intent": {
+        "vi": "Phát biểu một điều kiện giả định/chung chung và kết quả của nó",
+        "en": "Stating a hypothetical/general condition and its result"
+      },
+      "speakerStance": {
+        "vi": "Nhấn mạnh điều kiện như một tiền đề logic, hơn cả たら",
+        "en": "Emphasizes the condition as a logical prerequisite, more so than たら"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13553,8 +14171,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking for advice on how to achieve a goal",
-      "speakerStance": "Seeking guidance, mildly uncertain"
+      "intent": {
+        "vi": "Hỏi xin lời khuyên về cách đạt được một mục tiêu",
+        "en": "Asking for advice on how to achieve a goal"
+      },
+      "speakerStance": {
+        "vi": "Tìm kiếm hướng dẫn, hơi chưa chắc chắn",
+        "en": "Seeking guidance, mildly uncertain"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13684,8 +14308,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that if V doesn't happen, a negative result follows",
-      "speakerStance": "Neutral, logical conditional"
+      "intent": {
+        "vi": "Phát biểu rằng nếu V không xảy ra thì sẽ dẫn đến một kết quả tiêu cực",
+        "en": "Stating that if V doesn't happen, a negative result follows"
+      },
+      "speakerStance": {
+        "vi": "Điều kiện logic, trung tính",
+        "en": "Neutral, logical conditional"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13821,8 +14451,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Expressing obligation -- \"must do\"",
-      "speakerStance": "Neutral, stating a requirement"
+      "intent": {
+        "vi": "Diễn tả nghĩa vụ -- \"phải làm\"",
+        "en": "Expressing obligation -- \"must do\""
+      },
+      "speakerStance": {
+        "vi": "Trung tính, phát biểu một yêu cầu bắt buộc",
+        "en": "Neutral, stating a requirement"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -13951,8 +14587,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "The casual, contracted spoken form of なければ",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Dạng nói rút gọn, thân mật của なければ",
+        "en": "The casual, contracted spoken form of なければ"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -14082,8 +14724,14 @@
         "casual",
         "spoken"
       ],
-      "intent": "The casual, spoken counterpart of なければいけません -- expressing obligation",
-      "speakerStance": "Informal, familiar register"
+      "intent": {
+        "vi": "Dạng nói tương ứng của なければいけません -- diễn tả nghĩa vụ",
+        "en": "The casual, spoken counterpart of なければいけません -- expressing obligation"
+      },
+      "speakerStance": {
+        "vi": "Thân mật, không trang trọng",
+        "en": "Informal, familiar register"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -14227,8 +14875,14 @@
         "neutral",
         "spoken"
       ],
-      "intent": "Responding to a condition just raised by the listener, offering advice/a reaction",
-      "speakerStance": "Reactive -- builds directly on what the other person just said"
+      "intent": {
+        "vi": "Phản hồi lại một điều kiện mà người nghe vừa nêu ra, đưa ra lời khuyên/phản ứng",
+        "en": "Responding to a condition just raised by the listener, offering advice/a reaction"
+      },
+      "speakerStance": {
+        "vi": "Mang tính phản hồi -- xây dựng trực tiếp dựa trên điều đối phương vừa nói",
+        "en": "Reactive -- builds directly on what the other person just said"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -14361,8 +15015,14 @@
         "neutral",
         "spoken"
       ],
-      "intent": "The na-adjective/noun-specific case of なら (a narrower reminder of g_112)",
-      "speakerStance": "Reactive -- builds directly on what the other person just said"
+      "intent": {
+        "vi": "Trường hợp riêng của なら dành cho tính từ な/danh từ (một biến thể hẹp hơn của g_112)",
+        "en": "The na-adjective/noun-specific case of なら (a narrower reminder of g_112)"
+      },
+      "speakerStance": {
+        "vi": "Mang tính phản hồi -- xây dựng trực tiếp dựa trên điều đối phương vừa nói",
+        "en": "Reactive -- builds directly on what the other person just said"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -14512,8 +15172,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Explaining how to conjugate a verb into its て-form, the base for a huge family of patterns",
-      "speakerStance": "Neutral, instructional/reference"
+      "intent": {
+        "vi": "Giải thích cách chia một động từ thành thể て, nền tảng cho một họ mẫu ngữ pháp lớn",
+        "en": "Explaining how to conjugate a verb into its て-form, the base for a huge family of patterns"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính hướng dẫn/tham khảo",
+        "en": "Neutral, instructional/reference"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -14651,8 +15317,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Listing a sequence of actions performed one after another",
-      "speakerStance": "Neutral, narrating a sequence"
+      "intent": {
+        "vi": "Liệt kê một chuỗi hành động diễn ra lần lượt",
+        "en": "Listing a sequence of actions performed one after another"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, kể lại một chuỗi sự việc",
+        "en": "Neutral, narrating a sequence"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -14781,8 +15453,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Emphasizing that V2 happens only after V1 is complete",
-      "speakerStance": "Neutral, sequencing with emphasis on completion"
+      "intent": {
+        "vi": "Nhấn mạnh rằng V2 chỉ xảy ra sau khi V1 đã hoàn tất",
+        "en": "Emphasizing that V2 happens only after V1 is complete"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính trình tự, nhấn mạnh sự hoàn tất",
+        "en": "Neutral, sequencing with emphasis on completion"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -14914,8 +15592,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "The overview pattern for ~ている, covering progressive action, habit, and resultant state",
-      "speakerStance": "Neutral, descriptive"
+      "intent": {
+        "vi": "Mẫu tổng quát cho ~ている, bao gồm hành động đang diễn ra, thói quen, và trạng thái kết quả",
+        "en": "The overview pattern for ~ている, covering progressive action, habit, and resultant state"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính mô tả",
+        "en": "Neutral, descriptive"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15044,8 +15728,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing an action happening right now, visibly, in front of the speaker",
-      "speakerStance": "Neutral, describing an observed ongoing event"
+      "intent": {
+        "vi": "Mô tả một hành động đang diễn ra ngay lúc này, quan sát được trước mắt người nói",
+        "en": "Describing an action happening right now, visibly, in front of the speaker"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mô tả một sự kiện đang diễn ra được quan sát thấy",
+        "en": "Neutral, describing an observed ongoing event"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15175,8 +15865,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing a repeated, habitual action -- not something happening at this exact moment",
-      "speakerStance": "Neutral, describing a routine"
+      "intent": {
+        "vi": "Mô tả một hành động lặp lại, mang tính thói quen -- không phải điều đang xảy ra ngay lúc này",
+        "en": "Describing a repeated, habitual action -- not something happening at this exact moment"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mô tả một thói quen",
+        "en": "Neutral, describing a routine"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15305,8 +16001,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing a state that resulted from a change/event, not an ongoing action",
-      "speakerStance": "Neutral, describing a current state"
+      "intent": {
+        "vi": "Mô tả một trạng thái là kết quả của một thay đổi/sự kiện, không phải một hành động đang diễn ra",
+        "en": "Describing a state that resulted from a change/event, not an ongoing action"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mô tả một trạng thái hiện tại",
+        "en": "Neutral, describing a current state"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15435,8 +16137,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Describing an action/state that has continued over an extended period",
-      "speakerStance": "Neutral, describing an ongoing long-term situation"
+      "intent": {
+        "vi": "Mô tả một hành động/trạng thái đã kéo dài trong một khoảng thời gian dài",
+        "en": "Describing an action/state that has continued over an extended period"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mô tả một tình huống đang tiếp diễn lâu dài",
+        "en": "Neutral, describing an ongoing long-term situation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15565,8 +16273,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking whether the listener knows/is aware of something",
-      "speakerStance": "Neutral, information-seeking"
+      "intent": {
+        "vi": "Hỏi xem người nghe có biết/nhận biết điều gì đó hay không",
+        "en": "Asking whether the listener knows/is aware of something"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, tìm kiếm thông tin",
+        "en": "Neutral, information-seeking"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15700,8 +16414,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that N is an acceptable option, without necessarily being the ideal one",
-      "speakerStance": "Accommodating, flexible"
+      "intent": {
+        "vi": "Phát biểu rằng N là một lựa chọn chấp nhận được, dù không nhất thiết là lý tưởng",
+        "en": "Stating that N is an acceptable option, without necessarily being the ideal one"
+      },
+      "speakerStance": {
+        "vi": "Linh hoạt, dễ thích nghi",
+        "en": "Accommodating, flexible"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15828,8 +16548,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Asking permission to do something",
-      "speakerStance": "Deferential, seeking approval"
+      "intent": {
+        "vi": "Xin phép để làm điều gì đó",
+        "en": "Asking permission to do something"
+      },
+      "speakerStance": {
+        "vi": "Khiêm nhường, tìm kiếm sự chấp thuận",
+        "en": "Deferential, seeking approval"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -15958,8 +16684,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Granting permission -- \"it's okay to do X\"",
-      "speakerStance": "Permissive, granting approval"
+      "intent": {
+        "vi": "Cho phép ai đó -- \"làm X cũng được\"",
+        "en": "Granting permission -- \"it's okay to do X\""
+      },
+      "speakerStance": {
+        "vi": "Cho phép, chấp thuận",
+        "en": "Permissive, granting approval"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -16090,8 +16822,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that an action is not required -- \"it's okay not to do X\"",
-      "speakerStance": "Reassuring, removing an obligation"
+      "intent": {
+        "vi": "Phát biểu rằng một hành động không bắt buộc -- \"không cần làm X cũng được\"",
+        "en": "Stating that an action is not required -- \"it's okay not to do X\""
+      },
+      "speakerStance": {
+        "vi": "Trấn an, gỡ bỏ một nghĩa vụ",
+        "en": "Reassuring, removing an obligation"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -16227,8 +16965,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Making a polite request or instruction, affirmative or negative",
-      "speakerStance": "Direct but polite -- can sound like an instruction/command in formal contexts"
+      "intent": {
+        "vi": "Đưa ra một yêu cầu hoặc chỉ dẫn lịch sự, khẳng định hoặc phủ định",
+        "en": "Making a polite request or instruction, affirmative or negative"
+      },
+      "speakerStance": {
+        "vi": "Trực tiếp nhưng lịch sự -- có thể nghe như chỉ dẫn/mệnh lệnh trong ngữ cảnh trang trọng",
+        "en": "Direct but polite -- can sound like an instruction/command in formal contexts"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -16357,8 +17101,14 @@
         "polite",
         "casual"
       ],
-      "intent": "Asking someone to do a favor for the speaker",
-      "speakerStance": "Requesting, framing the action as a favor toward the speaker"
+      "intent": {
+        "vi": "Nhờ ai đó làm một việc giúp mình",
+        "en": "Asking someone to do a favor for the speaker"
+      },
+      "speakerStance": {
+        "vi": "Nhờ vả, coi hành động đó là một ơn huệ dành cho người nói",
+        "en": "Requesting, framing the action as a favor toward the speaker"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -16490,8 +17240,14 @@
       "tones": [
         "polite"
       ],
-      "intent": "Making a more polite/deferential request than g_100's てくれますか",
-      "speakerStance": "Deferential, softened request"
+      "intent": {
+        "vi": "Đưa ra một lời nhờ vả lịch sự/khiêm nhường hơn てくれますか ở g_100",
+        "en": "Making a more polite/deferential request than g_100's てくれますか"
+      },
+      "speakerStance": {
+        "vi": "Khiêm nhường, lời nhờ vả được làm nhẹ nhàng hơn",
+        "en": "Deferential, softened request"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -16619,8 +17375,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that someone gives a thing to the speaker (or the speaker's in-group)",
-      "speakerStance": "Neutral, but always centered on benefit TO the speaker"
+      "intent": {
+        "vi": "Phát biểu rằng ai đó cho một thứ gì đó đến người nói (hoặc nhóm của người nói)",
+        "en": "Stating that someone gives a thing to the speaker (or the speaker's in-group)"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, nhưng luôn xoay quanh lợi ích DÀNH CHO người nói",
+        "en": "Neutral, but always centered on benefit TO the speaker"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -16750,8 +17512,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that someone does an action as a favor for the speaker",
-      "speakerStance": "Neutral, but carries implicit gratitude"
+      "intent": {
+        "vi": "Phát biểu rằng ai đó đã thực hiện một hành động như một sự giúp đỡ dành cho người nói",
+        "en": "Stating that someone does an action as a favor for the speaker"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, nhưng luôn ngụ ý sự biết ơn",
+        "en": "Neutral, but carries implicit gratitude"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -16879,8 +17647,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that N1 gives a thing to N2 (N1 is NOT the speaker receiving)",
-      "speakerStance": "Neutral, but the direction of giving flows away from the speaker/in-group"
+      "intent": {
+        "vi": "Phát biểu rằng N1 cho một thứ gì đó đến N2 (N1 KHÔNG phải người nói đang nhận)",
+        "en": "Stating that N1 gives a thing to N2 (N1 is NOT the speaker receiving)"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, nhưng chiều hướng cho đi là rời xa người nói/nhóm của người nói",
+        "en": "Neutral, but the direction of giving flows away from the speaker/in-group"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -17020,8 +17794,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Stating that N1 does an action as a favor for N2",
-      "speakerStance": "Neutral, but can sound presumptuous if said directly to the beneficiary"
+      "intent": {
+        "vi": "Phát biểu rằng N1 làm một việc như một sự giúp đỡ dành cho N2",
+        "en": "Stating that N1 does an action as a favor for N2"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, nhưng có thể nghe hơi kể công nếu nói trực tiếp với người được giúp",
+        "en": "Neutral, but can sound presumptuous if said directly to the beneficiary"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -17155,8 +17935,14 @@
         "polite",
         "casual"
       ],
-      "intent": "Offering to do something for the listener",
-      "speakerStance": "Considerate, offering help"
+      "intent": {
+        "vi": "Đề nghị làm giúp người nghe điều gì đó",
+        "en": "Offering to do something for the listener"
+      },
+      "speakerStance": {
+        "vi": "Chu đáo, đề nghị giúp đỡ",
+        "en": "Considerate, offering help"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -17284,8 +18070,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Emphasizing scarcity -- \"only N (and it feels insufficient)\"",
-      "speakerStance": "Implies the amount is felt as inadequate/limiting"
+      "intent": {
+        "vi": "Nhấn mạnh sự khan hiếm -- \"chỉ có N (và điều đó cảm thấy chưa đủ)\"",
+        "en": "Emphasizing scarcity -- \"only N (and it feels insufficient)\""
+      },
+      "speakerStance": {
+        "vi": "Ngụ ý số lượng đó bị coi là không đủ/hạn chế",
+        "en": "Implies the amount is felt as inadequate/limiting"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -17413,8 +18205,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Stating \"only N\", neutrally, without implying insufficiency",
-      "speakerStance": "Neutral -- no positive or negative judgment about the amount"
+      "intent": {
+        "vi": "Phát biểu \"chỉ có N\", một cách trung tính, không ngụ ý thiếu thốn",
+        "en": "Stating \"only N\", neutrally, without implying insufficiency"
+      },
+      "speakerStance": {
+        "vi": "Trung tính -- không có phán xét tích cực hay tiêu cực về số lượng",
+        "en": "Neutral -- no positive or negative judgment about the amount"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -17541,8 +18339,14 @@
         "polite",
         "neutral"
       ],
-      "intent": "Using は as the topic marker in place of を/が, to highlight/contrast a specific item",
-      "speakerStance": "Emphasizing contrast or singling something out"
+      "intent": {
+        "vi": "Dùng は làm trợ từ chủ đề thay cho を/が, để nhấn mạnh/đối lập một mục cụ thể",
+        "en": "Using は as the topic marker in place of を/が, to highlight/contrast a specific item"
+      },
+      "speakerStance": {
+        "vi": "Nhấn mạnh sự đối lập hoặc chọn ra một điều gì đó",
+        "en": "Emphasizing contrast or singling something out"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -17669,8 +18473,14 @@
         "neutral",
         "casual"
       ],
-      "intent": "Directly contrasting two subjects with opposing or different traits",
-      "speakerStance": "Comparative, neutral"
+      "intent": {
+        "vi": "Đối lập trực tiếp hai chủ thể có đặc điểm trái ngược hoặc khác nhau",
+        "en": "Directly contrasting two subjects with opposing or different traits"
+      },
+      "speakerStance": {
+        "vi": "Mang tính so sánh, trung tính",
+        "en": "Comparative, neutral"
+      }
     },
     "notesAndPitfalls": [
       {
@@ -17801,8 +18611,14 @@
         "neutral",
         "written"
       ],
-      "intent": "Turning an adjective into an abstract noun -- the measurable degree/quality itself",
-      "speakerStance": "Neutral, objective/measurable framing"
+      "intent": {
+        "vi": "Biến một tính từ thành danh từ trừu tượng -- chính mức độ/tính chất có thể đo được",
+        "en": "Turning an adjective into an abstract noun -- the measurable degree/quality itself"
+      },
+      "speakerStance": {
+        "vi": "Trung tính, mang tính khách quan/đo lường được",
+        "en": "Neutral, objective/measurable framing"
+      }
     },
     "notesAndPitfalls": [
       {

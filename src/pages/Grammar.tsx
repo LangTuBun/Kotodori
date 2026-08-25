@@ -347,13 +347,13 @@ export function Grammar() {
             <div className="p-6 border-b-3 border-structural space-y-2">
               <div className="text-xs font-black uppercase tracking-wider">{t('grammar.pragmatics.title')}</div>
               {selected.pragmatics.intent && (
-                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.intent')}: </span>{selected.pragmatics.intent}</div>
+                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.intent')}: </span>{localize(selected.pragmatics.intent)}</div>
               )}
               {selected.pragmatics.speakerStance && (
-                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.stance')}: </span>{selected.pragmatics.speakerStance}</div>
+                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.stance')}: </span>{localize(selected.pragmatics.speakerStance)}</div>
               )}
               {selected.pragmatics.emotionalNuance && (
-                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.nuance')}: </span>{selected.pragmatics.emotionalNuance}</div>
+                <div className="text-sm"><span className="font-bold text-muted">{t('grammar.pragmatics.nuance')}: </span>{localize(selected.pragmatics.emotionalNuance)}</div>
               )}
             </div>
           )}
@@ -396,6 +396,8 @@ export function Grammar() {
                     showFurigana={showFurigana}
                     showRomaji={showRomaji}
                     accentHex={ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)]}
+                    patternById={patternById}
+                    onJumpTo={jumpTo}
                   />
                 ))}
               </div>

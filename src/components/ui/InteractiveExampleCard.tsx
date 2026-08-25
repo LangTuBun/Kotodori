@@ -1,6 +1,7 @@
 import { useState } from "react"
 import type { EnhancedGrammarExample } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
+import { LinkifiedText } from "@/components/ui/LinkifiedText"
 import { useTranslation } from "@/lib/useTranslation"
 
 interface InteractiveExampleCardProps {
@@ -12,9 +13,14 @@ interface InteractiveExampleCardProps {
   showFurigana: boolean
   showRomaji: boolean
   accentHex?: string
+  /** contextualExplanation routinely cross-references another grammar
+   * point inline (e.g. "see g_150") -- these resolve it to a clickable
+   * pattern name instead of showing the raw id. */
+  patternById?: Record<string, string>
+  onJumpTo?: (grammarId: string) => void
 }
 
-export function InteractiveExampleCard({ example, showFurigana, showRomaji, accentHex }: InteractiveExampleCardProps) {
+export function InteractiveExampleCard({ example, showFurigana, showRomaji, accentHex, patternById, onJumpTo }: InteractiveExampleCardProps) {
   const { t, localize } = useTranslation()
   const [open, setOpen] = useState(false)
   const hasExplanation = !!(example.contextualExplanation?.vi || example.contextualExplanation?.en)
@@ -77,7 +83,7 @@ export function InteractiveExampleCard({ example, showFurigana, showRomaji, acce
           >
             <div className="overflow-hidden">
               <div className="px-1 pb-1 pt-0.5 text-sm text-ink/80 leading-relaxed">
-                {localize(example.contextualExplanation)}
+                <LinkifiedText text={localize(example.contextualExplanation)} patternById={patternById ?? {}} onJumpTo={onJumpTo} />
               </div>
             </div>
           </div>
