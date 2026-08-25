@@ -14479,30 +14479,125 @@
         "jaRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>う→<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>って、<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んで、<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>く→<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いて"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_076",
+      "g_092"
+    ],
     "tags": [],
     "patternRuby": "Thể て (Vて)",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(te-form formation)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Group 1: う/つ/る→って, ぬ/ぶ/む→んで, く→いて, ぐ→いで, す→して",
+        "exampleStr": "買う→買って／飲む→飲んで／書く→書いて"
+      },
+      {
+        "pos": "verb",
+        "form": "Group 2: drop る + て",
+        "exampleStr": "食べる → 食べて"
+      },
+      {
+        "pos": "verb",
+        "form": "Group 3: irregular",
+        "exampleStr": "する → して／来る → 来て"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral",
+        "casual"
+      ],
+      "intent": "Explaining how to conjugate a verb into its て-form, the base for a huge family of patterns",
+      "speakerStance": "Neutral, instructional/reference"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "common_mistake",
+        "title": "Group 1's sound changes split into 5 sub-groups by ending -- 行く is the one common exception",
+        "description": {
+          "vi": "Nhóm 1 chia theo 5 nhóm âm cuối: う/つ/る→って, ぬ/ぶ/む→んで, く→いて, ぐ→いで, す→して. 行く là ngoại lệ duy nhất trong nhóm く: 行く→行って (không phải 行いて).",
+          "en": "Group 1 splits into 5 sound-change sub-groups by ending: う/つ/る→って, ぬ/ぶ/む→んで, く→いて, ぐ→いで, す→して. 行く is the one true exception within the く group: 行く→行って (never 行いて)."
+        },
+        "examples": [
+          {
+            "incorrect": "行いて",
+            "correct": "行って",
+            "explanation": {
+              "vi": "行く là ngoại lệ, chia như nhóm う/つ/る.",
+              "en": "行く is an exception, conjugating like the う/つ/る group."
+            }
+          }
+        ]
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "買う→買って、飲む→飲んで、書く→書いて",
-        "jaRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>う→<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>って、<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む→<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んで、<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>く→<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いて",
-        "kana": "",
-        "romaji": "",
-        "vi": "",
-        "en": "",
+        "ja": "飲む（Group1・ぬぶむ）→ 飲んで",
+        "jaRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>む（Group1・ぬぶむ）→ <ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>んで",
+        "kana": "のむ → のんで",
+        "romaji": "Nomu → nonde",
+        "vi": "Uống → (rồi) uống",
+        "en": "To drink → drinking/and drink",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "む thuộc nhóm ぬぶむ, đổi thành んで.",
+          "en": "む belongs to the ぬぶむ group, becoming んで."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "書く（Group1・く）→ 書いて",
+        "jaRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>く（Group1・く）→ <ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いて",
+        "kana": "かく → かいて",
+        "romaji": "Kaku → kaite",
+        "vi": "Viết → (rồi) viết",
+        "en": "To write → writing/and write",
+        "contextualExplanation": {
+          "vi": "く đổi thành いて (khác với 行く là ngoại lệ).",
+          "en": "く becomes いて (unlike the exception 行く)."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "行く（例外）→ 行って",
+        "jaRuby": "<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>く（<ruby>例外<rp>(</rp><rt>れいがい</rt><rp>)</rp></ruby>）→ <ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>って",
+        "kana": "いく → いって",
+        "romaji": "Iku → itte",
+        "vi": "(Ngoại lệ) Đi → (rồi) đi",
+        "en": "(Exception) To go → going/and go",
+        "contextualExplanation": {
+          "vi": "行く là ngoại lệ duy nhất của nhóm く, chia như nhóm う/つ/る.",
+          "en": "行く is the one exception in the く group, conjugating like う/つ/る."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "食べる（Group2）→ 食べて",
+        "jaRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べる（Group2）→ <ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べて",
+        "kana": "たべる → たべて",
+        "romaji": "Taberu → tabete",
+        "vi": "Ăn → (rồi) ăn",
+        "en": "To eat → eating/and eat",
+        "contextualExplanation": {
+          "vi": "Nhóm 2 luôn đơn giản: bỏ る, thêm て.",
+          "en": "Group 2 is always simple: drop る, add て."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "する（Group3）→ して",
+        "kana": "する → して",
+        "romaji": "Suru → shite",
+        "vi": "Làm → (rồi) làm",
+        "en": "To do → doing/and do",
+        "contextualExplanation": {
+          "vi": "する chia thành して, dễ nhớ vì cũng giống thể ます (します).",
+          "en": "する conjugates to して, easy to remember since it echoes its masu-form (します)."
         }
       }
     ],
@@ -14534,30 +14629,105 @@
         "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、シャワーを<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びて、<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_091",
+      "g_093"
+    ],
     "tags": [],
     "patternRuby": "V1て、V2て、…V",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V1-te, V2-te, ... V",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + て-form + ... + final verb",
+        "exampleStr": "起きて ＋ 顔を洗って ＋ 朝ごはんを食べます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Listing a sequence of actions performed one after another",
+      "speakerStance": "Neutral, narrating a sequence"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Only the LAST verb in the chain carries the tense/politeness marker",
+        "description": {
+          "vi": "Chỉ động từ CUỐI CÙNG trong chuỗi mới chia thì/thể lịch sự (ます/ました). Các động từ đứng trước đều ở thể て, không mang thông tin thời gian riêng.",
+          "en": "Only the LAST verb in the chain carries tense/politeness (ます/ました). Every verb before it stays in て-form, carrying no tense information of its own."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "朝起きて、シャワーを浴びて、朝ご飯を食べます。",
-        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、シャワーを<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びて、<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Sáng dậy, tắm, rồi ăn sáng.",
-        "en": "I get up, take a shower, then eat breakfast.",
+        "ja": "朝起きて、顔を洗って、朝ごはんを食べます。",
+        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby><ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きて、<ruby>顔<rp>(</rp><rt>かお</rt><rp>)</rp></ruby>を<ruby>洗<rp>(</rp><rt>あら</rt><rp>)</rp></ruby>って、<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ごはんを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
+        "kana": "あさおきて、かおをあらって、あさごはんをたべます。",
+        "romaji": "Asa okite, kao o aratte, asagohan o tabemasu.",
+        "vi": "Buổi sáng tôi dậy, rửa mặt rồi ăn sáng.",
+        "en": "I wake up in the morning, wash my face, and eat breakfast.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "起きて và 洗って ở thể て, chỉ 食べます mang thì/thể lịch sự.",
+          "en": "起きて and 洗って stay in て-form; only 食べます carries tense/politeness."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "デパートへ行って、買い物をしました。",
+        "jaRuby": "デパートへ<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>って、<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>い<ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby>をしました。",
+        "kana": "デパートへいって、かいものをしました。",
+        "romaji": "Depaato e itte, kaimono o shimashita.",
+        "vi": "Tôi đã đến trung tâm thương mại và mua sắm.",
+        "en": "I went to the department store and did some shopping.",
+        "contextualExplanation": {
+          "vi": "ました (quá khứ) chỉ gắn vào động từ cuối cùng.",
+          "en": "ました (past) attaches only to the final verb."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "週末、何をして過ごしますか。",
+        "jaRuby": "<ruby>週末<rp>(</rp><rt>しゅうまつ</rt><rp>)</rp></ruby>、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をして<ruby>過<rp>(</rp><rt>す</rt><rp>)</rp></ruby>ごしますか。",
+        "kana": "しゅうまつ、なにをしてすごしますか。",
+        "romaji": "Shuumatsu, nani o shite sugoshimasu ka.",
+        "vi": "Cuối tuần bạn làm gì để trải qua thời gian?",
+        "en": "What do you do to spend your weekend?",
+        "contextualExplanation": {
+          "vi": "して cũng dùng để nối hành động với động từ chỉ trạng thái tiếp diễn (過ごす).",
+          "en": "して also links an action to a verb of ongoing state (過ごす)."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "シャワー浴びて、すぐ寝る。",
+        "jaRuby": "シャワー<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びて、すぐ<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>る。",
+        "kana": "シャワーあびて、すぐねる。",
+        "romaji": "Shawaa abite, sugu neru.",
+        "vi": "Tắm rồi ngủ luôn.",
+        "en": "I'll take a shower and go straight to bed.",
+        "contextualExplanation": {
+          "vi": "Cấu trúc giữ nguyên trong văn nói thân mật, chỉ động từ cuối chia thể thường.",
+          "en": "The structure stays the same in casual speech, only the final verb takes the plain form."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "友達に会って、話して、笑って、楽しい一日でした。",
+        "jaRuby": "<ruby>友達<rp>(</rp><rt>ともだち</rt><rp>)</rp></ruby>に<ruby>会<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>って、<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>して、<ruby>笑<rp>(</rp><rt>わら</rt><rp>)</rp></ruby>って、<ruby>楽<rp>(</rp><rt>たの</rt><rp>)</rp></ruby>しい<ruby>一日<rp>(</rp><rt>いちにち</rt><rp>)</rp></ruby>でした。",
+        "kana": "ともだちにあって、はなして、わらって、たのしいいちにちでした。",
+        "romaji": "Tomodachi ni atte, hanashite, waratte, tanoshii ichinichi deshita.",
+        "vi": "Gặp bạn, trò chuyện, cười đùa -- một ngày thật vui.",
+        "en": "I met my friend, we talked, we laughed -- it was a fun day.",
+        "contextualExplanation": {
+          "vi": "Chuỗi て có thể dài hơn 2 động từ, kết thúc bằng một câu tổng kết (không phải động từ).",
+          "en": "The て-chain can extend past 2 verbs, ending in a summarizing statement (not necessarily a verb)."
         }
       }
     ],
@@ -14589,30 +14759,106 @@
         "jaRuby": "<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>をしてから、テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_080_2",
+      "g_092"
+    ],
     "tags": [],
     "patternRuby": "V1てから V2",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V1-te kara V2",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + から + V2",
+        "exampleStr": "宿題をして ＋ から ＋ 遊びます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Emphasizing that V2 happens only after V1 is complete",
+      "speakerStance": "Neutral, sequencing with emphasis on completion"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "てから adds emphasis on completion, compared to plain V1て、V2",
+        "description": {
+          "vi": "てから nhấn mạnh rõ ràng hơn rằng V1 phải HOÀN TẤT trước khi V2 bắt đầu (so với V1て、V2 chỉ đơn thuần liệt kê trình tự). Cũng gần nghĩa với 後で (g_080_2) nhưng てから linh hoạt và thông dụng hơn trong hội thoại.",
+          "en": "てから more explicitly emphasizes that V1 must be COMPLETE before V2 begins (compared to plain V1て、V2, which simply lists a sequence). It's close in meaning to 後で (g_080_2) but てから is more flexible and common in conversation."
+        },
+        "relatedGrammarId": "g_080_2"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "宿題をしてから、テレビを見ます。",
-        "jaRuby": "<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>をしてから、テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Sau khi làm bài tập xong thì tôi xem tivi.",
-        "en": "After finishing my homework, I watch TV.",
+        "ja": "宿題をしてから、遊びます。",
+        "jaRuby": "<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>をしてから、<ruby>遊<rp>(</rp><rt>あそ</rt><rp>)</rp></ruby>びます。",
+        "kana": "しゅくだいをしてから、あそびます。",
+        "romaji": "Shukudai o shite kara, asobimasu.",
+        "vi": "Sau khi làm xong bài tập, tôi mới đi chơi.",
+        "en": "I play only after finishing my homework.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "てから nhấn mạnh 宿題 phải xong trước khi 遊びます bắt đầu.",
+          "en": "てから emphasizes 宿題 must be done before 遊びます begins."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "よく考えてから、決めてください。",
+        "jaRuby": "よく<ruby>考<rp>(</rp><rt>かんが</rt><rp>)</rp></ruby>えてから、<ruby>決<rp>(</rp><rt>き</rt><rp>)</rp></ruby>めてください。",
+        "kana": "よくかんがえてから、きめてください。",
+        "romaji": "Yoku kangaete kara, kimete kudasai.",
+        "vi": "Hãy suy nghĩ kỹ rồi mới quyết định.",
+        "en": "Please think it over carefully before deciding.",
+        "contextualExplanation": {
+          "vi": "てから rất hay dùng trong lời khuyên: \"làm xong X rồi mới làm Y\".",
+          "en": "てから is very common in advice: \"finish X before doing Y\"."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "日本に来てから、どのくらいですか。",
+        "jaRuby": "<ruby>日本<rp>(</rp><rt>にほん</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>てから、どのくらいですか。",
+        "kana": "にほんにきてから、どのくらいですか。",
+        "romaji": "Nihon ni kite kara, dono kurai desu ka.",
+        "vi": "Bạn đến Nhật được bao lâu rồi?",
+        "en": "How long has it been since you came to Japan?",
+        "contextualExplanation": {
+          "vi": "てから cũng dùng để hỏi khoảng thời gian đã trôi qua kể từ một mốc.",
+          "en": "てから also asks about elapsed time since a reference point."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "ご飯食べてから、テレビ見よう。",
+        "jaRuby": "ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby><ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べてから、テレビ<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>よう。",
+        "kana": "ごはんたべてから、テレビみよう。",
+        "romaji": "Gohan tabete kara, terebi miyou.",
+        "vi": "Ăn cơm xong rồi xem TV nhé.",
+        "en": "Let's watch TV after eating.",
+        "contextualExplanation": {
+          "vi": "てから giữ nguyên trong lời rủ rê thân mật.",
+          "en": "てから stays the same in a casual invitation."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "結婚してから、料理をするようになりました。",
+        "jaRuby": "<ruby>結婚<rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>してから、<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>をするようになりました。",
+        "kana": "けっこんしてから、りょうりをするようになりました。",
+        "romaji": "Kekkon shite kara, ryouri o suru you ni narimashita.",
+        "vi": "Từ sau khi kết hôn, tôi bắt đầu nấu ăn.",
+        "en": "Ever since getting married, I started cooking.",
+        "contextualExplanation": {
+          "vi": "てから cũng dùng cho một mốc thay đổi dài hạn trong cuộc sống, không chỉ hành động ngắn.",
+          "en": "てから also marks a long-term life change milestone, not just a short action."
         }
       }
     ],
@@ -14644,30 +14890,107 @@
         "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>っています。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_094_2",
+      "g_094_3",
+      "g_094_4",
+      "g_094_5"
+    ],
     "tags": [],
     "patternRuby": "~Vている",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "~V-te iru",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + いる／います",
+        "exampleStr": "食べる → 食べて ＋ います"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "The overview pattern for ~ている, covering progressive action, habit, and resultant state",
+      "speakerStance": "Neutral, descriptive"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "ている has (at least) four distinct meanings depending on the verb type -- see g_094_2 through g_094_5",
+        "description": {
+          "vi": "ている không chỉ là \"đang làm gì\" -- ý nghĩa thực tế phụ thuộc vào LOẠI động từ: đang diễn ra (g_094_2), thói quen (g_094_3), trạng thái kết quả (g_094_4), hoặc hành động kéo dài (g_094_5). Đây là điểm dễ gây nhầm lẫn nhất của mẫu này.",
+          "en": "ている isn't only \"doing right now\" -- its actual meaning depends on the TYPE of verb: an action in progress (g_094_2), a habit (g_094_3), a resultant state (g_094_4), or a long-running action (g_094_5). This is the most commonly confused aspect of the pattern."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "今、雨が降っています。",
-        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>っています。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bây giờ trời đang mưa.",
-        "en": "It's raining right now.",
+        "ja": "今、ご飯を食べています。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べています。",
+        "kana": "いま、ごはんをたべています。",
+        "romaji": "Ima, gohan o tabete imasu.",
+        "vi": "Bây giờ tôi đang ăn cơm.",
+        "en": "I'm eating right now.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "ている ở đây diễn tả hành động đang diễn ra ngay lúc nói -- xem g_094_2.",
+          "en": "ている here expresses an action in progress right now -- see g_094_2."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "毎朝、走っています。",
+        "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>、<ruby>走<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>っています。",
+        "kana": "まいあさ、はしっています。",
+        "romaji": "Maiasa, hashitte imasu.",
+        "vi": "Mỗi sáng tôi đều chạy bộ.",
+        "en": "I run every morning.",
+        "contextualExplanation": {
+          "vi": "ている ở đây diễn tả thói quen lặp lại -- xem g_094_3.",
+          "en": "ている here expresses a repeated habit -- see g_094_3."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "まだ結婚していません。",
+        "jaRuby": "まだ<ruby>結婚<rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>していません。",
+        "kana": "まだけっこんしていません。",
+        "romaji": "Mada kekkon shite imasen.",
+        "vi": "Tôi chưa kết hôn.",
+        "en": "I'm not married yet.",
+        "contextualExplanation": {
+          "vi": "ている ở đây diễn tả trạng thái kết quả (chưa ở trạng thái đã kết hôn) -- xem g_094_4.",
+          "en": "ている here expresses a resultant state (not yet in the married state) -- see g_094_4."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "今、何をしていますか。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしていますか。",
+        "kana": "いま、なにをしていますか。",
+        "romaji": "Ima, nani o shite imasu ka.",
+        "vi": "Bây giờ bạn đang làm gì?",
+        "en": "What are you doing right now?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi cơ bản nhất về hành động đang diễn ra.",
+          "en": "The most basic question about an ongoing action."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "日本語を10年勉強しています。",
+        "jaRuby": "<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>を10<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby><ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>しています。",
+        "kana": "にほんごをじゅうねんべんきょうしています。",
+        "romaji": "Nihongo o juunen benkyou shite imasu.",
+        "vi": "Tôi đã học tiếng Nhật được 10 năm.",
+        "en": "I've been studying Japanese for 10 years.",
+        "contextualExplanation": {
+          "vi": "ている ở đây diễn tả một hành động kéo dài liên tục -- xem g_094_5.",
+          "en": "ている here expresses a long-running continuous action -- see g_094_5."
         }
       }
     ],
@@ -14699,30 +15022,106 @@
         "jaRuby": "<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>が<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>で<ruby>遊<rp>(</rp><rt>あそ</rt><rp>)</rp></ruby>んでいます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_094_1",
+      "g_094_3"
+    ],
     "tags": [],
     "patternRuby": "NがVて+います",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N ga V-te imasu (in front of you)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + います (đang xảy ra ngay trước mắt)",
+        "exampleStr": "降る → 雨が降っています"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing an action happening right now, visibly, in front of the speaker",
+      "speakerStance": "Neutral, describing an observed ongoing event"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This is the \"textbook\" meaning of ている -- but it's only one of four",
+        "description": {
+          "vi": "Đây là nghĩa \"đang diễn ra\" quen thuộc nhất (thường được dạy đầu tiên) nhưng chỉ áp dụng khi có thể QUAN SÁT TRỰC TIẾP hành động ngay lúc nói. Đừng mặc định mọi ている đều mang nghĩa này -- xem g_094_1.",
+          "en": "This is the most familiar \"in progress\" meaning (usually taught first), but it only applies when the action can be DIRECTLY OBSERVED at the moment of speaking. Don't assume every ている carries this meaning -- see g_094_1."
+        },
+        "relatedGrammarId": "g_094_1"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "子供が公園で遊んでいます。",
-        "jaRuby": "<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>が<ruby>公園<rp>(</rp><rt>こうえん</rt><rp>)</rp></ruby>で<ruby>遊<rp>(</rp><rt>あそ</rt><rp>)</rp></ruby>んでいます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Trẻ con đang chơi ở công viên.",
-        "en": "Children are playing at the park.",
+        "ja": "雨が降っています。",
+        "jaRuby": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>っています。",
+        "kana": "あめがふっています。",
+        "romaji": "Ame ga futte imasu.",
+        "vi": "Trời đang mưa.",
+        "en": "It's raining right now.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "Đang mưa, quan sát được ngay lúc nói.",
+          "en": "Rain is happening, observable right now."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中さんは今、電話をしています。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>をしています。",
+        "kana": "たなかさんはいま、でんわをしています。",
+        "romaji": "Tanaka-san wa ima, denwa o shite imasu.",
+        "vi": "Anh Tanaka đang gọi điện thoại.",
+        "en": "Tanaka is on the phone right now.",
+        "contextualExplanation": {
+          "vi": "Hành động đang diễn ra tại thời điểm nói (今).",
+          "en": "The action is happening at this moment (今)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "子どもたちは何をしていますか。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもたちは<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>をしていますか。",
+        "kana": "こどもたちはなにをしていますか。",
+        "romaji": "Kodomo-tachi wa nani o shite imasu ka.",
+        "vi": "Bọn trẻ đang làm gì vậy?",
+        "en": "What are the kids doing (right now)?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi về hành động đang diễn ra, có thể quan sát ngay lúc nói.",
+          "en": "A question about an action currently visible/observable."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "今は誰も泳いでいません。",
+        "jaRuby": "<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>は<ruby>誰<rp>(</rp><rt>だれ</rt><rp>)</rp></ruby>も<ruby>泳<rp>(</rp><rt>およ</rt><rp>)</rp></ruby>いでいません。",
+        "kana": "いまはだれもおよいでいません。",
+        "romaji": "Ima wa dare mo oyoide imasen.",
+        "vi": "Bây giờ không có ai đang bơi cả.",
+        "en": "No one is swimming right now.",
+        "contextualExplanation": {
+          "vi": "ていません phủ định một hành động lẽ ra đang diễn ra.",
+          "en": "ていません negates an action that would otherwise be happening."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "見て！鳥が飛んでる！",
+        "jaRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>て！<ruby>鳥<rp>(</rp><rt>とり</rt><rp>)</rp></ruby>が<ruby>飛<rp>(</rp><rt>と</rt><rp>)</rp></ruby>んでる！",
+        "kana": "みて！とりがとんでる！",
+        "romaji": "Mite! Tori ga tonderu!",
+        "vi": "Nhìn kìa! Con chim đang bay!",
+        "en": "Look! A bird is flying!",
+        "contextualExplanation": {
+          "vi": "ています → てる là cách rút gọn rất phổ biến trong văn nói thân mật.",
+          "en": "ています → てる is a very common contraction in casual speech."
         }
       }
     ],
@@ -14754,30 +15153,105 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby><ruby>走<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>っています。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_094_1",
+      "g_094_2"
+    ],
     "tags": [],
     "patternRuby": "NがVています",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N ga V-te imasu (habit)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + います (thói quen lặp lại)",
+        "exampleStr": "走る → 毎朝走っています"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing a repeated, habitual action -- not something happening at this exact moment",
+      "speakerStance": "Neutral, describing a routine"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "A time-frequency word (毎朝, 週に3回...) is often what signals \"habit\" over \"in progress\"",
+        "description": {
+          "vi": "Không có dấu hiệu ngữ pháp riêng để phân biệt \"đang diễn ra\" và \"thói quen\" -- thường phải dựa vào TỪ CHỈ TẦN SUẤT (毎朝, 週に3回) hoặc ngữ cảnh để biết ている đang mang nghĩa nào.",
+          "en": "There's no distinct grammatical marker separating \"in progress\" from \"habit\" -- usually a FREQUENCY word (毎朝, 週に3回) or context is what signals which meaning ている carries."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私は毎朝走っています。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby><ruby>走<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>っています。",
-        "kana": "",
-        "romaji": "",
+        "ja": "毎朝、走っています。",
+        "jaRuby": "<ruby>毎朝<rp>(</rp><rt>まいあさ</rt><rp>)</rp></ruby>、<ruby>走<rp>(</rp><rt>はし</rt><rp>)</rp></ruby>っています。",
+        "kana": "まいあさ、はしっています。",
+        "romaji": "Maiasa, hashitte imasu.",
         "vi": "Mỗi sáng tôi đều chạy bộ.",
-        "en": "I go running every morning.",
+        "en": "I run every morning.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "毎朝 báo hiệu đây là thói quen, không phải hành động đang diễn ra ngay lúc nói.",
+          "en": "毎朝 signals this is a habit, not an action happening right now."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "田中さんは銀行で働いています。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>銀行<rp>(</rp><rt>ぎんこう</rt><rp>)</rp></ruby>で<ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>いています。",
+        "kana": "たなかさんはぎんこうではたらいています。",
+        "romaji": "Tanaka-san wa ginkou de hataraite imasu.",
+        "vi": "Bạn Tanaka làm việc ở ngân hàng.",
+        "en": "Tanaka works at a bank.",
+        "contextualExplanation": {
+          "vi": "働いています diễn tả nghề nghiệp lâu dài, không phải \"đang làm ngay lúc này\".",
+          "en": "働いています expresses a long-term occupation, not \"working at this exact moment\"."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "週に何回、ジムに行っていますか。",
+        "jaRuby": "<ruby>週<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby>に<ruby>何回<rp>(</rp><rt>なんかい</rt><rp>)</rp></ruby>、ジムに<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>っていますか。",
+        "kana": "しゅうになんかい、ジムにいっていますか。",
+        "romaji": "Shuu ni nankai, jimu ni itte imasu ka.",
+        "vi": "Một tuần bạn đến phòng gym mấy lần?",
+        "en": "How many times a week do you go to the gym?",
+        "contextualExplanation": {
+          "vi": "何回 kết hợp với ています rõ ràng hỏi về tần suất thói quen.",
+          "en": "何回 combined with ています clearly asks about the frequency of a habit."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "最近、あまり運動していません。",
+        "jaRuby": "<ruby>最近<rp>(</rp><rt>さいきん</rt><rp>)</rp></ruby>、あまり<ruby>運動<rp>(</rp><rt>うんどう</rt><rp>)</rp></ruby>していません。",
+        "kana": "さいきん、あまりうんどうしていません。",
+        "romaji": "Saikin, amari undou shite imasen.",
+        "vi": "Dạo này tôi không tập thể dục nhiều.",
+        "en": "I haven't been exercising much lately.",
+        "contextualExplanation": {
+          "vi": "最近 (dạo này) báo hiệu đang nói về xu hướng/thói quen gần đây.",
+          "en": "最近 (\"lately\") signals talk about a recent trend/habit."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "毎日、日本語のアプリで勉強してる。",
+        "jaRuby": "<ruby>毎日<rp>(</rp><rt>まいにち</rt><rp>)</rp></ruby>、<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>のアプリで<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>してる。",
+        "kana": "まいにち、にほんごのアプリでべんきょうしてる。",
+        "romaji": "Mainichi, nihongo no apuri de benkyou shiteru.",
+        "vi": "Mỗi ngày tôi học tiếng Nhật bằng app.",
+        "en": "I study Japanese with an app every day.",
+        "contextualExplanation": {
+          "vi": "してる (rút gọn) cũng dùng cho thói quen trong văn nói thân mật.",
+          "en": "してる (contracted) also expresses a habit in casual speech."
         }
       }
     ],
@@ -14809,30 +15283,105 @@
         "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>が<ruby>開<rp>(</rp><rt>ひら</rt><rp>)</rp></ruby>いています。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_094_1",
+      "g_163"
+    ],
     "tags": [],
     "patternRuby": "NがVている",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "N ga V-te iru (resultant state)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + いる (kết quả của một sự thay đổi)",
+        "exampleStr": "結婚する → 結婚している"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing a state that resulted from a change/event, not an ongoing action",
+      "speakerStance": "Neutral, describing a current state"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "false_friend",
+        "title": "結婚しています ≠ \"is getting married right now\" -- it means \"is married\" (a state)",
+        "description": {
+          "vi": "Với các động từ diễn tả một THAY ĐỔI xảy ra tức thời (kết hôn, chết, biết, mở cửa...), ている KHÔNG diễn tả hành động đang xảy ra mà là TRẠNG THÁI sau khi thay đổi đó đã hoàn tất. 結婚しています nghĩa \"đã kết hôn (và vẫn đang trong tình trạng đó)\", không phải \"đang làm đám cưới\".",
+          "en": "For verbs describing an instantaneous CHANGE (getting married, dying, coming to know, a door opening...), ている does NOT mean the action is happening -- it means the STATE resulting from that change being complete. 結婚しています means \"is married (and remains so)\", not \"is in the middle of getting married\"."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "窓が開いています。",
-        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>が<ruby>開<rp>(</rp><rt>ひら</rt><rp>)</rp></ruby>いています。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Cửa sổ đang mở.",
-        "en": "The window is open.",
+        "ja": "田中さんは結婚しています。",
+        "jaRuby": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さんは<ruby>結婚<rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>しています。",
+        "kana": "たなかさんはけっこんしています。",
+        "romaji": "Tanaka-san wa kekkon shite imasu.",
+        "vi": "Bạn Tanaka đã kết hôn.",
+        "en": "Tanaka is married.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "結婚しています diễn tả trạng thái đã kết hôn, không phải hành động cưới đang diễn ra.",
+          "en": "結婚しています expresses the married state, not the wedding action itself."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この店は8時に開いています。",
+        "jaRuby": "この<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>は8<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>に<ruby>開<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>いています。",
+        "kana": "このみせははちじにあいています。",
+        "romaji": "Kono mise wa hachiji ni aite imasu.",
+        "vi": "Cửa hàng này mở cửa lúc 8 giờ.",
+        "en": "This shop is open by 8.",
+        "contextualExplanation": {
+          "vi": "開いています diễn tả trạng thái \"đang mở\", kết quả sau khi cửa đã mở ra.",
+          "en": "開いています expresses the \"open\" state, resulting from the door having opened."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "その情報はまだ知りません。あ、いえ、もう知っています。",
+        "jaRuby": "その<ruby>情報<rp>(</rp><rt>じょうほう</rt><rp>)</rp></ruby>はまだ<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>りません。あ、いえ、もう<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っています。",
+        "kana": "そのじょうほうはまだしりません。あ、いえ、もうしっています。",
+        "romaji": "Sono jouhou wa mada shirimasen. A, ie, mou shitte imasu.",
+        "vi": "Thông tin đó tôi chưa biết. À không, tôi đã biết rồi.",
+        "en": "I don't know that information yet. Oh wait, I already know it.",
+        "contextualExplanation": {
+          "vi": "知っています (không phải 知ります) là dạng chuẩn để nói \"biết\" -- một trạng thái kết quả đặc biệt cần ghi nhớ.",
+          "en": "知っています (not 知ります) is the standard way to say \"know\" -- a resultant-state case worth memorizing specifically."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "窓が閉まっていますか。",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>が<ruby>閉<rp>(</rp><rt>し</rt><rp>)</rp></ruby>まっていますか。",
+        "kana": "まどがしまっていますか。",
+        "romaji": "Mado ga shimatte imasu ka.",
+        "vi": "Cửa sổ đã đóng chưa?",
+        "en": "Is the window closed?",
+        "contextualExplanation": {
+          "vi": "閉まっています hỏi về trạng thái hiện tại (đã đóng), không phải hành động đóng cửa đang diễn ra.",
+          "en": "閉まっています asks about the current state (closed), not the closing action itself."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "財布、なくしてる…どこにあるかわからない。",
+        "jaRuby": "<ruby>財布<rp>(</rp><rt>さいふ</rt><rp>)</rp></ruby>、なくしてる…どこにあるかわからない。",
+        "kana": "さいふ、なくしてる…どこにあるかわからない。",
+        "romaji": "Saifu, nakushiteru… doko ni aru ka wakaranai.",
+        "vi": "Ví của tôi bị mất rồi... không biết ở đâu.",
+        "en": "I've lost my wallet… I don't know where it is.",
+        "contextualExplanation": {
+          "vi": "なくしてる diễn tả trạng thái \"đang bị mất\" (kết quả), không phải hành động làm mất đang xảy ra.",
+          "en": "なくしてる expresses the state of \"being lost\" (a result), not the losing action happening now."
         }
       }
     ],
@@ -14864,30 +15413,105 @@
         "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はハノイに<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_094_1",
+      "g_094_4"
+    ],
     "tags": [],
     "patternRuby": "Vて+います",
     "requiredVerbForm": [
       "te"
     ],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-te imasu (long-term ongoing)",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + います (hành động kéo dài liên tục)",
+        "exampleStr": "住む → 東京に住んでいます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing an action/state that has continued over an extended period",
+      "speakerStance": "Neutral, describing an ongoing long-term situation"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This use overlaps with \"resultant state\" (g_094_4) for verbs like 住む -- both readings are valid",
+        "description": {
+          "vi": "Với động từ như 住む (sống), ている vừa có thể hiểu là trạng thái kéo dài (đang sống ở đó liên tục) vừa là kết quả (đã chuyển đến và vẫn ở đó) -- ranh giới giữa hai cách hiểu này khá mờ, cả hai đều đúng.",
+          "en": "For verbs like 住む (\"live\"), ている can be read as either a long-running continuous state or a resultant state (moved there and still there) -- the line between these two readings is blurry, and both are valid."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "私はハノイに住んでいます。",
-        "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>はハノイに<ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đang sống ở Hà Nội.",
-        "en": "I live in Hanoi.",
+        "ja": "東京に3年住んでいます。",
+        "jaRuby": "<ruby>東京<rp>(</rp><rt>とうきょう</rt><rp>)</rp></ruby>に3<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby><ruby>住<rp>(</rp><rt>す</rt><rp>)</rp></ruby>んでいます。",
+        "kana": "とうきょうにさんねんすんでいます。",
+        "romaji": "Toukyou ni sannen sunde imasu.",
+        "vi": "Tôi đã sống ở Tokyo được 3 năm.",
+        "en": "I've lived in Tokyo for 3 years.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "住んでいます diễn tả trạng thái sống kéo dài trong 3 năm.",
+          "en": "住んでいます expresses a living state extending over 3 years."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この会社で10年働いています。",
+        "jaRuby": "この<ruby>会社<rp>(</rp><rt>かいしゃ</rt><rp>)</rp></ruby>で10<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby><ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>いています。",
+        "kana": "このかいしゃでじゅうねんはたらいています。",
+        "romaji": "Kono kaisha de juunen hataraite imasu.",
+        "vi": "Tôi đã làm việc ở công ty này 10 năm.",
+        "en": "I've worked at this company for 10 years.",
+        "contextualExplanation": {
+          "vi": "10年 nhấn mạnh tính chất kéo dài liên tục của hành động.",
+          "en": "10年 emphasizes the continuous, extended nature of the action."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "いつからここで働いていますか。",
+        "jaRuby": "いつからここで<ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>いていますか。",
+        "kana": "いつからここではたらいていますか。",
+        "romaji": "Itsu kara koko de hataraite imasu ka.",
+        "vi": "Bạn làm việc ở đây từ khi nào?",
+        "en": "Since when have you worked here?",
+        "contextualExplanation": {
+          "vi": "いつから + ています hỏi về thời điểm bắt đầu của một trạng thái kéo dài.",
+          "en": "いつから + ています asks about the starting point of a continuous state."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "子どもの頃から、ずっとピアノを習っている。",
+        "jaRuby": "<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>どもの<ruby>頃<rp>(</rp><rt>ころ</rt><rp>)</rp></ruby>から、ずっとピアノを<ruby>習<rp>(</rp><rt>なら</rt><rp>)</rp></ruby>っている。",
+        "kana": "こどものころから、ずっとピアノをならっている。",
+        "romaji": "Kodomo no koro kara, zutto piano o naratte iru.",
+        "vi": "Tôi học đàn piano từ hồi nhỏ đến giờ.",
+        "en": "I've been learning piano since I was a kid.",
+        "contextualExplanation": {
+          "vi": "ずっと (mãi/liên tục) nhấn mạnh tính chất kéo dài không gián đoạn.",
+          "en": "ずっと (\"continuously\") emphasizes the uninterrupted, extended nature."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼女とはもう5年付き合っています。",
+        "jaRuby": "<ruby>彼女<rp>(</rp><rt>かのじょ</rt><rp>)</rp></ruby>とはもう5<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby><ruby>付<rp>(</rp><rt>つ</rt><rp>)</rp></ruby>き<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>っています。",
+        "kana": "かのじょとはもうごねんつきあっています。",
+        "romaji": "Kanojo to wa mou gonen tsukiatte imasu.",
+        "vi": "Tôi hẹn hò với cô ấy đã 5 năm rồi.",
+        "en": "I've been dating her for 5 years now.",
+        "contextualExplanation": {
+          "vi": "付き合っています cũng thuộc nhóm động từ về mối quan hệ kéo dài, giống 結婚している/住んでいる.",
+          "en": "付き合っています also belongs to the relationship-verb group with extended duration, like 結婚している/住んでいる."
         }
       }
     ],
