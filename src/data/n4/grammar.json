@@ -8179,27 +8179,114 @@
         "jaRuby": "<ruby>地震<rp>(</rp><rt>じしん</rt><rp>)</rp></ruby>で<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>が<ruby>止<rp>(</rp><rt>と</rt><rp>)</rp></ruby>まりました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_066",
+      "g_018",
+      "g_019"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-te/N de/A-kute, ~",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + Clause2",
+        "exampleStr": "遅れる → 遅れて ＋ 心配しました"
+      },
+      {
+        "pos": "noun",
+        "form": "N + で + Clause2",
+        "exampleStr": "病気 ＋ で休みました"
+      },
+      {
+        "pos": "i-adj",
+        "form": "い → くて + Clause2",
+        "exampleStr": "忙しい → 忙しくて ＋ 行けません"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Linking a cause/reason to a result within one flowing sentence, more subtle than から",
+      "speakerStance": "Neutral, presenting the cause as an objective circumstance"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "て/で-linking reads softer/more natural than から -- but cannot be followed by a command or invitation",
+        "description": {
+          "vi": "Cách nối này (て/で + kết quả) tự nhiên và nhẹ nhàng hơn から (g_066), thường dùng khi lý do và kết quả liên kết chặt chẽ, gần như một chuỗi sự kiện. Tuy nhiên, GIỐNG と (không phải たら), vế sau KHÔNG được là mệnh lệnh/lời mời -- vì đây là mối quan hệ nhân quả khách quan, không phải điều kiện giả định.",
+          "en": "This linking (て/で + result) reads more natural and softer than から (g_066), often used when cause and result feel tightly connected, almost like one flowing event. However, LIKE と (unlike たら), the second clause CANNOT be a command/invitation -- since this expresses an objective cause-effect relationship, not a hypothetical condition."
+        },
+        "relatedGrammarId": "g_066"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "地震で電車が止まりました。",
-        "jaRuby": "<ruby>地震<rp>(</rp><rt>じしん</rt><rp>)</rp></ruby>で<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>が<ruby>止<rp>(</rp><rt>と</rt><rp>)</rp></ruby>まりました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Vì động đất nên tàu điện đã dừng lại.",
-        "en": "The trains stopped because of the earthquake.",
+        "ja": "電車が遅れて、会議に遅刻しました。",
+        "jaRuby": "<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>が<ruby>遅<rp>(</rp><rt>おく</rt><rp>)</rp></ruby>れて、<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>に<ruby>遅刻<rp>(</rp><rt>ちこく</rt><rp>)</rp></ruby>しました。",
+        "kana": "でんしゃがおくれて、かいぎにちこくしました。",
+        "romaji": "Densha ga okurete, kaigi ni chikoku shimashita.",
+        "vi": "Vì tàu điện bị trễ nên tôi đã đến muộn cuộc họp.",
+        "en": "The train was delayed, so I was late to the meeting.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "遅れて (thể て) nối trực tiếp lý do với kết quả, tự nhiên hơn から.",
+          "en": "遅れて (te-form) directly links the reason to the result, reading more natural than から."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "病気で、旅行に行けませんでした。",
+        "jaRuby": "<ruby>病気<rp>(</rp><rt>びょうき</rt><rp>)</rp></ruby>で、<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>けませんでした。",
+        "kana": "びょうきで、りょこうにいけませんでした。",
+        "romaji": "Byouki de, ryokou ni ikemasen deshita.",
+        "vi": "Vì bị ốm nên tôi đã không đi du lịch được.",
+        "en": "I was sick, so I couldn't go on the trip.",
+        "contextualExplanation": {
+          "vi": "病気で (danh từ + で) nêu lý do một cách ngắn gọn, khách quan.",
+          "en": "病気で (noun + で) states the reason concisely and objectively."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "この問題は難しくなくて、すぐ終わりました。",
+        "jaRuby": "この<ruby>問題<rp>(</rp><rt>もんだい</rt><rp>)</rp></ruby>は<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しくなくて、すぐ<ruby>終<rp>(</rp><rt>お</rt><rp>)</rp></ruby>わりました。",
+        "kana": "このもんだいはむずかしくなくて、すぐおわりました。",
+        "romaji": "Kono mondai wa muzukashikunakute, sugu owarimashita.",
+        "vi": "Vì bài này không khó nên tôi làm xong nhanh.",
+        "en": "This problem wasn't difficult, so I finished it quickly.",
+        "contextualExplanation": {
+          "vi": "なくて (tính từ い phủ định + て) cũng dùng để nối nguyên nhân.",
+          "en": "なくて (negative i-adjective + て) also links a cause."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "どうして休んだんですか。熱があって。",
+        "jaRuby": "どうして<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>んだんですか。<ruby>熱<rp>(</rp><rt>ねつ</rt><rp>)</rp></ruby>があって。",
+        "kana": "どうしてやすんだんですか。ねつがあって。",
+        "romaji": "Doushite yasunda n desu ka. Netsu ga atte.",
+        "vi": "Sao lại nghỉ vậy? Vì tôi bị sốt.",
+        "en": "Why did you take the day off? I had a fever.",
+        "contextualExplanation": {
+          "vi": "て cũng dùng để trả lời ngắn gọn cho câu hỏi lý do, để lửng câu (giống んですが, g_150).",
+          "en": "て also works as a short answer to a \"why\" question, trailing off (similar to んですが, g_150)."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "このアプリは便利で、使いやすいです。",
+        "jaRuby": "このアプリは<ruby>便利<rp>(</rp><rt>べんり</rt><rp>)</rp></ruby>で、<ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>いやすいです。",
+        "kana": "このアプリはべんりで、つかいやすいです。",
+        "romaji": "Kono apuri wa benri de, tsukaiyasui desu.",
+        "vi": "App này tiện lợi nên dễ sử dụng.",
+        "en": "This app is convenient, so it's easy to use.",
+        "contextualExplanation": {
+          "vi": "便利で (tính từ な + で) cũng dùng để nối nguyên nhân/lý do, không chỉ liệt kê đặc điểm (g_019).",
+          "en": "便利で (na-adjective + で) also links a cause/reason, not only listing traits (g_019)."
         }
       }
     ],
@@ -8232,27 +8319,108 @@
         "jaRuby": "<ruby>音楽<rp>(</rp><rt>おんがく</rt><rp>)</rp></ruby>を<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いて<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>します。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_092",
+      "g_199"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V1-te/V1-naide, V2",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "て-form + V2",
+        "exampleStr": "立つ → 立って ＋ 話します"
+      },
+      {
+        "pos": "verb",
+        "form": "ない-form + で + V2",
+        "exampleStr": "座らない → 座らないで ＋ 話します"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing V2 happening while V1 is (or isn't) an accompanying state/manner",
+      "speakerStance": "Neutral, descriptive of manner/circumstance"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This て/ないで describes an accompanying STATE (how V2 happens), distinct from て meaning \"and then\" (g_092)",
+        "description": {
+          "vi": "て ở đây không diễn tả trình tự \"làm A rồi làm B\" (g_092) mà mô tả TRẠNG THÁI đi kèm khi V2 xảy ra (立って話す = \"vừa đứng vừa nói\", đứng là trạng thái nền, không phải hành động trước). Phân biệt qua ngữ nghĩa: nếu hai hành động xảy ra ĐỒNG THỜI (một là trạng thái), đây là cách dùng này.",
+          "en": "て here doesn't express a sequence \"do A then B\" (g_092) -- it describes the accompanying STATE while V2 happens (立って話す = \"talk while standing\", standing is the background state, not a prior action). Distinguished by meaning: if the two actions happen SIMULTANEOUSLY (one being a state), this is the use in play."
+        },
+        "relatedGrammarId": "g_092"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "音楽を聞いて勉強します。",
-        "jaRuby": "<ruby>音楽<rp>(</rp><rt>おんがく</rt><rp>)</rp></ruby>を<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いて<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>します。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi vừa nghe nhạc vừa học bài.",
-        "en": "I study while listening to music.",
+        "ja": "立ったまま、テレビを見ています。",
+        "jaRuby": "<ruby>立<rp>(</rp><rt>た</rt><rp>)</rp></ruby>ったまま、テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ています。",
+        "kana": "たったまま、テレビをみています。",
+        "romaji": "Tatta mama, terebi o mite imasu.",
+        "vi": "Tôi đang xem TV trong tư thế đứng.",
+        "en": "I'm watching TV while standing.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "立ったまま (một biến thể khác diễn tả trạng thái duy trì) tương tự cách dùng て mô tả trạng thái đi kèm.",
+          "en": "立ったまま (another variant expressing a maintained state) parallels this use of て describing an accompanying state."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "窓を開けて、寝ました。",
+        "jaRuby": "<ruby>窓<rp>(</rp><rt>まど</rt><rp>)</rp></ruby>を<ruby>開<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>けて、<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ました。",
+        "kana": "まどをあけて、ねました。",
+        "romaji": "Mado o akete, nemashita.",
+        "vi": "Tôi đã ngủ trong khi để cửa sổ mở.",
+        "en": "I slept with the window open.",
+        "contextualExplanation": {
+          "vi": "窓を開けて mô tả trạng thái nền (cửa sổ mở) trong khi 寝ました xảy ra, không phải \"mở cửa rồi mới ngủ\" theo trình tự.",
+          "en": "窓を開けて describes the background state (window open) while 寝ました happens, not a sequence of \"open then sleep\"."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "朝ごはんを食べないで、学校に行きました。",
+        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ごはんを<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べないで、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きました。",
+        "kana": "あさごはんをたべないで、がっこうにいきました。",
+        "romaji": "Asagohan o tabenaide, gakkou ni ikimashita.",
+        "vi": "Tôi đã đi học mà không ăn sáng.",
+        "en": "I went to school without eating breakfast.",
+        "contextualExplanation": {
+          "vi": "ないで diễn tả V2 xảy ra trong tình trạng KHÔNG có V1 (không ăn sáng vẫn đi học).",
+          "en": "ないで expresses V2 happening in the ABSENCE of V1 (going to school without breakfast)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "座って話しますか、それとも立って話しますか。",
+        "jaRuby": "<ruby>座<rp>(</rp><rt>すわ</rt><rp>)</rp></ruby>って<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>しますか、それとも<ruby>立<rp>(</rp><rt>た</rt><rp>)</rp></ruby>って<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>しますか。",
+        "kana": "すわってはなしますか、それとも たってはなしますか。",
+        "romaji": "Suwatte hanashimasu ka, soretomo tatte hanashimasu ka.",
+        "vi": "Bạn sẽ nói chuyện trong tư thế ngồi hay đứng?",
+        "en": "Will you speak sitting down, or standing?",
+        "contextualExplanation": {
+          "vi": "座って/立って đối lập hai trạng thái đi kèm khi thực hiện cùng một hành động (話す).",
+          "en": "座って/立って contrast two accompanying states for the same action (話す)."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "メガネをかけないで、運転しないでください。",
+        "jaRuby": "メガネをかけないで、<ruby>運転<rp>(</rp><rt>うんてん</rt><rp>)</rp></ruby>しないでください。",
+        "kana": "メガネをかけないで、うんてんしないでください。",
+        "romaji": "Megane o kakenaide, unten shinaide kudasai.",
+        "vi": "Xin đừng lái xe mà không đeo kính.",
+        "en": "Please don't drive without wearing your glasses.",
+        "contextualExplanation": {
+          "vi": "ないで kết hợp với ください (yêu cầu phủ định, g_099) để cấm một hành động thiếu trạng thái cần thiết.",
+          "en": "ないで combines with ください (negative request, g_099) to prohibit an action lacking a necessary state."
         }
       }
     ],
@@ -8285,27 +8453,102 @@
         "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べないで、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_198"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V1-naide, V2",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "ない-form + で + V2 (thay thế)",
+        "exampleStr": "電車に乗らない → 電車に乗らないで ＋ 歩きました"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Stating that V2 was done INSTEAD OF V1, as an alternative choice",
+      "speakerStance": "Neutral, presenting a substitution"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "This is a specialized reading of g_198's ないで -- \"instead of\" rather than just \"without\"",
+        "description": {
+          "vi": "Đây là cách hiểu chuyên biệt hơn của ないで (đã thấy ở g_198): thay vì chỉ nghĩa \"không có\" (trạng thái đi kèm), ở đây mang nghĩa \"THAY VÌ làm V1, lại làm V2\" -- một sự LỰA CHỌN thay thế rõ ràng, không chỉ là thiếu trạng thái.",
+          "en": "This is a more specialized reading of ないで (already seen in g_198): rather than just meaning \"without\" (an accompanying state), here it means \"INSTEAD OF doing V1, V2 was done\" -- a clear alternative CHOICE, not just an absent state."
+        },
+        "relatedGrammarId": "g_198"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "朝ご飯を食べないで、学校に行きました。",
-        "jaRuby": "<ruby>朝<rp>(</rp><rt>あさ</rt><rp>)</rp></ruby>ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べないで、<ruby>学校<rp>(</rp><rt>がっこう</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi đã đi học mà không ăn sáng.",
-        "en": "I went to school without eating breakfast.",
+        "ja": "電車に乗らないで、歩いて帰りました。",
+        "jaRuby": "<ruby>電車<rp>(</rp><rt>でんしゃ</rt><rp>)</rp></ruby>に<ruby>乗<rp>(</rp><rt>の</rt><rp>)</rp></ruby>らないで、<ruby>歩<rp>(</rp><rt>ある</rt><rp>)</rp></ruby>いて<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>りました。",
+        "kana": "でんしゃにのらないで、あるいてかえりました。",
+        "romaji": "Densha ni noranaide, aruite kaerimashita.",
+        "vi": "Tôi đã không đi tàu điện mà đi bộ về.",
+        "en": "Instead of taking the train, I walked home.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "乗らないで diễn tả một lựa chọn thay thế rõ ràng: đi bộ THAY VÌ đi tàu.",
+          "en": "乗らないで expresses a clear alternative choice: walking INSTEAD OF taking the train."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "今日は料理を作らないで、外で食べましょう。",
+        "jaRuby": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>を<ruby>作<rp>(</rp><rt>つく</rt><rp>)</rp></ruby>らないで、<ruby>外<rp>(</rp><rt>そと</rt><rp>)</rp></ruby>で<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べましょう。",
+        "kana": "きょうはりょうりをつくらないで、そとでたべましょう。",
+        "romaji": "Kyou wa ryouri o tsukuranaide, soto de tabemashou.",
+        "vi": "Hôm nay đừng nấu ăn nữa, ra ngoài ăn đi.",
+        "en": "Instead of cooking today, let's eat out.",
+        "contextualExplanation": {
+          "vi": "ないで gợi ý một lựa chọn thay thế nhẹ nhàng, kết hợp với lời mời ましょう.",
+          "en": "ないで suggests a gentle alternative, combined with an invitation ましょう."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "なぜ薬を飲まないで、寝ているんですか。",
+        "jaRuby": "なぜ<ruby>薬<rp>(</rp><rt>くすり</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>まないで、<ruby>寝<rp>(</rp><rt>ね</rt><rp>)</rp></ruby>ているんですか。",
+        "kana": "なぜくすりをのまないで、ねているんですか。",
+        "romaji": "Naze kusuri o nomanaide, nete iru n desu ka.",
+        "vi": "Sao bạn không uống thuốc mà lại đi ngủ vậy?",
+        "en": "Why are you sleeping instead of taking your medicine?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi thắc mắc về một lựa chọn thay thế không phù hợp.",
+          "en": "A question questioning an inappropriate substitution."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "諦めないで、最後まで頑張りました。",
+        "jaRuby": "<ruby>諦<rp>(</rp><rt>あきら</rt><rp>)</rp></ruby>めないで、<ruby>最後<rp>(</rp><rt>さいご</rt><rp>)</rp></ruby>まで<ruby>頑張<rp>(</rp><rt>がんば</rt><rp>)</rp></ruby>りました。",
+        "kana": "あきらめないで、さいごまでがんばりました。",
+        "romaji": "Akiramenaide, saigo made ganbarimashita.",
+        "vi": "Tôi đã không bỏ cuộc mà cố gắng đến cùng.",
+        "en": "Instead of giving up, I persevered to the end.",
+        "contextualExplanation": {
+          "vi": "諦めないで diễn tả lựa chọn không bỏ cuộc, thay vào đó là kiên trì.",
+          "en": "諦めないで expresses the choice not to give up, persevering instead."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼は何も言わないで、部屋を出て行きました。",
+        "jaRuby": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>は<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>も<ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>わないで、<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>を<ruby>出<rp>(</rp><rt>で</rt><rp>)</rp></ruby>て<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>きました。",
+        "kana": "かれはなにもいわないで、へやをでていきました。",
+        "romaji": "Kare wa nani mo iwanaide, heya o dete ikimashita.",
+        "vi": "Anh ấy không nói gì mà rời khỏi phòng.",
+        "en": "He left the room without saying anything.",
+        "contextualExplanation": {
+          "vi": "Ranh giới với g_198 khá mờ ở đây -- có thể hiểu là \"trạng thái im lặng\" hoặc \"thay vì nói, anh ấy đã rời đi\", cả hai cách hiểu đều hợp lý.",
+          "en": "The boundary with g_198 is blurry here -- it can be read as \"the silent state\" or \"instead of speaking, he left\", both readings work."
         }
       }
     ],
@@ -8341,24 +8584,96 @@
     "relatedGrammar": [],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V1-masu(-masu) + nagara, V2",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Masu-stem + ながら + V2",
+        "exampleStr": "聞く → 聞き ＋ ながら勉強します"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing two actions happening simultaneously, with V2 as the main focus",
+      "speakerStance": "Neutral, describing parallel actions"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "V2 (after ながら) is the MAIN action -- V1 is secondary/background, and the subject must be the same for both",
+        "description": {
+          "vi": "Trong V1ながら、V2, V2 mới là hành động CHÍNH mà người nói tập trung vào, V1 chỉ là hành động phụ diễn ra song song (thường ít đòi hỏi sự chú ý hơn). CHỦ NGỮ của V1 và V2 luôn phải giống nhau -- khác với các mẫu khác có thể có hai chủ ngữ riêng biệt.",
+          "en": "In V1ながら、V2, V2 is the MAIN action the speaker focuses on, while V1 is a secondary, background action happening in parallel (usually requiring less attention). The SUBJECT of V1 and V2 must always be the same -- unlike other patterns that can have two separate subjects."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "テレビを見ながら、ご飯を食べます。",
-        "jaRuby": "テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ながら、ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Tôi vừa xem tivi vừa ăn cơm.",
-        "en": "I eat while watching TV.",
+        "ja": "音楽を聞きながら、勉強します。",
+        "jaRuby": "<ruby>音楽<rp>(</rp><rt>おんがく</rt><rp>)</rp></ruby>を<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>きながら、<ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>します。",
+        "kana": "おんがくをききながら、べんきょうします。",
+        "romaji": "Ongaku o kikinagara, benkyou shimasu.",
+        "vi": "Tôi vừa nghe nhạc vừa học bài.",
+        "en": "I study while listening to music.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "聞き (thân ます) + ながら, hành động chính là 勉強します, nghe nhạc chỉ là nền.",
+          "en": "聞き (masu-stem) + ながら; 勉強します is the main action, listening to music is the background."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "働きながら、大学院に通っています。",
+        "jaRuby": "<ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きながら、<ruby>大学院<rp>(</rp><rt>だいがくいん</rt><rp>)</rp></ruby>に<ruby>通<rp>(</rp><rt>かよ</rt><rp>)</rp></ruby>っています。",
+        "kana": "はたらきながら、だいがくいんにかよっています。",
+        "romaji": "Hatarakinagara, daigakuin ni kayotte imasu.",
+        "vi": "Tôi vừa đi làm vừa học cao học.",
+        "en": "I'm going to grad school while working.",
+        "contextualExplanation": {
+          "vi": "ながら cũng dùng cho hai hoạt động kéo dài song song trong đời sống (không chỉ tức thời).",
+          "en": "ながら also applies to two long-running parallel life activities (not just momentary actions)."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "テレビを見ながら、ご飯を食べますか。",
+        "jaRuby": "テレビを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ながら、ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べますか。",
+        "kana": "テレビをみながら、ごはんをたべますか。",
+        "romaji": "Terebi o minagara, gohan o tabemasu ka.",
+        "vi": "Bạn có vừa ăn cơm vừa xem TV không?",
+        "en": "Do you eat while watching TV?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi về một thói quen kết hợp hai hành động cùng lúc.",
+          "en": "A question about a habit combining two simultaneous actions."
+        }
+      },
+      {
+        "category": "casual",
+        "ja": "歩きながらスマホを見るのは危ないよ。",
+        "jaRuby": "<ruby>歩<rp>(</rp><rt>ある</rt><rp>)</rp></ruby>きながらスマホを<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>るのは<ruby>危<rp>(</rp><rt>あぶ</rt><rp>)</rp></ruby>ないよ。",
+        "kana": "あるきながらスマホをみるのはあぶないよ。",
+        "romaji": "Arukinagara sumaho o miru no wa abunai yo.",
+        "vi": "Vừa đi vừa nhìn điện thoại nguy hiểm lắm đấy.",
+        "en": "Looking at your phone while walking is dangerous.",
+        "contextualExplanation": {
+          "vi": "ながら kết hợp với のは (danh từ hóa, g_173) để đưa ra nhận xét chung về một hành vi.",
+          "en": "ながら combines with のは (nominalization, g_173) to make a general remark about a behavior."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "狭いながらも、居心地のいい部屋です。",
+        "jaRuby": "<ruby>狭<rp>(</rp><rt>せま</rt><rp>)</rp></ruby>いながらも、<ruby>居心地<rp>(</rp><rt>いごこち</rt><rp>)</rp></ruby>のいい<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>です。",
+        "kana": "せまいながらも、いごこちのいいへやです。",
+        "romaji": "Semai nagara mo, igokochi no ii heya desu.",
+        "vi": "Tuy chật nhưng là căn phòng thoải mái.",
+        "en": "Although it's small, it's a comfortable room.",
+        "contextualExplanation": {
+          "vi": "ながら cũng gắn được với tính từ い để mang nghĩa \"tuy... nhưng\" (khác nghĩa \"vừa...vừa\" của động từ) -- một cách dùng mở rộng ngoài N4 chuẩn nhưng hữu ích để nhận biết.",
+          "en": "ながら can also attach to an i-adjective for \"although...\" (different from the verb's \"while...\" meaning) -- an extended use beyond the core N4 pattern but useful to recognize."
         }
       }
     ],
@@ -8391,27 +8706,106 @@
         "jaRuby": "このペンは<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きやすいです。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_155"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "(V ga) V-masu(-masu) + yasui/nikui",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Masu-stem + やすい",
+        "exampleStr": "読む → 読み ＋ やすい"
+      },
+      {
+        "pos": "verb",
+        "form": "Masu-stem + にくい",
+        "exampleStr": "読む → 読み ＋ にくい"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Describing how easy or hard it is to do a verb, as an inherent property",
+      "speakerStance": "Neutral, evaluative -- describing an object/situation's inherent characteristic"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "The resulting word conjugates fully as its own i-adjective, and the original object particle often shifts to が",
+        "description": {
+          "vi": "やすい/にくい gắn vào thân ます, tạo thành một TÍNH TỪ い hoàn toàn mới (読みやすい), tự chia đầy đủ theo quy tắc tính từ い (読みやすくない, 読みやすかった...). Tân ngữ ban đầu thường chuyển từ を sang が để nhấn mạnh đặc tính vốn có của vật (この本は字が読みやすい).",
+          "en": "やすい/にくい attach to the masu-stem, forming an entirely NEW i-adjective (読みやすい), which fully conjugates by i-adjective rules on its own (読みやすくない, 読みやすかった...). The original object often shifts from を to が to emphasize the inherent trait of the item (この本は字が読みやすい)."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "このペンは書きやすいです。",
-        "jaRuby": "このペンは<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きやすいです。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Cây bút này viết dễ.",
-        "en": "This pen is easy to write with.",
+        "ja": "この本は読みやすいです。",
+        "jaRuby": "この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>は<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みやすいです。",
+        "kana": "このほんはよみやすいです。",
+        "romaji": "Kono hon wa yomiyasui desu.",
+        "vi": "Cuốn sách này dễ đọc.",
+        "en": "This book is easy to read.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "読み (thân ます) + やすい tạo thành tính từ い mới, chia đều với です.",
+          "en": "読み (masu-stem) + やすい forms a new i-adjective, conjugating with です."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この靴は歩きやすいですね。",
+        "jaRuby": "この<ruby>靴<rp>(</rp><rt>くつ</rt><rp>)</rp></ruby>は<ruby>歩<rp>(</rp><rt>ある</rt><rp>)</rp></ruby>きやすいですね。",
+        "kana": "このくつはあるきやすいですね。",
+        "romaji": "Kono kutsu wa arukiyasui desu ne.",
+        "vi": "Đôi giày này đi bộ thoải mái nhỉ.",
+        "en": "These shoes are comfortable to walk in.",
+        "contextualExplanation": {
+          "vi": "やすい mô tả đặc tính vốn có của đôi giày, không phải một lần trải nghiệm cụ thể.",
+          "en": "やすい describes an inherent trait of the shoes, not a one-time experience."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "この漢字は複雑で、覚えにくいです。",
+        "jaRuby": "この<ruby>漢字<rp>(</rp><rt>かんじ</rt><rp>)</rp></ruby>は<ruby>複雑<rp>(</rp><rt>ふくざつ</rt><rp>)</rp></ruby>で、<ruby>覚<rp>(</rp><rt>おぼ</rt><rp>)</rp></ruby>えにくいです。",
+        "kana": "このかんじはふくざつで、おぼえにくいです。",
+        "romaji": "Kono kanji wa fukuzatsu de, oboenikui desu.",
+        "vi": "Chữ Hán này phức tạp nên khó nhớ.",
+        "en": "This kanji is complex and hard to remember.",
+        "contextualExplanation": {
+          "vi": "にくい (khó) là đối lập của やすい, cũng chia như tính từ い.",
+          "en": "にくい (\"hard to\") is the opposite of やすい, also conjugating like an i-adjective."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "このペンは書きやすいですか。",
+        "jaRuby": "このペンは<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きやすいですか。",
+        "kana": "このペンはかきやすいですか。",
+        "romaji": "Kono pen wa kakiyasui desu ka.",
+        "vi": "Cây bút này viết dễ không?",
+        "en": "Is this pen easy to write with?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi về đặc tính sử dụng của một vật dụng.",
+          "en": "A question about an item's ease of use."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "雨の日は道が滑りやすいので、気をつけてください。",
+        "jaRuby": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>の<ruby>日<rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>は<ruby>道<rp>(</rp><rt>みち</rt><rp>)</rp></ruby>が<ruby>滑<rp>(</rp><rt>すべ</rt><rp>)</rp></ruby>りやすいので、<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>をつけてください。",
+        "kana": "あめのひはみちがすべりやすいので、きをつけてください。",
+        "romaji": "Ame no hi wa michi ga suberiyasui node, ki o tsukete kudasai.",
+        "vi": "Ngày mưa đường dễ trơn trượt nên hãy cẩn thận.",
+        "en": "The road tends to be slippery on rainy days, so please be careful.",
+        "contextualExplanation": {
+          "vi": "やすい cũng mở rộng nghĩa sang \"dễ xảy ra\" (không chỉ dễ thực hiện có chủ đích), như 滑りやすい (dễ bị trượt).",
+          "en": "やすい also extends to \"prone to happening\" (not just \"easy to do deliberately\"), as in 滑りやすい (\"prone to slipping\")."
         }
       }
     ],
@@ -8444,27 +8838,114 @@
         "jaRuby": "この<ruby>服<rp>(</rp><rt>ふく</rt><rp>)</rp></ruby>は<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>すぎます。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_203"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "A-i(-i)/A-na + sugiru",
+    "formationRules": [
+      {
+        "pos": "i-adj",
+        "form": "い (bỏ い) + すぎる",
+        "exampleStr": "高い → 高 ＋ すぎます"
+      },
+      {
+        "pos": "na-adj",
+        "form": "Stem + すぎる",
+        "exampleStr": "静か ＋ すぎます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Expressing that a quality is excessive -- \"too X\"",
+      "speakerStance": "Often implies a negative judgment about the excess, even for normally positive qualities"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "すぎる turns any adjective into a new verb (Group 2), and often reads as a complaint even with \"positive\" adjectives",
+        "description": {
+          "vi": "すぎる biến tính từ thành một ĐỘNG TỪ MỚI (nhóm 2: すぎます, すぎません, すぎた...). Ngay cả với tính từ tích cực (高い, いい), すぎる vẫn thường mang sắc thái PHÀN NÀN, vì \"quá mức\" luôn ngụ ý vượt khỏi giới hạn mong muốn (高すぎる = \"quá đắt\", không phải khen).",
+          "en": "すぎる turns an adjective into a new VERB (Group 2: すぎます, すぎません, すぎた...). Even with a \"positive\" adjective (高い, いい), すぎる usually still carries a COMPLAINING nuance, since \"excessive\" always implies going beyond a desirable limit (高すぎる = \"too expensive\", not a compliment)."
+        }
+      },
+      {
+        "type": "false_friend",
+        "title": "いい becomes よすぎる, not いすぎる",
+        "description": {
+          "vi": "いい lại bất quy tắc thêm lần nữa: よすぎる (từ gốc よい), không phải いすぎる.",
+          "en": "いい is irregular once more: よすぎる (from the root よい), never いすぎる."
+        }
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "この服は高すぎます。",
-        "jaRuby": "この<ruby>服<rp>(</rp><rt>ふく</rt><rp>)</rp></ruby>は<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>すぎます。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Bộ quần áo này đắt quá.",
-        "en": "These clothes are too expensive.",
+        "ja": "このかばんは高すぎます。",
+        "jaRuby": "このかばんは<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>すぎます。",
+        "kana": "このかばんはたかすぎます。",
+        "romaji": "Kono kaban wa takasugimasu.",
+        "vi": "Cái túi này đắt quá.",
+        "en": "This bag is too expensive.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "高い → 高 (bỏ い) + すぎます, phàn nàn về mức giá vượt quá mong đợi.",
+          "en": "高い → 高 (drop い) + すぎます, complaining about a price beyond expectation."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "この部屋は静かすぎて、少し寂しいです。",
+        "jaRuby": "この<ruby>部屋<rp>(</rp><rt>へや</rt><rp>)</rp></ruby>は<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>かすぎて、<ruby>少<rp>(</rp><rt>すこ</rt><rp>)</rp></ruby>し<ruby>寂<rp>(</rp><rt>さび</rt><rp>)</rp></ruby>しいです。",
+        "kana": "このへやはしずかすぎて、すこしさびしいです。",
+        "romaji": "Kono heya wa shizuka sugite, sukoshi sabishii desu.",
+        "vi": "Căn phòng này yên tĩnh quá, có chút cô đơn.",
+        "en": "This room is too quiet, and it feels a bit lonely.",
+        "contextualExplanation": {
+          "vi": "静か (tính từ な) + すぎて cho thấy một đặc điểm thường tích cực (yên tĩnh) trở nên quá mức, gây khó chịu.",
+          "en": "静か (a na-adjective) + すぎて shows a usually-positive trait (quiet) becoming excessive and uncomfortable."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "このスープはあまり熱すぎないので、飲みやすいです。",
+        "jaRuby": "このスープはあまり<ruby>熱<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>すぎないので、<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みやすいです。",
+        "kana": "このスープはあまりあつすぎないので、のみやすいです。",
+        "romaji": "Kono suupu wa amari atsusuginai node, nomiyasui desu.",
+        "vi": "Món súp này không quá nóng nên uống dễ.",
+        "en": "This soup isn't too hot, so it's easy to drink.",
+        "contextualExplanation": {
+          "vi": "すぎない (phủ định) kết hợp với やすい (g_201) trong cùng một câu.",
+          "en": "すぎない (negative) combines with やすい (g_201) in the same sentence."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "味が濃すぎませんか。",
+        "jaRuby": "<ruby>味<rp>(</rp><rt>あじ</rt><rp>)</rp></ruby>が<ruby>濃<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>すぎませんか。",
+        "kana": "あじがこすぎませんか。",
+        "romaji": "Aji ga kosugimasen ka.",
+        "vi": "Vị có đậm quá không?",
+        "en": "Isn't the taste too strong?",
+        "contextualExplanation": {
+          "vi": "すぎませんか hỏi xác nhận về mức độ quá đà, thường mang tính góp ý.",
+          "en": "すぎませんか asks to confirm an excessive degree, often as a suggestion."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "彼はよすぎる人で、みんなに利用されやすい。",
+        "jaRuby": "<ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>はよすぎる<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>で、みんなに<ruby>利用<rp>(</rp><rt>りよう</rt><rp>)</rp></ruby>されやすい。",
+        "kana": "かれはよすぎるひとで、みんなにりようされやすい。",
+        "romaji": "Kare wa yosugiru hito de, minna ni riyou sareyasui.",
+        "vi": "Anh ấy là người tốt quá mức, dễ bị mọi người lợi dụng.",
+        "en": "He's too nice a person, easily taken advantage of by everyone.",
+        "contextualExplanation": {
+          "vi": "よすぎる (từ いい) minh họa rõ việc すぎる biến một đặc điểm tích cực thành điều đáng lo ngại.",
+          "en": "よすぎる (from いい) clearly shows すぎる turning a positive trait into a cause for concern."
         }
       }
     ],
@@ -8497,27 +8978,102 @@
         "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>、お<ruby>酒<rp>(</rp><rt>さけ</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みすぎました。"
       }
     ],
-    "relatedGrammar": [],
+    "relatedGrammar": [
+      "g_202"
+    ],
     "tags": [],
     "requiredVerbForm": [],
-    "patternRomaji": "",
-    "formationRules": [],
+    "patternRomaji": "V-masu(-masu) + sugiru",
+    "formationRules": [
+      {
+        "pos": "verb",
+        "form": "Masu-stem + すぎる",
+        "exampleStr": "食べる → 食べ ＋ すぎます"
+      }
+    ],
     "pragmatics": {
-      "tones": []
+      "tones": [
+        "polite",
+        "neutral"
+      ],
+      "intent": "Expressing that an action was done excessively -- \"did too much of X\"",
+      "speakerStance": "Often implies regret or a negative consequence from overdoing it"
     },
-    "notesAndPitfalls": [],
+    "notesAndPitfalls": [
+      {
+        "type": "nuance_trap",
+        "title": "Same すぎる mechanism as g_202, but attaching to the masu-stem of a verb instead of an adjective",
+        "description": {
+          "vi": "Đây là すぎる gắn vào THÂN MÁ​SU của động từ (thay vì tính từ như g_202), diễn tả một HÀNH ĐỘNG bị làm quá mức (食べすぎる = \"ăn quá nhiều\"), thường kéo theo hậu quả không mong muốn (đau bụng, hối hận...).",
+          "en": "This is すぎる attaching to a verb's MASU-STEM (instead of an adjective as in g_202), expressing an ACTION done excessively (食べすぎる = \"overeat\"), commonly followed by an unwanted consequence (a stomachache, regret...)."
+        },
+        "relatedGrammarId": "g_202"
+      }
+    ],
     "richExamples": [
       {
         "category": "standard",
-        "ja": "昨日、お酒を飲みすぎました。",
-        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>、お<ruby>酒<rp>(</rp><rt>さけ</rt><rp>)</rp></ruby>を<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みすぎました。",
-        "kana": "",
-        "romaji": "",
-        "vi": "Hôm qua tôi đã uống rượu quá nhiều.",
-        "en": "I drank too much alcohol yesterday.",
+        "ja": "昨日、食べすぎました。お腹が痛いです。",
+        "jaRuby": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>、<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べすぎました。お<ruby>腹<rp>(</rp><rt>なか</rt><rp>)</rp></ruby>が<ruby>痛<rp>(</rp><rt>いた</rt><rp>)</rp></ruby>いです。",
+        "kana": "きのう、たべすぎました。おなかがいたいです。",
+        "romaji": "Kinou, tabesugimashita. Onaka ga itai desu.",
+        "vi": "Hôm qua tôi đã ăn quá nhiều. Giờ đau bụng.",
+        "en": "I ate too much yesterday. My stomach hurts.",
         "contextualExplanation": {
-          "vi": "",
-          "en": ""
+          "vi": "食べ (thân ます) + すぎました diễn tả hành động ăn vượt mức, kéo theo hậu quả (đau bụng).",
+          "en": "食べ (masu-stem) + すぎました expresses overeating, followed by a consequence (stomachache)."
+        }
+      },
+      {
+        "category": "polite",
+        "ja": "最近、働きすぎていると思います。",
+        "jaRuby": "<ruby>最近<rp>(</rp><rt>さいきん</rt><rp>)</rp></ruby>、<ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>きすぎていると<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>います。",
+        "kana": "さいきん、はたらきすぎているとおもいます。",
+        "romaji": "Saikin, hatarakisugite iru to omoimasu.",
+        "vi": "Dạo này tôi nghĩ mình làm việc quá sức.",
+        "en": "I think I've been working too much lately.",
+        "contextualExplanation": {
+          "vi": "すぎている kết hợp với と思います (g_147) để tự nhận xét về hành vi của bản thân.",
+          "en": "すぎている combines with と思います (g_147) for a self-assessment of one's own behavior."
+        }
+      },
+      {
+        "category": "negative",
+        "ja": "運動しすぎないように気をつけてください。",
+        "jaRuby": "<ruby>運動<rp>(</rp><rt>うんどう</rt><rp>)</rp></ruby>しすぎないように<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>をつけてください。",
+        "kana": "うんどうしすぎないようにきをつけてください。",
+        "romaji": "Undou shisuginai you ni ki o tsukete kudasai.",
+        "vi": "Hãy chú ý đừng tập thể dục quá sức.",
+        "en": "Please be careful not to exercise too much.",
+        "contextualExplanation": {
+          "vi": "すぎない (phủ định) đưa ra lời khuyên tránh làm quá mức.",
+          "en": "すぎない (negative) gives advice against overdoing something."
+        }
+      },
+      {
+        "category": "question",
+        "ja": "ゲームをしすぎていませんか。",
+        "jaRuby": "ゲームをしすぎていませんか。",
+        "kana": "ゲームをしすぎていませんか。",
+        "romaji": "Geemu o shisugite imasen ka.",
+        "vi": "Bạn không chơi game quá nhiều đấy chứ?",
+        "en": "Aren't you playing games too much?",
+        "contextualExplanation": {
+          "vi": "Câu hỏi mang tính nhắc nhở/quan tâm về một thói quen có thể đang bị lạm dụng.",
+          "en": "A question expressing concern/reminder about a possibly overindulged habit."
+        }
+      },
+      {
+        "category": "edge_case",
+        "ja": "心配しすぎて、夜も眠れませんでした。",
+        "jaRuby": "<ruby>心配<rp>(</rp><rt>しんぱい</rt><rp>)</rp></ruby>しすぎて、<ruby>夜<rp>(</rp><rt>よる</rt><rp>)</rp></ruby>も<ruby>眠<rp>(</rp><rt>ねむ</rt><rp>)</rp></ruby>れませんでした。",
+        "kana": "しんぱいしすぎて、よるもねむれませんでした。",
+        "romaji": "Shinpai shisugite, yoru mo nemuremasen deshita.",
+        "vi": "Vì lo lắng quá mức nên đêm tôi cũng không ngủ được.",
+        "en": "I worried too much and couldn't even sleep at night.",
+        "contextualExplanation": {
+          "vi": "すぎて (thể て) nối hành động thái quá với hậu quả tiêu cực trực tiếp -- kết thúc trọn vẹn chuỗi ngữ pháp N5-N4 với cấu trúc nguyên nhân-kết quả quen thuộc.",
+          "en": "すぎて (te-form) links the excessive action to its direct negative consequence -- rounding out the N5-N4 grammar arc with the familiar cause-result structure."
         }
       }
     ],
