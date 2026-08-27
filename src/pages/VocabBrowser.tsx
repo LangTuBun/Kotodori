@@ -50,7 +50,7 @@ export function VocabBrowser() {
       }
       return true
     })
-  }, [vocab, search, chapter, pos])
+  }, [vocab, search, chapter, pos, localize])
 
   const groupedByChapter = useMemo(() => {
     const map = new Map<string, VocabEntry[]>()

@@ -156,12 +156,6 @@
   --shadow-brutal: 3px 3px 0px color-mix(in srgb, var(--tori-structural) 70%, transparent);
   --shadow-brutal-hover: 5px 5px 0px color-mix(in srgb, var(--tori-structural) 55%, transparent);
 }
-[data-theme="neobrutalism"] {
-  --border-w: 3px;
-  --radius: 14px;
-  --radius-sm: 7px;
-  --tilt: -1deg;
-}
 
 /* border-3 is not a Tailwind v4 default — define it here.
    Width + radius both read theme tokens; every bordered surface

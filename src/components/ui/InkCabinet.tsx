@@ -1,4 +1,4 @@
-import { useSettingsStore, type Paper, type Density, type Theme } from "@/store/settings-store"
+import { useSettingsStore, type Paper, type Density } from "@/store/settings-store"
 
 const THEMES: { id: Paper; ja: string; en: string; swatch: [string, string, string] }[] = [
   { id: "washi", ja: "和紙", en: "Washi", swatch: ["#efe7d8", "#221b12", "#be4327"] },
@@ -18,11 +18,6 @@ const DENSITIES: { id: Density; ja: string; en: string }[] = [
   { id: "sparse", ja: "疎", en: "Sparse" },
 ]
 
-const STRUCTURAL: { id: Theme; label: string }[] = [
-  { id: "brutalism", label: "RAW" },
-  { id: "neobrutalism", label: "NEO" },
-]
-
 /** 9 paper swatches + RAW/NEO toggle, and (in full mode) density + typeface controls. */
 export function InkCabinet({ compact = false }: { compact?: boolean }) {
   const paper = useSettingsStore((s) => s.paper)
@@ -31,8 +26,6 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
   const setDensity = useSettingsStore((s) => s.setDensity)
   const typeSans = useSettingsStore((s) => s.typeSans)
   const setTypeSans = useSettingsStore((s) => s.setTypeSans)
-  const theme = useSettingsStore((s) => s.theme)
-  const setTheme = useSettingsStore((s) => s.setTheme)
 
   return (
     <div className={compact ? "flex flex-col gap-2" : "flex flex-col gap-8"}>
@@ -71,24 +64,6 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
             {THEMES.find((t) => t.id === paper)?.en}. It stays chosen everywhere, saved on this device only.
           </p>
         )}
-      </div>
-
-      <div role="group" aria-label="Structural theme" className="inline-flex border-2 border-structural overflow-hidden w-fit">
-        {STRUCTURAL.map((s, i) => (
-          <button
-            key={s.id}
-            type="button"
-            aria-pressed={theme === s.id}
-            onClick={() => setTheme(s.id)}
-            className={[
-              "px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors",
-              i > 0 ? "border-l-2 border-structural" : "",
-              theme === s.id ? "bg-ink text-paper" : "bg-paper hover:bg-surface",
-            ].join(" ")}
-          >
-            {s.label}
-          </button>
-        ))}
       </div>
 
       {!compact && (

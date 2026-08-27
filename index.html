@@ -49,12 +49,8 @@
 
           // Typeface
           if (state && state.typeSans) h.classList.add('type-sans');
-
-          // Structural theme (RAW / NEO)
-          var structural = state && state.theme;
-          h.dataset.theme = structural === 'neobrutalism' ? 'neobrutalism' : 'brutalism';
         } catch (e) {
-          document.documentElement.dataset.theme = 'brutalism';
+          // Ignore
         }
       })();
     </script>

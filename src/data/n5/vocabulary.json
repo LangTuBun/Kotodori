@@ -868,7 +868,7 @@
   {
     "id": "n5_0049",
     "kanji": "仕事",
-    "kana": "しごとおしごと",
+    "kana": "しごと",
     "meanings": {
       "vi": "công việc",
       "en": ""
@@ -996,7 +996,7 @@
     "kanji": "漢字",
     "kana": "かんじ",
     "meanings": {
-      "vi": "chữHán",
+      "vi": "chữ Hán",
       "en": ""
     },
     "pos": "noun",
@@ -1482,7 +1482,7 @@
     "kanji": "火曜日",
     "kana": "かようび",
     "meanings": {
-      "vi": "thứBa",
+      "vi": "thứ Ba",
       "en": ""
     },
     "pos": "noun",
@@ -1500,7 +1500,7 @@
     "kanji": "金曜日",
     "kana": "きんようび",
     "meanings": {
-      "vi": "thứSáu",
+      "vi": "thứ Sáu",
       "en": ""
     },
     "pos": "noun",
@@ -1518,7 +1518,7 @@
     "kanji": "土曜日",
     "kana": "どようび",
     "meanings": {
-      "vi": "thứBảy",
+      "vi": "thứ Bảy",
       "en": ""
     },
     "pos": "noun",
@@ -1536,7 +1536,7 @@
     "kanji": "何曜日",
     "kana": "なんようび",
     "meanings": {
-      "vi": "thứmấy",
+      "vi": "thứ mấy",
       "en": ""
     },
     "pos": "noun",
@@ -16979,7 +16979,7 @@
   {
     "id": "n5_0941",
     "kanji": "（∼年、∼日）前",
-    "kana": "ねんにちまえ",
+    "kana": "まえ",
     "meanings": {
       "vi": "∼trước (Trước 前 là từ chỉ khoảng thời gian)",
       "en": ""
@@ -17415,7 +17415,7 @@
   {
     "id": "n5_0965",
     "kanji": "こちら",
-    "kana": "",
+    "kana": "こちら",
     "meanings": {
       "vi": "đây",
       "en": ""
@@ -17433,7 +17433,7 @@
   {
     "id": "n5_0966",
     "kanji": "そちら",
-    "kana": "",
+    "kana": "そちら",
     "meanings": {
       "vi": "đó",
       "en": ""
@@ -17451,7 +17451,7 @@
   {
     "id": "n5_0967",
     "kanji": "こっち",
-    "kana": "",
+    "kana": "こっち",
     "meanings": {
       "vi": "chỗ này",
       "en": ""
@@ -17469,7 +17469,7 @@
   {
     "id": "n5_0968",
     "kanji": "そっち",
-    "kana": "",
+    "kana": "そっち",
     "meanings": {
       "vi": "chỗ đó",
       "en": ""
@@ -17559,7 +17559,7 @@
   {
     "id": "n5_0973",
     "kanji": "ふるさと",
-    "kana": "",
+    "kana": "ふるさと",
     "meanings": {
       "vi": "quê, quê hương",
       "en": ""
@@ -17577,7 +17577,7 @@
   {
     "id": "n5_0975",
     "kanji": "あちら",
-    "kana": "",
+    "kana": "あちら",
     "meanings": {
       "vi": "kia",
       "en": ""
@@ -17667,7 +17667,7 @@
   {
     "id": "n5_0983",
     "kanji": "あっち",
-    "kana": "",
+    "kana": "あっち",
     "meanings": {
       "vi": "chỗ kia",
       "en": ""
@@ -17685,7 +17685,7 @@
   {
     "id": "n5_0984",
     "kanji": "あそこ",
-    "kana": "",
+    "kana": "あそこ",
     "meanings": {
       "vi": "chỗ kia",
       "en": ""
@@ -17739,7 +17739,7 @@
   {
     "id": "n5_0987",
     "kanji": "CM",
-    "kana": "",
+    "kana": "CM",
     "meanings": {
       "vi": "quảng cáo",
       "en": ""
@@ -17792,8 +17792,8 @@
   },
   {
     "id": "n5_0990",
-    "kanji": "日曜日 (nichiyoubi)",
-    "kana": "",
+    "kanji": "日曜日",
+    "kana": "にちようび",
     "meanings": {
       "vi": "Chủ nhật",
       "en": ""
@@ -17811,7 +17811,7 @@
   {
     "id": "n5_0991",
     "kanji": "CD",
-    "kana": "",
+    "kana": "CD",
     "meanings": {
       "vi": "CD",
       "en": ""
@@ -17829,7 +17829,7 @@
   {
     "id": "n5_0993",
     "kanji": "おすすめ",
-    "kana": "",
+    "kana": "おすすめ",
     "meanings": {
       "vi": "đề xuất, gợi ý",
       "en": ""
@@ -17847,7 +17847,7 @@
   {
     "id": "n5_0994",
     "kanji": "DVD",
-    "kana": "",
+    "kana": "DVD",
     "meanings": {
       "vi": "DVD",
       "en": ""
@@ -17972,7 +17972,7 @@
   },
   {
     "id": "n5_1018",
-    "kanji": "自販機(自動販売機）",
+    "kanji": "自販機",
     "kana": "じはんき",
     "meanings": {
       "vi": "máy bán hàng tự động",
@@ -18045,7 +18045,7 @@
   {
     "id": "n5_1026",
     "kanji": "いろいろ",
-    "kana": "",
+    "kana": "いろいろ",
     "meanings": {
       "vi": "nhiều",
       "en": ""
@@ -18279,7 +18279,7 @@
   {
     "id": "n5_1090",
     "kanji": "SF",
-    "kana": "",
+    "kana": "SF",
     "meanings": {
       "vi": "khoa học viễn tưởng",
       "en": ""
@@ -18297,7 +18297,7 @@
   {
     "id": "n5_1092",
     "kanji": "すごく",
-    "kana": "",
+    "kana": "すごく",
     "meanings": {
       "vi": "rất",
       "en": ""
@@ -18315,7 +18315,7 @@
   {
     "id": "n5_1093",
     "kanji": "とても",
-    "kana": "",
+    "kana": "とても",
     "meanings": {
       "vi": "rất",
       "en": ""
@@ -18333,7 +18333,7 @@
   {
     "id": "n5_1094",
     "kanji": "ちょっと",
-    "kana": "",
+    "kana": "ちょっと",
     "meanings": {
       "vi": "một chút",
       "en": ""
@@ -18351,7 +18351,7 @@
   {
     "id": "n5_1097",
     "kanji": "これ",
-    "kana": "",
+    "kana": "これ",
     "meanings": {
       "vi": "cái này",
       "en": ""
@@ -18369,7 +18369,7 @@
   {
     "id": "n5_1098",
     "kanji": "それ",
-    "kana": "",
+    "kana": "それ",
     "meanings": {
       "vi": "cái đó",
       "en": ""
@@ -18387,7 +18387,7 @@
   {
     "id": "n5_1099",
     "kanji": "あれ",
-    "kana": "",
+    "kana": "あれ",
     "meanings": {
       "vi": "cái kia",
       "en": ""
@@ -18423,7 +18423,7 @@
   {
     "id": "n5_1105",
     "kanji": "どのくらい",
-    "kana": "",
+    "kana": "どのくらい",
     "meanings": {
       "vi": "bao lâu, bao nhiêu",
       "en": ""
@@ -18441,7 +18441,7 @@
   {
     "id": "n5_1106",
     "kanji": "どのぐらい",
-    "kana": "",
+    "kana": "どのぐらい",
     "meanings": {
       "vi": "bao lâu, bao nhiêu",
       "en": ""
@@ -18513,7 +18513,7 @@
   {
     "id": "n5_1110",
     "kanji": "ATM",
-    "kana": "",
+    "kana": "ATM",
     "meanings": {
       "vi": "cây rút tiền",
       "en": ""
@@ -18603,7 +18603,7 @@
   {
     "id": "n5_1116",
     "kanji": "（～年、～日）前",
-    "kana": "としひまえ",
+    "kana": "まえ",
     "meanings": {
       "vi": "～trước (Trước 前 là từ chỉ khoảng thời gian)",
       "en": ""

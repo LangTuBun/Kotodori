@@ -115,7 +115,7 @@ export function Grammar() {
       }
       return true
     })
-  }, [grammar, search, cat, verbForm, tone])
+  }, [grammar, search, cat, verbForm, tone, localize])
 
   const byCategory = useMemo(() => {
     const map = new Map<string, GrammarPoint[]>()

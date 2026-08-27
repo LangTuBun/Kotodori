@@ -31,7 +31,7 @@ want to know what already went wrong once.
 - Every bilingual field (`{vi, en}`) is filled **except** `meanings.en` on all
   1031 N5 vocab entries — see **Known Gaps**, this is deliberate and deferred,
   not forgotten.
-- `hanviet-dictionary.json`: 944 characters. Deliberately missing 々 (iteration
+- `hanviet-dictionary.json`: 946 characters. Deliberately missing 々 (iteration
   mark, not a real character) and 込 (kokuji, no Chinese-origin reading) — see
   **Gotchas**.
 - `furigana-map.json`: 960 pure-kanji-compound entries (`"kanji/kana": string[]
@@ -86,11 +86,14 @@ want to know what already went wrong once.
   iPhone notch/Dynamic Island.
 
 ### Pages
-`/` Dashboard · `/vocab` VocabBrowser · `/review` Review (vocab + kanji SM-2
-modes) · `/grammar` Grammar · `/verb-forms` VerbForms (N5-only) · `/kanji`
-Kanji (stroke-order drawer, group modal) · `/counters` Counters (N5-only) ·
-`/homophones` Homophones · `/settings` Settings · `/welcome` Landing (about
-page, linked from the Sidebar logo).
+`/` Landing (about page; `/welcome` redirects here for old bookmarks) ·
+`/dashboard` Dashboard · `/vocab` VocabBrowser · `/review` Review (vocab +
+kanji SM-2 modes) · `/grammar` Grammar · `/verb-forms` VerbForms (N5-only) ·
+`/kanji` Kanji (stroke-order drawer, group modal) · `/counters` Counters
+(N5-only) · `/homophones` Homophones · `/settings` Settings. Every route
+under the shared `Layout` (everything but Landing) is `React.lazy`-loaded
+from `App.tsx`, splitting each page's chunk (and the data it imports) out of
+the main bundle -- see the comment there before adding a new top-level page.
 
 ### Self-Hosting
 `Dockerfile` (multi-stage: `node:22-alpine` build → `nginx:1.27-alpine`

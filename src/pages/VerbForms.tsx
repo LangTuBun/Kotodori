@@ -43,6 +43,7 @@ export function VerbForms() {
         <Watermark char="動" />
         {/* Header */}
         <div className="mb-6">
+          <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">N5 · 動詞の形</div>
           <div className="text-4xl font-black leading-tight">
             <Ruby text="動詞の形" html={HEADER_RUBY} />
           </div>

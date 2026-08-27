@@ -2,7 +2,6 @@ import { create } from "zustand"
 import { persist } from "zustand/middleware"
 import type { Locale } from "@/lib/i18n"
 
-export type Theme = 'brutalism' | 'neobrutalism'
 export type Level = 'N5' | 'N4' | 'all'
 export type Paper = 'washi' | 'paper' | 'matcha' | 'sakura' | 'sumi' | 'dusk' | 'ink' | 'ai' | 'gold'
 export type Density = 'compact' | 'normal' | 'sparse'
@@ -11,9 +10,6 @@ interface SettingsStore {
   lang: Locale
   setLang: (lang: Locale) => void
   toggleLang: () => void
-  theme: Theme
-  setTheme: (theme: Theme) => void
-  toggleTheme: () => void
   level: Level
   setLevel: (level: Level) => void
   paper: Paper
@@ -55,16 +51,6 @@ export const useSettingsStore = create<SettingsStore>()(
       lang: 'vi',
       setLang: (lang) => set({ lang }),
       toggleLang: () => set({ lang: get().lang === 'vi' ? 'en' : 'vi' }),
-      theme: 'brutalism',
-      setTheme: (theme) => {
-        document.documentElement.dataset.theme = theme
-        set({ theme })
-      },
-      toggleTheme: () => {
-        const theme = get().theme === 'brutalism' ? 'neobrutalism' : 'brutalism'
-        document.documentElement.dataset.theme = theme
-        set({ theme })
-      },
       level: 'N5',
       setLevel: (level) => set({ level }),
       paper: 'washi',
@@ -87,7 +73,6 @@ export const useSettingsStore = create<SettingsStore>()(
       name: 'tori-settings',
       onRehydrateStorage: () => (state) => {
         if (!state) return
-        document.documentElement.dataset.theme = state.theme
         applyPaper(state.paper)
         applyDensity(state.density)
         applyTypeSans(state.typeSans)
