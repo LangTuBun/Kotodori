@@ -73,7 +73,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "でしょう ≠ かもしれない -- でしょう is a confident guess, not a hedge",
+        "title": {
+          "vi": "でしょう khác かもしれない -- でしょう là một phỏng đoán chắc chắn, không phải cách nói dè dặt",
+          "en": "でしょう ≠ かもしれない -- でしょう is a confident guess, not a hedge"
+        },
         "description": {
           "vi": "でしょう mang mức độ chắc chắn khá cao (\"chắc là\"), khác hẳn かもしれない (g_138, chỉ khả năng thấp, \"có thể\"). でしょう thường dựa trên suy luận hợp lý/kiến thức chung, không phải phỏng đoán mơ hồ.",
           "en": "でしょう carries a fairly high degree of confidence (\"probably\"), unlike かもしれない (g_138, low-confidence possibility, \"might\"). でしょう is typically based on reasonable inference/common knowledge, not a vague guess."
@@ -210,7 +213,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "Same form as g_136, only intonation and context signal \"seeking agreement\" instead of \"guessing\"",
+        "title": {
+          "vi": "Cùng hình thức với g_136, chỉ có ngữ điệu và ngữ cảnh mới cho biết đây là \"tìm sự đồng tình\" chứ không phải \"phỏng đoán\"",
+          "en": "Same form as g_136, only intonation and context signal \"seeking agreement\" instead of \"guessing\""
+        },
         "description": {
           "vi": "Về mặt chữ viết, でしょう？ giống hệt でしょう ở g_136 -- chỉ khác ở ngữ điệu lên giọng và ngữ cảnh (mời xác nhận thay vì đưa ra dự đoán). でしょう？ đôi khi mang sắc thái tự hào/khoe khoang nhẹ (\"đẹp phải không nào?\").",
           "en": "Written identically to でしょう in g_136 -- only rising intonation and context distinguish \"seeking agreement\" from \"guessing\". でしょう？ can sometimes carry a proud/showing-off nuance (\"Isn't it beautiful?\")."
@@ -365,7 +371,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "かもしれない ≠ はず -- possibility vs. logical expectation",
+        "title": {
+          "vi": "かもしれない khác はず -- khả năng có thể xảy ra khác với suy luận hợp lý chắc chắn",
+          "en": "かもしれない ≠ はず -- possibility vs. logical expectation"
+        },
         "description": {
           "vi": "かもしれない chỉ khả năng thấp, người nói không chắc chắn (\"có thể\"). はず (g_141) diễn tả một kết luận logic dựa trên thông tin đã biết, mức độ chắc chắn cao hơn nhiều (\"chắc hẳn là\"). Nhầm hai cái này khiến câu nói nghe sai sắc thái.",
           "en": "かもしれない expresses low-confidence possibility (\"might/could be\"). はず (g_141) expresses a logical conclusion drawn from known facts, with much higher certainty (\"should/must be, based on what I know\"). Swapping them misrepresents how confident the speaker actually is."
@@ -374,7 +383,10 @@
       },
       {
         "type": "common_mistake",
-        "title": "Dropping だ before かもしれない for na-adjectives/nouns",
+        "title": {
+          "vi": "Lược bỏ だ trước かもしれない khi đi với tính từ đuôi な/danh từ",
+          "en": "Dropping だ before かもしれない for na-adjectives/nouns"
+        },
         "description": {
           "vi": "Khác với んです hay ようだ (giữ な trước danh từ), かもしれない theo sau trực tiếp thân từ, không có だ hay な.",
           "en": "Unlike some other plain-form patterns, かもしれない attaches directly to the bare stem of na-adjectives/nouns with no だ (and no な) in between."
@@ -536,7 +548,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "みたいだ is casual, ようだ (g_140) is its more formal/written twin",
+        "title": {
+          "vi": "みたいだ mang tính thân mật, ようだ (g_140) là phiên bản trang trọng/văn viết tương đương",
+          "en": "みたいだ is casual, ようだ (g_140) is its more formal/written twin"
+        },
         "description": {
           "vi": "みたいだ và ようだ (g_140) gần như cùng nghĩa (phỏng đoán dựa trên quan sát), nhưng みたいだ thân mật hơn, hay dùng trong văn nói. ようだ trang trọng hơn, phổ biến trong văn viết. Cấu trúc gắn kết cũng khác: みたいだ gắn trực tiếp vào danh từ/な-tính từ (không cần な), còn ようだ cần な trước nó.",
           "en": "みたいだ and ようだ (g_140) mean nearly the same thing (a guess based on observation), but みたいだ is more casual/spoken. ようだ is more formal/written. The attachment also differs: みたいだ attaches directly to a noun/na-adjective (no な needed), while ようだ requires な before it."
@@ -686,7 +701,10 @@
     "notesAndPitfalls": [
       {
         "type": "common_mistake",
-        "title": "ようだ needs な after a na-adjective and の after a noun -- unlike みたいだ, which needs neither",
+        "title": {
+          "vi": "ようだ cần thêm な sau tính từ đuôi な và の sau danh từ -- khác với みたいだ, không cần thêm gì cả",
+          "en": "ようだ needs な after a na-adjective and の after a noun -- unlike みたいだ, which needs neither"
+        },
         "description": {
           "vi": "Khác với みたいだ (gắn thẳng vào danh từ/な-tính từ), ようだ CẦN thêm な sau tính từ な (静かなようだ) và の sau danh từ (休みのようだ). Quên thêm な/の là lỗi phổ biến khi chuyển từ みたいだ sang ようだ.",
           "en": "Unlike みたいだ (attaches directly), ようだ REQUIRES な after a na-adjective (静かなようだ) and の after a noun (休みのようだ). Forgetting な/の is a common mistake when switching from みたいだ to ようだ."
@@ -845,7 +863,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "はず ≠ かもしれない -- はず is a logical conclusion, not a low-confidence guess",
+        "title": {
+          "vi": "はず khác かもしれない -- はず là một kết luận hợp lý, không phải phỏng đoán thiếu chắc chắn",
+          "en": "はず ≠ かもしれない -- はず is a logical conclusion, not a low-confidence guess"
+        },
         "description": {
           "vi": "はず dựa trên LẬP LUẬN LOGIC từ thông tin đã biết (\"theo lịch thì tàu phải đến rồi\"), mang mức độ chắc chắn cao. かもしれない (g_138) chỉ là khả năng mơ hồ, không cần cơ sở logic rõ ràng. Đảo lộn hai cái này khiến câu nói sai lệch mức độ chắc chắn.",
           "en": "はず is grounded in LOGICAL REASONING from known information (\"according to the schedule, the train should have arrived\"), carrying high confidence. かもしれない (g_138) is a vague possibility with no clear logical basis required. Swapping them misstates how certain the speaker actually is."
@@ -854,7 +875,10 @@
       },
       {
         "type": "nuance_trap",
-        "title": "はずがない (strong denial) vs はずだ negated (はずではない) -- different structures, related meanings",
+        "title": {
+          "vi": "はずがない (phủ định mạnh) khác với はずだ ở dạng phủ định (はずではない) -- cấu trúc khác nhau nhưng nghĩa liên quan",
+          "en": "はずがない (strong denial) vs はずだ negated (はずではない) -- different structures, related meanings"
+        },
         "description": {
           "vi": "Để phủ định mạnh mẽ (\"không thể nào lại...\"), dùng はずがない (không phải Vないはずだ). はずがない phủ định chính khả năng xảy ra, mạnh hơn nhiều so với chỉ phủ định động từ trước はず.",
           "en": "For a strong denial (\"there's no way that...\"), use はずがない (not Vないはずだ). はずがない negates the very possibility, much stronger than simply negating the verb before はず."
@@ -1006,7 +1030,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "らしい has two distinct senses: hearsay (\"I heard that...\") and \"typical of\" (男らしい)",
+        "title": {
+          "vi": "らしい có hai nghĩa khác nhau: nghe nói lại (\"nghe nói là...\") và \"đúng chất, đặc trưng của\" (男らしい)",
+          "en": "らしい has two distinct senses: hearsay (\"I heard that...\") and \"typical of\" (男らしい)"
+        },
         "description": {
           "vi": "らしい mang hai nghĩa khác nhau: (1) tin đồn/nghe nói (\"nghe nói là...\"), gắn sau mệnh đề thể thường; (2) \"đúng chất/điển hình của\" (男らしい = \"ra dáng đàn ông\"), gắn trực tiếp sau danh từ. Đừng nhầm lẫn hai cách dùng.",
           "en": "らしい has two distinct senses: (1) hearsay (\"I heard that...\"), attached after a plain-form clause; (2) \"typical/characteristic of\" (男らしい = \"manly\"), attached directly after a noun. Don't conflate the two uses."
@@ -1014,7 +1041,10 @@
       },
       {
         "type": "false_friend",
-        "title": "らしい (hearsay) implies a more distant, less personally-verified source than そうだ (g_144)",
+        "title": {
+          "vi": "らしい (nghe nói) ngụ ý nguồn thông tin xa hơn, ít được xác thực cá nhân hơn so với そうだ (g_144)",
+          "en": "らしい (hearsay) implies a more distant, less personally-verified source than そうだ (g_144)"
+        },
         "description": {
           "vi": "Cả らしい và そうだ (g_144) đều dùng để truyền đạt thông tin nghe được, nhưng らしい thường ngụ ý nguồn tin GIÁN TIẾP hơn (tin đồn, không rõ nguồn), trong khi そうだ thường dùng khi nguồn tin cụ thể, đáng tin hơn (đọc báo, nghe trực tiếp từ ai đó).",
           "en": "Both らしい and そうだ (g_144) report heard information, but らしい often implies a more DISTANT source (rumor, unclear origin), while そうだ is typically used when the source is specific and more reliable (read in a newspaper, heard directly from someone)."
@@ -1149,7 +1179,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is みたいだ's comparison sense (like よう as a simile), separate from its guessing sense (g_139)",
+        "title": {
+          "vi": "Đây là nghĩa so sánh của みたいだ (giống よう dùng để ví von), khác với nghĩa phỏng đoán của nó (g_139)",
+          "en": "This is みたいだ's comparison sense (like よう as a simile), separate from its guessing sense (g_139)"
+        },
         "description": {
           "vi": "Khác với みたいだ ở g_139 (phỏng đoán dựa trên quan sát), ở đây みたいだ mang nghĩa SO SÁNH (\"giống như...\", tương đương よう trong 〜のようだ dùng làm ví von). Cùng một từ, hai chức năng ngữ pháp khác nhau tùy ngữ cảnh.",
           "en": "Unlike みたいだ in g_139 (a guess based on observation), here みたいだ carries a COMPARISON sense (\"is like...\", parallel to よう used as a simile in 〜のようだ). Same word, two different grammatical functions depending on context."
@@ -1298,7 +1331,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "This そうだ (hearsay) attaches to the FULL plain form, unlike そう (appearance, g_155/g_156) which attaches to the STEM",
+        "title": {
+          "vi": "そうだ (nghe nói) này gắn vào TOÀN BỘ thể thường, khác với そう (vẻ như, g_155/g_156) chỉ gắn vào THÂN từ",
+          "en": "This そうだ (hearsay) attaches to the FULL plain form, unlike そう (appearance, g_155/g_156) which attaches to the STEM"
+        },
         "description": {
           "vi": "そうだ ở đây (nghe nói) gắn vào THỂ THƯỜNG ĐẦY ĐỦ (雨が降るそうだ), khác hẳn そう chỉ vẻ ngoài (g_155/g_156, gắn vào THÂN từ, bỏ đuôi: 降りそう). Hai そう này rất dễ nhầm vì viết giống nhau nhưng vị trí gắn khác nhau hoàn toàn.",
           "en": "This そうだ (hearsay) attaches to the FULL plain form (雨が降るそうだ), completely different from appearance そう (g_155/g_156), which attaches to the STEM with the ending dropped (降りそう). These two そう are easy to confuse since they look alike but attach very differently."
@@ -1432,7 +1468,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "と can quote either the exact words (direct) or a paraphrased plain-form report (indirect)",
+        "title": {
+          "vi": "と có thể trích dẫn nguyên văn (trực tiếp) hoặc thuật lại bằng thể thường (gián tiếp)",
+          "en": "と can quote either the exact words (direct) or a paraphrased plain-form report (indirect)"
+        },
         "description": {
           "vi": "と linh hoạt: có thể trích nguyên văn lời nói trong 「」 (trực tiếp) hoặc diễn đạt lại ý bằng thể thường (gián tiếp, phổ biến hơn trong hội thoại). Khác tiếng Việt/Anh, tiếng Nhật không đổi ngôi xưng khi chuyển sang gián tiếp.",
           "en": "と is flexible: it can quote exact words in 「」 (direct) or paraphrase in plain form (indirect, more common in conversation). Unlike English/Vietnamese, Japanese doesn't shift pronouns when converting to indirect speech."
@@ -1567,7 +1606,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "し implies there are even more unstated reasons beyond what's listed",
+        "title": {
+          "vi": "し ngụ ý còn nhiều lý do khác chưa được nêu ra ngoài những gì đã liệt kê",
+          "en": "し implies there are even more unstated reasons beyond what's listed"
+        },
         "description": {
           "vi": "し không chỉ liệt kê -- nó ngụ ý còn NHIỀU LÝ DO KHÁC không được nêu ra hết (khác と, liệt kê đầy đủ). Thường dùng để xây dựng một lập luận thuyết phục dần dần.",
           "en": "し doesn't just list -- it implies there are MORE unstated reasons beyond what's given (unlike と, an exhaustive list). Commonly used to build a persuasive, cumulative argument."
@@ -1702,7 +1744,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "と思います softens an opinion and makes it explicitly personal, a common politeness strategy",
+        "title": {
+          "vi": "と思います làm mềm ý kiến và khẳng định rõ đó là quan điểm cá nhân, một cách nói lịch sự thường gặp",
+          "en": "と思います softens an opinion and makes it explicitly personal, a common politeness strategy"
+        },
         "description": {
           "vi": "Người Nhật thường dùng と思います để làm mềm một nhận định, tránh nghe như tuyên bố sự thật tuyệt đối -- ngay cả khi khá chắc chắn về điều gì đó, thêm と思います vẫn lịch sự và khiêm tốn hơn.",
           "en": "Japanese speakers commonly use と思います to soften an opinion, avoiding the sound of an absolute statement of fact -- even when fairly confident about something, adding と思います still reads more polite and humble."
@@ -1852,7 +1897,10 @@
     "notesAndPitfalls": [
       {
         "type": "common_mistake",
-        "title": "な before んです is required for na-adjectives and nouns -- same rule as ようだ/はず",
+        "title": {
+          "vi": "な trước んです là bắt buộc với tính từ đuôi な và danh từ -- quy tắc giống ようだ/はず",
+          "en": "な before んです is required for na-adjectives and nouns -- same rule as ようだ/はず"
+        },
         "description": {
           "vi": "Giống ようだ (g_140) và はず (g_141), んです cần thêm な sau tính từ な và danh từ (元気なんです, 休みなんです), không được bỏ qua.",
           "en": "Just like ようだ (g_140) and はず (g_141), んです requires な after a na-adjective and noun (元気なんです, 休みなんです) -- it can't be skipped."
@@ -1860,7 +1908,10 @@
       },
       {
         "type": "nuance_trap",
-        "title": "んです adds emphasis/explanation -- overusing it can sound overly assertive or nosy",
+        "title": {
+          "vi": "んです thêm sắc thái nhấn mạnh/giải thích -- lạm dụng có thể nghe quá khẳng định hoặc tò mò thái quá",
+          "en": "んです adds emphasis/explanation -- overusing it can sound overly assertive or nosy"
+        },
         "description": {
           "vi": "んです nhấn mạnh rằng đây là một GIẢI THÍCH quan trọng, không chỉ là thông tin thường. Dùng quá nhiều (đặc biệt khi hỏi) có thể nghe như đang tò mò/xét nét. Câu khẳng định thường không cần んです nếu chỉ đơn giản kể sự việc.",
           "en": "んです signals that this is a significant EXPLANATION, not just plain information. Overusing it (especially in questions) can sound nosy/prying. A plain statement often doesn't need んです if it's just relaying a fact."
@@ -1994,7 +2045,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "んです here often follows から/ので to double down on \"this is WHY\"",
+        "title": {
+          "vi": "んです ở đây thường đi sau から/ので để nhấn mạnh thêm \"đây chính là LÝ DO\"",
+          "en": "んです here often follows から/ので to double down on \"this is WHY\""
+        },
         "description": {
           "vi": "んです thường kết hợp với から hoặc ので để nhấn mạnh đây chính là LÝ DO cho một điều đã được nhắc đến hoặc quan sát thấy trước đó -- tạo thành cấu trúc \"vì... đấy\" mang tính giải thích rõ ràng hơn chỉ から/ので đơn thuần.",
           "en": "んです often pairs with から or ので to emphasize this IS the reason for something already mentioned or observed -- forming a \"because..., you see\" structure that's more explanatory than から/ので alone."
@@ -2128,7 +2182,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This が doesn't mean \"but\" -- it's a soft, trailing preamble",
+        "title": {
+          "vi": "が ở đây không mang nghĩa \"nhưng\" -- đây là lời mở đầu nhẹ nhàng, bỏ lửng câu",
+          "en": "This が doesn't mean \"but\" -- it's a soft, trailing preamble"
+        },
         "description": {
           "vi": "が ở đây KHÔNG mang nghĩa \"nhưng\" mà chỉ là cách bỏ lửng câu để mềm mại hóa, thường được theo sau bằng một câu hỏi hoặc yêu cầu. んですが rất phổ biến khi mở đầu một tình huống cần giúp đỡ.",
           "en": "が here does NOT mean \"but\" -- it's a soft, trailing device that cushions the sentence, typically followed by a question or request. んですが is very common when opening up a situation that needs help."
@@ -2263,7 +2320,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "んですか signals \"I noticed something -- what's the story?\", different from a plain ですか question",
+        "title": {
+          "vi": "んですか cho biết \"tôi vừa nhận ra điều gì đó -- chuyện gì vậy?\", khác với câu hỏi ですか thông thường",
+          "en": "んですか signals \"I noticed something -- what's the story?\", different from a plain ですか question"
+        },
         "description": {
           "vi": "んですか luôn ngụ ý người nói đã QUAN SÁT thấy điều gì đó bất thường/đáng chú ý ở người nghe trước khi hỏi. Chỉ dùng ですか (không có ん) khi hỏi thông tin trung tính, chưa có manh mối gì trước đó.",
           "en": "んですか always implies the speaker NOTICED something unusual/noteworthy about the listener before asking. Plain ですか (no ん) is used for a neutral question with no prior clue."
@@ -2397,7 +2457,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This use follows up on a TOPIC (not the listener's personal state, unlike g_151)",
+        "title": {
+          "vi": "Cách dùng này hỏi tiếp về một CHỦ ĐỀ (không phải tình trạng cá nhân của người nghe, khác với g_151)",
+          "en": "This use follows up on a TOPIC (not the listener's personal state, unlike g_151)"
+        },
         "description": {
           "vi": "Khác với g_151 (hỏi về TÌNH TRẠNG của người nghe), ở đây んですか hỏi thêm chi tiết về một CHỦ ĐỀ đã được nhắc đến trong hội thoại (không nhất thiết liên quan trực tiếp đến người nghe).",
           "en": "Unlike g_151 (asking about the listener's personal state), here んですか asks for more detail about a TOPIC already raised in conversation (not necessarily directly about the listener)."
@@ -2532,7 +2595,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "The three んです question uses (g_151/152/153) differ only by WHAT prompted the question, not by form",
+        "title": {
+          "vi": "Ba cách dùng んです để hỏi (g_151/152/153) chỉ khác nhau ở ĐIỀU GÌ khiến câu hỏi được đặt ra, không khác nhau về hình thức",
+          "en": "The three んです question uses (g_151/152/153) differ only by WHAT prompted the question, not by form"
+        },
         "description": {
           "vi": "Ba cách dùng んですか (g_151: về người nghe, g_152: về chủ đề, g_153: về tình huống trước mắt) đều CÙNG MỘT hình thức ngữ pháp -- điểm khác biệt chỉ nằm ở việc điều gì đã KÍCH HOẠT câu hỏi (quan sát về người, thông tin vừa nghe, hay cảnh tượng đang diễn ra).",
           "en": "All three んですか uses (g_151: about the listener, g_152: about a topic, g_153: about the immediate situation) share the SAME grammatical form -- the only difference is WHAT PROMPTED the question (an observation about a person, information just heard, or a scene currently unfolding)."
@@ -2666,7 +2732,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "This emphatic も (with a number) is a different use from the additive も (g_003)",
+        "title": {
+          "vi": "も nhấn mạnh này (đi với số từ) là một cách dùng khác với も cộng dồn (g_003)",
+          "en": "This emphatic も (with a number) is a different use from the additive も (g_003)"
+        },
         "description": {
           "vi": "も ở đây không mang nghĩa \"cũng\" như g_003 -- khi đi sau một con số, も nhấn mạnh số lượng đó LỚN HƠN dự kiến (\"tận\"). Đây là cách dùng も thứ hai cần phân biệt rõ với も thêm vào cơ bản.",
           "en": "も here doesn't mean \"too/also\" as in g_003 -- when it follows a number, も emphasizes that the quantity is LARGER than expected (\"as many/much as\"). This is a second use of も, distinct from the basic additive one."
@@ -2807,7 +2876,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "This appearance そう attaches to the STEM (drop い), unlike hearsay そうだ (g_144), which attaches to the FULL plain form",
+        "title": {
+          "vi": "そう vẻ như này gắn vào THÂN từ (bỏ い), khác với そうだ nghe nói (g_144) gắn vào TOÀN BỘ thể thường",
+          "en": "This appearance そう attaches to the STEM (drop い), unlike hearsay そうだ (g_144), which attaches to the FULL plain form"
+        },
         "description": {
           "vi": "そう ở đây (vẻ ngoài) gắn vào THÂN tính từ, bỏ đuôi い (おいしい→おいしそう). Hoàn toàn khác そうだ nghe nói (g_144), gắn vào thể thường ĐẦY ĐỦ (おいしいそうだ = \"nghe nói ngon\"). Cùng chữ そう, hai vị trí gắn khác nhau mang nghĩa khác hẳn nhau.",
           "en": "This appearance そう attaches to the STEM, dropping い (おいしい→おいしそう). Completely different from hearsay そうだ (g_144), which attaches to the FULL plain form (おいしいそうだ = \"I heard it's tasty\"). Same そう, but the attachment point completely changes the meaning."
@@ -2826,7 +2898,10 @@
       },
       {
         "type": "false_friend",
-        "title": "いい/よい is irregular: よさそう, not いいそう",
+        "title": {
+          "vi": "いい/よい là ngoại lệ: よさそう, không phải いいそう",
+          "en": "いい/よい is irregular: よさそう, not いいそう"
+        },
         "description": {
           "vi": "いい lại một lần nữa bất quy tắc: chia thành よさそう (từ gốc よい), không phải いいそう.",
           "en": "いい is irregular once again: it conjugates to よさそう (from the root よい), never いいそう."
@@ -2961,7 +3036,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This そう predicts an action is imminent, right before it starts -- not a general future prediction",
+        "title": {
+          "vi": "そう này dự đoán một hành động sắp xảy ra ngay tức thì -- không phải dự đoán tương lai nói chung",
+          "en": "This そう predicts an action is imminent, right before it starts -- not a general future prediction"
+        },
         "description": {
           "vi": "そう ở đây báo hiệu một hành động SẮP xảy ra (dựa trên dấu hiệu quan sát được ngay lúc nói), khác với でしょう (g_136, dự đoán chung chung, không cần dấu hiệu tức thời). 雨が降りそう ngụ ý trời đang có vẻ sắp mưa NGAY BÂY GIỜ, không phải \"có thể mưa vào lúc nào đó\".",
           "en": "This そう signals an action is ABOUT TO happen (based on a sign visible right now), different from でしょう (g_136, a general prediction, no immediate sign required). 雨が降りそう implies it looks like it's about to rain RIGHT NOW, not \"it might rain at some point\"."
@@ -3097,7 +3175,10 @@
     "notesAndPitfalls": [
       {
         "type": "common_mistake",
-        "title": "The negative appearance form always inserts さ before そう",
+        "title": {
+          "vi": "Thể phủ định của vẻ như luôn chèn さ trước そう",
+          "en": "The negative appearance form always inserts さ before そう"
+        },
         "description": {
           "vi": "Ở dạng phủ định, luôn phải thêm さ trước そう (ない → なさそう), dù là động từ hay tính từ い. Đây là quy tắc đặc biệt riêng cho phủ định, khác với dạng khẳng định (bỏ thẳng い/thân ます rồi thêm そう).",
           "en": "In the negative form, さ must always be inserted before そう (ない → なさそう), whether for a verb or an i-adjective. This is a special rule specific to the negative, different from the affirmative (just drop い/use the masu-stem, then add そう)."
@@ -3241,7 +3322,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "く vs に -- i-adjectives take く, na-adjectives/nouns take に (parallel to the affirmative く/にない split)",
+        "title": {
+          "vi": "く và に -- tính từ đuôi い dùng く, tính từ đuôi な/danh từ dùng に (tương tự cách chia く/に ở thể khẳng định)",
+          "en": "く vs に -- i-adjectives take く, na-adjectives/nouns take に (parallel to the affirmative く/にない split)"
+        },
         "description": {
           "vi": "Tính từ い chuyển trạng từ bằng く (早く), tính từ な/danh từ dùng に (静かに) -- quy tắc này song song với cách hai loại tính từ chia phủ định (くない vs じゃない). Nhớ một cặp giúp nhớ cặp kia.",
           "en": "i-adjectives adverbialize with く (早く), na-adjectives/nouns with に (静かに) -- this rule parallels how the two adjective types negate (くない vs じゃない). Remembering one pair helps remember the other."
@@ -3385,7 +3469,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "にする (deliberate choice) vs になる (natural change, g_160) -- who/what causes the change",
+        "title": {
+          "vi": "にする (lựa chọn chủ động) khác với になる (thay đổi tự nhiên, g_160) -- khác nhau ở việc ai/cái gì gây ra sự thay đổi",
+          "en": "にする (deliberate choice) vs になる (natural change, g_160) -- who/what causes the change"
+        },
         "description": {
           "vi": "にする ngụ ý một CHỦ THỂ chủ động quyết định/thực hiện thay đổi (私は部屋を広くしました = tôi đã làm cho phòng rộng ra). になる (g_160) diễn tả thay đổi TỰ NHIÊN, không do ai chủ động gây ra. Nhầm hai cái này là lỗi phổ biến.",
           "en": "にする implies an AGENT deliberately decides/causes the change (私は部屋を広くしました = \"I made the room bigger\"). になる (g_160) expresses a NATURAL change, not caused by anyone's deliberate action. Mixing these up is a common mistake."
@@ -3530,7 +3617,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "になる is the natural/spontaneous counterpart of にする -- even when a person is technically \"becoming\" something",
+        "title": {
+          "vi": "になる là phiên bản tự nhiên/không chủ ý của にする -- kể cả khi về mặt kỹ thuật một người đang \"trở thành\" điều gì đó",
+          "en": "になる is the natural/spontaneous counterpart of にする -- even when a person is technically \"becoming\" something"
+        },
         "description": {
           "vi": "になる dùng khi thay đổi diễn ra một cách TỰ NHIÊN, theo thời gian, hoặc không nhấn mạnh ai là người chủ động (寒くなりました = \"trời đã trở lạnh\", không ai \"làm\" cho trời lạnh). Ngay cả khi một người trở thành một vai trò gì đó (医者になる), vẫn dùng になる vì đó là kết quả của một quá trình, không phải hành động trực tiếp lên đối tượng khác.",
           "en": "になる is used when a change happens NATURALLY, over time, or without emphasizing an active agent (寒くなりました = \"it got cold\", no one \"made\" it cold). Even when a person becomes some role (医者になる), になる is still used since it's the result of a process, not a direct action on another object."
@@ -3666,7 +3756,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "Transitive/intransitive pairs often share a root but change one vowel/syllable -- learn them as pairs",
+        "title": {
+          "vi": "Cặp tha động từ/tự động từ thường chung gốc nhưng đổi một nguyên âm/âm tiết -- nên học theo từng cặp",
+          "en": "Transitive/intransitive pairs often share a root but change one vowel/syllable -- learn them as pairs"
+        },
         "description": {
           "vi": "Nhiều cặp tha động từ/tự động từ có gốc giống nhau, chỉ khác một âm tiết (開ける/開く, 閉める/閉まる, 始める/始まる) -- nên học theo CẶP để không nhầm lẫn, vì không có quy tắc chung áp dụng cho tất cả các cặp.",
           "en": "Many transitive/intransitive pairs share a root, differing by just one syllable (開ける/開く, 閉める/閉まる, 始める/始まる) -- best learned as PAIRS, since there's no single rule covering every pair."
@@ -3802,7 +3895,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "Intransitive framing can politely avoid blaming anyone -- \"the window opened\" vs \"I/someone opened the window\"",
+        "title": {
+          "vi": "Cách diễn đạt bằng tự động từ giúp tránh quy trách nhiệm cho ai một cách lịch sự -- \"cửa sổ tự mở ra\" so với \"tôi/ai đó mở cửa sổ\"",
+          "en": "Intransitive framing can politely avoid blaming anyone -- \"the window opened\" vs \"I/someone opened the window\""
+        },
         "description": {
           "vi": "Dùng tự động từ (窓が開いています = \"cửa sổ đang mở\") thường tế nhị hơn khi không muốn quy trách nhiệm cho ai (so với tha động từ 窓を開けました = \"ai đó đã mở cửa sổ\"). Cách diễn đạt gián tiếp này rất phổ biến trong văn hóa giao tiếp Nhật.",
           "en": "Using the intransitive (窓が開いています = \"the window is open\") is often more tactful when avoiding blame (compared to transitive 窓を開けました = \"someone opened the window\"). This indirect phrasing is very common in Japanese communication culture."
@@ -3937,7 +4033,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "てある (with が) highlights the resultant state and its deliberate cause; ている (g_094_4) doesn't necessarily imply purpose",
+        "title": {
+          "vi": "てある (đi với が) nhấn mạnh trạng thái kết quả và nguyên nhân có chủ ý của nó; ている (g_094_4) không nhất thiết ngụ ý có mục đích",
+          "en": "てある (with が) highlights the resultant state and its deliberate cause; ている (g_094_4) doesn't necessarily imply purpose"
+        },
         "description": {
           "vi": "てある dùng với TÍNH TỪ (tha động từ), luôn ngụ ý có ai đó đã CHỦ ĐỘNG làm việc này với mục đích cụ thể, kết quả vẫn còn đó (窓が開けてある = \"cửa sổ đang mở (ai đó đã mở sẵn, có chủ đích)\"). Khác với 窓が開いている (g_094_4, tự động từ) chỉ mô tả trạng thái, không nhất thiết ngụ ý có chủ đích.",
           "en": "てある is used with a TRANSITIVE verb (marked with が), always implying someone PURPOSEFULLY did this, and the result remains (窓が開けてある = \"the window has been left open (someone opened it on purpose)\"). Different from 窓が開いている (g_094_4, intransitive), which just describes a state without necessarily implying purpose."
@@ -4072,7 +4171,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "を + てある (this pattern) vs が + てある (g_163) -- both grammatical, slightly different focus",
+        "title": {
+          "vi": "を + てある (mẫu câu này) khác với が + てある (g_163) -- cả hai đều đúng ngữ pháp, chỉ khác nhau một chút về trọng tâm",
+          "en": "を + てある (this pattern) vs が + てある (g_163) -- both grammatical, slightly different focus"
+        },
         "description": {
           "vi": "Khi giữ nguyên を (thay vì đổi thành が như g_163), câu nhấn mạnh HÀNH ĐỘNG chuẩn bị hơn là TRẠNG THÁI kết quả -- thường dùng khi người nói/nghe đã biết rõ ai làm việc đó, chỉ cần xác nhận việc đã hoàn tất.",
           "en": "When を is kept (instead of shifting to が as in g_163), the sentence emphasizes the PREPARATORY ACTION more than the resultant STATE -- often used when the doer is already clear/known, and the point is just confirming the task is done."
@@ -4207,7 +4309,10 @@
     "notesAndPitfalls": [
       {
         "type": "common_mistake",
-        "title": "No relative pronoun -- the whole clause sits directly before the noun",
+        "title": {
+          "vi": "Không có đại từ quan hệ -- cả mệnh đề đứng ngay trước danh từ",
+          "en": "No relative pronoun -- the whole clause sits directly before the noun"
+        },
         "description": {
           "vi": "Tiếng Nhật không có đại từ quan hệ như \"which/that/who\" -- toàn bộ mệnh đề (ở thể thường) đứng ngay trước danh từ để bổ nghĩa. Trật tự này ngược hoàn toàn với tiếng Việt/Anh, nơi mệnh đề quan hệ đứng SAU danh từ.",
           "en": "Japanese has no relative pronoun like \"which/that/who\" -- the entire clause (in plain form) sits directly before the noun it modifies. This word order is the exact reverse of Vietnamese/English, where the relative clause comes AFTER the noun."
@@ -4351,7 +4456,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is the \"already familiar\" side of noun-modification -- just extended into longer, embedded clauses",
+        "title": {
+          "vi": "Đây là khía cạnh \"đã quen thuộc\" của việc bổ nghĩa danh từ -- chỉ mở rộng thành mệnh đề dài hơn, lồng vào nhau",
+          "en": "This is the \"already familiar\" side of noun-modification -- just extended into longer, embedded clauses"
+        },
         "description": {
           "vi": "Cấu trúc い/な/の trước danh từ vốn đã học từ N5 (g_024, g_011_5) -- điểm mới ở N4 là những mệnh đề này có thể LỒNG VÀO NHAU, dài và phức tạp hơn (ví dụ: 「彼が住んでいる静かな町」= \"thị trấn yên tĩnh mà anh ấy đang sống\").",
           "en": "The い/な/の-before-noun structure was already learned at N5 (g_024, g_011_5) -- what's new at N4 is that these clauses can NEST into longer, more complex phrases (e.g., 「彼が住んでいる静かな町」= \"the quiet town where he lives\")."
@@ -4487,7 +4595,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This substitution ONLY works inside a modifying clause, never in the main clause",
+        "title": {
+          "vi": "Cách thay thế này CHỈ áp dụng trong mệnh đề bổ nghĩa, không bao giờ dùng ở mệnh đề chính",
+          "en": "This substitution ONLY works inside a modifying clause, never in the main clause"
+        },
         "description": {
           "vi": "が chỉ đổi thành の được khi nằm trong MỆNH ĐỀ BỔ NGHĨA cho danh từ (bên trong \"hộp\" bổ nghĩa). Chủ ngữ của câu CHÍNH luôn phải giữ nguyên が, không bao giờ đổi thành の.",
           "en": "が can only become の when it's inside a MODIFYING clause (inside the \"box\" that modifies a noun). The subject of the MAIN clause always keeps が -- it never becomes の."
@@ -4632,7 +4743,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is the \"putting it all together\" point: a modified noun phrase behaves exactly like a simple noun in the outer sentence",
+        "title": {
+          "vi": "Đây là điểm \"tổng hợp lại\": một cụm danh từ đã được bổ nghĩa hoạt động y hệt một danh từ đơn trong câu lớn hơn",
+          "en": "This is the \"putting it all together\" point: a modified noun phrase behaves exactly like a simple noun in the outer sentence"
+        },
         "description": {
           "vi": "Đây là bước tổng hợp các kiến thức từ g_165-167: một cụm \"mệnh đề + danh từ\" (dù dài đến đâu) hoạt động HOÀN TOÀN như một danh từ đơn trong câu lớn hơn -- vẫn nhận は/が/を/に như bình thường.",
           "en": "This is where g_165-167 come together: a \"clause + noun\" phrase (however long) behaves EXACTLY like a single noun in the larger sentence -- it still takes は/が/を/に normally."
@@ -4765,7 +4879,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "がする is only for a small fixed set of sensory nouns (声/音/におい/味/感じ), not general verbs",
+        "title": {
+          "vi": "がする chỉ dùng cho một nhóm nhỏ danh từ chỉ giác quan cố định (声/音/におい/味/感じ), không dùng với động từ nói chung",
+          "en": "がする is only for a small fixed set of sensory nouns (声/音/におい/味/感じ), not general verbs"
+        },
         "description": {
           "vi": "がする chỉ dùng với một nhóm danh từ giác quan cố định (声、音、におい、味、感じ) -- không phải mẫu áp dụng chung cho mọi cảm nhận. Học như một cụm cố định, không suy diễn tự do sang danh từ khác.",
           "en": "がする is only used with a fixed set of sensory nouns (声, 音, におい, 味, 感じ) -- not a general pattern applicable to any perception. Learn it as a fixed set of collocations, not freely extendable to other nouns."
@@ -4899,7 +5016,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "見える/聞こえる (naturally perceived) ≠ 見られる/聞ける (potential form: able to, if one chooses)",
+        "title": {
+          "vi": "見える/聞こえる (tự nhiên cảm nhận được) khác với 見られる/聞ける (thể khả năng: có thể làm nếu muốn)",
+          "en": "見える/聞こえる (naturally perceived) ≠ 見られる/聞ける (potential form: able to, if one chooses)"
+        },
         "description": {
           "vi": "見える/聞こえる mô tả việc TỰ NHIÊN nhìn thấy/nghe thấy được (không cố ý, ví dụ đứng đây thì tự khắc thấy núi). 見られる/聞ける (thể khả năng từ 見る/聞く) lại ngụ ý khả năng CHỦ ĐỘNG (có thể xem/nghe nếu muốn, ví dụ được phép xem phim). Nhầm hai cặp này là lỗi rất phổ biến ở N4.",
           "en": "見える/聞こえる describe something NATURALLY visible/audible (unintentional -- e.g., standing here, the mountain is simply visible). 見られる/聞ける (the potential form of 見る/聞く) instead implies DELIBERATE ability (able to watch/listen if one chooses, e.g., permitted to watch a movie). Confusing these two pairs is a very common N4 mistake."
@@ -5032,7 +5152,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "わかる (understand/grasp) ≠ 知る (know a fact/come to learn of)",
+        "title": {
+          "vi": "わかる (hiểu, nắm được) khác với 知る (biết một sự việc, biết đến điều gì đó)",
+          "en": "わかる (understand/grasp) ≠ 知る (know a fact/come to learn of)"
+        },
         "description": {
           "vi": "わかる chỉ sự HIỂU/NẮM BẮT (một khái niệm, cảm xúc, ngôn ngữ). 知る (thường dùng ở dạng 知っている, g_095) là BIẾT một sự việc/thông tin cụ thể. わかる mang tính \"thấu hiểu bên trong\", còn 知る mang tính \"có thông tin\". Hai động từ này không thay thế cho nhau được.",
           "en": "わかる is about UNDERSTANDING/GRASPING (a concept, feeling, language). 知る (usually used as 知っている, g_095) is KNOWING a specific fact/piece of information. わかる is \"inner comprehension\", while 知る is \"having information\". These two verbs aren't interchangeable."
@@ -5168,7 +5291,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "の here turns a verb phrase into a noun that が can attach to -- the same mechanism as こと (g_071/072), but の feels more concrete/immediate",
+        "title": {
+          "vi": "の ở đây biến cụm động từ thành danh từ để が có thể gắn vào -- cùng cơ chế với こと (g_071/072), nhưng の nghe cụ thể/trực tiếp hơn",
+          "en": "の here turns a verb phrase into a noun that が can attach to -- the same mechanism as こと (g_071/072), but の feels more concrete/immediate"
+        },
         "description": {
           "vi": "の và こと (g_071, g_072) đều danh từ hóa động từ, nhưng の thiên về mô tả một HÀNH ĐỘNG cụ thể, trực quan (đang diễn ra hoặc lặp lại được cảm nhận rõ), còn こと trừu tượng, mang tính khái niệm hơn. Với động từ giác quan (見る、聞く) và tính từ về kỹ năng/tốc độ, の gần như luôn được chọn thay vì こと.",
           "en": "Both の and こと (g_071, g_072) nominalize a verb phrase, but の leans toward a concrete, immediate ACTION (something ongoing or vividly perceived), while こと is more abstract/conceptual. With perception verbs (見る, 聞く) and skill/speed adjectives, の is almost always the choice over こと."
@@ -5303,7 +5429,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "のは (topic) vs のが (g_172, evaluated subject) -- mostly interchangeable here, with a subtle topic/focus shift",
+        "title": {
+          "vi": "のは (chủ đề) khác với のが (g_172, chủ thể được đánh giá) -- phần lớn dùng thay nhau được, chỉ khác nhau nhẹ về trọng tâm",
+          "en": "のは (topic) vs のが (g_172, evaluated subject) -- mostly interchangeable here, with a subtle topic/focus shift"
+        },
         "description": {
           "vi": "のは biến hành động thành CHỦ ĐỀ của câu (は), trong khi のが (g_172) nhấn mạnh nó như một chủ ngữ trung tính hơn. Với nhiều tính từ đánh giá chung (楽しい、大変), のは và のが gần như dùng thay thế được cho nhau, khác biệt chỉ ở sắc thái nhấn mạnh nhẹ.",
           "en": "のは turns the action into the sentence's TOPIC (は), while のが (g_172) presents it as a more neutral subject. With many general evaluative adjectives (楽しい, 大変), のは and のが are largely interchangeable, differing only in subtle emphasis."
@@ -5439,7 +5568,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This \"cleft\" structure mirrors English \"It is X that...\" -- moves the emphasized part to the end",
+        "title": {
+          "vi": "Cấu trúc \"tách câu\" này tương tự \"Chính X là...\" trong tiếng Việt -- đẩy phần được nhấn mạnh ra cuối câu",
+          "en": "This \"cleft\" structure mirrors English \"It is X that...\" -- moves the emphasized part to the end"
+        },
         "description": {
           "vi": "Cấu trúc này tương đương với \"Chính là X mà...\" trong tiếng Việt hoặc \"It is X that...\" trong tiếng Anh -- phần thông tin muốn NHẤN MẠNH được đẩy ra sau だ/です, còn phần còn lại của câu trở thành mệnh đề bổ nghĩa cho の.",
           "en": "This structure mirrors \"It is X that...\" in English -- the part being EMPHASIZED is pushed after だ/です, while the rest of the sentence becomes a clause modifying の."
@@ -5574,7 +5706,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is g_174's cleft structure specialized for reasons -- からだ replaces the plain です/だ ending",
+        "title": {
+          "vi": "Đây là cấu trúc tách câu ở g_174 dùng riêng cho lý do -- からだ thay thế cho đuôi です/だ thông thường",
+          "en": "This is g_174's cleft structure specialized for reasons -- からだ replaces the plain です/だ ending"
+        },
         "description": {
           "vi": "Đây là biến thể của cấu trúc nhấn mạnh ở g_174, chuyên dùng khi phần được nhấn mạnh là một LÝ DO -- kết thúc bằng からです/からだ thay vì です/だ đơn thuần.",
           "en": "This is a specialization of the emphatic structure in g_174, used specifically when the emphasized part is a REASON -- ending in からです/からだ instead of plain です/だ."
@@ -5709,7 +5844,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This nominalizes an entire clause with の + を as the direct object of 知っている -- an extension of g_095",
+        "title": {
+          "vi": "Cấu trúc này danh từ hóa cả mệnh đề bằng の + を làm tân ngữ trực tiếp của 知っている -- mở rộng từ g_095",
+          "en": "This nominalizes an entire clause with の + を as the direct object of 知っている -- an extension of g_095"
+        },
         "description": {
           "vi": "Ở g_095, tân ngữ của 知っていますか là một danh từ đơn giản (あの人). Ở đây, tân ngữ là CẢ MỘT MỆNH ĐỀ được danh từ hóa bằng の + を (田中さんが結婚した + のを) -- cùng động từ, tân ngữ phức tạp hơn.",
           "en": "In g_095, the object of 知っていますか was a simple noun (あの人). Here, the object is an ENTIRE CLAUSE nominalized with の + を (田中さんが結婚した + のを) -- the same verb, a more complex object."
@@ -5844,7 +5982,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is distinct from g_170's 見える/聞こえる -- here the perception is deliberate/witnessed, not passively natural",
+        "title": {
+          "vi": "Điểm này khác với 見える/聞こえる ở g_170 -- ở đây việc cảm nhận là chủ động/chứng kiến, không phải tự nhiên thụ động",
+          "en": "This is distinct from g_170's 見える/聞こえる -- here the perception is deliberate/witnessed, not passively natural"
+        },
         "description": {
           "vi": "Khác với 見える/聞こえる (g_170, tự nhiên nhìn/nghe thấy, không chủ đích), のを見る/聞く ở đây diễn tả việc CHỦ ĐỘNG nhìn thấy/nghe thấy một hành động cụ thể của ai đó xảy ra (như đang chứng kiến một sự kiện). Cấu trúc の + を danh từ hóa cả hành động đó thành tân ngữ.",
           "en": "Unlike 見える/聞こえる (g_170, naturally seeing/hearing, unintentional), のを見る/聞く here describes DELIBERATELY witnessing someone's specific action as it happens (like watching an event unfold). の + を nominalizes the action as the object."
@@ -5978,7 +6119,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "These three verbs (忘れる/やめる/諦める) carry meaningfully different nuances -- don't treat them as interchangeable",
+        "title": {
+          "vi": "Ba động từ này (忘れる/やめる/諦める) mang sắc thái khác nhau rõ rệt -- đừng coi chúng dùng thay nhau được",
+          "en": "These three verbs (忘れる/やめる/諦める) carry meaningfully different nuances -- don't treat them as interchangeable"
+        },
         "description": {
           "vi": "忘れる (quên) là vô tình, không chủ đích. やめる (dừng lại) là chủ động quyết định ngừng một thói quen. 諦める (từ bỏ) mang sắc thái cảm xúc mạnh hơn -- buông bỏ một mục tiêu/ước mơ sau khi cố gắng. Ba động từ này không thể thay thế lẫn nhau dù cùng cấu trúc のを + V.",
           "en": "忘れる (\"forget\") is accidental, unintentional. やめる (\"stop\") is a deliberate decision to stop a habit. 諦める (\"give up\") carries a stronger emotional weight -- abandoning a goal/dream after effort. These three verbs aren't interchangeable, even though they share the same のを + V structure."
@@ -6122,7 +6266,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is not for everyday requests -- it's reserved for emergencies, sports/military contexts, or written signage/quotes",
+        "title": {
+          "vi": "Mẫu câu này không dùng cho lời nhờ vả hằng ngày -- chỉ dùng trong tình huống khẩn cấp, thể thao/quân sự, hoặc biển báo/trích dẫn văn viết",
+          "en": "This is not for everyday requests -- it's reserved for emergencies, sports/military contexts, or written signage/quotes"
+        },
         "description": {
           "vi": "Thể mệnh lệnh nghe RẤT thô lỗ nếu dùng trong hội thoại thường ngày với bạn bè/gia đình -- người Nhật hiếm khi dùng trực tiếp trừ khi: tình huống khẩn cấp (逃げろ! = \"Chạy đi!\"), thể thao/quân đội, cha mẹ quát con nhỏ, hoặc trích dẫn gián tiếp (と言われた, xem g_181). KHÔNG dùng thay cho てください trong yêu cầu bình thường.",
           "en": "The imperative sounds VERY rude in everyday conversation with friends/family -- Japanese speakers rarely use it directly except: emergencies (逃げろ! = \"Run!\"), sports/military contexts, a parent scolding a young child, or in indirect quotation (と言われた, see g_181). NEVER a substitute for てください in a normal request."
@@ -6257,7 +6404,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "This な (prohibitive, after dictionary form) is unrelated to な as a na-adjective marker",
+        "title": {
+          "vi": "な (thể cấm đoán, đứng sau thể từ điển) ở đây không liên quan gì đến な dùng làm dấu hiệu tính từ đuôi な",
+          "en": "This な (prohibitive, after dictionary form) is unrelated to な as a na-adjective marker"
+        },
         "description": {
           "vi": "な ở đây gắn sau THỂ TỪ ĐIỂN của động từ để tạo mệnh lệnh cấm đoán -- hoàn toàn không liên quan đến な đứng trước danh từ trong tính từ な (元気な人). Cùng một chữ, hai vai trò ngữ pháp khác biệt hoàn toàn.",
           "en": "な here attaches after a verb's DICTIONARY FORM to form a prohibition -- completely unrelated to the な before a noun in a na-adjective (元気な人). Same character, two entirely different grammatical roles."
@@ -6265,7 +6415,10 @@
       },
       {
         "type": "nuance_trap",
-        "title": "Same register warning as g_179 -- reserved for signs, emergencies, or quotation, not everyday requests",
+        "title": {
+          "vi": "Cùng lưu ý về văn phong như g_179 -- chỉ dùng cho biển báo, tình huống khẩn cấp, hoặc trích dẫn, không dùng cho lời nhờ vả hằng ngày",
+          "en": "Same register warning as g_179 -- reserved for signs, emergencies, or quotation, not everyday requests"
+        },
         "description": {
           "vi": "Giống thể mệnh lệnh (g_179), な mang tính thô lỗ/mạnh mẽ -- chỉ tự nhiên trên biển báo (立ち入るな = \"Cấm vào\"), tình huống khẩn cấp, hoặc trích dẫn. Yêu cầu bình thường nên dùng ないでください.",
           "en": "Like the imperative (g_179), な is blunt/forceful -- only natural on signage (立ち入るな = \"No entry\"), in emergencies, or in quotation. A normal request should use ないでください instead."
@@ -6401,7 +6554,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "と introduces the quote content itself, in its ORIGINAL form (imperative, plain, etc.) -- not paraphrased into polite speech",
+        "title": {
+          "vi": "と dẫn vào chính nội dung được trích dẫn, giữ NGUYÊN VĂN hình thức gốc (mệnh lệnh, thể thường,...) -- không diễn đạt lại thành lời lịch sự",
+          "en": "と introduces the quote content itself, in its ORIGINAL form (imperative, plain, etc.) -- not paraphrased into polite speech"
+        },
         "description": {
           "vi": "Nội dung trước と giữ NGUYÊN hình thức gốc (kể cả mệnh lệnh thô lỗ như 押す or 押せ), không được \"dịch\" sang thể lịch sự. Đây là lý do g_179/g_180 (mệnh lệnh/cấm đoán) thường xuất hiện tự nhiên trong cấu trúc này.",
           "en": "The content before と keeps its ORIGINAL form (even a blunt imperative like 押す or 押せ) -- it is never \"translated\" into polite speech. This is why g_179/g_180 (imperative/prohibitive) naturally appear inside this structure."
@@ -6536,7 +6692,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "という意味です explains meaning; と書いてあります (g_181) just quotes the exact wording",
+        "title": {
+          "vi": "という意味です giải thích ý nghĩa; còn と書いてあります (g_181) chỉ trích dẫn đúng nguyên văn",
+          "en": "という意味です explains meaning; と書いてあります (g_181) just quotes the exact wording"
+        },
         "description": {
           "vi": "という意味です giải thích Ý NGHĨA của một điều gì đó (có thể diễn giải lại), trong khi と書いてあります (g_181) chỉ trích dẫn NGUYÊN VĂN không đổi. Hai cấu trúc thường đi liền nhau: trích dẫn rồi giải thích ý nghĩa.",
           "en": "という意味です explains the MEANING of something (can be paraphrased), while と書いてあります (g_181) just quotes the EXACT wording unchanged. The two structures often appear together: quote first, then explain the meaning."
@@ -6671,7 +6830,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "って has (at least) three distinct casual functions -- here it's a topic marker like は",
+        "title": {
+          "vi": "って có (ít nhất) ba chức năng thân mật khác nhau -- ở đây nó đóng vai trò như trợ từ chủ đề は",
+          "en": "って has (at least) three distinct casual functions -- here it's a topic marker like は"
+        },
         "description": {
           "vi": "って ở đây thay thế は một cách thân mật (田中さんって = \"về Tanaka thì...\"). Ngoài chức năng này, って còn thay と (trích dẫn, g_181/g_145) và という (giải thích nghĩa, g_182) -- ba vai trò khác nhau tùy ngữ cảnh, cần phân biệt.",
           "en": "って here casually replaces は (田中さんって = \"as for Tanaka...\"). Beyond this, って also replaces と (quotation, g_181/g_145) and という (explaining meaning, g_182) -- three distinct roles depending on context, worth telling apart."
@@ -6806,7 +6968,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "って何？ is the casual counterpart of どういう意味ですか (g_182) or 何ですか (g_007)",
+        "title": {
+          "vi": "って何？ là phiên bản thân mật của どういう意味ですか (g_182) hoặc 何ですか (g_007)",
+          "en": "って何？ is the casual counterpart of どういう意味ですか (g_182) or 何ですか (g_007)"
+        },
         "description": {
           "vi": "って何？ là cách hỏi rất thân mật, ngắn gọn về một từ/vật lạ -- tương đương với どういう意味ですか (lịch sự, g_182) hoặc 何ですか (g_007). って ở đây có thể là topic marker (g_183) hoặc thay という (g_182) tùy cách hiểu, nhưng ý nghĩa cuối cùng giống nhau.",
           "en": "って何？ is a very casual, short way of asking about an unfamiliar word/thing -- equivalent to どういう意味ですか (polite, g_182) or 何ですか (g_007). って here can be read as the topic marker (g_183) or a stand-in for という (g_182) depending on interpretation, but the resulting meaning is the same."
@@ -6944,7 +7109,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is a synthesis point: any quoted content (imperative, prohibitive, plain form, noun) can combine with any of と言う/書いてある/読む/という意味",
+        "title": {
+          "vi": "Đây là điểm tổng hợp: bất kỳ nội dung trích dẫn nào (mệnh lệnh, cấm đoán, thể thường, danh từ) đều có thể kết hợp với と言う/書いてある/読む/という意味",
+          "en": "This is a synthesis point: any quoted content (imperative, prohibitive, plain form, noun) can combine with any of と言う/書いてある/読む/という意味"
+        },
         "description": {
           "vi": "Đây là điểm ngữ pháp tổng hợp: bất kỳ nội dung trích dẫn nào (mệnh lệnh, cấm đoán, thể thường, danh từ) đều có thể ghép với と言う, と書いてある, と読む, hoặc という意味 -- tất cả đều dùng chung trợ từ と/という để đánh dấu phần được trích dẫn/giải thích.",
           "en": "This is a synthesizing point: any quoted content (imperative, prohibitive, plain form, noun) can combine with と言う, と書いてある, と読む, or という意味 -- all sharing と/という to mark the quoted/explained part."
@@ -7079,7 +7247,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "もらう (viewpoint: receiver) vs くれる (g_102, viewpoint: giver toward speaker) -- same event, different grammatical subject",
+        "title": {
+          "vi": "もらう (góc nhìn: người nhận) khác với くれる (g_102, góc nhìn: người cho hướng về người nói) -- cùng một sự việc nhưng chủ ngữ ngữ pháp khác nhau",
+          "en": "もらう (viewpoint: receiver) vs くれる (g_102, viewpoint: giver toward speaker) -- same event, different grammatical subject"
+        },
         "description": {
           "vi": "もらう và くれる (g_102) có thể mô tả CÙNG một sự việc (田中さんが私に花をくれた = 私は田中さんに花をもらった), nhưng chủ ngữ khác nhau: くれる lấy NGƯỜI CHO làm chủ ngữ, もらう lấy NGƯỜI NHẬN làm chủ ngữ. Chọn động từ nào phụ thuộc vào việc muốn nhấn mạnh ai.",
           "en": "もらう and くれる (g_102) can describe the SAME event (田中さんが私に花をくれた = 私は田中さんに花をもらった), but with different subjects: くれる takes the GIVER as subject, もらう takes the RECEIVER as subject. Which verb to use depends on who you want to emphasize."
@@ -7213,7 +7384,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "いただく is humble (lowers the speaker), not honorific (which would raise the OTHER person's action)",
+        "title": {
+          "vi": "いただく là khiêm nhường ngữ (hạ thấp người nói), không phải tôn kính ngữ (vốn nâng cao hành động của NGƯỜI KHÁC)",
+          "en": "いただく is humble (lowers the speaker), not honorific (which would raise the OTHER person's action)"
+        },
         "description": {
           "vi": "いただく thuộc nhóm KHIÊM NHƯỜNG NGỮ (謙譲語) -- hạ thấp hành động của CHÍNH NGƯỜI NÓI (tôi nhận được một cách khiêm tốn), khác với kính ngữ (尊敬語) vốn nâng cao hành động của NGƯỜI KHÁC (như くださる, tôn kính hành động \"cho\" của đối phương).",
           "en": "いただく belongs to the HUMBLE speech (謙譲語) category -- it lowers the SPEAKER'S OWN action (humbly receiving), different from honorific speech (尊敬語), which elevates SOMEONE ELSE'S action (like くださる, honoring the other person's act of giving)."
@@ -7347,7 +7521,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "てもらう (viewpoint: beneficiary) vs てくれる (g_103, viewpoint: giver toward speaker) -- describing the same favor from two angles",
+        "title": {
+          "vi": "てもらう (góc nhìn: người được giúp) khác với てくれる (g_103, góc nhìn: người giúp hướng về người nói) -- cùng miêu tả một việc làm ơn nhưng từ hai góc nhìn",
+          "en": "てもらう (viewpoint: beneficiary) vs てくれる (g_103, viewpoint: giver toward speaker) -- describing the same favor from two angles"
+        },
         "description": {
           "vi": "てもらう và てくれる (g_103) mô tả CÙNG một sự việc từ hai góc nhìn: てくれる lấy NGƯỜI LÀM ƠN làm chủ ngữ (田中さんが手伝ってくれた), てもらう lấy NGƯỜI ĐƯỢC GIÚP làm chủ ngữ (私は田中さんに手伝ってもらった). Cả hai đều ngụ ý biết ơn.",
           "en": "てもらう and てくれる (g_103) describe the SAME event from two angles: てくれる takes the PERSON DOING THE FAVOR as subject (田中さんが手伝ってくれた), てもらう takes the PERSON BENEFITING as subject (私は田中さんに手伝ってもらった). Both imply gratitude."
@@ -7481,7 +7658,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "ていただく is the most polite/humble way to describe receiving help -- standard in business Japanese",
+        "title": {
+          "vi": "ていただく là cách nói lịch sự/khiêm nhường nhất để diễn tả việc được giúp đỡ -- chuẩn mực trong tiếng Nhật thương mại",
+          "en": "ていただく is the most polite/humble way to describe receiving help -- standard in business Japanese"
+        },
         "description": {
           "vi": "ていただく là cách khiêm tốn nhất để nói về việc được người khác giúp đỡ -- gần như bắt buộc trong môi trường công sở/kinh doanh khi nhắc đến hành động của khách hàng, cấp trên hoặc đối tác.",
           "en": "ていただく is the most humble way to describe receiving help -- nearly mandatory in business/office settings when referring to the actions of a customer, superior, or partner."
@@ -7621,7 +7801,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "てもらえませんか/ていただけませんか sit at the top of the politeness ladder for requests, above てくれませんか (g_101)",
+        "title": {
+          "vi": "てもらえませんか/ていただけませんか đứng ở bậc cao nhất trong thang lịch sự khi nhờ vả, cao hơn てくれませんか (g_101)",
+          "en": "てもらえませんか/ていただけませんか sit at the top of the politeness ladder for requests, above てくれませんか (g_101)"
+        },
         "description": {
           "vi": "So với てくれませんか (g_101), てもらえませんか/ていただけませんか lịch sự hơn một bậc vì dùng động từ もらう/いただく (nhận) thay vì くれる (cho) -- đặt trọng tâm vào việc \"tôi xin phép được nhận ơn huệ này\", khiêm tốn hơn. ていただけませんか là mức lịch sự cao nhất trong toàn bộ nhóm mẫu câu nhờ vả.",
           "en": "Compared to てくれませんか (g_101), てもらえませんか/ていただけませんか sit one step higher in politeness, since they use もらう/いただく (\"receive\") instead of くれる (\"give\") -- framing it as \"may I receive this favor\", which is more humble. ていただけませんか is the highest politeness level in this entire request family."
@@ -7755,7 +7938,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "てほしい (\"want someone to do\") vs たい (g_078, \"want to do myself\")",
+        "title": {
+          "vi": "てほしい (\"muốn ai đó làm gì\") khác với たい (g_078, \"muốn tự mình làm gì\")",
+          "en": "てほしい (\"want someone to do\") vs たい (g_078, \"want to do myself\")"
+        },
         "description": {
           "vi": "てほしい diễn tả mong muốn NGƯỜI KHÁC làm gì đó cho mình (来てほしい = \"muốn ai đó đến\"), khác hẳn たい (g_078, muốn TỰ MÌNH làm một hành động). Cả hai đều là tính từ い và chia giống nhau, nhưng chủ thể của hành động mong muốn hoàn toàn khác.",
           "en": "てほしい expresses wanting SOMEONE ELSE to do something (来てほしい = \"want someone to come\"), completely different from たい (g_078, wanting to do an action ONESELF). Both are i-adjectives and conjugate the same way, but the subject of the desired action is entirely different."
@@ -7895,7 +8081,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "Like もらう/くれる, these pairs describe ONE event from two directions -- learn them as fixed pairs, not translated word-by-word",
+        "title": {
+          "vi": "Giống もらう/くれる, các cặp này miêu tả MỘT sự việc theo hai chiều -- nên học theo từng cặp cố định, không dịch từng từ một",
+          "en": "Like もらう/くれる, these pairs describe ONE event from two directions -- learn them as fixed pairs, not translated word-by-word"
+        },
         "description": {
           "vi": "Giống cặp もらう/くれる, các cặp động từ này (貸す⇔借りる、教える⇔教わる、預ける⇔預かる) mô tả CÙNG một giao dịch từ hai hướng ngược nhau. Không nên dịch từng từ riêng lẻ sang tiếng Việt/Anh rồi ghép lại -- cần học thuộc từng cặp như một đơn vị.",
           "en": "Like もらう/くれる, these verb pairs (貸す⇔借りる, 教える⇔教わる, 預ける⇔預かる) describe ONE transaction from opposite directions. Don't translate each word separately and reassemble -- learn each pair as a unit."
@@ -8040,7 +8229,10 @@
     "notesAndPitfalls": [
       {
         "type": "false_friend",
-        "title": "Group 2's passive form is IDENTICAL to its potential form (られる) -- context alone tells them apart",
+        "title": {
+          "vi": "Thể bị động của nhóm 2 GIỐNG HỆT thể khả năng của nó (られる) -- chỉ ngữ cảnh mới phân biệt được",
+          "en": "Group 2's passive form is IDENTICAL to its potential form (られる) -- context alone tells them apart"
+        },
         "description": {
           "vi": "Ở nhóm 2, thể bị động (食べられる = \"bị ăn\") và thể khả năng (食べられる = \"có thể ăn\") có hình thức HOÀN TOÀN GIỐNG NHAU -- chỉ phân biệt được qua ngữ cảnh, không có dấu hiệu ngữ pháp riêng. Đây là điểm gây nhầm lẫn nhiều nhất khi học thể bị động.",
           "en": "For Group 2, the passive form (食べられる = \"is eaten\") and the potential form (食べられる = \"can eat\") are IDENTICAL in shape -- only context distinguishes them, with no separate grammatical marker. This is the single most confusing point when learning the passive."
@@ -8174,7 +8366,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "Direct passive mirrors the active sentence closely -- を becomes は/が, に marks the agent",
+        "title": {
+          "vi": "Bị động trực tiếp gần như phản chiếu câu chủ động -- を chuyển thành は/が, に đánh dấu chủ thể gây ra hành động",
+          "en": "Direct passive mirrors the active sentence closely -- を becomes は/が, に marks the agent"
+        },
         "description": {
           "vi": "Bị động trực tiếp gần như là \"đảo ngược\" câu chủ động: đối tượng của tha động từ (先生が私を褒めました) trở thành CHỦ NGỮ của câu bị động (私が先生に褒められました), を→が/は, người thực hiện hành động đánh dấu bằng に.",
           "en": "The direct passive closely mirrors \"flipping\" an active sentence: a transitive verb's object (先生が私を褒めました) becomes the SUBJECT of the passive sentence (私が先生に褒められました), を→が/は, and the agent is marked with に."
@@ -8308,7 +8503,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This \"adversative passive\" has no direct equivalent in English -- it always carries a negative feeling",
+        "title": {
+          "vi": "\"Bị động chịu ảnh hưởng\" này không có cách diễn đạt tương đương trực tiếp trong tiếng Việt -- luôn mang sắc thái tiêu cực",
+          "en": "This \"adversative passive\" has no direct equivalent in English -- it always carries a negative feeling"
+        },
         "description": {
           "vi": "Bị động gián tiếp (迷惑受身) không có cấu trúc tương đương trực tiếp trong tiếng Anh hay tiếng Việt -- nó diễn tả việc B bị ẢNH HƯỞNG TIÊU CỰC bởi hành động của A, dù hành động đó không nhắm thẳng vào B (私は隣の人にタバコを吸われました = \"tôi khó chịu vì người bên cạnh hút thuốc\", dù người đó không hút thuốc \"vào\" tôi). LUÔN mang sắc thái phàn nàn/khó chịu.",
           "en": "The \"adversative passive\" (迷惑受身) has no direct equivalent in English or Vietnamese -- it expresses B being NEGATIVELY AFFECTED by A's action, even though the action wasn't aimed at B (私は隣の人にタバコを吸われました = \"I was bothered by my neighbor smoking\", even though they weren't smoking \"at\" me). ALWAYS carries a nuance of complaint/annoyance."
@@ -8444,7 +8642,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This passive is emotionally neutral -- the opposite of the adversative passive (g_195)",
+        "title": {
+          "vi": "Thể bị động này trung tính về cảm xúc -- trái ngược với bị động chịu ảnh hưởng (g_195)",
+          "en": "This passive is emotionally neutral -- the opposite of the adversative passive (g_195)"
+        },
         "description": {
           "vi": "Khác hoàn toàn với bị động gián tiếp (g_195, luôn mang sắc thái khó chịu), bị động ở đây HOÀN TOÀN TRUNG TÍNH -- chỉ đơn thuần mô tả sự thật khách quan (một vật được tạo ra/phát hiện bởi ai đó). によって (bởi) thường thay に khi tác giả/người phát minh được nêu rõ, đặc biệt trong văn viết trang trọng.",
           "en": "Completely different from the adversative passive (g_195, always carrying annoyance), the passive here is PURELY NEUTRAL -- simply describing an objective fact (something created/discovered by someone). によって (\"by\") commonly replaces に when the creator/inventor is specified, especially in formal writing."
@@ -8590,7 +8791,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "て/で-linking reads softer/more natural than から -- but cannot be followed by a command or invitation",
+        "title": {
+          "vi": "Nối câu bằng て/で nghe mềm mại/tự nhiên hơn から -- nhưng không thể theo sau bằng câu mệnh lệnh hay rủ rê",
+          "en": "て/で-linking reads softer/more natural than から -- but cannot be followed by a command or invitation"
+        },
         "description": {
           "vi": "Cách nối này (て/で + kết quả) tự nhiên và nhẹ nhàng hơn から (g_066), thường dùng khi lý do và kết quả liên kết chặt chẽ, gần như một chuỗi sự kiện. Tuy nhiên, GIỐNG と (không phải たら), vế sau KHÔNG được là mệnh lệnh/lời mời -- vì đây là mối quan hệ nhân quả khách quan, không phải điều kiện giả định.",
           "en": "This linking (て/で + result) reads more natural and softer than から (g_066), often used when cause and result feel tightly connected, almost like one flowing event. However, LIKE と (unlike たら), the second clause CANNOT be a command/invitation -- since this expresses an objective cause-effect relationship, not a hypothetical condition."
@@ -8730,7 +8934,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This て/ないで describes an accompanying STATE (how V2 happens), distinct from て meaning \"and then\" (g_092)",
+        "title": {
+          "vi": "て/ないで này miêu tả một TRẠNG THÁI đi kèm (V2 diễn ra như thế nào), khác với て mang nghĩa \"rồi\" (g_092)",
+          "en": "This て/ないで describes an accompanying STATE (how V2 happens), distinct from て meaning \"and then\" (g_092)"
+        },
         "description": {
           "vi": "て ở đây không diễn tả trình tự \"làm A rồi làm B\" (g_092) mà mô tả TRẠNG THÁI đi kèm khi V2 xảy ra (立って話す = \"vừa đứng vừa nói\", đứng là trạng thái nền, không phải hành động trước). Phân biệt qua ngữ nghĩa: nếu hai hành động xảy ra ĐỒNG THỜI (một là trạng thái), đây là cách dùng này.",
           "en": "て here doesn't express a sequence \"do A then B\" (g_092) -- it describes the accompanying STATE while V2 happens (立って話す = \"talk while standing\", standing is the background state, not a prior action). Distinguished by meaning: if the two actions happen SIMULTANEOUSLY (one being a state), this is the use in play."
@@ -8864,7 +9071,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "This is a specialized reading of g_198's ないで -- \"instead of\" rather than just \"without\"",
+        "title": {
+          "vi": "Đây là một cách hiểu riêng của ないで ở g_198 -- mang nghĩa \"thay vì\" chứ không chỉ đơn thuần là \"không làm mà\"",
+          "en": "This is a specialized reading of g_198's ないで -- \"instead of\" rather than just \"without\""
+        },
         "description": {
           "vi": "Đây là cách hiểu chuyên biệt hơn của ないで (đã thấy ở g_198): thay vì chỉ nghĩa \"không có\" (trạng thái đi kèm), ở đây mang nghĩa \"THAY VÌ làm V1, lại làm V2\" -- một sự LỰA CHỌN thay thế rõ ràng, không chỉ là thiếu trạng thái.",
           "en": "This is a more specialized reading of ないで (already seen in g_198): rather than just meaning \"without\" (an accompanying state), here it means \"INSTEAD OF doing V1, V2 was done\" -- a clear alternative CHOICE, not just an absent state."
@@ -8996,7 +9206,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "V2 (after ながら) is the MAIN action -- V1 is secondary/background, and the subject must be the same for both",
+        "title": {
+          "vi": "V2 (sau ながら) là hành động CHÍNH -- V1 chỉ là phụ/nền, và chủ ngữ của cả hai phải giống nhau",
+          "en": "V2 (after ながら) is the MAIN action -- V1 is secondary/background, and the subject must be the same for both"
+        },
         "description": {
           "vi": "Trong V1ながら、V2, V2 mới là hành động CHÍNH mà người nói tập trung vào, V1 chỉ là hành động phụ diễn ra song song (thường ít đòi hỏi sự chú ý hơn). CHỦ NGỮ của V1 và V2 luôn phải giống nhau -- khác với các mẫu khác có thể có hai chủ ngữ riêng biệt.",
           "en": "In V1ながら、V2, V2 is the MAIN action the speaker focuses on, while V1 is a secondary, background action happening in parallel (usually requiring less attention). The SUBJECT of V1 and V2 must always be the same -- unlike other patterns that can have two separate subjects."
@@ -9134,7 +9347,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "The resulting word conjugates fully as its own i-adjective, and the original object particle often shifts to が",
+        "title": {
+          "vi": "Từ tạo thành chia đầy đủ như một tính từ đuôi い độc lập, và trợ từ chỉ đối tượng ban đầu thường đổi thành が",
+          "en": "The resulting word conjugates fully as its own i-adjective, and the original object particle often shifts to が"
+        },
         "description": {
           "vi": "やすい/にくい gắn vào thân ます, tạo thành một TÍNH TỪ い hoàn toàn mới (読みやすい), tự chia đầy đủ theo quy tắc tính từ い (読みやすくない, 読みやすかった...). Tân ngữ ban đầu thường chuyển từ を sang が để nhấn mạnh đặc tính vốn có của vật (この本は字が読みやすい).",
           "en": "やすい/にくい attach to the masu-stem, forming an entirely NEW i-adjective (読みやすい), which fully conjugates by i-adjective rules on its own (読みやすくない, 読みやすかった...). The original object often shifts from を to が to emphasize the inherent trait of the item (この本は字が読みやすい)."
@@ -9272,7 +9488,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "すぎる turns any adjective into a new verb (Group 2), and often reads as a complaint even with \"positive\" adjectives",
+        "title": {
+          "vi": "すぎる biến bất kỳ tính từ nào thành một động từ mới (nhóm 2), và thường nghe như một lời than phiền dù đi với tính từ \"tích cực\"",
+          "en": "すぎる turns any adjective into a new verb (Group 2), and often reads as a complaint even with \"positive\" adjectives"
+        },
         "description": {
           "vi": "すぎる biến tính từ thành một ĐỘNG TỪ MỚI (nhóm 2: すぎます, すぎません, すぎた...). Ngay cả với tính từ tích cực (高い, いい), すぎる vẫn thường mang sắc thái PHÀN NÀN, vì \"quá mức\" luôn ngụ ý vượt khỏi giới hạn mong muốn (高すぎる = \"quá đắt\", không phải khen).",
           "en": "すぎる turns an adjective into a new VERB (Group 2: すぎます, すぎません, すぎた...). Even with a \"positive\" adjective (高い, いい), すぎる usually still carries a COMPLAINING nuance, since \"excessive\" always implies going beyond a desirable limit (高すぎる = \"too expensive\", not a compliment)."
@@ -9280,7 +9499,10 @@
       },
       {
         "type": "false_friend",
-        "title": "いい becomes よすぎる, not いすぎる",
+        "title": {
+          "vi": "いい chuyển thành よすぎる, không phải いすぎる",
+          "en": "いい becomes よすぎる, not いすぎる"
+        },
         "description": {
           "vi": "いい lại bất quy tắc thêm lần nữa: よすぎる (từ gốc よい), không phải いすぎる.",
           "en": "いい is irregular once more: よすぎる (from the root よい), never いすぎる."
@@ -9413,7 +9635,10 @@
     "notesAndPitfalls": [
       {
         "type": "nuance_trap",
-        "title": "Same すぎる mechanism as g_202, but attaching to the masu-stem of a verb instead of an adjective",
+        "title": {
+          "vi": "Cùng cơ chế すぎる như g_202, nhưng gắn vào thân ます của động từ thay vì tính từ",
+          "en": "Same すぎる mechanism as g_202, but attaching to the masu-stem of a verb instead of an adjective"
+        },
         "description": {
           "vi": "Đây là すぎる gắn vào THÂN MÁ​SU của động từ (thay vì tính từ như g_202), diễn tả một HÀNH ĐỘNG bị làm quá mức (食べすぎる = \"ăn quá nhiều\"), thường kéo theo hậu quả không mong muốn (đau bụng, hối hận...).",
           "en": "This is すぎる attaching to a verb's MASU-STEM (instead of an adjective as in g_202), expressing an ACTION done excessively (食べすぎる = \"overeat\"), commonly followed by an unwanted consequence (a stomachache, regret...)."

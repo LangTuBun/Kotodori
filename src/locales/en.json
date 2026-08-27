@@ -168,7 +168,11 @@
       "neutral": "Neutral"
     },
     "related": "Related grammar",
-    "opposing": "Contrasts with"
+    "opposing": "Contrasts with",
+    "chapterSummary": {
+      "title": "Chapter summary",
+      "examplesTitle": "Comparative examples"
+    }
   },
   "verbForms": {
     "subtitle": "Verb Forms — Verb Conjugation Cheat Sheet",

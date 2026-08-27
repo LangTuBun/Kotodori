@@ -1,15 +1,315 @@
 {
   "categories": [
-    { "slug": "conjecture", "romanNumeral": "XV", "order": 15, "title": { "vi": "Suy đoán và Kỳ vọng", "en": "Conjecture and Expectation" }, "titleJa": "推量と期待", "count": 6 },
-    { "slug": "hearsay-opinion", "romanNumeral": "XVI", "order": 16, "title": { "vi": "Nghe nói, Vẻ như, và Ý kiến", "en": "Hearsay, Resemblance, and Opinion" }, "titleJa": "伝聞・類似・意見", "count": 6 },
-    { "slug": "explanatory", "romanNumeral": "XVII", "order": 17, "title": { "vi": "んです giải thích", "en": "Explanatory んです" }, "titleJa": "説明の「んです」", "count": 7 },
-    { "slug": "appearance-change", "romanNumeral": "XVIII", "order": 18, "title": { "vi": "Vẻ ngoài và Sự thay đổi trạng thái", "en": "Appearance and State Change" }, "titleJa": "様態と変化", "count": 6 },
-    { "slug": "transitive-intransitive", "romanNumeral": "XIX", "order": 19, "title": { "vi": "Động từ Tha động và Tự động", "en": "Transitive and Intransitive Verbs" }, "titleJa": "自動詞と他動詞", "count": 4 },
-    { "slug": "noun-modification", "romanNumeral": "XX", "order": 20, "title": { "vi": "Bổ nghĩa danh từ và Cảm nhận", "en": "Noun Modification and Perception" }, "titleJa": "名詞修飾と知覚", "count": 7 },
-    { "slug": "nominalization", "romanNumeral": "XXI", "order": 21, "title": { "vi": "Danh từ hóa với の", "en": "Nominalization with の" }, "titleJa": "「の」の名詞化", "count": 7 },
-    { "slug": "commands-quotation", "romanNumeral": "XXII", "order": 22, "title": { "vi": "Mệnh lệnh, Cấm đoán, và Trích dẫn", "en": "Commands, Prohibitions, and Quotation" }, "titleJa": "命令・禁止・引用", "count": 7 },
-    { "slug": "passive-receiving", "romanNumeral": "XXIII", "order": 23, "title": { "vi": "Bị động và Cho/Nhận", "en": "Passive and Giving/Receiving" }, "titleJa": "受身と授受表現", "count": 11 },
-    { "slug": "cause-degree", "romanNumeral": "XXIV", "order": 24, "title": { "vi": "Nguyên nhân, Cách thức, và Mức độ", "en": "Cause, Manner, and Degree" }, "titleJa": "原因・様態・程度", "count": 7 }
+    {
+      "slug": "conjecture",
+      "romanNumeral": "XV",
+      "order": 15,
+      "title": {
+        "vi": "Suy đoán và Kỳ vọng",
+        "en": "Conjecture and Expectation"
+      },
+      "titleJa": "推量と期待",
+      "count": 6,
+      "summary": {
+        "vi": "Sáu mẫu suy đoán này khác nhau ở MỨC ĐỘ CHẮC CHẮN: でしょう／だろう là phán đoán tự tin (gần như khẳng định), かもしれない chỉ là khả năng có thể xảy ra (thấp hơn hẳn), còn はず là kết luận DỰA TRÊN CĂN CỨ logic (khác hẳn về bản chất, không phải mức độ chắc chắn đơn thuần). みたいだ/ようだ là suy đoán qua QUAN SÁT trực tiếp -- みたいだ thân mật, ようだ trang trọng/văn viết hơn, và ようだ cần thêm な/の còn みたいだ thì không.",
+        "en": "These six conjecture patterns differ in DEGREE OF CERTAINTY: でしょう／だろう is a confident guess (near-certain), かもしれない is just a possibility (much lower confidence), while はず is a conclusion drawn from logical evidence (a different kind of claim altogether, not just another certainty level). みたいだ/ようだ are conjectures from direct OBSERVATION -- みたいだ casual, ようだ more formal/written, and ようだ needs な/の where みたいだ needs neither.",
+        "examples": [
+          {
+            "pattern": "でしょう vs かもしれない vs はず",
+            "ja": "明日は晴れるでしょう。明日は雨かもしれません。田中さんはもう来ているはずです。",
+            "kana": "あしたははれるでしょう。あしたはあめかもしれません。たなかさんはもうきているはずです。",
+            "vi": "Ngày mai chắc sẽ nắng. Ngày mai có thể sẽ mưa. Anh Tanaka chắc chắn đã đến rồi (theo suy luận có căn cứ).",
+            "en": "It'll probably be sunny tomorrow. It might rain tomorrow. Mr. Tanaka should have already arrived (by logical deduction)."
+          },
+          {
+            "pattern": "みたいだ vs ようだ",
+            "ja": "誰かいるみたいだ。誰かいるようだ。",
+            "kana": "だれかいるみたいだ。だれかいるようだ。",
+            "vi": "Có vẻ như có ai đó (thân mật). Dường như có ai đó (trang trọng hơn).",
+            "en": "Seems like someone's there (casual). It appears someone is there (more formal)."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "hearsay-opinion",
+      "romanNumeral": "XVI",
+      "order": 16,
+      "title": {
+        "vi": "Nghe nói, Vẻ như, và Ý kiến",
+        "en": "Hearsay, Resemblance, and Opinion"
+      },
+      "titleJa": "伝聞・類似・意見",
+      "count": 6,
+      "summary": {
+        "vi": "らしい và そうだ (nghe nói) đều truyền đạt lại thông tin nghe được, nhưng らしい ngụ ý nguồn xa hơn, ít được xác thực cá nhân hơn -- và らしい còn có nghĩa thứ hai hoàn toàn khác: \"đúng chất\" (男らしい). Lưu ý そうだ (nghe nói, gắn vào TOÀN BỘ thể thường) khác hẳn そう (vẻ ngoài ở chương XVIII, gắn vào THÂN từ) dù viết gần giống nhau. と言っていました trích lại lời một người cụ thể; と思う nêu ý kiến cá nhân, làm câu nghe khiêm tốn/lịch sự hơn là khẳng định thẳng.",
+        "en": "らしい and hearsay そうだ both relay secondhand information, but らしい implies a more distant, less personally-verified source -- and らしい has a completely separate second sense: \"typical of\" (男らしい). Note that hearsay そうだ (attached to the FULL plain form) is a different animal from appearance そう (chapter XVIII, attached to the STEM) despite looking similar. と言っていました quotes a specific person's words; と思う states a personal opinion, softening a claim compared to stating it flatly.",
+        "examples": [
+          {
+            "pattern": "らしい vs そうだ (nghe nói)",
+            "ja": "天気予報によると、明日は雨らしいです。天気予報で、明日は雨だそうです。",
+            "kana": "てんきよほうによると、あしたはあめらしいです。てんきよほうで、あしたはあめだそうです。",
+            "vi": "Theo dự báo thời tiết, hình như mai mưa. Theo dự báo thời tiết, nghe nói mai mưa.",
+            "en": "According to the forecast, it apparently will rain tomorrow. According to the forecast, I hear it'll rain tomorrow."
+          },
+          {
+            "pattern": "し...し (liệt kê lý do)",
+            "ja": "この店は安いし、おいしいし、人気があります。",
+            "kana": "このみせはやすいし、おいしいし、にんきがあります。",
+            "vi": "Quán này vừa rẻ, vừa ngon, (nên) rất được ưa chuộng.",
+            "en": "This place is cheap, and tasty too -- so it's popular."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "explanatory",
+      "romanNumeral": "XVII",
+      "order": 17,
+      "title": {
+        "vi": "んです giải thích",
+        "en": "Explanatory んです"
+      },
+      "titleJa": "説明の「んです」",
+      "count": 7,
+      "summary": {
+        "vi": "んです không thêm nghĩa mới, chỉ đổi SẮC THÁI: biến một câu bình thường thành lời giải thích bối cảnh (thường theo sau から/ので để nhấn \"đây chính là lý do\") hoặc lời bộc bạch có cảm xúc. Ba cách dùng んですか để hỏi (về đối phương/về chủ đề/về tình huống trước mắt, g_151-153) có hình thức giống hệt nhau, chỉ khác ở ĐIỀU GÌ khiến câu hỏi bật ra -- luôn ngụ ý \"tôi vừa nhận thấy gì đó, kể tôi nghe với\", khác hẳn câu hỏi ですか trung tính, không có ngữ cảnh đó.",
+        "en": "んです adds no new meaning, only a register shift: it recasts a plain sentence as background explanation (often following から/ので to double down on \"this is WHY\") or as an emotionally-charged admission. The three んですか question uses (about the listener / about a topic / about the immediate situation, g_151-153) share the exact same form, differing only in WHAT prompted the question -- always implying \"I noticed something, tell me about it\", unlike a neutral ですか question with no such context.",
+        "examples": [
+          {
+            "pattern": "から + んです",
+            "ja": "遅れてすみません。電車が止まったんです。",
+            "kana": "おくれてすみません。でんしゃがとまったんです。",
+            "vi": "Xin lỗi vì đến muộn. (Là vì) tàu điện bị dừng đấy ạ.",
+            "en": "Sorry I'm late. The train stopped, you see."
+          },
+          {
+            "pattern": "んですか (nhận thấy điều gì đó)",
+            "ja": "（顔色が悪い人を見て）大丈夫ですか。どうしたんですか。",
+            "kana": "（かおいろがわるいひとをみて）だいじょうぶですか。どうしたんですか。",
+            "vi": "(Thấy ai đó mặt tái) Bạn ổn không? Có chuyện gì vậy?",
+            "en": "(Seeing someone looking pale) Are you okay? What happened?"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "appearance-change",
+      "romanNumeral": "XVIII",
+      "order": 18,
+      "title": {
+        "vi": "Vẻ ngoài và Sự thay đổi trạng thái",
+        "en": "Appearance and State Change"
+      },
+      "titleJa": "様態と変化",
+      "count": 6,
+      "summary": {
+        "vi": "そう (vẻ ngoài, gắn THÂN từ, bỏ い/ます) chỉ là phán đoán qua quan sát tức thời -- そう ở Vます còn thêm nghĩa \"sắp xảy ra ngay\", còn thể phủ định luôn chèn さ trước そう (なさそう). Trục thứ hai của chương: にする (lựa chọn CHỦ ĐỘNG, ai đó quyết định) đối lập になる (biến đổi TỰ NHIÊN, không ai chủ ý) -- cùng đích đến (biến thành A/N) nhưng khác hẳn về việc AI/CÁI GÌ gây ra sự thay đổi.",
+        "en": "Appearance そう (attached to the STEM, dropping い/ます) is a snap-judgment conjecture from observation -- そう on a ます-stem verb adds \"about to happen imminently\", and the negative always inserts さ before そう (なさそう). The chapter's second axis: にする (a DELIBERATE choice someone makes) versus になる (a NATURAL, unintended change) -- same destination (becoming A/N) but a completely different answer to WHO/WHAT causes it.",
+        "examples": [
+          {
+            "pattern": "そう (vẻ ngoài) vs そう (sắp xảy ra)",
+            "ja": "このケーキ、おいしそうです。雨が降りそうです。",
+            "kana": "このケーキ、おいしそうです。あめがふりそうです。",
+            "vi": "Bánh này trông có vẻ ngon. Trời có vẻ sắp mưa.",
+            "en": "This cake looks tasty. It looks like it's about to rain."
+          },
+          {
+            "pattern": "にする vs になる",
+            "ja": "私はコーヒーにします。桜が咲いて、公園がにぎやかになりました。",
+            "kana": "わたしはコーヒーにします。さくらがさいて、こうえんがにぎやかになりました。",
+            "vi": "Tôi (chọn) cà phê. Hoa anh đào nở, công viên trở nên nhộn nhịp.",
+            "en": "I'll have coffee (my choice). The cherry blossoms bloomed and the park became lively (on its own)."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "transitive-intransitive",
+      "romanNumeral": "XIX",
+      "order": 19,
+      "title": {
+        "vi": "Động từ Tha động và Tự động",
+        "en": "Transitive and Intransitive Verbs"
+      },
+      "titleJa": "自動詞と他動詞",
+      "count": 4,
+      "summary": {
+        "vi": "Cặp tha động từ/tự động từ thường chung gốc, chỉ đổi một âm (開ける/開く, 消す/消える) -- tha động từ cần Nを và một người chủ động tác động, tự động từ chỉ N（は／が）và sự việc TỰ diễn ra, không nêu ai gây ra (cách nói lịch sự để tránh quy trách nhiệm). てある (chỉ đi với tha động từ) nhấn mạnh KẾT QUẢ có chủ ý còn tồn tại -- Nが+てある nêu trạng thái, Nを+てある nêu việc đã chuẩn bị sẵn cho một mục đích, cả hai đều khác ている (chỉ nêu trạng thái, không nhất thiết có mục đích).",
+        "en": "Transitive/intransitive pairs usually share a root, differing by one sound (開ける/開く, 消す/消える) -- the transitive verb needs Nを and someone actively causing it; the intransitive verb just states N（は／が） with the event happening BY ITSELF, naming no agent (a polite way to avoid assigning blame). てある (only with transitive verbs) highlights a deliberate RESULT still in effect -- Nが+てある states the resulting state, Nを+てある states something prepared for a purpose, both different from ている (just a state, no implied purpose).",
+        "examples": [
+          {
+            "pattern": "他動詞 vs 自動詞",
+            "ja": "誰かが窓を開けました。窓が開いています。",
+            "kana": "だれかがまどをあけました。まどがあいています。",
+            "vi": "Ai đó đã mở cửa sổ. Cửa sổ đang mở (tự nhiên, không nêu ai mở).",
+            "en": "Someone opened the window. The window is open."
+          },
+          {
+            "pattern": "Nが+てある vs Nを+てある",
+            "ja": "壁に絵がかけてあります。パーティーのために料理を作ってあります。",
+            "kana": "かべにえがかけてあります。パーティーのためにりょうりをつくってあります。",
+            "vi": "Trên tường có treo sẵn một bức tranh. (Tôi) đã nấu sẵn đồ ăn cho bữa tiệc.",
+            "en": "A picture is hanging on the wall (deliberately put there). I've prepared food for the party (in advance)."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "noun-modification",
+      "romanNumeral": "XX",
+      "order": 20,
+      "title": {
+        "vi": "Bổ nghĩa danh từ và Cảm nhận",
+        "en": "Noun Modification and Perception"
+      },
+      "titleJa": "名詞修飾と知覚",
+      "count": 7,
+      "summary": {
+        "vi": "Bước nhảy cấu trúc lớn nhất N4: bất kỳ mệnh đề thể thường nào cũng bổ nghĩa trực tiếp cho danh từ, KHÔNG cần đại từ quan hệ như tiếng Anh -- nên xây dựng cụm dài từ cụm ngắn trước. Bên trong một mệnh đề bổ nghĩa như vậy, chủ ngữ có thể đổi が thành の (CHỈ trong mệnh đề phụ, không bao giờ ở mệnh đề chính), và cả cụm [mệnh đề+N] rồi lại hoạt động y hệt một danh từ đơn trong câu lớn hơn. Nhóm động từ cảm nhận giác quan (がする, chỉ dùng với 声/音/におい/味/感じ) và 見える/聞こえる (tự nhiên cảm nhận, khác 見られる/聞ける là khả năng chủ động) khép lại chương bằng chủ đề tri giác.",
+        "en": "N4's biggest structural leap: any plain-form clause modifies a noun directly, with NO relative pronoun needed -- so build long noun phrases from short ones first. Inside such a modifying clause, the subject が can become の (ONLY inside the subordinate clause, never in the main clause), and the whole [clause + N] unit then behaves exactly like a single noun in the larger sentence. The perception-verb group (がする, restricted to 声/音/におい/味/感じ) and 見える/聞こえる (naturally perceived, unlike 見られる/聞ける which is active potential ability) close the chapter on the theme of perception.",
+        "examples": [
+          {
+            "pattern": "Mệnh đề bổ nghĩa danh từ, が→の",
+            "ja": "私が撮った写真です。私の撮った写真です。",
+            "kana": "わたしがとったしゃしんです。わたしのとったしゃしんです。",
+            "vi": "Là bức ảnh mà tôi đã chụp. (cách nói giống hệt, đổi が thành の trong mệnh đề bổ nghĩa)",
+            "en": "It's the photo (that) I took. (identical meaning, が swapped for の inside the modifying clause)"
+          },
+          {
+            "pattern": "がする vs 見える/聞こえる",
+            "ja": "いい匂いがします。ここから海が見えます。",
+            "kana": "いいにおいがします。ここからうみがみえます。",
+            "vi": "Có mùi thơm. Từ đây có thể nhìn thấy biển.",
+            "en": "There's a nice smell. You can see the sea from here."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "nominalization",
+      "romanNumeral": "XXI",
+      "order": 21,
+      "title": {
+        "vi": "Danh từ hóa với の",
+        "en": "Nominalization with の"
+      },
+      "titleJa": "「の」の名詞化",
+      "count": 7,
+      "summary": {
+        "vi": "の và こと cùng biến động từ thành danh từ nhưng の nghe cụ thể/trực tiếp hơn -- のが+giỏi/kém/nhanh/chậm chỉ dùng の chứ không dùng こと. Cấu trúc \"tách câu\" のは、～だ đẩy phần được nhấn mạnh ra cuối câu (giống \"Chính...là...\"), và からだ là bản chuyên dùng cho lý do. のを+biết/nhìn/nghe/quên/từ bỏ mở rộng cách dùng の làm tân ngữ trực tiếp cho một loạt động từ nhận thức và động từ hành động.",
+        "en": "の and こと both turn a verb into a noun, but の feels more concrete/immediate -- のが+skilled/poor/fast/slow only takes の, never こと. The \"cleft\" structure のは、～だ moves the emphasized part to the end of the sentence (like \"It is... that...\"), and からだ is its reason-specific variant. のを+know/see/hear/forget/give-up extends の as a direct object across a range of perception and action verbs.",
+        "examples": [
+          {
+            "pattern": "のが+得意/苦手",
+            "ja": "私は料理をするのが得意です。",
+            "kana": "わたしはりょうりをするのがとくいです。",
+            "vi": "Tôi giỏi nấu ăn.",
+            "en": "I'm good at cooking."
+          },
+          {
+            "pattern": "のは、～だ / ～からだ",
+            "ja": "私が今日ここに来たのは、あなたに会いたかったからだ。",
+            "kana": "わたしがきょうここにきたのは、あなたにあいたかったからだ。",
+            "vi": "Sở dĩ hôm nay tôi đến đây là vì tôi muốn gặp bạn.",
+            "en": "The reason I came here today is because I wanted to see you."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "commands-quotation",
+      "romanNumeral": "XXII",
+      "order": 22,
+      "title": {
+        "vi": "Mệnh lệnh, Cấm đoán, và Trích dẫn",
+        "en": "Commands, Prohibitions, and Quotation"
+      },
+      "titleJa": "命令・禁止・引用",
+      "count": 7,
+      "summary": {
+        "vi": "命令形 (ra lệnh trực tiếp) và Vるな (cấm đoán) đều có văn phong RẤT hạn chế -- chỉ dùng trong khẩn cấp, thể thao/quân sự, hoặc biển báo/trích dẫn, không dùng cho nhờ vả hằng ngày; な cấm đoán này không liên quan gì đến な của tính từ đuôi な. と dẫn nguyên văn nội dung trích dẫn (mệnh lệnh/cấm đoán/thể thường/danh từ) mà KHÔNG diễn đạt lại lịch sự; という意味です giải thích Ý NGHĨA còn と書いてあります chỉ trích ĐÚNG NGUYÊN VĂN. って trong văn nói thân mật làm được ba việc, phổ biến nhất là thay thế trợ từ chủ đề は.",
+        "en": "命令形 (direct imperative) and Vるな (prohibitive) both belong to a VERY restricted register -- emergencies, sports/military, or signage/quotation only, never everyday requests; this prohibitive な has nothing to do with the na-adjective な. と introduces quoted content (imperative/prohibitive/plain-form/noun) verbatim, without rephrasing it politely; という意味です explains MEANING while と書いてあります just quotes the EXACT wording. って does three different jobs in casual speech, most commonly standing in for topic-marker は.",
+        "examples": [
+          {
+            "pattern": "と言う vs と書いてある vs という意味です",
+            "ja": "この標識は「止まれ」と書いてあります。「止まれ」というのは、止まりなさいという意味です。",
+            "kana": "このひょうしきは「とまれ」とかいてあります。「とまれ」というのは、とまりなさいというみいです。",
+            "vi": "Biển báo này viết là \"Dừng lại\". \"Dừng lại\" nghĩa là hãy dừng lại.",
+            "en": "This sign says \"Stop\". \"Stop\" means you should stop."
+          },
+          {
+            "pattern": "って (thay thế は)",
+            "ja": "田中さんって、いつも忙しいですね。",
+            "kana": "たなかさんって、いつもいそがしいですね。",
+            "vi": "Anh Tanaka ấy à, lúc nào cũng bận nhỉ.",
+            "en": "Mr. Tanaka, huh -- he's always busy, isn't he."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "passive-receiving",
+      "romanNumeral": "XXIII",
+      "order": 23,
+      "title": {
+        "vi": "Bị động và Cho/Nhận",
+        "en": "Passive and Giving/Receiving"
+      },
+      "titleJa": "受身と授受表現",
+      "count": 11,
+      "summary": {
+        "vi": "Chương dày nhất N4 (11 điểm), nên học các cặp động từ cho/nhận trước khi vào bị động vì bị động dựng trên cùng logic hướng. もらう nhìn từ góc NGƯỜI NHẬN, くれる (đã học ở N5) nhìn từ góc người cho HƯỚNG VỀ người nói -- cùng một sự việc, hai chủ ngữ khác nhau. いただく là khiêm nhường ngữ của もらう (hạ thấp bản thân), khác với tôn kính ngữ (nâng cao hành động người khác). Bị động trực tiếp gần giống câu chủ động (を→は/が, に nêu chủ thể); riêng \"bị động chịu ảnh hưởng/迷惑受身\" mang sắc thái tiêu cực không có cách dịch tương đương trong tiếng Việt, khác hẳn bị động trung tính dùng cho vật vô tri (N によって Vられる).",
+        "en": "N4's densest chapter (11 points) -- learn the giving/receiving verb pairs before the passive forms, since the passive builds on the same directionality logic. もらう is viewed from the RECEIVER's side; くれる (already covered in N5) is viewed from the giver's side TOWARD the speaker -- same event, different grammatical subject. いただく is もらう's humble form (lowering oneself), distinct from honorifics (which raise someone else's action). Direct passive closely mirrors the active sentence (を→は/が, に marks the agent); the \"adversative/迷惑 passive\" specifically carries a negative feeling with no direct translation equivalent, quite different from the emotionally-neutral passive used for inanimate creators (N によって Vられる).",
+        "examples": [
+          {
+            "pattern": "もらう (người nhận) vs くれる (hướng về người nói)",
+            "ja": "私は田中さんに本をもらいました。田中さんが私に本をくれました。",
+            "kana": "わたしはたなかさんにほんをもらいました。たなかさんがわたしにほんをくれました。",
+            "vi": "Tôi đã nhận được quyển sách từ anh Tanaka. Anh Tanaka đã cho tôi quyển sách. (cùng một việc, hai cách nhìn)",
+            "en": "I received a book from Mr. Tanaka. Mr. Tanaka gave me a book. (same event, two viewpoints)"
+          },
+          {
+            "pattern": "受身 (trực tiếp) vs 迷惑受身",
+            "ja": "この本は夏目漱石によって書かれました。雨に降られて、濡れてしまいました。",
+            "kana": "このほんはなつめそうせきによってかかれました。あめにふられて、ぬれてしまいました。",
+            "vi": "Quyển sách này được viết bởi Natsume Souseki. Tôi bị mưa rơi trúng nên bị ướt. (sắc thái phiền toái)",
+            "en": "This book was written by Natsume Souseki. I got rained on and ended up soaked (an unwelcome inconvenience)."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "cause-degree",
+      "romanNumeral": "XXIV",
+      "order": 24,
+      "title": {
+        "vi": "Nguyên nhân, Cách thức, và Mức độ",
+        "en": "Cause, Manner, and Degree"
+      },
+      "titleJa": "原因・様態・程度",
+      "count": 7,
+      "summary": {
+        "vi": "て／で／くて nối câu chỉ nguyên nhân-kết quả nghe MỀM và tự nhiên hơn から, nhưng không thể theo sau bằng mệnh lệnh/rủ rê. て vs ないで vs ながら phân biệt qua VAI TRÒ: て(mô tả trạng thái đi kèm), ないで (không làm V1 MÀ làm V2 -- lựa chọn thay thế, khác て mang nghĩa \"rồi\"), ながら (V2 luôn là hành động CHÍNH, V1 chỉ là nền, chủ ngữ phải giống nhau cho cả hai). やすい/にくい (dễ/khó làm) và すぎる (quá mức, gắn cả vào tính từ lẫn thân ます của động từ) đóng lại chương bằng các mẫu chỉ mức độ.",
+        "en": "て／で／くて linking for cause-and-effect reads SOFTER and more natural than から, but cannot be followed by a command/invitation. て vs ないで vs ながら are told apart by ROLE: て (an accompanying state), ないで (doing V2 INSTEAD of V1 -- a substitution, unlike て which means \"and then\"), ながら (V2 is always the MAIN action, V1 just background, and the subject must be identical for both). やすい/にくい (easy/hard to do) and すぎる (excessive, attaching to both adjectives and a verb's masu-stem) close the chapter with degree patterns.",
+        "examples": [
+          {
+            "pattern": "て(理由) vs ないで(代わりに) vs ながら",
+            "ja": "熱があって、休みました。朝ご飯を食べないで、学校に行きました。音楽を聞きながら、勉強します。",
+            "kana": "ねつがあって、やすみました。あさごはんをたべないで、がっこうにいきました。おんがくをききながら、べんきょうします。",
+            "vi": "Vì bị sốt nên (tôi) đã nghỉ. (Tôi) không ăn sáng mà đi học luôn. (Tôi) vừa nghe nhạc vừa học bài.",
+            "en": "I had a fever, so I stayed home. I went to school without eating breakfast. I study while listening to music."
+          },
+          {
+            "pattern": "やすい/にくい vs すぎる",
+            "ja": "この漢字は読みやすいです。この漢字は読みにくいです。この問題は難しすぎます。",
+            "kana": "このかんじはよみやすいです。このかんじはよみにくいです。このもんだいはむずかしすぎます。",
+            "vi": "Chữ Hán này dễ đọc. Chữ Hán này khó đọc. Bài này khó quá.",
+            "en": "This kanji is easy to read. This kanji is hard to read. This problem is too difficult."
+          }
+        ]
+      }
+    }
   ],
   "tips": [
     {

@@ -125,14 +125,25 @@ for (const g of all) {
     }
   }
   for (const pitfall of g.notesAndPitfalls || []) {
+    // Identify the pitfall in error messages by its English title regardless
+    // of whether title itself is well-formed yet -- avoids every other check
+    // on a malformed title also printing "[object Object]".
+    const titleLabel = typeof pitfall.title === 'string' ? pitfall.title : (pitfall.title?.en || pitfall.title?.vi || '?')
     if (pitfall.relatedGrammarId && !allIds.has(pitfall.relatedGrammarId)) {
       errors.push(`${g.id}: notesAndPitfalls relatedGrammarId references unknown id "${pitfall.relatedGrammarId}"`)
     }
-    if (!pitfall.description?.vi?.trim() || !pitfall.description?.en?.trim()) {
-      errors.push(`${g.id}: notesAndPitfalls "${pitfall.title}" missing description vi/en`)
+    if (typeof pitfall.title === 'string') {
+      errors.push(`${g.id}: notesAndPitfalls "${titleLabel}" title is a plain string, not a {vi, en} pair`)
+    } else if (!pitfall.title?.vi?.trim() || !pitfall.title?.en?.trim()) {
+      errors.push(`${g.id}: notesAndPitfalls "${titleLabel}" missing title vi or en`)
     }
-    checkInlineGrammarRefs(pitfall.description?.vi, `${g.id}.notesAndPitfalls["${pitfall.title}"].description.vi`)
-    checkInlineGrammarRefs(pitfall.description?.en, `${g.id}.notesAndPitfalls["${pitfall.title}"].description.en`)
+    if (!pitfall.description?.vi?.trim() || !pitfall.description?.en?.trim()) {
+      errors.push(`${g.id}: notesAndPitfalls "${titleLabel}" missing description vi/en`)
+    }
+    checkInlineGrammarRefs(pitfall.title?.vi, `${g.id}.notesAndPitfalls["${titleLabel}"].title.vi`)
+    checkInlineGrammarRefs(pitfall.title?.en, `${g.id}.notesAndPitfalls["${titleLabel}"].title.en`)
+    checkInlineGrammarRefs(pitfall.description?.vi, `${g.id}.notesAndPitfalls["${titleLabel}"].description.vi`)
+    checkInlineGrammarRefs(pitfall.description?.en, `${g.id}.notesAndPitfalls["${titleLabel}"].description.en`)
   }
 
   // -- formationRules content checks --
@@ -159,8 +170,36 @@ for (const g of all) {
   }
 }
 
+// -- chapter summaries (GrammarCategory.summary) --
+// Not part of `grammar.json` -- read from the categories files separately.
+// Optional per category (rolled out incrementally, like every other V2
+// field), but a category that HAS a summary must have it fully formed:
+// tsc can't catch a half-authored bilingual field any more than it can for
+// GrammarPoint's own optional fields.
+const n5Categories = JSON.parse(readFileSync(path.join(__dirname, '../src/data/n5/grammar-categories.json'), 'utf-8')).categories
+const n4Categories = JSON.parse(readFileSync(path.join(__dirname, '../src/data/n4/grammar-categories.json'), 'utf-8')).categories
+const allCategories = [...n5Categories, ...n4Categories]
+let summarized = 0
+for (const c of allCategories) {
+  if (!c.summary) continue
+  summarized++
+  const label = `category "${c.slug}"`
+  if (!c.summary.vi?.trim() || !c.summary.en?.trim()) {
+    errors.push(`${label}: summary missing vi or en`)
+  }
+  checkInlineGrammarRefs(c.summary.vi, `${label}.summary.vi`)
+  checkInlineGrammarRefs(c.summary.en, `${label}.summary.en`)
+  ;(c.summary.examples || []).forEach((ex, i) => {
+    const exLabel = `${label}.summary.examples[${i}]`
+    for (const field of ['pattern', 'ja', 'kana', 'vi', 'en']) {
+      if (!ex[field] || !String(ex[field]).trim()) errors.push(`${exLabel}: missing/empty "${field}"`)
+    }
+  })
+}
+
 console.log(`${all.length} total grammar points (${n5.length} N5 + ${n4.length} N4)`)
 console.log(`${enrichedCount} fully enriched, ${unenriched} not yet enriched`)
+console.log(`${summarized}/${allCategories.length} chapters have a summary`)
 
 if (errors.length) {
   console.log(`\n${errors.length} validation error(s):`)

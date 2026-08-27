@@ -4,6 +4,7 @@ import verbFormsData from "@/data/n5/verb-forms.json"
 import { allGrammar, getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
 import type { GrammarPoint, ToneType, VerbFormsData } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
+import { Furigana } from "@/components/ui/Furigana"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
@@ -304,6 +305,38 @@ export function Grammar() {
                         onClick={() => setSelected(g)}
                       />
                     ))}
+                  </div>
+                )}
+
+                {/* Chapter summary -- only once the full chapter is showing
+                    (no search/verb-form/tone filter narrowing `items` below
+                    the category's real count), since a comparative wrap-up
+                    of the whole chapter reads wrong sitting under a filtered
+                    subset of it. */}
+                {!isCollapsed && c.summary && items.length === c.count && (
+                  <div className="mt-4 border-3 border-structural bg-surface p-4 sm:p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-xs font-black uppercase tracking-widest shrink-0">{t('grammar.chapterSummary.title')}</span>
+                      <div className="flex-1 border-t-2 border-structural" />
+                    </div>
+                    <p className="text-sm leading-relaxed">{localize(c.summary)}</p>
+
+                    {c.summary.examples && c.summary.examples.length > 0 && (
+                      <div className="mt-4">
+                        <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-2">
+                          {t('grammar.chapterSummary.examplesTitle')}
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          {c.summary.examples.map((ex, i) => (
+                            <div key={i} className="bg-paper border-2 border-structural p-3" style={{ borderLeftWidth: '4px', borderLeftColor: ACCENT_HEX[accent] }}>
+                              <div className="text-[10px] font-bold uppercase tracking-wider text-muted mb-1.5">{ex.pattern}</div>
+                              <div className="jp font-bold text-base leading-snug"><Furigana kanji={ex.ja} kana={ex.kana} /></div>
+                              <div className="text-sm text-muted mt-1.5">{localize(ex)}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

@@ -168,7 +168,11 @@
       "neutral": "Trung tính"
     },
     "related": "Ngữ pháp liên quan",
-    "opposing": "Đối lập với"
+    "opposing": "Đối lập với",
+    "chapterSummary": {
+      "title": "Tổng kết chương",
+      "examplesTitle": "Ví dụ so sánh"
+    }
   },
   "verbForms": {
     "subtitle": "Thể động từ — Bảng tra biến đổi động từ",

@@ -4,99 +4,407 @@
       "slug": "noun-copula",
       "romanNumeral": "I",
       "order": 1,
-      "title": { "vi": "Câu khẳng định / phủ định với danh từ (N です)", "en": "Affirmative / negative sentences with nouns (N です)" },
-      "count": 7
+      "title": {
+        "vi": "Câu khẳng định / phủ định với danh từ (N です)",
+        "en": "Affirmative / negative sentences with nouns (N です)"
+      },
+      "count": 7,
+      "summary": {
+        "vi": "Cả chương này xoay quanh một trục duy nhất: です. Học theo cặp đối lập sẽ dễ nhớ hơn học rời rạc -- です (khẳng định) ↔ じゃないです/じゃありません/ではありません (phủ định, ba cách nói cùng nghĩa, khác mức trang trọng) ↔ でした (quá khứ) ↔ じゃなかったです/じゃありませんでした (quá khứ phủ định). も thay thế hoàn toàn は/が/を chứ không cộng thêm vào, còn で là hình thức nối câu của です khi muốn liệt kê hai thông tin (N2 で N3です) chứ không phải trợ từ で chỉ nơi chốn/phương tiện.",
+        "en": "This whole chapter turns on one axis: です. Learning it as opposing pairs sticks better than learning each point in isolation -- です (affirmative) ↔ じゃないです/じゃありません/ではありません (negative, three equally-valid phrasings at different formality levels) ↔ でした (past) ↔ じゃなかったです/じゃありませんでした (past negative). も fully replaces は/が/を rather than stacking with them, and で is です's own linking form for listing two facts (N2 で N3です), not the location/means particle で.",
+        "examples": [
+          {
+            "pattern": "です / じゃないです / でした",
+            "ja": "田中さんは先生です。田中さんは学生じゃないです。去年は学生でした。",
+            "kana": "たなかさんはせんせいです。たなかさんはがくせいじゃないです。きょねんはがくせいでした。",
+            "vi": "Anh Tanaka là giáo viên. Anh Tanaka không phải sinh viên. Năm ngoái (anh ấy) là sinh viên.",
+            "en": "Mr. Tanaka is a teacher. Mr. Tanaka is not a student. Last year he was a student."
+          },
+          {
+            "pattern": "も",
+            "ja": "田中さんは先生です。山田さんも先生です。",
+            "kana": "たなかさんはせんせいです。やまださんもせんせいです。",
+            "vi": "Anh Tanaka là giáo viên. Anh Yamada cũng là giáo viên.",
+            "en": "Mr. Tanaka is a teacher. Mr. Yamada is a teacher too."
+          },
+          {
+            "pattern": "N2でN3です",
+            "ja": "田中さんは先生で、田中さんの奥さんは医者です。",
+            "kana": "たなかさんはせんせいで、たなかさんのおくさんはいしゃです。",
+            "vi": "Anh Tanaka là giáo viên, còn vợ anh Tanaka là bác sĩ.",
+            "en": "Mr. Tanaka is a teacher, and Mr. Tanaka's wife is a doctor."
+          }
+        ]
+      }
     },
     {
       "slug": "no-questions",
       "romanNumeral": "II",
       "order": 2,
-      "title": { "vi": "Trợ từ N の và cách hỏi thông tin", "en": "The particle N の and asking for information" },
-      "count": 7
+      "title": {
+        "vi": "Trợ từ N の và cách hỏi thông tin",
+        "en": "The particle N の and asking for information"
+      },
+      "count": 7,
+      "summary": {
+        "vi": "Nhóm này gồm hai mảng: hỏi giá cả/danh tính bằng いくら/何 ですか, và trợ từ の nối hai danh từ. の linh hoạt hơn は tưởng: 誰の (của ai), 何の (về cái gì/làm từ gì -- lưu ý g_011_2 và g_011_4 cùng dạng 何の nhưng hỏi hai điều khác nhau, phải dựa vào ngữ cảnh), どこの (xuất xứ, khác どこで chỉ địa điểm hành động), và cuối cùng の còn thay thế hẳn cho danh từ đã nhắc ở trên (N1のN2 → N1の, lược N2).",
+        "en": "Two threads run through this chapter: asking price/identity with いくら/何ですか, and の linking two nouns. の does more work than it looks: 誰の (whose), 何の (about what / made of what -- note g_011_2 and g_011_4 share the exact same 何の shape but ask two different things, resolved only by context), どこの (origin/maker, distinct from どこで which marks where an action happens), and finally の can drop the second noun entirely once it's clear from context (N1のN2 → N1の).",
+        "examples": [
+          {
+            "pattern": "何の N2ですか (nội dung) vs どこの N2ですか (xuất xứ)",
+            "ja": "これは何の本ですか。日本語の本です。それはどこの車ですか。日本の車です。",
+            "kana": "これはなんのほんですか。にほんごのほんです。それはどこのくるまですか。にほんのくるまです。",
+            "vi": "Đây là sách về gì? Là sách tiếng Nhật. Đó là xe của nước nào? Là xe Nhật.",
+            "en": "What is this book about? It's a Japanese-language book. Where's that car from? It's a Japanese car."
+          },
+          {
+            "pattern": "N1の (lược N2)",
+            "ja": "A: これは誰のかばんですか。B: 田中さんのです。",
+            "kana": "これはだれのかばんですか。たなかさんのです。",
+            "vi": "A: Đây là cặp của ai? B: Của anh Tanaka.",
+            "en": "A: Whose bag is this? B: It's Mr. Tanaka's."
+          }
+        ]
+      }
     },
     {
       "slug": "sentence-particles",
       "romanNumeral": "III",
       "order": 3,
-      "title": { "vi": "Trợ từ kết thúc câu (sắc thái)", "en": "Sentence-ending particles (nuance)" },
-      "count": 3
+      "title": {
+        "vi": "Trợ từ kết thúc câu (sắc thái)",
+        "en": "Sentence-ending particles (nuance)"
+      },
+      "count": 3,
+      "summary": {
+        "vi": "Ba trợ từ cuối câu này không đổi nghĩa câu mà chỉ thêm sắc thái giao tiếp: よ báo một thông tin MỚI mà người nghe chưa biết; ね giả định người nghe ĐÃ biết, dùng để xác nhận/đồng cảm; よね nằm giữa hai thái cực đó -- vừa cung cấp thông tin vừa xin xác nhận. Dùng よ quá nhiều với người lớn tuổi/cấp trên dễ nghe như đang lên lớp họ.",
+        "en": "These three sentence-final particles don't change the meaning, only the social flavor: よ announces information the listener doesn't already have; ね assumes the listener already shares it, seeking confirmation or agreement; よね sits between the two -- offering new info while also inviting agreement. Overusing よ with someone senior can come across as lecturing them.",
+        "examples": [
+          {
+            "pattern": "よ vs ね vs よね",
+            "ja": "このケーキ、おいしいですよ。（新しい情報）このケーキ、おいしいですね。（同意）このケーキ、おいしいですよね。（情報＋確認）",
+            "kana": "このケーキ、おいしいですよ。このケーキ、おいしいですね。このケーキ、おいしいですよね。",
+            "vi": "Bánh này ngon đấy. (thông tin mới) Bánh này ngon nhỉ. (đồng tình) Bánh này ngon đúng không nhỉ. (vừa nêu vừa xác nhận)",
+            "en": "This cake is tasty, you know. (new info) This cake is tasty, isn't it. (agreement) This cake is tasty, right? (info + seeking agreement)"
+          }
+        ]
+      }
     },
     {
       "slug": "adjectives",
       "romanNumeral": "IV",
       "order": 4,
-      "title": { "vi": "Tính từ (đuôi い và な)", "en": "Adjectives (い and な endings)" },
-      "count": 13
+      "title": {
+        "vi": "Tính từ (đuôi い và な)",
+        "en": "Adjectives (い and な endings)"
+      },
+      "count": 13,
+      "summary": {
+        "vi": "Hai loại tính từ い và な chia hoàn toàn khác nhau, nên luyện theo cặp khẳng định ↔ phủ định ↔ quá khứ cho từng loại riêng biệt thay vì trộn lẫn. Điểm dễ nhầm nhất: tính từ い KHÔNG BAO GIỜ cần です biến đổi (いい→よくない, không phải いくない) và không thêm な trước danh từ; còn tính từ な bắt buộc có な khi đứng trước danh từ nhưng lại giống hệt danh từ khi phủ định/quá khứ. Nối hai tính từ dùng いくて (cho い) hoặc で (cho な), rồi câu ~が~ dùng để nối hai vế tương phản nhẹ, không phải \"nhưng\" mạnh như trong tiếng Việt.",
+        "en": "い- and な-adjectives conjugate in completely different ways, so drill each one's affirmative ↔ negative ↔ past chain separately rather than mixing them. The trickiest trap: い-adjectives never let です itself conjugate (いい becomes よくない, never いくない) and never take な before a noun; な-adjectives require な before a noun but otherwise conjugate exactly like nouns for negative/past. Linking two adjectives uses くて (for い) or で (for な), and the ~が~ clause link is a soft contrast/connector, not a strong \"but\".",
+        "examples": [
+          {
+            "pattern": "Aい (いい bất quy tắc) vs Aな",
+            "ja": "この店は安くて、いいです。あの店は静かで、有名です。",
+            "kana": "このみせはやすくて、いいです。あのみせはしずかで、ゆうめいです。",
+            "vi": "Quán này rẻ, lại tốt. Quán kia yên tĩnh, lại nổi tiếng.",
+            "en": "This shop is cheap and good. That shop is quiet and famous."
+          },
+          {
+            "pattern": "い-quá khứ vs な-quá khứ",
+            "ja": "昨日は天気がよかったです。先週は暇じゃなかったです。",
+            "kana": "きのうはてんきがよかったです。せんしゅうはひまじゃなかったです。",
+            "vi": "Hôm qua thời tiết đẹp. Tuần trước (tôi) không rảnh.",
+            "en": "Yesterday the weather was good. Last week I wasn't free."
+          }
+        ]
+      }
     },
     {
       "slug": "comparison",
       "romanNumeral": "V",
       "order": 5,
-      "title": { "vi": "So sánh", "en": "Comparison" },
-      "count": 3
+      "title": {
+        "vi": "So sánh",
+        "en": "Comparison"
+      },
+      "count": 3,
+      "summary": {
+        "vi": "Ba mẫu so sánh chia theo số lượng đối tượng: hỏi \"nhất\" trong một nhóm dùng で...一番...ですか; so sánh hai thứ dùng どっち/どちら (どちら lịch sự hơn); còn より đánh dấu MỐC để so sánh (\"so với\") chứ không phải \"từ\" như nghĩa gốc hay gây nhầm.",
+        "en": "Three comparison patterns split by how many things you're comparing: superlative-within-a-group uses で...一番...ですか; comparing exactly two things uses どっち/どちら (どちら being the more polite of the pair); より marks the standard being compared against (\"compared to\"), a false-friend trap since it looks like it should mean \"from\".",
+        "examples": [
+          {
+            "pattern": "どっち/どちら vs より",
+            "ja": "コーヒーとお茶(と)、どちらが好きですか。コーヒーのほうがお茶より好きです。",
+            "kana": "コーヒーとおちゃ(と)、どちらがすきですか。コーヒーのほうがおちゃよりすきです。",
+            "vi": "Cà phê và trà, bạn thích cái nào hơn? Tôi thích cà phê hơn trà.",
+            "en": "Coffee or tea, which do you like better? I like coffee more than tea."
+          },
+          {
+            "pattern": "で...一番...ですか",
+            "ja": "家族の中で誰が一番背が高いですか。父が一番背が高いです。",
+            "kana": "かぞくのなかでだれがいちばんせがたかいですか。ちちがいちばんせがたかいです。",
+            "vi": "Trong gia đình, ai cao nhất? Bố là người cao nhất.",
+            "en": "Who is the tallest in the family? My father is the tallest."
+          }
+        ]
+      }
     },
     {
       "slug": "plain-form",
       "romanNumeral": "VI",
       "order": 6,
-      "title": { "vi": "Thể thường (Plain form) của danh từ và tính từ", "en": "Plain form of nouns and adjectives" },
-      "count": 12
+      "title": {
+        "vi": "Thể thường (Plain form) của danh từ và tính từ",
+        "en": "Plain form of nouns and adjectives"
+      },
+      "count": 12,
+      "summary": {
+        "vi": "Cả danh từ và tính từ đều có \"bản rút gọn\" khi nói chuyện thân mật: だ thay cho です (nhưng bị LƯỢC HẲN, không chỉ đổi dạng, trước な và の), và câu hỏi thể thường thì KHÔNG BAO GIỜ thêm か -- chỉ lên giọng cuối câu. だった là quá khứ chung cho cả だ lẫn です/でした; じゃなかった tương tự cho phủ định quá khứ. けど là bản thân mật của が, dùng để nối câu mềm mại giống hệt.",
+        "en": "Both nouns and adjectives get a casual \"plain\" register: だ replaces です (but is dropped entirely, not just informalized, before な and の), and a plain-form question NEVER adds か -- rising intonation alone does the job. だった is the shared past for both だ and です/でした; じゃなかった mirrors it for the past negative. けど is casual が, softening/connecting clauses exactly the same way.",
+        "examples": [
+          {
+            "pattern": "だ / だった / じゃない？ (thể thường)",
+            "ja": "田中さんは学生？　ううん、学生じゃない。前は学生だった。",
+            "kana": "たなかさんはがくせい？　ううん、がくせいじゃない。まえはがくせいだった。",
+            "vi": "Tanaka là sinh viên à? Không, không phải sinh viên. Trước đây từng là sinh viên.",
+            "en": "Is Tanaka a student? No, not a student. Used to be a student though."
+          },
+          {
+            "pattern": "けど",
+            "ja": "このケーキ、安いけど、おいしいよ。",
+            "kana": "このケーキ、やすいけど、おいしいよ。",
+            "vi": "Bánh này rẻ nhưng ngon đấy.",
+            "en": "This cake is cheap, but it's tasty."
+          }
+        ]
+      }
     },
     {
       "slug": "existence",
       "romanNumeral": "VII",
       "order": 7,
-      "title": { "vi": "Sự tồn tại: あります・います", "en": "Existence: あります・います" },
-      "count": 9
+      "title": {
+        "vi": "Sự tồn tại: あります・います",
+        "en": "Existence: あります・います"
+      },
+      "count": 9,
+      "summary": {
+        "vi": "Quy tắc gốc: あります cho vật vô tri, います cho người/động vật -- không bao giờ lẫn. Trên nền đó, mỗi động từ còn có hai cách sắp xếp câu tùy điều gì là thông tin MỚI: N1(vật/người)は N2(nơi)です/にあります/にいます khi nơi chốn là thông tin mới, và N1(nơi)に N2(vật/người)があります/がいます khi bản thân sự vật/sự việc là thông tin mới. には nhấn mạnh tương phản, にも nghĩa \"ở đây cũng có\".",
+        "en": "The base rule: あります for inanimate things, います for people/animals -- never mixed. On top of that, each verb has two sentence layouts depending on what counts as new information: N1(thing/person)は N2(place)です/にあります/にいます when the location is the new fact, versus N1(place)に N2(thing/person)があります/がいます when the thing itself is the new fact. には adds contrast, にも means \"here too\".",
+        "examples": [
+          {
+            "pattern": "は...にあります vs に...があります",
+            "ja": "本は机の上にあります。机の上に本があります。",
+            "kana": "ほんはつくえのうえにあります。つくえのうえにほんがあります。",
+            "vi": "Sách ở trên bàn. Trên bàn có sách.",
+            "en": "The book is on the desk. There's a book on the desk."
+          },
+          {
+            "pattern": "あります vs います",
+            "ja": "机の上に猫がいます。机の下に本があります。",
+            "kana": "つくえのうえにねこがいます。つくえのしたにほんがあります。",
+            "vi": "Trên bàn có con mèo. Dưới bàn có quyển sách.",
+            "en": "There's a cat on the desk. There's a book under the desk."
+          }
+        ]
+      }
     },
     {
       "slug": "masu-form",
       "romanNumeral": "VIII",
       "order": 8,
-      "title": { "vi": "Động từ thể ます — thời gian, mục đích, tần suất", "en": "The ます verb form — time, purpose, frequency" },
-      "count": 21
+      "title": {
+        "vi": "Động từ thể ます — thời gian, mục đích, tần suất",
+        "en": "The ます verb form — time, purpose, frequency"
+      },
+      "count": 21,
+      "summary": {
+        "vi": "Chương dài nhất N5, gom nhiều trợ từ nhỏ quanh động từ thể ます. Mốc thời gian dùng に (giờ, ngày cụ thể) nhưng KHÔNG BAO GIỜ gắn に vào một khoảng thời gian kéo dài (~時間/~分); で đánh dấu nơi diễn ra hành động (khác với に chỉ nơi tồn tại ở chương trước); を dùng cho đối tượng bị tác động HOẶC không gian đi qua; と cần một người cùng làm (tương hỗ). へ/に sau đích đến gần như thay nhau được, riêng 来る luôn hướng \"về đây\" còn 行く luôn hướng \"rời khỏi đây\". と／や／とか khác nhau ở tính đầy đủ: と liệt kê trọn vẹn, や/とか ngụ ý \"còn nữa\".",
+        "en": "N5's longest chapter, gathering many small particles around the ます-form verb. に marks a fixed time point (never attach it to a duration like ~時間/~分); で marks where an action happens (distinct from に marking where something exists, from the previous chapter); を marks either the object acted on or the space traversed; と requires a mutual partner. へ and に after a destination are nearly interchangeable, while 来る is always \"toward here\" and 行く is always \"away from here\". と／や／とか differ in completeness: と lists an exhaustive set, や/とか imply \"and more\".",
+        "examples": [
+          {
+            "pattern": "でV vs にV vs をV",
+            "ja": "図書館で本を読みます。７時に起きます。毎朝公園を走ります。",
+            "kana": "としょかんでほんをよみます。しちじにおきます。まいあさこうえんをはしります。",
+            "vi": "Tôi đọc sách ở thư viện. Tôi thức dậy lúc 7 giờ. Sáng nào tôi cũng chạy qua công viên.",
+            "en": "I read a book at the library. I get up at 7 o'clock. Every morning I run through the park."
+          },
+          {
+            "pattern": "とかN2(とか) vs とN2",
+            "ja": "パンとコーヒーを買いました。（この二つだけ）パンとかコーヒーとかを買いました。（他にも何か買った）",
+            "kana": "パンとコーヒーをかいました。パンとかコーヒーとかをかいました。",
+            "vi": "Tôi đã mua bánh mì và cà phê. (chỉ hai thứ này) Tôi đã mua nào là bánh mì, nào là cà phê. (và có thể còn thứ khác nữa)",
+            "en": "I bought bread and coffee. (exactly these two) I bought things like bread and coffee. (and possibly more)"
+          }
+        ]
+      }
     },
     {
       "slug": "potential-verbs",
       "romanNumeral": "IX",
       "order": 9,
-      "title": { "vi": "Động từ khả năng, phương tiện, sở thích, so sánh", "en": "Potential verbs, means, preference, comparison" },
-      "count": 9
+      "title": {
+        "vi": "Động từ khả năng, phương tiện, sở thích, so sánh",
+        "en": "Potential verbs, means, preference, comparison"
+      },
+      "count": 9,
+      "summary": {
+        "vi": "Động từ khả năng chia theo nhóm (nhóm 1 → hàng え, nhóm 2 → bỏ る thêm られます, nhóm 3 bất quy tắc: する→できる), và điểm mấu chốt là trợ từ を đổi thành が khi câu ở thể khả năng. Cùng gốc \"khả năng\" đó mở rộng ra so sánh giỏi/kém: 上手/下手 (kỹ năng khách quan) khác 得意/苦手 (tự tin/sở thích cá nhân) dù cả hai đều đi với が chứ không phải を vì bản chất là tính từ đuôi な, không phải động từ.",
+        "en": "Potential verbs conjugate by group (Group 1 → え-row, Group 2 → drop る + られます, Group 3 irregular: する→できる), and the key shift is を becoming が in a potential sentence. The same \"ability\" root extends into skill comparisons: 上手/下手 (objective skill) versus 得意/苦手 (personal confidence/liking) -- both take が rather than を because they're na-adjectives, not verbs.",
+        "examples": [
+          {
+            "pattern": "が + động từ khả năng vs が + 上手/下手",
+            "ja": "田中さんは日本語が話せます。田中さんは料理が上手です。",
+            "kana": "たなかさんはにほんごがはなせます。たなかさんはりょうりがじょうずです。",
+            "vi": "Anh Tanaka có thể nói tiếng Nhật. Anh Tanaka nấu ăn giỏi.",
+            "en": "Mr. Tanaka can speak Japanese. Mr. Tanaka is good at cooking."
+          }
+        ]
+      }
     },
     {
       "slug": "verb-forms-basic",
       "romanNumeral": "X",
       "order": 10,
-      "title": { "vi": "Thể từ điển, thể ない, thể た", "en": "Dictionary form, ない form, た form" },
-      "count": 11
+      "title": {
+        "vi": "Thể từ điển, thể ない, thể た",
+        "en": "Dictionary form, ない form, た form"
+      },
+      "count": 11,
+      "summary": {
+        "vi": "Ba \"trụ cột\" hình thái động từ: thể từ điển (thể thường của ます, cũng là câu hỏi khi lên giọng, không thêm か), thể ない (phủ định thể thường), và thể た (quá khứ thể thường, cùng quy tắc biến âm với thể て). Động từ khả năng cũng có đủ ba thể này. こと biến cả cụm động từ thành danh từ (Vること/Vることができる) -- rộng hơn nhiều so với chỉ danh từ hóa một từ.",
+        "en": "Three \"pillar\" verb forms: the dictionary form (plain form of ます, also doubling as a question with rising intonation, never adding か), the ない-form (plain negative), and the た-form (plain past, using the same sound-change rules as the て-form). Potential verbs get all three forms too. こと turns an entire verb phrase into a noun (Vること/Vることができる) -- much broader than nominalizing a single word.",
+        "examples": [
+          {
+            "pattern": "Vる / Vない / Vた",
+            "ja": "毎日日本語を勉強する。今日は勉強しない。昨日は勉強した。",
+            "kana": "まいにちにほんごをべんきょうする。きょうはべんきょうしない。きのうはべんきょうした。",
+            "vi": "Ngày nào (tôi) cũng học tiếng Nhật. Hôm nay không học. Hôm qua đã học.",
+            "en": "I study Japanese every day. Today I'm not studying. Yesterday I studied."
+          },
+          {
+            "pattern": "Vること (danh từ hóa) vs Vることができる (khả năng)",
+            "ja": "泳ぐことが好きです。漢字を読むことができます。",
+            "kana": "およぐことがすきです。かんじをよむことができます。",
+            "vi": "Tôi thích bơi. Tôi có thể đọc chữ Hán.",
+            "en": "I like swimming. I can read kanji."
+          }
+        ]
+      }
     },
     {
       "slug": "sequence-conditional",
       "romanNumeral": "XI",
       "order": 11,
-      "title": { "vi": "Trình tự hành động, điều kiện, kinh nghiệm", "en": "Sequence of actions, conditionals, experience" },
-      "count": 14
+      "title": {
+        "vi": "Trình tự hành động, điều kiện, kinh nghiệm",
+        "en": "Sequence of actions, conditionals, experience"
+      },
+      "count": 14,
+      "summary": {
+        "vi": "Chương dày nhất và cũng khó nhất N5: bốn cách nói \"nếu/khi\" (たら／と／ば／なら) nghe gần giống nhau nhưng khác sắc thái -- たら luôn là một sự việc cụ thể, một lần; ば là điều kiện logic chung, KHÔNG được theo sau bằng mệnh lệnh/rủ rê; なら phản hồi lại điều đối phương vừa nói, khác ba thể kia ở chỗ không cần một câu nói trước đó. なければ/なきゃ chỉ là ば gắn vào phủ định, rồi rút gọn dần thành なきゃ(いけない) trong văn nói -- không phải quy tắc riêng.",
+        "en": "N5's densest and trickiest chapter: four ways to say \"if/when\" (たら／と／ば／なら) sound similar but carry different feels -- たら always marks a specific, one-time event; ば is a general logical condition that CANNOT be followed by a command/invitation; なら reacts to something the other person just said, unlike the other three which don't need a prior statement. なければ/なきゃ is just ば attached to the negative, progressively contracted into なきゃ(いけない) in speech -- not a separate rule.",
+        "examples": [
+          {
+            "pattern": "たら vs ば vs なら",
+            "ja": "安かったら、買います。（一回の状況）安ければ、買います。（一般論）安いなら、買います。（相手の話を受けて）",
+            "kana": "やすかったら、かいます。やすければ、かいます。やすいなら、かいます。",
+            "vi": "Nếu rẻ thì tôi mua. (một tình huống cụ thể) Nếu rẻ thì (nói chung) tôi mua. (Vậy nếu nói) rẻ thì tôi mua. (đáp lại lời vừa nghe)",
+            "en": "If it's cheap (this time), I'll buy it. If it's cheap (generally), I'll buy it. If it's cheap (as you just said), then I'll buy it."
+          },
+          {
+            "pattern": "なければなりません → なきゃ",
+            "ja": "明日までにレポートを書かなければなりません。書かなきゃ。",
+            "kana": "あしたまでにレポートをかかなければなりません。かかなきゃ。",
+            "vi": "Phải viết báo cáo xong trước ngày mai. Phải viết thôi.",
+            "en": "I have to finish writing the report by tomorrow. Gotta write it."
+          }
+        ]
+      }
     },
     {
       "slug": "te-form",
       "romanNumeral": "XII",
       "order": 12,
-      "title": { "vi": "Thể て — nối tiếp, đang diễn ra, xin phép, nhờ vả", "en": "The て form — sequencing, ongoing action, asking permission, requests" },
-      "count": 16
+      "title": {
+        "vi": "Thể て — nối tiếp, đang diễn ra, xin phép, nhờ vả",
+        "en": "The て form — sequencing, ongoing action, asking permission, requests"
+      },
+      "count": 16,
+      "summary": {
+        "vi": "Thể て là bản lề của cả N5: dùng để nối chuỗi hành động (chỉ động từ CUỐI mang thì/lịch sự), rồi mở ra bốn nghĩa của ている (đang diễn ra trước mắt / thói quen lặp lại / trạng thái do kết quả một thay đổi / duy trì lâu dài) phân biệt bằng ngữ cảnh và từ chỉ tần suất chứ không phải bằng hình thức câu. Từ てform còn rẽ ra xin phép (てもいいですか, lịch sự hơn có だいじょうぶですか/かまわないですか) và nhờ vả (てください mang tính chỉ thị hơn là てくれますか/てくれませんか nhẹ nhàng, lịch sự tăng dần).",
+        "en": "The て-form is N5's hinge: it chains actions (only the LAST verb carries tense/politeness), then branches into ている's four senses (in-progress right now / repeated habit / resultant state from a change / long-maintained state), told apart by context and frequency words rather than by form. It also branches into asking permission (てもいいですか, with more polite だいじょうぶですか/かまわないですか alternatives) and making requests (てください reads more like an instruction, while てくれますか/てくれませんか is a softer, increasingly polite ask).",
+        "examples": [
+          {
+            "pattern": "ている: đang diễn ra vs thói quen vs trạng thái",
+            "ja": "今、ご飯を食べています。（進行）毎朝走っています。（習慣）結婚しています。（状態）",
+            "kana": "いま、ごはんをたべています。まいあさはしっています。けっこんしています。",
+            "vi": "Bây giờ (tôi) đang ăn cơm. (đang diễn ra) Sáng nào (tôi) cũng chạy bộ. (thói quen) (Tôi) đã lập gia đình. (trạng thái)",
+            "en": "I'm eating right now. (in progress) I run every morning. (habit) I'm married. (state)"
+          },
+          {
+            "pattern": "てもいいですか vs てください vs てくれませんか",
+            "ja": "窓を開けてもいいですか。窓を開けてください。窓を開けてくれませんか。",
+            "kana": "まどをあけてもいいですか。まどをあけてください。まどをあけてくれませんか。",
+            "vi": "Tôi mở cửa sổ được không? Hãy mở cửa sổ. Bạn mở cửa sổ giúp tôi được không?",
+            "en": "Is it okay if I open the window? Please open the window. Could you open the window for me?"
+          }
+        ]
+      }
     },
     {
       "slug": "giving-receiving",
       "romanNumeral": "XIII",
       "order": 13,
-      "title": { "vi": "Cho và nhận (あげる・くれる)", "en": "Giving and receiving (あげる・くれる)" },
-      "count": 5
+      "title": {
+        "vi": "Cho và nhận (あげる・くれる)",
+        "en": "Giving and receiving (あげる・くれる)"
+      },
+      "count": 5,
+      "summary": {
+        "vi": "Chỉ hai động từ あげる/くれる nhưng góc nhìn khác hẳn nhau: くれる bắt buộc N1 cho VỀ PHÍA NGƯỜI NÓI (hoặc người trong nhóm mình), còn あげる không bao giờ dùng khi ai đó cho người nói -- lúc đó luôn phải là くれる. Gắn てvào (てくれる/てあげる) thì thêm sắc thái làm ơn: てくれる luôn hàm ý biết ơn, てあげる nói trực tiếp với người được giúp dễ nghe bề trên ban ơn nên cần cẩn trọng.",
+        "en": "Just two verbs, あげる/くれる, but with opposite viewpoints: くれる requires N1 to give TOWARD THE SPEAKER (or their in-group); あげる is never used when someone gives to the speaker -- that's always くれる. Attaching て (てくれる/てあげる) adds a favor nuance: てくれる always implies gratitude, while てあげる said directly to the person helped can sound condescending, so it needs care.",
+        "examples": [
+          {
+            "pattern": "くれる (hướng về người nói) vs あげる (hướng ra ngoài)",
+            "ja": "田中さんが私に本をくれました。私は田中さんに本をあげました。",
+            "kana": "たなかさんがわたしにほんをくれました。わたしはたなかさんにほんをあげました。",
+            "vi": "Anh Tanaka đã cho tôi quyển sách. Tôi đã tặng anh Tanaka quyển sách.",
+            "en": "Mr. Tanaka gave me a book. I gave Mr. Tanaka a book."
+          }
+        ]
+      }
     },
     {
       "slug": "special-particles",
       "romanNumeral": "XIV",
       "order": 14,
-      "title": { "vi": "Trợ từ đặc biệt và danh từ hóa", "en": "Special particles and nominalization" },
-      "count": 5
+      "title": {
+        "vi": "Trợ từ đặc biệt và danh từ hóa",
+        "en": "Special particles and nominalization"
+      },
+      "count": 5,
+      "summary": {
+        "vi": "しか luôn cần động từ phủ định theo sau và luôn mang cảm giác \"không đủ\"; だけ trung tính, dùng được cả với câu khẳng định -- cùng nghĩa \"chỉ\" nhưng khác thái độ. Khi は thay thế を/が để làm chủ đề, nó thường mang ý đối lập ngầm (\"riêng cái này thì...\"), và N1は~が、N2は~ chính là phiên bản viết rõ ràng, đầy đủ hai vế của sắc thái đối lập đó. さ biến tính từ thành danh từ chỉ mức độ khách quan, đo lường được (高い→高さ).",
+        "en": "しか always requires a negative verb and always carries a \"not enough\" feel; だけ is neutral and works with affirmative sentences too -- both mean \"only\" but with different attitudes. When は replaces を/が as the topic, it usually carries an implicit contrast (\"this one, at least...\"), and N1は~が、N2は~ is the fully spelled-out, two-clause version of that same contrastive nuance. さ turns an adjective into a noun naming an objective, measurable degree (高い→高さ).",
+        "examples": [
+          {
+            "pattern": "しか vs だけ",
+            "ja": "千円しかありません。千円だけあります。",
+            "kana": "せんえんしかありません。せんえんだけあります。",
+            "vi": "Tôi chỉ có 1000 yên (thôi, không đủ). Tôi có đúng 1000 yên.",
+            "en": "I only have 1000 yen (and it's not enough). I have exactly 1000 yen."
+          },
+          {
+            "pattern": "は đối lập (thay を/が)",
+            "ja": "肉は食べますが、魚は食べません。",
+            "kana": "にくはたべますが、さかなはたべません。",
+            "vi": "Thịt thì tôi ăn, nhưng cá thì không ăn.",
+            "en": "I do eat meat, but I don't eat fish."
+          }
+        ]
+      }
     }
   ],
   "tips": [

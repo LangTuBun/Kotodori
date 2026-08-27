@@ -36,7 +36,9 @@ export function NotesAndTrapsCallout({ pitfalls, onJumpTo, patternById }: NotesA
                 {critical ? '⚠ ' : ''}{t(`grammar.notes.type.${p.type}`)}
               </span>
             </div>
-            <div className="font-black text-sm mb-1.5 leading-snug">{p.title}</div>
+            <div className="font-black text-sm mb-1.5 leading-snug">
+              <LinkifiedText text={localize(p.title)} patternById={patternById ?? {}} onJumpTo={onJumpTo} />
+            </div>
             <div className={`text-sm leading-relaxed ${critical ? 'text-paper/85' : 'text-ink/80'}`}>
               <LinkifiedText text={localize(p.description)} patternById={patternById ?? {}} onJumpTo={onJumpTo} />
             </div>

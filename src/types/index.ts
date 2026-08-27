@@ -53,7 +53,7 @@ export interface Pragmatics {
 
 export interface GrammarPitfall {
   type: 'false_friend' | 'common_mistake' | 'nuance_trap'
-  title: string
+  title: { vi: string; en: string }
   description: { vi: string; en: string }
   examples?: {
     incorrect: string
@@ -107,12 +107,38 @@ export interface GrammarPoint {
 // same shape as GrammarPoint, since the new fields live on it directly.
 export type EnhancedGrammarPoint = GrammarPoint
 
+// A single comparative example inside a chapter summary -- `pattern` names
+// which grammar point in the chapter it illustrates (its `pattern` string or
+// num, e.g. "たら" or "g_081"), not a jump-link id, since the summary is
+// prose, not a UI cross-reference. No `jaRuby`: unlike richExamples[], this
+// is new, hand-authored content with no existing pipeline to validate a
+// ruby's structural correctness against `ja` (see handoff.md's jaRuby
+// gotcha) -- render via <Furigana kanji={ja} kana={kana} /> instead, which
+// aligns at render time from plain kana.
+export interface GrammarSummaryExample {
+  pattern: string
+  ja: string
+  kana: string
+  vi: string
+  en: string
+}
+
+export interface GrammarChapterSummary {
+  vi: string
+  en: string
+  examples?: GrammarSummaryExample[]
+}
+
 export interface GrammarCategory {
   slug: string
   romanNumeral: string
   order: number
   title: { vi: string; en: string }
   count: number
+  // Comparative wrap-up for the chapter -- contrasts the points within it
+  // side by side. Optional: absent on a category not yet authored (schema
+  // added incrementally, same pattern as GrammarPoint's V2 fields).
+  summary?: GrammarChapterSummary
 }
 
 export interface VerbGroupSample {
