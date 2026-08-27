@@ -18,8 +18,6 @@ function currentLevelVocab() {
 
 interface VocabStore {
   cards: Record<string, SRSCard>
-  streak: number
-  lastStudyDate: string | null
   totalReviewed: number
 
   getCard: (vocabId: string) => SRSCard
@@ -29,7 +27,6 @@ interface VocabStore {
   getNewCardsFor: (ids: string[], limit?: number) => SRSCard[]
   getScheduledCardsFor: (ids: string[]) => SRSCard[]
   reviewCard: (vocabId: string, cardType: string, rating: number) => void
-  updateStreak: () => void
   getStats: () => { total: number; new: number; learning: number; review: number; mastered: number }
 }
 
@@ -52,8 +49,6 @@ export const useVocabStore = create<VocabStore>()(
   persist(
     (set, get) => ({
       cards: {},
-      streak: 0,
-      lastStudyDate: null,
       totalReviewed: 0,
 
       getCard: (vocabId) => {
@@ -95,16 +90,6 @@ export const useVocabStore = create<VocabStore>()(
           cards: { ...state.cards, [vocabId]: updated },
           totalReviewed: state.totalReviewed + 1,
         }))
-      },
-
-      updateStreak: () => {
-        const today = new Date().toDateString()
-        const { lastStudyDate, streak } = get()
-        if (lastStudyDate === today) return
-        const yesterday = new Date()
-        yesterday.setDate(yesterday.getDate() - 1)
-        const newStreak = lastStudyDate === yesterday.toDateString() ? streak + 1 : 1
-        set({ streak: newStreak, lastStudyDate: today })
       },
 
       getStats: () => {

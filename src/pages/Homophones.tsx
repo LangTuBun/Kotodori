@@ -11,28 +11,82 @@ import { Watermark } from "@/components/ui/ScreenHeader"
 
 const kanjiChapters = kanjiData.chapters as KanjiChapter[]
 
+// Vowel each hiragana mora ends on, keyed by the mora's own kana (used to
+// expand the katakana long-vowel mark ー below).
+const MORA_VOWEL: Record<string, string> = {
+  あ: 'あ', か: 'あ', さ: 'あ', た: 'あ', な: 'あ', は: 'あ', ま: 'あ', や: 'あ', ら: 'あ', わ: 'あ',
+  が: 'あ', ざ: 'あ', だ: 'あ', ば: 'あ', ぱ: 'あ', ゃ: 'あ',
+  い: 'い', き: 'い', し: 'い', ち: 'い', に: 'い', ひ: 'い', み: 'い', り: 'い', ゐ: 'い',
+  ぎ: 'い', じ: 'い', ぢ: 'い', び: 'い', ぴ: 'い',
+  う: 'う', く: 'う', す: 'う', つ: 'う', ぬ: 'う', ふ: 'う', む: 'う', ゆ: 'う', る: 'う', ゔ: 'う',
+  ぐ: 'う', ず: 'う', づ: 'う', ぶ: 'う', ぷ: 'う', ゅ: 'う',
+  え: 'え', け: 'え', せ: 'え', て: 'え', ね: 'え', へ: 'え', め: 'え', れ: 'え', ゑ: 'え',
+  げ: 'え', ぜ: 'え', で: 'え', べ: 'え', ぺ: 'え',
+  お: 'お', こ: 'お', そ: 'お', と: 'お', の: 'お', ほ: 'お', も: 'お', よ: 'お', ろ: 'お', を: 'お',
+  ご: 'お', ぞ: 'お', ど: 'お', ぼ: 'お', ぽ: 'お', ょ: 'お',
+}
+
+// Words whose kana genuinely contains a doubled vowel as two separate
+// morphemes (いい+え, 言(い)+い+ます), not a stylistic long-vowel spelling of
+// one syllable (ええっ ~ えっ, ん ~ ううん) -- collapsing these specific two
+// would falsely merge いいえ ("no") onto 家 ("house", read いえ) and 言います
+// ("say") onto います ("to be/exist"). Found by diffing computeGroups()'s
+// output with the collapse on vs. off and checking every group the collapse
+// alone produced.
+const DOUBLED_VOWEL_COLLAPSE_EXCEPTIONS = new Set(['いいえ', 'いいます'])
+
 // Normalize kana for similarity matching:
 // 1. Katakana → hiragana
 // 2. Same-pronunciation subs (ぢ→じ, づ→ず)
-// 3. Remove long vowel mark ー
+// 3. Expand the long vowel mark ー to the vowel it elongates (コーヒー →
+//    こおひい), rather than dropping it. Dropping it used to collapse
+//    unrelated loanwords onto short native words that merely share a
+//    prefix -- ステーキ ("suteeki") lost its ー entirely and normalized to
+//    すてき, colliding with 素敵 (a real, unrelated word) -- so every
+//    loanword ending in a vowel mark was silently falsely paired with
+//    whatever short word happened to share its first mora.
 // 4. Collapse doubled VOWEL kana only (long-vowel spelling variants, e.g.
-//    ええっ ~ えっ). Deliberately does NOT fold おう→おお or えい→ええ —
-//    that used to fold accidental cross-boundary runs together (e.g. the
-//    え|い seam inside いえ+いえ collapsed it onto 家/いいえ, which is wrong:
-//    いえいえ is a different word, not a reading variant of いえ). N5
-//    dictionary kana already spell long vowels consistently, so there's no
-//    real variant-spelling collision for that substitution to catch.
+//    ええっ ~ えっ, ううん ~ うん). Deliberately does NOT fold おう→おお or
+//    えい→ええ — N5/N4 dictionary kana already spell long vowels
+//    consistently, so there's no real variant-spelling collision for that
+//    substitution to catch, and folding those seams merges unrelated words
+//    that merely straddle a vowel boundary. See the exceptions set above for
+//    the two words this general collapse still gets wrong.
 function normalizeReading(kana: string): string {
   let s = ''
   for (const c of kana) {
     const code = c.charCodeAt(0)
     if (code >= 0x30A1 && code <= 0x30F6) s += String.fromCharCode(code - 0x60)
-    else if (c === 'ー') { /* long vowel mark: elongated and short read the same */ }
-    else s += c
+    else if (c === 'ー') {
+      const vowel = MORA_VOWEL[s[s.length - 1]]
+      if (vowel) s += vowel
+    } else s += c
   }
   s = s.replace(/ぢ/g, 'じ').replace(/づ/g, 'ず')
-  s = s.replace(/([あいうえお])\1+/g, '$1')
+  if (!DOUBLED_VOWEL_COLLAPSE_EXCEPTIONS.has(s)) s = s.replace(/([あいうえお])\1+/g, '$1')
   return s
+}
+
+// Pairs that collapse to the same normalized reading but are the same word
+// spelled two ways (kanji vs. an alternate kana/mixed spelling), not two
+// distinct words that happen to sound alike -- grouping them as "homophones"
+// would be misleading. Keyed by the pair's kanji fields, found by manually
+// auditing computeGroups()'s full output.
+const SPELLING_VARIANTS: [string, string][] = [
+  ['子供', '子ども'],
+  ['もの', '物'],
+  ['朝ご飯', '朝ごはん'],
+  ['石けん', '石鹸'],
+  ['牛どん', '牛丼'],
+  ['できる', '出来る'],
+  ['嘘', 'うそ'],
+  ['恥ずかしい', 'はずかしい'],
+  ['故郷', 'ふるさと'],
+  ['色々', 'いろいろ'],
+]
+const SPELLING_VARIANT_KEYS = new Set(SPELLING_VARIANTS.map(([a, b]) => [a, b].sort().join('|')))
+function isSpellingVariantPair(a: string, b: string): boolean {
+  return SPELLING_VARIANT_KEYS.has([a, b].sort().join('|'))
 }
 
 // Two entries are the "same word" (not a homophone pair) if they differ only
@@ -130,7 +184,13 @@ function computeGroups(level: Level): SoundGroup[] {
       const core = coreKanji(v.kanji) || v.kana
       if (!byCore.has(core)) byCore.set(core, v)
     }
-    const entries = [...byCore.values()]
+    // Further merge known spelling-variant pairs (できる/出来る, 子供/子ども...)
+    // — same word, two scripts, not two homophones.
+    const entries: VocabEntry[] = []
+    for (const v of byCore.values()) {
+      const isDupe = entries.some(e => isSpellingVariantPair(coreKanji(e.kanji) || e.kana, coreKanji(v.kanji) || v.kana))
+      if (!isDupe) entries.push(v)
+    }
     if (entries.length < 2) continue
     const readings = Array.from(new Set(entries.map(e => e.kana)))
     result.push({

@@ -41,25 +41,17 @@
     "settings": "Settings"
   },
   "sidebar": {
-    "dayStreak": "Day streak",
     "cardsDueNow": "cards due now"
   },
   "dashboard": {
     "subtitle": "{level} study log",
-    "streakLabel": "Streak",
-    "streakSuffix": " days",
-    "totalWordsLabel": "Total Words",
-    "masteredLabel": "Mastered",
-    "reviewedLabel": "Reviewed",
     "cardsDue": "Cards Due",
     "reviewNow": "Review Now",
     "allDone": "No cards due",
     "newWords": "New Words",
     "learnNew": "Learn New",
     "grammarPoints": "Grammar Points",
-    "studyGrammar": "Study Grammar",
-    "progress": "{level} Progress",
-    "masteredCount": "{mastered} / {total} mastered"
+    "studyGrammar": "Study Grammar"
   },
   "review": {
     "title": "Review",
@@ -92,7 +84,7 @@
     "wordsReviewed": "words reviewed",
     "kanjiReviewed": "kanji reviewed",
     "continueReview": "Continue",
-    "dashboardBtn": "Dashboard",
+    "homeBtn": "Home",
     "rating": {
       "again": "Again",
       "hard": "Hard",

@@ -41,25 +41,17 @@
     "settings": "Cài đặt"
   },
   "sidebar": {
-    "dayStreak": "Chuỗi ngày",
     "cardsDueNow": "thẻ đến hạn"
   },
   "dashboard": {
     "subtitle": "Nhật trình học {level}",
-    "streakLabel": "Chuỗi ngày",
-    "streakSuffix": " ngày",
-    "totalWordsLabel": "Tổng số từ",
-    "masteredLabel": "Đã thuộc",
-    "reviewedLabel": "Đã ôn",
     "cardsDue": "Thẻ đến hạn",
     "reviewNow": "Ôn ngay",
     "allDone": "Không có thẻ đến hạn",
     "newWords": "Từ mới",
     "learnNew": "Học từ mới",
     "grammarPoints": "Mẫu ngữ pháp",
-    "studyGrammar": "Học ngữ pháp",
-    "progress": "Tiến độ {level}",
-    "masteredCount": "{mastered} / {total} đã thuộc"
+    "studyGrammar": "Học ngữ pháp"
   },
   "review": {
     "title": "Ôn tập",
@@ -92,7 +84,7 @@
     "wordsReviewed": "từ đã ôn",
     "kanjiReviewed": "chữ Hán đã ôn",
     "continueReview": "Ôn tiếp",
-    "dashboardBtn": "Trang chủ",
+    "homeBtn": "Trang chủ",
     "rating": {
       "again": "Lại",
       "hard": "Khó",

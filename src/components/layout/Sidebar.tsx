@@ -8,7 +8,7 @@ import { InkCabinet } from "@/components/ui/InkCabinet"
 import { useTranslation } from "@/lib/useTranslation"
 
 const nav = [
-  { to: "/dashboard",  label: "ホーム",     kana: "ホーム",         key: "home" },
+  { to: "/",           label: "ホーム",     kana: "ホーム",         key: "home" },
   { to: "/vocab",      label: "単語",       kana: "たんご",         key: "vocabulary" },
   { to: "/review",     label: "復習",       kana: "ふくしゅう",      key: "review" },
   { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        key: "grammar" },
@@ -26,7 +26,7 @@ interface SidebarProps {
 }
 
 export function Sidebar({ open, onClose }: SidebarProps) {
-  const { streak, getStats } = useVocabStore()
+  const { getStats } = useVocabStore()
   // getStats()/getDueCards() read the current level internally
   // (vocab-store.ts's currentLevelVocab()), but that's a plain read, not a
   // subscription -- without subscribing to `level` here too, Sidebar never
@@ -99,14 +99,6 @@ export function Sidebar({ open, onClose }: SidebarProps) {
         <InkCabinet compact />
       </div>
 
-      {/* Streak */}
-      <div className="border-b-3 border-structural p-4 flex items-center gap-3 bg-yellow tilt-card">
-        <div>
-          <div className="font-display text-xl">{streak}</div>
-          <div className="font-mono text-xs font-bold uppercase tracking-wider">{t('sidebar.dayStreak')}</div>
-        </div>
-      </div>
-
       {/* Due alert */}
       {due > 0 && (
         <div className="border-b-3 border-structural p-3 bg-accent text-accent-fg flex items-center gap-2">
@@ -121,7 +113,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
           <NavLink
             key={to}
             to={to}
-            end={to === "/dashboard"}
+            end={to === "/"}
             onClick={onClose}
             className={({ isActive }) =>
               [

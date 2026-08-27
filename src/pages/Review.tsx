@@ -58,7 +58,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export function Review() {
   const navigate = useNavigate()
-  const { getDueCardsFor, getNewCardsFor, getScheduledCardsFor, reviewCard, updateStreak } = useVocabStore()
+  const { getDueCardsFor, getNewCardsFor, getScheduledCardsFor, reviewCard } = useVocabStore()
   const level = useSettingsStore(s => s.level)
   const { t } = useTranslation()
 
@@ -146,7 +146,6 @@ export function Review() {
     setFlipped(false)
     setReviewed(0)
     setPhase('session')
-    updateStreak()
   }
 
   const current = queue[idx]
@@ -215,7 +214,7 @@ export function Review() {
           </div>
           <div className="flex gap-3 justify-center">
             <Button variant="yellow" onClick={backToSetup}>{t('review.continueReview')}</Button>
-            <Button onClick={() => navigate('/dashboard')}>{t('review.dashboardBtn')}</Button>
+            <Button onClick={() => navigate('/')}>{t('review.homeBtn')}</Button>
           </div>
         </div>
       </div>
