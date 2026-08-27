@@ -8193,7 +8193,9 @@
       "g_194"
     ],
     "tags": [],
-    "requiredVerbForm": [],
+    "requiredVerbForm": [
+      "passive"
+    ],
     "patternRomaji": "(ukemikei)",
     "formationRules": [
       {
@@ -8340,7 +8342,9 @@
       "g_195"
     ],
     "tags": [],
-    "requiredVerbForm": [],
+    "requiredVerbForm": [
+      "passive"
+    ],
     "patternRomaji": "B wa/ga A ni V-rareru (chokusetsu ukemi)",
     "formationRules": [
       {
@@ -8477,7 +8481,9 @@
       "g_196"
     ],
     "tags": [],
-    "requiredVerbForm": [],
+    "requiredVerbForm": [
+      "passive"
+    ],
     "patternRomaji": "B wa/ga A ni N o V-rareru (kansetsu/meiwaku ukemi)",
     "formationRules": [
       {
@@ -8615,7 +8621,9 @@
       "g_195"
     ],
     "tags": [],
-    "requiredVerbForm": [],
+    "requiredVerbForm": [
+      "passive"
+    ],
     "patternRomaji": "N wa/ga (A ni yotte) V-rareru (mu-seibutsu shugo no ukemi)",
     "formationRules": [
       {

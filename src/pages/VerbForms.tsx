@@ -1,16 +1,14 @@
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import verbFormsData from "@/data/n5/verb-forms.json"
-import grammarData from "@/data/n5/grammar.json"
-import type { VerbFormsData, GrammarPoint } from "@/types"
+import { verbGroups, getVerbForms, getCheatSheets, getKeyExceptions } from "@/data/verb-forms"
+import { getGrammar } from "@/data/grammar"
 import { Ruby } from "@/components/ui/Ruby"
 import { useTranslation } from "@/lib/useTranslation"
+import { useSettingsStore } from "@/store/settings-store"
 import { Watermark } from "@/components/ui/ScreenHeader"
 
-const data = verbFormsData as unknown as VerbFormsData
-const grammar = grammarData as GrammarPoint[]
-
 const HEADER_RUBY = '<ruby>動詞<rp>(</rp><rt>どうし</rt><rp>)</rp></ruby>の<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>'
+const LEVEL_LABEL: Record<string, string> = { N5: 'N5', N4: 'N4', all: 'N5+N4' }
 
 const GROUP_ACCENT: Record<string, string> = {
   "1": "var(--color-yellow)", "2": "var(--color-blue)", "3": "var(--color-red)", all: "var(--color-green)", neg: "var(--color-muted)",
@@ -22,9 +20,18 @@ function groupAccent(g: number | string) {
 export function VerbForms() {
   const navigate = useNavigate()
   const { t, localize } = useTranslation()
-  const [activeForm, setActiveForm] = useState(data.forms[0].id)
+  const level = useSettingsStore(s => s.level)
+  const forms = useMemo(() => getVerbForms(level), [level])
+  const [activeForm, setActiveForm] = useState(forms[0].id)
   const [showCheatSheet, setShowCheatSheet] = useState(true)
-  const form = data.forms.find(f => f.id === activeForm)!
+  const form = forms.find(f => f.id === activeForm) ?? forms[0]
+
+  // Switching level can drop the currently-active form entirely (e.g. N4
+  // only has passive/causative/causative-passive) -- fall back to the new
+  // list's first form rather than rendering a stale/missing one.
+  useEffect(() => {
+    if (!forms.some(f => f.id === activeForm)) setActiveForm(forms[0].id)
+  }, [forms, activeForm])
 
   function groupLabel(g: number | string) {
     if (g === "all") return t('verbForms.groupAll')
@@ -32,10 +39,13 @@ export function VerbForms() {
     return t('verbForms.groupN', { n: g })
   }
 
+  const grammar = useMemo(() => getGrammar(level), [level])
   const relatedGrammar = useMemo(
     () => grammar.filter(g => g.requiredVerbForm?.includes(activeForm)),
-    [activeForm]
+    [grammar, activeForm]
   )
+  const cheatSheets = useMemo(() => getCheatSheets(level), [level])
+  const keyExceptions = useMemo(() => getKeyExceptions(level), [level])
 
   return (
     <div className="h-full overflow-y-auto">
@@ -43,16 +53,16 @@ export function VerbForms() {
         <Watermark char="動" />
         {/* Header */}
         <div className="mb-6">
-          <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">N5 · 動詞の形</div>
+          <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">{LEVEL_LABEL[level]} · 動詞の形</div>
           <div className="text-4xl font-black leading-tight">
             <Ruby text="動詞の形" html={HEADER_RUBY} />
           </div>
           <div className="text-sm font-bold uppercase tracking-wider text-muted mt-1">{t('verbForms.subtitle')}</div>
         </div>
 
-        {/* Group overview */}
+        {/* Group overview -- level-agnostic verb classification, always shown */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          {data.groups.map(g => (
+          {verbGroups.map(g => (
             <div key={g.id} className="border-3 border-structural bg-paper shadow-[var(--shadow-brutal)] overflow-hidden">
               <div className="p-3 border-b-3 border-structural flex items-center gap-2" style={{ backgroundColor: groupAccent(g.id) }}>
                 <span className="font-black text-sm">{localize(g.name)}</span>
@@ -73,7 +83,7 @@ export function VerbForms() {
 
         {/* Form tab navigator */}
         <div className="flex gap-2 flex-wrap mb-6 border-b-3 border-structural pb-4">
-          {data.forms.map(f => (
+          {forms.map(f => (
             <button
               key={f.id}
               onClick={() => setActiveForm(f.id)}
@@ -214,22 +224,25 @@ export function VerbForms() {
             <span className="font-black text-base flex-1 group-hover:underline">{t('verbForms.cheatSheet')}</span>
             <span className="text-sm font-black text-muted w-4 text-center">{showCheatSheet ? '−' : '+'}</span>
           </button>
-          {showCheatSheet && (
-            <div className="border-3 border-structural bg-paper overflow-x-auto shadow-[var(--shadow-brutal)]">
+          {showCheatSheet && cheatSheets.map(({ label, table }) => (
+            <div key={label} className="border-3 border-structural bg-paper overflow-x-auto shadow-[var(--shadow-brutal)] mb-4 last:mb-0">
+              {cheatSheets.length > 1 && (
+                <div className="px-3 py-1.5 border-b-3 border-structural bg-surface text-[10px] font-black uppercase tracking-widest text-muted">{label}</div>
+              )}
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-3 border-ink bg-ink text-paper">
-                    {data.cheatSheet.headers.map((h, i) => (
+                    {table.headers.map((h, i) => (
                       <th key={i} className="text-left p-3 font-black text-xs uppercase tracking-wider">{localize(h)}</th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
-                  {data.cheatSheet.rows.map((row, i) => (
+                  {table.rows.map((row, i) => (
                     <tr key={i} className="border-b border-ink/20 last:border-0 hover:bg-surface">
                       {row.map((cell, j) => (
                         <td key={j} className={`p-3 ${j === 0 ? 'font-black' : 'font-bold'}`}>
-                          <Ruby text={localize(cell)} html={localize(data.cheatSheet.rowsRuby?.[i]?.[j])} />
+                          <Ruby text={localize(cell)} html={localize(table.rowsRuby?.[i]?.[j])} />
                         </td>
                       ))}
                     </tr>
@@ -237,16 +250,16 @@ export function VerbForms() {
                 </tbody>
               </table>
             </div>
-          )}
+          ))}
         </div>
 
         {/* Key exceptions */}
         <div className="border-3 border-structural bg-surface p-4 mb-6">
           <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.keyExceptions')}</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            {data.keyExceptions.map((e, i) => (
+            {keyExceptions.plain.map((e, i) => (
               <div key={i} className="text-sm font-bold border-2 border-structural rounded-[var(--radius-sm)] bg-paper px-3 py-2">
-                <Ruby text={localize(e)} html={localize(data.keyExceptionsRuby?.[i])} />
+                <Ruby text={localize(e)} html={localize(keyExceptions.ruby?.[i])} />
               </div>
             ))}
           </div>

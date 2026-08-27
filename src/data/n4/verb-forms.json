@@ -1,0 +1,318 @@
+{
+  "forms": [
+    {
+      "id": "passive",
+      "title": { "vi": "Thể bị động", "en": "Passive form" },
+      "titleJa": "受身形",
+      "titleJaRuby": "<ruby>受身<rp>(</rp><rt>うけみ</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>",
+      "meaning": {
+        "vi": "Bị/được ai đó làm gì đó với mình hoặc với vật của mình; cũng dùng khi bị ảnh hưởng (thường là tiêu cực) bởi một việc xảy ra ngoài ý muốn.",
+        "en": "To have something done to you (by someone), including to something of yours; also used when something happens that affects you, often negatively."
+      },
+      "rules": [
+        {
+          "group": 1,
+          "rule": { "vi": "います → われます", "en": "います → われます" },
+          "ruleRuby": { "vi": "います → われます", "en": "います → われます" },
+          "note": {
+            "vi": "đổi sang hàng あ giống hệt thể ない, rồi thêm ～れます thay vì ～ない（riêng đuôi ～います → ～われます, không phải ～あれます）",
+            "en": "same あ-row shift as the ない-form, then add ～れます instead of ～ない (verbs ending in ～います → ～われます, not ～あれます)"
+          },
+          "noteRuby": {
+            "vi": "đổi sang hàng あ giống hệt thể ない, rồi thêm ～れます thay vì ～ない（riêng đuôi ～います → ～われます, không phải ～あれます）",
+            "en": "same あ-row shift as the ない-form, then add ～れます instead of ～ない (verbs ending in ～います → ～われます, not ～あれます)"
+          }
+        },
+        {
+          "group": 2,
+          "rule": { "vi": "ます → られます", "en": "ます → られます" },
+          "ruleRuby": { "vi": "ます → られます", "en": "ます → られます" },
+          "note": {
+            "vi": "giống hệt cách chia thể khả năng — chỉ dựa vào ngữ cảnh để phân biệt bị động và khả năng",
+            "en": "identical to the potential form's conjugation — context alone tells passive and potential apart"
+          },
+          "noteRuby": {
+            "vi": "giống hệt cách chia thể khả năng — chỉ dựa vào ngữ cảnh để phân biệt bị động và khả năng",
+            "en": "identical to the potential form's conjugation — context alone tells passive and potential apart"
+          }
+        },
+        {
+          "group": 3,
+          "rule": { "vi": "bất quy tắc", "en": "irregular" },
+          "ruleRuby": { "vi": "bất quy tắc", "en": "irregular" },
+          "note": {
+            "vi": "します→されます、来ます→来られます",
+            "en": "します→されます、来ます→来られます"
+          },
+          "noteRuby": {
+            "vi": "します→されます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます",
+            "en": "します→されます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます"
+          }
+        }
+      ],
+      "examples": [
+        { "group": 1, "masu": "書きます", "result": "書かれます", "masuRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きます", "resultRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かれます" },
+        { "group": 1, "masu": "読みます", "result": "読まれます", "masuRuby": "<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます", "resultRuby": "<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>まれます" },
+        { "group": 1, "masu": "話します", "result": "話されます", "masuRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します", "resultRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>されます" },
+        { "group": 1, "masu": "買います", "result": "買われます", "masuRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います", "resultRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>われます" },
+        { "group": 2, "masu": "食べます", "result": "食べられます", "masuRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます", "resultRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べられます" },
+        { "group": 2, "masu": "見ます", "result": "見られます", "masuRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます", "resultRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>られます" },
+        { "group": 2, "masu": "褒めます", "result": "褒められます", "masuRuby": "<ruby>褒<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>めます", "resultRuby": "<ruby>褒<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>められます" },
+        { "group": 3, "masu": "します", "result": "されます", "masuRuby": "します", "resultRuby": "されます" },
+        { "group": 3, "masu": "来ます", "result": "来られます", "masuRuby": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます", "resultRuby": "<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られます" }
+      ],
+      "sentenceExamples": [
+        {
+          "ja": "私は先生に褒められました。",
+          "jaRuby": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>は<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>に<ruby>褒<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>められました。",
+          "meaning": { "vi": "Tôi được thầy/cô khen.", "en": "I was praised by my teacher." }
+        },
+        {
+          "ja": "雨に降られて、濡れてしまいました。",
+          "jaRuby": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>に<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>られて、<ruby>濡<rp>(</rp><rt>ぬ</rt><rp>)</rp></ruby>れてしまいました。",
+          "meaning": { "vi": "Bị mưa nên tôi bị ướt hết.", "en": "I got rained on and ended up soaked." }
+        },
+        {
+          "ja": "この歌は世界中で歌われています。",
+          "jaRuby": "この<ruby>歌<rp>(</rp><rt>うた</rt><rp>)</rp></ruby>は<ruby>世界中<rp>(</rp><rt>せかいじゅう</rt><rp>)</rp></ruby>で<ruby>歌<rp>(</rp><rt>うた</rt><rp>)</rp></ruby>われています。",
+          "meaning": { "vi": "Bài hát này được hát ở khắp nơi trên thế giới.", "en": "This song is sung all over the world." }
+        }
+      ],
+      "exceptions": [
+        { "vi": "します → されます（không phải するられる）", "en": "します → されます (not するられる)" },
+        { "vi": "見られる vừa có thể là thể khả năng (có thể xem) vừa có thể là thể bị động (bị xem) — nhóm 2 luôn cần dựa vào ngữ cảnh", "en": "見られる can mean either potential (can watch) or passive (is watched) — group 2 always needs context to disambiguate" },
+        { "vi": "雨に降られる kiểu \"bị động phiền toái\" (迷惑受身) dùng được cả với động từ tự động từ (không có tân ngữ) — điều mà tiếng Việt/Anh không có cấu trúc tương đương", "en": "the \"adversative passive\" (迷惑受身), as in 雨に降られる, works even with intransitive verbs (no direct object) — a construction English has no direct equivalent for" }
+      ],
+      "exceptionsRuby": [
+        { "vi": "します → されます（không phải するられる）", "en": "します → されます (not するられる)" },
+        { "vi": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>られる vừa có thể là thể khả năng (có thể xem) vừa có thể là thể bị động (bị xem) — nhóm 2 luôn cần dựa vào ngữ cảnh", "en": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>られる can mean either potential (can watch) or passive (is watched) — group 2 always needs context to disambiguate" },
+        { "vi": "<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>に<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>られる kiểu \"bị động phiền toái\" (<ruby>迷惑<rp>(</rp><rt>めいわく</rt><rp>)</rp></ruby><ruby>受身<rp>(</rp><rt>うけみ</rt><rp>)</rp></ruby>) dùng được cả với động từ tự động từ (không có tân ngữ) — điều mà tiếng Việt/Anh không có cấu trúc tương đương", "en": "the \"adversative passive\" (<ruby>迷惑<rp>(</rp><rt>めいわく</rt><rp>)</rp></ruby><ruby>受身<rp>(</rp><rt>うけみ</rt><rp>)</rp></ruby>), as in <ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>に<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>られる, works even with intransitive verbs (no direct object) — a construction English has no direct equivalent for" }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": { "vi": "Thể sai khiến", "en": "Causative form" },
+      "titleJa": "使役形",
+      "titleJaRuby": "<ruby>使役<rp>(</rp><rt>しえき</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>",
+      "meaning": {
+        "vi": "Cho phép hoặc bắt buộc người khác làm gì đó.",
+        "en": "To let (allow) or make (force) someone do something."
+      },
+      "rules": [
+        {
+          "group": 1,
+          "rule": { "vi": "います → わせます", "en": "います → わせます" },
+          "ruleRuby": { "vi": "います → わせます", "en": "います → わせます" },
+          "note": {
+            "vi": "đổi sang hàng あ giống hệt thể ない/bị động, rồi thêm ～せます thay vì ～ない／～れます",
+            "en": "same あ-row shift as the ない-form/passive, then add ～せます instead of ～ない／～れます"
+          },
+          "noteRuby": {
+            "vi": "đổi sang hàng あ giống hệt thể ない/bị động, rồi thêm ～せます thay vì ～ない／～れます",
+            "en": "same あ-row shift as the ない-form/passive, then add ～せます instead of ～ない／～れます"
+          }
+        },
+        {
+          "group": 2,
+          "rule": { "vi": "ます → させます", "en": "ます → させます" },
+          "ruleRuby": { "vi": "ます → させます", "en": "ます → させます" },
+          "note": { "vi": "", "en": "" },
+          "noteRuby": { "vi": "", "en": "" }
+        },
+        {
+          "group": 3,
+          "rule": { "vi": "bất quy tắc", "en": "irregular" },
+          "ruleRuby": { "vi": "bất quy tắc", "en": "irregular" },
+          "note": {
+            "vi": "します→させます、来ます→来させます",
+            "en": "します→させます、来ます→来させます"
+          },
+          "noteRuby": {
+            "vi": "します→させます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させます",
+            "en": "します→させます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させます"
+          }
+        }
+      ],
+      "examples": [
+        { "group": 1, "masu": "書きます", "result": "書かせます", "masuRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きます", "resultRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かせます" },
+        { "group": 1, "masu": "読みます", "result": "読ませます", "masuRuby": "<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>みます", "resultRuby": "<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>ませます" },
+        { "group": 1, "masu": "話します", "result": "話させます", "masuRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します", "resultRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>させます" },
+        { "group": 1, "masu": "買います", "result": "買わせます", "masuRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います", "resultRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わせます" },
+        { "group": 1, "masu": "休みます", "result": "休ませます", "masuRuby": "<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>みます", "resultRuby": "<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ませます" },
+        { "group": 2, "masu": "食べます", "result": "食べさせます", "masuRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます", "resultRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べさせます" },
+        { "group": 2, "masu": "見ます", "result": "見させます", "masuRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます", "resultRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>させます" },
+        { "group": 3, "masu": "します", "result": "させます", "masuRuby": "します", "resultRuby": "させます" },
+        { "group": 3, "masu": "来ます", "result": "来させます", "masuRuby": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます", "resultRuby": "<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させます" }
+      ],
+      "sentenceExamples": [
+        {
+          "ja": "先生は学生に本を読ませました。",
+          "jaRuby": "<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>は<ruby>学生<rp>(</rp><rt>がくせい</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>ませました。",
+          "meaning": { "vi": "Thầy giáo cho/bắt học sinh đọc sách.", "en": "The teacher had the students read the book." }
+        },
+        {
+          "ja": "母は子供に野菜を食べさせました。",
+          "jaRuby": "<ruby>母<rp>(</rp><rt>はは</rt><rp>)</rp></ruby>は<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>に<ruby>野菜<rp>(</rp><rt>やさい</rt><rp>)</rp></ruby>を<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べさせました。",
+          "meaning": { "vi": "Mẹ bắt con ăn rau.", "en": "The mother made her child eat vegetables." }
+        },
+        {
+          "ja": "すみませんが、ちょっと休ませてください。",
+          "jaRuby": "すみませんが、ちょっと<ruby>休<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>ませてください。",
+          "meaning": { "vi": "Xin lỗi, cho tôi nghỉ một chút.", "en": "Excuse me, but please let me rest for a bit." }
+        }
+      ],
+      "exceptions": [
+        { "vi": "します → させます（không phải するさせる）", "en": "します → させます (not するさせる)" },
+        { "vi": "Trợ từ chỉ đối tượng bị sai khiến: dùng ～を với tự động từ (子供を行かせる = bắt con đi), dùng ～に với tha động từ vì ～を đã dùng cho tân ngữ (子供に本を読ませる = cho con đọc sách)", "en": "the particle marking who is made to act: ～を with intransitive verbs (子供を行かせる = make the child go), ～に with transitive verbs since ～を is already the direct object's marker (子供に本を読ませる = have the child read the book)" }
+      ],
+      "exceptionsRuby": [
+        { "vi": "します → させます（không phải するさせる）", "en": "します → させます (not するさせる)" },
+        { "vi": "Trợ từ chỉ đối tượng bị sai khiến: dùng ～を với tự động từ (<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>を<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かせる = bắt con đi), dùng ～に với tha động từ vì ～を đã dùng cho tân ngữ (<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>ませる = cho con đọc sách)", "en": "the particle marking who is made to act: ～を with intransitive verbs (<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>を<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>かせる = make the child go), ～に with transitive verbs since ～を is already the direct object's marker (<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>に<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>ませる = have the child read the book)" }
+      ]
+    },
+    {
+      "id": "causative-passive",
+      "title": { "vi": "Thể bị sai khiến", "en": "Causative-passive form" },
+      "titleJa": "使役受身形",
+      "titleJaRuby": "<ruby>使役<rp>(</rp><rt>しえき</rt><rp>)</rp></ruby><ruby>受身<rp>(</rp><rt>うけみ</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby>",
+      "meaning": {
+        "vi": "Bị người khác bắt/ép làm gì đó — mang sắc thái miễn cưỡng, không muốn làm nhưng vẫn phải làm.",
+        "en": "To be made/forced to do something by someone else — implies reluctance, doing something you didn't want to."
+      },
+      "rules": [
+        {
+          "group": 1,
+          "rule": { "vi": "います → わせられます", "en": "います → わせられます" },
+          "ruleRuby": { "vi": "います → わせられます", "en": "います → わせられます" },
+          "note": {
+            "vi": "= thân thể sai khiến + られます. Trong văn nói thường rút gọn ～せられます → ～される (VD: 買わせられます→買わされます), NGOẠI TRỪ động từ đuôi ～す（話す, 貸す, 出す…）— nhóm này chỉ dùng được thể đầy đủ ～させられます, không rút gọn được vì sẽ nghe như lặp âm さ",
+            "en": "= causative stem + られます. In speech ～せられます often contracts to ～される (e.g. 買わせられます→買わされます), EXCEPT verbs ending in ～す (話す, 貸す, 出す…) — these only ever take the full ～させられます, since the contracted form would double up on さ and sound wrong"
+          },
+          "noteRuby": {
+            "vi": "= thân thể sai khiến + られます. Trong văn nói thường rút gọn ～せられます → ～される (VD: <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わせられます→<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わされます), NGOẠI TRỪ động từ đuôi ～す（<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>す, <ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>す, <ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>す…）— nhóm này chỉ dùng được thể đầy đủ ～させられます, không rút gọn được vì sẽ nghe như lặp âm さ",
+            "en": "= causative stem + られます. In speech ～せられます often contracts to ～される (e.g. <ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わせられます→<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わされます), EXCEPT verbs ending in ～す (<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>す, <ruby>貸<rp>(</rp><rt>か</rt><rp>)</rp></ruby>す, <ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>す…) — these only ever take the full ～させられます, since the contracted form would double up on さ and sound wrong"
+          }
+        },
+        {
+          "group": 2,
+          "rule": { "vi": "ます → させられます", "en": "ます → させられます" },
+          "ruleRuby": { "vi": "ます → させられます", "en": "ます → させられます" },
+          "note": {
+            "vi": "không có dạng rút gọn cho nhóm 2 (không nói 食べさされます)",
+            "en": "no contracted form exists for group 2 (食べさされます is not real Japanese)"
+          },
+          "noteRuby": {
+            "vi": "không có dạng rút gọn cho nhóm 2 (không nói <ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べさされます)",
+            "en": "no contracted form exists for group 2 (<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べさされます is not real Japanese)"
+          }
+        },
+        {
+          "group": 3,
+          "rule": { "vi": "bất quy tắc", "en": "irregular" },
+          "ruleRuby": { "vi": "bất quy tắc", "en": "irregular" },
+          "note": {
+            "vi": "します→させられます、来ます→来させられます（cũng không rút gọn）",
+            "en": "します→させられます、来ます→来させられます (also never contracted)"
+          },
+          "noteRuby": {
+            "vi": "します→させられます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させられます（cũng không rút gọn）",
+            "en": "します→させられます、<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます→<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させられます (also never contracted)"
+          }
+        }
+      ],
+      "examples": [
+        { "group": 1, "masu": "書きます", "result": "書かせられます", "masuRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>きます", "resultRuby": "<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>かせられます" },
+        { "group": 1, "masu": "飲みます", "result": "飲ませられます", "masuRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みます", "resultRuby": "<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>ませられます" },
+        { "group": 1, "masu": "買います", "result": "買わせられます", "masuRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>います", "resultRuby": "<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>わせられます" },
+        { "group": 1, "masu": "話します", "result": "話させられます", "masuRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します", "resultRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>させられます" },
+        { "group": 2, "masu": "食べます", "result": "食べさせられます", "masuRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べます", "resultRuby": "<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べさせられます" },
+        { "group": 2, "masu": "見ます", "result": "見させられます", "masuRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ます", "resultRuby": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>させられます" },
+        { "group": 3, "masu": "します", "result": "させられます", "masuRuby": "します", "resultRuby": "させられます" },
+        { "group": 3, "masu": "来ます", "result": "来させられます", "masuRuby": "<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ます", "resultRuby": "<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させられます" }
+      ],
+      "sentenceExamples": [
+        {
+          "ja": "子供のとき、よく妹に泣かされました。",
+          "jaRuby": "<ruby>子供<rp>(</rp><rt>こども</rt><rp>)</rp></ruby>のとき、よく<ruby>妹<rp>(</rp><rt>いもうと</rt><rp>)</rp></ruby>に<ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>かされました。",
+          "meaning": { "vi": "Hồi nhỏ, tôi thường bị em gái làm cho khóc.", "en": "When I was a kid, my little sister often made me cry." }
+        },
+        {
+          "ja": "部長に残業をさせられました。",
+          "jaRuby": "<ruby>部長<rp>(</rp><rt>ぶちょう</rt><rp>)</rp></ruby>に<ruby>残業<rp>(</rp><rt>ざんぎょう</rt><rp>)</rp></ruby>をさせられました。",
+          "meaning": { "vi": "Tôi bị trưởng phòng bắt làm thêm giờ.", "en": "I was made to work overtime by my manager." }
+        },
+        {
+          "ja": "話したくなかったのに、話させられました。",
+          "jaRuby": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>したくなかったのに、<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>させられました。",
+          "meaning": { "vi": "Dù không muốn nói nhưng tôi vẫn bị bắt phải nói.", "en": "Even though I didn't want to talk, I was made to talk." }
+        }
+      ],
+      "exceptions": [
+        { "vi": "話す → 話させられます（KHÔNG rút gọn thành 話さされます — động từ đuôi ～す là ngoại lệ duy nhất không rút gọn được ở nhóm 1）", "en": "話す → 話させられます (NEVER contracts to 話さされます — verbs ending in ～す are the one group-1 exception that can't contract)" },
+        { "vi": "泣かせられます thường được rút gọn thành 泣かされます trong văn nói — cả hai đều đúng, nhưng dạng rút gọn tự nhiên hơn", "en": "泣かせられます is commonly contracted to 泣かされます in speech — both are correct, but the contracted form sounds more natural" }
+      ],
+      "exceptionsRuby": [
+        { "vi": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>す → <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>させられます（KHÔNG rút gọn thành <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>さされます — động từ đuôi ～す là ngoại lệ duy nhất không rút gọn được ở nhóm 1）", "en": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>す → <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>させられます (NEVER contracts to <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>さされます — verbs ending in ～す are the one group-1 exception that can't contract)" },
+        { "vi": "<ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>かせられます thường được rút gọn thành <ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>かされます trong văn nói — cả hai đều đúng, nhưng dạng rút gọn tự nhiên hơn", "en": "<ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>かせられます is commonly contracted to <ruby>泣<rp>(</rp><rt>な</rt><rp>)</rp></ruby>かされます in speech — both are correct, but the contracted form sounds more natural" }
+      ]
+    }
+  ],
+  "cheatSheet": {
+    "headers": [
+      { "vi": "Thể", "en": "Form" },
+      { "vi": "Nhóm 1", "en": "Group 1" },
+      { "vi": "Nhóm 2", "en": "Group 2" },
+      { "vi": "Nhóm 3", "en": "Group 3" }
+    ],
+    "rows": [
+      [
+        { "vi": "Bị động (受身)", "en": "Passive" },
+        { "vi": "～あれる／われる", "en": "～あれる／われる" },
+        { "vi": "～られる", "en": "～られる" },
+        { "vi": "される・来られる", "en": "される・来られる" }
+      ],
+      [
+        { "vi": "Sai khiến (使役)", "en": "Causative" },
+        { "vi": "～あせる／わせる", "en": "～あせる／わせる" },
+        { "vi": "～させる", "en": "～させる" },
+        { "vi": "させる・来させる", "en": "させる・来させる" }
+      ],
+      [
+        { "vi": "Bị sai khiến (使役受身)", "en": "Causative-passive" },
+        { "vi": "～あせられる／わせられる（rút gọn: ～される, trừ đuôi す）", "en": "～あせられる／わせられる (contracts to ～される, except ～す verbs)" },
+        { "vi": "～させられる", "en": "～させられる" },
+        { "vi": "させられる・来させられる", "en": "させられる・来させられる" }
+      ]
+    ],
+    "rowsRuby": [
+      [
+        { "vi": "Bị động (受身)", "en": "Passive" },
+        { "vi": "～あれる／われる", "en": "～あれる／われる" },
+        { "vi": "～られる", "en": "～られる" },
+        { "vi": "される・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる", "en": "される・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>られる" }
+      ],
+      [
+        { "vi": "Sai khiến (使役)", "en": "Causative" },
+        { "vi": "～あせる／わせる", "en": "～あせる／わせる" },
+        { "vi": "～させる", "en": "～させる" },
+        { "vi": "させる・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させる", "en": "させる・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させる" }
+      ],
+      [
+        { "vi": "Bị sai khiến (使役受身)", "en": "Causative-passive" },
+        { "vi": "～あせられる／わせられる（rút gọn: ～される, trừ đuôi す）", "en": "～あせられる／わせられる (contracts to ～される, except ～す verbs)" },
+        { "vi": "～させられる", "en": "～させられる" },
+        { "vi": "させられる・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させられる", "en": "させられる・<ruby>来<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>させられる" }
+      ]
+    ]
+  },
+  "keyExceptions": [
+    { "vi": "します → されます（thể bị động, không phải するられる）", "en": "します → されます (passive, not するられる)" },
+    { "vi": "話します → 話させられます（thể bị sai khiến, KHÔNG rút gọn thành 話さされます）", "en": "話します → 話させられます (causative-passive, NEVER contracts to 話さされます)" },
+    { "vi": "見られる vừa là thể khả năng vừa là thể bị động — luôn cần dựa vào ngữ cảnh", "en": "見られる is both the potential and the passive form — always needs context to tell apart" }
+  ],
+  "keyExceptionsRuby": [
+    { "vi": "します → されます（thể bị động, không phải するられる）", "en": "します → されます (passive, not するられる)" },
+    { "vi": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します → <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>させられます（thể bị sai khiến, KHÔNG rút gọn thành <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>さされます）", "en": "<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>します → <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>させられます (causative-passive, NEVER contracts to <ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>さされます)" },
+    { "vi": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>られる vừa là thể khả năng vừa là thể bị động — luôn cần dựa vào ngữ cảnh", "en": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>られる is both the potential and the passive form — always needs context to tell apart" }
+  ]
+}

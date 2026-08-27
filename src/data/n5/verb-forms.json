@@ -1093,7 +1093,7 @@
           },
           "ruleRuby": {
             "vi": "V(khả năng)ます → V(khả năng)た<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>／なかった",
-            "en": "V(potential)ます → V(potential)た<ruby>形<rp>(</rp><rt>かたち</rt><rp>)</rp></ruby>／なかった"
+            "en": "V(potential)ます → V(potential)た form／なかった"
           },
           "noteRuby": {
             "vi": "chia thể khả năng thành nhóm 2 rồi áp quy tắc た/ない như bình thường",
