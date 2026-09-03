@@ -526,11 +526,13 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
   )
 }
 
+// Binary rating only (Forgot/Remembered) -- casual use, not strict SM-2
+// drilling. The underlying reviewCard/SM-2 math is untouched; this just
+// always feeds it one of the two extremes (RATING.AGAIN / RATING.GOOD)
+// instead of exposing all four quality buckets.
 const RATING_BUTTONS = [
-  { key: '1', labelKey: 'again', sub: '<1m', rating: RATING.AGAIN, variant: 'red' },
-  { key: '2', labelKey: 'hard', sub: '~6m', rating: RATING.HARD, variant: 'secondary' },
-  { key: '3', labelKey: 'good', sub: '1d', rating: RATING.GOOD, variant: 'green' },
-  { key: '4', labelKey: 'easy', sub: '4d', rating: RATING.EASY, variant: 'yellow' },
+  { key: '1', labelKey: 'forgot', sub: 'Learn again', rating: RATING.AGAIN, variant: 'red' },
+  { key: '2', labelKey: 'remembered', sub: 'Got it', rating: RATING.GOOD, variant: 'green' },
 ] as const
 
 function isTypingTarget(el: Element | null): boolean {
@@ -547,7 +549,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
   const [flashFlip, setFlashFlip] = useState(false)
   const { t } = useTranslation()
 
-  // Space flips the card; 1/2/3/4 rate it once the answer is showing.
+  // Space flips the card; 1/2 rate it once the answer is showing.
   // Only one of the two is ever live at a time (rating buttons don't exist
   // pre-flip), and neither fires while the user is typing into a future
   // <input>/<textarea>.
@@ -601,7 +603,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
     )
   }
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+    <div className="grid grid-cols-2 gap-3">
       {RATING_BUTTONS.map(({ key, labelKey, sub, rating, variant }) => (
         <Button
           key={labelKey}

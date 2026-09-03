@@ -86,10 +86,8 @@
     "continueReview": "Ôn tiếp",
     "homeBtn": "Trang chủ",
     "rating": {
-      "again": "Lại",
-      "hard": "Khó",
-      "good": "Tốt",
-      "easy": "Dễ"
+      "forgot": "Chưa thuộc",
+      "remembered": "Đã thuộc"
     },
     "kanjiQuestion": "Từ này đọc và nghĩa là gì?",
     "sameGroup": "Thuộc nhóm chữ",

@@ -22,7 +22,7 @@ function interpolate(template: string, vars?: Record<string, string | number>): 
   })
 }
 
-// Dot-path lookup (e.g. "review.rating.again") into the active locale, falling
+// Dot-path lookup (e.g. "review.rating.forgot") into the active locale, falling
 // back to Vietnamese (the only fully-populated locale today), then to the raw
 // key itself so a missing translation is visible instead of silently blank.
 export function t(lang: Locale, key: string, vars?: Record<string, string | number>): string {

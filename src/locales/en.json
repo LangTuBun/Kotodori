@@ -86,10 +86,8 @@
     "continueReview": "Continue",
     "homeBtn": "Home",
     "rating": {
-      "again": "Again",
-      "hard": "Hard",
-      "good": "Good",
-      "easy": "Easy"
+      "forgot": "Forgot",
+      "remembered": "Remembered"
     },
     "kanjiQuestion": "How is this word read, and what does it mean?",
     "sameGroup": "Same kanji group as",
