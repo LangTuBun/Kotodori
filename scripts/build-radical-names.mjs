@@ -14,17 +14,19 @@ import { curatedRadicalNames } from "./radical-names-curated.mjs"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, "..")
-const kanjiJsonPath = path.join(root, "src/data/n5/kanji.json")
+const n5KanjiJsonPath = path.join(root, "src/data/n5/kanji.json")
+const n4KanjiJsonPath = path.join(root, "src/data/n4/kanji.json")
 const kanjivgJsonPath = path.join(root, "src/data/n5/kanjivg.json")
 const outPath = path.join(root, "src/data/n5/radical-names.json")
 
-const kanjiData = JSON.parse(readFileSync(kanjiJsonPath, "utf8"))
+const n5KanjiData = JSON.parse(readFileSync(n5KanjiJsonPath, "utf8"))
+const n4KanjiData = JSON.parse(readFileSync(n4KanjiJsonPath, "utf8"))
 const kanjivgData = JSON.parse(readFileSync(kanjivgJsonPath, "utf8"))
 
 const anchorHanviet = new Map()
-for (const chapter of kanjiData.chapters) {
+for (const chapter of [...n5KanjiData.chapters, ...n4KanjiData.chapters]) {
   for (const group of chapter.groups) {
-    if (group.anchor && group.hanviet) anchorHanviet.set(group.anchor, group.hanviet)
+    if (group.anchor && group.hanviet && !anchorHanviet.has(group.anchor)) anchorHanviet.set(group.anchor, group.hanviet)
   }
 }
 

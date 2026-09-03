@@ -222,6 +222,7 @@
     "radicalBadge": "bộ",
     "noAnimation": "Chưa có hoạt hình nét chữ cho chữ này.",
     "hanvietLabel": "Hán Việt",
+    "meaning": "Nghĩa",
     "ariaLabel": "Hoạt hình nét chữ {char}",
     "positions": {
       "left": "trái",

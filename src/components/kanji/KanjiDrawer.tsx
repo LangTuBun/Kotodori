@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useState } from "react"
 import kanjivgJson from "@/data/n5/kanjivg.json"
 import radicalNamesJson from "@/data/n5/radical-names.json"
+import kanjiReadingsJson from "@/data/kanji-readings.json"
 import type { KanjiVgComponent, KanjiVgData, RadicalNamesData } from "@/types"
 import { AnimatedKanjiSvg } from "./AnimatedKanjiSvg"
 import { useTranslation } from "@/lib/useTranslation"
-import { hanVietForChar } from "@/lib/kanji"
+import { hanVietForChar, KANJI_INDEX, cleanReadings } from "@/lib/kanji"
 
 const kanjivgData = kanjivgJson as KanjiVgData
 const radicalNames = radicalNamesJson as RadicalNamesData
+interface KanjiReadingsFallback { on: string[]; kun: string[]; meanings: string[] }
+const kanjiReadings = kanjiReadingsJson as Record<string, KanjiReadingsFallback>
 
 interface GroupedComponent {
   element: string
@@ -48,6 +51,75 @@ const DRAWER_INK = "#2e3257"
 const DRAWER_MUTED = "#627d9a"
 const DRAWER_ACCENT = "#be4327"
 const DRAWER_HAIRLINE = "rgba(46,50,87,0.15)"
+const DRAWER_BLUE = "#3b82f6"
+const DRAWER_GREEN = "#22c55e"
+
+function ReadingPill({ text, color }: { text: string; color: string }) {
+  return (
+    <span
+      className="jp text-sm font-bold px-2 py-1 border"
+      style={{ borderColor: `${color}40`, backgroundColor: `${color}15`, color }}
+    >
+      {text}
+    </span>
+  )
+}
+
+// On/kun readings + meaning + level badge, for whichever source resolved
+// (KANJI_INDEX anchor data, or the kanji-readings.json fallback -- see
+// KanjiDrawer's lookup below). Shared between the "has stroke animation"
+// and "no stroke animation" render branches so both surfaces show it.
+function ReadingsSection({
+  meaningText, onReadings, kunReadings, levelLabel,
+}: {
+  meaningText: string
+  onReadings: string[]
+  kunReadings: string[]
+  levelLabel: string | null
+}) {
+  const { t } = useTranslation()
+  if (!meaningText && onReadings.length === 0 && kunReadings.length === 0 && !levelLabel) return null
+  return (
+    <div className="mt-4 pt-3" style={{ borderTop: `2px solid ${DRAWER_HAIRLINE}` }}>
+      {meaningText && (
+        <div className="mb-3">
+          <div className="text-[10px] font-black uppercase tracking-wider mb-1" style={{ color: DRAWER_MUTED }}>
+            {t('kanjiDrawer.meaning')}
+          </div>
+          <div className="text-sm font-bold" style={{ color: DRAWER_INK }}>{meaningText}</div>
+        </div>
+      )}
+
+      {onReadings.length > 0 && (
+        <div className="mb-2">
+          <span className="text-[10px] font-black uppercase tracking-wider" style={{ color: DRAWER_BLUE }}>
+            {"On'yomi"}
+          </span>
+          <div className="flex flex-wrap gap-1 mt-1">
+            {onReadings.map(r => <ReadingPill key={r} text={r} color={DRAWER_BLUE} />)}
+          </div>
+        </div>
+      )}
+
+      {kunReadings.length > 0 && (
+        <div className="mb-2">
+          <span className="text-[10px] font-black uppercase tracking-wider" style={{ color: DRAWER_GREEN }}>
+            {"Kun'yomi"}
+          </span>
+          <div className="flex flex-wrap gap-1 mt-1">
+            {kunReadings.map(r => <ReadingPill key={r} text={r} color={DRAWER_GREEN} />)}
+          </div>
+        </div>
+      )}
+
+      {levelLabel && (
+        <div className="text-[10px] font-bold uppercase tracking-wider mt-2" style={{ color: DRAWER_MUTED }}>
+          {levelLabel}
+        </div>
+      )}
+    </div>
+  )
+}
 
 function HanVietBadge({ hanviet, label }: { hanviet: string; label: string }) {
   return (
@@ -82,7 +154,7 @@ interface KanjiDrawerProps {
 // `displayChar` keeps the last kanji's content visible while it slides out;
 // `char` alone would blank the panel before the transition finishes.
 export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
-  const { t } = useTranslation()
+  const { t, localize } = useTranslation()
   const POSITION_LABELS: Record<string, string> = {
     left: t('kanjiDrawer.positions.left'), right: t('kanjiDrawer.positions.right'),
     top: t('kanjiDrawer.positions.top'), bottom: t('kanjiDrawer.positions.bottom'),
@@ -116,6 +188,23 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
     () => (entry ? groupComponents(entry.components) : []),
     [entry]
   )
+
+  // On/kun readings + meaning: KANJI_INDEX (kanji.json anchors, textbook-
+  // verified + bilingual) is checked first; kanji-readings.json (build-
+  // time kanjiapi.dev fallback, English-only meanings) covers everything
+  // else that shows up in vocab. See lib/kanji.ts and build-kanji-readings.mjs.
+  const kanjiDetail = displayChar ? KANJI_INDEX.get(displayChar) : undefined
+  const fallbackReadings = displayChar && !kanjiDetail ? kanjiReadings[displayChar] : undefined
+  const meaningText = kanjiDetail
+    ? localize(kanjiDetail.group.meaning)
+    : (fallbackReadings?.meanings.length ? fallbackReadings.meanings.join(', ') : '')
+  const onReadings = kanjiDetail
+    ? cleanReadings(kanjiDetail.group.onyomi, Infinity).shown
+    : (fallbackReadings ? cleanReadings(fallbackReadings.on, Infinity).shown : [])
+  const kunReadings = kanjiDetail
+    ? cleanReadings(kanjiDetail.group.kunyomi, Infinity).shown
+    : (fallbackReadings ? cleanReadings(fallbackReadings.kun, Infinity).shown : [])
+  const levelLabel = kanjiDetail ? `${kanjiDetail.src} · ${t('common.chapterN', { n: kanjiDetail.chapter })}` : null
 
   return (
     <>
@@ -156,6 +245,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
             {hanviet && (
               <HanVietBadge hanviet={hanviet} label={t('kanjiDrawer.hanvietLabel')} />
             )}
+            <ReadingsSection meaningText={meaningText} onReadings={onReadings} kunReadings={kunReadings} levelLabel={levelLabel} />
           </div>
         )}
 
@@ -189,6 +279,8 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
                 {t('kanjiDrawer.replay')}
               </button>
             </div>
+
+            <ReadingsSection meaningText={meaningText} onReadings={onReadings} kunReadings={kunReadings} levelLabel={levelLabel} />
 
             {groupedComponents.length > 0 && (
               <div className="mt-5">

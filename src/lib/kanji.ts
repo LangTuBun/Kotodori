@@ -1,6 +1,7 @@
 import kanjiJson from "@/data/n5/kanji.json"
 import hanVietDictionary from "@/data/hanviet-dictionary.json"
-import type { KanjiChapter } from "@/types"
+import type { KanjiChapter, KanjiGroup } from "@/types"
+import { n5KanjiChapters, n4KanjiChapters } from "@/data/kanji"
 
 export const MAX_READINGS_SHOWN = 4
 
@@ -63,3 +64,33 @@ export function cleanReadings(readings: string[], limit: number = MAX_READINGS_S
   const cleaned = [...new Set(readings.map(r => r.replace(/^-|-$/g, '')))]
   return { shown: cleaned.slice(0, limit), extra: Math.max(0, cleaned.length - limit) }
 }
+
+// -- Anchor kanji lookup (KanjiDrawer's primary source) --------------------
+// Every kanji.json "leading kanji" (N5 + N4, 248 unique anchors) with its
+// full textbook-verified detail: on/kun readings, bilingual meaning, and
+// which level/chapter it belongs to. Non-anchor characters (everything else
+// that shows up in vocab) fall back to kanji-readings.json instead -- see
+// build-kanji-readings.mjs and KanjiDrawer's lookup order.
+export interface KanjiDetail {
+  group: KanjiGroup
+  src: 'N5' | 'N4'
+  chapter: number
+}
+
+function buildKanjiIndex(): Map<string, KanjiDetail> {
+  const map = new Map<string, KanjiDetail>()
+  const process = (chapters: KanjiChapter[], src: 'N5' | 'N4') => {
+    for (const ch of chapters) {
+      for (const g of ch.groups) {
+        if (!map.has(g.anchor)) {
+          map.set(g.anchor, { group: g, src, chapter: ch.chapter })
+        }
+      }
+    }
+  }
+  process(n5KanjiChapters, 'N5')
+  process(n4KanjiChapters, 'N4')
+  return map
+}
+
+export const KANJI_INDEX = buildKanjiIndex()

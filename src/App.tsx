@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { Layout } from "@/components/layout/Layout"
+import { ToriLoader } from "@/components/ui/ToriLoader"
 
 // Every page pulls in one or more of the large per-domain JSON data files
 // (n5/n4 vocab, grammar, kanji, kanjivg...) -- statically importing all of
@@ -25,17 +26,12 @@ const Settings = lazy(() => import("@/pages/Settings").then(m => ({ default: m.S
 // Route chunks aren't all tiny (the Grammar chunk alone is ~280KB gzip,
 // carrying all 203 enriched N5+N4 grammar points) -- on a slow/mobile
 // connection this can take a beat, so a bare `null` here would leave the
-// content pane blank with zero indication anything is happening. Minimal
-// brutalist pulse rather than a full skeleton: cheap to keep in sync with
-// every page's differing layout, and still tells the user something's
-// loading.
-function RouteFallback() {
-  return (
-    <div className="h-full flex items-center justify-center p-8">
-      <div className="w-40 h-10 border-3 border-structural bg-surface animate-pulse" />
-    </div>
-  )
-}
+// content pane blank with zero indication anything is happening.
+// ToriLoader draws the site's own bird mark stroke-by-stroke (the same
+// technique as Landing's hero, self-contained so it doesn't need the lazy
+// chunk it's standing in for) -- keeps every page's fallback in sync
+// without a full per-page skeleton, and reads as "loading" on its own.
+const RouteFallback = ToriLoader
 
 export default function App() {
   return (
