@@ -12,12 +12,22 @@
 //      b. English meanings for EVERY non-anchor character (all-readings.json
 //         has no meanings field at all)
 //
-// Output schema: Record<string, { on: string[], kun: string[], meanings: string[] }>
+// Output schema: Record<string, { on: string[], kun: string[], meanings: { vi: string, en: string } }>
+// meanings.en is always the live kanjiapi.dev gloss (joined ", "). kanjiapi.dev
+// has no Vietnamese, so meanings.vi is carried over from the *existing* output
+// file when a character was already hand-translated there (by
+// translate-kanji-meanings.mjs — see that script), and otherwise falls back
+// to the English gloss (matching translate-kanji-meanings.mjs's own
+// fallback for anything it doesn't cover). A re-run that only adds new vocab
+// kanji therefore keeps every prior Vietnamese translation intact; re-run
+// translate-kanji-meanings.mjs afterward to fill in vi for any newly
+// introduced characters it lists as fallen-back-to-English.
 //
 // Re-run after adding vocab that introduces a genuinely new kanji character.
 // Polite ~250ms delay between live fetches; a full run against ~560
 // characters takes a few minutes. Safe to re-run — always rebuilds from
-// scratch rather than diffing.
+// scratch (aside from preserving existing vi translations as above) rather
+// than diffing.
 import { readFileSync, writeFileSync } from "node:fs"
 import { fileURLToPath } from "node:url"
 import path from "node:path"
@@ -32,6 +42,19 @@ const n4Vocab = readJson(path.join(root, "src/data/n4/vocabulary.json"))
 const n5Kanji = readJson(path.join(root, "src/data/n5/kanji.json"))
 const n4Kanji = readJson(path.join(root, "src/data/n4/kanji.json"))
 const allReadings = readJson(path.join(root, "scripts/all-readings.json"))
+
+const outPath = path.join(root, "src/data/kanji-readings.json")
+// Preserve hand-translated `vi` meanings across re-runs -- see the header
+// comment above and translate-kanji-meanings.mjs.
+let existingViByChar = {}
+try {
+  const existing = readJson(outPath)
+  for (const [char, entry] of Object.entries(existing)) {
+    if (entry.meanings?.vi) existingViByChar[char] = entry.meanings.vi
+  }
+} catch {
+  // No prior output (first run) -- nothing to preserve.
+}
 
 const KANJI_CHAR_RE = /[一-鿿㐀-䶿々]/
 
@@ -72,6 +95,16 @@ async function fetchFromApi(char) {
   }
 }
 
+// kanjiapi.dev has no Vietnamese -- carry over an existing hand translation
+// for this char if the prior output had one, else fall back to the English
+// gloss itself (same fallback translate-kanji-meanings.mjs uses for
+// anything it doesn't cover, so the schema/shape stays consistent either
+// way this field got populated).
+function buildMeanings(char, englishMeanings) {
+  const en = (englishMeanings ?? []).join(", ")
+  return { vi: existingViByChar[char] ?? en, en }
+}
+
 async function main() {
   const result = {}
   let fromCache = 0
@@ -90,14 +123,18 @@ async function main() {
       result[char] = {
         on: cached.on ?? [],
         kun: cached.kun ?? [],
-        meanings: api?.meanings ?? [],
+        meanings: buildMeanings(char, api?.meanings),
       }
       fromCache++
     } else {
       const api = await fetchFromApi(char)
       await sleep(250)
       if (api) {
-        result[char] = api
+        result[char] = {
+          on: api.on,
+          kun: api.kun,
+          meanings: buildMeanings(char, api.meanings),
+        }
         fromApi++
       } else {
         failed.push(char)
@@ -109,13 +146,14 @@ async function main() {
     }
   }
 
-  const outPath = path.join(root, "src/data/kanji-readings.json")
   writeFileSync(outPath, JSON.stringify(result, null, 2) + "\n", "utf8")
 
+  const newlyIntroduced = Object.keys(result).filter(ch => !existingViByChar[ch]).length
   console.log(`\nWrote ${Object.keys(result).length}/${nonAnchorChars.length} entries to ${path.relative(root, outPath)}`)
   console.log(`  on/kun from all-readings.json cache (meanings fetched live): ${fromCache}`)
   console.log(`  fully fetched live from kanjiapi.dev: ${fromApi}`)
   if (failed.length > 0) console.log(`  failed entirely (no data found): ${failed.join(" ")}`)
+  if (newlyIntroduced > 0) console.log(`  ${newlyIntroduced} entries have no prior Vietnamese translation (meanings.vi fell back to English) -- re-run translate-kanji-meanings.mjs`)
 }
 
 main()

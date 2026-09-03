@@ -9,7 +9,7 @@ import { hanVietForChar, KANJI_INDEX, cleanReadings } from "@/lib/kanji"
 
 const kanjivgData = kanjivgJson as KanjiVgData
 const radicalNames = radicalNamesJson as RadicalNamesData
-interface KanjiReadingsFallback { on: string[]; kun: string[]; meanings: string[] }
+interface KanjiReadingsFallback { on: string[]; kun: string[]; meanings: { vi: string; en: string } }
 const kanjiReadings = kanjiReadingsJson as Record<string, KanjiReadingsFallback>
 
 interface GroupedComponent {
@@ -190,14 +190,15 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
   )
 
   // On/kun readings + meaning: KANJI_INDEX (kanji.json anchors, textbook-
-  // verified + bilingual) is checked first; kanji-readings.json (build-
-  // time kanjiapi.dev fallback, English-only meanings) covers everything
-  // else that shows up in vocab. See lib/kanji.ts and build-kanji-readings.mjs.
+  // verified + bilingual) is checked first; kanji-readings.json (build-time
+  // kanjiapi.dev on/kun + hand-translated {vi, en} meanings, see
+  // translate-kanji-meanings.mjs) covers everything else that shows up in
+  // vocab. See lib/kanji.ts and build-kanji-readings.mjs.
   const kanjiDetail = displayChar ? KANJI_INDEX.get(displayChar) : undefined
   const fallbackReadings = displayChar && !kanjiDetail ? kanjiReadings[displayChar] : undefined
   const meaningText = kanjiDetail
     ? localize(kanjiDetail.group.meaning)
-    : (fallbackReadings?.meanings.length ? fallbackReadings.meanings.join(', ') : '')
+    : (fallbackReadings?.meanings ? localize(fallbackReadings.meanings) : '')
   const onReadings = kanjiDetail
     ? cleanReadings(kanjiDetail.group.onyomi, Infinity).shown
     : (fallbackReadings ? cleanReadings(fallbackReadings.on, Infinity).shown : [])
