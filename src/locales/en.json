@@ -36,6 +36,7 @@
     "grammar": "Grammar",
     "verbForms": "Verb Forms",
     "transitivity": "Transitivity",
+    "usage": "Usage & Nuances",
     "kanji": "Kanji",
     "counters": "Counters",
     "homophones": "Homophones",
@@ -206,6 +207,23 @@
     "irregular": "No shared pattern",
     "searchPlaceholder": "Search kanji, kana, meaning...",
     "noResults": "No verb pairs match this search."
+  },
+  "usage": {
+    "subtitle": "Synonyms, Verb-Particle Collocations & Auxiliary Verbs",
+    "tabs": {
+      "synonyms": "Synonyms & Nuances",
+      "particles": "Verb-Particle Collocations",
+      "auxiliary": "Auxiliary Verbs (Hojo Doushi)"
+    },
+    "intro": {
+      "synonyms": "Words that translate to the same Vietnamese/English gloss but split on use-case in Japanese — which one you reach for depends on the object, the body part, or the register, not the dictionary meaning.",
+      "particles": "A verb's particle is often fixed by the verb itself, not by logic borrowed from English — these are the strict pairings and exceptions worth memorizing as fixed chunks, including a few で/を surprises.",
+      "auxiliary": "Auxiliary verbs riding on the て-form add a layer of nuance — completion, regret, trial, preparation, direction — on top of the main verb's plain meaning."
+    },
+    "searchPlaceholder": "Search kanji, kana, pattern, meaning...",
+    "noResults": "Nothing matches this search.",
+    "trapLabel": "Common trap",
+    "compareWith": "Compare with"
   },
   "kanji": {
     "searchPlaceholder": "Search kanji, words, Sino-Vietnamese, meaning...",

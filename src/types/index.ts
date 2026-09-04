@@ -351,6 +351,80 @@ export interface TransitivityPattern {
   description: { vi: string; en: string }
 }
 
+// -- Usage & Nuances (synonyms, verb-particle collocations, hojo doushi) --
+// A single reference feature covering three learner-confusion areas that
+// don't fit any existing dataset: (1) near-synonym verbs/words that split
+// on use-case rather than meaning (着る/履く/被る...), (2) strict/exception
+// verb-particle pairings (Nに乗る vs Nを降りる), and (3) auxiliary verbs
+// riding on the て-form (〜てしまう, 〜てみる...). Level-agnostic like
+// transitivity.ts -- these are vocabulary/usage facts, not tied to one
+// textbook's chapter split -- but individual entries can still cross-link
+// into the level-aware grammar.ts database via grammarIds.
+export interface UsageExample {
+  ja: string
+  kana: string // full reading, kanji runs only -- fed straight to <Furigana kanji={ja} kana={kana}/>
+  vi: string
+  en: string
+}
+
+export interface SynonymWord {
+  kanji: string
+  kana: string
+  meaning: { vi: string; en: string }
+  pos: string // matches VocabEntry.pos, e.g. 'verb-group1' -- rendered with <PosTag>
+  verbGroup?: number | null
+  // Why THIS word over its groupmates -- the actual answer to "which one do
+  // I use here", not a repeat of `meaning`.
+  nuance: { vi: string; en: string }
+  example: UsageExample
+}
+
+export interface SynonymGroup {
+  id: string
+  glossJa: string // short kanji-only label for the shared English/Vietnamese gloss, e.g. "着る/履く/被る/かける"
+  title: { vi: string; en: string } // the shared gloss, e.g. "to wear"
+  words: SynonymWord[]
+  // Overall trap/summary that doesn't belong to any single word -- e.g. a
+  // cross-cutting rule of thumb ("body part the item covers decides the verb").
+  note?: { vi: string; en: string }
+}
+
+export interface CollocationEntry {
+  id: string
+  pattern: string // surface pattern label, e.g. "Nに乗る"
+  verb: { kanji: string; kana: string; meaning: { vi: string; en: string } }
+  particle: string // が/に/を/で/へ/と/から/まで...
+  explanation: { vi: string; en: string }
+  example: UsageExample
+  // Common mistake or exception worth flagging (e.g. "learners guess で
+  // here by analogy with English 'by' -- but this verb always takes に").
+  trap?: { vi: string; en: string }
+  // id of another CollocationEntry this one is a minimal-pair contrast
+  // against (e.g. 電車に乗る <-> 電車を降りる), for a side-by-side render.
+  contrastId?: string
+}
+
+export interface CollocationGroup {
+  id: string
+  title: { vi: string; en: string }
+  description: { vi: string; en: string }
+  entries: CollocationEntry[]
+}
+
+export interface AuxiliaryVerb {
+  id: string
+  pattern: string // e.g. "〜てしまう"
+  colloquial?: string // casual contraction, e.g. "〜ちゃう／〜じゃう"
+  meaning: { vi: string; en: string }
+  nuance: { vi: string; en: string } // the functional/emotional nuance beyond the bare meaning
+  trap?: { vi: string; en: string } // confusion vs. a lookalike auxiliary
+  examples: UsageExample[] // 1-2 examples, often showing different nuances of the same pattern
+  // Cross-links into grammar.ts's level-aware database (getGrammar()) for
+  // patterns that already have a full entry there -- absent when this
+  // auxiliary has no matching grammar point yet (most hojo doushi don't).
+  grammarIds?: string[]
+}
+
 export type SRSState = 'new' | 'learning' | 'review' | 'mastered'
 
 export interface SRSCard {

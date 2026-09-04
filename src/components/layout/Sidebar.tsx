@@ -14,6 +14,7 @@ const nav = [
   { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        key: "grammar" },
   { to: "/verb-forms", label: "動詞の形",   kana: "どうしのかたち",   key: "verbForms" },
   { to: "/transitivity", label: "自他動詞", kana: "じたどうし",      key: "transitivity" },
+  { to: "/usage",      label: "使い方",     kana: "つかいかた",      key: "usage" },
   { to: "/kanji",      label: "漢字",       kana: "かんじ",          key: "kanji" },
   { to: "/counters",   label: "数え方",     kana: "かぞえかた",      key: "counters" },
   { to: "/homophones", label: "同音語",     kana: "どうおんご",      key: "homophones" },

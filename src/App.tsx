@@ -19,6 +19,7 @@ const Review = lazy(() => import("@/pages/Review").then(m => ({ default: m.Revie
 const Grammar = lazy(() => import("@/pages/Grammar").then(m => ({ default: m.Grammar })))
 const VerbForms = lazy(() => import("@/pages/VerbForms").then(m => ({ default: m.VerbForms })))
 const Transitivity = lazy(() => import("@/pages/Transitivity").then(m => ({ default: m.Transitivity })))
+const Usage = lazy(() => import("@/pages/Usage").then(m => ({ default: m.Usage })))
 const Kanji = lazy(() => import("@/pages/Kanji").then(m => ({ default: m.Kanji })))
 const Counters = lazy(() => import("@/pages/Counters").then(m => ({ default: m.Counters })))
 const Homophones = lazy(() => import("@/pages/Homophones").then(m => ({ default: m.Homophones })))
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="grammar" element={<Suspense fallback={<RouteFallback />}><Grammar /></Suspense>} />
           <Route path="verb-forms" element={<Suspense fallback={<RouteFallback />}><VerbForms /></Suspense>} />
           <Route path="transitivity" element={<Suspense fallback={<RouteFallback />}><Transitivity /></Suspense>} />
+          <Route path="usage" element={<Suspense fallback={<RouteFallback />}><Usage /></Suspense>} />
           <Route path="kanji" element={<Suspense fallback={<RouteFallback />}><Kanji /></Suspense>} />
           <Route path="counters" element={<Suspense fallback={<RouteFallback />}><Counters /></Suspense>} />
           <Route path="homophones" element={<Suspense fallback={<RouteFallback />}><Homophones /></Suspense>} />

@@ -36,6 +36,7 @@
     "grammar": "Ngữ pháp",
     "verbForms": "Chia động từ",
     "transitivity": "Tha/Tự động từ",
+    "usage": "Cách dùng & Sắc thái",
     "kanji": "Kanji",
     "counters": "Đếm số",
     "homophones": "Từ đồng âm",
@@ -206,6 +207,23 @@
     "irregular": "Không theo mẫu chung",
     "searchPlaceholder": "Tìm kanji, kana, nghĩa...",
     "noResults": "Không có cặp động từ nào khớp."
+  },
+  "usage": {
+    "subtitle": "Đồng nghĩa, Kết hợp Động từ-Trợ từ & Bổ trợ động từ",
+    "tabs": {
+      "synonyms": "Đồng nghĩa & Sắc thái",
+      "particles": "Kết hợp Động từ-Trợ từ",
+      "auxiliary": "Bổ trợ động từ (Hojo Doushi)"
+    },
+    "intro": {
+      "synonyms": "Những từ dịch ra cùng một nghĩa tiếng Việt/Anh nhưng tách biệt theo trường hợp sử dụng trong tiếng Nhật -- chọn từ nào phụ thuộc vào đối tượng, bộ phận cơ thể, hay mức độ trang trọng, chứ không phải nghĩa từ điển.",
+      "particles": "Trợ từ đi kèm một động từ thường do chính động từ đó quy định, không suy ra được bằng logic tiếng Việt/Anh -- đây là các cặp cố định và ngoại lệ nên học thuộc như một cụm trọn vẹn, kể cả vài bất ngờ với で/を.",
+      "auxiliary": "Các bổ trợ động từ gắn vào て-form thêm một lớp sắc thái -- hoàn thành, tiếc nuối, thử nghiệm, chuẩn bị, hướng di chuyển -- lên trên nghĩa gốc của động từ chính."
+    },
+    "searchPlaceholder": "Tìm kanji, kana, mẫu câu, nghĩa...",
+    "noResults": "Không có kết quả nào khớp với tìm kiếm này.",
+    "trapLabel": "Bẫy thường gặp",
+    "compareWith": "So sánh với"
   },
   "kanji": {
     "searchPlaceholder": "Tìm kanji, từ, âm Hán Việt, nghĩa...",
