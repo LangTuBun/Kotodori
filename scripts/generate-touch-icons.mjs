@@ -1,13 +1,16 @@
 // Regenerates apple-touch-icon.png / icon-192.png / icon-512.png from
 // favicon.svg's card+bird mark.
 //
-// Unlike favicon.svg (which floats the card on a transparent canvas with a
-// drop shadow — fine for a small browser-tab icon), these are Home Screen /
-// PWA icons. Apple's HIG says such icons must have NO transparency, NO
-// built-in drop shadow, and NO rounded corners baked in — iOS applies its
-// own squircle mask + shadow, and any padding you leave shows through as a
-// visible blank border around a "too small" icon. So this variant drops the
-// shadow layer and rescales the card to bleed to the full canvas edge.
+// Unlike favicon.svg (which floats the bordered card on a transparent
+// canvas with a drop shadow — fine for a small browser-tab icon), these are
+// Home Screen / PWA icons. Apple's HIG says such icons must have NO
+// transparency, NO drop shadow, and NO border/rounded-corners baked in —
+// iOS applies its own squircle mask + shading, and anything you bake in
+// yourself (padding, a square border under a round mask) shows through as
+// visible artifacts: a "too small" icon floating in blank space, or a hard
+// 90° corner poking out from under the rounded mask. So this variant drops
+// the shadow AND the border, and rescales the flat card fill to bleed to
+// the full canvas edge.
 //
 // Run with: node scripts/generate-touch-icons.mjs
 import { Resvg } from '@resvg/resvg-js';
@@ -24,7 +27,7 @@ const publicDir = join(__dirname, '..', 'public');
 const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <g transform="translate(-42.666667,-42.666667) scale(1.333333)">
-    <rect x="32" y="32" width="384" height="384" fill="#efe7d8" stroke="#221b12" stroke-width="24" stroke-linejoin="round"/>
+    <rect x="32" y="32" width="384" height="384" fill="#efe7d8"/>
     <rect x="330" y="330" width="52" height="52" fill="#be4327" rx="10"/>
     <circle cx="356" cy="356" r="14" fill="none" stroke="#efe7d8" stroke-width="3"/>
     <circle cx="356" cy="356" r="4" fill="#efe7d8"/>
