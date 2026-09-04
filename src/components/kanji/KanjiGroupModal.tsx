@@ -12,7 +12,12 @@ function isTypingTarget(el: Element | null): boolean {
 }
 
 interface KanjiGroupModalProps {
-  items: Array<{ chapterNum: number; group: KanjiGroup }>
+  // chapterLabel is pre-formatted by the caller (e.g. "N5 15" vs "15") --
+  // N5 and N4 chapters collide on number (both run chapters that reuse the
+  // same index), so a bare number is ambiguous whenever N5+N4 groups can
+  // appear in the same `items` list (level === 'all'). See handoff.md's
+  // Gotchas.
+  items: Array<{ chapterLabel: string; group: KanjiGroup }>
   index: number
   onIndexChange: (index: number) => void
   onClose: () => void
@@ -42,7 +47,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
   }, [strokeDrawerOpen, hasPrev, hasNext, index, onIndexChange, onClose])
 
   if (!current) return null
-  const { chapterNum, group } = current
+  const { chapterLabel, group } = current
   const on = cleanReadings(group.onyomi, Infinity)
   const kun = cleanReadings(group.kunyomi, Infinity)
   const accent = accentFor(index)
@@ -109,7 +114,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
                     <div className="text-sm text-muted mt-2">{localize(group.meaning)}</div>
                   )}
                   <div className="text-[10px] font-bold uppercase tracking-wider text-muted mt-1">
-                    {t('common.chapterN', { n: chapterNum })}
+                    {t('common.chapterN', { n: chapterLabel })}
                   </div>
                 </div>
               </div>

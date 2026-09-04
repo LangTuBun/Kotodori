@@ -173,7 +173,7 @@ export function Grammar() {
 
         {/* Category + verb-form filters (collapsible on mobile) */}
         <CollapsibleFilters
-          label="Filters"
+          label={t('common.filters')}
           activeLabel={
             [cat ? categories.find(c => c.slug === cat)?.romanNumeral : null,
              verbForm ? verbForms.find(f => f.id === verbForm)?.titleJa : null,

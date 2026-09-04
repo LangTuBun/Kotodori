@@ -54,11 +54,12 @@ export function Kanji() {
 
   const filteredGroups = useMemo(() => {
     const q = search.trim().toLowerCase()
-    const result: Array<{ src: Src; chapterNum: number; group: KanjiGroup }> = []
+    const result: Array<{ src: Src; chapterNum: number; chapterLabel: string; group: KanjiGroup }> = []
     for (const c of visibleChapters) {
+      const chapterLabel = level === 'all' ? `${c.src} ${c.chapter}` : `${c.chapter}`
       for (const g of c.groups) {
         if (!q) {
-          result.push({ src: c.src, chapterNum: c.chapter, group: g })
+          result.push({ src: c.src, chapterNum: c.chapter, chapterLabel, group: g })
           continue
         }
         const hit =
@@ -70,11 +71,11 @@ export function Kanji() {
             w.meaning.en.toLowerCase().includes(q) ||
             w.hanviet.toLowerCase().includes(q)
           )
-        if (hit) result.push({ src: c.src, chapterNum: c.chapter, group: g })
+        if (hit) result.push({ src: c.src, chapterNum: c.chapter, chapterLabel, group: g })
       }
     }
     return result
-  }, [visibleChapters, search])
+  }, [visibleChapters, search, level])
 
   return (
     <div className="flex h-full overflow-hidden">
@@ -149,11 +150,11 @@ export function Kanji() {
             <div className="text-center text-muted py-12 font-bold">{t('kanji.noResults')}</div>
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
-            {filteredGroups.map(({ src, chapterNum, group }, i) => (
+            {filteredGroups.map(({ src, chapterLabel, group }, i) => (
               <KanjiGroupCard
                 key={`${src}-${group.id}`}
                 group={group}
-                chapterLabel={level === 'all' ? `${src} ${chapterNum}` : `${chapterNum}`}
+                chapterLabel={chapterLabel}
                 accent={accentFor(i)}
                 onAnchorClick={() => setSelectedAnchor(group.anchor)}
                 onCardClick={() => setSelectedGroupIndex(i)}

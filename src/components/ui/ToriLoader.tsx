@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react"
 // Self-contained Tori bird (鳥) loader for the route Suspense fallback.
 // App.tsx's RouteFallback renders *before* any lazy chunk (including
 // kanjivg.json, ~600KB) has loaded, so this can't import AnimatedKanjiSvg's
-// data dependency -- the 鳥 stroke paths from src/data/n5/kanjivg.json are
+// data dependency -- the 鳥 stroke paths from src/data/kanjivg.json are
 // hardcoded here instead, keeping this component (and its data) in the main
 // bundle. Same stroke-dashoffset draw-in technique as AnimatedKanjiSvg
 // (src/components/kanji/AnimatedKanjiSvg.tsx), just self-contained and

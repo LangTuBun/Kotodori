@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
-import kanjivgJson from "@/data/n5/kanjivg.json"
-import radicalNamesJson from "@/data/n5/radical-names.json"
+import kanjivgJson from "@/data/kanjivg.json"
+import radicalNamesJson from "@/data/radical-names.json"
 import kanjiReadingsJson from "@/data/kanji-readings.json"
 import type { KanjiVgComponent, KanjiVgData, RadicalNamesData } from "@/types"
 import { AnimatedKanjiSvg } from "./AnimatedKanjiSvg"

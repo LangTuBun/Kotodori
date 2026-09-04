@@ -1,4 +1,5 @@
 import { useSettingsStore, type Paper, type Density } from "@/store/settings-store"
+import { useTranslation } from "@/lib/useTranslation"
 
 const THEMES: { id: Paper; ja: string; en: string; swatch: [string, string, string] }[] = [
   { id: "washi", ja: "和紙", en: "Washi", swatch: ["#efe7d8", "#221b12", "#be4327"] },
@@ -20,6 +21,7 @@ const DENSITIES: { id: Density; ja: string; en: string }[] = [
 
 /** 9 paper swatches + RAW/NEO toggle, and (in full mode) density + typeface controls. */
 export function InkCabinet({ compact = false }: { compact?: boolean }) {
+  const { t } = useTranslation()
   const paper = useSettingsStore((s) => s.paper)
   const setPaper = useSettingsStore((s) => s.setPaper)
   const density = useSettingsStore((s) => s.density)
@@ -31,16 +33,16 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
     <div className={compact ? "flex flex-col gap-2" : "flex flex-col gap-8"}>
       <div>
         <div className={compact ? "grid grid-cols-9 gap-1" : "grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-3"}>
-          {THEMES.map((t) => {
-            const active = paper === t.id
-            const [bg, ink, accent] = t.swatch
+          {THEMES.map((theme) => {
+            const active = paper === theme.id
+            const [bg, ink, accent] = theme.swatch
             return (
               <button
-                key={t.id}
+                key={theme.id}
                 type="button"
-                onClick={() => setPaper(t.id)}
+                onClick={() => setPaper(theme.id)}
                 aria-pressed={active}
-                title={`${t.en} · ${t.ja}`}
+                title={`${theme.en} · ${theme.ja}`}
                 className={[
                   "relative border-2 flex items-center justify-center transition-all cursor-pointer",
                   compact ? "aspect-square" : "flex-col gap-2 p-2 aspect-[4/3]",
@@ -50,7 +52,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
               >
                 {!compact && (
                   <span className="jp text-lg leading-none" style={{ color: ink }}>
-                    {t.ja}
+                    {theme.ja}
                   </span>
                 )}
                 <span className="absolute bottom-1 right-1 size-2 rounded-full" style={{ background: accent }} />
@@ -60,8 +62,10 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
         </div>
         {!compact && (
           <p className="text-sm text-muted mt-4">
-            You're reading this in <span className="jp">{THEMES.find((t) => t.id === paper)?.ja}</span> ·{" "}
-            {THEMES.find((t) => t.id === paper)?.en}. It stays chosen everywhere, saved on this device only.
+            {t('settings.inkCabinet.readingInPrefix')}{" "}
+            <span className="jp">{THEMES.find((th) => th.id === paper)?.ja}</span> ·{" "}
+            {THEMES.find((th) => th.id === paper)?.en}
+            {t('settings.inkCabinet.readingInSuffix')}
           </p>
         )}
       </div>
@@ -70,7 +74,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
         <>
           <div>
             <p className="font-mono text-xs font-bold uppercase tracking-widest text-muted mb-3">
-              <span className="jp mr-2 text-sm normal-case">密度</span>Density
+              <span className="jp mr-2 text-sm normal-case">密度</span>{t('settings.inkCabinet.density')}
             </p>
             <div className="inline-flex border-2 border-structural overflow-hidden">
               {DENSITIES.map((d, i) => (
@@ -89,12 +93,12 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
                 </button>
               ))}
             </div>
-            <p className="text-sm text-muted mt-3">Changes the spacing and base type size across every screen.</p>
+            <p className="text-sm text-muted mt-3">{t('settings.inkCabinet.densityDescription')}</p>
           </div>
 
           <div>
             <p className="font-mono text-xs font-bold uppercase tracking-widest text-muted mb-3">
-              <span className="jp mr-2 text-sm normal-case">書体</span>Typeface
+              <span className="jp mr-2 text-sm normal-case">書体</span>{t('settings.inkCabinet.typeface')}
             </p>
             <button
               type="button"
@@ -109,9 +113,9 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
                 />
               </span>
               <span className="min-w-0">
-                <span className="block text-sm font-bold">Use the sans face everywhere</span>
+                <span className="block text-sm font-bold">{t('settings.inkCabinet.typefaceToggle')}</span>
                 <span className="block text-xs text-muted mt-0.5">
-                  Headings and Japanese default to a Mincho serif. Turn this on for one sans face throughout.
+                  {t('settings.inkCabinet.typefaceDescription')}
                 </span>
               </span>
             </button>

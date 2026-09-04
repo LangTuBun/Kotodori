@@ -15,16 +15,16 @@ export function Settings() {
         eyebrowJa="設定"
         eyebrowEn="SETTINGS"
         title={t('nav.settings')}
-        description="Paper, density, typeface, language, and JLPT level — all saved to this device only."
+        description={t('settings.description')}
         watermark="設"
       />
 
       <div className="flex flex-col gap-6 pb-16">
         <Reveal index={0}>
           <Card className="p-6">
-            <h2 className="font-display text-xl mb-1">Paper &amp; structure</h2>
+            <h2 className="font-display text-xl mb-1">{t('settings.paperTitle')}</h2>
             <p className="text-sm text-muted mb-6">
-              Nine paper tones, each with a RAW (sharp, thin-bordered) and NEO (rounded, thick-bordered) structural mode.
+              {t('settings.paperDescription')}
             </p>
             <InkCabinet />
           </Card>
@@ -32,16 +32,16 @@ export function Settings() {
 
         <Reveal index={1}>
           <Card className="p-6">
-            <h2 className="font-display text-xl mb-1">Language</h2>
-            <p className="text-sm text-muted mb-4">Switches UI chrome — nav, buttons, headers. Vocabulary/grammar meanings follow this too where translated.</p>
+            <h2 className="font-display text-xl mb-1">{t('settings.languageTitle')}</h2>
+            <p className="text-sm text-muted mb-4">{t('settings.languageDescription')}</p>
             <LanguageSwitcher />
           </Card>
         </Reveal>
 
         <Reveal index={2}>
           <Card className="p-6">
-            <h2 className="font-display text-xl mb-1">JLPT level</h2>
-            <p className="text-sm text-muted mb-4">Scopes Vocabulary, Review, and Homophones to N5, N4, or both combined.</p>
+            <h2 className="font-display text-xl mb-1">{t('settings.levelTitle')}</h2>
+            <p className="text-sm text-muted mb-4">{t('settings.levelDescription')}</p>
             <LevelSwitcher />
           </Card>
         </Reveal>

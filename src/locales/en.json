@@ -4,6 +4,7 @@
     "chapterN": "Chapter {n}",
     "close": "Close",
     "examples": "Examples",
+    "filters": "Filters",
     "wordsCount": "{n} words",
     "stats": {
       "total": "Total",
@@ -282,6 +283,24 @@
       "nyoc": "corner-enclosing",
       "tare": "drooping",
       "tarec": "drooping"
+    }
+  },
+  "settings": {
+    "description": "Paper, density, typeface, language, and JLPT level — all saved to this device only.",
+    "paperTitle": "Paper & structure",
+    "paperDescription": "Nine paper tones, each with a RAW (sharp, thin-bordered) and NEO (rounded, thick-bordered) structural mode.",
+    "languageTitle": "Language",
+    "languageDescription": "Switches UI chrome — nav, buttons, headers. Vocabulary/grammar meanings follow this too where translated.",
+    "levelTitle": "JLPT level",
+    "levelDescription": "Scopes Vocabulary, Grammar, Verb Forms, Kanji, Review, and Homophones to N5, N4, or both combined (Transitivity and Usage's own content stays fixed, but their related-grammar links follow it too). Counters stays N5-only (no N4 source material yet).",
+    "inkCabinet": {
+      "readingInPrefix": "You're reading this in",
+      "readingInSuffix": ". It stays chosen everywhere, saved on this device only.",
+      "density": "Density",
+      "densityDescription": "Changes the spacing and base type size across every screen.",
+      "typeface": "Typeface",
+      "typefaceToggle": "Use the sans face everywhere",
+      "typefaceDescription": "Headings and Japanese default to a Mincho serif. Turn this on for one sans face throughout."
     }
   }
 }

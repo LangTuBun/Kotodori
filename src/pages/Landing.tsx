@@ -7,7 +7,7 @@ import { InkCabinet } from "@/components/ui/InkCabinet"
 import { Furigana } from "@/components/ui/Furigana"
 import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
-import kanjivg from "@/data/n5/kanjivg.json"
+import kanjivg from "@/data/kanjivg.json"
 
 const WEEKDAY_KANJI = ['日', '月', '火', '水', '木', '金', '土']
 const LEVEL_LABEL: Record<string, string> = { N5: 'N5', N4: 'N4', all: 'N5+N4' }

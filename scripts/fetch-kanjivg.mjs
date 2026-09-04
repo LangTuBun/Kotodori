@@ -1,7 +1,7 @@
 // Fetches KanjiVG stroke-order SVGs for every kanji character that appears
 // anywhere in the app's data — n5/vocabulary.json + n4/vocabulary.json
-// entries, plus kanji.json's leading-kanji anchors and member words — and
-// distills each into: ordered
+// entries, n5/kanji.json + n4/kanji.json's leading-kanji anchors and member
+// words — and distills each into: ordered
 // stroke path data (document order == stroke order) + a recursive
 // radical/component decomposition (walks the full <g> nesting so repeated
 // components hidden behind an intermediate sub-group — e.g. 森's three 木 —
@@ -9,6 +9,10 @@
 // Components may repeat in the output array; grouping/counting duplicates
 // for display (e.g. "木 ×3") is a UI concern.
 // Source: https://github.com/KanjiVG/kanjivg (CC BY-SA 3.0, Ulrich Apel).
+// The output is level-agnostic (src/data/kanjivg.json, not n5/ or n4/): a
+// kanji is looked up by character alone everywhere in the app (see
+// Furigana.tsx's onKanjiClick), and most characters appear in both levels'
+// data anyway, so there's no clean per-level split to make.
 // Merges into the existing kanjivg.json rather than overwriting it — already
 // -fetched characters are skipped. Re-run after vocabulary.json or
 // kanji.json gain new kanji.
@@ -18,10 +22,11 @@ import path from "node:path"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, "..")
-const kanjiJsonPath = path.join(root, "src/data/n5/kanji.json")
+const n5KanjiJsonPath = path.join(root, "src/data/n5/kanji.json")
+const n4KanjiJsonPath = path.join(root, "src/data/n4/kanji.json")
 const vocabJsonPath = path.join(root, "src/data/n5/vocabulary.json")
 const n4VocabJsonPath = path.join(root, "src/data/n4/vocabulary.json")
-const outPath = path.join(root, "src/data/n5/kanjivg.json")
+const outPath = path.join(root, "src/data/kanjivg.json")
 
 // Same CJK ranges Furigana.tsx uses to decide what's clickable, so the
 // fetched data always covers exactly what the UI can ask for.
@@ -192,7 +197,8 @@ function collectChars(text, set) {
 }
 
 function main() {
-  const kanjiData = JSON.parse(readFileSync(kanjiJsonPath, "utf8"))
+  const n5KanjiData = JSON.parse(readFileSync(n5KanjiJsonPath, "utf8"))
+  const n4KanjiData = JSON.parse(readFileSync(n4KanjiJsonPath, "utf8"))
   const vocabData = JSON.parse(readFileSync(vocabJsonPath, "utf8"))
   const n4VocabData = JSON.parse(readFileSync(n4VocabJsonPath, "utf8"))
   const existing = JSON.parse(readFileSync(outPath, "utf8"))
@@ -200,10 +206,12 @@ function main() {
   const chars = new Set()
   for (const v of vocabData) collectChars(v.kanji, chars)
   for (const v of n4VocabData) collectChars(v.kanji, chars)
-  for (const chapter of kanjiData.chapters) {
-    for (const group of chapter.groups) {
-      chars.add(group.anchor)
-      for (const word of group.words) collectChars(word.kanji, chars)
+  for (const kanjiData of [n5KanjiData, n4KanjiData]) {
+    for (const chapter of kanjiData.chapters) {
+      for (const group of chapter.groups) {
+        chars.add(group.anchor)
+        for (const word of group.words) collectChars(word.kanji, chars)
+      }
     }
   }
 

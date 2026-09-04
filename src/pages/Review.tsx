@@ -609,7 +609,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
       {RATING_BUTTONS.map(({ key, labelKey, sub, rating, variant }) => (
         <Button
           key={labelKey}
-          variant={variant as any}
+          variant={variant}
           className={`relative flex flex-col gap-0.5 py-3 transition-all ${
             flashRating === rating ? 'shadow-none translate-x-0.5 translate-y-0.5' : ''
           }`}

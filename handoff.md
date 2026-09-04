@@ -24,10 +24,11 @@ want to know what already went wrong once.
   24 homophone groups.
 - **N4**: 770 vocab entries, 68 grammar points (10 categories, all fully
   enriched under the same V2 schema), 110 kanji groups / 268 words across
-  10 chapters. No verb-forms or counters source
-  material exists for N4 — those two pages stay N5-only. 424 vocab entries
-  carry a real textbook `chapter` (15-24 only, see Known Gaps); the rest
-  carry `category` only.
+  10 chapters. `n4/verb-forms.json` adds passive/causative/causative-passive
+  (additive to N5's groups, see verb-forms.ts) — VerbForms is level-aware.
+  No counters source material exists for N4 — that page stays N5-only.
+  424 vocab entries carry a real textbook `chapter` (15-24 only, see Known
+  Gaps); the rest carry `category` only.
 - Every bilingual field (`{vi, en}`) is filled **except** `meanings.en` on all
   1031 N5 vocab entries — see **Known Gaps**, this is deliberate and deferred,
   not forgotten.
@@ -86,11 +87,13 @@ want to know what already went wrong once.
   iPhone notch/Dynamic Island.
 
 ### Pages
-`/` Landing (about page; `/welcome` redirects here for old bookmarks) ·
-`/dashboard` Dashboard · `/vocab` VocabBrowser · `/review` Review (vocab +
-kanji SM-2 modes) · `/grammar` Grammar · `/verb-forms` VerbForms (N5-only) ·
-`/kanji` Kanji (stroke-order drawer, group modal) · `/counters` Counters
-(N5-only) · `/homophones` Homophones · `/settings` Settings. Every route
+`/` Landing (about page; `/dashboard` and `/welcome` both redirect here — the
+old separate Dashboard was folded into Landing, see App.tsx) · `/vocab`
+VocabBrowser · `/review` Review (vocab + kanji SM-2 modes) · `/grammar`
+Grammar · `/verb-forms` VerbForms · `/transitivity` Transitivity ·
+`/usage` Usage · `/kanji` Kanji (stroke-order drawer, group modal) ·
+`/counters` Counters (N5-only) · `/homophones` Homophones · `/settings`
+Settings. Every route
 under the shared `Layout` (everything but Landing) is `React.lazy`-loaded
 from `App.tsx`, splitting each page's chunk (and the data it imports) out of
 the main bundle -- see the comment there before adding a new top-level page.
@@ -235,8 +238,10 @@ tori/
       vocab.ts, kanji.ts, grammar.ts  ← per-domain n5X/n4X/allX/XForLevel(level) helpers
       hanviet-dictionary.json         ← flat {char: Hán Việt reading}, 944 entries
       furigana-map.json               ← per-kanji reading splits, 960 entries
+      kanjivg.json, radical-names.json ← level-agnostic (see Data Pipeline
+                                          Provenance), covers both N5+N4 kanji
       n5/  vocabulary.json, grammar.json + grammar-categories.json, verb-forms.json,
-           kanji.json, kanjivg.json, radical-names.json, counters.json, homophones.json (unused)
+           kanji.json, counters.json, homophones.json (unused)
       n4/  vocabulary.json, grammar.json + grammar-categories.json, kanji.json
     components/
       layout/   Layout.tsx (mobile drawer shell), Sidebar.tsx (drawer + safe-area)
@@ -289,9 +294,14 @@ detail if you need to actually touch it.
   Final.md`'s tables (`scripts/n4-kanji-source.mjs` + `build-n4-kanji.mjs`),
   110 groups keyed one-per-anchor. `meaning.vi` was backfilled later by
   re-parsing the same source markdown directly (`backfill-n4-kanji-vi.mjs`).
-- **KanjiVG stroke data** (`n5/kanjivg.json`): sources its character list
-  from *all* app data (not just anchors), merge-safe to re-run. Currently
-  covers every character used anywhere in the app.
+- **KanjiVG stroke data** (`kanjivg.json`, level-agnostic — lives directly
+  under `src/data/`, not `n5/` or `n4/`): sources its character list from
+  *all* app data (not just anchors, and both n5/kanji.json + n4/kanji.json
+  anchors), merge-safe to re-run. Currently covers every character used
+  anywhere in the app. `radical-names.json` (same directory) is built from
+  it the same way, for the same reason: `Furigana.tsx`'s `onKanjiClick`
+  hands `KanjiDrawer` a bare character with no level, so there's nothing to
+  key a per-level split on.
 - **Hán Việt dictionary**: built from `kanji.json`'s per-word readings
   (zipped against each word's kanji-only characters) plus a cached
   2136-character Jouyou reference table (`saroma-map.json`), extended

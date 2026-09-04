@@ -1,4 +1,4 @@
-// Builds src/data/n5/radical-names.json: Hán Việt names for every unique
+// Builds src/data/radical-names.json: Hán Việt names for every unique
 // KanjiVG decomposition component that appears in kanjivg.json.
 // Two sources, preferring the verified one:
 //   1. "anchor"  — the component char is itself one of kanji.json's leading
@@ -6,6 +6,9 @@
 //   2. "curated" — hand-supplied radical names from radical-names-curated.mjs
 //      (flagged for spot-check).
 // Components matching neither are omitted; the UI shows the bare character.
+// Level-agnostic like kanjivg.json (see fetch-kanjivg.mjs) — a component is
+// looked up by character alone, regardless of which level's kanji it came
+// from.
 // Re-run after fetch-kanjivg.mjs changes the component set.
 import { readFileSync, writeFileSync } from "node:fs"
 import { fileURLToPath } from "node:url"
@@ -16,8 +19,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, "..")
 const n5KanjiJsonPath = path.join(root, "src/data/n5/kanji.json")
 const n4KanjiJsonPath = path.join(root, "src/data/n4/kanji.json")
-const kanjivgJsonPath = path.join(root, "src/data/n5/kanjivg.json")
-const outPath = path.join(root, "src/data/n5/radical-names.json")
+const kanjivgJsonPath = path.join(root, "src/data/kanjivg.json")
+const outPath = path.join(root, "src/data/radical-names.json")
 
 const n5KanjiData = JSON.parse(readFileSync(n5KanjiJsonPath, "utf8"))
 const n4KanjiData = JSON.parse(readFileSync(n4KanjiJsonPath, "utf8"))
