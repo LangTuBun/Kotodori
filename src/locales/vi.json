@@ -102,7 +102,16 @@
     "unknownChapter": "Chưa rõ chương",
     "prevWord": "Từ trước (←)",
     "nextWord": "Từ sau (→)",
-    "homophones": "Từ đồng âm"
+    "homophones": "Từ đồng âm",
+    "pitch": {
+      "label": "Trọng âm",
+      "types": {
+        "heiban": "Heiban (bằng phẳng)",
+        "atamadaka": "Atamadaka (đầu cao)",
+        "nakadaka": "Nakadaka (giữa cao)",
+        "odaka": "Odaka (cuối cao)"
+      }
+    }
   },
   "grammar": {
     "searchPlaceholder": "Tìm mẫu câu, nghĩa, romaji, thẻ tag...",

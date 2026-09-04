@@ -5,6 +5,7 @@ import { useSettingsStore } from "@/store/settings-store"
 import { Button } from "@/components/ui/Button"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
+import { PitchAccent } from "@/components/ui/PitchAccent"
 import { RATING } from "@/lib/srs"
 import { onkunTone } from "@/lib/kanji"
 import { useTranslation } from "@/lib/useTranslation"
@@ -435,6 +436,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
           <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-none my-4 break-words">
             <Furigana kanji={entry.kanji} kana={entry.kana} />
           </div>
+          <PitchAccent kana={entry.kana} pitch={entry.pitch} size="md" showLabel className="mb-2" />
           <div className="text-2xl font-bold mb-2">{localize(entry.meanings)}</div>
           {entry.chapter !== undefined && entry.chapter > 0 && (
             <div className="text-xs text-muted font-bold uppercase">{t('common.chapterN', { n: entry.chapter })}</div>

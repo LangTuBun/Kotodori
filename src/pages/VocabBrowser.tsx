@@ -3,6 +3,7 @@ import { vocabForLevel, allVocab } from "@/data/vocab"
 import type { VocabEntry } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
+import { PitchAccent } from "@/components/ui/PitchAccent"
 import { useVocabStore } from "@/store/vocab-store"
 import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
@@ -120,8 +121,9 @@ export function VocabBrowser() {
                     className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${isSelected ? 'bg-ink text-paper' : ''}`}
                   >
                     <div className="flex-1">
-                      <div className="font-bold text-lg jp leading-tight">
+                      <div className="font-bold text-lg jp leading-tight flex items-center gap-2">
                         <Furigana kanji={v.kanji} kana={v.kana} />
+                        <PitchAccent kana={v.kana} pitch={v.pitch} />
                       </div>
                       <div className={`text-xs mt-0.5 ${isSelected ? 'text-paper/70' : 'text-muted'}`}>
                         {localize(v.meanings).slice(0, 60)}
@@ -241,6 +243,7 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
             {vocab.kanji !== vocab.kana && vocab.kana && (
               <div className="text-xl jp text-muted font-bold">{vocab.kana}</div>
             )}
+            <PitchAccent kana={vocab.kana} pitch={vocab.pitch} size="md" showLabel className="mt-2" />
             <div className="font-bold text-lg mt-3">{localize(vocab.meanings)}</div>
             {vocab.chapter !== undefined && vocab.chapter > 0 && (
               <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{t('common.chapterN', { n: vocab.chapter })}</div>
@@ -274,7 +277,10 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
                   if (!hw) return null
                   return (
                     <div key={id} className="border-3 border-structural px-3 py-1 shadow-[var(--shadow-brutal)]">
-                      <div className="font-bold"><Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} /></div>
+                      <div className="font-bold flex items-center gap-1.5">
+                        <Furigana kanji={hw.kanji || hw.kana} kana={hw.kana} />
+                        <PitchAccent kana={hw.kana} pitch={hw.pitch} />
+                      </div>
                       <div className="text-xs text-muted">{localize(hw.meanings).slice(0, 20)}</div>
                     </div>
                   )

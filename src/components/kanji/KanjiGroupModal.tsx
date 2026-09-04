@@ -1,7 +1,8 @@
 import { useEffect } from "react"
 import type { KanjiGroup } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
-import { ACCENT_HEX, accentFor, cleanReadings, onkunTone } from "@/lib/kanji"
+import { PitchAccent } from "@/components/ui/PitchAccent"
+import { ACCENT_HEX, accentFor, cleanReadings, onkunTone, pitchForWord } from "@/lib/kanji"
 import { useTranslation } from "@/lib/useTranslation"
 
 function isTypingTarget(el: Element | null): boolean {
@@ -158,8 +159,9 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
                   className="border-2 border-ink/15 p-3 flex flex-col gap-1 transition-shadow hover:border-structural hover:shadow-[var(--shadow-brutal)]"
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <span className="jp font-bold text-lg leading-snug">
+                    <span className="jp font-bold text-lg leading-snug inline-flex items-center gap-1.5">
                       <Furigana kanji={w.kanji} kana={w.kana} onKanjiClick={onAnchorClick} />
+                      <PitchAccent kana={w.kana} pitch={pitchForWord(w.kanji, w.kana)} />
                     </span>
                     <span className="text-[10px] font-bold uppercase tracking-wider shrink-0 pt-0.5" style={{ color: onkunTone(w.onkun) }}>
                       {w.onkun}

@@ -22,6 +22,18 @@
   homophones: string[]
   relatedWords: string[]
   examples: Array<{ ja: string; kana: string; vi: string; en: string }>
+  // Pitch accent (アクセント), NHK/OJAD convention: the mora index (counting
+  // from 1) after which the pitch drops from high to low, or 0 for heiban
+  // (no drop -- stays low-high-high...), always measured against this
+  // entry's own `kana` (never a different conjugated/citation form -- see
+  // scripts/enrich-pitch-accent.mjs). Sourced from the Kanjium pitch-accent
+  // dataset; left absent (never 0-as-placeholder -- 0 is heiban, a real
+  // value) when no confident match against `kana` itself was found, e.g.
+  // ます-form verbs and する-compounds (kanjium indexes the dictionary
+  // form, a different string), true homophones the source doesn't
+  // disambiguate, multi-word expressions, or compounds not listed as their
+  // own headword. Render with <PitchAccent>.
+  pitch?: number
 }
 
 // -- Grammar Expansion V2 -----------------------------------------------
