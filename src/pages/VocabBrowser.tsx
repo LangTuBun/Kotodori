@@ -104,7 +104,7 @@ export function VocabBrowser() {
         </div>
 
         {/* Word list, grouped and sorted by chapter */}
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex-1 overflow-y-auto pb-[env(safe-area-inset-bottom)]">
           {groupedByChapter.map(([chapterNum, items]) => (
             <div key={chapterNum}>
               <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">

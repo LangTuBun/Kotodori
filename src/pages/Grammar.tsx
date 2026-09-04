@@ -269,7 +269,7 @@ export function Grammar() {
         )}
 
         {/* Category sections */}
-        <div key={`${cat}|${verbForm}|${tone}|${search}`} className="flex-1 overflow-y-auto p-4 space-y-6 animate-fade-in">
+        <div key={`${cat}|${verbForm}|${tone}|${search}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
           {visibleCategories.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">{t('grammar.noResults')}</div>
           )}
@@ -348,7 +348,7 @@ export function Grammar() {
       {/* Detail drawer -- full-screen overlay below `lg` (there's no room for
           a second pane at phone/tablet widths), a fixed side panel at `lg`+ */}
       {selected ? (
-        <div className="fixed inset-0 z-40 lg:static lg:z-auto lg:w-96 lg:flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-structural">
+        <div className="fixed inset-0 z-40 lg:static lg:z-auto lg:w-96 lg:flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-structural pb-[env(safe-area-inset-bottom)]">
           <div className="p-6 border-b-3 border-structural">
             <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
             <div className="flex items-center gap-2 mb-2">

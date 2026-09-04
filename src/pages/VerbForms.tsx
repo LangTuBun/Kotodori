@@ -48,7 +48,7 @@ export function VerbForms() {
   const keyExceptions = useMemo(() => getKeyExceptions(level), [level])
 
   return (
-    <div className="h-full overflow-y-auto">
+    <div className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
       <div className="relative max-w-5xl mx-auto p-6 overflow-hidden">
         <Watermark char="動" />
         {/* Header */}
@@ -265,6 +265,5 @@ export function VerbForms() {
           </div>
         </div>
       </div>
-    </div>
   )
 }

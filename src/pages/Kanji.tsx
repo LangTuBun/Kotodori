@@ -144,7 +144,7 @@ export function Kanji() {
         </CollapsibleFilters>
 
         {/* Groups grid */}
-        <div className="flex-1 min-h-0 overflow-y-auto p-4 pb-10">
+        <div className="flex-1 min-h-0 overflow-y-auto p-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
           {filteredGroups.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">{t('kanji.noResults')}</div>
           )}

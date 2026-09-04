@@ -65,7 +65,6 @@ export function Layout() {
           style={{
             paddingLeft: 'env(safe-area-inset-left)',
             paddingRight: 'env(safe-area-inset-right)',
-            paddingBottom: 'env(safe-area-inset-bottom)',
           }}
         >
           <div key={location.pathname} className="view-enter h-full">

@@ -113,7 +113,7 @@ export function Usage() {
     (tab === "auxiliary" && filteredAuxiliaryVerbs.length === 0)
 
   return (
-    <div className="h-full overflow-y-auto">
+    <div className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
       <div className="relative max-w-5xl mx-auto p-6 overflow-hidden">
         <Watermark char="別" />
 
