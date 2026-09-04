@@ -13,6 +13,7 @@ const nav = [
   { to: "/review",     label: "復習",       kana: "ふくしゅう",      key: "review" },
   { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        key: "grammar" },
   { to: "/verb-forms", label: "動詞の形",   kana: "どうしのかたち",   key: "verbForms" },
+  { to: "/transitivity", label: "自他動詞", kana: "じたどうし",      key: "transitivity" },
   { to: "/kanji",      label: "漢字",       kana: "かんじ",          key: "kanji" },
   { to: "/counters",   label: "数え方",     kana: "かぞえかた",      key: "counters" },
   { to: "/homophones", label: "同音語",     kana: "どうおんご",      key: "homophones" },

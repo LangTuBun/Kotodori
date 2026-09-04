@@ -17,6 +17,7 @@ const FEATURES: { glyph: string; ja: string; title: string; description: string;
   { glyph: "文", ja: "文法", title: "Grammar", description: "N5 & N4 patterns, cross-linked to verb forms.", href: "/grammar" },
   { glyph: "字", ja: "漢字", title: "Kanji", description: "Stroke order, radical breakdowns, compound words.", href: "/kanji" },
   { glyph: "動", ja: "動詞", title: "Verb Forms", description: "Every conjugation, grouped by verb class.", href: "/verb-forms" },
+  { glyph: "対", ja: "自他動詞", title: "Transitivity", description: "他動詞/自動詞 pairs, recognition patterns, を vs が.", href: "/transitivity" },
   { glyph: "数", ja: "数え方", title: "Counters", description: "Counter words and their phonetic exceptions.", href: "/counters" },
 ]
 

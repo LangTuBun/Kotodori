@@ -317,6 +317,40 @@ export interface CountersData {
   bigNumberExamples: CounterBigNumberExample[]
 }
 
+// -- Transitivity (自動詞・他動詞) -----------------------------------------
+// Ties back to N4 chapter 19 (grammar.json category "transitive-intransitive",
+// g_161-g_164) but is level-agnostic vocabulary/morphology content in its own
+// right, so it lives as a standalone dataset rather than an n4/-scoped file.
+export interface TransitivityExample {
+  ja: string
+  kana: string // full reading, kanji runs only -- fed straight to <Furigana kanji={ja} kana={kana}/>
+  vi: string
+  en: string
+}
+
+export interface VerbTransitivityHalf {
+  kanji: string
+  kana: string
+  meaning: { vi: string; en: string }
+  example: TransitivityExample
+}
+
+export interface VerbTransitivityPair {
+  id: string
+  patternId: string
+  transitive: VerbTransitivityHalf // 他動詞 -- takes を
+  intransitive: VerbTransitivityHalf // 自動詞 -- takes が
+  note?: { vi: string; en: string } // e.g. a homophone trap worth flagging
+}
+
+export interface TransitivityPattern {
+  id: string
+  label: string // e.g. "〜aru ⇄ 〜eru"
+  transitiveEnding: string
+  intransitiveEnding: string
+  description: { vi: string; en: string }
+}
+
 export type SRSState = 'new' | 'learning' | 'review' | 'mastered'
 
 export interface SRSCard {
