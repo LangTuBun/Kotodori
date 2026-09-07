@@ -10,6 +10,7 @@ import { useTranslation } from "@/lib/useTranslation"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { groupKey, compareGroupKeys, isChapterKey } from "@/lib/vocab-grouping"
+import { matchesRomaji } from "@/lib/romaji"
 
 function isTypingTarget(el: Element | null): boolean {
   if (!el) return false
@@ -47,7 +48,7 @@ export function VocabBrowser() {
       if (pos !== null && v.pos !== pos) return false
       if (search) {
         const q = search.toLowerCase()
-        return v.kanji.includes(q) || v.kana.includes(q) || localize(v.meanings).toLowerCase().includes(q)
+        return v.kanji.includes(q) || v.kana.includes(q) || localize(v.meanings).toLowerCase().includes(q) || matchesRomaji(v.kana, q)
       }
       return true
     })
