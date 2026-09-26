@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react"
-import kanjivgJson from "@/data/kanjivg.json"
 import radicalNamesJson from "@/data/radical-names.json"
 import kanjiReadingsJson from "@/data/kanji-readings.json"
 import type { KanjiVgComponent, KanjiVgData, RadicalNamesData } from "@/types"
@@ -7,7 +6,21 @@ import { AnimatedKanjiSvg } from "./AnimatedKanjiSvg"
 import { useTranslation } from "@/lib/useTranslation"
 import { hanVietForChar, KANJI_INDEX, cleanReadings } from "@/lib/kanji"
 
-const kanjivgData = kanjivgJson as KanjiVgData
+// kanjivg.json (stroke paths for every kanji, ~900KB) is fetched the first
+// time any drawer opens rather than bundled with the page -- Vocab and Kanji
+// both mount this drawer closed, and statically importing the data made
+// every visit to those tabs download and parse it up front. Cached at module
+// level so it loads once per session.
+let kanjivgData: KanjiVgData | null = null
+let kanjivgPromise: Promise<KanjiVgData> | null = null
+function loadKanjiVg(): Promise<KanjiVgData> {
+  // A failed fetch (flaky network, or a redeploy removed the old chunk) is
+  // not cached, so the next open retries instead of failing forever.
+  kanjivgPromise ??= import("@/data/kanjivg.json")
+    .then(m => (kanjivgData = m.default as KanjiVgData))
+    .catch(e => { kanjivgPromise = null; throw e })
+  return kanjivgPromise
+}
 const radicalNames = radicalNamesJson as RadicalNamesData
 interface KanjiReadingsFallback { on: string[]; kun: string[]; meanings: { vi: string; en: string } }
 const kanjiReadings = kanjiReadingsJson as Record<string, KanjiReadingsFallback>
@@ -165,6 +178,19 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
   const open = char !== null
   const [displayChar, setDisplayChar] = useState<string | null>(null)
   const [replayKey, setReplayKey] = useState(0)
+  const [vgData, setVgData] = useState<KanjiVgData | null>(kanjivgData)
+  const [vgFailed, setVgFailed] = useState(false)
+
+  useEffect(() => {
+    if (!open || vgData) return
+    let cancelled = false
+    setVgFailed(false)
+    loadKanjiVg().then(
+      data => { if (!cancelled) setVgData(data) },
+      () => { if (!cancelled) setVgFailed(true) },
+    )
+    return () => { cancelled = true }
+  }, [open, vgData])
 
   useEffect(() => {
     if (char !== null) {
@@ -182,7 +208,7 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
     return () => window.removeEventListener("keydown", onKeyDown)
   }, [open, onClose])
 
-  const entry = displayChar ? kanjivgData[displayChar] : undefined
+  const entry = displayChar && vgData ? vgData[displayChar] : undefined
   const hanviet = displayChar ? hanVietForChar(displayChar) : undefined
   const groupedComponents = useMemo(
     () => (entry ? groupComponents(entry.components) : []),
@@ -212,8 +238,11 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
       <div
         onClick={onClose}
         aria-hidden="true"
-        className={`fixed inset-0 z-40 bg-ink/30 backdrop-blur-sm transition-opacity duration-300 ${
-          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-40 bg-ink/40 lg:bg-ink/30 transition-opacity duration-300 ${
+          // Blur only while open, and only at lg+: this backdrop is always
+          // mounted, and a full-screen backdrop-filter layer (even at
+          // opacity 0) is expensive for iOS Safari to composite on scroll.
+          open ? "opacity-100 pointer-events-auto lg:backdrop-blur-sm" : "opacity-0 pointer-events-none"
         }`}
       />
       <div
@@ -238,7 +267,13 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
           </button>
         </div>
 
-        {!entry && displayChar && (
+        {!vgData && !vgFailed && displayChar && (
+          <div className="p-6 text-center font-bold text-sm" style={{ color: DRAWER_MUTED }}>
+            {t('kanjiDrawer.loadingStrokes')}
+          </div>
+        )}
+
+        {!entry && displayChar && (vgData || vgFailed) && (
           <div className="p-6 text-center">
             <div className="font-bold text-sm mb-4" style={{ color: DRAWER_MUTED }}>
               {t('kanjiDrawer.noAnimation')}

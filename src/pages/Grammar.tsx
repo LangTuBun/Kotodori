@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { memo, useDeferredValue, useEffect, useMemo, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import verbFormsData from "@/data/n5/verb-forms.json"
 import { allGrammar, getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
@@ -49,6 +49,9 @@ export function Grammar() {
   const categories = useMemo(() => getGrammarCategories(level), [level])
   const tips = useMemo(() => getGrammarTips(level), [level])
   const [search, setSearch] = useState("")
+  // The input reads `search`; the list reads the deferred copy so typing is
+  // painted first and the card re-render never blocks the next keystroke.
+  const deferredSearch = useDeferredValue(search)
   const [cat, setCat] = useState<string | null>(null)
   const [verbForm, setVerbForm] = useState<string | null>(null)
   const [tone, setTone] = useState<ToneType | null>(null)
@@ -100,7 +103,7 @@ export function Grammar() {
   )
 
   const filtered = useMemo(() => {
-    const q = search.trim().toLowerCase()
+    const q = deferredSearch.trim().toLowerCase()
     return grammar.filter(g => {
       if (cat && g.category !== cat) return false
       if (verbForm && !g.requiredVerbForm?.includes(verbForm)) return false
@@ -116,7 +119,7 @@ export function Grammar() {
       }
       return true
     })
-  }, [grammar, search, cat, verbForm, tone, localize])
+  }, [grammar, deferredSearch, cat, verbForm, tone, localize])
 
   const byCategory = useMemo(() => {
     const map = new Map<string, GrammarPoint[]>()
@@ -269,7 +272,10 @@ export function Grammar() {
         )}
 
         {/* Category sections */}
-        <div key={`${cat}|${verbForm}|${tone}|${search}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
+        {/* Keyed on the chip filters only (fade + scroll reset on a filter
+            change). Search is deliberately left out: keying on it remounted
+            and re-animated every card on every keystroke. */}
+        <div key={`${cat}|${verbForm}|${tone}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
           {visibleCategories.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">{t('grammar.noResults')}</div>
           )}
@@ -302,7 +308,7 @@ export function Grammar() {
                         g={g}
                         accent={accent}
                         selected={selected?.id === g.id}
-                        onClick={() => setSelected(g)}
+                        onSelect={setSelected}
                       />
                     ))}
                   </div>
@@ -498,13 +504,15 @@ export function Grammar() {
   )
 }
 
-function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent: string; selected: boolean; onClick: () => void }) {
+// Memoized with a stable setter instead of a per-render closure, so the ~200
+// cards skip re-rendering on each keystroke while the deferred filter catches up.
+const GrammarCard = memo(function GrammarCard({ g, accent, selected, onSelect }: { g: GrammarPoint; accent: string; selected: boolean; onSelect: (g: GrammarPoint) => void }) {
   const { localize } = useTranslation()
   const ex = g.examples[0]
   return (
     <div className="relative group">
       <button
-        onClick={onClick}
+        onClick={() => onSelect(g)}
         className={`w-full text-left p-3 border-3 transition-all duration-100 cursor-pointer ${
           selected ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal)] hover:-translate-x-0.5 hover:-translate-y-0.5'
         }`}
@@ -550,4 +558,4 @@ function GrammarCard({ g, accent, selected, onClick }: { g: GrammarPoint; accent
       )}
     </div>
   )
-}
+})

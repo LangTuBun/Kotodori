@@ -269,6 +269,7 @@
     "componentsTitle": "Bộ thủ / thành phần",
     "radicalBadge": "bộ",
     "noAnimation": "Chưa có hoạt hình nét chữ cho chữ này.",
+    "loadingStrokes": "Đang tải thứ tự nét…",
     "hanvietLabel": "Hán Việt",
     "meaning": "Nghĩa",
     "ariaLabel": "Hoạt hình nét chữ {char}",

@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, memo } from "react"
+import { useState, useMemo, useEffect, useDeferredValue, useRef, memo } from "react"
 import { vocabForLevel, allVocab, romajiCache } from "@/data/vocab"
 import type { VocabEntry } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
@@ -10,7 +10,7 @@ import { useTranslation } from "@/lib/useTranslation"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { groupKey, compareGroupKeys, isChapterKey } from "@/lib/vocab-grouping"
-import { useDebounce } from "@/lib/useDebounce"
+import { useProgressiveList } from "@/lib/useProgressiveList"
 
 function isTypingTarget(el: Element | null): boolean {
   if (!el) return false
@@ -83,11 +83,11 @@ const VocabRow = memo(function VocabRow({
 // Main page
 // ---------------------------------------------------------------------------
 export function VocabBrowser() {
-  // rawSearch updates immediately (so the input feels responsive),
-  // while `search` only updates after 150 ms of silence – keeping the
-  // expensive filter from firing on every single keypress.
+  // rawSearch drives the input and updates immediately; the list reads the
+  // deferred copy, so React paints the keystroke first and renders the new
+  // results as interruptible background work instead of blocking typing.
   const [rawSearch, setRawSearch] = useState("")
-  const search = useDebounce(rawSearch, 150)
+  const search = useDeferredValue(rawSearch)
 
   const [chapter, setChapter] = useState<string | null>(null)
   const [pos, setPos] = useState<string | null>(null)
@@ -140,15 +140,32 @@ export function VocabBrowser() {
     [filtered]
   )
 
+  // Only a window of `filtered` is mounted at a time (see useProgressiveList)
+  // -- the count, the index map, and the modal's prev/next all keep using the
+  // full `filtered` array; only the row rendering is sliced.
+  const listRef = useRef<HTMLDivElement>(null)
+  const { visible, sentinelRef, hasMore } = useProgressiveList(filtered, 60, listRef)
+
+  // Chapter header counts come from the full result set, not the rendered
+  // window, so a partially-rendered chapter doesn't show a truncated total.
+  const groupTotals = useMemo(() => {
+    const totals = new Map<string, number>()
+    for (const v of filtered) {
+      const k = groupKey(v)
+      totals.set(k, (totals.get(k) ?? 0) + 1)
+    }
+    return totals
+  }, [filtered])
+
   const groupedByChapter = useMemo(() => {
     const map = new Map<string, VocabEntry[]>()
-    for (const v of filtered) {
+    for (const v of visible) {
       const k = groupKey(v)
       if (!map.has(k)) map.set(k, [])
       map.get(k)!.push(v)
     }
     return [...map.entries()].sort(([a], [b]) => compareGroupKeys(a, b))
-  }, [filtered])
+  }, [visible])
 
   // Derive selected ID so VocabRow receives a simple string for isSelected;
   // React.memo can then short-circuit with a cheap string comparison.
@@ -205,7 +222,7 @@ export function VocabBrowser() {
         </div>
 
         {/* Word list, grouped and sorted by chapter */}
-        <div className="flex-1 overflow-y-auto pb-[env(safe-area-inset-bottom)]">
+        <div ref={listRef} className="flex-1 overflow-y-auto pb-[env(safe-area-inset-bottom)]">
           {groupedByChapter.map(([chapterNum, items]) => (
             <div key={chapterNum}>
               <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">
@@ -216,7 +233,7 @@ export function VocabBrowser() {
                     ? t("common.chapterN", { n: chapterNum })
                     : chapterNum}
                 </span>
-                <span className="text-paper/60 font-bold">{items.length}</span>
+                <span className="text-paper/60 font-bold">{groupTotals.get(chapterNum) ?? items.length}</span>
               </div>
               {items.map(v => (
                 <VocabRow
@@ -231,6 +248,7 @@ export function VocabBrowser() {
               ))}
             </div>
           ))}
+          {hasMore && <div ref={sentinelRef} className="h-px" aria-hidden="true" />}
         </div>
       </div>
 
@@ -303,7 +321,7 @@ function VocabModal({
       <div
         onClick={onClose}
         aria-hidden="true"
-        className="fixed inset-0 z-30 bg-ink/30 backdrop-blur-sm"
+        className="fixed inset-0 z-30 bg-ink/40 lg:bg-ink/30 lg:backdrop-blur-sm"
       />
       <div className="fixed inset-0 z-30 flex items-center justify-center p-4 pointer-events-none">
         <div

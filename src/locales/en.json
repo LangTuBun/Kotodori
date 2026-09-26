@@ -269,6 +269,7 @@
     "componentsTitle": "Radicals / components",
     "radicalBadge": "rad",
     "noAnimation": "No stroke animation available for this character yet.",
+    "loadingStrokes": "Loading stroke order…",
     "hanvietLabel": "Sino-Vietnamese",
     "meaning": "Meaning",
     "ariaLabel": "Stroke animation for {char}",

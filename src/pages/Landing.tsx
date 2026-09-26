@@ -7,7 +7,7 @@ import { InkCabinet } from "@/components/ui/InkCabinet"
 import { Furigana } from "@/components/ui/Furigana"
 import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
-import kanjivg from "@/data/kanjivg.json"
+import { TORI_STROKES, TORI_VIEW_BOX } from "@/components/ui/tori-glyph"
 
 const WEEKDAY_KANJI = ['日', '月', '火', '水', '木', '金', '土']
 const LEVEL_LABEL: Record<string, string> = { N5: 'N5', N4: 'N4', all: 'N5+N4' }
@@ -32,7 +32,6 @@ const FEATURES: { glyph: string; ja: string; title: string; description: string;
 // page. SRS itself is untouched (vocab-store.ts, /review) -- this only
 // changes what the homepage puts in front of the user.
 export function Landing() {
-  const tori = kanjivg["鳥" as keyof typeof kanjivg]
   const replayKey = useMemo(() => Date.now(), [])
   const level = useSettingsStore(s => s.level)
   const { t } = useTranslation()
@@ -52,19 +51,17 @@ export function Landing() {
           crowding it below) and a quieter voice (subdued date/time). */}
       <section className="relative overflow-hidden px-8 pt-16 pb-14 flex flex-col items-center text-center gap-6">
         <Reveal index={0} className="w-28 h-28 md:w-36 md:h-36">
-          {tori && (
-            <AnimatedKanjiSvg
-              strokes={tori.strokes}
-              viewBox={tori.viewBox}
-              replayKey={replayKey}
-              strokeMs={420}
-              className="w-full h-full"
-              background="transparent"
-              guideColor="var(--color-muted)"
-              guideOpacity={0.4}
-              strokeColor="var(--color-ink)"
-            />
-          )}
+          <AnimatedKanjiSvg
+            strokes={TORI_STROKES}
+            viewBox={TORI_VIEW_BOX}
+            replayKey={replayKey}
+            strokeMs={420}
+            className="w-full h-full"
+            background="transparent"
+            guideColor="var(--color-muted)"
+            guideOpacity={0.4}
+            strokeColor="var(--color-ink)"
+          />
         </Reveal>
         <Reveal index={1}>
           <h1 className="jp text-3xl sm:text-5xl font-black tracking-tighter leading-none text-ink/90">{dateLabel}</h1>

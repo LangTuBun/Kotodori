@@ -52,7 +52,7 @@ export function Layout() {
         {/* Backdrop, mobile only, shown while the drawer is open */}
         {navOpen && (
           <div
-            className="lg:hidden fixed inset-0 z-30 bg-ink/30 backdrop-blur-sm"
+            className="lg:hidden fixed inset-0 z-30 bg-ink/40"
             onClick={() => setNavOpen(false)}
             aria-hidden="true"
           />

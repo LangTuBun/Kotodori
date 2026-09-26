@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { memo, useDeferredValue, useEffect, useMemo, useRef, useState } from "react"
 import type { KanjiGroup } from "@/types"
 import { n5KanjiChapters, n4KanjiChapters } from "@/data/kanji"
 import { Furigana } from "@/components/ui/Furigana"
@@ -9,6 +9,7 @@ import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { CollapsibleFilters } from "@/components/ui/CollapsibleFilters"
+import { useProgressiveList } from "@/lib/useProgressiveList"
 
 // N5's textbook chapters run 1-15 and N4's run 15-24 (both numbered after
 // their own curriculum's Bai/chapter, per their own source material) -- so
@@ -38,6 +39,9 @@ export function Kanji() {
   const chapters = useMemo(() => taggedChapters(level), [level])
   const [chapterKey, setChapterKey] = useState<string | null>(null)
   const [search, setSearch] = useState("")
+  // The input shows `search` immediately; filtering/rendering reads the
+  // deferred copy so a keystroke is never stuck behind the card grid render.
+  const deferredSearch = useDeferredValue(search)
   const [selectedAnchor, setSelectedAnchor] = useState<string | null>(null)
   const [selectedGroupIndex, setSelectedGroupIndex] = useState<number | null>(null)
 
@@ -50,10 +54,15 @@ export function Kanji() {
 
   const totalWords = useMemo(() => chapters.reduce((a, c) => a + c.wordCount, 0), [chapters])
 
-  const visibleChapters = chapterKey === null ? chapters : chapters.filter(c => `${c.src}-${c.chapter}` === chapterKey)
+  // Memoized so it keeps its identity across keystrokes -- a fresh array here
+  // would bust filteredGroups' memo on every render while a chapter is picked.
+  const visibleChapters = useMemo(
+    () => chapterKey === null ? chapters : chapters.filter(c => `${c.src}-${c.chapter}` === chapterKey),
+    [chapters, chapterKey]
+  )
 
   const filteredGroups = useMemo(() => {
-    const q = search.trim().toLowerCase()
+    const q = deferredSearch.trim().toLowerCase()
     const result: Array<{ src: Src; chapterNum: number; chapterLabel: string; group: KanjiGroup }> = []
     for (const c of visibleChapters) {
       const chapterLabel = level === 'all' ? `${c.src} ${c.chapter}` : `${c.chapter}`
@@ -75,7 +84,12 @@ export function Kanji() {
       }
     }
     return result
-  }, [visibleChapters, search, level])
+  }, [visibleChapters, deferredSearch, level])
+
+  // Mount the card grid a page at a time; the modal and counts still use the
+  // full filteredGroups (the window is a prefix, so indices line up).
+  const gridRef = useRef<HTMLDivElement>(null)
+  const { visible: visibleGroups, sentinelRef, hasMore } = useProgressiveList(filteredGroups, 24, gridRef)
 
   return (
     <div className="flex h-full overflow-hidden">
@@ -145,22 +159,23 @@ export function Kanji() {
         </CollapsibleFilters>
 
         {/* Groups grid */}
-        <div className="flex-1 min-h-0 overflow-y-auto p-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
+        <div ref={gridRef} className="flex-1 min-h-0 overflow-y-auto p-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))]">
           {filteredGroups.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">{t('kanji.noResults')}</div>
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
-            {filteredGroups.map(({ src, chapterLabel, group }, i) => (
+            {visibleGroups.map(({ src, chapterLabel, group }, i) => (
               <KanjiGroupCard
                 key={`${src}-${group.id}`}
                 group={group}
                 chapterLabel={chapterLabel}
-                accent={accentFor(i)}
-                onAnchorClick={() => setSelectedAnchor(group.anchor)}
-                onCardClick={() => setSelectedGroupIndex(i)}
+                index={i}
+                onAnchorClick={setSelectedAnchor}
+                onCardClick={setSelectedGroupIndex}
               />
             ))}
           </div>
+          {hasMore && <div ref={sentinelRef} className="h-px" aria-hidden="true" />}
         </div>
       </div>
 
@@ -180,24 +195,27 @@ export function Kanji() {
   )
 }
 
-function KanjiGroupCard({ group, chapterLabel, accent, onAnchorClick, onCardClick }: { group: KanjiGroup; chapterLabel: string; accent: string; onAnchorClick: () => void; onCardClick: () => void }) {
+// Memoized with scalar/stable props (state setters, not per-render closures)
+// so cards whose data didn't change skip re-rendering while the user types.
+const KanjiGroupCard = memo(function KanjiGroupCard({ group, chapterLabel, index, onAnchorClick, onCardClick }: { group: KanjiGroup; chapterLabel: string; index: number; onAnchorClick: (anchor: string) => void; onCardClick: (index: number) => void }) {
   const { t, localize } = useTranslation()
+  const accent = accentFor(index)
   const on = cleanReadings(group.onyomi)
   const kun = cleanReadings(group.kunyomi)
 
   return (
     <div
-      onClick={onCardClick}
+      onClick={() => onCardClick(index)}
       role="button"
       tabIndex={0}
-      onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onCardClick() } }}
+      onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onCardClick(index) } }}
       className="bg-paper border-3 border-structural p-3 cursor-pointer transition-shadow hover:shadow-[var(--shadow-brutal)]"
       style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
     >
       {/* Header: leading kanji */}
       <div className="flex items-start gap-3 mb-2 pb-2 border-b-2 border-ink/10">
         <button
-          onClick={e => { e.stopPropagation(); onAnchorClick() }}
+          onClick={e => { e.stopPropagation(); onAnchorClick(group.anchor) }}
           title={t('kanji.viewStrokeAnim')}
           className="appearance-none bg-transparent border-0 p-0 m-0 text-4xl font-black jp leading-none shrink-0 pt-0.5 cursor-pointer transition-transform hover:scale-110 hover:ring-2 hover:ring-offset-2 hover:ring-ink/40 rounded-sm"
         >
@@ -263,4 +281,4 @@ function KanjiGroupCard({ group, chapterLabel, accent, onAnchorClick, onCardClic
       </ul>
     </div>
   )
-}
+})

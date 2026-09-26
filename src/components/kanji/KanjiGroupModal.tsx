@@ -57,7 +57,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
       <div
         onClick={onClose}
         aria-hidden="true"
-        className="fixed inset-0 z-30 bg-ink/30 backdrop-blur-sm"
+        className="fixed inset-0 z-30 bg-ink/40 lg:bg-ink/30 lg:backdrop-blur-sm"
       />
       <div className="fixed inset-0 z-30 flex items-center justify-center p-4 pointer-events-none">
         <div
