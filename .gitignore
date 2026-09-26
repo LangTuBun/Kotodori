@@ -14,6 +14,7 @@ lerna-debug.log*
 .aider*
 .continue/
 STATUS.md
+handoff.md
 
 node_modules
 dist
