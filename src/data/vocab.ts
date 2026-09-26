@@ -6,6 +6,7 @@ import type { VocabEntry } from "@/types"
 import type { Level } from "@/store/settings-store"
 import n5VocabJson from "@/data/n5/vocabulary.json"
 import n4VocabJson from "@/data/n4/vocabulary.json"
+import { kanaToRomaji } from "@/lib/romaji"
 
 export const n5Vocab = n5VocabJson as VocabEntry[]
 export const n4Vocab = n4VocabJson as VocabEntry[]
@@ -16,3 +17,11 @@ export function vocabForLevel(level: Level): VocabEntry[] {
   if (level === "N4") return n4Vocab
   return allVocab
 }
+
+// Pre-computed romaji for every entry, built once at module load.
+// The per-keystroke search filter does an O(1) Map.get() lookup here
+// instead of running kanaToRomaji() (character-by-character conversion)
+// on every single vocab entry for every keypress – the main search bottleneck.
+export const romajiCache: ReadonlyMap<string, string> = new Map(
+  allVocab.map(v => [v.id, kanaToRomaji(v.kana).toLowerCase()])
+)

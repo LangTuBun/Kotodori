@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { useTranslation } from "@/lib/useTranslation"
 import furiganaMap from "@/data/furigana-map.json"
 
@@ -127,7 +128,7 @@ function renderClickable(text: string, onKanjiClick: (char: string) => void, tit
   )
 }
 
-export function Furigana({ kanji, kana, className = "", onKanjiClick }: FuriganaProps) {
+export const Furigana = memo(function Furigana({ kanji, kana, className = "", onKanjiClick }: FuriganaProps) {
   const { t } = useTranslation()
   const kanjiTitle = onKanjiClick ? t('kanji.viewStrokeAnim') : undefined
 
@@ -163,4 +164,4 @@ export function Furigana({ kanji, kana, className = "", onKanjiClick }: Furigana
       )}
     </span>
   )
-}
+})

@@ -1,5 +1,5 @@
-import { useState, useMemo, useEffect } from "react"
-import { vocabForLevel, allVocab } from "@/data/vocab"
+import { useState, useMemo, useEffect, memo } from "react"
+import { vocabForLevel, allVocab, romajiCache } from "@/data/vocab"
 import type { VocabEntry } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
@@ -10,7 +10,7 @@ import { useTranslation } from "@/lib/useTranslation"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { groupKey, compareGroupKeys, isChapterKey } from "@/lib/vocab-grouping"
-import { matchesRomaji } from "@/lib/romaji"
+import { useDebounce } from "@/lib/useDebounce"
 
 function isTypingTarget(el: Element | null): boolean {
   if (!el) return false
@@ -18,12 +18,85 @@ function isTypingTarget(el: Element | null): boolean {
   return tag === "INPUT" || tag === "TEXTAREA" || (el as HTMLElement).isContentEditable
 }
 
+// ---------------------------------------------------------------------------
+// Memoized row – only the two rows that change selected state will re-render
+// when the user clicks (instead of every single row in the list).
+// ---------------------------------------------------------------------------
+interface VocabRowProps {
+  v: VocabEntry
+  /** Pre-resolved index in the filtered array – avoids an O(n) findIndex on click. */
+  index: number
+  isSelected: boolean
+  /** Passed as a scalar so React.memo can do a cheap equality check. */
+  cardState: string
+  onSelect: (index: number) => void
+  localize: (m: { vi: string; en: string } | undefined | null) => string
+}
+
+const VocabRow = memo(function VocabRow({
+  v,
+  index,
+  isSelected,
+  cardState,
+  onSelect,
+  localize,
+}: VocabRowProps) {
+  return (
+    <button
+      onClick={() => onSelect(index)}
+      className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${
+        isSelected ? "bg-ink text-paper" : ""
+      }`}
+    >
+      <div className="flex-1">
+        <div className="font-bold text-lg jp leading-tight flex items-center gap-2">
+          <Furigana kanji={v.kanji} kana={v.kana} />
+          <PitchAccent kana={v.kana} pitch={v.pitch} />
+        </div>
+        <div className={`text-xs mt-0.5 ${isSelected ? "text-paper/70" : "text-muted"}`}>
+          {localize(v.meanings).slice(0, 60)}
+        </div>
+      </div>
+      <div className="flex flex-col items-end gap-1">
+        <PosTag pos={v.pos} verbGroup={v.verbGroup} />
+        {cardState !== "new" && (
+          <span
+            className={`text-xs font-bold px-1.5 py-0.5 border border-current ${
+              cardState === "mastered"
+                ? "text-green"
+                : cardState === "review"
+                ? "text-yellow"
+                : cardState === "learning"
+                ? "text-blue"
+                : "text-muted"
+            }`}
+          >
+            {cardState}
+          </span>
+        )}
+      </div>
+    </button>
+  )
+})
+
+// ---------------------------------------------------------------------------
+// Main page
+// ---------------------------------------------------------------------------
 export function VocabBrowser() {
-  const [search, setSearch] = useState("")
+  // rawSearch updates immediately (so the input feels responsive),
+  // while `search` only updates after 150 ms of silence – keeping the
+  // expensive filter from firing on every single keypress.
+  const [rawSearch, setRawSearch] = useState("")
+  const search = useDebounce(rawSearch, 150)
+
   const [chapter, setChapter] = useState<string | null>(null)
   const [pos, setPos] = useState<string | null>(null)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
-  const { getCard } = useVocabStore()
+
+  // Read the whole cards object once per render instead of calling getCard()
+  // N times inside the render loop (each getCard() call was a separate store read).
+  const cards = useVocabStore(s => s.cards)
+
   const level = useSettingsStore(s => s.level)
   const { t, localize } = useTranslation()
 
@@ -48,11 +121,24 @@ export function VocabBrowser() {
       if (pos !== null && v.pos !== pos) return false
       if (search) {
         const q = search.toLowerCase()
-        return v.kanji.includes(q) || v.kana.includes(q) || localize(v.meanings).toLowerCase().includes(q) || matchesRomaji(v.kana, q)
+        // romajiCache.get() is an O(1) Map lookup – the pre-converted romaji
+        // string was built once at startup, not re-derived here.
+        return (
+          v.kanji.includes(q) ||
+          v.kana.includes(q) ||
+          localize(v.meanings).toLowerCase().includes(q) ||
+          (romajiCache.get(v.id)?.includes(q) ?? false)
+        )
       }
       return true
     })
   }, [vocab, search, chapter, pos, localize])
+
+  // O(1) id → index map so VocabRow.onClick doesn't do a linear findIndex.
+  const filteredIndexMap = useMemo(
+    () => new Map(filtered.map((v, i) => [v.id, i])),
+    [filtered]
+  )
 
   const groupedByChapter = useMemo(() => {
     const map = new Map<string, VocabEntry[]>()
@@ -64,6 +150,10 @@ export function VocabBrowser() {
     return [...map.entries()].sort(([a], [b]) => compareGroupKeys(a, b))
   }, [filtered])
 
+  // Derive selected ID so VocabRow receives a simple string for isSelected;
+  // React.memo can then short-circuit with a cheap string comparison.
+  const selectedId = selectedIndex !== null ? (filtered[selectedIndex]?.id ?? null) : null
+
   return (
     <div className="flex h-full overflow-hidden">
       {/* List panel */}
@@ -72,9 +162,9 @@ export function VocabBrowser() {
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 flex-wrap bg-surface">
           <input
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            placeholder={t('vocab.searchPlaceholder')}
+            value={rawSearch}
+            onChange={e => setRawSearch(e.target.value)}
+            placeholder={t("vocab.searchPlaceholder")}
             className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
           />
           <select
@@ -83,10 +173,16 @@ export function VocabBrowser() {
             className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
           >
             <option value="">
-              {level === 'N5' ? t('vocab.allChapters') : hasChapterKeys ? t('vocab.allChaptersCategories') : t('vocab.allCategories')}
+              {level === "N5"
+                ? t("vocab.allChapters")
+                : hasChapterKeys
+                ? t("vocab.allChaptersCategories")
+                : t("vocab.allCategories")}
             </option>
             {CHAPTERS.map(c => (
-              <option key={c} value={c}>{isChapterKey(c) ? t('common.chapterN', { n: c }) : c}</option>
+              <option key={c} value={c}>
+                {isChapterKey(c) ? t("common.chapterN", { n: c }) : c}
+              </option>
             ))}
           </select>
           <select
@@ -94,14 +190,18 @@ export function VocabBrowser() {
             onChange={e => setPos(e.target.value || null)}
             className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
           >
-            <option value="">{t('vocab.allPos')}</option>
-            {POS_LIST.map(p => <option key={p} value={p}>{t(`pos.${p}`)}</option>)}
+            <option value="">{t("vocab.allPos")}</option>
+            {POS_LIST.map(p => (
+              <option key={p} value={p}>
+                {t(`pos.${p}`)}
+              </option>
+            ))}
           </select>
         </div>
 
         {/* Count */}
         <div className="px-4 py-2 border-b-3 border-structural bg-paper text-xs font-bold uppercase tracking-wider text-muted">
-          {t('common.wordsCount', { n: filtered.length })}
+          {t("common.wordsCount", { n: filtered.length })}
         </div>
 
         {/* Word list, grouped and sorted by chapter */}
@@ -109,42 +209,26 @@ export function VocabBrowser() {
           {groupedByChapter.map(([chapterNum, items]) => (
             <div key={chapterNum}>
               <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">
-                <span>{chapterNum === '?' ? t('vocab.unknownChapter') : isChapterKey(chapterNum) ? t('common.chapterN', { n: chapterNum }) : chapterNum}</span>
+                <span>
+                  {chapterNum === "?"
+                    ? t("vocab.unknownChapter")
+                    : isChapterKey(chapterNum)
+                    ? t("common.chapterN", { n: chapterNum })
+                    : chapterNum}
+                </span>
                 <span className="text-paper/60 font-bold">{items.length}</span>
               </div>
-              {items.map(v => {
-                const card = getCard(v.id)
-                const isSelected = selectedIndex !== null && filtered[selectedIndex]?.id === v.id
-                return (
-                  <button
-                    key={v.id}
-                    onClick={() => setSelectedIndex(filtered.findIndex(x => x.id === v.id))}
-                    className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${isSelected ? 'bg-ink text-paper' : ''}`}
-                  >
-                    <div className="flex-1">
-                      <div className="font-bold text-lg jp leading-tight flex items-center gap-2">
-                        <Furigana kanji={v.kanji} kana={v.kana} />
-                        <PitchAccent kana={v.kana} pitch={v.pitch} />
-                      </div>
-                      <div className={`text-xs mt-0.5 ${isSelected ? 'text-paper/70' : 'text-muted'}`}>
-                        {localize(v.meanings).slice(0, 60)}
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-end gap-1">
-                      <PosTag pos={v.pos} verbGroup={v.verbGroup} />
-                      {card.state !== 'new' && (
-                        <span className={`text-xs font-bold px-1.5 py-0.5 border border-current ${
-                          card.state === 'mastered' ? 'text-green' :
-                          card.state === 'review' ? 'text-yellow' :
-                          card.state === 'learning' ? 'text-blue' : 'text-muted'
-                        }`}>
-                          {card.state}
-                        </span>
-                      )}
-                    </div>
-                  </button>
-                )
-              })}
+              {items.map(v => (
+                <VocabRow
+                  key={v.id}
+                  v={v}
+                  index={filteredIndexMap.get(v.id)!}
+                  isSelected={v.id === selectedId}
+                  cardState={cards[v.id]?.state ?? "new"}
+                  onSelect={setSelectedIndex}
+                  localize={localize}
+                />
+              ))}
             </div>
           ))}
         </div>
@@ -157,7 +241,9 @@ export function VocabBrowser() {
           index={selectedIndex}
           total={filtered.length}
           onPrev={() => setSelectedIndex(i => (i !== null && i > 0 ? i - 1 : i))}
-          onNext={() => setSelectedIndex(i => (i !== null && i < filtered.length - 1 ? i + 1 : i))}
+          onNext={() =>
+            setSelectedIndex(i => (i !== null && i < filtered.length - 1 ? i + 1 : i))
+          }
           onClose={() => setSelectedIndex(null)}
         />
       )}
@@ -165,7 +251,14 @@ export function VocabBrowser() {
   )
 }
 
-function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
+function VocabModal({
+  vocab,
+  index,
+  total,
+  onPrev,
+  onNext,
+  onClose,
+}: {
   vocab: VocabEntry
   index: number
   total: number
@@ -187,9 +280,19 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
       // While the kanji drawer is open, let its own Escape handler close it
       // first rather than closing both layers on one keypress.
       if (selectedKanji !== null) return
-      if (e.key === "Escape") { onClose(); return }
-      if (e.key === "ArrowLeft" && hasPrev) { e.preventDefault(); onPrev(); return }
-      if (e.key === "ArrowRight" && hasNext) { e.preventDefault(); onNext() }
+      if (e.key === "Escape") {
+        onClose()
+        return
+      }
+      if (e.key === "ArrowLeft" && hasPrev) {
+        e.preventDefault()
+        onPrev()
+        return
+      }
+      if (e.key === "ArrowRight" && hasNext) {
+        e.preventDefault()
+        onNext()
+      }
     }
     window.addEventListener("keydown", onKeyDown)
     return () => window.removeEventListener("keydown", onKeyDown)
@@ -214,7 +317,7 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
             <button
               onClick={onPrev}
               disabled={!hasPrev}
-              title={t('vocab.prevWord')}
+              title={t("vocab.prevWord")}
               className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ‹
@@ -225,7 +328,7 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
             <button
               onClick={onNext}
               disabled={!hasNext}
-              title={t('vocab.nextWord')}
+              title={t("vocab.nextWord")}
               className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ›
@@ -236,7 +339,9 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
           <div className="p-4 sm:p-6 border-b-3 border-structural">
             <div className="flex justify-between items-start mb-4">
               <PosTag pos={vocab.pos} verbGroup={vocab.verbGroup} />
-              <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">×</button>
+              <button onClick={onClose} className="font-black text-lg hover:text-red transition-colors">
+                ×
+              </button>
             </div>
             <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-none mb-3 break-words">
               <Furigana kanji={vocab.kanji} kana={vocab.kana} onKanjiClick={setSelectedKanji} />
@@ -247,17 +352,23 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
             <PitchAccent kana={vocab.kana} pitch={vocab.pitch} size="md" showLabel className="mt-2" />
             <div className="font-bold text-lg mt-3">{localize(vocab.meanings)}</div>
             {vocab.chapter !== undefined && vocab.chapter > 0 && (
-              <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{t('common.chapterN', { n: vocab.chapter })}</div>
+              <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">
+                {t("common.chapterN", { n: vocab.chapter })}
+              </div>
             )}
             {vocab.category && (
-              <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">{vocab.category}</div>
+              <div className="text-xs text-muted uppercase tracking-wider mt-2 font-bold">
+                {vocab.category}
+              </div>
             )}
           </div>
 
           {/* Examples */}
           {vocab.examples.length > 0 && (
             <div className="p-6 border-b-3 border-structural">
-              <div className="text-xs font-black uppercase tracking-wider mb-4">{t('common.examples')}</div>
+              <div className="text-xs font-black uppercase tracking-wider mb-4">
+                {t("common.examples")}
+              </div>
               {vocab.examples.map((ex, i) => (
                 <div key={i} className="mb-4 last:mb-0">
                   <div className="jp font-bold text-base">{ex.ja}</div>
@@ -271,7 +382,9 @@ function VocabModal({ vocab, index, total, onPrev, onNext, onClose }: {
           {/* Homophones */}
           {vocab.homophones.length > 0 && (
             <div className="p-6">
-              <div className="text-xs font-black uppercase tracking-wider mb-3">{t('vocab.homophones')}</div>
+              <div className="text-xs font-black uppercase tracking-wider mb-3">
+                {t("vocab.homophones")}
+              </div>
               <div className="flex flex-wrap gap-2">
                 {vocab.homophones.map(id => {
                   const hw = allVocab.find(v => v.id === id)

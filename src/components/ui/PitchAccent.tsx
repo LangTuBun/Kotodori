@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { useTranslation } from "@/lib/useTranslation"
 import { splitMorae, pitchLevels, classifyPitchType } from "@/lib/japanese"
 
@@ -21,7 +22,7 @@ const SIZES = {
   md: { step: 16, dot: 3.5, highY: 5, lowY: 19, height: 24, stroke: 2 },
 }
 
-export function PitchAccent({ kana, pitch, className = "", size = "sm", showLabel = false }: PitchAccentProps) {
+export const PitchAccent = memo(function PitchAccent({ kana, pitch, className = "", size = "sm", showLabel = false }: PitchAccentProps) {
   const { t } = useTranslation()
 
   if (pitch === undefined || !kana) return null
@@ -69,4 +70,4 @@ export function PitchAccent({ kana, pitch, className = "", size = "sm", showLabe
       )}
     </span>
   )
-}
+})

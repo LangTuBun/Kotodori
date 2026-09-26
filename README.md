@@ -1,82 +1,57 @@
-# Tori
+# Kotodori
 
-Tori is a small Japanese learning app focused on JLPT N5/N4 study. It brings vocabulary, grammar, verb forms, counters, kanji, review cards, and homophone practice into one calm daily workspace.
+A personal Japanese study app built around JLPT N5/N4. The idea was simple: one place for vocab, grammar, kanji, and review — no accounts, no subscriptions, opens in a browser tab.
 
-The goal is simple: make it easy to open the app, review for a few minutes, and leave with a little more Japanese in long-term memory.
+## What's inside
 
-## What It Has
-
-- N5/N4 vocabulary browser with search, chapter filters, and part-of-speech filters
-- Grammar browser for N5/N4 patterns, plus a dedicated verb-forms conjugation reference
+- Vocabulary browser (N5/N4) with search, chapter filters, and POS filters
+- Grammar reference for N5/N4 patterns, with a dedicated verb-forms conjugation table
 - Kanji browser with stroke-order lookup, grouped by textbook chapter
 - Counters (助数詞) reference
-- Review mode with SM-2 spaced repetition, for both vocab and kanji
-- Homophone practice for words that sound alike
-- Dashboard with streak, progress, and review stats
-- English/Vietnamese UI, several paper themes (including dark), and a mobile-friendly layout
-- Local-first progress storage in the browser
+- Spaced-repetition review mode (SM-2) for both vocab and kanji
+- Homophone practice for pairs that sound identical
+- Dashboard with streaks, progress stats, and upcoming reviews
+- English/Vietnamese UI, a few paper-themed color schemes (including dark), and a mobile-friendly layout
+- Everything stored locally in the browser — no backend, no sync
 
-## Tech Stack
-
-- React
-- Vite
-- TypeScript
-- Tailwind CSS
-- React Router
-- Zustand
-
-## Getting Started
-
-Install dependencies:
+## Running it
 
 ```bash
 npm install
-```
-
-Run the development server:
-
-```bash
 npm run dev
 ```
 
-Build for production:
-
 ```bash
-npm run build
-```
-
-Run lint checks:
-
-```bash
-npm run lint
+npm run build   # production bundle
+npm run lint    # lint check
 ```
 
 ## Data
 
-Tori uses local JSON files under `src/data/n5` and `src/data/n4`. User review progress (SM-2 spaced-repetition state, streak, settings) is stored locally in the browser via `localStorage` -- there is no backend or database. That also means progress is per-browser/per-device, not synced across them.
+All vocab and grammar data lives as JSON under `src/data/n5` and `src/data/n4`. Review progress, streak, and settings are kept in `localStorage` — per-browser, per-device, nothing leaves the machine.
 
-## Self-Hosting (Docker)
+## Self-hosting with Docker
 
-Tori is a static SPA -- the Docker image just builds it and serves the result with nginx, nothing else to run or configure.
+It's a static SPA, so the Docker setup just builds it and serves the result with nginx.
 
 ```bash
-git clone <this repo> tori && cd tori
+git clone <this repo> kotodori && cd kotodori
 docker compose up -d --build
 ```
 
-Open `http://<host>:8080`. To use a different port, copy `.env.example` to `.env` and set `TORI_PORT`.
+Open `http://<host>:8080`. To change the port, copy `.env.example` to `.env` and set `TORI_PORT`.
 
-**Updating** after pulling new changes:
+To update after pulling changes:
 
 ```bash
 git pull
 docker compose up -d --build
 ```
 
-**Reverse proxy**: the container only serves plain HTTP on its internal port 80 (mapped to `TORI_PORT` on the host) -- point whatever you already run on Proxmox for TLS/domains at that (Nginx Proxy Manager, Caddy, Traefik, etc.) rather than exposing it directly. It's a single static site, so any reverse proxy config works with no special rules -- no websockets, no API routes, no sticky sessions.
+For TLS and a domain, point any reverse proxy (Nginx Proxy Manager, Caddy, Traefik) at the container's HTTP port — it's a plain static site so no special rules are needed. No websockets, no API routes, no sticky sessions.
 
-**Data note**: since progress lives in each browser's `localStorage`, there's no volume to back up on the server side for user data. What *is* worth backing up is your own edits to this repo (the data JSON, any customization) -- ordinary git history covers that.
+Since progress lives in `localStorage`, there's nothing server-side to back up for user data. Your own edits to the data files and any customizations are covered by git history.
 
-## Roadmap
+## Stack
 
-The next big steps are better example sentences, richer grammar explanations, review history, audio support, and deeper homophone exercises.
+React · Vite · TypeScript · Tailwind CSS · React Router · Zustand
