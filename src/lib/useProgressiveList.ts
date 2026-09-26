@@ -40,6 +40,8 @@ export function useProgressiveList<T>(
   // `count` is a dependency on purpose: a fresh observer fires its initial
   // callback, so if the sentinel is still in view after a page is added
   // (short rows, tall screen) the next page loads without needing a scroll.
+  // `items` is too: a caller that remounts its list (Grammar keys it on the
+  // filter chips) replaces the sentinel node even when `count` stays the same.
   useEffect(() => {
     const el = sentinelRef.current
     if (!hasMore || !el) return
@@ -56,7 +58,7 @@ export function useProgressiveList<T>(
     )
     io.observe(el)
     return () => io.disconnect()
-  }, [count, hasMore, pageSize, rootRef])
+  }, [items, count, hasMore, pageSize, rootRef])
 
   const visible = useMemo(() => items.slice(0, count), [items, count])
   return { visible, sentinelRef, hasMore }

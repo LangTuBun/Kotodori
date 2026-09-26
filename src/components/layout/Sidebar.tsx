@@ -1,5 +1,7 @@
-import { Link, NavLink } from "react-router-dom"
+import { useEffect, useMemo, useState } from "react"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import { useVocabStore } from "@/store/vocab-store"
+import { isDue } from "@/lib/srs"
 import { useSettingsStore } from "@/store/settings-store"
 import { Furigana } from "@/components/ui/Furigana"
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher"
@@ -27,25 +29,55 @@ interface SidebarProps {
   onClose: () => void
 }
 
+type VocabModule = typeof import("@/data/vocab")
+
 export function Sidebar({ open, onClose }: SidebarProps) {
-  const { getStats } = useVocabStore()
-  // getStats()/getDueCards() read the current level internally
-  // (vocab-store.ts's currentLevelVocab()), but that's a plain read, not a
-  // subscription -- without subscribing to `level` here too, Sidebar never
-  // re-renders on a level switch (it's mounted once in Layout, not per
-  // route) and these numbers go stale until something else happens to
-  // re-render it. The subscription's only job is forcing that re-render.
-  useSettingsStore(s => s.level)
-  const stats = getStats()
-  const getDueCards = useVocabStore(s => s.getDueCards)
-  const due = getDueCards().length
+  const cards = useVocabStore(s => s.cards)
+  const level = useSettingsStore(s => s.level)
+  const { pathname } = useLocation()
   const { t } = useTranslation()
+
+  // The stats below need the full vocabulary, but the Sidebar is part of the
+  // startup bundle -- a static import put ~700KB of vocab JSON in front of
+  // the first paint. Fetch it right after mount instead; it's the same chunk
+  // the Vocab/Review pages use, so it's a one-time load either way.
+  const [vocabData, setVocabData] = useState<VocabModule | null>(null)
+  useEffect(() => {
+    let cancelled = false
+    import("@/data/vocab").then(m => { if (!cancelled) setVocabData(m) }, () => {})
+    return () => { cancelled = true }
+  }, [])
+
+  // One pass over the level's vocab for both the stat tiles and the due
+  // count. `pathname` is a deliberate extra dependency: due-ness depends on
+  // the clock, so recount on each navigation the way the old per-render
+  // version did, without recounting on every unrelated re-render.
+  const { stats, due } = useMemo(() => {
+    void pathname
+    if (!vocabData) return { stats: null, due: 0 }
+    const all = vocabData.vocabForLevel(level)
+    const counts = { total: all.length, new: 0, learning: 0, review: 0, mastered: 0 }
+    let dueCount = 0
+    for (const v of all) {
+      const c = cards[v.id]
+      if (!c || c.state === 'new') { counts.new++; continue }
+      if (c.state === 'learning') counts.learning++
+      else if (c.state === 'review') counts.review++
+      else if (c.state === 'mastered') counts.mastered++
+      if (isDue(c)) dueCount++
+    }
+    // Capped at 50, matching the old getDueCards() batch size.
+    return { stats: counts, due: Math.min(dueCount, 50) }
+  }, [vocabData, level, cards, pathname])
 
   return (
     <aside
       className={[
         "fixed lg:static inset-y-0 left-0 z-40 w-64 max-w-[85vw] h-dvh overflow-y-auto border-r-3 flex flex-col",
-        "transition-transform duration-300 ease-out lg:translate-x-0",
+        // will-change keeps the drawer on its own compositor layer, so its
+        // slide-out keeps running smoothly while the page being navigated to
+        // is still mounting on the main thread.
+        "transition-transform duration-300 ease-out lg:translate-x-0 will-change-transform lg:will-change-auto",
         open ? "translate-x-0" : "-translate-x-full",
       ].join(" ")}
       style={{
@@ -139,10 +171,10 @@ export function Sidebar({ open, onClose }: SidebarProps) {
       {/* Mini stats */}
       <div className="border-t-3 border-structural p-4 grid grid-cols-2 gap-2">
         {[
-          { label: t('common.stats.total'), val: stats.total },
-          { label: t('common.stats.mastered'), val: stats.mastered },
-          { label: t('common.stats.review'), val: stats.review },
-          { label: t('common.stats.new'), val: stats.new },
+          { label: t('common.stats.total'), val: stats?.total ?? '–' },
+          { label: t('common.stats.mastered'), val: stats?.mastered ?? '–' },
+          { label: t('common.stats.review'), val: stats?.review ?? '–' },
+          { label: t('common.stats.new'), val: stats?.new ?? '–' },
         ].map(({ label, val }) => (
           <div key={label} className="bg-card border-2 border-structural rounded-[var(--radius-sm)] p-2 text-center">
             <div className="font-display text-lg">{val}</div>

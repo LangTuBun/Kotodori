@@ -2,32 +2,22 @@
 import { persist } from "zustand/middleware"
 import type { SRSCard } from "@/types"
 import { scheduleCard, isDue } from "@/lib/srs"
-import { vocabForLevel } from "@/data/vocab"
-import { useSettingsStore } from "@/store/settings-store"
 
-// The no-arg get*Cards()/getStats() methods below are the "current level"
-// convenience surface Sidebar/Dashboard use -- they read the active level
-// from settings-store directly (a plain cross-store read, not a subscribe;
-// settings-store never imports this store back, so no cycle) rather than
-// requiring every caller to thread the level through. Anything that needs a
-// specific/custom scope (Review's chapter+POS filters, a combined N5+N4
-// pool) should keep using the *For(ids) variants instead.
-function currentLevelVocab() {
-  return vocabForLevel(useSettingsStore.getState().level)
-}
+// Every query takes the vocab ids to scope it to rather than reading the
+// vocabulary itself: this store is used by the Sidebar, which is part of the
+// startup bundle, and importing the ~700KB vocab JSON here would put all of
+// it on the critical path of the very first paint. Callers pass ids from
+// their own (lazily loaded) copy of @/data/vocab.
 
 interface VocabStore {
   cards: Record<string, SRSCard>
   totalReviewed: number
 
   getCard: (vocabId: string) => SRSCard
-  getDueCards: () => SRSCard[]
-  getNewCards: (limit?: number) => SRSCard[]
   getDueCardsFor: (ids: string[]) => SRSCard[]
   getNewCardsFor: (ids: string[], limit?: number) => SRSCard[]
   getScheduledCardsFor: (ids: string[]) => SRSCard[]
   reviewCard: (vocabId: string, cardType: string, rating: number) => void
-  getStats: () => { total: number; new: number; learning: number; review: number; mastered: number }
 }
 
 function makeDefaultCard(vocabId: string, cardType = 'kanji-meaning'): SRSCard {
@@ -53,14 +43,6 @@ export const useVocabStore = create<VocabStore>()(
 
       getCard: (vocabId) => {
         return get().cards[vocabId] ?? makeDefaultCard(vocabId)
-      },
-
-      getDueCards: () => {
-        return get().getDueCardsFor(currentLevelVocab().map(v => v.id)).slice(0, 50)
-      },
-
-      getNewCards: (limit = 10) => {
-        return get().getNewCardsFor(currentLevelVocab().map(v => v.id), limit)
       },
 
       getDueCardsFor: (ids) => {
@@ -90,20 +72,6 @@ export const useVocabStore = create<VocabStore>()(
           cards: { ...state.cards, [vocabId]: updated },
           totalReviewed: state.totalReviewed + 1,
         }))
-      },
-
-      getStats: () => {
-        const { cards } = get()
-        const all = currentLevelVocab()
-        const counts = { total: all.length, new: 0, learning: 0, review: 0, mastered: 0 }
-        for (const v of all) {
-          const c = cards[v.id]
-          if (!c || c.state === 'new') counts.new++
-          else if (c.state === 'learning') counts.learning++
-          else if (c.state === 'review') counts.review++
-          else if (c.state === 'mastered') counts.mastered++
-        }
-        return counts
       },
     }),
     // Renamed from 'kotodori-vocab': the SM-2 schema swap this session

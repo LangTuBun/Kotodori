@@ -1,4 +1,4 @@
-import { memo, useDeferredValue, useEffect, useMemo, useState } from "react"
+import { memo, useDeferredValue, useEffect, useMemo, useRef, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import verbFormsData from "@/data/n5/verb-forms.json"
 import { allGrammar, getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
@@ -9,6 +9,7 @@ import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
 import { CollapsibleFilters } from "@/components/ui/CollapsibleFilters"
+import { useProgressiveList } from "@/lib/useProgressiveList"
 import { FormationMatrix } from "@/components/ui/FormationMatrix"
 import { NotesAndTrapsCallout } from "@/components/ui/NotesAndTrapsCallout"
 import { InteractiveExampleCard } from "@/components/ui/InteractiveExampleCard"
@@ -102,8 +103,17 @@ export function Grammar() {
     [grammar]
   )
 
+  // Sections render in `categories` order, so the list is sorted into that
+  // same order -- the progressive window below is a prefix of it, and a
+  // prefix of an unsorted list would leave gaps in earlier sections.
+  const categoryOrder = useMemo(
+    () => new Map(categories.map((c, i) => [c.slug, i])),
+    [categories]
+  )
+
   const filtered = useMemo(() => {
     const q = deferredSearch.trim().toLowerCase()
+    const byOrder = (g: GrammarPoint) => categoryOrder.get(g.category) ?? Infinity
     return grammar.filter(g => {
       if (cat && g.category !== cat) return false
       if (verbForm && !g.requiredVerbForm?.includes(verbForm)) return false
@@ -118,17 +128,28 @@ export function Grammar() {
         )
       }
       return true
-    })
-  }, [grammar, deferredSearch, cat, verbForm, tone, localize])
+    }).sort((a, b) => byOrder(a) - byOrder(b))
+  }, [grammar, deferredSearch, cat, verbForm, tone, localize, categoryOrder])
+
+  // Mount cards a page at a time instead of all ~200 on tab entry. Section
+  // headers take their counts from the full filtered list.
+  const listRef = useRef<HTMLDivElement>(null)
+  const { visible, sentinelRef, hasMore } = useProgressiveList(filtered, 30, listRef)
+
+  const categoryTotals = useMemo(() => {
+    const totals = new Map<string, number>()
+    for (const g of filtered) totals.set(g.category, (totals.get(g.category) ?? 0) + 1)
+    return totals
+  }, [filtered])
 
   const byCategory = useMemo(() => {
     const map = new Map<string, GrammarPoint[]>()
-    for (const g of filtered) {
+    for (const g of visible) {
       if (!map.has(g.category)) map.set(g.category, [])
       map.get(g.category)!.push(g)
     }
     return map
-  }, [filtered])
+  }, [visible])
 
   const visibleCategories = categories.filter(c => byCategory.has(c.slug))
 
@@ -275,8 +296,8 @@ export function Grammar() {
         {/* Keyed on the chip filters only (fade + scroll reset on a filter
             change). Search is deliberately left out: keying on it remounted
             and re-animated every card on every keystroke. */}
-        <div key={`${cat}|${verbForm}|${tone}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
-          {visibleCategories.length === 0 && (
+        <div ref={listRef} key={`${cat}|${verbForm}|${tone}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
+          {filtered.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">{t('grammar.noResults')}</div>
           )}
           {visibleCategories.map(c => {
@@ -296,7 +317,7 @@ export function Grammar() {
                     {c.romanNumeral}
                   </span>
                   <span className="font-black text-base flex-1 group-hover:underline">{localize(c.title)}</span>
-                  <span className="text-xs font-bold text-muted">{items.length}</span>
+                  <span className="text-xs font-bold text-muted">{categoryTotals.get(c.slug) ?? items.length}</span>
                   <span className="text-sm font-black text-muted w-4 text-center">{isCollapsed ? '+' : '−'}</span>
                 </button>
 
@@ -348,6 +369,7 @@ export function Grammar() {
               </div>
             )
           })}
+          {hasMore && <div ref={sentinelRef} className="h-px" aria-hidden="true" />}
         </div>
       </div>
 

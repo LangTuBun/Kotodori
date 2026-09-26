@@ -42,9 +42,12 @@ const VocabRow = memo(function VocabRow({
   localize,
 }: VocabRowProps) {
   return (
+    // content-visibility lets the browser skip layout/paint for rows scrolled
+    // off-screen -- after scrolling deep, hundreds of rows stay mounted, and
+    // this keeps scrolling and theme switches from touching all of them.
     <button
       onClick={() => onSelect(index)}
-      className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors ${
+      className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors [content-visibility:auto] [contain-intrinsic-size:auto_72px] ${
         isSelected ? "bg-ink text-paper" : ""
       }`}
     >
