@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { transitivityPatterns, verbPairs, IRREGULAR_PATTERN_ID } from "@/data/transitivity"
-import { getGrammar } from "@/data/grammar"
+import { getGrammarLinks } from "@/data/grammar-links"
 import type { VerbTransitivityPair } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { Card } from "@/components/ui/Card"
@@ -42,7 +42,7 @@ export function Transitivity() {
   // like VerbForms' relatedGrammar, so an N5-only view shows nothing rather
   // than a cross-link to a point outside the current scope.
   const relatedGrammar = useMemo(
-    () => getGrammar(level).filter(g => g.category === "transitive-intransitive"),
+    () => getGrammarLinks(level).filter(g => g.category === "transitive-intransitive"),
     [level]
   )
 

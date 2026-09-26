@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { synonymGroups, collocationGroups, auxiliaryVerbs } from "@/data/usage"
-import { getGrammar } from "@/data/grammar"
+import { getGrammarLinks } from "@/data/grammar-links"
 import type {
-  AuxiliaryVerb, CollocationEntry, CollocationGroup, GrammarPoint, SynonymGroup, SynonymWord,
+  AuxiliaryVerb, CollocationEntry, CollocationGroup, GrammarLink, SynonymGroup, SynonymWord,
 } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { Card } from "@/components/ui/Card"
@@ -77,12 +77,12 @@ export function Usage() {
   // AuxiliaryVerb.grammarIds cross-links into grammar.ts, whose /grammar
   // route only resolves points inside the CURRENTLY selected level's list
   // (see Grammar.tsx's own point-lookup effect) -- scoping this lookup to
-  // getGrammar(level) rather than the full combined set means a chip only
+  // getGrammarLinks(level) rather than the full combined set means a chip only
   // ever shows (and its navigate() only ever lands) when the target point
   // actually exists in what's on screen, same reasoning as Transitivity.tsx's
   // relatedGrammar.
   const grammarById = useMemo(
-    () => Object.fromEntries(getGrammar(level).map(g => [g.id, g])) as Record<string, GrammarPoint>,
+    () => Object.fromEntries(getGrammarLinks(level).map(g => [g.id, g])) as Record<string, GrammarLink>,
     [level]
   )
 
@@ -312,9 +312,9 @@ function AuxiliaryVerbCard({
   t: T
   localize: Localize
   navigate: (to: string) => void
-  grammarById: Record<string, GrammarPoint>
+  grammarById: Record<string, GrammarLink>
 }) {
-  const linkedGrammar = (entry.grammarIds ?? []).map(id => grammarById[id]).filter((g): g is GrammarPoint => !!g)
+  const linkedGrammar = (entry.grammarIds ?? []).map(id => grammarById[id]).filter((g): g is GrammarLink => !!g)
   return (
     <Reveal index={index} className="h-full">
       <Card className="p-0 overflow-hidden h-full flex flex-col">

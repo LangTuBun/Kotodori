@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { verbGroups, getVerbForms, getCheatSheets, getKeyExceptions } from "@/data/verb-forms"
-import { getGrammar } from "@/data/grammar"
+import { getGrammarLinks } from "@/data/grammar-links"
 import { Ruby } from "@/components/ui/Ruby"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore } from "@/store/settings-store"
@@ -39,7 +39,7 @@ export function VerbForms() {
     return t('verbForms.groupN', { n: g })
   }
 
-  const grammar = useMemo(() => getGrammar(level), [level])
+  const grammar = useMemo(() => getGrammarLinks(level), [level])
   const relatedGrammar = useMemo(
     () => grammar.filter(g => g.requiredVerbForm?.includes(activeForm)),
     [grammar, activeForm]
