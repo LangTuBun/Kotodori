@@ -9,6 +9,7 @@ import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
 import { SpeakButton } from "@/components/ui/SpeakButton"
+import { prefetchVoicevox } from "@/lib/speech"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { groupKey, compareGroupKeys, isChapterKey } from "@/lib/vocab-grouping"
 import { useProgressiveList } from "@/lib/useProgressiveList"
@@ -308,6 +309,26 @@ function VocabModal({
 
   // A stroke-order drawing left open shouldn't linger behind a different word.
   useEffect(() => setSelectedKanji(null), [vocab.id])
+
+  // Warms the VOICEVOX cache for this word and its examples as soon as the
+  // modal opens -- by the time someone's actually read the word and reached
+  // for a speaker button, the ~1-3s of synthesis has usually already
+  // happened in the background, instead of them hearing it after a wait.
+  // A no-op (see prefetchVoicevox) once VOICEVOX isn't the active backend.
+  useEffect(() => {
+    // Shortest first -- the bare word reading (fast to synthesize) is the
+    // single most likely tap, and the queue is one-at-a-time, so it should
+    // be the one ready soonest. Capped at the first example, not every one:
+    // each sentence costs a few real seconds of the engine's CPU, and this
+    // isn't the only place trying to prefetch something.
+    prefetchVoicevox([vocab.kana, vocab.examples[0]?.ja ?? ""])
+    // Whatever's still waiting to *start* (not already mid-fetch, which
+    // finishes and gets cached regardless) is dropped once this word's no
+    // longer the one on screen -- otherwise it competes for the engine's
+    // CPU with whatever tap actually happens next, which is usually not in
+    // this modal at all by the time this word's clips would have been done.
+    return () => prefetchVoicevox([])
+  }, [vocab])
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {

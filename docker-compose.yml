@@ -34,6 +34,13 @@ services:
     image: voicevox/voicevox_engine:cpu-latest
     container_name: tori-voicevox
     restart: unless-stopped
+    environment:
+      # Unset (the default) uses half this VM's visible logical cores for
+      # synthesis -- on a VM given only 1-2 vCPUs, that's a single thread,
+      # and is the single biggest lever on how long a tap takes to make a
+      # sound. Set VOICEVOX_THREADS in .env to this VM's actual core count
+      # (see .env.example) once you know it (`nproc` inside the VM).
+      - VV_CPU_NUM_THREADS=${VOICEVOX_THREADS:-}
     # No `ports:` here on purpose -- see the comment above. `expose` is only
     # documentation (containers on this network can already reach each other
     # regardless), not a security boundary.

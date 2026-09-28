@@ -4,6 +4,7 @@ import { Furigana } from "@/components/ui/Furigana"
 import { PitchAccent } from "@/components/ui/PitchAccent"
 import { SpeakButton } from "@/components/ui/SpeakButton"
 import { ACCENT_HEX, accentFor, cleanReadings, onkunTone, pitchForWord } from "@/lib/kanji"
+import { prefetchVoicevox } from "@/lib/speech"
 import { useTranslation } from "@/lib/useTranslation"
 
 function isTypingTarget(el: Element | null): boolean {
@@ -32,6 +33,16 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
   const current = items[index]
   const hasPrev = index > 0
   const hasNext = index < total - 1
+
+  // Warms the VOICEVOX cache for this group's words as soon as it's shown --
+  // see the identical comment in VocabBrowser.tsx. Queued one at a time
+  // (prefetchVoicevox's own doing, not this loop), so paging through several
+  // groups quickly never piles up concurrent synthesis calls.
+  useEffect(() => {
+    prefetchVoicevox(current.group.words.map(w => w.kana))
+    // See the identical cleanup in VocabBrowser.tsx.
+    return () => prefetchVoicevox([])
+  }, [current])
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {

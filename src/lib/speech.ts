@@ -253,17 +253,14 @@ function cacheSet(key: string, blob: Blob) {
 // over a later tap's word (or after cancelSpeech() gave up on it entirely).
 let voicevoxSeq = 0
 
-type SynthResult = { ok: true; blob: Blob } | { ok: false; reason: "stale" | "failed" }
-
-async function synthesizeVoicevox(text: string, rate: number, seq: number): Promise<SynthResult> {
+async function fetchVoicevoxAudio(text: string, rate: number): Promise<Blob | null> {
   try {
     const queryRes = await fetchWithTimeout(
       `${VOICEVOX_BASE}/audio_query?speaker=${VOICEVOX_SPEAKER}&text=${encodeURIComponent(text)}`,
       { method: "POST" },
       VOICEVOX_SYNTHESIS_TIMEOUT_MS
     )
-    if (seq !== voicevoxSeq) return { ok: false, reason: "stale" }
-    if (!queryRes.ok) return { ok: false, reason: "failed" }
+    if (!queryRes.ok) return null
     const query = await queryRes.json()
     query.speedScale = rate
 
@@ -272,13 +269,92 @@ async function synthesizeVoicevox(text: string, rate: number, seq: number): Prom
       { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(query) },
       VOICEVOX_SYNTHESIS_TIMEOUT_MS
     )
-    if (seq !== voicevoxSeq) return { ok: false, reason: "stale" }
-    if (!synthRes.ok) return { ok: false, reason: "failed" }
-    return { ok: true, blob: await synthRes.blob() }
+    if (!synthRes.ok) return null
+    return await synthRes.blob()
   } catch {
     // Network error, timeout, engine restarting mid-session, etc.
-    return { ok: false, reason: "failed" }
+    return null
   }
+}
+
+// Dedupes concurrent requests for the exact same (speaker, rate, text) --
+// without this, tapping a word while its own prefetch is still in flight (or
+// double-tapping before the first tap's request has landed) would fire a
+// second, fully redundant audio_query+synthesis round trip that just queues
+// up behind the first on the engine's single CPU-bound synthesis path,
+// roughly doubling that word's latency instead of the prefetch or first tap
+// paying for it once.
+const inflightClips = new Map<string, Promise<Blob | null>>()
+function getClip(text: string, rate: number): Promise<Blob | null> {
+  const key = cacheKey(text, rate)
+  const cached = voicevoxCache.get(key)
+  if (cached) return Promise.resolve(cached)
+  let clip = inflightClips.get(key)
+  if (!clip) {
+    clip = fetchVoicevoxAudio(text, rate)
+      .then(blob => {
+        if (blob) cacheSet(key, blob)
+        return blob
+      })
+      .finally(() => inflightClips.delete(key))
+    inflightClips.set(key, clip)
+  }
+  return clip
+}
+
+// ---------------------------------------------------------------------------
+// Prefetch -- warms the cache for words/sentences the user is very likely to
+// tap soon (e.g. the word a detail modal just opened for), so the ~1-3s of
+// CPU-bound synthesis has usually already happened by the time they actually
+// reach for the speaker button, instead of them watching it pulse and
+// waiting. Deliberately a strict one-at-a-time queue, not "fire every
+// prefetch at once": synthesis is CPU-bound on a single self-hosted engine,
+// so several concurrent prefetches would slow down whichever one -- a real
+// tap included -- the engine happens to get to last.
+// ---------------------------------------------------------------------------
+let prefetchQueue: { text: string; rate: number }[] = []
+let prefetchRunning = false
+
+/**
+ * Call with everything that's about to become the obvious next thing to
+ * tap -- a word detail modal's headword and its example sentences, a
+ * grammar point's examples once its drawer opens, and so on. List the
+ * fastest/shortest items first (a bare word reading over a full sentence):
+ * since this is one-at-a-time, whatever's first gets ready soonest.
+ *
+ * Each call *replaces* whatever this queue was still waiting to start --
+ * e.g. clicking "next word" a few times fast means only the word actually
+ * landed on keeps queuing, not every word skipped past along the way.
+ * Whatever's already mid-fetch (tracked in `inflightClips`, not this array)
+ * is left alone to finish either way, since it'll be cached for later
+ * regardless of whether this particular call still wants it.
+ *
+ * A no-op once VOICEVOX isn't the active backend.
+ */
+export function prefetchVoicevox(texts: string[], rate = 0.85): void {
+  if (backend !== "voicevox") return
+  prefetchQueue = texts
+    .map(text => text.trim())
+    .filter(text => text && !voicevoxCache.has(cacheKey(text, rate)))
+    .map(text => ({ text, rate }))
+  void runPrefetchQueue()
+}
+
+async function runPrefetchQueue() {
+  if (prefetchRunning) return
+  prefetchRunning = true
+  while (prefetchQueue.length > 0) {
+    const next = prefetchQueue.shift()!
+    // Result and any failure are both ignored here on purpose: getClip()
+    // already caches a success, and a failure shouldn't flip the voice
+    // backend the way a real tap's failure does -- this queue runs on
+    // words nobody has actually tried to hear yet, far more often than real
+    // taps do. If a real tap does come for this text later, it gets its
+    // own normal attempt (via getClip -- sharing this same request if it's
+    // still in flight) and its own normal fallback.
+    await getClip(next.text, next.rate)
+  }
+  prefetchRunning = false
 }
 
 let currentObjectUrl: string | null = null
@@ -334,25 +410,22 @@ async function speakViaVoicevox(text: string, id: string, rate: number, seq: num
 
   // Pulse immediately so the tap has visible feedback during the ~0.5-2s a
   // real synthesis call takes, rather than looking unresponsive until audio
-  // actually starts.
+  // actually starts. getClip() shares this request with a same-text
+  // prefetch already in flight (or an earlier tap's), instead of firing a
+  // second, fully redundant one.
   setActiveId(id)
 
-  const result = await synthesizeVoicevox(text, rate, seq)
+  const blob = await getClip(text, rate)
   if (seq !== voicevoxSeq) return // a later tap already took over
 
-  if (!result.ok) {
+  if (!blob) {
     if (getActiveSpeechId() === id) setActiveId(null)
-    if (result.reason === "failed") {
-      // A stale result means a newer tap is already handling its own sound;
-      // a real failure still needs *this* tap to produce something.
-      setBackend("browser")
-      speakViaBrowser(text, id, rate)
-    }
+    setBackend("browser")
+    speakViaBrowser(text, id, rate)
     return
   }
 
-  cacheSet(key, result.blob)
-  playVoicevoxBlob(result.blob, id)
+  playVoicevoxBlob(blob, id)
 }
 
 // ---------------------------------------------------------------------------
@@ -381,6 +454,10 @@ export function subscribeSpeech(listener: Listener): () => void {
 
 export function cancelSpeech() {
   voicevoxSeq++ // invalidate any in-flight VOICEVOX fetch/decode
+  // Only the not-yet-started queue -- whatever's already mid-fetch (in
+  // inflightClips) is left to finish and cache itself for next time, same
+  // as any other prefetch.
+  prefetchQueue = []
   currentUtterance = null
   setActiveId(null)
   if (isSpeechSupported()) window.speechSynthesis.cancel()

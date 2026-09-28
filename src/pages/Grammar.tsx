@@ -13,6 +13,7 @@ import { useProgressiveList } from "@/lib/useProgressiveList"
 import { FormationMatrix } from "@/components/ui/FormationMatrix"
 import { NotesAndTrapsCallout } from "@/components/ui/NotesAndTrapsCallout"
 import { InteractiveExampleCard } from "@/components/ui/InteractiveExampleCard"
+import { prefetchVoicevox } from "@/lib/speech"
 
 // Cross-references (relatedGrammar/opposingGrammar/notesAndPitfalls[].relatedGrammarId)
 // can point across the N5/N4 boundary, so id -> pattern lookups always use the
@@ -81,6 +82,19 @@ export function Grammar() {
     setTone(null)
     setSelected(null)
   }, [level])
+
+  // Warms the VOICEVOX cache for this point's examples as soon as the detail
+  // drawer opens for it -- see the identical comment in VocabBrowser.tsx.
+  useEffect(() => {
+    // Capped at the first couple examples -- richExamples can run to half a
+    // dozen or more, and the queue is one-at-a-time, so prefetching all of
+    // them would mostly just warm clips for examples the user never scrolls
+    // to while the ones they're actually looking at wait behind them.
+    const examples = (selected?.richExamples ?? []).slice(0, 2)
+    prefetchVoicevox(examples.map(ex => ex.ja))
+    // See the identical cleanup in VocabBrowser.tsx.
+    return () => prefetchVoicevox([])
+  }, [selected])
 
   // Cross-navigation from the Verb Forms tab: /grammar?point=<id> opens
   // that point's detail drawer and makes sure its category is expanded.
