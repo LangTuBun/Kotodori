@@ -6,6 +6,7 @@ import type { VerbTransitivityPair } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { Card } from "@/components/ui/Card"
 import { Reveal } from "@/components/ui/Reveal"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore } from "@/store/settings-store"
 import { Watermark } from "@/components/ui/ScreenHeader"
@@ -242,7 +243,10 @@ function VerbHalfRow({
   return (
     <div className="p-4 flex-1">
       <div className="flex items-center justify-between gap-2 mb-1.5">
-        <Furigana className="text-xl font-black" kanji={half.kanji} kana={half.kana} />
+        <span className="inline-flex items-center gap-1.5">
+          <Furigana className="text-xl font-black" kanji={half.kanji} kana={half.kana} />
+          <SpeakButton text={half.kana} />
+        </span>
         <span
           className="font-mono shrink-0 text-[10px] font-black uppercase tracking-widest px-2 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] text-paper"
           style={{ backgroundColor: color }}
@@ -252,7 +256,10 @@ function VerbHalfRow({
       </div>
       <div className="text-sm font-bold text-muted mb-2">{localize(half.meaning)}</div>
       <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
-        <Furigana className="text-sm font-bold" kanji={half.example.ja} kana={half.example.kana} />
+        <div className="flex items-start gap-1.5">
+          <Furigana className="text-sm font-bold" kanji={half.example.ja} kana={half.example.kana} />
+          <SpeakButton text={half.example.ja} />
+        </div>
         <div className="text-xs font-normal text-muted mt-1">{localize(half.example)}</div>
       </div>
     </div>

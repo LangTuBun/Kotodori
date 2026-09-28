@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { verbGroups, getVerbForms, getCheatSheets, getKeyExceptions } from "@/data/verb-forms"
 import { getGrammarLinks } from "@/data/grammar-links"
 import { Ruby } from "@/components/ui/Ruby"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore } from "@/store/settings-store"
 import { Watermark } from "@/components/ui/ScreenHeader"
@@ -168,7 +169,10 @@ export function VerbForms() {
               <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.sentenceExamples')}</div>
               {form.sentenceExamples.map((s, i) => (
                 <div key={i} className="mb-3 last:mb-0">
-                  <div className="font-bold"><Ruby text={s.ja} html={s.jaRuby} /></div>
+                  <div className="flex items-start gap-2">
+                    <div className="font-bold"><Ruby text={s.ja} html={s.jaRuby} /></div>
+                    <SpeakButton text={s.ja} />
+                  </div>
                   <div className="text-sm text-muted">{localize(s.meaning)}</div>
                 </div>
               ))}

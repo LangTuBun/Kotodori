@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
 import { Sidebar } from "./Sidebar"
 import { Furigana } from "@/components/ui/Furigana"
+import { cancelSpeech } from "@/lib/speech"
 
 export function Layout() {
   const location = useLocation()
@@ -9,8 +10,12 @@ export function Layout() {
 
   // Close the mobile drawer whenever the route changes (covers back/forward
   // nav and any navigation that doesn't go through Sidebar's own onClose).
+  // Also stops any in-flight pronunciation -- without this, tapping a
+  // SpeakButton and then switching tabs mid-utterance leaves the voice
+  // reading a word from the screen you just left.
   useEffect(() => {
     setNavOpen(false)
+    cancelSpeech()
   }, [location.pathname])
 
   return (

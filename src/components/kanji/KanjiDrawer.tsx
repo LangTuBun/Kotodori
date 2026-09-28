@@ -254,6 +254,10 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
         }`}
         style={{ backgroundColor: "rgb(255,255,255)", color: DRAWER_INK, borderColor: DRAWER_INK }}
       >
+        {/* No SpeakButton here: a bare, out-of-context kanji has no single
+            correct reading (this is exactly why the panel below lists every
+            on'yomi/kun'yomi rather than picking one) -- guessing one via TTS
+            would show a specific pronunciation as if it were THE answer. */}
         <div className="flex items-center justify-between p-4 border-b-3" style={{ borderColor: DRAWER_INK }}>
           <div className="text-2xl font-black jp" style={{ color: DRAWER_INK }}>{displayChar}</div>
           <button

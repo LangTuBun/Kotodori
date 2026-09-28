@@ -5,6 +5,7 @@ import type { VocabEntry, KanjiChapter } from "@/types"
 import { Button } from "@/components/ui/Button"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
 import { Watermark } from "@/components/ui/ScreenHeader"
@@ -215,8 +216,9 @@ function WordCard({ entry }: { entry: VocabEntry }) {
   return (
     <div className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 flex-1 min-w-[140px] bg-paper">
       <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
-      <div className="text-2xl font-black jp mt-3 mb-2">
+      <div className="text-2xl font-black jp mt-3 mb-2 flex items-center gap-1.5">
         <Furigana kanji={entry.kanji} kana={entry.kana} />
+        <SpeakButton text={entry.kana} />
       </div>
       <div className="text-sm font-bold">{localize(entry.meanings)}</div>
       {entry.kana && (
@@ -262,7 +264,10 @@ export function Homophones() {
               {/* Show all distinct readings */}
               <div className="flex gap-3 justify-center flex-wrap mb-2">
                 {selected.readings.map(r => (
-                  <div key={r} className="text-4xl sm:text-5xl font-black jp">{r}</div>
+                  <div key={r} className="text-4xl sm:text-5xl font-black jp inline-flex items-center gap-2">
+                    {r}
+                    <SpeakButton text={r} size="md" />
+                  </div>
                 ))}
               </div>
               {selected.readings.length > 1 && (

@@ -2,6 +2,7 @@ import { useState } from "react"
 import type { EnhancedGrammarExample } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
 import { LinkifiedText } from "@/components/ui/LinkifiedText"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { useTranslation } from "@/lib/useTranslation"
 
 interface InteractiveExampleCardProps {
@@ -34,20 +35,10 @@ export function InteractiveExampleCard({ example, showFurigana, showRomaji, acce
         <span className="text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] text-muted">
           {t(`grammar.examples.category.${example.category}`)}
         </span>
-        {/* Inactive audio stub -- no audio assets exist yet, kept visible so
-            the affordance is discoverable once audioStub is wired up. */}
-        <button
-          type="button"
-          disabled
-          title={example.audioStub ? undefined : 'Audio coming soon'}
-          className="text-muted/50 cursor-not-allowed shrink-0"
-          aria-label="Play audio (unavailable)"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
-            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-          </svg>
-        </button>
+        {/* Reads example.ja aloud via the device voice -- audioStub (a named
+            .mp3 that was never produced) stays on the type for a future
+            pre-recorded-audio pass, but isn't needed for this. */}
+        <SpeakButton text={example.ja} />
       </div>
 
       <div className="font-bold text-lg leading-snug jp">

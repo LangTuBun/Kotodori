@@ -1,5 +1,6 @@
 import countersData from "@/data/n5/counters.json"
 import type { CountersData, CounterCategory, CounterColumn } from "@/types"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { useTranslation } from "@/lib/useTranslation"
 import { Watermark } from "@/components/ui/ScreenHeader"
 
@@ -53,7 +54,10 @@ export function Counters() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {data.bigNumberExamples.map((ex, i) => (
               <div key={i} className="border-2 border-structural rounded-[var(--radius-sm)] bg-paper p-4">
-                <div className="jp text-xl font-black">{ex.kanji}</div>
+                <div className="jp text-xl font-black flex items-center gap-1.5">
+                  {ex.kanji}
+                  <SpeakButton text={ex.kana} />
+                </div>
                 <div className="jp text-sm mt-1 text-muted">{ex.kana}</div>
                 <div className="text-xs mt-1 italic text-muted">{ex.romaji}</div>
                 <div className="text-sm mt-2 font-bold text-green">{localize(ex.meaning)}</div>

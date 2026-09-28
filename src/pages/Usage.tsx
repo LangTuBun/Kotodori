@@ -9,6 +9,7 @@ import { Furigana } from "@/components/ui/Furigana"
 import { Card } from "@/components/ui/Card"
 import { PosTag } from "@/components/ui/PosTag"
 import { Reveal } from "@/components/ui/Reveal"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore } from "@/store/settings-store"
@@ -231,13 +232,19 @@ function SynonymGroupCard({
             <Card key={w.kanji} className="p-0 overflow-hidden h-full flex flex-col">
               <div className="p-4 flex-1">
                 <div className="flex items-center justify-between gap-2 mb-1.5">
-                  <Furigana className="text-xl font-black" kanji={w.kanji} kana={w.kana} />
+                  <span className="inline-flex items-center gap-1.5">
+                    <Furigana className="text-xl font-black" kanji={w.kanji} kana={w.kana} />
+                    <SpeakButton text={w.kana} />
+                  </span>
                   <PosTag pos={w.pos} verbGroup={w.verbGroup} />
                 </div>
                 <div className="text-sm font-bold text-muted mb-2">{localize(w.meaning)}</div>
                 <p className="text-xs leading-relaxed mb-3">{localize(w.nuance)}</p>
                 <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
-                  <Furigana className="text-sm font-bold" kanji={w.example.ja} kana={w.example.kana} />
+                  <div className="flex items-start gap-1.5">
+                    <Furigana className="text-sm font-bold" kanji={w.example.ja} kana={w.example.kana} />
+                    <SpeakButton text={w.example.ja} />
+                  </div>
                   <div className="text-xs font-normal text-muted mt-1">{localize(w.example)}</div>
                 </div>
               </div>
@@ -275,12 +282,15 @@ function CollocationGroupSection({
                       {e.particle}
                     </span>
                   </div>
-                  <div className="text-sm font-bold mb-1">
-                    <Furigana kanji={e.verb.kanji} kana={e.verb.kana} /> — <span className="text-muted font-normal">{localize(e.verb.meaning)}</span>
+                  <div className="text-sm font-bold mb-1 flex items-center gap-1.5">
+                    <Furigana kanji={e.verb.kanji} kana={e.verb.kana} /> <SpeakButton text={e.verb.kana} /> — <span className="text-muted font-normal">{localize(e.verb.meaning)}</span>
                   </div>
                   <p className="text-xs leading-relaxed mt-2 mb-3">{localize(e.explanation)}</p>
                   <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
-                    <Furigana className="text-sm font-bold" kanji={e.example.ja} kana={e.example.kana} />
+                    <div className="flex items-start gap-1.5">
+                      <Furigana className="text-sm font-bold" kanji={e.example.ja} kana={e.example.kana} />
+                      <SpeakButton text={e.example.ja} />
+                    </div>
                     <div className="text-xs font-normal text-muted mt-1">{localize(e.example)}</div>
                   </div>
                   {e.contrastId && collocationPatternById[e.contrastId] && (
@@ -328,7 +338,10 @@ function AuxiliaryVerbCard({
           <div className="space-y-2">
             {entry.examples.map((ex, i) => (
               <div key={i} className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
-                <Furigana className="text-sm font-bold" kanji={ex.ja} kana={ex.kana} />
+                <div className="flex items-start gap-1.5">
+                  <Furigana className="text-sm font-bold" kanji={ex.ja} kana={ex.kana} />
+                  <SpeakButton text={ex.ja} />
+                </div>
                 <div className="text-xs font-normal text-muted mt-1">{localize(ex)}</div>
               </div>
             ))}

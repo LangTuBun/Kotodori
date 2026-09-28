@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import type { KanjiGroup } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { PitchAccent } from "@/components/ui/PitchAccent"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { ACCENT_HEX, accentFor, cleanReadings, onkunTone, pitchForWord } from "@/lib/kanji"
 import { useTranslation } from "@/lib/useTranslation"
 
@@ -167,6 +168,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
                     <span className="jp font-bold text-lg leading-snug inline-flex items-center gap-1.5">
                       <Furigana kanji={w.kanji} kana={w.kana} onKanjiClick={onAnchorClick} />
                       <PitchAccent kana={w.kana} pitch={pitchForWord(w.kanji, w.kana)} />
+                      <SpeakButton text={w.kana} />
                     </span>
                     <span className="text-[10px] font-bold uppercase tracking-wider shrink-0 pt-0.5" style={{ color: onkunTone(w.onkun) }}>
                       {w.onkun}

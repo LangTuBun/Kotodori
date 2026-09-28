@@ -6,6 +6,8 @@
     "examples": "Ví dụ",
     "filters": "Bộ lọc",
     "wordsCount": "{n} từ",
+    "playPronunciation": "Phát âm {text}",
+    "speechUnavailable": "Thiết bị này không hỗ trợ phát âm",
     "stats": {
       "total": "Tổng",
       "new": "Mới",

@@ -8,6 +8,7 @@ import { useVocabStore } from "@/store/vocab-store"
 import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
 import { KanjiDrawer } from "@/components/kanji/KanjiDrawer"
+import { SpeakButton } from "@/components/ui/SpeakButton"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { groupKey, compareGroupKeys, isChapterKey } from "@/lib/vocab-grouping"
 import { useProgressiveList } from "@/lib/useProgressiveList"
@@ -45,9 +46,21 @@ const VocabRow = memo(function VocabRow({
     // content-visibility lets the browser skip layout/paint for rows scrolled
     // off-screen -- after scrolling deep, hundreds of rows stay mounted, and
     // this keeps scrolling and theme switches from touching all of them.
-    <button
+    // A <div role="button"> rather than a real <button> -- SpeakButton below
+    // needs to be a real, independently-clickable <button>, and a <button>
+    // nested inside a <button> is invalid HTML (KanjiGroupCard uses the same
+    // pattern for its own nested anchor-click button).
+    <div
+      role="button"
+      tabIndex={0}
       onClick={() => onSelect(index)}
-      className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors [content-visibility:auto] [contain-intrinsic-size:auto_72px] ${
+      onKeyDown={e => {
+        // Ignore a keydown that bubbled up from the nested SpeakButton --
+        // otherwise Enter/Space on it both speaks *and* opens the row.
+        if (e.target !== e.currentTarget) return
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(index) }
+      }}
+      className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors cursor-pointer [content-visibility:auto] [contain-intrinsic-size:auto_72px] ${
         isSelected ? "bg-ink text-paper" : ""
       }`}
     >
@@ -55,6 +68,7 @@ const VocabRow = memo(function VocabRow({
         <div className="font-bold text-lg jp leading-tight flex items-center gap-2">
           <Furigana kanji={v.kanji} kana={v.kana} />
           <PitchAccent kana={v.kana} pitch={v.pitch} />
+          <SpeakButton text={v.kana} />
         </div>
         <div className={`text-xs mt-0.5 ${isSelected ? "text-paper/70" : "text-muted"}`}>
           {localize(v.meanings).slice(0, 60)}
@@ -78,7 +92,7 @@ const VocabRow = memo(function VocabRow({
           </span>
         )}
       </div>
-    </button>
+    </div>
   )
 })
 
@@ -364,8 +378,11 @@ function VocabModal({
                 ×
               </button>
             </div>
-            <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-none mb-3 break-words">
-              <Furigana kanji={vocab.kanji} kana={vocab.kana} onKanjiClick={setSelectedKanji} />
+            <div className="flex items-start gap-2 mb-3">
+              <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-none break-words">
+                <Furigana kanji={vocab.kanji} kana={vocab.kana} onKanjiClick={setSelectedKanji} />
+              </div>
+              <SpeakButton text={vocab.kana} size="md" className="mt-2" />
             </div>
             {vocab.kanji !== vocab.kana && vocab.kana && (
               <div className="text-xl jp text-muted font-bold">{vocab.kana}</div>
@@ -392,7 +409,10 @@ function VocabModal({
               </div>
               {vocab.examples.map((ex, i) => (
                 <div key={i} className="mb-4 last:mb-0">
-                  <div className="jp font-bold text-base">{ex.ja}</div>
+                  <div className="flex items-start gap-2">
+                    <div className="jp font-bold text-base">{ex.ja}</div>
+                    <SpeakButton text={ex.ja} />
+                  </div>
                   {ex.kana && <div className="jp text-xs text-muted mt-0.5">{ex.kana}</div>}
                   <div className="text-sm text-muted mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>
                 </div>
