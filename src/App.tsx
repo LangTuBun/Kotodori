@@ -17,6 +17,7 @@ const Landing = lazy(() => import("@/pages/Landing").then(m => ({ default: m.Lan
 const VocabBrowser = lazy(() => import("@/pages/VocabBrowser").then(m => ({ default: m.VocabBrowser })))
 const Review = lazy(() => import("@/pages/Review").then(m => ({ default: m.Review })))
 const Grammar = lazy(() => import("@/pages/Grammar").then(m => ({ default: m.Grammar })))
+const Kaiwa = lazy(() => import("@/pages/Kaiwa").then(m => ({ default: m.Kaiwa })))
 const VerbForms = lazy(() => import("@/pages/VerbForms").then(m => ({ default: m.VerbForms })))
 const Transitivity = lazy(() => import("@/pages/Transitivity").then(m => ({ default: m.Transitivity })))
 const Usage = lazy(() => import("@/pages/Usage").then(m => ({ default: m.Usage })))
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="vocab" element={<Suspense fallback={<RouteFallback />}><VocabBrowser /></Suspense>} />
           <Route path="review" element={<Suspense fallback={<RouteFallback />}><Review /></Suspense>} />
           <Route path="grammar" element={<Suspense fallback={<RouteFallback />}><Grammar /></Suspense>} />
+          <Route path="kaiwa" element={<Suspense fallback={<RouteFallback />}><Kaiwa /></Suspense>} />
           <Route path="verb-forms" element={<Suspense fallback={<RouteFallback />}><VerbForms /></Suspense>} />
           <Route path="transitivity" element={<Suspense fallback={<RouteFallback />}><Transitivity /></Suspense>} />
           <Route path="usage" element={<Suspense fallback={<RouteFallback />}><Usage /></Suspense>} />

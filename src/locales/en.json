@@ -37,6 +37,7 @@
     "vocabulary": "Vocabulary",
     "review": "Review",
     "grammar": "Grammar",
+    "kaiwa": "Conversation Practice",
     "verbForms": "Verb Forms",
     "transitivity": "Transitivity",
     "usage": "Usage & Nuances",
@@ -227,6 +228,15 @@
     "noResults": "Nothing matches this search.",
     "trapLabel": "Common trap",
     "compareWith": "Compare with"
+  },
+  "kaiwa": {
+    "subtitle": "25 N4 mid-term oral exam question sets (Dungmori)",
+    "intro": "The N4 mid-term oral exam question sets -- each question has a model answer built from the N5/N4 grammar already covered in this app. Try answering out loud first, then tap \"Show model answer\" for a check.",
+    "searchPlaceholder": "Search questions, answers, topics...",
+    "setLabel": "Question set {n}",
+    "showAnswer": "Show model answer",
+    "hideAnswer": "Hide answer",
+    "noResults": "Nothing matches this search."
   },
   "kanji": {
     "searchPlaceholder": "Search kanji, words, Sino-Vietnamese, meaning...",

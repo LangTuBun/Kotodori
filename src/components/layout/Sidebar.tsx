@@ -14,6 +14,7 @@ const nav = [
   { to: "/vocab",      label: "単語",       kana: "たんご",         key: "vocabulary" },
   { to: "/review",     label: "復習",       kana: "ふくしゅう",      key: "review" },
   { to: "/grammar",    label: "文法",       kana: "ぶんぽう",        key: "grammar" },
+  { to: "/kaiwa",      label: "会話練習",   kana: "かいわれんしゅう", key: "kaiwa" },
   { to: "/verb-forms", label: "動詞の形",   kana: "どうしのかたち",   key: "verbForms" },
   { to: "/transitivity", label: "自他動詞", kana: "じたどうし",      key: "transitivity" },
   { to: "/usage",      label: "使い方",     kana: "つかいかた",      key: "usage" },

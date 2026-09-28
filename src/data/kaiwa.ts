@@ -1,0 +1,562 @@
+// 会話練習 (Kaiwa) -- the 25 "Bộ câu hỏi" oral mid-term question sets from
+// GUNGUN JOUTATSU N4 (DUNGMORI Sơ cấp), plus a model spoken answer for each.
+//
+// The 25 sets share a lot of overlapping questions (the same question shows
+// up in several sets, sometimes with cosmetic wording differences -- 助けま
+// すか vs どうしますか, 何と言うんですか vs 何と言いますか, etc). Rather than
+// duplicate authoring 125 times, `kaiwaQuestions` holds each question once
+// (83 total) and `kaiwaSets` replays the original 25 sets as ordered
+// references into it -- practicing "Bộ 14" still shows exactly 5 questions
+// in the original order, it just may share a question object with "Bộ 3".
+//
+// Every answer is deliberately built only from patterns that exist in this
+// app's own N5/N4 grammar data (see grammarIds, resolved via
+// getGrammarLinks() the same way Usage.tsx's auxiliaryVerbs do) -- the goal
+// is a model answer a learner could actually produce with what they've
+// already studied here, not just any grammatically correct sentence.
+import type { KaiwaQuestion, KaiwaSet } from "@/types"
+
+export const kaiwaTopics: Record<string, { vi: string; en: string }> = {
+  gioiThieu: { vi: "Giới thiệu bản thân", en: "About yourself" },
+  soThich: { vi: "Sở thích & tính cách", en: "Preferences & personality" },
+  kinhNghiem: { vi: "Kinh nghiệm (đã từng...)", en: "Past experience" },
+  kinhNghiemBiDong: { vi: "Kinh nghiệm & bị động", en: "Experience & passive" },
+  dieuKien: { vi: "Điều kiện & giả định", en: "Conditionals" },
+  soSanh: { vi: "So sánh & lựa chọn", en: "Comparison" },
+  loiKhuyen: { vi: "Xin ý kiến & lời khuyên", en: "Asking for advice" },
+  phanDoan: { vi: "Phán đoán & nghe nói", en: "Conjecture & hearsay" },
+  giaiThich: { vi: "Giải thích ý nghĩa", en: "Explaining meaning" },
+  trangThai: { vi: "Trạng thái & kết quả", en: "States & results" },
+  xacNhan: { vi: "Xác nhận", en: "Confirmation" },
+}
+
+export const kaiwaQuestions: KaiwaQuestion[] = [
+  {
+    id: "k01", ja: "~さんは何をするのが苦手ですか。", kana: "~さんはなにをするのがにがてですか。",
+    topic: "soThich", grammarIds: ["g_172"],
+    answer: { ja: "私は歌うのが苦手です。人前で話すのも苦手です。", kana: "わたしはうたうのがにがてです。ひとまえではなすのもにがてです。", vi: "Tôi kém khoản hát. Nói trước đám đông tôi cũng không giỏi.", en: "" },
+    tip: { vi: "Dùng mẫu \"Vるのが + 苦手／得意\" (g_172) để nói mình giỏi hay kém khi làm việc gì.", en: "" },
+  },
+  {
+    id: "k02", ja: "ズンモリは何をする場所ですか。", kana: "ズンモリはなにをするばしょですか。",
+    topic: "gioiThieu", grammarIds: ["g_165"],
+    answer: { ja: "ズンモリは日本語を勉強する場所です。文法や会話を教えてくれる学校です。", kana: "ズンモリはにほんごをべんきょうするばしょです。ぶんぽうやかいわをおしえてくれるがっこうです。", vi: "Dungmori là nơi (để) học tiếng Nhật. Đó là trường dạy ngữ pháp và hội thoại (cho mình).", en: "" },
+    tip: { vi: "\"V普通形 + N\" (g_165) tạo mệnh đề bổ nghĩa danh từ, dùng để nói \"nơi để làm gì\".", en: "" },
+  },
+  {
+    id: "k03", ja: "~さんの会社/大学は、毎日何時に始まりますか。", kana: "~さんのかいしゃ/だいがくは、まいにちなんじにはじまりますか。",
+    topic: "gioiThieu", grammarIds: ["g_045"],
+    answer: { ja: "私の会社は毎日8時半に始まります。", kana: "わたしのかいしゃはまいにち8じはんにはじまります。", vi: "Công ty của tôi bắt đầu lúc 8 giờ rưỡi sáng mỗi ngày.", en: "" },
+    tip: { vi: "\"～時に + V\" (g_045) chỉ thời điểm cụ thể xảy ra hành động.", en: "" },
+  },
+  {
+    id: "k04", ja: "~さんはどんな人ですか。(~し~し)", kana: "~さんはどんなひとですか。(~し~し)",
+    topic: "soThich", grammarIds: ["g_146"],
+    answer: { ja: "私は明るいし、優しいし、料理も上手です。", kana: "わたしはあかるいし、やさしいし、りょうりもじょうずです。", vi: "Tôi vui vẻ, lại tốt bụng, nấu ăn cũng giỏi nữa.", en: "" },
+    tip: { vi: "Câu hỏi yêu cầu mẫu \"し～し\" (g_146) để liệt kê 2-3 đặc điểm tính cách cùng lúc.", en: "" },
+  },
+  {
+    id: "k05", ja: "日本へ旅行に行きたいんですが、どの会社が一番安いんでしょうか。", kana: "にほんへりょこうにいきたいんですが、どのかいしゃがいちばんやすいんでしょうか。",
+    topic: "loiKhuyen", grammarIds: ["g_150", "g_025"],
+    answer: { ja: "そうですね。ベトナム航空が一番安いと思いますよ。早めに予約すれば、もっと安くなります。", kana: "そうですね。ベトナムこうくうがいちばんやすいとおもいますよ。はやめによやくすれば、もっとやすくなります。", vi: "Để em nghĩ xem. Em nghĩ Vietnam Airlines là rẻ nhất đấy. Nếu đặt sớm thì sẽ càng rẻ hơn.", en: "" },
+    tip: { vi: "\"～んですが\" (g_150) mở đầu trước khi xin ý kiến; trả lời dùng \"一番A\" (g_025) để so sánh nhất.", en: "" },
+  },
+  {
+    id: "k06", ja: "~さんは N4 を勉強するのは大変ですか。", kana: "~さんは N4 をべんきょうするのはたいへんですか。",
+    topic: "soThich", grammarIds: ["g_173", "g_201"],
+    answer: { ja: "はい、大変です。特に文法が多くて覚えにくいです。", kana: "はい、たいへんです。とくにぶんぽうがおおくておぼえにくいです。", vi: "Vâng, khá vất vả. Đặc biệt là ngữ pháp nhiều nên khó nhớ.", en: "" },
+    tip: { vi: "\"V普通形 + のは + A\" (g_173) danh từ hóa hành động \"học N4\" để làm chủ ngữ rồi nhận xét.", en: "" },
+  },
+  {
+    id: "k07", ja: "「Tết」は日本語で何と言うんですか。", kana: "「Tết」はにほんごでなんというんですか。",
+    topic: "giaiThich", grammarIds: ["g_152"],
+    answer: { ja: "「Tết」は日本語で「旧正月」と言います。ベトナムで一番大切な行事です。", kana: "「Tết」はにほんごで「きゅうしょうがつ」といいます。ベトナムでいちばんたいせつなぎょうじです。", vi: "\"Tết\" trong tiếng Nhật gọi là 「旧正月 (Tết Nguyên Đán)」. Đó là dịp lễ quan trọng nhất ở Việt Nam.", en: "" },
+    tip: { vi: "\"～んですか\" (g_152) hỏi sâu về một chủ đề; trả lời dùng \"Nと言います\".", en: "" },
+  },
+  {
+    id: "k08", ja: "最近、誰かに褒められたことがありますか。", kana: "さいきん、だれかにほめられたことがありますか。",
+    topic: "kinhNghiemBiDong", grammarIds: ["g_194", "g_083"],
+    answer: { ja: "はい、あります。先週、先生に「発音が上手になりましたね」と褒められました。とても嬉しかったです。", kana: "はい、あります。せんしゅう、せんせいに「はつおんがじょうずになりましたね」とほめられました。とてもうれしかったです。", vi: "Vâng, có ạ. Tuần trước em được cô giáo khen \"Phát âm tiến bộ hẳn rồi đấy\". Em vui lắm.", en: "" },
+    tip: { vi: "Kết hợp thể bị động \"褒められる\" (g_194) với \"～たことがあります\" (g_083) để kể lại trải nghiệm được khen.", en: "" },
+  },
+  {
+    id: "k09", ja: "暖房をつけたら、部屋はどうなると思いますか。", kana: "だんぼうをつけたら、へやはどうなるとおもいますか。",
+    topic: "dieuKien", grammarIds: ["g_081", "g_160"],
+    answer: { ja: "暖房をつけたら、部屋は暖かくなると思います。", kana: "だんぼうをつけたら、へやはあたたかくなるとおもいます。", vi: "Nếu bật máy sưởi thì em nghĩ căn phòng sẽ trở nên ấm áp.", en: "" },
+    tip: { vi: "\"V1たら、V2\" (g_081) nói kết quả sau khi làm gì; \"Aく + なる\" (g_160) diễn tả sự biến đổi trạng thái.", en: "" },
+  },
+  {
+    id: "k10", ja: "実は、先生、昨日からずっと頭が痛いんです。どうすればいいでしょうか。", kana: "じつは、せんせい、きのうからずっとあたまがいたいんです。どうすればいいでしょうか。",
+    topic: "loiKhuyen", grammarIds: ["g_149", "g_099", "g_081"],
+    answer: { ja: "そうですか。それなら、早く薬を飲んで、今日はゆっくり休んでください。よくならなかったら、病院へ行ってください。", kana: "そうですか。それなら、はやくくすりをのんで、きょうはゆっくりやすんでください。よくならなかったら、びょういんへいってください。", vi: "Vậy à. Vậy thì em uống thuốc sớm rồi hôm nay nghỉ ngơi thật kỹ nhé. Nếu không đỡ thì đi bệnh viện nhé.", en: "" },
+    tip: { vi: "\"～んです\" (g_149) giải thích lý do/hoàn cảnh; trả lời dùng \"Vてください\" (g_099) và \"たら\" (g_081) để đưa lời khuyên.", en: "" },
+  },
+  {
+    id: "k11", ja: "最近、日本語の勉強はどうなりましたか。", kana: "さいきん、にほんごのべんきょうはどうなりましたか。",
+    topic: "gioiThieu", grammarIds: ["g_160"],
+    answer: { ja: "前より上手になりました。でも、漢字はまだ苦手です。", kana: "まえよりじょうずになりました。でも、かんじはまだにがてです。", vi: "Em đã giỏi hơn trước rồi ạ. Nhưng chữ Hán thì vẫn còn kém.", en: "" },
+    tip: { vi: "\"Aに／Nに + なる\" (g_160) diễn tả sự thay đổi theo thời gian, rất hợp để trả lời \"dạo này ra sao\".", en: "" },
+  },
+  {
+    id: "k12", ja: "~さんは何をするのが得意ですか。", kana: "~さんはなにをするのがとくいですか。",
+    topic: "soThich", grammarIds: ["g_172", "g_061_1"],
+    answer: { ja: "私は料理をするのが得意です。特にベトナム料理が上手に作れます。", kana: "わたしはりょうりをするのがとくいです。とくにベトナムりょうりがじょうずにつくれます。", vi: "Tôi giỏi nấu ăn. Đặc biệt là có thể nấu món Việt Nam rất ngon.", en: "" },
+    tip: { vi: "\"Vるのが + 得意\" (g_172) nói việc mình giỏi; có thể thêm động từ khả năng (g_061) để nhấn mạnh \"làm được\".", en: "" },
+  },
+  {
+    id: "k13", ja: "車を買いたいんですが、どの会社の車がいいと思いますか。", kana: "くるまをかいたいんですが、どのかいしゃのくるまがいいとおもいますか。",
+    topic: "loiKhuyen", grammarIds: ["g_150", "g_147", "g_146"],
+    answer: { ja: "そうですね。VinFastの車がいいと思います。ベトナムの会社だし、最近デザインもいいですから。", kana: "そうですね。VinFastのくるまがいいとおもいます。ベトナムのかいしゃだし、さいきんデザインもいいですから。", vi: "Để em nghĩ xem. Em nghĩ xe của VinFast tốt đấy. Vì là hãng của Việt Nam, với lại dạo này thiết kế cũng đẹp nữa.", en: "" },
+    tip: { vi: "\"んですが\" (g_150) mở lời trước khi xin ý kiến; trả lời dùng \"～と思います\" (g_147), thêm \"し\" (g_146) để nêu lý do.", en: "" },
+  },
+  {
+    id: "k14", ja: "宿題をするのを忘れたことがありますか。", kana: "しゅくだいをするのをわすれたことがありますか。",
+    topic: "kinhNghiem", grammarIds: ["g_178", "g_083"],
+    answer: { ja: "はい、あります。先週、宿題をするのを忘れて、先生に叱られました。", kana: "はい、あります。せんしゅう、しゅくだいをするのをわすれて、せんせいにしかられました。", vi: "Vâng, có ạ. Tuần trước em quên làm bài tập nên bị cô giáo mắng.", en: "" },
+    tip: { vi: "\"Vるのを忘れる\" (g_178) nói việc quên làm gì; kết hợp \"たことがあります\" (g_083) để hỏi/kể kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k15", ja: "道で困っている人に会ったら、助けますか。", kana: "みちでこまっているひとにあったら、たすけますか。",
+    topic: "dieuKien", grammarIds: ["g_081", "g_094_4"],
+    answer: { ja: "はい、助けます。困っている人を見たら、声をかけて手伝います。", kana: "はい、たすけます。こまっているひとをみたら、こえをかけててつだいます。", vi: "Vâng, em sẽ giúp. Nếu thấy người đang gặp khó khăn, em sẽ lên tiếng và giúp đỡ họ.", en: "" },
+    tip: { vi: "\"困っている\" dùng thể \"ている\" (g_094_4) diễn tả trạng thái; \"～たら\" (g_081) nêu điều kiện giả định.", en: "" },
+  },
+  {
+    id: "k16", ja: "~さんは何をするのが好きですか。", kana: "~さんはなにをするのがすきですか。",
+    topic: "soThich", grammarIds: ["g_065"],
+    answer: { ja: "私は音楽を聞くのが好きです。特にJ-POPが好きです。", kana: "わたしはおんがくをきくのがすきです。とくにJ-POPがすきです。", vi: "Tôi thích nghe nhạc. Đặc biệt thích nhạc J-POP.", en: "" },
+    tip: { vi: "\"NはNが好きです\" (g_065) là mẫu N5 cơ bản để nói sở thích.", en: "" },
+  },
+  {
+    id: "k17", ja: "最近、先生や上司に叱られたことがありますか。", kana: "さいきん、せんせいやじょうしにしかられたことがありますか。",
+    topic: "kinhNghiemBiDong", grammarIds: ["g_194", "g_083"],
+    answer: { ja: "はい、あります。会議に遅れて、上司に叱られたことがあります。", kana: "はい、あります。かいぎにおくれて、じょうしにしかられたことがあります。", vi: "Vâng, có ạ. Em từng bị sếp mắng vì đến muộn cuộc họp.", en: "" },
+    tip: { vi: "\"叱られる\" là thể bị động của \"叱る\" (g_194); kết hợp \"たことがあります\" (g_083) để kể kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k18", ja: "「ありがとう」は中国語でなんと言うんですか。", kana: "「ありがとう」はちゅうごくごでなんというんですか。",
+    topic: "giaiThich", grammarIds: ["g_152"],
+    answer: { ja: "「ありがとう」は中国語で「谢谢（シエシエ）」と言います。", kana: "「ありがとう」はちゅうごくごで「谢谢（シエシエ）」といいます。", vi: "\"Cảm ơn\" trong tiếng Trung nói là 「谢谢 (xièxiè)」.", en: "" },
+    tip: { vi: "Giống mẫu hỏi tên gọi/nghĩa khác: \"～んですか\" (g_152) hỏi sâu, trả lời bằng \"Nと言います\".", en: "" },
+  },
+  {
+    id: "k19", ja: "ハノイから東京まで、飛行機でどのくらいかかると思いますか。", kana: "ハノイからとうきょうまで、ひこうきでどのくらいかかるとおもいますか。",
+    topic: "phanDoan", grammarIds: ["g_063", "g_147"],
+    answer: { ja: "そうですね、5時間ぐらいかかると思います。", kana: "そうですね、5じかんぐらいかかるとおもいます。", vi: "Để em nghĩ xem, em nghĩ mất khoảng 5 tiếng.", en: "" },
+    tip: { vi: "\"かかります\" (g_063) nói thời gian/tiền tốn; \"～と思います\" (g_147) đưa phán đoán cá nhân.", en: "" },
+  },
+  {
+    id: "k20", ja: "~さんがよく聞く音楽はなんですか。", kana: "~さんがよくきくおんがくはなんですか。",
+    topic: "gioiThieu", grammarIds: ["g_165"],
+    answer: { ja: "私がよく聞く音楽はJ-POPです。特にYOASOBIをよく聞きます。", kana: "わたしがよくきくおんがくはJ-POPです。とくにYOASOBIをよくききます。", vi: "Nhạc tôi hay nghe là J-POP. Đặc biệt hay nghe YOASOBI.", en: "" },
+    tip: { vi: "\"V普通形 + N\" (g_165) dùng mệnh đề \"よく聞く\" để bổ nghĩa cho danh từ \"音楽\".", en: "" },
+  },
+  {
+    id: "k21", ja: "~さんは今どこに住んでいますか。そのまちは住みやすいですか。", kana: "~さんはいまどこにすんでいますか。そのまちはすみやすいですか。",
+    topic: "gioiThieu", grammarIds: ["g_094_4", "g_201"],
+    answer: { ja: "私は今ハノイに住んでいます。ハノイは交通が便利で、住みやすいです。", kana: "わたしはいまハノイにすんでいます。ハノイはこうつうがべんりで、すみやすいです。", vi: "Tôi đang sống ở Hà Nội. Hà Nội giao thông tiện lợi nên dễ sống.", en: "" },
+    tip: { vi: "\"住んでいます\" là thể ている (g_094_4) chỉ trạng thái sống; \"住みやすい\" dùng mẫu \"Vます + やすい\" (g_201).", en: "" },
+  },
+  {
+    id: "k22", ja: "小さいとき、両親にどこへ連れて行ってもらいましたか。", kana: "ちいさいとき、りょうしんにどこへつれていってもらいましたか。",
+    topic: "kinhNghiemBiDong", grammarIds: ["g_188"],
+    answer: { ja: "小さいとき、両親に海へ連れて行ってもらいました。とても楽しかったです。", kana: "ちいさいとき、りょうしんにうみへつれていってもらいました。とてもたのしかったです。", vi: "Hồi nhỏ, em được bố mẹ đưa đi biển. Rất vui.", en: "" },
+    tip: { vi: "\"Vてもらう\" (g_188) diễn tả việc nhận được ơn/hành động từ người khác làm cho mình.", en: "" },
+  },
+  {
+    id: "k23", ja: "ベトナムで一番景色がきれいなのはどこですか。", kana: "ベトナムでいちばんけしきがきれいなのはどこですか。",
+    topic: "soSanh", grammarIds: ["g_025", "g_174"],
+    answer: { ja: "そうですね、サパが一番景色がきれいだと思います。山と棚田がとてもきれいです。", kana: "そうですね、サパがいちばんけしきがきれいだとおもいます。やまとたなだがとてもきれいです。", vi: "Để em nghĩ xem, em nghĩ Sa Pa có cảnh đẹp nhất. Núi và ruộng bậc thang rất đẹp.", en: "" },
+    tip: { vi: "\"一番Aですか\" (g_025) hỏi cái nhất; \"のは、～だ\" (g_174) nhấn mạnh chủ ngữ danh từ hóa.", en: "" },
+  },
+  {
+    id: "k24", ja: "犬や猫に、手を噛まれたことがありますか。", kana: "いぬやねこに、てをかまれたことがありますか。",
+    topic: "kinhNghiemBiDong", grammarIds: ["g_195", "g_083"],
+    answer: { ja: "はい、あります。子供のとき、近所の犬に手を噛まれたことがあります。痛かったです。", kana: "はい、あります。こどものとき、きんじょのいぬにてをかまれたことがあります。いたかったです。", vi: "Vâng, có ạ. Hồi nhỏ em từng bị con chó hàng xóm cắn vào tay. Đau lắm.", en: "" },
+    tip: { vi: "\"噛まれる\" là bị động phiền toái (g_195) -- bị ai/con gì đó làm ảnh hưởng đến một bộ phận cơ thể của mình.", en: "" },
+  },
+  {
+    id: "k25", ja: "~さんのお父さんは、話しやすい人ですか。", kana: "~さんのおちちさんは、はなしやすいひとですか。",
+    topic: "soThich", grammarIds: ["g_201"],
+    answer: { ja: "はい、父は話しやすい人です。いつも優しく聞いてくれます。", kana: "はい、ちちははなしやすいひとです。いつもやさしくきいてくれます。", vi: "Vâng, bố tôi là người dễ nói chuyện. Lúc nào cũng lắng nghe một cách nhẹ nhàng.", en: "" },
+    tip: { vi: "\"話しやすい\" (g_201) = \"Vます + やすい\", nói việc dễ/khó làm gì với đối tượng đó.", en: "" },
+  },
+  {
+    id: "k26", ja: "~さんはスポーツをするのが得意ですか。", kana: "~さんはスポーツをするのがとくいですか。",
+    topic: "soThich", grammarIds: ["g_172", "g_061_1"],
+    answer: { ja: "いいえ、あまり得意じゃないです。でも、水泳は少しできます。", kana: "いいえ、あまりとくいじゃないです。でも、すいえいはすこしできます。", vi: "Không, tôi không giỏi thể thao lắm. Nhưng bơi lội thì tôi có thể (làm) một chút.", en: "" },
+    tip: { vi: "Cùng mẫu \"Vるのが + 得意／苦手\" (g_172), thêm động từ khả năng \"できます\" (g_061) để trả lời tự nhiên hơn.", en: "" },
+  },
+  {
+    id: "k27", ja: "~さんの部屋の壁に何が貼ってありますか。", kana: "~さんのへやのかべになにがはってありますか。",
+    topic: "trangThai", grammarIds: ["g_163"],
+    answer: { ja: "私の部屋の壁には、好きな歌手のポスターが貼ってあります。", kana: "わたしのへやのかべには、すきなかしゅのポスターがはってあります。", vi: "Trên tường phòng tôi có dán poster của ca sĩ tôi thích.", en: "" },
+    tip: { vi: "\"貼ってあります\" (g_163) diễn tả trạng thái đã được dán sẵn một cách có chủ ý.", en: "" },
+  },
+  {
+    id: "k28", ja: "一番有名な日本の食べ物は寿司みたいですね。~さんはどう思いますか。", kana: "いちばんゆうめいなにほんのたべものはすしみたいですね。~さんはどうおもいますか。",
+    topic: "phanDoan", grammarIds: ["g_143", "g_147"],
+    answer: { ja: "そうですね、私もそう思います。でも、ラーメンも人気があると思います。", kana: "そうですね、わたしもそうおもいます。でも、ラーメンもにんきがあるとおもいます。", vi: "Đúng vậy, tôi cũng nghĩ như vậy. Nhưng tôi nghĩ ramen cũng được yêu thích.", en: "" },
+    tip: { vi: "\"みたいですね\" (g_143) là phán đoán dựa trên quan sát; trả lời đồng tình hoặc bổ sung bằng \"と思います\" (g_147).", en: "" },
+  },
+  {
+    id: "k29", ja: "~さんにはお兄さんやお姉さんはいますか。今どこで何をしているんですか。", kana: "~さんにはおあにさんやおあねさんはいますか。いまどこでなにをしているんですか。",
+    topic: "gioiThieu", grammarIds: ["g_151"],
+    answer: { ja: "はい、姉が一人います。今、ハノイの会社で働いているんです。", kana: "はい、あねがひとりいます。いま、ハノイのかいしゃではたらいているんです。", vi: "Vâng, tôi có một chị gái. Chị ấy hiện đang làm việc ở một công ty tại Hà Nội.", en: "" },
+    tip: { vi: "\"～んですか\" (g_151) hỏi thông tin chi tiết về người khác; trả lời cũng dùng \"んです\" để giải thích thêm.", en: "" },
+  },
+  {
+    id: "k30", ja: "~さんの生まれた日はいつですか。", kana: "~さんのうまれたひはいつですか。",
+    topic: "gioiThieu", grammarIds: ["g_165"],
+    answer: { ja: "私の生まれた日は1998年5月10日です。", kana: "わたしのうまれたひは1998ねん5がつ10とおかです。", vi: "Ngày sinh của tôi là ngày 10 tháng 5 năm 1998.", en: "" },
+    tip: { vi: "\"生まれた日\" dùng mệnh đề động từ thể quá khứ bổ nghĩa cho danh từ (g_165).", en: "" },
+  },
+  {
+    id: "k31", ja: "先生の机の上に何が置いてありますか。", kana: "せんせいのつくえのうえになにがおいてありますか。",
+    topic: "trangThai", grammarIds: ["g_163"],
+    answer: { ja: "先生の机の上には、パソコンと本が置いてあります。", kana: "せんせいのつくえのうえには、パソコンとほんがおいてあります。", vi: "Trên bàn của cô giáo có máy tính và sách được đặt sẵn.", en: "" },
+    tip: { vi: "Giống mẫu \"貼ってあります\": \"置いてあります\" (g_163) nói trạng thái đã được đặt sẵn.", en: "" },
+  },
+  {
+    id: "k32", ja: "勉強を続けて、日本語はどうなりましたか。", kana: "べんきょうをつづけて、にほんごはどうなりましたか。",
+    topic: "gioiThieu", grammarIds: ["g_160"],
+    answer: { ja: "毎日勉強を続けて、日本語がだいぶ上手になりました。", kana: "まいにちべんきょうをつづけて、にほんごがだいぶじょうずになりました。", vi: "Nhờ học liên tục mỗi ngày, tiếng Nhật của tôi đã giỏi lên nhiều.", en: "" },
+    tip: { vi: "\"Aに／Nに + なる\" (g_160) diễn tả sự thay đổi theo thời gian.", en: "" },
+  },
+  {
+    id: "k33", ja: "5年後の~さんは、何をしていると思いますか。", kana: "5ねんごの~さんは、なにをしているとおもいますか。",
+    topic: "phanDoan", grammarIds: ["g_094_1", "g_147"],
+    answer: { ja: "5年後、私は日本の会社で働いていると思います。", kana: "5ねんご、わたしはにほんのかいしゃではたらいているとおもいます。", vi: "5 năm sau, tôi nghĩ mình sẽ đang làm việc ở một công ty Nhật Bản.", en: "" },
+    tip: { vi: "\"ている\" (g_094_1) diễn tả trạng thái tiếp diễn trong tương lai; kết hợp \"と思います\" để đưa dự đoán.", en: "" },
+  },
+  {
+    id: "k34", ja: "VinFast は何を作る会社ですか。", kana: "VinFast はなにをつくるかいしゃですか。",
+    topic: "gioiThieu", grammarIds: ["g_165", "g_025"],
+    answer: { ja: "VinFastは車やバイクを作る会社です。ベトナムで一番大きい自動車メーカーです。", kana: "VinFastはくるまやバイクをつくるかいしゃです。ベトナムでいちばんおおきいじどうしゃメーカーです。", vi: "VinFast là công ty sản xuất ô tô và xe máy. Đó là hãng xe hơi lớn nhất Việt Nam.", en: "" },
+    tip: { vi: "\"V普通形 + N\" (g_165) tạo mệnh đề \"何を作る会社\"; có thể thêm \"一番\" (g_025) để mô tả thêm.", en: "" },
+  },
+  {
+    id: "k35", ja: "映画が好きですか。どんな映画をよく見ているんですか。", kana: "えいががすきですか。どんなえいがをよくみているんですか。",
+    topic: "gioiThieu", grammarIds: ["g_094_3", "g_152"],
+    answer: { ja: "はい、好きです。アクション映画をよく見ています。", kana: "はい、すきです。アクションえいがをよくみています。", vi: "Vâng, tôi thích. Tôi hay xem phim hành động.", en: "" },
+    tip: { vi: "\"見ています\" ở đây là thói quen (g_094_3, không phải \"đang xem lúc này\"); \"んですか\" (g_152) hỏi sâu về sở thích.", en: "" },
+  },
+  {
+    id: "k36", ja: "日本の電車はとても便利だそうですね。本当でしょうか。", kana: "にほんのでんしゃはとてもべんりだそうですね。ほんとうでしょうか。",
+    topic: "phanDoan", grammarIds: ["g_144", "g_146"],
+    answer: { ja: "はい、本当です。日本の電車は時間通りに来るし、とても便利です。", kana: "はい、ほんとうです。にほんのでんしゃはじかんどおりにくるし、とてもべんりです。", vi: "Vâng, đúng vậy. Tàu điện Nhật Bản đến đúng giờ, lại còn rất tiện lợi nữa.", en: "" },
+    tip: { vi: "\"そうですね\" (g_144) truyền đạt lại thông tin nghe được; trả lời xác nhận có thể thêm lý do bằng \"し\" (g_146).", en: "" },
+  },
+  {
+    id: "k37", ja: "初めて食べた日本料理はなんですか。", kana: "はじめてたべたにほんりょうりはなんですか。",
+    topic: "kinhNghiem", grammarIds: ["g_165"],
+    answer: { ja: "初めて食べた日本料理はラーメンです。とてもおいしかったです。", kana: "はじめてたべたにほんりょうりはラーメンです。とてもおいしかったです。", vi: "Món ăn Nhật đầu tiên tôi ăn là ramen. Rất ngon.", en: "" },
+    tip: { vi: "Mệnh đề \"初めて食べた\" bổ nghĩa cho danh từ \"日本料理\" theo mẫu \"V普通形 + N\" (g_165).", en: "" },
+  },
+  {
+    id: "k38", ja: "カップルが Đà Lạt へ行くと、別れるらしいですね。本当でしょうか。", kana: "カップルが Đà Lạt へいくと、わかれるらしいですね。ほんとうでしょうか。",
+    topic: "phanDoan", grammarIds: ["g_142", "g_147"],
+    answer: { ja: "いいえ、それはただの噂だと思います。実際に別れるかどうかは関係ないですよ。", kana: "いいえ、それはただのうわさだとおもいます。じっさいにわかれるかどうかはかんけいないですよ。", vi: "Không đâu, em nghĩ đó chỉ là lời đồn thôi. Thực tế thì có chia tay hay không cũng chẳng liên quan gì cả.", en: "" },
+    tip: { vi: "\"らしいですね\" (g_142) truyền đạt tin đồn nghe được; trả lời phủ định/khẳng định dùng \"と思います\" (g_147).", en: "" },
+  },
+  {
+    id: "k39", ja: "「女性の日」は何をする日ですか。", kana: "「じょせいのひ」はなにをするひですか。",
+    topic: "gioiThieu", grammarIds: ["g_165", "g_104"],
+    answer: { ja: "「女性の日」は、男性が女性に花やプレゼントをあげる日です。", kana: "「じょせいのひ」は、だんせいがじょせいにはなやプレゼントをあげるひです。", vi: "\"Ngày Phụ nữ\" là ngày mà đàn ông tặng hoa hoặc quà cho phụ nữ.", en: "" },
+    tip: { vi: "\"V普通形 + N\" (g_165) tạo mệnh đề \"男性が女性にあげる\" bổ nghĩa cho \"日\"; \"あげる\" (g_104) nói việc tặng quà.", en: "" },
+  },
+  {
+    id: "k40", ja: "ベトナムで働きたいんですが、ハノイとホーチミンと、どちらがいいと思う。", kana: "ベトナムではたらきたいんですが、ハノイとホーチミンと、どちらがいいとおもう。",
+    topic: "soSanh", grammarIds: ["g_026", "g_066"],
+    answer: { ja: "そうですね。ホーチミンがいいと思います。仕事が多いですから。", kana: "そうですね。ホーチミンがいいとおもいます。しごとがおおいですから。", vi: "Để em nghĩ xem. Em nghĩ Thành phố Hồ Chí Minh tốt hơn. Vì công việc nhiều hơn.", en: "" },
+    tip: { vi: "\"どちらがAですか\" (g_026) hỏi so sánh 2 lựa chọn; trả lời chọn 1 bên rồi nêu lý do bằng \"から\" (g_066).", en: "" },
+  },
+  {
+    id: "k41", ja: "~さんは、明日、暇でしょう。", kana: "~さんは、あした、ひまでしょう。",
+    topic: "xacNhan", grammarIds: ["g_137"],
+    answer: { ja: "いいえ、明日はちょっと忙しいです。友達と約束があります。", kana: "いいえ、あしたはちょっといそがしいです。ともだちとやくそくがあります。", vi: "Không ạ, mai em hơi bận. Em có hẹn với bạn.", en: "" },
+    tip: { vi: "\"でしょう↑\" (g_137) lên giọng để hỏi xác nhận/mời đồng tình -- có thể trả lời đồng ý hoặc phủ định.", en: "" },
+  },
+  {
+    id: "k42", ja: "最近、心配で寝られなかったことがありますか。", kana: "さいきん、しんぱいでねられなかったことがありますか。",
+    topic: "kinhNghiem", grammarIds: ["g_083", "g_075"],
+    answer: { ja: "はい、あります。試験の前の日、心配で寝られなかったことがあります。", kana: "はい、あります。しけんのまえのひ、しんぱいでねられなかったことがあります。", vi: "Vâng, có ạ. Đêm trước hôm thi, em từng lo lắng không ngủ được.", en: "" },
+    tip: { vi: "\"寝られなかった\" là thể khả năng phủ định quá khứ (g_075); kết hợp \"たことがあります\" (g_083) để kể kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k43", ja: "焼肉(やきにく)を食べたいんですが、どのお店がおいしいと思いますか。", kana: "やきにく(やきにく)をたべたいんですが、どのおみせがおいしいとおもいますか。",
+    topic: "loiKhuyen", grammarIds: ["g_150", "g_147"],
+    answer: { ja: "そうですね。駅の近くの焼肉屋がおいしいと思います。", kana: "そうですね。えきのちかくのやきにくやがおいしいとおもいます。", vi: "Để em nghĩ xem. Em nghĩ quán thịt nướng gần ga là ngon đấy.", en: "" },
+    tip: { vi: "Cùng mẫu với \"日本へ旅行に行きたいんですが\": \"んですが\" (g_150) + \"と思います\" (g_147).", en: "" },
+  },
+  {
+    id: "k44", ja: "日本では車は道の左を行くのを知っていますか。", kana: "にほんではくるまはみちのひだりをいくのをしっていますか。",
+    topic: "kinhNghiem", grammarIds: ["g_176"],
+    answer: { ja: "はい、知っています。日本の車は道の左側を走りますね。ベトナムと反対です。", kana: "はい、しっています。にほんのくるまはみちのひだりがわをはしりますね。ベトナムとはんたいです。", vi: "Vâng, em biết. Xe ở Nhật đi bên trái đường nhỉ. Ngược với Việt Nam.", en: "" },
+    tip: { vi: "\"普通形 + のを知っていますか\" (g_176) hỏi \"bạn có biết việc... không?\".", en: "" },
+  },
+  {
+    id: "k45", ja: "~さんはビールを20杯も飲めるらしいですよ。~さんはどうですか。", kana: "~さんはビールを20ぱいものめるらしいですよ。~さんはどうですか。",
+    topic: "phanDoan", grammarIds: ["g_154", "g_142"],
+    answer: { ja: "いいえ、そんなに飲めません。私はビールを2杯ぐらいで十分です。", kana: "いいえ、そんなにのめません。わたしはビールを2はいぐらいでじゅうぶんです。", vi: "Không đâu, em không uống được nhiều thế. Em chỉ khoảng 2 cốc bia là đủ rồi.", en: "" },
+    tip: { vi: "\"数 + も\" (g_154) nhấn mạnh số lượng nhiều; \"らしい\" (g_142) là thông tin nghe được -- trả lời làm rõ sự thật.", en: "" },
+  },
+  {
+    id: "k46", ja: "~さんが生まれたのはどこですか。", kana: "~さんがうまれたのはどこですか。",
+    topic: "gioiThieu", grammarIds: ["g_174"],
+    answer: { ja: "私が生まれたのはハノイです。", kana: "わたしがうまれたのはハノイです。", vi: "Nơi tôi sinh ra là Hà Nội.", en: "" },
+    tip: { vi: "\"生まれたのは～です\" (g_174) danh từ hóa mệnh đề để nhấn mạnh chủ ngữ \"nơi sinh\".", en: "" },
+  },
+  {
+    id: "k47", ja: "今、教室のエアコンはつけてありますか。", kana: "いま、きょうしつのエアコンはつけてありますか。",
+    topic: "trangThai", grammarIds: ["g_163"],
+    answer: { ja: "はい、つけてあります。今日は暑いですから。", kana: "はい、つけてあります。きょうはあついですから。", vi: "Vâng, máy lạnh đã được bật sẵn rồi ạ. Vì hôm nay trời nóng.", en: "" },
+    tip: { vi: "\"つけてあります\" diễn tả trạng thái đã bật sẵn một cách có chủ ý (g_163).", en: "" },
+  },
+  {
+    id: "k48", ja: "日本人がベトナム語を話すのを聞いたことがありますか。", kana: "にほんじんがベトナムごをはなすのをきいたことがありますか。",
+    topic: "kinhNghiem", grammarIds: ["g_177", "g_083"],
+    answer: { ja: "はい、あります。日本人の友達がベトナム語を話すのを聞いたことがあります。上手でびっくりしました。", kana: "はい、あります。にほんじんのともだちがベトナムごをはなすのをきいたことがあります。じょうずでびっくりしました。", vi: "Vâng, có ạ. Em từng nghe một người bạn Nhật nói tiếng Việt. Nói giỏi quá nên em bất ngờ.", en: "" },
+    tip: { vi: "\"Vるのを聞く\" (g_177) diễn tả việc nghe thấy ai đó làm gì; kết hợp \"たことがあります\" (g_083) để kể kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k49", ja: "納豆って、食べたことがありますか。", kana: "なっとうって、たべたことがありますか。",
+    topic: "kinhNghiem", grammarIds: ["g_183", "g_083"],
+    answer: { ja: "はい、一度食べたことがあります。匂いが強くて、ちょっと苦手でした。", kana: "はい、いちどたべたことがあります。においがつよくて、ちょっとにがてでした。", vi: "Vâng, em từng ăn một lần rồi. Mùi hơi nồng nên em không quen lắm.", en: "" },
+    tip: { vi: "\"Nって\" (g_183) là cách nói thân mật thay cho \"は\"; kết hợp \"たことがあります\" (g_083) để hỏi kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k50", ja: "日本には、地震が多いのを知っていますか。", kana: "にほんには、じしんがおおいのをしっていますか。",
+    topic: "kinhNghiem", grammarIds: ["g_176"],
+    answer: { ja: "はい、知っています。日本は地震がとても多い国ですね。", kana: "はい、しっています。にほんはじしんがとてもおおいくにですね。", vi: "Vâng, em biết. Nhật Bản là nước có rất nhiều động đất nhỉ.", en: "" },
+    tip: { vi: "Cùng mẫu với câu hỏi về luật giao thông: \"普通形 + のを知っていますか\" (g_176).", en: "" },
+  },
+  {
+    id: "k51", ja: "~さんの部屋の窓から何が見えますか。", kana: "~さんのへやのまどからなにがみえますか。",
+    topic: "gioiThieu", grammarIds: ["g_170"],
+    answer: { ja: "私の部屋の窓から、近くの公園が見えます。", kana: "わたしのへやのまどから、ちかくのこうえんがみえます。", vi: "Từ cửa sổ phòng tôi có thể nhìn thấy công viên gần đó.", en: "" },
+    tip: { vi: "\"～が見える\" (g_170) diễn tả điều tự nhiên lọt vào tầm mắt, không cần chủ ý nhìn.", en: "" },
+  },
+  {
+    id: "k52", ja: "ベトナムで、一番食べにくい食べ物はなんだと思いますか。", kana: "ベトナムで、いちばんたべにくいたべものはなんだとおもいますか。",
+    topic: "soSanh", grammarIds: ["g_201", "g_025"],
+    answer: { ja: "そうですね、ドリアンが一番食べにくいと思います。匂いが強いですから。", kana: "そうですね、ドリアンがいちばんたべにくいとおもいます。においがつよいですから。", vi: "Để em nghĩ xem, em nghĩ sầu riêng là khó ăn nhất. Vì mùi nồng quá.", en: "" },
+    tip: { vi: "\"食べにくい\" (g_201) nói việc khó ăn; kết hợp \"一番\" (g_025) và \"と思います\" (g_147) để đưa ý kiến cá nhân.", en: "" },
+  },
+  {
+    id: "k53", ja: '"Cấm hút thuốc": これはどういう意味ですか。', kana: "\"Cấm hút thuốc\": これはどういういみですか。",
+    topic: "giaiThich", grammarIds: ["g_182"],
+    answer: { ja: "それは「禁煙」という意味です。「たばこを吸ってはいけません」という意味です。", kana: "それは「きんえん」といういみです。「たばこをすってはいけません」といういみです。", vi: "Đó có nghĩa là \"cấm hút thuốc\" (禁煙). Nghĩa là \"không được hút thuốc\".", en: "" },
+    tip: { vi: "\"という意味です\" (g_182) dùng để giải thích nghĩa của một câu/biển báo.", en: "" },
+  },
+  {
+    id: "k54", ja: "朝はよく何を食べるんですか。", kana: "あさはよくなにをたべるんですか。",
+    topic: "gioiThieu", grammarIds: ["g_152"],
+    answer: { ja: "朝はよくパンと卵を食べます。時々フォーも食べます。", kana: "あさはよくパンとたまごをたべます。ときどきフォーもたべます。", vi: "Buổi sáng tôi hay ăn bánh mì và trứng. Thỉnh thoảng cũng ăn phở.", en: "" },
+    tip: { vi: "\"んですか\" (g_152) hỏi chi tiết về thói quen hằng ngày.", en: "" },
+  },
+  {
+    id: "k55", ja: "勉強をしすぎて頭が痛くなったことがありますか。", kana: "べんきょうをしすぎてあたまがいたくなったことがありますか。",
+    topic: "kinhNghiem", grammarIds: ["g_203", "g_160"],
+    answer: { ja: "はい、あります。試験の前に勉強しすぎて、頭が痛くなったことがあります。", kana: "はい、あります。しけんのまえにべんきょうしすぎて、あたまがいたくなったことがあります。", vi: "Vâng, có ạ. Trước kỳ thi em từng học quá sức đến mức đau đầu.", en: "" },
+    tip: { vi: "\"しすぎる\" (g_203) nói việc làm quá mức; \"痛くなる\" dùng \"Aく + なる\" (g_160).", en: "" },
+  },
+  {
+    id: "k56", ja: "寝るとき、電気を消しますか。それとも、つけますか。", kana: "ねるとき、でんきをけしますか。それとも、つけますか。",
+    topic: "gioiThieu", grammarIds: ["g_066"],
+    answer: { ja: "寝るとき、いつも電気を消します。明るいと眠れませんから。", kana: "ねるとき、いつもでんきをけします。あかるいとねむれませんから。", vi: "Khi đi ngủ em luôn tắt đèn. Vì nếu sáng quá em không ngủ được.", en: "" },
+    tip: { vi: "Trả lời thói quen đơn giản, nêu lý do bằng \"から\" (g_066).", en: "" },
+  },
+  {
+    id: "k57", ja: "一人でカフェに行くのは楽しいですか。", kana: "ひとりでカフェにいくのはたのしいですか。",
+    topic: "soThich", grammarIds: ["g_173", "g_200"],
+    answer: { ja: "はい、楽しいです。静かな所で本を読みながらコーヒーを飲むのが好きです。", kana: "はい、たのしいです。しずかなところでほんをよみながらコーヒーをのむのがすきです。", vi: "Vâng, vui chứ. Tôi thích vừa đọc sách vừa uống cà phê ở một nơi yên tĩnh.", en: "" },
+    tip: { vi: "\"のは + A\" (g_173) danh từ hóa hành động \"đi cafe một mình\" để nhận xét; \"ながら\" (g_200) nói 2 hành động cùng lúc.", en: "" },
+  },
+  {
+    id: "k58", ja: "Tam Đảoって、ベトナムのどこにあるんですか。", kana: "Tam Đảoって、ベトナムのどこにあるんですか。",
+    topic: "gioiThieu", grammarIds: ["g_183"],
+    answer: { ja: "タムダオはヴィンフック省にあります。ハノイから車で2時間ぐらいです。", kana: "タムダオはヴィンフックしょうにあります。ハノイからくるまで2じかんぐらいです。", vi: "Tam Đảo nằm ở tỉnh Vĩnh Phúc. Cách Hà Nội khoảng 2 tiếng đi ô tô.", en: "" },
+    tip: { vi: "\"Nって\" (g_183) hỏi thân mật về một địa danh; trả lời nêu vị trí và khoảng cách.", en: "" },
+  },
+  {
+    id: "k59", ja: "最近、何かプレゼントをもらいましたか。", kana: "さいきん、なにかプレゼントをもらいましたか。",
+    topic: "kinhNghiem", grammarIds: ["g_186"],
+    answer: { ja: "はい、もらいました。誕生日に友達から本をもらいました。", kana: "はい、もらいました。たんじょうびにともだちからほんをもらいました。", vi: "Vâng, tôi có nhận được. Sinh nhật tôi được bạn tặng cho một quyển sách.", en: "" },
+    tip: { vi: "\"AはBにNをもらう\" (g_186) nói việc nhận quà từ ai đó.", en: "" },
+  },
+  {
+    id: "k60", ja: "電車って、乗ったことがありますか。", kana: "でんしゃって、のったことがありますか。",
+    topic: "kinhNghiem", grammarIds: ["g_183", "g_083"],
+    answer: { ja: "はい、あります。日本へ旅行に行ったとき、新幹線に乗ったことがあります。とても速かったです。", kana: "はい、あります。にほんへりょこうにいったとき、しんかんせんにのったことがあります。とてもはやかったです。", vi: "Vâng, có ạ. Khi đi du lịch Nhật Bản em từng đi tàu shinkansen. Rất nhanh.", en: "" },
+    tip: { vi: "\"Nって\" (g_183) hỏi thân mật; kết hợp \"たことがあります\" (g_083) để hỏi/kể kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k61", ja: "緊張しているとき、どうしますか。", kana: "きんちょうしているとき、どうしますか。",
+    topic: "gioiThieu", grammarIds: ["g_094_4"],
+    answer: { ja: "緊張しているとき、深呼吸をします。それから、水を飲みます。", kana: "きんちょうしているとき、しんこきゅうをします。それから、みずをのみます。", vi: "Khi hồi hộp, em hít thở sâu. Sau đó em uống nước.", en: "" },
+    tip: { vi: "\"緊張している\" dùng thể ている (g_094_4) diễn tả trạng thái tâm lý hiện tại.", en: "" },
+  },
+  {
+    id: "k62", ja: "今、教室の電気がついていますか。", kana: "いま、きょうしつのでんきがついていますか。",
+    topic: "trangThai", grammarIds: ["g_094_4", "g_162"],
+    answer: { ja: "はい、ついています。教室は明るいです。", kana: "はい、ついています。きょうしつはあかるいです。", vi: "Vâng, đèn đang bật. Lớp học rất sáng.", en: "" },
+    tip: { vi: "\"ついています\" (g_094_4 / g_162) dùng tự động từ \"つく\" ở thể ている để nói trạng thái kết quả.", en: "" },
+  },
+  {
+    id: "k63", ja: "小さいとき、怖くてできなかったことはなんですか。", kana: "ちいさいとき、こわくてできなかったことはなんですか。",
+    topic: "kinhNghiem", grammarIds: ["g_197"],
+    answer: { ja: "小さいとき、暗い部屋が怖くて、一人で寝られませんでした。", kana: "ちいさいとき、くらいへやがこわくて、ひとりでねられませんでした。", vi: "Hồi nhỏ, em sợ phòng tối nên không dám ngủ một mình.", en: "" },
+    tip: { vi: "\"Aくて、～\" (g_197) nối tính từ chỉ nguyên nhân với kết quả phía sau.", en: "" },
+  },
+  {
+    id: "k64", ja: "日本の家は燃えやすいですか。", kana: "にほんのいえはもえやすいですか。",
+    topic: "soThich", grammarIds: ["g_201", "g_196"],
+    answer: { ja: "はい、燃えやすいと聞きました。木で作られているからです。", kana: "はい、もえやすいとききました。きでつくられているからです。", vi: "Vâng, em nghe nói là dễ cháy. Vì được làm bằng gỗ.", en: "" },
+    tip: { vi: "\"燃えやすい\" (g_201) nói việc dễ xảy ra; \"木で作られている\" dùng bị động vô sinh chủ ngữ (g_196).", en: "" },
+  },
+  {
+    id: "k65", ja: "テレビを見ながらご飯を食べることがありますか。", kana: "テレビをみながらごはんをたべることがありますか。",
+    topic: "gioiThieu", grammarIds: ["g_200"],
+    answer: { ja: "はい、あります。よく夕食のとき、テレビを見ながらご飯を食べます。", kana: "はい、あります。よくゆうしょくのとき、テレビをみながらごはんをたべます。", vi: "Vâng, có chứ. Bữa tối em hay vừa xem tivi vừa ăn cơm.", en: "" },
+    tip: { vi: "\"Vながら\" (g_200) diễn tả 2 hành động làm đồng thời, hành động sau là chính.", en: "" },
+  },
+  {
+    id: "k66", ja: "クラスで一番背が高い人は誰ですか。", kana: "クラスでいちばんせがたかいひとはだれですか。",
+    topic: "soSanh", grammarIds: ["g_025"],
+    answer: { ja: "クラスで一番背が高い人はミンさんだと思います。", kana: "クラスでいちばんせがたかいひとはミンさんだとおもいます。", vi: "Em nghĩ người cao nhất lớp là bạn Minh.", en: "" },
+    tip: { vi: "\"一番Aですか\" (g_025) hỏi so sánh nhất trong nhóm.", en: "" },
+  },
+  {
+    id: "k67", ja: "毎日寝る前に目覚ましセットしますか。", kana: "まいにちねるまえにめざましセットしますか。",
+    topic: "gioiThieu", grammarIds: ["g_080_1"],
+    answer: { ja: "はい、毎日寝る前に目覚ましをセットします。朝7時に起きたいですから。", kana: "はい、まいにちねるまえにめざましをセットします。あさ7じにおきたいですから。", vi: "Vâng, mỗi ngày trước khi ngủ em đều đặt báo thức. Vì em muốn dậy lúc 7 giờ sáng.", en: "" },
+    tip: { vi: "\"V前に\" (g_080_1) nói hành động làm trước một mốc thời gian khác.", en: "" },
+  },
+  {
+    id: "k68", ja: "ベトナムで一番高い建物は何ですか。", kana: "ベトナムでいちばんたかいたてものはなにですか。",
+    topic: "soSanh", grammarIds: ["g_025"],
+    answer: { ja: "ベトナムで一番高い建物はランドマーク81だと思います。ホーチミン市にあります。", kana: "ベトナムでいちばんたかいたてものはランドマーク81だとおもいます。ホーチミンしにあります。", vi: "Em nghĩ tòa nhà cao nhất Việt Nam là Landmark 81. Nó nằm ở Thành phố Hồ Chí Minh.", en: "" },
+    tip: { vi: "Cùng mẫu \"一番Aですか\" (g_025) với câu hỏi về người cao nhất lớp.", en: "" },
+  },
+  {
+    id: "k69", ja: "どんな人が友達を作りやすいと思いますか。", kana: "どんなひとがともだちをつくりやすいとおもいますか。",
+    topic: "soThich", grammarIds: ["g_201", "g_147"],
+    answer: { ja: "明るくて、よく話す人が友達を作りやすいと思います。", kana: "あかるくて、よくはなすひとがともだちをつくりやすいとおもいます。", vi: "Em nghĩ người vui vẻ, hay bắt chuyện thì dễ kết bạn.", en: "" },
+    tip: { vi: "\"作りやすい\" (g_201) nói việc dễ làm; nêu ý kiến bằng \"と思います\" (g_147).", en: "" },
+  },
+  {
+    id: "k70", ja: "週末、〜さんはよく何をしているんですか。", kana: "しゅうまつ、〜さんはよくなにをしているんですか。",
+    topic: "gioiThieu", grammarIds: ["g_094_3", "g_152"],
+    answer: { ja: "週末はよく友達と映画を見ています。たまに家でゆっくり休みます。", kana: "しゅうまつはよくともだちとえいがをみています。たまにいえでゆっくりやすみます。", vi: "Cuối tuần em hay đi xem phim với bạn bè. Thỉnh thoảng em nghỉ ngơi thoải mái ở nhà.", en: "" },
+    tip: { vi: "\"ています\" (g_094_3) diễn tả thói quen lặp lại; \"んですか\" (g_152) hỏi sâu về chủ đề cuối tuần.", en: "" },
+  },
+  {
+    id: "k71", ja: "「立入禁止」: これはどういう意味ですか。", kana: "「たちいりきんし」: これはどういういみですか。",
+    topic: "giaiThich", grammarIds: ["g_182"],
+    answer: { ja: "それは「入ってはいけません」という意味です。", kana: "それは「はいってはいけません」といういみです。", vi: "Đó có nghĩa là \"không được vào (khu vực này)\".", en: "" },
+    tip: { vi: "Cùng mẫu \"という意味です\" (g_182) với biển \"Cấm hút thuốc\".", en: "" },
+  },
+  {
+    id: "k72", ja: "運転しながら電話したことがありますか。", kana: "うんてんしながらでんわしたことがありますか。",
+    topic: "kinhNghiem", grammarIds: ["g_200", "g_083"],
+    answer: { ja: "いいえ、ありません。運転しながら電話するのは危ないですから、しません。", kana: "いいえ、ありません。うんてんしながらでんわするのはあぶないですから、しません。", vi: "Không, em chưa từng làm vậy. Vì vừa lái xe vừa gọi điện rất nguy hiểm nên em không làm.", en: "" },
+    tip: { vi: "\"ながら\" (g_200) mô tả 2 hành động cùng lúc; kết hợp \"たことがあります\" (g_083) để hỏi/kể kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k73", ja: "ダナンへ行ったことがありますか。どんな所でしたか。", kana: "ダナンへいったことがありますか。どんなところでしたか。",
+    topic: "kinhNghiem", grammarIds: ["g_083", "g_018"],
+    answer: { ja: "はい、あります。ダナンはビーチがきれいで、食べ物もおいしい所でした。", kana: "はい、あります。ダナンはビーチがきれいで、たべものもおいしいところでした。", vi: "Vâng, em từng đi rồi. Đà Nẵng là nơi có bãi biển đẹp, đồ ăn cũng ngon.", en: "" },
+    tip: { vi: "\"たことがあります\" (g_083) hỏi kinh nghiệm; trả lời miêu tả bằng tính từ nối \"Aで\" (g_018).", en: "" },
+  },
+  {
+    id: "k74", ja: "~さんの机の上に何がありますか。", kana: "~さんのつくえのうえになにがありますか。",
+    topic: "gioiThieu", grammarIds: ["g_038_2"],
+    answer: { ja: "私の机の上に、パソコンと辞書とペンがあります。", kana: "わたしのつくえのうえに、パソコンとじしょとペンがあります。", vi: "Trên bàn của tôi có máy tính, từ điển và bút.", en: "" },
+    tip: { vi: "\"N1(địa điểm)にN2があります\" (g_038_2) là mẫu N5 cơ bản nói có gì ở đâu.", en: "" },
+  },
+  {
+    id: "k75", ja: "日本の車は壊れやすいですか。", kana: "にほんのくるまはこわれやすいですか。",
+    topic: "soThich", grammarIds: ["g_201"],
+    answer: { ja: "いいえ、あまり壊れにくいと思います。日本の車は品質がいいですから。", kana: "いいえ、あまりこわれにくいとおもいます。にほんのくるまはひんしつがいいですから。", vi: "Không, em nghĩ xe Nhật khá bền, ít hỏng. Vì chất lượng xe Nhật tốt.", en: "" },
+    tip: { vi: "Dùng dạng phủ định \"壊れにくい\" của mẫu \"Vます + やすい／にくい\" (g_201).", en: "" },
+  },
+  {
+    id: "k76", ja: "今年 / 去年の誕生日、何をもらいましたか。", kana: "ことし / きょねんのたんじょうび、なにをもらいましたか。",
+    topic: "kinhNghiem", grammarIds: ["g_186"],
+    answer: { ja: "去年の誕生日、友達からかばんをもらいました。", kana: "きょねんのたんじょうび、ともだちからかばんをもらいました。", vi: "Sinh nhật năm ngoái, em được bạn tặng cho một cái túi.", en: "" },
+    tip: { vi: "Cùng mẫu \"AはBにNをもらう\" (g_186) với câu hỏi về quà gần đây.", en: "" },
+  },
+  {
+    id: "k77", ja: "「Quả Chanh」は日本語で何と言うんですか。", kana: "「Quả Chanh」はにほんごでなんというんですか。",
+    topic: "giaiThich", grammarIds: ["g_152"],
+    answer: { ja: "「Quả Chanh」は日本語で「レモン」と言います。", kana: "「Quả Chanh」はにほんごで「レモン」といいます。", vi: "\"Quả chanh\" trong tiếng Nhật gọi là \"レモン (chanh vàng)\".", en: "" },
+    tip: { vi: "Cùng mẫu hỏi tên gọi: \"～んですか\" (g_152) + \"Nと言います\".", en: "" },
+  },
+  {
+    id: "k78", ja: "寝ないでテレビを見ていたことがありますか。そのとき何を見ていましたか。", kana: "ねないでテレビをみていたことがありますか。そのときなにをみていましたか。",
+    topic: "kinhNghiem", grammarIds: ["g_199", "g_083"],
+    answer: { ja: "はい、あります。試験の前の日、寝ないでドラマを見ていたことがあります。", kana: "はい、あります。しけんのまえのひ、ねないでドラマをみていたことがあります。", vi: "Vâng, có ạ. Đêm trước hôm thi, em từng không ngủ mà thức xem phim truyền hình.", en: "" },
+    tip: { vi: "\"V1ないで、V2\" (g_199) nói làm V2 thay vì V1; kết hợp \"たことがあります\" (g_083) để kể kinh nghiệm.", en: "" },
+  },
+  {
+    id: "k79", ja: "日本に留学したいんですが、どうすれば日本に留学できるんでしょうか。", kana: "にほんにりゅうがくしたいんですが、どうすればにほんにりゅうがくできるんでしょうか。",
+    topic: "loiKhuyen", grammarIds: ["g_150", "g_086"],
+    answer: { ja: "そうですね。まず日本語をもっと勉強して、それから留学のプログラムに申し込めばいいと思います。", kana: "そうですね。まずにほんごをもっとべんきょうして、それからりゅうがくのプログラムにもうしこめばいいとおもいます。", vi: "Để em nghĩ xem. Trước tiên bạn nên học tiếng Nhật nhiều hơn, sau đó đăng ký chương trình du học là được.", en: "" },
+    tip: { vi: "\"んですが\" (g_150) mở đầu trước khi xin lời khuyên; \"疑問詞 + ば\" (g_086) là mẫu chuẩn để hỏi \"nên làm thế nào\".", en: "" },
+  },
+  {
+    id: "k80", ja: "大変なとき、誰かに助けてもらったことがありますか。", kana: "たいへんなとき、だれかにたすけてもらったことがありますか。",
+    topic: "kinhNghiemBiDong", grammarIds: ["g_188", "g_083"],
+    answer: { ja: "はい、あります。引っ越しのとき、友達に手伝ってもらったことがあります。", kana: "はい、あります。ひっこしのとき、ともだちにてつだってもらったことがあります。", vi: "Vâng, có ạ. Khi chuyển nhà em đã được bạn giúp đỡ.", en: "" },
+    tip: { vi: "\"Vてもらう\" (g_188) kết hợp \"たことがあります\" (g_083) để kể chuyện được ai đó giúp đỡ.", en: "" },
+  },
+  {
+    id: "k81", ja: "実は、来週ホーチミンへ行くんです。ホーチミンは何がおいしいですか。", kana: "じつは、らいしゅうホーチミンへいくんです。ホーチミンはなにがおいしいですか。",
+    topic: "gioiThieu", grammarIds: ["g_149", "g_113", "g_099"],
+    answer: { ja: "そうですか。ホーチミンなら、フォーやバインミーがおいしいですよ。ぜひ食べてください。", kana: "そうですか。ホーチミンなら、フォーやバインミーがおいしいですよ。ぜひたべてください。", vi: "Vậy à. Nếu là Hồ Chí Minh thì phở và bánh mì ngon lắm đấy. Bạn nhất định phải ăn thử nhé.", en: "" },
+    tip: { vi: "\"んです\" (g_149) thông báo việc sắp đi; trả lời gợi ý dùng \"なら\" (g_113) và \"てください\" (g_099).", en: "" },
+  },
+  {
+    id: "k82", ja: "バレンタインデーに、何をもらいますか。", kana: "バレンタインデーに、なにをもらいますか。",
+    topic: "kinhNghiem", grammarIds: ["g_186"],
+    answer: { ja: "バレンタインデーに、彼氏からチョコレートをもらいます。", kana: "バレンタインデーに、かれしからチョコレートをもらいます。", vi: "Vào ngày Valentine, tôi được bạn trai tặng sô-cô-la.", en: "" },
+    tip: { vi: "Cùng mẫu \"AはBにNをもらう\" (g_186) với các câu hỏi về quà tặng khác.", en: "" },
+  },
+  {
+    id: "k83", ja: "ダナンはどんな所ですか。(~し~し)", kana: "ダナンはどんなところですか。(~し~し)",
+    topic: "soThich", grammarIds: ["g_146"],
+    answer: { ja: "ダナンはビーチがきれいだし、食べ物もおいしいし、とてもいい所です。", kana: "ダナンはビーチがきれいだし、たべものもおいしいし、とてもいいところです。", vi: "Đà Nẵng có bãi biển đẹp, đồ ăn cũng ngon, là một nơi rất tuyệt.", en: "" },
+    tip: { vi: "Giống câu hỏi \"~さんはどんな人ですか\": dùng \"し～し\" (g_146) để liệt kê nhiều đặc điểm tốt của một nơi.", en: "" },
+  },
+]
+
+// The 25 original oral-exam sets, replayed as ordered references into
+// kaiwaQuestions -- see the file header for why they're not stored inline.
+export const kaiwaSets: KaiwaSet[] = [
+  { id: "1", questionIds: ["k01", "k02", "k03", "k04", "k05"] },
+  { id: "2", questionIds: ["k06", "k07", "k08", "k09", "k10"] },
+  { id: "3", questionIds: ["k11", "k12", "k13", "k14", "k15"] },
+  { id: "4", questionIds: ["k16", "k17", "k18", "k19", "k20"] },
+  { id: "5", questionIds: ["k21", "k22", "k23", "k13", "k24"] },
+  { id: "6", questionIds: ["k25", "k26", "k08", "k27", "k28"] },
+  { id: "7", questionIds: ["k29", "k30", "k31", "k03", "k32"] },
+  { id: "8", questionIds: ["k11", "k33", "k34", "k35", "k36"] },
+  { id: "9", questionIds: ["k06", "k37", "k38", "k39", "k40"] },
+  { id: "10", questionIds: ["k41", "k42", "k43", "k44", "k45"] },
+  { id: "11", questionIds: ["k46", "k47", "k48", "k15", "k13"] },
+  { id: "12", questionIds: ["k49", "k50", "k51", "k52", "k53"] },
+  { id: "13", questionIds: ["k54", "k55", "k15", "k56", "k11"] },
+  { id: "14", questionIds: ["k57", "k58", "k15", "k59", "k43"] },
+  { id: "15", questionIds: ["k60", "k18", "k02", "k50", "k61"] },
+  { id: "16", questionIds: ["k62", "k63", "k10", "k64", "k65"] },
+  { id: "17", questionIds: ["k66", "k12", "k42", "k39", "k07"] },
+  { id: "18", questionIds: ["k67", "k14", "k68", "k46", "k69"] },
+  { id: "19", questionIds: ["k70", "k26", "k08", "k71", "k52"] },
+  { id: "20", questionIds: ["k02", "k01", "k72", "k37", "k40"] },
+  { id: "21", questionIds: ["k20", "k73", "k43", "k61", "k10"] },
+  { id: "22", questionIds: ["k74", "k14", "k35", "k52", "k21"] },
+  { id: "23", questionIds: ["k75", "k76", "k77", "k78", "k79"] },
+  { id: "24", questionIds: ["k64", "k58", "k53", "k80", "k81"] },
+  { id: "25", questionIds: ["k82", "k83", "k08", "k79", "k52"] },
+]

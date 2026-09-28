@@ -37,6 +37,7 @@
     "vocabulary": "Từ vựng",
     "review": "Ôn tập",
     "grammar": "Ngữ pháp",
+    "kaiwa": "Luyện hội thoại",
     "verbForms": "Chia động từ",
     "transitivity": "Tha/Tự động từ",
     "usage": "Cách dùng & Sắc thái",
@@ -227,6 +228,15 @@
     "noResults": "Không có kết quả nào khớp với tìm kiếm này.",
     "trapLabel": "Bẫy thường gặp",
     "compareWith": "So sánh với"
+  },
+  "kaiwa": {
+    "subtitle": "25 bộ câu hỏi phỏng vấn giữa kỳ N4 (Dungmori)",
+    "intro": "Bộ câu hỏi phỏng vấn nói giữa kỳ N4 -- mỗi câu có một câu trả lời mẫu dùng đúng ngữ pháp N5/N4 đã học trong app này. Bấm \"Xem đáp án mẫu\" để luyện phản xạ trả lời trước, rồi mới xem gợi ý.",
+    "searchPlaceholder": "Tìm câu hỏi, đáp án, chủ đề...",
+    "setLabel": "Bộ câu hỏi số {n}",
+    "showAnswer": "Xem đáp án mẫu",
+    "hideAnswer": "Ẩn đáp án",
+    "noResults": "Không có câu hỏi nào khớp với tìm kiếm này."
   },
   "kanji": {
     "searchPlaceholder": "Tìm kanji, từ, âm Hán Việt, nghĩa...",

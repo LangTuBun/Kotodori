@@ -429,6 +429,32 @@ export interface AuxiliaryVerb {
   grammarIds?: string[]
 }
 
+export interface KaiwaAnswer {
+  ja: string
+  kana: string // full reading, kanji runs only -- fed straight to <Furigana kanji={ja} kana={kana}/>
+  vi: string
+  en: string
+}
+
+export interface KaiwaQuestion {
+  id: string
+  ja: string
+  kana: string // full reading, kanji runs only -- see KaiwaAnswer.kana
+  topic: string // key into kaiwaTopics, e.g. "soThich"
+  answer: KaiwaAnswer
+  // Why this pattern fits the question / how to adapt it -- not a repeat of
+  // the answer itself, the same role UsageExample plays for AuxiliaryVerb.
+  tip: { vi: string; en: string }
+  // Cross-links into grammar.ts's level-aware database, same convention as
+  // AuxiliaryVerb.grammarIds -- 1-2 ids per question, most relevant first.
+  grammarIds?: string[]
+}
+
+export interface KaiwaSet {
+  id: string // "1".."25", matches the original 25 "Bộ câu hỏi" oral-exam sets
+  questionIds: string[] // 5 ids into kaiwaQuestions, in the set's original order
+}
+
 export type SRSState = 'new' | 'learning' | 'review' | 'mastered'
 
 export interface SRSCard {
