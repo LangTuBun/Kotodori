@@ -296,6 +296,12 @@
     "languageDescription": "Đổi ngôn ngữ giao diện — thanh điều hướng, nút bấm, tiêu đề. Nghĩa từ vựng/ngữ pháp cũng theo ngôn ngữ này ở những nơi đã dịch.",
     "levelTitle": "Trình độ JLPT",
     "levelDescription": "Giới hạn phạm vi Từ vựng, Ngữ pháp, Chia động từ, Hán tự, Ôn tập và Từ đồng âm theo N5, N4, hoặc cả hai (nội dung chính của Tự/Tha động từ và Cách dùng vẫn cố định, nhưng các liên kết ngữ pháp liên quan cũng theo trình độ này). Đếm số từ (Counters) chỉ có N5 (chưa có dữ liệu N4).",
+    "voiceTitle": "Phát âm giọng nói",
+    "voiceDescription": "Các nút phát âm trong app đọc từ và câu bằng VOICEVOX, một giọng đọc tiếng Nhật miễn phí tự lưu trữ, khi kết nối được; nếu không sẽ tự dùng giọng đọc có sẵn của trình duyệt.",
+    "voiceStatusChecking": "Đang kiểm tra VOICEVOX…",
+    "voiceStatusVoicevox": "Đã kết nối VOICEVOX",
+    "voiceStatusBrowser": "Đang dùng giọng đọc của trình duyệt",
+    "voiceCredit": "Giọng đọc: VOICEVOX:春日部つむぎ (Kasugabe Tsumugi)",
     "inkCabinet": {
       "readingInPrefix": "Bạn đang xem giao diện với tông giấy",
       "readingInSuffix": ". Lựa chọn này áp dụng cho mọi trang, chỉ lưu trên thiết bị này.",

@@ -296,6 +296,12 @@
     "languageDescription": "Switches UI chrome — nav, buttons, headers. Vocabulary/grammar meanings follow this too where translated.",
     "levelTitle": "JLPT level",
     "levelDescription": "Scopes Vocabulary, Grammar, Verb Forms, Kanji, Review, and Homophones to N5, N4, or both combined (Transitivity and Usage's own content stays fixed, but their related-grammar links follow it too). Counters stays N5-only (no N4 source material yet).",
+    "voiceTitle": "Voice pronunciation",
+    "voiceDescription": "The speaker buttons throughout the app read words and sentences aloud using VOICEVOX, a free, self-hosted Japanese voice, when it's reachable; otherwise they use this browser's own built-in voice automatically.",
+    "voiceStatusChecking": "Checking for VOICEVOX…",
+    "voiceStatusVoicevox": "Connected to VOICEVOX",
+    "voiceStatusBrowser": "Using this browser's built-in voice",
+    "voiceCredit": "Voice: VOICEVOX:春日部つむぎ (Kasugabe Tsumugi)",
     "inkCabinet": {
       "readingInPrefix": "You're reading this in",
       "readingInSuffix": ". It stays chosen everywhere, saved on this device only.",

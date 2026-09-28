@@ -9,3 +9,43 @@ services:
       # collide with anything else already running on the Proxmox host --
       # the container itself always listens on 80.
       - "${TORI_PORT:-8080}:80"
+
+  # Optional: real Japanese speech synthesis for the pronunciation buttons
+  # (src/lib/speech.ts), noticeably better than the browser's built-in voice.
+  # Free and self-hosted (VOICEVOX, https://voicevox.hiroshiba.jp) -- no API
+  # key, nothing leaves this host. tori's own nginx proxies /voicevox/ to
+  # this container (see docker/nginx.conf) so the browser only ever talks to
+  # tori's own origin; this container's port is never published to the host
+  # or the outside network.
+  #
+  # Fully optional and safe to remove: nginx resolves this hostname at
+  # request time (not at startup), so if this service is absent, still
+  # loading its voice models (can take up to ~60s after a fresh start), or
+  # crashes, tori keeps serving fine and speech.ts falls back to the
+  # browser's own voice automatically.
+  #
+  # Character voice used: 春日部つむぎ (Kasugabe Tsumugi, speaker id 8, set in
+  # src/lib/speech.ts) -- her license permits commercial and non-commercial
+  # use for free with a credit notice, which is shown on the Settings page.
+  # CPU synthesis of a short word/sentence typically takes well under a
+  # second, but is real CPU work on every tap -- if this host is
+  # resource-constrained, this service is the one to drop first.
+  voicevox:
+    image: voicevox/voicevox_engine:cpu-latest
+    container_name: tori-voicevox
+    restart: unless-stopped
+    # No `ports:` here on purpose -- see the comment above. `expose` is only
+    # documentation (containers on this network can already reach each other
+    # regardless), not a security boundary.
+    expose:
+      - "50021"
+    # Swap the image above for `voicevox/voicevox_engine:nvidia-latest` if
+    # this host has an NVIDIA GPU with the NVIDIA Container Toolkit set up,
+    # and uncomment the block below for much faster synthesis:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
