@@ -3,7 +3,7 @@ import type { KanjiGroup } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { PitchAccent } from "@/components/ui/PitchAccent"
 import { SpeakButton } from "@/components/ui/SpeakButton"
-import { ACCENT_HEX, accentFor, cleanReadings, onkunTone, pitchForWord } from "@/lib/kanji"
+import { ACCENT_HEX, accentFor, cleanReadings, onkunTone, usePitchForWord } from "@/lib/kanji"
 import { prefetchVoicevox } from "@/lib/speech"
 import { useTranslation } from "@/lib/useTranslation"
 
@@ -29,6 +29,7 @@ interface KanjiGroupModalProps {
 
 export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchorClick, strokeDrawerOpen }: KanjiGroupModalProps) {
   const { t, localize } = useTranslation()
+  const pitchForWord = usePitchForWord()
   const total = items.length
   const current = items[index]
   const hasPrev = index > 0

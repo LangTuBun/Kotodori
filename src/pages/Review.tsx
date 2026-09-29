@@ -9,7 +9,7 @@ import { PitchAccent } from "@/components/ui/PitchAccent"
 import { RATING } from "@/lib/srs"
 import { onkunTone } from "@/lib/kanji"
 import { useTranslation } from "@/lib/useTranslation"
-import { vocabForLevel } from "@/data/vocab"
+import { useVocab } from "@/data/vocab"
 import { n5KanjiChapters, n4KanjiChapters } from "@/data/kanji"
 import type { VocabEntry, KanjiChapter, KanjiGroup, KanjiWord, SRSCard } from "@/types"
 import { Watermark } from "@/components/ui/ScreenHeader"
@@ -66,7 +66,8 @@ export function Review() {
   const [mode, setMode] = useState<Mode>('vocab')
   const kanjiChapters = useMemo(() => taggedKanjiChapters(level), [level])
 
-  const vocab = useMemo(() => vocabForLevel(level), [level])
+  // Loaded per level on demand (empty until the level's chunk arrives).
+  const vocab = useVocab(level)
   const POS_LIST = useMemo(() => Array.from(new Set(vocab.map(v => v.pos))).sort(), [vocab])
   // Same chapter/category grouping VocabBrowser uses: chapter number where
   // one's been backfilled (N5 always, N4 for Bài 15-33), thematic category

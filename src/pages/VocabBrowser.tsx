@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useDeferredValue, useRef, memo } from "react"
-import { vocabForLevel, allVocab, romajiCache } from "@/data/vocab"
+import { useVocab, romajiOf } from "@/data/vocab"
 import type { VocabEntry } from "@/types"
 import { Furigana } from "@/components/ui/Furigana"
 import { PosTag } from "@/components/ui/PosTag"
@@ -118,7 +118,9 @@ export function VocabBrowser() {
   const level = useSettingsStore(s => s.level)
   const { t, localize } = useTranslation()
 
-  const vocab = useMemo(() => vocabForLevel(level), [level])
+  // Loaded per level on demand (empty until the level's chunk arrives).
+  const vocab = useVocab(level)
+  const vocabById = useMemo(() => new Map(vocab.map(v => [v.id, v])), [vocab])
   const CHAPTERS = useMemo(
     () => Array.from(new Set(vocab.map(groupKey))).sort(compareGroupKeys),
     [vocab]
@@ -139,13 +141,13 @@ export function VocabBrowser() {
       if (pos !== null && v.pos !== pos) return false
       if (search) {
         const q = search.toLowerCase()
-        // romajiCache.get() is an O(1) Map lookup – the pre-converted romaji
-        // string was built once at startup, not re-derived here.
+        // romajiOf() is an O(1) Map lookup – the romaji was pre-converted
+        // when this level's vocabulary loaded, not re-derived here.
         return (
           v.kanji.includes(q) ||
           v.kana.includes(q) ||
           localize(v.meanings).toLowerCase().includes(q) ||
-          (romajiCache.get(v.id)?.includes(q) ?? false)
+          romajiOf(v).includes(q)
         )
       }
       return true
@@ -274,6 +276,7 @@ export function VocabBrowser() {
       {selectedIndex !== null && filtered[selectedIndex] && (
         <VocabModal
           vocab={filtered[selectedIndex]}
+          vocabById={vocabById}
           index={selectedIndex}
           total={filtered.length}
           onPrev={() => setSelectedIndex(i => (i !== null && i > 0 ? i - 1 : i))}
@@ -289,6 +292,7 @@ export function VocabBrowser() {
 
 function VocabModal({
   vocab,
+  vocabById,
   index,
   total,
   onPrev,
@@ -296,6 +300,7 @@ function VocabModal({
   onClose,
 }: {
   vocab: VocabEntry
+  vocabById: ReadonlyMap<string, VocabEntry>
   index: number
   total: number
   onPrev: () => void
@@ -449,7 +454,7 @@ function VocabModal({
               </div>
               <div className="flex flex-wrap gap-2">
                 {vocab.homophones.map(id => {
-                  const hw = allVocab.find(v => v.id === id)
+                  const hw = vocabById.get(id)
                   if (!hw) return null
                   return (
                     <div key={id} className="border-3 border-structural px-3 py-1 shadow-[var(--shadow-brutal)]">

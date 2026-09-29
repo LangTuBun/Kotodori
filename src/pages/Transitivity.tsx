@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { memo, useCallback, useDeferredValue, useMemo, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { transitivityPatterns, verbPairs, IRREGULAR_PATTERN_ID } from "@/data/transitivity"
 import { getGrammarLinks } from "@/data/grammar-links"
@@ -9,19 +9,24 @@ import { Reveal } from "@/components/ui/Reveal"
 import { SpeakButton } from "@/components/ui/SpeakButton"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore } from "@/store/settings-store"
+import { useProgressiveList } from "@/lib/useProgressiveList"
 import { Watermark } from "@/components/ui/ScreenHeader"
 
 const TRANS_COLOR = "var(--color-blue)"
 const INTRANS_COLOR = "var(--color-green)"
 
 export function Transitivity() {
-  const navigate = useNavigate()
+  const routerNavigate = useNavigate()
+  const navigate = useCallback((to: string) => { routerNavigate(to) }, [routerNavigate])
   const { t, localize } = useTranslation()
   const level = useSettingsStore(s => s.level)
   const [search, setSearch] = useState("")
+  // Input reads `search`; the pair list reads the deferred copy so typing
+  // paints first and the card re-render never blocks the next keystroke.
+  const deferredSearch = useDeferredValue(search)
   const [activePattern, setActivePattern] = useState<string | null>(null)
 
-  const query = search.trim().toLowerCase()
+  const query = deferredSearch.trim().toLowerCase()
   const matches = useMemo(() => {
     if (!query) return null
     return new Set(
@@ -37,7 +42,34 @@ export function Transitivity() {
     )
   }, [query])
 
-  const patternsToShow = activePattern ? transitivityPatterns.filter(pt => pt.id === activePattern) : transitivityPatterns
+  const patternsToShow = useMemo(
+    () => activePattern ? transitivityPatterns.filter(pt => pt.id === activePattern) : transitivityPatterns,
+    [activePattern]
+  )
+
+  // One flat, pattern-ordered list so a single progressive window can cover
+  // every group (a prefix of it never leaves gaps in earlier groups). Group
+  // headers take their counts from the full list, not the rendered window.
+  const pairsFlat = useMemo(
+    () => patternsToShow.flatMap(pt => verbPairs.filter(p => p.patternId === pt.id && (!matches || matches.has(p.id)))),
+    [patternsToShow, matches]
+  )
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const { visible, sentinelRef, hasMore } = useProgressiveList(pairsFlat, 12, scrollRef)
+  const patternTotals = useMemo(() => {
+    const totals = new Map<string, number>()
+    for (const p of pairsFlat) totals.set(p.patternId, (totals.get(p.patternId) ?? 0) + 1)
+    return totals
+  }, [pairsFlat])
+  const visibleByPattern = useMemo(() => {
+    const map = new Map<string, VerbTransitivityPair[]>()
+    for (const p of visible) {
+      const list = map.get(p.patternId)
+      if (list) list.push(p)
+      else map.set(p.patternId, [p])
+    }
+    return map
+  }, [visible])
 
   // Chapter 19 grammar (Nを+他動詞, N（は/が）+自動詞, てある x2) -- level-aware
   // like VerbForms' relatedGrammar, so an N5-only view shows nothing rather
@@ -48,7 +80,7 @@ export function Transitivity() {
   )
 
   return (
-    <div className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
+    <div ref={scrollRef} className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
       <div className="relative max-w-5xl mx-auto p-6 overflow-hidden">
         <Watermark char="対" />
 
@@ -116,12 +148,12 @@ export function Transitivity() {
                 <button
                   key={g.id}
                   onClick={() => navigate(`/grammar?point=${g.id}`)}
-                  className="group shrink-0 w-56 text-left border-3 border-structural bg-paper p-3 cursor-pointer transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+                  className="group shrink-0 w-56 text-left border-3 border-structural bg-paper p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
                   style={{ borderLeftWidth: '6px', borderLeftColor: 'var(--color-blue)' }}
                 >
                   <div className="flex items-start justify-between gap-2">
                     <div className="jp font-bold text-sm leading-snug">{g.pattern}</div>
-                    <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-all">→</span>
+                    <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-transform">→</span>
                   </div>
                   <div className="text-xs mt-2 leading-relaxed text-muted">{localize(g.meaning)}</div>
                 </button>
@@ -148,7 +180,7 @@ export function Transitivity() {
                 <button
                   key={pt.id}
                   onClick={() => setActivePattern(active ? null : pt.id)}
-                  className={`text-left border-3 p-3 cursor-pointer transition-all ${
+                  className={`text-left border-3 p-3 cursor-pointer transition-[background-color,border-color,box-shadow,transform] ${
                     active ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5'
                   }`}
                 >
@@ -182,15 +214,15 @@ export function Transitivity() {
         {/* Verb pair list, grouped by pattern */}
         <div className="mb-8 space-y-8">
           {patternsToShow.map(pt => {
-            const pairs = verbPairs.filter(p => p.patternId === pt.id && (!matches || matches.has(p.id)))
-            if (pairs.length === 0) return null
+            const pairs = visibleByPattern.get(pt.id)
+            if (!pairs) return null
             return (
               <div key={pt.id}>
                 <div className="flex items-baseline gap-2 mb-3 border-b-2 border-structural pb-1.5">
                   <span className="font-mono font-black text-sm">
                     {pt.id === IRREGULAR_PATTERN_ID ? t('transitivity.irregular') : pt.label}
                   </span>
-                  <span className="text-xs font-bold text-muted">{t('common.wordsCount', { n: pairs.length })}</span>
+                  <span className="text-xs font-bold text-muted">{t('common.wordsCount', { n: patternTotals.get(pt.id) ?? pairs.length })}</span>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {pairs.map((p, i) => <VerbPairCard key={p.id} pair={p} index={i} localize={localize} t={t} />)}
@@ -198,6 +230,7 @@ export function Transitivity() {
               </div>
             )
           })}
+          {hasMore && <div ref={sentinelRef} className="h-px" />}
           {matches && matches.size === 0 && (
             <p className="text-sm text-muted text-center py-8">{t('transitivity.noResults')}</p>
           )}
@@ -207,7 +240,7 @@ export function Transitivity() {
   )
 }
 
-function VerbPairCard({
+const VerbPairCard = memo(function VerbPairCard({
   pair, index, localize, t,
 }: {
   pair: VerbTransitivityPair
@@ -217,7 +250,7 @@ function VerbPairCard({
 }) {
   return (
     <Reveal index={index} className="h-full">
-      <Card className="p-0 overflow-hidden h-full flex flex-col">
+      <Card className="cv-auto p-0 overflow-hidden h-full flex flex-col">
         <VerbHalfRow half={pair.transitive} label={t('transitivity.transitiveTag')} color={TRANS_COLOR} particle="を" localize={localize} />
         <div className="border-t-2 border-dashed border-structural/40" />
         <VerbHalfRow half={pair.intransitive} label={t('transitivity.intransitiveTag')} color={INTRANS_COLOR} particle="が" localize={localize} />
@@ -229,7 +262,7 @@ function VerbPairCard({
       </Card>
     </Reveal>
   )
-}
+})
 
 function VerbHalfRow({
   half, label, color, particle, localize,

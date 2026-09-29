@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { memo, useCallback, useDeferredValue, useMemo, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { kaiwaQuestions, kaiwaSets, kaiwaTopics } from "@/data/kaiwa"
 import { getGrammarLinks } from "@/data/grammar-links"
@@ -11,6 +11,7 @@ import { SpeakButton } from "@/components/ui/SpeakButton"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore, type Level } from "@/store/settings-store"
+import { useProgressiveList } from "@/lib/useProgressiveList"
 
 type Localize = (m: { vi: string; en: string } | undefined | null) => string
 type T = (key: string, vars?: Record<string, string | number>) => string
@@ -36,11 +37,15 @@ function haystackOf(q: KaiwaQuestion) {
 }
 
 export function Kaiwa() {
-  const navigate = useNavigate()
+  const routerNavigate = useNavigate()
+  const navigate = useCallback((to: string) => { routerNavigate(to) }, [routerNavigate])
   const { t, localize } = useTranslation()
   const level = useSettingsStore(s => s.level)
   const setLevel = useSettingsStore(s => s.setLevel)
   const [search, setSearch] = useState("")
+  // Input reads `search`; the list reads the deferred copy so typing paints
+  // first and the card re-render never blocks the next keystroke.
+  const deferredSearch = useDeferredValue(search)
 
   // Grammar chips mix N5 and N4 patterns by design (see grammarLevelById
   // above), so chip labels always resolve from the combined set regardless
@@ -51,24 +56,31 @@ export function Kaiwa() {
     []
   )
 
-  const query = search.trim().toLowerCase()
-  const matchesQuery = (q: KaiwaQuestion) => !query || haystackOf(q).includes(query)
+  const query = deferredSearch.trim().toLowerCase()
 
   const visibleSets = useMemo(() => {
     return kaiwaSets
-      .map(set => ({ set, questions: set.questionIds.map(id => questionsById[id]).filter(matchesQuery) }))
+      .map(set => ({
+        set,
+        questions: set.questionIds.map(id => questionsById[id]).filter(q => !query || haystackOf(q).includes(query)),
+      }))
       .filter(entry => entry.questions.length > 0)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query])
 
-  function openGrammar(g: GrammarLink) {
+  // Sets mount a few at a time as the pane scrolls instead of all at once.
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const { visible, sentinelRef, hasMore } = useProgressiveList(visibleSets, 4, scrollRef)
+
+  // Stable identity so the memoized QuestionCards don't re-render on every
+  // keystroke.
+  const openGrammar = useCallback((g: GrammarLink) => {
     const target = grammarLevelById[g.id]
     if (target && level !== "all" && level !== target) setLevel(target)
     navigate(`/grammar?point=${g.id}`)
-  }
+  }, [level, setLevel, navigate])
 
   return (
-    <div className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
+    <div ref={scrollRef} className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
       <div className="relative max-w-5xl mx-auto p-6 overflow-hidden">
         <Watermark char="話" />
 
@@ -93,7 +105,7 @@ export function Kaiwa() {
         </div>
 
         <div className="space-y-10 mb-8">
-          {visibleSets.map(({ set, questions }, i) => (
+          {visible.map(({ set, questions }, i) => (
             <Reveal key={set.id} index={i}>
               <div>
                 <div className="flex items-baseline gap-2 mb-3 border-b-2 border-structural pb-1.5">
@@ -117,6 +129,7 @@ export function Kaiwa() {
               </div>
             </Reveal>
           ))}
+          {hasMore && <div ref={sentinelRef} className="h-px" />}
         </div>
 
         {visibleSets.length === 0 && (
@@ -127,7 +140,7 @@ export function Kaiwa() {
   )
 }
 
-function QuestionCard({
+const QuestionCard = memo(function QuestionCard({
   question, t, localize, grammarById, onGrammarClick,
 }: {
   question: KaiwaQuestion
@@ -140,7 +153,7 @@ function QuestionCard({
   const linkedGrammar = (question.grammarIds ?? []).map(id => grammarById[id]).filter((g): g is GrammarLink => !!g)
 
   return (
-    <Card className="p-0 overflow-hidden h-full flex flex-col">
+    <Card className="cv-auto p-0 overflow-hidden h-full flex flex-col">
       <div className="p-4 flex-1">
         <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-muted mb-1.5">
           {localize(kaiwaTopics[question.topic])}
@@ -176,12 +189,12 @@ function QuestionCard({
                   <button
                     key={g.id}
                     onClick={() => onGrammarClick(g)}
-                    className="group shrink-0 w-48 text-left border-3 border-structural bg-paper p-2.5 cursor-pointer transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+                    className="group shrink-0 w-48 text-left border-3 border-structural bg-paper p-2.5 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
                     style={{ borderLeftWidth: "6px", borderLeftColor: "var(--color-blue)" }}
                   >
                     <div className="flex items-start justify-between gap-1.5">
                       <div className="jp font-bold text-xs leading-snug">{g.pattern}</div>
-                      <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-all text-xs">→</span>
+                      <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-transform text-xs">→</span>
                     </div>
                     <div className="text-[11px] mt-1.5 leading-relaxed text-muted">{localize(g.meaning)}</div>
                   </button>
@@ -193,4 +206,4 @@ function QuestionCard({
       </div>
     </Card>
   )
-}
+})

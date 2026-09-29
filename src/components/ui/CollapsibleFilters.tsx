@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react"
  *
  * - Desktop (≥ lg / 1024px): renders children in a normal flex-wrap container,
  *   no toggle bar, no collapse behavior — identical to the old layout.
+ *   Children are mounted once and restyled by breakpoint, not duplicated.
  * - Mobile (< lg): collapses to a compact summary bar showing the active
  *   filter label + a chevron toggle. Tapping expands the chip grid.
  *   Auto-collapses when `activeLabel` changes (= user made a selection).
@@ -46,82 +47,73 @@ export function CollapsibleFilters({
   }, [activeLabel])
 
   return (
-    <>
-      {/* ── Desktop: always-visible flat layout (unchanged from before) ── */}
-      <div
-        className={`hidden lg:flex px-4 py-3 border-b-3 border-structural bg-paper gap-2 flex-wrap ${className}`}
+    <div className="border-b-3 border-structural bg-paper">
+      {/* Toggle bar */}
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        className="lg:hidden w-full flex items-center gap-3 px-4 py-3 cursor-pointer active:bg-surface transition-colors"
+        aria-expanded={open}
       >
-        {children}
-      </div>
-
-      {/* ── Mobile: collapsible panel ── */}
-      <div className="lg:hidden border-b-3 border-structural bg-paper">
-        {/* Toggle bar */}
-        <button
-          type="button"
-          onClick={() => setOpen(o => !o)}
-          className="w-full flex items-center gap-3 px-4 py-3 cursor-pointer active:bg-surface transition-colors"
-          aria-expanded={open}
+        {/* Filter icon (funnel) */}
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 16 16"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="shrink-0 opacity-50"
         >
-          {/* Filter icon (funnel) */}
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 16 16"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="shrink-0 opacity-50"
-          >
-            <path d="M1.5 1.5h13l-5 6v5l-3 2v-7z" />
-          </svg>
+          <path d="M1.5 1.5h13l-5 6v5l-3 2v-7z" />
+        </svg>
 
-          <span className="text-xs font-black uppercase tracking-wider shrink-0">
-            {label}
-          </span>
+        <span className="text-xs font-black uppercase tracking-wider shrink-0">
+          {label}
+        </span>
 
-          {/* Active filter label */}
-          <span className="flex-1 text-xs font-bold text-muted truncate text-left">
-            {activeLabel}
-          </span>
+        {/* Active filter label */}
+        <span className="flex-1 text-xs font-bold text-muted truncate text-left">
+          {activeLabel}
+        </span>
 
-          {/* Filtered indicator dot */}
-          {isFiltered && (
-            <span className="w-2 h-2 rounded-full bg-accent shrink-0" />
-          )}
+        {/* Filtered indicator dot */}
+        {isFiltered && (
+          <span className="w-2 h-2 rounded-full bg-accent shrink-0" />
+        )}
 
-          {/* Chevron */}
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className={`shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
-          >
-            <path d="M2 4l4 4 4-4" />
-          </svg>
-        </button>
-
-        {/* Expandable chip area — grid-rows animation (same as acc-body) */}
-        <div
-          className="grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.2,0.7,0.2,1)]"
-          style={{ gridTemplateRows: open ? "1fr" : "0fr" }}
+        {/* Chevron */}
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className={`shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         >
-          <div className="overflow-hidden">
-            <div
-              className={`px-4 pb-3 gap-2 flex flex-wrap max-h-[45dvh] overflow-y-auto ${className}`}
-            >
-              {children}
-            </div>
+          <path d="M2 4l4 4 4-4" />
+        </svg>
+      </button>
+      {/* Chips are rendered exactly once. Below lg they sit in a grid-rows
+          accordion (`open` drives 0fr -> 1fr); at lg+ `lg:block` drops the
+          grid so the rules below no longer apply and the row is always open. */}
+      <div
+        className="grid lg:block transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.2,0.7,0.2,1)]"
+        style={{ gridTemplateRows: open ? "1fr" : "0fr" }}
+      >
+        <div className="overflow-hidden lg:overflow-visible">
+          <div
+            className={`px-4 pb-3 lg:py-3 gap-2 flex flex-wrap max-h-[45dvh] overflow-y-auto lg:max-h-none lg:overflow-visible ${className}`}
+          >
+            {children}
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

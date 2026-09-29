@@ -1,38 +1,61 @@
-// Central level-aware selector for grammar data, mirroring vocab.ts's
-// pattern -- pages should import from here instead of reaching into
-// src/data/n5/grammar*.json or src/data/n4/grammar*.json directly.
+// Central level-aware loader for grammar data, mirroring vocab.ts. Each JLPT
+// level is its own dynamic-import chunk (~900KB each), so the Grammar page
+// only downloads the level being viewed. Pages read it through useGrammar().
+// Cross-link chips elsewhere use the slim ./grammar-links index instead.
 import type { GrammarPoint, GrammarCategory } from "@/types"
 import type { Level } from "@/store/settings-store"
-import n5GrammarJson from "@/data/n5/grammar.json"
-import n5CategoriesJson from "@/data/n5/grammar-categories.json"
-import n4GrammarJson from "@/data/n4/grammar.json"
-import n4CategoriesJson from "@/data/n4/grammar-categories.json"
+import { useLevelData } from "@/lib/useLevelData"
 
-export const n5Grammar = n5GrammarJson as GrammarPoint[]
-export const n4Grammar = n4GrammarJson as GrammarPoint[]
-export const allGrammar: GrammarPoint[] = [...n5Grammar, ...n4Grammar]
-
-export const n5GrammarCategories = n5CategoriesJson.categories as GrammarCategory[]
-export const n4GrammarCategories = n4CategoriesJson.categories as GrammarCategory[]
-export const allGrammarCategories: GrammarCategory[] = [...n5GrammarCategories, ...n4GrammarCategories]
-
-export const n5GrammarTips = n5CategoriesJson.tips as { vi: string; en: string }[]
-export const n4GrammarTips = n4CategoriesJson.tips as { vi: string; en: string }[]
-
-export function getGrammar(level: Level): GrammarPoint[] {
-  if (level === "N5") return n5Grammar
-  if (level === "N4") return n4Grammar
-  return allGrammar
+export interface GrammarData {
+  grammar: GrammarPoint[]
+  categories: GrammarCategory[]
+  tips: { vi: string; en: string }[]
 }
 
-export function getGrammarCategories(level: Level): GrammarCategory[] {
-  if (level === "N5") return n5GrammarCategories
-  if (level === "N4") return n4GrammarCategories
-  return allGrammarCategories
+const loaded = new Map<Level, GrammarData>()
+const inflight = new Map<Level, Promise<GrammarData>>()
+
+async function importLevel(level: 'N5' | 'N4'): Promise<GrammarData> {
+  const [g, c] = level === 'N5'
+    ? await Promise.all([import("@/data/n5/grammar.json"), import("@/data/n5/grammar-categories.json")])
+    : await Promise.all([import("@/data/n4/grammar.json"), import("@/data/n4/grammar-categories.json")])
+  return {
+    grammar: g.default as GrammarPoint[],
+    categories: c.default.categories as GrammarCategory[],
+    tips: c.default.tips as { vi: string; en: string }[],
+  }
 }
 
-export function getGrammarTips(level: Level): { vi: string; en: string }[] {
-  if (level === "N5") return n5GrammarTips
-  if (level === "N4") return n4GrammarTips
-  return [...n5GrammarTips, ...n4GrammarTips]
+export function loadGrammar(level: Level): Promise<GrammarData> {
+  const hit = loaded.get(level)
+  if (hit) return Promise.resolve(hit)
+  let p = inflight.get(level)
+  if (!p) {
+    p = (level === 'all'
+      ? Promise.all([loadGrammar('N5'), loadGrammar('N4')]).then(([a, b]): GrammarData => ({
+          grammar: [...a.grammar, ...b.grammar],
+          categories: [...a.categories, ...b.categories],
+          tips: [...a.tips, ...b.tips],
+        }))
+      : importLevel(level)
+    ).then(data => {
+      loaded.set(level, data)
+      inflight.delete(level)
+      return data
+    }, err => {
+      inflight.delete(level)
+      throw err
+    })
+    inflight.set(level, p)
+  }
+  return p
+}
+
+function peekGrammar(level: Level): GrammarData | null {
+  return loaded.get(level) ?? null
+}
+
+/** Grammar data for `level`; null until its chunk has arrived. */
+export function useGrammar(level: Level): GrammarData | null {
+  return useLevelData(level, peekGrammar, loadGrammar)
 }

@@ -162,10 +162,11 @@ interface KanjiDrawerProps {
   onClose: () => void
 }
 
-// Always-mounted right-side slide-over (translate-x + backdrop toggle) so the
-// close transition can play — conditionally rendering would unmount mid-swipe.
-// `displayChar` keeps the last kanji's content visible while it slides out;
-// `char` alone would blank the panel before the transition finishes.
+// Always-mounted right-side slide-over shell (translate-x + backdrop toggle)
+// so the close transition can play — conditionally rendering would unmount
+// mid-swipe. `displayChar` keeps the last kanji's content visible while it
+// slides out (`char` alone would blank the panel before the transition
+// finishes), then is cleared so the closed drawer holds no content.
 export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
   const { t, localize } = useTranslation()
   const POSITION_LABELS: Record<string, string> = {
@@ -198,6 +199,15 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
       setReplayKey(k => k + 1)
     }
   }, [char])
+
+  // Once the slide-out has finished (300ms, matching duration-300 below),
+  // drop the last kanji so the SVG, readings and badges unmount and the
+  // closed shell stays lightweight. Reopening within the window cancels it.
+  useEffect(() => {
+    if (open) return
+    const id = window.setTimeout(() => setDisplayChar(null), 320)
+    return () => window.clearTimeout(id)
+  }, [open])
 
   useEffect(() => {
     if (!open) return
@@ -243,6 +253,8 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
           // mounted, and a full-screen backdrop-filter layer (even at
           // opacity 0) is expensive for iOS Safari to composite on scroll.
           open ? "opacity-100 pointer-events-auto lg:backdrop-blur-sm" : "opacity-0 pointer-events-none"
+        } ${
+          !open && displayChar === null ? "invisible" : ""
         }`}
       />
       <div
@@ -251,6 +263,9 @@ export function KanjiDrawer({ char, onClose }: KanjiDrawerProps) {
         aria-label={displayChar ? t('kanjiDrawer.ariaLabel', { char: displayChar }) : undefined}
         className={`fixed top-0 right-0 z-50 h-dvh w-full sm:w-[420px] border-l-3 shadow-[-6px_0px_0px_rgba(10,10,10,0.15)] transition-transform duration-300 ease-out overflow-y-auto ${
           open ? "translate-x-0" : "translate-x-full"
+        } ${
+          // Fully hidden once closed and emptied: no layer, no shadow raster.
+          !open && displayChar === null ? "invisible" : ""
         }`}
         style={{ backgroundColor: "rgb(255,255,255)", color: DRAWER_INK, borderColor: DRAWER_INK }}
       >

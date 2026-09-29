@@ -30,7 +30,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           'border-3 border-structural',
           'font-mono font-bold uppercase tracking-wider',
           'shadow-[var(--shadow-brutal)]',
-          'transition-all duration-100',
+          'transition-[color,background-color,border-color,box-shadow,transform,opacity] duration-100',
           'hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5',
           'active:shadow-none active:translate-x-0.5 active:translate-y-0.5',
           'cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none',

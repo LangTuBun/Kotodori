@@ -29,15 +29,19 @@ export function Card({ children, className = '', onClick, accent, lift = false }
   return (
     <div
       className={[
-        'bg-card border-3 transition-all duration-100',
+        'bg-card border-3 transition-[border-color,background-color,box-shadow,transform] duration-100',
         accent ? 'tilt-card hover:rotate-0' : '',
-        lift ? 'card-lift' : '',
-        onClick ? 'cursor-pointer hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-none active:translate-x-0.5 active:translate-y-0.5' : '',
+        lift ? 'card-lift' : 'card-shadow',
+        onClick ? 'card-shadow-hover cursor-pointer hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-none active:translate-x-0.5 active:translate-y-0.5' : '',
         className,
       ].join(' ')}
-      style={{ borderColor, boxShadow: shadow }}
-      onMouseEnter={onClick ? (e) => { e.currentTarget.style.boxShadow = shadowHover } : undefined}
-      onMouseLeave={onClick ? (e) => { e.currentTarget.style.boxShadow = shadow } : undefined}
+      style={{
+        borderColor,
+        '--card-shadow': shadow,
+        '--card-shadow-hover': shadowHover,
+        // .card-lift owns its own shadow states; keep the inline one it always had.
+        ...(lift ? { boxShadow: shadow } : {}),
+      } as React.CSSProperties}
       onClick={onClick}
     >
       {children}

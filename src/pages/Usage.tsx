@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { memo, useCallback, useDeferredValue, useMemo, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { synonymGroups, collocationGroups, auxiliaryVerbs } from "@/data/usage"
 import { getGrammarLinks } from "@/data/grammar-links"
@@ -13,6 +13,7 @@ import { SpeakButton } from "@/components/ui/SpeakButton"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { useTranslation } from "@/lib/useTranslation"
 import { useSettingsStore } from "@/store/settings-store"
+import { useProgressiveList } from "@/lib/useProgressiveList"
 
 // For CollocationGroupSection's "⇄ compare with" link -- resolves a
 // contrastId to its partner's display pattern regardless of which group
@@ -69,11 +70,17 @@ function scrollToEntry(id: string) {
 }
 
 export function Usage() {
-  const navigate = useNavigate()
+  const routerNavigate = useNavigate()
+  // Stable identity so the memoized cards below don't re-render when the
+  // router hands back a new navigate function.
+  const navigate = useCallback((to: string) => { routerNavigate(to) }, [routerNavigate])
   const { t, localize } = useTranslation()
   const level = useSettingsStore(s => s.level)
   const [tab, setTab] = useState<Tab>("synonyms")
   const [search, setSearch] = useState("")
+  // The input reads `search`; the lists read the deferred copy so typing is
+  // painted first and the card re-render never blocks the next keystroke.
+  const deferredSearch = useDeferredValue(search)
 
   // AuxiliaryVerb.grammarIds cross-links into grammar.ts, whose /grammar
   // route only resolves points inside the CURRENTLY selected level's list
@@ -87,7 +94,7 @@ export function Usage() {
     [level]
   )
 
-  const query = search.trim().toLowerCase()
+  const query = deferredSearch.trim().toLowerCase()
 
   const filteredSynonymGroups = useMemo(() => {
     if (!query) return synonymGroups
@@ -108,13 +115,21 @@ export function Usage() {
     return auxiliaryVerbs.filter(a => auxiliaryHaystack(a).includes(query))
   }, [query])
 
+  // Cards mount a batch at a time as the pane scrolls instead of all at once
+  // on tab entry. The three hooks share the scroll pane; only the active
+  // tab's sentinel is rendered, so the others stay idle.
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const synonyms = useProgressiveList(filteredSynonymGroups, 6, scrollRef)
+  const collocations = useProgressiveList(filteredCollocationGroups, 4, scrollRef)
+  const auxiliaries = useProgressiveList(filteredAuxiliaryVerbs, 8, scrollRef)
+
   const noResults =
     (tab === "synonyms" && filteredSynonymGroups.length === 0) ||
     (tab === "particles" && filteredCollocationGroups.length === 0) ||
     (tab === "auxiliary" && filteredAuxiliaryVerbs.length === 0)
 
   return (
-    <div className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
+    <div ref={scrollRef} className="h-full overflow-y-auto pb-[env(safe-area-inset-bottom)]">
       <div className="relative max-w-5xl mx-auto p-6 overflow-hidden">
         <Watermark char="別" />
 
@@ -135,7 +150,7 @@ export function Usage() {
               <button
                 key={tb.id}
                 onClick={() => setTab(tb.id)}
-                className={`text-left border-3 p-3 cursor-pointer transition-all ${
+                className={`text-left border-3 p-3 cursor-pointer transition-[background-color,border-color,box-shadow,transform] ${
                   active
                     ? "border-ink bg-ink text-paper"
                     : "border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
@@ -166,25 +181,28 @@ export function Usage() {
 
         {tab === "synonyms" && (
           <div className="space-y-8 mb-8">
-            {filteredSynonymGroups.map((g, i) => (
+            {synonyms.visible.map((g, i) => (
               <SynonymGroupCard key={g.id} group={g} index={i} t={t} localize={localize} />
             ))}
+            {synonyms.hasMore && <div ref={synonyms.sentinelRef} className="h-px" />}
           </div>
         )}
 
         {tab === "particles" && (
           <div className="space-y-10 mb-8">
-            {filteredCollocationGroups.map((g, i) => (
+            {collocations.visible.map((g, i) => (
               <CollocationGroupSection key={g.id} group={g} index={i} t={t} localize={localize} />
             ))}
+            {collocations.hasMore && <div ref={collocations.sentinelRef} className="h-px" />}
           </div>
         )}
 
         {tab === "auxiliary" && (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8 items-start">
-            {filteredAuxiliaryVerbs.map((a, i) => (
+            {auxiliaries.visible.map((a, i) => (
               <AuxiliaryVerbCard key={a.id} entry={a} index={i} t={t} localize={localize} navigate={navigate} grammarById={grammarById} />
             ))}
+            {auxiliaries.hasMore && <div ref={auxiliaries.sentinelRef} className="col-span-full h-px" />}
           </div>
         )}
 
@@ -207,7 +225,7 @@ function TrapBox({ label, text }: { label: string; text: string }) {
 
 // -- Synonyms & Nuances --------------------------------------------------
 
-function SynonymGroupCard({
+const SynonymGroupCard = memo(function SynonymGroupCard({
   group, index, t, localize,
 }: { group: SynonymGroup; index: number; t: T; localize: Localize }) {
   return (
@@ -229,7 +247,7 @@ function SynonymGroupCard({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {group.words.map(w => (
-            <Card key={w.kanji} className="p-0 overflow-hidden h-full flex flex-col">
+            <Card key={w.kanji} className="cv-auto p-0 overflow-hidden h-full flex flex-col">
               <div className="p-4 flex-1">
                 <div className="flex items-center justify-between gap-2 mb-1.5">
                   <span className="inline-flex items-center gap-1.5">
@@ -254,11 +272,11 @@ function SynonymGroupCard({
       </div>
     </Reveal>
   )
-}
+})
 
 // -- Verb-Particle Collocations ------------------------------------------
 
-function CollocationGroupSection({
+const CollocationGroupSection = memo(function CollocationGroupSection({
   group, index, t, localize,
 }: { group: CollocationGroup; index: number; t: T; localize: Localize }) {
   return (
@@ -271,7 +289,7 @@ function CollocationGroupSection({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {group.entries.map(e => (
             <div key={e.id} id={e.id} className="scroll-mt-24">
-              <Card className="p-0 overflow-hidden h-full flex flex-col">
+              <Card className="cv-auto p-0 overflow-hidden h-full flex flex-col">
                 <div className="p-4 flex-1">
                   <div className="flex items-center justify-between gap-2 mb-1.5">
                     <span className="jp font-mono font-black text-base">{e.pattern}</span>
@@ -310,11 +328,11 @@ function CollocationGroupSection({
       </div>
     </Reveal>
   )
-}
+})
 
 // -- Auxiliary Verbs (Hojo Doushi) ----------------------------------------
 
-function AuxiliaryVerbCard({
+const AuxiliaryVerbCard = memo(function AuxiliaryVerbCard({
   entry, index, t, localize, navigate, grammarById,
 }: {
   entry: AuxiliaryVerb
@@ -327,7 +345,7 @@ function AuxiliaryVerbCard({
   const linkedGrammar = (entry.grammarIds ?? []).map(id => grammarById[id]).filter((g): g is GrammarLink => !!g)
   return (
     <Reveal index={index} className="h-full">
-      <Card className="p-0 overflow-hidden h-full flex flex-col">
+      <Card className="cv-auto p-0 overflow-hidden h-full flex flex-col">
         <div className="p-4 flex-1">
           <div className="flex items-baseline justify-between gap-2 mb-1.5">
             <span className="jp font-black text-2xl">{entry.pattern}</span>
@@ -353,12 +371,12 @@ function AuxiliaryVerbCard({
                 <button
                   key={g.id}
                   onClick={() => navigate(`/grammar?point=${g.id}`)}
-                  className="group shrink-0 w-48 text-left border-3 border-structural bg-paper p-2.5 cursor-pointer transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+                  className="group shrink-0 w-48 text-left border-3 border-structural bg-paper p-2.5 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
                   style={{ borderLeftWidth: "6px", borderLeftColor: "var(--color-blue)" }}
                 >
                   <div className="flex items-start justify-between gap-1.5">
                     <div className="jp font-bold text-xs leading-snug">{g.pattern}</div>
-                    <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-all text-xs">→</span>
+                    <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-transform text-xs">→</span>
                   </div>
                   <div className="text-[11px] mt-1.5 leading-relaxed text-muted">{localize(g.meaning)}</div>
                 </button>
@@ -370,4 +388,4 @@ function AuxiliaryVerbCard({
       </Card>
     </Reveal>
   )
-}
+})

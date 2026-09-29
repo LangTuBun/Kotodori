@@ -1,5 +1,6 @@
-import { useMemo, useState } from "react"
-import { vocabForLevel } from "@/data/vocab"
+import { memo, useCallback, useMemo, useRef, useState } from "react"
+import { useVocab } from "@/data/vocab"
+import { useProgressiveList } from "@/lib/useProgressiveList"
 import kanjiData from "@/data/n5/kanji.json"
 import type { VocabEntry, KanjiChapter } from "@/types"
 import { Button } from "@/components/ui/Button"
@@ -112,10 +113,10 @@ function hasRealKanjiField(kanji: string | undefined): kanji is string {
 // sparse to catch. Synthesized entries get a full VocabEntry shape (stable
 // id, pos:'unknown', empty examples/tags) so WordCard/PosTag/keys behave
 // exactly like a real vocab entry.
-function buildPool(level: Level): VocabEntry[] {
+function buildPool(level: Level, vocab: readonly VocabEntry[]): VocabEntry[] {
   const seen = new Set<string>()
   const pool: VocabEntry[] = []
-  for (const v of vocabForLevel(level)) {
+  for (const v of vocab) {
     if (!hasRealKanjiField(v.kanji)) continue
     const key = v.kanji + '|' + v.kana
     if (seen.has(key)) continue
@@ -165,8 +166,8 @@ interface SoundGroup {
 // Recomputed per level (see useMemo in Homophones()) rather than once at
 // module load, since the pool it's built from now depends on the level
 // toggle -- still cheap enough to redo on a level switch.
-function computeGroups(level: Level): SoundGroup[] {
-  const pool = buildPool(level)
+function computeGroups(level: Level, vocab: readonly VocabEntry[]): SoundGroup[] {
+  const pool = buildPool(level, vocab)
   const map = new Map<string, VocabEntry[]>()
   for (const v of pool) {
     if (!v.kana || v.kana.length < 2) continue
@@ -233,11 +234,24 @@ export function Homophones() {
   const level = useSettingsStore(s => s.level)
   const [selected, setSelected] = useState<SoundGroup | null>(null)
 
-  const groups = useMemo(() => computeGroups(level), [level])
-  const trueHomophones = groups.filter(g => g.readings.length === 1)
-  const soundAlikes = groups.filter(g => g.readings.length > 1)
+  // Vocabulary loads per level on demand (empty until the chunk arrives).
+  const vocab = useVocab(level)
+  const groups = useMemo(() => computeGroups(level, vocab), [level, vocab])
+  const trueHomophones = useMemo(() => groups.filter(g => g.readings.length === 1), [groups])
+  const soundAlikes = useMemo(() => groups.filter(g => g.readings.length > 1), [groups])
+
+  // Group cards mount a page at a time as the pane scrolls. One flat list
+  // (exact homophones first, then sound-alikes) keeps the window a prefix of
+  // what's on screen; the section headers/stats use the full counts.
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const ordered = useMemo(() => [...trueHomophones, ...soundAlikes], [trueHomophones, soundAlikes])
+  const { visible, sentinelRef, hasMore } = useProgressiveList(ordered, 20, scrollRef)
+  const visibleTrue = useMemo(() => visible.filter(g => g.readings.length === 1), [visible])
+  const visibleAlike = useMemo(() => visible.filter(g => g.readings.length > 1), [visible])
+  const selectGroup = useCallback((g: SoundGroup) => setSelected(g), [])
 
   return (
+    <div ref={scrollRef} className="h-full overflow-y-auto">
     <div className="relative p-4 sm:p-8 max-w-4xl overflow-hidden">
       <Watermark char="音" />
       {/* Header */}
@@ -310,8 +324,8 @@ export function Homophones() {
                 <div className="flex-1 border-t-3 border-structural" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
-                {trueHomophones.map((g, i) => (
-                  <GroupCard key={g.id} group={g} idx={i} onSelect={() => setSelected(g)} />
+                {visibleTrue.map((g, i) => (
+                  <GroupCard key={g.id} group={g} idx={i} onSelect={selectGroup} />
                 ))}
               </div>
             </>
@@ -325,24 +339,26 @@ export function Homophones() {
                 <div className="flex-1 border-t-3 border-structural" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {soundAlikes.map((g, i) => (
-                  <GroupCard key={g.id} group={g} idx={i} onSelect={() => setSelected(g)} />
+                {visibleAlike.map((g, i) => (
+                  <GroupCard key={g.id} group={g} idx={i} onSelect={selectGroup} />
                 ))}
               </div>
             </>
           )}
+          {hasMore && <div ref={sentinelRef} className="h-px" />}
         </>
       )}
+    </div>
     </div>
   )
 }
 
-function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; onSelect: () => void }) {
+const GroupCard = memo(function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; onSelect: (g: SoundGroup) => void }) {
   const { t } = useTranslation()
   return (
     <button
-      onClick={onSelect}
-      className="border-3 border-structural p-4 text-left shadow-[var(--shadow-brutal)] hover:shadow-[5px_5px_0px_var(--color-yellow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all bg-paper"
+      onClick={() => onSelect(group)}
+      className="border-3 border-structural p-4 text-left shadow-[var(--shadow-brutal)] hover:shadow-[5px_5px_0px_var(--color-yellow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-[box-shadow,transform] bg-paper"
     >
       <div className="flex items-start gap-3">
         <div className="text-xs font-black text-muted w-6 shrink-0 pt-1">{idx + 1}</div>
@@ -374,4 +390,4 @@ function GroupCard({ group, idx, onSelect }: { group: SoundGroup; idx: number; o
       </div>
     </button>
   )
-}
+})

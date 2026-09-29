@@ -1,8 +1,9 @@
 import { memo, useDeferredValue, useEffect, useMemo, useRef, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import verbFormsData from "@/data/n5/verb-forms.json"
-import { allGrammar, getGrammar, getGrammarCategories, getGrammarTips } from "@/data/grammar"
-import type { GrammarPoint, ToneType, VerbFormsData } from "@/types"
+import { useGrammar, loadGrammar } from "@/data/grammar"
+import { getGrammarLinks } from "@/data/grammar-links"
+import type { GrammarCategory, GrammarPoint, ToneType, VerbFormsData } from "@/types"
 import { Ruby } from "@/components/ui/Ruby"
 import { Furigana } from "@/components/ui/Furigana"
 import { Watermark } from "@/components/ui/ScreenHeader"
@@ -14,12 +15,20 @@ import { FormationMatrix } from "@/components/ui/FormationMatrix"
 import { NotesAndTrapsCallout } from "@/components/ui/NotesAndTrapsCallout"
 import { InteractiveExampleCard } from "@/components/ui/InteractiveExampleCard"
 import { prefetchVoicevox } from "@/lib/speech"
+import { ToriLoader } from "@/components/ui/ToriLoader"
 
 // Cross-references (relatedGrammar/opposingGrammar/notesAndPitfalls[].relatedGrammarId)
 // can point across the N5/N4 boundary, so id -> pattern lookups always use the
-// full combined set rather than whatever `level` currently has selected.
-const patternById: Record<string, string> = Object.fromEntries(allGrammar.map(g => [g.id, g.pattern]))
-const grammarById: Record<string, GrammarPoint> = Object.fromEntries(allGrammar.map(g => [g.id, g]))
+// slim combined index rather than whatever `level` currently has selected
+// (the full per-level grammar chunks load one level at a time).
+const patternById: Record<string, string> = Object.fromEntries(getGrammarLinks('all').map(g => [g.id, g.pattern]))
+const levelById = new Map<string, 'N5' | 'N4'>([
+  ...getGrammarLinks('N5').map(g => [g.id, 'N5'] as const),
+  ...getGrammarLinks('N4').map(g => [g.id, 'N4'] as const),
+])
+const EMPTY_GRAMMAR: GrammarPoint[] = []
+const EMPTY_CATEGORIES: GrammarCategory[] = []
+const EMPTY_TIPS: { vi: string; en: string }[] = []
 
 const ALL_TONES: ToneType[] = ['formal', 'polite', 'casual', 'spoken', 'written', 'keigo', 'neutral']
 
@@ -47,9 +56,11 @@ export function Grammar() {
   const [searchParams, setSearchParams] = useSearchParams()
   const level = useSettingsStore(s => s.level)
   const setLevel = useSettingsStore(s => s.setLevel)
-  const grammar = useMemo(() => getGrammar(level), [level])
-  const categories = useMemo(() => getGrammarCategories(level), [level])
-  const tips = useMemo(() => getGrammarTips(level), [level])
+  // Only the selected level's chunk is fetched; null until it arrives.
+  const data = useGrammar(level)
+  const grammar = data?.grammar ?? EMPTY_GRAMMAR
+  const categories = data?.categories ?? EMPTY_CATEGORIES
+  const tips = data?.tips ?? EMPTY_TIPS
   const [search, setSearch] = useState("")
   // The input reads `search`; the list reads the deferred copy so typing is
   // painted first and the card re-render never blocks the next keystroke.
@@ -70,8 +81,16 @@ export function Grammar() {
   // and the drawer renders fine either way (category badge just degrades to
   // blank via the existing optional chaining below).
   function jumpTo(id: string) {
-    const point = grammarById[id]
-    if (point) setSelected(point)
+    const local = grammar.find(g => g.id === id)
+    if (local) { setSelected(local); return }
+    // Other level's point: fetch that level's chunk (usually a cache hit
+    // after the first jump) and open it once it's here.
+    const target = levelById.get(id)
+    if (!target) return
+    loadGrammar(target).then(d => {
+      const point = d.grammar.find(g => g.id === id)
+      if (point) setSelected(point)
+    }, () => {})
   }
 
   // A stale category/point selection from before a level switch has no
@@ -101,6 +120,9 @@ export function Grammar() {
   useEffect(() => {
     const pointId = searchParams.get('point')
     if (!pointId) return
+    // Wait for the level's chunk -- otherwise the lookup below would miss and
+    // the param would be dropped before the point could open.
+    if (!data) return
     const point = grammar.find(g => g.id === pointId)
     if (point) {
       setSelected(point)
@@ -108,7 +130,7 @@ export function Grammar() {
     }
     setSearchParams(prev => { prev.delete('point'); return prev }, { replace: true })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchParams])
+  }, [searchParams, data])
 
   // Which tones actually occur in the current level's data -- only render
   // tone filter chips that could possibly match something.
@@ -311,7 +333,10 @@ export function Grammar() {
             change). Search is deliberately left out: keying on it remounted
             and re-animated every card on every keystroke. */}
         <div ref={listRef} key={`${cat}|${verbForm}|${tone}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
-          {filtered.length === 0 && (
+          {!data && (
+            <div className="flex justify-center py-12"><ToriLoader /></div>
+          )}
+          {data && filtered.length === 0 && (
             <div className="text-center text-muted py-12 font-bold">{t('grammar.noResults')}</div>
           )}
           {visibleCategories.map(c => {

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useMemo } from "react"
 import { Link, NavLink, useLocation } from "react-router-dom"
 import { useVocabStore } from "@/store/vocab-store"
 import { isDue } from "@/lib/srs"
@@ -8,6 +8,7 @@ import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher"
 import { LevelSwitcher } from "@/components/ui/LevelSwitcher"
 import { InkCabinet } from "@/components/ui/InkCabinet"
 import { useTranslation } from "@/lib/useTranslation"
+import { useVocab } from "@/data/vocab"
 
 const nav = [
   { to: "/",           label: "ホーム",     kana: "ホーム",         key: "home" },
@@ -30,24 +31,17 @@ interface SidebarProps {
   onClose: () => void
 }
 
-type VocabModule = typeof import("@/data/vocab")
-
 export function Sidebar({ open, onClose }: SidebarProps) {
   const cards = useVocabStore(s => s.cards)
   const level = useSettingsStore(s => s.level)
   const { pathname } = useLocation()
   const { t } = useTranslation()
 
-  // The stats below need the full vocabulary, but the Sidebar is part of the
-  // startup bundle -- a static import put ~700KB of vocab JSON in front of
-  // the first paint. Fetch it right after mount instead; it's the same chunk
-  // the Vocab/Review pages use, so it's a one-time load either way.
-  const [vocabData, setVocabData] = useState<VocabModule | null>(null)
-  useEffect(() => {
-    let cancelled = false
-    import("@/data/vocab").then(m => { if (!cancelled) setVocabData(m) }, () => {})
-    return () => { cancelled = true }
-  }, [])
+  // The stats below need the level's vocabulary, but the Sidebar is part of
+  // the startup bundle. useVocab() fetches only the selected level's chunk
+  // right after mount (the same one the Vocab/Review pages use), so the JSON
+  // stays off the first paint's critical path.
+  const vocab = useVocab(level)
 
   // One pass over the level's vocab for both the stat tiles and the due
   // count. `pathname` is a deliberate extra dependency: due-ness depends on
@@ -55,8 +49,8 @@ export function Sidebar({ open, onClose }: SidebarProps) {
   // version did, without recounting on every unrelated re-render.
   const { stats, due } = useMemo(() => {
     void pathname
-    if (!vocabData) return { stats: null, due: 0 }
-    const all = vocabData.vocabForLevel(level)
+    if (vocab.length === 0) return { stats: null, due: 0 }
+    const all = vocab
     const counts = { total: all.length, new: 0, learning: 0, review: 0, mastered: 0 }
     let dueCount = 0
     for (const v of all) {
@@ -69,7 +63,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
     }
     // Capped at 50, matching the old getDueCards() batch size.
     return { stats: counts, due: Math.min(dueCount, 50) }
-  }, [vocabData, level, cards, pathname])
+  }, [vocab, cards, pathname])
 
   return (
     <aside
@@ -152,7 +146,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
             onClick={onClose}
             className={({ isActive }) =>
               [
-                "nav-item flex items-center gap-3 px-4 py-2.5 border-3 transition-all duration-100",
+                "nav-item flex items-center gap-3 px-4 py-2.5 border-3 transition-[color,background-color,border-color,transform,box-shadow] duration-100",
                 isActive
                   ? "border-ink bg-ink text-paper shadow-none translate-x-0.5 translate-y-0.5"
                   : "border-transparent hover:border-structural hover:shadow-[var(--shadow-brutal)] hover:-translate-x-0.5 hover:-translate-y-0.5",
