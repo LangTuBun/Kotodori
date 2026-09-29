@@ -26,7 +26,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
   return (
     <div className={compact ? "flex flex-col gap-2" : "flex flex-col gap-8"}>
       <div>
-        <div className={compact ? "grid grid-cols-3 gap-1" : "grid grid-cols-3 gap-3"}>
+        <div className={compact ? "flex gap-1.5" : "grid grid-cols-3 gap-3 max-w-sm"}>
           {THEMES.map((theme) => {
             const active = paper === theme.id
             const [bg, ink, accent] = theme.swatch
@@ -39,7 +39,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
                 title={`${theme.en} · ${theme.ja}`}
                 className={[
                   "relative border-2 flex items-center justify-center transition-[border-color,box-shadow] cursor-pointer",
-                  compact ? "aspect-square" : "flex-col gap-2 p-2 aspect-[4/3]",
+                  compact ? "h-7 flex-1" : "flex-col gap-2 p-2 aspect-[4/3]",
                   active ? "border-ink shadow-[2px_2px_0px_var(--color-ink)]" : "border-ink/20 hover:border-ink/60",
                 ].join(" ")}
                 style={{ background: bg }}

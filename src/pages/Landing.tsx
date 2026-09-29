@@ -11,14 +11,14 @@ import { TORI_STROKES, TORI_VIEW_BOX } from "@/components/ui/tori-glyph"
 const WEEKDAY_KANJI = ['日', '月', '火', '水', '木', '金', '土']
 const LEVEL_LABEL: Record<string, string> = { N5: 'N5', N4: 'N4', all: 'N5+N4' }
 
-const FEATURES: { glyph: string; ja: string; title: string; href: string }[] = [
-  { glyph: "語", ja: "たんご", title: "Vocabulary", href: "/vocab" },
-  { glyph: "文", ja: "ぶんぽう", title: "Grammar", href: "/grammar" },
-  { glyph: "字", ja: "かんじ", title: "Kanji", href: "/kanji" },
-  { glyph: "動", ja: "どうし", title: "Verb Forms", href: "/verb-forms" },
-  { glyph: "対", ja: "じたどうし", title: "Transitivity", href: "/transitivity" },
-  { glyph: "別", ja: "つかいかた", title: "Usage & Nuances", href: "/usage" },
-  { glyph: "数", ja: "かぞえかた", title: "Counters", href: "/counters" },
+const FEATURES: { glyph: string; ja: string; key: string; href: string }[] = [
+  { glyph: "語", ja: "たんご", key: "vocabulary", href: "/vocab" },
+  { glyph: "文", ja: "ぶんぽう", key: "grammar", href: "/grammar" },
+  { glyph: "字", ja: "かんじ", key: "kanji", href: "/kanji" },
+  { glyph: "動", ja: "どうし", key: "verbForms", href: "/verb-forms" },
+  { glyph: "対", ja: "じたどうし", key: "transitivity", href: "/transitivity" },
+  { glyph: "別", ja: "つかいかた", key: "usage", href: "/usage" },
+  { glyph: "数", ja: "かぞえかた", key: "counters", href: "/counters" },
 ]
 
 function greetingFor(hour: number) {
@@ -77,7 +77,7 @@ export function Landing() {
               <Card lift className="p-4 h-full flex items-center gap-3">
                 <span className="jp text-3xl leading-none text-accent w-9 text-center shrink-0">{f.glyph}</span>
                 <span className="min-w-0">
-                  <span className="block font-display text-base leading-tight">{f.title}</span>
+                  <span className="block font-display text-base leading-tight">{t(`nav.${f.key}`)}</span>
                   <span className="jp block text-xs text-muted mt-0.5">{f.ja}</span>
                 </span>
               </Card>
