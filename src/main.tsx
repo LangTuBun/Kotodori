@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { useSettingsStore } from '@/store/settings-store'
 import { loadVocab } from '@/data/vocab'
+import { prefetchAllRoutes } from '@/lib/routes'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,3 +22,4 @@ const prefetchOtherLevel = () => {
 }
 // setTimeout rather than requestIdleCallback: iOS Safari doesn't implement it.
 window.setTimeout(prefetchOtherLevel, 4000)
+prefetchAllRoutes()

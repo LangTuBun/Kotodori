@@ -9,6 +9,7 @@ import { LevelSwitcher } from "@/components/ui/LevelSwitcher"
 import { InkCabinet } from "@/components/ui/InkCabinet"
 import { useTranslation } from "@/lib/useTranslation"
 import { useVocab } from "@/data/vocab"
+import { prefetchRoute } from "@/lib/routes"
 
 const nav = [
   { to: "/",           label: "ホーム",     kana: "ホーム",         key: "home" },
@@ -144,6 +145,10 @@ export function Sidebar({ open, onClose }: SidebarProps) {
             to={to}
             end={to === "/"}
             onClick={onClose}
+            // Warm the page chunk + its data as soon as a finger/cursor lands,
+            // ~100-300ms before the click registers.
+            onPointerDown={() => prefetchRoute(to)}
+            onPointerEnter={() => prefetchRoute(to)}
             className={({ isActive }) =>
               [
                 "nav-item flex items-center gap-3 px-4 py-2.5 border-3 transition-[color,background-color,border-color,transform,box-shadow] duration-100",

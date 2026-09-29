@@ -1,30 +1,36 @@
 import { Suspense, lazy } from "react"
+import { routeLoaders, loadRouteData, type RoutePath } from "@/lib/routes"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { Layout } from "@/components/layout/Layout"
 import { ToriLoader } from "@/components/ui/ToriLoader"
 
 // Every page pulls in one or more of the large per-domain JSON data files
 // (n5/n4 vocab, grammar, kanji, kanjivg...) -- statically importing all of
-// them from App.tsx put the entire dataset in the single main bundle
-// (~3.2MB / ~880KB gzip) even for a visitor who only ever opens Settings.
-// Lazy-loading per route lets Vite split each page (and the data it pulls
-// in) into its own chunk, fetched on first navigation instead of up front.
-// Landing (the site's home, at "/") carries the same data weight as the
-// old Dashboard did (due/new/grammar counts) since they were merged, so it
-// gets the same lazy treatment as everything else rather than being bundled
-// eagerly the way a lightweight splash screen would be.
-const Landing = lazy(() => import("@/pages/Landing").then(m => ({ default: m.Landing })))
-const VocabBrowser = lazy(() => import("@/pages/VocabBrowser").then(m => ({ default: m.VocabBrowser })))
-const Review = lazy(() => import("@/pages/Review").then(m => ({ default: m.Review })))
-const Grammar = lazy(() => import("@/pages/Grammar").then(m => ({ default: m.Grammar })))
-const Kaiwa = lazy(() => import("@/pages/Kaiwa").then(m => ({ default: m.Kaiwa })))
-const VerbForms = lazy(() => import("@/pages/VerbForms").then(m => ({ default: m.VerbForms })))
-const Transitivity = lazy(() => import("@/pages/Transitivity").then(m => ({ default: m.Transitivity })))
-const Usage = lazy(() => import("@/pages/Usage").then(m => ({ default: m.Usage })))
-const Kanji = lazy(() => import("@/pages/Kanji").then(m => ({ default: m.Kanji })))
-const Counters = lazy(() => import("@/pages/Counters").then(m => ({ default: m.Counters })))
-const Homophones = lazy(() => import("@/pages/Homophones").then(m => ({ default: m.Homophones })))
-const Settings = lazy(() => import("@/pages/Settings").then(m => ({ default: m.Settings })))
+// them from App.tsx would put the entire dataset in the single main bundle
+// even for a visitor who only ever opens Settings. Lazy-loading per route
+// lets Vite split each page (and its data) into its own chunk.
+// Each page is lazy through routeLoaders (src/lib/routes.ts); the level data a
+// page needs is requested in the same tick, in parallel with its code, rather
+// than after the page mounts.
+function page<K extends RoutePath, N extends string>(path: K, name: N) {
+  return lazy(() => {
+    loadRouteData(path)
+    return (routeLoaders[path]() as Promise<Record<string, unknown>>)
+      .then(m => ({ default: m[name] as React.ComponentType }))
+  })
+}
+const Landing = page("/", "Landing")
+const VocabBrowser = page("/vocab", "VocabBrowser")
+const Review = page("/review", "Review")
+const Grammar = page("/grammar", "Grammar")
+const Kaiwa = page("/kaiwa", "Kaiwa")
+const VerbForms = page("/verb-forms", "VerbForms")
+const Transitivity = page("/transitivity", "Transitivity")
+const Usage = page("/usage", "Usage")
+const Kanji = page("/kanji", "Kanji")
+const Counters = page("/counters", "Counters")
+const Homophones = page("/homophones", "Homophones")
+const Settings = page("/settings", "Settings")
 
 // Route chunks aren't all tiny (the Grammar chunk alone is ~280KB gzip,
 // carrying all 203 enriched N5+N4 grammar points) -- on a slow/mobile

@@ -3,13 +3,7 @@ import { useTranslation } from "@/lib/useTranslation"
 
 const THEMES: { id: Paper; ja: string; en: string; swatch: [string, string, string] }[] = [
   { id: "washi", ja: "和紙", en: "Washi", swatch: ["#efe7d8", "#221b12", "#be4327"] },
-  { id: "paper", ja: "紙", en: "Paper", swatch: ["#f4eee4", "#2a2118", "#c8472a"] },
-  { id: "matcha", ja: "抹茶", en: "Matcha", swatch: ["#e6e9d8", "#1e241a", "#b5481f"] },
-  { id: "sakura", ja: "桜", en: "Sakura", swatch: ["#f3e4e4", "#2a1d20", "#c23a48"] },
   { id: "sumi", ja: "墨", en: "Sumi", swatch: ["#f4f2ec", "#14110c", "#be4327"] },
-  { id: "dusk", ja: "夕暮", en: "Dusk", swatch: ["#11131f", "#e6e8f4", "#ef6a45"] },
-  { id: "ink", ja: "墨夜", en: "Ink", swatch: ["#0a090d", "#f5f2ed", "#e2552e"] },
-  { id: "ai", ja: "藍", en: "Indigo", swatch: ["#0f1a2b", "#e8eef7", "#f2724e"] },
   { id: "gold", ja: "金", en: "Gold-leaf", swatch: ["#14110a", "#f6efdc", "#d4a843"] },
 ]
 
@@ -19,7 +13,7 @@ const DENSITIES: { id: Density; ja: string; en: string }[] = [
   { id: "sparse", ja: "疎", en: "Sparse" },
 ]
 
-/** 9 paper swatches + RAW/NEO toggle, and (in full mode) density + typeface controls. */
+/** 3 paper swatches, and (in full mode) density + typeface controls. */
 export function InkCabinet({ compact = false }: { compact?: boolean }) {
   const { t } = useTranslation()
   const paper = useSettingsStore((s) => s.paper)
@@ -32,7 +26,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
   return (
     <div className={compact ? "flex flex-col gap-2" : "flex flex-col gap-8"}>
       <div>
-        <div className={compact ? "grid grid-cols-9 gap-1" : "grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-3"}>
+        <div className={compact ? "grid grid-cols-3 gap-1" : "grid grid-cols-3 gap-3"}>
           {THEMES.map((theme) => {
             const active = paper === theme.id
             const [bg, ink, accent] = theme.swatch

@@ -41,7 +41,7 @@
 
           // Paper theme
           var paper = state && state.paper;
-          if (paper && paper !== 'washi') h.classList.add('theme-' + paper);
+          if (paper === 'sumi' || paper === 'gold') h.classList.add('theme-' + paper);
 
           // Density
           var density = state && state.density;

@@ -3,7 +3,7 @@ import { persist } from "zustand/middleware"
 import type { Locale } from "@/lib/i18n"
 
 export type Level = 'N5' | 'N4' | 'all'
-export type Paper = 'washi' | 'paper' | 'matcha' | 'sakura' | 'sumi' | 'dusk' | 'ink' | 'ai' | 'gold'
+export type Paper = 'washi' | 'sumi' | 'gold'
 export type Density = 'compact' | 'normal' | 'sparse'
 
 interface SettingsStore {
@@ -21,8 +21,7 @@ interface SettingsStore {
 }
 
 const PAPER_CLASS: Record<Paper, string> = {
-  washi: '', paper: 'theme-paper', matcha: 'theme-matcha', sakura: 'theme-sakura',
-  sumi: 'theme-sumi', dusk: 'theme-dusk', ink: 'theme-ink', ai: 'theme-ai', gold: 'theme-gold',
+  washi: '', sumi: 'theme-sumi', gold: 'theme-gold',
 }
 const ALL_PAPER_CLASSES = Object.values(PAPER_CLASS).filter(Boolean)
 
@@ -71,6 +70,14 @@ export const useSettingsStore = create<SettingsStore>()(
     }),
     {
       name: 'tori-settings',
+      // Themes were trimmed to three; anyone who had picked a removed one
+      // (matcha, sakura, dusk...) falls back to Washi instead of keeping a
+      // paper id that no longer maps to any CSS.
+      merge: (persisted, current) => {
+        const saved = (persisted ?? {}) as Partial<SettingsStore>
+        const paper = saved.paper && saved.paper in PAPER_CLASS ? saved.paper : 'washi'
+        return { ...current, ...saved, paper }
+      },
       onRehydrateStorage: () => (state) => {
         if (!state) return
         applyPaper(state.paper)
