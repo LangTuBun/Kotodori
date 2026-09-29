@@ -31,6 +31,7 @@ function wordHanviet(word) {
   const parts = []
   for (const c of chars) {
     if (c === "々") { parts.push(parts[parts.length - 1] ?? "?"); continue }
+    if (c === "込") continue // kokuji, no Chinese-origin reading -- see hanviet-dictionary.json Gotchas
     const hv = hanvietDict[c]
     if (!hv) throw new Error(`no hanviet entry for character: ${c} (in word "${word}")`)
     parts.push(hv)
@@ -57,6 +58,12 @@ const ONKUN_OVERRIDES = new Map([
   ["風邪|かぜ", "Juku"],
   ["係の人|かかりのひと", "Kun--Kun"],
   ["お姉さん|おねえさん", "Kun"],
+  // Chapters 25-33 additions:
+  ["部屋|へや", "Kun--Kun"], // 部's kun is listed suffix-only ("-べ", devoices to へ); 屋 is plain kun (や)
+  ["ラーメン屋|ラーメンや", "Kun"], // only 屋 (や, kun) is kanji; ラーメン is katakana, not classified
+  ["夜行バス|やこうバス", "Kun--On"], // 夜=や (short kun of よ), 行=こう (on); バス is katakana
+  ["世界中|せかいじゅう", "On--On--On"], // 中=じゅう is an unlisted secondary on-reading (cf. 一年中)
+  ["真面目|まじめ", "Juku"], // irregular jukujikun, doesn't decompose per-character
 ])
 
 function onkunTag(word, kana) {

@@ -1,11 +1,12 @@
 import type { VocabEntry } from "@/types"
 
 // N5 entries always carry a textbook chapter. N4 entries carry a chapter
-// only where a chaptered source has backfilled one (currently Bài 15-24,
-// see apply-n4-chapters.mjs) -- group those by chapter just like N5, and
-// fall back to the thematic `category` for the rest (chapters 1-14 & 25-33,
-// not sourced yet). As more N4 chapters get backfilled, more of the
-// category buckets convert to chapter buckets over time.
+// only where a chaptered source has backfilled one (currently Bài 15-33,
+// see apply-n4-chapters.mjs + apply-n4-chapters-25-33.mjs) -- group those by
+// chapter just like N5, and fall back to the thematic `category` for the
+// rest (chapters 1-14, not sourced yet). As more N4 chapters get
+// backfilled, more of the category buckets convert to chapter buckets over
+// time.
 export function groupKey(v: VocabEntry): string {
   if (v.chapter !== undefined && v.chapter > 0) return String(v.chapter)
   return v.category ?? '?'

@@ -11,7 +11,7 @@ import { Watermark } from "@/components/ui/ScreenHeader"
 import { CollapsibleFilters } from "@/components/ui/CollapsibleFilters"
 import { useProgressiveList } from "@/lib/useProgressiveList"
 
-// N5's textbook chapters run 1-15 and N4's run 15-24 (both numbered after
+// N5's textbook chapters run 1-15 and N4's run 15-33 (both numbered after
 // their own curriculum's Bai/chapter, per their own source material) -- so
 // "chapter 15" exists in both. Every chapter/group is tagged with its
 // source level below so 'all' scope never collides the two under one key.

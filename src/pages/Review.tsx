@@ -69,7 +69,7 @@ export function Review() {
   const vocab = useMemo(() => vocabForLevel(level), [level])
   const POS_LIST = useMemo(() => Array.from(new Set(vocab.map(v => v.pos))).sort(), [vocab])
   // Same chapter/category grouping VocabBrowser uses: chapter number where
-  // one's been backfilled (N5 always, N4 for Bài 15-24), thematic category
+  // one's been backfilled (N5 always, N4 for Bài 15-33), thematic category
   // otherwise -- one unified filter axis instead of picking a single scheme
   // per level (which is what left N4 without a chapter option at all).
   const GROUPS = useMemo(() => Array.from(new Set(vocab.map(groupKey))).sort(compareGroupKeys), [vocab])

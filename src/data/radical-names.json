@@ -196,8 +196,8 @@
     "curated": true
   },
   "反": {
-    "hanviet": "phản",
-    "curated": true
+    "hanviet": "Phản",
+    "curated": false
   },
   "人": {
     "hanviet": "Nhân",
@@ -504,8 +504,8 @@
     "curated": false
   },
   "原": {
-    "hanviet": "nguyên",
-    "curated": true
+    "hanviet": "Nguyên",
+    "curated": false
   },
   "頁": {
     "hanviet": "hiệt",
@@ -644,8 +644,8 @@
     "curated": true
   },
   "馬": {
-    "hanviet": "mã",
-    "curated": true
+    "hanviet": "Mã",
+    "curated": false
   },
   "尺": {
     "hanviet": "xích",
@@ -720,8 +720,8 @@
     "curated": true
   },
   "竹": {
-    "hanviet": "trúc",
-    "curated": true
+    "hanviet": "Trúc",
+    "curated": false
   },
   "間": {
     "hanviet": "Gian",
@@ -772,8 +772,8 @@
     "curated": false
   },
   "糸": {
-    "hanviet": "mịch",
-    "curated": true
+    "hanviet": "Mịch",
+    "curated": false
   },
   "義": {
     "hanviet": "nghĩa",
@@ -864,8 +864,8 @@
     "curated": true
   },
   "才": {
-    "hanviet": "tài",
-    "curated": true
+    "hanviet": "Tài",
+    "curated": false
   },
   "几": {
     "hanviet": "kỷ",
@@ -964,8 +964,8 @@
     "curated": true
   },
   "走": {
-    "hanviet": "tẩu",
-    "curated": true
+    "hanviet": "Tẩu",
+    "curated": false
   },
   "己": {
     "hanviet": "kỷ",
@@ -1048,8 +1048,8 @@
     "curated": false
   },
   "予": {
-    "hanviet": "dư",
-    "curated": true
+    "hanviet": "Dự",
+    "curated": false
   },
   "采": {
     "hanviet": "thái",
@@ -1132,8 +1132,8 @@
     "curated": true
   },
   "市": {
-    "hanviet": "thị",
-    "curated": true
+    "hanviet": "Thị",
+    "curated": false
   },
   "且": {
     "hanviet": "thả",
@@ -1216,8 +1216,8 @@
     "curated": true
   },
   "羽": {
-    "hanviet": "vũ",
-    "curated": true
+    "hanviet": "Vũ",
+    "curated": false
   },
   "氺": {
     "hanviet": "thủy",
@@ -1244,8 +1244,8 @@
     "curated": true
   },
   "楽": {
-    "hanviet": "lạc",
-    "curated": true
+    "hanviet": "Nhạc",
+    "curated": false
   },
   "先": {
     "hanviet": "Tiên",
@@ -1264,8 +1264,8 @@
     "curated": false
   },
   "文": {
-    "hanviet": "văn",
-    "curated": true
+    "hanviet": "Văn",
+    "curated": false
   },
   "直": {
     "hanviet": "trực",
@@ -1436,8 +1436,8 @@
     "curated": true
   },
   "客": {
-    "hanviet": "khách",
-    "curated": true
+    "hanviet": "Khách",
+    "curated": false
   },
   "鳥": {
     "hanviet": "Điểu",
@@ -1600,8 +1600,8 @@
     "curated": true
   },
   "区": {
-    "hanviet": "khu",
-    "curated": true
+    "hanviet": "Khu",
+    "curated": false
   },
   "巻": {
     "hanviet": "quyển",
@@ -1840,8 +1840,8 @@
     "curated": true
   },
   "以": {
-    "hanviet": "dĩ",
-    "curated": true
+    "hanviet": "Dĩ",
+    "curated": false
   },
   "涂": {
     "hanviet": "đồ",

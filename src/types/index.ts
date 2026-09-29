@@ -9,13 +9,14 @@
   jlptLevel: string
   // N5 words carry a textbook `chapter` (1-15, source: kanjis.tex chapters
   // + the N5-supplement chapter). N4's original source was a thematic word
-  // list with no chapters -- those entries carry `category` instead. A
-  // second, chaptered N4 source (Bài 15-24 only, see apply-n4-chapters.mjs)
-  // has since backfilled `chapter` (15-24) onto the ~424 matching entries;
-  // chapters 1-14 and 25-33 aren't sourced yet, so most N4 entries still
-  // have `category` only and omit `chapter`. Both fields can be present at
-  // once. Never treat a missing chapter as chapter 0 -- 0 is a corruption
-  // signal in this codebase's history, not a valid "no chapter" value.
+  // list with no chapters -- those entries carry `category` instead. Two
+  // chaptered N4 sources have since backfilled `chapter` (15-24 via
+  // apply-n4-chapters.mjs, 24-33 via apply-n4-chapters-25-33.mjs +
+  // add-n4-bai25-33-vocab.mjs) onto most entries; chapters 1-14 aren't
+  // sourced yet, so a residual handful of N4 entries still have `category`
+  // only and omit `chapter`. Both fields can be present at once. Never treat
+  // a missing chapter as chapter 0 -- 0 is a corruption signal in this
+  // codebase's history, not a valid "no chapter" value.
   chapter?: number
   category?: string
   tags: string[]

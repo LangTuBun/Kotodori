@@ -309,6 +309,134 @@
           }
         ]
       }
+    },
+    {
+      "slug": "decision-intention",
+      "romanNumeral": "XXV",
+      "order": 25,
+      "title": { "vi": "Quyết định và Dự định", "en": "Decision and Intention" },
+      "titleJa": "決定と意図",
+      "count": 10,
+      "summary": {
+        "vi": "ことにする (tự mình quyết định) đối lập rõ với ことになる (bị/được quyết định từ bên ngoài) -- cùng một khuôn Vる/Vないこと nhưng chủ thể ra quyết định khác hẳn. ようにする/ようになる/なくなる theo dõi một NỖ LỰC hoặc SỰ THAY ĐỔI diễn ra theo thời gian, khác với quyết định tức thời. Ở nhóm bày tỏ dự định, 予定だ khách quan (lịch trình), つもりだ chủ quan và quyết tâm cao, còn ようと思っている là dự định mềm, vừa mới nảy ra.",
+        "en": "ことにする (a decision one makes oneself) contrasts sharply with ことになる (a decision imposed/settled from outside) -- the same Vる/Vないこと frame, but who's deciding is entirely different. ようにする/ようになる/なくなる track an ongoing EFFORT or CHANGE over time, unlike a one-off decision. Among the intention patterns, 予定だ is objective (a schedule), つもりだ is subjective with strong resolve, and ようと思っている is a softer, just-formed intention.",
+        "examples": [
+          { "pattern": "ことにする vs ことになる", "ja": "明日からジムに行くことにした。来月、大阪に転勤することになった。", "kana": "あしたからジムにいくことにした。らいげつ、おおさかにてんきんすることになった。", "vi": "Tôi đã quyết định từ mai đi tập gym. Tháng sau tôi được điều chuyển đến Osaka.", "en": "I decided to start going to the gym tomorrow. I've been transferred to Osaka next month." },
+          { "pattern": "予定だ vs つもりだ", "ja": "会議は3時からの予定です。私は将来、留学するつもりです。", "kana": "かいぎは3じからのよていです。わたしはしょうらい、りゅうがくするつもりです。", "vi": "Cuộc họp dự kiến bắt đầu từ 3 giờ. Tôi định sau này sẽ đi du học.", "en": "The meeting is scheduled to start at 3. I intend to study abroad in the future." }
+        ]
+      }
+    },
+    {
+      "slug": "action-progress",
+      "romanNumeral": "XXVI",
+      "order": 26,
+      "title": { "vi": "Lời khuyên và Tiến trình hành động", "en": "Advice and Action Progress" },
+      "titleJa": "助言と動作の進行",
+      "count": 6,
+      "summary": {
+        "vi": "ほうがいい luôn dùng thể た (dù đang khuyên làm việc chưa xảy ra) ở dạng khẳng định, nhưng thể ない ở dạng phủ định. たり liệt kê hành động không theo trình tự, còn たら (khi V2 ở quá khứ) chuyển thành 'làm V1 xong thì phát hiện V2'. ところだ có ba mốc thời gian khác nhau tuỳ vào thì của động từ đứng trước: Vる (sắp làm), Vている (đang làm giữa chừng), Vた (vừa làm xong) -- ba mốc dễ lẫn nếu không để ý.",
+        "en": "ほうがいい always uses the ta-form for affirmative advice (even about something not yet done), but the nai-form for negative advice. たり lists actions without implying sequence, while たら (when V2 is past tense) shifts to 'did V1, then discovered V2'. ところだ marks three different timings depending on the preceding verb's tense: V-ru (about to), V-te iru (in the middle of), V-ta (just finished) -- easy to mix up if you're not careful.",
+        "examples": [
+          { "pattern": "ほうがいい", "ja": "よく考えたほうがいいですよ。無理をしないほうがいいですよ。", "kana": "よくかんがえたほうがいいですよ。むりをしないほうがいいですよ。", "vi": "Nên suy nghĩ kỹ thì hơn đấy. Không nên cố quá sức đâu.", "en": "You should think it over carefully. You shouldn't push yourself too hard." },
+          { "pattern": "ところだ (ba mốc)", "ja": "これから出かけるところです。今、資料を作っているところです。今ちょうど帰ってきたところです。", "kana": "これからでかけるところです。いま、しりょうをつくっているところです。いまちょうどかえってきたところです。", "vi": "Tôi sắp ra ngoài đây. Bây giờ tôi đang làm tài liệu. Vừa mới về đến đấy.", "en": "I'm just about to head out. I'm right in the middle of making documents. I've just gotten back." }
+        ]
+      }
+    },
+    {
+      "slug": "obligation-aux-verbs",
+      "romanNumeral": "XXVII",
+      "order": 27,
+      "title": { "vi": "Nghĩa vụ và Động từ bổ trợ", "en": "Obligation and Auxiliary Verbs" },
+      "titleJa": "義務と補助動詞",
+      "count": 8,
+      "summary": {
+        "vi": "てはいけない (không được) và なくてはいけない (phải) đối lập nhau chỉ qua việc động từ có ở thể ない hay không. てしまう mang hai sắc thái tuỳ ngữ cảnh: tiếc nuối (làm hỏng việc gì ngoài ý muốn) hoặc hoàn thành dứt điểm (không nhất thiết tiêu cực). Bộ ba ておく (làm sẵn) / てくる (đi làm rồi quay lại, hoặc thay đổi tính từ quá khứ→hiện tại) / ていく (di chuyển ra xa, hoặc thay đổi hiện tại→tương lai) đều mở rộng nghĩa từ 'hướng không gian' sang 'hướng thời gian'.",
+        "en": "てはいけない (must not) and なくてはいけない (must) are opposites differing only in whether the verb is in the nai-form. てしまう carries two nuances depending on context: regret (an unintended mishap) or thorough completion (not necessarily negative). The trio ておく (do in advance) / てくる (go do something and come back, or a past→present change) / ていく (move away, or a present→future change) all extend from a 'spatial direction' meaning to a 'temporal direction' one.",
+        "examples": [
+          { "pattern": "てはいけない vs なくてはいけない", "ja": "授業中にスマホを見てはいけません。もっと勉強しなくちゃだめだよ。", "kana": "じゅぎょうちゅうにスマホをみてはいけません。もっとべんきょうしなくちゃだめだよ。", "vi": "Trong giờ học không được xem điện thoại. Phải học chăm hơn nữa đấy.", "en": "You must not look at your phone during class. You've got to study harder." },
+          { "pattern": "てくる (thay đổi trạng thái)", "ja": "これからどんどん暑くなっていくね。日本語が少しずつ上手になってきました。", "kana": "これからどんどんあつくなっていくね。にほんごがすこしずつじょうずになってきました。", "vi": "Từ giờ sẽ càng ngày càng nóng lên nhỉ. Tiếng Nhật của tôi đã dần khá lên.", "en": "It's going to keep getting hotter from now on. My Japanese has gradually gotten better." }
+        ]
+      }
+    },
+    {
+      "slug": "causative",
+      "romanNumeral": "XXVIII",
+      "order": 28,
+      "title": { "vi": "Thể sai khiến", "en": "Causative and Causative-Passive" },
+      "titleJa": "使役と使役受身",
+      "count": 7,
+      "summary": {
+        "vi": "させる mang hai nghĩa trái ngược tuỳ động từ/ngữ cảnh: BẮT ÉP (子供に部屋を掃除させる) hoặc CHO PHÉP/tạo điều kiện (子供にギターを習わせる) -- không có dấu hiệu hình thái phân biệt. Về cấu trúc trợ từ: động từ tự động dùng を cho người bị sai khiến (Bを行かせる), động từ tha động từ dùng に (Bに Nを させる) vì を đã bị N chiếm. させられる (bị động sai khiến) luôn mang nghĩa BẮT BUỘC/miễn cưỡng; させてもらう thêm sắc thái biết ơn khi được cho phép làm gì.",
+        "en": "させる carries two opposite meanings depending on the verb/context: FORCING (子供に部屋を掃除させる) or ALLOWING/enabling (子供にギターを習わせる) -- with no formal marker to tell them apart. Particle-wise: an intransitive verb takes を for the causee (Bを行かせる), a transitive verb takes に (Bに Nを させる) since を is already taken by N. させられる (causative-passive) always carries a FORCED/reluctant meaning; させてもらう adds a grateful nuance for being allowed to do something.",
+        "examples": [
+          { "pattern": "させる: bắt ép vs cho phép", "ja": "先生は学生に本を読ませます。子供にギターを習わせています。", "kana": "せんせいはがくせいにほんをよませます。こどもにギターをならわせています。", "vi": "Giáo viên bắt học sinh đọc sách. Tôi đang cho con học đàn ghi-ta.", "en": "The teacher makes the students read the book. I'm letting my child learn guitar." },
+          { "pattern": "させられる (bị động sai khiến)", "ja": "子供のころ、よく妹に泣かされました。", "kana": "こどものころ、よくいもうとになかされました。", "vi": "Hồi nhỏ tôi hay bị em gái chọc khóc.", "en": "When I was a child, my little sister often made me cry." }
+        ]
+      }
+    },
+    {
+      "slug": "keigo",
+      "romanNumeral": "XXIX",
+      "order": 29,
+      "title": { "vi": "Kính ngữ và Khiêm nhường ngữ", "en": "Honorific and Humble Language" },
+      "titleJa": "敬語（尊敬語・謙譲語）",
+      "count": 10,
+      "summary": {
+        "vi": "お/ご〜します (khiêm nhường, hạ thấp hành động CỦA MÌNH) và お/ご〜になる (tôn kính, nâng cao hành động CỦA NGƯỜI KHÁC) dùng cùng một khuôn お/ご nhưng không bao giờ được lẫn lộn vai. させてください/させていただけませんか xin phép tự mình làm gì, tăng dần độ lịch sự. Một số động từ có dạng ĐẶC BIỆT không theo quy tắc chung: 行く/来る/いる→いらっしゃる (tôn kính) vs 参る/おる (khiêm nhường); 食べる/飲む→召し上がる vs いただく; đây là những từ hay dùng nhất nên cần thuộc riêng, không suy ra từ khuôn お/ご.",
+        "en": "お/ご〜します (humble, lowering ONE'S OWN action) and お/ご〜になる (honorific, elevating SOMEONE ELSE'S action) use the same お/ご frame but must never be swapped. させてください/させていただけませんか ask permission to do something oneself, in increasing degrees of politeness. Some verbs have SPECIAL forms outside the general pattern: 行く/来る/いる→いらっしゃる (honorific) vs 参る/おる (humble); 食べる/飲む→召し上がる vs いただく; these are among the most-used verbs, so they must be memorized directly rather than derived from the お/ご frame.",
+        "examples": [
+          { "pattern": "お〜します vs お〜になる", "ja": "駅についたら、ご連絡します。先生は小説をお読みになりますか。", "kana": "えきについたら、ごれんらくします。せんせいはしょうせつをおよみになりますか。", "vi": "Đến ga tôi sẽ liên lạc. Thầy/cô có đọc tiểu thuyết không ạ?", "en": "I'll contact you once I arrive at the station. Do you read novels?" },
+          { "pattern": "Động từ đặc biệt", "ja": "先生は明日の授業は休みだとおっしゃいました。送っていただいた資料を拝見しました。", "kana": "せんせいはあしたのじゅぎょうはやすみだとおっしゃいました。おくっていただいたしりょうをはいけんしました。", "vi": "Thầy/cô nói rằng ngày mai sẽ nghỉ học. Em đã xem tài liệu mà anh/chị gửi rồi ạ.", "en": "The teacher said tomorrow's class would be cancelled. I have seen the documents you sent me." }
+        ]
+      }
+    },
+    {
+      "slug": "time-clauses",
+      "romanNumeral": "XXX",
+      "order": 30,
+      "title": { "vi": "Mệnh đề thời gian và Câu hỏi gián tiếp", "en": "Time Clauses and Indirect Questions" },
+      "titleJa": "時を表す表現と間接疑問",
+      "count": 12,
+      "summary": {
+        "vi": "とき đổi nghĩa theo thì của động từ đứng trước: Vる (trước khi), Vた (sau khi) -- một điểm dễ nhầm vì cả hai đều dịch là 'khi'. ～間 (suốt cả khoảng thời gian) khác ～間に (một thời điểm cụ thể xen vào giữa khoảng đó) theo đúng logic liên tục vs. tức thời. Tương tự, まで (kéo dài liên tục đến mốc) khác までに (hạn chót, một hành động một lần trước mốc). かどうか và từ để hỏi+か đều biến một câu hỏi có/không hoặc câu hỏi thông tin thành mệnh đề danh từ cho các động từ như わかる、知る、迷う.",
+        "en": "とき changes meaning based on the preceding verb's tense: V-ru (before), V-ta (after) -- an easy point to mix up since both translate as 'when'. ～間 (the whole span of time) differs from ～間に (one specific point within that span), following the same continuous-vs-instant logic. Likewise, まで (continuing up to a point) differs from までに (a deadline, a one-time action before that point). かどうか and question-word+か both turn a yes/no or information question into a noun clause for verbs like わかる, 知る, 迷う.",
+        "examples": [
+          { "pattern": "Vるとき vs Vたとき", "ja": "家を出るとき、鍵をかけました。初めて富士山を見たとき、感動しました。", "kana": "いえをでるとき、かぎをかけました。はじめてふじさんをみたとき、かんどうしました。", "vi": "Trước khi ra khỏi nhà, tôi đã khoá cửa. Lần đầu nhìn thấy núi Phú Sĩ, tôi đã rất xúc động.", "en": "Before leaving the house, I locked the door. The first time I saw Mt. Fuji, I was deeply moved." },
+          { "pattern": "まで vs までに", "ja": "先生がわかるまで教えてくれます。明日の昼までに資料を作ってください。", "kana": "せんせいがわかるまでおしえてくれます。あしたのひるまでにしりょうをつくってください。", "vi": "Giáo viên dạy cho đến khi chúng tôi hiểu. Hãy chuẩn bị tài liệu trước khi đến trưa mai.", "en": "The teacher teaches until we understand. Please have the documents ready by tomorrow noon." }
+        ]
+      }
+    },
+    {
+      "slug": "reason-concession",
+      "romanNumeral": "XXXI",
+      "order": 31,
+      "title": { "vi": "Lý do và Nhượng bộ", "en": "Reason and Concession" },
+      "titleJa": "理由と逆接",
+      "count": 4,
+      "summary": {
+        "vi": "ので nghe khách quan và lịch sự hơn から, phù hợp khi xin phép/giải thích trang trọng. のに ngược lại hoàn toàn về chức năng: nối hai mệnh đề TRÁI NGƯỢC kỳ vọng, mang cảm xúc ngạc nhiên/tiếc nuối -- và cần phân biệt với のに mục đích sử dụng (một cấu trúc trông giống hệt nhưng vai trò khác). ~ても/でも/くても có hai lớp nghĩa: giả định (cho dù CÓ xảy ra đi nữa) và hiện thực (dù ĐÃ là sự thật vẫn có ngoại lệ) -- cùng một hình thức nhưng ngữ cảnh quyết định lớp nghĩa nào.",
+        "en": "ので sounds more objective and polite than から, fitting for formal requests/explanations. のに is functionally the opposite: it links two clauses that CONTRADICT expectation, carrying surprise/regret -- and must be told apart from purpose のに (a structure that looks identical but plays a different role). ~temo/demo/kutemo has two layers of meaning: hypothetical (even IF it happens) and factual (even though it's ALREADY true, there's still an exception) -- the same form, with context deciding which layer applies.",
+        "examples": [
+          { "pattern": "ので vs のに", "ja": "床が滑りやすいので、お気をつけください。日本に2年も住んでいるのに、日本語がほとんど話せません。", "kana": "ゆかがすべりやすいので、おきをつけください。にほんに2ねんもすんでいるのに、にほんごがほとんどはなせません。", "vi": "Sàn dễ trơn trượt nên xin hãy cẩn thận. Sống ở Nhật đã 2 năm rồi mà hầu như không nói được tiếng Nhật.", "en": "The floor is slippery, so please be careful. Even though I've lived in Japan for two years, I can hardly speak Japanese." },
+          { "pattern": "ても: giả định vs hiện thực", "ja": "日本語が話せても、試験に合格しなければ入れません。日本人でも、真面目じゃない人はいますよ。", "kana": "にほんごがはなせても、しけんにごうかくしなければはいれません。にほんじんでも、まじめじゃないひとはいますよ。", "vi": "Dù nói được tiếng Nhật, nếu không đỗ kỳ thi thì cũng không thể vào. Dù là người Nhật thì cũng có người không nghiêm túc.", "en": "Even if you can speak Japanese, you can't get in unless you pass the exam. Even among Japanese people, there are those who aren't serious." }
+        ]
+      }
+    },
+    {
+      "slug": "conditional-purpose",
+      "romanNumeral": "XXXII",
+      "order": 32,
+      "title": { "vi": "Điều kiện và Mục đích", "en": "Conditional and Purpose" },
+      "titleJa": "条件と目的",
+      "count": 10,
+      "summary": {
+        "vi": "Trong bốn dạng điều kiện, と là quy luật/sự thật luôn đúng (không được theo sau bằng mệnh lệnh), còn たら linh hoạt hơn, dùng được cho cả giả định lẫn phát hiện bất ngờ. Về mục đích: Vる/Nの+ために dùng với động từ CÓ Ý CHÍ (chủ động theo đuổi mục tiêu), trong khi Vる/Vない+ように dùng với động từ KHÔNG CÓ Ý CHÍ (khả năng, vô ý, phủ định) -- và ため(に) còn có nghĩa thứ hai là NGUYÊN NHÂN khách quan, dễ nhầm với mục đích nếu không để ý loại mệnh đề đứng trước.",
+        "en": "Among the four conditional forms, と states an always-true rule/fact (and cannot be followed by a command), while たら is more flexible, used for both hypotheticals and sudden discoveries. On purpose: V-ru/N no + tame ni pairs with a VOLITIONAL verb (an actively pursued goal), while V-ru/V-nai + you ni pairs with a NON-volitional verb (potential, involuntary, negative) -- and ため(に) has a second meaning, an objective REASON, easy to confuse with purpose unless you watch the preceding clause's type.",
+        "examples": [
+          { "pattern": "と vs たら", "ja": "春になると、桜が咲きます。もし100万円あったら、何に使いますか。", "kana": "はるになると、さくらがさきます。もし100まんえんあったら、なににつかいますか。", "vi": "Hễ vào xuân là hoa anh đào nở. Nếu có 1 triệu yên, bạn sẽ dùng để làm gì?", "en": "Whenever spring comes, the cherry blossoms bloom. If you had one million yen, what would you use it for?" },
+          { "pattern": "ために vs ように", "ja": "健康のために、毎日運動しています。風邪をひかないように、暖かい服を着てください。", "kana": "けんこうのために、まいにちうんどうしています。かぜをひかないように、あたたかいふくをきてください。", "vi": "Vì sức khoẻ, tôi tập thể dục mỗi ngày. Để không bị cảm, hãy mặc quần áo ấm.", "en": "For the sake of my health, I exercise every day. So you don't catch a cold, please wear warm clothes." }
+        ]
+      }
     }
   ],
   "tips": [
