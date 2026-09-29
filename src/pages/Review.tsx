@@ -238,7 +238,7 @@ export function Review() {
           ×
         </button>
         <div className="flex-1 h-4 bg-surface border-3 border-structural overflow-hidden">
-          <div className="h-full bg-yellow transition-all duration-300" style={{ width: `${progress}%` }} />
+          <div className="h-full bg-yellow transition-[width] duration-300" style={{ width: `${progress}%` }} />
         </div>
         <span className="font-black text-sm whitespace-nowrap">{idx + 1} / {queue.length}</span>
       </div>
@@ -290,13 +290,13 @@ function ReviewSetup({
         <div className="grid grid-cols-2 border-b-3 border-structural">
           <button
             onClick={() => setMode('vocab')}
-            className={`py-4 border-r-3 border-structural font-black text-sm uppercase tracking-wider cursor-pointer transition-all ${mode === 'vocab' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`py-4 border-r-3 border-structural font-black text-sm uppercase tracking-wider cursor-pointer transition-colors ${mode === 'vocab' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
             {t('review.vocabTab')}
           </button>
           <button
             onClick={() => setMode('kanji')}
-            className={`py-4 font-black text-sm uppercase tracking-wider transition-all cursor-pointer ${mode === 'kanji' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`py-4 font-black text-sm uppercase tracking-wider transition-colors cursor-pointer ${mode === 'kanji' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
           >
             {t('review.kanjiTab')} <span className="opacity-60 normal-case font-bold">(漢字)</span>
           </button>
@@ -394,7 +394,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+      className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
     >
       {children}
     </button>
@@ -406,7 +406,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
   const { t, localize } = useTranslation()
   return (
     <div
-      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -468,7 +468,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
 
   return (
     <div
-      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -598,7 +598,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
     return (
       <Button
         variant="primary"
-        className={`w-full text-lg py-4 transition-all ${flashFlip ? 'shadow-none translate-x-0.5 translate-y-0.5' : ''}`}
+        className={`w-full text-lg py-4 transition-[box-shadow,transform] ${flashFlip ? 'shadow-none translate-x-0.5 translate-y-0.5' : ''}`}
         onClick={onFlip}
       >
         {t('review.showAnswer')} <span className="text-xs opacity-60 font-bold ml-1">{t('review.spaceHint')}</span>
@@ -611,7 +611,7 @@ function RatingBar({ flipped, onFlip, onRate, onAdvance }: {
         <Button
           key={labelKey}
           variant={variant}
-          className={`relative flex flex-col gap-0.5 py-3 transition-all ${
+          className={`relative flex flex-col gap-0.5 py-3 transition-[box-shadow,transform] ${
             flashRating === rating ? 'shadow-none translate-x-0.5 translate-y-0.5' : ''
           }`}
           onClick={() => { onRate(rating); onAdvance(rating) }}

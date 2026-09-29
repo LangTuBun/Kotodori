@@ -42,6 +42,9 @@ export function Kanji() {
   // The input shows `search` immediately; filtering/rendering reads the
   // deferred copy so a keystroke is never stuck behind the card grid render.
   const deferredSearch = useDeferredValue(search)
+  // Chips highlight immediately; the grid reads the deferred chapter so
+  // filtering/re-mounting cards never blocks the tap.
+  const deferredChapterKey = useDeferredValue(chapterKey)
   const [selectedAnchor, setSelectedAnchor] = useState<string | null>(null)
   const [selectedGroupIndex, setSelectedGroupIndex] = useState<number | null>(null)
 
@@ -57,8 +60,8 @@ export function Kanji() {
   // Memoized so it keeps its identity across keystrokes -- a fresh array here
   // would bust filteredGroups' memo on every render while a chapter is picked.
   const visibleChapters = useMemo(
-    () => chapterKey === null ? chapters : chapters.filter(c => `${c.src}-${c.chapter}` === chapterKey),
-    [chapters, chapterKey]
+    () => deferredChapterKey === null ? chapters : chapters.filter(c => `${c.src}-${c.chapter}` === deferredChapterKey),
+    [chapters, deferredChapterKey]
   )
 
   const filteredGroups = useMemo(() => {
@@ -139,7 +142,7 @@ export function Kanji() {
         >
           <button
             onClick={() => setChapterKey(null)}
-            className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapterKey === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+            className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${chapterKey === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
           >
             {t('common.all')}
           </button>
@@ -149,7 +152,7 @@ export function Kanji() {
               <button
                 key={key}
                 onClick={() => setChapterKey(prev => prev === key ? null : key)}
-                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${chapterKey === key ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${chapterKey === key ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
               >
                 {level === 'all' && <span className="opacity-60">{c.src} </span>}
                 {t('common.chapterN', { n: c.chapter })} <span className="opacity-60">({c.wordCount})</span>

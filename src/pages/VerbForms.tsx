@@ -88,7 +88,7 @@ export function VerbForms() {
             <button
               key={f.id}
               onClick={() => setActiveForm(f.id)}
-              className={`px-3 py-2 border-3 font-black text-xs uppercase tracking-wider cursor-pointer transition-all ${
+              className={`px-3 py-2 border-3 font-black text-xs uppercase tracking-wider cursor-pointer transition-colors ${
                 activeForm === f.id ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5'
               }`}
             >
@@ -200,14 +200,14 @@ export function VerbForms() {
                   <button
                     key={g.id}
                     onClick={() => navigate(`/grammar?point=${g.id}`)}
-                    className="group shrink-0 w-56 text-left border-3 border-structural bg-paper p-3 cursor-pointer transition-all hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+                    className="group shrink-0 w-56 text-left border-3 border-structural bg-paper p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
                     style={{ borderLeftWidth: '6px', borderLeftColor: 'var(--color-blue)' }}
                   >
                     <div className="flex items-start justify-between gap-2">
                       <div className="jp font-bold text-sm leading-snug">
                         <Ruby text={g.pattern} html={g.patternRuby} />
                       </div>
-                      <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-all">
+                      <span className="shrink-0 mt-0.5 text-muted group-hover:text-ink group-hover:translate-x-0.5 transition-transform">
                         →
                       </span>
                     </div>

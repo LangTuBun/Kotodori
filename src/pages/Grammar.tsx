@@ -68,6 +68,11 @@ export function Grammar() {
   const [cat, setCat] = useState<string | null>(null)
   const [verbForm, setVerbForm] = useState<string | null>(null)
   const [tone, setTone] = useState<ToneType | null>(null)
+  // Chips highlight immediately; the list (and its remount key) read deferred
+  // copies so a tap never blocks on re-filtering/re-mounting the cards.
+  const deferredCat = useDeferredValue(cat)
+  const deferredVerbForm = useDeferredValue(verbForm)
+  const deferredTone = useDeferredValue(tone)
   const [selected, setSelected] = useState<GrammarPoint | null>(null)
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({})
   const [showTips, setShowTips] = useState(false)
@@ -151,9 +156,9 @@ export function Grammar() {
     const q = deferredSearch.trim().toLowerCase()
     const byOrder = (g: GrammarPoint) => categoryOrder.get(g.category) ?? Infinity
     return grammar.filter(g => {
-      if (cat && g.category !== cat) return false
-      if (verbForm && !g.requiredVerbForm?.includes(verbForm)) return false
-      if (tone && !g.pragmatics?.tones?.includes(tone)) return false
+      if (deferredCat && g.category !== deferredCat) return false
+      if (deferredVerbForm && !g.requiredVerbForm?.includes(deferredVerbForm)) return false
+      if (deferredTone && !g.pragmatics?.tones?.includes(deferredTone)) return false
       if (q) {
         return (
           g.pattern.toLowerCase().includes(q) ||
@@ -165,12 +170,12 @@ export function Grammar() {
       }
       return true
     }).sort((a, b) => byOrder(a) - byOrder(b))
-  }, [grammar, deferredSearch, cat, verbForm, tone, localize, categoryOrder])
+  }, [grammar, deferredSearch, deferredCat, deferredVerbForm, deferredTone, localize, categoryOrder])
 
   // Mount cards a page at a time instead of all ~200 on tab entry. Section
   // headers take their counts from the full filtered list.
   const listRef = useRef<HTMLDivElement>(null)
-  const { visible, sentinelRef, hasMore } = useProgressiveList(filtered, 30, listRef)
+  const { visible, sentinelRef, hasMore } = useProgressiveList(filtered, 16, listRef)
 
   const categoryTotals = useMemo(() => {
     const totals = new Map<string, number>()
@@ -222,7 +227,7 @@ export function Grammar() {
           />
           <button
             onClick={() => setShowTips(s => !s)}
-            className={`px-3 py-2 border-3 font-bold text-xs uppercase tracking-wider cursor-pointer transition-all ${showTips ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:bg-yellow'}`}
+            className={`px-3 py-2 border-3 font-bold text-xs uppercase tracking-wider cursor-pointer transition-colors ${showTips ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:bg-yellow'}`}
           >
             {t('grammar.tips')}
           </button>
@@ -246,7 +251,7 @@ export function Grammar() {
           <div className="w-full flex gap-2 flex-wrap">
             <button
               onClick={() => setCat(null)}
-              className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+              className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${cat === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
             >
               {t('common.all')}
             </button>
@@ -254,7 +259,7 @@ export function Grammar() {
               <button
                 key={c.slug}
                 onClick={() => setCat(prev => prev === c.slug ? null : c.slug)}
-                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${cat === c.slug ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${cat === c.slug ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
                 title={localize(c.title)}
               >
                 {c.romanNumeral} <span className="opacity-60">({c.count})</span>
@@ -273,7 +278,7 @@ export function Grammar() {
                 <button
                   key={f.id}
                   onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
-                  className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
+                  className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
                   title={localize(f.title)}
                 >
                   {f.titleJa}
@@ -300,7 +305,7 @@ export function Grammar() {
                   <button
                     key={tn}
                     onClick={() => setTone(prev => prev === tn ? null : tn)}
-                    className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-all ${active ? 'bg-green text-paper' : 'hover:bg-surface'}`}
+                    className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'bg-green text-paper' : 'hover:bg-surface'}`}
                   >
                     {t(`grammar.tone.${tn}`)}
                   </button>
@@ -332,7 +337,7 @@ export function Grammar() {
         {/* Keyed on the chip filters only (fade + scroll reset on a filter
             change). Search is deliberately left out: keying on it remounted
             and re-animated every card on every keystroke. */}
-        <div ref={listRef} key={`${cat}|${verbForm}|${tone}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
+        <div ref={listRef} key={`${deferredCat}|${deferredVerbForm}|${deferredTone}`} className="flex-1 overflow-y-auto p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] space-y-6 animate-fade-in">
           {!data && (
             <div className="flex justify-center py-12"><ToriLoader /></div>
           )}
@@ -474,7 +479,7 @@ export function Grammar() {
                     type="button"
                     aria-pressed={showFurigana}
                     onClick={() => setShowFurigana(s => !s)}
-                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-all ${showFurigana ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-colors ${showFurigana ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
                   >
                     {t('grammar.examples.showFurigana')}
                   </button>
@@ -482,7 +487,7 @@ export function Grammar() {
                     type="button"
                     aria-pressed={showRomaji}
                     onClick={() => setShowRomaji(s => !s)}
-                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-all ${showRomaji ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-colors ${showRomaji ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
                   >
                     {t('grammar.examples.showRomaji')}
                   </button>
@@ -574,7 +579,7 @@ const GrammarCard = memo(function GrammarCard({ g, accent, selected, onSelect }:
     <div className="relative group">
       <button
         onClick={() => onSelect(g)}
-        className={`w-full text-left p-3 border-3 transition-all duration-100 cursor-pointer ${
+        className={`w-full text-left p-3 border-3 transition-[background-color,border-color,box-shadow,transform] duration-100 cursor-pointer ${
           selected ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal)] hover:-translate-x-0.5 hover:-translate-y-0.5'
         }`}
         style={!selected ? { borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] } : undefined}
@@ -608,7 +613,7 @@ const GrammarCard = memo(function GrammarCard({ g, accent, selected, onSelect }:
           the same content is already one tap away in the detail drawer, so
           this only shows at `lg`+ where a real mouse hover is available. */}
       {ex && (
-        <div className="hidden lg:block pointer-events-none absolute left-0 right-0 top-full mt-1.5 z-30 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150">
+        <div className="hidden lg:block pointer-events-none absolute left-0 right-0 top-full mt-1.5 z-30 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-[opacity,visibility,transform] duration-150">
           <div className="bg-ink text-paper border-3 border-ink shadow-[var(--shadow-brutal)] p-3">
             <div className="font-bold text-sm leading-snug">
               <Ruby text={ex.ja} html={ex.jaRuby} />

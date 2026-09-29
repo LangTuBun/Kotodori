@@ -109,6 +109,12 @@ export function VocabBrowser() {
 
   const [chapter, setChapter] = useState<string | null>(null)
   const [pos, setPos] = useState<string | null>(null)
+  // The selects read the immediate values (so the picker closes and shows the
+  // choice at once); the list reads deferred copies, so re-filtering and
+  // re-mounting rows runs as interruptible background work instead of
+  // blocking the tap that picked the option.
+  const deferredChapter = useDeferredValue(chapter)
+  const deferredPos = useDeferredValue(pos)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
 
   // Read the whole cards object once per render instead of calling getCard()
@@ -137,8 +143,8 @@ export function VocabBrowser() {
 
   const filtered = useMemo(() => {
     return vocab.filter(v => {
-      if (chapter !== null && groupKey(v) !== chapter) return false
-      if (pos !== null && v.pos !== pos) return false
+      if (deferredChapter !== null && groupKey(v) !== deferredChapter) return false
+      if (deferredPos !== null && v.pos !== deferredPos) return false
       if (search) {
         const q = search.toLowerCase()
         // romajiOf() is an O(1) Map lookup – the romaji was pre-converted
@@ -152,7 +158,7 @@ export function VocabBrowser() {
       }
       return true
     })
-  }, [vocab, search, chapter, pos, localize])
+  }, [vocab, search, deferredChapter, deferredPos, localize])
 
   // O(1) id → index map so VocabRow.onClick doesn't do a linear findIndex.
   const filteredIndexMap = useMemo(
@@ -164,7 +170,7 @@ export function VocabBrowser() {
   // -- the count, the index map, and the modal's prev/next all keep using the
   // full `filtered` array; only the row rendering is sliced.
   const listRef = useRef<HTMLDivElement>(null)
-  const { visible, sentinelRef, hasMore } = useProgressiveList(filtered, 60, listRef)
+  const { visible, sentinelRef, hasMore } = useProgressiveList(filtered, 30, listRef)
 
   // Chapter header counts come from the full result set, not the rendered
   // window, so a partially-rendered chapter doesn't show a truncated total.

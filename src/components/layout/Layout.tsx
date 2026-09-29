@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
 import { Sidebar } from "./Sidebar"
 import { Furigana } from "@/components/ui/Furigana"
@@ -17,6 +17,24 @@ export function Layout() {
     setNavOpen(false)
     cancelSpeech()
   }, [location.pathname])
+
+  // The routed page is memoized on the pathname: toggling the drawer
+  // re-renders this component, but React bails out of an unchanged element,
+  // so opening the drawer never re-reconciles a list-heavy page (that used to
+  // drop frames during the drawer's slide-in).
+  const page = useMemo(() => (
+    <main
+      className="flex-1 min-h-0 overflow-auto"
+      style={{
+        paddingLeft: 'env(safe-area-inset-left)',
+        paddingRight: 'env(safe-area-inset-right)',
+      }}
+    >
+      <div key={location.pathname} className="view-enter h-full">
+        <Outlet />
+      </div>
+    </main>
+  ), [location.pathname])
 
   return (
     <div className="flex flex-col h-dvh overflow-hidden">
@@ -65,17 +83,7 @@ export function Layout() {
 
         <Sidebar open={navOpen} onClose={() => setNavOpen(false)} />
 
-        <main
-          className="flex-1 min-h-0 overflow-auto"
-          style={{
-            paddingLeft: 'env(safe-area-inset-left)',
-            paddingRight: 'env(safe-area-inset-right)',
-          }}
-        >
-          <div key={location.pathname} className="view-enter h-full">
-            <Outlet />
-          </div>
-        </main>
+        {page}
       </div>
     </div>
   )

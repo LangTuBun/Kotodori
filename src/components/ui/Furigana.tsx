@@ -102,6 +102,20 @@ function alignFurigana(kanji: string, kana: string): Segment[] | null {
   return segments
 }
 
+// Alignment is pure in (kanji, kana), and list rows re-mount constantly
+// (every filter/chapter change, level switch) -- memoizing avoids redoing the
+// run splitting and map lookups for words already seen this session.
+const ALIGN_CACHE = new Map<string, Segment[] | null>()
+function alignCached(kanji: string, kana: string): Segment[] | null {
+  const key = `${kanji}\u0000${kana}`
+  let hit = ALIGN_CACHE.get(key)
+  if (hit === undefined) {
+    hit = alignFurigana(kanji, kana)
+    ALIGN_CACHE.set(key, hit)
+  }
+  return hit
+}
+
 // Splits `text` into per-character spans, making kanji characters clickable
 // (used for the stroke-order drawer) while leaving kana untouched. Reuses
 // KANJI_RE rather than a second parser so clickability never drifts from the
@@ -141,7 +155,7 @@ export const Furigana = memo(function Furigana({ kanji, kana, className = "", on
     )
   }
 
-  const segments = alignFurigana(kanji, kana)
+  const segments = alignCached(kanji, kana)
   if (!segments) {
     return (
       <span className={`jp ${className}`}>

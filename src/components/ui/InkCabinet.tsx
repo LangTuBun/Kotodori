@@ -44,7 +44,7 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
                 aria-pressed={active}
                 title={`${theme.en} · ${theme.ja}`}
                 className={[
-                  "relative border-2 flex items-center justify-center transition-all cursor-pointer",
+                  "relative border-2 flex items-center justify-center transition-[border-color,box-shadow] cursor-pointer",
                   compact ? "aspect-square" : "flex-col gap-2 p-2 aspect-[4/3]",
                   active ? "border-ink shadow-[2px_2px_0px_var(--color-ink)]" : "border-ink/20 hover:border-ink/60",
                 ].join(" ")}
