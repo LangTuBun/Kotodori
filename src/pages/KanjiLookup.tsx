@@ -90,7 +90,7 @@ export function KanjiLookup() {
             value={query}
             onChange={e => setQuery(e.target.value)}
             placeholder={L("Kanji, Hán Việt (minh), kana hoặc nghĩa…", "Kanji, Hán Việt (minh), kana or meaning…")}
-            className="w-full max-w-xl border-3 border-structural bg-card px-4 py-3 font-bold"
+            className="w-full max-w-xl border-3 border-structural bg-card px-4 py-3 font-medium"
             autoFocus
           />
           <div className="text-xs font-bold text-muted mt-2">

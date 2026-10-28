@@ -100,16 +100,14 @@ export function Kanji() {
         <Watermark char="字" />
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 bg-surface flex-wrap items-center">
-          <div role="group" aria-label="JLPT level" className="inline-flex border border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
-            {LEVELS.map(({ value, label }, i) => (
+          <div role="group" aria-label="JLPT level" className="inline-flex bg-surface rounded-[9px] p-0.5 gap-0.5 shrink-0">
+            {LEVELS.map(({ value, label }) => (
               <button
                 key={value}
                 type="button"
                 aria-pressed={level === value}
                 onClick={() => setLevel(value)}
-                className={`px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
-                  i > 0 ? 'border-l-2 border-structural' : ''
-                } ${level === value ? 'bg-surface text-ink' : 'bg-paper hover:bg-surface'}`}
+                className={`px-2.5 py-1 rounded-[7px] text-xs cursor-pointer transition-[color,background-color,box-shadow,transform] duration-200 active:scale-95 ${level === value ? 'bg-[var(--tori-seg-pill)] text-ink font-semibold shadow-[0_1px_3px_rgb(0_0_0/0.12)]' : 'font-medium text-muted hover:text-ink'}`}
               >
                 {label}
               </button>
@@ -119,7 +117,7 @@ export function Kanji() {
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('kanji.searchPlaceholder')}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-bold text-sm bg-card focus:outline-none"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-medium text-sm bg-card focus:outline-none"
           />
           <div className="w-full text-xs font-bold uppercase tracking-wider text-muted">
             {t('common.wordsCount', { n: chapterKey === null ? totalWords : (visibleChapters[0]?.wordCount ?? 0) })} · {t('kanji.groupsCount', { n: filteredGroups.length })}

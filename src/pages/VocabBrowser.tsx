@@ -217,7 +217,7 @@ export function VocabBrowser() {
             value={rawSearch}
             onChange={e => setRawSearch(e.target.value)}
             placeholder={t("vocab.searchPlaceholder")}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-sans font-bold text-sm bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-medium text-sm bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
           />
           <select
             value={book}

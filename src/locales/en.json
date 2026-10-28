@@ -343,7 +343,9 @@
       "densityDescription": "Changes the spacing and base type size across every screen.",
       "typeface": "Typeface",
       "typefaceToggle": "Mincho for Japanese",
-      "typefaceDescription": "Japanese is set in a clean Gothic face by default. Turn this on for a brush-like Mincho serif instead."
+      "typefaceDescription": "Japanese is set in a clean Gothic face by default. Turn this on for a brush-like Mincho serif instead.",
+      "monoTitle": "Mono face",
+      "monoDescription": "The typewriter voice used for labels, numbers, romaji, and anything you type. Geist is crisp and modern; Plex has a classic typewriter feel."
     }
   }
 }

@@ -1,10 +1,10 @@
-import { useSettingsStore, type Paper, type Density } from "@/store/settings-store"
+import { useSettingsStore, type Paper, type Density, type MonoFace } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
 
 // Ids are the persisted keys from the old paper themes; only the look changed.
 const THEMES: { id: Paper; ja: string; en: string; swatch: [string, string, string] }[] = [
-  { id: "washi", ja: "明", en: "Light", swatch: ["#f5f5f7", "#ffffff", "#0071e3"] },
-  { id: "sumi", ja: "朱", en: "Vermilion", swatch: ["#f6f5f3", "#ffffff", "#d13f24"] },
+  { id: "washi", ja: "明", en: "Light", swatch: ["#f5f5f7", "#ffffff", "#007aff"] },
+  { id: "sumi", ja: "朱", en: "Vermilion", swatch: ["#f6f5f3", "#ffffff", "#ff5733"] },
   { id: "gold", ja: "夜", en: "Dark", swatch: ["#000000", "#1c1c1e", "#0a84ff"] },
 ]
 
@@ -12,6 +12,11 @@ const DENSITIES: { id: Density; ja: string; en: string }[] = [
   { id: "compact", ja: "密", en: "Compact" },
   { id: "normal", ja: "並", en: "Normal" },
   { id: "sparse", ja: "疎", en: "Sparse" },
+]
+
+const MONO_FACES: { id: MonoFace; name: string; stack: string }[] = [
+  { id: "geist", name: "Geist Mono", stack: "'Geist Mono', monospace" },
+  { id: "plex", name: "IBM Plex Mono", stack: "'IBM Plex Mono', monospace" },
 ]
 
 /** iOS-style segmented control: gray track, raised pill on the selection. */
@@ -67,6 +72,8 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
   const setDensity = useSettingsStore((s) => s.setDensity)
   const typeSerif = useSettingsStore((s) => s.typeSerif)
   const setTypeSerif = useSettingsStore((s) => s.setTypeSerif)
+  const mono = useSettingsStore((s) => s.mono)
+  const setMono = useSettingsStore((s) => s.setMono)
 
   if (compact) {
     return (
@@ -181,6 +188,33 @@ export function InkCabinet({ compact = false }: { compact?: boolean }) {
             />
           </span>
         </button>
+
+        <p className="text-[15px] font-medium mt-6 mb-1">{t('settings.inkCabinet.monoTitle')}</p>
+        <p className="text-[13px] text-muted mb-3">{t('settings.inkCabinet.monoDescription')}</p>
+        <div className="grid grid-cols-2 gap-3 max-w-md">
+          {MONO_FACES.map((f) => {
+            const active = mono === f.id
+            return (
+              <button
+                key={f.id}
+                type="button"
+                onClick={() => setMono(f.id)}
+                aria-pressed={active}
+                className={[
+                  "text-left rounded-[12px] bg-card px-4 py-3 cursor-pointer transition-[box-shadow,transform] duration-200 ease-[var(--ease-out)] active:scale-[0.97]",
+                  active
+                    ? "shadow-[0_0_0_2px_var(--tori-bg-card),0_0_0_4px_var(--tori-accent)]"
+                    : "shadow-[0_0_0_1px_var(--tori-border)] hover:shadow-[0_0_0_1px_var(--tori-border),0_6px_18px_rgb(0_0_0/0.08)]",
+                ].join(" ")}
+              >
+                {/* Specimen set in the face itself, so the choice is visual. */}
+                <span className="block text-[22px] leading-none tracking-[-0.02em]" style={{ fontFamily: f.stack }}>Aa 0123</span>
+                <span className="block text-[11px] text-muted mt-2 uppercase" style={{ fontFamily: f.stack }}>tiếng việt · ひらがな</span>
+                <span className={`block text-[13px] mt-2 ${active ? "font-semibold" : "text-muted"}`}>{f.name}</span>
+              </button>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

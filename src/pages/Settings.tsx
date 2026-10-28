@@ -24,11 +24,11 @@ export function Settings() {
         watermark="設"
       />
 
-      <div className="flex flex-col gap-6 pb-16">
+      <div className="flex flex-col gap-8 pb-16">
         <Reveal index={0}>
-          <Card className="p-6">
-            <h2 className="font-display text-xl mb-1">{t('settings.paperTitle')}</h2>
-            <p className="text-sm text-muted mb-6">
+          <h2 className="font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-muted px-4 mb-2">{t('settings.paperTitle')}</h2>
+          <Card className="p-5">
+            <p className="text-[13px] text-muted mb-5">
               {t('settings.paperDescription')}
             </p>
             <InkCabinet />
@@ -36,25 +36,25 @@ export function Settings() {
         </Reveal>
 
         <Reveal index={1}>
-          <Card className="p-6">
-            <h2 className="font-display text-xl mb-1">{t('settings.languageTitle')}</h2>
-            <p className="text-sm text-muted mb-4">{t('settings.languageDescription')}</p>
+          <h2 className="font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-muted px-4 mb-2">{t('settings.languageTitle')}</h2>
+          <Card className="p-5">
+            <p className="text-[13px] text-muted mb-4">{t('settings.languageDescription')}</p>
             <LanguageSwitcher />
           </Card>
         </Reveal>
 
         <Reveal index={2}>
-          <Card className="p-6">
-            <h2 className="font-display text-xl mb-1">{t('settings.levelTitle')}</h2>
-            <p className="text-sm text-muted mb-4">{t('settings.levelDescription')}</p>
+          <h2 className="font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-muted px-4 mb-2">{t('settings.levelTitle')}</h2>
+          <Card className="p-5">
+            <p className="text-[13px] text-muted mb-4">{t('settings.levelDescription')}</p>
             <LevelSwitcher />
           </Card>
         </Reveal>
 
         <Reveal index={3}>
-          <Card className="p-6">
-            <h2 className="font-display text-xl mb-1">{t('settings.voiceTitle')}</h2>
-            <p className="text-sm text-muted mb-4">{t('settings.voiceDescription')}</p>
+          <h2 className="font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-muted px-4 mb-2">{t('settings.voiceTitle')}</h2>
+          <Card className="p-5">
+            <p className="text-[13px] text-muted mb-4">{t('settings.voiceDescription')}</p>
             <div className="flex items-center gap-2 text-sm font-bold">
               <span className={`w-2 h-2 rounded-full shrink-0 ${voiceName ? "bg-green" : "bg-yellow"}`} aria-hidden="true" />
               {voiceName ? t('settings.voiceStatusFound', { name: voiceName }) : t('settings.voiceStatusDefault')}

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import { useEffect, useMemo, useState } from "react"
 import { AnimatedKanjiSvg } from "@/components/kanji/AnimatedKanjiSvg"
 import { Reveal } from "@/components/ui/Reveal"
-import { Card } from "@/components/ui/Card"
 import { Furigana } from "@/components/ui/Furigana"
 import { useSettingsStore } from "@/store/settings-store"
 import { useTranslation } from "@/lib/useTranslation"
@@ -11,7 +10,7 @@ import { TORI_STROKES, TORI_VIEW_BOX } from "@/components/ui/tori-glyph"
 const WEEKDAY_KANJI = ['日', '月', '火', '水', '木', '金', '土']
 const LEVEL_LABEL: Record<string, string> = { N5: 'N5', N4: 'N4', all: 'N5+N4' }
 
-const FEATURES: { glyph: string; ja: string; key: string; href: string }[] = [
+const FEATURES: { glyph: string; ja: string; key: string; href: string}[] = [
   { glyph: "語", ja: "たんご", key: "vocabulary", href: "/vocab" },
   { glyph: "文", ja: "ぶんぽう", key: "grammar", href: "/grammar" },
   { glyph: "字", ja: "かんじ", key: "kanji", href: "/kanji" },
@@ -61,32 +60,45 @@ export function Landing() {
           />
         </div>
         <div className="min-w-0">
-          <h1 className="jp text-3xl sm:text-4xl font-black tracking-tight leading-tight">{greeting.ja}</h1>
-          <p className="font-mono text-xs text-muted font-bold uppercase tracking-widest mt-1">
+          <p className="font-mono text-[11px] text-muted font-medium uppercase tracking-[0.08em] mb-1.5">
             <span className="jp normal-case tracking-normal">{dateLabel}</span>
             <span className="mx-2 opacity-40">·</span>
             {t('dashboard.subtitle', { level: LEVEL_LABEL[level] })}
           </p>
+          <h1 className="jp text-5xl sm:text-6xl font-semibold tracking-[-0.03em] leading-[1.05]">{greeting.ja}</h1>
         </div>
       </header>
 
+      {/* Monochrome glass tiles: the glyph is the icon, ink by default and
+          tinted only on hover - one accent, no per-tool rainbow. */}
       <Reveal>
-        <nav className="grid grid-cols-2 sm:grid-cols-3 gap-3" aria-label="Study tools">
-          {FEATURES.map(f => (
-            <Link key={f.href} to={f.href} className="block">
-              <Card lift className="p-4 h-full flex items-center gap-3">
-                <span className="jp text-3xl leading-none text-accent w-9 text-center shrink-0">{f.glyph}</span>
-                <span className="min-w-0">
-                  <span className="block font-display text-base leading-tight">{t(`nav.${f.key}`)}</span>
-                  <span className="jp block text-xs text-muted mt-0.5">{f.ja}</span>
+        <nav className="relative isolate grid grid-cols-2 sm:grid-cols-3 gap-3" aria-label="Study tools">
+          <div aria-hidden className="home-aura" />
+          {FEATURES.map((f, i) => (
+            <Link
+              key={f.href}
+              to={f.href}
+              className="glass group relative flex flex-col justify-between gap-6 p-4 sm:p-5 min-h-32 rounded-[22px]"
+            >
+              <span className="flex items-start justify-between">
+                <span className="jp text-[34px] font-medium leading-none transition-colors duration-200 group-hover:text-accent">
+                  {f.glyph}
                 </span>
-              </Card>
+                <span className="font-mono text-[11px] text-dim tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+              </span>
+              <span className="flex items-end justify-between gap-2">
+                <span className="min-w-0">
+                  <span className="block text-[15px] font-semibold tracking-[-0.01em] leading-tight">{t(`nav.${f.key}`)}</span>
+                  <span className="jp block text-xs text-muted mt-1">{f.ja}</span>
+                </span>
+                <span aria-hidden className="go font-mono text-sm text-accent">→</span>
+              </span>
             </Link>
           ))}
         </nav>
       </Reveal>
 
-      <footer className="mt-16 flex items-center justify-between font-mono text-[11px] uppercase tracking-widest text-muted">
+      <footer className="mt-16 flex items-center justify-between font-mono text-[11px] uppercase text-dim">
         <span>TORI · <Furigana kanji="鳥" kana="とり" /></span>
         <span>minh khang</span>
       </footer>

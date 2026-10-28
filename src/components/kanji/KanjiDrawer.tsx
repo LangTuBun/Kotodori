@@ -74,11 +74,11 @@ function groupComponents(components: KanjiVgComponent[]): GroupedComponent[] {
 // that white surface uses these fixed literals instead.
 const DRAWER_INK = "#1d1d1f"
 const DRAWER_MUTED = "#6e6e73"
-const DRAWER_ACCENT = "#0071e3"
+const DRAWER_ACCENT = "#007aff"
 const DRAWER_HAIRLINE = "rgba(0,0,0,0.1)"
 const DRAWER_BLUE = "#007aff"
-const DRAWER_GREEN = "#248a3d"
-const DRAWER_ORANGE = "#c26a00"
+const DRAWER_GREEN = "#34c759"
+const DRAWER_ORANGE = "#ff9500"
 
 // bothu.pdf names the positional variants "Bộ thủ", "Bộ khuyển", ... - the
 // lead-in word is noise on a chip, so chips and the diagram show "Thủ",

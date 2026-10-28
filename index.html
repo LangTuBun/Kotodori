@@ -22,7 +22,7 @@
     <title>TORI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;600;700;900&family=Geist+Mono:wght@400..700&display=swap&subset=vietnamese" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;600;700;900&family=Geist+Mono:wght@400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap&subset=vietnamese" rel="stylesheet" />
   </head>
   <body>
     <script>
@@ -50,6 +50,9 @@
 
           // Typeface (Mincho opt-in)
           if (state && state.typeSerif) h.classList.add('type-serif');
+
+          // Mono face (IBM Plex Mono = typewriter option)
+          if (state && state.mono === 'plex') h.classList.add('mono-plex');
         } catch (e) {
           // Ignore
         }

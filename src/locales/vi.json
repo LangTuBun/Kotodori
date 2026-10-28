@@ -343,7 +343,9 @@
       "densityDescription": "Thay đổi khoảng cách và cỡ chữ cơ bản trên toàn bộ ứng dụng.",
       "typeface": "Kiểu chữ",
       "typefaceToggle": "Dùng font Mincho cho chữ Nhật",
-      "typefaceDescription": "Chữ Nhật mặc định dùng font Gothic gọn gàng. Bật tùy chọn này để dùng font Mincho (có chân, nét bút lông)."
+      "typefaceDescription": "Chữ Nhật mặc định dùng font Gothic gọn gàng. Bật tùy chọn này để dùng font Mincho (có chân, nét bút lông).",
+      "monoTitle": "Font đơn cách (mono)",
+      "monoDescription": "Kiểu chữ máy đánh chữ dùng cho nhãn, con số, romaji và mọi thứ bạn gõ. Geist gọn gàng, hiện đại; Plex mang cảm giác máy đánh chữ cổ điển."
     }
   }
 }

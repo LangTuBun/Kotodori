@@ -5,6 +5,7 @@ import type { Locale } from "@/lib/i18n"
 export type Level = 'N5' | 'N4' | 'all'
 export type Paper = 'washi' | 'sumi' | 'gold'
 export type Density = 'compact' | 'normal' | 'sparse'
+export type MonoFace = 'geist' | 'plex'
 
 interface SettingsStore {
   lang: Locale
@@ -18,6 +19,8 @@ interface SettingsStore {
   setDensity: (density: Density) => void
   typeSerif: boolean
   setTypeSerif: (typeSerif: boolean) => void
+  mono: MonoFace
+  setMono: (mono: MonoFace) => void
 }
 
 const PAPER_CLASS: Record<Paper, string> = {
@@ -47,6 +50,10 @@ function applyTypeSerif(typeSerif: boolean) {
   document.documentElement.classList.toggle('type-serif', typeSerif)
 }
 
+function applyMono(mono: MonoFace) {
+  document.documentElement.classList.toggle('mono-plex', mono === 'plex')
+}
+
 export const useSettingsStore = create<SettingsStore>()(
   persist(
     (set, get) => ({
@@ -73,6 +80,11 @@ export const useSettingsStore = create<SettingsStore>()(
         applyTypeSerif(typeSerif)
         set({ typeSerif })
       },
+      mono: 'geist',
+      setMono: (mono) => {
+        applyMono(mono)
+        set({ mono })
+      },
     }),
     {
       name: 'tori-settings',
@@ -89,6 +101,7 @@ export const useSettingsStore = create<SettingsStore>()(
         applyPaper(state.paper)
         applyDensity(state.density)
         applyTypeSerif(state.typeSerif)
+        applyMono(state.mono)
       },
     }
   )

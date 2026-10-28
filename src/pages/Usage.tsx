@@ -200,7 +200,7 @@ export function Usage() {
           onChange={e => setSearch(e.target.value)}
           placeholder={t("usage.searchPlaceholder")}
           aria-label={t("usage.searchPlaceholder")}
-          className="w-full px-4 py-2.5 mb-5 border-3 border-structural font-sans font-bold text-sm bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
+          className="w-full px-4 py-2.5 mb-5 border-3 border-structural font-medium text-sm bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
         />
 
         {/* Topic chips: one group at a time keeps the page short */}

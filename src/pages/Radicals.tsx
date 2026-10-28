@@ -131,15 +131,13 @@ export function Radicals() {
           )}
         </p>
         <div className="flex flex-wrap items-center justify-between gap-3 mt-4">
-          <div className="inline-flex border border-structural overflow-hidden">
-            {(["cards", "table"] as const).map((id, i) => (
+          <div className="inline-flex bg-surface rounded-[9px] p-0.5 gap-0.5">
+            {(["cards", "table"] as const).map((id) => (
               <button
                 key={id}
                 type="button"
                 onClick={() => setTab(id)}
-                className={`px-3.5 py-1.5 text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
-                  i > 0 ? "border-l-2 border-structural" : ""
-                } ${tab === id ? "bg-surface text-ink" : "bg-card hover:bg-surface"}`}
+                className={`px-3.5 py-1.5 rounded-[7px] text-xs cursor-pointer transition-[color,background-color,box-shadow,transform] duration-200 active:scale-95 ${tab === id ? "bg-[var(--tori-seg-pill)] text-ink font-semibold shadow-[0_1px_3px_rgb(0_0_0/0.12)]" : "font-medium text-muted hover:text-ink"}`}
               >
                 {id === "cards" ? "Flashcard" : L("Bảng 214 bộ", "All 214")}
               </button>

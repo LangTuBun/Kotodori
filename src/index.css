@@ -19,14 +19,14 @@
   --tori-text: #1d1d1f;
   --tori-text-muted: #6e6e73;
   --tori-dim: #86868b;
-  --tori-accent: #0071e3;
+  --tori-accent: #007aff;
   --tori-accent-fg: #fff;
-  --tori-accent-soft: rgb(0 113 227 / 0.1);
-  --tori-gold: #c26a00;
-  --tori-jade: #248a3d;
-  --tori-blue: #5856d6;
-  --tori-hanko: #e0362c;
-  --tori-glow-1: rgb(0 113 227 / 0.06);
+  --tori-accent-soft: rgb(0 122 255 / 0.12);
+  --tori-gold: #ff9500;
+  --tori-jade: #34c759;
+  --tori-blue: #5e5ce6;
+  --tori-hanko: #ff3b30;
+  --tori-glow-1: rgb(0 122 255 / 0.08);
   --tori-glow-2: rgb(175 82 222 / 0.04);
   --tori-scheme: light;
   /* Structural lines are hairline separators, not ink rules */
@@ -40,9 +40,9 @@
 .theme-sumi {
   --tori-bg: #f6f5f3; --tori-bg-card: #ffffff; --tori-bg-2: #ecebe8; --tori-bg-sidebar: rgb(247 246 244 / 0.78);
   --tori-text: #1c1a18; --tori-text-muted: #6f6b66; --tori-dim: #8a857f;
-  --tori-accent: #d13f24; --tori-accent-fg: #fff; --tori-accent-soft: rgb(209 63 36 / 0.1);
-  --tori-gold: #b8690a; --tori-jade: #2a8a52; --tori-blue: #4f5bd5; --tori-hanko: #d13f24;
-  --tori-glow-1: rgb(209 63 36 / 0.06); --tori-glow-2: rgb(255 149 0 / 0.04); --tori-scheme: light;
+  --tori-accent: #ff5733; --tori-accent-fg: #fff; --tori-accent-soft: rgb(255 87 51 / 0.12);
+  --tori-gold: #ff9500; --tori-jade: #34c759; --tori-blue: #5e5ce6; --tori-hanko: #ff3b30;
+  --tori-glow-1: rgb(255 87 51 / 0.08); --tori-glow-2: rgb(255 149 0 / 0.04); --tori-scheme: light;
 }
 /* 夜 Dark - true black canvas, elevated grays instead of shadows. */
 .theme-gold {
@@ -50,7 +50,7 @@
   --tori-border: rgb(255 255 255 / 0.12); --tori-hairline: rgb(255 255 255 / 0.07); --tori-sb-border: rgb(255 255 255 / 0.08);
   --tori-text: #f5f5f7; --tori-text-muted: #a1a1a6; --tori-dim: #8e8e93;
   --tori-accent: #0a84ff; --tori-accent-fg: #fff; --tori-accent-soft: rgb(10 132 255 / 0.18);
-  --tori-gold: #ff9f0a; --tori-jade: #30d158; --tori-blue: #7d7aff; --tori-hanko: #ff453a;
+  --tori-gold: #ffb340; --tori-jade: #30db5b; --tori-blue: #7d7aff; --tori-hanko: #ff6961;
   --tori-glow-1: rgb(10 132 255 / 0.1); --tori-glow-2: rgb(191 90 242 / 0.06); --tori-scheme: dark;
   --tori-structural: rgb(255 255 255 / 0.12);
   --tori-elev-ring: rgb(255 255 255 / 0.06);
@@ -234,6 +234,53 @@ body::before {
      (section labels, counters, column heads). Base layer, so an explicit
      font-sans / .jp on the element still wins. */
   .uppercase { font-family: var(--font-mono); font-weight: 500; letter-spacing: 0.06em; }
+
+  /* Typing is a typewriter: every text field sets in the mono face with
+     an accent caret. Japanese IME text still falls through to the JP face. */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), textarea, select {
+    font-family: var(--font-mono), var(--font-jp);
+    letter-spacing: -0.01em;
+    caret-color: var(--tori-accent);
+  }
+  input::placeholder, textarea::placeholder { color: var(--tori-dim); opacity: 1; }
+}
+
+/* Glass surface (Liquid-Glass-like): translucent fill over the ambient
+   tint, a bright specular top edge, hairline rim. Lifts on hover, presses
+   in on pointer-down. */
+.glass {
+  background: color-mix(in srgb, var(--tori-bg-card) 60%, transparent);
+  -webkit-backdrop-filter: blur(24px) saturate(170%);
+  backdrop-filter: blur(24px) saturate(170%);
+  border: 1px solid rgb(255 255 255 / 0.6);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 0 0 0.5px var(--tori-elev-ring), 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px rgb(0 0 0 / 0.05);
+  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), background-color 0.25s;
+}
+.glass:hover {
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--tori-bg-card) 78%, transparent);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.8), 0 0 0 0.5px var(--tori-elev-ring), 0 2px 4px rgb(0 0 0 / 0.05), 0 18px 40px rgb(0 0 0 / 0.09);
+}
+.glass:active { transform: scale(0.98); transition-duration: 0.1s; }
+.glass:hover .go { opacity: 1; transform: none; }
+.theme-gold .glass {
+  background: rgb(255 255 255 / 0.05);
+  border-color: rgb(255 255 255 / 0.09);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 8px 24px rgb(0 0 0 / 0.4);
+}
+.theme-gold .glass:hover { background: rgb(255 255 255 / 0.08); }
+
+/* Soft accent light behind the home grid, so the glass has something to
+   refract. Static and very low contrast. */
+.home-aura {
+  position: absolute;
+  inset: -15% -10%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 50% at 25% 40%, color-mix(in srgb, var(--tori-accent) 14%, transparent), transparent 70%),
+    radial-gradient(35% 45% at 80% 70%, color-mix(in srgb, var(--tori-accent) 9%, transparent), transparent 70%);
+  filter: blur(20px);
 }
 .mincho { font-family: var(--font-display); }
 
@@ -243,6 +290,8 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--c
 /* ---------- Density & type preferences ---------- */
 .density-compact { --dens: 0.78; --gap: 0.625rem; --p-card: 0.875rem; --text-base: 0.9375rem; }
 .density-sparse  { --dens: 1.3;  --gap: 1.5rem;   --p-card: 1.75rem;  --text-base: 1.0625rem; }
+/* Typewriter option: IBM Plex Mono (also ships a Vietnamese subset). */
+.mono-plex { --font-mono: 'IBM Plex Mono', 'Geist Mono', ui-monospace, monospace; }
 .type-serif { --font-jp: 'Hiragino Mincho ProN', 'Zen Old Mincho', 'Yu Mincho', serif; }
 
 /* Scoped to the surfaces that carry the theme instead of `*`: a universal
@@ -267,6 +316,13 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--c
 }
 
 :focus-visible { outline: 3px solid color-mix(in srgb, var(--tori-accent) 55%, transparent); outline-offset: 2px; border-radius: var(--radius-sm); }
+/* Fields carry their own soft focus halo instead of the outline ring.
+   Unlayered, so it beats the rule above. */
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: none;
+  border-color: var(--tori-accent);
+  box-shadow: 0 0 0 4px var(--tori-accent-soft);
+}
 
 /* ============================================================
    Keyframes, ported from Tori globals.css lines 262-277.
@@ -352,8 +408,8 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--c
    instead of a solid slab (white-on-orange fails contrast). Set --tint
    inline to any color token. Works in light and dark unchanged. */
 .tint {
-  background-color: color-mix(in srgb, var(--tint) 16%, transparent);
-  color: color-mix(in srgb, var(--tint) 45%, var(--tori-text));
+  background-color: color-mix(in srgb, var(--tint) 18%, transparent);
+  color: color-mix(in srgb, var(--tint) 62%, var(--tori-text));
   border-color: color-mix(in srgb, var(--tint) 30%, transparent) !important;
 }
 
@@ -379,7 +435,7 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--c
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .material, .material-thin { background: var(--tori-bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .material, .material-thin, .glass { background: var(--tori-bg-card); -webkit-backdrop-filter: none; backdrop-filter: none; }
   .scrim { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgb(0 0 0 / 0.4); }
 }
 @media (prefers-contrast: more) {
