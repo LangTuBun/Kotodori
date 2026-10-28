@@ -160,14 +160,14 @@ export function Radicals() {
             <button
               type="button"
               onClick={() => { setDirection(d => (d === "glyph" ? "name" : "glyph")); setFlipped(false) }}
-              className="px-3 py-1.5 border border-structural bg-card hover:bg-surface text-xs font-bold cursor-pointer transition-colors"
+              className="px-3.5 py-1.5 rounded-full border border-structural bg-card hover:bg-surface text-xs font-semibold cursor-pointer transition-[background-color,transform] active:scale-95"
             >
               {showGlyphFront ? L("Chiều: Chữ → Tên", "Mode: Glyph → Name") : L("Chiều: Tên → Chữ", "Mode: Name → Glyph")}
             </button>
             <button
               type="button"
               onClick={() => { setOrder(o => shuffled(o)); setPos(0); setFlipped(false) }}
-              className="px-3 py-1.5 border border-structural bg-card hover:bg-surface text-xs font-bold cursor-pointer transition-colors"
+              className="px-3.5 py-1.5 rounded-full border border-structural bg-card hover:bg-surface text-xs font-semibold cursor-pointer transition-[background-color,transform] active:scale-95"
             >
               {L("Xáo trộn", "Shuffle")}
             </button>
@@ -175,7 +175,7 @@ export function Radicals() {
               type="button"
               aria-pressed={onlyUnknown}
               onClick={() => { setOnlyUnknown(v => !v); setPos(0); setFlipped(false) }}
-              className={`px-3 py-1.5 border text-xs font-bold cursor-pointer transition-colors ${
+              className={`px-3.5 py-1.5 rounded-full border text-xs font-semibold cursor-pointer transition-[background-color,transform] active:scale-95 ${
                 onlyUnknown ? "border-accent bg-accent text-accent-fg" : "border-structural bg-card hover:bg-surface"
               }`}
             >
@@ -227,14 +227,14 @@ export function Radicals() {
               )}
 
               <div className="flex flex-wrap items-center justify-between gap-3 mt-5">
-                <div className="flex gap-2">
-                  <button onClick={() => move(-1)} className="px-4 py-2 border-3 border-structural bg-card font-black cursor-pointer">‹</button>
-                  <button onClick={() => setFlipped(f => !f)} className="px-4 py-2 border-3 border-structural bg-card font-black cursor-pointer">{L("Lật", "Flip")}</button>
-                  <button onClick={() => move(1)} className="px-4 py-2 border-3 border-structural bg-card font-black cursor-pointer">›</button>
+                <div className="flex items-center gap-2">
+                  <button onClick={() => move(-1)} aria-label={L("Trước", "Previous")} className="size-11 rounded-full glass-card glass-lift flex items-center justify-center text-xl leading-none font-medium">‹</button>
+                  <button onClick={() => setFlipped(f => !f)} className="h-11 px-5 rounded-full glass-card glass-lift text-sm font-semibold">{L("Lật", "Flip")}</button>
+                  <button onClick={() => move(1)} aria-label={L("Sau", "Next")} className="size-11 rounded-full glass-card glass-lift flex items-center justify-center text-xl leading-none font-medium">›</button>
                 </div>
                 <div className="flex gap-2">
-                  <button onClick={() => mark(false)} className="px-4 py-2 border-3 border-structural bg-red/20 font-black cursor-pointer">{L("Chưa thuộc", "Not yet")}</button>
-                  <button onClick={() => mark(true)} className="px-4 py-2 border-3 border-structural bg-green/30 font-black cursor-pointer">{L("Đã thuộc", "Known")}</button>
+                  <button onClick={() => mark(false)} className="h-11 px-5 rounded-full bg-red/15 text-red text-sm font-semibold cursor-pointer transition-transform active:scale-95">{L("Chưa thuộc", "Not yet")}</button>
+                  <button onClick={() => mark(true)} className="h-11 px-5 rounded-full bg-green text-white text-sm font-semibold cursor-pointer transition-transform active:scale-95 shadow-[0_4px_14px_color-mix(in_srgb,var(--tori-jade)_35%,transparent)]">{L("Đã thuộc", "Known")}</button>
                 </div>
               </div>
             </>

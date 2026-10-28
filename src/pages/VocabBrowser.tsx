@@ -382,12 +382,12 @@ function VocabModal({
           className="pointer-events-auto w-full max-w-lg max-h-[85dvh] overflow-y-auto glass-card glass-sheet"
         >
           {/* List navigation */}
-          <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">
+          <div className="flex items-center gap-3 p-3 border-b border-[var(--tori-hairline)]">
             <button
               onClick={onPrev}
               disabled={!hasPrev}
               title={t("vocab.prevWord")}
-              className="w-11 h-11 border border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="size-11 rounded-full bg-card shadow-[var(--shadow-brutal)] text-xl leading-none flex items-center justify-center hover:shadow-[var(--shadow-brutal-hover)] active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed disabled:shadow-none transition-[box-shadow,transform,opacity]"
             >
               ‹
             </button>
@@ -398,7 +398,7 @@ function VocabModal({
               onClick={onNext}
               disabled={!hasNext}
               title={t("vocab.nextWord")}
-              className="w-11 h-11 border border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="size-11 rounded-full bg-card shadow-[var(--shadow-brutal)] text-xl leading-none flex items-center justify-center hover:shadow-[var(--shadow-brutal-hover)] active:scale-90 disabled:opacity-30 disabled:cursor-not-allowed disabled:shadow-none transition-[box-shadow,transform,opacity]"
             >
               ›
             </button>

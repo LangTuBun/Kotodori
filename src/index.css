@@ -291,6 +291,9 @@ body::before {
 .glass-lift:active, .glass:active { transform: scale(0.98); transition-duration: 0.1s; }
 .glass-glyph { transition: color 0.2s; }
 .glass-lift:hover .glass-glyph, .glass:hover .glass-glyph { color: var(--tori-accent); }
+/* Circular glass controls (prev / next): the glass radius must not win
+   over an explicit rounded-full. */
+.glass-card.rounded-full, .glass.rounded-full { border-radius: 9999px; }
 /* Selected state for glass pickers: solid tint, no lift. */
 .glass-card.is-active {
   background-color: var(--tori-accent);

@@ -95,8 +95,8 @@ function NavButton({ onClick, label, children }: { onClick: () => void; label: s
       onClick={onClick}
       title={label}
       aria-label={label}
-      className="w-7 h-7 border font-black text-sm leading-none cursor-pointer"
-      style={{ borderColor: DRAWER_MUTED, color: DRAWER_INK }}
+      className="size-8 rounded-full bg-black/[0.05] hover:bg-black/[0.09] flex items-center justify-center text-base leading-none cursor-pointer transition-[background-color,transform] active:scale-90"
+      style={{ color: DRAWER_INK }}
     >
       {children}
     </button>
