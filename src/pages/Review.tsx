@@ -217,7 +217,7 @@ export function Review() {
         <div className="border-b-3 border-structural pb-6 mb-8">
           <h1 className="text-[clamp(2rem,8vw,3rem)] font-black">{t('review.done')}</h1>
         </div>
-        <div className="border-3 border-structural p-4 sm:p-8 shadow-[5px_5px_0px_var(--color-green)] text-center">
+        <div className="border-3 border-structural p-4 sm:p-8 shadow-[var(--shadow-brutal-hover)] text-center">
           <div className="text-5xl sm:text-7xl font-black mb-3">{reviewed}</div>
           <div className="text-sm font-bold uppercase tracking-wider text-muted mb-6">
             {mode === 'vocab' ? t('review.wordsReviewed') : t('review.kanjiReviewed')}
@@ -295,18 +295,18 @@ function ReviewSetup({
         <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">{t('review.chooseScope')}</p>
       </div>
 
-      <div className="border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper overflow-hidden">
+      <div className="border-3 border-structural shadow-[var(--shadow-brutal)] bg-card overflow-hidden">
         {/* Mode tabs */}
         <div className="grid grid-cols-2 border-b-3 border-structural">
           <button
             onClick={() => setMode('vocab')}
-            className={`py-4 border-r-3 border-structural font-black text-sm uppercase tracking-wider cursor-pointer transition-colors ${mode === 'vocab' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`py-4 border-r-3 border-structural font-black text-sm uppercase tracking-wider cursor-pointer transition-colors ${mode === 'vocab' ? 'bg-surface text-ink' : 'hover:bg-surface'}`}
           >
             {t('review.vocabTab')}
           </button>
           <button
             onClick={() => setMode('kanji')}
-            className={`py-4 font-black text-sm uppercase tracking-wider transition-colors cursor-pointer ${mode === 'kanji' ? 'bg-ink text-paper' : 'hover:bg-surface'}`}
+            className={`py-4 font-black text-sm uppercase tracking-wider transition-colors cursor-pointer ${mode === 'kanji' ? 'bg-surface text-ink' : 'hover:bg-surface'}`}
           >
             {t('review.kanjiTab')} <span className="opacity-60 normal-case font-bold">(漢字)</span>
           </button>
@@ -416,7 +416,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+      className={`px-3 py-1.5 border rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'border-accent bg-accent text-accent-fg' : 'border-structural hover:bg-surface'}`}
     >
       {children}
     </button>
@@ -428,7 +428,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
   const { t, localize } = useTranslation()
   return (
     <div
-      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-card mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -490,7 +490,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
 
   return (
     <div
-      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-paper mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
+      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-card mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -509,7 +509,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
         <>
           <div className="flex items-center gap-2 mb-3">
             {word.hanviet && (
-              <span className="text-sm font-black px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] bg-surface">{word.hanviet}</span>
+              <span className="text-sm font-black px-2 py-1 border border-structural rounded-[var(--radius-sm)] bg-surface">{word.hanviet}</span>
             )}
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color: onkunTone(word.onkun) }}>
               {word.onkun}

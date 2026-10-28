@@ -101,7 +101,7 @@ export function Transitivity() {
               <span className="font-mono text-xs font-bold uppercase tracking-wider text-muted">{t('transitivity.transitive')}</span>
             </div>
             <p className="text-sm text-muted leading-relaxed mb-3">{t('transitivity.transitiveExplain')}</p>
-            <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2 text-sm font-bold">
+            <div className="border border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2 text-sm font-bold">
               <Furigana kanji="誰かが窓を開けました。" kana="だれかがまどをあけました。" />
               <div className="text-xs font-normal text-muted mt-1">{t('transitivity.exampleTransitiveCaption')}</div>
             </div>
@@ -112,7 +112,7 @@ export function Transitivity() {
               <span className="font-mono text-xs font-bold uppercase tracking-wider text-muted">{t('transitivity.intransitive')}</span>
             </div>
             <p className="text-sm text-muted leading-relaxed mb-3">{t('transitivity.intransitiveExplain')}</p>
-            <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2 text-sm font-bold">
+            <div className="border border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2 text-sm font-bold">
               <Furigana kanji="窓が開いています。" kana="まどがあいています。" />
               <div className="text-xs font-normal text-muted mt-1">{t('transitivity.exampleIntransitiveCaption')}</div>
             </div>
@@ -124,17 +124,17 @@ export function Transitivity() {
         <div className="border-3 border-structural bg-yellow/20 p-5 mb-8">
           <div className="text-xs font-black uppercase tracking-wider mb-3">{t('transitivity.chapterTieIn')}</div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
-            <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-paper p-3">
+            <div className="border border-structural rounded-[var(--radius-sm)] bg-card p-3">
               <div className="jp font-black text-sm mb-1">他動詞 + てある</div>
               <Furigana className="text-sm font-bold" kanji="窓が開けてあります。" kana="まどがあけてあります。" />
               <p className="text-xs text-muted mt-2 leading-relaxed">{t('transitivity.teAruNote')}</p>
             </div>
-            <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-paper p-3">
+            <div className="border border-structural rounded-[var(--radius-sm)] bg-card p-3">
               <div className="jp font-black text-sm mb-1">自動詞 + ている</div>
               <Furigana className="text-sm font-bold" kanji="窓が開いています。" kana="まどがあいています。" />
               <p className="text-xs text-muted mt-2 leading-relaxed">{t('transitivity.teIruNote')}</p>
             </div>
-            <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-paper p-3">
+            <div className="border border-structural rounded-[var(--radius-sm)] bg-card p-3">
               <div className="jp font-black text-sm mb-1">他動詞 + ておく</div>
               <Furigana className="text-sm font-bold" kanji="窓を開けておきます。" kana="まどをあけておきます。" />
               <p className="text-xs text-muted mt-2 leading-relaxed">{t('transitivity.teOkuNote')}</p>
@@ -148,8 +148,8 @@ export function Transitivity() {
                 <button
                   key={g.id}
                   onClick={() => navigate(`/grammar?point=${g.id}`)}
-                  className="group shrink-0 w-56 text-left border-3 border-structural bg-paper p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
-                  style={{ borderLeftWidth: '6px', borderLeftColor: 'var(--color-blue)' }}
+                  className="group shrink-0 w-56 text-left border-3 border-structural bg-card p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
+                  style={{ borderLeftWidth: '3px', borderLeftColor: 'var(--color-blue)' }}
                 >
                   <div className="flex items-start justify-between gap-2">
                     <div className="jp font-bold text-sm leading-snug">{g.pattern}</div>
@@ -181,7 +181,7 @@ export function Transitivity() {
                   key={pt.id}
                   onClick={() => setActivePattern(active ? null : pt.id)}
                   className={`text-left border-3 p-3 cursor-pointer transition-[background-color,border-color,box-shadow,transform] ${
-                    active ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5'
+                    active ? 'border-accent bg-accent text-accent-fg' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)]'
                   }`}
                 >
                   <div className="font-mono font-black text-sm mb-1">
@@ -207,7 +207,7 @@ export function Transitivity() {
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('transitivity.searchPlaceholder')}
-            className="w-full px-4 py-2 border-3 border-structural font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
+            className="w-full px-4 py-2 border-3 border-structural font-sans font-bold text-sm bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
           />
         </div>
 
@@ -281,14 +281,14 @@ function VerbHalfRow({
           <SpeakButton text={half.kana} />
         </span>
         <span
-          className="font-mono shrink-0 text-[10px] font-black uppercase tracking-widest px-2 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] text-paper"
+          className="font-mono shrink-0 text-[10px] font-black uppercase tracking-widest px-2 py-0.5 border border-structural rounded-full border-transparent text-white"
           style={{ backgroundColor: color }}
         >
           {label} {particle}
         </span>
       </div>
       <div className="text-sm font-bold text-muted mb-2">{localize(half.meaning)}</div>
-      <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
+      <div className="border border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
         <div className="flex items-start gap-1.5">
           <Furigana className="text-sm font-bold" kanji={half.example.ja} kana={half.example.kana} />
           <SpeakButton text={half.example.ja} />

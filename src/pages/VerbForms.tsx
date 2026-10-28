@@ -34,7 +34,7 @@ function GroupBadge({ group, l }: { group: VerbGroupId; l: L }) {
     3: l("Nhóm 3 (bất quy tắc)", "Group 3 (irregular)"),
   }
   return (
-    <span className="inline-block border-2 border-structural px-2 py-0.5 text-xs font-black" style={{ backgroundColor: groupAccent(group) }}>
+    <span className="inline-block border border-structural px-2 py-0.5 text-xs font-black" style={{ backgroundColor: groupAccent(group) }}>
       {names[group]}
     </span>
   )
@@ -57,7 +57,7 @@ function ConjugationGrid({ dict, group, l }: { dict: string; group: VerbGroupId;
   return (
     <div>
       {endsRu && (
-        <div className="mb-2 text-sm font-bold border-2 border-structural px-3 py-2" style={{ backgroundColor: group === 1 ? "var(--color-yellow)" : "var(--color-blue)", color: "var(--color-ink)" }}>
+        <div className="mb-2 text-sm font-bold border border-structural px-3 py-2" style={{ backgroundColor: group === 1 ? "var(--color-yellow)" : "var(--color-blue)", color: "var(--color-ink)" }}>
           {group === 1
             ? l("Nhóm 1: る → り + ます (thêm り, KHÔNG chỉ bỏ る)", "Group 1: る → り + ます (add り, do NOT just drop る)")
             : l("Nhóm 2: bỏ る rồi thêm ます (không có り)", "Group 2: drop る and add ます (no り)")}
@@ -65,7 +65,7 @@ function ConjugationGrid({ dict, group, l }: { dict: string; group: VerbGroupId;
       )}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
         {rows.map(([label, value]) => (
-          <div key={label} className="border-2 border-structural bg-paper px-2.5 py-2">
+          <div key={label} className="border border-structural bg-card px-2.5 py-2">
             <div className="text-[10px] font-black uppercase tracking-wider text-muted">{label}</div>
             <div className="jp font-black text-base">{value}</div>
           </div>
@@ -90,14 +90,14 @@ function GroupChecker({ l, localize }: { l: L; localize: (m: { vi: string; en: s
         onChange={e => setInput(e.target.value)}
         placeholder={l("Ví dụ: 帰る, きる, 起きます…", "e.g. 帰る, きる, 起きます…")}
         aria-label={l("Nhập một động từ", "Enter a verb")}
-        className="jp w-full border-3 border-structural bg-paper px-4 py-3 text-lg font-bold"
+        className="jp w-full border-3 border-structural bg-card px-4 py-3 text-lg font-bold"
         autoComplete="off"
         autoCapitalize="off"
         spellCheck={false}
       />
       <div className="flex flex-wrap gap-2 mt-3">
         {EXAMPLES.map(ex => (
-          <button key={ex} onClick={() => setInput(ex)} className="jp border-2 border-structural bg-paper px-3 py-1.5 text-sm font-bold cursor-pointer active:translate-y-px">
+          <button key={ex} onClick={() => setInput(ex)} className="jp border border-structural bg-card px-3 py-1.5 text-sm font-bold cursor-pointer active:translate-y-px">
             {ex}
           </button>
         ))}
@@ -105,7 +105,7 @@ function GroupChecker({ l, localize }: { l: L; localize: (m: { vi: string; en: s
 
       <div aria-live="polite" className="mt-4">
         {result && result.status !== "ambiguous" && result.group && result.dict && (
-          <div className="border-3 border-structural bg-paper p-3 sm:p-4">
+          <div className="border-3 border-structural bg-card p-3 sm:p-4">
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className="jp text-2xl font-black">{result.dict}</span>
               <GroupBadge group={result.group} l={l} />
@@ -116,13 +116,13 @@ function GroupChecker({ l, localize }: { l: L; localize: (m: { vi: string; en: s
           </div>
         )}
         {result && result.status === "ambiguous" && (
-          <div className="border-3 border-structural bg-paper p-3 sm:p-4">
+          <div className="border-3 border-structural bg-card p-3 sm:p-4">
             <p className="text-sm font-bold mb-3">{localize(result.reason)}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {(result.candidates ?? []).map(c => {
                 const conj = conjugate(c.dict, c.group)
                 return (
-                  <div key={c.group + c.dict} className="border-2 border-structural p-3" style={{ borderLeftWidth: 6, borderLeftColor: groupAccent(c.group) }}>
+                  <div key={c.group + c.dict} className="border border-structural p-3" style={{ borderLeftWidth: 3, borderLeftColor: groupAccent(c.group) }}>
                     <div className="flex flex-wrap items-center gap-2 mb-1">
                       <span className="jp text-xl font-black">{c.dict}</span>
                       <GroupBadge group={c.group} l={l} />
@@ -136,7 +136,7 @@ function GroupChecker({ l, localize }: { l: L; localize: (m: { vi: string; en: s
           </div>
         )}
         {result && result.status === "unknown" && (
-          <p className="text-sm font-bold border-2 border-structural bg-surface px-3 py-2">{localize(result.reason)}</p>
+          <p className="text-sm font-bold border border-structural bg-surface px-3 py-2">{localize(result.reason)}</p>
         )}
       </div>
     </section>
@@ -174,7 +174,7 @@ function RuleCards({ l }: { l: L }) {
       <h2 className="font-black text-lg sm:text-xl mb-3">{l("3 nhóm động từ trong 1 phút", "The 3 verb groups in a minute")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {cards.map(c => (
-          <div key={c.group} className="border-3 border-structural bg-paper overflow-hidden">
+          <div key={c.group} className="border-3 border-structural bg-card overflow-hidden">
             <div className="px-3 py-2 border-b-3 border-structural font-black text-sm" style={{ backgroundColor: groupAccent(c.group) }}>{c.title}</div>
             <div className="p-3 space-y-2 text-sm">
               <p><span className="font-black">{l("Nhận biết: ", "Spot it: ")}</span>{c.test}</p>
@@ -194,7 +194,7 @@ function VerbChip({ verb, group }: { verb: TrapVerb; group: VerbGroupId }) {
   const { localize } = useTranslation()
   const c = conjugate(verb.kanji === verb.kana ? verb.kana : verb.kanji, group)
   return (
-    <div className="border-2 border-structural bg-paper px-3 py-2" style={{ borderLeftWidth: 6, borderLeftColor: groupAccent(group) }}>
+    <div className="border border-structural bg-card px-3 py-2" style={{ borderLeftWidth: 3, borderLeftColor: groupAccent(group) }}>
       <div className="flex items-center gap-1.5">
         <Furigana className="text-lg font-black" kanji={verb.kanji} kana={verb.kana} />
         <SpeakButton text={verb.kana} />
@@ -250,8 +250,8 @@ function ConfusionSection({ l, localize }: { l: L; localize: (m: { vi: string; e
           <li>{l("NHƯNG khoảng 20 từ đuôi い / え vẫn là nhóm 1 (帰る, 入る, 走る, 知る, 切る…): phải đổi る → り + ます (帰ります). Xem danh sách ngay bên dưới.", "BUT about 20 verbs ending in い / え are still group 1 (帰る, 入る, 走る, 知る, 切る…): they need る → り + ます (帰ります). See the list right below.")}</li>
         </ol>
         <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-          <div className="border-2 border-structural bg-paper px-3 py-2"><span className="jp font-black">帰る → 帰ります</span> <span className="text-muted">{l("(nhóm 1, thêm り)", "(group 1, add り)")}</span></div>
-          <div className="border-2 border-red bg-red/5 px-3 py-2"><span className="jp font-black text-red">帰る → ✗帰ます</span> <span className="text-muted">{l("(sai, đây là cách chia của nhóm 2)", "(wrong, that is the group 2 pattern)")}</span></div>
+          <div className="border border-structural bg-card px-3 py-2"><span className="jp font-black">帰る → 帰ります</span> <span className="text-muted">{l("(nhóm 1, thêm り)", "(group 1, add り)")}</span></div>
+          <div className="border border-red bg-red/5 px-3 py-2"><span className="jp font-black text-red">帰る → ✗帰ます</span> <span className="text-muted">{l("(sai, đây là cách chia của nhóm 2)", "(wrong, that is the group 2 pattern)")}</span></div>
         </div>
       </Accordion>
 
@@ -272,7 +272,7 @@ function ConfusionSection({ l, localize }: { l: L; localize: (m: { vi: string; e
             const a = conjugate(p.ichidan.kanji, 2)
             const b = conjugate(p.godan.kanji, 1)
             return (
-              <div key={p.kana} className="border-2 border-structural bg-paper p-3">
+              <div key={p.kana} className="border border-structural bg-card p-3">
                 <div className="jp text-xs font-black text-muted mb-2">{p.kana}</div>
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between gap-2" style={{ borderLeft: `6px solid ${groupAccent(2)}`, paddingLeft: 8 }}>
@@ -355,7 +355,7 @@ export function VerbForms() {
                 onClick={() => setActiveForm(f.id)}
                 aria-pressed={activeForm === f.id}
                 className={`snap-start shrink-0 px-3 py-2 border-3 text-left cursor-pointer transition-colors ${
-                  activeForm === f.id ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper'
+                  activeForm === f.id ? 'border-accent bg-accent text-accent-fg' : 'border-structural bg-paper'
                 }`}
               >
                 <div className="text-sm font-black"><Ruby text={f.titleJa} html={f.titleJaRuby} /></div>
@@ -380,7 +380,7 @@ export function VerbForms() {
             {form.rules.map((r, i) => {
               const note = localize(r.note)
               return (
-                <div key={i} className="border-3 border-structural bg-paper p-3" style={{ borderLeftWidth: '6px', borderLeftColor: groupAccent(r.group) }}>
+                <div key={i} className="border-3 border-structural bg-card p-3" style={{ borderLeftWidth: '3px', borderLeftColor: groupAccent(r.group) }}>
                   <div className="text-[10px] font-black uppercase tracking-wider text-muted mb-1">{groupLabel(r.group)}</div>
                   <div className="font-bold text-sm"><Ruby text={localize(r.rule)} html={localize(r.ruleRuby)} /></div>
                   {note && <div className="text-xs text-muted mt-1"><Ruby text={note} html={localize(r.noteRuby)} /></div>}
@@ -391,7 +391,7 @@ export function VerbForms() {
 
           {/* Group 1 special endings table (て/た forms) */}
           {form.group1Endings && (
-            <div className="border-3 border-structural bg-paper mb-5 overflow-x-auto">
+            <div className="border-3 border-structural bg-card mb-5 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-3 border-structural bg-surface">
@@ -417,7 +417,7 @@ export function VerbForms() {
           {form.examples.length > 0 && (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-5">
               {form.examples.map((ex, i) => (
-                <div key={i} className="border-2 border-structural rounded-[var(--radius-sm)] p-2 bg-paper" style={{ borderLeftWidth: '4px', borderLeftColor: groupAccent(ex.group) }}>
+                <div key={i} className="border border-structural rounded-[var(--radius-sm)] p-2 bg-card" style={{ borderLeftWidth: '3px', borderLeftColor: groupAccent(ex.group) }}>
                   <div className="text-xs text-muted"><Ruby text={ex.masu} html={ex.masuRuby} /></div>
                   <div className="font-black text-sm">→ <Ruby text={ex.result} html={ex.resultRuby} /></div>
                   {ex.resultNeg && (
@@ -467,8 +467,8 @@ export function VerbForms() {
                   <button
                     key={g.id}
                     onClick={() => navigate(`/grammar?point=${g.id}`)}
-                    className="group shrink-0 w-56 text-left border-3 border-structural bg-paper p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
-                    style={{ borderLeftWidth: '6px', borderLeftColor: 'var(--color-blue)' }}
+                    className="group shrink-0 w-56 text-left border-3 border-structural bg-card p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
+                    style={{ borderLeftWidth: '3px', borderLeftColor: 'var(--color-blue)' }}
                   >
                     <div className="flex items-start justify-between gap-2">
                       <div className="jp font-bold text-sm leading-snug">
@@ -497,13 +497,13 @@ export function VerbForms() {
             <span className="text-sm font-black text-muted w-4 text-center">{showCheatSheet ? '−' : '+'}</span>
           </button>
           {showCheatSheet && cheatSheets.map(({ label, table }) => (
-            <div key={label} className="border-3 border-structural bg-paper overflow-x-auto shadow-[var(--shadow-brutal)] mb-4 last:mb-0">
+            <div key={label} className="border-3 border-structural bg-card overflow-x-auto shadow-[var(--shadow-brutal)] mb-4 last:mb-0">
               {cheatSheets.length > 1 && (
                 <div className="px-3 py-1.5 border-b-3 border-structural bg-surface text-[10px] font-black uppercase tracking-widest text-muted">{label}</div>
               )}
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b-3 border-ink bg-ink text-paper">
+                  <tr className="border-b-3 border-accent bg-accent text-accent-fg">
                     {table.headers.map((h, i) => (
                       <th key={i} className="text-left p-3 font-black text-xs uppercase tracking-wider whitespace-nowrap">{localize(h)}</th>
                     ))}
@@ -530,7 +530,7 @@ export function VerbForms() {
           <div className="text-xs font-black uppercase tracking-wider mb-3">{t('verbForms.keyExceptions')}</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {keyExceptions.plain.map((e, i) => (
-              <div key={i} className="text-sm font-bold border-2 border-structural rounded-[var(--radius-sm)] bg-paper px-3 py-2">
+              <div key={i} className="text-sm font-bold border border-structural rounded-[var(--radius-sm)] bg-card px-3 py-2">
                 <Ruby text={localize(e)} html={localize(keyExceptions.ruby?.[i])} />
               </div>
             ))}

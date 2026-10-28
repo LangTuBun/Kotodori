@@ -8,7 +8,7 @@ export function Watermark({ char, className = "" }: { char: string; className?: 
       aria-hidden
       className={[
         "jp pointer-events-none select-none absolute leading-none",
-        "text-[clamp(9rem,22vw,17rem)] opacity-[0.055] -top-8 right-0",
+        "text-[clamp(9rem,22vw,17rem)] opacity-[0.035] -top-8 right-0",
         className,
       ].join(" ")}
     >
@@ -34,19 +34,19 @@ export function ScreenHeader({ eyebrowJa, eyebrowEn, title, description, waterma
       <div className="relative flex items-start justify-between gap-6">
         <div className="max-w-xl">
           <Reveal index={0}>
-            <p className="font-mono text-xs tracking-[0.16em] text-accent font-bold uppercase">
-              {eyebrowJa && <span className="jp mr-2 normal-case text-sm">{eyebrowJa}</span>}
-              <span className="opacity-80">· {eyebrowEn}</span>
+            <p className="text-[13px] font-semibold tracking-[0.04em] text-accent uppercase">
+              {eyebrowJa && <span className="jp mr-2 normal-case text-sm tracking-normal">{eyebrowJa}</span>}
+              <span className="opacity-75">{eyebrowEn}</span>
             </p>
           </Reveal>
           <Reveal index={1}>
-            <h1 className="font-display text-[clamp(2.1rem,5vw,3.2rem)] leading-[1.05] tracking-[-0.02em] mt-3">
+            <h1 className="font-display font-bold text-[clamp(2.1rem,5vw,3.25rem)] leading-[1.06] tracking-[-0.03em] mt-2">
               {title}
             </h1>
           </Reveal>
           {description && (
             <Reveal index={2}>
-              <p className="text-muted mt-4 leading-relaxed">{description}</p>
+              <p className="text-muted mt-3 text-[17px] leading-[1.47] tracking-[-0.01em]">{description}</p>
             </Reveal>
           )}
         </div>

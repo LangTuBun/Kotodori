@@ -28,11 +28,11 @@ export function InteractiveExampleCard({ example, showFurigana, showRomaji, acce
 
   return (
     <div
-      className="border-3 border-structural bg-paper p-4"
-      style={accentHex ? { borderLeftWidth: '6px', borderLeftColor: accentHex } : undefined}
+      className="border-3 border-structural bg-card p-4"
+      style={accentHex ? { borderLeftWidth: '3px', borderLeftColor: accentHex } : undefined}
     >
       <div className="flex items-center justify-between gap-2 mb-2">
-        <span className="text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] text-muted">
+        <span className="text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border border-structural rounded-[var(--radius-sm)] text-muted">
           {t(`grammar.examples.category.${example.category}`)}
         </span>
         {/* Reads example.ja aloud via the device voice - audioStub (a named

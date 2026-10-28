@@ -59,7 +59,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
       <div
         onClick={onClose}
         aria-hidden="true"
-        className="fixed inset-0 z-30 bg-ink/40 lg:bg-ink/30 lg:backdrop-blur-sm"
+        className="fixed inset-0 z-30 bg-black/25 lg:bg-black/20 lg:backdrop-blur-sm"
       />
       <div className="fixed inset-0 z-30 flex items-center justify-center p-4 pointer-events-none">
         <div
@@ -67,7 +67,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
           aria-modal="true"
           aria-label={t('kanjiDrawer.ariaLabel', { char: group.anchor })}
           onClick={e => e.stopPropagation()}
-          className="pointer-events-auto w-full max-w-3xl max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper"
+          className="pointer-events-auto w-full max-w-3xl max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-card"
         >
           {/* List navigation */}
           <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">
@@ -75,7 +75,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
               onClick={() => onIndexChange(index - 1)}
               disabled={!hasPrev}
               title={t('kanji.prevGroup')}
-              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ‹
             </button>
@@ -86,7 +86,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
               onClick={() => onIndexChange(index + 1)}
               disabled={!hasNext}
               title={t('kanji.nextGroup')}
-              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ›
             </button>
@@ -95,7 +95,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
           {/* Header: anchor + Hán Việt + On/Kun */}
           <div
             className="border-b-3 border-structural p-4 sm:p-6"
-            style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
+            style={{ borderLeftWidth: '3px', borderLeftColor: ACCENT_HEX[accent] }}
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-start gap-3 sm:gap-4">
@@ -108,7 +108,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
                 </button>
                 <div className="pt-2">
                   {group.hanviet && (
-                    <span className="text-sm font-black px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] bg-surface inline-block">
+                    <span className="text-sm font-black px-2 py-1 border border-structural rounded-[var(--radius-sm)] bg-surface inline-block">
                       {group.hanviet}
                     </span>
                   )}
@@ -163,7 +163,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
               {group.words.map((w, i) => (
                 <div
                   key={i}
-                  className="border-2 border-ink/15 p-3 flex flex-col gap-1 transition-shadow hover:border-structural hover:shadow-[var(--shadow-brutal)]"
+                  className="border border-ink/15 p-3 flex flex-col gap-1 transition-shadow hover:border-structural hover:shadow-[var(--shadow-brutal)]"
                 >
                   <div className="flex items-start justify-between gap-2">
                     <span className="jp font-bold text-lg leading-snug inline-flex items-center gap-1.5">

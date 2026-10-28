@@ -3,7 +3,7 @@ interface CardProps {
   className?: string
   onClick?: () => void
   accent?: 'yellow' | 'red' | 'green' | 'blue' | null
-  /** float-up hover + soft-shadow-to-hard-accent-border transition (Tori's .card-lift) */
+  /** float-up hover with a deepening soft shadow (.card-lift) */
   lift?: boolean
 }
 
@@ -15,24 +15,23 @@ const ACCENT_COLORS: Record<string, string> = {
 }
 
 export function Card({ children, className = '', onClick, accent, lift = false }: CardProps) {
-  const borderColor = accent ? ACCENT_COLORS[accent] : 'var(--color-structural)'
-  // Accent cards get a tinted shadow (40% of the accent color) instead of
-  // the default ink-tinted --shadow-brutal, so the card reads as "colored"
-  // without the shadow going full-opacity accent.
-  const shadow = accent
-    ? `4px 4px 0px color-mix(in srgb, ${borderColor} 40%, transparent)`
+  // Accent cards get a hairline in their color plus a soft glow tinted by
+  // it, so the card reads as "colored" without any heavy edge.
+  const tint = accent ? ACCENT_COLORS[accent] : null
+  const borderColor = tint ? `color-mix(in srgb, ${tint} 35%, transparent)` : 'var(--tori-hairline)'
+  const shadow = tint
+    ? `0 1px 2px rgb(0 0 0 / 0.04), 0 6px 20px color-mix(in srgb, ${tint} 14%, transparent)`
     : 'var(--shadow-brutal)'
-  const shadowHover = accent
-    ? `6px 6px 0px color-mix(in srgb, ${borderColor} 40%, transparent)`
+  const shadowHover = tint
+    ? `0 2px 4px rgb(0 0 0 / 0.05), 0 14px 36px color-mix(in srgb, ${tint} 22%, transparent)`
     : 'var(--shadow-brutal-hover)'
 
   return (
     <div
       className={[
-        'bg-card border-3 transition-[border-color,background-color,box-shadow,transform] duration-100',
-        accent ? 'tilt-card hover:rotate-0' : '',
+        'bg-card border-3 transition-[border-color,background-color,box-shadow,transform] duration-300 ease-[var(--ease-out)]',
         lift ? 'card-lift' : 'card-shadow',
-        onClick ? 'card-shadow-hover cursor-pointer hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-none active:translate-x-0.5 active:translate-y-0.5' : '',
+        onClick ? 'card-shadow-hover cursor-pointer active:scale-[0.98] active:duration-100' : '',
         className,
       ].join(' ')}
       style={{

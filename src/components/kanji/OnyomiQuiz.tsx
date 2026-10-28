@@ -78,8 +78,8 @@ export function OnyomiQuiz() {
             const isRight = correct.has(opt)
             const state =
               picked === null ? "border-structural bg-paper hover:bg-yellow/30"
-              : isRight ? "border-ink bg-green/40"
-              : opt === picked ? "border-ink bg-red/30"
+              : isRight ? "border-structural bg-green/40"
+              : opt === picked ? "border-structural bg-red/30"
               : "border-structural bg-paper opacity-60"
             return (
               <button
@@ -105,7 +105,7 @@ export function OnyomiQuiz() {
             <button
               type="button"
               onClick={next}
-              className="px-4 py-2 border-3 border-ink bg-ink text-paper font-black text-xs uppercase tracking-wider cursor-pointer"
+              className="px-4 py-2 border-3 border-accent bg-accent text-accent-fg font-black text-xs uppercase tracking-wider cursor-pointer"
             >
               {L("Câu tiếp", "Next")} →
             </button>

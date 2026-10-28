@@ -325,9 +325,9 @@
     }
   },
   "settings": {
-    "description": "Giấy nền, mật độ, kiểu chữ, ngôn ngữ và trình độ JLPT, chỉ lưu trên thiết bị này.",
-    "paperTitle": "Giấy nền & cấu trúc",
-    "paperDescription": "Chín tông giấy, mỗi tông có chế độ cấu trúc RAW (viền mảnh, sắc nét) và NEO (viền dày, bo tròn).",
+    "description": "Giao diện, mật độ, kiểu chữ, ngôn ngữ và trình độ JLPT, chỉ lưu trên thiết bị này.",
+    "paperTitle": "Giao diện",
+    "paperDescription": "Sáng, Son đỏ hoặc Tối. Mỗi giao diện đổi màu nhấn cho nút bấm, lựa chọn và phần tô sáng trên toàn ứng dụng.",
     "languageTitle": "Ngôn ngữ",
     "languageDescription": "Đổi ngôn ngữ giao diện, thanh điều hướng, nút bấm, tiêu đề. Nghĩa từ vựng/ngữ pháp cũng theo ngôn ngữ này ở những nơi đã dịch.",
     "levelTitle": "Trình độ JLPT",
@@ -337,13 +337,13 @@
     "voiceStatusFound": "Đang dùng giọng: {name}",
     "voiceStatusDefault": "Dùng giọng mặc định của thiết bị (chưa thấy giọng tiếng Nhật riêng)",
     "inkCabinet": {
-      "readingInPrefix": "Bạn đang xem giao diện với tông giấy",
+      "readingInPrefix": "Bạn đang dùng giao diện",
       "readingInSuffix": ". Lựa chọn này áp dụng cho mọi trang, chỉ lưu trên thiết bị này.",
       "density": "Mật độ",
       "densityDescription": "Thay đổi khoảng cách và cỡ chữ cơ bản trên toàn bộ ứng dụng.",
       "typeface": "Kiểu chữ",
-      "typefaceToggle": "Dùng font sans-serif cho mọi nơi",
-      "typefaceDescription": "Tiêu đề và chữ Nhật mặc định dùng font Mincho (có chân). Bật tùy chọn này để dùng một font sans-serif xuyên suốt."
+      "typefaceToggle": "Dùng font Mincho cho chữ Nhật",
+      "typefaceDescription": "Chữ Nhật mặc định dùng font Gothic gọn gàng. Bật tùy chọn này để dùng font Mincho (có chân, nét bút lông)."
     }
   }
 }

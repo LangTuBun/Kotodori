@@ -25,12 +25,12 @@ export function NotesAndTrapsCallout({ pitfalls, onJumpTo, patternById }: NotesA
         return (
           <div
             key={i}
-            className={`border-3 p-4 ${critical ? 'bg-ink text-paper border-ink' : 'border-red/60 bg-red/5'}`}
+            className={`border-3 p-4 ${critical ? 'bg-red/10 text-ink border-red/40' : 'border-red/30 bg-red/5'}`}
           >
             <div className="flex items-center gap-2 mb-1.5">
               <span
-                className={`text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border-2 rounded-[var(--radius-sm)] ${
-                  critical ? 'border-paper/40 text-paper' : 'border-red text-red'
+                className={`text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border rounded-[var(--radius-sm)] ${
+                  critical ? 'border-transparent bg-red text-white' : 'border-red/50 text-red'
                 }`}
               >
                 {critical ? '⚠ ' : ''}{t(`grammar.notes.type.${p.type}`)}
@@ -39,16 +39,16 @@ export function NotesAndTrapsCallout({ pitfalls, onJumpTo, patternById }: NotesA
             <div className="font-black text-sm mb-1.5 leading-snug">
               <LinkifiedText text={localize(p.title)} patternById={patternById ?? {}} onJumpTo={onJumpTo} />
             </div>
-            <div className={`text-sm leading-relaxed ${critical ? 'text-paper/85' : 'text-ink/80'}`}>
+            <div className={`text-sm leading-relaxed ${critical ? 'text-ink/90' : 'text-ink/80'}`}>
               <LinkifiedText text={localize(p.description)} patternById={patternById ?? {}} onJumpTo={onJumpTo} />
             </div>
 
             {p.examples && p.examples.length > 0 && (
               <div className="mt-3 space-y-2">
                 {p.examples.map((ex, j) => (
-                  <div key={j} className={`text-sm border-l-3 pl-3 ${critical ? 'border-paper/30' : 'border-red/40'}`}>
+                  <div key={j} className={`text-sm border-l-3 pl-3 ${critical ? 'border-red/40' : 'border-red/30'}`}>
                     <div className="flex items-start gap-1.5">
-                      <span className={critical ? 'text-paper/60' : 'text-red/70'}>✗</span>
+                      <span className={'text-red/70'}>✗</span>
                       <span className="jp line-through decoration-2">{ex.incorrect}</span>
                     </div>
                     <div className="flex items-start gap-1.5 mt-0.5">
@@ -56,7 +56,7 @@ export function NotesAndTrapsCallout({ pitfalls, onJumpTo, patternById }: NotesA
                       <span className="jp font-bold">{ex.correct}</span>
                     </div>
                     {ex.explanation && (
-                      <div className={`mt-0.5 text-xs ${critical ? 'text-paper/60' : 'text-muted'}`}>
+                      <div className={`mt-0.5 text-xs ${'text-muted'}`}>
                         {localize(ex.explanation)}
                       </div>
                     )}
@@ -71,7 +71,7 @@ export function NotesAndTrapsCallout({ pitfalls, onJumpTo, patternById }: NotesA
                 onClick={() => onJumpTo?.(p.relatedGrammarId!)}
                 disabled={!onJumpTo}
                 className={`mt-3 text-xs font-bold underline cursor-pointer disabled:no-underline disabled:cursor-default ${
-                  critical ? 'text-paper/80 hover:text-paper' : 'text-red hover:text-red/80'
+                  'text-red hover:text-red/80'
                 }`}
               >
                 → {patternById?.[p.relatedGrammarId] ?? p.relatedGrammarId}

@@ -215,7 +215,7 @@ function computeGroups(level: Level, vocab: readonly VocabEntry[]): SoundGroup[]
 function WordCard({ entry }: { entry: VocabEntry }) {
   const { localize } = useTranslation()
   return (
-    <div className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 flex-1 min-w-[140px] bg-paper">
+    <div className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 flex-1 min-w-[140px] bg-card">
       <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
       <div className="text-2xl font-black jp mt-3 mb-2 flex items-center gap-1.5">
         <Furigana kanji={entry.kanji} kana={entry.kana} />
@@ -270,7 +270,7 @@ export function Homophones() {
             {t('homophones.backToList')}
           </Button>
 
-          <div className="border-3 border-structural shadow-[6px_6px_0px_var(--color-yellow)] p-4 sm:p-8 mb-6">
+          <div className="border-3 border-structural shadow-[var(--shadow-brutal-hover)] p-4 sm:p-8 mb-6">
             <div className="text-center mb-6">
               <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">
                 {selected.readings.length > 1 ? t('homophones.similarSound') : t('homophones.identicalReading')}
@@ -305,7 +305,7 @@ export function Homophones() {
       ) : (
         <>
           {/* Stats */}
-          <div className="border-3 border-structural p-6 shadow-[5px_5px_0px_var(--color-yellow)] mb-8 flex items-center gap-8">
+          <div className="border-3 border-structural p-6 shadow-[var(--shadow-brutal-hover)] mb-8 flex items-center gap-8">
             <div>
               <div className="font-black text-2xl">{trueHomophones.length}</div>
               <div className="text-xs text-muted font-bold uppercase tracking-wider">{t('homophones.exactHomophones')}</div>
@@ -358,7 +358,7 @@ const GroupCard = memo(function GroupCard({ group, idx, onSelect }: { group: Sou
   return (
     <button
       onClick={() => onSelect(group)}
-      className="border-3 border-structural p-4 text-left shadow-[var(--shadow-brutal)] hover:shadow-[5px_5px_0px_var(--color-yellow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-[box-shadow,transform] bg-paper"
+      className="border-3 border-structural p-4 text-left shadow-[var(--shadow-brutal)] hover:shadow-[var(--shadow-brutal-hover)] transition-[box-shadow,transform] bg-card"
     >
       <div className="flex items-start gap-3">
         <div className="text-xs font-black text-muted w-6 shrink-0 pt-1">{idx + 1}</div>

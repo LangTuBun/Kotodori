@@ -180,7 +180,7 @@ export function Usage() {
                 aria-selected={active}
                 onClick={() => setTab(tb.id)}
                 className={`text-left border-3 p-3 cursor-pointer transition-[background-color,border-color,box-shadow] ${
-                  active ? "border-ink bg-ink text-paper shadow-none" : "border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)]"
+                  active ? "border-accent bg-accent text-accent-fg shadow-none" : "border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)]"
                 }`}
               >
                 <div className="flex items-center gap-2 mb-1">
@@ -200,7 +200,7 @@ export function Usage() {
           onChange={e => setSearch(e.target.value)}
           placeholder={t("usage.searchPlaceholder")}
           aria-label={t("usage.searchPlaceholder")}
-          className="w-full px-4 py-2.5 mb-5 border-3 border-structural font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
+          className="w-full px-4 py-2.5 mb-5 border-3 border-structural font-sans font-bold text-sm bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
         />
 
         {/* Topic chips: one group at a time keeps the page short */}
@@ -258,8 +258,8 @@ function ChipRow({ items, active, onPick }: { items: { id: string; label: string
             key={it.id}
             onClick={() => onPick(it.id)}
             aria-pressed={active === it.id}
-            className={`snap-start shrink-0 border-2 px-3 py-1.5 text-sm font-bold cursor-pointer whitespace-nowrap ${
-              active === it.id ? "border-ink bg-ink text-paper" : "border-structural bg-paper"
+            className={`snap-start shrink-0 border px-3 py-1.5 text-sm font-bold cursor-pointer whitespace-nowrap ${
+              active === it.id ? "border-accent bg-accent text-accent-fg" : "border-structural bg-paper"
             }`}
           >
             {it.label} <span className="opacity-60 text-xs">{it.count}</span>
@@ -283,7 +283,7 @@ function TrapBox({ label, text }: { label: string; text: string }) {
 
 function WearQuickPick({ l, localize }: { l: L; localize: Localize }) {
   return (
-    <div className="border-3 border-structural bg-paper mb-4">
+    <div className="border-3 border-structural bg-card mb-4">
       <div className="px-3 py-2 border-b-3 border-structural bg-surface font-black text-sm">
         {l("Chọn nhanh theo vị trí trên cơ thể", "Quick pick by body part")}
       </div>
@@ -296,7 +296,7 @@ function WearQuickPick({ l, localize }: { l: L; localize: Localize }) {
                 <button
                   key={v}
                   onClick={() => scrollToEntry(`word-${v}`)}
-                  className="jp border-2 border-structural bg-card px-2.5 py-0.5 font-black cursor-pointer"
+                  className="jp border border-structural bg-card px-2.5 py-0.5 font-black cursor-pointer"
                 >
                   {v}
                 </button>
@@ -345,7 +345,7 @@ const SynonymGroupBlock = memo(function SynonymGroupBlock({
                 </div>
                 <div className="text-sm font-bold text-muted mb-2">{localize(w.meaning)}</div>
                 <p className="text-sm leading-relaxed mb-3">{localize(w.nuance)}</p>
-                <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
+                <div className="border border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
                   <div className="flex items-start gap-1.5">
                     <Furigana className="text-sm font-bold" kanji={w.example.ja} kana={w.example.kana} />
                     <SpeakButton text={w.example.ja} />
@@ -380,7 +380,7 @@ const CollocationGroupBlock = memo(function CollocationGroupBlock({
                 <div className="flex items-center justify-between gap-2 mb-1.5">
                   <span className="jp font-mono font-black text-base">{e.pattern}</span>
                   <span
-                    className="shrink-0 text-[10px] font-black w-6 h-6 flex items-center justify-center border-2 border-structural rounded-full text-paper jp"
+                    className="shrink-0 text-[10px] font-black w-6 h-6 flex items-center justify-center rounded-full text-white jp"
                     style={{ backgroundColor: PARTICLE_COLOR[e.particle] ?? "var(--color-muted)" }}
                   >
                     {e.particle}
@@ -391,7 +391,7 @@ const CollocationGroupBlock = memo(function CollocationGroupBlock({
                   <span className="text-muted font-normal">{localize(e.verb.meaning)}</span>
                 </div>
                 <p className="text-sm leading-relaxed mt-2 mb-3">{localize(e.explanation)}</p>
-                <div className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
+                <div className="border border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
                   <div className="flex items-start gap-1.5">
                     <Furigana className="text-sm font-bold" kanji={e.example.ja} kana={e.example.kana} />
                     <SpeakButton text={e.example.ja} />
@@ -439,7 +439,7 @@ const AuxiliaryVerbCard = memo(function AuxiliaryVerbCard({
         <p className="text-sm leading-relaxed mb-3">{localize(entry.nuance)}</p>
         <div className="space-y-2">
           {entry.examples.map((ex, i) => (
-            <div key={i} className="border-2 border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
+            <div key={i} className="border border-structural rounded-[var(--radius-sm)] bg-surface px-3 py-2">
               <div className="flex items-start gap-1.5">
                 <Furigana className="text-sm font-bold" kanji={ex.ja} kana={ex.kana} />
                 <SpeakButton text={ex.ja} />
@@ -455,8 +455,8 @@ const AuxiliaryVerbCard = memo(function AuxiliaryVerbCard({
               <button
                 key={g.id}
                 onClick={() => navigate(`/grammar?point=${g.id}`)}
-                className="group shrink-0 w-48 text-left border-3 border-structural bg-paper p-2.5 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)] hover:-translate-x-0.5 hover:-translate-y-0.5"
-                style={{ borderLeftWidth: "6px", borderLeftColor: "var(--color-blue)" }}
+                className="group shrink-0 w-48 text-left border-3 border-structural bg-card p-2.5 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
+                style={{ borderLeftWidth: "3px", borderLeftColor: "var(--color-blue)" }}
               >
                 <div className="flex items-start justify-between gap-1.5">
                   <div className="jp font-bold text-xs leading-snug">{g.pattern}</div>

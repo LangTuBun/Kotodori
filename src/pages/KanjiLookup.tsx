@@ -14,7 +14,7 @@ function KanjiTile({ record, onOpen }: { record: KanjiRecord; onOpen: (c: string
   return (
     <button
       onClick={() => onOpen(record.char)}
-      className="border-2 border-structural bg-card p-2 text-left cursor-pointer hover:shadow-[var(--shadow-brutal)] transition-shadow"
+      className="border border-structural bg-card p-2 text-left cursor-pointer hover:shadow-[var(--shadow-brutal)] transition-shadow"
     >
       <div className="flex items-baseline justify-between gap-2">
         <span className="jp text-3xl font-black leading-none">{record.char}</span>
@@ -76,7 +76,7 @@ export function KanjiLookup() {
             <button
               key={id}
               onClick={() => setMode(id)}
-              className={`px-3 py-1.5 border-2 border-structural text-xs font-black uppercase tracking-wider cursor-pointer ${mode === id ? "bg-ink text-paper" : "bg-card"}`}
+              className={`px-3 py-1.5 border border-structural text-xs font-black uppercase tracking-wider cursor-pointer ${mode === id ? "bg-surface text-ink" : "bg-card"}`}
             >
               {id === "search" ? L("Tìm kiếm", "Search") : L("Vẽ tay", "Draw")}
             </button>
@@ -109,10 +109,10 @@ export function KanjiLookup() {
           <div className="w-full md:w-80 shrink-0">
             <DrawPad strokes={strokes} onChange={setStrokes} className="w-full aspect-square" />
             <div className="flex gap-2 mt-3">
-              <button onClick={() => setStrokes(s => s.slice(0, -1))} disabled={strokes.length === 0} className="px-3 py-1.5 border-2 border-structural bg-card text-xs font-black disabled:opacity-40 cursor-pointer">
+              <button onClick={() => setStrokes(s => s.slice(0, -1))} disabled={strokes.length === 0} className="px-3 py-1.5 border border-structural bg-card text-xs font-black disabled:opacity-40 cursor-pointer">
                 {L("Hoàn tác nét", "Undo stroke")}
               </button>
-              <button onClick={() => setStrokes([])} disabled={strokes.length === 0} className="px-3 py-1.5 border-2 border-structural bg-card text-xs font-black disabled:opacity-40 cursor-pointer">
+              <button onClick={() => setStrokes([])} disabled={strokes.length === 0} className="px-3 py-1.5 border border-structural bg-card text-xs font-black disabled:opacity-40 cursor-pointer">
                 {L("Xóa hết", "Clear")}
               </button>
               <span className="text-xs font-bold text-muted self-center">{L(`${strokes.length} nét`, `${strokes.length} strokes`)}</span>
@@ -133,7 +133,7 @@ export function KanjiLookup() {
                 return rec ? (
                   <KanjiTile key={c} record={rec} onOpen={setDrawerChar} />
                 ) : (
-                  <button key={c} onClick={() => setDrawerChar(c)} className="border-2 border-structural bg-card p-2 cursor-pointer">
+                  <button key={c} onClick={() => setDrawerChar(c)} className="border border-structural bg-card p-2 cursor-pointer">
                     <span className="jp text-3xl font-black">{c}</span>
                   </button>
                 )

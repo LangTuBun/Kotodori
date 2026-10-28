@@ -194,7 +194,7 @@ export function Grammar() {
         <Watermark char="法" />
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 bg-surface flex-wrap items-center">
-          <div role="group" aria-label="JLPT level" className="inline-flex border-2 border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
+          <div role="group" aria-label="JLPT level" className="inline-flex border border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
             {LEVELS.map(({ value, label }, i) => (
               <button
                 key={value}
@@ -203,7 +203,7 @@ export function Grammar() {
                 onClick={() => setLevel(value)}
                 className={`px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
                   i > 0 ? 'border-l-2 border-structural' : ''
-                } ${level === value ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                } ${level === value ? 'bg-surface text-ink' : 'bg-paper hover:bg-surface'}`}
               >
                 {label}
               </button>
@@ -213,11 +213,11 @@ export function Grammar() {
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('grammar.searchPlaceholder')}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-bold text-sm bg-paper focus:outline-none"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-bold text-sm bg-card focus:outline-none"
           />
           <button
             onClick={() => setShowTips(s => !s)}
-            className={`px-3 py-2 border-3 font-bold text-xs uppercase tracking-wider cursor-pointer transition-colors ${showTips ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:bg-yellow'}`}
+            className={`px-3 py-2 border-3 font-bold text-xs uppercase tracking-wider cursor-pointer transition-colors ${showTips ? 'border-accent bg-accent text-accent-fg' : 'border-structural bg-card hover:bg-yellow'}`}
           >
             {t('grammar.tips')}
           </button>
@@ -230,7 +230,7 @@ export function Grammar() {
               aria-valuemin={0}
               aria-valuemax={grammar.length}
               aria-valuenow={learnedCount}
-              className="flex-1 h-2 border-2 border-structural bg-paper"
+              className="flex-1 h-2 border border-structural bg-card"
             >
               <div className="h-full bg-green" style={{ width: `${grammar.length ? (learnedCount / grammar.length) * 100 : 0}%` }} />
             </div>
@@ -255,7 +255,7 @@ export function Grammar() {
           <div className="w-full flex gap-2 flex-wrap">
             <button
               onClick={() => setCat(null)}
-              className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${cat === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+              className={`px-3 py-1.5 border rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${cat === null ? 'border-accent bg-accent text-accent-fg' : 'border-structural hover:bg-surface'}`}
             >
               {t('common.all')}
             </button>
@@ -263,7 +263,7 @@ export function Grammar() {
               <button
                 key={c.slug}
                 onClick={() => setCat(prev => prev === c.slug ? null : c.slug)}
-                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${cat === c.slug ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+                className={`px-3 py-1.5 border rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${cat === c.slug ? 'border-accent bg-accent text-accent-fg' : 'border-structural hover:bg-surface'}`}
                 title={localize(c.title)}
               >
                 {c.romanNumeral} <span className="opacity-60">({c.count})</span>
@@ -282,7 +282,7 @@ export function Grammar() {
                 <button
                   key={f.id}
                   onClick={() => setVerbForm(prev => prev === f.id ? null : f.id)}
-                  className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'bg-blue text-paper' : 'hover:bg-surface'}`}
+                  className={`px-3 py-1.5 border border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'bg-blue text-white border-transparent' : 'hover:bg-surface'}`}
                   title={localize(f.title)}
                 >
                   {f.titleJa}
@@ -309,7 +309,7 @@ export function Grammar() {
                   <button
                     key={tn}
                     onClick={() => setTone(prev => prev === tn ? null : tn)}
-                    className={`px-3 py-1.5 border-2 border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'bg-green text-paper' : 'hover:bg-surface'}`}
+                    className={`px-3 py-1.5 border border-structural rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${active ? 'bg-green text-white border-transparent' : 'hover:bg-surface'}`}
                   >
                     {t(`grammar.tone.${tn}`)}
                   </button>
@@ -359,7 +359,7 @@ export function Grammar() {
                   className="w-full flex items-center gap-3 mb-3 text-left cursor-pointer group"
                 >
                   <span
-                    className="text-xs font-black px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] shrink-0"
+                    className="text-xs font-black px-2 py-1 border border-structural rounded-[var(--radius-sm)] shrink-0"
                     style={{ backgroundColor: ACCENT_HEX[accent] }}
                   >
                     {c.romanNumeral}
@@ -390,7 +390,7 @@ export function Grammar() {
                     of the whole chapter reads wrong sitting under a filtered
                     subset of it. */}
                 {!isCollapsed && c.summary && items.length === c.count && (
-                  <div className="mt-4 border-3 border-structural bg-surface p-4 sm:p-6">
+                  <div className="mt-4 rounded-[var(--radius)] bg-surface p-4 sm:p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-xs font-black uppercase tracking-widest shrink-0">{t('grammar.chapterSummary.title')}</span>
                       <div className="flex-1 border-t-2 border-structural" />
@@ -404,7 +404,7 @@ export function Grammar() {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                           {c.summary.examples.map((ex, i) => (
-                            <div key={i} className="bg-paper border-2 border-structural p-3" style={{ borderLeftWidth: '4px', borderLeftColor: ACCENT_HEX[accent] }}>
+                            <div key={i} className="bg-card border border-structural p-3" style={{ borderLeftWidth: '3px', borderLeftColor: ACCENT_HEX[accent] }}>
                               <div className="text-[10px] font-bold uppercase tracking-wider text-muted mb-1.5">{ex.pattern}</div>
                               <div className="jp font-bold text-base leading-snug"><Furigana kanji={ex.ja} kana={ex.kana} /></div>
                               <div className="text-sm text-muted mt-1.5">{localize(ex)}</div>
@@ -429,7 +429,7 @@ export function Grammar() {
           <div className="p-6 border-b-3 border-structural">
             <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-black px-2 py-0.5 border-2 border-structural rounded-[var(--radius-sm)]" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
+              <span className="text-xs font-black px-2 py-0.5 border border-structural rounded-[var(--radius-sm)]" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
                 {categories.find(c => c.slug === selected.category)?.romanNumeral}
               </span>
               <span className="text-xs font-bold uppercase tracking-wider text-muted">#{selected.num} · {localize(categories.find(c => c.slug === selected.category)?.title)}</span>
@@ -446,7 +446,7 @@ export function Grammar() {
               aria-pressed={!!learned[selected.id]}
               onClick={() => toggleLearned(selected.id)}
               className={`mt-3 px-3 py-1.5 border-3 text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
-                learned[selected.id] ? 'border-ink bg-green text-ink' : 'border-structural bg-paper hover:bg-yellow'
+                learned[selected.id] ? 'border-structural bg-green text-ink' : 'border-structural bg-paper hover:bg-yellow'
               }`}
             >
               {learned[selected.id] ? `✓ ${t('grammar.learned')}` : t('grammar.markLearned')}
@@ -455,7 +455,7 @@ export function Grammar() {
             {selected.pragmatics && selected.pragmatics.tones.length > 0 && (
               <div className="mt-3 flex flex-wrap gap-1.5">
                 {selected.pragmatics.tones.map(tn => (
-                  <span key={tn} className="text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] text-muted">
+                  <span key={tn} className="text-[10px] font-black uppercase tracking-widest px-1.5 py-0.5 border border-structural rounded-[var(--radius-sm)] text-muted">
                     {t(`grammar.tone.${tn}`)}
                   </span>
                 ))}
@@ -494,7 +494,7 @@ export function Grammar() {
                     type="button"
                     aria-pressed={showFurigana}
                     onClick={() => setShowFurigana(s => !s)}
-                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-colors ${showFurigana ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                    className={`px-2 py-1 border border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-colors ${showFurigana ? 'bg-surface text-ink' : 'bg-card hover:bg-surface'}`}
                   >
                     {t('grammar.examples.showFurigana')}
                   </button>
@@ -502,7 +502,7 @@ export function Grammar() {
                     type="button"
                     aria-pressed={showRomaji}
                     onClick={() => setShowRomaji(s => !s)}
-                    className={`px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-colors ${showRomaji ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                    className={`px-2 py-1 border border-structural rounded-[var(--radius-sm)] text-[10px] font-black uppercase tracking-wider cursor-pointer transition-colors ${showRomaji ? 'bg-surface text-ink' : 'bg-card hover:bg-surface'}`}
                   >
                     {t('grammar.examples.showRomaji')}
                   </button>
@@ -550,7 +550,7 @@ export function Grammar() {
                   <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-1.5">{t('grammar.related')}</div>
                   <div className="flex flex-wrap gap-1.5">
                     {selected.relatedGrammar.map(id => (
-                      <button key={id} onClick={() => jumpTo(id)} className="jp px-2 py-1 border-2 border-structural rounded-[var(--radius-sm)] text-xs font-bold hover:bg-surface cursor-pointer">
+                      <button key={id} onClick={() => jumpTo(id)} className="jp px-2 py-1 border border-structural rounded-[var(--radius-sm)] text-xs font-bold hover:bg-surface cursor-pointer">
                         {patternById[id] ?? id}
                       </button>
                     ))}
@@ -562,7 +562,7 @@ export function Grammar() {
                   <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-1.5">{t('grammar.opposing')}</div>
                   <div className="flex flex-wrap gap-1.5">
                     {selected.opposingGrammar.map(id => (
-                      <button key={id} onClick={() => jumpTo(id)} className="jp px-2 py-1 border-2 border-red/50 rounded-[var(--radius-sm)] text-xs font-bold text-red hover:bg-red/10 cursor-pointer">
+                      <button key={id} onClick={() => jumpTo(id)} className="jp px-2 py-1 border border-red/50 rounded-[var(--radius-sm)] text-xs font-bold text-red hover:bg-red/10 cursor-pointer">
                         {patternById[id] ?? id}
                       </button>
                     ))}
@@ -595,16 +595,16 @@ const GrammarCard = memo(function GrammarCard({ g, accent, selected, learned, on
       <button
         onClick={() => onSelect(g)}
         className={`w-full text-left p-3 border-3 transition-[background-color,border-color,box-shadow,transform] duration-100 cursor-pointer ${
-          selected ? 'border-ink bg-ink text-paper' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal)] hover:-translate-x-0.5 hover:-translate-y-0.5'
+          selected ? 'border-accent bg-accent text-accent-fg' : 'border-structural bg-card hover:shadow-[var(--shadow-brutal)]'
         }`}
-        style={!selected ? { borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] } : undefined}
+        style={!selected ? { borderLeftWidth: '3px', borderLeftColor: ACCENT_HEX[accent] } : undefined}
       >
         {g.requiredVerbForm?.length > 0 && (
           <div className="absolute top-1.5 right-1.5 flex gap-1">
             {g.requiredVerbForm.map(f => (
               <span
                 key={f}
-                className={`text-[9px] font-black px-1.5 py-0.5 border ${selected ? 'border-paper/40 text-paper/80' : 'border-ink bg-blue text-paper'}`}
+                className={`text-[9px] font-black px-1.5 py-0.5 border ${selected ? 'border-white/40 text-accent-fg/80' : 'border-transparent bg-blue text-white'}`}
               >
                 {f}
               </span>
@@ -612,14 +612,14 @@ const GrammarCard = memo(function GrammarCard({ g, accent, selected, learned, on
           </div>
         )}
         <div className="flex items-start gap-2">
-          <span className={`text-[10px] font-black shrink-0 pt-0.5 ${selected ? 'text-paper/60' : 'text-muted'}`}>
+          <span className={`text-[10px] font-black shrink-0 pt-0.5 ${selected ? 'text-accent-fg/70' : 'text-muted'}`}>
             {learned ? '✓' : '#'}{learned ? '' : g.num}
           </span>
           <div className="flex-1 min-w-0">
             <div className="font-black text-sm leading-snug break-words pr-14">
               <Ruby text={g.pattern} html={g.patternRuby} />
             </div>
-            <div className={`text-xs mt-1 ${selected ? 'text-paper/70' : 'text-muted'}`}>
+            <div className={`text-xs mt-1 ${selected ? 'text-accent-fg/75' : 'text-muted'}`}>
               {localize(g.meaning) || '-'}
             </div>
           </div>
@@ -631,11 +631,11 @@ const GrammarCard = memo(function GrammarCard({ g, accent, selected, learned, on
           this only shows at `lg`+ where a real mouse hover is available. */}
       {ex && (
         <div className="hidden lg:block pointer-events-none absolute left-0 right-0 top-full mt-1.5 z-30 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-[opacity,visibility,transform] duration-150">
-          <div className="bg-ink text-paper border-3 border-ink shadow-[var(--shadow-brutal)] p-3">
+          <div className="bg-surface text-ink border-3 border-structural shadow-[var(--shadow-brutal)] p-3">
             <div className="font-bold text-sm leading-snug">
               <Ruby text={ex.ja} html={ex.jaRuby} />
             </div>
-            {ex.vi && <div className="text-xs text-paper/70 mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>}
+            {ex.vi && <div className="text-xs text-muted mt-1">{localize({ vi: ex.vi, en: ex.en })}</div>}
           </div>
         </div>
       )}

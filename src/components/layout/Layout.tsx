@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
 import { Outlet, useLocation } from "react-router-dom"
 import { Sidebar } from "./Sidebar"
-import { Furigana } from "@/components/ui/Furigana"
 import { cancelSpeech } from "@/lib/speech"
 
 export function Layout() {
@@ -43,7 +42,7 @@ export function Layout() {
           rather than pages having to guess a header height to pad around.
           Hidden at lg+ where the sidebar is always visible. */}
       <header
-        className="lg:hidden flex items-center gap-3 border-b-3 border-structural bg-paper pb-2.5 shrink-0"
+        className="lg:hidden material-thin flex items-center gap-3 border-b border-[var(--tori-hairline)] pb-2.5 shrink-0"
         style={{
           paddingTop: "max(0.625rem, env(safe-area-inset-top))",
           paddingLeft: "max(1rem, env(safe-area-inset-left))",
@@ -55,18 +54,18 @@ export function Layout() {
           onClick={() => setNavOpen(true)}
           aria-label="Open menu"
           aria-expanded={navOpen}
-          className="flex flex-col justify-center gap-1 w-10 h-10 border-2 border-structural shrink-0 cursor-pointer"
+          className="flex flex-col justify-center gap-[5px] size-10 -ml-1 rounded-full text-accent shrink-0 cursor-pointer active:bg-accent/10 active:scale-90 transition-transform"
         >
-          <span className="block h-0.5 w-5 mx-auto bg-current" />
-          <span className="block h-0.5 w-5 mx-auto bg-current" />
-          <span className="block h-0.5 w-5 mx-auto bg-current" />
+          <span className="block h-[2px] w-5 mx-auto rounded-full bg-current" />
+          <span className="block h-[2px] w-5 mx-auto rounded-full bg-current" />
+          <span className="block h-[2px] w-5 mx-auto rounded-full bg-current" />
         </button>
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-display tracking-tighter leading-none">
-            <Furigana kanji="鳥" kana="とり" />
+          <span className="jp size-7 rounded-[8px] bg-accent text-accent-fg flex items-center justify-center text-sm font-bold leading-none">
+            鳥
           </span>
-          <span className="font-mono text-xs font-black uppercase tracking-widest text-muted whitespace-nowrap">
-            [ TORI ]
+          <span className="text-[17px] font-semibold tracking-[-0.02em] whitespace-nowrap">
+            Tori
           </span>
         </div>
       </header>
@@ -75,7 +74,7 @@ export function Layout() {
         {/* Backdrop, mobile only, shown while the drawer is open */}
         {navOpen && (
           <div
-            className="lg:hidden fixed inset-0 z-30 bg-ink/40"
+            className="lg:hidden fixed inset-0 z-30 scrim"
             onClick={() => setNavOpen(false)}
             aria-hidden="true"
           />

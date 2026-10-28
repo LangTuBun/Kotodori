@@ -16,8 +16,8 @@ interface SettingsStore {
   setPaper: (paper: Paper) => void
   density: Density
   setDensity: (density: Density) => void
-  typeSans: boolean
-  setTypeSans: (typeSans: boolean) => void
+  typeSerif: boolean
+  setTypeSerif: (typeSerif: boolean) => void
 }
 
 const PAPER_CLASS: Record<Paper, string> = {
@@ -31,6 +31,9 @@ function applyPaper(paper: Paper) {
   h.classList.remove(...ALL_PAPER_CLASSES)
   const cls = PAPER_CLASS[paper]
   if (cls) h.classList.add(cls)
+  // Browser/PWA chrome follows the in-app theme, not just the OS scheme.
+  const chrome = paper === 'gold' ? '#000000' : paper === 'sumi' ? '#f6f5f3' : '#f5f5f7'
+  document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.setAttribute('content', chrome))
   window.setTimeout(() => h.classList.remove('theme-transition'), 260)
 }
 
@@ -40,8 +43,8 @@ function applyDensity(density: Density) {
   if (density !== 'normal') h.classList.add('density-' + density)
 }
 
-function applyTypeSans(typeSans: boolean) {
-  document.documentElement.classList.toggle('type-sans', typeSans)
+function applyTypeSerif(typeSerif: boolean) {
+  document.documentElement.classList.toggle('type-serif', typeSerif)
 }
 
 export const useSettingsStore = create<SettingsStore>()(
@@ -62,10 +65,13 @@ export const useSettingsStore = create<SettingsStore>()(
         applyDensity(density)
         set({ density })
       },
-      typeSans: false,
-      setTypeSans: (typeSans) => {
-        applyTypeSans(typeSans)
-        set({ typeSans })
+      // Gothic is the default since the Apple-style redesign; Mincho is the
+      // opt-in. A new key (not the old typeSans) so nobody's saved "off"
+      // silently flips meaning.
+      typeSerif: false,
+      setTypeSerif: (typeSerif) => {
+        applyTypeSerif(typeSerif)
+        set({ typeSerif })
       },
     }),
     {
@@ -82,7 +88,7 @@ export const useSettingsStore = create<SettingsStore>()(
         if (!state) return
         applyPaper(state.paper)
         applyDensity(state.density)
-        applyTypeSans(state.typeSans)
+        applyTypeSerif(state.typeSerif)
       },
     }
   )

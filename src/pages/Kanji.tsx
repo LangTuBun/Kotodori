@@ -100,7 +100,7 @@ export function Kanji() {
         <Watermark char="字" />
         {/* Toolbar */}
         <div className="p-4 border-b-3 border-structural flex gap-3 bg-surface flex-wrap items-center">
-          <div role="group" aria-label="JLPT level" className="inline-flex border-2 border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
+          <div role="group" aria-label="JLPT level" className="inline-flex border border-structural rounded-[var(--radius-sm)] overflow-hidden shrink-0">
             {LEVELS.map(({ value, label }, i) => (
               <button
                 key={value}
@@ -109,7 +109,7 @@ export function Kanji() {
                 onClick={() => setLevel(value)}
                 className={`px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
                   i > 0 ? 'border-l-2 border-structural' : ''
-                } ${level === value ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+                } ${level === value ? 'bg-surface text-ink' : 'bg-paper hover:bg-surface'}`}
               >
                 {label}
               </button>
@@ -119,7 +119,7 @@ export function Kanji() {
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder={t('kanji.searchPlaceholder')}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-bold text-sm bg-paper focus:outline-none"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-bold text-sm bg-card focus:outline-none"
           />
           <div className="w-full text-xs font-bold uppercase tracking-wider text-muted">
             {t('common.wordsCount', { n: chapterKey === null ? totalWords : (visibleChapters[0]?.wordCount ?? 0) })} · {t('kanji.groupsCount', { n: filteredGroups.length })}
@@ -142,7 +142,7 @@ export function Kanji() {
         >
           <button
             onClick={() => setChapterKey(null)}
-            className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${chapterKey === null ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+            className={`px-3 py-1.5 border rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${chapterKey === null ? 'border-accent bg-accent text-accent-fg' : 'border-structural hover:bg-surface'}`}
           >
             {t('common.all')}
           </button>
@@ -152,7 +152,7 @@ export function Kanji() {
               <button
                 key={key}
                 onClick={() => setChapterKey(prev => prev === key ? null : key)}
-                className={`px-3 py-1.5 border-2 rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${chapterKey === key ? 'border-ink bg-ink text-paper' : 'border-structural hover:bg-surface'}`}
+                className={`px-3 py-1.5 border rounded-[var(--radius-sm)] font-black text-xs cursor-pointer transition-colors ${chapterKey === key ? 'border-accent bg-accent text-accent-fg' : 'border-structural hover:bg-surface'}`}
               >
                 {level === 'all' && <span className="opacity-60">{c.src} </span>}
                 {t('common.chapterN', { n: c.chapter })} <span className="opacity-60">({c.wordCount})</span>
@@ -212,8 +212,8 @@ const KanjiGroupCard = memo(function KanjiGroupCard({ group, chapterLabel, index
       role="button"
       tabIndex={0}
       onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onCardClick(index) } }}
-      className="bg-paper border-3 border-structural p-3 cursor-pointer transition-shadow hover:shadow-[var(--shadow-brutal)]"
-      style={{ borderLeftWidth: '6px', borderLeftColor: ACCENT_HEX[accent] }}
+      className="bg-card border-3 border-structural p-3 cursor-pointer transition-shadow hover:shadow-[var(--shadow-brutal)]"
+      style={{ borderLeftWidth: '3px', borderLeftColor: ACCENT_HEX[accent] }}
     >
       {/* Header: leading kanji */}
       <div className="flex items-start gap-3 mb-2 pb-2 border-b-2 border-ink/10">
@@ -227,7 +227,7 @@ const KanjiGroupCard = memo(function KanjiGroupCard({ group, chapterLabel, index
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between gap-2">
             {group.hanviet && (
-              <span className="text-xs font-black px-1.5 py-0.5 border-2 border-structural rounded-[var(--radius-sm)] bg-surface shrink-0">{group.hanviet}</span>
+              <span className="text-xs font-black px-1.5 py-0.5 border border-structural rounded-[var(--radius-sm)] bg-surface shrink-0">{group.hanviet}</span>
             )}
             <span className="text-[10px] font-bold text-muted shrink-0">Ch. {chapterLabel}</span>
           </div>

@@ -10,16 +10,14 @@ export function LevelSwitcher() {
   const { level, setLevel } = useSettingsStore()
 
   return (
-    <div role="group" aria-label="JLPT level" className="inline-flex border-2 border-structural rounded-[var(--radius-sm)] overflow-hidden">
-      {OPTIONS.map(({ value, label }, i) => (
+    <div role="group" aria-label="JLPT level" className="inline-flex bg-surface rounded-[9px] p-0.5 gap-0.5">
+      {OPTIONS.map(({ value, label }) => (
         <button
           key={value}
           type="button"
           aria-pressed={level === value}
           onClick={() => setLevel(value)}
-          className={`px-2.5 py-1 font-mono text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
-            i > 0 ? 'border-l-2 border-structural' : ''
-          } ${level === value ? 'bg-ink text-paper' : 'bg-paper hover:bg-surface'}`}
+          className={`px-2.5 py-1 rounded-[7px] text-xs cursor-pointer transition-[color,background-color,box-shadow,transform] duration-200 active:scale-95 ${level === value ? 'bg-[var(--tori-seg-pill)] text-ink font-semibold shadow-[0_1px_3px_rgb(0_0_0/0.12)]' : 'font-medium text-muted hover:text-ink'}`}
         >
           {label}
         </button>

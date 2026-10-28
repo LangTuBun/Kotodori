@@ -60,7 +60,7 @@ function StrokeExample({ char, strokes, viewBox }: { char: string; strokes: stri
   const [replayKey, setReplayKey] = useState(0)
   return (
     <button onClick={() => setReplayKey(k => k + 1)} className="text-left cursor-pointer" title="Replay">
-      <div className="border-2 border-structural bg-white w-28 sm:w-32">
+      <div className="border border-structural bg-white w-28 sm:w-32">
         <AnimatedKanjiSvg strokes={strokes} viewBox={viewBox} replayKey={replayKey} showNumbers strokeMs={450} className="w-full aspect-square" />
       </div>
       <div className="jp text-center text-sm font-black mt-1">{char}</div>
@@ -70,7 +70,7 @@ function StrokeExample({ char, strokes, viewBox }: { char: string; strokes: stri
 
 function ExampleChip({ ex, onOpen }: { ex: OnyomiExample; onOpen: (c: string) => void }) {
   return (
-    <button onClick={() => onOpen(ex.kanji)} className="border-2 border-structural bg-card px-2 py-1 text-left cursor-pointer">
+    <button onClick={() => onOpen(ex.kanji)} className="border border-structural bg-card px-2 py-1 text-left cursor-pointer">
       <span className="jp text-lg font-black">{ex.kanji}</span>
       <span className="text-xs font-bold text-muted ml-1.5">{ex.hanviet}</span>
       <span className="jp text-xs font-bold text-blue ml-1.5">{ex.on.join("・")}</span>
@@ -100,8 +100,8 @@ export function KanjiRules() {
         <div className="text-xs font-bold uppercase tracking-widest text-muted mb-2">規則</div>
         <h1 className="text-[clamp(2rem,8vw,3rem)] font-black tracking-tighter">{L("Quy tắc Kanji", "Kanji Rules")}</h1>
         <div className="flex gap-2 mt-4">
-          <a href="#stroke-order" className="px-3 py-1.5 border-2 border-structural bg-card text-xs font-black uppercase tracking-wider">{L("Quy tắc thuận bút", "Stroke order")}</a>
-          <a href="#on-yomi" className="px-3 py-1.5 border-2 border-structural bg-card text-xs font-black uppercase tracking-wider">{L("Quy tắc chuyển âm", "Sound rules")}</a>
+          <a href="#stroke-order" className="px-3 py-1.5 border border-structural bg-card text-xs font-black uppercase tracking-wider">{L("Quy tắc thuận bút", "Stroke order")}</a>
+          <a href="#on-yomi" className="px-3 py-1.5 border border-structural bg-card text-xs font-black uppercase tracking-wider">{L("Quy tắc chuyển âm", "Sound rules")}</a>
         </div>
       </div>
 
@@ -151,12 +151,12 @@ export function KanjiRules() {
               {rules.map(rule => (
                 <article key={rule.id} className="border-3 border-structural bg-card shadow-[var(--shadow-brutal)] p-4">
                   <div className="flex items-center flex-wrap gap-2 font-black text-lg">
-                    <span className="px-2 border-2 border-structural bg-yellow/30">{rule.vi}</span>
+                    <span className="px-2 border border-structural bg-yellow/30">{rule.vi}</span>
                     <span>→</span>
-                    <span className="jp px-2 border-2 border-structural bg-blue/20">{rule.ja}</span>
+                    <span className="jp px-2 border border-structural bg-blue/20">{rule.ja}</span>
                   </div>
                   <div className="mt-3 flex items-center gap-2">
-                    <div className="h-2 flex-1 border-2 border-structural bg-paper">
+                    <div className="h-2 flex-1 border border-structural bg-card">
                       <div className="h-full bg-green" style={{ width: `${rule.rate}%` }} />
                     </div>
                     <span className="text-xs font-black">{rule.rate}% ({rule.matched}/{rule.total})</span>

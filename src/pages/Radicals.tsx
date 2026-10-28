@@ -131,7 +131,7 @@ export function Radicals() {
           )}
         </p>
         <div className="flex flex-wrap items-center justify-between gap-3 mt-4">
-          <div className="inline-flex border-2 border-structural overflow-hidden">
+          <div className="inline-flex border border-structural overflow-hidden">
             {(["cards", "table"] as const).map((id, i) => (
               <button
                 key={id}
@@ -139,7 +139,7 @@ export function Radicals() {
                 onClick={() => setTab(id)}
                 className={`px-3.5 py-1.5 text-xs font-black uppercase tracking-wider cursor-pointer transition-colors ${
                   i > 0 ? "border-l-2 border-structural" : ""
-                } ${tab === id ? "bg-ink text-paper" : "bg-card hover:bg-surface"}`}
+                } ${tab === id ? "bg-surface text-ink" : "bg-card hover:bg-surface"}`}
               >
                 {id === "cards" ? "Flashcard" : L("Bảng 214 bộ", "All 214")}
               </button>
@@ -149,7 +149,7 @@ export function Radicals() {
             <span className="text-xs font-bold text-muted">
               {L(`Đã thuộc ${known.size}/${RADICALS.length}`, `Known ${known.size}/${RADICALS.length}`)}
             </span>
-            <div className="w-28 sm:w-36 h-2 border-2 border-structural bg-card overflow-hidden">
+            <div className="w-28 sm:w-36 h-2 border border-structural bg-card overflow-hidden">
               <div className="h-full bg-green transition-all" style={{ width: `${(known.size / RADICALS.length) * 100}%` }} />
             </div>
           </div>
@@ -162,14 +162,14 @@ export function Radicals() {
             <button
               type="button"
               onClick={() => { setDirection(d => (d === "glyph" ? "name" : "glyph")); setFlipped(false) }}
-              className="px-3 py-1.5 border-2 border-structural bg-card hover:bg-surface text-xs font-bold cursor-pointer transition-colors"
+              className="px-3 py-1.5 border border-structural bg-card hover:bg-surface text-xs font-bold cursor-pointer transition-colors"
             >
               {showGlyphFront ? L("Chiều: Chữ → Tên", "Mode: Glyph → Name") : L("Chiều: Tên → Chữ", "Mode: Name → Glyph")}
             </button>
             <button
               type="button"
               onClick={() => { setOrder(o => shuffled(o)); setPos(0); setFlipped(false) }}
-              className="px-3 py-1.5 border-2 border-structural bg-card hover:bg-surface text-xs font-bold cursor-pointer transition-colors"
+              className="px-3 py-1.5 border border-structural bg-card hover:bg-surface text-xs font-bold cursor-pointer transition-colors"
             >
               {L("Xáo trộn", "Shuffle")}
             </button>
@@ -177,8 +177,8 @@ export function Radicals() {
               type="button"
               aria-pressed={onlyUnknown}
               onClick={() => { setOnlyUnknown(v => !v); setPos(0); setFlipped(false) }}
-              className={`px-3 py-1.5 border-2 text-xs font-bold cursor-pointer transition-colors ${
-                onlyUnknown ? "border-ink bg-ink text-paper" : "border-structural bg-card hover:bg-surface"
+              className={`px-3 py-1.5 border text-xs font-bold cursor-pointer transition-colors ${
+                onlyUnknown ? "border-accent bg-accent text-accent-fg" : "border-structural bg-card hover:bg-surface"
               }`}
             >
               {L("Chỉ bộ chưa thuộc", "Unknown only")}
@@ -220,7 +220,7 @@ export function Radicals() {
                     <button
                       key={ch}
                       onClick={() => setDrawerChar(ch)}
-                      className="jp w-10 h-10 border-2 border-structural bg-card text-xl font-black cursor-pointer"
+                      className="jp w-10 h-10 border border-structural bg-card text-xl font-black cursor-pointer"
                     >
                       {ch}
                     </button>
@@ -257,7 +257,7 @@ export function Radicals() {
                     key={r.glyph + r.hanviet}
                     onClick={() => setDrawerChar(r.glyph)}
                     title={r.meaning}
-                    className={`border-2 border-structural p-2 text-center cursor-pointer ${known.has(r.glyph) ? "bg-green/20" : "bg-card"}`}
+                    className={`border border-structural p-2 text-center cursor-pointer ${known.has(r.glyph) ? "bg-green/20" : "bg-card"}`}
                   >
                     <div className="jp text-3xl font-black leading-tight">{r.glyph}</div>
                     <div className="text-[11px] font-bold leading-tight mt-1">{r.hanviet}</div>

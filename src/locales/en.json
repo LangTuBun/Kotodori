@@ -325,9 +325,9 @@
     }
   },
   "settings": {
-    "description": "Paper, density, typeface, language, and JLPT level, all saved to this device only.",
-    "paperTitle": "Paper & structure",
-    "paperDescription": "Nine paper tones, each with a RAW (sharp, thin-bordered) and NEO (rounded, thick-bordered) structural mode.",
+    "description": "Appearance, density, typeface, language, and JLPT level, all saved to this device only.",
+    "paperTitle": "Appearance",
+    "paperDescription": "Light, Vermilion, or Dark. Each one tints buttons, selections, and highlights across the app.",
     "languageTitle": "Language",
     "languageDescription": "Switches UI chrome, nav, buttons, headers. Vocabulary/grammar meanings follow this too where translated.",
     "levelTitle": "JLPT level",
@@ -342,8 +342,8 @@
       "density": "Density",
       "densityDescription": "Changes the spacing and base type size across every screen.",
       "typeface": "Typeface",
-      "typefaceToggle": "Use the sans face everywhere",
-      "typefaceDescription": "Headings and Japanese default to a Mincho serif. Turn this on for one sans face throughout."
+      "typefaceToggle": "Mincho for Japanese",
+      "typefaceDescription": "Japanese is set in a clean Gothic face by default. Turn this on for a brush-like Mincho serif instead."
     }
   }
 }

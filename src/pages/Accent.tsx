@@ -79,7 +79,7 @@ export function Accent() {
         onChange={e => setQuery(e.target.value)}
         placeholder={t("accent.placeholder")}
         autoFocus
-        className="jp w-full px-4 py-3 border-3 border-structural font-bold text-base bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
+        className="jp w-full px-4 py-3 border-3 border-structural font-bold text-base bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
       />
 
       <div className="mt-4 text-xs font-bold uppercase tracking-wider text-muted">
@@ -94,7 +94,7 @@ export function Accent() {
 
       <ul className="mt-3 space-y-2">
         {results.map((r, i) => (
-          <li key={`${r.surface}-${r.reading}-${i}`} className="flex items-center gap-4 p-3 border-3 border-structural bg-paper">
+          <li key={`${r.surface}-${r.reading}-${i}`} className="flex items-center gap-4 p-3 border-3 border-structural bg-card">
             <div className="min-w-0 flex-1">
               <div className="jp text-xl font-black break-words">{r.surface}</div>
               {r.surface !== r.reading && <div className="jp text-xs font-bold text-muted">{r.reading}</div>}

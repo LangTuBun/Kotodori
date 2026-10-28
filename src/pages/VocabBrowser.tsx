@@ -60,8 +60,8 @@ const VocabRow = memo(function VocabRow({
         if (e.target !== e.currentTarget) return
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(index) }
       }}
-      className={`w-full text-left px-4 py-3 border-b border-ink/20 flex items-center gap-4 hover:bg-surface transition-colors cursor-pointer [content-visibility:auto] [contain-intrinsic-size:auto_72px] ${
-        isSelected ? "bg-ink text-paper" : ""
+      className={`w-full text-left px-4 py-3 border-b border-[var(--tori-hairline)] flex items-center gap-4 hover:bg-surface transition-colors cursor-pointer [content-visibility:auto] [contain-intrinsic-size:auto_72px] ${
+        isSelected ? "bg-accent/10" : ""
       }`}
     >
       <div className="flex-1">
@@ -70,7 +70,7 @@ const VocabRow = memo(function VocabRow({
           <PitchAccent kana={v.kana} pitch={v.pitch} />
           <SpeakButton text={v.kana} />
         </div>
-        <div className={`text-xs mt-0.5 ${isSelected ? "text-paper/70" : "text-muted"}`}>
+        <div className={`text-xs mt-0.5 ${"text-muted"}`}>
           {localize(v.meanings).slice(0, 60)}
         </div>
       </div>
@@ -217,13 +217,13 @@ export function VocabBrowser() {
             value={rawSearch}
             onChange={e => setRawSearch(e.target.value)}
             placeholder={t("vocab.searchPlaceholder")}
-            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-sans font-bold text-sm bg-paper focus:outline-none focus:shadow-[2px_2px_0px_var(--color-blue)]"
+            className="flex-1 min-w-[200px] px-4 py-2 border-3 border-structural font-sans font-bold text-sm bg-card focus:outline-none focus:border-accent focus:shadow-[0_0_0_4px_var(--tori-accent-soft)] transition-[border-color,box-shadow]"
           />
           <select
             value={book}
             onChange={e => setBook(e.target.value as "tori" | "minna")}
             aria-label={t("vocab.book")}
-            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
+            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-card cursor-pointer"
           >
             <option value="tori">{t("vocab.bookTori")}</option>
             <option value="minna">{t("vocab.bookMinna")}</option>
@@ -231,7 +231,7 @@ export function VocabBrowser() {
           <select
             value={chapter ?? ""}
             onChange={e => setChapter(e.target.value || null)}
-            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
+            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-card cursor-pointer"
           >
             <option value="">
               {book === "minna"
@@ -251,7 +251,7 @@ export function VocabBrowser() {
           <select
             value={pos ?? ""}
             onChange={e => setPos(e.target.value || null)}
-            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-paper cursor-pointer"
+            className="px-3 py-2 border-3 border-structural font-bold text-sm bg-card cursor-pointer"
           >
             <option value="">{t("vocab.allPos")}</option>
             {POS_LIST.map(p => (
@@ -271,7 +271,7 @@ export function VocabBrowser() {
         <div ref={listRef} className="flex-1 overflow-y-auto pb-[env(safe-area-inset-bottom)]">
           {groupedByChapter.map(([chapterNum, items]) => (
             <div key={chapterNum}>
-              <div className="sticky top-0 z-10 px-4 py-1.5 bg-ink text-paper text-xs font-black uppercase tracking-wider flex items-center gap-2">
+              <div className="sticky top-0 z-10 px-4 py-1.5 material-thin border-b border-[var(--tori-hairline)] text-ink text-xs font-semibold uppercase tracking-wider flex items-center gap-2">
                 <span>
                   {book === "minna"
                     ? t("vocab.lessonN", { n: chapterNum })
@@ -281,7 +281,7 @@ export function VocabBrowser() {
                     ? t("common.chapterN", { n: chapterNum })
                     : chapterNum}
                 </span>
-                <span className="text-paper/60 font-bold">{groupTotals.get(chapterNum) ?? items.length}</span>
+                <span className="text-muted font-medium">{groupTotals.get(chapterNum) ?? items.length}</span>
               </div>
               {items.map(v => (
                 <VocabRow
@@ -372,14 +372,14 @@ function VocabModal({
       <div
         onClick={onClose}
         aria-hidden="true"
-        className="fixed inset-0 z-30 bg-ink/40 lg:bg-ink/30 lg:backdrop-blur-sm"
+        className="fixed inset-0 z-30 bg-black/25 lg:bg-black/20 lg:backdrop-blur-sm"
       />
       <div className="fixed inset-0 z-30 flex items-center justify-center p-4 pointer-events-none">
         <div
           role="dialog"
           aria-modal="true"
           onClick={e => e.stopPropagation()}
-          className="pointer-events-auto w-full max-w-lg max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-paper"
+          className="pointer-events-auto w-full max-w-lg max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-card"
         >
           {/* List navigation */}
           <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">
@@ -387,7 +387,7 @@ function VocabModal({
               onClick={onPrev}
               disabled={!hasPrev}
               title={t("vocab.prevWord")}
-              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ‹
             </button>
@@ -398,7 +398,7 @@ function VocabModal({
               onClick={onNext}
               disabled={!hasNext}
               title={t("vocab.nextWord")}
-              className="w-11 h-11 border-2 border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+              className="w-11 h-11 border border-structural font-black text-lg flex items-center justify-center hover:bg-paper disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
             >
               ›
             </button>
