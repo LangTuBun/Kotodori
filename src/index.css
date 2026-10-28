@@ -217,8 +217,9 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(1200px 800px at 92% -12%, var(--tori-glow-1), transparent 62%),
-    radial-gradient(1000px 700px at -8% 110%, var(--tori-glow-2), transparent 62%);
+    radial-gradient(55% 60% at 85% 5%, color-mix(in srgb, var(--tori-accent) 16%, transparent), transparent 70%),
+    radial-gradient(45% 55% at 30% 55%, color-mix(in srgb, var(--tori-blue) 10%, transparent), transparent 70%),
+    radial-gradient(50% 60% at 5% 105%, color-mix(in srgb, var(--tori-accent) 12%, transparent), transparent 70%);
 }
 
 #root { position: relative; z-index: 1; }
@@ -245,30 +246,67 @@ body::before {
   input::placeholder, textarea::placeholder { color: var(--tori-dim); opacity: 1; }
 }
 
-/* Glass surface (Liquid-Glass-like): translucent fill over the ambient
-   tint, a bright specular top edge, hairline rim. Lifts on hover, presses
-   in on pointer-down. */
+/* Glass system (Liquid-Glass-like), in three layers so each part goes
+   only where it belongs:
+   .glass-card  surface: translucent fill, bright specular top edge, hairline
+                rim, soft shadow. Any card, static or not.
+   .glass-lift  behaviour: lifts + deepens on hover, presses in on pointer-
+                down, reveals .go arrows and tints .glass-glyph. Only on things
+                you can click (Apple: hover affordance = interactivity).
+   .glass       home tiles: both of the above plus a real backdrop blur. The
+                blur stays off the list cards - hundreds of blurred layers
+                would make scrolling stutter on phones.
+   .glass-sheet modals/popovers floating over content: thick, near-opaque
+                material with a real blur. */
+.glass-card, .glass {
+  background-color: color-mix(in srgb, var(--tori-bg-card) 58%, transparent);
+  border: 1px solid rgb(255 255 255 / 0.8);
+  border-radius: var(--radius);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 0 0 0.5px var(--tori-elev-ring), 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px rgb(0 0 0 / 0.05);
+  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), background-color 0.25s, border-color 0.25s;
+}
 .glass {
-  background: color-mix(in srgb, var(--tori-bg-card) 60%, transparent);
+  background-color: color-mix(in srgb, var(--tori-bg-card) 60%, transparent);
   -webkit-backdrop-filter: blur(24px) saturate(170%);
   backdrop-filter: blur(24px) saturate(170%);
-  border: 1px solid rgb(255 255 255 / 0.6);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 0 0 0.5px var(--tori-elev-ring), 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px rgb(0 0 0 / 0.05);
-  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), background-color 0.25s;
 }
-.glass:hover {
+@media (hover: hover) and (pointer: fine) {
+  .glass-card {
+    -webkit-backdrop-filter: blur(18px) saturate(170%);
+    backdrop-filter: blur(18px) saturate(170%);
+  }
+}
+.glass-sheet {
+  background-color: color-mix(in srgb, var(--tori-bg-card) 90%, transparent);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  backdrop-filter: blur(30px) saturate(180%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 0 0 0.5px var(--tori-elev-ring), 0 24px 60px rgb(0 0 0 / 0.18);
+}
+.glass-lift, .glass { cursor: pointer; }
+.glass-lift:hover, .glass:hover {
   transform: translateY(-2px);
-  background: color-mix(in srgb, var(--tori-bg-card) 78%, transparent);
+  background-color: color-mix(in srgb, var(--tori-bg-card) 88%, transparent);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.8), 0 0 0 0.5px var(--tori-elev-ring), 0 2px 4px rgb(0 0 0 / 0.05), 0 18px 40px rgb(0 0 0 / 0.09);
 }
-.glass:active { transform: scale(0.98); transition-duration: 0.1s; }
-.glass:hover .go { opacity: 1; transform: none; }
-.theme-gold .glass {
-  background: rgb(255 255 255 / 0.05);
+.glass-lift:active, .glass:active { transform: scale(0.98); transition-duration: 0.1s; }
+.glass-glyph { transition: color 0.2s; }
+.glass-lift:hover .glass-glyph, .glass:hover .glass-glyph { color: var(--tori-accent); }
+/* Selected state for glass pickers: solid tint, no lift. */
+.glass-card.is-active {
+  background-color: var(--tori-accent);
+  color: var(--tori-accent-fg);
+  border-color: transparent;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--tori-accent) 30%, transparent);
+  transform: none;
+}
+.theme-gold .glass-card, .theme-gold .glass {
+  background-color: rgb(255 255 255 / 0.05);
   border-color: rgb(255 255 255 / 0.09);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 8px 24px rgb(0 0 0 / 0.4);
 }
-.theme-gold .glass:hover { background: rgb(255 255 255 / 0.08); }
+.theme-gold .glass-lift:hover, .theme-gold .glass:hover { background-color: rgb(255 255 255 / 0.08); }
+.theme-gold .glass-sheet { background-color: rgb(28 28 30 / 0.92); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 24px 60px rgb(0 0 0 / 0.6); }
+.theme-gold .glass-card.is-active { background-color: var(--tori-accent); border-color: transparent; }
 
 /* Soft accent light behind the home grid, so the glass has something to
    refract. Static and very low contrast. */
@@ -367,16 +405,13 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
    implies (only descendants are). */
 .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 120px; }
 
-.card-lift {
-  box-shadow: var(--shadow-brutal);
-  transition: transform 0.35s var(--ease-out), border-color 0.25s, background 0.25s, box-shadow 0.35s var(--ease-out);
-}
-.card-lift:hover { transform: translateY(-2px); box-shadow: var(--shadow-brutal-hover); }
-/* Press feedback lands instantly on pointer-down, then eases back. */
+/* .card-lift is the glass lift under its old name. */
+.card-lift { transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), background-color 0.25s; }
+.card-lift:hover { transform: translateY(-2px); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.8), 0 0 0 0.5px var(--tori-elev-ring), 0 2px 4px rgb(0 0 0 / 0.05), 0 18px 40px rgb(0 0 0 / 0.09); }
 .card-lift:active { transform: scale(0.98); transition-duration: 0.1s; }
 
 .go { opacity: 0; transform: translateX(-5px); transition: opacity 0.24s, transform 0.24s; }
-.card-lift:hover .go, .idx-row:hover .go { opacity: 1; transform: translateX(0); }
+.card-lift:hover .go, .idx-row:hover .go, .glass-lift:hover .go, .glass:hover .go { opacity: 1; transform: translateX(0); }
 
 .nav-item { transition: color 0.15s, background-color 0.15s, transform 0.1s var(--ease-out); }
 .nav-item:active { transform: scale(0.97); }
@@ -435,7 +470,7 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .material, .material-thin, .glass { background: var(--tori-bg-card); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .material, .material-thin, .glass, .glass-card, .glass-sheet { background: var(--tori-bg-card); -webkit-backdrop-filter: none; backdrop-filter: none; }
   .scrim { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgb(0 0 0 / 0.4); }
 }
 @media (prefers-contrast: more) {

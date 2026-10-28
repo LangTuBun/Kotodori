@@ -3,7 +3,7 @@ interface CardProps {
   className?: string
   onClick?: () => void
   accent?: 'yellow' | 'red' | 'green' | 'blue' | null
-  /** float-up hover with a deepening soft shadow (.card-lift) */
+  /** glass hover: lifts, deepens, presses in (.glass-lift) */
   lift?: boolean
 }
 
@@ -15,32 +15,20 @@ const ACCENT_COLORS: Record<string, string> = {
 }
 
 export function Card({ children, className = '', onClick, accent, lift = false }: CardProps) {
-  // Accent cards get a hairline in their color plus a soft glow tinted by
-  // it, so the card reads as "colored" without any heavy edge.
+  // Glass surface everywhere; the hover lift only when the card is actually
+  // clickable. Accent cards keep a soft glow in their color.
   const tint = accent ? ACCENT_COLORS[accent] : null
-  const borderColor = tint ? `color-mix(in srgb, ${tint} 35%, transparent)` : 'var(--tori-hairline)'
-  const shadow = tint
-    ? `0 1px 2px rgb(0 0 0 / 0.04), 0 6px 20px color-mix(in srgb, ${tint} 14%, transparent)`
-    : 'var(--shadow-brutal)'
-  const shadowHover = tint
-    ? `0 2px 4px rgb(0 0 0 / 0.05), 0 14px 36px color-mix(in srgb, ${tint} 22%, transparent)`
-    : 'var(--shadow-brutal-hover)'
-
   return (
     <div
       className={[
-        'bg-card border-3 transition-[border-color,background-color,box-shadow,transform] duration-300 ease-[var(--ease-out)]',
-        lift ? 'card-lift' : 'card-shadow',
-        onClick ? 'card-shadow-hover cursor-pointer active:scale-[0.98] active:duration-100' : '',
+        'glass-card',
+        lift || onClick ? 'glass-lift' : '',
         className,
       ].join(' ')}
-      style={{
-        borderColor,
-        '--card-shadow': shadow,
-        '--card-shadow-hover': shadowHover,
-        // .card-lift owns its own shadow states; keep the inline one it always had.
-        ...(lift ? { boxShadow: shadow } : {}),
-      } as React.CSSProperties}
+      style={tint ? {
+        borderColor: `color-mix(in srgb, ${tint} 30%, transparent)`,
+        boxShadow: `inset 0 1px 0 rgb(255 255 255 / 0.6), 0 6px 20px color-mix(in srgb, ${tint} 16%, transparent)`,
+      } : undefined}
       onClick={onClick}
     >
       {children}

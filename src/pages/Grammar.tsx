@@ -592,9 +592,7 @@ const GrammarCard = memo(function GrammarCard({ g, accent, selected, learned, on
     <div className="relative group">
       <button
         onClick={() => onSelect(g)}
-        className={`w-full text-left p-3 border-3 transition-[background-color,border-color,box-shadow,transform] duration-100 cursor-pointer ${
-          selected ? 'border-accent bg-accent text-accent-fg' : 'border-structural bg-card hover:shadow-[var(--shadow-brutal)]'
-        }`}
+        className={`glass-card w-full text-left p-3 ${selected ? 'is-active' : 'glass-lift'}`}
         style={!selected ? { borderLeftWidth: '3px', borderLeftColor: ACCENT_HEX[accent] } : undefined}
       >
         {g.requiredVerbForm?.length > 0 && (
@@ -629,7 +627,7 @@ const GrammarCard = memo(function GrammarCard({ g, accent, selected, learned, on
           this only shows at `lg`+ where a real mouse hover is available. */}
       {ex && (
         <div className="hidden lg:block pointer-events-none absolute left-0 right-0 top-full mt-1.5 z-30 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-[opacity,visibility,transform] duration-150">
-          <div className="bg-surface text-ink border-3 border-structural shadow-[var(--shadow-brutal)] p-3">
+          <div className="glass-card glass-sheet p-3">
             <div className="font-bold text-sm leading-snug">
               <Ruby text={ex.ja} html={ex.jaRuby} />
             </div>

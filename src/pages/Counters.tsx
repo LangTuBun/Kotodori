@@ -73,7 +73,7 @@ export function Counters() {
 function CounterTable({ category, accent, columnLabels, localize }: { category: CounterCategory; accent: string; columnLabels: Record<CounterColumn, string>; localize: (m: { vi: string; en: string } | undefined | null) => string }) {
   return (
     <div
-      className="h-full border-3 border-structural bg-card shadow-[var(--shadow-brutal)] overflow-hidden flex flex-col"
+      className="h-full glass-card overflow-hidden flex flex-col"
       style={{ borderLeftWidth: '3px', borderLeftColor: ACCENT_HEX[accent] }}
     >
       <div className="px-4 py-3 border-b-3 border-structural bg-surface">

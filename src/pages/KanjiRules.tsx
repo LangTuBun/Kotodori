@@ -115,7 +115,7 @@ export function KanjiRules() {
         </p>
         <div className="grid grid-cols-1 gap-5">
           {STROKE_RULES.map((rule, i) => (
-            <article key={rule.id} className="border-3 border-structural bg-card shadow-[var(--shadow-brutal)] p-4 sm:p-5">
+            <article key={rule.id} className="glass-card p-4 sm:p-5">
               <div className="flex items-baseline gap-3 flex-wrap">
                 <span className="font-display text-2xl text-accent">{i + 1}</span>
                 <span className="jp text-lg font-black">{rule.ja}</span>
@@ -149,7 +149,7 @@ export function KanjiRules() {
             <h3 className="text-xs font-black uppercase tracking-widest text-muted mb-3">{title}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {rules.map(rule => (
-                <article key={rule.id} className="border-3 border-structural bg-card shadow-[var(--shadow-brutal)] p-4">
+                <article key={rule.id} className="glass-card p-4">
                   <div className="flex items-center flex-wrap gap-2 font-black text-lg">
                     <span className="px-2 border border-structural bg-yellow/30">{rule.vi}</span>
                     <span>→</span>

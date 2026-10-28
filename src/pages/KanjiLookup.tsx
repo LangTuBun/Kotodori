@@ -14,7 +14,7 @@ function KanjiTile({ record, onOpen }: { record: KanjiRecord; onOpen: (c: string
   return (
     <button
       onClick={() => onOpen(record.char)}
-      className="border border-structural bg-card p-2 text-left cursor-pointer hover:shadow-[var(--shadow-brutal)] transition-shadow"
+      className="glass-card glass-lift p-2 text-left !rounded-[var(--radius-sm)]"
     >
       <div className="flex items-baseline justify-between gap-2">
         <span className="jp text-3xl font-black leading-none">{record.char}</span>

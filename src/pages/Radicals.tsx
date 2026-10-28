@@ -189,7 +189,7 @@ export function Radicals() {
                 role="button"
                 tabIndex={0}
                 onClick={() => setFlipped(f => !f)}
-                className="border-3 border-structural bg-card shadow-[var(--shadow-brutal)] min-h-[22rem] p-6 flex flex-col items-center justify-center text-center cursor-pointer select-none"
+                className="glass-card glass-lift min-h-[22rem] p-6 flex flex-col items-center justify-center text-center select-none"
               >
                 <div className="text-[10px] font-black uppercase tracking-widest text-muted mb-3">
                   {Math.min(pos, deck.length - 1) + 1} / {deck.length}

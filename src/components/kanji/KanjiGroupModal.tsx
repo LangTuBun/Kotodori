@@ -67,7 +67,7 @@ export function KanjiGroupModal({ items, index, onIndexChange, onClose, onAnchor
           aria-modal="true"
           aria-label={t('kanjiDrawer.ariaLabel', { char: group.anchor })}
           onClick={e => e.stopPropagation()}
-          className="pointer-events-auto w-full max-w-3xl max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-card"
+          className="pointer-events-auto w-full max-w-3xl max-h-[85dvh] overflow-y-auto glass-card glass-sheet"
         >
           {/* List navigation */}
           <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">

@@ -210,7 +210,7 @@ const KanjiGroupCard = memo(function KanjiGroupCard({ group, chapterLabel, index
       role="button"
       tabIndex={0}
       onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onCardClick(index) } }}
-      className="bg-card border-3 border-structural p-3 cursor-pointer transition-shadow hover:shadow-[var(--shadow-brutal)]"
+      className="glass-card glass-lift p-3"
       style={{ borderLeftWidth: '3px', borderLeftColor: ACCENT_HEX[accent] }}
     >
       {/* Header: leading kanji */}

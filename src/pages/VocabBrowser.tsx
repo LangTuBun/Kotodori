@@ -379,7 +379,7 @@ function VocabModal({
           role="dialog"
           aria-modal="true"
           onClick={e => e.stopPropagation()}
-          className="pointer-events-auto w-full max-w-lg max-h-[85dvh] overflow-y-auto border-3 border-structural shadow-[var(--shadow-brutal)] bg-card"
+          className="pointer-events-auto w-full max-w-lg max-h-[85dvh] overflow-y-auto glass-card glass-sheet"
         >
           {/* List navigation */}
           <div className="flex items-center gap-3 p-3 border-b-3 border-structural bg-surface">

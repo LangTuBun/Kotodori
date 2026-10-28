@@ -215,7 +215,7 @@ function computeGroups(level: Level, vocab: readonly VocabEntry[]): SoundGroup[]
 function WordCard({ entry }: { entry: VocabEntry }) {
   const { localize } = useTranslation()
   return (
-    <div className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 flex-1 min-w-[140px] bg-card">
+    <div className="glass-card p-4 flex-1 min-w-[140px] bg-card">
       <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
       <div className="text-2xl font-black jp mt-3 mb-2 flex items-center gap-1.5">
         <Furigana kanji={entry.kanji} kana={entry.kana} />
@@ -358,7 +358,7 @@ const GroupCard = memo(function GroupCard({ group, idx, onSelect }: { group: Sou
   return (
     <button
       onClick={() => onSelect(group)}
-      className="border-3 border-structural p-4 text-left shadow-[var(--shadow-brutal)] hover:shadow-[var(--shadow-brutal-hover)] transition-[box-shadow,transform] bg-card"
+      className="glass-card glass-lift p-4 text-left"
     >
       <div className="flex items-start gap-3">
         <div className="text-xs font-black text-muted w-6 shrink-0 pt-1">{idx + 1}</div>

@@ -295,7 +295,7 @@ function ReviewSetup({
         <p className="text-muted font-bold mt-2 uppercase tracking-widest text-sm">{t('review.chooseScope')}</p>
       </div>
 
-      <div className="border-3 border-structural shadow-[var(--shadow-brutal)] bg-card overflow-hidden">
+      <div className="glass-card overflow-hidden">
         {/* Mode tabs */}
         <div className="grid grid-cols-2 border-b-3 border-structural">
           <button
@@ -428,7 +428,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
   const { t, localize } = useTranslation()
   return (
     <div
-      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-card mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
+      className="glass-card glass-lift p-4 sm:p-8 mb-6 min-h-[300px] flex flex-col items-center justify-center text-center"
       onClick={onFlip}
     >
       {!flipped ? (
@@ -490,7 +490,7 @@ function KanjiCardView({ card, flipped, onFlip }: { card: KanjiReviewCard; flipp
 
   return (
     <div
-      className="border-3 border-structural shadow-[var(--shadow-brutal)] p-4 sm:p-8 bg-card mb-6 cursor-pointer min-h-[300px] flex flex-col items-center justify-center text-center transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
+      className="glass-card glass-lift p-4 sm:p-8 mb-6 min-h-[300px] flex flex-col items-center justify-center text-center"
       onClick={onFlip}
     >
       {!flipped ? (

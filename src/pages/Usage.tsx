@@ -179,9 +179,7 @@ export function Usage() {
                 role="tab"
                 aria-selected={active}
                 onClick={() => setTab(tb.id)}
-                className={`text-left border-3 p-3 cursor-pointer transition-[background-color,border-color,box-shadow] ${
-                  active ? "border-accent bg-accent text-accent-fg shadow-none" : "border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)]"
-                }`}
+                className={`glass-card text-left p-3 ${active ? "is-active" : "glass-lift"}`}
               >
                 <div className="flex items-center gap-2 mb-1">
                   <span className="jp font-black text-xl leading-none">{tb.glyph}</span>
@@ -455,8 +453,7 @@ const AuxiliaryVerbCard = memo(function AuxiliaryVerbCard({
               <button
                 key={g.id}
                 onClick={() => navigate(`/grammar?point=${g.id}`)}
-                className="group shrink-0 w-48 text-left border-3 border-structural bg-card p-2.5 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
-                style={{ borderLeftWidth: "3px", borderLeftColor: "var(--color-blue)" }}
+                className="glass-card glass-lift group shrink-0 w-48 text-left p-2.5"
               >
                 <div className="flex items-start justify-between gap-1.5">
                   <div className="jp font-bold text-xs leading-snug">{g.pattern}</div>

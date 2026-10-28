@@ -80,7 +80,7 @@ function GroupChecker({ l, localize }: { l: L; localize: (m: { vi: string; en: s
   const result: CheckResult | null = useMemo(() => checkVerb(input), [input])
 
   return (
-    <section className="border-3 border-structural bg-card shadow-[var(--shadow-brutal)] p-4 sm:p-5 mb-8">
+    <section className="glass-card p-4 sm:p-5 mb-8">
       <h2 className="font-black text-lg sm:text-xl">{l("Động từ này thuộc nhóm nào?", "Which group is this verb?")}</h2>
       <p className="text-sm text-muted mt-1 mb-3">
         {l("Gõ dạng từ điển (帰る, かえる) hoặc dạng ます (帰ります). Nên gõ bằng kana nếu bạn không chắc cách đọc chữ Hán.", "Type the dictionary form (帰る, かえる) or the ます form (帰ります). Use kana if you are unsure how a kanji reads.")}
@@ -467,8 +467,7 @@ export function VerbForms() {
                   <button
                     key={g.id}
                     onClick={() => navigate(`/grammar?point=${g.id}`)}
-                    className="group shrink-0 w-56 text-left border-3 border-structural bg-card p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
-                    style={{ borderLeftWidth: '3px', borderLeftColor: 'var(--color-blue)' }}
+                    className="glass-card glass-lift group shrink-0 w-56 text-left p-3"
                   >
                     <div className="flex items-start justify-between gap-2">
                       <div className="jp font-bold text-sm leading-snug">

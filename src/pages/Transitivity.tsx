@@ -148,8 +148,7 @@ export function Transitivity() {
                 <button
                   key={g.id}
                   onClick={() => navigate(`/grammar?point=${g.id}`)}
-                  className="group shrink-0 w-56 text-left border-3 border-structural bg-card p-3 cursor-pointer transition-[box-shadow,transform] hover:shadow-[var(--shadow-brutal-hover)]"
-                  style={{ borderLeftWidth: '3px', borderLeftColor: 'var(--color-blue)' }}
+                  className="glass-card glass-lift group shrink-0 w-56 text-left p-3"
                 >
                   <div className="flex items-start justify-between gap-2">
                     <div className="jp font-bold text-sm leading-snug">{g.pattern}</div>
@@ -180,9 +179,7 @@ export function Transitivity() {
                 <button
                   key={pt.id}
                   onClick={() => setActivePattern(active ? null : pt.id)}
-                  className={`text-left border-3 p-3 cursor-pointer transition-[background-color,border-color,box-shadow,transform] ${
-                    active ? 'border-accent bg-accent text-accent-fg' : 'border-structural bg-paper hover:shadow-[var(--shadow-brutal-hover)]'
-                  }`}
+                  className={`glass-card text-left p-3 ${active ? 'is-active' : 'glass-lift'}`}
                 >
                   <div className="font-mono font-black text-sm mb-1">
                     {isIrregular ? t('transitivity.irregular') : pt.label}

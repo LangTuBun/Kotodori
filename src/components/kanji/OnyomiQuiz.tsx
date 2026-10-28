@@ -68,7 +68,7 @@ export function OnyomiQuiz() {
           {L("Đúng", "Correct")} {score.right}/{score.total}
         </span>
       </div>
-      <div className="mt-4 border-3 border-structural bg-card shadow-[var(--shadow-brutal)] p-4 sm:p-5">
+      <div className="mt-4 glass-card p-4 sm:p-5">
         <div className="font-black text-lg">
           {L("Âm Hán Việt", "Hán Việt")} <span className="text-red">{q.ex.hanviet}</span>{" "}
           (<span className="jp">{q.ex.kanji}</span>) → {L("On'yomi nào?", "Which on'yomi?")}
