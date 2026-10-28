@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const variants: Record<string, string> = {
   primary:   'bg-accent text-accent-fg border-transparent hover:brightness-110',
   secondary: 'bg-card text-ink border-[var(--tori-hairline)] shadow-[var(--shadow-brutal)] hover:bg-surface',
-  yellow:    'bg-yellow text-white border-transparent hover:brightness-110',
+  yellow:    'bg-yellow text-black/85 border-transparent hover:brightness-110',
   red:       'bg-red text-white border-transparent hover:brightness-110',
   green:     'bg-green text-white border-transparent hover:brightness-110',
   ghost:     'bg-transparent text-accent border-transparent hover:bg-accent/10',

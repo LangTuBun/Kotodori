@@ -119,7 +119,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
               <span className="text-[17px] font-semibold tracking-[-0.02em] text-ink group-hover:text-accent transition-colors whitespace-nowrap">
                 Tori
               </span>
-              <span className="text-xs text-muted whitespace-nowrap">
+              <span className="font-mono text-[11px] text-muted whitespace-nowrap">
                 JLPT N5 / N4
               </span>
             </div>
@@ -151,7 +151,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
           onClick={onClose}
           className="mx-3 mb-1 px-3 py-2.5 rounded-[var(--radius-sm)] bg-accent text-accent-fg flex items-center gap-2.5 active:scale-[0.98] transition-transform shadow-[0_4px_14px_color-mix(in_srgb,var(--tori-accent)_30%,transparent)]"
         >
-          <span className="min-w-6 h-6 px-1.5 rounded-full bg-white/25 text-sm font-semibold flex items-center justify-center">{due}</span>
+          <span className="min-w-6 h-6 px-1.5 rounded-full bg-white/25 font-mono text-[13px] font-semibold flex items-center justify-center">{due}</span>
           <span className="text-[13px] font-medium">{t('sidebar.cardsDueNow')}</span>
         </Link>
       )}
@@ -161,7 +161,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
         {[{ id: "", items: [HOME] }, ...navGroups].map(group => (
           <div key={group.id || "home"} className={group.id ? "mt-3" : ""}>
             {group.id && (
-              <div className="px-3 pb-1 text-[11px] font-semibold text-muted tracking-[0.02em]">
+              <div className="px-3 pb-1 font-mono text-[10.5px] font-medium uppercase tracking-[0.08em] text-muted">
                 {t(`nav.groups.${group.id}`)}
               </div>
             )}
@@ -201,7 +201,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
           { label: t('common.stats.new'), val: stats?.new ?? '–' },
         ].map(({ label, val }) => (
           <div key={label} className="bg-card/70 rounded-[var(--radius-sm)] px-3 py-2 shadow-[var(--shadow-brutal)]">
-            <div className="font-display text-lg leading-tight">{val}</div>
+            <div className="font-mono text-[17px] font-semibold leading-tight tracking-[-0.02em]">{val}</div>
             <div className="text-[11px] text-muted">{label}</div>
           </div>
         ))}

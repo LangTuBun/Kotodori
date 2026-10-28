@@ -90,12 +90,13 @@
        and negative tracking from the utilities, not a serif.
      - --font-jp = Hiragino Sans / Zen Kaku Gothic (Apple's Japanese UI
        face); the old Mincho is now the opt-in via the typeface toggle.
-     - --font-mono = system sans with tabular figures: every former mono
-       site is a small label or romaji line, none is real code. */
+     - --font-mono = Geist Mono, the "instrument" voice: eyebrows, section
+       labels, counts, IDs and romaji. Ships a Vietnamese subset, so the
+       translated labels (LỌC THEO…) never fall back glyph-by-glyph. */
   --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI Variable Text', 'Segoe UI', 'Be Vietnam Pro', system-ui, sans-serif;
   --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI Variable Display', 'Segoe UI', 'Be Vietnam Pro', system-ui, sans-serif;
   --font-jp: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Zen Kaku Gothic New', 'Yu Gothic UI', sans-serif;
-  --font-mono: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI Variable Text', 'Segoe UI', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SF Mono', 'Cascadia Mono', monospace;
 
   /* Apple hierarchy is weight + size, never 900. Soften every font-black
      to bold, and pull the wide label tracking in to caption-size values. */
@@ -229,6 +230,10 @@ body::before {
 @layer base {
   .font-display { font-weight: 650; letter-spacing: -0.022em; }
   h1, h2, h3 { letter-spacing: -0.015em; }
+  /* Every small uppercase label speaks in the mono "instrument" voice
+     (section labels, counters, column heads). Base layer, so an explicit
+     font-sans / .jp on the element still wins. */
+  .uppercase { font-family: var(--font-mono); font-weight: 500; letter-spacing: 0.06em; }
 }
 .mincho { font-family: var(--font-display); }
 
@@ -343,6 +348,15 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--c
 .acc-chev { transition: transform 0.4s var(--ease-sheet); }
 .acc-island.open .acc-chev { transform: rotate(180deg); }
 
+/* Tinted fill: a category color as a soft wash behind normal ink text,
+   instead of a solid slab (white-on-orange fails contrast). Set --tint
+   inline to any color token. Works in light and dark unchanged. */
+.tint {
+  background-color: color-mix(in srgb, var(--tint) 16%, transparent);
+  color: color-mix(in srgb, var(--tint) 45%, var(--tori-text));
+  border-color: color-mix(in srgb, var(--tint) 30%, transparent) !important;
+}
+
 /* ============================================================
    Materials. Translucent chrome for surfaces that genuinely float
    over content (the mobile drawer, the sticky top bar, sheets).
@@ -358,9 +372,9 @@ rt { font-size: 0.45em; font-weight: 400; letter-spacing: 0.02em; color: var(--c
   backdrop-filter: blur(20px) saturate(180%);
 }
 .scrim {
-  background: rgb(0 0 0 / 0.22);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  background: rgb(0 0 0 / 0.32);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   animation: fadeIn 0.3s var(--ease-out);
 }
 

@@ -20,11 +20,10 @@ const colors: Record<string, string> = {
 export function PosTag({ pos, verbGroup }: PosTagProps) {
   const bg = colors[pos] ?? 'var(--color-muted)'
   const label = getPosLabel(pos, verbGroup)
-  const textColor = pos === 'noun' ? 'var(--color-ink)' : 'var(--color-paper)'
   return (
     <span
-      className="font-mono inline-block text-xs font-bold uppercase tracking-widest px-2 py-0.5 border border-structural rounded-[var(--radius-sm)]"
-      style={{ backgroundColor: bg, color: textColor }}
+      className="tint font-mono inline-block text-xs font-semibold uppercase tracking-widest px-2 py-0.5 border rounded-full"
+      style={{ '--tint': bg } as React.CSSProperties}
     >
       {label}
     </span>

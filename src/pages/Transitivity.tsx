@@ -281,8 +281,8 @@ function VerbHalfRow({
           <SpeakButton text={half.kana} />
         </span>
         <span
-          className="font-mono shrink-0 text-[10px] font-black uppercase tracking-widest px-2 py-0.5 border border-structural rounded-full border-transparent text-white"
-          style={{ backgroundColor: color }}
+          className="font-mono shrink-0 text-[10px] font-black uppercase tracking-widest px-2 py-0.5 border border-structural rounded-full tint"
+          style={{ '--tint': color } as React.CSSProperties}
         >
           {label} {particle}
         </span>

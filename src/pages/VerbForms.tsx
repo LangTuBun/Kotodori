@@ -34,7 +34,7 @@ function GroupBadge({ group, l }: { group: VerbGroupId; l: L }) {
     3: l("Nhóm 3 (bất quy tắc)", "Group 3 (irregular)"),
   }
   return (
-    <span className="inline-block border border-structural px-2 py-0.5 text-xs font-black" style={{ backgroundColor: groupAccent(group) }}>
+    <span className="tint inline-block border rounded-full px-2 py-0.5 text-xs font-semibold" style={{ '--tint': groupAccent(group) } as React.CSSProperties}>
       {names[group]}
     </span>
   )
@@ -57,7 +57,7 @@ function ConjugationGrid({ dict, group, l }: { dict: string; group: VerbGroupId;
   return (
     <div>
       {endsRu && (
-        <div className="mb-2 text-sm font-bold border border-structural px-3 py-2" style={{ backgroundColor: group === 1 ? "var(--color-yellow)" : "var(--color-blue)", color: "var(--color-ink)" }}>
+        <div className="tint mb-2 text-sm font-semibold border rounded-[var(--radius-sm)] px-3 py-2" style={{ '--tint': group === 1 ? "var(--color-yellow)" : "var(--color-blue)" } as React.CSSProperties}>
           {group === 1
             ? l("Nhóm 1: る → り + ます (thêm り, KHÔNG chỉ bỏ る)", "Group 1: る → り + ます (add り, do NOT just drop る)")
             : l("Nhóm 2: bỏ る rồi thêm ます (không có り)", "Group 2: drop る and add ます (no り)")}
@@ -175,7 +175,7 @@ function RuleCards({ l }: { l: L }) {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {cards.map(c => (
           <div key={c.group} className="border-3 border-structural bg-card overflow-hidden">
-            <div className="px-3 py-2 border-b-3 border-structural font-black text-sm" style={{ backgroundColor: groupAccent(c.group) }}>{c.title}</div>
+            <div className="tint px-3 py-2 border-b font-semibold text-sm" style={{ '--tint': groupAccent(c.group) } as React.CSSProperties}>{c.title}</div>
             <div className="p-3 space-y-2 text-sm">
               <p><span className="font-black">{l("Nhận biết: ", "Spot it: ")}</span>{c.test}</p>
               <p><span className="font-black">{l("Sang ます: ", "To ます: ")}</span>{c.masu}</p>

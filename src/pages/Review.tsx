@@ -213,7 +213,7 @@ export function Review() {
 
   if (phase === 'done') {
     return (
-      <div className="p-4 sm:p-8 max-w-xl">
+      <div className="p-4 sm:p-8 max-w-xl mx-auto">
         <div className="border-b-3 border-structural pb-6 mb-8">
           <h1 className="text-[clamp(2rem,8vw,3rem)] font-black">{t('review.done')}</h1>
         </div>
@@ -235,7 +235,7 @@ export function Review() {
   const progress = (idx / queue.length) * 100
 
   return (
-    <div className="p-4 sm:p-8 max-w-2xl">
+    <div className="p-4 sm:p-8 max-w-2xl mx-auto">
       {/* Progress */}
       <div className="flex items-center gap-4 mb-8">
         <button
@@ -288,7 +288,7 @@ function ReviewSetup({
     ? t('review.chapterLabel')
     : hasChapterKeys ? t('review.chapterCategoryLabel') : t('review.categoryLabel')
   return (
-    <div className="relative p-4 sm:p-8 max-w-3xl overflow-hidden">
+    <div className="relative p-4 sm:p-8 max-w-3xl mx-auto overflow-hidden">
       <Watermark char="復" />
       <div className="border-b-3 border-structural pb-6 mb-8">
         <h1 className="text-[clamp(2rem,8vw,3rem)] font-black">{t('review.title')}</h1>

@@ -54,7 +54,7 @@ export function Layout() {
           onClick={() => setNavOpen(true)}
           aria-label="Open menu"
           aria-expanded={navOpen}
-          className="flex flex-col justify-center gap-[5px] size-10 -ml-1 rounded-full text-accent shrink-0 cursor-pointer active:bg-accent/10 active:scale-90 transition-transform"
+          className="flex flex-col justify-center gap-[5px] size-11 -ml-1.5 rounded-full text-accent shrink-0 cursor-pointer active:bg-accent/10 active:scale-90 transition-transform"
         >
           <span className="block h-[2px] w-5 mx-auto rounded-full bg-current" />
           <span className="block h-[2px] w-5 mx-auto rounded-full bg-current" />

@@ -380,8 +380,8 @@ const CollocationGroupBlock = memo(function CollocationGroupBlock({
                 <div className="flex items-center justify-between gap-2 mb-1.5">
                   <span className="jp font-mono font-black text-base">{e.pattern}</span>
                   <span
-                    className="shrink-0 text-[10px] font-black w-6 h-6 flex items-center justify-center rounded-full text-white jp"
-                    style={{ backgroundColor: PARTICLE_COLOR[e.particle] ?? "var(--color-muted)" }}
+                    className="shrink-0 text-[10px] font-black w-6 h-6 flex items-center justify-center rounded-full tint jp"
+                    style={{ '--tint': PARTICLE_COLOR[e.particle] ?? "var(--color-muted)" } as React.CSSProperties}
                   >
                     {e.particle}
                   </span>
