@@ -47,7 +47,8 @@ export function ReadingPassage({ paragraphs, annotations, chapter }: { paragraph
   const breakdownOf = (line: ReadingSentence) => curated.find(s => normalize(line.jp).includes(normalize(s.sentence)))
   const used = new Map<string, number>()
   paragraphs.flat().forEach(s => s.grammarIds.forEach(id => used.set(id, (used.get(id) ?? 0) + 1)))
-  const chapterGrammar = allGrammar.filter(g => g.chapter === chapter && g.jlptLevel === 'N4')
+  // N5 uses chapters 1–14 and N4 16–33, and later points lack jlptLevel, so chapter alone identifies them.
+  const chapterGrammar = allGrammar.filter(g => g.chapter === chapter)
   const otherGrammar = [...used.keys()].filter(id => grammar.get(id)?.chapter !== chapter).map(id => grammar.get(id)).filter(g => !!g).sort((a, b) => a.chapter - b.chapter)
   const isSelected = (paragraph: number, sentence: number | null) => selected?.paragraph === paragraph && selected.sentence === sentence
   function select(paragraph: number, sentence: number | null) {
@@ -121,7 +122,7 @@ function AnalysisPanel({ lines, whole, breakdown, dictionary }: { lines: Reading
     <div className="flex flex-wrap items-center justify-between gap-3 mb-3"><p className="font-bold">{whole ? l('Sentence by sentence', 'Nghĩa từng câu') : l('Meaning', 'Ý nghĩa')}</p><SpeakButton text={text} /></div>
     {whole ? <ol className="space-y-2">{lines.map((s, i) => <li key={i}><span lang="ja" className="jp text-muted block">{s.jp}</span>{localize(s.translation)}</li>)}</ol> : <p>{localize(lines[0].translation)}</p>}
     {breakdown && <SentenceBreakdown key={breakdown.sentence} data={breakdown} showSentence={false} />}
-    {!!ids.length && <div className="mt-5 border-l-2 border-blue pl-3"><h3 className="font-bold mb-3">{l('Grammar used here', 'Ngữ pháp dùng ở đây')}</h3><div className="space-y-4">{ids.map(id => { const g = grammar.get(id); return g && <div key={id}><Link to={`/grammar?point=${id}`} className="jp font-bold underline underline-offset-4">{g.pattern} ↗</Link><p className="text-xs text-muted mt-1">{g.jlptLevel} · {l('Chapter', 'Bài')} {g.chapter}</p><p className="mt-1">{localize(g.meaning)}</p></div> })}</div></div>}
+    {!!ids.length && <div className="mt-5 border-l-2 border-blue pl-3"><h3 className="font-bold mb-3">{l('Grammar used here', 'Ngữ pháp dùng ở đây')}</h3><div className="space-y-4">{ids.map(id => { const g = grammar.get(id); return g && <div key={id}><Link to={`/grammar?point=${id}`} className="jp font-bold underline underline-offset-4">{g.pattern} ↗</Link><p className="text-xs text-muted mt-1">{g.jlptLevel ?? (g.chapter >= 16 ? 'N4' : 'N5')} · {l('Chapter', 'Bài')} {g.chapter}</p><p className="mt-1">{localize(g.meaning)}</p></div> })}</div></div>}
     <ReadingWords key={text} text={text} dictionary={dictionary} />
   </div>
 }
