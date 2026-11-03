@@ -1,8 +1,8 @@
 import { sentenceBreakdowns, type Bilingual, type SentenceBreakdownData, type SentenceChunk, type SentenceWord } from './sentence-breakdowns.ts'
 import { practiceReadings } from './reading-practice.ts'
 
-/** Exercise number used for each chapter's original practice text. */
-export const PRACTICE_EXERCISE = 4
+/** Exercise numbers for each chapter's original texts, after the book's 1–3. */
+export const PRACTICE_EXERCISES = { practice: 4, review: 5 } as const
 
 export const readingChapterPages: Record<number, [number, number]> = {
   16: [1836, 1837], 17: [1838, 1840], 18: [1841, 1842], 19: [1843, 1844],
@@ -106,12 +106,13 @@ export const readingGuides: ReadingGuide[] = [
     sentence('There is one guitar placed in front of the window.', 'Có một cây ghi-ta được đặt trước cửa sổ.', 'てある focuses on the resulting arrangement, rather than someone placing it at this moment.', 'てある tập trung vào sự sắp đặt đã có, không phải ai đang đặt lúc này.',
       phrase('窓の前には', 'in front of the window', 'trước cửa sổ', 'の前 is a spatial relation; に marks the place and は makes it the topic.', 'の前 nêu vị trí; に đánh dấu nơi và は đưa lên làm chủ đề.', [], [word('窓', 'まど', 'window', 'cửa sổ')]),
       phrase('ギターが1台置いてあります。', 'a guitar has been placed', 'có một cây đàn được đặt', '置く is transitive; が + 置いてある describes the intentionally arranged state.', '置く là ngoại động từ; が + 置いてある mô tả trạng thái được sắp đặt có chủ đích.', ['g_163'], [word('置く', 'おく', 'to put, place', 'đặt')]))),
-  guide(19, 3, [1844], 'Choosing a meeting room', 'Chọn phòng họp', null,
-    'Room B has the whiteboard, capacity and permission to eat. Only April 5 is available for B among the requested dates. The question’s choices are not fully visible in the supplied photo; use this as a source-based conclusion, not an official answer key.',
-    'Phòng B có bảng, đủ chỗ và được ăn. Trong các ngày yêu cầu, B chỉ trống ngày 5/4. Ảnh không hiện đầy đủ lựa chọn câu hỏi; đây là kết luận từ dữ kiện, không phải đáp án chính thức.',
+  { ...guide(19, 3, [1844, 1892], 'Choosing a meeting room', 'Chọn phòng họp', 3,
+    'Only room B fits: A has no whiteboard and holds six, C bans food. B is free on April 5 (Monday, a weekday) but not April 4. Study 10:00–12:00 = 2 × ¥1,000; party 12:00–13:00 = 1 × ¥1,200; total ¥3,200.',
+    'Chỉ phòng B phù hợp: A không có bảng và tối đa 6 người, C cấm ăn uống. B trống ngày 5/4 (thứ Hai, ngày thường) nhưng không trống ngày 4/4. Học 10–12 giờ = 2 × 1.000 yên; tiệc 12–13 giờ = 1 × 1.200 yên; tổng 3.200 yên.',
     sentence('A table, chairs, a monitor and a whiteboard are provided.', 'Có sẵn bàn, ghế, màn hình và bảng trắng.', 'The equipment list is about what has been set up in Room B.', 'Danh sách nói về thiết bị đã được bố trí trong phòng B.',
       phrase('テーブル、椅子、モニター、ホワイトボードが', 'the equipment', 'các thiết bị', 'が marks the items whose arranged state is described.', 'が đánh dấu các vật được mô tả trạng thái.', [], [word('椅子', 'いす', 'chair', 'ghế')]),
       phrase('置いてあります。', 'are provided', 'đã được đặt sẵn', '置いてある describes the resulting state of a deliberate placement.', '置いてある mô tả kết quả của việc đặt có chủ đích.', ['g_163']))),
+    question: { jp: '田村さんはいつ、いくらで貸し会議室を使えますか。', options: ['4日に3,900円で貸し会議室を使う。', '4日に4,200円で貸し会議室を使う。', '5日に3,200円で貸し会議室を使う。', '5日に2,600円で貸し会議室を使う。'] } },
   guide(20, 1, [1845], 'A note with borrowed items', 'Lời nhắn về đồ mượn', 1,
     'Ishikawa will bring the DVD Mai said she wanted to see next week. The book and a different DVD were already returned.',
     'Tuần sau Ishikawa sẽ mang DVD Mai nói muốn xem. Sách và một DVD khác đã được trả rồi.',
@@ -160,12 +161,23 @@ export const readingGuides: ReadingGuide[] = [
     sentence('This means “do not enter this road”.', 'Điều này có nghĩa là “không được vào con đường này”.', 'A short prohibition on a sign is explained as a complete meaning.', 'Lệnh cấm ngắn trên biển được giải thích thành ý nghĩa đầy đủ.',
       phrase('これは、この道に入るな', 'do not enter this road', 'không được vào đường này', 'Dictionary form + な is a direct prohibition. Here it is quoted as a sign’s meaning.', 'Thể từ điển + な là lệnh cấm trực tiếp. Ở đây được dẫn để giải thích biển.', ['g_180'], [word('道', 'みち', 'road', 'đường')]),
       phrase('という意味で、', 'meaning that', 'với nghĩa là', 'という意味 introduces the interpretation of the quoted expression; で continues into the next clause.', 'という意味 giải thích cụm được dẫn; で nối với vế sau.', ['g_182']))),
-  guide(22, 3, [1852], 'Mongolian products', 'Sản phẩm Mông Cổ', null,
-    'The photograph shows the catalogue but not its question. Compare the product names, uses and prices on the page; there is no graded answer for this incomplete source.',
-    'Ảnh có danh mục nhưng không có câu hỏi. Đối chiếu tên, công dụng và giá trên trang; không chấm đáp án khi thiếu nguồn câu hỏi.',
+  { ...guide(22, 3, [1852, 1891], 'Mongolian products', 'Sản phẩm Mông Cổ', 2,
+    'The deel is traditional clothing many people wear at Naadam or New Year. a) The text says chatsargan grows in Mongolia, not only there. c) The wallet has traditional writing on it; it is not a traditional wallet. d) サイハン, not ザハ, means 素敵.',
+    'Deel là trang phục truyền thống nhiều người mặc vào dịp Naadam hay Tết. a) Bài nói chatsargan có ở Mông Cổ, không nói chỉ có ở đó. c) Ví có in chữ truyền thống, không phải ví truyền thống. d) サイハン mới có nghĩa 素敵, không phải ザハ.',
     sentence('Its name changed to “Saihan Mongol”, with “saihan”, meaning “wonderful” in Mongolian, added.', 'Tên đổi thành “Saihan Mongol”, thêm “saihan”, có nghĩa “tuyệt vời” trong tiếng Mông Cổ.', 'The quoted adjective explains the new brand name.', 'Tính từ được dẫn giải thích tên thương hiệu mới.',
       phrase('モンゴル語で「素敵」という意味の', 'meaning wonderful in Mongolian', 'có nghĩa tuyệt vời trong tiếng Mông Cổ', 'という意味の modifies the following word サイハン.', 'という意味の bổ nghĩa cho từ サイハン phía sau.', ['g_182'], [word('素敵', 'すてき', 'lovely, wonderful', 'tuyệt vời')]),
       phrase('「サイハン」を入れた「サイハン・モンゴル」に名前が変わりました。', 'changed the name by adding saihan', 'đổi tên bằng cách thêm saihan', '入れた modifies the new name; に marks the result of the name change.', '入れた bổ nghĩa cho tên mới; に đánh dấu kết quả đổi tên.'))),
+    question: { jp: '上の文章について正しい文はどれですか。', options: ['チャツァルガンは、モンゴルにだけある体にいいフルーツです。', 'デールは、お正月などに着る伝統的なモンゴルの服です。', 'モンゴルの伝統的な財布は、カードをたくさん入れることができます。', '「ザハ」は、モンゴル語で「素敵」という意味です。'] } },
+  { ...guide(23, 1, [1890], 'A favour from a former teacher', 'Nhờ người từng dạy mình', 3,
+    'Nam taught Sato Vietnamese (ナムさんに教えてもらった), so c) is right. Sato received the pen from Nam (いただいた), and Sato is asking Nam to send the photos (送っていただけませんか); neither was done by Sato.',
+    'Nam đã dạy tiếng Việt cho Sato (ナムさんに教えてもらった) nên c) đúng. Sato nhận bút từ Nam (いただいた), và Sato đang nhờ Nam gửi ảnh (送っていただけませんか); cả hai việc đó không phải Sato làm.',
+    sentence('It was already three whole years ago that you taught me Vietnamese.', 'Việc tôi được Nam dạy tiếng Việt đã là chuyện của những 3 năm trước rồi.', 'The receiver is the writer, Sato; に marks Nam, the person who did the teaching as a favour.', 'Người nhận là người viết, Sato; に đánh dấu Nam, người đã dạy giúp.',
+      phrase('ナムさんにベトナム語を教えてもらったのは、', 'that Nam taught me Vietnamese', 'việc được Nam dạy tiếng Việt', 'Vてもらう: Sato received the favour of Nam teaching. のは turns the whole event into the topic.', 'Vてもらう: Sato nhận được việc Nam dạy cho. のは biến cả sự việc thành chủ đề.', ['g_188', 'g_174'], [word('教える', 'おしえる', 'to teach', 'dạy')]),
+      phrase('もう3年も前ですね。', 'already three whole years ago', 'đã những 3 năm trước rồi', '3年も stresses that it feels like a long time; ね invites Nam to share the feeling.', '3年も nhấn mạnh thời gian dài; ね mời Nam cùng đồng cảm.', ['g_154'])),
+    sentence('Could you send me the photos we took together in Tokyo before?', 'Bạn có thể gửi cho tôi những tấm ảnh chúng ta chụp ở Tokyo trước đây được không?', 'The writer asks for a favour very politely; the modifying clause says which photos.', 'Người viết nhờ vả rất lịch sự; mệnh đề bổ nghĩa cho biết là ảnh nào.',
+      phrase('前にナムさんと東京で撮った写真を', 'the photos we took in Tokyo', 'những tấm ảnh chụp ở Tokyo', '前にナムさんと東京で撮った modifies 写真.', '前にナムさんと東京で撮った bổ nghĩa cho 写真.', ['g_165'], [word('写真', 'しゃしん', 'photo', 'ảnh')]),
+      phrase('送っていただけませんか。', 'could you please send', 'bạn gửi giúp được không', 'Vていただけませんか is a very polite request: the writer would receive the favour.', 'Vていただけませんか là lời nhờ rất lịch sự: người viết sẽ nhận sự giúp đỡ.', ['g_190'], [word('送る', 'おくる', 'to send', 'gửi')]))),
+    question: { jp: '佐藤さんは、何をしましたか。', options: ['ナムさんにペンをあげました。', '写真のデータをナムさんに送りました。', 'ナムさんにベトナム語を教わりました。', 'ナムさんに日本語を教えました。'] } },
   guide(23, 2, [1853], 'Trying insect snacks', 'Thử bánh làm từ côn trùng', 3,
     'The writer borrowed and read a friend’s book, then gave a snack to friend B. B could not eat it; the book was not lent by the writer.',
     'Người viết mượn và đọc sách của bạn rồi cho bạn B một gói bánh. B không ăn được; người viết không phải người cho mượn sách.',
@@ -370,8 +382,8 @@ export const readingGuides: ReadingGuide[] = [
 export function resolveReadingSelection(params: URLSearchParams) {
   const requestedChapter = Number(params.get('chapter'))
   const chapter = readingChapterPages[requestedChapter] ? requestedChapter : 16
-  const practice = practiceReadings.find(r => r.chapter === chapter)
-  const exercises = [...readingGuides.filter(g => g.chapter === chapter).map(g => g.exercise), ...(practice ? [PRACTICE_EXERCISE] : [])]
+  const practices = practiceReadings.filter(r => r.chapter === chapter)
+  const exercises = [...readingGuides.filter(g => g.chapter === chapter).map(g => g.exercise), ...practices.map(r => PRACTICE_EXERCISES[r.kind])]
   const requestedExercise = Number(params.get('exercise'))
   const exercise = exercises.includes(requestedExercise) ? requestedExercise : exercises[0]
   const guide = readingGuides.find(g => g.chapter === chapter && g.exercise === exercise)
@@ -379,5 +391,5 @@ export function resolveReadingSelection(params: URLSearchParams) {
   const pages = guide?.pages ?? [first]
   const requestedPage = Number(params.get('page'))
   const page = pages.includes(requestedPage) ? requestedPage : pages[0]
-  return { chapter, exercise, exercises, guide, practice: exercise === PRACTICE_EXERCISE ? practice : undefined, first, last, page, pages }
+  return { chapter, exercise, exercises, guide, practice: practices.find(r => PRACTICE_EXERCISES[r.kind] === exercise), first, last, page, pages }
 }

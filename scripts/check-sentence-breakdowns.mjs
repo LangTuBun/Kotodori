@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync, existsSync } from 'node:fs'
 import { sentenceBreakdowns } from '../src/data/sentence-breakdowns.ts'
-import { readingGuides, readingChapterPages, resolveReadingSelection, PRACTICE_EXERCISE } from '../src/data/reading-guides.ts'
+import { readingGuides, readingChapterPages, resolveReadingSelection, PRACTICE_EXERCISES } from '../src/data/reading-guides.ts'
 import { readingPassages } from '../src/data/reading-passages.ts'
 import { readingContexts } from '../src/data/reading-contexts.ts'
 import { practiceReadings } from '../src/data/reading-practice.ts'
@@ -25,8 +25,8 @@ for (const [sentence, data] of Object.entries(sentenceBreakdowns)) {
     for (const word of chunk.words ?? []) assert.ok(word.text && word.kana && word.meaning.en && word.meaning.vi, `Incomplete word in ${sentence}`)
   }
 }
-const expectedExercises = Array.from({ length: 18 }, (_, n) => n + 16).flatMap(chapter => [1, 2, 3].map(exercise => `${chapter}-${exercise}`)).filter(key => key !== '23-1')
-assert.deepEqual(readingGuides.map(g => `${g.chapter}-${g.exercise}`), expectedExercises, 'Every photographed exercise needs exactly one guide; 23-1 is absent from the photos')
+const expectedExercises = Array.from({ length: 18 }, (_, n) => n + 16).flatMap(chapter => [1, 2, 3].map(exercise => `${chapter}-${exercise}`))
+assert.deepEqual(readingGuides.map(g => `${g.chapter}-${g.exercise}`), expectedExercises, 'Every photographed exercise needs exactly one guide')
 assert.deepEqual(Object.keys(readingPassages), expectedExercises, 'Every photographed exercise needs its full text')
 assert.deepEqual(Object.keys(readingContexts), expectedExercises, 'Every photographed exercise needs a situation')
 const bilingual = (copy, where) => assert.ok(copy?.en?.trim() && copy?.vi?.trim(), `Missing translation: ${where}`)
@@ -49,25 +49,34 @@ for (const [key, paragraphs] of Object.entries(readingPassages)) checkParagraphs
 for (const [key, context] of Object.entries(readingContexts)) for (const copy of [context.type, context.situation, context.focus]) bilingual(copy, `context ${key}`)
 // Units are sentences, short sentence groups, headings or table rows; this catches truncated transcriptions.
 assert.ok(passageUnits.length >= 740, `Passage units went missing: ${passageUnits.length}`)
-assert.deepEqual(practiceReadings.map(r => r.chapter), Object.keys(readingChapterPages).map(Number), 'One practice text per chapter')
+const chapters = Object.keys(readingChapterPages).map(Number)
+for (const kind of ['practice', 'review']) assert.deepEqual(practiceReadings.filter(r => r.kind === kind).map(r => r.chapter), chapters, `One ${kind} text per chapter`)
 for (const r of practiceReadings) {
-  const key = `${r.chapter}-practice`
+  const key = `${r.chapter}-${r.kind}`
   checkParagraphs(key, r.paragraphs, r.chapter)
-  for (const copy of [r.title, r.explanation, r.context.type, r.context.situation, r.context.focus]) bilingual(copy, key)
-  assert.equal(r.question.options.length, 4, `Four options ${key}`)
-  assert.ok([1, 2, 3, 4].includes(r.answer), `Invalid answer ${key}`)
-  const own = new Set(r.paragraphs.flat().flatMap(u => u.grammarIds).filter(id => grammarChapter.get(id) === r.chapter))
-  assert.ok(own.size >= 3, `${key} should practise at least three of its own chapter's patterns, found ${own.size}`)
+  for (const copy of [r.title, r.context.type, r.context.situation, r.context.focus]) bilingual(copy, key)
+  assert.ok(r.questions.length >= (r.kind === 'review' ? 2 : 1), `Too few questions ${key}`)
+  for (const q of r.questions) {
+    assert.ok(q.jp && q.options.length === 4 && new Set(q.options).size === 4, `Four distinct options ${key}: ${q.jp}`)
+    assert.ok([1, 2, 3, 4].includes(q.answer), `Invalid answer ${key}`)
+    bilingual(q.explanation, `${key}: ${q.jp}`)
+  }
+  const tags = r.paragraphs.flat().flatMap(u => u.grammarIds)
+  const own = new Set(tags.filter(id => grammarChapter.get(id) === r.chapter))
+  const earlier = new Set(tags.filter(id => grammarChapter.get(id) < r.chapter))
+  assert.ok(own.size >= (r.kind === 'review' ? 2 : 3), `${key} practises too few of its own chapter's patterns: ${own.size}`)
+  // Review texts must actually revisit earlier material, not just repeat the chapter drill.
+  if (r.kind === 'review') assert.ok(earlier.size >= 2, `${key} revisits too few earlier patterns: ${earlier.size}`)
 }
 for (const guide of readingGuides) {
   const key = `${guide.chapter}-${guide.exercise}`
-  assert.ok(guide.answer === null || [1, 2, 3, 4].includes(guide.answer), `Invalid answer ${key}`)
-  assert.equal(guide.answer === null, ['19-3', '22-3'].includes(key), `Only cropped questions should be ungraded: ${key}`)
+  assert.ok([1, 2, 3, 4].includes(guide.answer), `Every exercise is graded now: ${key}`)
   assert.ok(guide.title.en && guide.title.vi && guide.explanation.en && guide.explanation.vi, `Missing guide copy ${key}`)
   assert.ok(guide.pages.length > 0 && guide.sentences.length > 0, `Empty guide ${key}`)
   for (const page of guide.pages) {
     const [first, last] = readingChapterPages[guide.chapter]
-    assert.ok(page >= first && page <= last, `Source belongs to a different chapter ${key}: ${page}`)
+    // 1890–1892 are photos supplied later (23-1 and the 19-3 / 22-3 question pages).
+    assert.ok((page >= first && page <= last) || (page >= 1890 && page <= 1892), `Source belongs to a different chapter ${key}: ${page}`)
     assert.ok(existsSync(new URL(`../public/reading-chapters/IMG_${page}.jpg`, import.meta.url)), `Missing source ${key}: ${page}`)
   }
   assert.ok(guide.sentences.some(s => s.chunks.some(c => c.words?.length)), `No vocabulary ${key}`)
@@ -87,23 +96,26 @@ for (const guide of readingGuides) {
 // Check the arithmetic behind the two price-comparison questions.
 assert.equal(28000 * 2 + 14000 - 1000 - 1500 * 2, 66000)
 assert.equal(2500 * 2, 5000)
+assert.equal(2 * 1000 + 1 * 1200, 3200) // 19-3: room B on a weekday, 10–12 then 12–13
 assert.ok(!reading.includes('Bài 15 không có phần đọc hiểu.'))
 for (const [query, expected] of [
   ['', [16, 1, 1836]],
   ['chapter=15&exercise=99&page=0', [16, 1, 1836]],
   ['chapter=nope&exercise=NaN&page=Infinity', [16, 1, 1836]],
-  ['chapter=23&exercise=1', [23, 2, 1853]],
+  ['chapter=23&exercise=1', [23, 1, 1890]],
+  ['chapter=19&exercise=3&page=1892', [19, 3, 1892]],
   ['chapter=33&exercise=3', [33, 3, 1887]],
   ['chapter=33&exercise=3&page=1888', [33, 3, 1888]],
   ['chapter=33&exercise=3&page=1886', [33, 3, 1887]],
   ['chapter=33&exercise=3&page=1887.5', [33, 3, 1887]],
   ['chapter=33&exercise=3&page=1836', [33, 3, 1887]],
-  [`chapter=20&exercise=${PRACTICE_EXERCISE}`, [20, PRACTICE_EXERCISE, 1845]],
-  ['chapter=20&exercise=5', [20, 1, 1845]],
+  [`chapter=20&exercise=${PRACTICE_EXERCISES.practice}`, [20, 4, 1845]],
+  [`chapter=20&exercise=${PRACTICE_EXERCISES.review}`, [20, 5, 1845]],
+  ['chapter=20&exercise=6', [20, 1, 1845]],
 ]) {
   const { chapter, exercise, page } = resolveReadingSelection(new URLSearchParams(query))
   assert.deepEqual([chapter, exercise, page], expected, `Invalid reading selection for ${query}`)
 }
 const ownChapterUnused = Object.keys(readingPassages).filter(key => !Object.values(readingPassages[key]).flat().some(u => u.grammarIds.some(id => grammarChapter.get(id) === Number(key.split('-')[0]))))
 console.log(`Info: ${ownChapterUnused.length} book passages tag none of their own chapter's grammar: ${ownChapterUnused.join(' ')}`)
-console.log(`Sentence breakdowns, ${readingGuides.length} guides, ${Object.keys(readingPassages).length} passages (${passageUnits.length} units), ${practiceReadings.length} practice texts: OK`)
+console.log(`Sentence breakdowns, ${readingGuides.length} guides, ${Object.keys(readingPassages).length} passages (${passageUnits.length} units), ${practiceReadings.length} original texts (${practiceReadings.reduce((n, r) => n + r.questions.length, 0)} questions): OK`)
