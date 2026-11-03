@@ -74,6 +74,8 @@
     "chooseScope": "Choose review scope",
     "vocabTab": "Vocabulary",
     "kanjiTab": "Kanji",
+    "readingTab": "Reading",
+    "readingChapterLabel": "Words from chapter readings",
     "kanjiModeN5Only": "Kanji mode is N5-only",
     "chapterLabel": "Chapter",
     "categoryLabel": "Category",

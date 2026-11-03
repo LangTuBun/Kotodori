@@ -5,6 +5,7 @@ import { readingGuides, readingChapterPages, resolveReadingSelection, PRACTICE_E
 import { readingPassages } from '../src/data/reading-passages.ts'
 import { readingContexts } from '../src/data/reading-contexts.ts'
 import { practiceReadings } from '../src/data/reading-practice.ts'
+import { collectReadingWords } from './build-reading-words.mjs'
 
 const grammar = ['n4', 'n5'].flatMap(level => JSON.parse(readFileSync(new URL(`../src/data/${level}/grammar.json`, import.meta.url), 'utf8')))
 const grammarIds = new Set(grammar.map(point => point.id))
@@ -136,7 +137,9 @@ for (const chapter of Object.keys(readingChapterPages).map(Number)) {
   }
   brokenDown += list.length
 }
-console.log(`Full-text breakdowns: ${brokenDown} sentences`)
+const readingWords = JSON.parse(readFileSync(new URL('../src/data/reading-words.json', import.meta.url), 'utf8'))
+assert.deepEqual(readingWords, collectReadingWords(), 'reading-words.json is stale: run node scripts/build-reading-words.mjs')
+console.log(`Full-text breakdowns: ${brokenDown} sentences, ${readingWords.length} review words`)
 const ownChapterUnused = Object.keys(readingPassages).filter(key => !Object.values(readingPassages[key]).flat().some(u => u.grammarIds.some(id => grammarChapter.get(id) === Number(key.split('-')[0]))))
 console.log(`Info: ${ownChapterUnused.length} book passages tag none of their own chapter's grammar: ${ownChapterUnused.join(' ')}`)
 console.log(`Sentence breakdowns, ${readingGuides.length} guides, ${Object.keys(readingPassages).length} passages (${passageUnits.length} units), ${practiceReadings.length} original texts (${practiceReadings.reduce((n, r) => n + r.questions.length, 0)} questions): OK`)

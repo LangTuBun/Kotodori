@@ -34,7 +34,15 @@ function taggedKanjiChapters(level: Level): Array<KanjiChapter & { src: Src }> {
 }
 const COUNT_PRESETS = [10, 20, 30, 50] as const
 
-type Mode = 'vocab' | 'kanji'
+type Mode = 'vocab' | 'kanji' | 'reading'
+type ReadingWord = { id: string; text: string; kana: string; meaning: { en: string; vi: string }; chapter: number; sentence: string; translation: { en: string; vi: string } }
+const READING_CHAPTERS = Array.from({ length: 18 }, (_, i) => i + 16)
+
+// Key words from the reading breakdowns, shaped as a vocab card. The meaning is the one used in
+// the passage and the passage sentence is the example, so the card tests the word in context.
+function readingEntry(w: ReadingWord): VocabEntry {
+  return { id: w.id, kanji: w.text, kana: w.kana, meanings: w.meaning, pos: '', verbGroup: null, adjType: null, jlptLevel: 'N4', chapter: w.chapter, tags: [], homophones: [], relatedWords: [], examples: [{ ja: w.sentence, kana: '', ...w.translation }] }
+}
 type Phase = 'setup' | 'session' | 'done'
 
 type VocabReviewCard = { kind: 'vocab'; id: string; cardType: string; entry: VocabEntry }
@@ -93,6 +101,16 @@ export function Review() {
     [vocab]
   )
   const [kanjiChapter, setKanjiChapter] = useState<number | null>(null)
+  const [readingChapter, setReadingChapter] = useState<number | null>(null)
+  // Loaded only when the Reading tab is opened.
+  const [readingWords, setReadingWords] = useState<ReadingWord[]>([])
+  useEffect(() => {
+    if (mode === 'reading' && !readingWords.length) import('@/data/reading-words.json').then(m => setReadingWords(m.default))
+  }, [mode, readingWords.length])
+  const readingPool = useMemo(
+    () => readingWords.filter(w => readingChapter === null || w.chapter === readingChapter).map(readingEntry),
+    [readingWords, readingChapter]
+  )
   const [pos, setPos] = useState<string | null>(null)
   const [countPreset, setCountPreset] = useState<number | 'all'>(20)
 
@@ -128,7 +146,7 @@ export function Review() {
     return result
   }, [kanjiChapter, kanjiChapters])
 
-  const poolIds = mode === 'vocab' ? vocabPool.map(v => v.id) : kanjiPool.map(x => x.id)
+  const poolIds = mode === 'vocab' ? vocabPool.map(v => v.id) : mode === 'reading' ? readingPool.map(v => v.id) : kanjiPool.map(x => x.id)
   const poolSize = poolIds.length
   const dueCount = getDueCardsFor(poolIds).length
   const effectiveCount = countPreset === 'all' ? poolSize : Math.min(countPreset, poolSize)
@@ -144,6 +162,11 @@ export function Review() {
         if (mode === 'vocab') {
           const entry = vocab.find(v => v.id === c.vocabId)
           return entry ? { kind: 'vocab', id: c.vocabId, cardType: c.cardType, entry } : null
+        }
+        if (mode === 'reading') {
+          const entry = readingPool.find(v => v.id === c.vocabId)
+          // Kanji words test the reading; kana-only words have no reading to test, so ask the meaning.
+          return entry ? { kind: 'vocab', id: c.vocabId, cardType: entry.kanji === entry.kana ? 'meaning' : 'reading', entry } : null
         }
         const found = kanjiPool.find(x => x.id === c.vocabId)
         return found ? { kind: 'kanji', id: c.vocabId, cardType: 'kanji', word: found.word, group: found.group, chapterNum: found.chapterNum } : null
@@ -203,6 +226,7 @@ export function Review() {
         group={group} setGroup={setGroup} groups={GROUPS} hasChapterKeys={hasChapterKeys} allChapterKeys={allChapterKeys}
         minnaLesson={minnaLesson} setMinnaLesson={setMinnaLesson} minnaLessons={minnaLessons}
         kanjiChapter={kanjiChapter} setKanjiChapter={setKanjiChapter} kanjiChapterNums={kanjiChapterNums}
+        readingChapter={readingChapter} setReadingChapter={setReadingChapter}
         pos={pos} setPos={setPos} posList={POS_LIST}
         countPreset={countPreset} setCountPreset={setCountPreset}
         poolSize={poolSize} dueCount={dueCount} effectiveCount={effectiveCount}
@@ -220,7 +244,7 @@ export function Review() {
         <div className="border-3 border-structural p-4 sm:p-8 shadow-[var(--shadow-brutal-hover)] text-center">
           <div className="text-5xl sm:text-7xl font-black mb-3">{reviewed}</div>
           <div className="text-sm font-bold uppercase tracking-wider text-muted mb-6">
-            {mode === 'vocab' ? t('review.wordsReviewed') : t('review.kanjiReviewed')}
+            {mode === 'kanji' ? t('review.kanjiReviewed') : t('review.wordsReviewed')}
           </div>
           <div className="flex gap-3 justify-center">
             <Button variant="yellow" onClick={backToSetup}>{t('review.continueReview')}</Button>
@@ -267,6 +291,7 @@ function ReviewSetup({
   group, setGroup, groups, hasChapterKeys, allChapterKeys,
   minnaLesson, setMinnaLesson, minnaLessons,
   kanjiChapter, setKanjiChapter, kanjiChapterNums,
+  readingChapter, setReadingChapter,
   pos, setPos, posList,
   countPreset, setCountPreset,
   poolSize, dueCount, effectiveCount, onStart,
@@ -275,6 +300,7 @@ function ReviewSetup({
   group: string | null; setGroup: (g: string | null) => void; groups: string[]; hasChapterKeys: boolean; allChapterKeys: boolean
   minnaLesson: number | null; setMinnaLesson: (n: number | null) => void; minnaLessons: number[]
   kanjiChapter: number | null; setKanjiChapter: (c: number | null) => void; kanjiChapterNums: number[]
+  readingChapter: number | null; setReadingChapter: (c: number | null) => void
   pos: string | null; setPos: (p: string | null) => void; posList: string[]
   countPreset: number | 'all'; setCountPreset: (c: number | 'all') => void
   poolSize: number; dueCount: number; effectiveCount: number
@@ -297,7 +323,7 @@ function ReviewSetup({
 
       <div className="glass-card overflow-hidden">
         {/* Mode tabs */}
-        <div className="grid grid-cols-2 border-b-3 border-structural">
+        <div className="grid grid-cols-3 border-b-3 border-structural">
           <button
             onClick={() => setMode('vocab')}
             className={`py-4 border-r-3 border-structural font-black text-sm uppercase tracking-wider cursor-pointer transition-colors ${mode === 'vocab' ? 'bg-surface text-ink' : 'hover:bg-surface'}`}
@@ -306,9 +332,15 @@ function ReviewSetup({
           </button>
           <button
             onClick={() => setMode('kanji')}
-            className={`py-4 font-black text-sm uppercase tracking-wider transition-colors cursor-pointer ${mode === 'kanji' ? 'bg-surface text-ink' : 'hover:bg-surface'}`}
+            className={`py-4 border-r-3 border-structural font-black text-sm uppercase tracking-wider transition-colors cursor-pointer ${mode === 'kanji' ? 'bg-surface text-ink' : 'hover:bg-surface'}`}
           >
             {t('review.kanjiTab')} <span className="opacity-60 normal-case font-bold">(漢字)</span>
+          </button>
+          <button
+            onClick={() => setMode('reading')}
+            className={`py-4 font-black text-sm uppercase tracking-wider transition-colors cursor-pointer ${mode === 'reading' ? 'bg-surface text-ink' : 'hover:bg-surface'}`}
+          >
+            {t('review.readingTab')} <span className="opacity-60 normal-case font-bold">(読解)</span>
           </button>
         </div>
 
@@ -328,7 +360,18 @@ function ReviewSetup({
               </ChipRow>
             </FilterSection>
           )}
-          {mode === 'vocab' ? (
+          {mode === 'reading' ? (
+            <FilterSection label={t('review.readingChapterLabel')}>
+              <ChipRow>
+                <Chip active={readingChapter === null} onClick={() => setReadingChapter(null)}>{t('common.all')}</Chip>
+                {READING_CHAPTERS.map(c => (
+                  <Chip key={c} active={readingChapter === c} onClick={() => setReadingChapter(readingChapter === c ? null : c)}>
+                    {t('common.chapterN', { n: c })}
+                  </Chip>
+                ))}
+              </ChipRow>
+            </FilterSection>
+          ) : mode === 'vocab' ? (
             <FilterSection label={groupLabel}>
               <ChipRow>
                 <Chip active={group === null} onClick={() => setGroup(null)}>{t('common.all')}</Chip>
@@ -381,11 +424,11 @@ function ReviewSetup({
         <div className="border-t-3 border-structural p-6 bg-surface flex flex-wrap items-center justify-between gap-4">
           <div className="text-sm font-bold">
             {poolSize === 0 ? (
-              <span className="text-red">{mode === 'vocab' ? t('review.noMatchWords') : t('review.noMatchKanji')}</span>
+              <span className="text-red">{mode === 'kanji' ? t('review.noMatchKanji') : t('review.noMatchWords')}</span>
             ) : (
               <>
                 <span className="text-red">{dueCount} {t('review.due')}</span>
-                <span className="text-muted"> · {poolSize} {mode === 'vocab' ? t('review.wordsInScope') : t('review.kanjiInScope')} · {t('review.willReview')} </span>
+                <span className="text-muted"> · {poolSize} {mode === 'kanji' ? t('review.kanjiInScope') : t('review.wordsInScope')} · {t('review.willReview')} </span>
                 <span>{effectiveCount}</span>
               </>
             )}
@@ -455,7 +498,7 @@ function VocabCardView({ card, flipped, onFlip }: { card: VocabReviewCard; flipp
         </>
       ) : (
         <>
-          <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />
+          {entry.pos && <PosTag pos={entry.pos} verbGroup={entry.verbGroup} />}
           <div className="text-[clamp(2rem,9vw,3rem)] font-black jp leading-none my-4 break-words">
             <Furigana kanji={entry.kanji} kana={entry.kana} />
           </div>
