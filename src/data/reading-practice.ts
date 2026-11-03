@@ -38,7 +38,7 @@ export const practiceReadings: PracticeReading[] = [
       [s('キム：電車が30分も止まったんです。', 'Kim: The train stopped for a whole thirty minutes.', 'Kim: Tàu dừng những 30 phút.', 149, 154), s('森：そうですか。会議はもう始まりましたよ。', 'Mori: I see. The meeting has already started.', 'Mori: Vậy à. Cuộc họp bắt đầu rồi đấy.')],
       [s('キム：あのう、会議の資料を家に忘れたんですが、森さんのを見てもいいですか。', 'Kim: Um, I left the meeting documents at home. May I look at yours?', 'Kim: À… tôi để quên tài liệu họp ở nhà, tôi xem của anh Mori được không?', 150), s('森：いいですよ。一緒に行きましょう。', 'Mori: Sure. Let’s go together.', 'Mori: Được chứ. Cùng đi nào.')],
     ],
-    'キムさんはどうして遅くなりましたか。', ['資料を忘れたから', '電車が止まったから', '駅から歩いたから', '会議の時間を間違えたから'], 2,
+    'キムさんはどうして遅れましたか。', ['資料を忘れたから', '電車が止まったから', '駅から歩いたから', '会議の時間を間違えたから'], 2,
     '電車が30分も止まったんです gives the reason. Forgetting the documents comes later and is a separate problem.',
     '電車が30分も止まったんです là lý do. Quên tài liệu là chuyện khác, được nói sau.'),
 
@@ -60,7 +60,7 @@ export const practiceReadings: PracticeReading[] = [
       [s('さき：でも、さっき風で窓が開いて、ポスターが落ちました。', 'Saki: But a moment ago the wind opened the window and the poster fell down.', 'Saki: Nhưng lúc nãy gió làm cửa sổ mở ra và tấm áp phích rơi xuống.', 162), s('今、窓を閉めて、ポスターをもう一度はりました。', 'I’ve closed the window and put the poster up again.', 'Bây giờ mình đã đóng cửa sổ và dán lại áp phích.', 161)],
       [s('トゥアン：ありがとう。黒板に何か書いてありますか。', 'Tuan: Thanks. Is anything written on the blackboard?', 'Tuấn: Cảm ơn. Trên bảng có viết gì không?', 163), s('さき：はい、「先生、ありがとう」と大きく書いてあります。', 'Saki: Yes, “Thank you, teacher” is written in big letters.', 'Saki: Có, có viết to chữ “Cảm ơn thầy cô”.', 163, 158)],
     ],
-    'まだしていないことはどれですか。', ['机を並べること', '飲み物を買うこと', '黒板に書くこと', 'どれもしてある'], 4,
+    'もうしてあることはどれですか。', ['机を並べること', '飲み物を買うこと', '黒板に書くこと', '全部'], 4,
     'Desks, drinks and the blackboard message are all described with てあります, so everything is already done. The window and poster were fixed too.',
     'Bàn, đồ uống và dòng chữ trên bảng đều dùng てあります nên đã xong hết. Cửa sổ và áp phích cũng đã sửa lại.'),
 
@@ -93,7 +93,7 @@ export const practiceReadings: PracticeReading[] = [
       [s('子供：「芝生」って何？', 'Child: What’s a “lawn”?', 'Con: “Bãi cỏ” là gì ạ?', 184), s('父：草がたくさんあるところという意味だよ。「芝生に入らないでください」は、ここを歩くなということ。', 'Father: It means a place with lots of grass. “Please keep off the lawn” means don’t walk here.', 'Bố: Nghĩa là chỗ có nhiều cỏ. “Xin đừng vào bãi cỏ” tức là đừng đi ở đây.', 182, 180)],
       [s('父：あ、雨だ。早く走れ！', 'Father: Oh, it’s raining. Run, quick!', 'Bố: Ôi, mưa rồi. Chạy nhanh lên!', 179), s('子供：お父さん、「走るな」って書いてあるよ！', 'Child: Dad, it says “No running”!', 'Con: Bố ơi, có viết “Không được chạy” mà!', 180, 183, 181)],
     ],
-    '「芝生に入らないでください」はどういう意味ですか。', ['池に入ってはいけない', '草の上を歩いてはいけない', '公園で走ってはいけない', '雨の日は入ってはいけない'], 2,
+    '「芝生に入らないでください」はどういう意味ですか。', ['池に入らないでください', '草の上を歩かないでください', '公園で走らないでください', '雨の日は入らないでください'], 2,
     'The father explains it as ここを歩くな: do not walk on the grass. The pond and running signs are different signs.',
     'Người bố giải thích là ここを歩くな: không được đi trên cỏ. Biển cấm xuống hồ và cấm chạy là những biển khác.'),
 
@@ -210,13 +210,13 @@ export const practiceReadings: PracticeReading[] = [
     '機械が止まった場合は、壁の番号に電話してください. Máy B là lời khuyên cho áo len, còn tiệm khác là lời khuyên khi đến muộn.'),
 
   p(33, 'A visitor at reception', 'Khách đến quầy lễ tân',
-    ['Business conversation', 'Hội thoại công việc', 'A visitor from another company arrives; the receptionist and an employee handle it politely.', 'Một vị khách từ công ty khác đến; lễ tân và nhân viên tiếp đón lịch sự.', 'Honorific (いらっしゃる, おっしゃる) for the visitor; humble (参る, 申す) for staff.', 'Tôn kính ngữ (いらっしゃる, おっしゃる) cho khách; khiêm nhường ngữ (参る, 申す) cho nhân viên.'],
+    ['Business conversation', 'Hội thoại công việc', 'A visitor from another company arrives; the receptionist and an employee handle it politely.', 'Một vị khách từ công ty khác đến; lễ tân và nhân viên tiếp đón lịch sự.', 'Honorific (いらっしゃる, 飲まれる) for the visitor; humble (参る, 申す) for staff — including their own president when talking to an outsider.', 'Tôn kính ngữ (いらっしゃる, 飲まれる) cho khách; khiêm nhường ngữ (参る, 申す) cho nhân viên — kể cả giám đốc công ty mình khi nói với người ngoài.'],
     [
       [s('受付：いらっしゃいませ。どちらからいらっしゃいましたか。', 'Reception: Welcome. Where have you come from?', 'Lễ tân: Kính chào quý khách. Quý khách đến từ đâu ạ?', 267), s('客：ABC社の田中と申します。営業部の木村さんとお約束があります。', 'Visitor: I am Tanaka from ABC. I have an appointment with Kimura in Sales.', 'Khách: Tôi là Tanaka của công ty ABC. Tôi có hẹn với anh Kimura phòng kinh doanh.', 269)],
       [s('受付：田中様でございますね。少々お待ちください。', 'Reception: Mr/Ms Tanaka, is it? Please wait a moment.', 'Lễ tân: Ông/bà Tanaka phải không ạ. Xin vui lòng chờ một chút.', 270, 239), s('木村は今会議中ですが、すぐに参ります。', 'Kimura is in a meeting now but will come right away.', 'Kimura đang họp nhưng sẽ đến ngay ạ.', 269)],
-      [s('木村：お待たせしました。社長も田中様にお会いしたいとおっしゃっていました。', 'Kimura: Sorry to keep you waiting. The president also said they would like to meet you.', 'Kimura: Xin lỗi đã để anh/chị chờ. Giám đốc cũng nói muốn gặp anh/chị.', 267, 235), s('社長は3時に戻られますので、それまで会議室でお休みください。', 'The president will be back at three, so please rest in the meeting room until then.', 'Giám đốc sẽ về lúc 3 giờ nên xin anh/chị nghỉ ở phòng họp đến lúc đó.', 268, 253, 248, 239)],
+      [s('木村：お待たせしました。社長も田中様にお会いしたいと申しておりました。', 'Kimura: Sorry to keep you waiting. Our president also said they would like to meet you.', 'Kimura: Xin lỗi đã để anh/chị chờ. Giám đốc chúng tôi cũng nói muốn được gặp anh/chị.', 269, 235), s('社長は3時に戻りますので、それまで会議室でお休みください。何か飲まれますか。', 'The president will be back at three, so please rest in the meeting room until then. Would you like something to drink?', 'Giám đốc sẽ về lúc 3 giờ nên xin anh/chị nghỉ ở phòng họp đến lúc đó. Anh/chị dùng gì không ạ?', 253, 248, 239, 268)],
     ],
     '田中さんは3時まで何をしますか。', ['社長と会議をする', '会議室で待つ', '営業部へ行く', 'ABC社に戻る'], 2,
-    'それまで会議室でお休みください asks the visitor to rest in the meeting room until the president returns at three.',
-    'それまで会議室でお休みください mời khách nghỉ ở phòng họp đến khi giám đốc về lúc 3 giờ.'),
+    'それまで会議室でお休みください asks the visitor to rest in the meeting room until the president returns at three. Note 戻ります and 申しておりました: staff do not use honorifics for their own president in front of an outside visitor.',
+    'それまで会議室でお休みください mời khách nghỉ ở phòng họp đến khi giám đốc về lúc 3 giờ. Chú ý 戻ります và 申しておりました: nhân viên không dùng tôn kính ngữ cho giám đốc công ty mình khi nói với khách bên ngoài.'),
 ]

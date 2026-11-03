@@ -100,7 +100,7 @@ function GrammarSpotlight({ chapter, points, other, used, focus, onFocus }: { ch
   const chip = (g: (typeof points)[number], dim: boolean) => {
     const count = used.get(g.id) ?? 0
     return <button key={g.id} type="button" disabled={!count} aria-pressed={focus === g.id} onClick={() => onFocus(g.id)} title={localize(g.meaning)} className={`min-h-11 rounded-lg border px-3 py-1 text-left text-sm disabled:opacity-45 ${focus === g.id ? 'bg-blue/20 border-blue' : 'border-structural hover:bg-surface'} ${dim ? 'text-muted' : ''}`}>
-      <span className="jp font-bold">{g.pattern}</span> <span className="text-xs text-muted">{count ? `×${count}` : l('not used', 'chưa dùng')}{dim && ` · ${l('Ch.', 'Bài')} ${g.chapter}`}</span>
+      <span className="jp font-bold">{g.pattern}</span> <span className="text-xs text-muted">{count ? l(`×${count} in this text`, `×${count} trong bài`) : l('not tagged', 'chưa gắn')}{dim && ` · ${l('Ch.', 'Bài')} ${g.chapter}`}</span>
     </button>
   }
   const active = focus ? grammar.get(focus) : undefined
