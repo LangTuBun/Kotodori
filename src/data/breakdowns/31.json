@@ -1,0 +1,3232 @@
+[
+ {
+  "sentence": "この前、町を歩いていたら、いつもは開いている店が閉まっていました。",
+  "translation": {
+   "en": "Recently, while walking in town, I found a shop that is usually open was closed.",
+   "vi": "Hôm trước đi trong phố, tôi thấy quán thường mở lại đóng."
+  },
+  "together": {
+   "en": "The walking sets the scene for an unexpected discovery: a shop normally open was closed. The two ている forms describe the shop’s usual state and its state on that occasion.",
+   "vi": "Việc đi bộ làm bối cảnh cho một phát hiện bất ngờ: quán thường mở cửa hôm ấy lại đóng. Hai dạng ている nói về trạng thái thường lệ và trạng thái lúc đó của quán."
+  },
+  "chunks": [
+   {
+    "text": "この前、",
+    "label": {
+     "en": "the other day",
+     "vi": "hôm trước"
+    },
+    "detail": {
+     "en": "この前 refers to a recent occasion in the past, setting the time for the story.",
+     "vi": "この前 chỉ một dịp gần đây trong quá khứ, mở đầu câu chuyện."
+    }
+   },
+   {
+    "text": "町を歩いていたら、",
+    "label": {
+     "en": "while walking in town",
+     "vi": "khi đang đi bộ trong phố"
+    },
+    "detail": {
+     "en": "を marks the area travelled through. 歩く → 歩いていた + ら introduces the situation in which the speaker discovered something.",
+     "vi": "を đánh dấu nơi đi qua. 歩く → 歩いていた + ら nêu tình huống đang diễn ra khi người nói phát hiện sự việc."
+    },
+    "grammarIds": [
+     "g_257"
+    ]
+   },
+   {
+    "text": "いつもは開いている店が",
+    "label": {
+     "en": "a shop usually open",
+     "vi": "quán thường mở cửa"
+    },
+    "detail": {
+     "en": "開く → 開いている describes an open state and modifies 店. は highlights what is usual; が marks the shop as the subject of 閉まっていました.",
+     "vi": "開く → 開いている chỉ trạng thái mở và bổ nghĩa cho 店. は nhấn mạnh điều thường lệ; が đánh dấu quán là chủ thể của 閉まっていました."
+    },
+    "grammarIds": [
+     "g_165",
+     "g_094_4"
+    ]
+   },
+   {
+    "text": "閉まっていました。",
+    "label": {
+     "en": "was closed",
+     "vi": "đã đóng cửa"
+    },
+    "detail": {
+     "en": "閉まる → 閉まって + いました describes the closed state at that past moment, rather than the action of someone closing it.",
+     "vi": "閉まる → 閉まって + いました diễn tả trạng thái đóng cửa lúc đó, chứ không diễn tả ai đó đang đóng cửa."
+    },
+    "grammarIds": [
+     "g_094_4"
+    ],
+    "words": [
+     {
+      "text": "閉まる",
+      "kana": "しまる",
+      "meaning": {
+       "en": "to close, be shut",
+       "vi": "đóng lại"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "店のドアには、紙が貼ってありました。",
+  "translation": {
+   "en": "A piece of paper was posted on the door.",
+   "vi": "Trên cửa có dán giấy."
+  },
+  "together": {
+   "en": "には identifies the door as the place being described. 貼ってありました presents the result of someone deliberately posting the notice.",
+   "vi": "には nêu cánh cửa là nơi được nói đến. 貼ってありました cho biết tờ giấy đã được ai đó chủ động dán lên và vẫn ở đó."
+  },
+  "chunks": [
+   {
+    "text": "店のドアには、",
+    "label": {
+     "en": "on the shop door",
+     "vi": "trên cửa quán"
+    },
+    "detail": {
+     "en": "の links the door to the shop. に marks the location of the posted paper, and は makes that location the topic.",
+     "vi": "の nối cánh cửa với quán. に chỉ vị trí tờ giấy được dán; は đưa vị trí đó làm chủ đề."
+    }
+   },
+   {
+    "text": "紙が",
+    "label": {
+     "en": "a piece of paper",
+     "vi": "một tờ giấy"
+    },
+    "detail": {
+     "en": "が marks the thing left in the resulting state described by 貼ってある.",
+     "vi": "が đánh dấu vật đang ở trạng thái được diễn tả bằng 貼ってある."
+    }
+   },
+   {
+    "text": "貼ってありました。",
+    "label": {
+     "en": "had been posted",
+     "vi": "đã được dán lên"
+    },
+    "detail": {
+     "en": "貼る → 貼って + ありました describes a past result of an intentional action: someone had put the paper there.",
+     "vi": "貼る → 貼って + ありました chỉ kết quả trong quá khứ của một hành động có chủ ý: ai đó đã dán tờ giấy ở đó."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "貼る",
+      "kana": "はる",
+      "meaning": {
+       "en": "to stick, paste",
+       "vi": "dán"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "その紙には、「今日は店主が疲れているから、休みます」と書いてありました。",
+  "translation": {
+   "en": "It said, “Closed today because the owner is tired.”",
+   "vi": "Giấy ghi: “Hôm nay chủ quán mệt nên nghỉ.”"
+  },
+  "together": {
+   "en": "The quotation gives the notice’s reason for closing. と書いてありました frames those words as a written message still visible on the paper.",
+   "vi": "Phần trích dẫn nêu lý do nghỉ của quán. と書いてありました cho biết đó là nội dung được viết sẵn trên tờ giấy."
+  },
+  "chunks": [
+   {
+    "text": "その紙には、",
+    "label": {
+     "en": "on that paper",
+     "vi": "trên tờ giấy đó"
+    },
+    "detail": {
+     "en": "その points back to the paper on the door. には makes the place containing the message the topic.",
+     "vi": "その nhắc lại tờ giấy trên cửa. には đưa nơi có nội dung thông báo làm chủ đề."
+    }
+   },
+   {
+    "text": "「今日は",
+    "label": {
+     "en": "today",
+     "vi": "hôm nay"
+    },
+    "detail": {
+     "en": "The opening bracket begins the notice’s exact words. は sets today as the topic within the quotation.",
+     "vi": "Dấu 「 mở đầu nguyên văn thông báo. は đưa hôm nay làm chủ đề trong lời trích dẫn."
+    }
+   },
+   {
+    "text": "店主が疲れているから、",
+    "label": {
+     "en": "because the owner is tired",
+     "vi": "vì chủ quán mệt"
+    },
+    "detail": {
+     "en": "が marks the owner as the subject. 疲れる → 疲れている describes being tired; から supplies the reason for 休みます.",
+     "vi": "が đánh dấu chủ quán là chủ thể. 疲れる → 疲れている chỉ trạng thái mệt; から nêu lý do cho 休みます."
+    },
+    "grammarIds": [
+     "g_066"
+    ],
+    "words": [
+     {
+      "text": "店主",
+      "kana": "てんしゅ",
+      "meaning": {
+       "en": "shop owner",
+       "vi": "chủ quán"
+      }
+     }
+    ]
+   },
+   {
+    "text": "休みます」",
+    "label": {
+     "en": "we are taking the day off",
+     "vi": "quán nghỉ"
+    },
+    "detail": {
+     "en": "休みます is a polite statement of the decision to take a break today. The closing bracket ends the quoted notice.",
+     "vi": "休みます là cách nói lịch sự về quyết định nghỉ hôm nay. Dấu 」 kết thúc nội dung thông báo."
+    }
+   },
+   {
+    "text": "と書いてありました。",
+    "label": {
+     "en": "it was written",
+     "vi": "được viết như vậy"
+    },
+    "detail": {
+     "en": "と marks all the preceding quoted words as the written content. 書く → 書いて + ありました describes the message left on the paper.",
+     "vi": "と đánh dấu toàn bộ phần trích dẫn là nội dung được viết. 書く → 書いて + ありました chỉ nội dung đã được viết sẵn trên giấy."
+    },
+    "grammarIds": [
+     "g_185",
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "店を開けないのは、休みの日だからとか工事だからとかではなくて、店主の都合だというのが面白いと思いました。",
+  "translation": {
+   "en": "I found it interesting that it was closed for the owner’s convenience rather than a scheduled holiday or construction.",
+   "vi": "Tôi thấy thú vị vì quán đóng do việc riêng chủ quán, không phải ngày nghỉ hay sửa chữa."
+  },
+  "together": {
+   "en": "The speaker finds the reason for closing amusing: it is the owner’s personal circumstances. The sentence rejects two ordinary explanations before giving that reason.",
+   "vi": "Người kể thấy thú vị vì lý do đóng cửa là chuyện riêng của chủ quán. Câu phủ nhận hai lý do thường gặp rồi mới nêu lý do thực tế."
+  },
+  "chunks": [
+   {
+    "text": "店を開けないのは、",
+    "label": {
+     "en": "as for not opening the shop",
+     "vi": "việc không mở quán"
+    },
+    "detail": {
+     "en": "開ける → 開けない is negative. の turns the action into a noun-like topic, and は introduces what will be explained.",
+     "vi": "開ける → 開けない là dạng phủ định. の biến hành động thành một cụm danh từ; は đưa việc đó làm chủ đề."
+    }
+   },
+   {
+    "text": "休みの日だからとか工事だからとかではなくて、",
+    "label": {
+     "en": "not because of a holiday or construction",
+     "vi": "không phải vì ngày nghỉ hay thi công"
+    },
+    "detail": {
+     "en": "N + だから gives a reason; とか lists possible reasons. ではなくて rejects those explanations and links to the actual one.",
+     "vi": "N + だから nêu lý do; とか liệt kê các lý do có thể có. ではなくて phủ nhận chúng và nối sang lý do thực tế."
+    },
+    "words": [
+     {
+      "text": "工事",
+      "kana": "こうじ",
+      "meaning": {
+       "en": "construction work",
+       "vi": "việc thi công"
+      }
+     }
+    ]
+   },
+   {
+    "text": "店主の都合だというのが",
+    "label": {
+     "en": "the fact that it is the owner’s circumstances",
+     "vi": "việc lý do là chuyện riêng của chủ quán"
+    },
+    "detail": {
+     "en": "店主の都合 links the circumstances to the owner. だというの packages the statement as a fact; が marks that fact as what is interesting.",
+     "vi": "店主の都合 chỉ hoàn cảnh riêng của chủ quán. だというの gom nhận định đó thành một sự việc; が đánh dấu sự việc được nhận xét là thú vị."
+    },
+    "words": [
+     {
+      "text": "都合",
+      "kana": "つごう",
+      "meaning": {
+       "en": "circumstances, convenience",
+       "vi": "hoàn cảnh, sự thuận tiện"
+      }
+     }
+    ]
+   },
+   {
+    "text": "面白いと思いました。",
+    "label": {
+     "en": "I found it interesting",
+     "vi": "tôi thấy thú vị"
+    },
+    "detail": {
+     "en": "面白い is the plain-form judgment quoted by と. 思う → 思いました reports what the speaker thought at the time.",
+     "vi": "面白い là nhận xét ở thể thường được dẫn bằng と. 思う → 思いました thuật lại suy nghĩ của người nói lúc đó."
+    },
+    "grammarIds": [
+     "g_147"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "日本人はよく働いて、具合が悪くても、台風が来ても、働かないといけないと考えている人が多いですが、この店の店主はそう考えていないようです。",
+  "translation": {
+   "en": "Many Japanese people work hard and think they must work even when ill or during a typhoon, but this owner seems not to think that way.",
+   "vi": "Nhiều người Nhật làm chăm và nghĩ dù ốm hay có bão vẫn phải làm, nhưng chủ quán này có vẻ không nghĩ vậy."
+  },
+  "together": {
+   "en": "The sentence contrasts a widespread belief about working despite difficulties with this owner’s apparent attitude. The final ようです is an inference from the notice.",
+   "vi": "Câu đối chiếu quan niệm phổ biến về việc phải làm dù khó khăn với thái độ có vẻ khác của chủ quán. ようです ở cuối là suy đoán dựa vào thông báo."
+  },
+  "chunks": [
+   {
+    "text": "日本人はよく働いて、",
+    "label": {
+     "en": "Japanese people work hard",
+     "vi": "người Nhật làm việc chăm chỉ"
+    },
+    "detail": {
+     "en": "は introduces Japanese people as the broad topic. よく means ‘a lot’ or ‘hard’ here; 働いて links this description to the following belief.",
+     "vi": "は đưa người Nhật làm chủ đề chung. よく ở đây chỉ việc làm nhiều, chăm chỉ; 働いて nối nhận xét này với quan niệm phía sau."
+    }
+   },
+   {
+    "text": "具合が悪くても、",
+    "label": {
+     "en": "even if they feel ill",
+     "vi": "dù không khỏe"
+    },
+    "detail": {
+     "en": "具合が悪い means to feel unwell. 悪い → 悪くて + も gives a condition that does not remove the obligation to work.",
+     "vi": "具合が悪い nghĩa là không khỏe. 悪い → 悪くて + も nêu điều kiện vẫn không làm mất nghĩa vụ phải làm việc."
+    },
+    "grammarIds": [
+     "g_255"
+    ],
+    "words": [
+     {
+      "text": "具合",
+      "kana": "ぐあい",
+      "meaning": {
+       "en": "condition; here: physical condition",
+       "vi": "tình trạng; ở đây: sức khỏe"
+      }
+     }
+    ]
+   },
+   {
+    "text": "台風が来ても、",
+    "label": {
+     "en": "even if a typhoon comes",
+     "vi": "dù có bão"
+    },
+    "detail": {
+     "en": "来る → 来て + も adds another difficult condition. The expectation of working remains the same.",
+     "vi": "来る → 来て + も thêm một điều kiện khó khăn nữa. Quan niệm phải làm việc vẫn không thay đổi."
+    },
+    "grammarIds": [
+     "g_255"
+    ],
+    "words": [
+     {
+      "text": "台風",
+      "kana": "たいふう",
+      "meaning": {
+       "en": "typhoon",
+       "vi": "bão"
+      }
+     }
+    ]
+   },
+   {
+    "text": "働かないといけないと考えている人が多いですが、",
+    "label": {
+     "en": "many think they must work, but",
+     "vi": "nhiều người nghĩ vẫn phải làm, nhưng"
+    },
+    "detail": {
+     "en": "働く → 働かない + といけない expresses obligation. と考えている modifies 人; が after です introduces the contrast.",
+     "vi": "働く → 働かない + といけない diễn tả nghĩa vụ. と考えている bổ nghĩa cho 人; が sau です mở ra ý đối lập."
+    },
+    "grammarIds": [
+     "g_088",
+     "g_165"
+    ]
+   },
+   {
+    "text": "この店の店主は",
+    "label": {
+     "en": "this shop’s owner",
+     "vi": "chủ quán này"
+    },
+    "detail": {
+     "en": "の links the owner to this shop. は switches the topic to the owner in contrast with the people just described.",
+     "vi": "の nối chủ quán với quán này. は chuyển chủ đề sang người chủ, đối chiếu với những người vừa được nói đến."
+    }
+   },
+   {
+    "text": "そう考えていないようです。",
+    "label": {
+     "en": "seems not to think that way",
+     "vi": "có vẻ không nghĩ như vậy"
+    },
+    "detail": {
+     "en": "そう refers to the belief that one must work regardless. 考える → 考えていない + ようです expresses an inference about the owner’s thinking.",
+     "vi": "そう chỉ quan niệm dù thế nào cũng phải làm. 考える → 考えていない + ようです diễn tả suy đoán về cách nghĩ của chủ quán."
+    },
+    "grammarIds": [
+     "g_140"
+    ],
+    "words": [
+     {
+      "text": "考える",
+      "kana": "かんがえる",
+      "meaning": {
+       "en": "to think, consider",
+       "vi": "suy nghĩ, cân nhắc"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "みんながこの店主と同じ考え方なら日本社会がどうなるか、ちょっと見てみたいです。",
+  "translation": {
+   "en": "I would like to see what Japanese society would be like if everyone thought like this owner.",
+   "vi": "Tôi muốn thử xem xã hội Nhật sẽ thế nào nếu ai cũng nghĩ như chủ quán."
+  },
+  "together": {
+   "en": "なら sets up an imagined society where everyone thinks like the owner. どうなるか becomes the thing the speaker would like to find out by seeing it.",
+   "vi": "なら đặt ra giả định ai cũng nghĩ như chủ quán. どうなるか là điều người kể muốn tận mắt xem để biết."
+  },
+  "chunks": [
+   {
+    "text": "みんながこの店主と同じ考え方なら",
+    "label": {
+     "en": "if everyone thought like this owner",
+     "vi": "nếu ai cũng có cách nghĩ như chủ quán này"
+    },
+    "detail": {
+     "en": "と marks the person used for comparison with 同じ. 考え方 + なら sets up a hypothetical condition.",
+     "vi": "と đánh dấu người được lấy làm mốc so sánh với 同じ. 考え方 + なら đặt ra một điều kiện giả định."
+    },
+    "grammarIds": [
+     "g_113"
+    ],
+    "words": [
+     {
+      "text": "考え方",
+      "kana": "かんがえかた",
+      "meaning": {
+       "en": "way of thinking",
+       "vi": "cách nghĩ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "日本社会がどうなるか、",
+    "label": {
+     "en": "what Japanese society would become",
+     "vi": "xã hội Nhật sẽ ra sao"
+    },
+    "detail": {
+     "en": "が marks society as the subject of なる. The question word どう + か makes an embedded question, the object of seeing in the next chunk.",
+     "vi": "が đánh dấu xã hội là chủ thể của なる. Từ hỏi どう + か tạo câu hỏi lồng, làm nội dung muốn xem ở phần sau."
+    },
+    "grammarIds": [
+     "g_251"
+    ],
+    "words": [
+     {
+      "text": "社会",
+      "kana": "しゃかい",
+      "meaning": {
+       "en": "society",
+       "vi": "xã hội"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ちょっと見てみたいです。",
+    "label": {
+     "en": "I would like to see",
+     "vi": "tôi muốn thử xem"
+    },
+    "detail": {
+     "en": "見る → 見て + みる means to try seeing; みる → みたい adds the wish to do so. ちょっと softens the speaker’s curiosity.",
+     "vi": "見る → 見て + みる nghĩa là thử xem; みる → みたい thêm ý muốn làm. ちょっと làm lời bày tỏ tò mò nhẹ nhàng hơn."
+    },
+    "grammarIds": [
+     "g_252"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "私は10年前に日本に来ました。",
+  "translation": {
+   "en": "I came to Japan ten years ago.",
+   "vi": "Tôi đến Nhật mười năm trước."
+  },
+  "together": {
+   "en": "The sentence gives the starting point for the speaker’s experiences in Japan. The two に phrases mark the past time and the destination.",
+   "vi": "Câu nêu mốc bắt đầu những trải nghiệm của người kể ở Nhật. Hai cụm に lần lượt chỉ thời điểm và nơi đến."
+  },
+  "chunks": [
+   {
+    "text": "私は",
+    "label": {
+     "en": "I",
+     "vi": "tôi"
+    },
+    "detail": {
+     "en": "は introduces the speaker as the topic of this account.",
+     "vi": "は đưa người kể làm chủ đề."
+    }
+   },
+   {
+    "text": "10年前に",
+    "label": {
+     "en": "ten years ago",
+     "vi": "mười năm trước"
+    },
+    "detail": {
+     "en": "A duration + 前 means that amount of time before now. に marks when the arrival happened.",
+     "vi": "Khoảng thời gian + 前 chỉ thời điểm cách hiện tại chừng đó thời gian. に đánh dấu lúc đến Nhật."
+    }
+   },
+   {
+    "text": "日本に来ました。",
+    "label": {
+     "en": "came to Japan",
+     "vi": "đã đến Nhật"
+    },
+    "detail": {
+     "en": "に marks the destination. 来る → 来ました is the polite past form, describing a completed arrival.",
+     "vi": "に đánh dấu nơi đến. 来る → 来ました là dạng quá khứ lịch sự, diễn tả việc đã đến Nhật."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "今は日本の生活に慣れましたが、日本に来たばかりのときは、色々な失敗をしました。",
+  "translation": {
+   "en": "I am used to life here now, but made various mistakes when I first arrived.",
+   "vi": "Giờ quen cuộc sống Nhật rồi nhưng khi mới đến tôi mắc nhiều lỗi."
+  },
+  "together": {
+   "en": "が contrasts being accustomed to Japan now with the mistakes made just after arriving. 来たばかり describes the speaker’s sense of still being new then.",
+   "vi": "が đối chiếu việc nay đã quen sống ở Nhật với những lỗi mắc khi vừa đến. 来たばかり nhấn mạnh lúc ấy người kể còn rất mới mẻ với nơi này."
+  },
+  "chunks": [
+   {
+    "text": "今は日本の生活に慣れましたが、",
+    "label": {
+     "en": "now I am used to life in Japan, but",
+     "vi": "giờ tôi đã quen cuộc sống ở Nhật, nhưng"
+    },
+    "detail": {
+     "en": "に marks what the speaker has become accustomed to. 慣れる → 慣れました expresses reaching that state; が introduces the contrast.",
+     "vi": "に đánh dấu điều người kể đã quen. 慣れる → 慣れました cho biết đã đạt đến trạng thái đó; が mở ra ý đối lập."
+    },
+    "words": [
+     {
+      "text": "慣れる",
+      "kana": "なれる",
+      "meaning": {
+       "en": "to get used to",
+       "vi": "quen với"
+      }
+     }
+    ]
+   },
+   {
+    "text": "日本に来たばかりのときは、",
+    "label": {
+     "en": "when I had just come to Japan",
+     "vi": "khi mới đến Nhật"
+    },
+    "detail": {
+     "en": "来る → 来た + ばかり means ‘just arrived’. の connects this expression to とき, and は makes that early period the contrasting topic.",
+     "vi": "来る → 来た + ばかり nghĩa là vừa mới đến. の nối cụm này với とき; は nêu giai đoạn đầu làm chủ đề đối chiếu."
+    },
+    "grammarIds": [
+     "g_082"
+    ]
+   },
+   {
+    "text": "色々な失敗をしました。",
+    "label": {
+     "en": "I made various mistakes",
+     "vi": "tôi đã mắc nhiều lỗi"
+    },
+    "detail": {
+     "en": "色々 is a な-adjective modifying 失敗. 失敗をする means to make a mistake, and しました places those experiences in the past.",
+     "vi": "色々 là tính từ な bổ nghĩa cho 失敗. 失敗をする nghĩa là mắc lỗi; しました cho biết những chuyện đó xảy ra trong quá khứ."
+    },
+    "words": [
+     {
+      "text": "失敗",
+      "kana": "しっぱい",
+      "meaning": {
+       "en": "mistake, failure",
+       "vi": "sai sót, thất bại"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "今日は、私が日本で失敗した話をしますね。",
+  "translation": {
+   "en": "Today I will tell you about my mistakes in Japan.",
+   "vi": "Hôm nay tôi kể chuyện những lần sai ở Nhật."
+  },
+  "together": {
+   "en": "The speaker announces the topic of the stories that follow. 私が日本で失敗した describes which 話 will be told.",
+   "vi": "Người kể giới thiệu chủ đề những chuyện sắp kể. 私が日本で失敗した bổ nghĩa cho 話, cho biết đó là chuyện gì."
+  },
+  "chunks": [
+   {
+    "text": "今日は、",
+    "label": {
+     "en": "today",
+     "vi": "hôm nay"
+    },
+    "detail": {
+     "en": "は makes today the setting and topic of the announcement.",
+     "vi": "は đưa hôm nay làm bối cảnh và chủ đề của lời giới thiệu."
+    }
+   },
+   {
+    "text": "私が日本で失敗した話を",
+    "label": {
+     "en": "stories about my mistakes in Japan",
+     "vi": "chuyện tôi mắc lỗi ở Nhật"
+    },
+    "detail": {
+     "en": "私が marks the subject inside the clause modifying 話. で gives the place of the mistakes; を marks the stories as the object of します.",
+     "vi": "私が nêu chủ thể trong mệnh đề bổ nghĩa cho 話. で chỉ nơi mắc lỗi; を đánh dấu nội dung sẽ kể."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "失敗する",
+      "kana": "しっぱいする",
+      "meaning": {
+       "en": "to make a mistake, fail",
+       "vi": "mắc lỗi, thất bại"
+      }
+     }
+    ]
+   },
+   {
+    "text": "しますね。",
+    "label": {
+     "en": "I will tell you",
+     "vi": "tôi sẽ kể nhé"
+    },
+    "detail": {
+     "en": "話をする means to tell a story or talk about something. ね makes the announcement friendly and invites the listener’s attention.",
+     "vi": "話をする nghĩa là kể chuyện hoặc nói về điều gì. ね tạo giọng thân thiện, hướng sự chú ý của người nghe vào câu chuyện."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "日本に来て1か月くらいは、日本語があまり読めなかったので、買い物のとき、とても大変でした。",
+  "translation": {
+   "en": "For about the first month I could not read much Japanese, so shopping was very difficult.",
+   "vi": "Khoảng tháng đầu không đọc tiếng Nhật mấy nên mua sắm rất vất vả."
+  },
+  "together": {
+   "en": "The first month after arrival is the time frame. Difficulty reading Japanese is presented with ので as the reason shopping was hard.",
+   "vi": "Tháng đầu sau khi đến Nhật là khung thời gian. ので nối việc khó đọc tiếng Nhật với hệ quả là mua sắm rất vất vả."
+  },
+  "chunks": [
+   {
+    "text": "日本に来て1か月くらいは、",
+    "label": {
+     "en": "for about a month after arriving in Japan",
+     "vi": "trong khoảng một tháng đầu đến Nhật"
+    },
+    "detail": {
+     "en": "来て links the arrival to the following duration. くらい makes one month approximate, and は sets that period as the topic.",
+     "vi": "来て nối việc đến Nhật với khoảng thời gian sau đó. くらい cho biết một tháng là ước lượng; は đưa giai đoạn ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "日本語があまり読めなかったので、",
+    "label": {
+     "en": "because I could not read much Japanese",
+     "vi": "vì tôi chưa đọc tiếng Nhật được mấy"
+    },
+    "detail": {
+     "en": "読む → 読める → 読めなかった is negative past potential. あまり with a negative means ‘not much’; ので gives the reason.",
+     "vi": "読む → 読める → 読めなかった là quá khứ phủ định của thể khả năng. あまり đi với phủ định nghĩa là không được mấy; ので nêu lý do."
+    },
+    "grammarIds": [
+     "g_253",
+     "g_077"
+    ]
+   },
+   {
+    "text": "買い物のとき、",
+    "label": {
+     "en": "when shopping",
+     "vi": "khi mua sắm"
+    },
+    "detail": {
+     "en": "N + のとき specifies the occasion on which the difficulty occurred.",
+     "vi": "N + のとき chỉ lúc xảy ra sự khó khăn."
+    },
+    "grammarIds": [
+     "g_241"
+    ]
+   },
+   {
+    "text": "とても大変でした。",
+    "label": {
+     "en": "it was very difficult",
+     "vi": "rất vất vả"
+    },
+    "detail": {
+     "en": "大変 is a な-adjective; 大変でした is its polite past form. とても strengthens the degree of difficulty.",
+     "vi": "大変 là tính từ な; 大変でした là dạng quá khứ lịch sự. とても nhấn mạnh mức độ vất vả."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "おいしそうだなと思って、お菓子を買って食べてみたら、味が変だったんです。",
+  "translation": {
+   "en": "Thinking a snack looked tasty, I bought and tried it, but the taste was strange.",
+   "vi": "Thấy bánh có vẻ ngon nên mua ăn thử, vị lại lạ."
+  },
+  "together": {
+   "en": "The snack’s appearance led the speaker to buy and try it. たら introduces the unexpected taste, and んです explains the experience to the listener.",
+   "vi": "Vẻ ngoài của bánh khiến người kể mua ăn thử. たら dẫn đến phát hiện bất ngờ về vị bánh; んです dùng khi giải thích trải nghiệm cho người nghe."
+  },
+  "chunks": [
+   {
+    "text": "おいしそうだなと思って、",
+    "label": {
+     "en": "thinking it looked tasty",
+     "vi": "nghĩ trông có vẻ ngon"
+    },
+    "detail": {
+     "en": "おいしい → おいしそう expresses appearance. だな gives the thought a reflective tone; と思って quotes it and links it to the action.",
+     "vi": "おいしい → おいしそう diễn tả vẻ bề ngoài. だな mang giọng tự nhủ; と思って dẫn suy nghĩ ấy và nối sang hành động."
+    },
+    "grammarIds": [
+     "g_155",
+     "g_147"
+    ]
+   },
+   {
+    "text": "お菓子を買って",
+    "label": {
+     "en": "I bought a snack and",
+     "vi": "tôi mua bánh rồi"
+    },
+    "detail": {
+     "en": "を marks what was bought. 買う → 買って connects buying with trying the snack.",
+     "vi": "を đánh dấu thứ được mua. 買う → 買って nối việc mua với việc ăn thử."
+    }
+   },
+   {
+    "text": "食べてみたら、",
+    "label": {
+     "en": "when I tried eating it",
+     "vi": "khi ăn thử"
+    },
+    "detail": {
+     "en": "食べる → 食べて + みる means to try eating. みる → みたら introduces what the speaker discovered after trying it.",
+     "vi": "食べる → 食べて + みる nghĩa là ăn thử. みる → みたら dẫn vào điều người kể phát hiện sau khi thử."
+    },
+    "grammarIds": [
+     "g_252",
+     "g_257"
+    ]
+   },
+   {
+    "text": "味が変だったんです。",
+    "label": {
+     "en": "the taste was strange",
+     "vi": "vị lại lạ"
+    },
+    "detail": {
+     "en": "が marks the taste as the subject. 変だ → 変だった + んです gives a past description as the explanation of what happened.",
+     "vi": "が đánh dấu vị bánh là chủ thể. 変だ → 変だった + んです nêu nhận xét trong quá khứ để giải thích chuyện đã xảy ra."
+    },
+    "grammarIds": [
+     "g_149"
+    ],
+    "words": [
+     {
+      "text": "味",
+      "kana": "あじ",
+      "meaning": {
+       "en": "taste, flavour",
+       "vi": "vị"
+      }
+     },
+     {
+      "text": "変",
+      "kana": "へん",
+      "meaning": {
+       "en": "strange, odd",
+       "vi": "lạ, kỳ lạ"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "よく見たら、犬のお菓子でした。",
+  "translation": {
+   "en": "Looking carefully, I discovered it was a dog treat.",
+   "vi": "Nhìn kỹ thì là bánh cho chó."
+  },
+  "together": {
+   "en": "A closer look reveals why the snack tasted strange: it was intended for dogs. たら marks the discovery following the closer inspection.",
+   "vi": "Nhìn kỹ hơn, người kể mới hiểu vì sao bánh có vị lạ: đó là bánh dành cho chó. たら đánh dấu phát hiện sau khi quan sát kỹ."
+  },
+  "chunks": [
+   {
+    "text": "よく見たら、",
+    "label": {
+     "en": "when I looked carefully",
+     "vi": "khi nhìn kỹ"
+    },
+    "detail": {
+     "en": "よく means carefully here. 見る → 見た + ら introduces the new fact discovered by looking.",
+     "vi": "よく ở đây nghĩa là kỹ. 見る → 見た + ら mở ra sự thật mới phát hiện qua việc nhìn lại."
+    },
+    "grammarIds": [
+     "g_257"
+    ]
+   },
+   {
+    "text": "犬のお菓子でした。",
+    "label": {
+     "en": "it was a dog treat",
+     "vi": "đó là bánh cho chó"
+    },
+    "detail": {
+     "en": "の indicates the intended recipient or type of snack. でした identifies what the snack was in the past narrative.",
+     "vi": "の chỉ đối tượng mà món bánh dành cho. でした xác định món bánh ấy là gì trong câu chuyện quá khứ."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "それから、こんなこともありました。",
+  "translation": {
+   "en": "Something else happened too.",
+   "vi": "Còn có chuyện thế này."
+  },
+  "together": {
+   "en": "This transition introduces another incident. も adds the new experience to the earlier mistake.",
+   "vi": "Câu chuyển sang một sự cố khác. も thêm trải nghiệm mới vào chuyện nhầm lẫn vừa kể."
+  },
+  "chunks": [
+   {
+    "text": "それから、",
+    "label": {
+     "en": "and then / another thing",
+     "vi": "rồi còn"
+    },
+    "detail": {
+     "en": "それから moves the account on to another incident, without specifying an exact time gap.",
+     "vi": "それから chuyển lời kể sang một sự cố khác, không nêu rõ cách nhau bao lâu."
+    }
+   },
+   {
+    "text": "こんなことも",
+    "label": {
+     "en": "something like this too",
+     "vi": "cả chuyện thế này"
+    },
+    "detail": {
+     "en": "こんな points ahead to the story about to be told. も means that this happened in addition to the earlier incident.",
+     "vi": "こんな báo trước câu chuyện sắp kể. も cho biết còn có chuyện này ngoài sự cố trước."
+    }
+   },
+   {
+    "text": "ありました。",
+    "label": {
+     "en": "happened",
+     "vi": "đã xảy ra"
+    },
+    "detail": {
+     "en": "ある is used for an event occurring, rather than an object’s location. ありました is the polite past form.",
+     "vi": "ある ở đây chỉ sự việc xảy ra, không phải vị trí của đồ vật. ありました là dạng quá khứ lịch sự."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "私のクラスメイトにとてもかわいい「サラさん」という女の子がいたので、友達になりたいと思ったんですが、私は「こわい」と「かわいい」を間違えて、「サラさんってこわいね！」と言ってしまいました。",
+  "translation": {
+   "en": "A very cute classmate named Sara made me want to be friends, but I confused kowai, scary, with kawaii, cute, and said, “Sara, you’re scary!”",
+   "vi": "Lớp có Sara rất dễ thương nên tôi muốn kết bạn, nhưng nhầm “đáng sợ” với “dễ thương” và nói “Sara đáng sợ nhỉ!”"
+  },
+  "together": {
+   "en": "The speaker wanted to befriend a cute classmate but confused two similar-sounding words. The final てしまいました conveys regret over accidentally calling Sara scary.",
+   "vi": "Người kể muốn kết bạn với một bạn cùng lớp dễ thương nhưng nhầm hai từ có âm gần nhau. てしまいました ở cuối thể hiện sự tiếc nuối vì lỡ nói Sara đáng sợ."
+  },
+  "chunks": [
+   {
+    "text": "私のクラスメイトに",
+    "label": {
+     "en": "among my classmates",
+     "vi": "trong số bạn cùng lớp của tôi"
+    },
+    "detail": {
+     "en": "に marks the group within which Sara was found. 私の links the classmates to the speaker.",
+     "vi": "に nêu nhóm có Sara trong đó. 私の cho biết đây là những bạn cùng lớp của người kể."
+    }
+   },
+   {
+    "text": "とてもかわいい「サラさん」という女の子がいたので、",
+    "label": {
+     "en": "because there was a very cute girl named Sara",
+     "vi": "vì có một cô bạn rất dễ thương tên Sara"
+    },
+    "detail": {
+     "en": "という introduces the girl’s name; かわいい modifies 女の子. いる → いた + ので gives her presence as the reason for wanting friendship.",
+     "vi": "という giới thiệu tên cô bạn; かわいい bổ nghĩa cho 女の子. いる → いた + ので nêu việc có cô bạn ấy làm lý do muốn kết bạn."
+    },
+    "grammarIds": [
+     "g_253"
+    ]
+   },
+   {
+    "text": "友達になりたいと思ったんですが、",
+    "label": {
+     "en": "I wanted to become friends, but",
+     "vi": "tôi muốn kết bạn, nhưng"
+    },
+    "detail": {
+     "en": "友達に + なる means to become friends; なりたい expresses the wish. と思ったんですが presents the speaker’s thought as background before the problem.",
+     "vi": "友達に + なる nghĩa là trở thành bạn; なりたい diễn tả mong muốn. と思ったんですが nêu suy nghĩ làm bối cảnh trước khi kể trục trặc."
+    },
+    "grammarIds": [
+     "g_150",
+     "g_147"
+    ]
+   },
+   {
+    "text": "私は「こわい」と「かわいい」を間違えて、",
+    "label": {
+     "en": "I confused ‘scary’ and ‘cute’",
+     "vi": "tôi nhầm ‘đáng sợ’ với ‘dễ thương’"
+    },
+    "detail": {
+     "en": "と joins the two quoted words; を marks what was confused. 間違える → 間違えて links the mistake to what the speaker then said.",
+     "vi": "と nối hai từ được trích dẫn; を đánh dấu những từ bị nhầm. 間違える → 間違えて nối sự nhầm lẫn với lời nói sau đó."
+    },
+    "words": [
+     {
+      "text": "間違える",
+      "kana": "まちがえる",
+      "meaning": {
+       "en": "to mistake, confuse",
+       "vi": "nhầm lẫn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "「サラさんってこわいね！」",
+    "label": {
+     "en": "Sara, you are scary!",
+     "vi": "Sara đáng sợ nhỉ!"
+    },
+    "detail": {
+     "en": "って is a casual topic marker like は. ね seeks agreement, so the speaker says the unintended word as if giving a friendly compliment.",
+     "vi": "って là cách nêu chủ đề thân mật, tương tự は. ね tìm sự đồng tình, nên người kể nói nhầm mà vẫn dùng giọng thân thiện như đang khen."
+    },
+    "grammarIds": [
+     "g_183"
+    ]
+   },
+   {
+    "text": "と言ってしまいました。",
+    "label": {
+     "en": "I ended up saying",
+     "vi": "tôi đã lỡ nói"
+    },
+    "detail": {
+     "en": "と closes the quotation. 言う → 言って + しまいました presents the utterance as an unfortunate mistake.",
+     "vi": "と đánh dấu lời được nói. 言う → 言って + しまいました diễn tả việc lỡ nói và gây điều đáng tiếc."
+    },
+    "grammarIds": [
+     "g_222"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "褒めたのに、サラさんが変な顔をしたので、わからなかったかなと思って、何回も「こわいね！」と言ったら、サラさんは怒ってしまいました。",
+  "translation": {
+   "en": "Although I meant it as praise, she made a strange face, so I thought she had not understood and repeated “You’re scary!” until she got angry.",
+   "vi": "Dù định khen, Sara tỏ vẻ lạ nên tôi tưởng chưa hiểu, cứ lặp “đáng sợ nhỉ!” khiến cô giận."
+  },
+  "together": {
+   "en": "The speaker mistakes Sara’s reaction for a failure to understand and repeats the wrong word. のに highlights the gap between the intended praise and the actual result.",
+   "vi": "Người kể hiểu nhầm phản ứng của Sara là chưa hiểu lời mình nên cứ nói lại từ sai. のに nhấn mạnh sự trái ngược giữa ý định khen và kết quả thực tế."
+  },
+  "chunks": [
+   {
+    "text": "褒めたのに、",
+    "label": {
+     "en": "although I meant to praise her",
+     "vi": "dù tôi định khen"
+    },
+    "detail": {
+     "en": "褒める → 褒めた + のに contrasts the speaker’s intended compliment with Sara’s unexpected reaction.",
+     "vi": "褒める → 褒めた + のに đối chiếu lời khen theo ý người kể với phản ứng bất ngờ của Sara."
+    },
+    "grammarIds": [
+     "g_254"
+    ],
+    "words": [
+     {
+      "text": "褒める",
+      "kana": "ほめる",
+      "meaning": {
+       "en": "to praise",
+       "vi": "khen"
+      }
+     }
+    ]
+   },
+   {
+    "text": "サラさんが変な顔をしたので、",
+    "label": {
+     "en": "because Sara made a strange face",
+     "vi": "vì Sara tỏ vẻ lạ"
+    },
+    "detail": {
+     "en": "変な modifies 顔, and 顔をする describes a facial expression. した + ので gives the reason for the next thought.",
+     "vi": "変な bổ nghĩa cho 顔; 顔をする diễn tả nét mặt. した + ので nêu lý do dẫn đến suy nghĩ tiếp theo."
+    },
+    "grammarIds": [
+     "g_253"
+    ]
+   },
+   {
+    "text": "わからなかったかなと思って、",
+    "label": {
+     "en": "thinking perhaps she had not understood",
+     "vi": "nghĩ có lẽ cô ấy chưa hiểu"
+    },
+    "detail": {
+     "en": "わかる → わからなかった is negative past. かな expresses the speaker’s uncertainty; と思って quotes that wondering and links it to the next action.",
+     "vi": "わかる → わからなかった là quá khứ phủ định. かな diễn tả sự tự hỏi; と思って dẫn suy nghĩ đó và nối với hành động sau."
+    },
+    "grammarIds": [
+     "g_147"
+    ]
+   },
+   {
+    "text": "何回も「こわいね！」と言ったら、",
+    "label": {
+     "en": "when I repeatedly said ‘You are scary!’",
+     "vi": "khi tôi cứ nói ‘đáng sợ nhỉ!’"
+    },
+    "detail": {
+     "en": "何回も means many times. と marks the spoken words; 言う → 言った + ら introduces the result of repeating them.",
+     "vi": "何回も nghĩa là nhiều lần. と đánh dấu lời nói; 言う → 言った + ら mở ra kết quả của việc lặp lại lời ấy."
+    },
+    "grammarIds": [
+     "g_257"
+    ]
+   },
+   {
+    "text": "サラさんは怒ってしまいました。",
+    "label": {
+     "en": "Sara ended up getting angry",
+     "vi": "Sara đã giận mất rồi"
+    },
+    "detail": {
+     "en": "は returns to Sara as the topic. 怒る → 怒って + しまいました presents her anger as the unfortunate outcome.",
+     "vi": "は đưa Sara trở lại làm chủ đề. 怒る → 怒って + しまいました diễn tả việc cô ấy giận là kết quả đáng tiếc."
+    },
+    "grammarIds": [
+     "g_222"
+    ],
+    "words": [
+     {
+      "text": "怒る",
+      "kana": "おこる",
+      "meaning": {
+       "en": "to get angry",
+       "vi": "nổi giận"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "一番はずかしかったのは、駅のトイレに入ったときの失敗です。",
+  "translation": {
+   "en": "The most embarrassing mistake happened in a station toilet.",
+   "vi": "Lần ngượng nhất là ở nhà vệ sinh ga."
+  },
+  "together": {
+   "en": "The のは … です frame singles out the most embarrassing incident. The clause about entering the station toilet identifies the occasion of that mistake.",
+   "vi": "Khung のは … です chỉ ra sự cố đáng xấu hổ nhất. Mệnh đề về việc vào nhà vệ sinh ở ga xác định lúc xảy ra lỗi đó."
+  },
+  "chunks": [
+   {
+    "text": "一番はずかしかったのは、",
+    "label": {
+     "en": "what was most embarrassing",
+     "vi": "điều ngượng nhất"
+    },
+    "detail": {
+     "en": "はずかしい → はずかしかった is past. の makes the description noun-like, and のは sets up the identification given after it.",
+     "vi": "はずかしい → はずかしかった là quá khứ. の danh từ hóa phần miêu tả; のは mở ra điều sẽ được xác định ở phía sau."
+    },
+    "grammarIds": [
+     "g_174"
+    ]
+   },
+   {
+    "text": "駅のトイレに入ったときの",
+    "label": {
+     "en": "when I entered a station toilet",
+     "vi": "lúc vào nhà vệ sinh ở ga"
+    },
+    "detail": {
+     "en": "に marks the place entered. 入る → 入った modifies とき, and の connects that occasion to 失敗.",
+     "vi": "に chỉ nơi đi vào. 入る → 入った bổ nghĩa cho とき; の nối thời điểm đó với 失敗."
+    },
+    "grammarIds": [
+     "g_243"
+    ]
+   },
+   {
+    "text": "失敗です。",
+    "label": {
+     "en": "was the mistake",
+     "vi": "là lần mắc lỗi ấy"
+    },
+    "detail": {
+     "en": "This noun phrase completes the identifying frame のは … です. です is used as the speaker now identifies a past incident.",
+     "vi": "Cụm danh từ này hoàn thành khung xác định のは … です. Người kể dùng です để chỉ ra ở hiện tại một sự cố trong quá khứ."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "トイレを流そうと思ってボタンを押したら、大きな音が鳴りました。",
+  "translation": {
+   "en": "I pressed a button intending to flush, and a loud sound went off.",
+   "vi": "Tôi định xả nước, bấm nút thì có tiếng lớn vang lên."
+  },
+  "together": {
+   "en": "The speaker intended to flush, but pressing the button caused an unexpected loud sound. たら marks the discovery rather than an imagined condition.",
+   "vi": "Người kể định xả nước nhưng bấm nút lại nghe tiếng lớn bất ngờ. たら nêu phát hiện thực tế, không phải điều kiện giả định."
+  },
+  "chunks": [
+   {
+    "text": "トイレを流そうと思って",
+    "label": {
+     "en": "intending to flush the toilet",
+     "vi": "định xả nước bồn cầu"
+    },
+    "detail": {
+     "en": "流す → 流そう is volitional. と思って expresses the intention that motivated pressing the button.",
+     "vi": "流す → 流そう là thể ý chí. と思って nêu ý định dẫn đến việc bấm nút."
+    },
+    "words": [
+     {
+      "text": "流す",
+      "kana": "ながす",
+      "meaning": {
+       "en": "to let flow; here: flush",
+       "vi": "cho chảy; ở đây: xả nước"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ボタンを押したら、",
+    "label": {
+     "en": "when I pressed the button",
+     "vi": "khi bấm nút"
+    },
+    "detail": {
+     "en": "を marks the button as the object. 押す → 押した + ら introduces the unexpected event that followed.",
+     "vi": "を đánh dấu nút là đối tượng được bấm. 押す → 押した + ら mở ra sự việc bất ngờ xảy ra sau đó."
+    },
+    "grammarIds": [
+     "g_257"
+    ]
+   },
+   {
+    "text": "大きな音が鳴りました。",
+    "label": {
+     "en": "a loud sound went off",
+     "vi": "có tiếng lớn vang lên"
+    },
+    "detail": {
+     "en": "大きな modifies 音; が marks the sound as the subject. 鳴る → 鳴りました reports that it sounded.",
+     "vi": "大きな bổ nghĩa cho 音; が đánh dấu tiếng động là chủ thể. 鳴る → 鳴りました cho biết tiếng đã vang lên."
+    },
+    "words": [
+     {
+      "text": "鳴る",
+      "kana": "なる",
+      "meaning": {
+       "en": "to sound, ring",
+       "vi": "kêu, vang lên"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "すぐに駅員が3人くらい来て、トイレの外から「大丈夫ですか」と私に聞きました。",
+  "translation": {
+   "en": "About three station staff immediately came and asked from outside whether I was all right.",
+   "vi": "Khoảng ba nhân viên ga đến ngay, từ ngoài hỏi tôi có sao không."
+  },
+  "together": {
+   "en": "The staff’s quick arrival and question show that the button raised an alarm. The quotation is directed to the speaker from outside the toilet.",
+   "vi": "Việc nhân viên đến ngay và hỏi thăm cho thấy nút ấy đã phát báo động. Lời hỏi được nói từ ngoài nhà vệ sinh, hướng đến người kể."
+  },
+  "chunks": [
+   {
+    "text": "すぐに駅員が3人くらい来て、",
+    "label": {
+     "en": "about three station staff came immediately",
+     "vi": "khoảng ba nhân viên ga đến ngay"
+    },
+    "detail": {
+     "en": "が marks the station staff as the subject, and 3人くらい gives an approximate number. 来て links their arrival with their question.",
+     "vi": "が đánh dấu nhân viên ga là chủ thể; 3人くらい cho biết số lượng ước chừng. 来て nối việc đến với lời hỏi."
+    },
+    "words": [
+     {
+      "text": "駅員",
+      "kana": "えきいん",
+      "meaning": {
+       "en": "station staff member",
+       "vi": "nhân viên ga"
+      }
+     }
+    ]
+   },
+   {
+    "text": "トイレの外から",
+    "label": {
+     "en": "from outside the toilet",
+     "vi": "từ bên ngoài nhà vệ sinh"
+    },
+    "detail": {
+     "en": "の links 外 to the toilet. から marks the location from which the staff spoke.",
+     "vi": "の nối 外 với nhà vệ sinh. から chỉ vị trí mà nhân viên đứng nói."
+    }
+   },
+   {
+    "text": "「大丈夫ですか」と",
+    "label": {
+     "en": "‘Are you all right?’",
+     "vi": "‘Có sao không?’"
+    },
+    "detail": {
+     "en": "か makes the quoted sentence a polite question. と marks it as the content of 聞きました.",
+     "vi": "か tạo câu hỏi lịch sự trong lời trích dẫn. と đánh dấu đây là nội dung của 聞きました."
+    }
+   },
+   {
+    "text": "私に聞きました。",
+    "label": {
+     "en": "they asked me",
+     "vi": "họ hỏi tôi"
+    },
+    "detail": {
+     "en": "に marks the person being asked. 聞く means ‘ask’ here, and 聞きました is its polite past form.",
+     "vi": "に đánh dấu người được hỏi. 聞く ở đây nghĩa là hỏi; 聞きました là dạng quá khứ lịch sự."
+    },
+    "words": [
+     {
+      "text": "聞く",
+      "kana": "きく",
+      "meaning": {
+       "en": "to hear / ask; here: ask",
+       "vi": "nghe / hỏi; ở đây: hỏi"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "私が押したボタンは、トイレを流すボタンじゃなくて、非常ボタンだったのです。",
+  "translation": {
+   "en": "The button I pressed was the emergency button, not the flush.",
+   "vi": "Nút tôi bấm là khẩn cấp chứ không phải xả nước."
+  },
+  "together": {
+   "en": "The sentence corrects the speaker’s assumption about the button. のです explains why an alarm sounded and staff came running.",
+   "vi": "Câu sửa lại suy đoán ban đầu của người kể về nút bấm. のです giải thích vì sao có báo động và nhân viên chạy đến."
+  },
+  "chunks": [
+   {
+    "text": "私が押したボタンは、",
+    "label": {
+     "en": "the button I pressed",
+     "vi": "nút tôi đã bấm"
+    },
+    "detail": {
+     "en": "私が押した modifies ボタン directly. は makes that specific button the topic for the correction.",
+     "vi": "私が押した bổ nghĩa trực tiếp cho ボタン. は đưa nút bấm ấy làm chủ đề cần đính chính."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "トイレを流すボタンじゃなくて、",
+    "label": {
+     "en": "was not the flush button",
+     "vi": "không phải nút xả nước"
+    },
+    "detail": {
+     "en": "トイレを流す modifies ボタン and states its function. じゃなくて is the conversational linking form of ではなくて, rejecting this identification.",
+     "vi": "トイレを流す bổ nghĩa cho ボタン, nêu chức năng của nút. じゃなくて là dạng nối thân mật của ではなくて, phủ nhận cách xác định này."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "非常ボタンだったのです。",
+    "label": {
+     "en": "it was the emergency button",
+     "vi": "mà là nút khẩn cấp"
+    },
+    "detail": {
+     "en": "非常ボタン + だった identifies the button in the past. のです presents this fact as the explanation for the alarm and the staff’s response.",
+     "vi": "非常ボタン + だった xác định nút bấm trong quá khứ. のです nêu sự thật này làm lời giải thích cho báo động và phản ứng của nhân viên."
+    },
+    "grammarIds": [
+     "g_149"
+    ],
+    "words": [
+     {
+      "text": "非常",
+      "kana": "ひじょう",
+      "meaning": {
+       "en": "emergency",
+       "vi": "tình trạng khẩn cấp"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ドアを開けたら、駅員とお客さんが集まっていて、私を心配そうに見ていました。",
+  "translation": {
+   "en": "When I opened the door, staff and passengers had gathered and were looking at me worriedly.",
+   "vi": "Mở cửa thì nhân viên và khách tụ lại, nhìn tôi đầy lo lắng."
+  },
+  "together": {
+   "en": "Opening the door reveals the gathered people. 心配そうに describes their worried appearance as they look at the speaker.",
+   "vi": "Mở cửa ra, người kể mới thấy mọi người đã tụ lại. 心配そうに diễn tả vẻ lo lắng của họ khi nhìn người kể."
+  },
+  "chunks": [
+   {
+    "text": "ドアを開けたら、",
+    "label": {
+     "en": "when I opened the door",
+     "vi": "khi mở cửa"
+    },
+    "detail": {
+     "en": "開ける → 開けた + ら introduces the scene discovered after opening the door.",
+     "vi": "開ける → 開けた + ら dẫn vào cảnh được phát hiện sau khi mở cửa."
+    },
+    "grammarIds": [
+     "g_257"
+    ]
+   },
+   {
+    "text": "駅員とお客さんが集まっていて、",
+    "label": {
+     "en": "staff and passengers had gathered",
+     "vi": "nhân viên và khách đã tụ lại"
+    },
+    "detail": {
+     "en": "と joins the two groups; が marks them as the subject. 集まる → 集まっている describes their gathered state, and いて links to the next description.",
+     "vi": "と nối hai nhóm; が đánh dấu họ là chủ thể. 集まる → 集まっている chỉ trạng thái đã tụ lại; いて nối sang phần miêu tả tiếp theo."
+    },
+    "grammarIds": [
+     "g_094_4"
+    ],
+    "words": [
+     {
+      "text": "集まる",
+      "kana": "あつまる",
+      "meaning": {
+       "en": "to gather",
+       "vi": "tụ họp, tụ lại"
+      }
+     }
+    ]
+   },
+   {
+    "text": "私を心配そうに",
+    "label": {
+     "en": "at me with worried looks",
+     "vi": "nhìn tôi với vẻ lo lắng"
+    },
+    "detail": {
+     "en": "を marks the person looked at. 心配 + そう expresses visible appearance; に makes 心配そう adverbial, describing how they were looking.",
+     "vi": "を đánh dấu người được nhìn. 心配 + そう diễn tả vẻ bề ngoài; に biến 心配そう thành dạng bổ nghĩa cho cách nhìn."
+    },
+    "grammarIds": [
+     "g_155",
+     "g_158"
+    ],
+    "words": [
+     {
+      "text": "心配",
+      "kana": "しんぱい",
+      "meaning": {
+       "en": "worry, concern",
+       "vi": "sự lo lắng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "見ていました。",
+    "label": {
+     "en": "were looking",
+     "vi": "đang nhìn"
+    },
+    "detail": {
+     "en": "見る → 見て + いました describes an action in progress when the speaker opened the door.",
+     "vi": "見る → 見て + いました diễn tả hành động đang diễn ra khi người kể mở cửa."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "色々な失敗をしましたが、最近は失敗をすることも少なくなりました。今ではいい思い出です。",
+  "translation": {
+   "en": "I made many mistakes, but they have become less frequent recently. They are good memories now.",
+   "vi": "Tôi sai nhiều lần nhưng gần đây ít hơn. Giờ thành kỷ niệm đẹp."
+  },
+  "together": {
+   "en": "The speaker contrasts earlier frequent mistakes with their recent decline. The last sentence looks back on those experiences fondly.",
+   "vi": "Người kể đối chiếu việc trước đây hay mắc lỗi với gần đây đã ít hơn. Câu cuối nhìn lại những trải nghiệm ấy như kỷ niệm đẹp."
+  },
+  "chunks": [
+   {
+    "text": "色々な失敗をしましたが、",
+    "label": {
+     "en": "I made various mistakes, but",
+     "vi": "tôi đã mắc nhiều lỗi, nhưng"
+    },
+    "detail": {
+     "en": "色々な modifies 失敗. しましたが reports those past mistakes and introduces a contrast with the present situation.",
+     "vi": "色々な bổ nghĩa cho 失敗. しましたが kể về những lỗi trước đây rồi mở ra sự đối chiếu với hiện tại."
+    }
+   },
+   {
+    "text": "最近は",
+    "label": {
+     "en": "recently",
+     "vi": "gần đây"
+    },
+    "detail": {
+     "en": "は sets the recent period against the earlier period of frequent mistakes.",
+     "vi": "は đối chiếu giai đoạn gần đây với thời gian trước hay mắc lỗi."
+    }
+   },
+   {
+    "text": "失敗をすることも少なくなりました。",
+    "label": {
+     "en": "mistakes have become less frequent",
+     "vi": "việc mắc lỗi cũng ít đi"
+    },
+    "detail": {
+     "en": "こと turns 失敗をする into the event being discussed; も adds emphasis to that aspect. 少ない → 少なく + なりました describes a decrease.",
+     "vi": "こと danh từ hóa 失敗をする thành sự việc được nói đến; も nhấn thêm vào khía cạnh ấy. 少ない → 少なく + なりました diễn tả sự giảm đi."
+    },
+    "grammarIds": [
+     "g_160"
+    ]
+   },
+   {
+    "text": "今ではいい思い出です。",
+    "label": {
+     "en": "now they are good memories",
+     "vi": "giờ đó là những kỷ niệm đẹp"
+    },
+    "detail": {
+     "en": "今では means ‘now, at this stage’, contrasting with the embarrassment at the time. いい modifies 思い出 and gives the speaker’s current view.",
+     "vi": "今では nghĩa là giờ đây, đối chiếu với cảm giác ngượng lúc xảy ra chuyện. いい bổ nghĩa cho 思い出, nêu cách nhìn hiện tại của người kể."
+    },
+    "words": [
+     {
+      "text": "思い出",
+      "kana": "おもいで",
+      "meaning": {
+       "en": "memory, recollection",
+       "vi": "kỷ niệm"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "Aスタジオ…ピアノがあります。レコーディングはできません。",
+  "translation": {
+   "en": "Studio A: piano provided; recording unavailable.",
+   "vi": "Phòng A: có piano, không thu âm được."
+  },
+  "together": {
+   "en": "The entry first lists Studio A’s equipment, then contrasts it with a service that is unavailable. できません refers to recording facilities here.",
+   "vi": "Mục này trước hết nêu thiết bị của phòng A, rồi cho biết dịch vụ không có. できません ở đây nói về khả năng thu âm tại phòng."
+  },
+  "chunks": [
+   {
+    "text": "Aスタジオ…",
+    "label": {
+     "en": "Studio A",
+     "vi": "phòng A"
+    },
+    "detail": {
+     "en": "The ellipsis separates the studio label from its description, as in a compact guide entry.",
+     "vi": "Dấu … ngăn tên phòng với nội dung mô tả, theo lối trình bày ngắn gọn của bảng hướng dẫn."
+    }
+   },
+   {
+    "text": "ピアノがあります。",
+    "label": {
+     "en": "a piano is provided",
+     "vi": "có piano"
+    },
+    "detail": {
+     "en": "が marks the thing available. あります states that a piano is present in this studio.",
+     "vi": "が đánh dấu vật có sẵn. あります cho biết phòng này có piano."
+    }
+   },
+   {
+    "text": "レコーディングはできません。",
+    "label": {
+     "en": "recording is unavailable",
+     "vi": "không thu âm được"
+    },
+    "detail": {
+     "en": "は makes recording the topic, contrasting it with the available piano. できる → できません means this activity is not possible here.",
+     "vi": "は đưa việc thu âm làm chủ đề, đối chiếu với piano có sẵn. できる → できません cho biết không thể thực hiện hoạt động này ở đây."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "Bスタジオ…ピアノとドラムがあります。レコーディングができます。4〜5名くらいまで",
+  "translation": {
+   "en": "B: piano and drums; recording available; about four to five people.",
+   "vi": "B: piano, trống; thu âm được; khoảng bốn, năm người."
+  },
+  "together": {
+   "en": "Studio B offers both instruments and recording facilities. The final phrase gives an approximate upper limit on the number of users.",
+   "vi": "Phòng B có cả hai nhạc cụ và có thể thu âm. Cụm cuối nêu giới hạn số người sử dụng theo mức ước chừng."
+  },
+  "chunks": [
+   {
+    "text": "Bスタジオ…",
+    "label": {
+     "en": "Studio B",
+     "vi": "phòng B"
+    },
+    "detail": {
+     "en": "This label names the studio whose equipment and capacity are listed next.",
+     "vi": "Tên phòng này cho biết các thiết bị và sức chứa được liệt kê sau đó thuộc phòng nào."
+    }
+   },
+   {
+    "text": "ピアノとドラムがあります。",
+    "label": {
+     "en": "a piano and drums are provided",
+     "vi": "có piano và trống"
+    },
+    "detail": {
+     "en": "と joins the two instruments. が marks them as the things available, and あります states their presence.",
+     "vi": "と nối hai nhạc cụ. が đánh dấu các vật có sẵn; あります cho biết phòng có những nhạc cụ đó."
+    }
+   },
+   {
+    "text": "レコーディングができます。",
+    "label": {
+     "en": "recording is available",
+     "vi": "có thể thu âm"
+    },
+    "detail": {
+     "en": "N + ができます says that an activity is possible. Here it describes the studio’s facilities rather than a person’s skill.",
+     "vi": "N + ができます cho biết có thể thực hiện một hoạt động. Ở đây câu nói về tiện ích của phòng chứ không phải kỹ năng của một người."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   },
+   {
+    "text": "4〜5名くらいまで",
+    "label": {
+     "en": "up to about four or five people",
+     "vi": "tối đa khoảng bốn đến năm người"
+    },
+    "detail": {
+     "en": "名 is a formal counter for people. くらい makes the capacity approximate; まで marks the upper limit.",
+     "vi": "名 là cách đếm người trang trọng. くらい cho biết sức chứa là ước lượng; まで nêu giới hạn tối đa."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "Cスタジオ…ピアノとドラムがあります。レコーディングができます。10名くらいまで",
+  "translation": {
+   "en": "C: piano and drums; recording available; about ten people.",
+   "vi": "C: piano, trống; thu âm được; khoảng mười người."
+  },
+  "together": {
+   "en": "Studio C has the same listed equipment and recording service as B, with a larger capacity. The final fragment states the approximate maximum number of users.",
+   "vi": "Phòng C có các nhạc cụ và dịch vụ thu âm được nêu giống phòng B, nhưng sức chứa lớn hơn. Cụm cuối nêu số người tối đa ước chừng."
+  },
+  "chunks": [
+   {
+    "text": "Cスタジオ…",
+    "label": {
+     "en": "Studio C",
+     "vi": "phòng C"
+    },
+    "detail": {
+     "en": "The studio name serves as the label for the following specifications.",
+     "vi": "Tên phòng là nhãn cho những thông tin được nêu ngay sau đó."
+    }
+   },
+   {
+    "text": "ピアノとドラムがあります。",
+    "label": {
+     "en": "a piano and drums are provided",
+     "vi": "có piano và trống"
+    },
+    "detail": {
+     "en": "と joins the equipment items, and が marks them as the things present. あります describes what is provided.",
+     "vi": "と nối các nhạc cụ; が đánh dấu những vật có sẵn. あります nêu thiết bị được cung cấp."
+    }
+   },
+   {
+    "text": "レコーディングができます。",
+    "label": {
+     "en": "recording is available",
+     "vi": "có thể thu âm"
+    },
+    "detail": {
+     "en": "ができます follows an activity noun to express possibility. Recording can be done in this studio.",
+     "vi": "ができます theo sau danh từ chỉ hoạt động để diễn tả khả năng thực hiện. Có thể thu âm tại phòng này."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   },
+   {
+    "text": "10名くらいまで",
+    "label": {
+     "en": "up to about ten people",
+     "vi": "tối đa khoảng mười người"
+    },
+    "detail": {
+     "en": "名 counts people in a formal notice. くらい indicates an approximate capacity, and まで gives its upper limit.",
+     "vi": "名 dùng để đếm người trong thông báo trang trọng. くらい chỉ sức chứa ước chừng; まで đánh dấu mức tối đa."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "2名まで。ピアノがあります。レコーディングはできません。",
+  "translation": {
+   "en": "Up to two people. Piano provided. Recording unavailable.",
+   "vi": "Tối đa hai người. Có piano. Không thu âm được."
+  },
+  "together": {
+   "en": "This entry gives the practice studio’s capacity, equipment, and recording restriction. Each short statement supplies one practical condition.",
+   "vi": "Mục này nêu sức chứa, thiết bị và giới hạn về thu âm của phòng tập. Mỗi câu ngắn cung cấp một điều kiện sử dụng."
+  },
+  "chunks": [
+   {
+    "text": "2名まで。",
+    "label": {
+     "en": "up to two people",
+     "vi": "tối đa hai người"
+    },
+    "detail": {
+     "en": "名 is a formal counter for people. まで marks a maximum here, with the rest of the capacity statement omitted.",
+     "vi": "名 là cách đếm người trang trọng. まで chỉ mức tối đa; phần còn lại của câu về sức chứa được lược bỏ."
+    }
+   },
+   {
+    "text": "ピアノがあります。",
+    "label": {
+     "en": "a piano is provided",
+     "vi": "có piano"
+    },
+    "detail": {
+     "en": "が marks the available equipment. あります states that the studio has a piano.",
+     "vi": "が đánh dấu thiết bị có sẵn. あります cho biết phòng có piano."
+    }
+   },
+   {
+    "text": "レコーディングはできません。",
+    "label": {
+     "en": "recording is unavailable",
+     "vi": "không thu âm được"
+    },
+    "detail": {
+     "en": "は singles out recording as the topic. できません is the polite negative of できる and indicates that recording is not possible here.",
+     "vi": "は đưa riêng việc thu âm làm chủ đề. できません là dạng phủ định lịch sự của できる, cho biết không thể thu âm ở đây."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "会員は1,000円の利用で1ポイントもらえます。",
+  "translation": {
+   "en": "Members receive one point for every ¥1,000 spent.",
+   "vi": "Hội viên được một điểm mỗi 1.000 yên sử dụng."
+  },
+  "together": {
+   "en": "Members earn one point for each ¥1,000 of studio use. The studio is the understood source of the points.",
+   "vi": "Hội viên nhận một điểm cho mỗi 1.000 yên sử dụng phòng. Nơi cấp điểm được hiểu là studio."
+  },
+  "chunks": [
+   {
+    "text": "会員は",
+    "label": {
+     "en": "members",
+     "vi": "hội viên"
+    },
+    "detail": {
+     "en": "は identifies the people eligible for the points as the topic.",
+     "vi": "は đưa những người được nhận điểm làm chủ đề."
+    },
+    "words": [
+     {
+      "text": "会員",
+      "kana": "かいいん",
+      "meaning": {
+       "en": "member",
+       "vi": "hội viên"
+      }
+     }
+    ]
+   },
+   {
+    "text": "1,000円の利用で",
+    "label": {
+     "en": "for each ¥1,000 of use",
+     "vi": "với mỗi 1.000 yên sử dụng"
+    },
+    "detail": {
+     "en": "の links the amount to 利用. で gives the spending basis for receiving one point.",
+     "vi": "の nối số tiền với 利用. で nêu mức sử dụng được tính để nhận một điểm."
+    },
+    "words": [
+     {
+      "text": "利用",
+      "kana": "りよう",
+      "meaning": {
+       "en": "use of a service or facility",
+       "vi": "việc sử dụng dịch vụ, cơ sở"
+      }
+     }
+    ]
+   },
+   {
+    "text": "1ポイントもらえます。",
+    "label": {
+     "en": "can receive one point",
+     "vi": "được nhận một điểm"
+    },
+    "detail": {
+     "en": "もらう → もらえる → もらえます is potential, indicating eligibility to receive points. The giver, the studio, is omitted.",
+     "vi": "もらう → もらえる → もらえます là thể khả năng, cho biết quyền được nhận điểm. Người cho, tức studio, được lược bỏ."
+    },
+    "grammarIds": [
+     "g_186",
+     "g_061_1"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "会員にならなくても利用できます。予約は1週間前からすることができます。",
+  "translation": {
+   "en": "Non-members may also use the studios. Reservations open one week ahead.",
+   "vi": "Không là hội viên vẫn dùng được. Đặt trước từ một tuần."
+  },
+  "together": {
+   "en": "Membership is not a requirement for using the studios. The next sentence gives the earliest time a reservation can be made.",
+   "vi": "Không bắt buộc phải là hội viên mới được dùng phòng. Câu tiếp theo nêu thời điểm sớm nhất có thể đặt phòng."
+  },
+  "chunks": [
+   {
+    "text": "会員にならなくても",
+    "label": {
+     "en": "even without becoming a member",
+     "vi": "dù không đăng ký làm hội viên"
+    },
+    "detail": {
+     "en": "会員に + なる means to become a member. なる → ならない → ならなくても gives a negative condition that does not prevent use.",
+     "vi": "会員に + なる nghĩa là trở thành hội viên. なる → ならない → ならなくても nêu điều kiện phủ định vẫn không cản trở việc sử dụng."
+    },
+    "grammarIds": [
+     "g_255"
+    ]
+   },
+   {
+    "text": "利用できます。",
+    "label": {
+     "en": "you can use the studios",
+     "vi": "vẫn sử dụng được"
+    },
+    "detail": {
+     "en": "利用する → 利用できる → 利用できます is the polite potential form. Here it expresses that the service is available to non-members too.",
+     "vi": "利用する → 利用できる → 利用できます là dạng khả năng lịch sự. Ở đây cho biết người không phải hội viên vẫn được sử dụng dịch vụ."
+    },
+    "grammarIds": [
+     "g_061_1"
+    ],
+    "words": [
+     {
+      "text": "利用する",
+      "kana": "りようする",
+      "meaning": {
+       "en": "to use a service or facility",
+       "vi": "sử dụng dịch vụ, cơ sở"
+      }
+     }
+    ]
+   },
+   {
+    "text": "予約は1週間前から",
+    "label": {
+     "en": "reservations from one week ahead",
+     "vi": "việc đặt phòng từ một tuần trước"
+    },
+    "detail": {
+     "en": "は introduces reservations as the next topic. から marks the starting point of the booking window, one week before the intended use.",
+     "vi": "は chuyển chủ đề sang việc đặt phòng. から chỉ mốc bắt đầu nhận đặt, tính từ một tuần trước ngày sử dụng."
+    },
+    "words": [
+     {
+      "text": "予約",
+      "kana": "よやく",
+      "meaning": {
+       "en": "reservation, booking",
+       "vi": "việc đặt trước"
+      }
+     }
+    ]
+   },
+   {
+    "text": "することができます。",
+    "label": {
+     "en": "can be made",
+     "vi": "có thể thực hiện"
+    },
+    "detail": {
+     "en": "する + ことができます expresses that making a reservation is possible. する refers back to 予約.",
+     "vi": "する + ことができます diễn tả khả năng thực hiện việc đặt trước. する nhắc lại hoạt động 予約."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "注意：予約のキャンセルは、電話でしてください。",
+  "translation": {
+   "en": "Please cancel reservations by phone.",
+   "vi": "Lưu ý: hủy đặt qua điện thoại."
+  },
+  "together": {
+   "en": "The warning specifies the required method for cancelling a reservation. 電話で identifies the means, and してください makes the instruction polite.",
+   "vi": "Lưu ý này nêu cách cần dùng khi hủy đặt phòng. 電話で chỉ phương tiện; してください tạo lời yêu cầu lịch sự."
+  },
+  "chunks": [
+   {
+    "text": "注意：",
+    "label": {
+     "en": "please note",
+     "vi": "lưu ý"
+    },
+    "detail": {
+     "en": "This notice label draws attention to an important condition that follows.",
+     "vi": "Nhãn thông báo này thu hút sự chú ý đến điều kiện quan trọng phía sau."
+    },
+    "words": [
+     {
+      "text": "注意",
+      "kana": "ちゅうい",
+      "meaning": {
+       "en": "caution, attention",
+       "vi": "sự chú ý, lưu ý"
+      }
+     }
+    ]
+   },
+   {
+    "text": "予約のキャンセルは、",
+    "label": {
+     "en": "as for cancelling a reservation",
+     "vi": "về việc hủy đặt phòng"
+    },
+    "detail": {
+     "en": "の connects cancellation with the reservation. は makes the entire cancellation procedure the topic.",
+     "vi": "の nối việc hủy với việc đặt phòng. は đưa toàn bộ việc hủy đặt làm chủ đề."
+    }
+   },
+   {
+    "text": "電話で",
+    "label": {
+     "en": "by phone",
+     "vi": "qua điện thoại"
+    },
+    "detail": {
+     "en": "で marks the means used to carry out the cancellation.",
+     "vi": "で đánh dấu phương tiện dùng để thực hiện việc hủy."
+    }
+   },
+   {
+    "text": "してください。",
+    "label": {
+     "en": "please do it",
+     "vi": "hãy thực hiện"
+    },
+    "detail": {
+     "en": "する → して + ください makes a polite request. The action to do is the previously mentioned cancellation.",
+     "vi": "する → して + ください tạo lời yêu cầu lịch sự. Hành động được yêu cầu là việc hủy đã nêu phía trước."
+    },
+    "grammarIds": [
+     "g_099"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "予約の時間より遅れても利用できますが、終わる時間は変わりません。",
+  "translation": {
+   "en": "Even if you arrive late you can use the studio, but the end time does not change.",
+   "vi": "Dù đến muộn vẫn dùng được nhưng giờ kết thúc không đổi."
+  },
+  "together": {
+   "en": "A late arrival does not prevent use, but it also does not extend the reservation. が introduces that limitation.",
+   "vi": "Đến muộn vẫn có thể dùng phòng, nhưng không được kéo dài thời gian đặt. が mở ra giới hạn đó."
+  },
+  "chunks": [
+   {
+    "text": "予約の時間より遅れても",
+    "label": {
+     "en": "even if you arrive after the booked time",
+     "vi": "dù đến muộn hơn giờ đã đặt"
+    },
+    "detail": {
+     "en": "より sets the reserved time as the reference point. 遅れる → 遅れて + も gives a condition that does not prevent use.",
+     "vi": "より lấy giờ đã đặt làm mốc so sánh. 遅れる → 遅れて + も nêu điều kiện vẫn không cản trở việc dùng phòng."
+    },
+    "grammarIds": [
+     "g_255"
+    ],
+    "words": [
+     {
+      "text": "遅れる",
+      "kana": "おくれる",
+      "meaning": {
+       "en": "to be late",
+       "vi": "đến muộn, trễ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "利用できますが、",
+    "label": {
+     "en": "you can use the studio, but",
+     "vi": "vẫn dùng được, nhưng"
+    },
+    "detail": {
+     "en": "利用する → 利用できます expresses possibility. が connects this allowance to the restriction in the next clause.",
+     "vi": "利用する → 利用できます diễn tả khả năng sử dụng. が nối điều được phép này với giới hạn ở vế sau."
+    },
+    "grammarIds": [
+     "g_061_1"
+    ]
+   },
+   {
+    "text": "終わる時間は",
+    "label": {
+     "en": "the finishing time",
+     "vi": "giờ kết thúc"
+    },
+    "detail": {
+     "en": "終わる modifies 時間 directly: the time at which the session ends. は highlights that time as the contrasting topic.",
+     "vi": "終わる bổ nghĩa trực tiếp cho 時間: giờ buổi sử dụng kết thúc. は đưa giờ ấy làm chủ đề đối chiếu."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "変わりません。",
+    "label": {
+     "en": "does not change",
+     "vi": "không thay đổi"
+    },
+    "detail": {
+     "en": "変わる → 変わりません is polite negative. The finishing time remains the one originally booked.",
+     "vi": "変わる → 変わりません là phủ định lịch sự. Giờ kết thúc vẫn giữ như khi đặt ban đầu."
+    },
+    "words": [
+     {
+      "text": "変わる",
+      "kana": "かわる",
+      "meaning": {
+       "en": "to change",
+       "vi": "thay đổi"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "田村さんは、友達と2人で楽器の練習をしたいですが、アパートで楽器を弾くことができないので、いろは音楽スタジオを使おうと思っています。",
+  "translation": {
+   "en": "Tamura and a friend want to practise instruments but cannot play in their apartment, so they plan to use Iroha Music Studio.",
+   "vi": "Tamura cùng một bạn muốn tập nhạc nhưng không chơi được ở căn hộ nên định dùng studio Iroha."
+  },
+  "together": {
+   "en": "The apartment restriction explains why Tamura plans to use the studio. ので links that restriction to the plan expressed by the final volitional form.",
+   "vi": "Việc không thể chơi nhạc ở căn hộ giải thích vì sao Tamura định dùng studio. ので nối hạn chế đó với dự định diễn đạt bằng thể ý chí ở cuối."
+  },
+  "chunks": [
+   {
+    "text": "田村さんは、",
+    "label": {
+     "en": "as for Tamura",
+     "vi": "về Tamura"
+    },
+    "detail": {
+     "en": "は introduces the person whose plans and circumstances are being described.",
+     "vi": "は đưa người có dự định và hoàn cảnh sắp được mô tả làm chủ đề."
+    }
+   },
+   {
+    "text": "友達と2人で",
+    "label": {
+     "en": "with a friend, two people in all",
+     "vi": "cùng một người bạn, tổng cộng hai người"
+    },
+    "detail": {
+     "en": "と marks the companion. 2人で describes the size of the group doing the activity, including Tamura.",
+     "vi": "と đánh dấu người cùng làm. 2人で chỉ nhóm thực hiện hoạt động gồm hai người, tính cả Tamura."
+    }
+   },
+   {
+    "text": "楽器の練習をしたいですが、",
+    "label": {
+     "en": "wants to practise instruments, but",
+     "vi": "muốn tập nhạc cụ, nhưng"
+    },
+    "detail": {
+     "en": "の links the practice to instruments. 練習をする → 練習をしたい expresses the wish; が introduces the obstacle.",
+     "vi": "の nối việc luyện tập với nhạc cụ. 練習をする → 練習をしたい diễn tả mong muốn; が mở ra trở ngại."
+    },
+    "words": [
+     {
+      "text": "楽器",
+      "kana": "がっき",
+      "meaning": {
+       "en": "musical instrument",
+       "vi": "nhạc cụ"
+      }
+     },
+     {
+      "text": "練習",
+      "kana": "れんしゅう",
+      "meaning": {
+       "en": "practice",
+       "vi": "việc luyện tập"
+      }
+     }
+    ]
+   },
+   {
+    "text": "アパートで楽器を弾くことができないので、",
+    "label": {
+     "en": "because they cannot play instruments in the apartment",
+     "vi": "vì không thể chơi nhạc cụ ở căn hộ"
+    },
+    "detail": {
+     "en": "で marks the location. 弾く + ことができない expresses inability or a restriction here; ので gives the reason for choosing the studio.",
+     "vi": "で chỉ địa điểm. 弾く + ことができない ở đây diễn tả việc không thể làm do hoàn cảnh hoặc quy định; ので nêu lý do chọn studio."
+    },
+    "grammarIds": [
+     "g_253",
+     "g_071"
+    ],
+    "words": [
+     {
+      "text": "弾く",
+      "kana": "ひく",
+      "meaning": {
+       "en": "to play a stringed or keyboard instrument",
+       "vi": "chơi nhạc cụ dây hoặc phím"
+      }
+     }
+    ]
+   },
+   {
+    "text": "いろは音楽スタジオを使おうと思っています。",
+    "label": {
+     "en": "plans to use Iroha Music Studio",
+     "vi": "đang định dùng studio nhạc Iroha"
+    },
+    "detail": {
+     "en": "を marks the studio as what will be used. 使う → 使おう + と思っています expresses an intention the person has been considering.",
+     "vi": "を đánh dấu studio là nơi định sử dụng. 使う → 使おう + と思っています diễn tả dự định mà người đó đang có."
+    },
+    "grammarIds": [
+     "g_213"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "田村さんはギターを、友達はドラムを練習したいです。友達は自分のドラムを持っていません。",
+  "translation": {
+   "en": "Tamura wants to practise guitar and the friend drums. The friend has no drums.",
+   "vi": "Tamura tập ghi-ta, bạn tập trống. Bạn không có trống riêng."
+  },
+  "together": {
+   "en": "The first sentence assigns a different instrument to each person. The second explains why the friend needs a studio with drums provided.",
+   "vi": "Câu đầu cho biết mỗi người tập một nhạc cụ khác nhau. Câu sau giải thích vì sao người bạn cần phòng có sẵn trống."
+  },
+  "chunks": [
+   {
+    "text": "田村さんはギターを、",
+    "label": {
+     "en": "Tamura, the guitar",
+     "vi": "Tamura thì ghi-ta"
+    },
+    "detail": {
+     "en": "は introduces Tamura, and を marks the instrument to practise. The predicate is shared with the following clause rather than repeated here.",
+     "vi": "は nêu Tamura; を đánh dấu nhạc cụ muốn tập. Vị ngữ được dùng chung với phần sau nên không lặp ở đây."
+    }
+   },
+   {
+    "text": "友達はドラムを練習したいです。",
+    "label": {
+     "en": "the friend wants to practise drums",
+     "vi": "người bạn muốn tập trống"
+    },
+    "detail": {
+     "en": "は contrasts the friend’s instrument with Tamura’s. 練習する → 練習したい expresses the wish shared by both parts of the sentence.",
+     "vi": "は đối chiếu nhạc cụ của người bạn với Tamura. 練習する → 練習したい diễn tả mong muốn dùng chung cho hai phần của câu."
+    }
+   },
+   {
+    "text": "友達は自分のドラムを",
+    "label": {
+     "en": "the friend, their own drums",
+     "vi": "người bạn, bộ trống riêng của mình"
+    },
+    "detail": {
+     "en": "は keeps the friend as topic. 自分 refers to that friend, and 自分のドラム means their own drum set; を marks what is not owned.",
+     "vi": "は giữ người bạn làm chủ đề. 自分 chỉ chính người bạn ấy; 自分のドラム là bộ trống riêng của họ, được を đánh dấu là thứ không có."
+    },
+    "words": [
+     {
+      "text": "自分",
+      "kana": "じぶん",
+      "meaning": {
+       "en": "oneself, one’s own",
+       "vi": "bản thân, chính mình"
+      }
+     }
+    ]
+   },
+   {
+    "text": "持っていません。",
+    "label": {
+     "en": "does not own any",
+     "vi": "không có"
+    },
+    "detail": {
+     "en": "持つ → 持っている can express possession. Its polite negative 持っていません means the friend does not own a drum set.",
+     "vi": "持つ → 持っている có thể diễn tả sự sở hữu. Dạng phủ định lịch sự 持っていません cho biết người bạn không có bộ trống riêng."
+    },
+    "grammarIds": [
+     "g_094_4"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "田村さんも友達も、土曜日に13時から2時間、できるだけ安く利用したいと思っています。",
+  "translation": {
+   "en": "Both want the cheapest possible two-hour booking from 13:00 on Saturday.",
+   "vi": "Cả hai muốn dùng hai giờ từ 13 giờ thứ Bảy, rẻ nhất có thể."
+  },
+  "together": {
+   "en": "Both people share the same schedule and wish to keep the cost as low as possible. The final と思っています presents this as their current intention.",
+   "vi": "Cả hai cùng muốn một khung giờ và muốn chi phí thấp nhất có thể. と思っています ở cuối nêu ý định hiện tại của họ."
+  },
+  "chunks": [
+   {
+    "text": "田村さんも友達も、",
+    "label": {
+     "en": "both Tamura and the friend",
+     "vi": "cả Tamura lẫn người bạn"
+    },
+    "detail": {
+     "en": "Repeating も after each person means ‘both … and …’. Both share the wish expressed later.",
+     "vi": "Lặp も sau mỗi người tạo nghĩa cả người này lẫn người kia. Cả hai cùng có mong muốn được nêu phía sau."
+    }
+   },
+   {
+    "text": "土曜日に13時から2時間、",
+    "label": {
+     "en": "on Saturday, for two hours from 13:00",
+     "vi": "vào thứ Bảy, trong hai giờ từ 13 giờ"
+    },
+    "detail": {
+     "en": "に marks the day, and から marks the starting time. 2時間 is a duration and does not need に.",
+     "vi": "に đánh dấu ngày; から chỉ giờ bắt đầu. 2時間 là khoảng thời gian kéo dài nên không cần に."
+    }
+   },
+   {
+    "text": "できるだけ安く",
+    "label": {
+     "en": "as cheaply as possible",
+     "vi": "rẻ nhất có thể"
+    },
+    "detail": {
+     "en": "できるだけ means ‘as much as possible’. 安い → 安く modifies 利用したい, specifying the desired cost of using the studio.",
+     "vi": "できるだけ nghĩa là hết mức có thể. 安い → 安く bổ nghĩa cho 利用したい, nêu mức chi phí mong muốn khi dùng phòng."
+    },
+    "grammarIds": [
+     "g_158"
+    ]
+   },
+   {
+    "text": "利用したいと思っています。",
+    "label": {
+     "en": "they want to use the studio",
+     "vi": "họ đang muốn dùng phòng"
+    },
+    "detail": {
+     "en": "利用する → 利用したい expresses the wish. と quotes that wish with 思っています, describing their current thinking.",
+     "vi": "利用する → 利用したい diễn tả mong muốn. と dẫn mong muốn đó với 思っています, cho biết ý định hiện tại của họ."
+    },
+    "grammarIds": [
+     "g_147"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "田村さんたちはどのスタジオを予約して、いくら払いますか。",
+  "translation": {
+   "en": "Which studio will they book, and how much will they pay?",
+   "vi": "Họ đặt phòng nào, trả bao nhiêu?"
+  },
+  "together": {
+   "en": "The question asks the reader to combine the equipment needs, schedule, and prices in the guide. The て-form connects the booking choice to its cost.",
+   "vi": "Câu hỏi yêu cầu người đọc kết hợp nhu cầu nhạc cụ, lịch sử dụng và bảng giá. Thể て nối lựa chọn đặt phòng với số tiền phải trả."
+  },
+  "chunks": [
+   {
+    "text": "田村さんたちは",
+    "label": {
+     "en": "Tamura and the friend",
+     "vi": "Tamura và người bạn"
+    },
+    "detail": {
+     "en": "たち extends the named person to the group with them. は makes the pair the topic of the question.",
+     "vi": "たち mở rộng từ một người được nêu tên thành nhóm cùng người đó. は đưa hai người làm chủ đề câu hỏi."
+    }
+   },
+   {
+    "text": "どのスタジオを予約して、",
+    "label": {
+     "en": "which studio will they book",
+     "vi": "họ sẽ đặt phòng nào"
+    },
+    "detail": {
+     "en": "どの must precede a noun and asks which one. を marks the chosen studio; 予約する → 予約して links booking to paying.",
+     "vi": "どの đứng trước danh từ để hỏi chọn cái nào. を đánh dấu phòng được chọn; 予約する → 予約して nối việc đặt với việc trả tiền."
+    },
+    "words": [
+     {
+      "text": "予約する",
+      "kana": "よやくする",
+      "meaning": {
+       "en": "to reserve, book",
+       "vi": "đặt trước"
+      }
+     }
+    ]
+   },
+   {
+    "text": "いくら払いますか。",
+    "label": {
+     "en": "how much will they pay?",
+     "vi": "họ sẽ trả bao nhiêu?"
+    },
+    "detail": {
+     "en": "いくら asks the amount of money. 払いますか is a polite question about payment.",
+     "vi": "いくら hỏi số tiền. 払いますか là câu hỏi lịch sự về việc thanh toán."
+    },
+    "words": [
+     {
+      "text": "払う",
+      "kana": "はらう",
+      "meaning": {
+       "en": "to pay",
+       "vi": "trả tiền"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "運動会の日は、朝から雨が降っていました。",
+  "translation": {
+   "en": "On sports day it had been raining since morning.",
+   "vi": "Ngày hội thao trời mưa từ sáng."
+  },
+  "together": {
+   "en": "The sports day is the topic, and the rain is the background situation. から gives the starting point of the rain that was continuing then.",
+   "vi": "Ngày hội thao là chủ đề, còn trời mưa là tình huống làm bối cảnh. から nêu thời điểm bắt đầu của cơn mưa vẫn đang tiếp diễn lúc đó."
+  },
+  "chunks": [
+   {
+    "text": "運動会の日は、",
+    "label": {
+     "en": "on sports day",
+     "vi": "vào ngày hội thao"
+    },
+    "detail": {
+     "en": "の links the day to the sports event. は sets that day as the topic of the account.",
+     "vi": "の nối ngày với sự kiện hội thao. は đưa ngày ấy làm chủ đề của lời kể."
+    },
+    "words": [
+     {
+      "text": "運動会",
+      "kana": "うんどうかい",
+      "meaning": {
+       "en": "sports day, athletic meet",
+       "vi": "ngày hội thao"
+      }
+     }
+    ]
+   },
+   {
+    "text": "朝から",
+    "label": {
+     "en": "since morning",
+     "vi": "từ sáng"
+    },
+    "detail": {
+     "en": "から marks the starting point of the continuing rain.",
+     "vi": "から đánh dấu mốc bắt đầu của cơn mưa kéo dài."
+    }
+   },
+   {
+    "text": "雨が降っていました。",
+    "label": {
+     "en": "it had been raining",
+     "vi": "trời đã mưa liên tục"
+    },
+    "detail": {
+     "en": "が marks rain as the subject. 降る → 降って + いました describes rain in progress during that past period.",
+     "vi": "が đánh dấu mưa là chủ thể. 降る → 降って + いました diễn tả mưa đang kéo dài trong khoảng thời gian quá khứ ấy."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "雨が降っても運動会をすると決めていたので、予定の時間に始めました。",
+  "translation": {
+   "en": "We had decided to hold it even if it rained, so we started at the planned time.",
+   "vi": "Vì đã quyết định dù mưa vẫn tổ chức nên chúng tôi bắt đầu đúng giờ dự kiến."
+  },
+  "together": {
+   "en": "The earlier decision included the possibility of rain. ので explains why the event began on schedule despite the weather.",
+   "vi": "Quyết định trước đó đã tính đến cả khả năng trời mưa. ので giải thích vì sao hội thao vẫn bắt đầu đúng giờ dù thời tiết xấu."
+  },
+  "chunks": [
+   {
+    "text": "雨が降っても",
+    "label": {
+     "en": "even if it rained",
+     "vi": "dù trời có mưa"
+    },
+    "detail": {
+     "en": "降る → 降って + も introduces a condition that would not change the decision. It is part of what had been decided in advance.",
+     "vi": "降る → 降って + も nêu điều kiện vẫn không làm thay đổi quyết định. Đây là một phần của nội dung đã quyết định từ trước."
+    },
+    "grammarIds": [
+     "g_255"
+    ]
+   },
+   {
+    "text": "運動会をすると決めていたので、",
+    "label": {
+     "en": "because we had decided to hold sports day",
+     "vi": "vì đã quyết định tổ chức hội thao"
+    },
+    "detail": {
+     "en": "運動会をする is the decision’s content, marked by と. 決める → 決めていた + ので gives the prior decision as the reason for starting.",
+     "vi": "運動会をする là nội dung quyết định, được đánh dấu bằng と. 決める → 決めていた + ので nêu quyết định có từ trước làm lý do bắt đầu."
+    },
+    "grammarIds": [
+     "g_253"
+    ],
+    "words": [
+     {
+      "text": "決める",
+      "kana": "きめる",
+      "meaning": {
+       "en": "to decide",
+       "vi": "quyết định"
+      }
+     }
+    ]
+   },
+   {
+    "text": "予定の時間に",
+    "label": {
+     "en": "at the planned time",
+     "vi": "đúng giờ dự kiến"
+    },
+    "detail": {
+     "en": "予定の modifies 時間. に marks the specific time when the event began.",
+     "vi": "予定の bổ nghĩa cho 時間. に đánh dấu thời điểm cụ thể hội thao bắt đầu."
+    },
+    "words": [
+     {
+      "text": "予定",
+      "kana": "よてい",
+      "meaning": {
+       "en": "plan, schedule",
+       "vi": "kế hoạch, lịch dự kiến"
+      }
+     }
+    ]
+   },
+   {
+    "text": "始めました。",
+    "label": {
+     "en": "we started",
+     "vi": "chúng tôi đã bắt đầu"
+    },
+    "detail": {
+     "en": "始める → 始めました is polite past. This transitive verb has an understood object: the sports event.",
+     "vi": "始める → 始めました là quá khứ lịch sự. Đây là tha động từ, với đối tượng được hiểu ngầm là hội thao."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "寒かったのに、子供たちはみんな元気に走りました。",
+  "translation": {
+   "en": "Even though it was cold, all the children ran energetically.",
+   "vi": "Trời lạnh vậy mà các em vẫn chạy rất hăng hái."
+  },
+  "together": {
+   "en": "のに contrasts the actual cold weather with the children’s unexpectedly energetic running. The cold did not produce the result one might expect.",
+   "vi": "のに đối chiếu thời tiết lạnh thực tế với việc các em vẫn chạy hăng hái ngoài dự đoán. Trời lạnh nhưng kết quả không như thường nghĩ."
+  },
+  "chunks": [
+   {
+    "text": "寒かったのに、",
+    "label": {
+     "en": "even though it was cold",
+     "vi": "dù trời lạnh"
+    },
+    "detail": {
+     "en": "寒い → 寒かった + のに presents a real past circumstance and introduces an unexpected contrast.",
+     "vi": "寒い → 寒かった + のに nêu hoàn cảnh có thật trong quá khứ và mở ra ý trái dự đoán."
+    },
+    "grammarIds": [
+     "g_254"
+    ]
+   },
+   {
+    "text": "子供たちはみんな",
+    "label": {
+     "en": "all the children",
+     "vi": "tất cả các em"
+    },
+    "detail": {
+     "en": "は makes the children the topic. みんな specifies that the description applies to all of them.",
+     "vi": "は đưa các em làm chủ đề. みんな cho biết nhận xét áp dụng cho tất cả."
+    }
+   },
+   {
+    "text": "元気に走りました。",
+    "label": {
+     "en": "ran energetically",
+     "vi": "đã chạy hăng hái"
+    },
+    "detail": {
+     "en": "元気 is a な-adjective; 元気に describes how the children ran. 走る → 走りました reports the past action.",
+     "vi": "元気 là tính từ な; 元気に bổ nghĩa cho cách các em chạy. 走る → 走りました kể hành động trong quá khứ."
+    },
+    "grammarIds": [
+     "g_158"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "3年生のゆうた君は、転んでも泣かないで、最後まで走りました。",
+  "translation": {
+   "en": "Yuta, a third-grader, fell but didn’t cry and ran to the finish.",
+   "vi": "Em Yuta lớp 3 dù bị ngã vẫn không khóc và chạy đến cuối."
+  },
+  "together": {
+   "en": "転んでも refers to a fall that really happened, while 泣かないで describes how Yuta continued. Together they highlight his determination to finish.",
+   "vi": "転んでも nói về lần ngã thực sự đã xảy ra; 泣かないで cho biết Yuta tiếp tục mà không khóc. Hai cụm làm nổi bật sự quyết tâm chạy đến cuối của em."
+  },
+  "chunks": [
+   {
+    "text": "3年生のゆうた君は、",
+    "label": {
+     "en": "Yuta, a third-grader",
+     "vi": "em Yuta học lớp 3"
+    },
+    "detail": {
+     "en": "3年生の identifies Yuta by his school year. 君 is a familiar suffix often used for boys; は introduces him as the topic.",
+     "vi": "3年生の xác định Yuta là học sinh lớp 3. 君 là hậu tố thân mật thường dùng với bé trai; は nêu em làm chủ đề."
+    }
+   },
+   {
+    "text": "転んでも",
+    "label": {
+     "en": "although he fell",
+     "vi": "dù đã bị ngã"
+    },
+    "detail": {
+     "en": "転ぶ → 転んで + も marks a real event that did not stop the later action. Here it means ‘despite falling’, rather than an imagined fall.",
+     "vi": "転ぶ → 転んで + も nêu sự việc có thật vẫn không ngăn hành động sau. Ở đây nghĩa là dù đã ngã, không phải giả sử bị ngã."
+    },
+    "grammarIds": [
+     "g_256"
+    ],
+    "words": [
+     {
+      "text": "転ぶ",
+      "kana": "ころぶ",
+      "meaning": {
+       "en": "to fall over",
+       "vi": "ngã"
+      }
+     }
+    ]
+   },
+   {
+    "text": "泣かないで、",
+    "label": {
+     "en": "without crying",
+     "vi": "không khóc"
+    },
+    "detail": {
+     "en": "泣く → 泣かない + で connects the action not done to the action that was done: he ran instead of crying.",
+     "vi": "泣く → 泣かない + で nối việc không làm với việc đã làm: em tiếp tục chạy thay vì khóc."
+    },
+    "grammarIds": [
+     "g_199"
+    ],
+    "words": [
+     {
+      "text": "泣く",
+      "kana": "なく",
+      "meaning": {
+       "en": "to cry",
+       "vi": "khóc"
+      }
+     }
+    ]
+   },
+   {
+    "text": "最後まで走りました。",
+    "label": {
+     "en": "ran to the finish",
+     "vi": "đã chạy đến cuối"
+    },
+    "detail": {
+     "en": "最後 + まで marks the endpoint reached by running. 走りました reports that he completed the run.",
+     "vi": "最後 + まで đánh dấu mốc cuối đã chạy tới. 走りました cho biết em đã chạy hết."
+    },
+    "words": [
+     {
+      "text": "最後",
+      "kana": "さいご",
+      "meaning": {
+       "en": "end, last",
+       "vi": "cuối cùng, điểm cuối"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ダンスは雨が強くなったので、体育館でしました。",
+  "translation": {
+   "en": "The rain got heavier, so the dance was held in the gym.",
+   "vi": "Vì mưa nặng hạt hơn nên phần múa được tổ chức trong nhà thể chất."
+  },
+  "together": {
+   "en": "The heavier rain is the reason the dance took place indoors. は singles out the dance portion of sports day.",
+   "vi": "Mưa nặng hạt hơn là lý do phần múa được chuyển vào trong nhà. は đưa riêng phần múa của hội thao làm chủ đề."
+  },
+  "chunks": [
+   {
+    "text": "ダンスは",
+    "label": {
+     "en": "as for the dance",
+     "vi": "về phần múa"
+    },
+    "detail": {
+     "en": "は makes the dance the topic, distinguishing this part of the event from the other activities.",
+     "vi": "は đưa phần múa làm chủ đề, tách phần này khỏi các hoạt động khác."
+    }
+   },
+   {
+    "text": "雨が強くなったので、",
+    "label": {
+     "en": "because the rain became heavier",
+     "vi": "vì mưa nặng hạt hơn"
+    },
+    "detail": {
+     "en": "強い → 強く + なった describes a change in intensity. Adding ので gives this change as the reason for the location chosen.",
+     "vi": "強い → 強く + なった diễn tả sự thay đổi mức độ. Thêm ので để nêu sự thay đổi này làm lý do chọn địa điểm."
+    },
+    "grammarIds": [
+     "g_253",
+     "g_160"
+    ]
+   },
+   {
+    "text": "体育館でしました。",
+    "label": {
+     "en": "we held it in the gym",
+     "vi": "đã tổ chức trong nhà thể chất"
+    },
+    "detail": {
+     "en": "で marks where the activity took place. しました refers back to doing the dance, with its object omitted.",
+     "vi": "で chỉ nơi diễn ra hoạt động. しました nhắc lại việc thực hiện phần múa, với đối tượng được lược bỏ."
+    },
+    "words": [
+     {
+      "text": "体育館",
+      "kana": "たいいくかん",
+      "meaning": {
+       "en": "gymnasium, sports hall",
+       "vi": "nhà thể chất"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "来年は、晴れてほしいですね。",
+  "translation": {
+   "en": "I hope it’s sunny next year.",
+   "vi": "Mong năm sau trời nắng nhé."
+  },
+  "together": {
+   "en": "The speaker hopes for better weather at next year’s event. てほしい can express a wish for a natural event, not only for someone’s action.",
+   "vi": "Người nói mong thời tiết tốt hơn cho hội thao năm sau. てほしい có thể diễn tả mong muốn về hiện tượng tự nhiên, không chỉ về hành động của người khác."
+  },
+  "chunks": [
+   {
+    "text": "来年は、",
+    "label": {
+     "en": "next year",
+     "vi": "năm sau"
+    },
+    "detail": {
+     "en": "は sets next year in contrast with this year’s rainy sports day.",
+     "vi": "は đặt năm sau trong thế đối chiếu với hội thao năm nay có mưa."
+    }
+   },
+   {
+    "text": "晴れてほしいですね。",
+    "label": {
+     "en": "I hope it will be sunny",
+     "vi": "mong trời nắng nhỉ"
+    },
+    "detail": {
+     "en": "晴れる → 晴れて + ほしい expresses a wish for sunshine. ですね invites the listener to share that hope.",
+     "vi": "晴れる → 晴れて + ほしい diễn tả mong trời nắng. ですね mời người nghe cùng chia sẻ mong muốn ấy."
+    },
+    "grammarIds": [
+     "g_191"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "先週の日曜日、友達と山に登る予定でした。",
+  "translation": {
+   "en": "Last Sunday I was planning to climb a mountain with friends.",
+   "vi": "Chủ nhật tuần trước tôi có kế hoạch leo núi với bạn."
+  },
+  "together": {
+   "en": "The sentence introduces an outing that had been planned for last Sunday. 予定でした describes the plan, leaving the actual outcome to the following sentences.",
+   "vi": "Câu giới thiệu chuyến đi dự kiến vào Chủ nhật tuần trước. 予定でした nói về kế hoạch; chuyện thực tế ra sao được kể ở các câu sau."
+  },
+  "chunks": [
+   {
+    "text": "先週の日曜日、",
+    "label": {
+     "en": "last Sunday",
+     "vi": "Chủ nhật tuần trước"
+    },
+    "detail": {
+     "en": "の connects Sunday to last week. The entire phrase sets the past time of the planned outing.",
+     "vi": "の nối Chủ nhật với tuần trước. Cả cụm nêu thời điểm quá khứ của chuyến đi dự kiến."
+    }
+   },
+   {
+    "text": "友達と",
+    "label": {
+     "en": "with friends",
+     "vi": "cùng bạn"
+    },
+    "detail": {
+     "en": "と marks the companions who would join the speaker on the climb.",
+     "vi": "と đánh dấu những người bạn dự kiến cùng người kể leo núi."
+    }
+   },
+   {
+    "text": "山に登る予定でした。",
+    "label": {
+     "en": "was planning to climb a mountain",
+     "vi": "đã có kế hoạch leo núi"
+    },
+    "detail": {
+     "en": "に marks the mountain as the destination of the climb. Dictionary-form 登る + 予定でした expresses a plan held in the past.",
+     "vi": "に đánh dấu núi là nơi định leo lên. 登る ở thể từ điển + 予定でした diễn tả kế hoạch đã có trong quá khứ."
+    },
+    "grammarIds": [
+     "g_211"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "天気予報では雨だったのに、朝起きたとき、空は晴れていました。",
+  "translation": {
+   "en": "Even though the forecast said rain, the sky was clear when I got up.",
+   "vi": "Dự báo thời tiết nói có mưa vậy mà sáng thức dậy trời lại nắng."
+  },
+  "together": {
+   "en": "のに contrasts the rain forecast with the clear sky that was actually seen. 起きたとき identifies the moment the speaker noticed the weather.",
+   "vi": "のに đối chiếu dự báo có mưa với bầu trời quang thực tế. 起きたとき xác định lúc người kể nhận thấy thời tiết."
+  },
+  "chunks": [
+   {
+    "text": "天気予報では雨だったのに、",
+    "label": {
+     "en": "although the forecast said rain",
+     "vi": "dù dự báo thời tiết nói có mưa"
+    },
+    "detail": {
+     "en": "では sets the forecast as the information source. 雨だ → 雨だった + のに presents the forecast as contrary to the actual morning weather.",
+     "vi": "では nêu dự báo là nguồn thông tin. 雨だ → 雨だった + のに đối chiếu nội dung dự báo với thời tiết buổi sáng thực tế."
+    },
+    "grammarIds": [
+     "g_254"
+    ],
+    "words": [
+     {
+      "text": "天気予報",
+      "kana": "てんきよほう",
+      "meaning": {
+       "en": "weather forecast",
+       "vi": "dự báo thời tiết"
+      }
+     }
+    ]
+   },
+   {
+    "text": "朝起きたとき、",
+    "label": {
+     "en": "when I got up in the morning",
+     "vi": "khi thức dậy buổi sáng"
+    },
+    "detail": {
+     "en": "起きる → 起きた + とき places the observation at the point when getting up had happened. 朝 specifies the time of day.",
+     "vi": "起きる → 起きた + とき đặt việc quan sát vào lúc đã thức dậy. 朝 cho biết đó là buổi sáng."
+    },
+    "grammarIds": [
+     "g_243"
+    ]
+   },
+   {
+    "text": "空は晴れていました。",
+    "label": {
+     "en": "the sky was clear",
+     "vi": "trời lại quang"
+    },
+    "detail": {
+     "en": "は makes the sky the topic of the contrasting observation. 晴れる → 晴れて + いました describes the clear state at that time.",
+     "vi": "は đưa bầu trời làm chủ đề của nhận xét đối lập. 晴れる → 晴れて + いました chỉ trạng thái trời quang lúc đó."
+    },
+    "grammarIds": [
+     "g_094_4"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "それで、予定の時間に出かけました。",
+  "translation": {
+   "en": "So we set off at the planned time.",
+   "vi": "Vì thế chúng tôi xuất phát đúng giờ dự kiến."
+  },
+  "together": {
+   "en": "それで connects the departure to the clear weather in the previous sentence. The group followed the original schedule.",
+   "vi": "それで nối việc xuất phát với trời quang ở câu trước. Nhóm vẫn đi theo giờ đã dự kiến."
+  },
+  "chunks": [
+   {
+    "text": "それで、",
+    "label": {
+     "en": "so",
+     "vi": "vì thế"
+    },
+    "detail": {
+     "en": "それで introduces a result or decision arising from the situation just described.",
+     "vi": "それで mở ra kết quả hoặc quyết định xuất phát từ tình huống vừa nói đến."
+    }
+   },
+   {
+    "text": "予定の時間に",
+    "label": {
+     "en": "at the planned time",
+     "vi": "đúng giờ dự kiến"
+    },
+    "detail": {
+     "en": "予定の modifies 時間. に marks the specific time at which the group set off.",
+     "vi": "予定の bổ nghĩa cho 時間. に đánh dấu thời điểm cụ thể nhóm xuất phát."
+    }
+   },
+   {
+    "text": "出かけました。",
+    "label": {
+     "en": "we set off",
+     "vi": "chúng tôi đã xuất phát"
+    },
+    "detail": {
+     "en": "出かける → 出かけました is polite past. Here it means leaving to go on the planned outing.",
+     "vi": "出かける → 出かけました là quá khứ lịch sự. Ở đây từ này chỉ việc rời đi để thực hiện chuyến đi đã định."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "山の上に着いたとき、急に雨が降り始めました。",
+  "translation": {
+   "en": "When we reached the top, it suddenly started to rain.",
+   "vi": "Khi lên tới đỉnh, trời bỗng đổ mưa."
+  },
+  "together": {
+   "en": "Reaching the top provides the time reference for the sudden change in weather. 降り始めました highlights the beginning of the rain.",
+   "vi": "Việc lên tới đỉnh làm mốc thời gian cho sự thay đổi thời tiết đột ngột. 降り始めました nhấn mạnh lúc mưa bắt đầu."
+  },
+  "chunks": [
+   {
+    "text": "山の上に着いたとき、",
+    "label": {
+     "en": "when we reached the top of the mountain",
+     "vi": "khi lên tới đỉnh núi"
+    },
+    "detail": {
+     "en": "に marks the arrival point. 着く → 着いた + とき places the rain’s onset at the time of arrival.",
+     "vi": "に đánh dấu nơi đến. 着く → 着いた + とき đặt lúc mưa bắt đầu vào thời điểm đã tới nơi."
+    },
+    "grammarIds": [
+     "g_243"
+    ]
+   },
+   {
+    "text": "急に",
+    "label": {
+     "en": "suddenly",
+     "vi": "đột nhiên"
+    },
+    "detail": {
+     "en": "急 is a な-adjective; 急に works adverbially and describes the abrupt start of the rain.",
+     "vi": "急 là tính từ な; 急に làm trạng ngữ, diễn tả việc mưa bắt đầu đột ngột."
+    },
+    "grammarIds": [
+     "g_158"
+    ],
+    "words": [
+     {
+      "text": "急",
+      "kana": "きゅう",
+      "meaning": {
+       "en": "sudden, abrupt",
+       "vi": "đột ngột"
+      }
+     }
+    ]
+   },
+   {
+    "text": "雨が降り始めました。",
+    "label": {
+     "en": "it started to rain",
+     "vi": "trời bắt đầu mưa"
+    },
+    "detail": {
+     "en": "が marks rain as the subject. 降る → 降ります → 降り + 始める forms a compound meaning ‘begin to rain’, made polite past here.",
+     "vi": "が đánh dấu mưa là chủ thể. 降る → 降ります → 降り + 始める tạo động từ ghép nghĩa là bắt đầu mưa, ở đây dùng quá khứ lịch sự."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "傘を持っていなかったので、みんなぬれてしまいました。",
+  "translation": {
+   "en": "We had no umbrellas, so we all got soaked.",
+   "vi": "Vì không mang ô nên ai cũng bị ướt."
+  },
+  "together": {
+   "en": "Lacking umbrellas is given as the reason everyone got wet. てしまいました presents that result as unfortunate.",
+   "vi": "Việc không có ô được nêu làm lý do khiến ai cũng ướt. てしまいました diễn tả kết quả đáng tiếc ấy."
+  },
+  "chunks": [
+   {
+    "text": "傘を持っていなかったので、",
+    "label": {
+     "en": "because we had no umbrellas with us",
+     "vi": "vì không mang theo ô"
+    },
+    "detail": {
+     "en": "持つ → 持っている expresses having something with you. 持っていなかった is negative past, and ので gives the reason for getting wet.",
+     "vi": "持つ → 持っている diễn tả việc có vật gì mang theo. 持っていなかった là quá khứ phủ định; ので nêu lý do bị ướt."
+    },
+    "grammarIds": [
+     "g_253"
+    ]
+   },
+   {
+    "text": "みんな",
+    "label": {
+     "en": "everyone",
+     "vi": "mọi người"
+    },
+    "detail": {
+     "en": "みんな identifies all members of the group as experiencing the following result.",
+     "vi": "みんな cho biết tất cả thành viên trong nhóm đều chịu kết quả ở phía sau."
+    }
+   },
+   {
+    "text": "ぬれてしまいました。",
+    "label": {
+     "en": "got soaked",
+     "vi": "đều bị ướt mất"
+    },
+    "detail": {
+     "en": "ぬれる → ぬれて + しまいました describes getting wet as an unwanted outcome. It adds the speaker’s regret about the situation.",
+     "vi": "ぬれる → ぬれて + しまいました diễn tả việc bị ướt là kết quả không mong muốn, kèm cảm giác tiếc của người kể."
+    },
+    "grammarIds": [
+     "g_222"
+    ],
+    "words": [
+     {
+      "text": "ぬれる",
+      "kana": "ぬれる",
+      "meaning": {
+       "en": "to get wet",
+       "vi": "bị ướt"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "山小屋の人が「どうぞお入りください」と言って、温かいお茶を出してくれました。",
+  "translation": {
+   "en": "The people at the mountain hut said, “Please come in,” and served us hot tea.",
+   "vi": "Người ở nhà nghỉ trên núi nói “Mời vào” và mời chúng tôi trà nóng."
+  },
+  "together": {
+   "en": "The mountain-hut staff invite the group in and then serve tea. てくれました frames the service as a kindness received by the speaker and companions.",
+   "vi": "Người ở nhà nghỉ trên núi mời nhóm vào rồi mang trà ra. てくれました cho thấy người kể và các bạn được nhận sự giúp đỡ ân cần ấy."
+  },
+  "chunks": [
+   {
+    "text": "山小屋の人が",
+    "label": {
+     "en": "the people at the mountain hut",
+     "vi": "người ở nhà nghỉ trên núi"
+    },
+    "detail": {
+     "en": "の connects the people to the hut, and が marks them as the subject of both speaking and serving tea.",
+     "vi": "の nối người với nhà nghỉ; が đánh dấu họ là chủ thể của cả việc nói và mời trà."
+    },
+    "words": [
+     {
+      "text": "山小屋",
+      "kana": "やまごや",
+      "meaning": {
+       "en": "mountain hut, mountain lodge",
+       "vi": "nhà nghỉ trên núi"
+      }
+     }
+    ]
+   },
+   {
+    "text": "「どうぞお入りください」と言って、",
+    "label": {
+     "en": "saying ‘Please come in’",
+     "vi": "nói ‘Mời vào’ rồi"
+    },
+    "detail": {
+     "en": "入る → 入ります → お入り + ください makes a respectful request. と marks the quoted invitation; 言って links it to serving the tea.",
+     "vi": "入る → 入ります → お入り + ください tạo lời mời kính trọng. と đánh dấu lời được dẫn; 言って nối lời mời với việc mang trà ra."
+    },
+    "grammarIds": [
+     "g_239"
+    ]
+   },
+   {
+    "text": "温かいお茶を",
+    "label": {
+     "en": "warm tea",
+     "vi": "trà nóng"
+    },
+    "detail": {
+     "en": "温かい modifies お茶. を marks the tea as what the staff served to the group.",
+     "vi": "温かい bổ nghĩa cho お茶. を đánh dấu trà là thứ được mang ra mời cả nhóm."
+    }
+   },
+   {
+    "text": "出してくれました。",
+    "label": {
+     "en": "served us",
+     "vi": "đã mang ra mời chúng tôi"
+    },
+    "detail": {
+     "en": "出す → 出して + くれました presents the action as a favour done for the speaker’s group. Here 出す means to serve or offer the tea.",
+     "vi": "出す → 出して + くれました diễn tả hành động có lợi cho nhóm người kể. Ở đây 出す nghĩa là mang trà ra mời."
+    },
+    "grammarIds": [
+     "g_103"
+    ],
+    "words": [
+     {
+      "text": "出す",
+      "kana": "だす",
+      "meaning": {
+       "en": "to put out; here: serve",
+       "vi": "đưa ra; ở đây: mang ra mời"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "雨がやむまで、小屋で1時間待ちました。",
+  "translation": {
+   "en": "We waited an hour in the hut until the rain stopped.",
+   "vi": "Chúng tôi đợi một tiếng trong nhà nghỉ cho đến khi tạnh mưa."
+  },
+  "together": {
+   "en": "The rain stopping is the endpoint of the wait. The rest of the sentence gives where the group waited and how long it took.",
+   "vi": "Việc mưa tạnh là mốc kết thúc chờ đợi. Phần còn lại cho biết nhóm đợi ở đâu và trong bao lâu."
+  },
+  "chunks": [
+   {
+    "text": "雨がやむまで、",
+    "label": {
+     "en": "until the rain stopped",
+     "vi": "cho đến khi mưa tạnh"
+    },
+    "detail": {
+     "en": "Dictionary-form やむ + まで gives the event up to which waiting continued. The dictionary form is used even though the whole story is in the past.",
+     "vi": "やむ ở thể từ điển + まで nêu sự việc làm mốc kết thúc chờ đợi. Vẫn dùng thể từ điển dù toàn bộ câu chuyện ở quá khứ."
+    },
+    "grammarIds": [
+     "g_248"
+    ],
+    "words": [
+     {
+      "text": "やむ",
+      "kana": "やむ",
+      "meaning": {
+       "en": "to stop; here: rain stops",
+       "vi": "ngừng; ở đây: mưa tạnh"
+      }
+     }
+    ]
+   },
+   {
+    "text": "小屋で",
+    "label": {
+     "en": "in the hut",
+     "vi": "trong nhà nghỉ"
+    },
+    "detail": {
+     "en": "で marks where the waiting took place. 小屋 refers back to the mountain hut in the previous sentence.",
+     "vi": "で chỉ nơi diễn ra việc chờ. 小屋 nhắc lại nhà nghỉ trên núi ở câu trước."
+    },
+    "words": [
+     {
+      "text": "小屋",
+      "kana": "こや",
+      "meaning": {
+       "en": "hut, cabin",
+       "vi": "nhà nhỏ, túp lều"
+      }
+     }
+    ]
+   },
+   {
+    "text": "1時間待ちました。",
+    "label": {
+     "en": "we waited for one hour",
+     "vi": "chúng tôi đã đợi một tiếng"
+    },
+    "detail": {
+     "en": "1時間 gives the duration without に. 待つ → 待ちました reports the completed period of waiting.",
+     "vi": "1時間 chỉ khoảng thời gian kéo dài, không dùng に. 待つ → 待ちました kể lại quãng chờ đã kết thúc."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "雨が降っても、山はきれいでした。また行きたいです。",
+  "translation": {
+   "en": "Even in the rain, the mountain was beautiful. I want to go again.",
+   "vi": "Dù mưa, ngọn núi vẫn đẹp. Tôi muốn đi nữa."
+  },
+  "together": {
+   "en": "The speaker still found the mountain beautiful despite the rain that actually fell. The final sentence expresses a wish to return.",
+   "vi": "Người kể vẫn thấy núi đẹp dù trời thực sự đã mưa. Câu cuối bày tỏ mong muốn quay lại."
+  },
+  "chunks": [
+   {
+    "text": "雨が降っても、",
+    "label": {
+     "en": "despite the rain",
+     "vi": "dù trời đã mưa"
+    },
+    "detail": {
+     "en": "降る → 降って + も marks a real circumstance that does not cancel the positive assessment. Here the rain is part of the trip just described.",
+     "vi": "降る → 降って + も nêu hoàn cảnh có thật vẫn không làm mất nhận xét tích cực. Đây là cơn mưa trong chuyến đi vừa kể."
+    },
+    "grammarIds": [
+     "g_256"
+    ]
+   },
+   {
+    "text": "山はきれいでした。",
+    "label": {
+     "en": "the mountain was beautiful",
+     "vi": "ngọn núi vẫn đẹp"
+    },
+    "detail": {
+     "en": "は makes the mountain the topic of the assessment. きれい is a な-adjective; きれいでした is its polite past form.",
+     "vi": "は đưa ngọn núi làm chủ đề nhận xét. きれい là tính từ な; きれいでした là dạng quá khứ lịch sự."
+    }
+   },
+   {
+    "text": "また行きたいです。",
+    "label": {
+     "en": "I want to go again",
+     "vi": "tôi muốn đi nữa"
+    },
+    "detail": {
+     "en": "また means again. 行く → 行きます → 行き + たいです expresses the speaker’s wish to return.",
+     "vi": "また nghĩa là lại, lần nữa. 行く → 行きます → 行き + たいです diễn tả mong muốn quay lại của người nói."
+    }
+   }
+  ]
+ }
+]

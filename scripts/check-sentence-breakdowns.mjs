@@ -116,6 +116,27 @@ for (const [query, expected] of [
   const { chapter, exercise, page } = resolveReadingSelection(new URLSearchParams(query))
   assert.deepEqual([chapter, exercise, page], expected, `Invalid reading selection for ${query}`)
 }
+// Per-chapter full-text breakdowns (src/data/breakdowns/<chapter>.json), loaded lazily by the reader.
+let brokenDown = 0
+for (const chapter of Object.keys(readingChapterPages).map(Number)) {
+  const file = new URL(`../src/data/breakdowns/${chapter}.json`, import.meta.url)
+  let list
+  try { list = JSON.parse(readFileSync(file, 'utf8')) } catch { continue }
+  const units = [1, 2, 3].flatMap(e => readingPassages[`${chapter}-${e}`].flat()).concat(practiceReadings.filter(r => r.chapter === chapter).flatMap(r => r.paragraphs.flat()))
+  for (const data of list) {
+    const where = `breakdowns/${chapter}: ${data.sentence}`
+    const unit = units.find(u => u.jp === data.sentence)
+    assert.ok(unit, `Not a unit of chapter ${chapter}: ${where}`)
+    assert.equal(data.chunks.map(c => c.text).join(''), data.sentence, `Chunks must rebuild ${where}`)
+    for (const copy of [data.translation, data.together, ...data.chunks.flatMap(c => [c.label, c.detail])]) bilingual(copy, where)
+    const tagged = new Set(data.chunks.flatMap(c => c.grammarIds ?? []))
+    for (const id of tagged) assert.ok(grammarIds.has(id), `Unknown grammar ${where}: ${id}`)
+    for (const id of unit.grammarIds) assert.ok(tagged.has(id), `Sentence grammar ${id} not placed on a phrase: ${where}`)
+    for (const w of data.chunks.flatMap(c => c.words ?? [])) assert.ok(w.text && /^[぀-ヿー・]+$/.test(w.kana) && w.meaning.en && w.meaning.vi, `Bad word ${w.text} in ${where}`)
+  }
+  brokenDown += list.length
+}
+console.log(`Full-text breakdowns: ${brokenDown} sentences`)
 const ownChapterUnused = Object.keys(readingPassages).filter(key => !Object.values(readingPassages[key]).flat().some(u => u.grammarIds.some(id => grammarChapter.get(id) === Number(key.split('-')[0]))))
 console.log(`Info: ${ownChapterUnused.length} book passages tag none of their own chapter's grammar: ${ownChapterUnused.join(' ')}`)
 console.log(`Sentence breakdowns, ${readingGuides.length} guides, ${Object.keys(readingPassages).length} passages (${passageUnits.length} units), ${practiceReadings.length} original texts (${practiceReadings.reduce((n, r) => n + r.questions.length, 0)} questions): OK`)

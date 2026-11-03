@@ -1,0 +1,4262 @@
+[
+ {
+  "sentence": "僕には彼女がいます。とてもかわいくて、明るい女の子です。",
+  "translation": {
+   "en": "I have a girlfriend. She is very cute and cheerful.",
+   "vi": "Tôi có bạn gái. Cô ấy rất dễ thương, vui vẻ."
+  },
+  "together": {
+   "en": "The first sentence introduces the girlfriend. The second links two qualities and describes her as a cheerful girl.",
+   "vi": "Câu đầu giới thiệu người bạn gái. Câu sau nối hai đặc điểm để miêu tả cô ấy là một cô gái dễ thương, vui vẻ."
+  },
+  "chunks": [
+   {
+    "text": "僕には",
+    "label": {
+     "en": "as for me",
+     "vi": "về phần tôi"
+    },
+    "detail": {
+     "en": "に marks the person who has someone in their life; は makes that person the topic.",
+     "vi": "に chỉ người có ai đó trong cuộc sống của mình; は đưa người ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "彼女がいます。",
+    "label": {
+     "en": "I have a girlfriend",
+     "vi": "có bạn gái"
+    },
+    "detail": {
+     "en": "が marks the person whose existence is stated with います. Here 彼女 means ‘girlfriend’.",
+     "vi": "が đánh dấu người được nói là có với います. Ở đây 彼女 nghĩa là ‘bạn gái’."
+    }
+   },
+   {
+    "text": "とてもかわいくて、",
+    "label": {
+     "en": "very cute, and",
+     "vi": "rất dễ thương và"
+    },
+    "detail": {
+     "en": "かわいい → かわいくて links this quality to the next description. とても strengthens かわいい.",
+     "vi": "かわいい → かわいくて nối đặc điểm này với phần miêu tả sau. とても nhấn mạnh mức độ dễ thương."
+    },
+    "grammarIds": [
+     "g_018"
+    ]
+   },
+   {
+    "text": "明るい女の子です。",
+    "label": {
+     "en": "a cheerful girl",
+     "vi": "là một cô gái vui vẻ"
+    },
+    "detail": {
+     "en": "明るい directly modifies 女の子. Here it describes a cheerful personality rather than physical brightness.",
+     "vi": "明るい đứng trước bổ nghĩa cho 女の子. Ở đây từ này chỉ tính cách vui vẻ chứ không phải độ sáng."
+    },
+    "words": [
+     {
+      "text": "明るい",
+      "kana": "あかるい",
+      "meaning": {
+       "en": "here: cheerful",
+       "vi": "ở đây: vui vẻ, cởi mở"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "彼女はよくおいしいご飯を作ってくれます。",
+  "translation": {
+   "en": "She often cooks delicious meals for me.",
+   "vi": "Cô ấy thường nấu món ngon cho tôi."
+  },
+  "together": {
+   "en": "The girlfriend does the cooking, and くれる presents it as something the speaker receives gratefully.",
+   "vi": "Bạn gái là người nấu ăn; くれる cho thấy người nói được hưởng sự quan tâm ấy."
+  },
+  "chunks": [
+   {
+    "text": "彼女は",
+    "label": {
+     "en": "my girlfriend",
+     "vi": "bạn gái tôi"
+    },
+    "detail": {
+     "en": "は continues the girlfriend as the topic.",
+     "vi": "は tiếp tục lấy người bạn gái làm chủ đề."
+    }
+   },
+   {
+    "text": "よく",
+    "label": {
+     "en": "often",
+     "vi": "thường"
+    },
+    "detail": {
+     "en": "With an action, よく here indicates frequency.",
+     "vi": "Đi với hành động, よく ở đây chỉ tần suất thường xuyên."
+    }
+   },
+   {
+    "text": "おいしいご飯を",
+    "label": {
+     "en": "delicious meals",
+     "vi": "những bữa ăn ngon"
+    },
+    "detail": {
+     "en": "おいしい modifies ご飯, which means meals here. を marks what she makes.",
+     "vi": "おいしい bổ nghĩa cho ご飯, ở đây là bữa ăn. を đánh dấu thứ cô ấy nấu."
+    }
+   },
+   {
+    "text": "作ってくれます。",
+    "label": {
+     "en": "cooks for me",
+     "vi": "nấu cho tôi"
+    },
+    "detail": {
+     "en": "作る → 作って + くれます shows her doing something for the speaker. The present form describes a habit.",
+     "vi": "作る → 作って + くれます diễn tả cô ấy làm việc có ích cho người nói. Dạng hiện tại chỉ thói quen."
+    },
+    "grammarIds": [
+     "g_103"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "そして、いつも僕を笑わせてくれます。",
+  "translation": {
+   "en": "And she always makes me laugh.",
+   "vi": "Và luôn làm tôi cười."
+  },
+  "together": {
+   "en": "The sentence adds another kind thing she does: she makes the speaker laugh. The causative and くれる combine to express a welcome effect.",
+   "vi": "Câu này kể thêm một điều tốt cô ấy làm: khiến người nói cười. Thể sai khiến kết hợp với くれる diễn tả tác động khiến người nói vui."
+  },
+  "chunks": [
+   {
+    "text": "そして、",
+    "label": {
+     "en": "and",
+     "vi": "và"
+    },
+    "detail": {
+     "en": "そして adds another point to the description of the girlfriend.",
+     "vi": "そして thêm một ý vào phần miêu tả người bạn gái."
+    }
+   },
+   {
+    "text": "いつも僕を",
+    "label": {
+     "en": "always, me",
+     "vi": "luôn khiến tôi"
+    },
+    "detail": {
+     "en": "いつも marks frequency. を marks the person made to laugh with the intransitive verb 笑う in its causative form.",
+     "vi": "いつも chỉ tần suất luôn luôn. を đánh dấu người được làm cho cười khi động từ tự động 笑う chuyển sang thể sai khiến."
+    }
+   },
+   {
+    "text": "笑わせてくれます。",
+    "label": {
+     "en": "makes me laugh",
+     "vi": "làm tôi cười"
+    },
+    "detail": {
+     "en": "笑う → 笑わせる → 笑わせて + くれます means she makes the speaker laugh. くれる treats this as something pleasant done for him.",
+     "vi": "笑う → 笑わせる → 笑わせて + くれます nghĩa là cô ấy làm người nói cười. くれる thể hiện người nói cảm nhận đó là điều tốt cô ấy mang lại."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_229",
+     "g_103"
+    ],
+    "words": [
+     {
+      "text": "笑う",
+      "kana": "わらう",
+      "meaning": {
+       "en": "to laugh",
+       "vi": "cười"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "でも、彼女はよく約束の時間に遅刻します。",
+  "translation": {
+   "en": "But she is often late for our arrangements.",
+   "vi": "Nhưng cô ấy hay trễ hẹn."
+  },
+  "together": {
+   "en": "でも turns from her good points to a complaint. The agreed meeting time is what she fails to be on time for.",
+   "vi": "でも chuyển từ ưu điểm sang lời than phiền. Cô ấy thường không đến đúng giờ đã hẹn."
+  },
+  "chunks": [
+   {
+    "text": "でも、",
+    "label": {
+     "en": "but",
+     "vi": "nhưng"
+    },
+    "detail": {
+     "en": "でも introduces a contrast with the earlier praise.",
+     "vi": "でも đưa ra ý trái với những lời khen phía trước."
+    }
+   },
+   {
+    "text": "彼女はよく",
+    "label": {
+     "en": "she often",
+     "vi": "cô ấy thường"
+    },
+    "detail": {
+     "en": "は marks the topic, and よく says that the lateness happens often.",
+     "vi": "は đánh dấu chủ đề; よく cho biết việc đến muộn xảy ra thường xuyên."
+    }
+   },
+   {
+    "text": "約束の時間に",
+    "label": {
+     "en": "at the agreed time",
+     "vi": "vào giờ đã hẹn"
+    },
+    "detail": {
+     "en": "約束の modifies 時間. に marks the time she is late for.",
+     "vi": "約束の bổ nghĩa cho 時間. に chỉ mốc giờ mà cô ấy đến không kịp."
+    },
+    "words": [
+     {
+      "text": "約束",
+      "kana": "やくそく",
+      "meaning": {
+       "en": "promise, arrangement",
+       "vi": "lời hứa, cuộc hẹn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "遅刻します。",
+    "label": {
+     "en": "is late",
+     "vi": "đến muộn"
+    },
+    "detail": {
+     "en": "遅刻する is a する-verb. Its polite nonpast form describes her repeated behavior.",
+     "vi": "遅刻する là động từ する. Dạng lịch sự phi quá khứ diễn tả hành vi lặp lại của cô ấy."
+    },
+    "words": [
+     {
+      "text": "遅刻する",
+      "kana": "ちこくする",
+      "meaning": {
+       "en": "to be late",
+       "vi": "đến muộn, trễ giờ"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "この前は、駅で2時間も待たされました。",
+  "translation": {
+   "en": "Recently I was made to wait at the station for a whole two hours.",
+   "vi": "Lần trước tôi bị bắt đợi ở ga tận hai giờ."
+  },
+  "together": {
+   "en": "The speaker gives a specific example of being kept waiting. も emphasizes how long two hours felt.",
+   "vi": "Người nói nêu một lần cụ thể mình bị bắt chờ. も nhấn mạnh khoảng chờ lâu đến tận hai tiếng."
+  },
+  "chunks": [
+   {
+    "text": "この前は、",
+    "label": {
+     "en": "the other day",
+     "vi": "lần trước"
+    },
+    "detail": {
+     "en": "この前 refers to a recent occasion; は sets it as the occasion being discussed.",
+     "vi": "この前 chỉ một dịp gần đây; は đưa dịp ấy làm bối cảnh."
+    }
+   },
+   {
+    "text": "駅で",
+    "label": {
+     "en": "at the station",
+     "vi": "ở ga"
+    },
+    "detail": {
+     "en": "で marks where the waiting happened.",
+     "vi": "で đánh dấu nơi diễn ra việc chờ đợi."
+    }
+   },
+   {
+    "text": "2時間も",
+    "label": {
+     "en": "a whole two hours",
+     "vi": "tận hai tiếng"
+    },
+    "detail": {
+     "en": "A duration normally needs no particle before the verb. も adds the sense that this duration was surprisingly long.",
+     "vi": "Khoảng thời gian thường đứng trước động từ mà không cần trợ từ. も nhấn mạnh thời gian dài hơn mong đợi."
+    },
+    "grammarIds": [
+     "g_154"
+    ]
+   },
+   {
+    "text": "待たされました。",
+    "label": {
+     "en": "was made to wait",
+     "vi": "đã bị bắt chờ"
+    },
+    "detail": {
+     "en": "待つ → 待たせる → 待たせられる → 待たされる is the shortened causative-passive. ました puts it in the polite past; the girlfriend is the understood cause.",
+     "vi": "待つ → 待たせる → 待たせられる → 待たされる là quá trình tạo dạng bị động sai khiến rút gọn. ました chỉ quá khứ lịch sự; ngữ cảnh cho biết bạn gái là người khiến anh ấy phải chờ."
+    },
+    "grammarIds": [
+     "g_233",
+     "g_232"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "着る服を考えていて、遅くなってしまったそうです。",
+  "translation": {
+   "en": "Apparently she was choosing what to wear and ended up late.",
+   "vi": "Nghe nói cô ấy nghĩ mặc đồ gì nên thành ra trễ."
+  },
+  "together": {
+   "en": "The speaker reports her explanation for being late. 着る modifies 服, and そうです applies to the reported explanation.",
+   "vi": "Người nói thuật lại lời giải thích của cô ấy về việc đến muộn. 着る bổ nghĩa cho 服, còn そうです cho biết đây là thông tin nghe kể lại."
+  },
+  "chunks": [
+   {
+    "text": "着る服を",
+    "label": {
+     "en": "what to wear",
+     "vi": "quần áo để mặc"
+    },
+    "detail": {
+     "en": "The dictionary form 着る modifies 服: clothes she would wear. を makes this noun phrase the object of 考える.",
+     "vi": "Thể từ điển 着る bổ nghĩa cho 服: quần áo cô ấy sẽ mặc. を đánh dấu cụm danh từ này là đối tượng của 考える."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "考えていて、",
+    "label": {
+     "en": "was thinking about it, so",
+     "vi": "mải nghĩ nên"
+    },
+    "detail": {
+     "en": "考える → 考えている → 考えていて links an ongoing activity to its consequence. She was thinking about which clothes to choose.",
+     "vi": "考える → 考えている → 考えていて nối việc đang suy nghĩ với kết quả phía sau. Cô ấy mải nghĩ xem nên chọn quần áo nào."
+    }
+   },
+   {
+    "text": "遅くなってしまったそうです。",
+    "label": {
+     "en": "apparently ended up late",
+     "vi": "nghe nói thành ra đến muộn"
+    },
+    "detail": {
+     "en": "遅い → 遅くなる → 遅くなってしまった expresses an unwanted result. Plain past + そうです reports what the speaker heard, rather than judging an appearance.",
+     "vi": "遅い → 遅くなる → 遅くなってしまった diễn tả kết quả không mong muốn. Thể thường quá khứ + そうです thuật lại điều đã nghe, không phải phán đoán vẻ ngoài."
+    },
+    "grammarIds": [
+     "g_160",
+     "g_222",
+     "g_144"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "それに、いつも荷物を持たされます。",
+  "translation": {
+   "en": "Besides, I am always made to carry her bags.",
+   "vi": "Hơn nữa tôi luôn bị bắt mang đồ."
+  },
+  "together": {
+   "en": "それに adds another complaint. The speaker is the person forced to carry the bags, although that subject is omitted.",
+   "vi": "それに thêm một lời than nữa. Người nói là người bị bắt mang đồ dù chủ ngữ được lược bỏ."
+  },
+  "chunks": [
+   {
+    "text": "それに、",
+    "label": {
+     "en": "besides",
+     "vi": "hơn nữa"
+    },
+    "detail": {
+     "en": "それに adds a further point supporting the same complaint.",
+     "vi": "それに bổ sung một điều cùng hướng với lời than phiền trước."
+    }
+   },
+   {
+    "text": "いつも荷物を",
+    "label": {
+     "en": "always, the bags",
+     "vi": "lúc nào cũng mang đồ"
+    },
+    "detail": {
+     "en": "いつも indicates repetition, and を marks the thing carried. The context supplies whose bags they are.",
+     "vi": "いつも chỉ sự lặp lại; を đánh dấu đồ vật được mang. Ngữ cảnh cho biết đó là đồ của bạn gái."
+    }
+   },
+   {
+    "text": "持たされます。",
+    "label": {
+     "en": "am made to carry",
+     "vi": "bị bắt mang"
+    },
+    "detail": {
+     "en": "持つ → 持たせる → 持たせられる → 持たされる is a shortened causative-passive. The nonpast form presents this as a repeated burden.",
+     "vi": "持つ → 持たせる → 持たせられる → 持たされる là dạng bị động sai khiến rút gọn. Dạng phi quá khứ cho thấy việc này thường xuyên gây phiền cho người nói."
+    },
+    "grammarIds": [
+     "g_233",
+     "g_232"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "彼女とデートするのはちょっと大変です。",
+  "translation": {
+   "en": "Dating her is a little hard.",
+   "vi": "Hẹn hò với cô ấy hơi vất vả."
+  },
+  "together": {
+   "en": "の turns dating her into the topic being evaluated. ちょっと softens the complaint that follows.",
+   "vi": "の biến việc hẹn hò với cô ấy thành chủ đề để nhận xét. ちょっと làm lời than phía sau nhẹ hơn."
+  },
+  "chunks": [
+   {
+    "text": "彼女と",
+    "label": {
+     "en": "with her",
+     "vi": "với cô ấy"
+    },
+    "detail": {
+     "en": "と marks the person the speaker goes on dates with.",
+     "vi": "と đánh dấu người cùng hẹn hò với người nói."
+    }
+   },
+   {
+    "text": "デートするのは",
+    "label": {
+     "en": "dating",
+     "vi": "việc hẹn hò"
+    },
+    "detail": {
+     "en": "デートする + の turns the action into a noun phrase. は makes that activity the topic of the adjective 大変.",
+     "vi": "デートする + の biến hành động thành cụm danh từ. は đưa việc ấy làm chủ đề cho nhận xét 大変."
+    },
+    "grammarIds": [
+     "g_173"
+    ]
+   },
+   {
+    "text": "ちょっと大変です。",
+    "label": {
+     "en": "is a little hard",
+     "vi": "hơi vất vả"
+    },
+    "detail": {
+     "en": "大変 is a な-adjective used as the predicate. ちょっと softens how strongly the speaker complains.",
+     "vi": "大変 là tính từ な dùng làm vị ngữ. ちょっと giúp người nói than phiền nhẹ nhàng hơn."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "犬は、昔も今も人気のペットです。",
+  "translation": {
+   "en": "Dogs have always been popular pets.",
+   "vi": "Xưa nay chó vẫn là vật nuôi được yêu thích."
+  },
+  "together": {
+   "en": "昔も今も links the past and present: dogs have been popular pets throughout both periods.",
+   "vi": "昔も今も nối quá khứ với hiện tại: chó vẫn được yêu thích làm vật nuôi từ xưa đến nay."
+  },
+  "chunks": [
+   {
+    "text": "犬は、",
+    "label": {
+     "en": "dogs",
+     "vi": "chó"
+    },
+    "detail": {
+     "en": "は introduces dogs as the general topic, rather than one particular dog.",
+     "vi": "は đưa loài chó làm chủ đề chung, không nói riêng một con chó."
+    }
+   },
+   {
+    "text": "昔も今も",
+    "label": {
+     "en": "both then and now",
+     "vi": "cả xưa lẫn nay"
+    },
+    "detail": {
+     "en": "Repeating も includes both time periods. Together they convey continuity from the past to the present.",
+     "vi": "も được lặp lại để bao gồm cả hai thời điểm. Cả cụm diễn tả sự tiếp nối từ xưa đến nay."
+    },
+    "words": [
+     {
+      "text": "昔",
+      "kana": "むかし",
+      "meaning": {
+       "en": "the past, long ago",
+       "vi": "ngày xưa, trước đây"
+      }
+     }
+    ]
+   },
+   {
+    "text": "人気のペットです。",
+    "label": {
+     "en": "are popular pets",
+     "vi": "là vật nuôi được yêu thích"
+    },
+    "detail": {
+     "en": "人気の modifies ペット. です completes the statement about what dogs are.",
+     "vi": "人気の bổ nghĩa cho ペット. です kết thúc nhận định về chó."
+    },
+    "words": [
+     {
+      "text": "人気",
+      "kana": "にんき",
+      "meaning": {
+       "en": "popularity",
+       "vi": "sự yêu thích, sự ưa chuộng"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "これから犬が飼いたい人は、どんなことに気を付けたらいいでしょうか。",
+  "translation": {
+   "en": "What should people who want to get a dog pay attention to?",
+   "vi": "Người sắp nuôi chó nên chú ý những gì?"
+  },
+  "together": {
+   "en": "The first clause identifies people planning to keep a dog. The question then politely asks what those people should watch out for.",
+   "vi": "Vế đầu xác định những người định nuôi chó. Phần sau hỏi một cách lịch sự họ nên chú ý điều gì."
+  },
+  "chunks": [
+   {
+    "text": "これから",
+    "label": {
+     "en": "from now on",
+     "vi": "sắp tới"
+    },
+    "detail": {
+     "en": "これから places the plan to keep a dog in the future.",
+     "vi": "これから đặt dự định nuôi chó vào khoảng thời gian sắp tới."
+    }
+   },
+   {
+    "text": "犬が飼いたい人は、",
+    "label": {
+     "en": "people who want a dog",
+     "vi": "người muốn nuôi chó"
+    },
+    "detail": {
+     "en": "飼う → 飼いたい expresses desire, with が marking what they want to keep. 犬が飼いたい modifies 人, and は makes those people the topic.",
+     "vi": "飼う → 飼いたい diễn tả mong muốn; が đánh dấu con vật muốn nuôi. 犬が飼いたい bổ nghĩa cho 人, còn は đưa những người ấy làm chủ đề."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "飼う",
+      "kana": "かう",
+      "meaning": {
+       "en": "to keep, raise an animal",
+       "vi": "nuôi động vật"
+      }
+     }
+    ]
+   },
+   {
+    "text": "どんなことに",
+    "label": {
+     "en": "what things",
+     "vi": "những điều gì"
+    },
+    "detail": {
+     "en": "どんな modifies こと. に marks what needs attention in the expression 気を付ける.",
+     "vi": "どんな bổ nghĩa cho こと. に đánh dấu điều cần chú ý trong cách nói 気を付ける."
+    }
+   },
+   {
+    "text": "気を付けたらいいでしょうか。",
+    "label": {
+     "en": "what should they watch out for?",
+     "vi": "nên chú ý điều gì?"
+    },
+    "detail": {
+     "en": "気を付ける → 気を付けたら + いい asks what action would be advisable. でしょうか makes the question more tentative and polite.",
+     "vi": "気を付ける → 気を付けたら + いい dùng để hỏi nên làm gì. でしょうか khiến câu hỏi mềm và lịch sự hơn."
+    },
+    "grammarIds": [
+     "g_136"
+    ],
+    "words": [
+     {
+      "text": "気を付ける",
+      "kana": "きをつける",
+      "meaning": {
+       "en": "to be careful, pay attention",
+       "vi": "chú ý, cẩn thận"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "まず、犬と生活を始めたら、犬にトイレの場所を覚えさせてください。",
+  "translation": {
+   "en": "First, when you start living with a dog, teach it where to go to the toilet.",
+   "vi": "Trước tiên khi bắt đầu sống cùng chó, hãy dạy nó nhớ chỗ đi vệ sinh."
+  },
+  "together": {
+   "en": "After setting the time as the start of life with a dog, the sentence asks the owner to teach the dog its toilet location.",
+   "vi": "Sau khi nêu thời điểm bắt đầu sống cùng chó, câu yêu cầu người nuôi dạy chó nhớ chỗ đi vệ sinh."
+  },
+  "chunks": [
+   {
+    "text": "まず、",
+    "label": {
+     "en": "first",
+     "vi": "trước tiên"
+    },
+    "detail": {
+     "en": "まず introduces the first piece of advice.",
+     "vi": "まず mở đầu lời khuyên thứ nhất."
+    }
+   },
+   {
+    "text": "犬と生活を始めたら、",
+    "label": {
+     "en": "when you start living with a dog",
+     "vi": "khi bắt đầu sống cùng chó"
+    },
+    "detail": {
+     "en": "と marks the companion and を marks what is started. 始める → 始めたら sets the time when the following advice applies.",
+     "vi": "と chỉ đối tượng sống cùng, còn を đánh dấu việc được bắt đầu. 始める → 始めたら nêu thời điểm áp dụng lời khuyên sau."
+    },
+    "grammarIds": [
+     "g_081"
+    ],
+    "words": [
+     {
+      "text": "生活",
+      "kana": "せいかつ",
+      "meaning": {
+       "en": "daily life, living",
+       "vi": "cuộc sống, sinh hoạt"
+      }
+     }
+    ]
+   },
+   {
+    "text": "犬に",
+    "label": {
+     "en": "the dog",
+     "vi": "cho chó"
+    },
+    "detail": {
+     "en": "に marks the animal being caused to learn. The thing it learns is separately marked with を.",
+     "vi": "に đánh dấu con vật được dạy cho nhớ. Điều nó cần nhớ được đánh dấu riêng bằng を."
+    }
+   },
+   {
+    "text": "トイレの場所を",
+    "label": {
+     "en": "the toilet location",
+     "vi": "chỗ đi vệ sinh"
+    },
+    "detail": {
+     "en": "の links トイレ to 場所, and を marks what the dog must learn.",
+     "vi": "の nối トイレ với 場所; を đánh dấu điều chó cần nhớ."
+    }
+   },
+   {
+    "text": "覚えさせてください。",
+    "label": {
+     "en": "teach it to remember",
+     "vi": "hãy dạy nó nhớ"
+    },
+    "detail": {
+     "en": "覚える → 覚えさせる → 覚えさせて + ください requests a causative action. Here the owner teaches the dog so that it remembers.",
+     "vi": "覚える → 覚えさせる → 覚えさせて + ください yêu cầu thực hiện hành động sai khiến. Ở đây người nuôi dạy để chó ghi nhớ."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_230"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "トイレの場所は、寝る場所とは別のところがいいです。",
+  "translation": {
+   "en": "The toilet area should be separate from the sleeping area.",
+   "vi": "Chỗ vệ sinh nên tách chỗ ngủ."
+  },
+  "together": {
+   "en": "The toilet area is the topic, and the rest recommends a location different from where the dog sleeps.",
+   "vi": "Chỗ đi vệ sinh là chủ đề; phần sau khuyên chọn nơi khác với chỗ chó ngủ."
+  },
+  "chunks": [
+   {
+    "text": "トイレの場所は、",
+    "label": {
+     "en": "the toilet area",
+     "vi": "chỗ đi vệ sinh"
+    },
+    "detail": {
+     "en": "の specifies what kind of place is meant, and は makes that location the topic.",
+     "vi": "の xác định loại địa điểm đang nói tới; は đưa nơi ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "寝る場所とは",
+    "label": {
+     "en": "from the sleeping area",
+     "vi": "so với chỗ ngủ"
+    },
+    "detail": {
+     "en": "寝る modifies 場所. と marks the place used for comparison with 別, while は highlights the contrast.",
+     "vi": "寝る bổ nghĩa cho 場所. と đánh dấu nơi dùng để đối chiếu với 別; は nhấn mạnh sự phân biệt."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "別のところが",
+    "label": {
+     "en": "a different place",
+     "vi": "một chỗ khác"
+    },
+    "detail": {
+     "en": "別の modifies ところ. が marks the location being recommended as good.",
+     "vi": "別の bổ nghĩa cho ところ. が đánh dấu nơi được đánh giá là phù hợp."
+    },
+    "words": [
+     {
+      "text": "別",
+      "kana": "べつ",
+      "meaning": {
+       "en": "different, separate",
+       "vi": "khác, riêng biệt"
+      }
+     }
+    ]
+   },
+   {
+    "text": "いいです。",
+    "label": {
+     "en": "is best",
+     "vi": "là tốt"
+    },
+    "detail": {
+     "en": "いいです gives a recommendation about the location, rather than describing its appearance.",
+     "vi": "いいです nêu lựa chọn nên dùng cho địa điểm, chứ không miêu tả vẻ ngoài của nơi đó."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "トイレが上手にできたら、すぐに褒めてあげてください。",
+  "translation": {
+   "en": "When it uses the toilet correctly, praise it immediately.",
+   "vi": "Khi nó đi vệ sinh đúng, hãy khen ngay."
+  },
+  "together": {
+   "en": "Successful toilet use is the condition for immediate praise. あげる presents the praise as something kind done for the dog.",
+   "vi": "Khi chó đi vệ sinh đúng thì cần khen ngay. あげる diễn tả việc khen như một sự quan tâm dành cho chó."
+  },
+  "chunks": [
+   {
+    "text": "トイレが上手にできたら、",
+    "label": {
+     "en": "when it toilets correctly",
+     "vi": "khi nó đi vệ sinh đúng"
+    },
+    "detail": {
+     "en": "上手 → 上手に modifies できる. できる → できたら means once the dog has successfully done it.",
+     "vi": "上手 → 上手に bổ nghĩa cho できる. できる → できたら nghĩa là khi chó đã làm được việc ấy đúng cách."
+    },
+    "grammarIds": [
+     "g_081"
+    ]
+   },
+   {
+    "text": "すぐに",
+    "label": {
+     "en": "immediately",
+     "vi": "ngay lập tức"
+    },
+    "detail": {
+     "en": "すぐに says the praise should follow without delay.",
+     "vi": "すぐに cho biết cần khen ngay, không để chậm."
+    }
+   },
+   {
+    "text": "褒めてあげてください。",
+    "label": {
+     "en": "please praise it",
+     "vi": "hãy khen nó"
+    },
+    "detail": {
+     "en": "褒める → 褒めて + あげる presents the action as a benefit to the dog. あげてください turns the whole expression into a polite request.",
+     "vi": "褒める → 褒めて + あげる diễn tả việc làm vì chó. あげてください biến cả cụm thành lời yêu cầu lịch sự."
+    },
+    "grammarIds": [
+     "g_105"
+    ],
+    "words": [
+     {
+      "text": "褒める",
+      "kana": "ほめる",
+      "meaning": {
+       "en": "to praise",
+       "vi": "khen ngợi"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "犬は、食べることが大好きです。でも、食事はすぐに食べさせないで、少し待たせてください。",
+  "translation": {
+   "en": "Dogs love eating, but do not let them eat immediately; have them wait a little.",
+   "vi": "Chó rất thích ăn, nhưng đừng cho ăn ngay, hãy cho đợi chút."
+  },
+  "together": {
+   "en": "The first sentence acknowledges that dogs love eating. でも introduces advice to delay feeding and make the dog wait briefly.",
+   "vi": "Câu đầu thừa nhận chó rất thích ăn. でも dẫn sang lời khuyên chưa cho ăn ngay mà cho chó chờ một chút."
+  },
+  "chunks": [
+   {
+    "text": "犬は、",
+    "label": {
+     "en": "dogs",
+     "vi": "chó"
+    },
+    "detail": {
+     "en": "は marks the topic of the general statement.",
+     "vi": "は đánh dấu chủ đề của nhận xét chung."
+    }
+   },
+   {
+    "text": "食べることが大好きです。",
+    "label": {
+     "en": "love eating",
+     "vi": "rất thích ăn"
+    },
+    "detail": {
+     "en": "食べる + こと makes the activity into a noun phrase. が marks what dogs love.",
+     "vi": "食べる + こと biến hành động ăn thành cụm danh từ. が đánh dấu điều chó rất thích."
+    }
+   },
+   {
+    "text": "でも、食事は",
+    "label": {
+     "en": "but as for meals",
+     "vi": "nhưng về bữa ăn"
+    },
+    "detail": {
+     "en": "でも signals a contrast. は brings 食事 forward as the topic; it corresponds to what the dog would eat.",
+     "vi": "でも báo hiệu ý chuyển ngược lại. は đưa 食事 làm chủ đề; đó là thứ chó sẽ ăn."
+    }
+   },
+   {
+    "text": "すぐに食べさせないで、",
+    "label": {
+     "en": "do not let it eat immediately",
+     "vi": "đừng cho nó ăn ngay"
+    },
+    "detail": {
+     "en": "食べる → 食べさせる → 食べさせないで is a negative causative link. Here it leads into an instruction to wait instead; the dog is the omitted eater.",
+     "vi": "食べる → 食べさせる → 食べさせないで là dạng nối phủ định của thể sai khiến. Ở đây cụm này dẫn sang yêu cầu cho chờ thay vì cho ăn; chó là chủ thể ăn được lược bỏ."
+    },
+    "grammarIds": [
+     "g_230",
+     "g_199"
+    ]
+   },
+   {
+    "text": "少し待たせてください。",
+    "label": {
+     "en": "have it wait a little",
+     "vi": "hãy cho nó chờ một chút"
+    },
+    "detail": {
+     "en": "待つ → 待たせる → 待たせて + ください asks the owner to make the dog wait. 少し indicates a short delay.",
+     "vi": "待つ → 待たせる → 待たせて + ください yêu cầu người nuôi cho chó chờ. 少し chỉ một khoảng chờ ngắn."
+    },
+    "grammarIds": [
+     "g_228"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "犬に自由に食べさせないほうがいいです。",
+  "translation": {
+   "en": "It is better not to let dogs eat whenever they like.",
+   "vi": "Không nên để chó ăn tùy ý."
+  },
+  "together": {
+   "en": "The advice concerns what the owner allows the dog to do. The negative causative is followed by ほうがいい to recommend a limit.",
+   "vi": "Lời khuyên nói về việc người nuôi cho phép chó làm. Thể sai khiến phủ định kết hợp với ほうがいい để khuyên đặt giới hạn."
+  },
+  "chunks": [
+   {
+    "text": "犬に",
+    "label": {
+     "en": "the dog",
+     "vi": "cho chó"
+    },
+    "detail": {
+     "en": "に marks the animal allowed or made to eat; the food is omitted.",
+     "vi": "に đánh dấu con vật được cho hoặc bị bắt ăn; thức ăn được lược bỏ."
+    }
+   },
+   {
+    "text": "自由に",
+    "label": {
+     "en": "freely",
+     "vi": "tùy ý"
+    },
+    "detail": {
+     "en": "自由 is a な-adjective. に makes it modify the eating action, meaning without restriction.",
+     "vi": "自由 là tính từ な. に biến từ này thành thành phần bổ nghĩa cho việc ăn, với nghĩa không bị hạn chế."
+    },
+    "grammarIds": [
+     "g_158"
+    ],
+    "words": [
+     {
+      "text": "自由",
+      "kana": "じゆう",
+      "meaning": {
+       "en": "freedom, free",
+       "vi": "tự do"
+      }
+     }
+    ]
+   },
+   {
+    "text": "食べさせないほうがいいです。",
+    "label": {
+     "en": "better not let it eat",
+     "vi": "không nên cho ăn"
+    },
+    "detail": {
+     "en": "食べる → 食べさせる → 食べさせない means not letting it eat. Negative form + ほうがいい gives advice against allowing that action.",
+     "vi": "食べる → 食べさせる → 食べさせない nghĩa là không cho ăn. Thể phủ định + ほうがいい khuyên không nên cho phép hành động đó."
+    },
+    "grammarIds": [
+     "g_230",
+     "g_214"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "犬が「自分が一番えらい」と思ってしまうからです。",
+  "translation": {
+   "en": "The reason given is that the dog might think it is the one in charge.",
+   "vi": "Bài giải thích vì chó sẽ nghĩ mình là lớn nhất."
+  },
+  "together": {
+   "en": "This sentence supplies the passage’s reason for limiting free feeding. The quoted words represent the dog’s imagined thought.",
+   "vi": "Câu này nêu lý do mà bài đọc đưa ra cho việc hạn chế cho ăn tùy ý. Phần trong ngoặc là suy nghĩ được hình dung của chó."
+  },
+  "chunks": [
+   {
+    "text": "犬が",
+    "label": {
+     "en": "the dog",
+     "vi": "chó"
+    },
+    "detail": {
+     "en": "が marks the subject of 思う: the dog is doing the thinking.",
+     "vi": "が đánh dấu chủ thể của 思う: chó là đối tượng có suy nghĩ ấy."
+    }
+   },
+   {
+    "text": "「自分が一番えらい」と",
+    "label": {
+     "en": "that it is the one in charge",
+     "vi": "rằng mình là lớn nhất"
+    },
+    "detail": {
+     "en": "自分 refers back to the dog. が marks the subject inside the quotation, and と closes the content of its thought.",
+     "vi": "自分 chỉ chính con chó. が đánh dấu chủ ngữ bên trong lời dẫn, còn と kết thúc nội dung suy nghĩ."
+    }
+   },
+   {
+    "text": "思ってしまうからです。",
+    "label": {
+     "en": "because it may end up thinking so",
+     "vi": "vì nó sẽ nghĩ như vậy"
+    },
+    "detail": {
+     "en": "思う → 思ってしまう presents the thought as an unwanted outcome. と + 思う marks what is thought; からです gives the reason for the preceding advice.",
+     "vi": "思う → 思ってしまう xem suy nghĩ ấy là kết quả không mong muốn. と + 思う dẫn nội dung suy nghĩ; からです giải thích lý do cho lời khuyên phía trước."
+    },
+    "grammarIds": [
+     "g_147",
+     "g_222"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "犬にご飯を食べるのを待たせて、人間のほうが主人だとわからせましょう。",
+  "translation": {
+   "en": "Make the dog wait before eating, so that it understands the human is the master.",
+   "vi": "Hãy bắt chó chờ trước khi ăn để nó hiểu con người mới là chủ."
+  },
+  "together": {
+   "en": "The owner makes the dog wait before eating, then makes it understand who is in charge. Both actions use the causative.",
+   "vi": "Người nuôi cho chó chờ trước khi ăn rồi làm cho nó hiểu ai là chủ. Cả hai hành động đều dùng thể sai khiến."
+  },
+  "chunks": [
+   {
+    "text": "犬に",
+    "label": {
+     "en": "the dog",
+     "vi": "cho chó"
+    },
+    "detail": {
+     "en": "に marks the dog as the one being made to wait. What it waits to do follows with を.",
+     "vi": "に đánh dấu chó là đối tượng được cho chờ. Việc nó phải chờ để làm được nêu sau với を."
+    }
+   },
+   {
+    "text": "ご飯を食べるのを",
+    "label": {
+     "en": "eating its meal",
+     "vi": "việc ăn cơm"
+    },
+    "detail": {
+     "en": "The first を marks the food eaten. の turns ご飯を食べる into a noun phrase, and the second を marks the activity being delayed.",
+     "vi": "を thứ nhất đánh dấu thức ăn. の biến ご飯を食べる thành cụm danh từ; を thứ hai đánh dấu việc ăn phải chờ lại."
+    }
+   },
+   {
+    "text": "待たせて、",
+    "label": {
+     "en": "make it wait, and",
+     "vi": "cho chờ rồi"
+    },
+    "detail": {
+     "en": "待つ → 待たせる → 待たせて is the causative て-form. It links making the dog wait to the next instruction.",
+     "vi": "待つ → 待たせる → 待たせて là thể て của dạng sai khiến. Dạng này nối việc cho chó chờ với lời hướng dẫn tiếp theo."
+    },
+    "grammarIds": [
+     "g_228"
+    ]
+   },
+   {
+    "text": "人間のほうが主人だと",
+    "label": {
+     "en": "that humans are the masters",
+     "vi": "rằng con người mới là chủ"
+    },
+    "detail": {
+     "en": "のほうが highlights the human side in the comparison. 主人だ is a plain noun predicate, and と marks the fact the dog should understand.",
+     "vi": "のほうが nhấn mạnh phía con người khi so sánh. 主人だ là vị ngữ danh từ ở thể thường; と đánh dấu điều cần cho chó hiểu."
+    },
+    "words": [
+     {
+      "text": "人間",
+      "kana": "にんげん",
+      "meaning": {
+       "en": "human being",
+       "vi": "con người"
+      }
+     },
+     {
+      "text": "主人",
+      "kana": "しゅじん",
+      "meaning": {
+       "en": "here: master, owner",
+       "vi": "ở đây: chủ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "わからせましょう。",
+    "label": {
+     "en": "let us make it understand",
+     "vi": "hãy làm cho nó hiểu"
+    },
+    "detail": {
+     "en": "わかる → わからせる is causative. ましょう makes this an encouraging instruction to the owner.",
+     "vi": "わかる → わからせる là thể sai khiến. ましょう tạo lời hướng dẫn mang tính khuyến khích cho người nuôi."
+    },
+    "grammarIds": [
+     "g_228"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "かわいくて、食べ物をたくさんあげたくなってしまうかもしれませんが、食べさせすぎてはいけません。",
+  "translation": {
+   "en": "You might want to give it lots of food because it is cute, but you must not overfeed it.",
+   "vi": "Vì dễ thương có lẽ muốn cho nhiều thức ăn, nhưng không được cho ăn quá nhiều."
+  },
+  "together": {
+   "en": "The first clause acknowledges the temptation to give a cute dog lots of food. が then contrasts that feeling with a prohibition on overfeeding.",
+   "vi": "Vế đầu thừa nhận cảm giác muốn cho chó nhiều thức ăn vì nó dễ thương. が chuyển sang ý đối lập: không được cho ăn quá nhiều."
+  },
+  "chunks": [
+   {
+    "text": "かわいくて、",
+    "label": {
+     "en": "because it is cute",
+     "vi": "vì nó dễ thương"
+    },
+    "detail": {
+     "en": "かわいい → かわいくて links the dog’s cuteness to the feeling it causes in the owner.",
+     "vi": "かわいい → かわいくて nối sự dễ thương của chó với cảm xúc nảy sinh ở người nuôi."
+    },
+    "grammarIds": [
+     "g_197"
+    ]
+   },
+   {
+    "text": "食べ物をたくさん",
+    "label": {
+     "en": "lots of food",
+     "vi": "nhiều thức ăn"
+    },
+    "detail": {
+     "en": "を marks what is given, and たくさん indicates the amount.",
+     "vi": "を đánh dấu thứ được cho; たくさん chỉ số lượng nhiều."
+    }
+   },
+   {
+    "text": "あげたくなってしまうかもしれませんが、",
+    "label": {
+     "en": "you might end up wanting to give it, but",
+     "vi": "có lẽ sẽ muốn cho, nhưng"
+    },
+    "detail": {
+     "en": "あげる → あげたい → あげたくなる → あげたくなってしまう describes an urge that develops despite caution. かもしれません marks possibility, and が introduces the contrasting advice.",
+     "vi": "あげる → あげたい → あげたくなる → あげたくなってしまう diễn tả cảm giác muốn cho nảy sinh ngoài ý muốn kiềm chế. かもしれません chỉ khả năng; が dẫn sang lời khuyên ngược lại."
+    },
+    "grammarIds": [
+     "g_138",
+     "g_160",
+     "g_222"
+    ]
+   },
+   {
+    "text": "食べさせすぎてはいけません。",
+    "label": {
+     "en": "must not overfeed it",
+     "vi": "không được cho ăn quá nhiều"
+    },
+    "detail": {
+     "en": "食べる → 食べさせる → 食べさせすぎる means making or letting it eat too much. Its て-form + はいけません prohibits that action.",
+     "vi": "食べる → 食べさせる → 食べさせすぎる nghĩa là cho ăn quá nhiều. Thể て của cụm này + はいけません diễn tả điều không được làm."
+    },
+    "grammarIds": [
+     "g_230",
+     "g_203",
+     "g_220"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "そして、犬は運動も大好きです。",
+  "translation": {
+   "en": "Dogs love exercise too.",
+   "vi": "Chó cũng rất thích vận động."
+  },
+  "together": {
+   "en": "The passage moves from food to exercise. も adds exercise to the things dogs enjoy.",
+   "vi": "Bài đọc chuyển từ chuyện ăn sang vận động. も thêm vận động vào những điều chó yêu thích."
+  },
+  "chunks": [
+   {
+    "text": "そして、",
+    "label": {
+     "en": "and",
+     "vi": "và"
+    },
+    "detail": {
+     "en": "そして introduces the next topic in the advice.",
+     "vi": "そして dẫn sang ý tiếp theo trong phần hướng dẫn."
+    }
+   },
+   {
+    "text": "犬は",
+    "label": {
+     "en": "dogs",
+     "vi": "chó"
+    },
+    "detail": {
+     "en": "は keeps dogs as the topic.",
+     "vi": "は tiếp tục lấy chó làm chủ đề."
+    }
+   },
+   {
+    "text": "運動も",
+    "label": {
+     "en": "exercise too",
+     "vi": "cả vận động nữa"
+    },
+    "detail": {
+     "en": "も replaces が with 大好き to add another thing dogs love.",
+     "vi": "も thay cho が khi đi với 大好き để thêm một điều chó yêu thích."
+    },
+    "words": [
+     {
+      "text": "運動",
+      "kana": "うんどう",
+      "meaning": {
+       "en": "exercise, physical activity",
+       "vi": "vận động, tập thể dục"
+      }
+     }
+    ]
+   },
+   {
+    "text": "大好きです。",
+    "label": {
+     "en": "love it",
+     "vi": "rất thích"
+    },
+    "detail": {
+     "en": "大好き is a な-adjective used as the polite predicate. It expresses a strong liking.",
+     "vi": "大好き là tính từ な dùng làm vị ngữ lịch sự, thể hiện mức độ yêu thích cao."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "庭があれば庭で、なければ公園で、たくさん遊ばせましょう。",
+  "translation": {
+   "en": "Let it play a lot in the garden if you have one, or in a park if not.",
+   "vi": "Có vườn thì cho chơi ở vườn, không thì ở công viên."
+  },
+  "together": {
+   "en": "Two conditions choose the place, and the final predicate gives the same instruction for either option: let the dog play plenty.",
+   "vi": "Hai điều kiện xác định nơi chơi; vị ngữ cuối đưa ra cùng một lời khuyên cho cả hai trường hợp: cho chó chơi nhiều."
+  },
+  "chunks": [
+   {
+    "text": "庭があれば庭で、",
+    "label": {
+     "en": "in the garden if there is one",
+     "vi": "có vườn thì ở vườn"
+    },
+    "detail": {
+     "en": "ある → あれば is conditional. が marks what exists, while で marks where the dog plays.",
+     "vi": "ある → あれば là dạng điều kiện. が đánh dấu thứ có sẵn; で chỉ nơi chó chơi."
+    },
+    "grammarIds": [
+     "g_085"
+    ]
+   },
+   {
+    "text": "なければ公園で、",
+    "label": {
+     "en": "otherwise in a park",
+     "vi": "không có thì ở công viên"
+    },
+    "detail": {
+     "en": "ない → なければ means if there is no garden; 庭 is omitted. で again marks the place of play.",
+     "vi": "ない → なければ nghĩa là nếu không có vườn; 庭 được lược bỏ. で tiếp tục chỉ nơi chơi."
+    },
+    "grammarIds": [
+     "g_085"
+    ]
+   },
+   {
+    "text": "たくさん遊ばせましょう。",
+    "label": {
+     "en": "let it play a lot",
+     "vi": "hãy cho nó chơi nhiều"
+    },
+    "detail": {
+     "en": "遊ぶ → 遊ばせる is causative, here allowing the dog to play. ましょう encourages the owner to provide that opportunity.",
+     "vi": "遊ぶ → 遊ばせる là thể sai khiến, ở đây mang nghĩa cho phép chó chơi. ましょう khuyến khích người nuôi tạo cơ hội ấy."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_231"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ボールで遊んだり、一緒に走ったりしてもいいです。",
+  "translation": {
+   "en": "You can play ball or run together.",
+   "vi": "Có thể chơi bóng, chạy cùng."
+  },
+  "together": {
+   "en": "たり lists examples of shared exercise. てもいい says these are acceptable options for playing with the dog.",
+   "vi": "たり liệt kê ví dụ về hoạt động cùng nhau. てもいい cho biết đây là những cách có thể chọn khi chơi với chó."
+  },
+  "chunks": [
+   {
+    "text": "ボールで遊んだり、",
+    "label": {
+     "en": "playing ball, for example",
+     "vi": "chẳng hạn chơi bóng"
+    },
+    "detail": {
+     "en": "で marks the thing used in play. 遊ぶ → 遊んだ + り begins a nonexhaustive list of activities.",
+     "vi": "で chỉ đồ vật dùng khi chơi. 遊ぶ → 遊んだ + り mở đầu danh sách ví dụ về các hoạt động."
+    },
+    "grammarIds": [
+     "g_215"
+    ]
+   },
+   {
+    "text": "一緒に走ったり",
+    "label": {
+     "en": "or running together",
+     "vi": "hoặc chạy cùng nhau"
+    },
+    "detail": {
+     "en": "一緒に means together. 走る → 走った + り adds a second example to the same list.",
+     "vi": "一緒に nghĩa là cùng nhau. 走る → 走った + り thêm một hoạt động vào cùng danh sách."
+    },
+    "grammarIds": [
+     "g_215"
+    ]
+   },
+   {
+    "text": "してもいいです。",
+    "label": {
+     "en": "are fine options",
+     "vi": "đều được"
+    },
+    "detail": {
+     "en": "する completes the たり list, then する → して + もいい expresses permission for these activities.",
+     "vi": "する hoàn thành cấu trúc liệt kê たり, rồi する → して + もいい diễn tả có thể thực hiện những hoạt động ấy."
+    },
+    "grammarIds": [
+     "g_098_1"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "1日に1回か2回、1回30分以上運動させましょう。",
+  "translation": {
+   "en": "Have it exercise once or twice a day for at least thirty minutes each time.",
+   "vi": "Cho vận động mỗi ngày một, hai lần, mỗi lần ít nhất 30 phút."
+  },
+  "together": {
+   "en": "The sentence gives both frequency per day and duration per session, then tells the owner to have the dog exercise.",
+   "vi": "Câu nêu cả số lần mỗi ngày lẫn thời lượng mỗi lần, rồi hướng dẫn người nuôi cho chó vận động."
+  },
+  "chunks": [
+   {
+    "text": "1日に1回か2回、",
+    "label": {
+     "en": "once or twice a day",
+     "vi": "mỗi ngày một hoặc hai lần"
+    },
+    "detail": {
+     "en": "に marks the period used to measure frequency. か joins the alternatives one time and two times.",
+     "vi": "に chỉ khoảng thời gian dùng để tính tần suất. か nối hai lựa chọn là một lần hoặc hai lần."
+    },
+    "grammarIds": [
+     "g_055"
+    ]
+   },
+   {
+    "text": "1回30分以上",
+    "label": {
+     "en": "at least thirty minutes each time",
+     "vi": "mỗi lần ít nhất 30 phút"
+    },
+    "detail": {
+     "en": "1回 introduces the duration per session. 以上 includes the stated number, so thirty minutes is the minimum.",
+     "vi": "1回 nêu đơn vị mỗi lần. 以上 bao gồm cả con số đứng trước nên 30 phút là mức tối thiểu."
+    }
+   },
+   {
+    "text": "運動させましょう。",
+    "label": {
+     "en": "have it exercise",
+     "vi": "hãy cho nó vận động"
+    },
+    "detail": {
+     "en": "運動する → 運動させる is the causative of a する-verb. ましょう encourages the owner to ensure the dog gets exercise.",
+     "vi": "運動する → 運動させる là thể sai khiến của động từ する. ましょう khuyến khích người nuôi bảo đảm chó được vận động."
+    },
+    "grammarIds": [
+     "g_228"
+    ],
+    "words": [
+     {
+      "text": "運動する",
+      "kana": "うんどうする",
+      "meaning": {
+       "en": "to exercise",
+       "vi": "vận động, tập thể dục"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "犬は話すことができませんが、別の方法で人間に気持ちを伝えることができます。",
+  "translation": {
+   "en": "Dogs cannot talk but can communicate feelings to people in other ways.",
+   "vi": "Chó không nói được nhưng truyền cảm xúc cho người bằng cách khác."
+  },
+  "together": {
+   "en": "The sentence contrasts an ability dogs lack with an ability they have. Both halves use dictionary form + ことができる.",
+   "vi": "Câu đối chiếu một việc chó không làm được với một việc chúng làm được. Cả hai vế đều dùng thể từ điển + ことができる."
+  },
+  "chunks": [
+   {
+    "text": "犬は",
+    "label": {
+     "en": "dogs",
+     "vi": "chó"
+    },
+    "detail": {
+     "en": "は gives the shared topic for both halves of the sentence.",
+     "vi": "は nêu chủ đề chung cho cả hai vế."
+    }
+   },
+   {
+    "text": "話すことができませんが、",
+    "label": {
+     "en": "cannot speak, but",
+     "vi": "không nói được, nhưng"
+    },
+    "detail": {
+     "en": "話す + ことができません expresses inability. が links this negative point to a contrasting positive ability.",
+     "vi": "話す + ことができません diễn tả không có khả năng nói. が nối ý phủ định này với khả năng được nêu ở vế sau."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   },
+   {
+    "text": "別の方法で",
+    "label": {
+     "en": "by another method",
+     "vi": "bằng cách khác"
+    },
+    "detail": {
+     "en": "別の modifies 方法, and で marks the means of communication.",
+     "vi": "別の bổ nghĩa cho 方法; で chỉ phương thức truyền đạt."
+    },
+    "words": [
+     {
+      "text": "方法",
+      "kana": "ほうほう",
+      "meaning": {
+       "en": "method, way",
+       "vi": "phương pháp, cách thức"
+      }
+     }
+    ]
+   },
+   {
+    "text": "人間に",
+    "label": {
+     "en": "to humans",
+     "vi": "cho con người"
+    },
+    "detail": {
+     "en": "に marks the recipients of what is communicated.",
+     "vi": "に đánh dấu đối tượng tiếp nhận điều được truyền đạt."
+    }
+   },
+   {
+    "text": "気持ちを",
+    "label": {
+     "en": "feelings",
+     "vi": "cảm xúc"
+    },
+    "detail": {
+     "en": "を marks what the dog communicates.",
+     "vi": "を đánh dấu điều chó truyền đạt."
+    },
+    "words": [
+     {
+      "text": "気持ち",
+      "kana": "きもち",
+      "meaning": {
+       "en": "feelings",
+       "vi": "cảm xúc, tâm trạng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "伝えることができます。",
+    "label": {
+     "en": "can communicate",
+     "vi": "có thể truyền đạt"
+    },
+    "detail": {
+     "en": "伝える + ことができます expresses an ability. It parallels 話すことができません in the first half.",
+     "vi": "伝える + ことができます diễn tả khả năng. Cấu trúc này song song với 話すことができません ở vế đầu."
+    },
+    "grammarIds": [
+     "g_071"
+    ],
+    "words": [
+     {
+      "text": "伝える",
+      "kana": "つたえる",
+      "meaning": {
+       "en": "to convey, communicate",
+       "vi": "truyền đạt"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "「お腹が空いた」「遊んでほしい」など、前足で人間に触ったり、声を出したりして知らせます。",
+  "translation": {
+   "en": "They touch people with their forepaws or make sounds to signal hunger, wanting to play, and so on.",
+   "vi": "Chúng chạm chân trước vào người hoặc phát tiếng để báo đói, muốn được chơi…"
+  },
+  "together": {
+   "en": "The quoted phrases give examples of what the dog communicates. The たり clauses list how it sends those signals.",
+   "vi": "Các cụm trong ngoặc dẫn ví dụ về điều chó muốn truyền đạt. Những vế たり liệt kê cách nó phát tín hiệu."
+  },
+  "chunks": [
+   {
+    "text": "「お腹が空いた」",
+    "label": {
+     "en": "‘I am hungry’",
+     "vi": "‘tôi đói’"
+    },
+    "detail": {
+     "en": "お腹が空く → お腹が空いた describes having become hungry. The quotation represents the dog’s message rather than actual speech.",
+     "vi": "お腹が空く → お腹が空いた diễn tả trạng thái đã thấy đói. Phần trong ngoặc thể hiện điều chó muốn báo chứ không phải lời nói thực sự."
+    }
+   },
+   {
+    "text": "「遊んでほしい」など、",
+    "label": {
+     "en": "‘I want you to play’, and so on",
+     "vi": "‘muốn được chơi cùng’, v.v."
+    },
+    "detail": {
+     "en": "遊ぶ → 遊んで + ほしい expresses wanting someone else to play with the dog. など marks these quotations as examples.",
+     "vi": "遊ぶ → 遊んで + ほしい diễn tả mong người khác chơi cùng chó. など cho biết các lời dẫn chỉ là ví dụ."
+    },
+    "grammarIds": [
+     "g_191"
+    ]
+   },
+   {
+    "text": "前足で",
+    "label": {
+     "en": "with its forepaws",
+     "vi": "bằng chân trước"
+    },
+    "detail": {
+     "en": "で marks the body part used to touch someone.",
+     "vi": "で đánh dấu bộ phận cơ thể dùng để chạm vào người khác."
+    },
+    "words": [
+     {
+      "text": "前足",
+      "kana": "まえあし",
+      "meaning": {
+       "en": "foreleg, forepaw",
+       "vi": "chân trước"
+      }
+     }
+    ]
+   },
+   {
+    "text": "人間に触ったり、",
+    "label": {
+     "en": "touching people",
+     "vi": "chạm vào người"
+    },
+    "detail": {
+     "en": "に marks what is touched. 触る → 触った + り lists one way of signaling.",
+     "vi": "に đánh dấu đối tượng được chạm vào. 触る → 触った + り nêu một cách phát tín hiệu."
+    },
+    "grammarIds": [
+     "g_215"
+    ],
+    "words": [
+     {
+      "text": "触る",
+      "kana": "さわる",
+      "meaning": {
+       "en": "to touch",
+       "vi": "chạm vào, sờ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "声を出したりして",
+    "label": {
+     "en": "or making sounds",
+     "vi": "hoặc phát ra tiếng"
+    },
+    "detail": {
+     "en": "声を出す means to make a vocal sound. 出す → 出したり + して completes the list and links those methods to 知らせます.",
+     "vi": "声を出す nghĩa là phát ra tiếng. 出す → 出したり + して hoàn thành danh sách rồi nối các cách ấy với 知らせます."
+    },
+    "grammarIds": [
+     "g_215"
+    ]
+   },
+   {
+    "text": "知らせます。",
+    "label": {
+     "en": "lets people know",
+     "vi": "báo cho biết"
+    },
+    "detail": {
+     "en": "知らせる is the verb meaning to notify or let someone know. The earlier quotations supply the content of the signal.",
+     "vi": "知らせる là động từ mang nghĩa báo hoặc cho biết. Các lời dẫn phía trước nêu nội dung của tín hiệu."
+    },
+    "words": [
+     {
+      "text": "知らせる",
+      "kana": "しらせる",
+      "meaning": {
+       "en": "to inform, let someone know",
+       "vi": "báo, cho biết"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "あなたのことをじっと見ていることもあります。",
+  "translation": {
+   "en": "Sometimes they stare at you.",
+   "vi": "Có khi chúng nhìn bạn chăm chăm."
+  },
+  "together": {
+   "en": "The sentence adds another behavior that sometimes occurs. 見ていることもあります describes occasional staring, rather than a past experience.",
+   "vi": "Câu thêm một hành vi đôi khi xảy ra. 見ていることもあります diễn tả có lúc chó nhìn chăm chăm, không phải kinh nghiệm đã từng làm."
+  },
+  "chunks": [
+   {
+    "text": "あなたのことを",
+    "label": {
+     "en": "you",
+     "vi": "bạn"
+    },
+    "detail": {
+     "en": "あなたのこと refers to you as the focus of the dog’s attention. を marks the object of 見る.",
+     "vi": "あなたのこと chỉ bạn với tư cách đối tượng được chó chú ý. を đánh dấu đối tượng của 見る."
+    }
+   },
+   {
+    "text": "じっと",
+    "label": {
+     "en": "intently",
+     "vi": "chăm chăm"
+    },
+    "detail": {
+     "en": "じっと modifies 見る and describes a steady, fixed gaze.",
+     "vi": "じっと bổ nghĩa cho 見る, diễn tả ánh nhìn tập trung không rời."
+    }
+   },
+   {
+    "text": "見ていることもあります。",
+    "label": {
+     "en": "sometimes stares",
+     "vi": "cũng có lúc nhìn"
+    },
+    "detail": {
+     "en": "見る → 見ている describes ongoing looking. Adding こともあります means there are also occasions when that behavior occurs.",
+     "vi": "見る → 見ている diễn tả việc đang nhìn. Thêm こともあります nghĩa là cũng có những lúc hành vi ấy xảy ra."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "犬の目や体の動きをよく見てあげましょう。",
+  "translation": {
+   "en": "Watch their eyes and body movements carefully.",
+   "vi": "Hãy quan sát kỹ mắt và cử động của chó."
+  },
+  "together": {
+   "en": "The owner is encouraged to notice the dog’s signals carefully. てあげる frames this attention as care given to the dog.",
+   "vi": "Người nuôi được khuyên quan sát kỹ các tín hiệu của chó. てあげる thể hiện sự chú ý ấy như một việc quan tâm dành cho nó."
+  },
+  "chunks": [
+   {
+    "text": "犬の目や体の動きを",
+    "label": {
+     "en": "the dog’s eyes and body movements",
+     "vi": "mắt và cử động cơ thể của chó"
+    },
+    "detail": {
+     "en": "や lists examples of things to observe, and の links the body to its movements. を marks the whole phrase as what is watched.",
+     "vi": "や liệt kê những thứ cần quan sát; の nối cơ thể với cử động của nó. を đánh dấu cả cụm là đối tượng được quan sát."
+    },
+    "words": [
+     {
+      "text": "動き",
+      "kana": "うごき",
+      "meaning": {
+       "en": "movement",
+       "vi": "cử động, chuyển động"
+      }
+     }
+    ]
+   },
+   {
+    "text": "よく",
+    "label": {
+     "en": "carefully",
+     "vi": "kỹ"
+    },
+    "detail": {
+     "en": "Here よく describes careful observation rather than frequent observation.",
+     "vi": "Ở đây よく diễn tả việc quan sát kỹ, không phải tần suất thường xuyên."
+    }
+   },
+   {
+    "text": "見てあげましょう。",
+    "label": {
+     "en": "let us watch attentively",
+     "vi": "hãy quan sát vì nó"
+    },
+    "detail": {
+     "en": "見る → 見て + あげる presents watching as something done for the dog’s benefit. ましょう makes it an encouraging suggestion.",
+     "vi": "見る → 見て + あげる diễn tả việc quan sát vì lợi ích của chó. ましょう tạo lời khuyên mang tính khuyến khích."
+    },
+    "grammarIds": [
+     "g_105"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "そして、犬の気持ちをわかってあげましょう。そうすれば、きっといい家族になれます。",
+  "translation": {
+   "en": "Try to understand their feelings. Then you can surely become a good family.",
+   "vi": "Hãy hiểu cảm xúc của chó. Làm vậy chắc sẽ thành gia đình tốt."
+  },
+  "together": {
+   "en": "Understanding the dog’s feelings is presented as the way to become a good family together. そうすれば links that action to the hoped-for result.",
+   "vi": "Việc hiểu cảm xúc của chó được xem là cách để trở thành một gia đình gắn bó. そうすれば nối hành động ấy với kết quả mong đợi."
+  },
+  "chunks": [
+   {
+    "text": "そして、犬の気持ちを",
+    "label": {
+     "en": "and the dog’s feelings",
+     "vi": "và cảm xúc của chó"
+    },
+    "detail": {
+     "en": "そして adds the next piece of advice. の marks whose feelings they are, and を makes them the object of わかってあげる.",
+     "vi": "そして thêm lời khuyên tiếp theo. の chỉ cảm xúc của ai; を đánh dấu đối tượng của わかってあげる."
+    }
+   },
+   {
+    "text": "わかってあげましょう。",
+    "label": {
+     "en": "try to understand them",
+     "vi": "hãy thấu hiểu cho nó"
+    },
+    "detail": {
+     "en": "わかる → わかって + あげる presents understanding as kindness toward the dog. ましょう encourages the owner to show that care.",
+     "vi": "わかる → わかって + あげる diễn tả sự thấu hiểu dành cho chó. ましょう khuyến khích người nuôi thể hiện sự quan tâm ấy."
+    },
+    "grammarIds": [
+     "g_105"
+    ]
+   },
+   {
+    "text": "そうすれば、",
+    "label": {
+     "en": "if you do that",
+     "vi": "nếu làm như vậy"
+    },
+    "detail": {
+     "en": "する → すれば is conditional. そう points back to understanding and caring for the dog.",
+     "vi": "する → すれば là thể điều kiện. そう chỉ việc thấu hiểu và quan tâm đến chó vừa nêu."
+    },
+    "grammarIds": [
+     "g_085"
+    ]
+   },
+   {
+    "text": "きっといい家族になれます。",
+    "label": {
+     "en": "you can surely become a good family",
+     "vi": "chắc chắn có thể thành một gia đình tốt"
+    },
+    "detail": {
+     "en": "家族に marks the resulting relationship. なる → なれる → なれます is potential, and きっと expresses confidence in that result.",
+     "vi": "家族に đánh dấu mối quan hệ sẽ hình thành. なる → なれる → なれます là thể khả năng; きっと thể hiện niềm tin vào kết quả đó."
+    },
+    "grammarIds": [
+     "g_061_1"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "【100人の親に聞いた「子供に望むこと」アンケート】",
+  "translation": {
+   "en": "Survey of one hundred parents: what they want for their children.",
+   "vi": "Khảo sát 100 phụ huynh: điều mong muốn ở con."
+  },
+  "together": {
+   "en": "This title names a survey and identifies both who was asked and what the parents were asked about.",
+   "vi": "Tiêu đề giới thiệu cuộc khảo sát, đồng thời nêu người được hỏi và nội dung hỏi các phụ huynh."
+  },
+  "chunks": [
+   {
+    "text": "【100人の親に聞いた",
+    "label": {
+     "en": "asked one hundred parents",
+     "vi": "đã hỏi 100 phụ huynh"
+    },
+    "detail": {
+     "en": "に marks the people asked, and 聞く → 聞いた is plain past. This clause modifies アンケート later in the title.",
+     "vi": "に đánh dấu người được hỏi; 聞く → 聞いた là thể thường quá khứ. Mệnh đề này bổ nghĩa cho アンケート ở cuối tiêu đề."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "親",
+      "kana": "おや",
+      "meaning": {
+       "en": "parent",
+       "vi": "cha mẹ, phụ huynh"
+      }
+     },
+     {
+      "text": "聞く",
+      "kana": "きく",
+      "meaning": {
+       "en": "here: to ask",
+       "vi": "ở đây: hỏi"
+      }
+     }
+    ]
+   },
+   {
+    "text": "「子供に望むこと」",
+    "label": {
+     "en": "‘what they want for their children’",
+     "vi": "‘điều mong muốn ở con’"
+    },
+    "detail": {
+     "en": "子供に marks whom the wishes concern. 望む modifies こと, meaning the things parents wish for.",
+     "vi": "子供に chỉ đối tượng mà mong muốn hướng tới. 望む bổ nghĩa cho こと, tức những điều cha mẹ mong muốn."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "望む",
+      "kana": "のぞむ",
+      "meaning": {
+       "en": "to wish for, desire",
+       "vi": "mong muốn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "アンケート】",
+    "label": {
+     "en": "survey",
+     "vi": "khảo sát"
+    },
+    "detail": {
+     "en": "アンケート is the main noun of the title. The preceding clauses specify this survey; the brackets frame the heading.",
+     "vi": "アンケート là danh từ chính của tiêu đề. Các phần đứng trước xác định cuộc khảo sát này; dấu ngoặc đóng khung tiêu đề."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "Q1. 自分の子供に一番させたいことは何ですか。（1つだけ）",
+  "translation": {
+   "en": "Q1. What would you most like your child to do? Choose one.",
+   "vi": "Q1. Bạn muốn cho con làm gì nhất? Chỉ chọn một."
+  },
+  "together": {
+   "en": "The question asks which activity parents most want their child to do. The parenthetical note limits the respondent to one choice.",
+   "vi": "Câu hỏi yêu cầu chọn việc cha mẹ muốn cho con làm nhất. Ghi chú trong ngoặc giới hạn chỉ chọn một đáp án."
+  },
+  "chunks": [
+   {
+    "text": "Q1. 自分の子供に",
+    "label": {
+     "en": "Q1. one’s own child",
+     "vi": "Q1. cho con mình"
+    },
+    "detail": {
+     "en": "自分 refers to the parent answering. に marks the child who would do the action in the causative expression.",
+     "vi": "自分 chỉ phụ huynh đang trả lời. に đánh dấu người con sẽ thực hiện hành động trong cấu trúc sai khiến."
+    }
+   },
+   {
+    "text": "一番させたいことは",
+    "label": {
+     "en": "the thing you most want them to do",
+     "vi": "việc muốn cho con làm nhất"
+    },
+    "detail": {
+     "en": "する → させる → させたい means wanting to make or let someone do something. It modifies こと, and は makes that desired activity the topic.",
+     "vi": "する → させる → させたい nghĩa là muốn cho hoặc khiến ai làm gì. Cụm này bổ nghĩa cho こと; は đưa việc mong muốn ấy làm chủ đề."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_165"
+    ]
+   },
+   {
+    "text": "何ですか。",
+    "label": {
+     "en": "what is it?",
+     "vi": "là gì?"
+    },
+    "detail": {
+     "en": "何ですか asks for the identity of the desired activity.",
+     "vi": "何ですか hỏi việc mong muốn ấy là việc gì."
+    }
+   },
+   {
+    "text": "（1つだけ）",
+    "label": {
+     "en": "(one choice only)",
+     "vi": "(chỉ một lựa chọn)"
+    },
+    "detail": {
+     "en": "だけ limits the answer to one item; the instruction to choose is omitted.",
+     "vi": "だけ giới hạn câu trả lời ở một mục; động từ yêu cầu chọn được lược bỏ."
+    },
+    "grammarIds": [
+     "g_108"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "a. 英語や中国語など、外国語を習わせたい…41人",
+  "translation": {
+   "en": "a. Learn a foreign language such as English or Chinese: 41.",
+   "vi": "a. Cho học ngoại ngữ như Anh, Trung: 41 người."
+  },
+  "together": {
+   "en": "This option expresses a parent’s wish to have their child learn a foreign language. The number after the ellipsis counts respondents choosing it.",
+   "vi": "Phương án này nêu mong muốn cho con học ngoại ngữ. Con số sau dấu chấm lửng là số người chọn phương án ấy."
+  },
+  "chunks": [
+   {
+    "text": "a. 英語や中国語など、",
+    "label": {
+     "en": "a. English, Chinese, and so on",
+     "vi": "a. như tiếng Anh, tiếng Trung"
+    },
+    "detail": {
+     "en": "や lists examples, and など makes clear these are not the only languages included.",
+     "vi": "や liệt kê ví dụ; など cho biết các ngôn ngữ được kể chưa phải toàn bộ."
+    },
+    "grammarIds": [
+     "g_051"
+    ]
+   },
+   {
+    "text": "外国語を",
+    "label": {
+     "en": "a foreign language",
+     "vi": "ngoại ngữ"
+    },
+    "detail": {
+     "en": "を marks what the child would learn. The child is omitted because the question already identifies them.",
+     "vi": "を đánh dấu thứ người con sẽ học. Người con được lược bỏ vì đã được xác định trong câu hỏi."
+    }
+   },
+   {
+    "text": "習わせたい",
+    "label": {
+     "en": "want my child to learn",
+     "vi": "muốn cho con học"
+    },
+    "detail": {
+     "en": "習う → 習わせる → 習わせたい combines causative and desire. The parent wants to arrange the child’s learning, rather than learn personally.",
+     "vi": "習う → 習わせる → 習わせたい kết hợp sai khiến với mong muốn. Cha mẹ muốn cho con học, không phải bản thân mình học."
+    },
+    "grammarIds": [
+     "g_228"
+    ]
+   },
+   {
+    "text": "…41人",
+    "label": {
+     "en": "41 respondents",
+     "vi": "41 người"
+    },
+    "detail": {
+     "en": "The ellipsis separates the option from its result. 人 counts the people who selected it.",
+     "vi": "Dấu chấm lửng ngăn nội dung lựa chọn với kết quả. 人 đếm số người đã chọn phương án này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "b. 楽器やスポーツの教室に行かせたい…22人",
+  "translation": {
+   "en": "b. Attend music or sports classes: 22.",
+   "vi": "b. Cho học nhạc cụ hoặc thể thao: 22 người."
+  },
+  "together": {
+   "en": "The parent wants to send the child to lessons. に gives the destination, and the causative changes ‘go’ into ‘have the child go’.",
+   "vi": "Cha mẹ muốn cho con đi học các lớp năng khiếu. に chỉ nơi đến; thể sai khiến chuyển nghĩa ‘đi’ thành ‘cho con đi’."
+  },
+  "chunks": [
+   {
+    "text": "b. 楽器やスポーツの教室に",
+    "label": {
+     "en": "b. to music or sports classes",
+     "vi": "b. đến lớp nhạc cụ hoặc thể thao"
+    },
+    "detail": {
+     "en": "や lists types of lessons. の links them to 教室, and に marks the destination of going.",
+     "vi": "や liệt kê các loại hình học. の nối chúng với 教室; に đánh dấu nơi đến."
+    },
+    "words": [
+     {
+      "text": "楽器",
+      "kana": "がっき",
+      "meaning": {
+       "en": "musical instrument",
+       "vi": "nhạc cụ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "行かせたい",
+    "label": {
+     "en": "want my child to attend",
+     "vi": "muốn cho con đi học"
+    },
+    "detail": {
+     "en": "行く → 行かせる → 行かせたい is causative plus desire. The child is the understood person being sent.",
+     "vi": "行く → 行かせる → 行かせたい là sai khiến kết hợp với mong muốn. Người được cho đi là người con đã được hiểu từ câu hỏi."
+    },
+    "grammarIds": [
+     "g_228"
+    ]
+   },
+   {
+    "text": "…22人",
+    "label": {
+     "en": "22 respondents",
+     "vi": "22 người"
+    },
+    "detail": {
+     "en": "人 counts the respondents choosing this option.",
+     "vi": "人 đếm số người chọn phương án này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "c. ボランティアをして、人に親切にする心を学んでほしい…8人",
+  "translation": {
+   "en": "c. Volunteer and learn kindness towards others: 8.",
+   "vi": "c. Tình nguyện, học lòng tốt với người khác: tám người."
+  },
+  "together": {
+   "en": "The parent wants the child to learn kindness through volunteering. てほしい expresses the parent’s wish for the child’s action.",
+   "vi": "Cha mẹ mong con học lòng tốt qua hoạt động tình nguyện. てほしい diễn tả mong muốn của cha mẹ đối với hành động của con."
+  },
+  "chunks": [
+   {
+    "text": "c. ボランティアをして、",
+    "label": {
+     "en": "c. by volunteering",
+     "vi": "c. qua việc tình nguyện"
+    },
+    "detail": {
+     "en": "ボランティアをする means to do volunteer work. する → して links that activity to what the child should learn.",
+     "vi": "ボランティアをする nghĩa là làm tình nguyện. する → して nối hoạt động ấy với điều muốn con học."
+    }
+   },
+   {
+    "text": "人に親切にする心を",
+    "label": {
+     "en": "a spirit of kindness to others",
+     "vi": "tấm lòng đối xử tốt với người khác"
+    },
+    "detail": {
+     "en": "人に marks the people treated kindly. 親切にする modifies 心, and を marks that attitude as what should be learned.",
+     "vi": "人に chỉ những người được đối xử tốt. 親切にする bổ nghĩa cho 心; を đánh dấu tấm lòng ấy là điều cần học."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "親切",
+      "kana": "しんせつ",
+      "meaning": {
+       "en": "kind, helpful",
+       "vi": "tốt bụng, tử tế"
+      }
+     },
+     {
+      "text": "心",
+      "kana": "こころ",
+      "meaning": {
+       "en": "heart, attitude",
+       "vi": "tấm lòng, tâm hồn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "学んでほしい",
+    "label": {
+     "en": "want my child to learn",
+     "vi": "mong con học được"
+    },
+    "detail": {
+     "en": "学ぶ → 学んで + ほしい expresses wanting someone else to learn. The child is the understood learner.",
+     "vi": "学ぶ → 学んで + ほしい diễn tả mong người khác học. Người học được hiểu là người con."
+    },
+    "grammarIds": [
+     "g_191"
+    ],
+    "words": [
+     {
+      "text": "学ぶ",
+      "kana": "まなぶ",
+      "meaning": {
+       "en": "to learn",
+       "vi": "học, học hỏi"
+      }
+     }
+    ]
+   },
+   {
+    "text": "…8人",
+    "label": {
+     "en": "8 respondents",
+     "vi": "8 người"
+    },
+    "detail": {
+     "en": "The number gives the total choosing this response.",
+     "vi": "Con số nêu tổng số người chọn câu trả lời này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "d. 夏休みや冬休みに、山や川で遊ばせたい…12人",
+  "translation": {
+   "en": "d. Play in mountains and rivers during summer or winter holidays: 12.",
+   "vi": "d. Cho chơi ở núi, sông trong nghỉ hè, đông: 12 người."
+  },
+  "together": {
+   "en": "The time phrase and place phrase specify when and where the parent wants the child to play.",
+   "vi": "Cụm chỉ thời gian và nơi chốn xác định cha mẹ muốn cho con chơi khi nào, ở đâu."
+  },
+  "chunks": [
+   {
+    "text": "d. 夏休みや冬休みに、",
+    "label": {
+     "en": "d. during summer or winter holidays",
+     "vi": "d. vào kỳ nghỉ hè hoặc nghỉ đông"
+    },
+    "detail": {
+     "en": "や gives examples of holidays. に marks those holidays as the time for play.",
+     "vi": "や nêu ví dụ về các kỳ nghỉ. に đánh dấu chúng là thời gian chơi."
+    }
+   },
+   {
+    "text": "山や川で",
+    "label": {
+     "en": "in the mountains or at rivers",
+     "vi": "ở núi hoặc sông"
+    },
+    "detail": {
+     "en": "や lists outdoor locations, and で marks where the activity happens.",
+     "vi": "や liệt kê các địa điểm ngoài trời; で chỉ nơi diễn ra hoạt động."
+    }
+   },
+   {
+    "text": "遊ばせたい",
+    "label": {
+     "en": "want to let my child play",
+     "vi": "muốn cho con chơi"
+    },
+    "detail": {
+     "en": "遊ぶ → 遊ばせる → 遊ばせたい expresses wanting to let the child play. Here causative conveys providing an opportunity.",
+     "vi": "遊ぶ → 遊ばせる → 遊ばせたい diễn tả muốn cho con chơi. Ở đây thể sai khiến mang nghĩa tạo cơ hội."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_231"
+    ]
+   },
+   {
+    "text": "…12人",
+    "label": {
+     "en": "12 respondents",
+     "vi": "12 người"
+    },
+    "detail": {
+     "en": "人 counts those choosing this option.",
+     "vi": "人 đếm những người chọn phương án này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "e. させたいことはない／子供には自由にさせたい…9人",
+  "translation": {
+   "en": "e. Nothing specific; let children be free: 9.",
+   "vi": "e. Không có điều cụ thể, muốn cho con tự do: chín người."
+  },
+  "together": {
+   "en": "The two parts express no specific activity to impose and a wish to give the child freedom. The slash separates these related ideas.",
+   "vi": "Hai phần nói không có việc cụ thể muốn bắt con làm và muốn để con tự do. Dấu gạch chéo ngăn hai ý liên quan này."
+  },
+  "chunks": [
+   {
+    "text": "e. させたいことはない／",
+    "label": {
+     "en": "e. nothing specific I want them to do",
+     "vi": "e. không có việc cụ thể muốn cho con làm"
+    },
+    "detail": {
+     "en": "する → させる → させたい modifies こと. は makes those desired activities the topic, and ない denies that there are any.",
+     "vi": "する → させる → させたい bổ nghĩa cho こと. は đưa những việc muốn con làm thành chủ đề; ない cho biết không có việc nào như vậy."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_165"
+    ]
+   },
+   {
+    "text": "子供には",
+    "label": {
+     "en": "as for my child",
+     "vi": "với con thì"
+    },
+    "detail": {
+     "en": "に marks the person allowed to act. は highlights the child as the topic of this second part.",
+     "vi": "に đánh dấu người được cho phép hành động. は nhấn mạnh người con là chủ đề của phần thứ hai."
+    }
+   },
+   {
+    "text": "自由にさせたい",
+    "label": {
+     "en": "want to let them be free",
+     "vi": "muốn để con tự do"
+    },
+    "detail": {
+     "en": "自由にさせる means to let someone act freely. させる → させたい adds the parent’s desire for that freedom.",
+     "vi": "自由にさせる nghĩa là để ai tự do hành động. させる → させたい thêm mong muốn của cha mẹ về sự tự do ấy."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_231"
+    ],
+    "words": [
+     {
+      "text": "自由",
+      "kana": "じゆう",
+      "meaning": {
+       "en": "free, freedom",
+       "vi": "tự do"
+      }
+     }
+    ]
+   },
+   {
+    "text": "…9人",
+    "label": {
+     "en": "9 respondents",
+     "vi": "9 người"
+    },
+    "detail": {
+     "en": "The count records how many parents selected this response.",
+     "vi": "Con số ghi số phụ huynh chọn câu trả lời này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "Q2. 自分の子供に、どんな人になってほしいですか。（1つだけ）",
+  "translation": {
+   "en": "Q2. What kind of person do you want your child to become? Choose one.",
+   "vi": "Q2. Muốn con thành người thế nào? Chỉ chọn một."
+  },
+  "together": {
+   "en": "The parent is asked what kind of person they want their child to become. This asks about the child’s future character rather than a particular activity.",
+   "vi": "Cha mẹ được hỏi muốn con trở thành người như thế nào. Câu này hỏi về con người của con trong tương lai thay vì một hoạt động cụ thể."
+  },
+  "chunks": [
+   {
+    "text": "Q2. 自分の子供に、",
+    "label": {
+     "en": "Q2. for one’s own child",
+     "vi": "Q2. với con mình"
+    },
+    "detail": {
+     "en": "自分 refers to the parent answering. に marks the person whose action or change the parent wishes for.",
+     "vi": "自分 chỉ phụ huynh trả lời. に đánh dấu người mà cha mẹ mong thực hiện hành động hoặc có sự thay đổi."
+    }
+   },
+   {
+    "text": "どんな人に",
+    "label": {
+     "en": "what kind of person",
+     "vi": "thành người như thế nào"
+    },
+    "detail": {
+     "en": "どんな modifies 人, and に marks the resulting identity with なる.",
+     "vi": "どんな bổ nghĩa cho 人; に đánh dấu con người sẽ trở thành khi đi với なる."
+    }
+   },
+   {
+    "text": "なってほしいですか。",
+    "label": {
+     "en": "do you want them to become?",
+     "vi": "bạn mong con trở thành?"
+    },
+    "detail": {
+     "en": "なる → なって + ほしい asks about a wish for someone else’s change. ですか makes it a polite question.",
+     "vi": "なる → なって + ほしい hỏi mong muốn về sự thay đổi của người khác. ですか tạo câu hỏi lịch sự."
+    },
+    "grammarIds": [
+     "g_191"
+    ]
+   },
+   {
+    "text": "（1つだけ）",
+    "label": {
+     "en": "(one choice only)",
+     "vi": "(chỉ một lựa chọn)"
+    },
+    "detail": {
+     "en": "だけ restricts the respondent to one answer.",
+     "vi": "だけ giới hạn người trả lời ở một đáp án."
+    },
+    "grammarIds": [
+     "g_108"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "a. 他の人に親切にできる人になってほしい…35人",
+  "translation": {
+   "en": "a. Someone kind to others: 35.",
+   "vi": "a. Người biết tốt với người khác: 35 người."
+  },
+  "together": {
+   "en": "A modifying clause describes the kind of person the parent hopes the child will become: someone able to treat others kindly.",
+   "vi": "Mệnh đề bổ nghĩa miêu tả kiểu người cha mẹ mong con trở thành: người biết đối xử tốt với người khác."
+  },
+  "chunks": [
+   {
+    "text": "a. 他の人に",
+    "label": {
+     "en": "a. to other people",
+     "vi": "a. với người khác"
+    },
+    "detail": {
+     "en": "他の modifies 人. に marks the people receiving the kind treatment.",
+     "vi": "他の bổ nghĩa cho 人. に đánh dấu người được đối xử tử tế."
+    }
+   },
+   {
+    "text": "親切にできる人に",
+    "label": {
+     "en": "a person who can be kind",
+     "vi": "thành người biết đối xử tốt"
+    },
+    "detail": {
+     "en": "親切にする → 親切にできる expresses being able to act kindly. The clause modifies 人; the final に marks what the child should become.",
+     "vi": "親切にする → 親切にできる diễn tả khả năng đối xử tử tế. Mệnh đề bổ nghĩa cho 人; に cuối cụm đánh dấu người mà con sẽ trở thành."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "親切",
+      "kana": "しんせつ",
+      "meaning": {
+       "en": "kind, helpful",
+       "vi": "tốt bụng, tử tế"
+      }
+     }
+    ]
+   },
+   {
+    "text": "なってほしい",
+    "label": {
+     "en": "want my child to become",
+     "vi": "mong con trở thành"
+    },
+    "detail": {
+     "en": "なる → なって + ほしい expresses the parent’s wish concerning the child, whose subject is omitted.",
+     "vi": "なる → なって + ほしい diễn tả mong muốn của cha mẹ đối với con; chủ thể là con được lược bỏ."
+    },
+    "grammarIds": [
+     "g_191"
+    ]
+   },
+   {
+    "text": "…35人",
+    "label": {
+     "en": "35 respondents",
+     "vi": "35 người"
+    },
+    "detail": {
+     "en": "人 counts the parents who chose this response.",
+     "vi": "人 đếm các phụ huynh chọn câu trả lời này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "b. 誰かに迷惑をかけなければ、それでいい…27人",
+  "translation": {
+   "en": "b. It is enough not to trouble others: 27.",
+   "vi": "b. Chỉ cần không làm phiền ai: 27 người."
+  },
+  "together": {
+   "en": "The negative condition sets a minimum requirement: it is enough if the child does not trouble anyone.",
+   "vi": "Điều kiện phủ định nêu yêu cầu tối thiểu: chỉ cần con không làm phiền ai là được."
+  },
+  "chunks": [
+   {
+    "text": "b. 誰かに",
+    "label": {
+     "en": "b. anyone else",
+     "vi": "b. người khác"
+    },
+    "detail": {
+     "en": "誰か means someone; に marks the person who would be inconvenienced. In this general condition, the intended sense is not troubling anyone.",
+     "vi": "誰か nghĩa là ai đó; に đánh dấu người sẽ bị làm phiền. Trong điều kiện mang nghĩa chung này, ý muốn nói là không làm phiền ai."
+    }
+   },
+   {
+    "text": "迷惑をかけなければ、",
+    "label": {
+     "en": "if they do not cause trouble",
+     "vi": "nếu không gây phiền"
+    },
+    "detail": {
+     "en": "迷惑をかける is the expression for causing someone trouble. かける → かけない → かけなければ makes the negative condition.",
+     "vi": "迷惑をかける là cách nói gây phiền cho ai. かける → かけない → かけなければ tạo điều kiện phủ định."
+    },
+    "grammarIds": [
+     "g_087"
+    ],
+    "words": [
+     {
+      "text": "迷惑をかける",
+      "kana": "めいわくをかける",
+      "meaning": {
+       "en": "to cause trouble or inconvenience",
+       "vi": "gây phiền, làm phiền"
+      }
+     }
+    ]
+   },
+   {
+    "text": "それでいい",
+    "label": {
+     "en": "that is enough",
+     "vi": "thế là được"
+    },
+    "detail": {
+     "en": "それ refers to not causing trouble. でいい means that this condition is sufficient.",
+     "vi": "それ chỉ việc không gây phiền. でいい nghĩa là đạt điều kiện ấy thì đã đủ."
+    }
+   },
+   {
+    "text": "…27人",
+    "label": {
+     "en": "27 respondents",
+     "vi": "27 người"
+    },
+    "detail": {
+     "en": "The count gives the number choosing this standard.",
+     "vi": "Con số nêu số người chọn tiêu chí này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "c. 自分の力で何でもできるようになってほしい…12人",
+  "translation": {
+   "en": "c. Someone who can do things independently: 12.",
+   "vi": "c. Tự làm được mọi việc bằng sức mình: 12 người."
+  },
+  "together": {
+   "en": "The parent wishes for the child to develop independence. ようになる describes gaining an ability, and てほしい makes that change the parent’s wish.",
+   "vi": "Cha mẹ mong con phát triển khả năng tự lập. ようになる diễn tả việc trở nên có khả năng; てほしい cho biết đó là điều cha mẹ mong muốn."
+  },
+  "chunks": [
+   {
+    "text": "c. 自分の力で",
+    "label": {
+     "en": "c. through their own efforts",
+     "vi": "c. bằng sức mình"
+    },
+    "detail": {
+     "en": "自分 refers to the child. で marks the means: relying on their own abilities.",
+     "vi": "自分 chỉ người con. で đánh dấu phương tiện: dựa vào năng lực của chính mình."
+    },
+    "words": [
+     {
+      "text": "力",
+      "kana": "ちから",
+      "meaning": {
+       "en": "strength, ability",
+       "vi": "sức lực, năng lực"
+      }
+     }
+    ]
+   },
+   {
+    "text": "何でも",
+    "label": {
+     "en": "anything",
+     "vi": "mọi việc"
+    },
+    "detail": {
+     "en": "Question word 何 + でも means anything, extending the ability to all kinds of tasks.",
+     "vi": "Từ nghi vấn 何 + でも mang nghĩa bất cứ việc gì, mở rộng phạm vi khả năng ra nhiều việc."
+    }
+   },
+   {
+    "text": "できるようになってほしい",
+    "label": {
+     "en": "want them to become able to do things",
+     "vi": "mong con trở nên có thể tự làm"
+    },
+    "detail": {
+     "en": "できる + ようになる describes gaining an ability. なる → なって + ほしい adds the parent’s wish for that development.",
+     "vi": "できる + ようになる diễn tả sự hình thành khả năng. なる → なって + ほしい thêm mong muốn của cha mẹ về sự phát triển ấy."
+    },
+    "grammarIds": [
+     "g_209",
+     "g_191"
+    ]
+   },
+   {
+    "text": "…12人",
+    "label": {
+     "en": "12 respondents",
+     "vi": "12 người"
+    },
+    "detail": {
+     "en": "人 counts those selecting this wish.",
+     "vi": "人 đếm những người chọn mong muốn này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "d. 諦めないで、できるまで頑張れる人になってほしい…9人",
+  "translation": {
+   "en": "d. Someone who does not give up and persists until succeeding: 9.",
+   "vi": "d. Không bỏ cuộc, cố đến khi làm được: chín người."
+  },
+  "together": {
+   "en": "The desired character is someone who keeps trying without giving up. できるまで sets success as the endpoint of that effort.",
+   "vi": "Phẩm chất mong muốn là biết kiên trì mà không bỏ cuộc. できるまで lấy lúc làm được làm điểm kết thúc nỗ lực."
+  },
+  "chunks": [
+   {
+    "text": "d. 諦めないで、",
+    "label": {
+     "en": "d. without giving up",
+     "vi": "d. không bỏ cuộc"
+    },
+    "detail": {
+     "en": "諦める → 諦めない + で describes how the person keeps trying: without abandoning the task.",
+     "vi": "諦める → 諦めない + で diễn tả cách người ấy tiếp tục cố gắng: không từ bỏ công việc."
+    },
+    "grammarIds": [
+     "g_198"
+    ],
+    "words": [
+     {
+      "text": "諦める",
+      "kana": "あきらめる",
+      "meaning": {
+       "en": "to give up",
+       "vi": "từ bỏ, bỏ cuộc"
+      }
+     }
+    ]
+   },
+   {
+    "text": "できるまで",
+    "label": {
+     "en": "until they can do it",
+     "vi": "đến khi làm được"
+    },
+    "detail": {
+     "en": "まで follows the plain form できる and marks the endpoint of continuing effort.",
+     "vi": "まで đứng sau thể thường できる, đánh dấu mốc kết thúc của sự cố gắng liên tục."
+    }
+   },
+   {
+    "text": "頑張れる人に",
+    "label": {
+     "en": "a person who can persevere",
+     "vi": "thành người có thể kiên trì"
+    },
+    "detail": {
+     "en": "頑張る → 頑張れる is potential and modifies 人. に marks the kind of person the child should become.",
+     "vi": "頑張る → 頑張れる là thể khả năng và bổ nghĩa cho 人. に chỉ kiểu người mong con trở thành."
+    },
+    "grammarIds": [
+     "g_061_1",
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "頑張る",
+      "kana": "がんばる",
+      "meaning": {
+       "en": "to persevere, do one’s best",
+       "vi": "cố gắng, kiên trì"
+      }
+     }
+    ]
+   },
+   {
+    "text": "なってほしい",
+    "label": {
+     "en": "want my child to become",
+     "vi": "mong con trở thành"
+    },
+    "detail": {
+     "en": "なる → なって + ほしい expresses a wish for someone else to change in this way.",
+     "vi": "なる → なって + ほしい diễn tả mong người khác thay đổi theo hướng này."
+    },
+    "grammarIds": [
+     "g_191"
+    ]
+   },
+   {
+    "text": "…9人",
+    "label": {
+     "en": "9 respondents",
+     "vi": "9 người"
+    },
+    "detail": {
+     "en": "The figure counts parents choosing this option.",
+     "vi": "Con số đếm phụ huynh chọn phương án này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "e. いい学校に行って、いい会社に入ってほしい…8人",
+  "translation": {
+   "en": "e. Attend a good school and join a good company: 8.",
+   "vi": "e. Vào trường tốt, công ty tốt: tám người."
+  },
+  "together": {
+   "en": "The parent hopes for a sequence: attending a good school and then joining a good company. The final てほしい carries the wish for the sequence.",
+   "vi": "Cha mẹ mong một chuỗi việc: vào trường tốt rồi vào công ty tốt. てほしい ở cuối thể hiện mong muốn đối với cả chuỗi ấy."
+  },
+  "chunks": [
+   {
+    "text": "e. いい学校に行って、",
+    "label": {
+     "en": "e. go to a good school, and",
+     "vi": "e. vào trường tốt rồi"
+    },
+    "detail": {
+     "en": "に marks the destination. 行く → 行って connects attending school with the later step.",
+     "vi": "に chỉ nơi đến. 行く → 行って nối việc đi học với bước tiếp theo."
+    }
+   },
+   {
+    "text": "いい会社に",
+    "label": {
+     "en": "a good company",
+     "vi": "vào công ty tốt"
+    },
+    "detail": {
+     "en": "いい modifies 会社. に marks the organization the child would join.",
+     "vi": "いい bổ nghĩa cho 会社. に đánh dấu tổ chức mà con sẽ gia nhập."
+    }
+   },
+   {
+    "text": "入ってほしい",
+    "label": {
+     "en": "want them to join",
+     "vi": "mong con vào làm"
+    },
+    "detail": {
+     "en": "入る → 入って + ほしい expresses the parent’s wish. Here 入る means joining a company as an employee.",
+     "vi": "入る → 入って + ほしい diễn tả mong muốn của cha mẹ. Ở đây 入る nghĩa là vào làm trong một công ty."
+    },
+    "grammarIds": [
+     "g_191"
+    ],
+    "words": [
+     {
+      "text": "入る",
+      "kana": "はいる",
+      "meaning": {
+       "en": "here: to join a company",
+       "vi": "ở đây: vào làm tại công ty"
+      }
+     }
+    ]
+   },
+   {
+    "text": "…8人",
+    "label": {
+     "en": "8 respondents",
+     "vi": "8 người"
+    },
+    "detail": {
+     "en": "The number records how many chose this answer.",
+     "vi": "Con số ghi số người chọn câu trả lời này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "f. お金持ちになってほしい…3人　g. 特に望むことはない…6人",
+  "translation": {
+   "en": "f. Become rich: 3. g. No particular wish: 6.",
+   "vi": "f. Giàu có: ba người. g. Không mong cụ thể: sáu người."
+  },
+  "together": {
+   "en": "This unit contains two separate survey options: wishing for wealth and having no particular wish. Each has its own response count.",
+   "vi": "Đơn vị này gồm hai phương án riêng: mong con giàu có và không có mong muốn cụ thể. Mỗi phương án có số người chọn riêng."
+  },
+  "chunks": [
+   {
+    "text": "f. お金持ちに",
+    "label": {
+     "en": "f. rich",
+     "vi": "f. thành người giàu"
+    },
+    "detail": {
+     "en": "お金持ち is a noun meaning a wealthy person. に marks the resulting state with なる.",
+     "vi": "お金持ち là danh từ chỉ người giàu. に đánh dấu trạng thái sẽ trở thành khi đi với なる."
+    },
+    "words": [
+     {
+      "text": "お金持ち",
+      "kana": "おかねもち",
+      "meaning": {
+       "en": "wealthy person, rich",
+       "vi": "người giàu, giàu có"
+      }
+     }
+    ]
+   },
+   {
+    "text": "なってほしい",
+    "label": {
+     "en": "want my child to become",
+     "vi": "mong con trở thành"
+    },
+    "detail": {
+     "en": "なる → なって + ほしい expresses wishing for the child to become wealthy.",
+     "vi": "なる → なって + ほしい diễn tả mong con trở nên giàu có."
+    },
+    "grammarIds": [
+     "g_191"
+    ]
+   },
+   {
+    "text": "…3人　",
+    "label": {
+     "en": "3 respondents",
+     "vi": "3 người"
+    },
+    "detail": {
+     "en": "This count belongs to option f. The full-width space separates it from option g.",
+     "vi": "Số này thuộc phương án f. Khoảng trắng toàn chiều rộng ngăn cách với phương án g."
+    }
+   },
+   {
+    "text": "g. 特に望むことはない",
+    "label": {
+     "en": "g. no particular wish",
+     "vi": "g. không có mong muốn cụ thể"
+    },
+    "detail": {
+     "en": "特に means in particular. 望む modifies こと, and はない says there is no such particular wish.",
+     "vi": "特に nghĩa là đặc biệt, cụ thể. 望む bổ nghĩa cho こと; はない cho biết không có điều mong muốn cụ thể như vậy."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "特に",
+      "kana": "とくに",
+      "meaning": {
+       "en": "particularly, in particular",
+       "vi": "đặc biệt, cụ thể"
+      }
+     }
+    ]
+   },
+   {
+    "text": "…6人",
+    "label": {
+     "en": "6 respondents",
+     "vi": "6 người"
+    },
+    "detail": {
+     "en": "This second count belongs to option g.",
+     "vi": "Số người chọn thứ hai này thuộc phương án g."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "Q3. 学校の授業や先生に、どんなことを望みますか。（複数回答可）",
+  "translation": {
+   "en": "Q3. What do you want from classes and teachers? Multiple answers allowed.",
+   "vi": "Q3. Mong gì ở giờ học và giáo viên? Có thể chọn nhiều."
+  },
+  "together": {
+   "en": "The question shifts from wishes for children to expectations of classes and teachers. Multiple responses are allowed here.",
+   "vi": "Câu hỏi chuyển từ mong muốn ở con sang kỳ vọng đối với giờ học và giáo viên. Ở đây có thể chọn nhiều đáp án."
+  },
+  "chunks": [
+   {
+    "text": "Q3. 学校の授業や先生に、",
+    "label": {
+     "en": "Q3. from classes and teachers",
+     "vi": "Q3. ở giờ học và giáo viên"
+    },
+    "detail": {
+     "en": "や lists the targets of the expectations. に marks whom or what the parents direct their wishes toward.",
+     "vi": "や liệt kê các đối tượng được kỳ vọng. に đánh dấu người hoặc việc mà mong muốn của cha mẹ hướng tới."
+    },
+    "words": [
+     {
+      "text": "授業",
+      "kana": "じゅぎょう",
+      "meaning": {
+       "en": "class, lesson",
+       "vi": "giờ học, tiết học"
+      }
+     }
+    ]
+   },
+   {
+    "text": "どんなことを",
+    "label": {
+     "en": "what things",
+     "vi": "những điều gì"
+    },
+    "detail": {
+     "en": "どんな modifies こと. を marks what the parents hope for.",
+     "vi": "どんな bổ nghĩa cho こと. を đánh dấu điều cha mẹ mong muốn."
+    }
+   },
+   {
+    "text": "望みますか。",
+    "label": {
+     "en": "do you want?",
+     "vi": "bạn mong muốn?"
+    },
+    "detail": {
+     "en": "望む → 望みますか makes a polite question about the respondent’s expectations.",
+     "vi": "望む → 望みますか tạo câu hỏi lịch sự về kỳ vọng của người trả lời."
+    },
+    "words": [
+     {
+      "text": "望む",
+      "kana": "のぞむ",
+      "meaning": {
+       "en": "to wish for, want",
+       "vi": "mong muốn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "（複数回答可）",
+    "label": {
+     "en": "(multiple answers allowed)",
+     "vi": "(được chọn nhiều đáp án)"
+    },
+    "detail": {
+     "en": "This is a compact form instruction: 複数 means multiple, 回答 means answers, and 可 means permitted.",
+     "vi": "Đây là cách ghi ngắn gọn trong biểu mẫu: 複数 là nhiều, 回答 là câu trả lời, 可 là được phép."
+    },
+    "words": [
+     {
+      "text": "複数",
+      "kana": "ふくすう",
+      "meaning": {
+       "en": "multiple, more than one",
+       "vi": "nhiều, hơn một"
+      }
+     },
+     {
+      "text": "回答",
+      "kana": "かいとう",
+      "meaning": {
+       "en": "answer, response",
+       "vi": "câu trả lời, sự trả lời"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "a. 英語の授業を増やしてもらいたい…37人",
+  "translation": {
+   "en": "a. More English classes: 37.",
+   "vi": "a. Muốn tăng giờ tiếng Anh: 37 người."
+  },
+  "together": {
+   "en": "The parent wants the school to increase English classes. てもらいたい expresses a wish to receive that action from the school.",
+   "vi": "Cha mẹ muốn nhà trường tăng giờ tiếng Anh. てもらいたい diễn tả mong phía nhà trường thực hiện việc ấy cho mình."
+  },
+  "chunks": [
+   {
+    "text": "a. 英語の授業を",
+    "label": {
+     "en": "a. English classes",
+     "vi": "a. giờ học tiếng Anh"
+    },
+    "detail": {
+     "en": "の specifies the subject of the classes. を marks what the school should increase.",
+     "vi": "の xác định môn học của các tiết học. を đánh dấu thứ muốn nhà trường tăng."
+    }
+   },
+   {
+    "text": "増やしてもらいたい",
+    "label": {
+     "en": "want them to increase",
+     "vi": "muốn được tăng thêm"
+    },
+    "detail": {
+     "en": "増やす → 増やして + もらう presents someone else’s action as received by the speaker. もらう → もらいたい adds the wish for that action.",
+     "vi": "増やす → 増やして + もらう diễn tả người nói nhận việc người khác làm cho mình. もらう → もらいたい thêm mong muốn được thực hiện việc ấy."
+    },
+    "grammarIds": [
+     "g_188"
+    ],
+    "words": [
+     {
+      "text": "増やす",
+      "kana": "ふやす",
+      "meaning": {
+       "en": "to increase something",
+       "vi": "tăng thêm"
+      }
+     }
+    ]
+   },
+   {
+    "text": "…37人",
+    "label": {
+     "en": "37 respondents",
+     "vi": "37 người"
+    },
+    "detail": {
+     "en": "人 counts parents choosing this request.",
+     "vi": "人 đếm phụ huynh chọn yêu cầu này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "b. 子供をよく見て、意見を聞いてもらいたい…65人",
+  "translation": {
+   "en": "b. Observe children carefully and listen to their opinions: 65.",
+   "vi": "b. Muốn quan tâm con và nghe ý kiến con: 65 người."
+  },
+  "together": {
+   "en": "The parent wants teachers to pay attention to children and listen to their opinions. The final てもらいたい expresses the wish for both connected actions.",
+   "vi": "Cha mẹ muốn giáo viên quan tâm đến trẻ và lắng nghe ý kiến của trẻ. てもらいたい ở cuối thể hiện mong muốn đối với cả hai việc được nối với nhau."
+  },
+  "chunks": [
+   {
+    "text": "b. 子供をよく見て、",
+    "label": {
+     "en": "b. observe children carefully, and",
+     "vi": "b. quan tâm, quan sát trẻ kỹ"
+    },
+    "detail": {
+     "en": "を marks the children being observed. よく means carefully here, and 見る → 見て links this action to listening.",
+     "vi": "を đánh dấu trẻ được quan sát. よく ở đây nghĩa là kỹ; 見る → 見て nối việc quan sát với lắng nghe."
+    }
+   },
+   {
+    "text": "意見を",
+    "label": {
+     "en": "their opinions",
+     "vi": "ý kiến của trẻ"
+    },
+    "detail": {
+     "en": "を marks what the teachers should listen to. The children are understood as the source of these opinions.",
+     "vi": "を đánh dấu điều giáo viên nên lắng nghe. Ngữ cảnh cho biết đây là ý kiến của trẻ."
+    },
+    "words": [
+     {
+      "text": "意見",
+      "kana": "いけん",
+      "meaning": {
+       "en": "opinion",
+       "vi": "ý kiến"
+      }
+     }
+    ]
+   },
+   {
+    "text": "聞いてもらいたい",
+    "label": {
+     "en": "want teachers to listen",
+     "vi": "muốn giáo viên lắng nghe"
+    },
+    "detail": {
+     "en": "聞く → 聞いて + もらいたい expresses a wish for someone else to listen as a helpful action. Here 聞く means listen to, rather than ask.",
+     "vi": "聞く → 聞いて + もらいたい diễn tả mong người khác lắng nghe như một việc có ích cho mình. Ở đây 聞く nghĩa là lắng nghe, không phải hỏi."
+    },
+    "grammarIds": [
+     "g_188"
+    ]
+   },
+   {
+    "text": "…65人",
+    "label": {
+     "en": "65 respondents",
+     "vi": "65 người"
+    },
+    "detail": {
+     "en": "The figure records how many selected this option.",
+     "vi": "Con số ghi số người chọn phương án này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "c. 悪いことをした子供は、きちんと注意してもらいたい…78人",
+  "translation": {
+   "en": "c. Properly correct children who do something wrong: 78.",
+   "vi": "c. Muốn nhắc nhở đúng mực trẻ làm sai: 78 người."
+  },
+  "together": {
+   "en": "A past-form clause identifies children who have done something wrong. The parent wants teachers to correct those children properly.",
+   "vi": "Mệnh đề quá khứ xác định những trẻ đã làm điều sai. Cha mẹ mong giáo viên nhắc nhở những trẻ ấy đúng mực."
+  },
+  "chunks": [
+   {
+    "text": "c. 悪いことをした子供は、",
+    "label": {
+     "en": "c. children who did something wrong",
+     "vi": "c. trẻ đã làm điều sai"
+    },
+    "detail": {
+     "en": "悪いことをした modifies 子供. は makes these children the topic; they are the ones to be corrected, not the ones giving the correction.",
+     "vi": "悪いことをした bổ nghĩa cho 子供. は đưa những trẻ ấy làm chủ đề; trẻ là người được nhắc nhở, không phải người nhắc nhở."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "きちんと",
+    "label": {
+     "en": "properly",
+     "vi": "đúng mực"
+    },
+    "detail": {
+     "en": "きちんと modifies 注意する, calling for the correction to be done properly and reliably.",
+     "vi": "きちんと bổ nghĩa cho 注意する, yêu cầu nhắc nhở một cách đàng hoàng, đầy đủ."
+    }
+   },
+   {
+    "text": "注意してもらいたい",
+    "label": {
+     "en": "want teachers to correct them",
+     "vi": "muốn giáo viên nhắc nhở"
+    },
+    "detail": {
+     "en": "注意する → 注意して + もらいたい expresses wanting the teachers to take this action. Here 注意する means warn or correct someone’s behavior.",
+     "vi": "注意する → 注意して + もらいたい diễn tả muốn giáo viên thực hiện việc ấy. Ở đây 注意する là nhắc nhở hoặc chấn chỉnh hành vi."
+    },
+    "grammarIds": [
+     "g_188"
+    ],
+    "words": [
+     {
+      "text": "注意する",
+      "kana": "ちゅういする",
+      "meaning": {
+       "en": "here: to warn, correct someone",
+       "vi": "ở đây: nhắc nhở, chấn chỉnh"
+      }
+     }
+    ]
+   },
+   {
+    "text": "…78人",
+    "label": {
+     "en": "78 respondents",
+     "vi": "78 người"
+    },
+    "detail": {
+     "en": "人 counts those who selected this request.",
+     "vi": "人 đếm những người chọn yêu cầu này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "d. 教師の数を多くしてもらいたい…46人",
+  "translation": {
+   "en": "d. More teachers: 46.",
+   "vi": "d. Muốn tăng số giáo viên: 46 người."
+  },
+  "together": {
+   "en": "The parent wants the school to make the number of teachers larger. 多くする expresses a deliberate increase.",
+   "vi": "Cha mẹ muốn nhà trường tăng số giáo viên. 多くする diễn tả việc chủ động làm số lượng nhiều lên."
+  },
+  "chunks": [
+   {
+    "text": "d. 教師の数を",
+    "label": {
+     "en": "d. the number of teachers",
+     "vi": "d. số lượng giáo viên"
+    },
+    "detail": {
+     "en": "の links 教師 to 数. を marks the number being changed.",
+     "vi": "の nối 教師 với 数. を đánh dấu số lượng được thay đổi."
+    },
+    "words": [
+     {
+      "text": "教師",
+      "kana": "きょうし",
+      "meaning": {
+       "en": "teacher",
+       "vi": "giáo viên"
+      }
+     },
+     {
+      "text": "数",
+      "kana": "かず",
+      "meaning": {
+       "en": "number, quantity",
+       "vi": "số lượng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "多くしてもらいたい",
+    "label": {
+     "en": "want them to increase it",
+     "vi": "muốn được tăng thêm"
+    },
+    "detail": {
+     "en": "多い → 多く + する means to make the number larger. する → して + もらいたい expresses wanting the school to make that change.",
+     "vi": "多い → 多く + する nghĩa là làm số lượng nhiều lên. する → して + もらいたい diễn tả mong nhà trường thực hiện thay đổi ấy."
+    },
+    "grammarIds": [
+     "g_159",
+     "g_188"
+    ]
+   },
+   {
+    "text": "…46人",
+    "label": {
+     "en": "46 respondents",
+     "vi": "46 người"
+    },
+    "detail": {
+     "en": "This count belongs to the request for more teachers.",
+     "vi": "Số này thuộc yêu cầu tăng giáo viên."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "e. 運動会などのイベントを少なくしてもらいたい…38人",
+  "translation": {
+   "en": "e. Fewer events such as sports days: 38.",
+   "vi": "e. Muốn giảm sự kiện như hội thể thao: 38 người."
+  },
+  "together": {
+   "en": "The parent wants fewer school events, with sports days given as an example. 少なくする means actively reducing the amount.",
+   "vi": "Cha mẹ muốn giảm sự kiện ở trường, trong đó hội thể thao là một ví dụ. 少なくする diễn tả chủ động làm số lượng ít đi."
+  },
+  "chunks": [
+   {
+    "text": "e. 運動会などのイベントを",
+    "label": {
+     "en": "e. events such as sports days",
+     "vi": "e. sự kiện như hội thể thao"
+    },
+    "detail": {
+     "en": "など gives an example category, and の links it to イベント. を marks what should be reduced.",
+     "vi": "など nêu ví dụ; の nối phần ví dụ với イベント. を đánh dấu thứ cần giảm."
+    },
+    "words": [
+     {
+      "text": "運動会",
+      "kana": "うんどうかい",
+      "meaning": {
+       "en": "school sports day",
+       "vi": "hội thể thao ở trường"
+      }
+     }
+    ]
+   },
+   {
+    "text": "少なくしてもらいたい",
+    "label": {
+     "en": "want them to reduce them",
+     "vi": "muốn được giảm bớt"
+    },
+    "detail": {
+     "en": "少ない → 少なく + する means to make the number smaller. してもらいたい asks, as a wish, for the school to do this for the parents.",
+     "vi": "少ない → 少なく + する nghĩa là làm số lượng ít đi. してもらいたい thể hiện mong nhà trường làm việc ấy cho phía phụ huynh."
+    },
+    "grammarIds": [
+     "g_159",
+     "g_188"
+    ]
+   },
+   {
+    "text": "…38人",
+    "label": {
+     "en": "38 respondents",
+     "vi": "38 người"
+    },
+    "detail": {
+     "en": "人 counts the parents choosing fewer events.",
+     "vi": "人 đếm phụ huynh chọn giảm sự kiện."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "f. 特に望むことはない…12人",
+  "translation": {
+   "en": "f. No particular wish: 12.",
+   "vi": "f. Không mong cụ thể: 12 người."
+  },
+  "together": {
+   "en": "This option states that the parent has no particular request for the school. It is a full negative statement rather than just a category label.",
+   "vi": "Phương án này nói phụ huynh không có yêu cầu cụ thể đối với nhà trường. Đây là một nhận định phủ định đầy đủ."
+  },
+  "chunks": [
+   {
+    "text": "f. 特に",
+    "label": {
+     "en": "f. in particular",
+     "vi": "f. cụ thể"
+    },
+    "detail": {
+     "en": "With the negative ending, 特に gives the sense of no particular or special wish.",
+     "vi": "Khi đi với phần phủ định ở cuối, 特に tạo nghĩa không có mong muốn cụ thể hay đặc biệt nào."
+    }
+   },
+   {
+    "text": "望むことはない",
+    "label": {
+     "en": "have no particular wish",
+     "vi": "không có điều mong muốn"
+    },
+    "detail": {
+     "en": "望む modifies こと: things one wishes for. はない states that there are no such particular things.",
+     "vi": "望む bổ nghĩa cho こと: điều mình mong muốn. はない cho biết không có điều cụ thể như vậy."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "望む",
+      "kana": "のぞむ",
+      "meaning": {
+       "en": "to wish for",
+       "vi": "mong muốn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "…12人",
+    "label": {
+     "en": "12 respondents",
+     "vi": "12 người"
+    },
+    "detail": {
+     "en": "The figure gives the number of parents selecting this response.",
+     "vi": "Con số nêu số phụ huynh chọn câu trả lời này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "子供のころ、母は私を毎週ピアノ教室に通わせました。",
+  "translation": {
+   "en": "As a child, my mother made me attend piano lessons every week.",
+   "vi": "Hồi nhỏ, mẹ cho tôi đi học piano mỗi tuần."
+  },
+  "together": {
+   "en": "The time phrase refers to the speaker’s childhood. The mother causes the speaker to attend lessons, so the child takes を and the destination takes に.",
+   "vi": "Cụm thời gian nói về thời thơ ấu của người kể. Mẹ cho người kể đi học nên người con đi với を, còn nơi đến đi với に."
+  },
+  "chunks": [
+   {
+    "text": "子供のころ、",
+    "label": {
+     "en": "when I was a child",
+     "vi": "hồi tôi còn nhỏ"
+    },
+    "detail": {
+     "en": "子供の modifies ころ, meaning the period when the speaker was a child.",
+     "vi": "子供の bổ nghĩa cho ころ, chỉ khoảng thời gian người nói còn nhỏ."
+    }
+   },
+   {
+    "text": "母は私を",
+    "label": {
+     "en": "my mother made me",
+     "vi": "mẹ cho tôi"
+    },
+    "detail": {
+     "en": "は marks the mother as the topic and causer. を marks the person made to attend, since 通う is intransitive.",
+     "vi": "は đánh dấu mẹ là chủ đề và người sai khiến. を đánh dấu người được cho đi học vì 通う là tự động từ."
+    }
+   },
+   {
+    "text": "毎週ピアノ教室に",
+    "label": {
+     "en": "to piano lessons every week",
+     "vi": "đến lớp piano mỗi tuần"
+    },
+    "detail": {
+     "en": "毎週 gives frequency without に. The に after 教室 marks the destination of regular attendance.",
+     "vi": "毎週 chỉ tần suất và không cần に. に sau 教室 chỉ nơi thường xuyên đến học."
+    }
+   },
+   {
+    "text": "通わせました。",
+    "label": {
+     "en": "made me attend",
+     "vi": "đã cho tôi theo học"
+    },
+    "detail": {
+     "en": "通う → 通わせる → 通わせました is polite past causative. 通う emphasizes going regularly, rather than making a single visit.",
+     "vi": "通う → 通わせる → 通わせました là sai khiến quá khứ lịch sự. 通う nhấn mạnh việc đi đều đặn, không phải chỉ đến một lần."
+    },
+    "grammarIds": [
+     "g_228",
+     "g_229"
+    ],
+    "words": [
+     {
+      "text": "通う",
+      "kana": "かよう",
+      "meaning": {
+       "en": "to attend regularly, commute",
+       "vi": "đi học hoặc đi làm đều đặn"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "先生には毎日1時間練習させられました。",
+  "translation": {
+   "en": "I was made to practise for an hour every day by the teacher.",
+   "vi": "Tôi bị cô giáo bắt luyện tập một tiếng mỗi ngày."
+  },
+  "together": {
+   "en": "The speaker was the one forced to practise, and the teacher imposed it. The duration is one hour each day.",
+   "vi": "Người kể là người bị bắt luyện tập, còn cô giáo là người yêu cầu. Thời lượng là một tiếng mỗi ngày."
+  },
+  "chunks": [
+   {
+    "text": "先生には",
+    "label": {
+     "en": "by the teacher",
+     "vi": "bởi cô giáo"
+    },
+    "detail": {
+     "en": "に marks the person imposing the action in a causative-passive sentence. は highlights the teacher, following the earlier mention of the mother.",
+     "vi": "に đánh dấu người bắt thực hiện hành động trong câu bị động sai khiến. は làm nổi bật cô giáo sau phần trước nói về mẹ."
+    }
+   },
+   {
+    "text": "毎日1時間",
+    "label": {
+     "en": "one hour every day",
+     "vi": "mỗi ngày một tiếng"
+    },
+    "detail": {
+     "en": "毎日 gives frequency and 1時間 gives duration. Neither needs a particle before this predicate.",
+     "vi": "毎日 chỉ tần suất, còn 1時間 chỉ thời lượng. Cả hai không cần trợ từ trước vị ngữ này."
+    }
+   },
+   {
+    "text": "練習させられました。",
+    "label": {
+     "en": "was made to practise",
+     "vi": "đã bị bắt luyện tập"
+    },
+    "detail": {
+     "en": "練習する → 練習させる → 練習させられる → 練習させられました forms the polite past causative-passive. The omitted subject is the speaker.",
+     "vi": "練習する → 練習させる → 練習させられる → 練習させられました tạo thể bị động sai khiến quá khứ lịch sự. Chủ ngữ được lược bỏ là người kể."
+    },
+    "grammarIds": [
+     "g_232",
+     "g_233"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "本当はサッカーがしたかったですから、とても嫌でした。",
+  "translation": {
+   "en": "I really wanted to play football, so I hated it.",
+   "vi": "Thật ra tôi muốn đá bóng nên rất ghét."
+  },
+  "together": {
+   "en": "The speaker explains why piano practice was unpleasant: their real wish was to play football.",
+   "vi": "Người kể giải thích vì sao không thích việc tập piano: điều thực sự muốn làm là đá bóng."
+  },
+  "chunks": [
+   {
+    "text": "本当は",
+    "label": {
+     "en": "actually",
+     "vi": "thật ra"
+    },
+    "detail": {
+     "en": "本当は introduces the speaker’s true preference, in contrast to the activity imposed on them.",
+     "vi": "本当は nêu sở thích thật của người kể, đối lập với việc mình bị bắt làm."
+    }
+   },
+   {
+    "text": "サッカーがしたかったですから、",
+    "label": {
+     "en": "because I wanted to play football",
+     "vi": "vì tôi muốn đá bóng"
+    },
+    "detail": {
+     "en": "する → したい → したかった is past desire, with が marking the desired activity. から attaches to the polite clause to give the reason.",
+     "vi": "する → したい → したかった là mong muốn trong quá khứ; が đánh dấu hoạt động muốn làm. から nối sau mệnh đề lịch sự để nêu lý do."
+    },
+    "grammarIds": [
+     "g_059",
+     "g_066"
+    ]
+   },
+   {
+    "text": "とても嫌でした。",
+    "label": {
+     "en": "I really disliked it",
+     "vi": "tôi rất ghét việc ấy"
+    },
+    "detail": {
+     "en": "嫌 is a な-adjective, so its polite past is 嫌でした. The disliked activity is piano practice, understood from context.",
+     "vi": "嫌 là tính từ な nên quá khứ lịch sự là 嫌でした. Việc bị ghét được hiểu từ ngữ cảnh là tập piano."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "でも、母は土曜日だけ友達とサッカーをさせてくれました。",
+  "translation": {
+   "en": "But my mother let me play football with friends on Saturdays only.",
+   "vi": "Nhưng mẹ cho phép tôi đá bóng với bạn chỉ vào thứ Bảy."
+  },
+  "together": {
+   "en": "Despite the imposed lessons, the mother allowed football on Saturdays. させてくれる presents that permission as something welcome to the speaker.",
+   "vi": "Dù phải học piano, người kể vẫn được mẹ cho đá bóng vào thứ Bảy. させてくれる thể hiện sự cho phép mà người kể vui mừng đón nhận."
+  },
+  "chunks": [
+   {
+    "text": "でも、母は",
+    "label": {
+     "en": "but my mother",
+     "vi": "nhưng mẹ"
+    },
+    "detail": {
+     "en": "でも contrasts with the unpleasant practice. は marks the mother as the one granting permission.",
+     "vi": "でも tạo ý đối lập với việc tập đàn khó chịu. は đánh dấu mẹ là người cho phép."
+    }
+   },
+   {
+    "text": "土曜日だけ",
+    "label": {
+     "en": "only on Saturdays",
+     "vi": "chỉ vào thứ Bảy"
+    },
+    "detail": {
+     "en": "だけ restricts the permitted football time to Saturdays.",
+     "vi": "だけ giới hạn thời gian được đá bóng ở thứ Bảy."
+    },
+    "grammarIds": [
+     "g_108"
+    ]
+   },
+   {
+    "text": "友達と",
+    "label": {
+     "en": "with friends",
+     "vi": "với bạn bè"
+    },
+    "detail": {
+     "en": "と marks the companions in playing football.",
+     "vi": "と đánh dấu những người cùng chơi bóng."
+    }
+   },
+   {
+    "text": "サッカーをさせてくれました。",
+    "label": {
+     "en": "let me play football",
+     "vi": "đã cho phép tôi đá bóng"
+    },
+    "detail": {
+     "en": "する → させる → させて + くれました combines causative permission with a favor received. The mother permits the speaker to play; she is not playing herself.",
+     "vi": "する → させる → させて + くれました kết hợp ý cho phép của thể sai khiến với việc người nói được hưởng. Mẹ cho người kể chơi, không phải mẹ tự chơi."
+    },
+    "grammarIds": [
+     "g_231",
+     "g_103"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "今は、ピアノを弾いて、家族を喜ばせることができます。",
+  "translation": {
+   "en": "Now I can play the piano and make my family happy.",
+   "vi": "Bây giờ tôi có thể chơi piano làm gia đình vui."
+  },
+  "together": {
+   "en": "The speaker now sees a benefit of those lessons: playing the piano enables them to make their family happy.",
+   "vi": "Giờ người kể thấy ích lợi của những buổi học ấy: có thể chơi piano để làm gia đình vui."
+  },
+  "chunks": [
+   {
+    "text": "今は、",
+    "label": {
+     "en": "now",
+     "vi": "bây giờ"
+    },
+    "detail": {
+     "en": "は contrasts the current situation with the speaker’s childhood feelings.",
+     "vi": "は đối chiếu tình hình hiện tại với cảm xúc thời nhỏ của người kể."
+    }
+   },
+   {
+    "text": "ピアノを弾いて、",
+    "label": {
+     "en": "by playing the piano",
+     "vi": "bằng việc chơi piano"
+    },
+    "detail": {
+     "en": "を marks the instrument played. 弾く → 弾いて links the playing to its effect on the family.",
+     "vi": "を đánh dấu nhạc cụ được chơi. 弾く → 弾いて nối việc chơi đàn với tác động lên gia đình."
+    }
+   },
+   {
+    "text": "家族を",
+    "label": {
+     "en": "my family",
+     "vi": "gia đình"
+    },
+    "detail": {
+     "en": "を marks the people made happy. The underlying verb 喜ぶ is intransitive.",
+     "vi": "を đánh dấu những người được làm cho vui. Động từ gốc 喜ぶ là tự động từ."
+    }
+   },
+   {
+    "text": "喜ばせることができます。",
+    "label": {
+     "en": "can make them happy",
+     "vi": "có thể làm mọi người vui"
+    },
+    "detail": {
+     "en": "喜ぶ → 喜ばせる means to make someone happy. Dictionary form + ことができます expresses the speaker’s ability to do that.",
+     "vi": "喜ぶ → 喜ばせる nghĩa là làm ai vui. Thể từ điển + ことができます diễn tả khả năng thực hiện việc ấy của người kể."
+    },
+    "grammarIds": [
+     "g_229",
+     "g_228",
+     "g_071"
+    ],
+    "words": [
+     {
+      "text": "喜ぶ",
+      "kana": "よろこぶ",
+      "meaning": {
+       "en": "to be glad, rejoice",
+       "vi": "vui mừng"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "来月、先生の教室で一曲弾かせてもらうことになりました。",
+  "translation": {
+   "en": "Next month it’s been arranged that the teacher will let me play a piece at the school.",
+   "vi": "Tháng sau tôi được cô cho đàn một bản ở lớp của cô."
+  },
+  "together": {
+   "en": "An arrangement has been made for the speaker to play a piece next month. させてもらう shows that the teacher grants permission to perform.",
+   "vi": "Đã có sự sắp xếp để người kể chơi một bản nhạc vào tháng sau. させてもらう cho thấy người kể được cô giáo cho phép biểu diễn."
+  },
+  "chunks": [
+   {
+    "text": "来月、",
+    "label": {
+     "en": "next month",
+     "vi": "tháng sau"
+    },
+    "detail": {
+     "en": "来月 sets the time of the planned performance.",
+     "vi": "来月 nêu thời điểm biểu diễn đã được sắp xếp."
+    }
+   },
+   {
+    "text": "先生の教室で",
+    "label": {
+     "en": "at the teacher’s school",
+     "vi": "ở lớp của cô giáo"
+    },
+    "detail": {
+     "en": "の identifies whose class or school it is. で marks where the performance will take place.",
+     "vi": "の xác định lớp của ai. で đánh dấu nơi diễn ra việc chơi đàn."
+    }
+   },
+   {
+    "text": "一曲",
+    "label": {
+     "en": "one piece",
+     "vi": "một bản nhạc"
+    },
+    "detail": {
+     "en": "曲 counts musical pieces; 一曲 is read いっきょく. Here it gives the amount played without を.",
+     "vi": "曲 là lượng từ đếm bản nhạc; 一曲 đọc là いっきょく. Ở đây số lượng bản nhạc đứng trực tiếp trước động từ, không có を."
+    }
+   },
+   {
+    "text": "弾かせてもらう",
+    "label": {
+     "en": "be allowed to play",
+     "vi": "được cho phép chơi đàn"
+    },
+    "detail": {
+     "en": "弾く → 弾かせる → 弾かせて + もらう means receiving permission to play. The speaker does the playing; the teacher grants permission.",
+     "vi": "弾く → 弾かせる → 弾かせて + もらう nghĩa là được cho phép chơi đàn. Người kể là người chơi, cô giáo là người cho phép."
+    },
+    "grammarIds": [
+     "g_234"
+    ]
+   },
+   {
+    "text": "ことになりました。",
+    "label": {
+     "en": "it has been arranged",
+     "vi": "đã được sắp xếp"
+    },
+    "detail": {
+     "en": "Dictionary form + ことになる presents an arrangement or decision. なりました says that this arrangement has now been made.",
+     "vi": "Thể từ điển + ことになる diễn tả sự sắp xếp hoặc quyết định. なりました cho biết việc ấy đã được sắp xếp."
+    },
+    "grammarIds": [
+     "g_206"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "最初の会社では、毎日遅くまで働かされました。",
+  "translation": {
+   "en": "At my first company, I was made to work late every day.",
+   "vi": "Ở công ty đầu tiên, ngày nào tôi cũng bị bắt làm đến khuya."
+  },
+  "together": {
+   "en": "The speaker recalls being forced to work late at their first company. The nonvoluntary experience is expressed with the causative-passive.",
+   "vi": "Người kể nhớ lại việc bị bắt làm đến khuya ở công ty đầu tiên. Thể bị động sai khiến diễn tả trải nghiệm không tự nguyện ấy."
+  },
+  "chunks": [
+   {
+    "text": "最初の会社では、",
+    "label": {
+     "en": "at my first company",
+     "vi": "ở công ty đầu tiên"
+    },
+    "detail": {
+     "en": "最初の modifies 会社. で marks the workplace, and は presents that workplace as the setting being discussed.",
+     "vi": "最初の bổ nghĩa cho 会社. で chỉ nơi làm việc; は đưa nơi ấy làm bối cảnh được nói đến."
+    },
+    "words": [
+     {
+      "text": "最初",
+      "kana": "さいしょ",
+      "meaning": {
+       "en": "first, beginning",
+       "vi": "đầu tiên, ban đầu"
+      }
+     }
+    ]
+   },
+   {
+    "text": "毎日遅くまで",
+    "label": {
+     "en": "until late every day",
+     "vi": "ngày nào cũng đến khuya"
+    },
+    "detail": {
+     "en": "毎日 gives frequency. 遅い → 遅く combines with まで to set a late endpoint for work.",
+     "vi": "毎日 chỉ tần suất. 遅い → 遅く kết hợp với まで để chỉ mốc kết thúc muộn của công việc."
+    }
+   },
+   {
+    "text": "働かされました。",
+    "label": {
+     "en": "was made to work",
+     "vi": "đã bị bắt làm việc"
+    },
+    "detail": {
+     "en": "働く → 働かせる → 働かせられる → 働かされる is the shortened causative-passive. ました reports this experience in the polite past.",
+     "vi": "働く → 働かせる → 働かせられる → 働かされる là dạng bị động sai khiến rút gọn. ました thuật lại trải nghiệm bằng quá khứ lịch sự."
+    },
+    "grammarIds": [
+     "g_233",
+     "g_232"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "部長は新しい社員にコピーやお茶の準備をさせて、自分はすぐ帰ってしまうんです。",
+  "translation": {
+   "en": "The manager made new staff do copying and make tea, and then just went home straight away.",
+   "vi": "Trưởng phòng bắt nhân viên mới photo, pha trà rồi mình thì về ngay."
+  },
+  "together": {
+   "en": "The manager makes new staff handle routine tasks, then goes home himself. The contrast and しまう convey the speaker’s dissatisfaction.",
+   "vi": "Trưởng phòng bắt nhân viên mới làm việc lặt vặt rồi bản thân về ngay. Sự đối chiếu cùng しまう thể hiện thái độ không hài lòng của người kể."
+  },
+  "chunks": [
+   {
+    "text": "部長は",
+    "label": {
+     "en": "the manager",
+     "vi": "trưởng phòng"
+    },
+    "detail": {
+     "en": "は introduces the manager as the topic and person giving the orders.",
+     "vi": "は đưa trưởng phòng làm chủ đề và là người sai khiến."
+    },
+    "words": [
+     {
+      "text": "部長",
+      "kana": "ぶちょう",
+      "meaning": {
+       "en": "department manager",
+       "vi": "trưởng phòng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "新しい社員に",
+    "label": {
+     "en": "the new employees",
+     "vi": "cho nhân viên mới"
+    },
+    "detail": {
+     "en": "に marks the people made to perform the tasks. The tasks themselves take を in the next phrase.",
+     "vi": "に đánh dấu những người bị bắt làm việc. Những việc phải làm đi với を ở cụm tiếp theo."
+    },
+    "words": [
+     {
+      "text": "社員",
+      "kana": "しゃいん",
+      "meaning": {
+       "en": "company employee",
+       "vi": "nhân viên công ty"
+      }
+     }
+    ]
+   },
+   {
+    "text": "コピーやお茶の準備をさせて、",
+    "label": {
+     "en": "makes them copy and prepare tea",
+     "vi": "bắt photo và chuẩn bị trà"
+    },
+    "detail": {
+     "en": "や lists the tasks, and を marks what is done. する → させる → させて makes this causative and connects it to the manager’s next action.",
+     "vi": "や liệt kê công việc; を đánh dấu việc được thực hiện. する → させる → させて tạo thể sai khiến rồi nối với hành động tiếp theo của trưởng phòng."
+    },
+    "grammarIds": [
+     "g_230"
+    ],
+    "words": [
+     {
+      "text": "準備",
+      "kana": "じゅんび",
+      "meaning": {
+       "en": "preparation",
+       "vi": "sự chuẩn bị"
+      }
+     }
+    ]
+   },
+   {
+    "text": "自分は",
+    "label": {
+     "en": "he himself",
+     "vi": "còn bản thân thì"
+    },
+    "detail": {
+     "en": "自分 refers to the manager. は contrasts his own behavior with what he makes the employees do.",
+     "vi": "自分 chỉ trưởng phòng. は đối chiếu hành vi của ông ấy với những việc ông ấy bắt nhân viên làm."
+    }
+   },
+   {
+    "text": "すぐ帰ってしまうんです。",
+    "label": {
+     "en": "just goes straight home",
+     "vi": "lại về ngay"
+    },
+    "detail": {
+     "en": "帰る → 帰ってしまう presents his departure with dissatisfaction. Plain form + んです adds an explanatory, emphatic tone to the complaint.",
+     "vi": "帰る → 帰ってしまう diễn tả việc ông ấy về với thái độ không hài lòng. Thể thường + んです thêm sắc thái giải thích, nhấn mạnh cho lời than."
+    },
+    "grammarIds": [
+     "g_222",
+     "g_148"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ある日、英語の会議に出させてもらえないか、部長に聞きました。",
+  "translation": {
+   "en": "One day I asked the manager whether I could be allowed to attend an English meeting.",
+   "vi": "Một hôm tôi hỏi trưởng phòng xem có thể cho tôi dự cuộc họp tiếng Anh không."
+  },
+  "together": {
+   "en": "The speaker asks the manager for permission to attend the meeting. The clause ending in か is the question that was asked.",
+   "vi": "Người kể hỏi trưởng phòng để xin phép dự họp. Mệnh đề kết thúc bằng か là nội dung câu hỏi đã đặt ra."
+  },
+  "chunks": [
+   {
+    "text": "ある日、",
+    "label": {
+     "en": "one day",
+     "vi": "một hôm"
+    },
+    "detail": {
+     "en": "ある日 introduces an unspecified day in the past narrative.",
+     "vi": "ある日 giới thiệu một ngày không xác định trong câu chuyện quá khứ."
+    }
+   },
+   {
+    "text": "英語の会議に",
+    "label": {
+     "en": "an English meeting",
+     "vi": "cuộc họp bằng tiếng Anh"
+    },
+    "detail": {
+     "en": "英語の describes the meeting, and に marks the event attended with 出る.",
+     "vi": "英語の miêu tả cuộc họp; に đánh dấu sự kiện tham dự khi đi với 出る."
+    },
+    "words": [
+     {
+      "text": "会議",
+      "kana": "かいぎ",
+      "meaning": {
+       "en": "meeting, conference",
+       "vi": "cuộc họp"
+      }
+     }
+    ]
+   },
+   {
+    "text": "出させてもらえないか、",
+    "label": {
+     "en": "whether I could be allowed to attend",
+     "vi": "xem có thể cho tôi tham dự không"
+    },
+    "detail": {
+     "en": "出る（でる）→ 出させる（でさせる）→ 出させてもらう means receiving permission to attend. もらう → もらえる → もらえないか forms a tentative question about whether that permission is possible.",
+     "vi": "出る（でる）→ 出させる（でさせる）→ 出させてもらう nghĩa là được cho phép tham dự. もらう → もらえる → もらえないか tạo câu hỏi mềm về việc có thể nhận sự cho phép ấy hay không."
+    },
+    "grammarIds": [
+     "g_234"
+    ],
+    "words": [
+     {
+      "text": "出る",
+      "kana": "でる",
+      "meaning": {
+       "en": "here: to attend, take part",
+       "vi": "ở đây: tham dự"
+      }
+     }
+    ]
+   },
+   {
+    "text": "部長に聞きました。",
+    "label": {
+     "en": "asked the manager",
+     "vi": "đã hỏi trưởng phòng"
+    },
+    "detail": {
+     "en": "に marks the person asked. 聞く → 聞きました is polite past; the preceding か-clause supplies the question’s content.",
+     "vi": "に đánh dấu người được hỏi. 聞く → 聞きました là quá khứ lịch sự; mệnh đề か phía trước nêu nội dung câu hỏi."
+    },
+    "words": [
+     {
+      "text": "部長",
+      "kana": "ぶちょう",
+      "meaning": {
+       "en": "department manager",
+       "vi": "trưởng phòng"
+      }
+     },
+     {
+      "text": "聞く",
+      "kana": "きく",
+      "meaning": {
+       "en": "here: to ask",
+       "vi": "ở đây: hỏi"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "すると、部長は私を会議に出させてくれました。",
+  "translation": {
+   "en": "Then the manager let me attend.",
+   "vi": "Thế là trưởng phòng cho tôi dự họp."
+  },
+  "together": {
+   "en": "すると introduces what happened in response to the request. The manager grants permission, and the speaker receives that permission as a favor.",
+   "vi": "すると dẫn sang việc xảy ra sau lời xin phép. Trưởng phòng cho phép, còn người kể đón nhận sự cho phép ấy như một sự giúp đỡ."
+  },
+  "chunks": [
+   {
+    "text": "すると、",
+    "label": {
+     "en": "then",
+     "vi": "thế là"
+    },
+    "detail": {
+     "en": "すると links the earlier request to the response that followed.",
+     "vi": "すると nối lời xin phép trước đó với sự đáp lại sau ấy."
+    }
+   },
+   {
+    "text": "部長は私を",
+    "label": {
+     "en": "the manager let me",
+     "vi": "trưởng phòng cho tôi"
+    },
+    "detail": {
+     "en": "は marks the manager as topic. を marks the person permitted to attend with the causative of intransitive 出る.",
+     "vi": "は đánh dấu trưởng phòng là chủ đề. を đánh dấu người được cho tham dự trong thể sai khiến của tự động từ 出る."
+    }
+   },
+   {
+    "text": "会議に",
+    "label": {
+     "en": "the meeting",
+     "vi": "cuộc họp"
+    },
+    "detail": {
+     "en": "に marks the event the speaker is allowed to attend.",
+     "vi": "に đánh dấu sự kiện người kể được phép tham dự."
+    }
+   },
+   {
+    "text": "出させてくれました。",
+    "label": {
+     "en": "allowed me to attend",
+     "vi": "đã cho phép tôi dự"
+    },
+    "detail": {
+     "en": "出る → 出させる → 出させて + くれました combines permission with a favor to the speaker. The manager allows the action, and the speaker attends.",
+     "vi": "出る → 出させる → 出させて + くれました kết hợp ý cho phép với việc làm vì người nói. Trưởng phòng cho phép, còn người kể là người tham dự."
+    },
+    "grammarIds": [
+     "g_231",
+     "g_103"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "その会議で話したことがきっかけで、海外の仕事を任されるようになりました。",
+  "translation": {
+   "en": "Speaking at that meeting led to my being entrusted with overseas work.",
+   "vi": "Nhờ phát biểu ở cuộc họp đó mà tôi bắt đầu được giao việc ở nước ngoài."
+  },
+  "together": {
+   "en": "Speaking at that meeting became the turning point. The speaker then began to be entrusted with overseas work, so passive and ようになる combine.",
+   "vi": "Việc phát biểu tại cuộc họp ấy trở thành bước ngoặt. Sau đó người kể bắt đầu được giao công việc ở nước ngoài nên câu kết hợp bị động với ようになる."
+  },
+  "chunks": [
+   {
+    "text": "その会議で話したことが",
+    "label": {
+     "en": "the fact that I spoke at that meeting",
+     "vi": "việc đã phát biểu ở cuộc họp đó"
+    },
+    "detail": {
+     "en": "で marks where the speaking happened. 話した modifies こと, meaning the event of speaking, and が marks that event as the turning point.",
+     "vi": "で chỉ nơi phát biểu. 話した bổ nghĩa cho こと, chỉ sự việc đã phát biểu; が đánh dấu sự việc ấy là bước ngoặt."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "きっかけで、",
+    "label": {
+     "en": "as the trigger",
+     "vi": "là bước khởi đầu"
+    },
+    "detail": {
+     "en": "きっかけ means an event that starts a change. で connects that triggering circumstance to the result.",
+     "vi": "きっかけ là sự việc khởi đầu cho một thay đổi. で nối hoàn cảnh tạo bước ngoặt ấy với kết quả."
+    }
+   },
+   {
+    "text": "海外の仕事を",
+    "label": {
+     "en": "overseas work",
+     "vi": "công việc ở nước ngoài"
+    },
+    "detail": {
+     "en": "海外の modifies 仕事. を marks the work entrusted to the speaker; the person assigning it is omitted.",
+     "vi": "海外の bổ nghĩa cho 仕事. を đánh dấu việc được giao cho người kể; người giao việc được lược bỏ."
+    },
+    "words": [
+     {
+      "text": "海外",
+      "kana": "かいがい",
+      "meaning": {
+       "en": "overseas, abroad",
+       "vi": "nước ngoài, hải ngoại"
+      }
+     }
+    ]
+   },
+   {
+    "text": "任されるようになりました。",
+    "label": {
+     "en": "began to be entrusted with it",
+     "vi": "bắt đầu được giao phó"
+    },
+    "detail": {
+     "en": "任す → 任される is passive: someone entrusts work to the speaker. Passive plain form + ようになりました describes this becoming the new situation.",
+     "vi": "任す → 任される là thể bị động: ai đó giao việc cho người kể. Thể thường bị động + ようになりました diễn tả việc đó trở thành tình hình mới."
+    },
+    "grammarIds": [
+     "g_194",
+     "g_209"
+    ],
+    "words": [
+     {
+      "text": "任す",
+      "kana": "まかす",
+      "meaning": {
+       "en": "to entrust, leave to someone",
+       "vi": "giao phó"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "今は、新しい社員に自分で考えさせるようにしています。",
+  "translation": {
+   "en": "Now I make a point of letting new staff think for themselves.",
+   "vi": "Bây giờ tôi luôn cố để nhân viên mới tự suy nghĩ."
+  },
+  "together": {
+   "en": "The speaker now makes a habit of giving new employees room to think independently. The causative means allowing here, while ようにしている marks deliberate practice.",
+   "vi": "Giờ người kể chủ động tạo điều kiện để nhân viên mới tự suy nghĩ. Thể sai khiến ở đây mang nghĩa cho phép, còn ようにしている chỉ điều có ý thức duy trì."
+  },
+  "chunks": [
+   {
+    "text": "今は、",
+    "label": {
+     "en": "now",
+     "vi": "bây giờ"
+    },
+    "detail": {
+     "en": "は contrasts the speaker’s present approach with the earlier experience at the first company.",
+     "vi": "は đối chiếu cách làm hiện tại với trải nghiệm trước đây ở công ty đầu tiên."
+    }
+   },
+   {
+    "text": "新しい社員に",
+    "label": {
+     "en": "new employees",
+     "vi": "nhân viên mới"
+    },
+    "detail": {
+     "en": "に marks the people allowed to think. The speaker is the omitted person giving them that opportunity.",
+     "vi": "に đánh dấu những người được để tự suy nghĩ. Người tạo cơ hội ấy là người kể, đã được lược bỏ."
+    }
+   },
+   {
+    "text": "自分で",
+    "label": {
+     "en": "for themselves",
+     "vi": "tự mình"
+    },
+    "detail": {
+     "en": "自分 refers to the new employees. で indicates that they use their own judgment, rather than rely on someone else to think for them.",
+     "vi": "自分 chỉ nhân viên mới. で cho biết họ dùng suy xét của chính mình thay vì để người khác nghĩ hộ."
+    }
+   },
+   {
+    "text": "考えさせるようにしています。",
+    "label": {
+     "en": "make a point of letting them think",
+     "vi": "luôn cố để họ tự suy nghĩ"
+    },
+    "detail": {
+     "en": "考える → 考えさせる is causative, here allowing independent thought. Dictionary form + ようにしています expresses a conscious practice the speaker maintains.",
+     "vi": "考える → 考えさせる là thể sai khiến, ở đây là để người khác tự suy nghĩ. Thể từ điển + ようにしています diễn tả cách làm người kể có ý thức duy trì."
+    },
+    "grammarIds": [
+     "g_231",
+     "g_207"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "仕事を楽しんでほしいですから。",
+  "translation": {
+   "en": "Because I want them to enjoy their work.",
+   "vi": "Vì tôi muốn họ thấy vui với công việc."
+  },
+  "together": {
+   "en": "This gives the reason for the speaker’s current approach: they want the new employees to enjoy their work.",
+   "vi": "Câu này nêu lý do cho cách làm hiện tại: người kể muốn nhân viên mới thấy vui với công việc."
+  },
+  "chunks": [
+   {
+    "text": "仕事を",
+    "label": {
+     "en": "their work",
+     "vi": "công việc"
+    },
+    "detail": {
+     "en": "を marks what is enjoyed. The employees are understood as the people doing the enjoying.",
+     "vi": "を đánh dấu điều được tận hưởng. Người cảm thấy vui được hiểu là các nhân viên."
+    }
+   },
+   {
+    "text": "楽しんでほしいですから。",
+    "label": {
+     "en": "because I want them to enjoy it",
+     "vi": "vì tôi muốn họ thấy vui"
+    },
+    "detail": {
+     "en": "楽しむ → 楽しんで + ほしい expresses a wish for someone else’s action. から gives the reason, with the result understood from the previous sentence.",
+     "vi": "楽しむ → 楽しんで + ほしい diễn tả mong người khác làm gì. から nêu lý do; kết quả đã được hiểu từ câu trước."
+    },
+    "grammarIds": [
+     "g_191",
+     "g_066"
+    ],
+    "words": [
+     {
+      "text": "楽しむ",
+      "kana": "たのしむ",
+      "meaning": {
+       "en": "to enjoy",
+       "vi": "tận hưởng, tìm thấy niềm vui"
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

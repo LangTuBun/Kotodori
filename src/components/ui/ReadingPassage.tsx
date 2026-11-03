@@ -46,7 +46,11 @@ export function ReadingPassage({ paragraphs, annotations, chapter }: { paragraph
   const [selected, setSelected] = useState<Selection | null>(null)
   const [focus, setFocus] = useState<string | null>(null)
   const curated = [...annotations, ...examples]
-  const breakdownOf = (line: ReadingSentence) => curated.find(s => normalize(line.jp).includes(normalize(s.sentence)))
+  // Exact match first, so a short shared sentence can't steal a longer line's breakdown.
+  const breakdownOf = (line: ReadingSentence) => {
+    const text = normalize(line.jp)
+    return curated.find(s => normalize(s.sentence) === text) ?? curated.find(s => text.includes(normalize(s.sentence)))
+  }
   const used = new Map<string, number>()
   paragraphs.flat().forEach(s => s.grammarIds.forEach(id => used.set(id, (used.get(id) ?? 0) + 1)))
   // N5 uses chapters 1–14 and N4 16–33, and later points lack jlptLevel, so chapter alone identifies them.
@@ -123,7 +127,7 @@ function AnalysisPanel({ lines, whole, breakdown, dictionary }: { lines: Reading
   return <div className="rounded-lg bg-surface p-4 sm:p-5 my-3 text-sm leading-relaxed">
     <div className="flex flex-wrap items-center justify-between gap-3 mb-3"><p className="font-bold">{whole ? l('Sentence by sentence', 'Nghĩa từng câu') : l('Meaning', 'Ý nghĩa')}</p><SpeakButton text={text} /></div>
     {whole ? <ol className="space-y-2">{lines.map((s, i) => <li key={i}><span lang="ja" className="jp text-muted block leading-loose"><ReadingText text={s.jp} /></span>{localize(s.translation)}</li>)}</ol> : <p>{localize(lines[0].translation)}</p>}
-    {breakdown && <SentenceBreakdown key={breakdown.sentence} data={breakdown} showSentence={false} />}
+    {breakdown && <SentenceBreakdown key={`breakdown:${breakdown.sentence}`} data={breakdown} showSentence={false} />}
     {!!ids.length && <div className="mt-5 border-l-2 border-blue pl-3"><h3 className="font-bold mb-3">{l('Grammar used here', 'Ngữ pháp dùng ở đây')}</h3><div className="space-y-4">{ids.map(id => { const g = grammar.get(id); return g && <div key={id}><GrammarHoverLink g={g} className="jp font-bold underline underline-offset-4">{g.pattern} ↗</GrammarHoverLink><p className="text-xs text-muted mt-1">{g.jlptLevel ?? (g.chapter >= 16 ? 'N4' : 'N5')} · {l('Chapter', 'Bài')} {g.chapter}</p><p className="mt-1">{localize(g.meaning)}</p></div> })}</div></div>}
     <ReadingWords key={text} text={text} dictionary={dictionary} />
   </div>

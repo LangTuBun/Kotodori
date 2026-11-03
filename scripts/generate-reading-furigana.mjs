@@ -20,18 +20,18 @@ const OVERRIDES = {
   '一人': 'ひとり', '二人': 'ふたり', '一日': 'いちにち', '今日': 'きょう', '明日': 'あした', '昨日': 'きのう',
   '一緒': 'いっしょ', '大人': 'おとな', '上手': 'じょうず', '下手': 'へた', '眼鏡': 'めがね', '果物': 'くだもの',
   '博多': 'はかた', '高村': 'たかむら', '高木': 'たかぎ', '田村': 'たむら', '石井': 'いしい', '木村': 'きむら',
-  '森': 'もり', '荒木': 'あらき', '宗太郎': 'そうたろう', '山口': 'やまぐち', '緑': 'みどり', '漢越語': 'かんえつご',
+  '森': 'もり', '荒木': 'あらき', '宗太郎': 'そうたろう', '山口': 'やまぐち', '緑': 'みどり', '漢越語': 'かんえつご', '鶏肉': 'とりにく', '日本': 'にほん',
   '一期一会': 'いちごいちえ', 'その後': 'そのあと', '方': 'かた', '行う': 'おこなう', '行い': 'おこない', '行っ': 'おこなっ',
 }
 // 方 and 行う are context-dependent; only override when the token is used as a noun after a verb or as 行う.
 const CONTEXT_OVERRIDE = {
-  '方': (t, prev) => prev && prev.pos === '動詞' ? 'かた' : null,
+  '方': (t, prev, before, after) => (prev && prev.pos === '動詞') || after.startsWith('は') ? 'かた' : null, // 予約の方は = person
   '行っ': (t) => t.basic_form === '行う' ? 'おこなっ' : null,
 }
 
 // Single-kanji tokens whose IPADIC default is wrong when they stand alone here
 // (compounds such as 今月, 時間, 家族 are separate tokens and keep their readings).
-const STANDALONE = { '今': 'いま', '間': 'あいだ', '家': 'いえ', '他': 'ほか', '後': 'あと' }
+const STANDALONE = { '風': 'かぜ', '今': 'いま', '間': 'あいだ', '家': 'いえ', '他': 'ほか', '後': 'あと' }
 const WEEKDAY = { '月': 'げつ', '火': 'か', '水': 'すい', '木': 'もく', '金': 'きん', '土': 'ど', '日': 'にち' }
 
 // Counters after a number. IPADIC reads them as standalone nouns (月 → つき), so
@@ -47,6 +47,15 @@ const COUNTER = {
   '人': n => n === 1 ? 'ひとり' : n === 2 ? 'ふたり' : 'にん',
   '日': n => ({ 1: 'ついたち', 2: 'ふつか', 3: 'みっか', 4: 'よっか', 5: 'いつか', 6: 'むいか', 7: 'なのか', 8: 'ようか', 9: 'ここのか', 10: 'とおか', 14: 'じゅうよっか', 20: 'はつか', 24: 'にじゅうよっか' })[n] ?? 'にち',
 }
+// Words IPADIC splits into wrongly read pieces.
+const PHRASES = { '麻婆豆腐': 'まーぼーどうふ', '八角形': 'はっかくけい' }
+// Verbs whose kanji reading depends on meaning; [surface prefix, test on preceding text, kana for the kanji].
+const SENSE = [
+  ['開い', () => true, 'あ'], // 店が開いている (intransitive); 開きます stays ひら
+  ['空い', b => /(腹が|いつも)$/.test(b), 'す'], // お腹が空く, a gym that is never crowded
+  ['出さ', (b, a) => /(に|遅く)$/.test(b) && a.startsWith('せ'), 'で'], // 会議に出る, a late check-out
+  ['辛', b => !/て$/.test(b), 'から'], // spicy food; 冷たくなって辛い = painful
+]
 const COMPOUND_COUNTER = { '時間': 'じかん', '日間': 'にちかん', '週間': 'しゅうかん', '年間': 'ねんかん', '分間': 'ふんかん', 'か月': 'かげつ', 'ヶ月': 'かげつ', '月間': 'げつかん' }
 const numberOf = s => /^[0-9０-９,，]+$/.test(s) ? Number(s.replace(/[,，]/g, '').replace(/[０-９]/g, d => String(d.charCodeAt(0) - 0xff10))) : null
 
@@ -95,15 +104,23 @@ function segments(tokenizer, text) {
     const before = text.slice(0, offset)
     const after = text.slice(offset + surface.length)
     const prev = tokens[i - 1]
+    const phrase = Object.keys(PHRASES).find(p => text.startsWith(p, offset))
+    if (phrase) {
+      let end = offset + surface.length
+      while (end < offset + phrase.length) end += tokens[++i].surface_form.length
+      push([phrase, PHRASES[phrase]]); offset = end - tokens[i].surface_form.length; continue
+    }
+    const sense = SENSE.find(([p, test]) => surface.startsWith(p) && test(before, after))
     const n = prev ? numberOf(prev.surface_form) : null
     let reading = null
-    if (n !== null && (COUNTER[surface] || COMPOUND_COUNTER[surface])) reading = COMPOUND_COUNTER[surface] ?? COUNTER[surface](n)
+    if (sense) reading = sense[2] + surface.slice(1) // each SENSE entry starts with one kanji
+    else if (n !== null && (COUNTER[surface] || COMPOUND_COUNTER[surface])) reading = COMPOUND_COUNTER[surface] ?? COUNTER[surface](n)
     else if (surface === '一' && tokens[i + 1]?.surface_form === '人') { push(['一人', 'ひとり']); offset += 1; i++; continue }
     else if (WEEKDAY[surface] && (/[〜～・（(／/]$/.test(before) || /^[〜～・）)／/]/.test(after))) reading = WEEKDAY[surface] // 月〜金, （水）, 土・日
     else if (STANDALONE[surface]) reading = surface === '他' && prev?.surface_form === 'その' ? 'た' : STANDALONE[surface]
     else if (/^入れ/.test(surface) && /(風呂に|でも|すぐ|ないと|では|人で)$/.test(before)) reading = 'はい' + surface.slice(1) // 入れる = can enter
     else if (t.basic_form === '来る') reading = ({ '未然形': 'こ', '連用形': 'き' }[t.conjugated_form] ?? 'く') + surface.slice(1)
-    else reading = CONTEXT_OVERRIDE[surface]?.(t, prev) ?? (surface in CONTEXT_OVERRIDE ? null : OVERRIDES[surface]) ?? null
+    else reading = CONTEXT_OVERRIDE[surface]?.(t, prev, before, after) ?? (surface in CONTEXT_OVERRIDE ? null : OVERRIDES[surface]) ?? null
     reading ??= t.reading && t.reading !== '*' ? toHiragana(t.reading) : null
     if (!reading) push(surface)
     else align(surface, reading).forEach(push)

@@ -1,4 +1,4 @@
-﻿import { useState } from "react"
+﻿import { useEffect, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import { Watermark } from "@/components/ui/ScreenHeader"
 import { ReadingPassage } from "@/components/ui/ReadingPassage"
@@ -8,7 +8,10 @@ import { useTranslation } from "@/lib/useTranslation"
 import { readingPassages } from "@/data/reading-passages"
 import { readingContexts } from "@/data/reading-contexts"
 import { readingChapterPages, resolveReadingSelection, PRACTICE_EXERCISES } from "@/data/reading-guides"
-import type { Bilingual } from "@/data/sentence-breakdowns"
+import type { Bilingual, SentenceBreakdownData } from "@/data/sentence-breakdowns"
+
+// One file per chapter, loaded on demand so the grammar pages never ship them.
+const breakdownFiles = import.meta.glob<SentenceBreakdownData[]>("../data/breakdowns/*.json", { import: "default" })
 
 export function Reading() {
   const { localize } = useTranslation()
@@ -26,6 +29,13 @@ export function Reading() {
   function selectExercise(nextChapter: number, nextExercise: number) {
     setParams({ chapter: String(nextChapter), exercise: String(nextExercise) })
   }
+  const [loaded, setLoaded] = useState<{ chapter: number; list: SentenceBreakdownData[] }>()
+  useEffect(() => {
+    let live = true
+    breakdownFiles[`../data/breakdowns/${chapter}.json`]?.().then(list => { if (live) setLoaded({ chapter, list }) })
+    return () => { live = false }
+  }, [chapter])
+  const breakdowns = loaded?.chapter === chapter ? loaded.list : []
   const title = practice?.title ?? guide?.title
   return <FuriganaContext.Provider value={furigana}><div className="relative p-4 sm:p-8 max-w-4xl overflow-hidden">
     <Watermark char="読" />
@@ -60,7 +70,7 @@ export function Reading() {
     </section>
 
     <section className="glass-card p-5 sm:p-7 mb-6">
-      <ReadingPassage key={key} paragraphs={paragraphs} annotations={guide?.sentences ?? []} chapter={chapter} />
+      <ReadingPassage key={key} paragraphs={paragraphs} annotations={[...breakdowns, ...(guide?.sentences ?? [])]} chapter={chapter} />
     </section>
 
     {practice ? <div className="space-y-4">{practice.questions.map((q, i) => <QuestionCard key={`${key}-${i}`} number={practice.questions.length > 1 ? i + 1 : undefined} question={q} answer={q.answer} explanation={q.explanation} />)}</div>

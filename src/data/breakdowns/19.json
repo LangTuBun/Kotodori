@@ -1,0 +1,2722 @@
+[
+ {
+  "sentence": "先週、弟の家に遊びに行きました。弟の家で、弟の子供と遊びました。",
+  "translation": {
+   "en": "Last week I visited my younger brother and played with his children at his home.",
+   "vi": "Tuần trước tôi đến nhà em trai chơi và chơi với con của em."
+  },
+  "together": {
+   "en": "The first sentence tells why the speaker went to the brother’s house. The second changes from the destination に to the activity location で and names the children as playmates.",
+   "vi": "Câu đầu nói người kể đến nhà em trai để chơi. Câu sau dùng で để chỉ nơi chơi, thay cho に chỉ đích đến, và cho biết người kể chơi với các cháu."
+  },
+  "chunks": [
+   {
+    "text": "先週、",
+    "label": {
+     "en": "last week",
+     "vi": "tuần trước"
+    },
+    "detail": {
+     "en": "Sets the time for both past events.",
+     "vi": "Nêu thời gian của hai sự việc đã xảy ra."
+    }
+   },
+   {
+    "text": "弟の家に",
+    "label": {
+     "en": "to my younger brother’s house",
+     "vi": "đến nhà em trai"
+    },
+    "detail": {
+     "en": "の links 弟 to 家; に marks the destination of 行きました.",
+     "vi": "の nối 弟 với 家; に đánh dấu đích đến của 行きました."
+    }
+   },
+   {
+    "text": "遊びに行きました。",
+    "label": {
+     "en": "went for a visit",
+     "vi": "đã đến chơi"
+    },
+    "detail": {
+     "en": "遊ぶ → 遊びます → 遊び + に行く expresses the purpose of going. 行きました makes the visit a completed past event.",
+     "vi": "遊ぶ → 遊びます → 遊び + に行く diễn tả mục đích đi. 行きました cho biết chuyến đến chơi đã diễn ra."
+    },
+    "grammarIds": [
+     "g_058"
+    ]
+   },
+   {
+    "text": "弟の家で、",
+    "label": {
+     "en": "at my younger brother’s house",
+     "vi": "ở nhà em trai"
+    },
+    "detail": {
+     "en": "で marks where the playing took place, rather than a destination.",
+     "vi": "で chỉ nơi diễn ra việc chơi, khác với に chỉ đích đến ở câu trước."
+    }
+   },
+   {
+    "text": "弟の子供と",
+    "label": {
+     "en": "with my younger brother’s children",
+     "vi": "với con của em trai"
+    },
+    "detail": {
+     "en": "弟の子供 identifies whose children they are. と marks the people the speaker played with.",
+     "vi": "弟の子供 cho biết đây là con của ai. と chỉ những người cùng chơi với người kể."
+    }
+   },
+   {
+    "text": "遊びました。",
+    "label": {
+     "en": "played",
+     "vi": "đã chơi"
+    },
+    "detail": {
+     "en": "遊ぶ → 遊びました is the polite past form. The speaker remains the understood subject.",
+     "vi": "遊ぶ → 遊びました là dạng quá khứ lịch sự. Chủ thể được hiểu vẫn là người kể."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "3歳の女の子と1歳の男の子です。",
+  "translation": {
+   "en": "They are a three-year-old girl and a one-year-old boy.",
+   "vi": "Đó là bé gái ba tuổi và bé trai một tuổi."
+  },
+  "together": {
+   "en": "The two age descriptions identify the brother’s children. と joins the girl and the boy in one statement ending with です.",
+   "vi": "Hai cụm chỉ tuổi giới thiệu các con của em trai. と nối bé gái và bé trai trong cùng một câu kết thúc bằng です."
+  },
+  "chunks": [
+   {
+    "text": "3歳の女の子と",
+    "label": {
+     "en": "a three-year-old girl and",
+     "vi": "bé gái ba tuổi và"
+    },
+    "detail": {
+     "en": "歳 counts age; 3歳 is さんさい. の connects the age to 女の子, and と links her to the boy.",
+     "vi": "歳 là đơn vị đếm tuổi; 3歳 đọc là さんさい. の nối tuổi với 女の子; と nối bé gái với bé trai."
+    }
+   },
+   {
+    "text": "1歳の男の子です。",
+    "label": {
+     "en": "a one-year-old boy",
+     "vi": "bé trai một tuổi"
+    },
+    "detail": {
+     "en": "1歳 is いっさい, with a small っ. です completes the identification of the two children.",
+     "vi": "1歳 đọc là いっさい, có âm ngắt っ. です kết thúc lời giới thiệu hai bé."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "その日、3歳の女の子は積み木で遊んでいました。積み木で家を作っていました。",
+  "translation": {
+   "en": "That day the girl was playing with blocks, making a house.",
+   "vi": "Hôm ấy bé gái đang chơi xếp hình, xây một ngôi nhà."
+  },
+  "together": {
+   "en": "Both predicates use the past ongoing form to show what the girl was doing that day. The second sentence explains what she was making with the blocks.",
+   "vi": "Cả hai vị ngữ đều diễn tả hành động đang diễn ra trong quá khứ. Câu sau nói rõ bé đang dùng các khối xếp hình để làm gì."
+  },
+  "chunks": [
+   {
+    "text": "その日、",
+    "label": {
+     "en": "that day",
+     "vi": "hôm ấy"
+    },
+    "detail": {
+     "en": "その points back to the day of the visit mentioned earlier.",
+     "vi": "その chỉ lại ngày người kể đến chơi đã nói ở trên."
+    }
+   },
+   {
+    "text": "3歳の女の子は",
+    "label": {
+     "en": "the three-year-old girl",
+     "vi": "bé gái ba tuổi"
+    },
+    "detail": {
+     "en": "3歳の modifies 女の子. は makes the girl the topic of the description.",
+     "vi": "3歳の bổ nghĩa cho 女の子. は đưa bé gái làm chủ đề của phần miêu tả."
+    }
+   },
+   {
+    "text": "積み木で",
+    "label": {
+     "en": "with building blocks",
+     "vi": "bằng các khối xếp hình"
+    },
+    "detail": {
+     "en": "で marks the objects used for playing, rather than the location.",
+     "vi": "で chỉ đồ vật dùng để chơi, không phải nơi chơi."
+    },
+    "words": [
+     {
+      "text": "積み木",
+      "kana": "つみき",
+      "meaning": {
+       "en": "building blocks",
+       "vi": "các khối xếp hình"
+      }
+     }
+    ]
+   },
+   {
+    "text": "遊んでいました。",
+    "label": {
+     "en": "was playing",
+     "vi": "đang chơi"
+    },
+    "detail": {
+     "en": "遊ぶ → 遊んで → 遊んでいました describes an action in progress at that past time.",
+     "vi": "遊ぶ → 遊んで → 遊んでいました diễn tả hành động đang diễn ra ở thời điểm quá khứ ấy."
+    },
+    "grammarIds": [
+     "g_094_1"
+    ]
+   },
+   {
+    "text": "積み木で家を",
+    "label": {
+     "en": "a house using blocks",
+     "vi": "ngôi nhà bằng các khối xếp hình"
+    },
+    "detail": {
+     "en": "で marks the material used, and を marks 家 as the thing being made.",
+     "vi": "で chỉ vật liệu được dùng; を đánh dấu 家 là thứ bé đang làm."
+    }
+   },
+   {
+    "text": "作っていました。",
+    "label": {
+     "en": "was making",
+     "vi": "đang xây"
+    },
+    "detail": {
+     "en": "作る → 作って → 作っていました shows the building activity in progress. The house is a toy house made from blocks.",
+     "vi": "作る → 作って → 作っていました cho thấy việc xây đang diễn ra. Đây là ngôi nhà đồ chơi được ghép từ các khối xếp hình."
+    },
+    "grammarIds": [
+     "g_094_1"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "そこへ1歳の弟が来て、女の子の家を壊しました。",
+  "translation": {
+   "en": "Then her one-year-old younger brother came and broke her house.",
+   "vi": "Cậu em trai một tuổi đến làm hỏng nhà của bé."
+  },
+  "together": {
+   "en": "The younger boy comes to where his sister is playing and breaks the block house. 壊す is transitive: he acts on the house marked by を.",
+   "vi": "Cậu em đến chỗ chị đang chơi rồi làm hỏng ngôi nhà xếp hình. 壊す là ngoại động từ: cậu tác động lên ngôi nhà được đánh dấu bằng を."
+  },
+  "chunks": [
+   {
+    "text": "そこへ",
+    "label": {
+     "en": "to that spot",
+     "vi": "đến chỗ đó"
+    },
+    "detail": {
+     "en": "そこ refers to the girl’s play area. へ marks movement toward it.",
+     "vi": "そこ chỉ chỗ bé gái đang chơi. へ chỉ hướng di chuyển đến đó."
+    }
+   },
+   {
+    "text": "1歳の弟が来て、",
+    "label": {
+     "en": "her one-year-old brother came and",
+     "vi": "cậu em một tuổi đến rồi"
+    },
+    "detail": {
+     "en": "が introduces the person who came; this 弟 is the girl’s brother. 来る → 来て connects his arrival to the next action.",
+     "vi": "が giới thiệu người đến; 弟 ở đây là em trai của bé gái. 来る → 来て nối việc đến với hành động sau."
+    }
+   },
+   {
+    "text": "女の子の家を壊しました。",
+    "label": {
+     "en": "broke the girl’s house",
+     "vi": "làm hỏng nhà của bé gái"
+    },
+    "detail": {
+     "en": "を marks the house as the object of transitive 壊す → 壊しました. Compare 壊れる, which describes something breaking without naming an object acted on.",
+     "vi": "を đánh dấu ngôi nhà là đối tượng của ngoại động từ 壊す → 壊しました. Khác với 壊れる chỉ việc một vật bị hỏng, 壊す diễn tả ai đó làm hỏng vật ấy."
+    },
+    "grammarIds": [
+     "g_161"
+    ],
+    "words": [
+     {
+      "text": "壊す",
+      "kana": "こわす",
+      "meaning": {
+       "en": "to break something",
+       "vi": "làm hỏng, phá"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "女の子はびっくりして、お母さんに「ゆうくんが壊れた！」と言いました。",
+  "translation": {
+   "en": "The girl was startled and told her mother, “Yu broke!”",
+   "vi": "Bé gái giật mình và nói với mẹ: “Yu bị hỏng rồi!”"
+  },
+  "together": {
+   "en": "The joke is the child’s verb choice: she means that Yu broke the house, but ゆうくんが壊れた literally says that Yu himself broke. The quotation preserves her mistake.",
+   "vi": "Điểm gây cười là bé dùng nhầm động từ: bé muốn nói Yu làm hỏng nhà, nhưng ゆうくんが壊れた lại có nghĩa chính Yu bị hỏng. Lời trích giữ nguyên lỗi của bé."
+  },
+  "chunks": [
+   {
+    "text": "女の子はびっくりして、",
+    "label": {
+     "en": "the girl was startled and",
+     "vi": "bé gái giật mình rồi"
+    },
+    "detail": {
+     "en": "は marks the girl as the topic. びっくりする → びっくりして links her reaction to what she said next.",
+     "vi": "は đánh dấu bé gái là chủ đề. びっくりする → びっくりして nối phản ứng giật mình với lời bé nói sau đó."
+    },
+    "words": [
+     {
+      "text": "びっくりする",
+      "kana": "びっくりする",
+      "meaning": {
+       "en": "to be startled, surprised",
+       "vi": "giật mình, ngạc nhiên"
+      }
+     }
+    ]
+   },
+   {
+    "text": "お母さんに",
+    "label": {
+     "en": "to her mother",
+     "vi": "với mẹ"
+    },
+    "detail": {
+     "en": "に marks the person being spoken to with 言う.",
+     "vi": "に chỉ người được nghe lời nói với 言う."
+    }
+   },
+   {
+    "text": "「ゆうくんが壊れた！」",
+    "label": {
+     "en": "‘Yu broke!’",
+     "vi": "‘Yu bị hỏng rồi!’"
+    },
+    "detail": {
+     "en": "壊れる → 壊れた is the plain past of an intransitive verb, so が makes Yu the one who broke. To say Yu broke the house, she would need ゆうくんが家を壊した.",
+     "vi": "壊れる → 壊れた là quá khứ thường của tự động từ, nên が khiến Yu thành người bị hỏng. Muốn nói Yu làm hỏng nhà, bé cần nói ゆうくんが家を壊した."
+    },
+    "grammarIds": [
+     "g_162"
+    ],
+    "words": [
+     {
+      "text": "壊れる",
+      "kana": "こわれる",
+      "meaning": {
+       "en": "to break, become broken",
+       "vi": "bị hỏng, hỏng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "と言いました。",
+    "label": {
+     "en": "she said",
+     "vi": "bé đã nói"
+    },
+    "detail": {
+     "en": "と marks the preceding quotation as the content of 言いました. This reports her actual words in the polite past.",
+     "vi": "と đánh dấu lời trích phía trước là nội dung của 言いました. Dạng quá khứ lịch sự này thuật lại nguyên lời bé nói."
+    },
+    "grammarIds": [
+     "g_145"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "私はとても面白いと思いました。",
+  "translation": {
+   "en": "I thought it was very funny.",
+   "vi": "Tôi thấy rất thú vị."
+  },
+  "together": {
+   "en": "The speaker gives a personal reaction to the child’s mistake. The plain adjective 面白い is the content of the thought introduced by と.",
+   "vi": "Người kể nêu cảm nhận về lỗi dùng từ của bé. Tính từ dạng thường 面白い là nội dung suy nghĩ được nối với 思いました bằng と."
+  },
+  "chunks": [
+   {
+    "text": "私は",
+    "label": {
+     "en": "I",
+     "vi": "tôi"
+    },
+    "detail": {
+     "en": "は makes the narrator the topic and the person holding this opinion.",
+     "vi": "は đưa người kể làm chủ đề, đồng thời cho biết đây là cảm nhận của người kể."
+    }
+   },
+   {
+    "text": "とても面白いと思いました。",
+    "label": {
+     "en": "thought it was very funny",
+     "vi": "thấy rất thú vị"
+    },
+    "detail": {
+     "en": "とても strengthens 面白い, and と marks the plain adjective as the content of the thought. 思う → 思いました puts the act of thinking in the past.",
+     "vi": "とても nhấn mạnh 面白い; と đánh dấu tính từ dạng thường là nội dung suy nghĩ. 思う → 思いました đặt việc nghĩ vào quá khứ."
+    },
+    "grammarIds": [
+     "g_147"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "日本人の子供も、外国人と同じ間違いをするんですね。",
+  "translation": {
+   "en": "Japanese children make the same mistakes as foreigners too, don’t they?",
+   "vi": "Trẻ em Nhật cũng mắc lỗi giống người nước ngoài nhỉ."
+  },
+  "together": {
+   "en": "The speaker realizes that Japanese children also confuse verbs just as foreign learners do. んですね presents this as an explanatory realization and invites agreement.",
+   "vi": "Người kể nhận ra trẻ em Nhật cũng nhầm động từ giống người học nước ngoài. んですね thể hiện điều vừa nhận ra để lý giải câu chuyện và mong người nghe đồng tình."
+  },
+  "chunks": [
+   {
+    "text": "日本人の子供も、",
+    "label": {
+     "en": "Japanese children too",
+     "vi": "trẻ em Nhật cũng"
+    },
+    "detail": {
+     "en": "日本人の modifies 子供. も adds Japanese children to the foreigners who make such mistakes.",
+     "vi": "日本人の bổ nghĩa cho 子供. も cho biết ngoài người nước ngoài, trẻ em Nhật cũng mắc lỗi như vậy."
+    }
+   },
+   {
+    "text": "外国人と同じ間違いを",
+    "label": {
+     "en": "the same mistakes as foreigners",
+     "vi": "lỗi giống người nước ngoài"
+    },
+    "detail": {
+     "en": "と marks the comparison partner of 同じ, which directly modifies 間違い. を marks the object of する.",
+     "vi": "と chỉ đối tượng so sánh với 同じ; 同じ đứng trực tiếp trước 間違い để bổ nghĩa. を đánh dấu đối tượng của する."
+    },
+    "words": [
+     {
+      "text": "間違い",
+      "kana": "まちがい",
+      "meaning": {
+       "en": "mistake",
+       "vi": "lỗi, sai sót"
+      }
+     }
+    ]
+   },
+   {
+    "text": "するんですね。",
+    "label": {
+     "en": "they make, don’t they?",
+     "vi": "cũng mắc nhỉ"
+    },
+    "detail": {
+     "en": "する + んです connects the observation to the reason the incident was interesting. ね adds a tone of shared realization or agreement.",
+     "vi": "する + んです gắn nhận xét này với lý do câu chuyện làm người kể thấy thú vị. ね tạo sắc thái cùng nhận ra hoặc mong người nghe đồng tình."
+    },
+    "grammarIds": [
+     "g_149"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "私は去年の4月に日本に来ました。今、東京に住んでいます。",
+  "translation": {
+   "en": "I came to Japan last April. I now live in Tokyo.",
+   "vi": "Tôi đến Nhật tháng 4 năm ngoái. Hiện tôi sống ở Tokyo."
+  },
+  "together": {
+   "en": "The first sentence gives the date of arrival; the second describes the speaker’s present home. 住んでいます expresses a continuing situation.",
+   "vi": "Câu đầu nêu thời điểm đến Nhật; câu sau nói nơi ở hiện tại. 住んでいます diễn tả tình trạng sinh sống kéo dài đến bây giờ."
+  },
+  "chunks": [
+   {
+    "text": "私は",
+    "label": {
+     "en": "I",
+     "vi": "tôi"
+    },
+    "detail": {
+     "en": "は establishes the speaker as the topic of both sentences.",
+     "vi": "は đưa người kể làm chủ đề cho cả hai câu."
+    }
+   },
+   {
+    "text": "去年の4月に",
+    "label": {
+     "en": "in April last year",
+     "vi": "vào tháng 4 năm ngoái"
+    },
+    "detail": {
+     "en": "の connects 去年 to 4月. に marks this specific month as the time of arrival.",
+     "vi": "の nối 去年 với 4月. に đánh dấu tháng cụ thể khi người kể đến Nhật."
+    }
+   },
+   {
+    "text": "日本に来ました。",
+    "label": {
+     "en": "came to Japan",
+     "vi": "đã đến Nhật"
+    },
+    "detail": {
+     "en": "に marks the destination. 来る → 来ました is the polite past form.",
+     "vi": "に đánh dấu đích đến. 来る → 来ました là dạng quá khứ lịch sự."
+    }
+   },
+   {
+    "text": "今、",
+    "label": {
+     "en": "now",
+     "vi": "hiện nay"
+    },
+    "detail": {
+     "en": "Contrasts the current situation with the past arrival.",
+     "vi": "Chuyển từ việc đến Nhật trong quá khứ sang tình trạng hiện tại."
+    }
+   },
+   {
+    "text": "東京に住んでいます。",
+    "label": {
+     "en": "live in Tokyo",
+     "vi": "sống ở Tokyo"
+    },
+    "detail": {
+     "en": "住む → 住んで → 住んでいます describes ongoing residence. に marks where the speaker lives.",
+     "vi": "住む → 住んで → 住んでいます diễn tả tình trạng sinh sống hiện tại. に chỉ nơi người kể đang sống."
+    },
+    "grammarIds": [
+     "g_094_5"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "東京のアパートは家賃が高いですから、私は小さい部屋を借りて、そこに住んでいます。",
+  "translation": {
+   "en": "Rent in Tokyo is high, so I rent and live in a small room.",
+   "vi": "Tiền thuê ở Tokyo đắt nên tôi thuê và sống trong phòng nhỏ."
+  },
+  "together": {
+   "en": "The high rent gives the reason for choosing a small room. 借りて connects renting it to living there, and そこ refers back to that room.",
+   "vi": "Tiền thuê cao là lý do người kể chọn phòng nhỏ. 借りて nối việc thuê phòng với việc ở đó; そこ chỉ lại căn phòng vừa nhắc."
+  },
+  "chunks": [
+   {
+    "text": "東京のアパートは",
+    "label": {
+     "en": "as for apartments in Tokyo",
+     "vi": "nói về căn hộ ở Tokyo"
+    },
+    "detail": {
+     "en": "東京の modifies アパート, and は sets the topic within which the rent is described.",
+     "vi": "東京の bổ nghĩa cho アパート; は nêu phạm vi chủ đề để nói về tiền thuê."
+    }
+   },
+   {
+    "text": "家賃が高いですから、",
+    "label": {
+     "en": "because the rent is high",
+     "vi": "vì tiền thuê đắt"
+    },
+    "detail": {
+     "en": "が marks 家賃 as the thing that is expensive. から follows the polite statement and supplies the reason for the next clause.",
+     "vi": "が đánh dấu 家賃 là thứ có giá cao. から đứng sau câu lịch sự để nêu lý do cho vế tiếp theo."
+    },
+    "grammarIds": [
+     "g_066"
+    ],
+    "words": [
+     {
+      "text": "家賃",
+      "kana": "やちん",
+      "meaning": {
+       "en": "rent for a home",
+       "vi": "tiền thuê nhà"
+      }
+     }
+    ]
+   },
+   {
+    "text": "私は小さい部屋を借りて、",
+    "label": {
+     "en": "I rent a small room and",
+     "vi": "tôi thuê một phòng nhỏ rồi"
+    },
+    "detail": {
+     "en": "を marks the room being rented. 借りる → 借りて links this action to the following living arrangement.",
+     "vi": "を đánh dấu căn phòng được thuê. 借りる → 借りて nối việc thuê với tình trạng sinh sống ở vế sau."
+    },
+    "grammarIds": [
+     "g_161"
+    ]
+   },
+   {
+    "text": "そこに住んでいます。",
+    "label": {
+     "en": "live there",
+     "vi": "sống ở đó"
+    },
+    "detail": {
+     "en": "そこ refers to the small room, and に marks the place of residence. 住んでいます describes the continuing situation.",
+     "vi": "そこ chỉ căn phòng nhỏ; に chỉ nơi sinh sống. 住んでいます diễn tả tình trạng kéo dài đến hiện tại."
+    },
+    "grammarIds": [
+     "g_094_5"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "部屋にはベッドと机と椅子、小さい棚があります。",
+  "translation": {
+   "en": "The room has a bed, desk, chair and small shelf.",
+   "vi": "Phòng có giường, bàn, ghế và kệ nhỏ."
+  },
+  "together": {
+   "en": "The room is introduced as the location, followed by a list of its contents. が and あります present the listed objects as existing there.",
+   "vi": "Căn phòng được nêu làm nơi chốn, sau đó là danh sách đồ vật trong phòng. が và あります cho biết các đồ vật ấy có ở đó."
+  },
+  "chunks": [
+   {
+    "text": "部屋には",
+    "label": {
+     "en": "in the room",
+     "vi": "trong phòng"
+    },
+    "detail": {
+     "en": "に marks the location of existence; は makes that location the topic.",
+     "vi": "に chỉ nơi đồ vật tồn tại; は đưa nơi ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "ベッドと机と椅子、",
+    "label": {
+     "en": "a bed, desk and chair",
+     "vi": "giường, bàn và ghế"
+    },
+    "detail": {
+     "en": "と joins the nouns in a list. The comma continues the same list with another item.",
+     "vi": "と nối các danh từ trong danh sách. Dấu phẩy tiếp tục danh sách với món đồ ở sau."
+    }
+   },
+   {
+    "text": "小さい棚があります。",
+    "label": {
+     "en": "there is also a small shelf",
+     "vi": "có cả kệ nhỏ"
+    },
+    "detail": {
+     "en": "小さい modifies 棚. が marks the objects in the full list, and あります states that they are in the room.",
+     "vi": "小さい bổ nghĩa cho 棚. が đánh dấu các đồ vật trong cả danh sách; あります cho biết chúng có trong phòng."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "棚の上には写真が飾ってあります。家族の写真です。",
+  "translation": {
+   "en": "A photograph is displayed on the shelf. It is a family photograph.",
+   "vi": "Trên kệ có trưng ảnh gia đình."
+  },
+  "together": {
+   "en": "The photograph is described as already displayed through someone’s deliberate action. The second sentence identifies it as a family photograph.",
+   "vi": "Bức ảnh được miêu tả ở trạng thái đã có người chủ động bày lên. Câu sau cho biết đó là ảnh gia đình."
+  },
+  "chunks": [
+   {
+    "text": "棚の上には",
+    "label": {
+     "en": "on the shelf",
+     "vi": "trên kệ"
+    },
+    "detail": {
+     "en": "棚の上 means the top of the shelf. に marks the location; は makes it the setting for the description.",
+     "vi": "棚の上 là phía trên kệ. に chỉ vị trí; は đưa vị trí ấy làm bối cảnh miêu tả."
+    }
+   },
+   {
+    "text": "写真が飾ってあります。",
+    "label": {
+     "en": "a photograph is displayed",
+     "vi": "có bày một bức ảnh"
+    },
+    "detail": {
+     "en": "飾る → 飾って + あります describes the result of intentionally displaying the photograph. が marks the photograph now in that state.",
+     "vi": "飾る → 飾って + あります diễn tả trạng thái còn lại sau khi ai đó chủ động bày ảnh. が đánh dấu bức ảnh đang ở trạng thái ấy."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "飾る",
+      "kana": "かざる",
+      "meaning": {
+       "en": "to decorate; here: display",
+       "vi": "trang trí; ở đây: bày, trưng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "家族の写真です。",
+    "label": {
+     "en": "it is a family photograph",
+     "vi": "đó là ảnh gia đình"
+    },
+    "detail": {
+     "en": "の identifies what the photograph shows. Its subject is understood from the previous sentence.",
+     "vi": "の cho biết nội dung bức ảnh. Chủ thể được hiểu là bức ảnh đã nhắc ở câu trước."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "それから、机の上にパソコンとカレンダー、日本語の本が置いてあります。",
+  "translation": {
+   "en": "On the desk are a computer, calendar and Japanese books.",
+   "vi": "Trên bàn có đặt máy tính, lịch và sách tiếng Nhật."
+  },
+  "together": {
+   "en": "The speaker adds another part of the room description. 置いてあります focuses on the objects’ arranged position on the desk.",
+   "vi": "Người kể bổ sung một phần khác trong căn phòng. 置いてあります nhấn mạnh các đồ vật đã được đặt và vẫn nằm trên bàn."
+  },
+  "chunks": [
+   {
+    "text": "それから、",
+    "label": {
+     "en": "also",
+     "vi": "tiếp đó"
+    },
+    "detail": {
+     "en": "Adds another item to the description, rather than necessarily describing a later action.",
+     "vi": "Bổ sung ý tiếp theo trong phần miêu tả, không nhất thiết chỉ hành động xảy ra sau."
+    }
+   },
+   {
+    "text": "机の上に",
+    "label": {
+     "en": "on the desk",
+     "vi": "trên bàn"
+    },
+    "detail": {
+     "en": "の connects 机 to 上, and に marks where the objects have been placed.",
+     "vi": "の nối 机 với 上; に chỉ nơi các đồ vật được đặt."
+    }
+   },
+   {
+    "text": "パソコンとカレンダー、日本語の本が",
+    "label": {
+     "en": "a computer, calendar and Japanese books",
+     "vi": "máy tính, lịch và sách tiếng Nhật"
+    },
+    "detail": {
+     "en": "と and the comma form a list. が marks the whole list as the things in the resulting state.",
+     "vi": "と cùng dấu phẩy tạo danh sách. が đánh dấu cả danh sách là những vật ở trạng thái được nêu sau."
+    }
+   },
+   {
+    "text": "置いてあります。",
+    "label": {
+     "en": "have been placed",
+     "vi": "đã được đặt sẵn"
+    },
+    "detail": {
+     "en": "置く → 置いて + あります describes the lasting result of someone placing the objects there. It does not describe the action of putting them down in progress.",
+     "vi": "置く → 置いて + あります diễn tả kết quả còn lại của việc ai đó đã đặt đồ ở đó. Mẫu này không nói việc đặt đồ đang diễn ra."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "置く",
+      "kana": "おく",
+      "meaning": {
+       "en": "to put, place",
+       "vi": "đặt, để"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "机の前には、犬の絵が貼ってあって、その横に時計が掛けてあります。",
+  "translation": {
+   "en": "A dog picture is stuck up in front of the desk, with a clock hung beside it.",
+   "vi": "Trước bàn có dán tranh chó, bên cạnh có treo đồng hồ."
+  },
+  "together": {
+   "en": "Two deliberate arrangements are described: a picture stuck up in front of the desk and a clock hung beside it. 貼ってあって connects the first resulting state to the second.",
+   "vi": "Câu miêu tả hai cách bài trí có chủ ý: tranh được dán trước bàn và đồng hồ được treo cạnh tranh. 貼ってあって nối trạng thái thứ nhất với trạng thái thứ hai."
+  },
+  "chunks": [
+   {
+    "text": "机の前には、",
+    "label": {
+     "en": "in front of the desk",
+     "vi": "phía trước bàn"
+    },
+    "detail": {
+     "en": "机の前 is a position, with に marking the location and は setting it as the topic.",
+     "vi": "机の前 chỉ vị trí; に đánh dấu nơi chốn, còn は đưa vị trí ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "犬の絵が貼ってあって、",
+    "label": {
+     "en": "a dog picture is stuck up and",
+     "vi": "có dán tranh chó và"
+    },
+    "detail": {
+     "en": "貼る → 貼ってある describes the result of sticking up the picture. ある → あって connects that state to the next clause.",
+     "vi": "貼る → 貼ってある chỉ trạng thái sau khi tranh đã được dán lên. ある → あって nối trạng thái này với vế sau."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "貼る",
+      "kana": "はる",
+      "meaning": {
+       "en": "to stick, paste up",
+       "vi": "dán"
+      }
+     }
+    ]
+   },
+   {
+    "text": "その横に",
+    "label": {
+     "en": "beside it",
+     "vi": "bên cạnh tranh đó"
+    },
+    "detail": {
+     "en": "その refers back to the picture. 横に gives the location of the clock.",
+     "vi": "その chỉ lại bức tranh. 横に nêu vị trí của đồng hồ."
+    }
+   },
+   {
+    "text": "時計が掛けてあります。",
+    "label": {
+     "en": "a clock is hung",
+     "vi": "có treo đồng hồ"
+    },
+    "detail": {
+     "en": "掛ける → 掛けて + あります describes the clock’s state after someone hung it. が marks the clock being described.",
+     "vi": "掛ける → 掛けて + あります diễn tả trạng thái đồng hồ sau khi có người treo lên. が đánh dấu chiếc đồng hồ được miêu tả."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "掛ける",
+      "kana": "かける",
+      "meaning": {
+       "en": "to hang something",
+       "vi": "treo"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "犬の絵は、友達が描いてくれました。",
+  "translation": {
+   "en": "My friend drew the dog picture for me.",
+   "vi": "Bạn đã vẽ tranh chó cho tôi."
+  },
+  "together": {
+   "en": "The picture is the topic, while the friend is the person who drew it. くれました shows that the speaker benefited from the friend’s action.",
+   "vi": "Bức tranh là chủ đề, còn người bạn là người đã vẽ. くれました cho biết người kể nhận được lợi ích từ hành động của bạn."
+  },
+  "chunks": [
+   {
+    "text": "犬の絵は、",
+    "label": {
+     "en": "as for the dog picture",
+     "vi": "còn bức tranh chó"
+    },
+    "detail": {
+     "en": "は presents the picture as the topic; it is the understood object of 描く.",
+     "vi": "は đưa bức tranh làm chủ đề; tranh là đối tượng được hiểu của 描く."
+    }
+   },
+   {
+    "text": "友達が",
+    "label": {
+     "en": "my friend",
+     "vi": "bạn tôi"
+    },
+    "detail": {
+     "en": "が marks the friend as the person who performed the action.",
+     "vi": "が đánh dấu người bạn là người thực hiện hành động."
+    }
+   },
+   {
+    "text": "描いてくれました。",
+    "label": {
+     "en": "drew it for me",
+     "vi": "đã vẽ cho tôi"
+    },
+    "detail": {
+     "en": "描く → 描いて + くれました expresses an action done for the speaker. 描く is read えがく in the passage.",
+     "vi": "描く → 描いて + くれました diễn tả hành động làm cho người kể. Trong bài, 描く đọc là えがく."
+    },
+    "grammarIds": [
+     "g_103"
+    ],
+    "words": [
+     {
+      "text": "描く",
+      "kana": "えがく",
+      "meaning": {
+       "en": "to draw",
+       "vi": "vẽ"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ベッドの横には服がかけてあります。",
+  "translation": {
+   "en": "Clothes are hung beside the bed.",
+   "vi": "Cạnh giường có treo quần áo."
+  },
+  "together": {
+   "en": "This describes the clothes’ arranged position beside the bed. The person who hung them is left unstated.",
+   "vi": "Câu miêu tả quần áo đang được treo cạnh giường. Người đã treo quần áo không được nêu ra."
+  },
+  "chunks": [
+   {
+    "text": "ベッドの横には",
+    "label": {
+     "en": "beside the bed",
+     "vi": "bên cạnh giường"
+    },
+    "detail": {
+     "en": "の connects the bed to 横. に marks the location, and は presents that place as the topic.",
+     "vi": "の nối giường với 横. に chỉ vị trí; は đưa vị trí ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "服がかけてあります。",
+    "label": {
+     "en": "clothes are hung",
+     "vi": "có treo quần áo"
+    },
+    "detail": {
+     "en": "かける → かけて + あります shows the lasting result of deliberately hanging the clothes. が marks the clothes in that state.",
+     "vi": "かける → かけて + あります cho biết kết quả còn lại của việc chủ động treo quần áo. が đánh dấu quần áo đang ở trạng thái ấy."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "かける",
+      "kana": "かける",
+      "meaning": {
+       "en": "to hang something",
+       "vi": "treo"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "窓の前にはギターが1台置いてあります。",
+  "translation": {
+   "en": "One guitar has been placed in front of the window.",
+   "vi": "Trước cửa sổ có đặt một cây ghi-ta."
+  },
+  "together": {
+   "en": "The sentence locates a guitar that someone has placed in front of the window. 1台 gives the number of guitars as printed in the passage.",
+   "vi": "Câu nói có một cây ghi-ta đã được đặt trước cửa sổ. 1台 nêu số lượng ghi-ta theo cách đếm được dùng trong bài."
+  },
+  "chunks": [
+   {
+    "text": "窓の前には",
+    "label": {
+     "en": "in front of the window",
+     "vi": "trước cửa sổ"
+    },
+    "detail": {
+     "en": "窓の前 names the position. に marks the location, with は making it the topic.",
+     "vi": "窓の前 chỉ vị trí trước cửa sổ. に đánh dấu nơi chốn; は đưa nơi ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "ギターが1台",
+    "label": {
+     "en": "one guitar",
+     "vi": "một cây ghi-ta"
+    },
+    "detail": {
+     "en": "が marks the guitar being described. 1台, read いちだい, gives the quantity before the predicate.",
+     "vi": "が đánh dấu cây ghi-ta được miêu tả. 1台 đọc là いちだい, nêu số lượng trước vị ngữ."
+    }
+   },
+   {
+    "text": "置いてあります。",
+    "label": {
+     "en": "has been placed",
+     "vi": "đã được đặt sẵn"
+    },
+    "detail": {
+     "en": "置く → 置いて + あります describes the guitar’s position as the result of someone placing it there.",
+     "vi": "置く → 置いて + あります diễn tả vị trí hiện tại của ghi-ta là kết quả của việc ai đó đã đặt nó ở đó."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "置く",
+      "kana": "おく",
+      "meaning": {
+       "en": "to put, place",
+       "vi": "đặt, để"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "前はピアノも置いてありましたが、今はもう弾かないから、友達にあげました。",
+  "translation": {
+   "en": "There used to be a piano too, but I no longer play, so I gave it to a friend.",
+   "vi": "Trước có cả piano nhưng giờ không chơi nữa nên tôi đã cho bạn."
+  },
+  "together": {
+   "en": "A past arrangement is contrasted with the present reason for giving the piano away. The piano remains the understood object of both 弾かない and あげました.",
+   "vi": "Cách bài trí trước đây được đối chiếu với lý do hiện tại khiến người kể cho đi cây đàn. Piano vẫn là đối tượng được hiểu của cả 弾かない và あげました."
+  },
+  "chunks": [
+   {
+    "text": "前はピアノも置いてありましたが、",
+    "label": {
+     "en": "there used to be a piano too, but",
+     "vi": "trước đây có đặt cả piano, nhưng"
+    },
+    "detail": {
+     "en": "置く → 置いてありました is the past of the resulting-state pattern. 前は sets the earlier time, も adds the piano, and が introduces a contrast.",
+     "vi": "置く → 置いてありました là dạng quá khứ của mẫu chỉ trạng thái kết quả. 前は nêu thời gian trước đây, も thêm piano vào danh sách, còn が mở ý tương phản."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "置く",
+      "kana": "おく",
+      "meaning": {
+       "en": "to put, place",
+       "vi": "đặt, để"
+      }
+     }
+    ]
+   },
+   {
+    "text": "今はもう弾かないから、",
+    "label": {
+     "en": "because I no longer play now",
+     "vi": "vì bây giờ không chơi đàn nữa"
+    },
+    "detail": {
+     "en": "弾く → 弾かない is the plain negative; もう with a negative means ‘no longer’. から makes this the reason for giving the piano away.",
+     "vi": "弾く → 弾かない là dạng phủ định thường; もう đi với phủ định nghĩa là ‘không còn… nữa’. から nêu lý do người kể cho đi cây đàn."
+    },
+    "grammarIds": [
+     "g_066"
+    ],
+    "words": [
+     {
+      "text": "弾く",
+      "kana": "ひく",
+      "meaning": {
+       "en": "to play a stringed or keyboard instrument",
+       "vi": "chơi đàn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "友達にあげました。",
+    "label": {
+     "en": "gave it to a friend",
+     "vi": "đã cho bạn"
+    },
+    "detail": {
+     "en": "に marks the recipient, and あげました is the polite past of あげる. The piano is the omitted object being given.",
+     "vi": "に đánh dấu người nhận; あげました là quá khứ lịch sự của あげる. Đối tượng được cho là cây piano, đã được lược bỏ."
+    },
+    "grammarIds": [
+     "g_104"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "私の部屋は狭いですが、私はこの部屋が大好きです。",
+  "translation": {
+   "en": "My room is small, but I love it.",
+   "vi": "Phòng chật nhưng tôi rất thích."
+  },
+  "together": {
+   "en": "が contrasts the room’s small size with the speaker’s affection for it. The second は names the person who likes it, while が marks the thing liked.",
+   "vi": "が nối hai ý tương phản: phòng chật nhưng người kể rất thích. は ở vế sau chỉ người có cảm tình, còn が đánh dấu đối tượng được yêu thích."
+  },
+  "chunks": [
+   {
+    "text": "私の部屋は狭いですが、",
+    "label": {
+     "en": "my room is small, but",
+     "vi": "phòng tôi chật, nhưng"
+    },
+    "detail": {
+     "en": "狭い describes limited space. が after the polite adjective statement introduces the contrasting positive opinion.",
+     "vi": "狭い diễn tả không gian chật. が đứng sau câu tính từ lịch sự để mở ý kiến tích cực tương phản."
+    }
+   },
+   {
+    "text": "私は",
+    "label": {
+     "en": "I",
+     "vi": "tôi"
+    },
+    "detail": {
+     "en": "は shifts the topic from the room to the speaker’s feelings.",
+     "vi": "は chuyển chủ đề từ căn phòng sang cảm nhận của người kể."
+    }
+   },
+   {
+    "text": "この部屋が大好きです。",
+    "label": {
+     "en": "love this room",
+     "vi": "rất thích căn phòng này"
+    },
+    "detail": {
+     "en": "が marks the object of 大好き. 大好き is a な-adjective expressing a stronger liking than 好き.",
+     "vi": "が đánh dấu đối tượng được yêu thích với 大好き. 大好き là tính từ な, diễn tả mức độ yêu thích mạnh hơn 好き."
+    },
+    "grammarIds": [
+     "g_065"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "【会議室A】（6人まで）テーブル、椅子、モニターが置いてあります。ホワイトボードは置いてありません。",
+  "translation": {
+   "en": "Room A (up to six): tables, chairs and a monitor are provided; no whiteboard.",
+   "vi": "Phòng A (tối đa sáu người): có bàn, ghế, màn hình; không có bảng trắng."
+  },
+  "together": {
+   "en": "The listing first gives Room A’s capacity, then says which equipment has been placed there. The negative sentence contrasts the missing whiteboard with the provided items.",
+   "vi": "Mục giới thiệu nêu sức chứa phòng A rồi cho biết các thiết bị đã được đặt sẵn. Câu phủ định đối chiếu bảng trắng không có với những đồ được trang bị."
+  },
+  "chunks": [
+   {
+    "text": "【会議室A】",
+    "label": {
+     "en": "Room A",
+     "vi": "phòng họp A"
+    },
+    "detail": {
+     "en": "The brackets mark the room name as a heading for the information that follows.",
+     "vi": "Dấu ngoặc đánh dấu tên phòng làm tiêu đề cho thông tin phía sau."
+    }
+   },
+   {
+    "text": "（6人まで）",
+    "label": {
+     "en": "up to six people",
+     "vi": "tối đa sáu người"
+    },
+    "detail": {
+     "en": "まで marks the upper limit of the room’s capacity. 6人 is read ろくにん.",
+     "vi": "まで đánh dấu giới hạn sức chứa của phòng. 6人 đọc là ろくにん."
+    }
+   },
+   {
+    "text": "テーブル、椅子、モニターが",
+    "label": {
+     "en": "tables, chairs and a monitor",
+     "vi": "bàn, ghế và màn hình"
+    },
+    "detail": {
+     "en": "The commas list the equipment. が marks all these items as the things already placed in the room.",
+     "vi": "Các dấu phẩy liệt kê thiết bị. が đánh dấu toàn bộ danh sách là những đồ đã được đặt trong phòng."
+    }
+   },
+   {
+    "text": "置いてあります。",
+    "label": {
+     "en": "are provided",
+     "vi": "đã được đặt sẵn"
+    },
+    "detail": {
+     "en": "置く → 置いて + あります describes equipment that someone has deliberately placed and left ready for use.",
+     "vi": "置く → 置いて + あります diễn tả thiết bị đã được ai đó chủ động đặt và để sẵn cho người dùng."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "置く",
+      "kana": "おく",
+      "meaning": {
+       "en": "to put, place",
+       "vi": "đặt, để"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ホワイトボードは置いてありません。",
+    "label": {
+     "en": "no whiteboard is provided",
+     "vi": "không có đặt bảng trắng"
+    },
+    "detail": {
+     "en": "は contrasts the whiteboard with the listed equipment. 置いてありません is the negative of 置いてあります: no whiteboard has been placed there.",
+     "vi": "は đối chiếu bảng trắng với các thiết bị vừa kể. 置いてありません là phủ định của 置いてあります: không có bảng trắng được đặt ở đó."
+    },
+    "grammarIds": [
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "【会議室B】（10人まで）テーブル、椅子、モニター、ホワイトボードが置いてあります。",
+  "translation": {
+   "en": "Room B (up to ten): tables, chairs, a monitor and a whiteboard are provided.",
+   "vi": "Phòng B (tối đa mười người): có bàn, ghế, màn hình và bảng trắng."
+  },
+  "together": {
+   "en": "Room B has a larger capacity and includes a whiteboard among the equipment already set in place. 置いてあります describes what is ready for users.",
+   "vi": "Phòng B chứa được nhiều người hơn và có cả bảng trắng trong số thiết bị đặt sẵn. 置いてあります diễn tả những đồ đã sẵn sàng cho người dùng."
+  },
+  "chunks": [
+   {
+    "text": "【会議室B】",
+    "label": {
+     "en": "Room B",
+     "vi": "phòng họp B"
+    },
+    "detail": {
+     "en": "The bracketed name introduces the room whose capacity and equipment are described.",
+     "vi": "Tên trong ngoặc giới thiệu phòng được mô tả về sức chứa và thiết bị."
+    }
+   },
+   {
+    "text": "（10人まで）",
+    "label": {
+     "en": "up to ten people",
+     "vi": "tối đa mười người"
+    },
+    "detail": {
+     "en": "まで gives the maximum number of people. 10人 is read じゅうにん.",
+     "vi": "まで nêu số người tối đa. 10人 đọc là じゅうにん."
+    }
+   },
+   {
+    "text": "テーブル、椅子、モニター、ホワイトボードが",
+    "label": {
+     "en": "tables, chairs, a monitor and a whiteboard",
+     "vi": "bàn, ghế, màn hình và bảng trắng"
+    },
+    "detail": {
+     "en": "The commas join a list of equipment. が marks the entire list as the subject of the resulting-state description.",
+     "vi": "Các dấu phẩy nối danh sách thiết bị. が đánh dấu cả danh sách là chủ thể của phần miêu tả trạng thái kết quả."
+    }
+   },
+   {
+    "text": "置いてあります。",
+    "label": {
+     "en": "are provided",
+     "vi": "đã được đặt sẵn"
+    },
+    "detail": {
+     "en": "置く → 置いて + あります focuses on the equipment being in place after someone arranged it.",
+     "vi": "置く → 置いて + あります nhấn mạnh thiết bị vẫn ở vị trí đã được ai đó sắp đặt."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "置く",
+      "kana": "おく",
+      "meaning": {
+       "en": "to put, place",
+       "vi": "đặt, để"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "【会議室C】（8人まで）ソファ、テーブル、ピアノが置いてあります。写真撮影や音楽教室パーティーなどにおすすめです。",
+  "translation": {
+   "en": "Room C (up to eight): sofas, tables and a piano. Recommended for photography, music-class parties and similar uses.",
+   "vi": "Phòng C (tối đa tám người): có sofa, bàn, piano. Phù hợp chụp ảnh, tiệc lớp nhạc và hoạt động tương tự."
+  },
+  "together": {
+   "en": "After the capacity and furniture, the listing recommends suitable uses for Room C. や…など makes those uses examples rather than a complete list.",
+   "vi": "Sau sức chứa và đồ nội thất, mục giới thiệu gợi ý các hoạt động phù hợp với phòng C. や…など cho biết đây là vài ví dụ, không phải danh sách đầy đủ."
+  },
+  "chunks": [
+   {
+    "text": "【会議室C】（8人まで）",
+    "label": {
+     "en": "Room C, up to eight people",
+     "vi": "phòng họp C, tối đa tám người"
+    },
+    "detail": {
+     "en": "The brackets give the room name, and まで marks the capacity limit. 8人 is read はちにん.",
+     "vi": "Ngoặc vuông nêu tên phòng; まで chỉ giới hạn sức chứa. 8人 đọc là はちにん."
+    }
+   },
+   {
+    "text": "ソファ、テーブル、ピアノが置いてあります。",
+    "label": {
+     "en": "sofas, tables and a piano are provided",
+     "vi": "có đặt sẵn sofa, bàn và piano"
+    },
+    "detail": {
+     "en": "が marks the listed furniture. 置く → 置いて + あります describes the result of deliberately placing it in the room.",
+     "vi": "が đánh dấu các đồ nội thất được liệt kê. 置く → 置いて + あります diễn tả trạng thái sau khi đồ đã được chủ động đặt trong phòng."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "置く",
+      "kana": "おく",
+      "meaning": {
+       "en": "to put, place",
+       "vi": "đặt, để"
+      }
+     }
+    ]
+   },
+   {
+    "text": "写真撮影や",
+    "label": {
+     "en": "for photography and",
+     "vi": "chụp ảnh và"
+    },
+    "detail": {
+     "en": "写真撮影 names taking photographs. や introduces examples of activities for which the room is suitable.",
+     "vi": "写真撮影 chỉ việc chụp ảnh. や mở danh sách ví dụ về các hoạt động phù hợp với phòng."
+    },
+    "grammarIds": [
+     "g_051"
+    ],
+    "words": [
+     {
+      "text": "写真撮影",
+      "kana": "しゃしんさつえい",
+      "meaning": {
+       "en": "photography, taking photographs",
+       "vi": "việc chụp ảnh"
+      }
+     }
+    ]
+   },
+   {
+    "text": "音楽教室パーティーなどに",
+    "label": {
+     "en": "music-class parties and similar uses",
+     "vi": "tiệc lớp nhạc và hoạt động tương tự"
+    },
+    "detail": {
+     "en": "音楽教室パーティー is a compound meaning a party for a music class. など leaves room for other examples, and に marks the uses being recommended.",
+     "vi": "音楽教室パーティー là cụm danh từ ghép chỉ tiệc của lớp nhạc. など cho biết còn các ví dụ khác; に đánh dấu mục đích sử dụng được gợi ý."
+    }
+   },
+   {
+    "text": "おすすめです。",
+    "label": {
+     "en": "is recommended",
+     "vi": "được khuyên dùng, phù hợp"
+    },
+    "detail": {
+     "en": "おすすめです recommends the room for the activities marked by に. The room remains the understood topic.",
+     "vi": "おすすめです gợi ý chọn phòng cho các hoạt động đi với に. Chủ đề được hiểu vẫn là căn phòng."
+    },
+    "words": [
+     {
+      "text": "おすすめ",
+      "kana": "おすすめ",
+      "meaning": {
+       "en": "recommendation; here: recommended",
+       "vi": "sự gợi ý; ở đây: được khuyên dùng"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "会議室Cでは食べ物を食べることができません。全部の部屋でWi-Fiが使えます。",
+  "translation": {
+   "en": "Eating is not permitted in C. Wi-Fi is available in all rooms.",
+   "vi": "Không được ăn trong phòng C. Tất cả các phòng đều có Wi-Fi."
+  },
+  "together": {
+   "en": "The first sentence states a restriction specific to Room C; the second gives a service available in every room. できません expresses what is not allowed in this setting.",
+   "vi": "Câu đầu nêu quy định riêng của phòng C; câu sau nói dịch vụ có ở mọi phòng. Trong bối cảnh này, できません diễn tả việc không được phép làm."
+  },
+  "chunks": [
+   {
+    "text": "会議室Cでは",
+    "label": {
+     "en": "in Room C",
+     "vi": "trong phòng họp C"
+    },
+    "detail": {
+     "en": "で marks the activity location, and は makes Room C the topic of this particular rule.",
+     "vi": "で chỉ nơi diễn ra hoạt động; は đưa phòng C làm chủ đề của quy định này."
+    }
+   },
+   {
+    "text": "食べ物を食べることができません。",
+    "label": {
+     "en": "eating is not permitted",
+     "vi": "không được ăn đồ ăn"
+    },
+    "detail": {
+     "en": "食べる + こと turns the action into a noun phrase, followed by ができません. Here the negative ability pattern states a venue rule, rather than physical inability.",
+     "vi": "食べる + こと biến hành động thành cụm danh từ, theo sau là ができません. Ở đây mẫu khả năng phủ định diễn tả quy định của nơi cho thuê, không phải không có khả năng ăn."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   },
+   {
+    "text": "全部の部屋で",
+    "label": {
+     "en": "in all the rooms",
+     "vi": "ở tất cả các phòng"
+    },
+    "detail": {
+     "en": "全部の modifies 部屋. で marks where the Wi-Fi can be used.",
+     "vi": "全部の bổ nghĩa cho 部屋. で chỉ nơi có thể sử dụng Wi-Fi."
+    }
+   },
+   {
+    "text": "Wi-Fiが使えます。",
+    "label": {
+     "en": "Wi-Fi is available",
+     "vi": "dùng được Wi-Fi"
+    },
+    "detail": {
+     "en": "使う → 使える → 使えます is the polite potential form. が marks what users can use.",
+     "vi": "使う → 使える → 使えます là dạng khả năng lịch sự. が đánh dấu thứ người dùng có thể sử dụng."
+    },
+    "grammarIds": [
+     "g_061_1",
+     "g_061_2"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "○…空いています　×…空いていません",
+  "translation": {
+   "en": "○ available; × unavailable.",
+   "vi": "○ trống; × không trống."
+  },
+  "together": {
+   "en": "This key explains the availability symbols with positive and negative forms of 空いています. 空く means that a room or time slot is free here.",
+   "vi": "Phần chú giải giải thích ký hiệu còn phòng và hết phòng bằng dạng khẳng định, phủ định của 空いています. 空く ở đây chỉ phòng hoặc khung giờ còn trống."
+  },
+  "chunks": [
+   {
+    "text": "○…空いています　",
+    "label": {
+     "en": "○ means available",
+     "vi": "○ nghĩa là còn trống"
+    },
+    "detail": {
+     "en": "空く → 空いて + います describes a room being free for use. Here 空く is read あく, so 空いて is あいて.",
+     "vi": "空く → 空いて + います diễn tả phòng đang còn trống để sử dụng. 空く ở đây đọc là あく, nên 空いて đọc là あいて."
+    },
+    "grammarIds": [
+     "g_094_4"
+    ],
+    "words": [
+     {
+      "text": "空く",
+      "kana": "あく",
+      "meaning": {
+       "en": "to become empty; here: be available",
+       "vi": "trống ra; ở đây: còn trống để sử dụng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "×…空いていません",
+    "label": {
+     "en": "× means unavailable",
+     "vi": "× nghĩa là không còn trống"
+    },
+    "detail": {
+     "en": "空いていません is the polite negative of 空いています. In the calendar it means the room is not available to book.",
+     "vi": "空いていません là phủ định lịch sự của 空いています. Trong lịch, dạng này có nghĩa phòng không còn trống để đặt."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "田村さんは4月4日か5日に、ベトナム語教室を開きたいです。",
+  "translation": {
+   "en": "Tamura wants to hold a Vietnamese class on April 4 or 5.",
+   "vi": "Tamura muốn mở lớp tiếng Việt ngày 4 hoặc 5 tháng 4."
+  },
+  "together": {
+   "en": "Tamura wants to hold a Vietnamese class on either of two dates. 開きたい describes the wish to organize the class, rather than opening a physical object.",
+   "vi": "Tamura muốn tổ chức lớp tiếng Việt vào một trong hai ngày. 開きたい nói về mong muốn mở lớp, không phải mở một đồ vật."
+  },
+  "chunks": [
+   {
+    "text": "田村さんは",
+    "label": {
+     "en": "Tamura",
+     "vi": "Tamura"
+    },
+    "detail": {
+     "en": "は introduces the person whose plan is being described.",
+     "vi": "は giới thiệu người có dự định được nói đến."
+    }
+   },
+   {
+    "text": "4月4日か5日に、",
+    "label": {
+     "en": "on April 4 or 5",
+     "vi": "vào ngày 4 hoặc 5 tháng 4"
+    },
+    "detail": {
+     "en": "か links alternative dates, rather than making a question. に marks the chosen date as the time of the class.",
+     "vi": "か nối hai ngày để lựa chọn, không phải đặt câu hỏi. に đánh dấu ngày được chọn làm thời điểm mở lớp."
+    }
+   },
+   {
+    "text": "ベトナム語教室を",
+    "label": {
+     "en": "a Vietnamese class",
+     "vi": "lớp tiếng Việt"
+    },
+    "detail": {
+     "en": "ベトナム語 modifies 教室, here meaning a class or course. を marks what Tamura wants to organize.",
+     "vi": "ベトナム語 bổ nghĩa cho 教室, ở đây nghĩa là lớp học hoặc khóa học. を đánh dấu lớp mà Tamura muốn tổ chức."
+    },
+    "words": [
+     {
+      "text": "教室",
+      "kana": "きょうしつ",
+      "meaning": {
+       "en": "classroom; here: class, course",
+       "vi": "phòng học; ở đây: lớp học, khóa học"
+      }
+     }
+    ]
+   },
+   {
+    "text": "開きたいです。",
+    "label": {
+     "en": "wants to hold",
+     "vi": "muốn mở, tổ chức"
+    },
+    "detail": {
+     "en": "開く → 開きます → 開きたいです expresses a wish. 開く is read ひらく and means ‘hold’ or ‘organize’ with a class or event.",
+     "vi": "開く → 開きます → 開きたいです diễn tả mong muốn. 開く đọc là ひらく, mang nghĩa ‘mở, tổ chức’ khi đi với lớp học hoặc sự kiện."
+    },
+    "grammarIds": [
+     "g_059"
+    ],
+    "words": [
+     {
+      "text": "開く",
+      "kana": "ひらく",
+      "meaning": {
+       "en": "to open; here: hold, organize",
+       "vi": "mở; ở đây: mở lớp, tổ chức"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "今、5人が予約をしていますが、これからもう少し増えるかもしれません。",
+  "translation": {
+   "en": "Five people have booked so far, but the number may increase a little.",
+   "vi": "Hiện năm người đăng ký nhưng có lẽ sẽ thêm một ít."
+  },
+  "together": {
+   "en": "The current number of bookings is contrasted with a possible future increase. かもしれません makes the increase a possibility, so the group’s final size is uncertain.",
+   "vi": "Số người đăng ký hiện tại được đối chiếu với khả năng tăng thêm sau này. かもしれません cho biết việc tăng chỉ là khả năng, nên số người cuối cùng chưa chắc chắn."
+  },
+  "chunks": [
+   {
+    "text": "今、",
+    "label": {
+     "en": "currently",
+     "vi": "hiện tại"
+    },
+    "detail": {
+     "en": "Sets the point in time for the present booking count.",
+     "vi": "Nêu thời điểm của số người đăng ký hiện nay."
+    }
+   },
+   {
+    "text": "5人が予約をしていますが、",
+    "label": {
+     "en": "five people have booked, but",
+     "vi": "năm người đã đăng ký, nhưng"
+    },
+    "detail": {
+     "en": "が marks the five people, and 予約をしています describes their current booking status. The final が introduces a qualification about what may happen later.",
+     "vi": "が đánh dấu năm người; 予約をしています diễn tả tình trạng đã đăng ký của họ hiện nay. が ở cuối mở ý bổ sung về điều có thể xảy ra sau đó."
+    },
+    "words": [
+     {
+      "text": "予約する",
+      "kana": "よやくする",
+      "meaning": {
+       "en": "to reserve, book",
+       "vi": "đặt trước, đăng ký"
+      }
+     }
+    ]
+   },
+   {
+    "text": "これからもう少し",
+    "label": {
+     "en": "a little more from now on",
+     "vi": "sắp tới thêm một ít"
+    },
+    "detail": {
+     "en": "これから points to the future. もう少し means an additional small amount and modifies 増える.",
+     "vi": "これから chỉ thời gian sắp tới. もう少し nghĩa là thêm một ít, bổ nghĩa cho 増える."
+    }
+   },
+   {
+    "text": "増えるかもしれません。",
+    "label": {
+     "en": "the number may increase",
+     "vi": "có thể sẽ tăng"
+    },
+    "detail": {
+     "en": "増える in its dictionary form + かもしれません expresses an uncertain possibility. The understood subject is the number of participants.",
+     "vi": "増える ở thể từ điển + かもしれません diễn tả khả năng chưa chắc chắn. Chủ thể được hiểu là số người tham gia."
+    },
+    "grammarIds": [
+     "g_138",
+     "g_162"
+    ],
+    "words": [
+     {
+      "text": "増える",
+      "kana": "ふえる",
+      "meaning": {
+       "en": "to increase",
+       "vi": "tăng lên"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "10時から12時まで勉強をして、12時から1時間、ベトナムの音楽を聞いて小さいパーティーをします。",
+  "translation": {
+   "en": "They will study from ten to noon, then have a small party with Vietnamese music for an hour.",
+   "vi": "Họ học 10–12 giờ, rồi nghe nhạc Việt và tiệc nhỏ trong một giờ."
+  },
+  "together": {
+   "en": "The schedule has a study period followed by an hour-long party with music. The て-forms connect the planned activities, and the final します gives the overall future plan.",
+   "vi": "Lịch trình gồm thời gian học rồi đến buổi tiệc kéo dài một giờ có nghe nhạc. Các dạng て nối những hoạt động dự kiến; します ở cuối cho biết kế hoạch sẽ thực hiện."
+  },
+  "chunks": [
+   {
+    "text": "10時から12時まで",
+    "label": {
+     "en": "from ten to noon",
+     "vi": "từ 10 giờ đến 12 giờ"
+    },
+    "detail": {
+     "en": "から marks the starting time and まで the ending time of studying.",
+     "vi": "から chỉ giờ bắt đầu, còn まで chỉ giờ kết thúc việc học."
+    },
+    "grammarIds": [
+     "g_047"
+    ]
+   },
+   {
+    "text": "勉強をして、",
+    "label": {
+     "en": "study and then",
+     "vi": "học rồi"
+    },
+    "detail": {
+     "en": "勉強をする → 勉強をして connects studying to the next planned activity. The final predicate supplies the sentence’s polite tense.",
+     "vi": "勉強をする → 勉強をして nối việc học với hoạt động dự kiến tiếp theo. Vị ngữ cuối quyết định thì và mức độ lịch sự của câu."
+    },
+    "grammarIds": [
+     "g_092"
+    ]
+   },
+   {
+    "text": "12時から1時間、",
+    "label": {
+     "en": "for one hour from noon",
+     "vi": "trong một giờ từ 12 giờ"
+    },
+    "detail": {
+     "en": "12時から gives the start, while 1時間 gives a duration. It does not mean the ending time is one o’clock.",
+     "vi": "12時から nêu giờ bắt đầu, còn 1時間 chỉ độ dài thời gian. 1時間 không có nghĩa là mốc kết thúc lúc 1 giờ."
+    },
+    "grammarIds": [
+     "g_046"
+    ]
+   },
+   {
+    "text": "ベトナムの音楽を聞いて",
+    "label": {
+     "en": "listen to Vietnamese music and",
+     "vi": "nghe nhạc Việt Nam và"
+    },
+    "detail": {
+     "en": "の connects ベトナム to 音楽; を marks what they listen to. 聞く → 聞いて links listening with the party activity.",
+     "vi": "の nối ベトナム với 音楽; を đánh dấu nội dung được nghe. 聞く → 聞いて nối việc nghe nhạc với hoạt động tiệc."
+    },
+    "grammarIds": [
+     "g_092"
+    ]
+   },
+   {
+    "text": "小さいパーティーをします。",
+    "label": {
+     "en": "have a small party",
+     "vi": "tổ chức một buổi tiệc nhỏ"
+    },
+    "detail": {
+     "en": "小さい modifies パーティー. パーティーをする means to have or hold a party, and します refers to the planned future event here.",
+     "vi": "小さい bổ nghĩa cho パーティー. パーティーをする nghĩa là tổ chức tiệc; します ở đây chỉ sự kiện dự kiến trong tương lai."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "パーティーでは、バイン・ミーやお菓子を食べます。ベトナム語教室では、ホワイトボードを使いたいです。",
+  "translation": {
+   "en": "They will eat banh mi and snacks. Tamura wants a whiteboard for the class.",
+   "vi": "Trong tiệc ăn bánh mì và bánh kẹo. Lớp học cần dùng bảng trắng."
+  },
+  "together": {
+   "en": "The sentences describe two requirements for choosing a room: eating at the party and using a whiteboard in the class. Each では sets the activity context for its sentence.",
+   "vi": "Hai câu nêu hai nhu cầu khi chọn phòng: ăn trong buổi tiệc và dùng bảng trắng trong lớp học. Mỗi cụm では đặt bối cảnh hoạt động cho câu tương ứng."
+  },
+  "chunks": [
+   {
+    "text": "パーティーでは、",
+    "label": {
+     "en": "at the party",
+     "vi": "trong buổi tiệc"
+    },
+    "detail": {
+     "en": "で marks the setting for eating. は presents the party as the topic, before the sentence turns to the class.",
+     "vi": "で chỉ bối cảnh ăn uống. は đưa buổi tiệc làm chủ đề, trước khi câu sau chuyển sang lớp học."
+    }
+   },
+   {
+    "text": "バイン・ミーやお菓子を",
+    "label": {
+     "en": "banh mi, snacks and the like",
+     "vi": "bánh mì, bánh kẹo và các món tương tự"
+    },
+    "detail": {
+     "en": "や lists examples rather than every food item. を marks the listed food as what they will eat.",
+     "vi": "や liệt kê một số ví dụ chứ không kể hết các món. を đánh dấu những món sẽ được ăn."
+    },
+    "grammarIds": [
+     "g_051"
+    ]
+   },
+   {
+    "text": "食べます。",
+    "label": {
+     "en": "will eat",
+     "vi": "sẽ ăn"
+    },
+    "detail": {
+     "en": "The polite nonpast form describes a planned action. The people attending the party are the understood subject.",
+     "vi": "Dạng lịch sự phi quá khứ diễn tả hành động dự kiến. Chủ thể được hiểu là những người dự tiệc."
+    }
+   },
+   {
+    "text": "ベトナム語教室では、",
+    "label": {
+     "en": "in the Vietnamese class",
+     "vi": "trong lớp tiếng Việt"
+    },
+    "detail": {
+     "en": "で marks the setting for using the board; は shifts the topic to the class. 教室 refers to the class activity here.",
+     "vi": "で chỉ bối cảnh dùng bảng; は chuyển chủ đề sang lớp học. 教室 ở đây chỉ lớp học với tư cách hoạt động."
+    }
+   },
+   {
+    "text": "ホワイトボードを使いたいです。",
+    "label": {
+     "en": "want to use a whiteboard",
+     "vi": "muốn dùng bảng trắng"
+    },
+    "detail": {
+     "en": "使う → 使います → 使いたいです expresses the desired action. を marks the whiteboard as the thing to be used.",
+     "vi": "使う → 使います → 使いたいです diễn tả hành động mong muốn. を đánh dấu bảng trắng là thứ muốn sử dụng."
+    },
+    "grammarIds": [
+     "g_059"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "トゥアン：教室の準備はどうですか。",
+  "translation": {
+   "en": "Tuan: How is the classroom preparation going?",
+   "vi": "Tuấn: Chuẩn bị phòng học thế nào rồi?"
+  },
+  "together": {
+   "en": "Tuan asks how the classroom preparations are going. どうですか asks for their current state without specifying a particular task.",
+   "vi": "Tuấn hỏi việc chuẩn bị phòng học đến đâu rồi. どうですか hỏi tình hình hiện tại mà không giới hạn vào một công việc cụ thể."
+  },
+  "chunks": [
+   {
+    "text": "トゥアン：",
+    "label": {
+     "en": "Tuan:",
+     "vi": "Tuấn:"
+    },
+    "detail": {
+     "en": "The name and colon identify the speaker; they are not part of the spoken question.",
+     "vi": "Tên và dấu hai chấm cho biết người nói, không thuộc nội dung câu hỏi được nói ra."
+    }
+   },
+   {
+    "text": "教室の準備は",
+    "label": {
+     "en": "the classroom preparation",
+     "vi": "việc chuẩn bị phòng học"
+    },
+    "detail": {
+     "en": "の links 教室 to 準備: preparations for the classroom. は makes these preparations the topic.",
+     "vi": "の nối 教室 với 準備, tức việc chuẩn bị cho phòng học. は đưa việc chuẩn bị làm chủ đề."
+    },
+    "words": [
+     {
+      "text": "準備",
+      "kana": "じゅんび",
+      "meaning": {
+       "en": "preparation",
+       "vi": "sự chuẩn bị, việc chuẩn bị"
+      }
+     }
+    ]
+   },
+   {
+    "text": "どうですか。",
+    "label": {
+     "en": "how is it going?",
+     "vi": "thế nào rồi?"
+    },
+    "detail": {
+     "en": "どう asks about the state of the topic. ですか makes the question polite.",
+     "vi": "どう hỏi tình trạng của chủ đề. ですか tạo câu hỏi lịch sự."
+    },
+    "grammarIds": [
+     "g_020"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "さき：机はもう並べてあります。飲み物も買ってあります。",
+  "translation": {
+   "en": "Saki: The desks are already arranged. I’ve bought the drinks too.",
+   "vi": "Saki: Bàn đã được xếp sẵn rồi. Đồ uống cũng mua sẵn rồi."
+  },
+  "together": {
+   "en": "Saki reports completed preparations: the desks are arranged and the drinks have been bought. は and も replace object を, while てあります emphasizes that the tasks are done in readiness.",
+   "vi": "Saki báo các việc đã chuẩn bị xong: bàn được xếp sẵn và đồ uống đã mua. は và も thay を chỉ đối tượng; てあります nhấn mạnh công việc đã làm xong để sẵn sàng."
+  },
+  "chunks": [
+   {
+    "text": "さき：",
+    "label": {
+     "en": "Saki:",
+     "vi": "Saki:"
+    },
+    "detail": {
+     "en": "The speaker label introduces Saki’s reply to the preparation question.",
+     "vi": "Tên người nói mở đầu câu trả lời của Saki về việc chuẩn bị."
+    }
+   },
+   {
+    "text": "机はもう並べてあります。",
+    "label": {
+     "en": "the desks are already arranged",
+     "vi": "bàn đã xếp sẵn rồi"
+    },
+    "detail": {
+     "en": "並べる → 並べて + あります reports a completed preparation, with object 机 made the topic by は. もう means the arrangement is already finished.",
+     "vi": "並べる → 並べて + あります báo việc chuẩn bị đã hoàn tất; đối tượng 机 được đưa làm chủ đề bằng は. もう cho biết việc xếp bàn đã xong rồi."
+    },
+    "grammarIds": [
+     "g_164"
+    ],
+    "words": [
+     {
+      "text": "並べる",
+      "kana": "ならべる",
+      "meaning": {
+       "en": "to arrange, line up",
+       "vi": "xếp, sắp thành hàng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "飲み物も買ってあります。",
+    "label": {
+     "en": "the drinks have been bought too",
+     "vi": "đồ uống cũng đã mua sẵn"
+    },
+    "detail": {
+     "en": "買う → 買って + あります shows the drinks were bought in preparation. も replaces を and adds this completed task to the desk arrangement.",
+     "vi": "買う → 買って + あります cho biết đồ uống đã được mua để chuẩn bị. も thay を, thêm việc này vào việc xếp bàn đã xong."
+    },
+    "grammarIds": [
+     "g_164"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "さき：でも、さっき風で窓が開いて、ポスターが落ちました。",
+  "translation": {
+   "en": "Saki: But a moment ago the wind opened the window and the poster fell down.",
+   "vi": "Saki: Nhưng lúc nãy gió làm cửa sổ mở ra và tấm áp phích rơi xuống."
+  },
+  "together": {
+   "en": "Saki describes an unexpected interruption to the preparations. 開く and 落ちる describe what happened to the window and poster, without an agent deliberately acting on them.",
+   "vi": "Saki kể một sự cố bất ngờ khi chuẩn bị. 開く và 落ちる diễn tả điều xảy ra với cửa sổ và áp phích, không nêu ai chủ động tác động vào chúng."
+  },
+  "chunks": [
+   {
+    "text": "さき：でも、",
+    "label": {
+     "en": "Saki: but",
+     "vi": "Saki: nhưng"
+    },
+    "detail": {
+     "en": "でも contrasts this problem with the preparations already completed.",
+     "vi": "でも đưa ra sự cố trái với tình hình chuẩn bị đã xong ở trên."
+    }
+   },
+   {
+    "text": "さっき風で",
+    "label": {
+     "en": "a moment ago, because of the wind",
+     "vi": "lúc nãy do gió"
+    },
+    "detail": {
+     "en": "さっき places the event in the recent past. で marks 風 as the cause of the window opening.",
+     "vi": "さっき chỉ quá khứ vừa mới xảy ra. で đánh dấu 風 là nguyên nhân khiến cửa sổ mở ra."
+    }
+   },
+   {
+    "text": "窓が開いて、",
+    "label": {
+     "en": "the window opened and",
+     "vi": "cửa sổ mở ra rồi"
+    },
+    "detail": {
+     "en": "が marks the window as the subject of intransitive 開く, read あく. 開く → 開いて connects the opening to the poster’s fall.",
+     "vi": "が đánh dấu cửa sổ là chủ thể của tự động từ 開く, đọc là あく. 開く → 開いて nối việc cửa mở với việc áp phích rơi."
+    },
+    "grammarIds": [
+     "g_162"
+    ],
+    "words": [
+     {
+      "text": "開く",
+      "kana": "あく",
+      "meaning": {
+       "en": "to open (something opens)",
+       "vi": "mở ra (cửa tự mở)"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ポスターが落ちました。",
+    "label": {
+     "en": "the poster fell down",
+     "vi": "áp phích rơi xuống"
+    },
+    "detail": {
+     "en": "落ちる → 落ちました is the polite past of an intransitive verb. が marks the poster that fell; compare transitive 落とす, ‘drop something’.",
+     "vi": "落ちる → 落ちました là quá khứ lịch sự của tự động từ. が đánh dấu áp phích đã rơi; đối chiếu với ngoại động từ 落とす là ‘làm rơi’."
+    },
+    "grammarIds": [
+     "g_162"
+    ],
+    "words": [
+     {
+      "text": "落ちる",
+      "kana": "おちる",
+      "meaning": {
+       "en": "to fall, fall down",
+       "vi": "rơi, rơi xuống"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "今、窓を閉めて、ポスターをもう一度はりました。",
+  "translation": {
+   "en": "I’ve closed the window and put the poster up again.",
+   "vi": "Bây giờ mình đã đóng cửa sổ và dán lại áp phích."
+  },
+  "together": {
+   "en": "Saki has fixed the problem by closing the window and putting the poster up again. The objects take を because both verbs describe deliberate actions on things.",
+   "vi": "Saki đã xử lý sự cố bằng cách đóng cửa sổ và dán lại áp phích. Các đối tượng đi với を vì cả hai động từ đều chỉ hành động chủ động tác động lên vật."
+  },
+  "chunks": [
+   {
+    "text": "今、",
+    "label": {
+     "en": "just now",
+     "vi": "vừa xong"
+    },
+    "detail": {
+     "en": "With the past predicate here, 今 refers to what the speaker has just finished doing.",
+     "vi": "Khi đi với vị ngữ quá khứ trong câu này, 今 chỉ việc người nói vừa làm xong."
+    }
+   },
+   {
+    "text": "窓を閉めて、",
+    "label": {
+     "en": "closed the window and",
+     "vi": "đóng cửa sổ rồi"
+    },
+    "detail": {
+     "en": "を marks the object of transitive 閉める → 閉めて. This is someone closing the window, unlike intransitive 閉まる, ‘the window closes’.",
+     "vi": "を đánh dấu đối tượng của ngoại động từ 閉める → 閉めて. Đây là ai đó đóng cửa sổ, khác với tự động từ 閉まる nghĩa là ‘cửa đóng lại’."
+    },
+    "grammarIds": [
+     "g_161"
+    ]
+   },
+   {
+    "text": "ポスターをもう一度はりました。",
+    "label": {
+     "en": "put the poster up once more",
+     "vi": "đã dán lại áp phích"
+    },
+    "detail": {
+     "en": "を marks the poster being acted on; もう一度 means ‘once more’. はる → はりました puts the action of sticking it up in the polite past.",
+     "vi": "を đánh dấu áp phích là vật chịu tác động; もう一度 nghĩa là ‘một lần nữa’. はる → はりました diễn tả việc dán lên ở dạng quá khứ lịch sự."
+    },
+    "grammarIds": [
+     "g_161"
+    ],
+    "words": [
+     {
+      "text": "はる",
+      "kana": "はる",
+      "meaning": {
+       "en": "to stick, paste up",
+       "vi": "dán"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "トゥアン：ありがとう。黒板に何か書いてありますか。",
+  "translation": {
+   "en": "Tuan: Thanks. Is anything written on the blackboard?",
+   "vi": "Tuấn: Cảm ơn. Trên bảng có viết gì không?"
+  },
+  "together": {
+   "en": "After thanking Saki, Tuan asks about the blackboard’s prepared state. The question concerns what is already written there, rather than whether someone is writing now.",
+   "vi": "Sau khi cảm ơn Saki, Tuấn hỏi về tình trạng bảng đã chuẩn bị. Câu hỏi nói đến nội dung đã viết sẵn, không hỏi có ai đang viết hay không."
+  },
+  "chunks": [
+   {
+    "text": "トゥアン：ありがとう。",
+    "label": {
+     "en": "Tuan: thanks",
+     "vi": "Tuấn: cảm ơn"
+    },
+    "detail": {
+     "en": "The speaker label is followed by a short expression of thanks for the preparations and repairs.",
+     "vi": "Sau tên người nói là lời cảm ơn ngắn về việc chuẩn bị và xử lý sự cố."
+    }
+   },
+   {
+    "text": "黒板に",
+    "label": {
+     "en": "on the blackboard",
+     "vi": "trên bảng đen"
+    },
+    "detail": {
+     "en": "に marks the surface where the writing remains.",
+     "vi": "に chỉ bề mặt còn lưu lại chữ viết."
+    }
+   },
+   {
+    "text": "何か書いてありますか。",
+    "label": {
+     "en": "is anything written?",
+     "vi": "có viết sẵn gì không?"
+    },
+    "detail": {
+     "en": "何か means ‘something’ or ‘anything’; the subject particle が is omitted. 書く → 書いて + ありますか asks whether writing has been left there intentionally.",
+     "vi": "何か nghĩa là ‘cái gì đó’; trợ từ chủ ngữ が được lược bỏ. 書く → 書いて + ありますか hỏi xem có nội dung nào đã được chủ động viết sẵn ở đó không."
+    },
+    "grammarIds": [
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "さき：はい、「先生、ありがとう」と大きく書いてあります。",
+  "translation": {
+   "en": "Saki: Yes, “Thank you, teacher” is written in big letters.",
+   "vi": "Saki: Có, có viết to chữ “Cảm ơn thầy cô”."
+  },
+  "together": {
+   "en": "Saki confirms the blackboard message and describes the lettering. と marks what is written, while 大きく tells how it is written.",
+   "vi": "Saki xác nhận nội dung trên bảng và mô tả cỡ chữ. と đánh dấu nội dung được viết; 大きく cho biết chữ được viết như thế nào."
+  },
+  "chunks": [
+   {
+    "text": "さき：はい、",
+    "label": {
+     "en": "Saki: yes",
+     "vi": "Saki: có"
+    },
+    "detail": {
+     "en": "はい answers the preceding yes-or-no question affirmatively.",
+     "vi": "はい trả lời khẳng định cho câu hỏi có hay không ở trước."
+    }
+   },
+   {
+    "text": "「先生、ありがとう」と",
+    "label": {
+     "en": "‘Thank you, teacher’",
+     "vi": "‘Cảm ơn thầy cô’"
+    },
+    "detail": {
+     "en": "The quotation gives the exact message, and と marks it as the content of 書いてあります. 先生 addresses the teacher directly.",
+     "vi": "Lời trích nêu nguyên nội dung; と đánh dấu nội dung của 書いてあります. 先生 là lời gọi trực tiếp thầy cô."
+    }
+   },
+   {
+    "text": "大きく書いてあります。",
+    "label": {
+     "en": "is written in large letters",
+     "vi": "được viết bằng chữ to"
+    },
+    "detail": {
+     "en": "大きい → 大きく changes the adjective into an adverb modifying 書く. 書く → 書いて + あります describes the message remaining on the board after someone wrote it.",
+     "vi": "大きい → 大きく chuyển tính từ sang dạng bổ nghĩa cho hành động 書く. 書く → 書いて + あります diễn tả dòng chữ còn trên bảng sau khi đã có người viết."
+    },
+    "grammarIds": [
+     "g_163",
+     "g_158"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "部屋の電気は、ドアの横のスイッチでつけてください。",
+  "translation": {
+   "en": "Turn on the room light with the switch beside the door.",
+   "vi": "Hãy bật đèn phòng bằng công tắc cạnh cửa."
+  },
+  "together": {
+   "en": "The instruction tells guests to turn on the room light using the switch beside the door. The light is the object, while で marks the means used to act on it.",
+   "vi": "Hướng dẫn yêu cầu khách bật đèn phòng bằng công tắc cạnh cửa. Đèn là đối tượng chịu tác động; で chỉ phương tiện dùng để bật đèn."
+  },
+  "chunks": [
+   {
+    "text": "部屋の電気は、",
+    "label": {
+     "en": "the room light",
+     "vi": "đèn trong phòng"
+    },
+    "detail": {
+     "en": "の connects the room to 電気, here meaning the light. は makes the light the topic in place of object を.",
+     "vi": "の nối căn phòng với 電気, ở đây nghĩa là đèn. は đưa đèn làm chủ đề, thay cho を chỉ đối tượng."
+    },
+    "words": [
+     {
+      "text": "電気",
+      "kana": "でんき",
+      "meaning": {
+       "en": "electricity; here: light",
+       "vi": "điện; ở đây: đèn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ドアの横のスイッチで",
+    "label": {
+     "en": "with the switch beside the door",
+     "vi": "bằng công tắc cạnh cửa"
+    },
+    "detail": {
+     "en": "ドアの横の modifies スイッチ: the switch at the side of the door. で marks the means used to turn on the light.",
+     "vi": "ドアの横の bổ nghĩa cho スイッチ: công tắc ở cạnh cửa. で đánh dấu phương tiện dùng để bật đèn."
+    },
+    "grammarIds": [
+     "g_062"
+    ]
+   },
+   {
+    "text": "つけてください。",
+    "label": {
+     "en": "please turn it on",
+     "vi": "hãy bật đèn"
+    },
+    "detail": {
+     "en": "つける → つけて + ください makes a polite request. つける is transitive, with 電気 as its understood object marked earlier by topic は.",
+     "vi": "つける → つけて + ください tạo lời yêu cầu lịch sự. つける là ngoại động từ; đối tượng là 電気 đã được đưa làm chủ đề bằng は ở trước."
+    },
+    "grammarIds": [
+     "g_161",
+     "g_099"
+    ],
+    "words": [
+     {
+      "text": "つける",
+      "kana": "つける",
+      "meaning": {
+       "en": "to attach; here: turn on a light",
+       "vi": "gắn; ở đây: bật đèn"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "エアコンのリモコンは机の上に置いてあります。",
+  "translation": {
+   "en": "The air-conditioner remote has been left on the desk.",
+   "vi": "Điều khiển điều hòa đã được để sẵn trên bàn."
+  },
+  "together": {
+   "en": "The remote is described as already placed on the desk for guests to find. は makes it the topic of a resulting-state sentence.",
+   "vi": "Điều khiển được nói là đã đặt sẵn trên bàn để khách tìm thấy. は đưa điều khiển làm chủ đề của câu miêu tả trạng thái kết quả."
+  },
+  "chunks": [
+   {
+    "text": "エアコンのリモコンは",
+    "label": {
+     "en": "the air-conditioner remote",
+     "vi": "điều khiển điều hòa"
+    },
+    "detail": {
+     "en": "の identifies which appliance the remote belongs to. は presents that remote as the topic.",
+     "vi": "の cho biết điều khiển thuộc thiết bị nào. は đưa chiếc điều khiển ấy làm chủ đề."
+    }
+   },
+   {
+    "text": "机の上に",
+    "label": {
+     "en": "on the desk",
+     "vi": "trên bàn"
+    },
+    "detail": {
+     "en": "の links 机 to 上; に marks the location where the remote was placed.",
+     "vi": "の nối 机 với 上; に đánh dấu nơi đã đặt điều khiển."
+    }
+   },
+   {
+    "text": "置いてあります。",
+    "label": {
+     "en": "has been left ready",
+     "vi": "đã được đặt sẵn"
+    },
+    "detail": {
+     "en": "置く → 置いて + あります describes the remote’s lasting position after someone placed it. The item that would take が is already the topic with は.",
+     "vi": "置く → 置いて + あります diễn tả vị trí còn giữ nguyên sau khi ai đó đặt điều khiển. Vật vốn đi với が đã được đưa làm chủ đề bằng は."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "置く",
+      "kana": "おく",
+      "meaning": {
+       "en": "to put, place",
+       "vi": "đặt, để"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "タオルは棚に入れてあります。",
+  "translation": {
+   "en": "Towels have been put on the shelf.",
+   "vi": "Khăn tắm đã được để sẵn trong kệ."
+  },
+  "together": {
+   "en": "The sentence tells guests where the towels have been put. 入れてあります describes an intentional arrangement that remains ready for use.",
+   "vi": "Câu cho khách biết khăn đã được để ở đâu. 入れてあります diễn tả việc sắp đặt có chủ ý, với kết quả vẫn sẵn cho người dùng."
+  },
+  "chunks": [
+   {
+    "text": "タオルは",
+    "label": {
+     "en": "the towels",
+     "vi": "khăn tắm"
+    },
+    "detail": {
+     "en": "は makes the towels the topic of the location description.",
+     "vi": "は đưa khăn tắm làm chủ đề của phần mô tả vị trí."
+    }
+   },
+   {
+    "text": "棚に",
+    "label": {
+     "en": "in the shelving unit",
+     "vi": "trong kệ"
+    },
+    "detail": {
+     "en": "に marks the destination of putting the towels away and their resulting location.",
+     "vi": "に chỉ nơi khăn được cho vào, cũng là vị trí khăn đang ở."
+    }
+   },
+   {
+    "text": "入れてあります。",
+    "label": {
+     "en": "have been put away",
+     "vi": "đã được để sẵn"
+    },
+    "detail": {
+     "en": "入れる → 入れて + あります describes the result of someone putting the towels there. 入れる is transitive; compare 入る, ‘go in’.",
+     "vi": "入れる → 入れて + あります diễn tả trạng thái sau khi ai đó đã cho khăn vào đó. 入れる là ngoại động từ; đối chiếu với 入る nghĩa là ‘đi vào’."
+    },
+    "grammarIds": [
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "夜11時に玄関のドアが閉まります。",
+  "translation": {
+   "en": "The front door closes at 11 p.m.",
+   "vi": "Cửa chính đóng lúc 11 giờ đêm."
+  },
+  "together": {
+   "en": "The notice gives the time when the front door closes. 閉まる describes the door’s change of state without naming who closes it.",
+   "vi": "Thông báo nêu giờ cửa chính đóng. 閉まる diễn tả sự thay đổi trạng thái của cửa mà không nêu ai đóng cửa."
+  },
+  "chunks": [
+   {
+    "text": "夜11時に",
+    "label": {
+     "en": "at 11 p.m.",
+     "vi": "lúc 11 giờ đêm"
+    },
+    "detail": {
+     "en": "夜 makes clear that 11時 is at night. に marks the scheduled time.",
+     "vi": "夜 cho biết 11時 là giờ ban đêm. に đánh dấu thời điểm theo lịch."
+    }
+   },
+   {
+    "text": "玄関のドアが",
+    "label": {
+     "en": "the front door",
+     "vi": "cửa ở lối vào"
+    },
+    "detail": {
+     "en": "玄関の identifies the entrance door. が marks it as the subject of 閉まります.",
+     "vi": "玄関の xác định cửa ở lối vào. が đánh dấu cửa là chủ thể của 閉まります."
+    }
+   },
+   {
+    "text": "閉まります。",
+    "label": {
+     "en": "closes",
+     "vi": "đóng lại"
+    },
+    "detail": {
+     "en": "閉まる → 閉まります is the polite form of an intransitive verb. It describes the door closing; transitive 閉める would describe someone closing it.",
+     "vi": "閉まる → 閉まります là dạng lịch sự của tự động từ. Mẫu này diễn tả cửa đóng lại; ngoại động từ 閉める diễn tả ai đó đóng cửa."
+    },
+    "grammarIds": [
+     "g_162"
+    ],
+    "words": [
+     {
+      "text": "閉まる",
+      "kana": "しまる",
+      "meaning": {
+       "en": "to close (a door closes)",
+       "vi": "đóng lại (cửa đóng)"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "11時より遅くなる人は、受付に言ってください。ドアの番号を教えます。",
+  "translation": {
+   "en": "If you will be later than 11, tell reception. We will give you the door code.",
+   "vi": "Ai về muộn hơn 11 giờ hãy báo lễ tân. Chúng tôi sẽ cho mã cửa."
+  },
+  "together": {
+   "en": "A clause describing late guests modifies 人, so the instruction applies to anyone returning after eleven. The second sentence promises the door code, with the guesthouse staff as the understood subject.",
+   "vi": "Mệnh đề nói về khách về muộn bổ nghĩa cho 人, nên hướng dẫn áp dụng cho ai về sau 11 giờ. Câu sau hứa cung cấp mã cửa; chủ thể được hiểu là nhân viên nhà nghỉ."
+  },
+  "chunks": [
+   {
+    "text": "11時より遅くなる人は、",
+    "label": {
+     "en": "anyone who will be later than eleven",
+     "vi": "ai sẽ về muộn hơn 11 giờ"
+    },
+    "detail": {
+     "en": "より gives the comparison point; 遅い → 遅く + なる means ‘become late’. 11時より遅くなる modifies 人, and は makes those guests the topic.",
+     "vi": "より nêu mốc so sánh; 遅い → 遅く + なる nghĩa là ‘trở nên muộn’. 11時より遅くなる bổ nghĩa cho 人; は đưa những khách ấy làm chủ đề."
+    },
+    "grammarIds": [
+     "g_160"
+    ]
+   },
+   {
+    "text": "受付に",
+    "label": {
+     "en": "to reception",
+     "vi": "với lễ tân"
+    },
+    "detail": {
+     "en": "に marks the person or desk to inform. 受付 refers to the reception staff or counter here.",
+     "vi": "に chỉ người hoặc bộ phận cần báo. 受付 ở đây là nhân viên hay quầy lễ tân."
+    },
+    "words": [
+     {
+      "text": "受付",
+      "kana": "うけつけ",
+      "meaning": {
+       "en": "reception, reception desk",
+       "vi": "lễ tân, quầy tiếp tân"
+      }
+     }
+    ]
+   },
+   {
+    "text": "言ってください。",
+    "label": {
+     "en": "please tell us",
+     "vi": "hãy báo"
+    },
+    "detail": {
+     "en": "言う → 言って + ください makes a polite request to notify reception. The information to give is that the guest will be late.",
+     "vi": "言う → 言って + ください tạo lời yêu cầu lịch sự báo cho lễ tân. Nội dung cần báo là việc khách sẽ về muộn."
+    },
+    "grammarIds": [
+     "g_099"
+    ]
+   },
+   {
+    "text": "ドアの番号を",
+    "label": {
+     "en": "the door code",
+     "vi": "mã cửa"
+    },
+    "detail": {
+     "en": "の links ドア to 番号. を marks the information the staff will provide; 番号 refers to the numeric entry code here.",
+     "vi": "の nối ドア với 番号. を đánh dấu thông tin nhân viên sẽ cung cấp; 番号 ở đây là mã số để mở cửa."
+    },
+    "words": [
+     {
+      "text": "番号",
+      "kana": "ばんごう",
+      "meaning": {
+       "en": "number; here: door code",
+       "vi": "số; ở đây: mã số cửa"
+      }
+     }
+    ]
+   },
+   {
+    "text": "教えます。",
+    "label": {
+     "en": "we will tell you",
+     "vi": "chúng tôi sẽ cho biết"
+    },
+    "detail": {
+     "en": "教える means ‘tell’ or ‘give information’ here. The subject changes to the staff, while the guest is the understood recipient.",
+     "vi": "教える ở đây nghĩa là ‘cho biết, cung cấp thông tin’. Chủ thể chuyển sang nhân viên, còn người nhận thông tin được hiểu là khách."
+    },
+    "words": [
+     {
+      "text": "教える",
+      "kana": "おしえる",
+      "meaning": {
+       "en": "to teach / tell; here: tell",
+       "vi": "dạy / cho biết; ở đây: cho biết"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "台所の冷蔵庫は自由に使ってもいいです。",
+  "translation": {
+   "en": "You may use the kitchen fridge freely.",
+   "vi": "Có thể dùng tủ lạnh trong bếp thoải mái."
+  },
+  "together": {
+   "en": "Guests are given permission to use the kitchen refrigerator freely. 自由に describes how they may use it, and てもいいです grants permission.",
+   "vi": "Khách được phép dùng tủ lạnh trong bếp thoải mái. 自由に diễn tả cách sử dụng; てもいいです cho biết sự cho phép."
+  },
+  "chunks": [
+   {
+    "text": "台所の冷蔵庫は",
+    "label": {
+     "en": "the kitchen refrigerator",
+     "vi": "tủ lạnh trong bếp"
+    },
+    "detail": {
+     "en": "の links the kitchen to its refrigerator. は makes the refrigerator the topic in place of object を.",
+     "vi": "の nối nhà bếp với tủ lạnh ở đó. は đưa tủ lạnh làm chủ đề, thay cho を chỉ đối tượng."
+    }
+   },
+   {
+    "text": "自由に",
+    "label": {
+     "en": "freely",
+     "vi": "thoải mái, tự do"
+    },
+    "detail": {
+     "en": "自由 is a な-adjective; adding に makes it modify the action 使う. It describes freedom of use within the guesthouse rules.",
+     "vi": "自由 là tính từ な; thêm に để bổ nghĩa cho hành động 使う. Cụm này diễn tả việc dùng thoải mái trong phạm vi quy định của nhà nghỉ."
+    },
+    "grammarIds": [
+     "g_158"
+    ],
+    "words": [
+     {
+      "text": "自由",
+      "kana": "じゆう",
+      "meaning": {
+       "en": "free, unrestricted",
+       "vi": "tự do, thoải mái"
+      }
+     }
+    ]
+   },
+   {
+    "text": "使ってもいいです。",
+    "label": {
+     "en": "you may use it",
+     "vi": "có thể sử dụng"
+    },
+    "detail": {
+     "en": "使う → 使って + もいいです grants permission. This says using it is allowed, rather than describing ability.",
+     "vi": "使う → 使って + もいいです diễn tả sự cho phép. Mẫu này cho biết được phép dùng, không phải nói về khả năng sử dụng."
+    },
+    "grammarIds": [
+     "g_098_1"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "でも、自分の食べ物には名前を書いてください。",
+  "translation": {
+   "en": "But please write your name on your own food.",
+   "vi": "Nhưng hãy ghi tên lên đồ ăn của mình."
+  },
+  "together": {
+   "en": "The permission to use the refrigerator comes with a request to label one’s own food. には makes the food the topical surface, while 名前 is what guests should write.",
+   "vi": "Đi kèm quyền dùng tủ lạnh là yêu cầu ghi tên lên đồ ăn của mình. には đưa bề mặt cần ghi tên làm chủ đề, còn 名前 là nội dung cần viết."
+  },
+  "chunks": [
+   {
+    "text": "でも、",
+    "label": {
+     "en": "but",
+     "vi": "nhưng"
+    },
+    "detail": {
+     "en": "Introduces a rule that qualifies the preceding permission to use the refrigerator.",
+     "vi": "Mở quy định đi kèm với lời cho phép dùng tủ lạnh ở trước."
+    }
+   },
+   {
+    "text": "自分の食べ物には",
+    "label": {
+     "en": "on your own food",
+     "vi": "lên đồ ăn của mình"
+    },
+    "detail": {
+     "en": "自分の modifies 食べ物. に marks the surface receiving the writing; は highlights it as the topic of the instruction.",
+     "vi": "自分の bổ nghĩa cho 食べ物. に chỉ bề mặt được ghi lên; は nhấn mạnh đó là chủ đề của lời hướng dẫn."
+    },
+    "words": [
+     {
+      "text": "自分",
+      "kana": "じぶん",
+      "meaning": {
+       "en": "oneself, one’s own",
+       "vi": "bản thân, của mình"
+      }
+     }
+    ]
+   },
+   {
+    "text": "名前を書いてください。",
+    "label": {
+     "en": "please write your name",
+     "vi": "hãy ghi tên"
+    },
+    "detail": {
+     "en": "を marks 名前 as what to write. 書く → 書いて + ください makes a polite request.",
+     "vi": "を đánh dấu 名前 là nội dung cần viết. 書く → 書いて + ください tạo lời yêu cầu lịch sự."
+    },
+    "grammarIds": [
+     "g_099"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "朝ご飯のパンは、もう台所に用意してあります。",
+  "translation": {
+   "en": "Breakfast bread has already been set out in the kitchen.",
+   "vi": "Bánh mì bữa sáng đã được chuẩn bị sẵn trong bếp."
+  },
+  "together": {
+   "en": "The notice reassures guests that the breakfast bread has already been prepared in the kitchen. てあります emphasizes completed preparation for the coming meal.",
+   "vi": "Thông báo cho khách biết bánh mì bữa sáng đã được chuẩn bị sẵn trong bếp. てあります nhấn mạnh việc đã làm xong để chuẩn bị cho bữa ăn sắp tới."
+  },
+  "chunks": [
+   {
+    "text": "朝ご飯のパンは、",
+    "label": {
+     "en": "the breakfast bread",
+     "vi": "bánh mì cho bữa sáng"
+    },
+    "detail": {
+     "en": "の identifies the bread as being for breakfast. は replaces object を to make the prepared item the topic.",
+     "vi": "の xác định đây là bánh mì dành cho bữa sáng. は thay を chỉ đối tượng để đưa món đã chuẩn bị làm chủ đề."
+    }
+   },
+   {
+    "text": "もう台所に",
+    "label": {
+     "en": "already in the kitchen",
+     "vi": "đã sẵn trong bếp"
+    },
+    "detail": {
+     "en": "もう means ‘already’. に marks where the bread has been prepared and left.",
+     "vi": "もう nghĩa là ‘đã… rồi’. に chỉ nơi bánh mì được chuẩn bị và để sẵn."
+    }
+   },
+   {
+    "text": "用意してあります。",
+    "label": {
+     "en": "has been prepared",
+     "vi": "đã chuẩn bị sẵn"
+    },
+    "detail": {
+     "en": "用意する → 用意して + あります presents the preparation as completed for later use. The prepared bread is the topic marked earlier by は.",
+     "vi": "用意する → 用意して + あります cho biết việc chuẩn bị đã hoàn tất để dùng sau đó. Bánh mì được chuẩn bị là chủ đề đã đánh dấu bằng は ở trước."
+    },
+    "grammarIds": [
+     "g_164"
+    ],
+    "words": [
+     {
+      "text": "用意する",
+      "kana": "よういする",
+      "meaning": {
+       "en": "to prepare, get ready",
+       "vi": "chuẩn bị sẵn"
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

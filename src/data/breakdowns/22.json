@@ -1,0 +1,2825 @@
+[
+ {
+  "sentence": "日本語には、和語と漢語があります。",
+  "translation": {
+   "en": "Japanese has native Japanese words and Sino-Japanese words.",
+   "vi": "Tiếng Nhật có từ thuần Nhật và từ Hán Nhật."
+  },
+  "together": {
+   "en": "The sentence introduces two kinds of words in Japanese. には sets Japanese as the language being discussed, and と joins the two categories.",
+   "vi": "Câu giới thiệu hai loại từ trong tiếng Nhật. には nêu phạm vi đang nói đến, còn と nối hai loại từ."
+  },
+  "chunks": [
+   {
+    "text": "日本語には、",
+    "label": {
+     "en": "in Japanese",
+     "vi": "trong tiếng Nhật"
+    },
+    "detail": {
+     "en": "に sets the domain in which the words exist; は makes that domain the topic.",
+     "vi": "に chỉ phạm vi tồn tại của các từ; は đưa phạm vi đó thành chủ đề."
+    }
+   },
+   {
+    "text": "和語と漢語が",
+    "label": {
+     "en": "native and Sino-Japanese words",
+     "vi": "từ thuần Nhật và từ Hán Nhật"
+    },
+    "detail": {
+     "en": "と joins two nouns in a complete pair. が marks what exists.",
+     "vi": "と nối hai danh từ thành một cặp được nêu đầy đủ. が đánh dấu những gì tồn tại."
+    },
+    "words": [
+     {
+      "text": "和語",
+      "kana": "わご",
+      "meaning": {
+       "en": "native Japanese word",
+       "vi": "từ thuần Nhật"
+      }
+     },
+     {
+      "text": "漢語",
+      "kana": "かんご",
+      "meaning": {
+       "en": "Sino-Japanese word",
+       "vi": "từ Hán Nhật"
+      }
+     }
+    ]
+   },
+   {
+    "text": "あります。",
+    "label": {
+     "en": "there are",
+     "vi": "có"
+    },
+    "detail": {
+     "en": "あります expresses the existence of things, here categories of words.",
+     "vi": "あります diễn tả sự tồn tại của sự vật, ở đây là các loại từ."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "和語は「行く」「名前」などの日本に昔からある言葉で、漢語は「料理」「試験」などの中国語から来た言葉です。",
+  "translation": {
+   "en": "Native words such as iku and namae have long existed in Japan; Sino-Japanese words such as ryori and shiken came from Chinese.",
+   "vi": "Từ thuần Nhật như 行く, 名前 có từ lâu ở Nhật; từ Hán Nhật như 料理, 試験 bắt nguồn từ tiếng Trung."
+  },
+  "together": {
+   "en": "The two halves contrast the origins of 和語 and 漢語. Each definition places a clause before 言葉 to explain which words are meant.",
+   "vi": "Hai vế đối chiếu nguồn gốc của 和語 và 漢語. Mỗi định nghĩa đặt một mệnh đề trước 言葉 để làm rõ đó là những từ nào."
+  },
+  "chunks": [
+   {
+    "text": "和語は「行く」「名前」などの",
+    "label": {
+     "en": "native words such as 行く and 名前",
+     "vi": "từ thuần Nhật như 行く, 名前"
+    },
+    "detail": {
+     "en": "は introduces the first category. など gives examples, and の links the example group to the later noun 言葉.",
+     "vi": "は nêu loại từ thứ nhất. など dùng để đưa ví dụ; の nối nhóm ví dụ với danh từ 言葉 ở phía sau."
+    }
+   },
+   {
+    "text": "日本に昔からある言葉で、",
+    "label": {
+     "en": "words long present in Japan",
+     "vi": "những từ có từ lâu ở Nhật"
+    },
+    "detail": {
+     "en": "日本に marks where the words exist, and 昔から means since long ago. ある modifies 言葉; で is the linking form of です, connecting the two definitions.",
+     "vi": "日本に chỉ nơi các từ tồn tại, còn 昔から là từ xa xưa. ある bổ nghĩa cho 言葉; で là dạng nối của です, nối hai định nghĩa."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "漢語は「料理」「試験」などの",
+    "label": {
+     "en": "Sino-Japanese words such as 料理 and 試験",
+     "vi": "từ Hán Nhật như 料理, 試験"
+    },
+    "detail": {
+     "en": "The second は shifts to the contrasting category. などの again introduces examples of the words described next.",
+     "vi": "は thứ hai chuyển sang loại từ được đối chiếu. などの tiếp tục đưa ra ví dụ cho nhóm từ được giải thích ngay sau đó."
+    }
+   },
+   {
+    "text": "中国語から来た言葉です。",
+    "label": {
+     "en": "words that came from Chinese",
+     "vi": "là những từ bắt nguồn từ tiếng Trung"
+    },
+    "detail": {
+     "en": "から marks the source. 来る → 来た is the plain past form, which modifies 言葉 to describe its origin.",
+     "vi": "から chỉ nguồn gốc. 来る → 来た là thể quá khứ thường, bổ nghĩa cho 言葉 để nói các từ bắt nguồn từ đâu."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ベトナム語も同じで、ベトナムに昔からある言葉と、中国語から来た言葉があります。",
+  "translation": {
+   "en": "Vietnamese similarly has longstanding native words and words from Chinese.",
+   "vi": "Tiếng Việt cũng có từ bản địa lâu đời và từ bắt nguồn từ tiếng Trung."
+  },
+  "together": {
+   "en": "Vietnamese is compared with Japanese: both have native words and words from Chinese. The two modifying clauses identify the groups joined by と.",
+   "vi": "Tiếng Việt được so sánh với tiếng Nhật: cả hai đều có từ bản địa và từ gốc Trung. Hai mệnh đề bổ nghĩa xác định hai nhóm từ được nối bằng と."
+  },
+  "chunks": [
+   {
+    "text": "ベトナム語も同じで、",
+    "label": {
+     "en": "Vietnamese is similar too",
+     "vi": "tiếng Việt cũng vậy"
+    },
+    "detail": {
+     "en": "も adds Vietnamese to the comparison. 同じで is the linking form of 同じです and leads into the explanation.",
+     "vi": "も thêm tiếng Việt vào sự so sánh. 同じで là dạng nối của 同じです, dẫn vào phần giải thích."
+    }
+   },
+   {
+    "text": "ベトナムに昔からある言葉と、",
+    "label": {
+     "en": "longstanding native words in Vietnam and",
+     "vi": "những từ có từ lâu ở Việt Nam và"
+    },
+    "detail": {
+     "en": "ベトナムに昔からある modifies 言葉. と joins this group to the next group of words.",
+     "vi": "ベトナムに昔からある bổ nghĩa cho 言葉. と nối nhóm này với nhóm từ tiếp theo."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "中国語から来た言葉が",
+    "label": {
+     "en": "words that came from Chinese",
+     "vi": "những từ bắt nguồn từ tiếng Trung"
+    },
+    "detail": {
+     "en": "来た modifies 言葉, with 中国語から giving the source. が marks the two linked groups as what exists.",
+     "vi": "来た bổ nghĩa cho 言葉, còn 中国語から chỉ nguồn gốc. が đánh dấu cả hai nhóm được nối là những gì tồn tại."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "あります。",
+    "label": {
+     "en": "there are",
+     "vi": "có"
+    },
+    "detail": {
+     "en": "あります completes the statement that Vietnamese contains both kinds of words.",
+     "vi": "あります kết lại ý rằng tiếng Việt có cả hai loại từ này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "ベトナム語にある中国語から来た言葉は「漢越語」と言います。",
+  "translation": {
+   "en": "Vietnamese words of Chinese origin are called Sino-Vietnamese words.",
+   "vi": "Từ gốc Trung trong tiếng Việt gọi là từ Hán Việt."
+  },
+  "together": {
+   "en": "The long topic identifies words of Chinese origin used in Vietnamese. と言います then gives the name of this category: 漢越語.",
+   "vi": "Phần chủ đề dài xác định những từ gốc Trung có trong tiếng Việt. と言います nêu tên gọi của nhóm từ đó: 漢越語, tức từ Hán Việt."
+  },
+  "chunks": [
+   {
+    "text": "ベトナム語にある",
+    "label": {
+     "en": "found in Vietnamese",
+     "vi": "có trong tiếng Việt"
+    },
+    "detail": {
+     "en": "に marks the language in which the words exist. ある modifies the later noun 言葉.",
+     "vi": "に chỉ ngôn ngữ có những từ này. ある bổ nghĩa cho danh từ 言葉 phía sau."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "中国語から来た言葉は",
+    "label": {
+     "en": "as for words from Chinese",
+     "vi": "còn những từ bắt nguồn từ tiếng Trung"
+    },
+    "detail": {
+     "en": "中国語から来た also modifies 言葉, explaining their origin. は makes the whole noun phrase the topic.",
+     "vi": "中国語から来た cũng bổ nghĩa cho 言葉, giải thích nguồn gốc của chúng. は đưa cả cụm danh từ thành chủ đề."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "「漢越語」と言います。",
+    "label": {
+     "en": "are called Sino-Vietnamese words",
+     "vi": "được gọi là từ Hán Việt"
+    },
+    "detail": {
+     "en": "と marks the name used with 言います. This is a naming expression, so the meaning is ‘are called’, not that the words themselves speak.",
+     "vi": "と đánh dấu tên gọi đi với 言います. Đây là cách nêu tên, nên hiểu là ‘được gọi là’, không phải các từ tự nói."
+    },
+    "grammarIds": [
+     "g_185"
+    ],
+    "words": [
+     {
+      "text": "漢越語",
+      "kana": "かんえつご",
+      "meaning": {
+       "en": "Sino-Vietnamese word",
+       "vi": "từ Hán Việt"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "日本語の「注意」「国歌」という漢語は、ベトナム語の漢越語でもそれぞれ「CHÚ Ý」「QUỐC CA」で、意味も読み方も大体同じです。",
+  "translation": {
+   "en": "The Sino-Japanese words 注意 and 国歌 correspond to chú ý and quốc ca in Vietnamese, with broadly similar meanings and readings.",
+   "vi": "Các từ Hán Nhật 注意, 国歌 tương ứng “chú ý”, “quốc ca”, nghĩa và cách đọc khá giống nhau."
+  },
+  "together": {
+   "en": "The sentence pairs 注意 with CHÚ Ý and 国歌 with QUỐC CA in that order. It then says both the meanings and the readings are broadly similar.",
+   "vi": "Câu ghép 注意 với CHÚ Ý và 国歌 với QUỐC CA theo đúng thứ tự. Sau đó câu cho biết cả nghĩa lẫn cách đọc đều khá giống nhau."
+  },
+  "chunks": [
+   {
+    "text": "日本語の「注意」「国歌」という漢語は、",
+    "label": {
+     "en": "the Japanese words called 注意 and 国歌",
+     "vi": "các từ Hán Nhật là 注意 và 国歌"
+    },
+    "detail": {
+     "en": "日本語の identifies the language. The quoted names + という modify 漢語, and は makes these words the topic.",
+     "vi": "日本語の xác định ngôn ngữ. Các tên được trích dẫn + という bổ nghĩa cho 漢語; は nêu những từ này làm chủ đề."
+    },
+    "grammarIds": [
+     "g_185"
+    ],
+    "words": [
+     {
+      "text": "注意",
+      "kana": "ちゅうい",
+      "meaning": {
+       "en": "attention, care",
+       "vi": "chú ý, cẩn thận"
+      }
+     },
+     {
+      "text": "国歌",
+      "kana": "こっか",
+      "meaning": {
+       "en": "national anthem",
+       "vi": "quốc ca"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ベトナム語の漢越語でも",
+    "label": {
+     "en": "in Vietnamese Sino-Vietnamese vocabulary too",
+     "vi": "trong lớp từ Hán Việt của tiếng Việt cũng"
+    },
+    "detail": {
+     "en": "で sets the language category for the comparison, and も adds it as a corresponding case. Here でも does not mean ‘but’.",
+     "vi": "で nêu phạm vi từ vựng để so sánh; も thêm ý ‘cũng’. でも ở đây không mang nghĩa ‘nhưng’."
+    }
+   },
+   {
+    "text": "それぞれ「CHÚ Ý」「QUỐC CA」で、",
+    "label": {
+     "en": "are respectively CHÚ Ý and QUỐC CA",
+     "vi": "lần lượt là CHÚ Ý và QUỐC CA"
+    },
+    "detail": {
+     "en": "それぞれ pairs the items in the same order as before. で links this identification to the statement about similarity.",
+     "vi": "それぞれ ghép các mục theo thứ tự đã nêu. で nối phần xác định từ tương ứng với nhận xét về sự giống nhau."
+    }
+   },
+   {
+    "text": "意味も読み方も",
+    "label": {
+     "en": "both meaning and reading",
+     "vi": "cả nghĩa lẫn cách đọc"
+    },
+    "detail": {
+     "en": "Repeating も after both nouns emphasizes that the comparison applies to both aspects. 読み方 is 読む → 読み + 方, ‘way of reading’.",
+     "vi": "Lặp も sau hai danh từ nhấn mạnh sự so sánh áp dụng cho cả hai mặt. 読み方 được tạo từ 読む → 読み + 方, nghĩa là ‘cách đọc’."
+    },
+    "words": [
+     {
+      "text": "読み方",
+      "kana": "よみかた",
+      "meaning": {
+       "en": "reading, way of reading",
+       "vi": "cách đọc"
+      }
+     }
+    ]
+   },
+   {
+    "text": "大体同じです。",
+    "label": {
+     "en": "are broadly similar",
+     "vi": "khá giống nhau"
+    },
+    "detail": {
+     "en": "大体 softens 同じ: they are similar overall, without claiming every sound or use is identical.",
+     "vi": "大体 giới hạn mức độ của 同じ: nhìn chung giống nhau, không khẳng định mọi âm hay cách dùng đều trùng khớp."
+    },
+    "words": [
+     {
+      "text": "大体",
+      "kana": "だいたい",
+      "meaning": {
+       "en": "generally, roughly",
+       "vi": "nhìn chung, đại thể"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "でも、「部長（BỘ TRƯỞNG）」は日本語とベトナム語で、意味が全然違います。",
+  "translation": {
+   "en": "But 部長 and bộ trưởng have completely different meanings in the two languages.",
+   "vi": "Nhưng 部長 và “bộ trưởng” khác nghĩa hoàn toàn giữa hai ngôn ngữ."
+  },
+  "together": {
+   "en": "でも introduces an exception to the similarities just described. The same-looking term has a different meaning in Japanese and Vietnamese.",
+   "vi": "でも mở ra một trường hợp khác với những điểm giống nhau vừa nêu. Từ có hình thức tương ứng này lại mang nghĩa khác nhau trong tiếng Nhật và tiếng Việt."
+  },
+  "chunks": [
+   {
+    "text": "でも、",
+    "label": {
+     "en": "however",
+     "vi": "nhưng"
+    },
+    "detail": {
+     "en": "でも connects this sentence to the previous comparison and introduces a contrast.",
+     "vi": "でも nối với phần so sánh trước và đưa ra ý đối lập."
+    }
+   },
+   {
+    "text": "「部長（BỘ TRƯỞNG）」は",
+    "label": {
+     "en": "as for 部長 and bộ trưởng",
+     "vi": "còn 部長 và bộ trưởng"
+    },
+    "detail": {
+     "en": "は makes the quoted term the topic; the parentheses give its Vietnamese counterpart for comparison.",
+     "vi": "は nêu từ được trích dẫn làm chủ đề; phần trong ngoặc đưa từ tiếng Việt tương ứng để so sánh."
+    },
+    "words": [
+     {
+      "text": "部長",
+      "kana": "ぶちょう",
+      "meaning": {
+       "en": "department manager",
+       "vi": "trưởng phòng"
+      }
+     }
+    ]
+   },
+   {
+    "text": "日本語とベトナム語で、",
+    "label": {
+     "en": "between Japanese and Vietnamese",
+     "vi": "giữa tiếng Nhật và tiếng Việt"
+    },
+    "detail": {
+     "en": "と joins the two languages. で sets the two language contexts in which the meanings are compared.",
+     "vi": "と nối hai ngôn ngữ. で nêu hai phạm vi ngôn ngữ được dùng để đối chiếu nghĩa."
+    }
+   },
+   {
+    "text": "意味が全然違います。",
+    "label": {
+     "en": "the meanings are completely different",
+     "vi": "nghĩa hoàn toàn khác nhau"
+    },
+    "detail": {
+     "en": "が marks what differs. 全然 strongly emphasizes 違います; 全然違う is a common expression meaning ‘completely different’.",
+     "vi": "が đánh dấu điều khác nhau. 全然 nhấn mạnh 違います; 全然違う là cách nói thường gặp với nghĩa ‘hoàn toàn khác’."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "日本語では「会社の偉い人」、ベトナム語では「国の偉い人」です。面白いですね。",
+  "translation": {
+   "en": "In Japanese it is an important person in a company; in Vietnamese, an important person in the government. Interesting, isn’t it?",
+   "vi": "Trong tiếng Nhật là người chức cao trong công ty; tiếng Việt là người chức cao của nhà nước. Thú vị nhỉ."
+  },
+  "together": {
+   "en": "The two language contexts explain the difference: a senior company figure in Japanese, a senior government figure in Vietnamese. The final ね invites agreement with the observation.",
+   "vi": "Hai phạm vi ngôn ngữ làm rõ sự khác biệt: người chức cao trong công ty ở tiếng Nhật, người chức cao của nhà nước ở tiếng Việt. ね cuối câu gợi người đọc cùng chia sẻ nhận xét thú vị này."
+  },
+  "chunks": [
+   {
+    "text": "日本語では",
+    "label": {
+     "en": "in Japanese",
+     "vi": "trong tiếng Nhật"
+    },
+    "detail": {
+     "en": "で marks the language context, and は sets it up in contrast with Vietnamese.",
+     "vi": "で chỉ phạm vi ngôn ngữ; は nêu phạm vi này để đối chiếu với tiếng Việt."
+    }
+   },
+   {
+    "text": "「会社の偉い人」、",
+    "label": {
+     "en": "an important person in a company",
+     "vi": "người có chức cao trong công ty"
+    },
+    "detail": {
+     "en": "会社の links the person to a company. 偉い modifies 人 and here refers to high status; です is understood before the comma.",
+     "vi": "会社の gắn người đó với công ty. 偉い bổ nghĩa cho 人, ở đây chỉ địa vị cao; です được lược trước dấu phẩy."
+    },
+    "words": [
+     {
+      "text": "偉い",
+      "kana": "えらい",
+      "meaning": {
+       "en": "great; here: high-ranking",
+       "vi": "vĩ đại; ở đây: có địa vị cao"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ベトナム語では",
+    "label": {
+     "en": "in Vietnamese",
+     "vi": "trong tiếng Việt"
+    },
+    "detail": {
+     "en": "では introduces the contrasting language context using the same structure as the first phrase.",
+     "vi": "では nêu phạm vi tiếng Việt để đối chiếu, dùng cùng cấu trúc với cụm đầu."
+    }
+   },
+   {
+    "text": "「国の偉い人」です。",
+    "label": {
+     "en": "an important government figure",
+     "vi": "là người có chức cao của nhà nước"
+    },
+    "detail": {
+     "en": "国の connects the person to the country or state. です completes the second definition.",
+     "vi": "国の gắn người đó với quốc gia hay nhà nước. です kết thúc định nghĩa thứ hai."
+    }
+   },
+   {
+    "text": "面白いですね。",
+    "label": {
+     "en": "interesting, isn’t it?",
+     "vi": "thú vị nhỉ"
+    },
+    "detail": {
+     "en": "面白い gives the writer’s reaction. ね invites the reader to share that reaction.",
+     "vi": "面白い nêu cảm nhận của người viết. ね gợi người đọc cùng đồng tình với cảm nhận ấy."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "みなさんは、車を運転したことがありますか。",
+  "translation": {
+   "en": "Have you ever driven a car?",
+   "vi": "Các bạn đã từng lái ô tô chưa?"
+  },
+  "together": {
+   "en": "The question asks about the readers’ experience of driving, rather than whether they can drive. The experience pattern uses the past form before ことがあります.",
+   "vi": "Câu hỏi về trải nghiệm từng lái xe của người đọc, không hỏi khả năng lái xe. Mẫu diễn tả trải nghiệm dùng thể た trước ことがあります."
+  },
+  "chunks": [
+   {
+    "text": "みなさんは、",
+    "label": {
+     "en": "as for you all",
+     "vi": "các bạn"
+    },
+    "detail": {
+     "en": "は addresses the readers as the topic of the question.",
+     "vi": "は đưa người đọc thành chủ đề của câu hỏi."
+    }
+   },
+   {
+    "text": "車を",
+    "label": {
+     "en": "a car",
+     "vi": "ô tô"
+    },
+    "detail": {
+     "en": "を marks the object of 運転する: the vehicle being driven.",
+     "vi": "を đánh dấu tân ngữ của 運転する: phương tiện được lái."
+    }
+   },
+   {
+    "text": "運転したことがありますか。",
+    "label": {
+     "en": "have you ever driven?",
+     "vi": "đã từng lái chưa?"
+    },
+    "detail": {
+     "en": "運転する → 運転した + ことがあります asks about a past experience. か makes it a polite question.",
+     "vi": "運転する → 運転した + ことがあります hỏi về trải nghiệm đã từng có. か tạo câu hỏi lịch sự."
+    },
+    "grammarIds": [
+     "g_083"
+    ],
+    "words": [
+     {
+      "text": "運転する",
+      "kana": "うんてんする",
+      "meaning": {
+       "en": "to drive",
+       "vi": "lái xe"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "道路には、色々な標識があります。",
+  "translation": {
+   "en": "There are various signs on roads.",
+   "vi": "Trên đường có nhiều biển báo."
+  },
+  "together": {
+   "en": "The location is introduced first, then the sentence says what can be found there. 色々な modifies 標識, emphasizing the variety of road signs.",
+   "vi": "Câu nêu địa điểm trước rồi nói ở đó có gì. 色々な bổ nghĩa cho 標識, nhấn mạnh có nhiều loại biển báo."
+  },
+  "chunks": [
+   {
+    "text": "道路には、",
+    "label": {
+     "en": "on roads",
+     "vi": "trên đường"
+    },
+    "detail": {
+     "en": "に marks the place where signs exist; は makes that location the topic.",
+     "vi": "に đánh dấu nơi có biển báo; は nêu địa điểm ấy làm chủ đề."
+    },
+    "words": [
+     {
+      "text": "道路",
+      "kana": "どうろ",
+      "meaning": {
+       "en": "road",
+       "vi": "đường, đường sá"
+      }
+     }
+    ]
+   },
+   {
+    "text": "色々な標識が",
+    "label": {
+     "en": "various signs",
+     "vi": "nhiều loại biển báo"
+    },
+    "detail": {
+     "en": "色々 is used with な before 標識. が marks the signs as what exists.",
+     "vi": "色々 dùng な khi đứng trước 標識. が đánh dấu biển báo là những gì có ở đó."
+    },
+    "words": [
+     {
+      "text": "標識",
+      "kana": "ひょうしき",
+      "meaning": {
+       "en": "sign, road sign",
+       "vi": "biển báo"
+      }
+     }
+    ]
+   },
+   {
+    "text": "あります。",
+    "label": {
+     "en": "there are",
+     "vi": "có"
+    },
+    "detail": {
+     "en": "あります is used for the existence of nonliving things such as road signs.",
+     "vi": "あります dùng để nói sự tồn tại của vật vô tri như biển báo."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "標識は、車を運転する人に道路のルールや注意することを教えるもので、道路の横や上にあります。",
+  "translation": {
+   "en": "Signs tell drivers road rules and things to watch out for; they are beside or above the road.",
+   "vi": "Biển báo cho người lái biết luật đường và điều cần chú ý, nằm bên cạnh hoặc trên đường."
+  },
+  "together": {
+   "en": "The first part defines signs by what they tell drivers. もので connects that definition to the second part, which gives their location.",
+   "vi": "Phần đầu định nghĩa biển báo qua thông tin chúng cung cấp cho người lái. もので nối định nghĩa ấy với phần sau nói về vị trí của biển."
+  },
+  "chunks": [
+   {
+    "text": "標識は、",
+    "label": {
+     "en": "as for signs",
+     "vi": "còn biển báo"
+    },
+    "detail": {
+     "en": "は introduces the item being defined.",
+     "vi": "は nêu đối tượng sắp được định nghĩa."
+    }
+   },
+   {
+    "text": "車を運転する人に",
+    "label": {
+     "en": "to people who drive cars",
+     "vi": "cho người lái ô tô"
+    },
+    "detail": {
+     "en": "車を運転する modifies 人. に marks the people receiving information from 教える.",
+     "vi": "車を運転する bổ nghĩa cho 人. に đánh dấu người nhận thông tin từ 教える."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "道路のルールや注意することを",
+    "label": {
+     "en": "road rules and things to watch out for",
+     "vi": "luật đường và những điều cần chú ý"
+    },
+    "detail": {
+     "en": "や lists examples of information. 注意する + こと turns the action into ‘things to watch out for’, and を marks the information conveyed.",
+     "vi": "や liệt kê các ví dụ về thông tin. 注意する + こと diễn đạt ‘những điều cần chú ý’; を đánh dấu nội dung được cho biết."
+    },
+    "words": [
+     {
+      "text": "注意する",
+      "kana": "ちゅういする",
+      "meaning": {
+       "en": "to pay attention, take care",
+       "vi": "chú ý, cẩn thận"
+      }
+     }
+    ]
+   },
+   {
+    "text": "教えるもので、",
+    "label": {
+     "en": "are things that tell people",
+     "vi": "là thứ cho biết"
+    },
+    "detail": {
+     "en": "教える modifies もの to define the function of signs. で links this definition to the next statement; here 教える means ‘tell’ or ‘inform’.",
+     "vi": "教える bổ nghĩa cho もの để nêu chức năng của biển báo. で nối với ý tiếp theo; 教える ở đây là ‘cho biết, thông báo’."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "教える",
+      "kana": "おしえる",
+      "meaning": {
+       "en": "to teach; here: inform, tell",
+       "vi": "dạy; ở đây: cho biết, thông báo"
+      }
+     }
+    ]
+   },
+   {
+    "text": "道路の横や上にあります。",
+    "label": {
+     "en": "are beside or above roads",
+     "vi": "nằm bên cạnh hoặc phía trên đường"
+    },
+    "detail": {
+     "en": "横や上 lists possible locations relative to the road. に marks where the signs are.",
+     "vi": "横や上 liệt kê các vị trí so với đường. に đánh dấu nơi biển báo được đặt."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "よく見るのは、「止まれ」と書いてある赤い▽の標識です。",
+  "translation": {
+   "en": "A common one is the red inverted-triangle sign with “Stop” written on it.",
+   "vi": "Thường gặp là biển tam giác ngược đỏ ghi “Dừng lại”."
+  },
+  "together": {
+   "en": "よく見るのは highlights a commonly seen sign, then identifies it by its writing, color and shape. 書いてある describes writing that remains visible on the sign.",
+   "vi": "よく見るのは nêu loại biển thường gặp, rồi xác định nó qua chữ viết, màu và hình dạng. 書いてある diễn tả chữ đã được viết và còn hiện trên biển."
+  },
+  "chunks": [
+   {
+    "text": "よく見るのは、",
+    "label": {
+     "en": "what you often see",
+     "vi": "thứ thường thấy"
+    },
+    "detail": {
+     "en": "見る + の turns the clause into a noun phrase, and は introduces what will be identified next.",
+     "vi": "見る + の biến mệnh đề thành cụm danh từ; は nêu đối tượng sẽ được xác định ở phần sau."
+    },
+    "grammarIds": [
+     "g_174"
+    ]
+   },
+   {
+    "text": "「止まれ」と書いてある",
+    "label": {
+     "en": "with ‘Stop’ written on it",
+     "vi": "có ghi ‘Dừng lại’"
+    },
+    "detail": {
+     "en": "止まる → 止まれ is a direct command. と quotes the wording, and 書く → 書いてある describes its written result; this whole phrase modifies 標識.",
+     "vi": "止まる → 止まれ là mệnh lệnh trực tiếp. と dẫn nội dung; 書く → 書いてある diễn tả chữ đã được viết và còn đó, và cả cụm bổ nghĩa cho 標識."
+    },
+    "grammarIds": [
+     "g_179",
+     "g_185",
+     "g_163",
+     "g_165"
+    ]
+   },
+   {
+    "text": "赤い▽の標識です。",
+    "label": {
+     "en": "is the red inverted-triangle sign",
+     "vi": "là biển tam giác ngược màu đỏ"
+    },
+    "detail": {
+     "en": "赤い gives the color, and ▽の gives the shape of 標識. です completes the identification of the common sign.",
+     "vi": "赤い nêu màu, còn ▽の nêu hình dạng của 標識. です kết lại phần xác định biển thường gặp."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "運転する人は、この標識の前で止まらなければなりません。",
+  "translation": {
+   "en": "Drivers must stop before this sign.",
+   "vi": "Người lái phải dừng trước biển này."
+  },
+  "together": {
+   "en": "The sentence states the rule for drivers at this sign. The stopping point is marked with で, and the negative-based ending expresses an obligation.",
+   "vi": "Câu nêu quy định cho người lái khi gặp biển này. で đánh dấu chỗ dừng, còn đuôi câu dựa trên thể phủ định diễn tả nghĩa bắt buộc."
+  },
+  "chunks": [
+   {
+    "text": "運転する人は、",
+    "label": {
+     "en": "drivers",
+     "vi": "người lái xe"
+    },
+    "detail": {
+     "en": "運転する modifies 人, ‘people who drive’. は makes those people the topic of the rule.",
+     "vi": "運転する bổ nghĩa cho 人, tức ‘người lái xe’. は nêu những người này làm chủ đề của quy định."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "この標識の前で",
+    "label": {
+     "en": "in front of this sign",
+     "vi": "trước biển này"
+    },
+    "detail": {
+     "en": "の links 標識 to 前. で marks the place where the stopping action must happen.",
+     "vi": "の nối 標識 với 前. で đánh dấu nơi phải thực hiện hành động dừng."
+    }
+   },
+   {
+    "text": "止まらなければなりません。",
+    "label": {
+     "en": "must stop",
+     "vi": "phải dừng lại"
+    },
+    "detail": {
+     "en": "止まる → 止まらない → 止まらなければなりません means ‘must stop’. The negative form is part of the obligation pattern, not an instruction to keep moving.",
+     "vi": "止まる → 止まらない → 止まらなければなりません nghĩa là ‘phải dừng’. Thể phủ định nằm trong mẫu bắt buộc, không mang ý bảo tiếp tục đi."
+    },
+    "grammarIds": [
+     "g_088"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "横の道路から、他の車が出てくるかもしれないからです。",
+  "translation": {
+   "en": "That is because another car may come out from a side road.",
+   "vi": "Vì có thể có xe khác từ đường bên đi ra."
+  },
+  "together": {
+   "en": "This gives the reason drivers must stop: another car might emerge from the side road. かもしれない presents a possibility, and からです links it to the preceding rule.",
+   "vi": "Câu giải thích lý do người lái phải dừng: có thể có xe khác từ đường bên đi ra. かもしれない nêu khả năng, còn からです nối lý do này với quy định ở câu trước."
+  },
+  "chunks": [
+   {
+    "text": "横の道路から、",
+    "label": {
+     "en": "from a side road",
+     "vi": "từ đường bên"
+    },
+    "detail": {
+     "en": "横の modifies 道路. から marks the starting point of the other car’s movement.",
+     "vi": "横の bổ nghĩa cho 道路. から chỉ nơi xe khác bắt đầu đi ra."
+    }
+   },
+   {
+    "text": "他の車が",
+    "label": {
+     "en": "another car",
+     "vi": "xe khác"
+    },
+    "detail": {
+     "en": "他の modifies 車, and が marks the car as the subject of 出てくる.",
+     "vi": "他の bổ nghĩa cho 車; が đánh dấu xe là chủ thể của 出てくる."
+    }
+   },
+   {
+    "text": "出てくるかもしれないからです。",
+    "label": {
+     "en": "because one might come out",
+     "vi": "vì có thể có xe đi ra"
+    },
+    "detail": {
+     "en": "出る → 出て + くる describes emerging toward the road in view. Add かもしれない for possibility, then からです to give the reason for stopping.",
+     "vi": "出る → 出て + くる diễn tả xe từ bên trong đi ra phía đường đang nói đến. Thêm かもしれない để nêu khả năng, rồi からです để giải thích lý do phải dừng."
+    },
+    "grammarIds": [
+     "g_138"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "でも、他の色々な国では、「止まれ」の標識は赤い八角形だそうです。",
+  "translation": {
+   "en": "In various other countries, however, the stop sign is apparently a red octagon.",
+   "vi": "Nhưng nghe nói ở nhiều nước khác, biển dừng là hình bát giác đỏ."
+  },
+  "together": {
+   "en": "The passage contrasts Japan’s triangular stop sign with signs in other countries. だそうです presents the octagonal shape as reported information.",
+   "vi": "Đoạn văn đối chiếu biển dừng hình tam giác ở Nhật với biển ở nước khác. だそうです cho biết hình bát giác là thông tin được nghe lại."
+  },
+  "chunks": [
+   {
+    "text": "でも、",
+    "label": {
+     "en": "however",
+     "vi": "nhưng"
+    },
+    "detail": {
+     "en": "でも introduces a contrast with the Japanese sign described earlier.",
+     "vi": "でも đưa ra ý đối chiếu với biển ở Nhật vừa được mô tả."
+    }
+   },
+   {
+    "text": "他の色々な国では、",
+    "label": {
+     "en": "in various other countries",
+     "vi": "ở nhiều nước khác"
+    },
+    "detail": {
+     "en": "他の and 色々な both modify 国. では sets these countries as the contrasting location.",
+     "vi": "他の và 色々な cùng bổ nghĩa cho 国. では nêu các nước này làm phạm vi đối chiếu."
+    }
+   },
+   {
+    "text": "「止まれ」の標識は",
+    "label": {
+     "en": "stop signs",
+     "vi": "biển ‘Dừng lại’"
+    },
+    "detail": {
+     "en": "の links the quoted command 止まれ to 標識 as its wording. は introduces the sign whose shape will be described.",
+     "vi": "の nối mệnh lệnh được trích dẫn 止まれ với 標識 để chỉ nội dung biển. は nêu biển sắp được mô tả hình dạng."
+    },
+    "grammarIds": [
+     "g_179"
+    ]
+   },
+   {
+    "text": "赤い八角形だそうです。",
+    "label": {
+     "en": "are reportedly red octagons",
+     "vi": "nghe nói là hình bát giác đỏ"
+    },
+    "detail": {
+     "en": "The noun predicate 赤い八角形だ keeps だ before hearsay そうです. This reports information rather than describing how something looks.",
+     "vi": "Vị ngữ danh từ 赤い八角形だ giữ だ trước そうです chỉ thông tin nghe lại. Mẫu này thuật lại thông tin, không diễn tả vẻ bề ngoài."
+    },
+    "grammarIds": [
+     "g_144"
+    ],
+    "words": [
+     {
+      "text": "八角形",
+      "kana": "はっかくけい",
+      "meaning": {
+       "en": "octagon",
+       "vi": "hình bát giác"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "それから、赤い○の中に白い「－」がある標識もあります。",
+  "translation": {
+   "en": "There is also a red circle with a white horizontal bar.",
+   "vi": "Còn có biển tròn đỏ với vạch ngang trắng."
+  },
+  "together": {
+   "en": "This adds another sign to the description. The clause about a white bar inside a red circle modifies 標識, and も says this sign also exists.",
+   "vi": "Câu bổ sung một loại biển khác. Mệnh đề nói có vạch trắng trong vòng tròn đỏ bổ nghĩa cho 標識; も mang ý cũng có biển này."
+  },
+  "chunks": [
+   {
+    "text": "それから、",
+    "label": {
+     "en": "also, next",
+     "vi": "ngoài ra"
+    },
+    "detail": {
+     "en": "それから adds the next item in the explanation of road signs.",
+     "vi": "それから thêm mục tiếp theo trong phần giải thích về biển báo."
+    }
+   },
+   {
+    "text": "赤い○の中に",
+    "label": {
+     "en": "inside a red circle",
+     "vi": "trong vòng tròn đỏ"
+    },
+    "detail": {
+     "en": "赤い describes ○, read as a circle. の中に marks the location of the white bar.",
+     "vi": "赤い miêu tả ○, tức hình tròn. の中に đánh dấu vị trí của vạch trắng."
+    }
+   },
+   {
+    "text": "白い「－」がある標識も",
+    "label": {
+     "en": "also a sign with a white bar",
+     "vi": "cũng có biển có vạch trắng"
+    },
+    "detail": {
+     "en": "白い「－」がある modifies 標識: a sign where a white bar is present. も adds this sign to the earlier examples.",
+     "vi": "白い「－」がある bổ nghĩa cho 標識: biển có một vạch trắng. も bổ sung biển này vào các ví dụ trước."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "あります。",
+    "label": {
+     "en": "there is",
+     "vi": "có"
+    },
+    "detail": {
+     "en": "あります is the main predicate, saying that this kind of sign exists.",
+     "vi": "あります là vị ngữ chính, cho biết có loại biển này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "これは、この道に入るなという意味で、細い道路でよく見る標識です。",
+  "translation": {
+   "en": "This means “Do not enter this road” and is often seen on narrow roads.",
+   "vi": "Biển này nghĩa là “Không được vào đường này”, hay gặp ở đường hẹp."
+  },
+  "together": {
+   "en": "The sign’s message is first explained as a prohibition. The last clause says where people commonly see this type of sign.",
+   "vi": "Thông điệp của biển được giải thích trước bằng một lời cấm. Mệnh đề cuối nói nơi thường gặp loại biển này."
+  },
+  "chunks": [
+   {
+    "text": "これは、",
+    "label": {
+     "en": "this sign",
+     "vi": "biển này"
+    },
+    "detail": {
+     "en": "これ refers to the red-circle sign just described. は makes it the topic.",
+     "vi": "これ chỉ biển tròn đỏ vừa được mô tả. は nêu biển này làm chủ đề."
+    }
+   },
+   {
+    "text": "この道に入るなという意味で、",
+    "label": {
+     "en": "means ‘Do not enter this road’",
+     "vi": "có nghĩa là ‘Không được vào đường này’"
+    },
+    "detail": {
+     "en": "に marks the destination. 入る + な is a direct prohibition; という意味 explains its message, and で connects to the next description.",
+     "vi": "に chỉ đích đến. 入る + な tạo lời cấm trực tiếp; という意味 giải thích thông điệp, còn で nối sang phần mô tả tiếp theo."
+    },
+    "grammarIds": [
+     "g_180",
+     "g_182"
+    ]
+   },
+   {
+    "text": "細い道路でよく見る標識です。",
+    "label": {
+     "en": "is a sign often seen on narrow roads",
+     "vi": "là biển thường gặp ở đường hẹp"
+    },
+    "detail": {
+     "en": "で marks where people see it. 細い describes the road’s narrow width, and よく見る modifies 標識.",
+     "vi": "で chỉ nơi người ta nhìn thấy biển. 細い miêu tả bề ngang hẹp của đường; よく見る bổ nghĩa cho 標識."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "アメリカでは、この道に入るなという意味の標識は、赤い□の中に「WRONG WAY」と書いてあるそうです。",
+  "translation": {
+   "en": "In America, apparently a sign meaning not to enter has “WRONG WAY” written inside a red rectangle.",
+   "vi": "Nghe nói ở Mỹ biển nghĩa không được vào có chữ “WRONG WAY” trong hình chữ nhật đỏ."
+  },
+  "together": {
+   "en": "The topic is the American sign with the same prohibitory meaning. The final そうです reports what is written on it as information the writer has heard.",
+   "vi": "Chủ đề là biển ở Mỹ có cùng ý nghĩa cấm vào. そうです ở cuối thuật lại thông tin người viết nghe được về chữ ghi trên biển."
+  },
+  "chunks": [
+   {
+    "text": "アメリカでは、",
+    "label": {
+     "en": "in America",
+     "vi": "ở Mỹ"
+    },
+    "detail": {
+     "en": "では sets America as the location and contrasts it with the earlier sign.",
+     "vi": "では nêu Mỹ làm địa điểm được nói đến và đối chiếu với biển trước."
+    }
+   },
+   {
+    "text": "この道に入るなという意味の標識は、",
+    "label": {
+     "en": "the sign meaning ‘Do not enter this road’",
+     "vi": "biển có nghĩa ‘Không được vào đường này’"
+    },
+    "detail": {
+     "en": "入る + な is a prohibition. という意味の modifies 標識, identifying the sign by its meaning; は makes the full phrase the topic.",
+     "vi": "入る + な là lời cấm. という意味の bổ nghĩa cho 標識, xác định biển theo ý nghĩa; は đưa cả cụm thành chủ đề."
+    },
+    "grammarIds": [
+     "g_180",
+     "g_182"
+    ]
+   },
+   {
+    "text": "赤い□の中に",
+    "label": {
+     "en": "inside a red rectangle",
+     "vi": "trong hình chữ nhật đỏ"
+    },
+    "detail": {
+     "en": "の中に marks where the writing appears. The symbol □ supplies the sign’s shape in the source text.",
+     "vi": "の中に chỉ nơi có chữ viết. Ký hiệu □ thể hiện hình dạng biển trong văn bản gốc."
+    }
+   },
+   {
+    "text": "「WRONG WAY」と書いてあるそうです。",
+    "label": {
+     "en": "reportedly has ‘WRONG WAY’ written on it",
+     "vi": "nghe nói có ghi ‘WRONG WAY’"
+    },
+    "detail": {
+     "en": "と quotes the written wording. 書く → 書いてある describes the remaining writing, and plain 書いてある + そうです reports this information.",
+     "vi": "と dẫn nội dung được viết. 書く → 書いてある diễn tả chữ đã viết và còn đó; dạng thường 書いてある + そうです thuật lại thông tin này."
+    },
+    "grammarIds": [
+     "g_185",
+     "g_163",
+     "g_144"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "他にも、面白い標識があります。例えば、動物の絵が描いてある標識です。",
+  "translation": {
+   "en": "There are other interesting signs, such as signs with animal pictures.",
+   "vi": "Còn có biển thú vị khác, như biển vẽ động vật."
+  },
+  "together": {
+   "en": "The first sentence introduces additional interesting signs. The second gives animal-picture signs as an example, with 描いてある describing an intentionally drawn picture that remains visible.",
+   "vi": "Câu đầu giới thiệu thêm các biển thú vị. Câu sau lấy biển có hình động vật làm ví dụ; 描いてある diễn tả hình đã được vẽ và còn hiện trên biển."
+  },
+  "chunks": [
+   {
+    "text": "他にも、",
+    "label": {
+     "en": "besides these",
+     "vi": "ngoài ra còn"
+    },
+    "detail": {
+     "en": "他に means ‘besides these’, and も adds further examples to the discussion.",
+     "vi": "他に nghĩa là ‘ngoài những cái này’; も thêm ý còn có các ví dụ khác."
+    }
+   },
+   {
+    "text": "面白い標識があります。",
+    "label": {
+     "en": "there are interesting signs",
+     "vi": "có các biển thú vị"
+    },
+    "detail": {
+     "en": "面白い modifies 標識, and が marks what exists with あります.",
+     "vi": "面白い bổ nghĩa cho 標識; が đánh dấu sự vật tồn tại với あります."
+    }
+   },
+   {
+    "text": "例えば、",
+    "label": {
+     "en": "for example",
+     "vi": "ví dụ"
+    },
+    "detail": {
+     "en": "例えば introduces a specific illustration of the interesting signs.",
+     "vi": "例えば mở đầu một ví dụ cụ thể về các biển thú vị."
+    }
+   },
+   {
+    "text": "動物の絵が描いてある標識です。",
+    "label": {
+     "en": "signs with animal pictures drawn on them",
+     "vi": "là biển có vẽ hình động vật"
+    },
+    "detail": {
+     "en": "動物の絵 is the picture that remains on the sign. 描く → 描いてある expresses that result, and the whole clause modifies 標識.",
+     "vi": "動物の絵 là hình còn trên biển. 描く → 描いてある diễn tả trạng thái kết quả đó; cả mệnh đề bổ nghĩa cho 標識."
+    },
+    "grammarIds": [
+     "g_163",
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "描く",
+      "kana": "えがく",
+      "meaning": {
+       "en": "to draw, depict",
+       "vi": "vẽ, khắc họa"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "この標識は、この道路に動物が来るかもしれないから、気を付けろという意味で、山や田んぼが多い所にあります。",
+  "translation": {
+   "en": "These mean to be careful because animals might come onto the road; they are found where there are many mountains or rice fields.",
+   "vi": "Biển có nghĩa hãy cẩn thận vì động vật có thể ra đường; có ở nơi nhiều núi hay ruộng."
+  },
+  "together": {
+   "en": "The warning is motivated by the possibility of animals entering the road. After explaining the message ‘Be careful’, the sentence gives the kinds of places where these signs stand.",
+   "vi": "Lời cảnh báo xuất phát từ khả năng động vật đi ra đường. Sau khi giải thích thông điệp ‘Hãy cẩn thận’, câu nêu những nơi có loại biển này."
+  },
+  "chunks": [
+   {
+    "text": "この標識は、",
+    "label": {
+     "en": "this sign",
+     "vi": "biển này"
+    },
+    "detail": {
+     "en": "は introduces the animal-warning sign as the topic.",
+     "vi": "は nêu biển cảnh báo động vật làm chủ đề."
+    }
+   },
+   {
+    "text": "この道路に動物が来るかもしれないから、",
+    "label": {
+     "en": "because animals might come onto this road",
+     "vi": "vì động vật có thể ra đường này"
+    },
+    "detail": {
+     "en": "に marks the destination and が marks the animals as the subject. 来る + かもしれない expresses possibility; から gives the reason for the warning.",
+     "vi": "に chỉ đích đến, còn が đánh dấu động vật là chủ thể. 来る + かもしれない nêu khả năng; から đưa lý do cho lời cảnh báo."
+    },
+    "grammarIds": [
+     "g_138"
+    ]
+   },
+   {
+    "text": "気を付けろという意味で、",
+    "label": {
+     "en": "means ‘Be careful’",
+     "vi": "có nghĩa là ‘Hãy cẩn thận’"
+    },
+    "detail": {
+     "en": "気を付ける → 気を付けろ is a direct imperative. という意味 explains the message, and で links it to the location statement.",
+     "vi": "気を付ける → 気を付けろ là thể mệnh lệnh trực tiếp. という意味 giải thích thông điệp; で nối với phần nói về vị trí."
+    },
+    "grammarIds": [
+     "g_179",
+     "g_182"
+    ],
+    "words": [
+     {
+      "text": "気を付ける",
+      "kana": "きをつける",
+      "meaning": {
+       "en": "to be careful, watch out",
+       "vi": "cẩn thận, chú ý"
+      }
+     }
+    ]
+   },
+   {
+    "text": "山や田んぼが多い所に",
+    "label": {
+     "en": "in places with many mountains or rice fields",
+     "vi": "ở nơi có nhiều núi hay ruộng lúa"
+    },
+    "detail": {
+     "en": "や lists examples of landscape features. 山や田んぼが多い modifies 所, and に marks where the signs stand.",
+     "vi": "や liệt kê các dạng cảnh quan làm ví dụ. 山や田んぼが多い bổ nghĩa cho 所; に đánh dấu nơi có biển."
+    },
+    "words": [
+     {
+      "text": "田んぼ",
+      "kana": "たんぼ",
+      "meaning": {
+       "en": "rice field",
+       "vi": "ruộng lúa"
+      }
+     }
+    ]
+   },
+   {
+    "text": "あります。",
+    "label": {
+     "en": "are found",
+     "vi": "có"
+    },
+    "detail": {
+     "en": "あります completes the main statement about where these signs are located.",
+     "vi": "あります kết lại ý chính về nơi có những biển báo này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "オーストラリアではカンガルーの絵が描いてあるそうです。",
+  "translation": {
+   "en": "In Australia, kangaroos are apparently pictured.",
+   "vi": "Nghe nói ở Úc có vẽ chuột túi."
+  },
+  "together": {
+   "en": "Australia provides a specific example of the animal signs. The picture is described with てある, while そうです marks the whole claim as reported information.",
+   "vi": "Úc là một ví dụ cụ thể về biển có hình động vật. てある mô tả hình đã được vẽ, còn そうです đánh dấu cả thông tin là điều được nghe lại."
+  },
+  "chunks": [
+   {
+    "text": "オーストラリアでは",
+    "label": {
+     "en": "in Australia",
+     "vi": "ở Úc"
+    },
+    "detail": {
+     "en": "では sets the country as the context for this example.",
+     "vi": "では nêu quốc gia làm phạm vi của ví dụ này."
+    }
+   },
+   {
+    "text": "カンガルーの絵が",
+    "label": {
+     "en": "a picture of a kangaroo",
+     "vi": "hình chuột túi"
+    },
+    "detail": {
+     "en": "の links the animal to its picture. が marks the picture that has been drawn and remains visible.",
+     "vi": "の nối con vật với hình của nó. が đánh dấu hình đã được vẽ và còn hiện trên biển."
+    }
+   },
+   {
+    "text": "描いてあるそうです。",
+    "label": {
+     "en": "is reportedly drawn on the sign",
+     "vi": "nghe nói được vẽ trên biển"
+    },
+    "detail": {
+     "en": "描く → 描いてある describes the resulting picture. Add hearsay そうです to the plain form 描いてある to report what the writer has heard.",
+     "vi": "描く → 描いてある mô tả hình vẽ còn lại. Thêm そうです chỉ thông tin nghe lại vào dạng thường 描いてある để thuật lại điều người viết nghe được."
+    },
+    "grammarIds": [
+     "g_163",
+     "g_144"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "山田様　XYZ社の石井と言います。",
+  "translation": {
+   "en": "Dear Yamada, I am Ishii from XYZ Company.",
+   "vi": "Kính gửi Yamada, tôi là Ishii của công ty XYZ."
+  },
+  "together": {
+   "en": "The email first addresses Yamada respectfully, then the sender introduces himself as Ishii from XYZ Company. と言います is a polite way to give one’s name.",
+   "vi": "Email mở đầu bằng cách kính gửi Yamada, sau đó người gửi giới thiệu mình là Ishii thuộc công ty XYZ. と言います là cách lịch sự để xưng tên."
+  },
+  "chunks": [
+   {
+    "text": "山田様　",
+    "label": {
+     "en": "Dear Yamada",
+     "vi": "kính gửi Yamada"
+    },
+    "detail": {
+     "en": "様 is a respectful title used after the recipient’s name in business correspondence.",
+     "vi": "様 là kính xưng đặt sau tên người nhận trong thư từ công việc."
+    }
+   },
+   {
+    "text": "XYZ社の",
+    "label": {
+     "en": "from XYZ Company",
+     "vi": "thuộc công ty XYZ"
+    },
+    "detail": {
+     "en": "社 means ‘company’ after the company name. の links that affiliation to 石井.",
+     "vi": "社 mang nghĩa ‘công ty’ sau tên công ty. の nối đơn vị công tác đó với 石井."
+    }
+   },
+   {
+    "text": "石井と言います。",
+    "label": {
+     "en": "I am called Ishii",
+     "vi": "tôi tên là Ishii"
+    },
+    "detail": {
+     "en": "と marks the name being given with 言います. The understood subject is the sender, so this is a self-introduction.",
+     "vi": "と đánh dấu tên được nêu với 言います. Chủ thể được hiểu là người gửi nên đây là lời tự giới thiệu."
+    },
+    "grammarIds": [
+     "g_185"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "山田様が興味があると言っていたモンゴルの商品です。ぜひご検討ください。",
+  "translation": {
+   "en": "Here are the Mongolian products you said you were interested in. Please consider them.",
+   "vi": "Đây là sản phẩm Mông Cổ anh/chị từng nói quan tâm. Xin xem xét."
+  },
+  "together": {
+   "en": "The products are identified as the ones Yamada previously said he was interested in. The second sentence politely asks him to consider them.",
+   "vi": "Các sản phẩm được xác định là những món Yamada từng nói mình quan tâm. Câu sau lịch sự đề nghị người nhận xem xét chúng."
+  },
+  "chunks": [
+   {
+    "text": "山田様が",
+    "label": {
+     "en": "you, Mr./Ms. Yamada",
+     "vi": "anh/chị Yamada"
+    },
+    "detail": {
+     "en": "が marks Yamada as the person who made the earlier statement. 様 keeps the business email respectful.",
+     "vi": "が đánh dấu Yamada là người đã phát biểu trước đó. 様 giữ sắc thái kính trọng trong email công việc."
+    }
+   },
+   {
+    "text": "興味があると言っていた",
+    "label": {
+     "en": "said you were interested in",
+     "vi": "đã nói là quan tâm"
+    },
+    "detail": {
+     "en": "興味がある is the content quoted by と. 言う → 言っていた reports the earlier statement, and this clause modifies 商品 through モンゴルの.",
+     "vi": "興味がある là nội dung được と dẫn lại. 言う → 言っていた thuật lại lời đã nói; mệnh đề này bổ nghĩa cho 商品, đứng trước cụm モンゴルの."
+    },
+    "grammarIds": [
+     "g_145",
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "興味",
+      "kana": "きょうみ",
+      "meaning": {
+       "en": "interest",
+       "vi": "sự quan tâm, hứng thú"
+      }
+     }
+    ]
+   },
+   {
+    "text": "モンゴルの商品です。",
+    "label": {
+     "en": "these are Mongolian products",
+     "vi": "đây là sản phẩm Mông Cổ"
+    },
+    "detail": {
+     "en": "モンゴルの gives the products’ origin. 商品 is the noun described by the preceding clause; the email is presenting these products to Yamada.",
+     "vi": "モンゴルの nêu xuất xứ sản phẩm. 商品 là danh từ được mệnh đề phía trước bổ nghĩa; email đang giới thiệu các sản phẩm này cho Yamada."
+    },
+    "words": [
+     {
+      "text": "商品",
+      "kana": "しょうひん",
+      "meaning": {
+       "en": "product, merchandise",
+       "vi": "sản phẩm, hàng hóa"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ぜひご検討ください。",
+    "label": {
+     "en": "please do consider them",
+     "vi": "xin hãy xem xét"
+    },
+    "detail": {
+     "en": "ぜひ encourages the request. ご + 検討 + ください is a respectful request to consider the products.",
+     "vi": "ぜひ nhấn mạnh mong muốn người nhận thực hiện. ご + 検討 + ください tạo lời đề nghị kính trọng, xin người nhận xem xét sản phẩm."
+    },
+    "words": [
+     {
+      "text": "検討する",
+      "kana": "けんとうする",
+      "meaning": {
+       "en": "to consider, examine",
+       "vi": "xem xét, cân nhắc"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "【サイハン・モンゴルの商品】「サイハン・モンゴル」は、みなさまにモンゴルの商品を紹介しています。",
+  "translation": {
+   "en": "Saihan Mongolia products: Saihan Mongolia introduces Mongolian products to customers.",
+   "vi": "Sản phẩm Saihan Mongolia: chúng tôi giới thiệu sản phẩm Mông Cổ đến quý khách."
+  },
+  "together": {
+   "en": "The bracketed heading names the product section. The sentence underneath explains that Saihan Mongolia regularly introduces Mongolian products to customers.",
+   "vi": "Tiêu đề trong ngoặc đặt tên cho phần sản phẩm. Câu tiếp theo cho biết Saihan Mongolia giới thiệu sản phẩm Mông Cổ đến khách hàng như một hoạt động thường xuyên."
+  },
+  "chunks": [
+   {
+    "text": "【サイハン・モンゴルの商品】",
+    "label": {
+     "en": "Saihan Mongolia products",
+     "vi": "sản phẩm Saihan Mongolia"
+    },
+    "detail": {
+     "en": "The brackets mark a section heading. の links the business name to 商品.",
+     "vi": "Dấu ngoặc đánh dấu tiêu đề một phần. の nối tên cơ sở với 商品."
+    }
+   },
+   {
+    "text": "「サイハン・モンゴル」は、",
+    "label": {
+     "en": "Saihan Mongolia",
+     "vi": "Saihan Mongolia"
+    },
+    "detail": {
+     "en": "は makes the business the topic; the quotation marks enclose its name.",
+     "vi": "は nêu cơ sở kinh doanh làm chủ đề; dấu ngoặc kép bao quanh tên riêng."
+    }
+   },
+   {
+    "text": "みなさまに",
+    "label": {
+     "en": "to customers",
+     "vi": "đến quý khách"
+    },
+    "detail": {
+     "en": "みなさま is a respectful way to address everyone. に marks the recipients of the product introductions.",
+     "vi": "みなさま là cách kính trọng để gọi mọi người. に đánh dấu người tiếp nhận phần giới thiệu sản phẩm."
+    }
+   },
+   {
+    "text": "モンゴルの商品を",
+    "label": {
+     "en": "Mongolian products",
+     "vi": "sản phẩm Mông Cổ"
+    },
+    "detail": {
+     "en": "モンゴルの identifies the origin, and を marks what the business introduces.",
+     "vi": "モンゴルの xác định xuất xứ; を đánh dấu thứ được cơ sở giới thiệu."
+    }
+   },
+   {
+    "text": "紹介しています。",
+    "label": {
+     "en": "introduces",
+     "vi": "giới thiệu"
+    },
+    "detail": {
+     "en": "紹介する → 紹介して + います describes an ongoing business activity, rather than just one introduction at this moment.",
+     "vi": "紹介する → 紹介して + います diễn tả hoạt động kinh doanh được duy trì, không chỉ một lần giới thiệu ngay lúc này."
+    },
+    "words": [
+     {
+      "text": "紹介する",
+      "kana": "しょうかいする",
+      "meaning": {
+       "en": "to introduce",
+       "vi": "giới thiệu"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "「20××年1月から、「モンゴル・ザハ」はモンゴル語で「素敵」という意味の「サイハン」を入れた「サイハン・モンゴル」に名前が変わりました。",
+  "translation": {
+   "en": "From January 20XX, “Mongol Zaha” changed its name to “Saihan Mongolia,” including saihan, meaning “wonderful” in Mongolian.",
+   "vi": "Từ tháng 1 năm 20XX, Mongol Zaha đổi tên thành Saihan Mongolia, thêm “saihan” nghĩa là “tuyệt đẹp” trong tiếng Mông Cổ."
+  },
+  "together": {
+   "en": "The sentence gives the date of a name change and explains the word added to the new name. 「素敵」という意味の describes サイハン, while サイハンを入れた describes the new business name.",
+   "vi": "Câu nêu thời điểm đổi tên và giải thích từ được thêm vào tên mới. 「素敵」という意味の bổ nghĩa cho サイハン; サイハンを入れた bổ nghĩa cho tên cơ sở mới."
+  },
+  "chunks": [
+   {
+    "text": "「20××年1月から、",
+    "label": {
+     "en": "from January 20XX",
+     "vi": "từ tháng 1 năm 20XX"
+    },
+    "detail": {
+     "en": "から marks when the new name began to be used. 20×× leaves the final two digits of the year unspecified.",
+     "vi": "から chỉ mốc bắt đầu dùng tên mới. 20×× để trống hai chữ số cuối của năm."
+    }
+   },
+   {
+    "text": "「モンゴル・ザハ」は",
+    "label": {
+     "en": "as for Mongol Zaha",
+     "vi": "còn Mongol Zaha"
+    },
+    "detail": {
+     "en": "は introduces the business under its former name as the topic.",
+     "vi": "は nêu cơ sở dưới tên cũ làm chủ đề."
+    }
+   },
+   {
+    "text": "モンゴル語で「素敵」という意味の",
+    "label": {
+     "en": "meaning ‘wonderful’ in Mongolian",
+     "vi": "có nghĩa ‘tuyệt đẹp’ trong tiếng Mông Cổ"
+    },
+    "detail": {
+     "en": "で marks the language. 「素敵」+ という意味の modifies サイハン and explains what that word means.",
+     "vi": "で chỉ ngôn ngữ. 「素敵」+ という意味の bổ nghĩa cho サイハン, giải thích nghĩa của từ này."
+    },
+    "grammarIds": [
+     "g_182"
+    ],
+    "words": [
+     {
+      "text": "素敵",
+      "kana": "すてき",
+      "meaning": {
+       "en": "wonderful, lovely",
+       "vi": "tuyệt đẹp, tuyệt vời"
+      }
+     }
+    ]
+   },
+   {
+    "text": "「サイハン」を入れた",
+    "label": {
+     "en": "with ‘saihan’ included",
+     "vi": "có thêm từ ‘saihan’"
+    },
+    "detail": {
+     "en": "を marks the word included. 入れる → 入れた is a past-form modifier describing how the new name was formed.",
+     "vi": "を đánh dấu từ được thêm vào. 入れる → 入れた là thể quá khứ dùng bổ nghĩa, mô tả cách tạo tên mới."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "「サイハン・モンゴル」に",
+    "label": {
+     "en": "to ‘Saihan Mongolia’",
+     "vi": "thành Saihan Mongolia"
+    },
+    "detail": {
+     "en": "に marks the resulting name after the change. The preceding 入れた clause describes this new name.",
+     "vi": "に đánh dấu tên mới sau khi thay đổi. Mệnh đề 入れた phía trước miêu tả tên mới này."
+    }
+   },
+   {
+    "text": "名前が変わりました。",
+    "label": {
+     "en": "the name changed",
+     "vi": "đã đổi tên"
+    },
+    "detail": {
+     "en": "が marks 名前 as what changed. 変わる → 変わりました is polite past and describes the change, without naming who made it.",
+     "vi": "が đánh dấu 名前 là thứ thay đổi. 変わる → 変わりました là quá khứ lịch sự, nêu sự thay đổi mà không nói ai thực hiện."
+    },
+    "words": [
+     {
+      "text": "変わる",
+      "kana": "かわる",
+      "meaning": {
+       "en": "to change",
+       "vi": "thay đổi"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ハンカチ　980円　モンゴルの馬と家の絵が描いてあります。30cm×30cm",
+  "translation": {
+   "en": "Handkerchief · ¥980 · pictured with Mongolian horses and homes · 30 × 30 cm.",
+   "vi": "Khăn tay · 980 yên · có hình ngựa và nhà Mông Cổ · 30 × 30 cm."
+  },
+  "together": {
+   "en": "The row gives a handkerchief’s name and price, then describes its picture and size. 描いてあります describes the design that remains on the fabric.",
+   "vi": "Dòng giới thiệu tên và giá khăn tay, rồi mô tả hình vẽ và kích thước. 描いてあります diễn tả họa tiết đã được vẽ và còn trên vải."
+  },
+  "chunks": [
+   {
+    "text": "ハンカチ　980円　",
+    "label": {
+     "en": "handkerchief, 980 yen",
+     "vi": "khăn tay, 980 yên"
+    },
+    "detail": {
+     "en": "This is a product label followed by its price; no sentence predicate is needed in a listing.",
+     "vi": "Đây là tên sản phẩm kèm giá; cách trình bày danh mục không cần vị ngữ đầy đủ."
+    }
+   },
+   {
+    "text": "モンゴルの馬と家の絵が",
+    "label": {
+     "en": "pictures of Mongolian horses and homes",
+     "vi": "hình ngựa và nhà Mông Cổ"
+    },
+    "detail": {
+     "en": "と joins 馬 and 家 as the subjects depicted in 絵. が marks the picture that has been drawn.",
+     "vi": "と nối 馬 và 家, là những đối tượng được thể hiện trong 絵. が đánh dấu hình đã được vẽ."
+    }
+   },
+   {
+    "text": "描いてあります。",
+    "label": {
+     "en": "are drawn on it",
+     "vi": "được vẽ trên khăn"
+    },
+    "detail": {
+     "en": "描く → 描いて + あります describes the resulting design, with the person who drew it left unmentioned.",
+     "vi": "描く → 描いて + あります diễn tả họa tiết còn lại sau khi vẽ, không nêu người vẽ."
+    },
+    "grammarIds": [
+     "g_163"
+    ],
+    "words": [
+     {
+      "text": "描く",
+      "kana": "えがく",
+      "meaning": {
+       "en": "to draw",
+       "vi": "vẽ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "30cm×30cm",
+    "label": {
+     "en": "30 by 30 cm",
+     "vi": "30 × 30 cm"
+    },
+    "detail": {
+     "en": "× connects the two dimensions of the handkerchief. This measurement is a separate listing item.",
+     "vi": "× nối hai chiều của khăn tay. Số đo này là một mục riêng trong phần thông tin sản phẩm."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "ルームシューズ　6,800円　家の中で履く、暖かい靴です。S,M,Lサイズ",
+  "translation": {
+   "en": "Indoor shoes · ¥6,800 · warm shoes worn inside the home · sizes S, M, L.",
+   "vi": "Giày đi trong nhà · 6.800 yên · giày ấm dùng trong nhà · cỡ S, M, L."
+  },
+  "together": {
+   "en": "The row describes warm shoes for indoor use. 家の中で履く modifies 靴, and the final item lists the available sizes.",
+   "vi": "Dòng mô tả giày ấm dùng trong nhà. 家の中で履く bổ nghĩa cho 靴; mục cuối liệt kê các cỡ có bán."
+  },
+  "chunks": [
+   {
+    "text": "ルームシューズ　6,800円　",
+    "label": {
+     "en": "indoor shoes, 6,800 yen",
+     "vi": "giày đi trong nhà, 6.800 yên"
+    },
+    "detail": {
+     "en": "The product name and price form the listing’s opening label.",
+     "vi": "Tên sản phẩm và giá tạo phần mở đầu của dòng danh mục."
+    }
+   },
+   {
+    "text": "家の中で履く、",
+    "label": {
+     "en": "worn inside the home",
+     "vi": "đi trong nhà"
+    },
+    "detail": {
+     "en": "で marks where the shoes are worn. Plain 履く modifies the later 靴, even with the comma between them.",
+     "vi": "で đánh dấu nơi đi giày. Dạng thường 履く bổ nghĩa cho 靴 phía sau, dù có dấu phẩy ở giữa."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "暖かい靴です。",
+    "label": {
+     "en": "are warm shoes",
+     "vi": "là giày ấm"
+    },
+    "detail": {
+     "en": "暖かい also modifies 靴, adding a property to the indoor-use description. です completes the product description.",
+     "vi": "暖かい cũng bổ nghĩa cho 靴, thêm đặc tính vào lời mô tả dùng trong nhà. です kết thúc phần mô tả sản phẩm."
+    }
+   },
+   {
+    "text": "S,M,Lサイズ",
+    "label": {
+     "en": "sizes S, M, L",
+     "vi": "cỡ S, M, L"
+    },
+    "detail": {
+     "en": "The letters give the available sizes; サイズ applies to the whole list.",
+     "vi": "Các chữ cái nêu những cỡ có bán; サイズ dùng chung cho cả danh sách."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "デール　モンゴルの伝統的な服です。ナーダム（伝統的な祭り）やお正月に着る人が多いです。",
+  "translation": {
+   "en": "Deel: traditional Mongolian clothing. Many people wear it for Naadam, a traditional festival, or New Year.",
+   "vi": "Deel: trang phục truyền thống Mông Cổ. Nhiều người mặc vào lễ Naadam hoặc năm mới."
+  },
+  "together": {
+   "en": "The first sentence identifies the deel as traditional Mongolian clothing. The second explains that many people wear it for Naadam or New Year.",
+   "vi": "Câu đầu xác định deel là trang phục truyền thống Mông Cổ. Câu sau giải thích rằng nhiều người mặc vào lễ Naadam hoặc năm mới."
+  },
+  "chunks": [
+   {
+    "text": "デール　",
+    "label": {
+     "en": "deel",
+     "vi": "deel"
+    },
+    "detail": {
+     "en": "This product name introduces the item described by the next sentence.",
+     "vi": "Tên sản phẩm này mở đầu cho món đồ được mô tả ngay sau đó."
+    }
+   },
+   {
+    "text": "モンゴルの伝統的な服です。",
+    "label": {
+     "en": "traditional Mongolian clothing",
+     "vi": "là trang phục truyền thống Mông Cổ"
+    },
+    "detail": {
+     "en": "モンゴルの gives the origin. 伝統的 is a な-adjective and takes な before 服.",
+     "vi": "モンゴルの nêu nguồn gốc. 伝統的 là tính từ な nên dùng な trước 服."
+    },
+    "words": [
+     {
+      "text": "伝統的",
+      "kana": "でんとうてき",
+      "meaning": {
+       "en": "traditional",
+       "vi": "mang tính truyền thống"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ナーダム（伝統的な祭り）やお正月に",
+    "label": {
+     "en": "at Naadam or New Year",
+     "vi": "vào lễ Naadam hay năm mới"
+    },
+    "detail": {
+     "en": "The parentheses explain Naadam as a traditional festival. や lists example occasions, and に marks when the clothing is worn.",
+     "vi": "Phần trong ngoặc giải thích Naadam là một lễ hội truyền thống. や liệt kê các dịp làm ví dụ; に đánh dấu thời điểm mặc."
+    },
+    "words": [
+     {
+      "text": "お正月",
+      "kana": "おしょうがつ",
+      "meaning": {
+       "en": "New Year holiday",
+       "vi": "dịp năm mới, Tết"
+      }
+     }
+    ]
+   },
+   {
+    "text": "着る人が多いです。",
+    "label": {
+     "en": "many people wear it",
+     "vi": "có nhiều người mặc"
+    },
+    "detail": {
+     "en": "着る modifies 人, meaning people who wear this garment. が marks that group, and 多い says it is large.",
+     "vi": "着る bổ nghĩa cho 人, chỉ những người mặc trang phục này. が đánh dấu nhóm đó; 多い cho biết số người đông."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "財布　5,600円　モンゴルの伝統的な字が書いてあります。カードをたくさん入れることができます。",
+  "translation": {
+   "en": "Wallet · ¥5,600 · decorated with traditional Mongolian writing; holds many cards.",
+   "vi": "Ví · 5.600 yên · có chữ Mông Cổ truyền thống, đựng được nhiều thẻ."
+  },
+  "together": {
+   "en": "The wallet is described by both its visible decoration and its capacity. 書いてあります gives the remaining writing, while 入れることができます says it can hold many cards.",
+   "vi": "Ví được mô tả qua cả họa tiết nhìn thấy và sức chứa. 書いてあります nêu chữ đã viết và còn đó; 入れることができます cho biết có thể đựng nhiều thẻ."
+  },
+  "chunks": [
+   {
+    "text": "財布　5,600円　",
+    "label": {
+     "en": "wallet, 5,600 yen",
+     "vi": "ví, 5.600 yên"
+    },
+    "detail": {
+     "en": "This label gives the item and its price before the full descriptive sentences.",
+     "vi": "Phần này nêu tên món đồ và giá trước các câu mô tả đầy đủ."
+    }
+   },
+   {
+    "text": "モンゴルの伝統的な字が",
+    "label": {
+     "en": "traditional Mongolian writing",
+     "vi": "chữ Mông Cổ truyền thống"
+    },
+    "detail": {
+     "en": "モンゴルの and 伝統的な modify 字. が marks the writing whose resulting state is described.",
+     "vi": "モンゴルの và 伝統的な bổ nghĩa cho 字. が đánh dấu chữ viết có trạng thái kết quả được mô tả."
+    }
+   },
+   {
+    "text": "書いてあります。",
+    "label": {
+     "en": "is written on it",
+     "vi": "được viết trên ví"
+    },
+    "detail": {
+     "en": "書く → 書いて + あります describes writing that someone has put on the wallet and that remains visible.",
+     "vi": "書く → 書いて + あります diễn tả chữ đã được ai đó viết lên ví và còn nhìn thấy."
+    },
+    "grammarIds": [
+     "g_163"
+    ]
+   },
+   {
+    "text": "カードをたくさん",
+    "label": {
+     "en": "many cards",
+     "vi": "nhiều thẻ"
+    },
+    "detail": {
+     "en": "を marks what can be put into the wallet. たくさん gives the quantity and modifies the action that follows.",
+     "vi": "を đánh dấu thứ có thể cho vào ví. たくさん nêu số lượng, bổ nghĩa cho hành động phía sau."
+    }
+   },
+   {
+    "text": "入れることができます。",
+    "label": {
+     "en": "can be put inside",
+     "vi": "có thể cho vào"
+    },
+    "detail": {
+     "en": "Dictionary-form 入れる + ことができます expresses possibility or capacity. In this product description it means the wallet can hold the cards.",
+     "vi": "Dạng từ điển 入れる + ことができます diễn tả khả năng. Trong mô tả sản phẩm, ý là ví có sức chứa các thẻ đó."
+    },
+    "grammarIds": [
+     "g_071"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "チャツァルガンジュース…モンゴルにある「チャツァルガン」という、ビタミンCが多いフルーツを使って作った体にいいジュースです。",
+  "translation": {
+   "en": "Chatsargan juice: a healthy juice made from a vitamin-C-rich fruit called chatsargan found in Mongolia.",
+   "vi": "Nước chatsargan: nước tốt cho sức khỏe làm từ quả chatsargan ở Mông Cổ, giàu vitamin C."
+  },
+  "together": {
+   "en": "Several modifiers build up the description of the fruit, then the juice. The juice is made using a vitamin-C-rich Mongolian fruit called chatsargan and is described as good for the body.",
+   "vi": "Nhiều cụm bổ nghĩa lần lượt mô tả quả rồi đến nước uống. Nước được làm từ quả chatsargan có ở Mông Cổ, giàu vitamin C và được giới thiệu là tốt cho sức khỏe."
+  },
+  "chunks": [
+   {
+    "text": "チャツァルガンジュース…",
+    "label": {
+     "en": "chatsargan juice",
+     "vi": "nước chatsargan"
+    },
+    "detail": {
+     "en": "The product name is followed by an ellipsis introducing its explanation.",
+     "vi": "Tên sản phẩm đi trước dấu chấm lửng, mở vào phần giải thích."
+    }
+   },
+   {
+    "text": "モンゴルにある「チャツァルガン」という、",
+    "label": {
+     "en": "called chatsargan, found in Mongolia",
+     "vi": "có ở Mông Cổ, tên là chatsargan"
+    },
+    "detail": {
+     "en": "モンゴルにある describes where the named fruit is found. The name + という introduces フルーツ, even though a comma and another modifier come between them.",
+     "vi": "モンゴルにある nói nơi có loại quả được nêu tên. Tên quả + という giới thiệu フルーツ, dù ở giữa có dấu phẩy và một cụm bổ nghĩa khác."
+    },
+    "grammarIds": [
+     "g_185",
+     "g_165"
+    ]
+   },
+   {
+    "text": "ビタミンCが多いフルーツを",
+    "label": {
+     "en": "a fruit rich in vitamin C",
+     "vi": "loại quả giàu vitamin C"
+    },
+    "detail": {
+     "en": "ビタミンCが多い modifies フルーツ: a fruit with much vitamin C. を marks this fruit as what is used.",
+     "vi": "ビタミンCが多い bổ nghĩa cho フルーツ: loại quả có nhiều vitamin C. を đánh dấu quả là nguyên liệu được sử dụng."
+    }
+   },
+   {
+    "text": "使って作った",
+    "label": {
+     "en": "made using it",
+     "vi": "được làm bằng loại quả đó"
+    },
+    "detail": {
+     "en": "使う → 使って links using the fruit to making the juice. 作る → 作った modifies ジュース, describing how it was made.",
+     "vi": "使う → 使って nối việc dùng quả với việc làm nước uống. 作る → 作った bổ nghĩa cho ジュース, mô tả cách làm ra nước."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "体にいいジュースです。",
+    "label": {
+     "en": "is a juice good for the body",
+     "vi": "là nước uống tốt cho sức khỏe"
+    },
+    "detail": {
+     "en": "体にいい modifies ジュース, with に marking what benefits. です completes the description of the product.",
+     "vi": "体にいい bổ nghĩa cho ジュース; に đánh dấu đối tượng được lợi. です kết thúc phần mô tả sản phẩm."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "子供：お父さん、あの紙に何て書いてあるの？",
+  "translation": {
+   "en": "Child: Dad, what does that paper say?",
+   "vi": "Con: Bố ơi, tờ giấy kia viết gì vậy?"
+  },
+  "together": {
+   "en": "The child addresses Dad and asks him to read the paper’s message. 何て is a casual way of asking what wording is written there.",
+   "vi": "Đứa con gọi bố rồi hỏi nội dung trên tờ giấy. 何て là cách nói thân mật để hỏi trên đó viết những chữ gì."
+  },
+  "chunks": [
+   {
+    "text": "子供：お父さん、",
+    "label": {
+     "en": "Child: Dad,",
+     "vi": "Con: Bố ơi,"
+    },
+    "detail": {
+     "en": "子供 labels the speaker, and お父さん directly addresses the father. Neither is the grammatical subject of the question.",
+     "vi": "子供 ghi người nói; お父さん là lời gọi bố trực tiếp. Cả hai không phải chủ ngữ ngữ pháp của câu hỏi."
+    }
+   },
+   {
+    "text": "あの紙に",
+    "label": {
+     "en": "on that paper",
+     "vi": "trên tờ giấy kia"
+    },
+    "detail": {
+     "en": "あの points to a paper away from both speakers. に marks where the writing is located.",
+     "vi": "あの chỉ tờ giấy ở xa cả hai người nói. に đánh dấu nơi có chữ viết."
+    }
+   },
+   {
+    "text": "何て書いてあるの？",
+    "label": {
+     "en": "what does it say?",
+     "vi": "viết gì vậy?"
+    },
+    "detail": {
+     "en": "何て is a casual contraction of 何と, asking for the quoted wording. 書いてある describes existing writing, and final の makes this a casual request for an explanation.",
+     "vi": "何て là dạng nói gọn thân mật của 何と, hỏi nội dung được viết. 書いてある diễn tả chữ có sẵn; の cuối câu tạo câu hỏi thân mật muốn được giải thích."
+    },
+    "grammarIds": [
+     "g_181",
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "父：「池に入るな」と書いてあるよ。",
+  "translation": {
+   "en": "Father: It says, “Do not enter the pond.”",
+   "vi": "Bố: Viết là “Không được xuống hồ” đấy."
+  },
+  "together": {
+   "en": "The father reads the exact prohibition on the paper. と separates the quoted message from 書いてある, which says that this is what is written.",
+   "vi": "Người bố đọc đúng lời cấm trên giấy. と tách nội dung được dẫn khỏi 書いてある, cho biết đó là chữ ghi trên giấy."
+  },
+  "chunks": [
+   {
+    "text": "父：",
+    "label": {
+     "en": "Father:",
+     "vi": "Bố:"
+    },
+    "detail": {
+     "en": "父 is a speaker label before the dialogue, not a subject marked by a particle.",
+     "vi": "父 là nhãn ghi người nói trước lời thoại, không phải chủ ngữ có trợ từ."
+    }
+   },
+   {
+    "text": "「池に入るな」と",
+    "label": {
+     "en": "‘Do not enter the pond’",
+     "vi": "‘Không được xuống hồ’"
+    },
+    "detail": {
+     "en": "に marks the place entered. 入る + な forms a direct prohibition, and と marks the whole quoted message.",
+     "vi": "に chỉ nơi đi vào. 入る + な tạo lời cấm trực tiếp; と đánh dấu toàn bộ nội dung được dẫn."
+    },
+    "grammarIds": [
+     "g_180"
+    ],
+    "words": [
+     {
+      "text": "池",
+      "kana": "いけ",
+      "meaning": {
+       "en": "pond",
+       "vi": "ao, hồ nhỏ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "書いてあるよ。",
+    "label": {
+     "en": "it says",
+     "vi": "có viết như vậy đấy"
+    },
+    "detail": {
+     "en": "書く → 書いてある describes writing that remains on the paper. With the preceding と it reports the written message; よ tells the child the information.",
+     "vi": "書く → 書いてある diễn tả chữ đã viết và còn trên giấy. Đi cùng と phía trước, cụm này dẫn nội dung chữ viết; よ báo thông tin cho đứa con."
+    },
+    "grammarIds": [
+     "g_181",
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "子供：「芝生」って何？",
+  "translation": {
+   "en": "Child: What’s a “lawn”?",
+   "vi": "Con: “Bãi cỏ” là gì ạ?"
+  },
+  "together": {
+   "en": "The child asks for the meaning of an unfamiliar word. Nって何？ is a casual spoken question used to ask what a term means.",
+   "vi": "Đứa con hỏi nghĩa của một từ chưa biết. Nって何？ là câu hỏi khẩu ngữ thân mật để hỏi một từ có nghĩa gì."
+  },
+  "chunks": [
+   {
+    "text": "子供：",
+    "label": {
+     "en": "Child:",
+     "vi": "Con:"
+    },
+    "detail": {
+     "en": "This identifies the child as the speaker of the question.",
+     "vi": "Phần này cho biết đứa con là người đặt câu hỏi."
+    }
+   },
+   {
+    "text": "「芝生」って",
+    "label": {
+     "en": "as for ‘lawn’",
+     "vi": "còn ‘bãi cỏ’"
+    },
+    "detail": {
+     "en": "って brings up 芝生 as the word being asked about, in a casual style.",
+     "vi": "って nêu 芝生 làm từ đang được hỏi, theo lối nói thân mật."
+    },
+    "words": [
+     {
+      "text": "芝生",
+      "kana": "しばふ",
+      "meaning": {
+       "en": "lawn, turf",
+       "vi": "bãi cỏ, thảm cỏ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "何？",
+    "label": {
+     "en": "what does it mean?",
+     "vi": "là gì?"
+    },
+    "detail": {
+     "en": "Together with the preceding Nって, 何？ asks for a definition. The polite equivalent is 芝生とは何ですか.",
+     "vi": "Kết hợp với Nって phía trước, 何？ hỏi định nghĩa của từ. Cách nói lịch sự tương ứng là 芝生とは何ですか."
+    },
+    "grammarIds": [
+     "g_184"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "父：草がたくさんあるところという意味だよ。「芝生に入らないでください」は、ここを歩くなということ。",
+  "translation": {
+   "en": "Father: It means a place with lots of grass. “Please keep off the lawn” means don’t walk here.",
+   "vi": "Bố: Nghĩa là chỗ có nhiều cỏ. “Xin đừng vào bãi cỏ” tức là đừng đi ở đây."
+  },
+  "together": {
+   "en": "The father first defines 芝生, then explains the notice using a shorter prohibition. ということ here restates what the notice means, rather than reporting a separate event.",
+   "vi": "Bố trước hết định nghĩa 芝生, rồi giải thích thông báo bằng lời cấm ngắn hơn. ということ ở đây diễn đạt lại ý của thông báo, không thuật lại một sự việc khác."
+  },
+  "chunks": [
+   {
+    "text": "父：草がたくさんあるところ",
+    "label": {
+     "en": "Father: a place with lots of grass",
+     "vi": "Bố: chỗ có nhiều cỏ"
+    },
+    "detail": {
+     "en": "草がたくさんある modifies ところ, describing the place. が marks what grows there, and たくさん gives the amount.",
+     "vi": "草がたくさんある bổ nghĩa cho ところ để mô tả nơi chốn. が đánh dấu thứ có ở đó, còn たくさん chỉ lượng nhiều."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "草",
+      "kana": "くさ",
+      "meaning": {
+       "en": "grass",
+       "vi": "cỏ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "という意味だよ。",
+    "label": {
+     "en": "is what it means",
+     "vi": "là nghĩa của từ đó đấy"
+    },
+    "detail": {
+     "en": "The preceding description + という意味だ gives the definition. だ is the plain form of です, and よ presents the explanation to the child.",
+     "vi": "Phần mô tả trước + という意味だ đưa ra định nghĩa. だ là dạng thường của です; よ hướng lời giải thích đến đứa con."
+    },
+    "grammarIds": [
+     "g_182"
+    ]
+   },
+   {
+    "text": "「芝生に入らないでください」は、",
+    "label": {
+     "en": "as for ‘Please keep off the lawn’",
+     "vi": "còn câu ‘Xin đừng vào bãi cỏ’"
+    },
+    "detail": {
+     "en": "入る → 入らない + でください makes a polite negative request. は turns the whole quoted notice into the topic.",
+     "vi": "入る → 入らない + でください tạo lời yêu cầu lịch sự không làm gì. は đưa toàn bộ thông báo được dẫn thành chủ đề."
+    },
+    "grammarIds": [
+     "g_099"
+    ]
+   },
+   {
+    "text": "ここを歩くな",
+    "label": {
+     "en": "‘Do not walk here’",
+     "vi": "‘Không được đi ở đây’"
+    },
+    "detail": {
+     "en": "を marks the area walked through, rather than an object. Dictionary-form 歩く + な is a direct prohibition.",
+     "vi": "を chỉ khu vực đi qua, không phải tân ngữ bị tác động. Dạng từ điển 歩く + な tạo lời cấm trực tiếp."
+    },
+    "grammarIds": [
+     "g_180"
+    ]
+   },
+   {
+    "text": "ということ。",
+    "label": {
+     "en": "that is what it means",
+     "vi": "tức là như vậy"
+    },
+    "detail": {
+     "en": "ということ sums up the intended message of the notice. Sentence-final だ or です is omitted in this casual explanation.",
+     "vi": "ということ tóm lại ý muốn nói của thông báo. だ hoặc です cuối câu được lược trong lời giải thích thân mật này."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "父：あ、雨だ。早く走れ！",
+  "translation": {
+   "en": "Father: Oh, it’s raining. Run, quick!",
+   "vi": "Bố: Ôi, mưa rồi. Chạy nhanh lên!"
+  },
+  "together": {
+   "en": "The father notices the rain and immediately tells the child to run. 走れ is a forceful direct command suited to this sudden situation.",
+   "vi": "Bố nhận ra trời mưa và lập tức bảo con chạy. 走れ là mệnh lệnh trực tiếp, mạnh, phù hợp với tình huống đột ngột này."
+  },
+  "chunks": [
+   {
+    "text": "父：あ、雨だ。",
+    "label": {
+     "en": "Father: Oh, rain!",
+     "vi": "Bố: Ôi, mưa rồi."
+    },
+    "detail": {
+     "en": "あ expresses sudden notice. 雨 + だ is a casual noun predicate, here announcing that it is raining.",
+     "vi": "あ thể hiện vừa chợt nhận ra. 雨 + だ là vị ngữ danh từ thân mật, ở đây báo trời đang mưa."
+    }
+   },
+   {
+    "text": "早く",
+    "label": {
+     "en": "quickly",
+     "vi": "nhanh lên"
+    },
+    "detail": {
+     "en": "早い → 早く turns the adjective into an adverb modifying 走れ. It urges the child to act quickly.",
+     "vi": "早い → 早く chuyển tính từ thành trạng từ bổ nghĩa cho 走れ, thúc giục con hành động nhanh."
+    },
+    "grammarIds": [
+     "g_158"
+    ]
+   },
+   {
+    "text": "走れ！",
+    "label": {
+     "en": "run!",
+     "vi": "chạy đi!"
+    },
+    "detail": {
+     "en": "走る is a group 1 verb: change final る to れ to form the imperative 走れ. This is much more direct than 走ってください.",
+     "vi": "走る là động từ nhóm 1: đổi る cuối thành れ để tạo mệnh lệnh 走れ. Cách này mạnh và trực tiếp hơn nhiều so với 走ってください."
+    },
+    "grammarIds": [
+     "g_179"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "子供：お父さん、「走るな」って書いてあるよ！",
+  "translation": {
+   "en": "Child: Dad, it says “No running”!",
+   "vi": "Con: Bố ơi, có viết “Không được chạy” mà!"
+  },
+  "together": {
+   "en": "The child points out that the written rule conflicts with Dad’s instruction to run. The casual って quotes the prohibition, just as と would in a more neutral style.",
+   "vi": "Đứa con chỉ ra rằng quy định trên biển trái với lời bố bảo chạy. って thân mật dẫn lời cấm, tương ứng với と trong cách nói trung tính hơn."
+  },
+  "chunks": [
+   {
+    "text": "子供：お父さん、",
+    "label": {
+     "en": "Child: Dad,",
+     "vi": "Con: Bố ơi,"
+    },
+    "detail": {
+     "en": "The speaker label is followed by a direct call to the father, drawing his attention to the sign.",
+     "vi": "Sau nhãn người nói là lời gọi bố trực tiếp, hướng sự chú ý của bố vào biển."
+    }
+   },
+   {
+    "text": "「走るな」",
+    "label": {
+     "en": "‘No running’",
+     "vi": "‘Không được chạy’"
+    },
+    "detail": {
+     "en": "Dictionary-form 走る + な creates a prohibition. It contrasts with the father’s imperative 走れ in the previous line.",
+     "vi": "Dạng từ điển 走る + な tạo lời cấm. Cụm này đối lập với mệnh lệnh 走れ của bố ở câu trước."
+    },
+    "grammarIds": [
+     "g_180"
+    ]
+   },
+   {
+    "text": "って書いてあるよ！",
+    "label": {
+     "en": "it says!",
+     "vi": "có viết như vậy mà!"
+    },
+    "detail": {
+     "en": "Here って is the casual quotation marker replacing と before 書いてある, rather than a topic marker. 書いてある reports the remaining writing, and よ emphatically points it out.",
+     "vi": "Ở đây って thay と để dẫn nội dung trước 書いてある, không làm trợ từ nêu chủ đề. 書いてある nói về chữ đang có trên biển; よ nhấn mạnh điều con muốn chỉ cho bố."
+    },
+    "grammarIds": [
+     "g_183",
+     "g_181",
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "プールの入り口に「走るな」と書いてあります。",
+  "translation": {
+   "en": "At the pool entrance it says “No running.”",
+   "vi": "Ở lối vào hồ bơi có ghi “Không được chạy”."
+  },
+  "together": {
+   "en": "The sentence locates the notice at the pool entrance and quotes its rule. 走るな is the prohibition itself, while と書いてあります reports that wording.",
+   "vi": "Câu xác định thông báo ở lối vào hồ bơi và dẫn lại quy định. 走るな là lời cấm; と書いてあります cho biết đó là chữ ghi trên biển."
+  },
+  "chunks": [
+   {
+    "text": "プールの入り口に",
+    "label": {
+     "en": "at the pool entrance",
+     "vi": "ở lối vào hồ bơi"
+    },
+    "detail": {
+     "en": "の connects the pool to its entrance. に marks the location of the written notice.",
+     "vi": "の nối hồ bơi với lối vào của nó. に đánh dấu nơi có thông báo được viết."
+    }
+   },
+   {
+    "text": "「走るな」と",
+    "label": {
+     "en": "‘No running’",
+     "vi": "‘Không được chạy’"
+    },
+    "detail": {
+     "en": "走る + な makes a direct prohibition. と marks the exact words written in the notice.",
+     "vi": "走る + な tạo lời cấm trực tiếp. と đánh dấu đúng nội dung được ghi trong thông báo."
+    },
+    "grammarIds": [
+     "g_180"
+    ]
+   },
+   {
+    "text": "書いてあります。",
+    "label": {
+     "en": "it says",
+     "vi": "có ghi"
+    },
+    "detail": {
+     "en": "書く → 書いて + あります describes the resulting writing. Together with と, it quotes the sign rather than describing someone currently writing.",
+     "vi": "書く → 書いて + あります mô tả chữ còn lại sau khi viết. Đi cùng と, cụm này dẫn chữ trên biển, không tả ai đang viết."
+    },
+    "grammarIds": [
+     "g_181",
+     "g_163"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "床はいつもぬれていますから、危ないです。",
+  "translation": {
+   "en": "The floor is always wet, so it is dangerous.",
+   "vi": "Sàn lúc nào cũng ướt nên nguy hiểm."
+  },
+  "together": {
+   "en": "This explains why running is prohibited: the floor stays wet and is therefore dangerous. ています describes a state, not an action of getting wet right now.",
+   "vi": "Câu giải thích vì sao cấm chạy: sàn luôn ướt nên nguy hiểm. ています mô tả trạng thái, không phải quá trình đang bị ướt ngay lúc này."
+  },
+  "chunks": [
+   {
+    "text": "床は",
+    "label": {
+     "en": "the floor",
+     "vi": "sàn nhà"
+    },
+    "detail": {
+     "en": "は makes the floor the topic of the safety explanation.",
+     "vi": "は nêu sàn nhà làm chủ đề của lời giải thích về an toàn."
+    },
+    "words": [
+     {
+      "text": "床",
+      "kana": "ゆか",
+      "meaning": {
+       "en": "floor",
+       "vi": "sàn nhà"
+      }
+     }
+    ]
+   },
+   {
+    "text": "いつもぬれていますから、",
+    "label": {
+     "en": "because it is always wet",
+     "vi": "vì lúc nào cũng ướt"
+    },
+    "detail": {
+     "en": "ぬれる → ぬれて + います describes the resulting wet state. いつも says this is usual, and から gives the reason for the next judgment.",
+     "vi": "ぬれる → ぬれて + います diễn tả trạng thái ướt sau khi bị ướt. いつも cho biết trạng thái này thường xuyên có; から nêu lý do cho nhận xét sau."
+    },
+    "grammarIds": [
+     "g_094_4"
+    ],
+    "words": [
+     {
+      "text": "ぬれる",
+      "kana": "ぬれる",
+      "meaning": {
+       "en": "to get wet",
+       "vi": "bị ướt"
+      }
+     }
+    ]
+   },
+   {
+    "text": "危ないです。",
+    "label": {
+     "en": "it is dangerous",
+     "vi": "nguy hiểm"
+    },
+    "detail": {
+     "en": "危ない is the conclusion based on the wet floor. In context, it explains the danger of running there.",
+     "vi": "危ない là kết luận từ việc sàn ướt. Trong ngữ cảnh này, câu giải thích nguy hiểm khi chạy ở đó."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "「飛び込み禁止」は、プールに飛び込むなという意味です。",
+  "translation": {
+   "en": "“飛び込み禁止” means do not dive into the pool.",
+   "vi": "“飛び込み禁止” có nghĩa là không được nhảy xuống hồ."
+  },
+  "together": {
+   "en": "The formal notice 飛び込み禁止 is explained using a direct verbal prohibition. Both expressions communicate the same pool rule.",
+   "vi": "Thông báo trang trọng 飛び込み禁止 được giải thích bằng lời cấm dùng động từ trực tiếp. Hai cách diễn đạt truyền đạt cùng một quy định của hồ bơi."
+  },
+  "chunks": [
+   {
+    "text": "「飛び込み禁止」は、",
+    "label": {
+     "en": "as for ‘No diving’",
+     "vi": "còn ‘Cấm nhảy xuống hồ’"
+    },
+    "detail": {
+     "en": "飛び込み names the action of diving or jumping in; 禁止 means prohibition. は makes the quoted notice the topic to be explained.",
+     "vi": "飛び込み gọi tên hành động nhảy xuống; 禁止 nghĩa là cấm. は nêu thông báo được trích dẫn làm chủ đề cần giải thích."
+    },
+    "words": [
+     {
+      "text": "禁止",
+      "kana": "きんし",
+      "meaning": {
+       "en": "prohibition, ban",
+       "vi": "sự cấm, lệnh cấm"
+      }
+     }
+    ]
+   },
+   {
+    "text": "プールに飛び込むなという意味です。",
+    "label": {
+     "en": "means ‘Do not dive into the pool’",
+     "vi": "có nghĩa là ‘Không được nhảy xuống hồ’"
+    },
+    "detail": {
+     "en": "に marks where someone dives. 飛び込む + な creates a direct prohibition; という意味です explains the notice using that wording.",
+     "vi": "に chỉ nơi nhảy vào. 飛び込む + な tạo lời cấm trực tiếp; という意味です dùng lời đó để giải thích thông báo."
+    },
+    "grammarIds": [
+     "g_180",
+     "g_182"
+    ],
+    "words": [
+     {
+      "text": "飛び込む",
+      "kana": "とびこむ",
+      "meaning": {
+       "en": "to dive or jump into",
+       "vi": "nhảy vào, lao vào"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "泳ぐ前に、シャワーを浴びるのを忘れないでください。",
+  "translation": {
+   "en": "Don’t forget to shower before swimming.",
+   "vi": "Trước khi bơi đừng quên tắm tráng."
+  },
+  "together": {
+   "en": "The timing phrase comes first: before swimming. The main request is not to forget the action of showering, which is turned into a noun phrase by の.",
+   "vi": "Cụm thời gian đứng trước: trước khi bơi. Lời yêu cầu chính là đừng quên việc tắm tráng; の biến hành động tắm thành cụm danh từ."
+  },
+  "chunks": [
+   {
+    "text": "泳ぐ前に、",
+    "label": {
+     "en": "before swimming",
+     "vi": "trước khi bơi"
+    },
+    "detail": {
+     "en": "Dictionary-form 泳ぐ + 前に sets the action that the shower should precede. The dictionary form is used even when talking about a future visit.",
+     "vi": "Dạng từ điển 泳ぐ + 前に xác định việc phải diễn ra sau khi tắm. Mẫu này dùng dạng từ điển cả khi nói về một lần đi bơi sắp tới."
+    },
+    "grammarIds": [
+     "g_080_1"
+    ]
+   },
+   {
+    "text": "シャワーを浴びるのを忘れないでください。",
+    "label": {
+     "en": "please do not forget to shower",
+     "vi": "xin đừng quên tắm tráng"
+    },
+    "detail": {
+     "en": "浴びる + の turns showering into the object marked by を before 忘れる. 忘れる → 忘れない + でください politely asks the reader not to forget.",
+     "vi": "浴びる + の biến việc tắm thành tân ngữ, được を đánh dấu trước 忘れる. 忘れる → 忘れない + でください tạo lời nhắc lịch sự đừng quên."
+    },
+    "grammarIds": [
+     "g_178",
+     "g_099"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "子供だけでプールに入るのはだめです。小学生は大人と一緒に入ってください。",
+  "translation": {
+   "en": "Children may not go into the pool on their own. Primary-school children must go in with an adult.",
+   "vi": "Trẻ em không được xuống hồ một mình. Học sinh tiểu học phải xuống cùng người lớn."
+  },
+  "together": {
+   "en": "The first sentence forbids children from entering alone. The second specifies that primary-school children should enter together with an adult.",
+   "vi": "Câu đầu không cho trẻ xuống hồ khi chỉ có trẻ với nhau. Câu sau quy định học sinh tiểu học phải xuống cùng người lớn."
+  },
+  "chunks": [
+   {
+    "text": "子供だけでプールに入るのはだめです。",
+    "label": {
+     "en": "children must not enter on their own",
+     "vi": "trẻ em không được xuống hồ khi không có người lớn"
+    },
+    "detail": {
+     "en": "子供だけで means with children only, without an adult. 入る + のは makes entering the topic, and だめです judges that action unacceptable.",
+     "vi": "子供だけで nghĩa là chỉ có trẻ em, không có người lớn đi cùng. 入る + のは đưa việc xuống hồ thành chủ đề; だめです cho biết việc đó không được phép."
+    },
+    "grammarIds": [
+     "g_173"
+    ]
+   },
+   {
+    "text": "小学生は",
+    "label": {
+     "en": "primary-school children",
+     "vi": "học sinh tiểu học"
+    },
+    "detail": {
+     "en": "は identifies the group to whom the following instruction applies.",
+     "vi": "は nêu nhóm người phải thực hiện hướng dẫn tiếp theo."
+    }
+   },
+   {
+    "text": "大人と一緒に",
+    "label": {
+     "en": "together with an adult",
+     "vi": "cùng người lớn"
+    },
+    "detail": {
+     "en": "と marks the companion, and 一緒に emphasizes doing the action together.",
+     "vi": "と chỉ người đi cùng; 一緒に nhấn mạnh cùng thực hiện hành động."
+    }
+   },
+   {
+    "text": "入ってください。",
+    "label": {
+     "en": "please enter",
+     "vi": "hãy xuống hồ"
+    },
+    "detail": {
+     "en": "入る → 入って + ください makes a polite instruction. The required accompaniment is supplied by the preceding phrase.",
+     "vi": "入る → 入って + ください tạo lời hướng dẫn lịch sự. Cụm phía trước cho biết phải có người đi cùng."
+    },
+    "grammarIds": [
+     "g_099"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "毎時50分から10分間は「休憩」です。",
+  "translation": {
+   "en": "From fifty minutes past each hour there is a ten-minute “break.”",
+   "vi": "Từ phút 50 mỗi giờ có 10 phút “nghỉ”."
+  },
+  "together": {
+   "en": "The break starts at fifty minutes past every hour and lasts ten minutes. から marks the starting time, while 分間 gives the duration.",
+   "vi": "Giờ nghỉ bắt đầu vào phút 50 của mỗi giờ và kéo dài 10 phút. から chỉ mốc bắt đầu; 分間 chỉ khoảng thời gian kéo dài."
+  },
+  "chunks": [
+   {
+    "text": "毎時50分から",
+    "label": {
+     "en": "from fifty minutes past each hour",
+     "vi": "từ phút 50 mỗi giờ"
+    },
+    "detail": {
+     "en": "毎時 means every hour, so 50分 is the minute position within each hour. から marks the start of the break.",
+     "vi": "毎時 nghĩa là mỗi giờ, nên 50分 chỉ phút thứ 50 trong từng giờ. から đánh dấu lúc bắt đầu nghỉ."
+    },
+    "words": [
+     {
+      "text": "毎時",
+      "kana": "まいじ",
+      "meaning": {
+       "en": "every hour",
+       "vi": "mỗi giờ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "10分間は",
+    "label": {
+     "en": "for the ten-minute period",
+     "vi": "trong khoảng 10 phút"
+    },
+    "detail": {
+     "en": "分間 expresses duration, unlike the starting clock time before it. は makes that period the topic.",
+     "vi": "分間 diễn tả khoảng thời gian, khác với giờ bắt đầu ở cụm trước. は nêu khoảng này làm chủ đề."
+    }
+   },
+   {
+    "text": "「休憩」です。",
+    "label": {
+     "en": "is a break",
+     "vi": "là giờ nghỉ"
+    },
+    "detail": {
+     "en": "休憩 names the scheduled pause. The quotation marks highlight the term that will be explained next.",
+     "vi": "休憩 gọi tên khoảng nghỉ theo lịch. Dấu ngoặc kép làm nổi bật từ sẽ được giải thích ở câu sau."
+    },
+    "words": [
+     {
+      "text": "休憩",
+      "kana": "きゅうけい",
+      "meaning": {
+       "en": "break, rest",
+       "vi": "giờ nghỉ, nghỉ giải lao"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "「休憩」って何？と思う人もいますが、プールから出て休むという意味です。",
+  "translation": {
+   "en": "Some people may wonder what 休憩 is: it means getting out of the pool to rest.",
+   "vi": "Có người thắc mắc “休憩” là gì: nghĩa là lên khỏi hồ để nghỉ."
+  },
+  "together": {
+   "en": "The writer anticipates that some readers may not know what 休憩 means here. The explanation says they must leave the pool and rest during the break.",
+   "vi": "Người viết dự đoán có người chưa hiểu 休憩 có nghĩa gì trong ngữ cảnh này. Phần giải thích cho biết trong giờ nghỉ cần lên khỏi hồ và nghỉ ngơi."
+  },
+  "chunks": [
+   {
+    "text": "「休憩」って何？",
+    "label": {
+     "en": "what is ‘休憩’?",
+     "vi": "‘休憩’ là gì?"
+    },
+    "detail": {
+     "en": "Nって何？ is a casual question asking a word’s meaning. Here it represents the question some readers have in mind.",
+     "vi": "Nって何？ là câu hỏi thân mật về nghĩa của một từ. Ở đây nó thể hiện thắc mắc trong đầu một số người đọc."
+    },
+    "grammarIds": [
+     "g_184"
+    ]
+   },
+   {
+    "text": "と思う人もいますが、",
+    "label": {
+     "en": "some people may wonder, but",
+     "vi": "cũng có người thắc mắc, nhưng"
+    },
+    "detail": {
+     "en": "と marks the preceding question as the content of 思う, and と思う modifies 人. も adds ‘some people too’, while が leads into the explanation.",
+     "vi": "と dẫn câu hỏi phía trước làm nội dung của 思う; と思う bổ nghĩa cho 人. も thêm ý cũng có người như vậy; が dẫn sang phần giải thích."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "プールから出て",
+    "label": {
+     "en": "get out of the pool and",
+     "vi": "lên khỏi hồ rồi"
+    },
+    "detail": {
+     "en": "から marks the place being left. 出る → 出て connects leaving the pool to resting.",
+     "vi": "から chỉ nơi rời khỏi. 出る → 出て nối việc lên khỏi hồ với việc nghỉ."
+    },
+    "grammarIds": [
+     "g_092"
+    ]
+   },
+   {
+    "text": "休むという意味です。",
+    "label": {
+     "en": "means to rest",
+     "vi": "có nghĩa là nghỉ ngơi"
+    },
+    "detail": {
+     "en": "休む + という意味です completes the definition. The meaning includes the preceding 出て: leave the pool and then rest.",
+     "vi": "休む + という意味です hoàn tất lời định nghĩa. Ý nghĩa bao gồm cả 出て phía trước: lên khỏi hồ rồi nghỉ."
+    },
+    "grammarIds": [
+     "g_182"
+    ]
+   }
+  ]
+ }
+]

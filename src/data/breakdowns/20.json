@@ -1,0 +1,2814 @@
+[
+ {
+  "sentence": "マイさんのアパートに来たけど、出かけているみたいだったから、ポストに本とDVDを入れました。",
+  "translation": {
+   "en": "I came to your apartment, but you seemed to be out, so I put the book and DVD in your letterbox.",
+   "vi": "Tôi đến căn hộ nhưng có vẻ Mai ra ngoài nên để sách và DVD trong hòm thư."
+  },
+  "together": {
+   "en": "The writer explains why the items were left in the letterbox: Mai appeared to be out. けど introduces the unexpected situation, and から gives the reason for the final action.",
+   "vi": "Người viết giải thích lý do để đồ trong hòm thư: có vẻ Mai đã ra ngoài. けど nối sang tình huống không như mong đợi, còn から nêu lý do cho hành động cuối câu."
+  },
+  "chunks": [
+   {
+    "text": "マイさんのアパートに",
+    "label": {
+     "en": "to Mai’s apartment",
+     "vi": "đến căn hộ của Mai"
+    },
+    "detail": {
+     "en": "の links Mai to her apartment. に marks the destination of 来た.",
+     "vi": "の nối Mai với căn hộ của cô ấy. に đánh dấu nơi người viết đến."
+    }
+   },
+   {
+    "text": "来たけど、",
+    "label": {
+     "en": "I came, but",
+     "vi": "tôi đã đến, nhưng"
+    },
+    "detail": {
+     "en": "来る → 来た is plain past; けど connects this visit to the contrasting situation that follows.",
+     "vi": "来る → 来た là thể quá khứ thường; けど nối việc đến thăm với tình huống trái dự tính phía sau."
+    },
+    "grammarIds": [
+     "g_034"
+    ]
+   },
+   {
+    "text": "出かけているみたいだったから、",
+    "label": {
+     "en": "because you seemed to be out",
+     "vi": "vì có vẻ bạn đã ra ngoài"
+    },
+    "detail": {
+     "en": "出かける → 出かけている describes being out after leaving. みたいだ → みたいだった gives a past impression, and から makes it the reason.",
+     "vi": "出かける → 出かけている chỉ trạng thái đã đi ra ngoài và chưa về. みたいだ → みたいだった diễn tả nhận định lúc đó; から nêu lý do."
+    },
+    "grammarIds": [
+     "g_139"
+    ],
+    "words": [
+     {
+      "text": "出かける",
+      "kana": "でかける",
+      "meaning": {
+       "en": "to go out",
+       "vi": "đi ra ngoài"
+      }
+     }
+    ]
+   },
+   {
+    "text": "ポストに",
+    "label": {
+     "en": "in the letterbox",
+     "vi": "vào hòm thư"
+    },
+    "detail": {
+     "en": "に marks where the items were put. Here ポスト means the apartment’s letterbox.",
+     "vi": "に đánh dấu nơi để đồ vào. ポスト ở đây là hòm thư của căn hộ."
+    }
+   },
+   {
+    "text": "本とDVDを",
+    "label": {
+     "en": "the book and DVD",
+     "vi": "sách và DVD"
+    },
+    "detail": {
+     "en": "と joins the two items, and を marks them as the objects of 入れました.",
+     "vi": "と nối hai món đồ; を đánh dấu chúng là đối tượng của 入れました."
+    }
+   },
+   {
+    "text": "入れました。",
+    "label": {
+     "en": "I put them in",
+     "vi": "tôi đã bỏ vào"
+    },
+    "detail": {
+     "en": "入れる → 入れました is polite past. The writer is the understood subject.",
+     "vi": "入れる → 入れました là dạng quá khứ lịch sự. Chủ thể được lược bỏ là người viết."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "本、面白かったです。ありがとうございました。",
+  "translation": {
+   "en": "The book was interesting. Thank you.",
+   "vi": "Sách thú vị lắm. Cảm ơn Mai."
+  },
+  "together": {
+   "en": "The writer comments on the book and then thanks Mai for lending it. The pause after 本 introduces the book as the topic.",
+   "vi": "Người viết nhận xét về cuốn sách rồi cảm ơn Mai đã cho mượn. Khoảng ngắt sau 本 đưa cuốn sách thành chủ đề."
+  },
+  "chunks": [
+   {
+    "text": "本、",
+    "label": {
+     "en": "the book",
+     "vi": "cuốn sách"
+    },
+    "detail": {
+     "en": "本 is presented as the topic without an explicit は, which is natural in a personal note.",
+     "vi": "本 được nêu làm chủ đề mà không có は, cách viết tự nhiên trong lời nhắn thân mật."
+    }
+   },
+   {
+    "text": "面白かったです。",
+    "label": {
+     "en": "was interesting",
+     "vi": "đã rất thú vị"
+    },
+    "detail": {
+     "en": "面白い → 面白かった + です gives a polite past evaluation of the book.",
+     "vi": "面白い → 面白かった + です là lời nhận xét lịch sự ở quá khứ về cuốn sách."
+    }
+   },
+   {
+    "text": "ありがとうございました。",
+    "label": {
+     "en": "thank you",
+     "vi": "cảm ơn bạn"
+    },
+    "detail": {
+     "en": "The past form thanks Mai for something already done, here lending the book.",
+     "vi": "Dạng quá khứ dùng để cảm ơn về việc đã được giúp đỡ, ở đây là cho mượn sách."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "それから、KANSAI BOYSのCDも持ってきました。かっこいいですよ。",
+  "translation": {
+   "en": "I also brought the KANSAI BOYS CD. It’s great.",
+   "vi": "Tôi cũng mang CD KANSAI BOYS đến. Hay lắm."
+  },
+  "together": {
+   "en": "The writer adds that a CD was brought as well, then recommends it enthusiastically. も links the CD to the items already mentioned.",
+   "vi": "Người viết nói thêm rằng mình cũng mang CD đến, rồi khen CD rất hay. も liên kết CD với những món đồ đã nhắc đến."
+  },
+  "chunks": [
+   {
+    "text": "それから、",
+    "label": {
+     "en": "also",
+     "vi": "ngoài ra"
+    },
+    "detail": {
+     "en": "それから adds another point to the note, rather than giving a strict time sequence.",
+     "vi": "それから bổ sung một ý vào lời nhắn, ở đây không nhất thiết chỉ thứ tự thời gian."
+    }
+   },
+   {
+    "text": "KANSAI BOYSのCDも",
+    "label": {
+     "en": "the KANSAI BOYS CD too",
+     "vi": "cả CD của KANSAI BOYS"
+    },
+    "detail": {
+     "en": "の links the group to its CD. も replaces を to mean this was brought too.",
+     "vi": "の nối tên nhóm với CD của nhóm. も thay を để nói món này cũng được mang đến."
+    }
+   },
+   {
+    "text": "持ってきました。",
+    "label": {
+     "en": "I brought it",
+     "vi": "tôi đã mang đến"
+    },
+    "detail": {
+     "en": "持つ → 持って + 来ました means bringing something toward the destination relevant to the note, Mai’s apartment.",
+     "vi": "持つ → 持って + 来ました diễn tả mang đồ đến nơi đang được nói tới, là căn hộ của Mai."
+    }
+   },
+   {
+    "text": "かっこいいですよ。",
+    "label": {
+     "en": "it’s great",
+     "vi": "hay lắm đấy"
+    },
+    "detail": {
+     "en": "かっこいい expresses admiration, here for the CD or its music. よ presents this as a recommendation to Mai.",
+     "vi": "かっこいい thể hiện sự tán thưởng, ở đây là khen CD hoặc nhạc trong đó. よ nhấn mạnh lời giới thiệu với Mai."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "聞きたいと言っていましたよね。",
+  "translation": {
+   "en": "You said you wanted to listen to it, didn’t you?",
+   "vi": "Mai từng nói muốn nghe nhỉ."
+  },
+  "together": {
+   "en": "The writer recalls Mai’s earlier wish to listen to the CD. よね asks Mai to confirm that shared memory.",
+   "vi": "Người viết nhắc lại mong muốn nghe CD mà Mai đã nói trước đó. よね gợi Mai xác nhận điều cả hai cùng nhớ."
+  },
+  "chunks": [
+   {
+    "text": "聞きたいと",
+    "label": {
+     "en": "that you wanted to listen",
+     "vi": "rằng bạn muốn nghe"
+    },
+    "detail": {
+     "en": "聞く → 聞きます → 聞きたい expresses wanting to listen. と marks these words as the content of Mai’s earlier statement.",
+     "vi": "聞く → 聞きます → 聞きたい diễn tả mong muốn nghe. と đánh dấu đây là nội dung lời Mai đã nói."
+    }
+   },
+   {
+    "text": "言っていましたよね。",
+    "label": {
+     "en": "you said, didn’t you?",
+     "vi": "bạn đã nói vậy nhỉ"
+    },
+    "detail": {
+     "en": "言う → 言っていました reports a previous statement. よね checks a memory the writer expects Mai to share.",
+     "vi": "言う → 言っていました thuật lại lời nói trước đó. よね xác nhận lại điều người viết nghĩ Mai cũng nhớ."
+    },
+    "grammarIds": [
+     "g_145"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "あ、マイさんが見たいと言っていたDVDは、今日は持ってこられませんでした。",
+  "translation": {
+   "en": "Oh, I couldn’t bring the DVD you said you wanted to watch today.",
+   "vi": "À, hôm nay tôi không mang được DVD Mai từng nói muốn xem."
+  },
+  "together": {
+   "en": "The long phrase before DVD identifies the particular DVD Mai had asked about. The main statement says the writer could not bring that DVD today.",
+   "vi": "Cụm dài trước DVD xác định chiếc DVD Mai từng nhắc tới. Ý chính là hôm nay người viết không mang được chiếc DVD ấy đến."
+  },
+  "chunks": [
+   {
+    "text": "あ、",
+    "label": {
+     "en": "oh",
+     "vi": "à"
+    },
+    "detail": {
+     "en": "あ introduces an afterthought or something the writer has just remembered.",
+     "vi": "あ mở đầu ý người viết vừa nhớ ra hoặc muốn bổ sung."
+    }
+   },
+   {
+    "text": "マイさんが見たいと言っていたDVDは、",
+    "label": {
+     "en": "the DVD you said you wanted to watch",
+     "vi": "chiếc DVD Mai từng nói muốn xem"
+    },
+    "detail": {
+     "en": "見たいと quotes Mai’s wish; 言っていた is the plain past form used before DVD. The whole clause マイさんが見たいと言っていた modifies DVD, and は makes that DVD the topic.",
+     "vi": "見たいと dẫn lại mong muốn của Mai; 言っていた là dạng quá khứ thường đứng trước DVD. Cả mệnh đề マイさんが見たいと言っていた bổ nghĩa cho DVD, còn は đưa chiếc DVD ấy thành chủ đề."
+    },
+    "grammarIds": [
+     "g_165",
+     "g_145"
+    ]
+   },
+   {
+    "text": "今日は",
+    "label": {
+     "en": "today",
+     "vi": "hôm nay thì"
+    },
+    "detail": {
+     "en": "は highlights today, setting up the contrast with bringing it next week.",
+     "vi": "は nhấn vào hôm nay, tạo sự đối chiếu với việc sẽ mang đến vào tuần sau."
+    }
+   },
+   {
+    "text": "持ってこられませんでした。",
+    "label": {
+     "en": "I couldn’t bring it",
+     "vi": "tôi đã không mang đến được"
+    },
+    "detail": {
+     "en": "持ってくる → 持ってこられる is potential; ませんでした makes it polite negative past. It expresses inability on this occasion.",
+     "vi": "持ってくる → 持ってこられる là thể khả năng; ませんでした chuyển thành phủ định quá khứ lịch sự. Câu diễn tả lần này người viết không mang đến được."
+    },
+    "grammarIds": [
+     "g_061_1"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "来週、持ってきますね。",
+  "translation": {
+   "en": "I’ll bring it next week.",
+   "vi": "Tuần sau tôi mang đến nhé."
+  },
+  "together": {
+   "en": "The writer promises to bring the missing DVD next week. The DVD and the writer are understood from the previous sentence.",
+   "vi": "Người viết hẹn tuần sau sẽ mang chiếc DVD còn thiếu đến. DVD và người mang đều được hiểu từ câu trước."
+  },
+  "chunks": [
+   {
+    "text": "来週、",
+    "label": {
+     "en": "next week",
+     "vi": "tuần sau"
+    },
+    "detail": {
+     "en": "来週 sets the future time of the promised action; it normally needs no に.",
+     "vi": "来週 nêu thời gian cho việc đã hẹn; từ này thường không cần に."
+    }
+   },
+   {
+    "text": "持ってきますね。",
+    "label": {
+     "en": "I’ll bring it",
+     "vi": "tôi sẽ mang đến nhé"
+    },
+    "detail": {
+     "en": "持ってくる → 持ってきます is a polite future statement here. ね gives the promise a friendly tone.",
+     "vi": "持ってくる → 持ってきます ở đây nói lịch sự về việc sẽ làm. ね tạo giọng thân thiện cho lời hẹn."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "みなさんは「荒木宗太郎」を知っていますか。",
+  "translation": {
+   "en": "Do you know Araki Sotaro?",
+   "vi": "Các bạn biết Araki Sotaro không?"
+  },
+  "together": {
+   "en": "The passage opens by asking whether the readers know Araki Sotaro. 知っています asks about existing knowledge of a person.",
+   "vi": "Bài đọc mở đầu bằng câu hỏi người đọc có biết Araki Sotaro hay không. 知っています hỏi về việc đã biết một người."
+  },
+  "chunks": [
+   {
+    "text": "みなさんは",
+    "label": {
+     "en": "everyone",
+     "vi": "các bạn"
+    },
+    "detail": {
+     "en": "は addresses the readers as the topic of the question.",
+     "vi": "は đưa những người đọc vào vị trí chủ đề của câu hỏi."
+    }
+   },
+   {
+    "text": "「荒木宗太郎」を",
+    "label": {
+     "en": "Araki Sotaro",
+     "vi": "Araki Sotaro"
+    },
+    "detail": {
+     "en": "The brackets highlight the person’s name. を marks the person whose identity the readers may know.",
+     "vi": "Dấu ngoặc làm nổi bật tên người. を đánh dấu người mà độc giả có thể biết."
+    }
+   },
+   {
+    "text": "知っていますか。",
+    "label": {
+     "en": "do you know him?",
+     "vi": "có biết không?"
+    },
+    "detail": {
+     "en": "知る → 知っている describes the state of knowing, rather than learning something at this moment. か makes it a polite question.",
+     "vi": "知る → 知っている diễn tả trạng thái đã biết, không phải đang tìm hiểu ngay lúc này. か tạo câu hỏi lịch sự."
+    },
+    "grammarIds": [
+     "g_095"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "荒木宗太郎は400年ぐらい前に、ベトナムのお姫様と結婚した人です。",
+  "translation": {
+   "en": "Araki Sotaro is the man who married a Vietnamese princess about four hundred years ago.",
+   "vi": "Araki Sotaro là người kết hôn với công chúa Việt Nam khoảng 400 năm trước."
+  },
+  "together": {
+   "en": "The sentence identifies Araki through a past event: marrying a Vietnamese princess. Everything from the time phrase through 結婚した describes 人.",
+   "vi": "Câu giới thiệu Araki qua một sự việc trong quá khứ: kết hôn với công chúa Việt Nam. Phần từ cụm thời gian đến 結婚した đều bổ nghĩa cho 人."
+  },
+  "chunks": [
+   {
+    "text": "荒木宗太郎は",
+    "label": {
+     "en": "Araki Sotaro",
+     "vi": "Araki Sotaro"
+    },
+    "detail": {
+     "en": "は establishes Araki as the person being introduced.",
+     "vi": "は nêu Araki là người đang được giới thiệu."
+    }
+   },
+   {
+    "text": "400年ぐらい前に、",
+    "label": {
+     "en": "about four hundred years ago",
+     "vi": "khoảng 400 năm trước"
+    },
+    "detail": {
+     "en": "ぐらい makes the number approximate. 前 means ago here, and に places the marriage at that time.",
+     "vi": "ぐらい diễn tả con số ước chừng. 前 ở đây nghĩa là trước đây; に xác định thời điểm kết hôn."
+    }
+   },
+   {
+    "text": "ベトナムのお姫様と",
+    "label": {
+     "en": "a Vietnamese princess",
+     "vi": "với công chúa Việt Nam"
+    },
+    "detail": {
+     "en": "の links the princess to Vietnam, and と marks the marriage partner. お姫様 is a respectful word for a princess.",
+     "vi": "の nối công chúa với Việt Nam; と đánh dấu người kết hôn cùng. お姫様 là cách gọi công chúa mang sắc thái kính trọng."
+    },
+    "words": [
+     {
+      "text": "お姫様",
+      "kana": "おひめさま",
+      "meaning": {
+       "en": "princess",
+       "vi": "công chúa"
+      }
+     }
+    ]
+   },
+   {
+    "text": "結婚した人です。",
+    "label": {
+     "en": "is the man who married her",
+     "vi": "là người đã kết hôn"
+    },
+    "detail": {
+     "en": "結婚する → 結婚した is plain past before 人. The preceding time and partner phrases belong to this modifying clause, which identifies the man.",
+     "vi": "結婚する → 結婚した là thể quá khứ thường đứng trước 人. Các cụm chỉ thời gian và người kết hôn cùng phía trước cũng thuộc mệnh đề bổ nghĩa, giúp xác định người được nói đến."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "結婚する",
+      "kana": "けっこんする",
+      "meaning": {
+       "en": "to marry",
+       "vi": "kết hôn"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "荒木宗太郎は、日本の長崎で貿易の仕事をしていました。仕事で、色々な国へ行ったそうです。",
+  "translation": {
+   "en": "He worked in trade in Nagasaki, Japan. Apparently his work took him to many countries.",
+   "vi": "Ông làm nghề buôn bán tại Nagasaki, Nhật Bản. Nghe nói vì công việc ông đi nhiều nước."
+  },
+  "together": {
+   "en": "The first sentence describes Araki’s former occupation and base. The second reports that he travelled to various countries for work.",
+   "vi": "Câu đầu nói về nghề nghiệp và nơi Araki từng làm việc. Câu sau thuật lại rằng ông đi nhiều nước vì công việc."
+  },
+  "chunks": [
+   {
+    "text": "荒木宗太郎は、",
+    "label": {
+     "en": "Araki Sotaro",
+     "vi": "Araki Sotaro"
+    },
+    "detail": {
+     "en": "は keeps Araki as the topic of this biographical account.",
+     "vi": "は tiếp tục nêu Araki làm chủ đề của phần kể về cuộc đời ông."
+    }
+   },
+   {
+    "text": "日本の長崎で",
+    "label": {
+     "en": "in Nagasaki, Japan",
+     "vi": "tại Nagasaki, Nhật Bản"
+    },
+    "detail": {
+     "en": "日本の長崎 identifies Nagasaki as a place in Japan. で marks where he worked.",
+     "vi": "日本の長崎 xác định Nagasaki là địa danh thuộc Nhật Bản. で chỉ nơi ông làm việc."
+    }
+   },
+   {
+    "text": "貿易の仕事をしていました。",
+    "label": {
+     "en": "worked in trade",
+     "vi": "đã làm nghề buôn bán"
+    },
+    "detail": {
+     "en": "貿易の modifies 仕事. する → していました describes an occupation that continued over a period in the past.",
+     "vi": "貿易の bổ nghĩa cho 仕事. する → していました diễn tả công việc kéo dài trong một giai đoạn trước đây."
+    },
+    "words": [
+     {
+      "text": "貿易",
+      "kana": "ぼうえき",
+      "meaning": {
+       "en": "international trade",
+       "vi": "ngoại thương, buôn bán quốc tế"
+      }
+     }
+    ]
+   },
+   {
+    "text": "仕事で、",
+    "label": {
+     "en": "for work",
+     "vi": "vì công việc"
+    },
+    "detail": {
+     "en": "で gives the reason or circumstances for the journeys, rather than the place of an action.",
+     "vi": "で chỉ lý do hay hoàn cảnh của những chuyến đi, ở đây không chỉ địa điểm."
+    }
+   },
+   {
+    "text": "色々な国へ",
+    "label": {
+     "en": "to various countries",
+     "vi": "đến nhiều nước"
+    },
+    "detail": {
+     "en": "色々 is a な-adjective, so な links it to 国. へ marks the direction of travel.",
+     "vi": "色々 là tính từ な nên cần な trước 国. へ đánh dấu hướng di chuyển."
+    }
+   },
+   {
+    "text": "行ったそうです。",
+    "label": {
+     "en": "apparently he went",
+     "vi": "nghe nói ông đã đi"
+    },
+    "detail": {
+     "en": "行く → 行った + そうです reports information about past travel. This そうです follows a complete plain form and expresses hearsay.",
+     "vi": "行く → 行った + そうです thuật lại thông tin về những chuyến đi trong quá khứ. そうです đứng sau một dạng thường hoàn chỉnh để diễn tả điều nghe được."
+    },
+    "grammarIds": [
+     "g_144"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "そして、1610年に、船でベトナムへ行きました。",
+  "translation": {
+   "en": "Then in 1610 he went to Vietnam by ship.",
+   "vi": "Năm 1610, ông đến Việt Nam bằng tàu."
+  },
+  "together": {
+   "en": "The narrative moves to his voyage to Vietnam in 1610. The sentence gives the date, means of travel, and destination in that order.",
+   "vi": "Mạch kể chuyển sang chuyến đi Việt Nam năm 1610. Câu lần lượt nêu thời gian, phương tiện rồi đích đến."
+  },
+  "chunks": [
+   {
+    "text": "そして、",
+    "label": {
+     "en": "then",
+     "vi": "sau đó"
+    },
+    "detail": {
+     "en": "そして connects this event to the earlier account of his travels.",
+     "vi": "そして nối sự việc này với phần kể trước về những chuyến đi của ông."
+    }
+   },
+   {
+    "text": "1610年に、",
+    "label": {
+     "en": "in 1610",
+     "vi": "vào năm 1610"
+    },
+    "detail": {
+     "en": "に marks the specific year when the journey took place.",
+     "vi": "に đánh dấu năm cụ thể diễn ra chuyến đi."
+    }
+   },
+   {
+    "text": "船で",
+    "label": {
+     "en": "by ship",
+     "vi": "bằng tàu"
+    },
+    "detail": {
+     "en": "で marks the means of transport.",
+     "vi": "で đánh dấu phương tiện di chuyển."
+    }
+   },
+   {
+    "text": "ベトナムへ",
+    "label": {
+     "en": "to Vietnam",
+     "vi": "đến Việt Nam"
+    },
+    "detail": {
+     "en": "へ marks the direction or destination of the journey.",
+     "vi": "へ đánh dấu hướng đi hoặc đích đến của chuyến đi."
+    }
+   },
+   {
+    "text": "行きました。",
+    "label": {
+     "en": "he went",
+     "vi": "ông đã đi"
+    },
+    "detail": {
+     "en": "行く → 行きました is polite past. Araki remains the understood subject.",
+     "vi": "行く → 行きました là quá khứ lịch sự. Chủ thể được hiểu vẫn là Araki."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "ベトナムで、荒木宗太郎はよく働きました。",
+  "translation": {
+   "en": "He worked hard in Vietnam.",
+   "vi": "Ở Việt Nam ông làm việc chăm chỉ."
+  },
+  "together": {
+   "en": "The sentence describes Araki’s hard work after arriving in Vietnam. よく praises how diligently he worked.",
+   "vi": "Câu mô tả Araki làm việc chăm chỉ sau khi đến Việt Nam. よく ở đây nhấn vào sự siêng năng của ông."
+  },
+  "chunks": [
+   {
+    "text": "ベトナムで、",
+    "label": {
+     "en": "in Vietnam",
+     "vi": "ở Việt Nam"
+    },
+    "detail": {
+     "en": "で marks the place where he worked.",
+     "vi": "で đánh dấu nơi ông làm việc."
+    }
+   },
+   {
+    "text": "荒木宗太郎は",
+    "label": {
+     "en": "Araki Sotaro",
+     "vi": "Araki Sotaro"
+    },
+    "detail": {
+     "en": "は keeps Araki as the topic.",
+     "vi": "は tiếp tục nêu Araki làm chủ đề."
+    }
+   },
+   {
+    "text": "よく働きました。",
+    "label": {
+     "en": "worked hard",
+     "vi": "đã làm việc chăm chỉ"
+    },
+    "detail": {
+     "en": "働く → 働きました is polite past. Here よく means diligently or hard, fitting the king’s favorable impression in the next sentence.",
+     "vi": "働く → 働きました là quá khứ lịch sự. よく ở đây chỉ sự chăm chỉ, phù hợp với ấn tượng tốt của nhà vua trong câu sau."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "よく働く荒木宗太郎を見たベトナムの王様は、荒木宗太郎はとてもいい人だと思いました。",
+  "translation": {
+   "en": "Seeing his hard work, the Vietnamese king thought he was a very good man.",
+   "vi": "Nhìn ông chăm chỉ, vua Việt Nam nghĩ ông là người rất tốt."
+  },
+  "together": {
+   "en": "Two nested descriptions identify the king: he saw Araki, who worked hard. The main clause then tells us what the king thought of Araki.",
+   "vi": "Hai lớp bổ nghĩa xác định nhà vua: vua nhìn thấy Araki, người làm việc chăm chỉ. Mệnh đề chính cho biết nhà vua nghĩ gì về Araki."
+  },
+  "chunks": [
+   {
+    "text": "よく働く荒木宗太郎を見たベトナムの王様は、",
+    "label": {
+     "en": "the Vietnamese king who saw Araki working hard",
+     "vi": "vua Việt Nam đã thấy Araki làm việc chăm chỉ"
+    },
+    "detail": {
+     "en": "よく働く modifies 荒木宗太郎, and 荒木宗太郎を見た modifies ベトナムの王様. を marks whom the king saw, while は makes the king the main topic.",
+     "vi": "よく働く bổ nghĩa cho 荒木宗太郎; 荒木宗太郎を見た lại bổ nghĩa cho ベトナムの王様. を đánh dấu người vua nhìn thấy, còn は đưa nhà vua thành chủ đề chính."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "王様",
+      "kana": "おうさま",
+      "meaning": {
+       "en": "king",
+       "vi": "nhà vua"
+      }
+     }
+    ]
+   },
+   {
+    "text": "荒木宗太郎は",
+    "label": {
+     "en": "Araki Sotaro",
+     "vi": "Araki Sotaro"
+    },
+    "detail": {
+     "en": "This は belongs inside the thought being reported. The king is thinking about Araki.",
+     "vi": "は này nằm trong nội dung suy nghĩ được thuật lại. Người mà nhà vua đánh giá là Araki."
+    }
+   },
+   {
+    "text": "とてもいい人だと",
+    "label": {
+     "en": "that he was a very good man",
+     "vi": "rằng ông là người rất tốt"
+    },
+    "detail": {
+     "en": "いい modifies 人. A noun predicate takes plain だ before the quotation marker と.",
+     "vi": "いい bổ nghĩa cho 人. Vị ngữ danh từ dùng だ ở thể thường trước と để dẫn nội dung suy nghĩ."
+    }
+   },
+   {
+    "text": "思いました。",
+    "label": {
+     "en": "he thought",
+     "vi": "vua đã nghĩ"
+    },
+    "detail": {
+     "en": "思う → 思いました is polite past. と links the king’s judgment to this verb.",
+     "vi": "思う → 思いました là quá khứ lịch sự. と nối lời đánh giá của nhà vua với động từ này."
+    },
+    "grammarIds": [
+     "g_147"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "王様は、彼に「私の娘、アニオー姫と結婚してください」と言いました。",
+  "translation": {
+   "en": "The king told him, “Please marry my daughter, Princess Anio.”",
+   "vi": "Vua nói: “Hãy kết hôn với con gái ta, công chúa Anio.”"
+  },
+  "together": {
+   "en": "The king directly asks Araki to marry his daughter. 私 inside the quotation refers to the king, so 私の娘 means the king’s daughter.",
+   "vi": "Nhà vua trực tiếp đề nghị Araki kết hôn với con gái mình. 私 trong lời trích là nhà vua, nên 私の娘 là con gái của vua."
+  },
+  "chunks": [
+   {
+    "text": "王様は、",
+    "label": {
+     "en": "the king",
+     "vi": "nhà vua"
+    },
+    "detail": {
+     "en": "は identifies the speaker of the quoted request.",
+     "vi": "は nêu người nói lời đề nghị được trích dẫn."
+    },
+    "words": [
+     {
+      "text": "王様",
+      "kana": "おうさま",
+      "meaning": {
+       "en": "king",
+       "vi": "nhà vua"
+      }
+     }
+    ]
+   },
+   {
+    "text": "彼に",
+    "label": {
+     "en": "to him",
+     "vi": "với ông ấy"
+    },
+    "detail": {
+     "en": "に marks the person addressed by 言いました, here Araki.",
+     "vi": "に đánh dấu người được nói với trong 言いました, ở đây là Araki."
+    }
+   },
+   {
+    "text": "「私の娘、アニオー姫と",
+    "label": {
+     "en": "my daughter, Princess Anio",
+     "vi": "với con gái ta, công chúa Anio"
+    },
+    "detail": {
+     "en": "私の娘 and アニオー姫 refer to the same person. と marks her as the proposed marriage partner.",
+     "vi": "私の娘 và アニオー姫 cùng chỉ một người. と đánh dấu người được đề nghị kết hôn cùng."
+    },
+    "words": [
+     {
+      "text": "娘",
+      "kana": "むすめ",
+      "meaning": {
+       "en": "daughter",
+       "vi": "con gái"
+      }
+     }
+    ]
+   },
+   {
+    "text": "結婚してください」",
+    "label": {
+     "en": "please marry her",
+     "vi": "hãy kết hôn"
+    },
+    "detail": {
+     "en": "結婚する → 結婚して + ください makes a polite request. The closing bracket ends the king’s exact words.",
+     "vi": "結婚する → 結婚して + ください tạo lời đề nghị lịch sự. Dấu ngoặc đóng kết thúc nguyên lời của nhà vua."
+    },
+    "grammarIds": [
+     "g_099"
+    ],
+    "words": [
+     {
+      "text": "結婚する",
+      "kana": "けっこんする",
+      "meaning": {
+       "en": "to marry",
+       "vi": "kết hôn"
+      }
+     }
+    ]
+   },
+   {
+    "text": "と言いました。",
+    "label": {
+     "en": "he said",
+     "vi": "vua đã nói"
+    },
+    "detail": {
+     "en": "と marks the preceding quotation. 言う → 言いました reports what the king said in polite past form.",
+     "vi": "と đánh dấu lời trích phía trước. 言う → 言いました thuật lại lời nhà vua nói bằng dạng quá khứ lịch sự."
+    },
+    "grammarIds": [
+     "g_145"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "荒木宗太郎はベトナムのお姫様、アニオー姫と結婚しました。",
+  "translation": {
+   "en": "Araki Sotaro married the Vietnamese princess Anio.",
+   "vi": "Araki Sotaro kết hôn với công chúa Anio của Việt Nam."
+  },
+  "together": {
+   "en": "The sentence gives the outcome of the king’s request: Araki married Princess Anio. The two descriptions before と identify the same princess.",
+   "vi": "Câu nêu kết quả của lời đề nghị: Araki kết hôn với công chúa Anio. Hai cách gọi trước と cùng xác định một công chúa."
+  },
+  "chunks": [
+   {
+    "text": "荒木宗太郎は",
+    "label": {
+     "en": "Araki Sotaro",
+     "vi": "Araki Sotaro"
+    },
+    "detail": {
+     "en": "は marks Araki as the topic of the marriage statement.",
+     "vi": "は đánh dấu Araki là chủ đề của câu nói về việc kết hôn."
+    }
+   },
+   {
+    "text": "ベトナムのお姫様、アニオー姫と",
+    "label": {
+     "en": "the Vietnamese princess Anio",
+     "vi": "với công chúa Anio của Việt Nam"
+    },
+    "detail": {
+     "en": "ベトナムのお姫様 is clarified by the name アニオー姫. と marks the marriage partner.",
+     "vi": "Tên アニオー姫 làm rõ ベトナムのお姫様 là ai. と đánh dấu người kết hôn cùng."
+    },
+    "words": [
+     {
+      "text": "お姫様",
+      "kana": "おひめさま",
+      "meaning": {
+       "en": "princess",
+       "vi": "công chúa"
+      }
+     }
+    ]
+   },
+   {
+    "text": "結婚しました。",
+    "label": {
+     "en": "married",
+     "vi": "đã kết hôn"
+    },
+    "detail": {
+     "en": "結婚する → 結婚しました is polite past, presenting the marriage as a completed event.",
+     "vi": "結婚する → 結婚しました là quá khứ lịch sự, kể lại việc kết hôn đã diễn ra."
+    },
+    "words": [
+     {
+      "text": "結婚する",
+      "kana": "けっこんする",
+      "meaning": {
+       "en": "to marry",
+       "vi": "kết hôn"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "荒木宗太郎はアニオー姫と一緒に長崎へ帰りました。",
+  "translation": {
+   "en": "He returned to Nagasaki with Princess Anio.",
+   "vi": "Ông cùng công chúa Anio trở về Nagasaki."
+  },
+  "together": {
+   "en": "Araki returned to Nagasaki accompanied by Princess Anio. と一緒に emphasizes that they travelled together.",
+   "vi": "Araki trở về Nagasaki cùng công chúa Anio. と一緒に nhấn mạnh hai người cùng đi."
+  },
+  "chunks": [
+   {
+    "text": "荒木宗太郎は",
+    "label": {
+     "en": "Araki Sotaro",
+     "vi": "Araki Sotaro"
+    },
+    "detail": {
+     "en": "は keeps Araki as the topic of the story.",
+     "vi": "は tiếp tục nêu Araki làm chủ đề câu chuyện."
+    }
+   },
+   {
+    "text": "アニオー姫と一緒に",
+    "label": {
+     "en": "with Princess Anio",
+     "vi": "cùng công chúa Anio"
+    },
+    "detail": {
+     "en": "と marks the companion, and 一緒に means together.",
+     "vi": "と đánh dấu người đi cùng; 一緒に có nghĩa là cùng nhau."
+    }
+   },
+   {
+    "text": "長崎へ",
+    "label": {
+     "en": "to Nagasaki",
+     "vi": "về Nagasaki"
+    },
+    "detail": {
+     "en": "へ marks the destination of the return.",
+     "vi": "へ đánh dấu nơi trở về."
+    }
+   },
+   {
+    "text": "帰りました。",
+    "label": {
+     "en": "he returned",
+     "vi": "ông đã trở về"
+    },
+    "detail": {
+     "en": "帰る → 帰りました is polite past. 帰る presents Nagasaki as the place he returns to.",
+     "vi": "帰る → 帰りました là quá khứ lịch sự. 帰る cho thấy Nagasaki là nơi ông quay về."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "長崎に来たアニオー姫は、たくさんの長崎の人と友達になりました。",
+  "translation": {
+   "en": "In Nagasaki, Princess Anio made many local friends.",
+   "vi": "Đến Nagasaki, công chúa kết bạn với nhiều người dân nơi đây."
+  },
+  "together": {
+   "en": "The modifying clause introduces Anio as having come to Nagasaki. The main predicate says she became friends with many people there.",
+   "vi": "Mệnh đề bổ nghĩa giới thiệu Anio là người đã đến Nagasaki. Vị ngữ chính nói cô kết bạn với nhiều người dân nơi đây."
+  },
+  "chunks": [
+   {
+    "text": "長崎に来たアニオー姫は、",
+    "label": {
+     "en": "Princess Anio, who came to Nagasaki",
+     "vi": "công chúa Anio đã đến Nagasaki"
+    },
+    "detail": {
+     "en": "来る → 来た is plain past before アニオー姫. 長崎に来た modifies the princess, and は makes her the topic.",
+     "vi": "来る → 来た là thể quá khứ thường trước アニオー姫. 長崎に来た bổ nghĩa cho công chúa; は đưa cô thành chủ đề."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "たくさんの長崎の人と",
+    "label": {
+     "en": "with many Nagasaki people",
+     "vi": "với nhiều người dân Nagasaki"
+    },
+    "detail": {
+     "en": "たくさんの indicates a large number of people; 長崎の identifies where they are from. と marks the people she became friends with.",
+     "vi": "たくさんの chỉ số lượng người đông; 長崎の xác định họ là người Nagasaki. と đánh dấu những người cô kết bạn cùng."
+    }
+   },
+   {
+    "text": "友達になりました。",
+    "label": {
+     "en": "became friends",
+     "vi": "đã trở thành bạn"
+    },
+    "detail": {
+     "en": "友達 + に + なりました describes a change in relationship. Here it means she made friends with those people.",
+     "vi": "友達 + に + なりました diễn tả sự thay đổi trong quan hệ. Ở đây nghĩa là cô kết bạn với những người ấy."
+    },
+    "grammarIds": [
+     "g_160"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "長崎の人は、みんなアニオー姫が好きでした。",
+  "translation": {
+   "en": "Everyone in Nagasaki liked her.",
+   "vi": "Mọi người ở Nagasaki đều quý công chúa."
+  },
+  "together": {
+   "en": "The sentence says all the people of Nagasaki liked Anio. は marks the people who liked her, while が marks the person liked.",
+   "vi": "Câu cho biết mọi người dân Nagasaki đều quý Anio. は đánh dấu những người có tình cảm, còn が đánh dấu người được quý mến."
+  },
+  "chunks": [
+   {
+    "text": "長崎の人は、",
+    "label": {
+     "en": "the people of Nagasaki",
+     "vi": "người dân Nagasaki"
+    },
+    "detail": {
+     "en": "の links the people to Nagasaki. は introduces them as the topic.",
+     "vi": "の nối người dân với Nagasaki. は đưa họ thành chủ đề."
+    }
+   },
+   {
+    "text": "みんな",
+    "label": {
+     "en": "all of them",
+     "vi": "tất cả đều"
+    },
+    "detail": {
+     "en": "みんな refers back to the people of Nagasaki and shows that the statement applies to everyone.",
+     "vi": "みんな chỉ lại người dân Nagasaki và cho biết nhận xét áp dụng cho tất cả."
+    }
+   },
+   {
+    "text": "アニオー姫が",
+    "label": {
+     "en": "Princess Anio",
+     "vi": "công chúa Anio"
+    },
+    "detail": {
+     "en": "が marks the person liked with 好き; Japanese uses が here rather than を.",
+     "vi": "が đánh dấu người được yêu quý với 好き; tiếng Nhật dùng が ở đây thay vì を."
+    }
+   },
+   {
+    "text": "好きでした。",
+    "label": {
+     "en": "liked her",
+     "vi": "đã quý mến cô"
+    },
+    "detail": {
+     "en": "好き is a な-adjective; 好きです → 好きでした makes the statement polite past.",
+     "vi": "好き là tính từ な; 好きです → 好きでした chuyển câu sang quá khứ lịch sự."
+    },
+    "grammarIds": [
+     "g_065"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "2023年に、この2人の話がオペラになったそうです。",
+  "translation": {
+   "en": "Apparently their story became an opera in 2023.",
+   "vi": "Nghe nói chuyện hai người được dựng thành opera năm 2023."
+  },
+  "together": {
+   "en": "The writer reports that the couple’s story was made into an opera in 2023. そうです presents this as information the writer has heard.",
+   "vi": "Người viết thuật lại rằng chuyện của hai người được dựng thành opera vào năm 2023. そうです cho biết đây là thông tin nghe được."
+  },
+  "chunks": [
+   {
+    "text": "2023年に、",
+    "label": {
+     "en": "in 2023",
+     "vi": "vào năm 2023"
+    },
+    "detail": {
+     "en": "に marks the year when the story became an opera.",
+     "vi": "に đánh dấu năm câu chuyện được dựng thành opera."
+    }
+   },
+   {
+    "text": "この2人の話が",
+    "label": {
+     "en": "the story of these two people",
+     "vi": "chuyện của hai người này"
+    },
+    "detail": {
+     "en": "この2人 refers to Araki and Anio. の links them to 話, and が marks what became an opera.",
+     "vi": "この2人 chỉ Araki và Anio. の nối hai người với 話; が đánh dấu điều đã trở thành opera."
+    }
+   },
+   {
+    "text": "オペラになったそうです。",
+    "label": {
+     "en": "apparently became an opera",
+     "vi": "nghe nói đã được dựng thành opera"
+    },
+    "detail": {
+     "en": "オペラに + なった describes the change in form. Plain past なった + そうです reports that this change happened.",
+     "vi": "オペラに + なった diễn tả sự chuyển đổi hình thức. なった ở thể quá khứ thường kết hợp với そうです để thuật lại sự việc đã xảy ra."
+    },
+    "grammarIds": [
+     "g_160",
+     "g_144"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "これからもずっと、ベトナムと日本はいい友達でいるでしょう。",
+  "translation": {
+   "en": "Vietnam and Japan will surely remain good friends in the future.",
+   "vi": "Từ nay Việt Nam và Nhật Bản chắc sẽ mãi là bạn tốt."
+  },
+  "together": {
+   "en": "The passage closes with a hopeful prediction about lasting friendship between Vietnam and Japan. でいる expresses remaining in that relationship.",
+   "vi": "Bài đọc kết lại bằng dự đoán đầy hy vọng về tình bạn bền lâu giữa Việt Nam và Nhật Bản. でいる diễn tả việc duy trì mối quan hệ ấy."
+  },
+  "chunks": [
+   {
+    "text": "これからもずっと、",
+    "label": {
+     "en": "from now on, always",
+     "vi": "từ nay về sau mãi mãi"
+    },
+    "detail": {
+     "en": "これから means from now on; も adds the sense of continuing as before. ずっと stresses that the friendship will last.",
+     "vi": "これから là từ nay về sau; も gợi ý tiếp tục như trước. ずっと nhấn mạnh tình bạn sẽ kéo dài."
+    }
+   },
+   {
+    "text": "ベトナムと日本は",
+    "label": {
+     "en": "Vietnam and Japan",
+     "vi": "Việt Nam và Nhật Bản"
+    },
+    "detail": {
+     "en": "と joins the two countries, and は sets them together as the topic.",
+     "vi": "と nối hai quốc gia; は đưa cả hai thành chủ đề."
+    }
+   },
+   {
+    "text": "いい友達でいるでしょう。",
+    "label": {
+     "en": "will probably remain good friends",
+     "vi": "chắc sẽ tiếp tục là bạn tốt"
+    },
+    "detail": {
+     "en": "友達でいる means to remain friends. でしょう adds the writer’s prediction about the continuing relationship.",
+     "vi": "友達でいる nghĩa là tiếp tục là bạn. でしょう thể hiện dự đoán của người viết về mối quan hệ được duy trì."
+    },
+    "grammarIds": [
+     "g_136"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "青空フリーマーケット　出店者募集！",
+  "translation": {
+   "en": "Open-air flea market: sellers wanted!",
+   "vi": "Chợ đồ cũ ngoài trời: tuyển người mở gian hàng!"
+  },
+  "together": {
+   "en": "This announcement names the open-air flea market and calls for sellers. The compact noun phrases are typical of poster headings.",
+   "vi": "Thông báo nêu tên chợ đồ cũ ngoài trời và tuyển người mở gian hàng. Những cụm danh từ ngắn gọn này thường dùng ở tiêu đề áp phích."
+  },
+  "chunks": [
+   {
+    "text": "青空フリーマーケット　",
+    "label": {
+     "en": "open-air flea market",
+     "vi": "chợ đồ cũ ngoài trời"
+    },
+    "detail": {
+     "en": "青空 literally means blue sky; before an event name it suggests an outdoor setting. フリーマーケット is a market for second-hand items.",
+     "vi": "青空 nghĩa gốc là bầu trời xanh; đứng trước tên sự kiện, từ này gợi việc tổ chức ngoài trời. フリーマーケット là chợ bán đồ đã qua sử dụng."
+    },
+    "words": [
+     {
+      "text": "青空",
+      "kana": "あおぞら",
+      "meaning": {
+       "en": "blue sky; here: open-air",
+       "vi": "trời xanh; ở đây: ngoài trời"
+      }
+     }
+    ]
+   },
+   {
+    "text": "出店者募集！",
+    "label": {
+     "en": "sellers wanted!",
+     "vi": "tuyển người mở gian hàng!"
+    },
+    "detail": {
+     "en": "出店者 means people who set up stalls; 募集 announces that applications are being accepted. A heading can omit a full predicate such as しています.",
+     "vi": "出店者 là những người mở gian hàng; 募集 thông báo đang tuyển người đăng ký. Tiêu đề có thể lược vị ngữ đầy đủ như しています."
+    },
+    "words": [
+     {
+      "text": "出店者",
+      "kana": "しゅってんしゃ",
+      "meaning": {
+       "en": "stallholder, seller at an event",
+       "vi": "người mở gian hàng"
+      }
+     },
+     {
+      "text": "募集",
+      "kana": "ぼしゅう",
+      "meaning": {
+       "en": "recruitment, call for applications",
+       "vi": "tuyển người, nhận đăng ký"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "10:00〜15:00　2021.4.17（土）　緑第二公園（緑町駅から5分）",
+  "translation": {
+   "en": "10:00–15:00, Saturday April 17, 2021. Midori Second Park, five minutes from Midoricho Station.",
+   "vi": "10–15 giờ, thứ Bảy 17/4/2021. Công viên Midori số 2, cách ga Midoricho năm phút."
+  },
+  "together": {
+   "en": "The row gives the event’s hours, date, and venue. The parenthesis after the park name explains how far it is from the station.",
+   "vi": "Dòng này nêu giờ, ngày và địa điểm tổ chức. Phần trong ngoặc sau tên công viên cho biết khoảng cách tính theo thời gian từ ga."
+  },
+  "chunks": [
+   {
+    "text": "10:00〜15:00　",
+    "label": {
+     "en": "10:00 to 15:00",
+     "vi": "từ 10 giờ đến 15 giờ"
+    },
+    "detail": {
+     "en": "The symbol 〜 shows a time range, equivalent here to から…まで.",
+     "vi": "Ký hiệu 〜 chỉ khoảng thời gian, tương đương から…まで trong trường hợp này."
+    }
+   },
+   {
+    "text": "2021.4.17（土）　",
+    "label": {
+     "en": "Saturday, April 17, 2021",
+     "vi": "thứ Bảy, ngày 17 tháng 4 năm 2021"
+    },
+    "detail": {
+     "en": "The date is written year, month, day. 土 abbreviates 土曜日, Saturday.",
+     "vi": "Ngày được viết theo thứ tự năm, tháng, ngày. 土 viết tắt của 土曜日, thứ Bảy."
+    }
+   },
+   {
+    "text": "緑第二公園",
+    "label": {
+     "en": "Midori Second Park",
+     "vi": "công viên Midori số 2"
+    },
+    "detail": {
+     "en": "This is the venue name. 第二 indicates number two in a sequence.",
+     "vi": "Đây là tên địa điểm tổ chức. 第二 chỉ số thứ tự thứ hai."
+    }
+   },
+   {
+    "text": "（緑町駅から5分）",
+    "label": {
+     "en": "five minutes from Midoricho Station",
+     "vi": "cách ga Midoricho năm phút"
+    },
+    "detail": {
+     "en": "から marks the starting point for the stated travel time. The mode of travel is not explicitly written.",
+     "vi": "から đánh dấu điểm xuất phát khi tính thời gian di chuyển. Dòng này không ghi rõ phương tiện đi lại."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "雨のときは24日（土）になります。",
+  "translation": {
+   "en": "If it rains, the event moves to Saturday the 24th.",
+   "vi": "Nếu mưa sẽ chuyển sang thứ Bảy ngày 24."
+  },
+  "together": {
+   "en": "If the scheduled day is rainy, the event date changes to the 24th. The event itself is understood and is not repeated.",
+   "vi": "Nếu trời mưa vào ngày đã định thì sự kiện chuyển sang ngày 24. Sự kiện được hiểu từ ngữ cảnh nên không cần nhắc lại."
+  },
+  "chunks": [
+   {
+    "text": "雨のときは",
+    "label": {
+     "en": "if it rains",
+     "vi": "nếu trời mưa"
+    },
+    "detail": {
+     "en": "A noun takes の before とき. は sets the rainy situation as the condition being discussed.",
+     "vi": "Danh từ dùng の trước とき. は nêu tình huống trời mưa làm điều kiện đang được nói tới."
+    }
+   },
+   {
+    "text": "24日（土）に",
+    "label": {
+     "en": "to Saturday the 24th",
+     "vi": "sang thứ Bảy ngày 24"
+    },
+    "detail": {
+     "en": "24日 is read にじゅうよっか; 土 abbreviates Saturday. に marks the new date with なります.",
+     "vi": "24日 đọc là にじゅうよっか; 土 viết tắt cho thứ Bảy. に đánh dấu ngày mới khi đi với なります."
+    }
+   },
+   {
+    "text": "なります。",
+    "label": {
+     "en": "it will be rescheduled",
+     "vi": "sẽ chuyển sang"
+    },
+    "detail": {
+     "en": "なる describes a change; here the date becomes the 24th. The nonpast form refers to the backup plan.",
+     "vi": "なる diễn tả sự thay đổi; ở đây ngày tổ chức chuyển thành ngày 24. Dạng không quá khứ chỉ phương án dự phòng."
+    },
+    "grammarIds": [
+     "g_160"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "フリーマーケットに店を出せる人：",
+  "translation": {
+   "en": "People eligible to have a stall:",
+   "vi": "Người có thể mở gian hàng:"
+  },
+  "together": {
+   "en": "This heading introduces the categories of people who may run a stall. 出せる modifies 人, so the heading means eligible stallholders.",
+   "vi": "Tiêu đề này mở đầu các nhóm người được phép mở gian hàng. 出せる bổ nghĩa cho 人, xác định những người đủ điều kiện tham gia bán hàng."
+  },
+  "chunks": [
+   {
+    "text": "フリーマーケットに",
+    "label": {
+     "en": "at the flea market",
+     "vi": "tại chợ đồ cũ"
+    },
+    "detail": {
+     "en": "に marks the event where the stall will be set up with 店を出す.",
+     "vi": "に đánh dấu sự kiện mà người tham gia sẽ mở gian hàng trong cách nói 店を出す."
+    }
+   },
+   {
+    "text": "店を出せる人：",
+    "label": {
+     "en": "people who can run a stall",
+     "vi": "người có thể mở gian hàng"
+    },
+    "detail": {
+     "en": "店を出す means to open a shop or set up a stall. 出す → 出せる is potential, and the whole clause modifies 人.",
+     "vi": "店を出す nghĩa là mở cửa hàng hoặc dựng gian bán hàng. 出す → 出せる là thể khả năng; cả mệnh đề bổ nghĩa cho 人."
+    },
+    "grammarIds": [
+     "g_165",
+     "g_061_1"
+    ],
+    "words": [
+     {
+      "text": "出す",
+      "kana": "だす",
+      "meaning": {
+       "en": "to put out; here: set up a stall in 店を出す",
+       "vi": "đưa ra; ở đây: mở gian hàng trong 店を出す"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "① 18歳以上で、緑市に住んでいる人",
+  "translation": {
+   "en": "1. Residents of Midori City aged eighteen or over.",
+   "vi": "1. Người từ 18 tuổi sống tại Midori."
+  },
+  "together": {
+   "en": "This category requires both being at least eighteen and living in Midori City. The linked conditions describe the people eligible to apply.",
+   "vi": "Nhóm này phải đáp ứng cả hai điều kiện: từ 18 tuổi trở lên và sống tại thành phố Midori. Hai điều kiện nối nhau để xác định người đủ điều kiện đăng ký."
+  },
+  "chunks": [
+   {
+    "text": "① 18歳以上で、",
+    "label": {
+     "en": "1. aged eighteen or over",
+     "vi": "1. từ 18 tuổi trở lên"
+    },
+    "detail": {
+     "en": "以上 includes the stated number. で is the linking form of です here, joining the age requirement to the residence requirement.",
+     "vi": "以上 bao gồm cả con số được nêu. で ở đây là dạng nối của です, nối điều kiện tuổi với điều kiện cư trú."
+    },
+    "words": [
+     {
+      "text": "以上",
+      "kana": "いじょう",
+      "meaning": {
+       "en": "or more, at least",
+       "vi": "trở lên, ít nhất"
+      }
+     }
+    ]
+   },
+   {
+    "text": "緑市に",
+    "label": {
+     "en": "in Midori City",
+     "vi": "tại thành phố Midori"
+    },
+    "detail": {
+     "en": "に marks the place of residence with 住む. This is different from で used for where an activity takes place.",
+     "vi": "に chỉ nơi cư trú với 住む. Cách dùng này khác với で chỉ nơi diễn ra một hoạt động."
+    }
+   },
+   {
+    "text": "住んでいる人",
+    "label": {
+     "en": "people who live there",
+     "vi": "người đang sống ở đó"
+    },
+    "detail": {
+     "en": "住む → 住んでいる describes an ongoing state of residence. The plain form 住んでいる modifies 人 directly.",
+     "vi": "住む → 住んでいる diễn tả trạng thái cư trú đang duy trì. Dạng thường 住んでいる trực tiếp bổ nghĩa cho 人."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "② 18歳以上で、緑市で働いている人",
+  "translation": {
+   "en": "2. People aged eighteen or over working in Midori City.",
+   "vi": "2. Người từ 18 tuổi làm việc tại Midori."
+  },
+  "together": {
+   "en": "The second category covers people aged eighteen or over who work in Midori City. They need not be described as residents in this category.",
+   "vi": "Nhóm thứ hai dành cho người từ 18 tuổi làm việc tại thành phố Midori. Điều kiện ở đây nói về nơi làm việc, không yêu cầu họ phải là cư dân của thành phố."
+  },
+  "chunks": [
+   {
+    "text": "② 18歳以上で、",
+    "label": {
+     "en": "2. aged eighteen or over",
+     "vi": "2. từ 18 tuổi trở lên"
+    },
+    "detail": {
+     "en": "以上 includes eighteen. で links this age requirement to the following description of where the person works.",
+     "vi": "以上 bao gồm cả tuổi 18. で nối điều kiện tuổi với phần mô tả nơi người đó làm việc."
+    },
+    "words": [
+     {
+      "text": "以上",
+      "kana": "いじょう",
+      "meaning": {
+       "en": "or more, at least",
+       "vi": "trở lên, ít nhất"
+      }
+     }
+    ]
+   },
+   {
+    "text": "緑市で",
+    "label": {
+     "en": "in Midori City",
+     "vi": "tại thành phố Midori"
+    },
+    "detail": {
+     "en": "で marks the place of the activity 働く.",
+     "vi": "で đánh dấu nơi diễn ra hoạt động 働く."
+    }
+   },
+   {
+    "text": "働いている人",
+    "label": {
+     "en": "people who work there",
+     "vi": "người làm việc ở đó"
+    },
+    "detail": {
+     "en": "働く → 働いている describes continuing employment here. The plain-form clause modifies 人.",
+     "vi": "働く → 働いている ở đây chỉ việc đang làm việc lâu dài. Mệnh đề ở dạng thường bổ nghĩa cho 人."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "③ 緑市の学校で勉強している人（18歳未満の場合：20歳以上の人と一緒に参加してください。）",
+  "translation": {
+   "en": "3. Students at schools in Midori City. Under-eighteens must participate with someone twenty or over.",
+   "vi": "3. Người học tại trường ở Midori. Nếu chưa đủ 18 tuổi, hãy tham gia cùng người từ 20 tuổi."
+  },
+  "together": {
+   "en": "Students at schools in Midori City form the third category. The parenthesis adds a condition for those under eighteen: participate with someone aged twenty or over.",
+   "vi": "Nhóm thứ ba là người học tại các trường ở Midori. Phần trong ngoặc nêu điều kiện cho người chưa đủ 18 tuổi: tham gia cùng người từ 20 tuổi trở lên."
+  },
+  "chunks": [
+   {
+    "text": "③ 緑市の学校で",
+    "label": {
+     "en": "3. at a school in Midori City",
+     "vi": "3. tại trường ở thành phố Midori"
+    },
+    "detail": {
+     "en": "緑市の modifies 学校, and で marks the place of studying.",
+     "vi": "緑市の bổ nghĩa cho 学校; で đánh dấu nơi học tập."
+    }
+   },
+   {
+    "text": "勉強している人",
+    "label": {
+     "en": "people who study there",
+     "vi": "người đang theo học"
+    },
+    "detail": {
+     "en": "勉強する → 勉強している describes ongoing study or enrollment. This plain-form clause modifies 人.",
+     "vi": "勉強する → 勉強している diễn tả việc đang học hoặc đang theo học. Mệnh đề ở dạng thường này bổ nghĩa cho 人."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "（18歳未満の場合：",
+    "label": {
+     "en": "if under eighteen",
+     "vi": "trường hợp chưa đủ 18 tuổi"
+    },
+    "detail": {
+     "en": "未満 excludes the stated number, so eighteen-year-olds are not included. の connects this noun phrase to 場合, meaning in the case of.",
+     "vi": "未満 không bao gồm con số được nêu, nên người đã đủ 18 tuổi không thuộc nhóm này. の nối cụm danh từ với 場合, nghĩa là trong trường hợp."
+    },
+    "grammarIds": [
+     "g_261"
+    ],
+    "words": [
+     {
+      "text": "未満",
+      "kana": "みまん",
+      "meaning": {
+       "en": "less than, under",
+       "vi": "chưa đủ, dưới"
+      }
+     },
+     {
+      "text": "場合",
+      "kana": "ばあい",
+      "meaning": {
+       "en": "case, situation",
+       "vi": "trường hợp"
+      }
+     }
+    ]
+   },
+   {
+    "text": "20歳以上の人と一緒に",
+    "label": {
+     "en": "with someone aged twenty or over",
+     "vi": "cùng người từ 20 tuổi trở lên"
+    },
+    "detail": {
+     "en": "20歳以上の modifies 人; 以上 includes twenty. と一緒に identifies the required companion.",
+     "vi": "20歳以上の bổ nghĩa cho 人; 以上 bao gồm cả tuổi 20. と一緒に xác định người cần đi cùng."
+    }
+   },
+   {
+    "text": "参加してください。）",
+    "label": {
+     "en": "please participate",
+     "vi": "hãy tham gia"
+    },
+    "detail": {
+     "en": "参加する → 参加して + ください makes a polite instruction. The closing parenthesis ends the special condition for younger participants.",
+     "vi": "参加する → 参加して + ください tạo lời hướng dẫn lịch sự. Dấu ngoặc đóng kết thúc điều kiện riêng dành cho người tham gia nhỏ tuổi."
+    },
+    "grammarIds": [
+     "g_099"
+    ],
+    "words": [
+     {
+      "text": "参加する",
+      "kana": "さんかする",
+      "meaning": {
+       "en": "to participate",
+       "vi": "tham gia"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "募集区画：70区画　参加費：1,500円／1区画（2m×2m）",
+  "translation": {
+   "en": "Seventy spaces available. Fee: ¥1,500 per 2 m × 2 m space.",
+   "vi": "Tuyển 70 gian. Phí 1.500 yên/gian 2 m × 2 m."
+  },
+  "together": {
+   "en": "This row states how many stall spaces are available and the fee per space. The parenthesis gives the dimensions of each space.",
+   "vi": "Dòng này cho biết số gian hàng nhận đăng ký và phí cho mỗi gian. Phần trong ngoặc nêu kích thước từng gian."
+  },
+  "chunks": [
+   {
+    "text": "募集区画：70区画　",
+    "label": {
+     "en": "seventy spaces available",
+     "vi": "nhận đăng ký 70 gian"
+    },
+    "detail": {
+     "en": "募集区画 labels the spaces offered for applications. 区画 names a marked-out space and is repeated after 70 to count those spaces.",
+     "vi": "募集区画 là nhãn chỉ các gian đang nhận đăng ký. 区画 là khoảng được phân chia sẵn và được đặt sau 70 để đếm số gian."
+    },
+    "words": [
+     {
+      "text": "区画",
+      "kana": "くかく",
+      "meaning": {
+       "en": "marked-out space, plot",
+       "vi": "gian, ô được phân chia"
+      }
+     }
+    ]
+   },
+   {
+    "text": "参加費：1,500円／1区画",
+    "label": {
+     "en": "fee: ¥1,500 per space",
+     "vi": "phí: 1.500 yên mỗi gian"
+    },
+    "detail": {
+     "en": "参加費 is the participation fee. ／ expresses per here, so the price applies to one space.",
+     "vi": "参加費 là phí tham gia. ／ ở đây có nghĩa là mỗi, nên mức tiền này áp dụng cho một gian."
+    },
+    "words": [
+     {
+      "text": "参加費",
+      "kana": "さんかひ",
+      "meaning": {
+       "en": "participation fee",
+       "vi": "phí tham gia"
+      }
+     }
+    ]
+   },
+   {
+    "text": "（2m×2m）",
+    "label": {
+     "en": "two metres by two metres",
+     "vi": "2 mét nhân 2 mét"
+    },
+    "detail": {
+     "en": "The parenthesis describes one space. × joins its two dimensions.",
+     "vi": "Phần trong ngoặc mô tả một gian hàng. × nối hai kích thước của gian."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "参加の仕方：メールに①名前 ②住所 ③電話番号 ④メールアドレス ⑤売るもの を書いて、下のメールアドレスに送ってください。",
+  "translation": {
+   "en": "To join, email your name, address, phone number, email address and items to sell to the address below.",
+   "vi": "Cách tham gia: email tên, địa chỉ, số điện thoại, email và đồ sẽ bán đến địa chỉ bên dưới."
+  },
+  "together": {
+   "en": "The instruction lists the five details to include in an email, then asks applicants to send it to the address below. 売る modifies もの inside the list.",
+   "vi": "Hướng dẫn liệt kê năm thông tin cần ghi vào email, rồi yêu cầu gửi đến địa chỉ bên dưới. Trong danh sách, 売る bổ nghĩa cho もの."
+  },
+  "chunks": [
+   {
+    "text": "参加の仕方：",
+    "label": {
+     "en": "how to participate",
+     "vi": "cách tham gia"
+    },
+    "detail": {
+     "en": "仕方 means a way of doing something. の links 参加 to 仕方 to label the application instructions.",
+     "vi": "仕方 nghĩa là cách làm một việc. の nối 参加 với 仕方 để đặt nhãn cho hướng dẫn đăng ký."
+    },
+    "words": [
+     {
+      "text": "仕方",
+      "kana": "しかた",
+      "meaning": {
+       "en": "way, method",
+       "vi": "cách làm"
+      }
+     }
+    ]
+   },
+   {
+    "text": "メールに",
+    "label": {
+     "en": "in the email",
+     "vi": "trong email"
+    },
+    "detail": {
+     "en": "に marks where the information should be written with 書く.",
+     "vi": "に đánh dấu nơi ghi thông tin với 書く."
+    }
+   },
+   {
+    "text": "①名前 ②住所 ③電話番号 ④メールアドレス ",
+    "label": {
+     "en": "name, address, phone number, email address",
+     "vi": "tên, địa chỉ, số điện thoại, địa chỉ email"
+    },
+    "detail": {
+     "en": "The numbered noun phrases are the first four entries in one list. They share the を and 書いて that follow the fifth entry.",
+     "vi": "Các cụm danh từ đánh số là bốn mục đầu của một danh sách. Chúng cùng dùng を và 書いて đặt sau mục thứ năm."
+    }
+   },
+   {
+    "text": "⑤売るもの を書いて、",
+    "label": {
+     "en": "write the items you will sell",
+     "vi": "ghi những món sẽ bán"
+    },
+    "detail": {
+     "en": "売る modifies もの to mean things you will sell. を marks the entire five-item list, and 書く → 書いて connects writing it to sending the email.",
+     "vi": "売る bổ nghĩa cho もの thành những thứ sẽ bán. を đánh dấu cả danh sách năm mục; 書く → 書いて nối việc ghi thông tin với việc gửi email."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   },
+   {
+    "text": "下のメールアドレスに",
+    "label": {
+     "en": "to the email address below",
+     "vi": "đến địa chỉ email bên dưới"
+    },
+    "detail": {
+     "en": "下の modifies メールアドレス, pointing to the address printed below. に marks the destination of the email.",
+     "vi": "下の bổ nghĩa cho メールアドレス, chỉ địa chỉ được in bên dưới. に đánh dấu nơi nhận email."
+    }
+   },
+   {
+    "text": "送ってください。",
+    "label": {
+     "en": "please send it",
+     "vi": "hãy gửi"
+    },
+    "detail": {
+     "en": "送る → 送って + ください makes a polite request. The understood object is the email containing the listed details.",
+     "vi": "送る → 送って + ください tạo lời yêu cầu lịch sự. Đối tượng được lược bỏ là email có các thông tin vừa liệt kê."
+    },
+    "grammarIds": [
+     "g_099"
+    ],
+    "words": [
+     {
+      "text": "送る",
+      "kana": "おくる",
+      "meaning": {
+       "en": "to send",
+       "vi": "gửi"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "食べ物・動物・薬を売ってはいけません。",
+  "translation": {
+   "en": "You must not sell food, animals or medicine.",
+   "vi": "Không được bán thực phẩm, động vật hoặc thuốc."
+  },
+  "together": {
+   "en": "The rule bans the sale of all three listed categories. てはいけません makes this a prohibition, rather than advice.",
+   "vi": "Quy định cấm bán cả ba loại hàng được liệt kê. てはいけません diễn tả điều không được phép làm, chứ không chỉ là lời khuyên."
+  },
+  "chunks": [
+   {
+    "text": "食べ物・動物・薬を",
+    "label": {
+     "en": "food, animals, and medicine",
+     "vi": "thực phẩm, động vật và thuốc"
+    },
+    "detail": {
+     "en": "The dots separate items in a list. を marks the whole list as what must not be sold.",
+     "vi": "Dấu ・ ngăn các mục trong danh sách. を đánh dấu toàn bộ danh sách là những thứ bị cấm bán."
+    }
+   },
+   {
+    "text": "売ってはいけません。",
+    "label": {
+     "en": "you must not sell",
+     "vi": "không được bán"
+    },
+    "detail": {
+     "en": "売る → 売って + はいけません expresses prohibition. This is an event rule applying to sellers.",
+     "vi": "売る → 売って + はいけません diễn tả sự cấm đoán. Đây là quy định của sự kiện dành cho người bán."
+    },
+    "grammarIds": [
+     "g_220"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "先週泊まったホテルは、駅から車で30分の山の中にあります。",
+  "translation": {
+   "en": "The hotel I stayed at last week is in the mountains, thirty minutes by car from the station.",
+   "vi": "Khách sạn tôi ở tuần trước nằm trong núi, cách ga 30 phút đi ô tô."
+  },
+  "together": {
+   "en": "先週泊まった identifies which hotel the writer means. The rest gives its location in the mountains and the thirty-minute journey from the station.",
+   "vi": "先週泊まった xác định khách sạn người viết đang nói đến. Phần còn lại nêu vị trí trong núi và quãng đường mất 30 phút đi ô tô từ ga."
+  },
+  "chunks": [
+   {
+    "text": "先週泊まったホテルは、",
+    "label": {
+     "en": "the hotel I stayed at last week",
+     "vi": "khách sạn tôi ở tuần trước"
+    },
+    "detail": {
+     "en": "泊まる → 泊まった is plain past before ホテル. 先週泊まった modifies ホテル, and は makes the hotel the topic.",
+     "vi": "泊まる → 泊まった là thể quá khứ thường trước ホテル. 先週泊まった bổ nghĩa cho ホテル; は đưa khách sạn thành chủ đề."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "泊まる",
+      "kana": "とまる",
+      "meaning": {
+       "en": "to stay overnight",
+       "vi": "ngủ lại, lưu trú"
+      }
+     }
+    ]
+   },
+   {
+    "text": "駅から",
+    "label": {
+     "en": "from the station",
+     "vi": "từ ga"
+    },
+    "detail": {
+     "en": "から marks the starting point for the travel time that follows.",
+     "vi": "から đánh dấu điểm xuất phát để tính thời gian di chuyển phía sau."
+    }
+   },
+   {
+    "text": "車で30分の",
+    "label": {
+     "en": "thirty minutes by car",
+     "vi": "cách 30 phút đi ô tô"
+    },
+    "detail": {
+     "en": "で marks the means of travel. の links the travel-time description to 山の中, describing how far away the location is.",
+     "vi": "で đánh dấu phương tiện di chuyển. の nối cụm thời gian đi lại với 山の中 để mô tả nơi ấy cách bao xa."
+    }
+   },
+   {
+    "text": "山の中に",
+    "label": {
+     "en": "in the mountains",
+     "vi": "trong núi"
+    },
+    "detail": {
+     "en": "山の中 describes the mountain setting. に marks the location with あります.",
+     "vi": "山の中 chỉ vị trí trong vùng núi. に đánh dấu nơi chốn khi đi với あります."
+    }
+   },
+   {
+    "text": "あります。",
+    "label": {
+     "en": "is located",
+     "vi": "nằm ở"
+    },
+    "detail": {
+     "en": "ある is used for the location of a nonliving thing, here the hotel.",
+     "vi": "ある dùng để nói vị trí của vật không sống, ở đây là khách sạn."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "私が泊まった部屋の窓から、富士山がよく見えました。",
+  "translation": {
+   "en": "From the window of the room I stayed in, Mt Fuji could be seen clearly.",
+   "vi": "Từ cửa sổ phòng tôi ở có thể thấy rõ núi Phú Sĩ."
+  },
+  "together": {
+   "en": "The viewpoint is the window of the room the writer stayed in. 見えました describes Mt Fuji being naturally visible from there.",
+   "vi": "Điểm nhìn là cửa sổ căn phòng người viết từng ở. 見えました diễn tả việc có thể nhìn thấy núi Phú Sĩ từ vị trí đó."
+  },
+  "chunks": [
+   {
+    "text": "私が泊まった部屋の窓から、",
+    "label": {
+     "en": "from the window of the room I stayed in",
+     "vi": "từ cửa sổ phòng tôi ở"
+    },
+    "detail": {
+     "en": "私が is the subject inside 泊まった部屋; in this kind of modifying clause, 私の泊まった部屋 is also possible. 部屋の links the room to its window, and から marks the viewpoint.",
+     "vi": "私が là chủ ngữ trong cụm 泊まった部屋; ở kiểu mệnh đề bổ nghĩa này cũng có thể nói 私の泊まった部屋. 部屋の nối căn phòng với cửa sổ; から đánh dấu điểm nhìn."
+    },
+    "grammarIds": [
+     "g_165",
+     "g_167"
+    ],
+    "words": [
+     {
+      "text": "泊まる",
+      "kana": "とまる",
+      "meaning": {
+       "en": "to stay overnight",
+       "vi": "ngủ lại, lưu trú"
+      }
+     }
+    ]
+   },
+   {
+    "text": "富士山が",
+    "label": {
+     "en": "Mt Fuji",
+     "vi": "núi Phú Sĩ"
+    },
+    "detail": {
+     "en": "が marks what was visible with 見える.",
+     "vi": "が đánh dấu đối tượng có thể nhìn thấy với 見える."
+    }
+   },
+   {
+    "text": "よく見えました。",
+    "label": {
+     "en": "could be seen clearly",
+     "vi": "có thể nhìn thấy rõ"
+    },
+    "detail": {
+     "en": "見える → 見えました is polite past; よく means clearly here. 見える describes visibility, rather than the learned ability expressed by 見られる.",
+     "vi": "見える → 見えました là quá khứ lịch sự; よく ở đây nghĩa là rõ. 見える nói về việc cảnh vật hiện ra trong tầm mắt, khác với 見られる nói về khả năng hoặc điều kiện để xem."
+    },
+    "grammarIds": [
+     "g_170"
+    ],
+    "words": [
+     {
+      "text": "見える",
+      "kana": "みえる",
+      "meaning": {
+       "en": "to be visible",
+       "vi": "có thể nhìn thấy"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "夜は、川の音が聞こえて、木のいいにおいがしました。",
+  "translation": {
+   "en": "At night I could hear the river, and there was a nice smell of wood.",
+   "vi": "Ban đêm nghe được tiếng suối và có mùi gỗ thơm."
+  },
+  "together": {
+   "en": "The writer describes two nighttime impressions: the sound of the river and the pleasant smell of wood. 聞こえる describes hearing naturally, while においがする describes a smell being present.",
+   "vi": "Người viết kể hai cảm nhận ban đêm: tiếng suối và mùi gỗ thơm. 聞こえる diễn tả âm thanh tự lọt vào tai; においがする diễn tả có mùi tỏa ra."
+  },
+  "chunks": [
+   {
+    "text": "夜は、",
+    "label": {
+     "en": "at night",
+     "vi": "ban đêm"
+    },
+    "detail": {
+     "en": "は sets nighttime as the topic for both sensory descriptions.",
+     "vi": "は nêu ban đêm làm bối cảnh cho cả hai cảm nhận."
+    }
+   },
+   {
+    "text": "川の音が聞こえて、",
+    "label": {
+     "en": "I could hear the river",
+     "vi": "nghe thấy tiếng suối"
+    },
+    "detail": {
+     "en": "川の modifies 音, and が marks the sound perceived. 聞こえる → 聞こえて links this impression to the smell that follows.",
+     "vi": "川の bổ nghĩa cho 音; が đánh dấu âm thanh nghe thấy. 聞こえる → 聞こえて nối cảm nhận này với mùi hương phía sau."
+    },
+    "grammarIds": [
+     "g_170"
+    ],
+    "words": [
+     {
+      "text": "聞こえる",
+      "kana": "きこえる",
+      "meaning": {
+       "en": "to be audible",
+       "vi": "có thể nghe thấy"
+      }
+     }
+    ]
+   },
+   {
+    "text": "木のいいにおいがしました。",
+    "label": {
+     "en": "there was a pleasant smell of wood",
+     "vi": "có mùi gỗ thơm"
+    },
+    "detail": {
+     "en": "木の identifies the source, and いい describes におい. においがする → においがしました means a smell was present, not that someone performed an action.",
+     "vi": "木の chỉ nguồn mùi; いい bổ nghĩa cho におい. においがする → においがしました nghĩa là có mùi tỏa ra, không phải ai đó thực hiện hành động."
+    },
+    "grammarIds": [
+     "g_169"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "ホテルの人が作る朝ご飯は、地元の野菜を使った料理です。",
+  "translation": {
+   "en": "The breakfast the hotel staff make uses local vegetables.",
+   "vi": "Bữa sáng nhân viên khách sạn nấu là món dùng rau địa phương."
+  },
+  "together": {
+   "en": "A modifying clause identifies the breakfast as the one made by the hotel staff. Another modifying clause in the predicate describes the dishes as made using local vegetables.",
+   "vi": "Một mệnh đề bổ nghĩa xác định bữa sáng do nhân viên khách sạn làm. Mệnh đề bổ nghĩa khác ở phần vị ngữ mô tả món ăn dùng rau địa phương."
+  },
+  "chunks": [
+   {
+    "text": "ホテルの人が作る朝ご飯は、",
+    "label": {
+     "en": "the breakfast the hotel staff make",
+     "vi": "bữa sáng nhân viên khách sạn nấu"
+    },
+    "detail": {
+     "en": "ホテルの人が is the subject of 作る inside the clause modifying 朝ご飯. は makes the entire breakfast phrase the topic of the larger sentence.",
+     "vi": "ホテルの人が là chủ ngữ của 作る trong mệnh đề bổ nghĩa cho 朝ご飯. は đưa cả cụm chỉ bữa sáng thành chủ đề của câu lớn."
+    },
+    "grammarIds": [
+     "g_165",
+     "g_168"
+    ]
+   },
+   {
+    "text": "地元の野菜を",
+    "label": {
+     "en": "local vegetables",
+     "vi": "rau địa phương"
+    },
+    "detail": {
+     "en": "地元の modifies 野菜, and を marks the ingredient used with 使う.",
+     "vi": "地元の bổ nghĩa cho 野菜; を đánh dấu nguyên liệu được sử dụng với 使う."
+    },
+    "words": [
+     {
+      "text": "地元",
+      "kana": "じもと",
+      "meaning": {
+       "en": "local area, locality",
+       "vi": "địa phương"
+      }
+     }
+    ]
+   },
+   {
+    "text": "使った料理です。",
+    "label": {
+     "en": "is food made using them",
+     "vi": "là món ăn dùng những nguyên liệu ấy"
+    },
+    "detail": {
+     "en": "使う → 使った modifies 料理. The full phrase 地元の野菜を使った料理 serves as the noun predicate describing the breakfast.",
+     "vi": "使う → 使った bổ nghĩa cho 料理. Cả cụm 地元の野菜を使った料理 làm vị ngữ danh từ mô tả bữa sáng."
+    },
+    "grammarIds": [
+     "g_165",
+     "g_168"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "英語がわかる人もいますから、外国人にもいいと思います。",
+  "translation": {
+   "en": "Some staff understand English, so I think it is good for foreigners too.",
+   "vi": "Cũng có người hiểu tiếng Anh nên tôi nghĩ hợp cả với người nước ngoài."
+  },
+  "together": {
+   "en": "The writer recommends the hotel to foreign guests because some staff understand English. The reason clause leads into the writer’s opinion with と思います.",
+   "vi": "Người viết cho rằng khách sạn cũng phù hợp với khách nước ngoài vì có nhân viên hiểu tiếng Anh. Mệnh đề lý do dẫn đến ý kiến thể hiện bằng と思います."
+  },
+  "chunks": [
+   {
+    "text": "英語がわかる人も",
+    "label": {
+     "en": "people who understand English too",
+     "vi": "cũng có người hiểu tiếng Anh"
+    },
+    "detail": {
+     "en": "が marks the language understood with わかる. 英語がわかる modifies 人, and も adds this group of staff as another positive point.",
+     "vi": "が đánh dấu ngôn ngữ được hiểu với わかる. 英語がわかる bổ nghĩa cho 人; も bổ sung nhóm nhân viên này như một điểm thuận lợi nữa."
+    },
+    "grammarIds": [
+     "g_171",
+     "g_165"
+    ]
+   },
+   {
+    "text": "いますから、",
+    "label": {
+     "en": "because there are some",
+     "vi": "vì có những người như vậy"
+    },
+    "detail": {
+     "en": "いる is used for the existence of people. から makes their presence the reason for the recommendation.",
+     "vi": "いる dùng để diễn tả sự hiện diện của người. から nêu việc có những người ấy làm lý do cho lời đánh giá."
+    }
+   },
+   {
+    "text": "外国人にも",
+    "label": {
+     "en": "for foreigners too",
+     "vi": "với cả người nước ngoài"
+    },
+    "detail": {
+     "en": "に marks who the hotel is good for, and も adds foreign guests to the people who can benefit.",
+     "vi": "に đánh dấu đối tượng mà khách sạn phù hợp; も bổ sung cả khách nước ngoài."
+    }
+   },
+   {
+    "text": "いいと思います。",
+    "label": {
+     "en": "I think it is good",
+     "vi": "tôi nghĩ là phù hợp"
+    },
+    "detail": {
+     "en": "The plain i-adjective いい comes directly before と; no だ is added. と marks the content of the opinion expressed by 思います.",
+     "vi": "Tính từ đuôi い ở dạng thường いい đứng trực tiếp trước と, không thêm だ. と đánh dấu nội dung ý kiến đi với 思います."
+    },
+    "grammarIds": [
+     "g_147"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "祖母の家には、古い時計があります。",
+  "translation": {
+   "en": "There is an old clock in my grandmother’s house.",
+   "vi": "Nhà bà tôi có một chiếc đồng hồ cũ."
+  },
+  "together": {
+   "en": "The passage introduces an old clock at the writer’s grandmother’s house. The location comes first as the setting for the story.",
+   "vi": "Bài đọc giới thiệu một chiếc đồng hồ cũ ở nhà bà của người viết. Địa điểm được nêu trước để đặt bối cảnh cho câu chuyện."
+  },
+  "chunks": [
+   {
+    "text": "祖母の家には、",
+    "label": {
+     "en": "at my grandmother’s house",
+     "vi": "ở nhà bà tôi"
+    },
+    "detail": {
+     "en": "祖母の modifies 家. に marks the location of existence, and は makes that location the topic.",
+     "vi": "祖母の bổ nghĩa cho 家. に đánh dấu nơi có đồ vật; は đưa nơi ấy thành chủ đề."
+    },
+    "words": [
+     {
+      "text": "祖母",
+      "kana": "そぼ",
+      "meaning": {
+       "en": "my grandmother",
+       "vi": "bà của tôi"
+      }
+     }
+    ]
+   },
+   {
+    "text": "古い時計が",
+    "label": {
+     "en": "an old clock",
+     "vi": "một chiếc đồng hồ cũ"
+    },
+    "detail": {
+     "en": "古い modifies 時計. が introduces the clock as the thing that exists there.",
+     "vi": "古い bổ nghĩa cho 時計. が giới thiệu chiếc đồng hồ là đồ vật có ở đó."
+    }
+   },
+   {
+    "text": "あります。",
+    "label": {
+     "en": "there is",
+     "vi": "có"
+    },
+    "detail": {
+     "en": "ある is used for the existence of a nonliving thing. The nonpast form describes the present situation.",
+     "vi": "ある dùng để diễn tả sự tồn tại của vật không sống. Dạng không quá khứ mô tả tình trạng hiện tại."
+    }
+   }
+  ]
+ },
+ {
+  "sentence": "それは、祖母が若いころに町の店で買った時計です。",
+  "translation": {
+   "en": "It is a clock my grandmother bought at a shop in town when she was young.",
+   "vi": "Đó là chiếc đồng hồ bà mua ở cửa hàng trong phố hồi còn trẻ."
+  },
+  "together": {
+   "en": "The sentence identifies the clock by when and where the grandmother bought it. The whole description before 時計 modifies that noun.",
+   "vi": "Câu xác định chiếc đồng hồ qua thời điểm và nơi bà đã mua nó. Toàn bộ phần mô tả trước 時計 bổ nghĩa cho danh từ này."
+  },
+  "chunks": [
+   {
+    "text": "それは、",
+    "label": {
+     "en": "that",
+     "vi": "đó là"
+    },
+    "detail": {
+     "en": "それ refers back to the old clock, and は makes it the topic.",
+     "vi": "それ chỉ lại chiếc đồng hồ cũ; は đưa nó thành chủ đề."
+    }
+   },
+   {
+    "text": "祖母が若いころに",
+    "label": {
+     "en": "when my grandmother was young",
+     "vi": "hồi bà tôi còn trẻ"
+    },
+    "detail": {
+     "en": "祖母が is the subject of 若い in the time expression. The i-adjective 若い modifies ころ directly, and に marks that period as the time of purchase.",
+     "vi": "祖母が là chủ ngữ của 若い trong cụm chỉ thời gian. Tính từ đuôi い 若い trực tiếp bổ nghĩa cho ころ; に đánh dấu giai đoạn mua đồng hồ."
+    }
+   },
+   {
+    "text": "町の店で",
+    "label": {
+     "en": "at a shop in town",
+     "vi": "tại cửa hàng trong phố"
+    },
+    "detail": {
+     "en": "町の modifies 店. で marks where the purchase took place.",
+     "vi": "町の bổ nghĩa cho 店. で đánh dấu nơi việc mua diễn ra."
+    }
+   },
+   {
+    "text": "買った時計です。",
+    "label": {
+     "en": "is the clock she bought",
+     "vi": "là chiếc đồng hồ bà đã mua"
+    },
+    "detail": {
+     "en": "買う → 買った is plain past before 時計. The preceding time and place expressions are part of the clause describing which clock it is.",
+     "vi": "買う → 買った là thể quá khứ thường đứng trước 時計. Các cụm thời gian và địa điểm phía trước thuộc mệnh đề xác định chiếc đồng hồ nào."
+    },
+    "grammarIds": [
+     "g_165"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "大きくて、とても重そうです。",
+  "translation": {
+   "en": "It is big and looks very heavy.",
+   "vi": "Nó to và trông rất nặng."
+  },
+  "together": {
+   "en": "The clock is described as big and apparently heavy. Its size is stated directly, while its weight is judged from its appearance.",
+   "vi": "Chiếc đồng hồ được mô tả là to và trông có vẻ nặng. Kích thước được khẳng định trực tiếp, còn trọng lượng được nhận xét qua vẻ ngoài."
+  },
+  "chunks": [
+   {
+    "text": "大きくて、",
+    "label": {
+     "en": "big, and",
+     "vi": "to và"
+    },
+    "detail": {
+     "en": "大きい → 大きくて replaces い with くて to connect this description to the next one.",
+     "vi": "大きい → 大きくて đổi い thành くて để nối đặc điểm này với đặc điểm tiếp theo."
+    }
+   },
+   {
+    "text": "とても重そうです。",
+    "label": {
+     "en": "looks very heavy",
+     "vi": "trông rất nặng"
+    },
+    "detail": {
+     "en": "重い → 重そう drops い and adds そう to express an impression from appearance. とても strengthens the impression.",
+     "vi": "重い → 重そう bỏ い rồi thêm そう để diễn tả cảm nhận từ vẻ ngoài. とても nhấn mạnh mức độ nặng."
+    },
+    "grammarIds": [
+     "g_155"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "毎時間、きれいな音がします。",
+  "translation": {
+   "en": "Every hour it makes a lovely sound.",
+   "vi": "Mỗi giờ nó lại phát ra tiếng rất hay."
+  },
+  "together": {
+   "en": "The clock makes a pleasant sound every hour. 音がする describes the sound occurring, with the clock understood as its source.",
+   "vi": "Chiếc đồng hồ phát ra âm thanh dễ chịu mỗi giờ. 音がする diễn tả có tiếng vang lên, với nguồn âm được hiểu là chiếc đồng hồ."
+  },
+  "chunks": [
+   {
+    "text": "毎時間、",
+    "label": {
+     "en": "every hour",
+     "vi": "mỗi giờ"
+    },
+    "detail": {
+     "en": "毎 adds the meaning every to 時間. The expression gives the frequency of the clock’s sound.",
+     "vi": "毎 thêm nghĩa mỗi vào 時間. Cụm này nêu tần suất đồng hồ phát tiếng."
+    }
+   },
+   {
+    "text": "きれいな音がします。",
+    "label": {
+     "en": "it makes a lovely sound",
+     "vi": "có tiếng vang rất hay"
+    },
+    "detail": {
+     "en": "きれい is a な-adjective and takes な before 音. 音がする means a sound is heard or produced; する does not mean doing an action here.",
+     "vi": "きれい là tính từ な nên có な trước 音. 音がする nghĩa là có tiếng phát ra; する ở đây không có nghĩa làm một hành động."
+    },
+    "grammarIds": [
+     "g_169"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "子供のころ、祖母の家に泊まった夜は、その音が聞こえて、なかなか寝られませんでした。",
+  "translation": {
+   "en": "As a child, on nights I stayed at grandma’s, I could hear that sound and found it hard to sleep.",
+   "vi": "Hồi nhỏ, những đêm ngủ lại nhà bà, tôi nghe thấy tiếng đó nên mãi không ngủ được."
+  },
+  "together": {
+   "en": "The writer recalls nights spent at grandma’s as a child. The clock’s audible sound explains why falling asleep was difficult.",
+   "vi": "Người viết nhớ lại những đêm ngủ ở nhà bà hồi nhỏ. Tiếng đồng hồ nghe thấy được là lý do khiến người viết khó ngủ."
+  },
+  "chunks": [
+   {
+    "text": "子供のころ、",
+    "label": {
+     "en": "when I was a child",
+     "vi": "hồi còn nhỏ"
+    },
+    "detail": {
+     "en": "A noun takes の before ころ to indicate a period of life. This phrase sets the background for the whole memory.",
+     "vi": "Danh từ dùng の trước ころ để chỉ một giai đoạn trong đời. Cụm này đặt bối cảnh cho toàn bộ ký ức."
+    }
+   },
+   {
+    "text": "祖母の家に泊まった夜は、",
+    "label": {
+     "en": "on nights I stayed at grandma’s",
+     "vi": "những đêm ngủ lại nhà bà"
+    },
+    "detail": {
+     "en": "に marks where the writer stayed. 泊まる → 泊まった modifies 夜, and は makes those nights the topic.",
+     "vi": "に đánh dấu nơi người viết ngủ lại. 泊まる → 泊まった bổ nghĩa cho 夜; は đưa những đêm ấy thành chủ đề."
+    },
+    "grammarIds": [
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "泊まる",
+      "kana": "とまる",
+      "meaning": {
+       "en": "to stay overnight",
+       "vi": "ngủ lại, lưu trú"
+      }
+     }
+    ]
+   },
+   {
+    "text": "その音が聞こえて、",
+    "label": {
+     "en": "I could hear that sound",
+     "vi": "nghe thấy tiếng đó"
+    },
+    "detail": {
+     "en": "が marks the sound perceived. 聞こえる → 聞こえて links the naturally audible sound to the difficulty sleeping that follows.",
+     "vi": "が đánh dấu âm thanh nghe thấy. 聞こえる → 聞こえて nối việc âm thanh lọt vào tai với sự khó ngủ phía sau."
+    },
+    "grammarIds": [
+     "g_170"
+    ],
+    "words": [
+     {
+      "text": "聞こえる",
+      "kana": "きこえる",
+      "meaning": {
+       "en": "to be audible",
+       "vi": "có thể nghe thấy"
+      }
+     }
+    ]
+   },
+   {
+    "text": "なかなか寝られませんでした。",
+    "label": {
+     "en": "I had trouble falling asleep",
+     "vi": "mãi không ngủ được"
+    },
+    "detail": {
+     "en": "寝る → 寝られる is potential, and 寝られませんでした is polite negative past. なかなか with a negative means the desired result was slow or difficult to achieve.",
+     "vi": "寝る → 寝られる là thể khả năng; 寝られませんでした là phủ định quá khứ lịch sự. なかなか đi với phủ định diễn tả mãi vẫn chưa đạt được điều mong muốn."
+    },
+    "grammarIds": [
+     "g_061_1"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "でも今は、その音がとても好きです。",
+  "translation": {
+   "en": "But now I love that sound.",
+   "vi": "Nhưng bây giờ tôi rất thích tiếng đó."
+  },
+  "together": {
+   "en": "The writer contrasts the childhood experience with their present feelings. The same clock sound is now something they love.",
+   "vi": "Người viết đối chiếu trải nghiệm thời nhỏ với cảm xúc hiện tại. Cũng tiếng đồng hồ ấy, giờ người viết lại rất yêu thích."
+  },
+  "chunks": [
+   {
+    "text": "でも今は、",
+    "label": {
+     "en": "but now",
+     "vi": "nhưng bây giờ"
+    },
+    "detail": {
+     "en": "でも introduces the contrast, and は emphasizes now as opposed to childhood.",
+     "vi": "でも mở đầu ý tương phản; は nhấn vào hiện tại để đối chiếu với thời nhỏ."
+    }
+   },
+   {
+    "text": "その音が",
+    "label": {
+     "en": "that sound",
+     "vi": "tiếng đó"
+    },
+    "detail": {
+     "en": "その points back to the clock’s sound. が marks what is liked with 好き.",
+     "vi": "その chỉ lại tiếng đồng hồ. が đánh dấu đối tượng được yêu thích với 好き."
+    }
+   },
+   {
+    "text": "とても好きです。",
+    "label": {
+     "en": "I like it very much",
+     "vi": "tôi rất thích"
+    },
+    "detail": {
+     "en": "とても intensifies 好き. The person who likes the sound is the writer, understood from context.",
+     "vi": "とても nhấn mạnh mức độ yêu thích trong 好き. Người thích âm thanh ấy được hiểu là người viết."
+    },
+    "grammarIds": [
+     "g_065"
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "先月、時計が止まりました。",
+  "translation": {
+   "en": "Last month the clock stopped.",
+   "vi": "Tháng trước đồng hồ ngừng chạy."
+  },
+  "together": {
+   "en": "The narrative shifts to a recent problem: the clock stopped running last month. 止まる describes what happened to the clock itself.",
+   "vi": "Mạch kể chuyển sang một vấn đề gần đây: tháng trước đồng hồ ngừng chạy. 止まる diễn tả sự việc xảy ra với chính chiếc đồng hồ."
+  },
+  "chunks": [
+   {
+    "text": "先月、",
+    "label": {
+     "en": "last month",
+     "vi": "tháng trước"
+    },
+    "detail": {
+     "en": "先月 sets the time of the event and normally takes no に.",
+     "vi": "先月 nêu thời điểm sự việc và thường không dùng に."
+    }
+   },
+   {
+    "text": "時計が止まりました。",
+    "label": {
+     "en": "the clock stopped",
+     "vi": "đồng hồ đã ngừng chạy"
+    },
+    "detail": {
+     "en": "止まる → 止まりました is polite past. 止まる is intransitive: が marks the clock that stopped, without saying someone stopped it.",
+     "vi": "止まる → 止まりました là quá khứ lịch sự. 止まる là tự động từ: が đánh dấu chiếc đồng hồ ngừng chạy, không nói có ai làm nó dừng."
+    },
+    "grammarIds": [
+     "g_162"
+    ],
+    "words": [
+     {
+      "text": "止まる",
+      "kana": "とまる",
+      "meaning": {
+       "en": "to stop; here: stop running",
+       "vi": "dừng; ở đây: ngừng chạy"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "祖母は時計を直せる人を探しましたが、なかなか見つかりませんでした。",
+  "translation": {
+   "en": "Grandma looked for someone who could fix it but couldn’t find anyone for a long time.",
+   "vi": "Bà tìm người sửa được đồng hồ nhưng mãi không tìm thấy."
+  },
+  "together": {
+   "en": "Grandma searched for someone able to repair the clock, but the search was difficult. 直せる describes the needed person; 見つからない describes the unsuccessful result.",
+   "vi": "Bà tìm người có thể sửa đồng hồ nhưng việc tìm kiếm gặp khó khăn. 直せる mô tả người cần tìm; 見つからない diễn tả việc vẫn chưa tìm thấy."
+  },
+  "chunks": [
+   {
+    "text": "祖母は",
+    "label": {
+     "en": "my grandmother",
+     "vi": "bà tôi"
+    },
+    "detail": {
+     "en": "は makes the grandmother the topic of the search.",
+     "vi": "は đưa người bà thành chủ đề của việc tìm kiếm."
+    },
+    "words": [
+     {
+      "text": "祖母",
+      "kana": "そぼ",
+      "meaning": {
+       "en": "my grandmother",
+       "vi": "bà của tôi"
+      }
+     }
+    ]
+   },
+   {
+    "text": "時計を直せる人を",
+    "label": {
+     "en": "someone who could repair the clock",
+     "vi": "người sửa được đồng hồ"
+    },
+    "detail": {
+     "en": "直す → 直せる is potential and modifies 人. The first を marks the clock as the object of repair; the second marks the person as the object of the search.",
+     "vi": "直す → 直せる là thể khả năng, bổ nghĩa cho 人. を thứ nhất đánh dấu đồng hồ là thứ cần sửa; を thứ hai đánh dấu người là đối tượng cần tìm."
+    },
+    "grammarIds": [
+     "g_165",
+     "g_061_1"
+    ],
+    "words": [
+     {
+      "text": "直す",
+      "kana": "なおす",
+      "meaning": {
+       "en": "to repair, fix",
+       "vi": "sửa chữa"
+      }
+     }
+    ]
+   },
+   {
+    "text": "探しましたが、",
+    "label": {
+     "en": "she searched, but",
+     "vi": "bà đã tìm, nhưng"
+    },
+    "detail": {
+     "en": "探す → 探しました is polite past. が connects the search to its disappointing result.",
+     "vi": "探す → 探しました là quá khứ lịch sự. が nối việc tìm kiếm với kết quả không như mong đợi."
+    },
+    "words": [
+     {
+      "text": "探す",
+      "kana": "さがす",
+      "meaning": {
+       "en": "to search for",
+       "vi": "tìm kiếm"
+      }
+     }
+    ]
+   },
+   {
+    "text": "なかなか見つかりませんでした。",
+    "label": {
+     "en": "couldn’t find anyone for a long time",
+     "vi": "mãi không tìm thấy"
+    },
+    "detail": {
+     "en": "見つかる → 見つかりませんでした is polite negative past. This intransitive verb presents the person as not being found; なかなか emphasizes how difficult the search was.",
+     "vi": "見つかる → 見つかりませんでした là phủ định quá khứ lịch sự. Tự động từ này diễn tả người cần tìm vẫn chưa được tìm thấy; なかなか nhấn mạnh việc tìm rất khó."
+    },
+    "words": [
+     {
+      "text": "見つかる",
+      "kana": "みつかる",
+      "meaning": {
+       "en": "to be found",
+       "vi": "được tìm thấy"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "先週、駅の近くに、古い時計がわかる人がいる店を見つけました。",
+  "translation": {
+   "en": "Last week she found a shop near the station with someone who understands old clocks.",
+   "vi": "Tuần trước bà tìm được một cửa hàng gần ga có người hiểu về đồng hồ cũ."
+  },
+  "together": {
+   "en": "Two nested clauses identify the shop: someone there understands old clocks. Grandma is the understood subject who finally found this shop near the station.",
+   "vi": "Hai mệnh đề lồng nhau xác định cửa hàng: ở đó có người am hiểu đồng hồ cũ. Bà là chủ thể được lược bỏ, cuối cùng đã tìm thấy cửa hàng gần ga này."
+  },
+  "chunks": [
+   {
+    "text": "先週、",
+    "label": {
+     "en": "last week",
+     "vi": "tuần trước"
+    },
+    "detail": {
+     "en": "先週 gives the time when the shop was found.",
+     "vi": "先週 nêu thời điểm tìm được cửa hàng."
+    }
+   },
+   {
+    "text": "駅の近くに、",
+    "label": {
+     "en": "near the station",
+     "vi": "ở gần ga"
+    },
+    "detail": {
+     "en": "駅の modifies 近く. に gives the location where the shop was found.",
+     "vi": "駅の bổ nghĩa cho 近く. に chỉ vị trí cửa hàng được tìm thấy."
+    }
+   },
+   {
+    "text": "古い時計がわかる人がいる店を",
+    "label": {
+     "en": "a shop with someone who understands old clocks",
+     "vi": "cửa hàng có người am hiểu đồng hồ cũ"
+    },
+    "detail": {
+     "en": "古い時計がわかる modifies 人; here わかる means to understand how old clocks work. That person is the subject of いる, and the larger clause 古い時計がわかる人がいる modifies 店; を marks the shop found.",
+     "vi": "古い時計がわかる bổ nghĩa cho 人; わかる ở đây là am hiểu cách hoạt động của đồng hồ cũ. Người ấy là chủ ngữ của いる; mệnh đề lớn 古い時計がわかる人がいる bổ nghĩa cho 店, còn を đánh dấu cửa hàng tìm được."
+    },
+    "grammarIds": [
+     "g_171",
+     "g_165"
+    ],
+    "words": [
+     {
+      "text": "わかる",
+      "kana": "わかる",
+      "meaning": {
+       "en": "to understand; here: understand how old clocks work",
+       "vi": "hiểu; ở đây: am hiểu đồng hồ cũ"
+      }
+     }
+    ]
+   },
+   {
+    "text": "見つけました。",
+    "label": {
+     "en": "she found",
+     "vi": "bà đã tìm thấy"
+    },
+    "detail": {
+     "en": "見つける → 見つけました is polite past. This transitive verb takes 店を, unlike the intransitive 見つかる in the previous sentence.",
+     "vi": "見つける → 見つけました là quá khứ lịch sự. Tha động từ này đi với 店を, khác với tự động từ 見つかる trong câu trước."
+    },
+    "words": [
+     {
+      "text": "見つける",
+      "kana": "みつける",
+      "meaning": {
+       "en": "to find",
+       "vi": "tìm thấy"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "sentence": "今、時計はまた動いていて、部屋は温かい感じがします。",
+  "translation": {
+   "en": "Now the clock is running again, and the room feels warm.",
+   "vi": "Bây giờ đồng hồ chạy lại rồi, căn phòng có cảm giác ấm áp."
+  },
+  "together": {
+   "en": "The repaired clock is running again, restoring a warm feeling to the room. The first clause describes its continuing operation; the second describes the resulting impression.",
+   "vi": "Chiếc đồng hồ đã sửa lại chạy, khiến căn phòng có cảm giác ấm áp. Vế đầu mô tả việc đồng hồ đang hoạt động; vế sau nêu cảm nhận mà điều đó đem lại."
+  },
+  "chunks": [
+   {
+    "text": "今、",
+    "label": {
+     "en": "now",
+     "vi": "bây giờ"
+    },
+    "detail": {
+     "en": "今 returns the story to the present after the account of the repair.",
+     "vi": "今 đưa câu chuyện trở lại hiện tại sau phần kể về việc sửa đồng hồ."
+    }
+   },
+   {
+    "text": "時計はまた動いていて、",
+    "label": {
+     "en": "the clock is running again",
+     "vi": "đồng hồ lại đang chạy"
+    },
+    "detail": {
+     "en": "動く → 動いている describes continuing operation here. 動いていて is its linking て-form; また means again.",
+     "vi": "動く → 動いている ở đây mô tả việc đồng hồ đang hoạt động. 動いていて là dạng て dùng để nối vế; また nghĩa là lại."
+    },
+    "words": [
+     {
+      "text": "動く",
+      "kana": "うごく",
+      "meaning": {
+       "en": "to move; here: run, operate",
+       "vi": "chuyển động; ở đây: chạy, hoạt động"
+      }
+     }
+    ]
+   },
+   {
+    "text": "部屋は",
+    "label": {
+     "en": "the room",
+     "vi": "căn phòng"
+    },
+    "detail": {
+     "en": "は introduces the room as the topic of the impression in the second clause.",
+     "vi": "は đưa căn phòng thành chủ đề của cảm nhận ở vế thứ hai."
+    }
+   },
+   {
+    "text": "温かい感じがします。",
+    "label": {
+     "en": "feels warm",
+     "vi": "có cảm giác ấm áp"
+    },
+    "detail": {
+     "en": "温かい modifies 感じ. 感じがする means to have an impression or feeling, so the sentence describes the room’s atmosphere rather than measuring its temperature.",
+     "vi": "温かい bổ nghĩa cho 感じ. 感じがする diễn tả cảm nhận hay ấn tượng, nên câu nói về bầu không khí của căn phòng chứ không đo nhiệt độ thực tế."
+    },
+    "grammarIds": [
+     "g_169"
+    ],
+    "words": [
+     {
+      "text": "感じ",
+      "kana": "かんじ",
+      "meaning": {
+       "en": "feeling, impression",
+       "vi": "cảm giác, ấn tượng"
+      }
+     }
+    ]
+   }
+  ]
+ }
+]
