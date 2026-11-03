@@ -20,6 +20,7 @@ const navGroups: { id: string; items: NavItem[] }[] = [
   { id: "learn", items: [
     { to: "/vocab",        label: "単語",     kana: "たんご",       key: "vocabulary" },
     { to: "/review",       label: "復習",     kana: "ふくしゅう",    key: "review" },
+    { to: "/reading",      label: "読解",     kana: "どっかい",      key: "reading" },
   ] },
   { id: "grammar", items: [
     { to: "/grammar",      label: "文法",     kana: "ぶんぽう",      key: "grammar" },

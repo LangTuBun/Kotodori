@@ -97,7 +97,7 @@ export interface EnhancedGrammarExample {
 
 /** The subset of a GrammarPoint that cross-link chips render - served from
  *  the slim build-time index (src/data/grammar-links.ts). */
-export type GrammarLink = Pick<GrammarPoint, 'id' | 'pattern' | 'patternRuby' | 'meaning' | 'category' | 'requiredVerbForm'>
+export type GrammarLink = Pick<GrammarPoint, 'id' | 'pattern' | 'patternRuby' | 'meaning' | 'category' | 'requiredVerbForm' | 'chapter' | 'jlptLevel'>
 
 export interface GrammarPoint {
   id: string

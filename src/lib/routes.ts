@@ -10,6 +10,7 @@ export const routeLoaders = {
   "/": () => import("@/pages/Landing"),
   "/vocab": () => import("@/pages/VocabBrowser"),
   "/review": () => import("@/pages/Review"),
+  "/reading": () => import("@/pages/Reading"),
   "/grammar": () => import("@/pages/Grammar"),
   "/verb-forms": () => import("@/pages/VerbForms"),
   "/transitivity": () => import("@/pages/Transitivity"),

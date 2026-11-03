@@ -22,6 +22,7 @@ function page<K extends RoutePath, N extends string>(path: K, name: N) {
 const Landing = page("/", "Landing")
 const VocabBrowser = page("/vocab", "VocabBrowser")
 const Review = page("/review", "Review")
+const Reading = page("/reading", "Reading")
 const Grammar = page("/grammar", "Grammar")
 const VerbForms = page("/verb-forms", "VerbForms")
 const Transitivity = page("/transitivity", "Transitivity")
@@ -61,6 +62,7 @@ export default function App() {
           <Route index element={<Suspense fallback={<RouteFallback />}><Landing /></Suspense>} />
           <Route path="vocab" element={<Suspense fallback={<RouteFallback />}><VocabBrowser /></Suspense>} />
           <Route path="review" element={<Suspense fallback={<RouteFallback />}><Review /></Suspense>} />
+          <Route path="reading" element={<Suspense fallback={<RouteFallback />}><Reading /></Suspense>} />
           <Route path="grammar" element={<Suspense fallback={<RouteFallback />}><Grammar /></Suspense>} />
           <Route path="verb-forms" element={<Suspense fallback={<RouteFallback />}><VerbForms /></Suspense>} />
           <Route path="transitivity" element={<Suspense fallback={<RouteFallback />}><Transitivity /></Suspense>} />

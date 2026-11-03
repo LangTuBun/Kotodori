@@ -4,6 +4,8 @@ import { Ruby } from "@/components/ui/Ruby"
 import { LinkifiedText } from "@/components/ui/LinkifiedText"
 import { SpeakButton } from "@/components/ui/SpeakButton"
 import { useTranslation } from "@/lib/useTranslation"
+import { sentenceBreakdowns } from "@/data/sentence-breakdowns"
+import { SentenceBreakdown } from "@/components/ui/SentenceBreakdown"
 
 interface InteractiveExampleCardProps {
   example: EnhancedGrammarExample
@@ -25,6 +27,7 @@ export function InteractiveExampleCard({ example, showFurigana, showRomaji, acce
   const { t, localize } = useTranslation()
   const [open, setOpen] = useState(false)
   const hasExplanation = !!(example.contextualExplanation?.vi || example.contextualExplanation?.en)
+  const breakdown = sentenceBreakdowns[example.ja]
 
   return (
     <div
@@ -80,6 +83,10 @@ export function InteractiveExampleCard({ example, showFurigana, showRomaji, acce
           </div>
         </div>
       )}
+      {breakdown && <details className="mt-3">
+        <summary className="cursor-pointer min-h-11 flex items-center text-sm font-bold">{localize({ en: "Explore sentence structure", vi: "Khám phá cấu trúc câu" })}</summary>
+        <SentenceBreakdown key={breakdown.sentence} data={breakdown} />
+      </details>}
     </div>
   )
 }

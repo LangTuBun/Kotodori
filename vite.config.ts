@@ -14,7 +14,7 @@ function grammarIndex(): Plugin {
   const virtualId = 'virtual:grammar-index'
   const resolvedId = '\0' + virtualId
   const levels = ['n5', 'n4'] as const
-  const fields = ['id', 'pattern', 'patternRuby', 'meaning', 'category', 'requiredVerbForm']
+  const fields = ['id', 'pattern', 'patternRuby', 'meaning', 'category', 'requiredVerbForm', 'chapter', 'jlptLevel']
   return {
     name: 'grammar-index',
     resolveId(source) {

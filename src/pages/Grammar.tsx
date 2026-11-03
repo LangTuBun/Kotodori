@@ -122,7 +122,7 @@ export function Grammar() {
     if (point) {
       setSelected(point)
       setCollapsed(s => ({ ...s, [point.category]: false }))
-    }
+    } else jumpTo(pointId) // other level's point (e.g. N5 grammar linked from N4 reading)
     setSearchParams(prev => { prev.delete('point'); return prev }, { replace: true })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams, data])
