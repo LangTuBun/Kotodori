@@ -1,4 +1,8 @@
-import type { Bilingual, SentenceBreakdownData, SentenceChunk, SentenceWord } from './sentence-breakdowns'
+import { sentenceBreakdowns, type Bilingual, type SentenceBreakdownData, type SentenceChunk, type SentenceWord } from './sentence-breakdowns.ts'
+import { practiceReadings } from './reading-practice.ts'
+
+/** Exercise number used for each chapter's original practice text. */
+export const PRACTICE_EXERCISE = 4
 
 export const readingChapterPages: Record<number, [number, number]> = {
   16: [1836, 1837], 17: [1838, 1840], 18: [1841, 1842], 19: [1843, 1844],
@@ -16,6 +20,8 @@ export interface ReadingGuide {
   sentences: SentenceBreakdownData[]
   answer: number | null
   explanation: Bilingual
+  /** Native-text question; book questions without one stay in the photo. */
+  question?: { jp: string; options: string[] }
 }
 
 function word(text: string, kana: string, en: string, vi: string): SentenceWord {
@@ -31,10 +37,15 @@ function guide(chapter: number, exercise: number, pages: number[], en: string, v
   return { chapter, exercise, pages, title: { en, vi }, answer, explanation: { en: whyEn, vi: whyVi }, sentences }
 }
 
-// Source-backed study excerpts; the linked photographs retain the complete texts,
-// questions, tables and illustrations. Answer explanations are authored here.
-// shortcut: only key excerpts are interactive; transcribe more when extending sentence-level coverage.
+// Curated clause breakdowns, answers and explanations per photographed exercise.
+// Full passage text lives in reading-passages.ts; photos keep questions and diagrams.
+const ch16 = (jp: string) => sentenceBreakdowns[jp]!
 export const readingGuides: ReadingGuide[] = [
+  { ...guide(16, 1, [1836], 'A farewell party', 'Tiệc chia tay', 3,
+    'The email says Takagi is leaving the company (やめるそうです). Takamura is the writer, Yamada the reader, and the manager only passed on the news.',
+    'Email nói Takagi sẽ nghỉ việc ở công ty (やめるそうです). Takamura là người viết, Yamada là người nhận, còn trưởng phòng chỉ là người kể lại tin.',
+    ...['お疲れ様です。もう聞きましたか。高木さん、会社をやめるそうですね。', 'マイさんから聞きました。', '7月まで働いて、その後すぐに北海道に引っ越すらしいと部長が言っていました。', '7月の終わりに、さよならパーティーをしませんか。', 'みなさん忙しいと思いますから、仕事の後、会社の近くの店でやりたいです。', '今、みなさんに暇な日を聞いています。山田さんが参加できる日を教えてください。', '田中さんとマイさんはいつでもいいそうです。'].map(ch16)),
+    question: { jp: '誰が仕事をやめますか。', options: ['部長', '山田さん', '高木さん', '高村さん'] } },
   guide(16, 2, [1836], 'Practising Japanese', 'Luyện tiếng Nhật', 3,
     'The friend became good at Japanese through extensive practice. The text does not claim Japanese is harder than Vietnamese.',
     'Người bạn giỏi tiếng Nhật nhờ luyện tập nhiều. Bài không khẳng định tiếng Nhật khó hơn tiếng Việt.',
@@ -135,13 +146,13 @@ export const readingGuides: ReadingGuide[] = [
     'Tomorrow is Dec 31: admission is ¥600 for adults and ¥400 for children, and the restaurant coupon discounts a ¥3,000 meal to ¥2,000. Free child admission is only “today”, Dec 30.',
     'Ngày mai là 31/12: người lớn 600 yên, trẻ em 400 yên; phiếu ăn giảm bữa 3.000 còn 2.000 yên. Miễn phí cho trẻ chỉ “hôm nay”, 30/12.',
     sentence('Being able to bathe while viewing Mount Fuji is possible only here in Tokyo!', 'Ở Tokyo chỉ tại đây mới có thể vừa ngắm núi Phú Sĩ vừa tắm!', 'The nominalized clause is the topic being restricted by ここだけ.', 'Mệnh đề được danh từ hóa là chủ đề bị giới hạn bởi ここだけ.',
-      phrase('富士山見ながらお風呂に入れるのは', 'bathing while viewing Fuji', 'vừa ngắm Phú Sĩ vừa tắm', 'ながら expresses simultaneous actions; 入れる is potential; のは makes the whole activity the topic.', 'ながら diễn đạt đồng thời; 入れる là thể khả năng; のは đưa cả hoạt động làm chủ đề.', ['g_174'], [word('富士山', 'ふじさん', 'Mount Fuji', 'núi Phú Sĩ')]),
-      phrase('東京でここだけ！！', 'only here in Tokyo', 'chỉ tại đây ở Tokyo', 'だけ limits the claim to this location.', 'だけ giới hạn điều khẳng định ở địa điểm này.'))),
+      phrase('富士山を見ながらお風呂に入れるのは', 'bathing while viewing Fuji', 'vừa ngắm Phú Sĩ vừa tắm', 'ながら expresses simultaneous actions; 入れる is potential; のは makes the whole activity the topic.', 'ながら diễn đạt đồng thời; 入れる là thể khả năng; のは đưa cả hoạt động làm chủ đề.', ['g_174'], [word('富士山', 'ふじさん', 'Mount Fuji', 'núi Phú Sĩ')]),
+      phrase('東京でここだけ！', 'only here in Tokyo', 'chỉ tại đây ở Tokyo', 'だけ limits the claim to this location.', 'だけ giới hạn điều khẳng định ở địa điểm này.'))),
   guide(22, 1, [1851], 'Japanese and Sino-Vietnamese words', 'Từ Hán Nhật và Hán Việt', 3,
     'The same Chinese-derived word can differ in meaning: 部長 is a company department head in Japanese, but bộ trưởng is a government minister in Vietnamese.',
     'Từ có cùng gốc Hán có thể khác nghĩa: 部長 là trưởng phòng công ty, còn bộ trưởng chỉ chức vụ trong chính phủ.',
     sentence('Chinese-origin words in Vietnamese are called Sino-Vietnamese words.', 'Từ gốc Trung Quốc trong tiếng Việt được gọi là từ Hán Việt.', 'と marks the name used for that category.', 'と đánh dấu tên dùng cho loại từ đó.',
-      phrase('ベトナム語にある中国から来た言葉は、', 'Chinese-origin words in Vietnamese', 'từ gốc Trung Quốc trong tiếng Việt', '中国から来た modifies 言葉: words that came from China.', '中国から来た bổ nghĩa cho 言葉: từ có nguồn gốc Trung Quốc.'),
+      phrase('ベトナム語にある中国語から来た言葉は', 'Chinese-origin words in Vietnamese', 'từ gốc Trung Quốc trong tiếng Việt', '中国語から来た modifies 言葉: words that came from Chinese.', '中国語から来た bổ nghĩa cho 言葉: từ có nguồn gốc Trung Quốc.'),
       phrase('「漢越語」と言います。', 'are called Sino-Vietnamese', 'được gọi là từ Hán Việt', 'N + と言います introduces a name, not a person speaking.', 'N + と言います nêu tên gọi, không chỉ một người đang nói.', ['g_185'], [word('漢越語', 'かんえつご', 'Sino-Vietnamese vocabulary', 'từ Hán Việt')]))),
   guide(22, 2, [1851,1852], 'Road signs', 'Biển báo giao thông', 3,
     'Animal warning signs occur in Japan and abroad. Japan’s stop sign is described as a red inverted triangle; the red octagon belongs to other countries in this passage.',
@@ -183,7 +194,7 @@ export const readingGuides: ReadingGuide[] = [
     'Green Garden is quiet, has varied drinks, non-spicy food and good cake, and is open Monday. KAZUSA is closed Monday; the curry restaurant is noisy.',
     'Green Garden yên tĩnh, có nhiều đồ uống, món không cay và bánh ngon, mở thứ Hai. KAZUSA nghỉ thứ Hai; quán cà ri ồn.',
     sentence('It is a little difficult to enter because you cannot see much from outside, but inside it is stylish and quiet.', 'Hơi khó bước vào vì từ ngoài không nhìn rõ, nhưng bên trong đẹp và yên tĩnh.', 'A positive description alone is not enough: also check the weekly closing day.', 'Chỉ nhận xét tốt chưa đủ: cần kiểm tra cả ngày nghỉ hằng tuần.',
-      phrase('外からあんまり見えないから、ちょっと入りにくい店だけど、', 'hard to enter', 'hơi khó bước vào', '入る → 入り + にくい describes difficulty in entering, here a psychological hesitation.', '入る → 入り + にくい chỉ khó bước vào, ở đây là tâm lý ngại vào.', ['g_201']),
+      phrase('外からあんまり見えないから、ちょっと入りにくいお店だけど、', 'hard to enter', 'hơi khó bước vào', '入る → 入り + にくい describes difficulty in entering, here a psychological hesitation.', '入る → 入り + にくい chỉ khó bước vào, ở đây là tâm lý ngại vào.', ['g_201']),
       phrase('中はおしゃれで静か。', 'stylish and quiet inside', 'bên trong đẹp và yên tĩnh', 'で links two な-adjective descriptions.', 'で nối hai mô tả bằng tính từ な.', [], [word('静か', 'しずか', 'quiet', 'yên tĩnh')]))),
   guide(25, 1, [1860], 'A new habit replaces an old one', 'Thói quen mới thay thói quen cũ', 4,
     'After buying a smartphone, the father could no longer stop using it. The question asks about after the purchase, not his earlier decision to quit smoking.',
@@ -359,7 +370,8 @@ export const readingGuides: ReadingGuide[] = [
 export function resolveReadingSelection(params: URLSearchParams) {
   const requestedChapter = Number(params.get('chapter'))
   const chapter = readingChapterPages[requestedChapter] ? requestedChapter : 16
-  const exercises = chapter === 16 ? [1, 2, 3] : readingGuides.filter(g => g.chapter === chapter).map(g => g.exercise)
+  const practice = practiceReadings.find(r => r.chapter === chapter)
+  const exercises = [...readingGuides.filter(g => g.chapter === chapter).map(g => g.exercise), ...(practice ? [PRACTICE_EXERCISE] : [])]
   const requestedExercise = Number(params.get('exercise'))
   const exercise = exercises.includes(requestedExercise) ? requestedExercise : exercises[0]
   const guide = readingGuides.find(g => g.chapter === chapter && g.exercise === exercise)
@@ -367,5 +379,5 @@ export function resolveReadingSelection(params: URLSearchParams) {
   const pages = guide?.pages ?? [first]
   const requestedPage = Number(params.get('page'))
   const page = pages.includes(requestedPage) ? requestedPage : pages[0]
-  return { chapter, exercise, exercises, guide, first, last, page, pages }
+  return { chapter, exercise, exercises, guide, practice: exercise === PRACTICE_EXERCISE ? practice : undefined, first, last, page, pages }
 }
