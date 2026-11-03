@@ -104,28 +104,46 @@ export function Grammar() {
   // A stale category/point selection from before a level switch has no
   // meaning in the new level's category set - clear it rather than showing
   // a detail drawer or filter chip for a point that's no longer listed.
+  // A manual level switch also drops a deep-linked ?point; the switch the
+  // deep link makes itself (autoLevel) keeps it. prevLevel keeps StrictMode's
+  // double mount from counting as a switch.
+  const autoLevel = useRef<Level | null>(null)
+  const prevLevel = useRef(level)
   useEffect(() => {
     setCat(null)
     setTone(null)
     setSelected(null)
+    if (prevLevel.current !== level && autoLevel.current !== level) setSearchParams(prev => { prev.delete('point'); return prev }, { replace: true })
+    prevLevel.current = level
+    autoLevel.current = null
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [level])
 
-  // Cross-navigation from the Verb Forms tab: /grammar?point=<id> opens
-  // that point's detail drawer and makes sure its category is expanded.
+  // Deep link /grammar?point=<id> (Reading, Verb Forms): switch to the point's
+  // level, narrow the list to its chapter and open its drawer.
+  const pointParam = searchParams.get('point')
   useEffect(() => {
-    const pointId = searchParams.get('point')
-    if (!pointId) return
-    // Wait for the level's chunk - otherwise the lookup below would miss and
-    // the param would be dropped before the point could open.
-    if (!data) return
-    const point = grammar.find(g => g.id === pointId)
-    if (point) {
-      setSelected(point)
-      setCollapsed(s => ({ ...s, [point.category]: false }))
-    } else jumpTo(pointId) // other level's point (e.g. N5 grammar linked from N4 reading)
-    setSearchParams(prev => { prev.delete('point'); return prev }, { replace: true })
+    if (!pointParam || selected?.id === pointParam) return
+    const target = levelById.get(pointParam)
+    if (!target) return
+    if (level !== 'all' && target !== level) { autoLevel.current = target; setLevel(target); return }
+    const point = grammar.find(g => g.id === pointParam)
+    if (!point) return // level chunk still loading; reruns when it lands
+    setSelected(point)
+    setCat(point.category)
+    setCollapsed(s => ({ ...s, [point.category]: false }))
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchParams, data])
+  }, [pointParam, grammar, level])
+
+  // Keep the open point in the URL so the address is exact and shareable.
+  useEffect(() => {
+    if (selected && searchParams.get('point') !== selected.id) setSearchParams(prev => { prev.set('point', selected.id); return prev }, { replace: true })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selected])
+  function closeDrawer() {
+    setSelected(null)
+    setSearchParams(prev => { prev.delete('point'); return prev }, { replace: true })
+  }
 
   // Which tones actually occur in the current level's data - only render
   // tone filter chips that could possibly match something.
@@ -425,7 +443,7 @@ export function Grammar() {
       {selected ? (
         <div className="fixed inset-0 z-40 lg:static lg:z-auto lg:w-96 lg:flex-shrink-0 overflow-y-auto bg-paper border-l-3 border-structural pb-[env(safe-area-inset-bottom)]">
           <div className="p-6 border-b-3 border-structural">
-            <button onClick={() => setSelected(null)} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
+            <button onClick={closeDrawer} className="text-muted hover:text-red font-black mb-4 cursor-pointer">× {t('common.close')}</button>
             <div className="flex items-center gap-2 mb-2">
               <span className="text-xs font-black px-2 py-0.5 border border-structural rounded-[var(--radius-sm)]" style={{ backgroundColor: ACCENT_HEX[accentFor(categories.find(c => c.slug === selected.category)?.order ?? 1)] }}>
                 {categories.find(c => c.slug === selected.category)?.romanNumeral}

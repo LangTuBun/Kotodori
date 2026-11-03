@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+
 import type { ReadingParagraph, ReadingSentence } from '@/data/reading-passages'
 import type { SentenceBreakdownData } from '@/data/sentence-breakdowns'
 import { sentenceBreakdowns } from '@/data/sentence-breakdowns'
@@ -11,6 +11,8 @@ import { useTranslation } from '@/lib/useTranslation'
 import { Furigana } from './Furigana'
 import { SpeakButton } from './SpeakButton'
 import { SentenceBreakdown } from './SentenceBreakdown'
+import { ReadingText } from './ReadingText'
+import { GrammarHoverLink } from './GrammarHoverLink'
 
 const allGrammar = getGrammarLinks('all')
 const grammar = new Map(allGrammar.map(g => [g.id, g]))
@@ -76,13 +78,13 @@ export function ReadingPassage({ paragraphs, annotations, chapter }: { paragraph
         {paragraph.length > 1 && <button type="button" onClick={() => select(p, null)} aria-expanded={isSelected(p, null)} aria-controls={`reading-analysis-${p}`} className="min-h-11 text-xs font-bold underline underline-offset-4 focus-visible:outline-2">{l('Explore whole paragraph', 'Phân tích cả đoạn')}</button>}
       </div>
       {view === 'paragraphs'
-        ? <button type="button" onClick={() => select(p, null)} aria-expanded={isSelected(p, null)} aria-controls={`reading-analysis-${p}`} className="w-full text-left rounded-lg px-2 py-1 hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-accent"><span lang="ja" className="jp text-lg sm:text-xl leading-[2.2] break-words">{paragraph.map(s => s.jp).join('')}</span></button>
+        ? <button type="button" onClick={() => select(p, null)} aria-expanded={isSelected(p, null)} aria-controls={`reading-analysis-${p}`} className="w-full text-left rounded-lg px-2 py-1 hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-accent"><span lang="ja" className="jp text-lg sm:text-xl leading-[2.4] break-words">{paragraph.map((s, i) => <ReadingText key={i} text={s.jp} />)}</span></button>
         : <div className="divide-y divide-structural">{paragraph.map((sentence, i) => {
           const open = isSelected(p, i)
           const lit = !!focus && sentence.grammarIds.includes(focus)
           return <div key={i}>
             <button type="button" onClick={() => select(p, i)} aria-expanded={open} aria-controls={`reading-analysis-${p}-${i}`} className={`w-full min-h-11 text-left flex items-start gap-3 rounded-lg py-3 px-2 border-l-4 focus-visible:outline-2 focus-visible:outline-accent ${lit ? 'border-blue bg-blue/10' : 'border-transparent'} ${open ? 'bg-surface' : 'hover:bg-surface/60'}`}>
-              <span lang="ja" className="jp flex-1 min-w-0 text-lg sm:text-xl leading-loose break-words">{sentence.jp}</span>
+              <span lang="ja" className="jp flex-1 min-w-0 text-lg sm:text-xl leading-[2.2] break-words"><ReadingText text={sentence.jp} /></span>
               {breakdownOf(sentence) && <span className="text-blue text-xs mt-3 shrink-0" title={l('Phrase-by-phrase breakdown', 'Có phân tích từng cụm')}>◆</span>}
               <span aria-hidden="true" className="text-muted mt-2 shrink-0">{open ? '−' : '+'}</span>
             </button>
@@ -109,7 +111,7 @@ function GrammarSpotlight({ chapter, points, other, used, focus, onFocus }: { ch
     <p className="text-xs text-muted mb-3">{l('Select a pattern to highlight every sentence that uses it.', 'Chọn mẫu ngữ pháp để tô sáng các câu sử dụng nó.')}</p>
     <div className="flex flex-wrap gap-2">{points.map(g => chip(g, false))}</div>
     {!!other.length && <><p className="text-xs font-bold text-muted mt-4 mb-2">{l('Also in this text', 'Cũng xuất hiện trong bài')}</p><div className="flex flex-wrap gap-2">{other.map(g => chip(g, true))}</div></>}
-    {active && <p className="text-sm mt-3" role="status"><Link to={`/grammar?point=${active.id}`} className="jp font-bold underline underline-offset-4">{active.pattern} ↗</Link> — {localize(active.meaning)}</p>}
+    {active && <p className="text-sm mt-3" role="status"><GrammarHoverLink g={active} className="jp font-bold underline underline-offset-4">{active.pattern} ↗</GrammarHoverLink> — {localize(active.meaning)}</p>}
   </details>
 }
 
@@ -120,9 +122,9 @@ function AnalysisPanel({ lines, whole, breakdown, dictionary }: { lines: Reading
   const ids = [...new Set(lines.flatMap(s => s.grammarIds))]
   return <div className="rounded-lg bg-surface p-4 sm:p-5 my-3 text-sm leading-relaxed">
     <div className="flex flex-wrap items-center justify-between gap-3 mb-3"><p className="font-bold">{whole ? l('Sentence by sentence', 'Nghĩa từng câu') : l('Meaning', 'Ý nghĩa')}</p><SpeakButton text={text} /></div>
-    {whole ? <ol className="space-y-2">{lines.map((s, i) => <li key={i}><span lang="ja" className="jp text-muted block">{s.jp}</span>{localize(s.translation)}</li>)}</ol> : <p>{localize(lines[0].translation)}</p>}
+    {whole ? <ol className="space-y-2">{lines.map((s, i) => <li key={i}><span lang="ja" className="jp text-muted block leading-loose"><ReadingText text={s.jp} /></span>{localize(s.translation)}</li>)}</ol> : <p>{localize(lines[0].translation)}</p>}
     {breakdown && <SentenceBreakdown key={breakdown.sentence} data={breakdown} showSentence={false} />}
-    {!!ids.length && <div className="mt-5 border-l-2 border-blue pl-3"><h3 className="font-bold mb-3">{l('Grammar used here', 'Ngữ pháp dùng ở đây')}</h3><div className="space-y-4">{ids.map(id => { const g = grammar.get(id); return g && <div key={id}><Link to={`/grammar?point=${id}`} className="jp font-bold underline underline-offset-4">{g.pattern} ↗</Link><p className="text-xs text-muted mt-1">{g.jlptLevel ?? (g.chapter >= 16 ? 'N4' : 'N5')} · {l('Chapter', 'Bài')} {g.chapter}</p><p className="mt-1">{localize(g.meaning)}</p></div> })}</div></div>}
+    {!!ids.length && <div className="mt-5 border-l-2 border-blue pl-3"><h3 className="font-bold mb-3">{l('Grammar used here', 'Ngữ pháp dùng ở đây')}</h3><div className="space-y-4">{ids.map(id => { const g = grammar.get(id); return g && <div key={id}><GrammarHoverLink g={g} className="jp font-bold underline underline-offset-4">{g.pattern} ↗</GrammarHoverLink><p className="text-xs text-muted mt-1">{g.jlptLevel ?? (g.chapter >= 16 ? 'N4' : 'N5')} · {l('Chapter', 'Bài')} {g.chapter}</p><p className="mt-1">{localize(g.meaning)}</p></div> })}</div></div>}
     <ReadingWords key={text} text={text} dictionary={dictionary} />
   </div>
 }

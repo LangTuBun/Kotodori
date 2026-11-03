@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { readFileSync, existsSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
 import { sentenceBreakdowns } from '../src/data/sentence-breakdowns.ts'
 import { readingGuides, readingChapterPages, resolveReadingSelection, PRACTICE_EXERCISES } from '../src/data/reading-guides.ts'
 import { readingPassages } from '../src/data/reading-passages.ts'
@@ -77,12 +77,12 @@ for (const guide of readingGuides) {
     const [first, last] = readingChapterPages[guide.chapter]
     // 1890–1892 are photos supplied later (23-1 and the 19-3 / 22-3 question pages).
     assert.ok((page >= first && page <= last) || (page >= 1890 && page <= 1892), `Source belongs to a different chapter ${key}: ${page}`)
-    assert.ok(existsSync(new URL(`../public/reading-chapters/IMG_${page}.jpg`, import.meta.url)), `Missing source ${key}: ${page}`)
   }
   assert.ok(guide.sentences.some(s => s.chunks.some(c => c.words?.length)), `No vocabulary ${key}`)
   const units = readingPassages[key].flat().map(unit => normalize(unit.jp))
   for (const s of guide.sentences) assert.ok(units.some(unit => unit.includes(normalize(s.sentence))), `Curated sentence not found in ${key} passage: ${s.sentence}`)
-  if (guide.question) assert.ok(guide.question.options.length === 4 && guide.question.jp, `Incomplete question ${key}`)
+  // The reader no longer ships photos, so every book question must exist as text (19-2 has two picture options).
+  assert.ok(guide.question?.jp && guide.question.options.length >= 2 && guide.answer <= guide.question.options.length, `Question missing as text ${key}`)
   for (const data of guide.sentences) {
     assert.equal(data.chunks.map(c => c.text).join(''), data.sentence)
     assert.ok(data.chunks.length >= 2, `No explorable structure ${key}`)

@@ -1,5 +1,6 @@
 import { sentenceBreakdowns, type Bilingual, type SentenceBreakdownData, type SentenceChunk, type SentenceWord } from './sentence-breakdowns.ts'
 import { practiceReadings } from './reading-practice.ts'
+import { bookQuestions } from './reading-questions.ts'
 
 /** Exercise numbers for each chapter's original texts, after the book's 1–3. */
 export const PRACTICE_EXERCISES = { practice: 4, review: 5 } as const
@@ -40,7 +41,7 @@ function guide(chapter: number, exercise: number, pages: number[], en: string, v
 // Curated clause breakdowns, answers and explanations per photographed exercise.
 // Full passage text lives in reading-passages.ts; photos keep questions and diagrams.
 const ch16 = (jp: string) => sentenceBreakdowns[jp]!
-export const readingGuides: ReadingGuide[] = [
+const guides: ReadingGuide[] = [
   { ...guide(16, 1, [1836], 'A farewell party', 'Tiệc chia tay', 3,
     'The email says Takagi is leaving the company (やめるそうです). Takamura is the writer, Yamada the reader, and the manager only passed on the news.',
     'Email nói Takagi sẽ nghỉ việc ở công ty (やめるそうです). Takamura là người viết, Yamada là người nhận, còn trưởng phòng chỉ là người kể lại tin.',
@@ -378,6 +379,9 @@ export const readingGuides: ReadingGuide[] = [
       phrase('ご不在だったため、', 'because you were out', 'vì quý khách vắng nhà', 'Nだった + ため gives a formal reason; ご adds respect to 不在.', 'Nだった + ため nêu lý do trang trọng; ご thể hiện kính trọng với 不在.', ['g_265'], [word('不在', 'ふざい', 'absence; being out', 'vắng mặt, vắng nhà')]),
       phrase('お荷物を持ってかえりました。', 'took the parcel back', 'mang kiện hàng về', 'お荷物 is a polite reference to the customer’s parcel; 持ってかえる means take back.', 'お荷物 là cách gọi lịch sự kiện hàng khách; 持ってかえる là mang về.', [], [word('荷物', 'にもつ', 'parcel, baggage', 'kiện hàng, hành lý')]))),
 ]
+
+// Every exercise carries its question as text, so the reader never needs the photos.
+export const readingGuides: ReadingGuide[] = guides.map(g => ({ ...g, question: g.question ?? bookQuestions[`${g.chapter}-${g.exercise}`] }))
 
 export function resolveReadingSelection(params: URLSearchParams) {
   const requestedChapter = Number(params.get('chapter'))

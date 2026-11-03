@@ -1,7 +1,7 @@
 import { useId, useState } from "react"
 import type { SentenceBreakdownData } from "@/data/sentence-breakdowns"
 import { useTranslation } from "@/lib/useTranslation"
-import { Link } from "react-router-dom"
+import { GrammarHoverLink } from "@/components/ui/GrammarHoverLink"
 import { getGrammarLinks } from "@/data/grammar-links"
 import { Furigana } from "@/components/ui/Furigana"
 import { SpeakButton } from "@/components/ui/SpeakButton"
@@ -35,8 +35,8 @@ export function SentenceBreakdown({ data, showSentence = true }: { data: Sentenc
         {!!data.chunks[selected].grammarIds?.length && <div className="mt-4 border-l-2 border-blue pl-3">
           <div className="font-bold mb-2">{l("Grammar in this phrase", "Ngữ pháp trong cụm này")}</div>
           {data.chunks[selected].grammarIds?.map(id => { const g = grammarById.get(id); return g && <div key={id} className="mb-3 last:mb-0">
-            <Link to={`/grammar?point=${id}`} className="jp font-bold underline underline-offset-4">{g.pattern} ↗</Link>
-            <p className="text-xs text-muted mt-1">{g.jlptLevel} · {l("Chapter", "Bài")} {g.chapter}</p>
+            <GrammarHoverLink g={g} className="jp font-bold underline underline-offset-4">{g.pattern} ↗</GrammarHoverLink>
+            <p className="text-xs text-muted mt-1">{g.jlptLevel ?? (g.chapter >= 16 ? "N4" : "N5")} · {l("Chapter", "Bài")} {g.chapter}</p>
             <p className="mt-1">{localize(g.meaning)}</p>
           </div> })}
         </div>}
