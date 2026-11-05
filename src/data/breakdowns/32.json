@@ -30,7 +30,10 @@
     "detail": {
      "en": "ですね invites agreement about a plan both people already know.",
      "vi": "ですね xác nhận nhẹ nhàng một lịch hẹn mà cả hai đã biết."
-    }
+    },
+    "grammarIds": [
+     "g_008_1"
+    ]
    },
    {
     "text": "コンサートの会場がどこにあるか、",
@@ -43,7 +46,8 @@
      "vi": "の nối buổi hòa nhạc với hội trường; が đánh dấu chủ ngữ của ある. どこ + にある + か tạo câu hỏi lồng về địa điểm, không dùng です trong phần này."
     },
     "grammarIds": [
-     "g_251"
+     "g_251",
+     "g_069"
     ],
     "words": [
      {
@@ -65,7 +69,10 @@
     "detail": {
      "en": "The final か asks whether the listener knows the answer to the embedded question.",
      "vi": "か cuối câu hỏi người nghe có biết câu trả lời cho câu hỏi lồng phía trước không."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -102,7 +109,10 @@
      "vi": "使う + といい đưa ra lời khuyên. 使う ở đây là chọn đi một tuyến tàu, với を đánh dấu tuyến đó."
     },
     "grammarIds": [
-     "g_260"
+     "g_260",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -126,7 +136,8 @@
      "vi": "と dẫn toàn bộ lời khuyên trước 思います, giúp lời khuyên mang sắc thái ý kiến cá nhân."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_044"
     ]
    }
   ]
@@ -162,7 +173,10 @@
     "detail": {
      "en": "に marks the train line boarded. 乗る → 乗って connects this step to the next.",
      "vi": "に chỉ tuyến tàu lên đi. 乗る → 乗って nối bước này với bước tiếp theo."
-    }
+    },
+    "grammarIds": [
+     "g_091"
+    ]
    },
    {
     "text": "さくら駅で降りたら",
@@ -175,7 +189,9 @@
      "vi": "で chỉ nơi xuống tàu. 降りる → 降りた + ら nêu bước cần hoàn tất trước khi đi bộ."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081",
+     "g_050_1"
     ],
     "words": [
      {
@@ -197,7 +213,10 @@
     "detail": {
      "en": "まで marks the endpoint of the walk. 歩く → 歩いて continues the sequence.",
      "vi": "まで chỉ điểm cuối quãng đi bộ. 歩く → 歩いて nối tiếp chuỗi hành động."
-    }
+    },
+    "grammarIds": [
+     "g_091"
+    ]
    },
    {
     "text": "北川線に乗り換えてください。",
@@ -218,6 +237,10 @@
        "vi": "chuyển tàu, chuyển tuyến"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_099"
     ]
    }
   ]
@@ -253,7 +276,11 @@
     "detail": {
      "en": "が links the minor inconvenience to the reassurance that follows.",
      "vi": "が nối điểm hơi bất tiện này với lời trấn an phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_044",
+     "g_021"
+    ]
    },
    {
     "text": "案内のとおりに",
@@ -290,7 +317,8 @@
      "vi": "進む → 進めば là thể điều kiện ば, nêu điều kiện để có kết quả đi đến nơi."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_084"
     ],
     "words": [
      {
@@ -314,7 +342,8 @@
      "vi": "迷う → 迷わない + で diễn tả trạng thái đi mà không bị lạc đường."
     },
     "grammarIds": [
-     "g_198"
+     "g_198",
+     "g_073"
     ],
     "words": [
      {
@@ -338,7 +367,9 @@
      "vi": "行く → 行ける là thể khả năng. はずです diễn tả điều được suy ra từ việc làm theo hướng dẫn, không phải lời bảo đảm tuyệt đối."
     },
     "grammarIds": [
-     "g_141"
+     "g_141",
+     "g_061_1",
+     "g_075"
     ]
    }
   ]
@@ -365,7 +396,8 @@
      "vi": "Thể từ điển + の danh từ hóa việc chuyển tàu; に nối việc đó với thời gian cần thiết. のに này không mang nghĩa ‘mặc dù’."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_069"
     ],
     "words": [
      {
@@ -387,7 +419,12 @@
     "detail": {
      "en": "くらい makes the duration approximate. Plain かかる + から gives the reason for the request.",
      "vi": "くらい cho biết thời lượng gần đúng. かかる ở thể thường + から nêu lý do cho lời nhắc."
-    }
+    },
+    "grammarIds": [
+     "g_063",
+     "g_069",
+     "g_066"
+    ]
    },
    {
     "text": "電車の時間に",
@@ -419,6 +456,10 @@
        "vi": "cẩn thận, chú ý"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_099"
     ]
    }
   ]
@@ -445,7 +486,8 @@
      "vi": "コンサート会場がある bổ nghĩa trực tiếp cho うめやま駅. まで chỉ đích đến, còn は lấy chặng đến đó làm chủ đề."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -478,7 +520,10 @@
     "detail": {
      "en": "くらい gives an approximate duration. The travel itself is understood, so no movement verb is needed.",
      "vi": "くらい nêu thời lượng ước chừng. Việc di chuyển đã rõ trong ngữ cảnh nên không cần nhắc lại động từ."
-    }
+    },
+    "grammarIds": [
+     "g_064"
+    ]
    }
   ]
  },
@@ -504,7 +549,8 @@
      "vi": "に chỉ nơi đến. 着く → 着いた + ら mang nghĩa sau khi đã đến nơi."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081"
     ],
     "words": [
      {
@@ -536,6 +582,9 @@
        "vi": "cửa ra, lối ra"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091"
     ]
    },
    {
@@ -568,6 +617,10 @@
        "vi": "tiến lên, đi tiếp"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_099"
     ]
    }
   ]
@@ -615,7 +668,8 @@
      "vi": "に chỉ hướng rẽ. 曲がる + と dẫn kết quả sẽ gặp theo lộ trình chỉ đường."
     },
     "grammarIds": [
-     "g_259"
+     "g_259",
+     "g_069"
     ],
     "words": [
      {
@@ -658,7 +712,11 @@
     "detail": {
      "en": "が marks what exists at that location. 大きい modifies 本屋.",
      "vi": "が chỉ sự vật có ở vị trí đó. 大きい bổ nghĩa cho 本屋."
-    }
+    },
+    "grammarIds": [
+     "g_166",
+     "g_044"
+    ]
    },
    {
     "text": "その本屋の後ろが",
@@ -735,6 +793,10 @@
        "vi": "mong chờ"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_094_5"
     ]
    },
    {
@@ -756,6 +818,9 @@
        "vi": "cẩn thận"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091"
     ]
    },
    {
@@ -767,7 +832,11 @@
     "detail": {
      "en": "来る → 来て + ください asks the listener to come toward the writer. ね softens the closing request.",
      "vi": "来る → 来て + ください nhắn người nghe đến chỗ người viết. ね làm lời nhắn cuối nhẹ nhàng hơn."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_099"
+    ]
    }
   ]
  },
@@ -807,7 +876,8 @@
      "vi": "聞く → 聞いた + ことがある hỏi về trải nghiệm đã từng có. か cuối câu tạo câu hỏi lịch sự."
     },
     "grammarIds": [
-     "g_083"
+     "g_083",
+     "g_076"
     ]
    }
   ]
@@ -845,7 +915,14 @@
      "vi": "色々 dùng な trước 人. 集まる → 集まって nối việc tụ họp với làm việc; cả 色々な人が集まって仕事をする bổ nghĩa cho 場所."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_166",
+     "g_091",
+     "g_092",
+     "g_069",
+     "g_050_2",
+     "g_161",
+     "g_162"
     ],
     "words": [
      {
@@ -912,6 +989,10 @@
        "vi": "ở đây: ra đời, hình thành"
       }
      }
+    ],
+    "grammarIds": [
+     "g_076",
+     "g_050_1"
     ]
    },
    {
@@ -925,7 +1006,9 @@
      "vi": "と dẫn nội dung được thuật lại. 言う → 言われる → 言われています là dạng bị động, nêu thông tin được nhiều người nói mà không chỉ rõ người nói."
     },
     "grammarIds": [
-     "g_193"
+     "g_193",
+     "g_091",
+     "g_094_3"
     ]
    }
   ]
@@ -963,7 +1046,11 @@
      "vi": "自分の会社を持っている bổ nghĩa cho 人. 持っている chỉ trạng thái sở hữu; が đánh dấu những người này là chủ thể của các hoạt động sau."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_094_4",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -975,7 +1062,14 @@
     "detail": {
      "en": "と marks the people met. 会って connects meeting to talking; 話をする → 話をしたり begins a list of example activities.",
      "vi": "と chỉ người gặp cùng. 会って nối việc gặp với nói chuyện; 話をする → 話をしたり mở danh sách các hoạt động tiêu biểu."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092",
+     "g_215",
+     "g_050_2",
+     "g_161"
+    ]
    },
    {
     "text": "一緒にビジネスを始めたりするための",
@@ -989,7 +1083,10 @@
     },
     "grammarIds": [
      "g_215",
-     "g_264"
+     "g_264",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1046,6 +1143,11 @@
        "vi": "tăng lên"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_021",
+     "g_162"
     ]
    },
    {
@@ -1059,7 +1161,11 @@
      "vi": "そこには lấy các quán làm bối cảnh. Mệnh đề trước 人 chỉ người có công ty riêng; だけではなくて mở cấu trúc ‘không chỉ A mà còn B’."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_094_4",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1073,7 +1179,10 @@
      "vi": "リモートで chỉ hình thức làm việc. 仕事をする bổ nghĩa cho 会社員; や liệt kê một đối tượng trong danh sách chưa đầy đủ."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1087,7 +1196,9 @@
      "vi": "勉強がしたい bổ nghĩa cho 学生; が có thể đánh dấu việc muốn làm với たい. も cho biết những đối tượng được thêm vào cũng đến."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078",
+     "g_044"
     ]
    }
   ]
@@ -1133,6 +1244,16 @@
        "vi": "cảm giác, tâm trạng"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_069",
+     "g_165",
+     "g_160",
+     "g_061_1",
+     "g_075",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1144,7 +1265,11 @@
     "detail": {
      "en": "いる → いて links the presence of family members to the lack of space that follows.",
      "vi": "いる → いて nối việc có người nhà ở đó với tình trạng thiếu chỗ phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_197"
+    ]
    },
    {
     "text": "仕事をする場所がないという人が",
@@ -1157,7 +1282,10 @@
      "vi": "仕事をする bổ nghĩa cho 場所. という人 chỉ người nói về khó khăn này; が cuối cụm đánh dấu các nhóm được liệt kê là chủ ngữ của 多い."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1169,7 +1297,10 @@
     "detail": {
      "en": "Plain 多い + からです gives the reason for the café use described in the previous sentence.",
      "vi": "多い ở thể thường + からです nêu lý do cho việc đến quán đã nói ở câu trước."
-    }
+    },
+    "grammarIds": [
+     "g_066"
+    ]
    }
   ]
  },
@@ -1206,7 +1337,11 @@
      "vi": "と chỉ những người cùng giao tiếp. コミュニケーションを取る là cụm mang nghĩa giao tiếp; thể từ điển + ために nêu mục đích."
     },
     "grammarIds": [
-     "g_264"
+     "g_264",
+     "g_069",
+     "g_050_3",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -1228,7 +1363,13 @@
     "detail": {
      "en": "来るという人 identifies people by their stated reason for coming. も includes them, while が introduces the contrast.",
      "vi": "来るという人 chỉ những người nói về lý do mình đến. も thêm nhóm này vào; が dẫn ý đối chiếu."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_165",
+     "g_044",
+     "g_021"
+    ]
    },
    {
     "text": "カフェで一人で静かに",
@@ -1252,7 +1393,12 @@
      "vi": "仕事や勉強をする bổ nghĩa cho 人. も thêm nhóm này bên cạnh nhóm đến để giao tiếp."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_051",
+     "g_069",
+     "g_050_2",
+     "g_161",
+     "g_013"
     ]
    }
   ]
@@ -1290,7 +1436,8 @@
      "vi": "一度に nghĩa là cùng lúc. 使う → 使って + も nêu tình huống mà dịch vụ vẫn cần hoạt động ổn."
     },
     "grammarIds": [
-     "g_255"
+     "g_255",
+     "g_091"
     ],
     "words": [
      {
@@ -1336,6 +1483,10 @@
        "vi": "đường truyền"
       }
      }
+    ],
+    "grammarIds": [
+     "g_018",
+     "g_166"
     ]
    },
    {
@@ -1349,7 +1500,9 @@
      "vi": "使う → 使われる → 使われています là bị động, diễn tả loại đường truyền đang được sử dụng mà không nêu người lắp đặt."
     },
     "grammarIds": [
-     "g_193"
+     "g_193",
+     "g_091",
+     "g_094_5"
     ]
    }
   ]
@@ -1376,7 +1529,10 @@
      "vi": "長い時間いる bổ nghĩa cho 人. Nのために mang nghĩa ‘vì, cho lợi ích của N’."
     },
     "grammarIds": [
-     "g_264"
+     "g_264",
+     "g_166",
+     "g_069",
+     "g_165"
     ]
    },
    {
@@ -1388,7 +1544,10 @@
     "detail": {
      "en": "や lists examples, and も adds these refreshments to the facilities already mentioned.",
      "vi": "や liệt kê ví dụ, còn も thêm đồ ăn uống vào các tiện ích đã nêu."
-    }
+    },
+    "grammarIds": [
+     "g_051"
+    ]
    },
    {
     "text": "用意されています。",
@@ -1401,7 +1560,9 @@
      "vi": "用意する → 用意される → 用意されています là bị động, diễn tả đồ ăn uống được chuẩn bị sẵn để dùng."
     },
     "grammarIds": [
-     "g_193"
+     "g_193",
+     "g_091",
+     "g_094_4"
     ],
     "words": [
      {
@@ -1438,7 +1599,10 @@
      "vi": "付く → 付いている chỉ trạng thái đã gắn vào. コンセントが付いている cùng 広い bổ nghĩa cho 机; も thêm một tiện ích nữa."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_094_4",
+     "g_166"
     ],
     "words": [
      {
@@ -1470,7 +1634,8 @@
      "vi": "置く → 置いて + ある diễn tả trạng thái sau khi có người chủ động đặt bàn ở đó. も thay cho が trong câu này."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_091"
     ]
    }
   ]
@@ -1518,7 +1683,8 @@
      "vi": "Thể từ điển 勉強する + ために diễn tả mục đích của việc đến quán."
     },
     "grammarIds": [
-     "g_264"
+     "g_264",
+     "g_069"
     ]
    },
    {
@@ -1570,7 +1736,9 @@
      "vi": "に chỉ nơi người viết ở. いる + と dẫn tình huống lặp lại và hệ quả thường gặp."
     },
     "grammarIds": [
-     "g_259"
+     "g_259",
+     "g_069",
+     "g_040_1"
     ]
    },
    {
@@ -1584,7 +1752,11 @@
      "vi": "見る → 見てしまう diễn tả việc lỡ làm hoặc làm rồi thấy không nên. 見てしまって nối sự xao nhãng này với việc khó học phía sau."
     },
     "grammarIds": [
-     "g_222"
+     "g_222",
+     "g_051",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1596,7 +1768,12 @@
     "detail": {
      "en": "なかなか with a negative means the desired action does not happen easily. 勉強する → 勉強できない is negative potential, and からです explains the earlier choice.",
      "vi": "なかなか đi với phủ định diễn tả mãi khó làm được điều mong muốn. 勉強する → 勉強できない là khả năng phủ định; からです giải thích lựa chọn ở câu trước."
-    }
+    },
+    "grammarIds": [
+     "g_061_1",
+     "g_075",
+     "g_066"
+    ]
    }
   ]
  },
@@ -1620,7 +1797,10 @@
     "detail": {
      "en": "Nのこと means matters concerning N. だけ limits what the writer wants to think about.",
      "vi": "Nのこと chỉ những chuyện liên quan đến N. だけ giới hạn nội dung người viết muốn nghĩ đến."
-    }
+    },
+    "grammarIds": [
+     "g_108"
+    ]
    },
    {
     "text": "考えられるように、",
@@ -1633,7 +1813,9 @@
      "vi": "考える → 考えられる là khả năng, không phải bị động ở đây. Thể khả năng + ように nêu điều người viết muốn tạo điều kiện thực hiện."
     },
     "grammarIds": [
-     "g_266"
+     "g_266",
+     "g_061_1",
+     "g_075"
     ],
     "words": [
      {
@@ -1655,7 +1837,11 @@
     "detail": {
      "en": "と joins the two items, while だけ restricts the belongings taken to those items.",
      "vi": "と nối hai món đồ; だけ giới hạn đồ mang theo chỉ gồm những món ấy."
-    }
+    },
+    "grammarIds": [
+     "g_042",
+     "g_108"
+    ]
    },
    {
     "text": "持って行きます。",
@@ -1666,7 +1852,11 @@
     "detail": {
      "en": "持つ → 持って + 行く means to take something along to a place away from the current location.",
      "vi": "持つ → 持って + 行く nghĩa là mang đồ đi đến một nơi khác."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_226"
+    ]
    }
   ]
  },
@@ -1690,7 +1880,14 @@
     "detail": {
      "en": "くらい makes the study duration approximate. 勉強して connects studying to returning home, and が leads into the comparison.",
      "vi": "くらい cho biết thời gian học ước chừng. 勉強して nối việc học với về nhà; が dẫn sang phần so sánh."
-    }
+    },
+    "grammarIds": [
+     "g_046",
+     "g_091",
+     "g_092",
+     "g_044",
+     "g_021"
+    ]
    },
    {
     "text": "家にいるより",
@@ -1701,7 +1898,11 @@
     "detail": {
      "en": "A plain-form clause + より gives the comparison baseline: being at home.",
      "vi": "Mệnh đề thể thường + より nêu đối tượng làm mốc so sánh: ở nhà."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_040_1"
+    ]
    },
    {
     "text": "ずっと勉強が進みます。",
@@ -1722,6 +1923,10 @@
        "vi": "ở đây: tiến triển"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_162"
     ]
    }
   ]
@@ -1748,7 +1953,12 @@
      "vi": "家で勉強ができない bổ nghĩa cho 人. は đưa nhóm người đó làm chủ đề của lời khuyên."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_061_1",
+     "g_061_2",
+     "g_075",
+     "g_071",
+     "g_050_1"
     ]
    },
    {
@@ -1775,7 +1985,8 @@
     "grammarIds": [
      "g_252",
      "g_260",
-     "g_138"
+     "g_138",
+     "g_091"
     ]
    }
   ]
@@ -1840,7 +2051,10 @@
     "detail": {
      "en": "一番 + いい means best among the options. The plain ending and question mark make a compact heading question.",
      "vi": "一番 + いい mang nghĩa tốt nhất trong các lựa chọn. Đuôi thể thường và dấu hỏi tạo câu hỏi ngắn gọn cho tiêu đề."
-    }
+    },
+    "grammarIds": [
+     "g_033_1"
+    ]
    }
   ]
  },
@@ -1874,6 +2088,9 @@
        "vi": "ở đây: điểm, mặt được đánh giá"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -1887,7 +2104,11 @@
      "vi": "を chỉ đối tượng được làm ấm. 暖める + のにいい đánh giá mức phù hợp với một việc; の danh từ hóa động từ."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_166",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -1927,6 +2148,10 @@
        "vi": "bị bẩn, bị ô nhiễm"
       }
      }
+    ],
+    "grammarIds": [
+     "g_073",
+     "g_162"
     ]
    }
   ]
@@ -1951,7 +2176,10 @@
     "detail": {
      "en": "悪い modifies 点 to label the drawbacks. The following plain-form statements are compact table entries.",
      "vi": "悪い bổ nghĩa cho 点 để đặt tên mục nhược điểm. Các câu thể thường sau đó là cách ghi gọn trong bảng."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "暖めるのに時間がかかる。",
@@ -1964,7 +2192,9 @@
      "vi": "暖める + のに nêu việc cần thời gian. 時間がかかる nghĩa là mất thời gian, với 時間 là chủ ngữ."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_069",
+     "g_063"
     ],
     "words": [
      {
@@ -1988,7 +2218,8 @@
      "vi": "Thể từ điển + 前に là trước khi làm gì. 必要だ → 必要で nối việc cần lắp đặt với yếu tố chi phí tiếp theo."
     },
     "grammarIds": [
-     "g_080_1"
+     "g_080_1",
+     "g_069"
     ],
     "words": [
      {
@@ -2042,7 +2273,11 @@
     "detail": {
      "en": "お金がかかる describes expense. が marks the resource required, as in 時間がかかる earlier.",
      "vi": "お金がかかる diễn tả việc tốn tiền. が đánh dấu nguồn lực cần dùng, tương tự 時間がかかる phía trước."
-    }
+    },
+    "grammarIds": [
+     "g_063",
+     "g_069"
+    ]
    },
    {
     "text": "注意点：なし",
@@ -2097,6 +2332,9 @@
        "vi": "lò sưởi dầu hỏa"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -2110,7 +2348,11 @@
      "vi": "暖める + の danh từ hóa việc làm ấm. にいい cho biết thiết bị phù hợp với công dụng ấy."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_166",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2134,7 +2376,8 @@
      "vi": "暖かい → 暖かく + なる diễn tả trở nên ấm. すぐに nhấn mạnh sự thay đổi xảy ra ngay."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_069"
     ]
    }
   ]
@@ -2159,7 +2402,10 @@
     "detail": {
      "en": "This table label introduces an unfavorable aspect of the kerosene heater.",
      "vi": "Nhãn trong bảng này mở phần bất lợi của lò dầu."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "灯油を使うので、",
@@ -2172,7 +2418,10 @@
      "vi": "を đánh dấu loại nhiên liệu dùng. 使う ở thể thường + ので giải thích nguyên nhân có mùi."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2196,7 +2445,8 @@
      "vi": "においがする là cách diễn tả có mùi cảm nhận được. する ở đây không mang nghĩa thực hiện hành động."
     },
     "grammarIds": [
-     "g_169"
+     "g_169",
+     "g_069"
     ]
    }
   ]
@@ -2244,7 +2494,9 @@
      "vi": "火事になる nghĩa là xảy ra hỏa hoạn. なる → ならない + ように nêu kết quả không mong muốn cần tránh."
     },
     "grammarIds": [
-     "g_266"
+     "g_266",
+     "g_160",
+     "g_073"
     ],
     "words": [
      {
@@ -2279,7 +2531,8 @@
      "vi": "置く → 置かない + ようにする nghĩa là chú ý để không làm việc gì. Ở đây là lời lưu ý chung, viết ở thể thường."
     },
     "grammarIds": [
-     "g_207"
+     "g_207",
+     "g_073"
     ]
    }
   ]
@@ -2314,6 +2567,9 @@
        "vi": "bàn sưởi kiểu Nhật"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -2327,7 +2583,10 @@
      "vi": "体を là đối tượng của 暖める. Động từ + のにいい đánh giá thiết bị phù hợp với công dụng đó."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2359,6 +2618,9 @@
        "vi": "tiền điện"
       }
      }
+    ],
+    "grammarIds": [
+     "g_033_2"
     ]
    }
   ]
@@ -2383,7 +2645,10 @@
     "detail": {
      "en": "The label introduces the limitations of this heating option.",
      "vi": "Nhãn này mở phần hạn chế của loại thiết bị sưởi này."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "部屋は暖かくならない。",
@@ -2396,7 +2661,8 @@
      "vi": "は đối chiếu căn phòng với cơ thể được bàn sưởi làm ấm. 暖かい → 暖かく + ならない phủ định sự thay đổi thành ấm."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_073"
     ]
    },
    {
@@ -2411,7 +2677,10 @@
     },
     "grammarIds": [
      "g_266",
-     "g_111"
+     "g_111",
+     "g_073",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2488,7 +2757,9 @@
      "vi": "で chỉ nơi ngủ. 寝る + と dẫn hệ quả được nêu trong mục này."
     },
     "grammarIds": [
-     "g_259"
+     "g_259",
+     "g_069",
+     "g_050_1"
     ]
    },
    {
@@ -2503,7 +2774,8 @@
     },
     "grammarIds": [
      "g_253",
-     "g_160"
+     "g_160",
+     "g_069"
     ],
     "words": [
      {
@@ -2525,7 +2797,10 @@
     "detail": {
      "en": "に marks the place entered. 入る → 入って links entering to sleeping in the following phrase.",
      "vi": "に chỉ nơi vào. 入る → 入って nối việc chui vào với việc ngủ phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_091"
+    ]
    },
    {
     "text": "寝ないようにする。",
@@ -2538,7 +2813,8 @@
      "vi": "寝る → 寝ない + ようにする nêu điều cần chú ý thực hiện. Phủ định nhắm vào việc ngủ, không cấm dùng bàn sưởi nói chung."
     },
     "grammarIds": [
-     "g_207"
+     "g_207",
+     "g_073"
     ]
    }
   ]
@@ -2573,6 +2849,9 @@
        "vi": "lò sưởi điện"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -2586,7 +2865,9 @@
      "vi": "早い → 早く bổ nghĩa cho tốc độ thay đổi. 暖かい → 暖かく + なる nghĩa là trở nên ấm."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_158",
+     "g_069"
     ]
    }
   ]
@@ -2621,6 +2902,11 @@
        "vi": "ở đây: công việc lắp đặt"
       }
      }
+    ],
+    "grammarIds": [
+     "g_215",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -2635,7 +2921,11 @@
     },
     "grammarIds": [
      "g_215",
-     "g_253"
+     "g_253",
+     "g_069",
+     "g_165",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2665,7 +2955,10 @@
     "detail": {
      "en": "買う → 買って links purchase to use. すぐに says there is no waiting period between them.",
      "vi": "買う → 買って nối việc mua với sử dụng. すぐに cho biết không phải chờ giữa hai bước."
-    }
+    },
+    "grammarIds": [
+     "g_091"
+    ]
    },
    {
     "text": "使える。",
@@ -2678,7 +2971,8 @@
      "vi": "使う → 使える là thể khả năng, diễn tả có thể sử dụng ngay."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_075"
     ]
    }
   ]
@@ -2703,7 +2997,10 @@
     "detail": {
      "en": "The table label introduces the negative points of the electric heater.",
      "vi": "Nhãn trong bảng mở phần điểm bất lợi của lò điện."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "広い場所は暖められない。",
@@ -2716,7 +3013,9 @@
      "vi": "は nhấn mạnh nơi rộng là phạm vi bị hạn chế. 暖める → 暖められる → 暖められない là khả năng phủ định, không phải bị động ở đây."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_166",
+     "g_075"
     ],
     "words": [
      {
@@ -2748,6 +3047,9 @@
        "vi": "tiền điện"
       }
      }
+    ],
+    "grammarIds": [
+     "g_033_2"
     ]
    }
   ]
@@ -2782,6 +3084,9 @@
        "vi": "thảm sưởi điện"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -2795,7 +3100,10 @@
      "vi": "足を chỉ bộ phận được làm ấm. 暖める + のにいい nghĩa là phù hợp với việc làm ấm bộ phận đó."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2832,7 +3140,11 @@
      "vi": "暖かい → 暖かさ gọi tên tính chất ấm. 逃がす → 逃がさない + ように nêu điều cần ngăn nhờ cách đặt thảm."
     },
     "grammarIds": [
-     "g_266"
+     "g_266",
+     "g_111",
+     "g_073",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2877,7 +3189,8 @@
      "vi": "に chỉ vị trí đặt, được hiểu là dưới thảm điện. 置く + といい khuyên thực hiện hành động này."
     },
     "grammarIds": [
-     "g_260"
+     "g_260",
+     "g_069"
     ]
    }
   ]
@@ -2902,7 +3215,10 @@
     "detail": {
      "en": "This label introduces a limitation of the electric mat.",
      "vi": "Nhãn này mở phần hạn chế của thảm điện."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "部屋は",
@@ -2926,7 +3242,8 @@
      "vi": "暖かい → 暖かく + なる là trở nên ấm. なる → ならない phủ định sự thay đổi đó."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_073"
     ]
    }
   ]
@@ -2973,7 +3290,11 @@
     "detail": {
      "en": "や gives examples of objects, and 重い modifies もの. を marks these objects with 置く.",
      "vi": "や liệt kê ví dụ về đồ vật; 重い bổ nghĩa cho もの. を đánh dấu các đồ vật đi với 置く."
-    }
+    },
+    "grammarIds": [
+     "g_051",
+     "g_166"
+    ]
    },
    {
     "text": "置かないようにする。",
@@ -2986,7 +3307,8 @@
      "vi": "置く → 置かない + ようにする diễn tả chú ý tránh làm điều này như một nguyên tắc khi dùng."
     },
     "grammarIds": [
-     "g_207"
+     "g_207",
+     "g_073"
     ]
    }
   ]
@@ -3011,7 +3333,10 @@
     "detail": {
      "en": "The device name comes before the full-width space. よい点 introduces its favorable features.",
      "vi": "Tên thiết bị đứng trước khoảng trắng rộng. よい点 mở phần đặc điểm có lợi."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "広い場所を暖めるのにいい。",
@@ -3024,7 +3349,11 @@
      "vi": "を đánh dấu nơi được làm ấm. 暖める + のにいい nghĩa là tốt cho việc sưởi nơi ấy."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_166",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -3048,7 +3377,9 @@
      "vi": "早く bổ nghĩa cho tốc độ thay đổi. 暖かい → 暖かく + なる diễn tả trở nên ấm."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_158",
+     "g_069"
     ]
    }
   ]
@@ -3110,7 +3441,8 @@
      "vi": "使う → 使える → 使えない là khả năng phủ định. Không có đầu nối nên không thể dùng."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_075"
     ]
    }
   ]
@@ -3148,7 +3480,9 @@
      "vi": "が đánh dấu chất bị rò; 外に chỉ hướng ra ngoài. 漏れる + と dẫn hệ quả của việc rò ga."
     },
     "grammarIds": [
-     "g_259"
+     "g_259",
+     "g_069",
+     "g_162"
     ],
     "words": [
      {
@@ -3196,7 +3530,9 @@
      "vi": "壊れる → 壊れている chỉ trạng thái đã hỏng; 壊れていない phủ định trạng thái ấy. か lồng câu hỏi kiểm tra ‘có còn nguyên vẹn không?’; ở đây là câu hỏi có/không, không có từ nghi vấn."
     },
     "grammarIds": [
-     "g_251"
+     "g_251",
+     "g_091",
+     "g_094_4"
     ],
     "words": [
      {
@@ -3228,7 +3564,8 @@
      "vi": "いつも cho biết việc kiểm tra cần làm mỗi lần. 確認する → 確認して + から là sau khi kiểm tra rồi mới làm bước tiếp."
     },
     "grammarIds": [
-     "g_093"
+     "g_093",
+     "g_091"
     ],
     "words": [
      {
@@ -3252,7 +3589,8 @@
      "vi": "使う + ようにする nêu thói quen có chủ ý. Kết hợp với 確認してから, cụm này có nghĩa là chú ý luôn kiểm tra trước khi dùng."
     },
     "grammarIds": [
-     "g_207"
+     "g_207",
+     "g_069"
     ]
    }
   ]
@@ -3312,7 +3650,12 @@
     "detail": {
      "en": "使う → 使いたい → 使いたくない forms a negative wish. あまり with the negative means not very much, rather than never using it.",
      "vi": "使う → 使いたい → 使いたくない tạo ý muốn phủ định. あまり đi với phủ định là không nhiều, không có nghĩa là hoàn toàn không dùng."
-    }
+    },
+    "grammarIds": [
+     "g_059",
+     "g_050_2",
+     "g_161"
+    ]
    }
   ]
  },
@@ -3336,7 +3679,12 @@
     "detail": {
      "en": "を marks what is being given up. やめる → やめて links stopping its use to the intended purchase.",
      "vi": "を chỉ thứ ngừng sử dụng. やめる → やめて nối việc bỏ dùng với ý định mua thiết bị mới."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_050_2",
+     "g_161"
+    ]
    },
    {
     "text": "電気代が安い暖房を",
@@ -3365,6 +3713,9 @@
        "vi": "sưởi ấm, thiết bị sưởi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -3378,7 +3729,10 @@
      "vi": "買う → 買おう là thể ý chí. Thể ý chí + と思っています diễn tả ý định đã được suy tính từ trước."
     },
     "grammarIds": [
-     "g_213"
+     "g_213",
+     "g_079",
+     "g_091",
+     "g_094_5"
     ]
    }
   ]
@@ -3403,7 +3757,10 @@
     "detail": {
      "en": "の marks whose room it is. は introduces the room as the topic of the reason clause.",
      "vi": "の chỉ phòng thuộc về ai. は đưa căn phòng làm chủ đề của vế nêu lý do."
-    }
+    },
+    "grammarIds": [
+     "g_011_5"
+    ]
    },
    {
     "text": "狭くて物が多いので、",
@@ -3416,7 +3773,8 @@
      "vi": "狭い → 狭くて nối đặc điểm đầu với 物が多い. ので lấy cả hai đặc điểm của phòng làm lý do cho khó khăn phía sau."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_018"
     ],
     "words": [
      {
@@ -3440,7 +3798,10 @@
      "vi": "暖房の近くに chỉ vị trí đặt đồ. 置く → 置かない + のは biến hành động phủ định thành chủ đề."
     },
     "grammarIds": [
-     "g_173"
+     "g_173",
+     "g_073",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -3462,7 +3823,10 @@
     "detail": {
      "en": "難しい evaluates the whole preceding action of keeping things away from the heater.",
      "vi": "難しい đánh giá cả việc tránh đặt đồ gần thiết bị sưởi phía trước."
-    }
+    },
+    "grammarIds": [
+     "g_013"
+    ]
    }
   ]
  },
@@ -3507,6 +3871,9 @@
        "vi": "van ga, đầu nối ga"
       }
      }
+    ],
+    "grammarIds": [
+     "g_048"
     ]
    }
   ]
@@ -3544,7 +3911,10 @@
      "vi": "見る → 見たり và する → したり liệt kê hoạt động tiêu biểu, kết thúc bằng します. が chuyển sang cảm giác khó chịu ở đó."
     },
     "grammarIds": [
-     "g_215"
+     "g_215",
+     "g_021",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -3566,6 +3936,9 @@
        "vi": "lưng dưới, eo"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051"
     ]
    },
    {
@@ -3579,7 +3952,10 @@
      "vi": "冷たい → 冷たく + なる là trở nên lạnh. なって nối sự thay đổi ấy với 辛い, ở đây là khó chịu về thể chất."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_091",
+     "g_197",
+     "g_013"
     ],
     "words": [
      {
@@ -3646,7 +4022,10 @@
     "detail": {
      "en": "いい asks about suitability in context, rather than general quality. か makes the polite question.",
      "vi": "いい ở đây hỏi mức phù hợp với hoàn cảnh, không chỉ chất lượng nói chung. か tạo câu hỏi lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_017"
+    ]
    }
   ]
  },
@@ -3672,7 +4051,8 @@
      "vi": "初めて使う bổ nghĩa cho 方, từ lịch sự chỉ người, đọc là かた. は đưa những người dùng này làm chủ đề của lời yêu cầu."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -3726,7 +4106,11 @@
     "detail": {
      "en": "する → して + ください makes a polite request. The preceding とおりに specifies how to do it.",
      "vi": "する → して + ください tạo yêu cầu lịch sự. とおりに phía trước nêu cách cần làm."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_099"
+    ]
    }
   ]
  },
@@ -3760,6 +4144,11 @@
        "vi": "đồ giặt"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -3773,7 +4162,10 @@
      "vi": "入れる + と nêu điều kiện làm máy chạy. Cách nói này diễn tả phản ứng vận hành thông thường."
     },
     "grammarIds": [
-     "g_259"
+     "g_259",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -3803,6 +4195,10 @@
        "vi": "ở đây: hoạt động, chạy"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_162"
     ]
    }
   ]
@@ -3829,7 +4225,8 @@
      "vi": "が đánh dấu 洗濯 là việc kết thúc. 終わる → 終わった + ら nêu thời điểm hoàn tất để thực hiện bước sau."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081"
     ],
     "words": [
      {
@@ -3851,7 +4248,11 @@
     "detail": {
      "en": "出す → 出して + ください requests removal of the laundry, whose object is omitted. すぐに emphasizes promptness.",
      "vi": "出す → 出して + ください yêu cầu lấy đồ giặt ra; tân ngữ được lược vì đã rõ. すぐに nhấn mạnh cần làm ngay."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_099"
+    ]
    },
    {
     "text": "次の人が使えるように、",
@@ -3864,7 +4265,10 @@
      "vi": "次の bổ nghĩa cho 人. 使う → 使える là khả năng; thêm ように nêu điều lời yêu cầu muốn tạo điều kiện thực hiện."
     },
     "grammarIds": [
-     "g_266"
+     "g_266",
+     "g_061_1",
+     "g_061_2",
+     "g_075"
     ]
    },
    {
@@ -3902,7 +4306,10 @@
      "vi": "洗う + の danh từ hóa hành động. に nêu công dụng được đánh giá; は đưa công dụng ấy làm chủ đề."
     },
     "grammarIds": [
-     "g_263"
+     "g_263",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -3935,7 +4342,10 @@
     "detail": {
      "en": "いい evaluates suitability for washing sweaters in this context.",
      "vi": "いい ở đây đánh giá mức phù hợp để giặt áo len."
-    }
+    },
+    "grammarIds": [
+     "g_013"
+    ]
    }
   ]
  },
@@ -3961,7 +4371,10 @@
      "vi": "止まる → 止まった bổ nghĩa cho 場合. 場合は nêu rõ tình huống áp dụng hướng dẫn."
     },
     "grammarIds": [
-     "g_261"
+     "g_261",
+     "g_076",
+     "g_165",
+     "g_162"
     ],
     "words": [
      {
@@ -4020,7 +4433,11 @@
     "detail": {
      "en": "電話する → 電話して + ください makes a polite instruction to contact the operator.",
      "vi": "電話する → 電話して + ください tạo hướng dẫn lịch sự gọi liên hệ với người phụ trách."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_099"
+    ]
    }
   ]
  },
@@ -4046,7 +4463,10 @@
      "vi": "を đánh dấu thứ được tiết kiệm. 節約する ở thể từ điển + ために nêu mục đích của hành động sau."
     },
     "grammarIds": [
-     "g_264"
+     "g_264",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -4089,6 +4509,11 @@
        "vi": "ở đây: đèn chiếu sáng"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_050_2",
+     "g_161"
     ]
    }
   ]
@@ -4115,7 +4540,9 @@
      "vi": "遅い → 遅く bổ nghĩa cho 来る. Mệnh đề thể thường 夜遅く来る + 場合は nêu trường hợp áp dụng lời khuyên."
     },
     "grammarIds": [
-     "g_261"
+     "g_261",
+     "g_158",
+     "g_069"
     ]
    },
    {
@@ -4205,6 +4632,11 @@
        "vi": "ở đây: tổ chức, tiến hành sự kiện"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_050_2",
+     "g_161"
     ]
    }
   ]
@@ -4232,7 +4664,10 @@
     },
     "grammarIds": [
      "g_188",
-     "g_264"
+     "g_264",
+     "g_158",
+     "g_091",
+     "g_069"
     ],
     "words": [
      {
@@ -4293,6 +4728,11 @@
        "vi": "tìm kiếm"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_094_1",
+     "g_094_5"
     ]
    }
   ]
@@ -4368,7 +4808,8 @@
      "vi": "参加する → 参加したい diễn tả mong muốn và bổ nghĩa cho 人. は đưa nhóm người ấy làm chủ đề của hướng dẫn."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078"
     ],
     "words": [
      {
@@ -4414,6 +4855,9 @@
        "vi": "tòa thị chính, cơ quan hành chính thành phố"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5"
     ]
    },
    {
@@ -4435,6 +4879,10 @@
        "vi": "đăng ký"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_099"
     ]
    }
   ]
@@ -4523,7 +4971,9 @@
      "vi": "だけ giới hạn thời lượng còn một ngày. 参加する → 参加したい + 場合は nêu trường hợp cần làm theo hướng dẫn này."
     },
     "grammarIds": [
-     "g_261"
+     "g_261",
+     "g_108",
+     "g_078"
     ],
     "words": [
      {
@@ -4569,7 +5019,11 @@
     "detail": {
      "en": "書く → 書いて + ください makes a polite request. What to write is understood: the wish to take part for one day only.",
      "vi": "書く → 書いて + ください tạo yêu cầu lịch sự. Nội dung cần ghi được hiểu là mong muốn chỉ tham gia một ngày."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_099"
+    ]
    }
   ]
  },
@@ -4616,7 +5070,11 @@
      "vi": "で chỉ nơi nói tên; を đánh dấu thông tin được nói. 言う + と dẫn kết quả dự kiến khi làm theo thủ tục này."
     },
     "grammarIds": [
-     "g_259"
+     "g_259",
+     "g_069",
+     "g_050_1",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -4638,7 +5096,11 @@
     "detail": {
      "en": "もらう → もらえる → もらえます is polite potential. が marks the item that can be received.",
      "vi": "もらう → もらえる → もらえます là khả năng lịch sự. が đánh dấu món đồ được nhận."
-    }
+    },
+    "grammarIds": [
+     "g_061_1",
+     "g_061_2"
+    ]
    }
   ]
  },
@@ -4665,7 +5127,9 @@
     },
     "grammarIds": [
      "g_160",
-     "g_138"
+     "g_138",
+     "g_069",
+     "g_066"
     ]
    },
    {
@@ -4680,7 +5144,13 @@
     },
     "grammarIds": [
      "g_225",
-     "g_260"
+     "g_260",
+     "g_091",
+     "g_069",
+     "g_226",
+     "g_008_2",
+     "g_050_2",
+     "g_161"
     ]
    }
   ]

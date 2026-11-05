@@ -21,7 +21,9 @@
      "vi": "「歩きスマホ」 + という bổ nghĩa cho 言葉, cho biết đó là từ gì. を đánh dấu từ được hỏi là đã biết hay chưa."
     },
     "grammarIds": [
-     "g_185"
+     "g_185",
+     "g_181",
+     "g_165"
     ]
    },
    {
@@ -33,7 +35,12 @@
     "detail": {
      "en": "知る → 知って + います expresses the state of knowing, not an action happening now. か makes it a polite question.",
      "vi": "知る → 知って + います diễn tả trạng thái đã biết, không phải hành động đang diễn ra. か tạo câu hỏi lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_094_4",
+     "g_095"
+    ]
    }
   ]
  },
@@ -71,7 +78,11 @@
     "detail": {
      "en": "を marks what is used. The dictionary form 使う gives the content being defined by という意味です.",
      "vi": "を đánh dấu vật được sử dụng. Thể từ điển 使う nằm trong nội dung được giải nghĩa bằng という意味です."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_050_2"
+    ]
    },
    {
     "text": "という意味です。",
@@ -84,7 +95,8 @@
      "vi": "Cả mệnh đề phía trước + という意味です giải thích nghĩa của thuật ngữ. Ở đây と dẫn nội dung giải nghĩa, không phải lời nói của một người."
     },
     "grammarIds": [
-     "g_182"
+     "g_182",
+     "g_185"
     ],
     "words": [
      {
@@ -130,7 +142,10 @@
     "detail": {
      "en": "や lists examples of places. With 歩く, を marks the area someone moves through, not an object acted on.",
      "vi": "や liệt kê ví dụ về địa điểm. Với 歩く, を chỉ khu vực đi qua, không phải đối tượng chịu tác động."
-    }
+    },
+    "grammarIds": [
+     "g_051"
+    ]
    },
    {
     "text": "スマホを見ながら",
@@ -157,7 +172,9 @@
      "vi": "歩く → 歩いている bổ nghĩa trực tiếp cho 人. が đánh dấu những người này là chủ thể của います."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_094_1"
     ]
    },
    {
@@ -225,6 +242,9 @@
        "vi": "nguy hiểm"
       }
      }
+    ],
+    "grammarIds": [
+     "g_013"
     ]
    }
   ]
@@ -265,7 +285,9 @@
      "vi": "歩いている bổ nghĩa cho 人, còn は lấy cả nhóm người đó làm chủ đề. Cụm ながら cũng nằm trong phần mô tả này."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_094_1"
     ]
    },
    {
@@ -280,7 +302,8 @@
     },
     "grammarIds": [
      "g_197",
-     "g_170"
+     "g_170",
+     "g_158"
     ],
     "words": [
      {
@@ -315,7 +338,8 @@
      "vi": "ぶつかる ở thể từ điển + かもしれません diễn tả khả năng xảy ra, chưa khẳng định chắc chắn."
     },
     "grammarIds": [
-     "g_138"
+     "g_138",
+     "g_069"
     ],
     "words": [
      {
@@ -421,7 +445,8 @@
      "vi": "便利 là tính từ な nên dùng thể thường 便利だ trước し. し liệt kê đây là một điểm tốt và còn ý khác phía sau."
     },
     "grammarIds": [
-     "g_146"
+     "g_146",
+     "g_028_1"
     ]
    },
    {
@@ -435,7 +460,8 @@
      "vi": "見る + の biến hành động thành cụm có chức năng như danh từ. は lấy việc đó làm chủ đề cho nhận xét 楽しい."
     },
     "grammarIds": [
-     "g_173"
+     "g_173",
+     "g_069"
     ]
    },
    {
@@ -447,7 +473,10 @@
     "detail": {
      "en": "が after the polite statement introduces the contrast with using a phone while walking.",
      "vi": "が sau câu lịch sự mở ra ý đối lập về việc dùng điện thoại khi đang đi."
-    }
+    },
+    "grammarIds": [
+     "g_021"
+    ]
    },
    {
     "text": "歩きながら見るのは",
@@ -461,7 +490,8 @@
     },
     "grammarIds": [
      "g_200",
-     "g_173"
+     "g_173",
+     "g_069"
     ]
    },
    {
@@ -473,7 +503,11 @@
     "detail": {
      "en": "いい has the negative form よくない. ですね invites agreement with the speaker's judgment.",
      "vi": "Dạng phủ định của いい là よくない. ですね gợi người đọc đồng tình với nhận xét này."
-    }
+    },
+    "grammarIds": [
+     "g_014",
+     "g_008_1"
+    ]
    }
   ]
  },
@@ -518,7 +552,10 @@
     "detail": {
      "en": "字が大きい describes 新聞: newspapers whose letters are large. や introduces one example in an open list.",
      "vi": "字が大きい bổ nghĩa cho 新聞: báo có chữ lớn. や đưa ra một ví dụ trong danh sách chưa liệt kê hết."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "背が低い人も使える自動販売機など、",
@@ -531,7 +568,10 @@
      "vi": "背が低い mô tả 人; cả mệnh đề 背が低い人も使える bổ nghĩa cho 自動販売機. 使う → 使える là thể khả năng; など kết lại các ví dụ với nghĩa ‘vân vân’."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_061_1",
+     "g_075",
+     "g_166"
     ],
     "words": [
      {
@@ -555,7 +595,8 @@
      "vi": "誰でも nghĩa là bất kỳ ai. 使う → 使い + やすい mô tả デザイン; が đánh dấu những thiết kế đang tăng lên."
     },
     "grammarIds": [
-     "g_201"
+     "g_201",
+     "g_166"
     ]
    },
    {
@@ -596,7 +637,9 @@
      "vi": "Tên trong ngoặc + と言う cho biết cách gọi các thiết kế này. 言う giữ nguyên thể từ điển trước そうです chỉ lời nghe được."
     },
     "grammarIds": [
-     "g_185"
+     "g_185",
+     "g_181",
+     "g_069"
     ]
    },
    {
@@ -645,6 +688,10 @@
        "vi": "người cao tuổi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_166"
     ]
    },
    {
@@ -656,7 +703,11 @@
     "detail": {
      "en": "の links 新聞や本 to 字, and 小さい describes the print. は makes small print the topic, preparing a contrast with larger print.",
      "vi": "の nối 新聞や本 với 字, còn 小さい mô tả chữ. は lấy chữ nhỏ làm chủ đề, chuẩn bị đối chiếu với chữ lớn."
-    }
+    },
+    "grammarIds": [
+     "g_051",
+     "g_166"
+    ]
    },
    {
     "text": "読みにくいですが、",
@@ -669,7 +720,8 @@
      "vi": "読む → 読みます → 読み + にくい nghĩa là khó đọc. が mở ra giải pháp đối lập phía sau."
     },
     "grammarIds": [
-     "g_201"
+     "g_201",
+     "g_021"
     ]
    },
    {
@@ -683,7 +735,10 @@
      "vi": "Cụm danh từ 大きい字 + にする nghĩa là đổi thành chữ lớn. する → すれば đặt điều kiện cho sự cải thiện ở vế sau."
     },
     "grammarIds": [
-     "g_159"
+     "g_159",
+     "g_084",
+     "g_085",
+     "g_166"
     ]
    },
    {
@@ -741,6 +796,9 @@
        "vi": "xe lăn"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051"
     ]
    },
    {
@@ -776,7 +834,8 @@
     },
     "grammarIds": [
      "g_202",
-     "g_197"
+     "g_197",
+     "g_091"
     ]
    },
    {
@@ -788,7 +847,11 @@
     "detail": {
      "en": "買う → 買いたい modifies 飲み物. が marks that drink with the potential form 買えない.",
      "vi": "買う → 買いたい bổ nghĩa cho 飲み物. が đánh dấu đồ uống đi với thể khả năng 買えない."
-    }
+    },
+    "grammarIds": [
+     "g_078",
+     "g_165"
+    ]
    },
    {
     "text": "買えないかもしれません。",
@@ -801,7 +864,10 @@
      "vi": "買う → 買える → 買えない là thể khả năng phủ định. Thêm かもしれません để nêu khả năng không mua được."
     },
     "grammarIds": [
-     "g_138"
+     "g_138",
+     "g_061_1",
+     "g_075",
+     "g_073"
     ]
    }
   ]
@@ -860,7 +926,9 @@
      "vi": "低い → 低く + する nghĩa là làm cho thấp hơn. する → すれば tạo vế điều kiện."
     },
     "grammarIds": [
-     "g_159"
+     "g_159",
+     "g_084",
+     "g_085"
     ]
    },
    {
@@ -872,7 +940,10 @@
     "detail": {
      "en": "誰でも means anyone. 欲しい modifies 飲み物, and が marks the desired drink with 買えます.",
      "vi": "誰でも nghĩa là bất kỳ ai. 欲しい bổ nghĩa cho 飲み物; が đánh dấu đồ uống mong muốn đi với 買えます."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "買えます。",
@@ -883,7 +954,10 @@
     "detail": {
      "en": "買う → 買える → 買えます is polite potential. It expresses the ability made possible by lower buttons.",
      "vi": "買う → 買える → 買えます là thể khả năng lịch sự. Khả năng này có được nhờ nút được hạ thấp."
-    }
+    },
+    "grammarIds": [
+     "g_061_1"
+    ]
    }
   ]
  },
@@ -940,7 +1014,10 @@
     "detail": {
      "en": "色々な modifies もの, and が marks what has changed. The quotation marks draw attention to the broad word もの.",
      "vi": "色々な bổ nghĩa cho もの; が đánh dấu đối tượng đã thay đổi. Ngoặc nhấn vào từ もの mang nghĩa rộng là đồ vật."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "使いやすくなりました。",
@@ -1003,7 +1080,8 @@
      "vi": "考える ở thể từ điển bổ nghĩa trực tiếp cho 人, không cần trợ từ nối. が đánh dấu nhóm người đang tăng lên."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -1027,7 +1105,10 @@
      "vi": "多い → 多くなる → 多くなっています diễn tả số lượng đang tăng. Cụm này nhấn mạnh sự thay đổi theo thời gian, hơn là chỉ nói có nhiều người."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_091",
+     "g_094_1",
+     "g_094_5"
     ]
    }
   ]
@@ -1063,7 +1144,10 @@
     "detail": {
      "en": "や gives examples of media, and の links them to 日本語. は makes this language the topic.",
      "vi": "や liệt kê ví dụ về phương tiện truyền thông; の nối chúng với 日本語. は lấy thứ tiếng Nhật đó làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_051"
+    ]
    },
    {
     "text": "とても難しくて、",
@@ -1088,7 +1172,11 @@
     "detail": {
      "en": "始める → 始めた + ばかり means having only recently started. の connects this description to 外国人, and には identifies the people affected.",
      "vi": "始める → 始めた + ばかり nghĩa là vừa mới bắt đầu. の nối phần mô tả với 外国人; には nêu nhóm người gặp khó khăn."
-    }
+    },
+    "grammarIds": [
+     "g_082",
+     "g_076"
+    ]
    },
    {
     "text": "わかりにくかったです。",
@@ -1101,7 +1189,8 @@
      "vi": "わかる → わかりにくい → わかりにくかった là dạng quá khứ của ‘khó hiểu’. にくい chia như tính từ い."
     },
     "grammarIds": [
-     "g_201"
+     "g_201",
+     "g_022"
     ]
    }
   ]
@@ -1139,7 +1228,9 @@
      "vi": "簡単 cần な trước 日本語. 使う → 使った bổ nghĩa cho ニュースサイト, mô tả trang tin sử dụng tiếng Nhật đơn giản; や mở danh sách."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_166",
+     "g_076"
     ]
    },
    {
@@ -1188,7 +1279,9 @@
      "vi": "Cụm trong ngoặc + と言う nêu tên gọi. やさしい ở đây nghĩa là dễ hiểu, không phải hiền hay tốt bụng."
     },
     "grammarIds": [
-     "g_185"
+     "g_185",
+     "g_181",
+     "g_069"
     ]
    },
    {
@@ -1240,7 +1333,10 @@
      "vi": "住む → 住んでいる mô tả tình trạng cư trú và bổ nghĩa cho 外国人. に chỉ nơi sinh sống; と chỉ người cùng nói chuyện."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_094_1",
+     "g_094_5"
     ]
    },
    {
@@ -1254,7 +1350,8 @@
      "vi": "話す bổ nghĩa cho 日本人 và bao gồm các cụm phía trước trong phần mô tả. も bổ sung những người này như một ví dụ nữa về việc dùng tiếng Nhật dễ hiểu."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -1293,7 +1390,10 @@
     "detail": {
      "en": "色々な modifies the quoted noun phrase. が marks what increases in the conditional clause.",
      "vi": "色々な bổ nghĩa cho cụm danh từ trong ngoặc. が đánh dấu thứ tăng lên trong vế điều kiện."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "多くなれば、",
@@ -1306,7 +1406,9 @@
      "vi": "多い → 多くなる → 多くなれば kết hợp sự thay đổi số lượng với điều kiện ば."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_084",
+     "g_085"
     ]
    },
    {
@@ -1353,6 +1455,10 @@
        "vi": "tăng lên"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_008_1"
     ]
    }
   ]
@@ -1409,6 +1515,9 @@
        "vi": "lượng; ở đây: khẩu phần"
       }
      }
+    ],
+    "grammarIds": [
+     "g_018"
     ]
    },
    {
@@ -1503,7 +1612,9 @@
      "vi": "Cụm danh từ 若い人 + なら giới hạn trường hợp đang xét là người trẻ. Người đánh giá ngầm cho thấy bản thân có thể khác."
     },
     "grammarIds": [
-     "g_112"
+     "g_112",
+     "g_113",
+     "g_166"
     ]
    },
    {
@@ -1517,7 +1628,10 @@
      "vi": "食べる → 食べられる → 食べられ + そうです nêu nhận định có vẻ ăn hết được; そう này chỉ biểu hiện, không phải lời nghe được. が… bỏ lửng điều còn băn khoăn."
     },
     "grammarIds": [
-     "g_155"
+     "g_155",
+     "g_061_1",
+     "g_156",
+     "g_021"
     ]
    }
   ]
@@ -1553,7 +1667,10 @@
     "detail": {
      "en": "日本の identifies the origin of お酒, and いい evaluates it. が marks the item whose availability is stated.",
      "vi": "日本の chỉ xuất xứ của お酒; いい nêu nhận xét về chất lượng. が đánh dấu thứ được nói là có."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "たくさんあります。",
@@ -1617,6 +1734,10 @@
        "vi": "không giỏi; ở đây: không ăn được, không hợp"
       }
      }
+    ],
+    "grammarIds": [
+     "g_065",
+     "g_166"
     ]
    },
    {
@@ -1628,7 +1749,10 @@
     "detail": {
      "en": "辛い → 辛くない is the negative adjective form modifying カレー. も adds mild curry to the available choices.",
      "vi": "辛い → 辛くない là dạng phủ định của tính từ, bổ nghĩa cho カレー. も bổ sung cà ri không cay vào các lựa chọn."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "注文できます。",
@@ -1649,6 +1773,9 @@
        "vi": "gọi món, đặt hàng"
       }
      }
+    ],
+    "grammarIds": [
+     "g_061_1"
     ]
    }
   ]
@@ -1759,7 +1886,11 @@
     "detail": {
      "en": "食べる → 食べた + 後に sets an action after eating. The past form before 後に shows which action comes first.",
      "vi": "食べる → 食べた + 後に đặt hành động sau việc ăn. Thể た trước 後に cho biết việc nào xảy ra trước."
-    }
+    },
+    "grammarIds": [
+     "g_080_2",
+     "g_076"
+    ]
    },
    {
     "text": "出てくる甘いジュースが",
@@ -1772,7 +1903,9 @@
      "vi": "出る → 出て + くる mô tả nước được mang ra chỗ khách. Mệnh đề này và 甘い cùng bổ nghĩa cho ジュース; が đánh dấu chủ thể được nhận xét."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_166"
     ]
    },
    {
@@ -1821,7 +1954,9 @@
      "vi": "外から chỉ vị trí nhìn. 見える → 見えない đi với あんまり thân mật diễn tả không nhìn thấy rõ; から cuối vế nêu lý do."
     },
     "grammarIds": [
-     "g_170"
+     "g_170",
+     "g_066",
+     "g_073"
     ],
     "words": [
      {
@@ -1845,7 +1980,9 @@
      "vi": "入る → 入り + にくい mô tả お店: ở đây là khó hoặc ngại bước vào. Danh từ + だけど mở ý đối lập về bên trong."
     },
     "grammarIds": [
-     "g_201"
+     "g_201",
+     "g_034",
+     "g_166"
     ]
    },
    {
@@ -1878,6 +2015,9 @@
        "vi": "đẹp, có gu"
       }
      }
+    ],
+    "grammarIds": [
+     "g_019"
     ]
    }
   ]
@@ -1913,7 +2053,10 @@
     "detail": {
      "en": "あまり with the negative ない means not much. は introduces sake as one side of a contrast, and が leads to the other side.",
      "vi": "あまり đi với phủ định ない nghĩa là không nhiều. は nêu rượu làm một vế đối chiếu; が nối sang vế còn lại."
-    }
+    },
+    "grammarIds": [
+     "g_021"
+    ]
    },
    {
     "text": "ビールは",
@@ -1946,7 +2089,10 @@
     "detail": {
      "en": "飲む → 飲める → 飲めます is polite potential. Here it means beer can be enjoyed at the stated price.",
      "vi": "飲む → 飲める → 飲めます là thể khả năng lịch sự. Ở đây có nghĩa là có thể uống bia với mức giá vừa nêu."
-    }
+    },
+    "grammarIds": [
+     "g_061_1"
+    ]
    }
   ]
  },
@@ -1981,7 +2127,10 @@
     "detail": {
      "en": "は makes the food the topic. が after おいしいです introduces a reservation about one part of the meal.",
      "vi": "は lấy món ăn làm chủ đề. が sau おいしいです mở ra một điểm chưa hài lòng trong bữa ăn."
-    }
+    },
+    "grammarIds": [
+     "g_021"
+    ]
    },
    {
     "text": "ちょっとソースが",
@@ -2017,7 +2166,10 @@
     "detail": {
      "en": "は shifts to cake as the next topic. The plain adjective ending makes this last comment more casual than the earlier sentences.",
      "vi": "は chuyển sang chủ đề bánh. Kết thúc bằng tính từ ở thể thường khiến câu cuối thân mật hơn những câu trước."
-    }
+    },
+    "grammarIds": [
+     "g_033_2"
+    ]
    }
   ]
  },
@@ -2062,6 +2214,10 @@
        "vi": "hẹp, chật"
       }
      }
+    ],
+    "grammarIds": [
+     "g_035",
+     "g_034"
     ]
    },
    {
@@ -2073,7 +2229,11 @@
     "detail": {
      "en": "静か + で links being quiet to the favorable judgment よかった, the past of いい. The reviewer was pleased that the place was quiet.",
      "vi": "静か + で nối sự yên tĩnh với nhận xét tích cực よかった, dạng quá khứ của いい. Người viết hài lòng vì quán yên tĩnh."
-    }
+    },
+    "grammarIds": [
+     "g_019",
+     "g_035"
+    ]
    },
    {
     "text": "辛い料理が人気みたいだけど、",
@@ -2086,7 +2246,9 @@
      "vi": "辛い bổ nghĩa cho 料理. Danh từ 人気 + みたいだ diễn tả ấn tượng; けど đối chiếu điều đó với việc quán cũng có món không cay."
     },
     "grammarIds": [
-     "g_139"
+     "g_139",
+     "g_034",
+     "g_166"
     ],
     "words": [
      {
@@ -2108,7 +2270,10 @@
     "detail": {
      "en": "辛い → 辛くない modifies 料理. も adds mild dishes to the spicy dishes already mentioned.",
      "vi": "辛い → 辛くない bổ nghĩa cho 料理. も bổ sung món không cay bên cạnh món cay đã nói."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "たくさんあった。",
@@ -2119,7 +2284,10 @@
     "detail": {
      "en": "ある → あった is plain past. たくさん emphasizes that mild choices were plentiful during the visit.",
      "vi": "ある → あった là quá khứ thể thường. たくさん nhấn mạnh lúc đến quán có nhiều lựa chọn không cay."
-    }
+    },
+    "grammarIds": [
+     "g_076"
+    ]
    }
   ]
  },
@@ -2154,7 +2322,10 @@
     "detail": {
      "en": "色々な modifies 国, and の links those countries to お酒. が marks the items in the resulting state described by てあります.",
      "vi": "色々な bổ nghĩa cho 国; の nối các nước đó với お酒. が đánh dấu những thứ đang ở trạng thái kết quả được diễn tả bằng てあります."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "置いてあります。",
@@ -2167,7 +2338,8 @@
      "vi": "置く → 置いて + あります mô tả kết quả hiện tại của việc chủ động đặt sẵn. Trong đánh giá quán ăn, cụm này nghĩa là quán có sẵn rượu, không phải rượu tình cờ nằm ở đó."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_091"
     ],
     "words": [
      {
@@ -2237,7 +2409,9 @@
      "vi": "と nối hai nội dung học; を đánh dấu chúng là đối tượng của 勉強した. Mệnh đề quá khứ bổ nghĩa cho 人, mô tả đầu bếp qua việc học nghề."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_042",
+     "g_076"
     ],
     "words": [
      {
@@ -2286,7 +2460,10 @@
     "detail": {
      "en": "と joins the two people. は makes them the shared topic of the plan.",
      "vi": "と nối tên hai người. は lấy cả hai làm chủ đề chung của kế hoạch."
-    }
+    },
+    "grammarIds": [
+     "g_042"
+    ]
    },
    {
     "text": "月曜日の夜、",
@@ -2319,7 +2496,11 @@
     "detail": {
      "en": "に marks the destination. 行きます is nonpast and refers to the future plan in this context.",
      "vi": "に đánh dấu đích đến. 行きます là dạng phi quá khứ, ở đây chỉ kế hoạch sắp tới."
-    }
+    },
+    "grammarIds": [
+     "g_049_2",
+     "g_044"
+    ]
    }
   ]
  },
@@ -2389,6 +2570,10 @@
        "vi": "tìm kiếm"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_094_1"
     ]
    }
   ]
@@ -2442,6 +2627,11 @@
        "vi": "không giỏi; ở đây: không ăn cay được"
       }
      }
+    ],
+    "grammarIds": [
+     "g_065",
+     "g_019",
+     "g_166"
     ]
    },
    {
@@ -2463,6 +2653,10 @@
        "vi": "bánh kẹo"
       }
      }
+    ],
+    "grammarIds": [
+     "g_065",
+     "g_166"
     ]
    },
    {
@@ -2485,7 +2679,11 @@
     "detail": {
      "en": "辛い modifies 食べ物, and が marks the food Mori likes. This directly contrasts with Kanemoto's 苦手.",
      "vi": "辛い bổ nghĩa cho 食べ物; が đánh dấu thứ Mori thích. Ý này đối chiếu trực tiếp với 苦手 của Kanemoto."
-    }
+    },
+    "grammarIds": [
+     "g_065",
+     "g_166"
+    ]
    }
   ]
  },
@@ -2531,7 +2729,10 @@
     "detail": {
      "en": "The polite negative completes あまり～ません. It means they do not eat much, not that they eat nothing.",
      "vi": "Phủ định lịch sự hoàn tất mẫu あまり～ません. Nghĩa là họ ăn không nhiều, không phải hoàn toàn không ăn."
-    }
+    },
+    "grammarIds": [
+     "g_048"
+    ]
    }
   ]
  },
@@ -2568,7 +2769,11 @@
      "vi": "飲む → 飲める là thể khả năng; 色々なお酒が飲める và 静かな cùng bổ nghĩa cho 店. で chỉ nơi họ muốn dùng bữa."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_061_1",
+     "g_061_2",
+     "g_075",
+     "g_166"
     ]
    },
    {
@@ -2590,6 +2795,9 @@
        "vi": "dùng bữa"
       }
      }
+    ],
+    "grammarIds": [
+     "g_059"
     ]
    },
    {
@@ -2650,7 +2858,8 @@
     },
     "grammarIds": [
      "g_202",
-     "g_197"
+     "g_197",
+     "g_091"
     ]
    },
    {
@@ -2685,7 +2894,8 @@
      "vi": "使う → 使いにくい → 使いにくかったです là quá khứ lịch sự của ‘khó dùng’. にくい đổi thành にくかった như tính từ い."
     },
     "grammarIds": [
-     "g_201"
+     "g_201",
+     "g_022"
     ]
    }
   ]
@@ -2726,7 +2936,8 @@
      "vi": "使う → 使って nối việc dùng điện thoại với kết quả phía sau. Đối tượng là chiếc điện thoại được hiểu từ câu trước."
     },
     "grammarIds": [
-     "g_197"
+     "g_197",
+     "g_091"
     ]
    },
    {
@@ -2759,6 +2970,9 @@
        "vi": "làm rơi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -2815,7 +3029,11 @@
     "detail": {
      "en": "小さい → 小さくて links to 軽い, and together they describe 電話. The noun phrase followed by に is the choice selected with する.",
      "vi": "小さい → 小さくて nối với 軽い; hai tính từ cùng mô tả 電話. Cụm danh từ đi với に là phương án được chọn bằng する."
-    }
+    },
+    "grammarIds": [
+     "g_018",
+     "g_166"
+    ]
    },
    {
     "text": "しました。",
@@ -2940,7 +3158,9 @@
      "vi": "聞く → 聞かない + で nghĩa là không hỏi mà làm việc khác ở phía sau. 聞く ở đây là hỏi thông tin."
     },
     "grammarIds": [
-     "g_199"
+     "g_199",
+     "g_073",
+     "g_198"
     ],
     "words": [
      {
@@ -2983,6 +3203,11 @@
        "vi": "tra cứu, tìm hiểu"
       }
      }
+    ],
+    "grammarIds": [
+     "g_062",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -2994,7 +3219,10 @@
     "detail": {
      "en": "The polite past ends the sequence with the purchase. The phone remains the understood object.",
      "vi": "Quá khứ lịch sự kết thúc chuỗi hành động bằng việc mua. Đối tượng được hiểu vẫn là chiếc điện thoại."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -3032,7 +3260,8 @@
     },
     "grammarIds": [
      "g_203",
-     "g_197"
+     "g_197",
+     "g_091"
     ]
    },
    {
@@ -3065,7 +3294,10 @@
     "detail": {
      "en": "なくなる means to run out or cease to be available. すぐ describes how quickly the battery power is used up.",
      "vi": "なくなる nghĩa là hết hoặc không còn. すぐ cho biết pin cạn nhanh như thế nào."
-    }
+    },
+    "grammarIds": [
+     "g_160"
+    ]
    }
   ]
  },
@@ -3111,7 +3343,10 @@
     "detail": {
      "en": "から marks the starting time and まで the ending time. 朝 and 夜 clarify which part of the day each hour belongs to.",
      "vi": "から chỉ giờ bắt đầu, まで chỉ giờ kết thúc. 朝 và 夜 làm rõ mỗi mốc giờ thuộc buổi nào."
-    }
+    },
+    "grammarIds": [
+     "g_047"
+    ]
    },
    {
     "text": "開いています。",
@@ -3122,7 +3357,11 @@
     "detail": {
      "en": "開く → 開いて + います describes the open state during these hours. 開く is read あく in this use.",
      "vi": "開く → 開いて + います mô tả trạng thái mở cửa trong khung giờ này. 開く trong cách dùng này đọc là あく."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_094_4"
+    ]
    }
   ]
  },
@@ -3156,6 +3395,9 @@
        "vi": "máy móc, thiết bị"
       }
      }
+    ],
+    "grammarIds": [
+     "g_018"
     ]
    },
    {
@@ -3195,7 +3437,8 @@
     },
     "grammarIds": [
      "g_202",
-     "g_197"
+     "g_197",
+     "g_091"
     ]
    },
    {
@@ -3207,7 +3450,11 @@
     "detail": {
      "en": "使う → 使える → 使えません is negative potential. なかなか with the negative says the desired opportunity does not come easily because of the crowd.",
      "vi": "使う → 使える → 使えません là khả năng phủ định. なかなか đi với phủ định cho biết cơ hội mong muốn khó có được vì quá đông người."
-    }
+    },
+    "grammarIds": [
+     "g_061_1",
+     "g_061_2"
+    ]
    }
   ]
  },
@@ -3253,7 +3500,10 @@
     "detail": {
      "en": "から starts the time range and まで closes it. These hours are important when comparing the gyms with Han's schedule.",
      "vi": "から mở khoảng thời gian, まで kết lại. Những giờ này cần thiết khi so hai phòng gym với lịch của Han."
-    }
+    },
+    "grammarIds": [
+     "g_047"
+    ]
    },
    {
     "text": "開いています。",
@@ -3264,7 +3514,11 @@
     "detail": {
      "en": "開く → 開いて + います describes a continuing open state, not just the moment of opening. 開く is read あく here.",
      "vi": "開く → 開いて + います mô tả trạng thái đang mở cửa, không chỉ thời điểm bắt đầu mở. 開く ở đây đọc là あく."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_094_4"
+    ]
    }
   ]
  },
@@ -3288,7 +3542,10 @@
     "detail": {
      "en": "少し limits the degree of 古い. が contrasts the age of the gym with the benefits that follow.",
      "vi": "少し giới hạn mức độ của 古い. が đối chiếu tình trạng hơi cũ với những lợi ích phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_021"
+    ]
    },
    {
     "text": "いつも空いていて、",
@@ -3309,6 +3566,10 @@
        "vi": "vắng đi, bớt đông"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_094_4"
     ]
    },
    {
@@ -3341,6 +3602,9 @@
        "vi": "cách làm; ở đây: cách tập"
       }
      }
+    ],
+    "grammarIds": [
+     "g_060"
     ]
    },
    {
@@ -3354,7 +3618,9 @@
      "vi": "教える → 教えて + もらう nhìn việc hướng dẫn từ phía người nhận sự giúp đỡ. もらう → もらえる → もらえます thêm ý khả năng: người tập có thể được giúp như vậy."
     },
     "grammarIds": [
-     "g_188"
+     "g_188",
+     "g_091",
+     "g_061_1"
     ],
     "words": [
      {
@@ -3416,7 +3682,10 @@
      "vi": "聞く → 聞ける là thể khả năng; 音楽が chỉ thứ có thể nghe. の danh từ hóa cả mệnh đề; が cuối lấy việc đó làm chủ thể được nhận xét bằng 人気です."
     },
     "grammarIds": [
-     "g_173"
+     "g_173",
+     "g_061_1",
+     "g_061_2",
+     "g_075"
     ]
    },
    {
@@ -3476,7 +3745,8 @@
     },
     "grammarIds": [
      "g_173",
-     "g_174"
+     "g_174",
+     "g_069"
     ]
    },
    {
@@ -3514,7 +3784,8 @@
      "vi": "高い → 高すぎる diễn tả giá quá cao và bổ nghĩa trực tiếp cho ジム. は lấy loại phòng gym đó làm chủ đề."
     },
     "grammarIds": [
-     "g_202"
+     "g_202",
+     "g_165"
     ]
    },
    {
@@ -3536,6 +3807,9 @@
        "vi": "gặp khó khăn, khó xử"
       }
      }
+    ],
+    "grammarIds": [
+     "g_021"
     ]
    },
    {
@@ -3549,7 +3823,8 @@
      "vi": "月 ở đây nghĩa là mỗi tháng. まで đặt mức trần, bao gồm cả đúng mức đó; なら nêu điều kiện là khoản tiền nằm trong giới hạn này."
     },
     "grammarIds": [
-     "g_112"
+     "g_112",
+     "g_113"
     ]
    },
    {

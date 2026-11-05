@@ -32,7 +32,10 @@
      "vi": "を đánh dấu nơi đi qua. 歩く → 歩いていた + ら nêu tình huống đang diễn ra khi người nói phát hiện sự việc."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_091",
+     "g_094_1",
+     "g_216"
     ]
    },
    {
@@ -47,7 +50,8 @@
     },
     "grammarIds": [
      "g_165",
-     "g_094_4"
+     "g_094_4",
+     "g_091"
     ]
    },
    {
@@ -61,7 +65,9 @@
      "vi": "閉まる → 閉まって + いました diễn tả trạng thái đóng cửa lúc đó, chứ không diễn tả ai đó đang đóng cửa."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_091",
+     "g_044"
     ],
     "words": [
      {
@@ -96,7 +102,11 @@
     "detail": {
      "en": "の links the door to the shop. に marks the location of the posted paper, and は makes that location the topic.",
      "vi": "の nối cánh cửa với quán. に chỉ vị trí tờ giấy được dán; は đưa vị trí đó làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_011_5",
+     "g_166"
+    ]
    },
    {
     "text": "紙が",
@@ -120,7 +130,9 @@
      "vi": "貼る → 貼って + ありました chỉ kết quả trong quá khứ của một hành động có chủ ý: ai đó đã dán tờ giấy ở đó."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_091",
+     "g_044"
     ],
     "words": [
      {
@@ -179,7 +191,9 @@
      "vi": "が đánh dấu chủ quán là chủ thể. 疲れる → 疲れている chỉ trạng thái mệt; から nêu lý do cho 休みます."
     },
     "grammarIds": [
-     "g_066"
+     "g_066",
+     "g_091",
+     "g_094_4"
     ],
     "words": [
      {
@@ -201,7 +215,10 @@
     "detail": {
      "en": "休みます is a polite statement of the decision to take a break today. The closing bracket ends the quoted notice.",
      "vi": "休みます là cách nói lịch sự về quyết định nghỉ hôm nay. Dấu 」 kết thúc nội dung thông báo."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    },
    {
     "text": "と書いてありました。",
@@ -215,7 +232,10 @@
     },
     "grammarIds": [
      "g_185",
-     "g_163"
+     "g_163",
+     "g_091",
+     "g_044",
+     "g_181"
     ]
    }
   ]
@@ -240,7 +260,11 @@
     "detail": {
      "en": "開ける → 開けない is negative. の turns the action into a noun-like topic, and は introduces what will be explained.",
      "vi": "開ける → 開けない là dạng phủ định. の biến hành động thành một cụm danh từ; は đưa việc đó làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_073",
+     "g_174"
+    ]
    },
    {
     "text": "休みの日だからとか工事だからとかではなくて、",
@@ -261,6 +285,10 @@
        "vi": "việc thi công"
       }
      }
+    ],
+    "grammarIds": [
+     "g_066",
+     "g_166"
     ]
    },
    {
@@ -282,6 +310,10 @@
        "vi": "hoàn cảnh, sự thuận tiện"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5",
+     "g_166"
     ]
    },
    {
@@ -295,7 +327,9 @@
      "vi": "面白い là nhận xét ở thể thường được dẫn bằng と. 思う → 思いました thuật lại suy nghĩ của người nói lúc đó."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_044",
+     "g_033_2"
     ]
    }
   ]
@@ -320,7 +354,11 @@
     "detail": {
      "en": "は introduces Japanese people as the broad topic. よく means ‘a lot’ or ‘hard’ here; 働いて links this description to the following belief.",
      "vi": "は đưa người Nhật làm chủ đề chung. よく ở đây chỉ việc làm nhiều, chăm chỉ; 働いて nối nhận xét này với quan niệm phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092"
+    ]
    },
    {
     "text": "具合が悪くても、",
@@ -357,7 +395,8 @@
      "vi": "来る → 来て + も thêm một điều kiện khó khăn nữa. Quan niệm phải làm việc vẫn không thay đổi."
     },
     "grammarIds": [
-     "g_255"
+     "g_255",
+     "g_091"
     ],
     "words": [
      {
@@ -382,7 +421,11 @@
     },
     "grammarIds": [
      "g_088",
-     "g_165"
+     "g_165",
+     "g_073",
+     "g_091",
+     "g_094_1",
+     "g_021"
     ]
    },
    {
@@ -394,7 +437,11 @@
     "detail": {
      "en": "の links the owner to this shop. は switches the topic to the owner in contrast with the people just described.",
      "vi": "の nối chủ quán với quán này. は chuyển chủ đề sang người chủ, đối chiếu với những người vừa được nói đến."
-    }
+    },
+    "grammarIds": [
+     "g_011_5",
+     "g_166"
+    ]
    },
    {
     "text": "そう考えていないようです。",
@@ -407,7 +454,10 @@
      "vi": "そう chỉ quan niệm dù thế nào cũng phải làm. 考える → 考えていない + ようです diễn tả suy đoán về cách nghĩ của chủ quán."
     },
     "grammarIds": [
-     "g_140"
+     "g_140",
+     "g_091",
+     "g_094_1",
+     "g_073"
     ],
     "words": [
      {
@@ -444,7 +494,9 @@
      "vi": "と đánh dấu người được lấy làm mốc so sánh với 同じ. 考え方 + なら đặt ra một điều kiện giả định."
     },
     "grammarIds": [
-     "g_113"
+     "g_113",
+     "g_060",
+     "g_166"
     ],
     "words": [
      {
@@ -468,7 +520,8 @@
      "vi": "が đánh dấu xã hội là chủ thể của なる. Từ hỏi どう + か tạo câu hỏi lồng, làm nội dung muốn xem ở phần sau."
     },
     "grammarIds": [
-     "g_251"
+     "g_251",
+     "g_069"
     ],
     "words": [
      {
@@ -492,7 +545,9 @@
      "vi": "見る → 見て + みる nghĩa là thử xem; みる → みたい thêm ý muốn làm. ちょっと làm lời bày tỏ tò mò nhẹ nhàng hơn."
     },
     "grammarIds": [
-     "g_252"
+     "g_252",
+     "g_091",
+     "g_059"
     ]
    }
   ]
@@ -539,7 +594,11 @@
     "detail": {
      "en": "に marks the destination. 来る → 来ました is the polite past form, describing a completed arrival.",
      "vi": "に đánh dấu nơi đến. 来る → 来ました là dạng quá khứ lịch sự, diễn tả việc đã đến Nhật."
-    }
+    },
+    "grammarIds": [
+     "g_049_3",
+     "g_044"
+    ]
    }
   ]
  },
@@ -573,6 +632,10 @@
        "vi": "quen với"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_021"
     ]
    },
    {
@@ -586,7 +649,8 @@
      "vi": "来る → 来た + ばかり nghĩa là vừa mới đến. の nối cụm này với とき; は nêu giai đoạn đầu làm chủ đề đối chiếu."
     },
     "grammarIds": [
-     "g_082"
+     "g_082",
+     "g_076"
     ]
    },
    {
@@ -608,6 +672,10 @@
        "vi": "sai sót, thất bại"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166",
+     "g_044"
     ]
    }
   ]
@@ -645,7 +713,9 @@
      "vi": "私が nêu chủ thể trong mệnh đề bổ nghĩa cho 話. で chỉ nơi mắc lỗi; を đánh dấu nội dung sẽ kể."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076",
+     "g_050_1"
     ],
     "words": [
      {
@@ -667,7 +737,11 @@
     "detail": {
      "en": "話をする means to tell a story or talk about something. ね makes the announcement friendly and invites the listener’s attention.",
      "vi": "話をする nghĩa là kể chuyện hoặc nói về điều gì. ね tạo giọng thân thiện, hướng sự chú ý của người nghe vào câu chuyện."
-    }
+    },
+    "grammarIds": [
+     "g_044",
+     "g_008_1"
+    ]
    }
   ]
  },
@@ -691,7 +765,10 @@
     "detail": {
      "en": "来て links the arrival to the following duration. くらい makes one month approximate, and は sets that period as the topic.",
      "vi": "来て nối việc đến Nhật với khoảng thời gian sau đó. くらい cho biết một tháng là ước lượng; は đưa giai đoạn ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_091"
+    ]
    },
    {
     "text": "日本語があまり読めなかったので、",
@@ -705,7 +782,9 @@
     },
     "grammarIds": [
      "g_253",
-     "g_077"
+     "g_077",
+     "g_061_1",
+     "g_061_2"
     ]
    },
    {
@@ -719,7 +798,8 @@
      "vi": "N + のとき chỉ lúc xảy ra sự khó khăn."
     },
     "grammarIds": [
-     "g_241"
+     "g_241",
+     "g_166"
     ]
    },
    {
@@ -731,7 +811,10 @@
     "detail": {
      "en": "大変 is a な-adjective; 大変でした is its polite past form. とても strengthens the degree of difficulty.",
      "vi": "大変 là tính từ な; 大変でした là dạng quá khứ lịch sự. とても nhấn mạnh mức độ vất vả."
-    }
+    },
+    "grammarIds": [
+     "g_023"
+    ]
    }
   ]
  },
@@ -758,7 +841,9 @@
     },
     "grammarIds": [
      "g_155",
-     "g_147"
+     "g_147",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -770,7 +855,12 @@
     "detail": {
      "en": "を marks what was bought. 買う → 買って connects buying with trying the snack.",
      "vi": "を đánh dấu thứ được mua. 買う → 買って nối việc mua với việc ăn thử."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092",
+     "g_050_2"
+    ]
    },
    {
     "text": "食べてみたら、",
@@ -784,7 +874,9 @@
     },
     "grammarIds": [
      "g_252",
-     "g_257"
+     "g_257",
+     "g_091",
+     "g_216"
     ]
    },
    {
@@ -798,7 +890,8 @@
      "vi": "が đánh dấu vị bánh là chủ thể. 変だ → 変だった + んです nêu nhận xét trong quá khứ để giải thích chuyện đã xảy ra."
     },
     "grammarIds": [
-     "g_149"
+     "g_149",
+     "g_031"
     ],
     "words": [
      {
@@ -843,7 +936,8 @@
      "vi": "よく ở đây nghĩa là kỹ. 見る → 見た + ら mở ra sự thật mới phát hiện qua việc nhìn lại."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_216"
     ]
    },
    {
@@ -855,7 +949,11 @@
     "detail": {
      "en": "の indicates the intended recipient or type of snack. でした identifies what the snack was in the past narrative.",
      "vi": "の chỉ đối tượng mà món bánh dành cho. でした xác định món bánh ấy là gì trong câu chuyện quá khứ."
-    }
+    },
+    "grammarIds": [
+     "g_009",
+     "g_166"
+    ]
    }
   ]
  },
@@ -890,7 +988,10 @@
     "detail": {
      "en": "こんな points ahead to the story about to be told. も means that this happened in addition to the earlier incident.",
      "vi": "こんな báo trước câu chuyện sắp kể. も cho biết còn có chuyện này ngoài sự cố trước."
-    }
+    },
+    "grammarIds": [
+     "g_003"
+    ]
    },
    {
     "text": "ありました。",
@@ -901,7 +1002,10 @@
     "detail": {
      "en": "ある is used for an event occurring, rather than an object’s location. ありました is the polite past form.",
      "vi": "ある ở đây chỉ sự việc xảy ra, không phải vị trí của đồ vật. ありました là dạng quá khứ lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -925,7 +1029,11 @@
     "detail": {
      "en": "に marks the group within which Sara was found. 私の links the classmates to the speaker.",
      "vi": "に nêu nhóm có Sara trong đó. 私の cho biết đây là những bạn cùng lớp của người kể."
-    }
+    },
+    "grammarIds": [
+     "g_011_5",
+     "g_166"
+    ]
    },
    {
     "text": "とてもかわいい「サラさん」という女の子がいたので、",
@@ -938,7 +1046,9 @@
      "vi": "という giới thiệu tên cô bạn; かわいい bổ nghĩa cho 女の子. いる → いた + ので nêu việc có cô bạn ấy làm lý do muốn kết bạn."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_166",
+     "g_076"
     ]
    },
    {
@@ -953,7 +1063,10 @@
     },
     "grammarIds": [
      "g_150",
-     "g_147"
+     "g_147",
+     "g_160",
+     "g_078",
+     "g_076"
     ]
    },
    {
@@ -975,6 +1088,12 @@
        "vi": "nhầm lẫn"
       }
      }
+    ],
+    "grammarIds": [
+     "g_042",
+     "g_050_2",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -988,7 +1107,9 @@
      "vi": "って là cách nêu chủ đề thân mật, tương tự は. ね tìm sự đồng tình, nên người kể nói nhầm mà vẫn dùng giọng thân thiện như đang khen."
     },
     "grammarIds": [
-     "g_183"
+     "g_183",
+     "g_008_1",
+     "g_033_2"
     ]
    },
    {
@@ -1002,7 +1123,11 @@
      "vi": "と đánh dấu lời được nói. 言う → 言って + しまいました diễn tả việc lỡ nói và gây điều đáng tiếc."
     },
     "grammarIds": [
-     "g_222"
+     "g_222",
+     "g_091",
+     "g_044",
+     "g_181",
+     "g_185"
     ]
    }
   ]
@@ -1029,7 +1154,8 @@
      "vi": "褒める → 褒めた + のに đối chiếu lời khen theo ý người kể với phản ứng bất ngờ của Sara."
     },
     "grammarIds": [
-     "g_254"
+     "g_254",
+     "g_076"
     ],
     "words": [
      {
@@ -1053,7 +1179,10 @@
      "vi": "変な bổ nghĩa cho 顔; 顔をする diễn tả nét mặt. した + ので nêu lý do dẫn đến suy nghĩ tiếp theo."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_166",
+     "g_076",
+     "g_050_2"
     ]
    },
    {
@@ -1067,7 +1196,8 @@
      "vi": "わかる → わからなかった là quá khứ phủ định. かな diễn tả sự tự hỏi; と思って dẫn suy nghĩ đó và nối với hành động sau."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_091"
     ]
    },
    {
@@ -1081,7 +1211,12 @@
      "vi": "何回も nghĩa là nhiều lần. と đánh dấu lời nói; 言う → 言った + ら mở ra kết quả của việc lặp lại lời ấy."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_008_1",
+     "g_033_2",
+     "g_181",
+     "g_185",
+     "g_216"
     ]
    },
    {
@@ -1095,7 +1230,9 @@
      "vi": "は đưa Sara trở lại làm chủ đề. 怒る → 怒って + しまいました diễn tả việc cô ấy giận là kết quả đáng tiếc."
     },
     "grammarIds": [
-     "g_222"
+     "g_222",
+     "g_091",
+     "g_044"
     ],
     "words": [
      {
@@ -1132,7 +1269,8 @@
      "vi": "はずかしい → はずかしかった là quá khứ. の danh từ hóa phần miêu tả; のは mở ra điều sẽ được xác định ở phía sau."
     },
     "grammarIds": [
-     "g_174"
+     "g_174",
+     "g_035"
     ]
    },
    {
@@ -1146,7 +1284,9 @@
      "vi": "に chỉ nơi đi vào. 入る → 入った bổ nghĩa cho とき; の nối thời điểm đó với 失敗."
     },
     "grammarIds": [
-     "g_243"
+     "g_243",
+     "g_076",
+     "g_165"
     ]
    },
    {
@@ -1158,7 +1298,10 @@
     "detail": {
      "en": "This noun phrase completes the identifying frame のは … です. です is used as the speaker now identifies a past incident.",
      "vi": "Cụm danh từ này hoàn thành khung xác định のは … です. Người kể dùng です để chỉ ra ở hiện tại một sự cố trong quá khứ."
-    }
+    },
+    "grammarIds": [
+     "g_001"
+    ]
    }
   ]
  },
@@ -1192,6 +1335,12 @@
        "vi": "cho chảy; ở đây: xả nước"
       }
      }
+    ],
+    "grammarIds": [
+     "g_079",
+     "g_147",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -1205,7 +1354,8 @@
      "vi": "を đánh dấu nút là đối tượng được bấm. 押す → 押した + ら mở ra sự việc bất ngờ xảy ra sau đó."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_216"
     ]
    },
    {
@@ -1227,6 +1377,10 @@
        "vi": "kêu, vang lên"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166",
+     "g_044"
     ]
    }
   ]
@@ -1261,6 +1415,10 @@
        "vi": "nhân viên ga"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -1272,7 +1430,10 @@
     "detail": {
      "en": "の links 外 to the toilet. から marks the location from which the staff spoke.",
      "vi": "の nối 外 với nhà vệ sinh. から chỉ vị trí mà nhân viên đứng nói."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "「大丈夫ですか」と",
@@ -1283,7 +1444,10 @@
     "detail": {
      "en": "か makes the quoted sentence a polite question. と marks it as the content of 聞きました.",
      "vi": "か tạo câu hỏi lịch sự trong lời trích dẫn. と đánh dấu đây là nội dung của 聞きました."
-    }
+    },
+    "grammarIds": [
+     "g_017"
+    ]
    },
    {
     "text": "私に聞きました。",
@@ -1304,6 +1468,9 @@
        "vi": "nghe / hỏi; ở đây: hỏi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -1330,7 +1497,8 @@
      "vi": "私が押した bổ nghĩa trực tiếp cho ボタン. は đưa nút bấm ấy làm chủ đề cần đính chính."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076"
     ]
    },
    {
@@ -1344,7 +1512,9 @@
      "vi": "トイレを流す bổ nghĩa cho ボタン, nêu chức năng của nút. じゃなくて là dạng nối thân mật của ではなくて, phủ nhận cách xác định này."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_050_2"
     ]
    },
    {
@@ -1358,7 +1528,8 @@
      "vi": "非常ボタン + だった xác định nút bấm trong quá khứ. のです nêu sự thật này làm lời giải thích cho báo động và phản ứng của nhân viên."
     },
     "grammarIds": [
-     "g_149"
+     "g_149",
+     "g_031"
     ],
     "words": [
      {
@@ -1395,7 +1566,8 @@
      "vi": "開ける → 開けた + ら dẫn vào cảnh được phát hiện sau khi mở cửa."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_216"
     ]
    },
    {
@@ -1409,7 +1581,9 @@
      "vi": "と nối hai nhóm; が đánh dấu họ là chủ thể. 集まる → 集まっている chỉ trạng thái đã tụ lại; いて nối sang phần miêu tả tiếp theo."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_042",
+     "g_091"
     ],
     "words": [
      {
@@ -1456,7 +1630,11 @@
     "detail": {
      "en": "見る → 見て + いました describes an action in progress when the speaker opened the door.",
      "vi": "見る → 見て + いました diễn tả hành động đang diễn ra khi người kể mở cửa."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_094_1"
+    ]
    }
   ]
  },
@@ -1480,7 +1658,12 @@
     "detail": {
      "en": "色々な modifies 失敗. しましたが reports those past mistakes and introduces a contrast with the present situation.",
      "vi": "色々な bổ nghĩa cho 失敗. しましたが kể về những lỗi trước đây rồi mở ra sự đối chiếu với hiện tại."
-    }
+    },
+    "grammarIds": [
+     "g_166",
+     "g_044",
+     "g_021"
+    ]
    },
    {
     "text": "最近は",
@@ -1504,7 +1687,9 @@
      "vi": "こと danh từ hóa 失敗をする thành sự việc được nói đến; も nhấn thêm vào khía cạnh ấy. 少ない → 少なく + なりました diễn tả sự giảm đi."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_069",
+     "g_044"
     ]
    },
    {
@@ -1526,6 +1711,9 @@
        "vi": "kỷ niệm"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    }
   ]
@@ -1561,7 +1749,10 @@
     "detail": {
      "en": "が marks the thing available. あります states that a piano is present in this studio.",
      "vi": "が đánh dấu vật có sẵn. あります cho biết phòng này có piano."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    },
    {
     "text": "レコーディングはできません。",
@@ -1574,7 +1765,8 @@
      "vi": "は đưa việc thu âm làm chủ đề, đối chiếu với piano có sẵn. できる → できません cho biết không thể thực hiện hoạt động này ở đây."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_048"
     ]
    }
   ]
@@ -1610,7 +1802,11 @@
     "detail": {
      "en": "と joins the two instruments. が marks them as the things available, and あります states their presence.",
      "vi": "と nối hai nhạc cụ. が đánh dấu các vật có sẵn; あります cho biết phòng có những nhạc cụ đó."
-    }
+    },
+    "grammarIds": [
+     "g_042",
+     "g_044"
+    ]
    },
    {
     "text": "レコーディングができます。",
@@ -1623,7 +1819,8 @@
      "vi": "N + ができます cho biết có thể thực hiện một hoạt động. Ở đây câu nói về tiện ích của phòng chứ không phải kỹ năng của một người."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_044"
     ]
    },
    {
@@ -1670,7 +1867,11 @@
     "detail": {
      "en": "と joins the equipment items, and が marks them as the things present. あります describes what is provided.",
      "vi": "と nối các nhạc cụ; が đánh dấu những vật có sẵn. あります nêu thiết bị được cung cấp."
-    }
+    },
+    "grammarIds": [
+     "g_042",
+     "g_044"
+    ]
    },
    {
     "text": "レコーディングができます。",
@@ -1683,7 +1884,8 @@
      "vi": "ができます theo sau danh từ chỉ hoạt động để diễn tả khả năng thực hiện. Có thể thu âm tại phòng này."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_044"
     ]
    },
    {
@@ -1730,7 +1932,10 @@
     "detail": {
      "en": "が marks the available equipment. あります states that the studio has a piano.",
      "vi": "が đánh dấu thiết bị có sẵn. あります cho biết phòng có piano."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    },
    {
     "text": "レコーディングはできません。",
@@ -1743,7 +1948,8 @@
      "vi": "は đưa riêng việc thu âm làm chủ đề. できません là dạng phủ định lịch sự của できる, cho biết không thể thu âm ở đây."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_048"
     ]
    }
   ]
@@ -1799,6 +2005,9 @@
        "vi": "việc sử dụng dịch vụ, cơ sở"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -1813,7 +2022,8 @@
     },
     "grammarIds": [
      "g_186",
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ]
    }
   ]
@@ -1840,7 +2050,8 @@
      "vi": "会員に + なる nghĩa là trở thành hội viên. なる → ならない → ならなくても nêu điều kiện phủ định vẫn không cản trở việc sử dụng."
     },
     "grammarIds": [
-     "g_255"
+     "g_255",
+     "g_160"
     ]
    },
    {
@@ -1854,7 +2065,8 @@
      "vi": "利用する → 利用できる → 利用できます là dạng khả năng lịch sự. Ở đây cho biết người không phải hội viên vẫn được sử dụng dịch vụ."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ],
     "words": [
      {
@@ -1899,7 +2111,9 @@
      "vi": "する + ことができます diễn tả khả năng thực hiện việc đặt trước. する nhắc lại hoạt động 予約."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -1945,7 +2159,10 @@
     "detail": {
      "en": "の connects cancellation with the reservation. は makes the entire cancellation procedure the topic.",
      "vi": "の nối việc hủy với việc đặt phòng. は đưa toàn bộ việc hủy đặt làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "電話で",
@@ -1956,7 +2173,10 @@
     "detail": {
      "en": "で marks the means used to carry out the cancellation.",
      "vi": "で đánh dấu phương tiện dùng để thực hiện việc hủy."
-    }
+    },
+    "grammarIds": [
+     "g_062"
+    ]
    },
    {
     "text": "してください。",
@@ -1969,7 +2189,8 @@
      "vi": "する → して + ください tạo lời yêu cầu lịch sự. Hành động được yêu cầu là việc hủy đã nêu phía trước."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    }
   ]
@@ -1996,7 +2217,9 @@
      "vi": "より lấy giờ đã đặt làm mốc so sánh. 遅れる → 遅れて + も nêu điều kiện vẫn không cản trở việc dùng phòng."
     },
     "grammarIds": [
-     "g_255"
+     "g_255",
+     "g_166",
+     "g_091"
     ],
     "words": [
      {
@@ -2020,7 +2243,9 @@
      "vi": "利用する → 利用できます diễn tả khả năng sử dụng. が nối điều được phép này với giới hạn ở vế sau."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044",
+     "g_021"
     ]
    },
    {
@@ -2034,7 +2259,8 @@
      "vi": "終わる bổ nghĩa trực tiếp cho 時間: giờ buổi sử dụng kết thúc. は đưa giờ ấy làm chủ đề đối chiếu."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -2056,6 +2282,9 @@
        "vi": "thay đổi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_048"
     ]
    }
   ]
@@ -2091,7 +2320,10 @@
     "detail": {
      "en": "と marks the companion. 2人で describes the size of the group doing the activity, including Tamura.",
      "vi": "と đánh dấu người cùng làm. 2人で chỉ nhóm thực hiện hoạt động gồm hai người, tính cả Tamura."
-    }
+    },
+    "grammarIds": [
+     "g_050_3"
+    ]
    },
    {
     "text": "楽器の練習をしたいですが、",
@@ -2120,6 +2352,11 @@
        "vi": "việc luyện tập"
       }
      }
+    ],
+    "grammarIds": [
+     "g_059",
+     "g_021",
+     "g_166"
     ]
    },
    {
@@ -2134,7 +2371,11 @@
     },
     "grammarIds": [
      "g_253",
-     "g_071"
+     "g_071",
+     "g_069",
+     "g_050_1",
+     "g_050_2",
+     "g_073"
     ],
     "words": [
      {
@@ -2158,7 +2399,12 @@
      "vi": "を đánh dấu studio là nơi định sử dụng. 使う → 使おう + と思っています diễn tả dự định mà người đó đang có."
     },
     "grammarIds": [
-     "g_213"
+     "g_213",
+     "g_079",
+     "g_147",
+     "g_091",
+     "g_094_1",
+     "g_044"
     ]
    }
   ]
@@ -2194,7 +2440,10 @@
     "detail": {
      "en": "は contrasts the friend’s instrument with Tamura’s. 練習する → 練習したい expresses the wish shared by both parts of the sentence.",
      "vi": "は đối chiếu nhạc cụ của người bạn với Tamura. 練習する → 練習したい diễn tả mong muốn dùng chung cho hai phần của câu."
-    }
+    },
+    "grammarIds": [
+     "g_059"
+    ]
    },
    {
     "text": "友達は自分のドラムを",
@@ -2215,6 +2464,10 @@
        "vi": "bản thân, chính mình"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5",
+     "g_166"
     ]
    },
    {
@@ -2228,7 +2481,9 @@
      "vi": "持つ → 持っている có thể diễn tả sự sở hữu. Dạng phủ định lịch sự 持っていません cho biết người bạn không có bộ trống riêng."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_091",
+     "g_048"
     ]
    }
   ]
@@ -2253,7 +2508,10 @@
     "detail": {
      "en": "Repeating も after each person means ‘both … and …’. Both share the wish expressed later.",
      "vi": "Lặp も sau mỗi người tạo nghĩa cả người này lẫn người kia. Cả hai cùng có mong muốn được nêu phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_003"
+    ]
    },
    {
     "text": "土曜日に13時から2時間、",
@@ -2264,7 +2522,10 @@
     "detail": {
      "en": "に marks the day, and から marks the starting time. 2時間 is a duration and does not need に.",
      "vi": "に đánh dấu ngày; から chỉ giờ bắt đầu. 2時間 là khoảng thời gian kéo dài nên không cần に."
-    }
+    },
+    "grammarIds": [
+     "g_046"
+    ]
    },
    {
     "text": "できるだけ安く",
@@ -2291,7 +2552,11 @@
      "vi": "利用する → 利用したい diễn tả mong muốn. と dẫn mong muốn đó với 思っています, cho biết ý định hiện tại của họ."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_078",
+     "g_091",
+     "g_094_1",
+     "g_044"
     ]
    }
   ]
@@ -2337,6 +2602,11 @@
        "vi": "đặt trước"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_092",
+     "g_050_2"
     ]
    },
    {
@@ -2358,6 +2628,9 @@
        "vi": "trả tiền"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -2392,6 +2665,9 @@
        "vi": "ngày hội thao"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -2414,7 +2690,12 @@
     "detail": {
      "en": "が marks rain as the subject. 降る → 降って + いました describes rain in progress during that past period.",
      "vi": "が đánh dấu mưa là chủ thể. 降る → 降って + いました diễn tả mưa đang kéo dài trong khoảng thời gian quá khứ ấy."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_094_1",
+     "g_044"
+    ]
    }
   ]
  },
@@ -2440,7 +2721,8 @@
      "vi": "降る → 降って + も nêu điều kiện vẫn không làm thay đổi quyết định. Đây là một phần của nội dung đã quyết định từ trước."
     },
     "grammarIds": [
-     "g_255"
+     "g_255",
+     "g_091"
     ]
    },
    {
@@ -2454,7 +2736,11 @@
      "vi": "運動会をする là nội dung quyết định, được đánh dấu bằng と. 決める → 決めていた + ので nêu quyết định có từ trước làm lý do bắt đầu."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_069",
+     "g_050_2",
+     "g_091",
+     "g_094_4"
     ],
     "words": [
      {
@@ -2486,6 +2772,9 @@
        "vi": "kế hoạch, lịch dự kiến"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -2497,7 +2786,10 @@
     "detail": {
      "en": "始める → 始めました is polite past. This transitive verb has an understood object: the sports event.",
      "vi": "始める → 始めました là quá khứ lịch sự. Đây là tha động từ, với đối tượng được hiểu ngầm là hội thao."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -2523,7 +2815,8 @@
      "vi": "寒い → 寒かった + のに nêu hoàn cảnh có thật trong quá khứ và mở ra ý trái dự đoán."
     },
     "grammarIds": [
-     "g_254"
+     "g_254",
+     "g_035"
     ]
    },
    {
@@ -2548,7 +2841,8 @@
      "vi": "元気 là tính từ な; 元気に bổ nghĩa cho cách các em chạy. 走る → 走りました kể hành động trong quá khứ."
     },
     "grammarIds": [
-     "g_158"
+     "g_158",
+     "g_044"
     ]
    }
   ]
@@ -2573,7 +2867,10 @@
     "detail": {
      "en": "3年生の identifies Yuta by his school year. 君 is a familiar suffix often used for boys; は introduces him as the topic.",
      "vi": "3年生の xác định Yuta là học sinh lớp 3. 君 là hậu tố thân mật thường dùng với bé trai; は nêu em làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "転んでも",
@@ -2586,7 +2883,8 @@
      "vi": "転ぶ → 転んで + も nêu sự việc có thật vẫn không ngăn hành động sau. Ở đây nghĩa là dù đã ngã, không phải giả sử bị ngã."
     },
     "grammarIds": [
-     "g_256"
+     "g_256",
+     "g_091"
     ],
     "words": [
      {
@@ -2610,7 +2908,9 @@
      "vi": "泣く → 泣かない + で nối việc không làm với việc đã làm: em tiếp tục chạy thay vì khóc."
     },
     "grammarIds": [
-     "g_199"
+     "g_199",
+     "g_073",
+     "g_198"
     ],
     "words": [
      {
@@ -2642,6 +2942,10 @@
        "vi": "cuối cùng, điểm cuối"
       }
      }
+    ],
+    "grammarIds": [
+     "g_248",
+     "g_044"
     ]
    }
   ]
@@ -2680,7 +2984,8 @@
     },
     "grammarIds": [
      "g_253",
-     "g_160"
+     "g_160",
+     "g_076"
     ]
    },
    {
@@ -2702,6 +3007,10 @@
        "vi": "nhà thể chất"
       }
      }
+    ],
+    "grammarIds": [
+     "g_050_1",
+     "g_044"
     ]
    }
   ]
@@ -2739,7 +3048,9 @@
      "vi": "晴れる → 晴れて + ほしい diễn tả mong trời nắng. ですね mời người nghe cùng chia sẻ mong muốn ấy."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091",
+     "g_008_1"
     ]
    }
   ]
@@ -2764,7 +3075,10 @@
     "detail": {
      "en": "の connects Sunday to last week. The entire phrase sets the past time of the planned outing.",
      "vi": "の nối Chủ nhật với tuần trước. Cả cụm nêu thời điểm quá khứ của chuyến đi dự kiến."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "友達と",
@@ -2775,7 +3089,10 @@
     "detail": {
      "en": "と marks the companions who would join the speaker on the climb.",
      "vi": "と đánh dấu những người bạn dự kiến cùng người kể leo núi."
-    }
+    },
+    "grammarIds": [
+     "g_050_3"
+    ]
    },
    {
     "text": "山に登る予定でした。",
@@ -2788,7 +3105,9 @@
      "vi": "に đánh dấu núi là nơi định leo lên. 登る ở thể từ điển + 予定でした diễn tả kế hoạch đã có trong quá khứ."
     },
     "grammarIds": [
-     "g_211"
+     "g_211",
+     "g_069",
+     "g_165"
     ]
    }
   ]
@@ -2815,7 +3134,8 @@
      "vi": "では nêu dự báo là nguồn thông tin. 雨だ → 雨だった + のに đối chiếu nội dung dự báo với thời tiết buổi sáng thực tế."
     },
     "grammarIds": [
-     "g_254"
+     "g_254",
+     "g_031"
     ],
     "words": [
      {
@@ -2839,7 +3159,9 @@
      "vi": "起きる → 起きた + とき đặt việc quan sát vào lúc đã thức dậy. 朝 cho biết đó là buổi sáng."
     },
     "grammarIds": [
-     "g_243"
+     "g_243",
+     "g_076",
+     "g_165"
     ]
    },
    {
@@ -2853,7 +3175,9 @@
      "vi": "は đưa bầu trời làm chủ đề của nhận xét đối lập. 晴れる → 晴れて + いました chỉ trạng thái trời quang lúc đó."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_091",
+     "g_044"
     ]
    }
   ]
@@ -2889,7 +3213,10 @@
     "detail": {
      "en": "予定の modifies 時間. に marks the specific time at which the group set off.",
      "vi": "予定の bổ nghĩa cho 時間. に đánh dấu thời điểm cụ thể nhóm xuất phát."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "出かけました。",
@@ -2900,7 +3227,10 @@
     "detail": {
      "en": "出かける → 出かけました is polite past. Here it means leaving to go on the planned outing.",
      "vi": "出かける → 出かけました là quá khứ lịch sự. Ở đây từ này chỉ việc rời đi để thực hiện chuyến đi đã định."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -2926,7 +3256,10 @@
      "vi": "に đánh dấu nơi đến. 着く → 着いた + とき đặt lúc mưa bắt đầu vào thời điểm đã tới nơi."
     },
     "grammarIds": [
-     "g_243"
+     "g_243",
+     "g_166",
+     "g_076",
+     "g_165"
     ]
    },
    {
@@ -2962,7 +3295,10 @@
     "detail": {
      "en": "が marks rain as the subject. 降る → 降ります → 降り + 始める forms a compound meaning ‘begin to rain’, made polite past here.",
      "vi": "が đánh dấu mưa là chủ thể. 降る → 降ります → 降り + 始める tạo động từ ghép nghĩa là bắt đầu mưa, ở đây dùng quá khứ lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -2988,7 +3324,9 @@
      "vi": "持つ → 持っている diễn tả việc có vật gì mang theo. 持っていなかった là quá khứ phủ định; ので nêu lý do bị ướt."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_091",
+     "g_094_4"
     ]
    },
    {
@@ -3013,7 +3351,9 @@
      "vi": "ぬれる → ぬれて + しまいました diễn tả việc bị ướt là kết quả không mong muốn, kèm cảm giác tiếc của người kể."
     },
     "grammarIds": [
-     "g_222"
+     "g_222",
+     "g_091",
+     "g_044"
     ],
     "words": [
      {
@@ -3058,6 +3398,10 @@
        "vi": "nhà nghỉ trên núi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5",
+     "g_166"
     ]
    },
    {
@@ -3071,7 +3415,11 @@
      "vi": "入る → 入ります → お入り + ください tạo lời mời kính trọng. と đánh dấu lời được dẫn; 言って nối lời mời với việc mang trà ra."
     },
     "grammarIds": [
-     "g_239"
+     "g_239",
+     "g_091",
+     "g_092",
+     "g_181",
+     "g_185"
     ]
    },
    {
@@ -3083,7 +3431,10 @@
     "detail": {
      "en": "温かい modifies お茶. を marks the tea as what the staff served to the group.",
      "vi": "温かい bổ nghĩa cho お茶. を đánh dấu trà là thứ được mang ra mời cả nhóm."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "出してくれました。",
@@ -3096,7 +3447,9 @@
      "vi": "出す → 出して + くれました diễn tả hành động có lợi cho nhóm người kể. Ở đây 出す nghĩa là mang trà ra mời."
     },
     "grammarIds": [
-     "g_103"
+     "g_103",
+     "g_091",
+     "g_044"
     ],
     "words": [
      {
@@ -3133,7 +3486,8 @@
      "vi": "やむ ở thể từ điển + まで nêu sự việc làm mốc kết thúc chờ đợi. Vẫn dùng thể từ điển dù toàn bộ câu chuyện ở quá khứ."
     },
     "grammarIds": [
-     "g_248"
+     "g_248",
+     "g_069"
     ],
     "words": [
      {
@@ -3165,6 +3519,9 @@
        "vi": "nhà nhỏ, túp lều"
       }
      }
+    ],
+    "grammarIds": [
+     "g_050_1"
     ]
    },
    {
@@ -3176,7 +3533,11 @@
     "detail": {
      "en": "1時間 gives the duration without に. 待つ → 待ちました reports the completed period of waiting.",
      "vi": "1時間 chỉ khoảng thời gian kéo dài, không dùng に. 待つ → 待ちました kể lại quãng chờ đã kết thúc."
-    }
+    },
+    "grammarIds": [
+     "g_046",
+     "g_044"
+    ]
    }
   ]
  },
@@ -3202,7 +3563,8 @@
      "vi": "降る → 降って + も nêu hoàn cảnh có thật vẫn không làm mất nhận xét tích cực. Đây là cơn mưa trong chuyến đi vừa kể."
     },
     "grammarIds": [
-     "g_256"
+     "g_256",
+     "g_091"
     ]
    },
    {
@@ -3214,7 +3576,10 @@
     "detail": {
      "en": "は makes the mountain the topic of the assessment. きれい is a な-adjective; きれいでした is its polite past form.",
      "vi": "は đưa ngọn núi làm chủ đề nhận xét. きれい là tính từ な; きれいでした là dạng quá khứ lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_023"
+    ]
    },
    {
     "text": "また行きたいです。",
@@ -3225,7 +3590,10 @@
     "detail": {
      "en": "また means again. 行く → 行きます → 行き + たいです expresses the speaker’s wish to return.",
      "vi": "また nghĩa là lại, lần nữa. 行く → 行きます → 行き + たいです diễn tả mong muốn quay lại của người nói."
-    }
+    },
+    "grammarIds": [
+     "g_059"
+    ]
    }
   ]
  }

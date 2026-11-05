@@ -56,6 +56,27 @@ const SENSE = [
   ['出さ', (b, a) => /(に|遅く)$/.test(b) && a.startsWith('せ'), 'で'], // 会議に出る, a late check-out
   ['辛', b => !/て$/.test(b), 'から'], // spicy food; 冷たくなって辛い = painful
 ]
+// Whole-token fixes by context: [surface, regex on text before, regex on text after, reading].
+const CONTEXT_READING = [
+  ['日', /(^|[^月0-9０-９])[1１]$/, /./, 'いちにち'], // 1日だけ = いちにち; 7月1日 stays ついたち
+  ['君', /[ぁ-んァ-ヶ]$/, /./, 'くん'], // ゆうた君
+  ['年', /[×x]$/, /./, 'ねん'], // 20××年
+  ['時', /[「『]$/, /^[」』]/, 'じ'], // 時計の「時」
+  ['口', /入り$/, /./, 'ぐち'], // 入り口
+  ['丼', /(かつ|親子)$/, /./, 'どん'],
+  ['物', /洗濯$/, /./, 'もの'],
+  ['分間', /(^|D)10$/, /./, 'ぷんかん'],
+  ['分間', /(^|\D)10$/, /./, 'ぷんかん'],
+  ['布団', /こたつ$/, /./, 'ぶとん'],
+  ['市場', /近くの$/, /へ/, 'いちば'],
+  ['軒', /来来$/, /./, 'けん'],
+  ['実は', /出ました。$/, /^一つ/, 'みは'], // fruit
+  ['入り口', /./, /./, 'いりぐち'],
+  ['その間', /./, /./, 'そのあいだ'],
+  ['時の間', /午後4$/, /./, 'じのあいだ'],
+  ['分の', /30$/, /山/, 'ぷんの'],
+  ['中', /今日$/, /^に/, 'じゅう'], // 今日中
+]
 const COMPOUND_COUNTER = { '時間': 'じかん', '日間': 'にちかん', '週間': 'しゅうかん', '年間': 'ねんかん', '分間': 'ふんかん', 'か月': 'かげつ', 'ヶ月': 'かげつ', '月間': 'げつかん' }
 const numberOf = s => /^[0-9０-９,，]+$/.test(s) ? Number(s.replace(/[,，]/g, '').replace(/[０-９]/g, d => String(d.charCodeAt(0) - 0xff10))) : null
 
@@ -111,9 +132,11 @@ function segments(tokenizer, text) {
       push([phrase, PHRASES[phrase]]); offset = end - tokens[i].surface_form.length; continue
     }
     const sense = SENSE.find(([p, test]) => surface.startsWith(p) && test(before, after))
+    const ctx = CONTEXT_READING.find(([k, b, a]) => k === surface && b.test(before) && a.test(after))
     const n = prev ? numberOf(prev.surface_form) : null
     let reading = null
-    if (sense) reading = sense[2] + surface.slice(1) // each SENSE entry starts with one kanji
+    if (ctx) reading = ctx[3]
+    else if (sense) reading = sense[2] + surface.slice(1) // each SENSE entry starts with one kanji
     else if (n !== null && (COUNTER[surface] || COMPOUND_COUNTER[surface])) reading = COMPOUND_COUNTER[surface] ?? COUNTER[surface](n)
     else if (surface === '一' && tokens[i + 1]?.surface_form === '人') { push(['一人', 'ひとり']); offset += 1; i++; continue }
     else if (WEEKDAY[surface] && (/[〜～・（(／/]$/.test(before) || /^[〜～・）)／/]/.test(after))) reading = WEEKDAY[surface] // 月〜金, （水）, 土・日

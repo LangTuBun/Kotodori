@@ -30,7 +30,10 @@
     "detail": {
      "en": "お adds respect to 元気. 元気 is a な-adjective, but no な is needed before です; か makes the greeting a question.",
      "vi": "お thể hiện sự kính trọng trước 元気. 元気 là tính từ な nhưng không thêm な trước です; か tạo câu hỏi thăm."
-    }
+    },
+    "grammarIds": [
+     "g_017"
+    ]
    }
   ]
  },
@@ -67,7 +70,8 @@
      "vi": "帰る → 帰って + くる diễn tả trở về phía nơi người viết đang ở. きて nối sự việc này với khoảng thời gian đã trôi qua."
     },
     "grammarIds": [
-     "g_226"
+     "g_226",
+     "g_091"
     ]
    },
    {
@@ -101,7 +105,10 @@
     "detail": {
      "en": "寒い keeps its final い before polite です. か asks whether this description is true.",
      "vi": "寒い giữ nguyên đuôi い trước です lịch sự. か dùng để hỏi có đúng là trời lạnh hay không."
-    }
+    },
+    "grammarIds": [
+     "g_017"
+    ]
    }
   ]
  },
@@ -149,7 +156,8 @@
      "vi": "いらっしゃる là dạng tôn kính đặc biệt của 来る, 行く hoặc いる; ở đây nghĩa là ‘đến’. と đánh dấu nội dung người viết nghe được."
     },
     "grammarIds": [
-     "g_267"
+     "g_267",
+     "g_069"
     ]
    },
    {
@@ -174,7 +182,8 @@
      "vi": "伺う → 伺いました là dạng quá khứ lịch sự, khiêm nhường. Ở đây 伺う nghĩa là ‘nghe được’, không phải ‘đến thăm’ hay ‘hỏi’."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044"
     ],
     "words": [
      {
@@ -233,7 +242,8 @@
      "vi": "いらっしゃる ở đây là dạng tôn kính của いる. Dạng lịch sự いらっしゃいます + か dùng để hỏi thầy cô một cách kính trọng."
     },
     "grammarIds": [
-     "g_267"
+     "g_267",
+     "g_044"
     ]
    }
   ]
@@ -271,7 +281,10 @@
      "vi": "訪問する → 訪問される ở đây là tôn kính ngữ, nói về hành động của thầy cô. Mệnh đề này bổ nghĩa cho 予定; が đánh dấu 予定 làm chủ ngữ của ある."
     },
     "grammarIds": [
-     "g_268"
+     "g_268",
+     "g_069",
+     "g_165",
+     "g_211"
     ],
     "words": [
      {
@@ -303,7 +316,8 @@
      "vi": "ある → ありました + ら tạo điều kiện lịch sự. Cách nói này không mặc định thầy cô chắc chắn sẽ đến."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081"
     ]
    },
    {
@@ -328,7 +342,11 @@
      "vi": "案内する → 案内させる → 案内させて + ください dùng để xin phép dẫn thầy cô tham quan. Thể sai khiến ở đây mang nghĩa được cho phép làm."
     },
     "grammarIds": [
-     "g_236"
+     "g_236",
+     "g_228",
+     "g_231",
+     "g_091",
+     "g_099"
     ],
     "words": [
      {
@@ -390,7 +408,11 @@
     },
     "grammarIds": [
      "g_267",
-     "g_189"
+     "g_189",
+     "g_091",
+     "g_059",
+     "g_078",
+     "g_165"
     ],
     "words": [
      {
@@ -412,7 +434,10 @@
     "detail": {
      "en": "が in the previous chunk marks what exists. たくさん describes how many such things there are.",
      "vi": "が ở cụm trước đánh dấu những thứ tồn tại. たくさん cho biết có nhiều thứ như vậy."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -450,7 +475,9 @@
     },
     "grammarIds": [
      "g_267",
-     "g_189"
+     "g_189",
+     "g_091",
+     "g_059"
     ],
     "words": [
      {
@@ -487,7 +514,8 @@
      "vi": "興味がある nghĩa là ‘có hứng thú, quan tâm’. ある → ありましたら tạo vế ‘nếu’ lịch sự; ご thêm sắc thái kính trọng cho 興味."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081"
     ],
     "words": [
      {
@@ -559,7 +587,10 @@
      "vi": "お目にかかる là dạng khiêm nhường của 会う; かかる → かかれる là thể khả năng. の danh từ hóa mệnh đề; を đánh dấu cụm này làm tân ngữ."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_061_1",
+     "g_075",
+     "g_069"
     ],
     "words": [
      {
@@ -583,7 +614,9 @@
      "vi": "楽しみにする nghĩa là ‘mong đợi’. している → しております dùng おる, dạng khiêm nhường/lịch sự của いる, để nói về tâm trạng mong đợi của người viết."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -660,7 +693,8 @@
      "vi": "ご連絡する → ご連絡いたす thay する bằng いたす khiêm nhường. いたします là dạng lịch sự của động từ này."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044"
     ],
     "words": [
      {
@@ -740,7 +774,8 @@
      "vi": "乗る → 乗ります → お乗りになる dùng お + thân ます + になる để tôn kính giám đốc. なります là dạng lịch sự."
     },
     "grammarIds": [
-     "g_238"
+     "g_238",
+     "g_044"
     ]
    }
   ]
@@ -789,7 +824,9 @@
      "vi": "行く → 行って + いただく khiêm nhường diễn đạt việc người nói nhận sự hợp tác từ người khác. Ở đây cách nói này thông báo lịch trình công việc một cách lịch sự."
     },
     "grammarIds": [
-     "g_189"
+     "g_189",
+     "g_091",
+     "g_044"
     ]
    }
   ]
@@ -825,7 +862,10 @@
     "detail": {
      "en": "と joins the two passengers, and を marks them as the people being taken. まで marks the endpoint of the drive.",
      "vi": "と nối hai hành khách; を đánh dấu những người được đưa đi. まで chỉ điểm cuối của chuyến xe."
-    }
+    },
+    "grammarIds": [
+     "g_042"
+    ]
    },
    {
     "text": "お送りしますので、",
@@ -840,7 +880,8 @@
     "grammarIds": [
      "g_269",
      "g_235",
-     "g_253"
+     "g_253",
+     "g_044"
     ],
     "words": [
      {
@@ -946,7 +987,8 @@
     },
     "grammarIds": [
      "g_269",
-     "g_235"
+     "g_235",
+     "g_044"
     ],
     "words": [
      {
@@ -983,7 +1025,8 @@
      "vi": "着く → 着いた + ら ở đây nghĩa là ‘sau khi đến’. に đánh dấu nơi đến."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081"
     ]
    },
    {
@@ -1041,7 +1084,9 @@
     },
     "grammarIds": [
      "g_267",
-     "g_211"
+     "g_211",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -1113,7 +1158,8 @@
      "vi": "取る → 取って + ください tạo lời yêu cầu lịch sự. Ở đây 取る nghĩa là dành thời gian để nghỉ."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -1170,7 +1216,10 @@
     "detail": {
      "en": "The first と joins the two names; the second と marks them together as the president’s meeting partners.",
      "vi": "と đầu nối hai tên; と thứ hai đánh dấu cả hai là những người họp cùng giám đốc."
-    }
+    },
+    "grammarIds": [
+     "g_042"
+    ]
    },
    {
     "text": "会議される予定です。",
@@ -1184,7 +1233,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_211"
+     "g_211",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -1243,7 +1294,8 @@
      "vi": "参加する → 参加して + ください tạo lời yêu cầu tham gia lịch sự."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -1317,7 +1369,8 @@
     "grammarIds": [
      "g_269",
      "g_235",
-     "g_253"
+     "g_253",
+     "g_069"
     ]
    },
    {
@@ -1329,7 +1382,11 @@
     "detail": {
      "en": "コピーを取る means ‘make copies’. 取る → 取って connects copying to handing the materials over.",
      "vi": "コピーを取る nghĩa là ‘sao chép’. 取る → 取って nối việc sao chép với việc trao tài liệu."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092"
+    ]
    },
    {
     "text": "今日中に社長に",
@@ -1412,7 +1469,9 @@
      "vi": "会う → お会いになる là tôn kính ngữ. なる → なって nối việc gặp với chuyến xem nhà máy."
     },
     "grammarIds": [
-     "g_238"
+     "g_238",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -1449,7 +1508,9 @@
     "grammarIds": [
      "g_268",
      "g_211",
-     "g_058"
+     "g_058",
+     "g_069",
+     "g_165"
     ]
    }
   ]
@@ -1487,7 +1548,9 @@
      "vi": "泊まる → 泊まります → お泊まりになる là tôn kính ngữ. Thể て なって nối việc nghỉ qua đêm với việc trở về."
     },
     "grammarIds": [
-     "g_238"
+     "g_238",
+     "g_091",
+     "g_092"
     ],
     "words": [
      {
@@ -1523,7 +1586,9 @@
     },
     "grammarIds": [
      "g_238",
-     "g_211"
+     "g_211",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -1560,7 +1625,8 @@
      "vi": "A社との bổ nghĩa cho 会議: cuộc họp với công ty A. 終わる → 終わったら lấy lúc họp xong làm mốc thực hiện các chỉ dẫn."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081"
     ]
    },
    {
@@ -1586,7 +1652,9 @@
     },
     "grammarIds": [
      "g_269",
-     "g_235"
+     "g_235",
+     "g_091",
+     "g_092"
     ],
     "words": [
      {
@@ -1669,7 +1737,8 @@
      "vi": "よろしくお願いする là cách nói cố định để nhờ người khác giúp đỡ, phối hợp. する → いたす → いたします làm câu khiêm nhường và trang trọng hơn."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044"
     ]
    }
   ]
@@ -1741,7 +1810,9 @@
      "vi": "参る ở đây là dạng khiêm nhường của 来る; 参りました là quá khứ lịch sự. が dẫn vào trở ngại được nêu trong thông báo."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_021",
+     "g_044"
     ],
     "words": [
      {
@@ -1811,7 +1882,11 @@
     "detail": {
      "en": "持つ → 持って combines with かえる to mean ‘take something back’. かえりました politely reports the completed action.",
      "vi": "持つ → 持って kết hợp với かえる thành nghĩa ‘mang về’. かえりました thuật lại hành động đã xong một cách lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_044"
+    ]
    }
   ]
  },
@@ -1882,7 +1957,8 @@
      "vi": "入れる → 入れ + お…する tạo dạng khiêm nhường お入れする. しました lịch sự thuật lại hành động đã hoàn tất của nhân viên."
     },
     "grammarIds": [
-     "g_235"
+     "g_235",
+     "g_044"
     ]
    }
   ]
@@ -1921,7 +1997,8 @@
     },
     "grammarIds": [
      "g_265",
-     "g_077"
+     "g_077",
+     "g_061_1"
     ]
    },
    {
@@ -1933,7 +2010,11 @@
     "detail": {
      "en": "持つ → 持って + 帰る means ‘take something back’. を marks the parcel carried back by the worker.",
      "vi": "持つ → 持って + 帰る nghĩa là ‘mang về’. を đánh dấu kiện hàng nhân viên mang về."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_044"
+    ]
    }
   ]
  },
@@ -2049,7 +2130,9 @@
      "vi": "聞く → 聞きます → お聞きになる là tôn kính ngữ. なって nối việc nghe với chỉ dẫn tiếp theo."
     },
     "grammarIds": [
-     "g_238"
+     "g_238",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -2084,7 +2167,8 @@
      "vi": "押す → 押して + ください tạo lời yêu cầu lịch sự. 押す ở đây là bấm phím điện thoại."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    }
   ]
@@ -2144,7 +2228,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -2225,7 +2311,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -2306,7 +2394,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -2387,7 +2477,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -2468,7 +2560,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -2538,7 +2632,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -2646,7 +2742,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -2671,7 +2769,8 @@
     },
     "grammarIds": [
      "g_268",
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -2818,7 +2917,9 @@
     },
     "grammarIds": [
      "g_268",
-     "g_261"
+     "g_261",
+     "g_069",
+     "g_165"
     ]
    }
   ]
@@ -2870,7 +2971,8 @@
      "vi": "ございます là dạng rất lịch sự của あります. Ở đây câu cho biết có thể có trường hợp như vậy, không khẳng định chắc chắn hàng đang vắng."
     },
     "grammarIds": [
-     "g_270"
+     "g_270",
+     "g_044"
     ]
    }
   ]
@@ -2898,7 +3000,10 @@
     },
     "grammarIds": [
      "g_268",
-     "g_080_1"
+     "g_080_1",
+     "g_058",
+     "g_069",
+     "g_165"
     ]
    },
    {
@@ -2961,7 +3066,9 @@
      "vi": "帰る → 帰った + ら nêu sự việc làm mốc để cô thấy tờ giấy. たら ở đây nói về tình huống đã xảy ra trong quá khứ, không phải điều kiện tương lai chưa chắc chắn."
     },
     "grammarIds": [
-     "g_257"
+     "g_257",
+     "g_081",
+     "g_216"
     ]
    },
    {
@@ -2986,7 +3093,9 @@
      "vi": "入る → 入って + いました tả trạng thái kết quả trong quá khứ. が đánh dấu tờ giấy nằm bên trong, không phải người bỏ giấy vào."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_091",
+     "g_044"
     ]
    }
   ]
@@ -3025,7 +3134,11 @@
     "detail": {
      "en": "取りに gives the purpose of 行く. の nominalizes the whole action; のではなく rejects that option and leads to the preferred alternative.",
      "vi": "取りに chỉ mục đích của 行く. の danh từ hóa cả hành động; のではなく gạt phương án đó để dẫn sang lựa chọn cô muốn."
-    }
+    },
+    "grammarIds": [
+     "g_058",
+     "g_069"
+    ]
    },
    {
     "text": "荷物を",
@@ -3049,7 +3162,10 @@
      "vi": "再配達する → 再配達して + もらう diễn đạt việc được người khác giao lại cho. もらう → もらいたい thêm mong muốn nhận sự giúp đỡ ấy."
     },
     "grammarIds": [
-     "g_188"
+     "g_188",
+     "g_091",
+     "g_059",
+     "g_078"
     ],
     "words": [
      {
@@ -3073,7 +3189,11 @@
      "vi": "と đánh dấu nội dung suy nghĩ. 思う → 思っています thuật lại mong muốn đang có, không phải quyết định nảy ra ngay lúc này."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_091",
+     "g_094_1",
+     "g_094_5",
+     "g_044"
     ]
    }
   ]
@@ -3101,7 +3221,9 @@
     },
     "grammarIds": [
      "g_174",
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069"
     ],
     "words": [
      {
@@ -3171,7 +3293,8 @@
      "vi": "が đánh dấu lĩnh vực không thành thạo. 苦手 là tính từ な nên dùng 苦手 + な + ので để nêu lý do."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_065"
     ],
     "words": [
      {
@@ -3206,7 +3329,12 @@
      "vi": "連絡する → 連絡しよう là thể ý chí. Thể ý chí + と思っています diễn tả dự định cô đang có."
     },
     "grammarIds": [
-     "g_213"
+     "g_213",
+     "g_079",
+     "g_091",
+     "g_094_1",
+     "g_094_5",
+     "g_044"
     ],
     "words": [
      {
@@ -3289,7 +3417,8 @@
      "vi": "いらっしゃる ở đây là dạng tôn kính của 来る. いらっしゃいました là quá khứ lịch sự; か tạo câu hỏi về việc khách đến."
     },
     "grammarIds": [
-     "g_267"
+     "g_267",
+     "g_044"
     ]
    }
   ]
@@ -3327,7 +3456,8 @@
      "vi": "申す là dạng khiêm nhường của 言う. Tên + と申します là cách tự giới thiệu trang trọng."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044"
     ],
     "words": [
      {
@@ -3380,6 +3510,9 @@
        "vi": "lời hứa; ở đây: cuộc hẹn"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -3406,7 +3539,8 @@
      "vi": "様 đứng sau tên để kính trọng khách. でございます thay cho です bằng dạng rất lịch sự; ね dùng để xác nhận."
     },
     "grammarIds": [
-     "g_270"
+     "g_270",
+     "g_008_1"
     ]
    },
    {
@@ -3476,6 +3610,9 @@
        "vi": "đang họp"
       }
      }
+    ],
+    "grammarIds": [
+     "g_021"
     ]
    },
    {
@@ -3500,7 +3637,8 @@
      "vi": "参る ở đây là dạng khiêm nhường của 来る. Cách nói này hạ hành động của đồng nghiệp cùng công ty khi trao đổi với khách."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044"
     ],
     "words": [
      {
@@ -3535,7 +3673,12 @@
     "detail": {
      "en": "待つ → 待たせる is causative: ‘make someone wait’. お待たせしました is a set polite acknowledgment that the visitor has been kept waiting.",
      "vi": "待つ → 待たせる là thể sai khiến: ‘để ai chờ’. お待たせしました là lời lịch sự quen dùng để nhận việc mình đã để khách chờ."
-    }
+    },
+    "grammarIds": [
+     "g_228",
+     "g_235",
+     "g_044"
+    ]
    },
    {
     "text": "社長も田中様に",
@@ -3559,7 +3702,9 @@
      "vi": "会う → お会いする là cách nói khiêm nhường hướng tới khách. お会いする → お会いしたい diễn đạt mong muốn của giám đốc; と kết thúc nội dung được thuật lại."
     },
     "grammarIds": [
-     "g_235"
+     "g_235",
+     "g_059",
+     "g_078"
     ]
    },
    {
@@ -3573,7 +3718,9 @@
      "vi": "言う → 申す là khiêm nhường ngữ; いる → おる thêm sắc thái khiêm nhường, lịch sự trong 申しておりました. Dạng quá khứ thuật lại lời nói trước đó, không có nghĩa hiện giờ vẫn đang nói."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_091",
+     "g_044"
     ],
     "words": [
      {
@@ -3610,7 +3757,9 @@
      "vi": "に đánh dấu giờ trở về. ので nối sau 戻ります lịch sự để nêu lý do mời khách chờ."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_045",
+     "g_044"
     ],
     "words": [
      {
@@ -3694,7 +3843,8 @@
      "vi": "飲む → 飲まれる dùng hình thức giống bị động với nghĩa tôn kính, không mang nghĩa bị động. ますか lịch sự hỏi ý khách."
     },
     "grammarIds": [
-     "g_268"
+     "g_268",
+     "g_044"
     ]
    }
   ]
@@ -3742,7 +3892,8 @@
      "vi": "ご + 案内 + 申し上げる là cách thông báo trang trọng, khiêm nhường. 案内 ở đây là thông báo, không phải trực tiếp dẫn ai đi."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044"
     ],
     "words": [
      {
@@ -3920,7 +4071,9 @@
      "vi": "行う → 行って + おります là cách khiêm nhường/lịch sự của 行っています. 行う đọc là おこなう, nghĩa là ‘tổ chức, tiến hành’, khác với 行く."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_091",
+     "g_044"
     ],
     "words": [
      {
@@ -3957,7 +4110,8 @@
      "vi": "の nối sản phẩm với Hokkaido; 有名 cần な trước danh từ. や…など nêu các ví dụ, không phải danh sách đầy đủ."
     },
     "grammarIds": [
-     "g_051"
+     "g_051",
+     "g_166"
     ]
    },
    {
@@ -3992,7 +4146,8 @@
      "vi": "ございます là dạng rất lịch sự của あります. Cụm này nói về sự có sẵn của hàng hóa, không phải hành động của khách."
     },
     "grammarIds": [
-     "g_270"
+     "g_270",
+     "g_044"
     ]
    }
   ]
@@ -4083,7 +4238,8 @@
     },
     "grammarIds": [
      "g_238",
-     "g_165"
+     "g_165",
+     "g_076"
     ]
    },
    {
@@ -4098,7 +4254,9 @@
     },
     "grammarIds": [
      "g_165",
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069"
     ],
     "words": [
      {
@@ -4130,7 +4288,8 @@
      "vi": "差し上げる là dạng khiêm nhường của あげる. Cách nói này diễn đạt việc cửa hàng kính trọng trao tặng cho khách."
     },
     "grammarIds": [
-     "g_269"
+     "g_269",
+     "g_044"
     ],
     "words": [
      {
@@ -4207,7 +4366,11 @@
      "vi": "込む → 込んでいる tả trạng thái đông. Thể thường bổ nghĩa cho 場合; は đưa trường hợp ấy thành điều kiện áp dụng lời hướng dẫn."
     },
     "grammarIds": [
-     "g_261"
+     "g_261",
+     "g_091",
+     "g_094_4",
+     "g_069",
+     "g_165"
     ],
     "words": [
      {
@@ -4279,7 +4442,8 @@
      "vi": "降る → 降って + も tạo điều kiện nhượng bộ. Kết quả phía sau vẫn thực hiện được dù có mưa."
     },
     "grammarIds": [
-     "g_255"
+     "g_255",
+     "g_091"
     ]
    },
    {
@@ -4304,7 +4468,8 @@
      "vi": "を đánh dấu tuyến đường đi qua với 通る. 通る → 通れば là điều kiện ば, nêu điều kiện để đến nơi mà không ướt."
     },
     "grammarIds": [
-     "g_084"
+     "g_084",
+     "g_085"
     ],
     "words": [
      {
@@ -4337,7 +4502,8 @@
     },
     "grammarIds": [
      "g_199",
-     "g_198"
+     "g_198",
+     "g_073"
     ]
    },
    {
@@ -4351,7 +4517,8 @@
      "vi": "来る → 来られる → 来られます ở đây là thể khả năng. Tuyến đường ấy giúp khách có thể đến mà không ướt."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ]
    }
   ]

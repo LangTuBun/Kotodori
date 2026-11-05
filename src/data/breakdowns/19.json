@@ -30,7 +30,10 @@
     "detail": {
      "en": "の links 弟 to 家; に marks the destination of 行きました.",
      "vi": "の nối 弟 với 家; に đánh dấu đích đến của 行きました."
-    }
+    },
+    "grammarIds": [
+     "g_011_5"
+    ]
    },
    {
     "text": "遊びに行きました。",
@@ -43,7 +46,8 @@
      "vi": "遊ぶ → 遊びます → 遊び + に行く diễn tả mục đích đi. 行きました cho biết chuyến đến chơi đã diễn ra."
     },
     "grammarIds": [
-     "g_058"
+     "g_058",
+     "g_044"
     ]
    },
    {
@@ -55,7 +59,11 @@
     "detail": {
      "en": "で marks where the playing took place, rather than a destination.",
      "vi": "で chỉ nơi diễn ra việc chơi, khác với に chỉ đích đến ở câu trước."
-    }
+    },
+    "grammarIds": [
+     "g_011_5",
+     "g_050_1"
+    ]
    },
    {
     "text": "弟の子供と",
@@ -66,7 +74,11 @@
     "detail": {
      "en": "弟の子供 identifies whose children they are. と marks the people the speaker played with.",
      "vi": "弟の子供 cho biết đây là con của ai. と chỉ những người cùng chơi với người kể."
-    }
+    },
+    "grammarIds": [
+     "g_011_5",
+     "g_050_3"
+    ]
    },
    {
     "text": "遊びました。",
@@ -77,7 +89,10 @@
     "detail": {
      "en": "遊ぶ → 遊びました is the polite past form. The speaker remains the understood subject.",
      "vi": "遊ぶ → 遊びました là dạng quá khứ lịch sự. Chủ thể được hiểu vẫn là người kể."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -112,7 +127,10 @@
     "detail": {
      "en": "1歳 is いっさい, with a small っ. です completes the identification of the two children.",
      "vi": "1歳 đọc là いっさい, có âm ngắt っ. です kết thúc lời giới thiệu hai bé."
-    }
+    },
+    "grammarIds": [
+     "g_001"
+    ]
    }
   ]
  },
@@ -168,6 +186,9 @@
        "vi": "các khối xếp hình"
       }
      }
+    ],
+    "grammarIds": [
+     "g_062"
     ]
    },
    {
@@ -181,7 +202,9 @@
      "vi": "遊ぶ → 遊んで → 遊んでいました diễn tả hành động đang diễn ra ở thời điểm quá khứ ấy."
     },
     "grammarIds": [
-     "g_094_1"
+     "g_094_1",
+     "g_044",
+     "g_091"
     ]
    },
    {
@@ -193,7 +216,10 @@
     "detail": {
      "en": "で marks the material used, and を marks 家 as the thing being made.",
      "vi": "で chỉ vật liệu được dùng; を đánh dấu 家 là thứ bé đang làm."
-    }
+    },
+    "grammarIds": [
+     "g_062"
+    ]
    },
    {
     "text": "作っていました。",
@@ -206,7 +232,9 @@
      "vi": "作る → 作って → 作っていました cho thấy việc xây đang diễn ra. Đây là ngôi nhà đồ chơi được ghép từ các khối xếp hình."
     },
     "grammarIds": [
-     "g_094_1"
+     "g_094_1",
+     "g_044",
+     "g_091"
     ]
    }
   ]
@@ -242,7 +270,11 @@
     "detail": {
      "en": "が introduces the person who came; this 弟 is the girl’s brother. 来る → 来て connects his arrival to the next action.",
      "vi": "が giới thiệu người đến; 弟 ở đây là em trai của bé gái. 来る → 来て nối việc đến với hành động sau."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092"
+    ]
    },
    {
     "text": "女の子の家を壊しました。",
@@ -255,7 +287,10 @@
      "vi": "を đánh dấu ngôi nhà là đối tượng của ngoại động từ 壊す → 壊しました. Khác với 壊れる chỉ việc một vật bị hỏng, 壊す diễn tả ai đó làm hỏng vật ấy."
     },
     "grammarIds": [
-     "g_161"
+     "g_161",
+     "g_044",
+     "g_011_5",
+     "g_050_2"
     ],
     "words": [
      {
@@ -300,6 +335,10 @@
        "vi": "giật mình, ngạc nhiên"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -324,7 +363,8 @@
      "vi": "壊れる → 壊れた là quá khứ thường của tự động từ, nên が khiến Yu thành người bị hỏng. Muốn nói Yu làm hỏng nhà, bé cần nói ゆうくんが家を壊した."
     },
     "grammarIds": [
-     "g_162"
+     "g_162",
+     "g_076"
     ],
     "words": [
      {
@@ -348,7 +388,8 @@
      "vi": "と đánh dấu lời trích phía trước là nội dung của 言いました. Dạng quá khứ lịch sự này thuật lại nguyên lời bé nói."
     },
     "grammarIds": [
-     "g_145"
+     "g_145",
+     "g_044"
     ]
    }
   ]
@@ -386,7 +427,9 @@
      "vi": "とても nhấn mạnh 面白い; と đánh dấu tính từ dạng thường là nội dung suy nghĩ. 思う → 思いました đặt việc nghĩ vào quá khứ."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_044",
+     "g_033_2"
     ]
    }
   ]
@@ -411,7 +454,10 @@
     "detail": {
      "en": "日本人の modifies 子供. も adds Japanese children to the foreigners who make such mistakes.",
      "vi": "日本人の bổ nghĩa cho 子供. も cho biết ngoài người nước ngoài, trẻ em Nhật cũng mắc lỗi như vậy."
-    }
+    },
+    "grammarIds": [
+     "g_003"
+    ]
    },
    {
     "text": "外国人と同じ間違いを",
@@ -445,7 +491,9 @@
      "vi": "する + んです gắn nhận xét này với lý do câu chuyện làm người kể thấy thú vị. ね tạo sắc thái cùng nhận ra hoặc mong người nghe đồng tình."
     },
     "grammarIds": [
-     "g_149"
+     "g_149",
+     "g_069",
+     "g_008_1"
     ]
    }
   ]
@@ -492,7 +540,11 @@
     "detail": {
      "en": "に marks the destination. 来る → 来ました is the polite past form.",
      "vi": "に đánh dấu đích đến. 来る → 来ました là dạng quá khứ lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_044",
+     "g_049_3"
+    ]
    },
    {
     "text": "今、",
@@ -516,7 +568,9 @@
      "vi": "住む → 住んで → 住んでいます diễn tả tình trạng sinh sống hiện tại. に chỉ nơi người kể đang sống."
     },
     "grammarIds": [
-     "g_094_5"
+     "g_094_5",
+     "g_044",
+     "g_091"
     ]
    }
   ]
@@ -554,7 +608,8 @@
      "vi": "が đánh dấu 家賃 là thứ có giá cao. から đứng sau câu lịch sự để nêu lý do cho vế tiếp theo."
     },
     "grammarIds": [
-     "g_066"
+     "g_066",
+     "g_013"
     ],
     "words": [
      {
@@ -578,7 +633,10 @@
      "vi": "を đánh dấu căn phòng được thuê. 借りる → 借りて nối việc thuê với tình trạng sinh sống ở vế sau."
     },
     "grammarIds": [
-     "g_161"
+     "g_161",
+     "g_091",
+     "g_092",
+     "g_050_2"
     ]
    },
    {
@@ -592,7 +650,9 @@
      "vi": "そこ chỉ căn phòng nhỏ; に chỉ nơi sinh sống. 住んでいます diễn tả tình trạng kéo dài đến hiện tại."
     },
     "grammarIds": [
-     "g_094_5"
+     "g_094_5",
+     "g_044",
+     "g_091"
     ]
    }
   ]
@@ -617,7 +677,10 @@
     "detail": {
      "en": "に marks the location of existence; は makes that location the topic.",
      "vi": "に chỉ nơi đồ vật tồn tại; は đưa nơi ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_041"
+    ]
    },
    {
     "text": "ベッドと机と椅子、",
@@ -628,7 +691,10 @@
     "detail": {
      "en": "と joins the nouns in a list. The comma continues the same list with another item.",
      "vi": "と nối các danh từ trong danh sách. Dấu phẩy tiếp tục danh sách với món đồ ở sau."
-    }
+    },
+    "grammarIds": [
+     "g_042"
+    ]
    },
    {
     "text": "小さい棚があります。",
@@ -639,7 +705,10 @@
     "detail": {
      "en": "小さい modifies 棚. が marks the objects in the full list, and あります states that they are in the room.",
      "vi": "小さい bổ nghĩa cho 棚. が đánh dấu các đồ vật trong cả danh sách; あります cho biết chúng có trong phòng."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -663,7 +732,10 @@
     "detail": {
      "en": "棚の上 means the top of the shelf. に marks the location; は makes it the setting for the description.",
      "vi": "棚の上 là phía trên kệ. に chỉ vị trí; は đưa vị trí ấy làm bối cảnh miêu tả."
-    }
+    },
+    "grammarIds": [
+     "g_041"
+    ]
    },
    {
     "text": "写真が飾ってあります。",
@@ -676,7 +748,9 @@
      "vi": "飾る → 飾って + あります diễn tả trạng thái còn lại sau khi ai đó chủ động bày ảnh. が đánh dấu bức ảnh đang ở trạng thái ấy."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -698,7 +772,10 @@
     "detail": {
      "en": "の identifies what the photograph shows. Its subject is understood from the previous sentence.",
      "vi": "の cho biết nội dung bức ảnh. Chủ thể được hiểu là bức ảnh đã nhắc ở câu trước."
-    }
+    },
+    "grammarIds": [
+     "g_001"
+    ]
    }
   ]
  },
@@ -744,7 +821,10 @@
     "detail": {
      "en": "と and the comma form a list. が marks the whole list as the things in the resulting state.",
      "vi": "と cùng dấu phẩy tạo danh sách. が đánh dấu cả danh sách là những vật ở trạng thái được nêu sau."
-    }
+    },
+    "grammarIds": [
+     "g_042"
+    ]
    },
    {
     "text": "置いてあります。",
@@ -757,7 +837,9 @@
      "vi": "置く → 置いて + あります diễn tả kết quả còn lại của việc ai đó đã đặt đồ ở đó. Mẫu này không nói việc đặt đồ đang diễn ra."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -792,7 +874,10 @@
     "detail": {
      "en": "机の前 is a position, with に marking the location and は setting it as the topic.",
      "vi": "机の前 chỉ vị trí; に đánh dấu nơi chốn, còn は đưa vị trí ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_041"
+    ]
    },
    {
     "text": "犬の絵が貼ってあって、",
@@ -805,7 +890,9 @@
      "vi": "貼る → 貼ってある chỉ trạng thái sau khi tranh đã được dán lên. ある → あって nối trạng thái này với vế sau."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_091",
+     "g_092"
     ],
     "words": [
      {
@@ -840,7 +927,9 @@
      "vi": "掛ける → 掛けて + あります diễn tả trạng thái đồng hồ sau khi có người treo lên. が đánh dấu chiếc đồng hồ được miêu tả."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -875,7 +964,10 @@
     "detail": {
      "en": "は presents the picture as the topic; it is the understood object of 描く.",
      "vi": "は đưa bức tranh làm chủ đề; tranh là đối tượng được hiểu của 描く."
-    }
+    },
+    "grammarIds": [
+     "g_109"
+    ]
    },
    {
     "text": "友達が",
@@ -899,7 +991,9 @@
      "vi": "描く → 描いて + くれました diễn tả hành động làm cho người kể. Trong bài, 描く đọc là えがく."
     },
     "grammarIds": [
-     "g_103"
+     "g_103",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -934,7 +1028,10 @@
     "detail": {
      "en": "の connects the bed to 横. に marks the location, and は presents that place as the topic.",
      "vi": "の nối giường với 横. に chỉ vị trí; は đưa vị trí ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_041"
+    ]
    },
    {
     "text": "服がかけてあります。",
@@ -947,7 +1044,9 @@
      "vi": "かける → かけて + あります cho biết kết quả còn lại của việc chủ động treo quần áo. が đánh dấu quần áo đang ở trạng thái ấy."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -982,7 +1081,10 @@
     "detail": {
      "en": "窓の前 names the position. に marks the location, with は making it the topic.",
      "vi": "窓の前 chỉ vị trí trước cửa sổ. に đánh dấu nơi chốn; は đưa nơi ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_041"
+    ]
    },
    {
     "text": "ギターが1台",
@@ -1006,7 +1108,9 @@
      "vi": "置く → 置いて + あります diễn tả vị trí hiện tại của ghi-ta là kết quả của việc ai đó đã đặt nó ở đó."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -1043,7 +1147,11 @@
      "vi": "置く → 置いてありました là dạng quá khứ của mẫu chỉ trạng thái kết quả. 前は nêu thời gian trước đây, も thêm piano vào danh sách, còn が mở ý tương phản."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_003",
+     "g_021",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -1067,7 +1175,8 @@
      "vi": "弾く → 弾かない là dạng phủ định thường; もう đi với phủ định nghĩa là ‘không còn… nữa’. から nêu lý do người kể cho đi cây đàn."
     },
     "grammarIds": [
-     "g_066"
+     "g_066",
+     "g_073"
     ],
     "words": [
      {
@@ -1091,7 +1200,8 @@
      "vi": "に đánh dấu người nhận; あげました là quá khứ lịch sự của あげる. Đối tượng được cho là cây piano, đã được lược bỏ."
     },
     "grammarIds": [
-     "g_104"
+     "g_104",
+     "g_044"
     ]
    }
   ]
@@ -1116,7 +1226,12 @@
     "detail": {
      "en": "狭い describes limited space. が after the polite adjective statement introduces the contrasting positive opinion.",
      "vi": "狭い diễn tả không gian chật. が đứng sau câu tính từ lịch sự để mở ý kiến tích cực tương phản."
-    }
+    },
+    "grammarIds": [
+     "g_011_5",
+     "g_013",
+     "g_021"
+    ]
    },
    {
     "text": "私は",
@@ -1140,7 +1255,8 @@
      "vi": "が đánh dấu đối tượng được yêu thích với 大好き. 大好き là tính từ な, diễn tả mức độ yêu thích mạnh hơn 好き."
     },
     "grammarIds": [
-     "g_065"
+     "g_065",
+     "g_015"
     ]
    }
   ]
@@ -1200,7 +1316,9 @@
      "vi": "置く → 置いて + あります diễn tả thiết bị đã được ai đó chủ động đặt và để sẵn cho người dùng."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -1224,7 +1342,10 @@
      "vi": "は đối chiếu bảng trắng với các thiết bị vừa kể. 置いてありません là phủ định của 置いてあります: không có bảng trắng được đặt ở đó."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_048",
+     "g_091",
+     "g_109"
     ]
    }
   ]
@@ -1284,7 +1405,9 @@
      "vi": "置く → 置いて + あります nhấn mạnh thiết bị vẫn ở vị trí đã được ai đó sắp đặt."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -1332,7 +1455,9 @@
      "vi": "が đánh dấu các đồ nội thất được liệt kê. 置く → 置いて + あります diễn tả trạng thái sau khi đồ đã được chủ động đặt trong phòng."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -1378,7 +1503,10 @@
     "detail": {
      "en": "音楽教室パーティー is a compound meaning a party for a music class. など leaves room for other examples, and に marks the uses being recommended.",
      "vi": "音楽教室パーティー là cụm danh từ ghép chỉ tiệc của lớp nhạc. など cho biết còn các ví dụ khác; に đánh dấu mục đích sử dụng được gợi ý."
-    }
+    },
+    "grammarIds": [
+     "g_051"
+    ]
    },
    {
     "text": "おすすめです。",
@@ -1423,7 +1551,10 @@
     "detail": {
      "en": "で marks the activity location, and は makes Room C the topic of this particular rule.",
      "vi": "で chỉ nơi diễn ra hoạt động; は đưa phòng C làm chủ đề của quy định này."
-    }
+    },
+    "grammarIds": [
+     "g_050_1"
+    ]
    },
    {
     "text": "食べ物を食べることができません。",
@@ -1436,7 +1567,11 @@
      "vi": "食べる + こと biến hành động thành cụm danh từ, theo sau là ができません. Ở đây mẫu khả năng phủ định diễn tả quy định của nơi cho thuê, không phải không có khả năng ăn."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_048",
+     "g_069",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1448,7 +1583,10 @@
     "detail": {
      "en": "全部の modifies 部屋. で marks where the Wi-Fi can be used.",
      "vi": "全部の bổ nghĩa cho 部屋. で chỉ nơi có thể sử dụng Wi-Fi."
-    }
+    },
+    "grammarIds": [
+     "g_050_1"
+    ]
    },
    {
     "text": "Wi-Fiが使えます。",
@@ -1462,7 +1600,8 @@
     },
     "grammarIds": [
      "g_061_1",
-     "g_061_2"
+     "g_061_2",
+     "g_044"
     ]
    }
   ]
@@ -1489,7 +1628,9 @@
      "vi": "空く → 空いて + います diễn tả phòng đang còn trống để sử dụng. 空く ở đây đọc là あく, nên 空いて đọc là あいて."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -1511,7 +1652,12 @@
     "detail": {
      "en": "空いていません is the polite negative of 空いています. In the calendar it means the room is not available to book.",
      "vi": "空いていません là phủ định lịch sự của 空いています. Trong lịch, dạng này có nghĩa phòng không còn trống để đặt."
-    }
+    },
+    "grammarIds": [
+     "g_048",
+     "g_091",
+     "g_094_4"
+    ]
    }
   ]
  },
@@ -1636,6 +1782,14 @@
        "vi": "đặt trước, đăng ký"
       }
      }
+    ],
+    "grammarIds": [
+     "g_021",
+     "g_044",
+     "g_091",
+     "g_094_4",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1661,7 +1815,8 @@
     },
     "grammarIds": [
      "g_138",
-     "g_162"
+     "g_162",
+     "g_069"
     ],
     "words": [
      {
@@ -1712,7 +1867,10 @@
      "vi": "勉強をする → 勉強をして nối việc học với hoạt động dự kiến tiếp theo. Vị ngữ cuối quyết định thì và mức độ lịch sự của câu."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1740,7 +1898,10 @@
      "vi": "の nối ベトナム với 音楽; を đánh dấu nội dung được nghe. 聞く → 聞いて nối việc nghe nhạc với hoạt động tiệc."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1752,7 +1913,12 @@
     "detail": {
      "en": "小さい modifies パーティー. パーティーをする means to have or hold a party, and します refers to the planned future event here.",
      "vi": "小さい bổ nghĩa cho パーティー. パーティーをする nghĩa là tổ chức tiệc; します ở đây chỉ sự kiện dự kiến trong tương lai."
-    }
+    },
+    "grammarIds": [
+     "g_044",
+     "g_050_2",
+     "g_161"
+    ]
    }
   ]
  },
@@ -1776,7 +1942,10 @@
     "detail": {
      "en": "で marks the setting for eating. は presents the party as the topic, before the sentence turns to the class.",
      "vi": "で chỉ bối cảnh ăn uống. は đưa buổi tiệc làm chủ đề, trước khi câu sau chuyển sang lớp học."
-    }
+    },
+    "grammarIds": [
+     "g_050_1"
+    ]
    },
    {
     "text": "バイン・ミーやお菓子を",
@@ -1801,7 +1970,10 @@
     "detail": {
      "en": "The polite nonpast form describes a planned action. The people attending the party are the understood subject.",
      "vi": "Dạng lịch sự phi quá khứ diễn tả hành động dự kiến. Chủ thể được hiểu là những người dự tiệc."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    },
    {
     "text": "ベトナム語教室では、",
@@ -1812,7 +1984,10 @@
     "detail": {
      "en": "で marks the setting for using the board; は shifts the topic to the class. 教室 refers to the class activity here.",
      "vi": "で chỉ bối cảnh dùng bảng; は chuyển chủ đề sang lớp học. 教室 ở đây chỉ lớp học với tư cách hoạt động."
-    }
+    },
+    "grammarIds": [
+     "g_050_1"
+    ]
    },
    {
     "text": "ホワイトボードを使いたいです。",
@@ -1825,7 +2000,9 @@
      "vi": "使う → 使います → 使いたいです diễn tả hành động mong muốn. を đánh dấu bảng trắng là thứ muốn sử dụng."
     },
     "grammarIds": [
-     "g_059"
+     "g_059",
+     "g_050_2",
+     "g_161"
     ]
    }
   ]
@@ -1922,7 +2099,10 @@
      "vi": "並べる → 並べて + あります báo việc chuẩn bị đã hoàn tất; đối tượng 机 được đưa làm chủ đề bằng は. もう cho biết việc xếp bàn đã xong rồi."
     },
     "grammarIds": [
-     "g_164"
+     "g_164",
+     "g_044",
+     "g_091",
+     "g_109"
     ],
     "words": [
      {
@@ -1946,7 +2126,10 @@
      "vi": "買う → 買って + あります cho biết đồ uống đã được mua để chuẩn bị. も thay を, thêm việc này vào việc xếp bàn đã xong."
     },
     "grammarIds": [
-     "g_164"
+     "g_164",
+     "g_003",
+     "g_044",
+     "g_091"
     ]
    }
   ]
@@ -1995,7 +2178,9 @@
      "vi": "が đánh dấu cửa sổ là chủ thể của tự động từ 開く, đọc là あく. 開く → 開いて nối việc cửa mở với việc áp phích rơi."
     },
     "grammarIds": [
-     "g_162"
+     "g_162",
+     "g_091",
+     "g_092"
     ],
     "words": [
      {
@@ -2019,7 +2204,8 @@
      "vi": "落ちる → 落ちました là quá khứ lịch sự của tự động từ. が đánh dấu áp phích đã rơi; đối chiếu với ngoại động từ 落とす là ‘làm rơi’."
     },
     "grammarIds": [
-     "g_162"
+     "g_162",
+     "g_044"
     ],
     "words": [
      {
@@ -2067,7 +2253,10 @@
      "vi": "を đánh dấu đối tượng của ngoại động từ 閉める → 閉めて. Đây là ai đó đóng cửa sổ, khác với tự động từ 閉まる nghĩa là ‘cửa đóng lại’."
     },
     "grammarIds": [
-     "g_161"
+     "g_161",
+     "g_091",
+     "g_092",
+     "g_050_2"
     ]
    },
    {
@@ -2081,7 +2270,9 @@
      "vi": "を đánh dấu áp phích là vật chịu tác động; もう一度 nghĩa là ‘một lần nữa’. はる → はりました diễn tả việc dán lên ở dạng quá khứ lịch sự."
     },
     "grammarIds": [
-     "g_161"
+     "g_161",
+     "g_044",
+     "g_050_2"
     ],
     "words": [
      {
@@ -2140,7 +2331,10 @@
      "vi": "何か nghĩa là ‘cái gì đó’; trợ từ chủ ngữ が được lược bỏ. 書く → 書いて + ありますか hỏi xem có nội dung nào đã được chủ động viết sẵn ở đó không."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091",
+     "g_052"
     ]
    }
   ]
@@ -2190,7 +2384,9 @@
     },
     "grammarIds": [
      "g_163",
-     "g_158"
+     "g_158",
+     "g_044",
+     "g_091"
     ]
    }
   ]
@@ -2225,6 +2421,9 @@
        "vi": "điện; ở đây: đèn"
       }
      }
+    ],
+    "grammarIds": [
+     "g_109"
     ]
    },
    {
@@ -2253,7 +2452,8 @@
     },
     "grammarIds": [
      "g_161",
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -2288,7 +2488,10 @@
     "detail": {
      "en": "の identifies which appliance the remote belongs to. は presents that remote as the topic.",
      "vi": "の cho biết điều khiển thuộc thiết bị nào. は đưa chiếc điều khiển ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_011_5"
+    ]
    },
    {
     "text": "机の上に",
@@ -2312,7 +2515,9 @@
      "vi": "置く → 置いて + あります diễn tả vị trí còn giữ nguyên sau khi ai đó đặt điều khiển. Vật vốn đi với が đã được đưa làm chủ đề bằng は."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -2371,7 +2576,9 @@
      "vi": "入れる → 入れて + あります diễn tả trạng thái sau khi ai đó đã cho khăn vào đó. 入れる là ngoại động từ; đối chiếu với 入る nghĩa là ‘đi vào’."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_044",
+     "g_091"
     ]
    }
   ]
@@ -2396,7 +2603,10 @@
     "detail": {
      "en": "夜 makes clear that 11時 is at night. に marks the scheduled time.",
      "vi": "夜 cho biết 11時 là giờ ban đêm. に đánh dấu thời điểm theo lịch."
-    }
+    },
+    "grammarIds": [
+     "g_045"
+    ]
    },
    {
     "text": "玄関のドアが",
@@ -2420,7 +2630,8 @@
      "vi": "閉まる → 閉まります là dạng lịch sự của tự động từ. Mẫu này diễn tả cửa đóng lại; ngoại động từ 閉める diễn tả ai đó đóng cửa."
     },
     "grammarIds": [
-     "g_162"
+     "g_162",
+     "g_044"
     ],
     "words": [
      {
@@ -2457,7 +2668,9 @@
      "vi": "より nêu mốc so sánh; 遅い → 遅く + なる nghĩa là ‘trở nên muộn’. 11時より遅くなる bổ nghĩa cho 人; は đưa những khách ấy làm chủ đề."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_027",
+     "g_069"
     ]
    },
    {
@@ -2492,7 +2705,8 @@
      "vi": "言う → 言って + ください tạo lời yêu cầu lịch sự báo cho lễ tân. Nội dung cần báo là việc khách sẽ về muộn."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    },
    {
@@ -2535,6 +2749,9 @@
        "vi": "dạy / cho biết; ở đây: cho biết"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -2559,7 +2776,10 @@
     "detail": {
      "en": "の links the kitchen to its refrigerator. は makes the refrigerator the topic in place of object を.",
      "vi": "の nối nhà bếp với tủ lạnh ở đó. は đưa tủ lạnh làm chủ đề, thay cho を chỉ đối tượng."
-    }
+    },
+    "grammarIds": [
+     "g_109"
+    ]
    },
    {
     "text": "自由に",
@@ -2596,7 +2816,8 @@
      "vi": "使う → 使って + もいいです diễn tả sự cho phép. Mẫu này cho biết được phép dùng, không phải nói về khả năng sử dụng."
     },
     "grammarIds": [
-     "g_098_1"
+     "g_098_1",
+     "g_091"
     ]
    }
   ]
@@ -2642,6 +2863,9 @@
        "vi": "bản thân, của mình"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5"
     ]
    },
    {
@@ -2655,7 +2879,10 @@
      "vi": "を đánh dấu 名前 là nội dung cần viết. 書く → 書いて + ください tạo lời yêu cầu lịch sự."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ]
    }
   ]
@@ -2680,7 +2907,10 @@
     "detail": {
      "en": "の identifies the bread as being for breakfast. は replaces object を to make the prepared item the topic.",
      "vi": "の xác định đây là bánh mì dành cho bữa sáng. は thay を chỉ đối tượng để đưa món đã chuẩn bị làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_109"
+    ]
    },
    {
     "text": "もう台所に",
@@ -2704,7 +2934,9 @@
      "vi": "用意する → 用意して + あります cho biết việc chuẩn bị đã hoàn tất để dùng sau đó. Bánh mì được chuẩn bị là chủ đề đã đánh dấu bằng は ở trước."
     },
     "grammarIds": [
-     "g_164"
+     "g_164",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {

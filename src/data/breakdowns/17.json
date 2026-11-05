@@ -30,7 +30,11 @@
     "detail": {
      "en": "時間ある is casual 時間がある, with が omitted. Rising intonation makes it a question about having time.",
      "vi": "時間ある là cách nói thân mật của 時間がある, lược が. Lên giọng để hỏi người nghe có thời gian không."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_070"
+    ]
    },
    {
     "text": "映画のチケットがあるんだけど、",
@@ -43,7 +47,9 @@
      "vi": "の nối vé với phim, còn が đánh dấu thứ người nói có. ある + んだけど nêu hoàn cảnh trước khi đưa ra lời mời."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_069",
+     "g_034"
     ]
    },
    {
@@ -57,7 +63,8 @@
      "vi": "行く → 行かない có hình thức phủ định, nhưng 一緒に…ない？ ở đây dùng để rủ người nghe cùng đi."
     },
     "grammarIds": [
-     "g_074"
+     "g_074",
+     "g_073"
     ]
    }
   ]
@@ -82,7 +89,11 @@
     "detail": {
      "en": "いい expresses a positive reaction. ね invites agreement and makes the response friendly.",
      "vi": "いい thể hiện phản ứng tích cực. ね tạo cảm giác đồng tình, thân mật."
-    }
+    },
+    "grammarIds": [
+     "g_008_1",
+     "g_033_2"
+    ]
    },
    {
     "text": "行きたい！",
@@ -180,7 +191,8 @@
     },
     "grammarIds": [
      "g_147",
-     "g_149"
+     "g_149",
+     "g_069"
     ]
    }
   ]
@@ -232,7 +244,8 @@
      "vi": "する → しない là thể phủ định thường. Khi lên giọng hỏi, nó trở thành lời rủ thân mật."
     },
     "grammarIds": [
-     "g_074"
+     "g_074",
+     "g_073"
     ]
    }
   ]
@@ -271,7 +284,11 @@
     },
     "grammarIds": [
      "g_147",
-     "g_149"
+     "g_149",
+     "g_078",
+     "g_091",
+     "g_094_1",
+     "g_076"
     ]
    },
    {
@@ -283,7 +300,10 @@
     "detail": {
      "en": "も adds shopping to the film as another activity the speaker wants to do.",
      "vi": "も thêm mua sắm vào những việc người nói muốn làm, bên cạnh xem phim."
-    }
+    },
+    "grammarIds": [
+     "g_003"
+    ]
    },
    {
     "text": "したいな。",
@@ -370,7 +390,8 @@
      "vi": "食べる → 食べて + から xác định việc ăn diễn ra trước hành động tiếp theo."
     },
     "grammarIds": [
-     "g_093"
+     "g_093",
+     "g_091"
     ]
    },
    {
@@ -423,7 +444,8 @@
      "vi": "食べる → 食べない là thể phủ định thường. Trong câu hỏi này, nó là lời rủ ‘cùng ăn nhé?’, không phải hỏi về việc không ăn."
     },
     "grammarIds": [
-     "g_074"
+     "g_074",
+     "g_073"
     ]
    }
   ]
@@ -472,7 +494,8 @@
      "vi": "ある + んだ nêu thông tin giải thích: có quán này nên người nói đề nghị ăn ở gần đó."
     },
     "grammarIds": [
-     "g_149"
+     "g_149",
+     "g_069"
     ]
    }
   ]
@@ -521,7 +544,9 @@
      "vi": "を đánh dấu bữa ăn; 食べる → 食べて nối việc ăn trưa với hoạt động tiếp theo."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091",
+     "g_050_2"
     ]
    },
    {
@@ -592,7 +617,8 @@
      "vi": "が đánh dấu công việc đã có trong lịch. ある + んだ giải thích vì sao người nói không thể ăn trưa lúc 12 giờ."
     },
     "grammarIds": [
-     "g_149"
+     "g_149",
+     "g_069"
     ]
    }
   ]
@@ -641,7 +667,9 @@
      "vi": "行く → 行ける → 行けない là phủ định của thể khả năng. な và khoảng ngập ngừng cuối câu tạo giọng tiếc nuối nhẹ nhàng."
     },
     "grammarIds": [
-     "g_075"
+     "g_075",
+     "g_061_1",
+     "g_073"
     ]
    }
   ]
@@ -727,7 +755,8 @@
      "vi": "行く → 行こう là thể ý chí. よ khiến lời rủ rõ ràng và có tính thúc giục thân mật."
     },
     "grammarIds": [
-     "g_079"
+     "g_079",
+     "g_008_2"
     ]
    }
   ]
@@ -768,7 +797,9 @@
      "vi": "で đánh dấu nơi gặp. 会う → 会って nối việc gặp với kế hoạch tiếp theo."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091",
+     "g_050_1"
     ]
    },
    {
@@ -856,7 +887,9 @@
      "vi": "見る → 見て + から cho biết việc xem phim hoàn tất trước hành động tiếp theo."
     },
     "grammarIds": [
-     "g_093"
+     "g_093",
+     "g_091",
+     "g_050_2"
     ]
    },
    {
@@ -870,7 +903,8 @@
      "vi": "を đánh dấu bữa ăn. 食べる → 食べよう là thể ý chí dùng để rủ cùng làm."
     },
     "grammarIds": [
-     "g_079"
+     "g_079",
+     "g_050_2"
     ]
    }
   ]
@@ -1016,7 +1050,9 @@
      "vi": "聞く → 聞いた là quá khứ thường. Thêm んですが để lấy điều đã nghe làm lời dẫn lịch sự vào câu chuyện."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_076",
+     "g_021"
     ],
     "words": [
      {
@@ -1063,7 +1099,10 @@
     },
     "grammarIds": [
      "g_083",
-     "g_144"
+     "g_144",
+     "g_076",
+     "g_069",
+     "g_008_1"
     ],
     "words": [
      {
@@ -1100,7 +1139,8 @@
      "vi": "ちょっと làm lời mở đầu nhẹ hơn, không nhất thiết chỉ việc rất nhỏ. お願いがある + んですが nêu hoàn cảnh trước lời nhờ."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_021"
     ],
     "words": [
      {
@@ -1156,7 +1196,8 @@
      "vi": "教える → 教えて + くださいませんか tạo lời nhờ rất lịch sự. Cách hỏi phủ định giúp người nghe có khoảng lựa chọn khi trả lời."
     },
     "grammarIds": [
-     "g_101"
+     "g_101",
+     "g_091"
     ]
    }
   ]
@@ -1261,7 +1302,8 @@
      "vi": "来る + んです trình bày chuyến đến đã dự định như lý do cần học tiếng Việt."
     },
     "grammarIds": [
-     "g_149"
+     "g_149",
+     "g_069"
     ]
    }
   ]
@@ -1334,7 +1376,9 @@
     },
     "grammarIds": [
      "g_144",
-     "g_150"
+     "g_150",
+     "g_069",
+     "g_021"
     ]
    },
    {
@@ -1346,7 +1390,10 @@
     "detail": {
      "en": "も shows that the writer also wants to make an effort to communicate.",
      "vi": "も cho thấy người viết cũng muốn góp phần giúp hai bên giao tiếp."
-    }
+    },
+    "grammarIds": [
+     "g_003"
+    ]
    },
    {
     "text": "ベトナム語で",
@@ -1370,7 +1417,9 @@
      "vi": "少し giới hạn mức độ; 話す → 話したい diễn tả mong muốn. んです giải thích động cơ, còn よね mong người nghe hiểu và đồng cảm."
     },
     "grammarIds": [
-     "g_148"
+     "g_148",
+     "g_078",
+     "g_008_3"
     ]
    }
   ]
@@ -1411,7 +1460,8 @@
      "vi": "どうぞ mời khách tự nhiên dùng món ăn. 食べる → 食べて + ください ở đây là lời mời lịch sự; など khép lại các ví dụ."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    },
    {
@@ -1474,7 +1524,9 @@
     },
     "grammarIds": [
      "g_147",
-     "g_066"
+     "g_066",
+     "g_003",
+     "g_044"
     ]
    },
    {
@@ -1529,6 +1581,10 @@
        "vi": "lời cảm ơn, quà đáp lễ"
       }
      }
+    ],
+    "grammarIds": [
+     "g_109",
+     "g_044"
     ]
    }
   ]
@@ -1553,7 +1609,12 @@
     "detail": {
      "en": "が marks what Hayashi likes. 好きでしたよね recalls a previously learned preference; the past form does not necessarily mean the preference has ended.",
      "vi": "が đánh dấu thứ Hayashi thích. 好きでしたよね gợi lại sở thích đã biết từ trước; dạng quá khứ không nhất thiết có nghĩa bây giờ không còn thích."
-    }
+    },
+    "grammarIds": [
+     "g_065",
+     "g_023",
+     "g_008_3"
+    ]
    },
    {
     "text": "ケーキでもいいし、",
@@ -1629,7 +1690,9 @@
      "vi": "教える → 教えて + くださる diễn tả việc Hayashi cho biết với sự kính trọng. くださる → くだされば biến việc đó thành điều kiện."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_091",
+     "g_084"
     ],
     "words": [
      {
@@ -1672,6 +1735,9 @@
        "vi": "mời ai ăn, đãi ăn"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -1717,7 +1783,13 @@
     "detail": {
      "en": "待つ → 待ち gives the stem in the humble expression お待ちする. お待ちしています politely presents the writer as waiting for the reply.",
      "vi": "待つ → 待ち là thân động từ trong cách nói khiêm nhường お待ちする. お待ちしています diễn tả lịch sự việc người viết đang chờ hồi âm."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_094_5",
+     "g_094_1",
+     "g_044"
+    ]
    }
   ]
  },
@@ -1754,7 +1826,9 @@
      "vi": "入る → 入りたい diễn tả ý muốn vào học. Thêm んですが để lịch sự dẫn vào câu hỏi xin hướng dẫn."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_078",
+     "g_021"
     ],
     "words": [
      {
@@ -1778,7 +1852,9 @@
      "vi": "する → すれば là dạng điều kiện. どう + すればいいですか hỏi làm thế nào thì tốt, tức là xin lời hướng dẫn."
     },
     "grammarIds": [
-     "g_086"
+     "g_086",
+     "g_084",
+     "g_085"
     ]
    }
   ]
@@ -1826,7 +1902,8 @@
      "vi": "申し込む → 申し込んで là thể て, nối bước đăng ký với bước làm thẻ."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091"
     ],
     "words": [
      {
@@ -1861,7 +1938,8 @@
      "vi": "作る → 作って + ください tạo lời hướng dẫn lịch sự."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    },
    {
@@ -1886,7 +1964,8 @@
      "vi": "無料で nghĩa là không mất phí. 作る → 作れる → 作れます là thể khả năng lịch sự, cho biết có thể làm thẻ."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ],
     "words": [
      {
@@ -1944,7 +2023,9 @@
      "vi": "わかる → わからない là phủ định thường. んですが đưa khó khăn này làm lời dẫn cho câu hỏi."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_073",
+     "g_021"
     ]
    },
    {
@@ -1969,7 +2050,9 @@
      "vi": "入る → 入れば là dạng điều kiện. Kết hợp với どの và いいですか, câu hỏi xin tư vấn nên chọn lớp nào."
     },
     "grammarIds": [
-     "g_086"
+     "g_086",
+     "g_084",
+     "g_085"
     ],
     "words": [
      {
@@ -2006,7 +2089,9 @@
      "vi": "する → して nối việc kiểm tra với việc xếp lớp. を đánh dấu bài kiểm tra được thực hiện."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091",
+     "g_050_2"
     ]
    },
    {
@@ -2028,6 +2113,10 @@
        "vi": "quyết định"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_050_2"
     ]
    },
    {
@@ -2118,7 +2207,9 @@
      "vi": "払う → 払えば là dạng điều kiện. Kết hợp với どうやって và いいですか để hỏi nên thanh toán bằng cách nào."
     },
     "grammarIds": [
-     "g_086"
+     "g_086",
+     "g_084",
+     "g_085"
     ],
     "words": [
      {
@@ -2163,6 +2254,9 @@
        "vi": "tiền mặt"
       }
      }
+    ],
+    "grammarIds": [
+     "g_042"
     ]
    },
    {
@@ -2176,7 +2270,8 @@
      "vi": "使う → 使える → 使えます là thể khả năng lịch sự. Câu cho biết các phương thức thanh toán này dùng được."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ]
    }
   ]
@@ -2274,7 +2369,8 @@
      "vi": "払う → 払って + ください là lời hướng dẫn thanh toán lịch sự."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -2333,7 +2429,8 @@
      "vi": "払う → 払って + ください lịch sự hướng dẫn người học thực hiện."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -2398,7 +2495,9 @@
      "vi": "通う → 通いたい diễn tả mong muốn đi học đều đặn. んですが nêu nguyện vọng này trước khi hỏi có thực hiện được không."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_078",
+     "g_021"
     ],
     "words": [
      {
@@ -2420,7 +2519,11 @@
     "detail": {
      "en": "できる asks about feasibility. The omitted subject is attending on that once-a-week schedule.",
      "vi": "できる hỏi việc đó có khả thi không. Điều được lược là việc học theo lịch một tuần một lần."
-    }
+    },
+    "grammarIds": [
+     "g_061_1",
+     "g_044"
+    ]
    }
   ]
  },
@@ -2500,7 +2603,8 @@
      "vi": "受ける → 受けられる → 受けられます là thể khả năng lịch sự. 授業を受ける ở đây là tham gia buổi học, không phải nhận một đồ vật."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ],
     "words": [
      {
@@ -2545,6 +2649,9 @@
        "vi": "giờ học, buổi học"
       }
      }
+    ],
+    "grammarIds": [
+     "g_042"
     ]
    },
    {
@@ -2604,7 +2711,8 @@
      "vi": "使う → 使える → 使えません là phủ định khả năng. Phủ định này hoàn thành mẫu しか; không có nghĩa tiền mặt không dùng được."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_048"
     ]
    }
   ]
@@ -2653,7 +2761,8 @@
      "vi": "とても nhấn mạnh 苦手, là tính từ な nên cần な trước んですが. Cụm này nêu điều băn khoăn trước câu hỏi."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_021"
     ],
     "words": [
      {
@@ -2688,7 +2797,8 @@
      "vi": "入る → 入れる → 入れます là thể khả năng lịch sự. Ở đây câu hỏi nói về việc có được nhập học không, không phải bước vào phòng."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ],
     "words": [
      {
@@ -2747,7 +2857,9 @@
      "vi": "を đánh dấu môn được dạy. から gắn sau động từ lịch sự để nêu lý do người học có thể yên tâm."
     },
     "grammarIds": [
-     "g_066"
+     "g_066",
+     "g_044",
+     "g_050_2"
     ]
    },
    {
@@ -2761,7 +2873,8 @@
      "vi": "安心する → 安心して + ください là lời nhắn lịch sự, dùng ở đây để trấn an người học."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -2831,7 +2944,10 @@
     },
     "grammarIds": [
      "g_071",
-     "g_066"
+     "g_066",
+     "g_069",
+     "g_050_2",
+     "g_044"
     ]
    },
    {
@@ -2880,7 +2996,8 @@
      "vi": "来る → 来て + ください tạo lời mời lịch sự đến trường."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    }
   ]
@@ -3046,7 +3163,12 @@
      "vi": "勉強する → 勉強したい diễn tả mong muốn được と dẫn lại. 思う → 思っています cho thấy đây là ý định đang có của Morita."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_078",
+     "g_091",
+     "g_094_5",
+     "g_094_1",
+     "g_044"
     ]
    }
   ]
@@ -3071,7 +3193,10 @@
     "detail": {
      "en": "は replaces the object marker を to make English the topic.",
      "vi": "は thay trợ từ chỉ đối tượng を để lấy tiếng Anh làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_109"
+    ]
    },
    {
     "text": "中学校と高校でしか",
@@ -3084,7 +3209,8 @@
      "vi": "と nối hai cấp học; で chỉ nơi học. しか giới hạn phạm vi đó và cần vị ngữ phủ định."
     },
     "grammarIds": [
-     "g_107"
+     "g_107",
+     "g_042"
     ],
     "words": [
      {
@@ -3116,7 +3242,9 @@
      "vi": "勉強する → 勉強した + ことがありません là dạng phủ định của trải nghiệm. Đi với しか, cả câu cho biết chỉ từng học trong những môi trường đã nêu."
     },
     "grammarIds": [
-     "g_083"
+     "g_083",
+     "g_076",
+     "g_048"
     ]
    }
   ]
@@ -3199,7 +3327,12 @@
      "vi": "入る → 入りたい diễn tả mong muốn; と đánh dấu nội dung đó. 思っています thuật lại ý định đang có của Morita."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_078",
+     "g_091",
+     "g_094_5",
+     "g_094_1",
+     "g_044"
     ],
     "words": [
      {
@@ -3236,7 +3369,8 @@
      "vi": "に đánh dấu trường muốn vào học. 入る giữ thể từ điển trước 前に, có nghĩa là ‘trước khi làm’."
     },
     "grammarIds": [
-     "g_080_1"
+     "g_080_1",
+     "g_069"
     ],
     "words": [
      {
@@ -3319,7 +3453,8 @@
      "vi": "する → した là quá khứ; どうした hỏi đã xảy ra chuyện gì. んですか yêu cầu giải thích dựa trên vẻ ngoài của Kim."
     },
     "grammarIds": [
-     "g_153"
+     "g_153",
+     "g_076"
     ]
    },
    {
@@ -3342,7 +3477,11 @@
     "detail": {
      "en": "赤い describes the face’s colour. よ draws Kim’s attention to what Mori has noticed.",
      "vi": "赤い mô tả màu của khuôn mặt. よ hướng sự chú ý của Kim đến điều Mori vừa nhận thấy."
-    }
+    },
+    "grammarIds": [
+     "g_013",
+     "g_008_2"
+    ]
    }
   ]
  },
@@ -3390,7 +3529,8 @@
      "vi": "走る → 走った là quá khứ thường. Thêm んです để giải thích hành động đó dẫn đến vẻ ngoài hiện tại của Kim."
     },
     "grammarIds": [
-     "g_148"
+     "g_148",
+     "g_076"
     ]
    }
   ]
@@ -3442,7 +3582,8 @@
      "vi": "止まる → 止まった là quá khứ. んです lấy việc tàu chậm làm lý do Kim đến muộn và phải chạy."
     },
     "grammarIds": [
-     "g_149"
+     "g_149",
+     "g_076"
     ]
    }
   ]
@@ -3499,7 +3640,11 @@
     "detail": {
      "en": "始まる → 始まりました is polite past. もう means ‘already’, and よ supplies information Kim may not know.",
      "vi": "始まる → 始まりました là quá khứ lịch sự. もう nghĩa là ‘đã…rồi’, còn よ báo điều Kim có thể chưa biết."
-    }
+    },
+    "grammarIds": [
+     "g_044",
+     "g_008_2"
+    ]
    }
   ]
  },
@@ -3565,7 +3710,9 @@
      "vi": "に đánh dấu nơi để quên tài liệu. 忘れる → 忘れた + んですが nêu vấn đề trước khi nhờ giúp."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_076",
+     "g_021"
     ]
    },
    {
@@ -3590,7 +3737,8 @@
      "vi": "見る → 見て + もいいですか dùng để xin phép làm việc đó."
     },
     "grammarIds": [
-     "g_097"
+     "g_097",
+     "g_091"
     ]
    }
   ]
@@ -3615,7 +3763,11 @@
     "detail": {
      "en": "いいです grants the requested permission. よ makes the reassuring answer clear to Kim.",
      "vi": "いいです chấp nhận lời xin phép. よ làm rõ lời đáp trấn an dành cho Kim."
-    }
+    },
+    "grammarIds": [
+     "g_013",
+     "g_008_2"
+    ]
    },
    {
     "text": "一緒に",
@@ -3675,7 +3827,10 @@
     "detail": {
      "en": "The two の links identify Linh by the neighbouring room. ですが serves as a polite lead-in, without the explanatory ん in んですが.",
      "vi": "Hai の nối thành cách giới thiệu Linh ở phòng bên. ですが dùng làm lời dẫn lịch sự; ở đây không có ん giải thích như trong んですが."
-    }
+    },
+    "grammarIds": [
+     "g_021"
+    ]
    },
    {
     "text": "ちょっといいですか。",
@@ -3686,7 +3841,10 @@
     "detail": {
      "en": "ちょっと softens the request. いいですか asks whether it is all right to take a little of the listener’s time.",
      "vi": "ちょっと làm lời đề nghị nhẹ hơn. いいですか hỏi có thể xin người nghe chút thời gian hay không."
-    }
+    },
+    "grammarIds": [
+     "g_017"
+    ]
    }
   ]
  },
@@ -3723,7 +3881,8 @@
      "vi": "どうした hỏi có chuyện gì đã xảy ra. Thêm んですか để hỏi lý do Linh sang gặp, chứ không chỉ mong câu trả lời có hoặc không."
     },
     "grammarIds": [
-     "g_151"
+     "g_151",
+     "g_076"
     ]
    }
   ]
@@ -3842,7 +4001,8 @@
      "vi": "が đánh dấu công việc đã có trong lịch. あります + から lịch sự nêu lý do muốn ngủ sớm."
     },
     "grammarIds": [
-     "g_066"
+     "g_066",
+     "g_044"
     ]
    },
    {
@@ -3856,7 +4016,9 @@
      "vi": "早い → 早く bổ nghĩa cho 寝る; 寝る → 寝たい diễn tả mong muốn. んですが kèm khoảng bỏ lửng để người nghe tự hiểu lời nhờ."
     },
     "grammarIds": [
-     "g_150"
+     "g_150",
+     "g_078",
+     "g_021"
     ]
    }
   ]
@@ -3915,7 +4077,8 @@
      "vi": "が đánh dấu người em là chủ thể. 来る → 来ている chỉ việc đã đến và vẫn ở đây; 来ていて nối hoàn cảnh này với vế sau."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_091"
     ]
    },
    {
@@ -3951,7 +4114,9 @@
      "vi": "練習する → 練習している diễn tả việc luyện tập trong thời gian này. んです giải thích tiếng ồn Linh vừa phản ánh."
     },
     "grammarIds": [
-     "g_148"
+     "g_148",
+     "g_091",
+     "g_094_1"
     ],
     "words": [
      {
@@ -3999,7 +4164,8 @@
      "vi": "出る ở đây nghĩa là tham gia cuộc thi. 出る ở thể từ điển + らしいです truyền đạt thông tin gián tiếp về dự định đó."
     },
     "grammarIds": [
-     "g_142"
+     "g_142",
+     "g_069"
     ],
     "words": [
      {
@@ -4075,7 +4241,8 @@
      "vi": "いい ở thể thường + と思います nêu nhận định của Linh. Cách nói này làm điều kiện về giờ nhẹ nhàng hơn mệnh lệnh trực tiếp."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_044"
     ]
    }
   ]
@@ -4100,7 +4267,10 @@
     "detail": {
      "en": "わかる → わかりました is polite past, used here to acknowledge and accept the arrangement.",
      "vi": "わかる → わかりました là quá khứ lịch sự, ở đây dùng để xác nhận đã hiểu và đồng ý với thỏa thuận."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    },
    {
     "text": "弟に",
@@ -4122,7 +4292,10 @@
     "detail": {
      "en": "言う → 言います is polite non-past, expressing the next action here. What will be said is understood from the agreement.",
      "vi": "言う → 言います là dạng phi quá khứ lịch sự, ở đây diễn tả hành động sắp làm. Nội dung sẽ nói được hiểu từ thỏa thuận vừa có."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  }

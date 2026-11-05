@@ -19,7 +19,10 @@
     "detail": {
      "en": "に sets the domain in which the words exist; は makes that domain the topic.",
      "vi": "に chỉ phạm vi tồn tại của các từ; は đưa phạm vi đó thành chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_041"
+    ]
    },
    {
     "text": "和語と漢語が",
@@ -48,6 +51,9 @@
        "vi": "từ Hán Nhật"
       }
      }
+    ],
+    "grammarIds": [
+     "g_042"
     ]
    },
    {
@@ -59,7 +65,10 @@
     "detail": {
      "en": "あります expresses the existence of things, here categories of words.",
      "vi": "あります diễn tả sự tồn tại của sự vật, ở đây là các loại từ."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -96,7 +105,8 @@
      "vi": "日本に chỉ nơi các từ tồn tại, còn 昔から là từ xa xưa. ある bổ nghĩa cho 言葉; で là dạng nối của です, nối hai định nghĩa."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -121,7 +131,8 @@
      "vi": "から chỉ nguồn gốc. 来る → 来た là thể quá khứ thường, bổ nghĩa cho 言葉 để nói các từ bắt nguồn từ đâu."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076"
     ]
    }
   ]
@@ -146,7 +157,10 @@
     "detail": {
      "en": "も adds Vietnamese to the comparison. 同じで is the linking form of 同じです and leads into the explanation.",
      "vi": "も thêm tiếng Việt vào sự so sánh. 同じで là dạng nối của 同じです, dẫn vào phần giải thích."
-    }
+    },
+    "grammarIds": [
+     "g_003"
+    ]
    },
    {
     "text": "ベトナムに昔からある言葉と、",
@@ -159,7 +173,8 @@
      "vi": "ベトナムに昔からある bổ nghĩa cho 言葉. と nối nhóm này với nhóm từ tiếp theo."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -173,7 +188,8 @@
      "vi": "来た bổ nghĩa cho 言葉, còn 中国語から chỉ nguồn gốc. が đánh dấu cả hai nhóm được nối là những gì tồn tại."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076"
     ]
    },
    {
@@ -185,7 +201,10 @@
     "detail": {
      "en": "あります completes the statement that Vietnamese contains both kinds of words.",
      "vi": "あります kết lại ý rằng tiếng Việt có cả hai loại từ này."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -211,7 +230,8 @@
      "vi": "に chỉ ngôn ngữ có những từ này. ある bổ nghĩa cho danh từ 言葉 phía sau."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -225,7 +245,8 @@
      "vi": "中国語から来た cũng bổ nghĩa cho 言葉, giải thích nguồn gốc của chúng. は đưa cả cụm danh từ thành chủ đề."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076"
     ]
    },
    {
@@ -239,7 +260,9 @@
      "vi": "と đánh dấu tên gọi đi với 言います. Đây là cách nêu tên, nên hiểu là ‘được gọi là’, không phải các từ tự nói."
     },
     "grammarIds": [
-     "g_185"
+     "g_185",
+     "g_181",
+     "g_044"
     ],
     "words": [
      {
@@ -276,7 +299,9 @@
      "vi": "日本語の xác định ngôn ngữ. Các tên được trích dẫn + という bổ nghĩa cho 漢語; は nêu những từ này làm chủ đề."
     },
     "grammarIds": [
-     "g_185"
+     "g_185",
+     "g_165",
+     "g_181"
     ],
     "words": [
      {
@@ -306,7 +331,10 @@
     "detail": {
      "en": "で sets the language category for the comparison, and も adds it as a corresponding case. Here でも does not mean ‘but’.",
      "vi": "で nêu phạm vi từ vựng để so sánh; も thêm ý ‘cũng’. でも ở đây không mang nghĩa ‘nhưng’."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "それぞれ「CHÚ Ý」「QUỐC CA」で、",
@@ -338,6 +366,10 @@
        "vi": "cách đọc"
       }
      }
+    ],
+    "grammarIds": [
+     "g_003",
+     "g_060"
     ]
    },
    {
@@ -415,7 +447,10 @@
     "detail": {
      "en": "と joins the two languages. で sets the two language contexts in which the meanings are compared.",
      "vi": "と nối hai ngôn ngữ. で nêu hai phạm vi ngôn ngữ được dùng để đối chiếu nghĩa."
-    }
+    },
+    "grammarIds": [
+     "g_042"
+    ]
    },
    {
     "text": "意味が全然違います。",
@@ -426,7 +461,11 @@
     "detail": {
      "en": "が marks what differs. 全然 strongly emphasizes 違います; 全然違う is a common expression meaning ‘completely different’.",
      "vi": "が đánh dấu điều khác nhau. 全然 nhấn mạnh 違います; 全然違う là cách nói thường gặp với nghĩa ‘hoàn toàn khác’."
-    }
+    },
+    "grammarIds": [
+     "g_044",
+     "g_162"
+    ]
    }
   ]
  },
@@ -471,6 +510,9 @@
        "vi": "vĩ đại; ở đây: có địa vị cao"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -493,7 +535,10 @@
     "detail": {
      "en": "国の connects the person to the country or state. です completes the second definition.",
      "vi": "国の gắn người đó với quốc gia hay nhà nước. です kết thúc định nghĩa thứ hai."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "面白いですね。",
@@ -504,7 +549,11 @@
     "detail": {
      "en": "面白い gives the writer’s reaction. ね invites the reader to share that reaction.",
      "vi": "面白い nêu cảm nhận của người viết. ね gợi người đọc cùng đồng tình với cảm nhận ấy."
-    }
+    },
+    "grammarIds": [
+     "g_013",
+     "g_008_1"
+    ]
    }
   ]
  },
@@ -552,7 +601,8 @@
      "vi": "運転する → 運転した + ことがあります hỏi về trải nghiệm đã từng có. か tạo câu hỏi lịch sự."
     },
     "grammarIds": [
-     "g_083"
+     "g_083",
+     "g_076"
     ],
     "words": [
      {
@@ -597,6 +647,9 @@
        "vi": "đường, đường sá"
       }
      }
+    ],
+    "grammarIds": [
+     "g_041"
     ]
    },
    {
@@ -618,6 +671,9 @@
        "vi": "biển báo"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -629,7 +685,10 @@
     "detail": {
      "en": "あります is used for the existence of nonliving things such as road signs.",
      "vi": "あります dùng để nói sự tồn tại của vật vô tri như biển báo."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -666,7 +725,10 @@
      "vi": "車を運転する bổ nghĩa cho 人. に đánh dấu người nhận thông tin từ 教える."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_050_2",
+     "g_161",
+     "g_069"
     ]
    },
    {
@@ -688,6 +750,11 @@
        "vi": "chú ý, cẩn thận"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_069",
+     "g_166"
     ]
    },
    {
@@ -701,7 +768,8 @@
      "vi": "教える bổ nghĩa cho もの để nêu chức năng của biển báo. で nối với ý tiếp theo; 教える ở đây là ‘cho biết, thông báo’."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -723,7 +791,12 @@
     "detail": {
      "en": "横や上 lists possible locations relative to the road. に marks where the signs are.",
      "vi": "横や上 liệt kê các vị trí so với đường. に đánh dấu nơi biển báo được đặt."
-    }
+    },
+    "grammarIds": [
+     "g_051",
+     "g_044",
+     "g_166"
+    ]
    }
   ]
  },
@@ -749,7 +822,8 @@
      "vi": "見る + の biến mệnh đề thành cụm danh từ; は nêu đối tượng sẽ được xác định ở phần sau."
     },
     "grammarIds": [
-     "g_174"
+     "g_174",
+     "g_069"
     ]
    },
    {
@@ -766,7 +840,9 @@
      "g_179",
      "g_185",
      "g_163",
-     "g_165"
+     "g_165",
+     "g_181",
+     "g_091"
     ]
    },
    {
@@ -778,7 +854,10 @@
     "detail": {
      "en": "赤い gives the color, and ▽の gives the shape of 標識. です completes the identification of the common sign.",
      "vi": "赤い nêu màu, còn ▽の nêu hình dạng của 標識. です kết lại phần xác định biển thường gặp."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    }
   ]
  },
@@ -804,7 +883,8 @@
      "vi": "運転する bổ nghĩa cho 人, tức ‘người lái xe’. は nêu những người này làm chủ đề của quy định."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -816,7 +896,10 @@
     "detail": {
      "en": "の links 標識 to 前. で marks the place where the stopping action must happen.",
      "vi": "の nối 標識 với 前. で đánh dấu nơi phải thực hiện hành động dừng."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "止まらなければなりません。",
@@ -854,7 +937,10 @@
     "detail": {
      "en": "横の modifies 道路. から marks the starting point of the other car’s movement.",
      "vi": "横の bổ nghĩa cho 道路. から chỉ nơi xe khác bắt đầu đi ra."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "他の車が",
@@ -865,7 +951,10 @@
     "detail": {
      "en": "他の modifies 車, and が marks the car as the subject of 出てくる.",
      "vi": "他の bổ nghĩa cho 車; が đánh dấu xe là chủ thể của 出てくる."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "出てくるかもしれないからです。",
@@ -878,7 +967,10 @@
      "vi": "出る → 出て + くる diễn tả xe từ bên trong đi ra phía đường đang nói đến. Thêm かもしれない để nêu khả năng, rồi からです để giải thích lý do phải dừng."
     },
     "grammarIds": [
-     "g_138"
+     "g_138",
+     "g_091",
+     "g_069",
+     "g_066"
     ]
    }
   ]
@@ -914,7 +1006,10 @@
     "detail": {
      "en": "他の and 色々な both modify 国. では sets these countries as the contrasting location.",
      "vi": "他の và 色々な cùng bổ nghĩa cho 国. では nêu các nước này làm phạm vi đối chiếu."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "「止まれ」の標識は",
@@ -927,7 +1022,8 @@
      "vi": "の nối mệnh lệnh được trích dẫn 止まれ với 標識 để chỉ nội dung biển. は nêu biển sắp được mô tả hình dạng."
     },
     "grammarIds": [
-     "g_179"
+     "g_179",
+     "g_166"
     ]
    },
    {
@@ -941,7 +1037,8 @@
      "vi": "Vị ngữ danh từ 赤い八角形だ giữ だ trước そうです chỉ thông tin nghe lại. Mẫu này thuật lại thông tin, không diễn tả vẻ bề ngoài."
     },
     "grammarIds": [
-     "g_144"
+     "g_144",
+     "g_166"
     ],
     "words": [
      {
@@ -987,7 +1084,10 @@
     "detail": {
      "en": "赤い describes ○, read as a circle. の中に marks the location of the white bar.",
      "vi": "赤い miêu tả ○, tức hình tròn. の中に đánh dấu vị trí của vạch trắng."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "白い「－」がある標識も",
@@ -1000,7 +1100,10 @@
      "vi": "白い「－」がある bổ nghĩa cho 標識: biển có một vạch trắng. も bổ sung biển này vào các ví dụ trước."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_166",
+     "g_069",
+     "g_003"
     ]
    },
    {
@@ -1012,7 +1115,10 @@
     "detail": {
      "en": "あります is the main predicate, saying that this kind of sign exists.",
      "vi": "あります là vị ngữ chính, cho biết có loại biển này."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -1050,7 +1156,9 @@
     },
     "grammarIds": [
      "g_180",
-     "g_182"
+     "g_182",
+     "g_069",
+     "g_185"
     ]
    },
    {
@@ -1064,7 +1172,10 @@
      "vi": "で chỉ nơi người ta nhìn thấy biển. 細い miêu tả bề ngang hẹp của đường; よく見る bổ nghĩa cho 標識."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_166",
+     "g_050_1",
+     "g_069"
     ]
    }
   ]
@@ -1103,7 +1214,10 @@
     },
     "grammarIds": [
      "g_180",
-     "g_182"
+     "g_182",
+     "g_069",
+     "g_185",
+     "g_166"
     ]
    },
    {
@@ -1115,7 +1229,10 @@
     "detail": {
      "en": "の中に marks where the writing appears. The symbol □ supplies the sign’s shape in the source text.",
      "vi": "の中に chỉ nơi có chữ viết. Ký hiệu □ thể hiện hình dạng biển trong văn bản gốc."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "「WRONG WAY」と書いてあるそうです。",
@@ -1130,7 +1247,9 @@
     "grammarIds": [
      "g_185",
      "g_163",
-     "g_144"
+     "g_144",
+     "g_181",
+     "g_091"
     ]
    }
   ]
@@ -1166,7 +1285,11 @@
     "detail": {
      "en": "面白い modifies 標識, and が marks what exists with あります.",
      "vi": "面白い bổ nghĩa cho 標識; が đánh dấu sự vật tồn tại với あります."
-    }
+    },
+    "grammarIds": [
+     "g_166",
+     "g_044"
+    ]
    },
    {
     "text": "例えば、",
@@ -1191,7 +1314,9 @@
     },
     "grammarIds": [
      "g_163",
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_166"
     ],
     "words": [
      {
@@ -1239,7 +1364,10 @@
      "vi": "に chỉ đích đến, còn が đánh dấu động vật là chủ thể. 来る + かもしれない nêu khả năng; から đưa lý do cho lời cảnh báo."
     },
     "grammarIds": [
-     "g_138"
+     "g_138",
+     "g_069",
+     "g_066",
+     "g_162"
     ]
    },
    {
@@ -1254,7 +1382,8 @@
     },
     "grammarIds": [
      "g_179",
-     "g_182"
+     "g_182",
+     "g_185"
     ],
     "words": [
      {
@@ -1286,6 +1415,10 @@
        "vi": "ruộng lúa"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_166"
     ]
    },
    {
@@ -1297,7 +1430,10 @@
     "detail": {
      "en": "あります completes the main statement about where these signs are located.",
      "vi": "あります kết lại ý chính về nơi có những biển báo này."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -1332,7 +1468,10 @@
     "detail": {
      "en": "の links the animal to its picture. が marks the picture that has been drawn and remains visible.",
      "vi": "の nối con vật với hình của nó. が đánh dấu hình đã được vẽ và còn hiện trên biển."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "描いてあるそうです。",
@@ -1346,7 +1485,8 @@
     },
     "grammarIds": [
      "g_163",
-     "g_144"
+     "g_144",
+     "g_091"
     ]
    }
   ]
@@ -1395,7 +1535,9 @@
      "vi": "と đánh dấu tên được nêu với 言います. Chủ thể được hiểu là người gửi nên đây là lời tự giới thiệu."
     },
     "grammarIds": [
-     "g_185"
+     "g_185",
+     "g_181",
+     "g_044"
     ]
    }
   ]
@@ -1434,7 +1576,13 @@
     },
     "grammarIds": [
      "g_145",
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_094_1",
+     "g_076",
+     "g_181",
+     "g_185",
+     "g_069"
     ],
     "words": [
      {
@@ -1466,6 +1614,9 @@
        "vi": "sản phẩm, hàng hóa"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -1511,7 +1662,10 @@
     "detail": {
      "en": "The brackets mark a section heading. の links the business name to 商品.",
      "vi": "Dấu ngoặc đánh dấu tiêu đề một phần. の nối tên cơ sở với 商品."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "「サイハン・モンゴル」は、",
@@ -1544,7 +1698,10 @@
     "detail": {
      "en": "モンゴルの identifies the origin, and を marks what the business introduces.",
      "vi": "モンゴルの xác định xuất xứ; を đánh dấu thứ được cơ sở giới thiệu."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "紹介しています。",
@@ -1565,6 +1722,11 @@
        "vi": "giới thiệu"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_094_1",
+     "g_094_5"
     ]
    }
   ]
@@ -1613,7 +1775,8 @@
      "vi": "で chỉ ngôn ngữ. 「素敵」+ という意味の bổ nghĩa cho サイハン, giải thích nghĩa của từ này."
     },
     "grammarIds": [
-     "g_182"
+     "g_182",
+     "g_185"
     ],
     "words": [
      {
@@ -1637,7 +1800,10 @@
      "vi": "を đánh dấu từ được thêm vào. 入れる → 入れた là thể quá khứ dùng bổ nghĩa, mô tả cách tạo tên mới."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1670,6 +1836,10 @@
        "vi": "thay đổi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044",
+     "g_162"
     ]
    }
   ]
@@ -1705,7 +1875,11 @@
     "detail": {
      "en": "と joins 馬 and 家 as the subjects depicted in 絵. が marks the picture that has been drawn.",
      "vi": "と nối 馬 và 家, là những đối tượng được thể hiện trong 絵. が đánh dấu hình đã được vẽ."
-    }
+    },
+    "grammarIds": [
+     "g_042",
+     "g_166"
+    ]
    },
    {
     "text": "描いてあります。",
@@ -1718,7 +1892,8 @@
      "vi": "描く → 描いて + あります diễn tả họa tiết còn lại sau khi vẽ, không nêu người vẽ."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_091"
     ],
     "words": [
      {
@@ -1777,7 +1952,10 @@
      "vi": "で đánh dấu nơi đi giày. Dạng thường 履く bổ nghĩa cho 靴 phía sau, dù có dấu phẩy ở giữa."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_050_1",
+     "g_069",
+     "g_166"
     ]
    },
    {
@@ -1789,7 +1967,10 @@
     "detail": {
      "en": "暖かい also modifies 靴, adding a property to the indoor-use description. です completes the product description.",
      "vi": "暖かい cũng bổ nghĩa cho 靴, thêm đặc tính vào lời mô tả dùng trong nhà. です kết thúc phần mô tả sản phẩm."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "S,M,Lサイズ",
@@ -1845,6 +2026,9 @@
        "vi": "mang tính truyền thống"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -1866,6 +2050,10 @@
        "vi": "dịp năm mới, Tết"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166",
+     "g_051"
     ]
    },
    {
@@ -1879,7 +2067,10 @@
      "vi": "着る bổ nghĩa cho 人, chỉ những người mặc trang phục này. が đánh dấu nhóm đó; 多い cho biết số người đông."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_013",
+     "g_168"
     ]
    }
   ]
@@ -1915,7 +2106,10 @@
     "detail": {
      "en": "モンゴルの and 伝統的な modify 字. が marks the writing whose resulting state is described.",
      "vi": "モンゴルの và 伝統的な bổ nghĩa cho 字. が đánh dấu chữ viết có trạng thái kết quả được mô tả."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "書いてあります。",
@@ -1928,7 +2122,8 @@
      "vi": "書く → 書いて + あります diễn tả chữ đã được ai đó viết lên ví và còn nhìn thấy."
     },
     "grammarIds": [
-     "g_163"
+     "g_163",
+     "g_091"
     ]
    },
    {
@@ -1953,7 +2148,8 @@
      "vi": "Dạng từ điển 入れる + ことができます diễn tả khả năng. Trong mô tả sản phẩm, ý là ví có sức chứa các thẻ đó."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_069"
     ]
    }
   ]
@@ -1992,7 +2188,9 @@
     },
     "grammarIds": [
      "g_185",
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_181"
     ]
    },
    {
@@ -2004,7 +2202,10 @@
     "detail": {
      "en": "ビタミンCが多い modifies フルーツ: a fruit with much vitamin C. を marks this fruit as what is used.",
      "vi": "ビタミンCが多い bổ nghĩa cho フルーツ: loại quả có nhiều vitamin C. を đánh dấu quả là nguyên liệu được sử dụng."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "使って作った",
@@ -2017,7 +2218,10 @@
      "vi": "使う → 使って nối việc dùng quả với việc làm nước uống. 作る → 作った bổ nghĩa cho ジュース, mô tả cách làm ra nước."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_092",
+     "g_076"
     ]
    },
    {
@@ -2029,7 +2233,10 @@
     "detail": {
      "en": "体にいい modifies ジュース, with に marking what benefits. です completes the description of the product.",
      "vi": "体にいい bổ nghĩa cho ジュース; に đánh dấu đối tượng được lợi. です kết thúc phần mô tả sản phẩm."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    }
   ]
  },
@@ -2078,7 +2285,9 @@
     },
     "grammarIds": [
      "g_181",
-     "g_163"
+     "g_163",
+     "g_091",
+     "g_185"
     ]
    }
   ]
@@ -2116,7 +2325,8 @@
      "vi": "に chỉ nơi đi vào. 入る + な tạo lời cấm trực tiếp; と đánh dấu toàn bộ nội dung được dẫn."
     },
     "grammarIds": [
-     "g_180"
+     "g_180",
+     "g_069"
     ],
     "words": [
      {
@@ -2141,7 +2351,9 @@
     },
     "grammarIds": [
      "g_181",
-     "g_163"
+     "g_163",
+     "g_091",
+     "g_008_2"
     ]
    }
   ]
@@ -2187,6 +2399,9 @@
        "vi": "bãi cỏ, thảm cỏ"
       }
      }
+    ],
+    "grammarIds": [
+     "g_183"
     ]
    },
    {
@@ -2227,7 +2442,8 @@
      "vi": "草がたくさんある bổ nghĩa cho ところ để mô tả nơi chốn. が đánh dấu thứ có ở đó, còn たくさん chỉ lượng nhiều."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -2251,7 +2467,11 @@
      "vi": "Phần mô tả trước + という意味だ đưa ra định nghĩa. だ là dạng thường của です; よ hướng lời giải thích đến đứa con."
     },
     "grammarIds": [
-     "g_182"
+     "g_182",
+     "g_185",
+     "g_028_1",
+     "g_029",
+     "g_008_2"
     ]
    },
    {
@@ -2265,7 +2485,8 @@
      "vi": "入る → 入らない + でください tạo lời yêu cầu lịch sự không làm gì. は đưa toàn bộ thông báo được dẫn thành chủ đề."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_073"
     ]
    },
    {
@@ -2279,7 +2500,8 @@
      "vi": "を chỉ khu vực đi qua, không phải tân ngữ bị tác động. Dạng từ điển 歩く + な tạo lời cấm trực tiếp."
     },
     "grammarIds": [
-     "g_180"
+     "g_180",
+     "g_069"
     ]
    },
    {
@@ -2315,7 +2537,10 @@
     "detail": {
      "en": "あ expresses sudden notice. 雨 + だ is a casual noun predicate, here announcing that it is raining.",
      "vi": "あ thể hiện vừa chợt nhận ra. 雨 + だ là vị ngữ danh từ thân mật, ở đây báo trời đang mưa."
-    }
+    },
+    "grammarIds": [
+     "g_028_1"
+    ]
    },
    {
     "text": "早く",
@@ -2380,7 +2605,8 @@
      "vi": "Dạng từ điển 走る + な tạo lời cấm. Cụm này đối lập với mệnh lệnh 走れ của bố ở câu trước."
     },
     "grammarIds": [
-     "g_180"
+     "g_180",
+     "g_069"
     ]
    },
    {
@@ -2396,7 +2622,9 @@
     "grammarIds": [
      "g_183",
      "g_181",
-     "g_163"
+     "g_163",
+     "g_091",
+     "g_008_2"
     ]
    }
   ]
@@ -2421,7 +2649,10 @@
     "detail": {
      "en": "の connects the pool to its entrance. に marks the location of the written notice.",
      "vi": "の nối hồ bơi với lối vào của nó. に đánh dấu nơi có thông báo được viết."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "「走るな」と",
@@ -2434,7 +2665,8 @@
      "vi": "走る + な tạo lời cấm trực tiếp. と đánh dấu đúng nội dung được ghi trong thông báo."
     },
     "grammarIds": [
-     "g_180"
+     "g_180",
+     "g_069"
     ]
    },
    {
@@ -2449,7 +2681,8 @@
     },
     "grammarIds": [
      "g_181",
-     "g_163"
+     "g_163",
+     "g_091"
     ]
    }
   ]
@@ -2497,7 +2730,9 @@
      "vi": "ぬれる → ぬれて + います diễn tả trạng thái ướt sau khi bị ướt. いつも cho biết trạng thái này thường xuyên có; から nêu lý do cho nhận xét sau."
     },
     "grammarIds": [
-     "g_094_4"
+     "g_094_4",
+     "g_091",
+     "g_066"
     ],
     "words": [
      {
@@ -2519,7 +2754,10 @@
     "detail": {
      "en": "危ない is the conclusion based on the wet floor. In context, it explains the danger of running there.",
      "vi": "危ない là kết luận từ việc sàn ướt. Trong ngữ cảnh này, câu giải thích nguy hiểm khi chạy ở đó."
-    }
+    },
+    "grammarIds": [
+     "g_013"
+    ]
    }
   ]
  },
@@ -2567,7 +2805,9 @@
     },
     "grammarIds": [
      "g_180",
-     "g_182"
+     "g_182",
+     "g_069",
+     "g_185"
     ],
     "words": [
      {
@@ -2604,7 +2844,8 @@
      "vi": "Dạng từ điển 泳ぐ + 前に xác định việc phải diễn ra sau khi tắm. Mẫu này dùng dạng từ điển cả khi nói về một lần đi bơi sắp tới."
     },
     "grammarIds": [
-     "g_080_1"
+     "g_080_1",
+     "g_069"
     ]
    },
    {
@@ -2619,7 +2860,11 @@
     },
     "grammarIds": [
      "g_178",
-     "g_099"
+     "g_099",
+     "g_069",
+     "g_073",
+     "g_050_2",
+     "g_161"
     ]
    }
   ]
@@ -2646,7 +2891,9 @@
      "vi": "子供だけで nghĩa là chỉ có trẻ em, không có người lớn đi cùng. 入る + のは đưa việc xuống hồ thành chủ đề; だめです cho biết việc đó không được phép."
     },
     "grammarIds": [
-     "g_173"
+     "g_173",
+     "g_108",
+     "g_069"
     ]
    },
    {
@@ -2682,7 +2929,8 @@
      "vi": "入る → 入って + ください tạo lời hướng dẫn lịch sự. Cụm phía trước cho biết phải có người đi cùng."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    }
   ]
@@ -2775,7 +3023,8 @@
      "vi": "Nって何？ là câu hỏi thân mật về nghĩa của một từ. Ở đây nó thể hiện thắc mắc trong đầu một số người đọc."
     },
     "grammarIds": [
-     "g_184"
+     "g_184",
+     "g_183"
     ]
    },
    {
@@ -2789,7 +3038,13 @@
      "vi": "と dẫn câu hỏi phía trước làm nội dung của 思う; と思う bổ nghĩa cho 人. も thêm ý cũng có người như vậy; が dẫn sang phần giải thích."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_147",
+     "g_021",
+     "g_003",
+     "g_044",
+     "g_069",
+     "g_168"
     ]
    },
    {
@@ -2803,7 +3058,8 @@
      "vi": "から chỉ nơi rời khỏi. 出る → 出て nối việc lên khỏi hồ với việc nghỉ."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091"
     ]
    },
    {
@@ -2817,7 +3073,9 @@
      "vi": "休む + という意味です hoàn tất lời định nghĩa. Ý nghĩa bao gồm cả 出て phía trước: lên khỏi hồ rồi nghỉ."
     },
     "grammarIds": [
-     "g_182"
+     "g_182",
+     "g_069",
+     "g_185"
     ]
    }
   ]

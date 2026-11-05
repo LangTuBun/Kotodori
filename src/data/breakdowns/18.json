@@ -29,6 +29,9 @@
        "vi": "sở thích"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5"
     ]
    },
    {
@@ -58,6 +61,9 @@
        "vi": "video"
       }
      }
+    ],
+    "grammarIds": [
+     "g_050_2"
     ]
    },
    {
@@ -71,7 +77,8 @@
      "vi": "見る ở thể từ điển; thêm こと biến hành động thành cụm danh từ. です xác định hoạt động này là sở thích của người viết."
     },
     "grammarIds": [
-     "g_072"
+     "g_072",
+     "g_069"
     ]
    }
   ]
@@ -117,6 +124,10 @@
        "vi": "video"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5",
+     "g_050_2"
     ]
    },
    {
@@ -128,7 +139,10 @@
     "detail": {
      "en": "見る → 見ます → 見ました gives the polite past form. The subject ‘I’ is understood from the passage.",
      "vi": "見る → 見ます → 見ました là cách chuyển sang quá khứ lịch sự. Chủ ngữ ‘tôi’ được hiểu từ ngữ cảnh."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -218,6 +232,9 @@
        "vi": "ngạc nhiên"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -242,7 +259,11 @@
     "detail": {
      "en": "に marks the location and も adds ‘too’. Together にも connects the writer’s home to the earlier mention of a cat.",
      "vi": "に đánh dấu nơi chốn, còn も thêm nghĩa ‘cũng’. にも nối chuyện mèo nhà người viết với con mèo đã nhắc đến."
-    }
+    },
+    "grammarIds": [
+     "g_011_5",
+     "g_041"
+    ]
    },
    {
     "text": "猫がいます。",
@@ -253,7 +274,11 @@
     "detail": {
      "en": "が marks what exists, and います is used for a living creature. With 私のうちに, this naturally means the writer has a cat at home.",
      "vi": "が đánh dấu đối tượng tồn tại; います dùng cho người và động vật. Đi cùng 私のうちに, câu này tự nhiên mang nghĩa nhà người viết có nuôi mèo."
-    }
+    },
+    "grammarIds": [
+     "g_040_2",
+     "g_044"
+    ]
    },
    {
     "text": "私の猫は",
@@ -264,7 +289,10 @@
     "detail": {
      "en": "私の identifies the owner. は shifts the topic to the writer’s own cat.",
      "vi": "私の cho biết chủ của mèo. は chuyển chủ đề sang con mèo của người viết."
-    }
+    },
+    "grammarIds": [
+     "g_011_5"
+    ]
    },
    {
     "text": "お風呂が嫌いです。",
@@ -326,7 +354,9 @@
      "vi": "静か là tính từ な: 静かです → 静かでした là quá khứ lịch sự. が nối lời miêu tả này với ý tương phản phía sau."
     },
     "grammarIds": [
-     "g_110"
+     "g_110",
+     "g_023",
+     "g_021"
     ]
    },
    {
@@ -338,7 +368,10 @@
     "detail": {
      "en": "うちの refers to the writer’s household. The second は sets this cat against the cat in the video.",
      "vi": "うちの chỉ mèo thuộc gia đình người viết. は thứ hai đặt con mèo này trong thế đối chiếu với mèo trong video."
-    }
+    },
+    "grammarIds": [
+     "g_011_5"
+    ]
    },
    {
     "text": "いつも、",
@@ -360,7 +393,10 @@
     "detail": {
      "en": "うるさい is an い-adjective and keeps its final い before です. とても intensifies the description.",
      "vi": "うるさい là tính từ い nên giữ nguyên い trước です. とても nhấn mạnh mức độ ồn."
-    }
+    },
+    "grammarIds": [
+     "g_013"
+    ]
    }
   ]
  },
@@ -407,7 +443,9 @@
      "vi": "違う là nội dung suy nghĩ ở thể thường; な tạo sắc thái tự nhủ, còn と dẫn nội dung ấy vào 思いました. 思う → 思いました là quá khứ lịch sự."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_069",
+     "g_044"
     ],
     "words": [
      {
@@ -665,7 +703,10 @@
     "detail": {
      "en": "① marks the first step. は makes the onion the topic, replacing the object marker を in these instructions.",
      "vi": "① đánh dấu bước đầu. は đưa hành tây làm chủ đề, thay cho を vốn đánh dấu đối tượng được cắt."
-    }
+    },
+    "grammarIds": [
+     "g_109"
+    ]
    },
    {
     "text": "薄く切って、",
@@ -678,7 +719,9 @@
      "vi": "薄い → 薄く bổ nghĩa cho 切る, cho biết cách cắt. 切る → 切って nối việc này với việc sơ chế thịt gà."
     },
     "grammarIds": [
-     "g_158"
+     "g_158",
+     "g_091",
+     "g_092"
     ],
     "words": [
      {
@@ -700,7 +743,10 @@
     "detail": {
      "en": "The second は switches to the chicken as the next topic. It contrasts the chicken’s preparation with the onion’s.",
      "vi": "は thứ hai chuyển chủ đề sang thịt gà. Cách sơ chế thịt được đặt cạnh cách sơ chế hành."
-    }
+    },
+    "grammarIds": [
+     "g_109"
+    ]
    },
    {
     "text": "小さく切ります。",
@@ -713,7 +759,8 @@
      "vi": "小さい → 小さく chỉ kích thước cần đạt khi cắt. Dạng lịch sự phi quá khứ 切ります được dùng để hướng dẫn nấu ăn."
     },
     "grammarIds": [
-     "g_158"
+     "g_158",
+     "g_044"
     ]
    }
   ]
@@ -759,7 +806,11 @@
     "detail": {
      "en": "と joins the two items added together. を marks both A and the onion as the objects of 入れて.",
      "vi": "と nối hai thứ được cho vào cùng nhau. を đánh dấu cả A và hành tây là đối tượng của 入れて."
-    }
+    },
+    "grammarIds": [
+     "g_042",
+     "g_050_2"
+    ]
    },
    {
     "text": "入れて",
@@ -772,7 +823,8 @@
      "vi": "入れる → 入れて nối việc cho nguyên liệu vào với việc nấu tiếp theo."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091"
     ]
    },
    {
@@ -794,6 +846,9 @@
        "vi": "nấu, ninh trong nước"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -854,7 +909,10 @@
     "detail": {
      "en": "を marks the ingredient to add. The pot remains the understood destination from the preceding step.",
      "vi": "を đánh dấu nguyên liệu cần cho vào. Đích đến vẫn là chiếc nồi đã nhắc ở bước trước."
-    }
+    },
+    "grammarIds": [
+     "g_050_2"
+    ]
    },
    {
     "text": "入れます。",
@@ -865,7 +923,10 @@
     "detail": {
      "en": "入れる → 入れます gives the recipe instruction. The action follows the condition expressed by たら.",
      "vi": "入れる → 入れます đưa ra thao tác cần làm. Thao tác này được thực hiện sau khi điều kiện với たら đã xảy ra."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -915,7 +976,10 @@
     "detail": {
      "en": "を marks the egg as the ingredient to be added next.",
      "vi": "を đánh dấu trứng là nguyên liệu được cho vào tiếp theo."
-    }
+    },
+    "grammarIds": [
+     "g_050_2"
+    ]
    },
    {
     "text": "入れます。",
@@ -926,7 +990,10 @@
     "detail": {
      "en": "The polite nonpast form gives a cooking instruction. The preceding たら clause tells the reader when to do it.",
      "vi": "Dạng lịch sự phi quá khứ dùng để hướng dẫn thao tác. Mệnh đề たら phía trước cho biết khi nào cần thực hiện."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -963,7 +1030,9 @@
      "vi": "Trong nấu ăn, 火を止める nghĩa là ‘tắt bếp’. 止める → 止めて nối thao tác này với việc đậy nắp."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_050_2",
+     "g_091"
     ],
     "words": [
      {
@@ -987,7 +1056,9 @@
      "vi": "蓋をする nghĩa là ‘đậy nắp’. する → して nối việc đậy nắp với bước chờ cuối cùng."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_050_2",
+     "g_091"
     ],
     "words": [
      {
@@ -1009,7 +1080,11 @@
     "detail": {
      "en": "〜 shows a range. The duration 1分〜2分 goes directly before 待ちます without に; it tells how long to wait.",
      "vi": "〜 chỉ khoảng từ một đến hai. Khoảng thời gian 1分〜2分 đứng trước 待ちます, không thêm に, để cho biết cần chờ bao lâu."
-    }
+    },
+    "grammarIds": [
+     "g_046",
+     "g_044"
+    ]
    }
   ]
  },
@@ -1056,7 +1131,9 @@
      "vi": "を đánh dấu cơm là đối tượng. 入れる → 入れて nối việc cho cơm vào với việc thêm phần thức ăn lên trên."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_050_2",
+     "g_091"
     ]
    },
    {
@@ -1079,7 +1156,10 @@
     "detail": {
      "en": "なべの中 means ‘inside the pot’; の links this location to もの. を marks those contents as what is placed on the rice.",
      "vi": "なべの中 là ‘bên trong nồi’; の nối vị trí ấy với もの. を đánh dấu phần trong nồi là thứ được đặt lên cơm."
-    }
+    },
+    "grammarIds": [
+     "g_050_2"
+    ]
    },
    {
     "text": "載せます。",
@@ -1100,6 +1180,9 @@
        "vi": "đặt lên trên"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -1145,7 +1228,10 @@
     "detail": {
      "en": "はじめる → はじめました is polite past. Here it announces that the city has started offering the app.",
      "vi": "はじめる → はじめました là quá khứ lịch sự. Ở đây, động từ thông báo rằng thành phố đã bắt đầu cung cấp ứng dụng."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -1187,6 +1273,10 @@
        "vi": "chính thức"
       }
      }
+    ],
+    "grammarIds": [
+     "g_011_5",
+     "g_050_2"
     ]
    },
    {
@@ -1198,7 +1288,10 @@
     "detail": {
      "en": "作る → 作ります → 作りました is polite past. The maker is understood from the city-hall announcement.",
      "vi": "作る → 作ります → 作りました là quá khứ lịch sự. Người tạo ứng dụng được hiểu từ ngữ cảnh thông báo của tòa thị chính."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    },
    {
     "text": "ぜひ",
@@ -1222,7 +1315,8 @@
      "vi": "登録する → 登録して + ください tạo lời yêu cầu lịch sự. Người đọc được mời đăng ký sử dụng ứng dụng."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -1257,7 +1351,10 @@
     "detail": {
      "en": "で marks the app as the means used to check information. It connects to 確認できる in the next phrase.",
      "vi": "で đánh dấu ứng dụng là phương tiện để kiểm tra thông tin. Cụm này đi với 確認できる phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_062"
+    ]
    },
    {
     "text": "確認できること",
@@ -1270,7 +1367,9 @@
      "vi": "確認する → 確認できる là thể khả năng. Cả cụm động từ bổ nghĩa cho こと, ở đây mang nghĩa ‘những điều, những việc’."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069"
     ],
     "words": [
      {
@@ -1403,7 +1502,9 @@
      "vi": "夜でも nghĩa là ‘ngay cả ban đêm’. 行く → 行ける là thể khả năng, bổ nghĩa cho 病院; の tiếp theo nối bệnh viện với địa điểm của chúng."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069"
     ]
    },
    {
@@ -1415,7 +1516,11 @@
     "detail": {
      "en": "を marks the coupons as what is used. The dictionary form 使う names a function of the app in this list.",
      "vi": "を đánh dấu phiếu giảm giá là thứ được sử dụng. Thể từ điển 使う nêu một chức năng của ứng dụng trong danh sách."
-    }
+    },
+    "grammarIds": [
+     "g_050_2",
+     "g_069"
+    ]
    }
   ]
  },
@@ -1439,7 +1544,10 @@
     "detail": {
      "en": "ここ points to the app’s features rather than a physical place. が highlights them as the convenient points.",
      "vi": "ここ chỉ các tính năng của ứng dụng chứ không phải địa điểm cụ thể. が nhấn mạnh đây là những điểm tiện lợi."
-    }
+    },
+    "grammarIds": [
+     "g_068"
+    ]
    },
    {
     "text": "便利！",
@@ -1474,7 +1582,10 @@
     "detail": {
      "en": "・ separates the language names. The final で applies to the whole list and marks the language used for reading.",
      "vi": "・ ngăn cách tên các ngôn ngữ. で cuối cụm áp dụng cho cả danh sách, đánh dấu ngôn ngữ dùng để đọc."
-    }
+    },
+    "grammarIds": [
+     "g_062"
+    ]
    },
    {
     "text": "読めます。",
@@ -1487,7 +1598,8 @@
      "vi": "読む → 読める → 読めます là dạng khả năng lịch sự. Đối tượng đọc được lược vì đã hiểu là nội dung ứng dụng."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ]
    }
   ]
@@ -1512,7 +1624,10 @@
     "detail": {
      "en": "で marks the means used to search. The comma separates the method from the information being searched for.",
      "vi": "で đánh dấu phương tiện tìm kiếm. Dấu phẩy ngăn phần nêu phương tiện với phần nói về thông tin cần tìm."
-    }
+    },
+    "grammarIds": [
+     "g_062"
+    ]
    },
    {
     "text": "情報が",
@@ -1523,7 +1638,10 @@
     "detail": {
      "en": "が marks the thing that can be searched for with the potential verb 探せます. It fills the role that を would have with 探します.",
      "vi": "が đánh dấu đối tượng có thể tìm với động từ khả năng 探せます. Với dạng 探します thông thường, đối tượng này sẽ đi với を."
-    }
+    },
+    "grammarIds": [
+     "g_061_2"
+    ]
    },
    {
     "text": "簡単に",
@@ -1560,7 +1678,8 @@
      "vi": "探す → 探せる → 探せます là thể khả năng lịch sự. Dạng này cho biết người dùng có thể tìm thông tin qua ứng dụng."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ],
     "words": [
      {
@@ -1595,7 +1714,10 @@
     "detail": {
      "en": "で marks the app as the means of asking questions.",
      "vi": "で đánh dấu ứng dụng là phương tiện để đặt câu hỏi."
-    }
+    },
+    "grammarIds": [
+     "g_062"
+    ]
    },
    {
     "text": "市役所の人に",
@@ -1629,7 +1751,8 @@
      "vi": "質問する → 質問できる → 質問できます là dạng khả năng lịch sự. する chuyển thành できる để diễn đạt khả năng."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ],
     "words": [
      {
@@ -1677,7 +1800,8 @@
      "vi": "や liệt kê sự kiện và giảm giá làm ví dụ. の nối chúng với 情報; を đánh dấu thông tin được gửi."
     },
     "grammarIds": [
-     "g_051"
+     "g_051",
+     "g_050_2"
     ],
     "words": [
      {
@@ -1699,7 +1823,10 @@
     "detail": {
      "en": "メール + する forms a verb meaning ‘email’. The polite nonpast form describes a service the app provides.",
      "vi": "メール + する tạo động từ nghĩa là ‘gửi email’. Dạng lịch sự phi quá khứ diễn tả một dịch vụ ứng dụng cung cấp."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -1725,7 +1852,8 @@
      "vi": "が đánh dấu thứ người dùng có. ある → あれば là điều kiện với ば, nêu yêu cầu để được giảm giá."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_084"
     ]
    },
    {
@@ -1771,7 +1899,8 @@
      "vi": "N + に + なる diễn tả sự chuyển sang trạng thái hoặc mức mới. Ở đây 150円 là giá vé sau khi giảm."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_044"
     ]
    }
   ]
@@ -1809,7 +1938,8 @@
      "vi": "ダウンロードする → ダウンロードして + ください tạo lời đề nghị lịch sự. Đối tượng được lược là ứng dụng chính thức."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ]
    }
   ]
@@ -1845,7 +1975,10 @@
     "detail": {
      "en": "と marks the companion in the action. 妹 refers to the writer’s younger sister.",
      "vi": "と đánh dấu người cùng thực hiện hành động. 妹 ở đây là em gái của người viết."
-    }
+    },
+    "grammarIds": [
+     "g_050_3"
+    ]
    },
    {
     "text": "駅の近くの市場へ",
@@ -1866,6 +1999,9 @@
        "vi": "chợ"
       }
      }
+    ],
+    "grammarIds": [
+     "g_049_2"
     ]
    },
    {
@@ -1877,7 +2013,10 @@
     "detail": {
      "en": "行く → 行きます → 行きました is polite past. The subject ‘I’ is omitted, while 妹と tells us who came along.",
      "vi": "行く → 行きます → 行きました là quá khứ lịch sự. Chủ ngữ ‘tôi’ được lược; 妹と cho biết người đi cùng."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -1966,7 +2105,9 @@
      "vi": "暗い → 暗く + なる nghĩa là ‘trở nên tối’. なる → なって nối sự thay đổi này với dấu hiệu mưa ở vế sau."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_091",
+     "g_092"
     ],
     "words": [
      {
@@ -2016,7 +2157,8 @@
      "vi": "早い → 早く bổ nghĩa cho 帰りました, cho biết họ về sớm hơn dự định. 帰る → 帰りました là quá khứ lịch sự."
     },
     "grammarIds": [
-     "g_158"
+     "g_158",
+     "g_044"
     ]
    }
   ]
@@ -2076,7 +2218,8 @@
      "vi": "帰る → 帰りたい → 帰りたくない nghĩa là ‘không muốn về’. 帰りたくない → 帰りたくなさそう thêm nghĩa suy đoán qua biểu hiện; でした đưa nhận xét về quá khứ."
     },
     "grammarIds": [
-     "g_157"
+     "g_157",
+     "g_078"
     ]
    }
   ]
@@ -2101,7 +2244,10 @@
     "detail": {
      "en": "で marks where the food preparation took place. It covers both cutting and making the salad.",
      "vi": "で đánh dấu nơi sơ chế món ăn. Cụm này áp dụng cho cả việc cắt lẫn làm salad."
-    }
+    },
+    "grammarIds": [
+     "g_050_1"
+    ]
    },
    {
     "text": "そのトマトを",
@@ -2112,7 +2258,10 @@
     "detail": {
      "en": "その points back to the tomatoes from the market. を marks them as the object of the preparation.",
      "vi": "その chỉ lại cà chua mua ở chợ. を đánh dấu chúng là đối tượng được sơ chế."
-    }
+    },
+    "grammarIds": [
+     "g_050_2"
+    ]
    },
    {
     "text": "小さく切って、",
@@ -2125,7 +2274,9 @@
      "vi": "小さい → 小さく bổ nghĩa cho 切る để chỉ kích thước miếng cà chua. 切る → 切って nối việc này với việc làm salad."
     },
     "grammarIds": [
-     "g_158"
+     "g_158",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -2139,7 +2290,8 @@
      "vi": "N + に + する nghĩa là chủ động làm cho một thứ thành N. する → しました cho biết việc chế biến đã diễn ra."
     },
     "grammarIds": [
-     "g_159"
+     "g_159",
+     "g_044"
     ]
    }
   ]
@@ -2175,7 +2327,10 @@
     "detail": {
      "en": "The brackets contain her exact words. と marks the quotation as the content of 言って.",
      "vi": "Dấu ngoặc chứa nguyên lời em nói. と đánh dấu lời trích là nội dung của 言って."
-    }
+    },
+    "grammarIds": [
+     "g_033_2"
+    ]
    },
    {
     "text": "言って、",
@@ -2188,7 +2343,8 @@
      "vi": "言う → 言って là thể て. Dạng này nối lời nhận xét của em với sự thay đổi tâm trạng phía sau."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091"
     ]
    },
    {
@@ -2202,7 +2358,8 @@
      "vi": "元気 là tính từ な nên 元気 + に + なる nghĩa là ‘trở nên vui vẻ’. なりました diễn tả sự thay đổi ở quá khứ lịch sự."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_044"
     ]
    }
   ]
@@ -2238,7 +2395,10 @@
     "detail": {
      "en": "で marks the place where the growing activity took place.",
      "vi": "で đánh dấu nơi diễn ra việc trồng cây."
-    }
+    },
+    "grammarIds": [
+     "g_050_1"
+    ]
    },
    {
     "text": "トマトを",
@@ -2249,7 +2409,10 @@
     "detail": {
      "en": "を marks what the writer began growing.",
      "vi": "を đánh dấu thứ người viết bắt đầu trồng."
-    }
+    },
+    "grammarIds": [
+     "g_050_2"
+    ]
    },
    {
     "text": "育て始めました。",
@@ -2270,6 +2433,9 @@
        "vi": "trồng, nuôi dưỡng"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -2318,7 +2484,8 @@
      "vi": "大きい → 大きく + なる nghĩa là ‘trở nên lớn hơn’. なりました diễn tả sự thay đổi ấy bằng dạng quá khứ lịch sự."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_044"
     ]
    }
   ]
@@ -2377,7 +2544,9 @@
      "vi": "赤い → 赤く + なる nghĩa là ‘chuyển sang đỏ’. なる → なって nối sự thay đổi với nhận xét về vẻ ngoài phía sau."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -2438,7 +2607,10 @@
     "detail": {
      "en": "に marks the destination reached by 出る. 出る → 出ました describes going out in polite past form.",
      "vi": "に đánh dấu nơi đến với 出る. 出る → 出ました diễn tả việc đi ra bằng dạng quá khứ lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    },
    {
     "text": "実は",
@@ -2470,7 +2642,10 @@
     "detail": {
      "en": "一つ + も with a negative means ‘not even one’. ある → ありませんでした gives polite past nonexistence, so no fruit remained.",
      "vi": "一つ + も đi với phủ định mang nghĩa ‘không dù chỉ một’. ある → ありませんでした diễn tả sự không tồn tại ở quá khứ lịch sự, tức là không còn quả nào."
-    }
+    },
+    "grammarIds": [
+     "g_048"
+    ]
    }
   ]
  },
@@ -2494,7 +2669,10 @@
     "detail": {
      "en": "隣の人 means the person next door. 話では introduces that person’s account as the source of the following information.",
      "vi": "隣の人 chỉ người sống bên cạnh. 話では giới thiệu lời kể của người ấy làm nguồn cho thông tin phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_011_5"
+    ]
    },
    {
     "text": "鳥が",
@@ -2518,7 +2696,8 @@
      "vi": "食べる → 食べた là quá khứ thường; thêm らしい để nêu thông tin gián tiếp. です khiến lời thuật lại lịch sự."
     },
     "grammarIds": [
-     "g_142"
+     "g_142",
+     "g_076"
     ]
    }
   ]
@@ -2578,7 +2757,9 @@
      "vi": "を đánh dấu lưới là đối tượng. かける → かけて nối việc giăng lưới với việc làm cho cà chua được an toàn."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_050_2",
+     "g_091"
     ],
     "words": [
      {
@@ -2600,7 +2781,10 @@
     "detail": {
      "en": "を marks what the writer makes safe. This is the object of 安全にしました.",
      "vi": "を đánh dấu thứ người viết làm cho an toàn. Đây là đối tượng của 安全にしました."
-    }
+    },
+    "grammarIds": [
+     "g_050_2"
+    ]
    },
    {
     "text": "安全にしました。",
@@ -2613,7 +2797,8 @@
      "vi": "安全 là tính từ な: 安全 + に + する nghĩa là ‘làm cho an toàn’. しました diễn tả hành động chủ động đã thực hiện."
     },
     "grammarIds": [
-     "g_159"
+     "g_159",
+     "g_044"
     ],
     "words": [
      {
@@ -2659,7 +2844,10 @@
     "detail": {
      "en": "より marks the comparison standard. 去年 stands for last year’s tomatoes, which do not need to be repeated.",
      "vi": "より đánh dấu mốc so sánh. 去年 đại diện cho cà chua năm ngoái nên không cần lặp lại danh từ."
-    }
+    },
+    "grammarIds": [
+     "g_027"
+    ]
    },
    {
     "text": "元気そうです。",

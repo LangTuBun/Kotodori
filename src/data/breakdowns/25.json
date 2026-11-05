@@ -19,7 +19,10 @@
     "detail": {
      "en": "の links 私 to 父, and は introduces the father as the topic.",
      "vi": "の nối 私 với 父; は đưa bố của người kể lên làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_011_5"
+    ]
    },
    {
     "text": "昔、",
@@ -54,7 +57,10 @@
      "vi": "吸う → 吸って → 吸っていました diễn tả thói quen trong quá khứ, chứ không chỉ một lần hút."
     },
     "grammarIds": [
-     "g_094_3"
+     "g_094_3",
+     "g_091",
+     "g_094_1",
+     "g_044"
     ],
     "words": [
      {
@@ -89,7 +95,10 @@
     "detail": {
      "en": "Repeating も includes both people as the ones giving the warning.",
      "vi": "Lặp も sau mỗi người nhấn mạnh cả hai đều nhắc nhở."
-    }
+    },
+    "grammarIds": [
+     "g_003"
+    ]
    },
    {
     "text": "「たばこは体に悪いよ」と",
@@ -100,7 +109,10 @@
     "detail": {
      "en": "は makes smoking the topic inside the quotation; 体に悪い means harmful to the body. よ stresses the warning, and と closes the quoted content.",
      "vi": "Trong lời dẫn, は nêu chủ đề hút thuốc; 体に悪い nghĩa là có hại cho cơ thể. よ nhấn mạnh lời nhắc, còn と đánh dấu nội dung được dẫn."
-    }
+    },
+    "grammarIds": [
+     "g_008_2"
+    ]
    },
    {
     "text": "注意していましたが、",
@@ -121,6 +133,13 @@
        "vi": "nhắc nhở, cảnh báo"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_094_1",
+     "g_094_3",
+     "g_021",
+     "g_044"
     ]
    },
    {
@@ -145,7 +164,8 @@
      "vi": "やめる → やめられる là thể khả năng; やめられませんでした là dạng phủ định quá khứ lịch sự. Bố không bỏ được, chứ không chỉ là không muốn bỏ."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_048"
     ]
    }
   ]
@@ -194,7 +214,8 @@
      "vi": "吸う → 吸わない → 吸わなくなる diễn tả chuyển sang trạng thái không làm việc đó nữa. なりました cho biết sự thay đổi đã xảy ra."
     },
     "grammarIds": [
-     "g_210"
+     "g_210",
+     "g_044"
     ],
     "words": [
      {
@@ -243,7 +264,8 @@
     },
     "grammarIds": [
      "g_057",
-     "g_066"
+     "g_066",
+     "g_035"
     ]
    }
   ]
@@ -281,7 +303,8 @@
      "vi": "やめる → やめれば là dạng điều kiện ば, nêu điều kiện để có thể mua điện thoại."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_084"
     ]
    },
    {
@@ -307,7 +330,13 @@
     },
     "grammarIds": [
      "g_061_1",
-     "g_194"
+     "g_194",
+     "g_061_2",
+     "g_075",
+     "g_069",
+     "g_193",
+     "g_091",
+     "g_008_2"
     ]
    },
    {
@@ -322,7 +351,9 @@
     },
     "grammarIds": [
      "g_205",
-     "g_144"
+     "g_144",
+     "g_069",
+     "g_076"
     ]
    }
   ]
@@ -360,7 +391,8 @@
      "vi": "1年 chỉ khoảng thời gian kéo dài nên không thêm に. 貯める → 貯めて nối việc tiết kiệm với việc mua sau đó."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091"
     ],
     "words": [
      {
@@ -382,7 +414,12 @@
     "detail": {
      "en": "を marks the item bought, and 買いました is polite past.",
      "vi": "を đánh dấu món đã mua; 買いました là dạng quá khứ lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_044",
+     "g_050_2",
+     "g_161"
+    ]
    }
   ]
  },
@@ -431,7 +468,8 @@
     },
     "grammarIds": [
      "g_210",
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ]
    }
   ]
@@ -456,7 +494,10 @@
     "detail": {
      "en": "と joins the two people, and は makes them the topic.",
      "vi": "と nối hai người; は đưa cả hai lên làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_042"
+    ]
    },
    {
     "text": "「スマホの使いすぎは",
@@ -469,7 +510,8 @@
      "vi": "使う → 使い + すぎ tạo danh từ 使いすぎ, việc dùng quá mức. の nối với スマホ; は nêu chủ đề trong lời dẫn."
     },
     "grammarIds": [
-     "g_203"
+     "g_203",
+     "g_166"
     ]
    },
    {
@@ -481,7 +523,10 @@
     "detail": {
      "en": "体に悪い describes harm to the body; よ makes the warning direct. と marks the end of the quoted warning.",
      "vi": "体に悪い nói về tác hại đối với cơ thể; よ nhấn mạnh lời nhắc. と kết thúc nội dung được dẫn."
-    }
+    },
+    "grammarIds": [
+     "g_008_2"
+    ]
    },
    {
     "text": "父に注意しています。",
@@ -494,7 +539,10 @@
      "vi": "に đánh dấu người được nhắc. 注意する → 注意しています diễn tả việc họ thường nhắc nhở bố hiện nay."
     },
     "grammarIds": [
-     "g_094_3"
+     "g_094_3",
+     "g_091",
+     "g_094_1",
+     "g_044"
     ],
     "words": [
      {
@@ -543,7 +591,8 @@
     },
     "grammarIds": [
      "g_201",
-     "g_060"
+     "g_060",
+     "g_166"
     ],
     "words": [
      {
@@ -575,6 +624,9 @@
        "vi": "giờ học, buổi học"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -609,6 +661,9 @@
        "vi": "sự giải thích"
       }
      }
+    ],
+    "grammarIds": [
+     "g_065"
     ]
    },
    {
@@ -620,7 +675,10 @@
     "detail": {
      "en": "言う → 言いたい expresses wanting to say something; the final の asks for an explanation. と marks these words as a quotation.",
      "vi": "言う → 言いたい diễn tả muốn nói điều gì; の cuối câu hỏi yêu cầu giải thích rõ hơn. と đánh dấu lời được dẫn."
-    }
+    },
+    "grammarIds": [
+     "g_078"
+    ]
    },
    {
     "text": "いつも友達に言われるから、",
@@ -633,7 +691,10 @@
      "vi": "言う → 言われる là thể bị động; 友達に chỉ người nói. から nêu phản ứng lặp lại của bạn bè làm lý do đi học."
     },
     "grammarIds": [
-     "g_194"
+     "g_194",
+     "g_193",
+     "g_066",
+     "g_069"
     ]
    },
    {
@@ -648,7 +709,13 @@
     },
     "grammarIds": [
      "g_209",
-     "g_147"
+     "g_147",
+     "g_158",
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_078",
+     "g_091"
     ]
    },
    {
@@ -678,6 +745,9 @@
        "vi": "tham gia"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -705,7 +775,9 @@
     },
     "grammarIds": [
      "g_103",
-     "g_165"
+     "g_165",
+     "g_091",
+     "g_076"
     ]
    },
    {
@@ -717,7 +789,10 @@
     "detail": {
      "en": "大切 is a な-adjective, so な connects it to こと. は makes these points the topic.",
      "vi": "大切 là tính từ な nên thêm な trước こと. は nêu các điều ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "3つありました。",
@@ -728,7 +803,11 @@
     "detail": {
      "en": "3つ counts the points using the general counter つ. ありました places the statement in the past lesson.",
      "vi": "3つ dùng lượng từ chung つ để đếm các điều. ありました đặt lời kể trong buổi học đã diễn ra."
-    }
+    },
+    "grammarIds": [
+     "g_043_1_2",
+     "g_044"
+    ]
    }
   ]
  },
@@ -763,7 +842,10 @@
     "detail": {
      "en": "たくさんの modifies こと, and を marks the content said. The sense of excess comes from the following すぎる.",
      "vi": "たくさんの bổ nghĩa cho こと; を đánh dấu nội dung nói. Ý quá mức được thể hiện ở すぎる phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "言いすぎないことです。",
@@ -776,7 +858,9 @@
      "vi": "言う → 言い + すぎる → 言いすぎない nghĩa là không nói quá mức. こと danh từ hóa hành động phủ định này để nêu thành một điều cần nhớ."
     },
     "grammarIds": [
-     "g_203"
+     "g_203",
+     "g_073",
+     "g_072"
     ]
    }
   ]
@@ -804,7 +888,8 @@
     },
     "grammarIds": [
      "g_202",
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -828,7 +913,8 @@
      "vi": "の danh từ hóa 聞く thành việc nghe; が đánh dấu việc gây vất vả. 大変だ + し nêu một lý do và nối sang lý do khác."
     },
     "grammarIds": [
-     "g_146"
+     "g_146",
+     "g_069"
     ]
    },
    {
@@ -840,7 +926,11 @@
     "detail": {
      "en": "言いたい modifies 事, while 一番 means most of all. が marks the point that becomes unclear.",
      "vi": "言いたい bổ nghĩa cho 事; 一番 mang nghĩa nhất. が đánh dấu điều trở nên khó hiểu."
-    }
+    },
+    "grammarIds": [
+     "g_078",
+     "g_165"
+    ]
    },
    {
     "text": "わからなくなる",
@@ -853,7 +943,8 @@
      "vi": "わかる → わからない → わからなくなる diễn tả chuyển từ hiểu sang không còn hiểu được."
     },
     "grammarIds": [
-     "g_210"
+     "g_210",
+     "g_069"
     ]
    },
    {
@@ -867,7 +958,8 @@
      "vi": "からだ nêu các vế trước làm lý do; dạng thường だ + そうです thuật lại lời giải thích. Đây là thông tin nghe được, không phải nhận xét qua vẻ ngoài."
     },
     "grammarIds": [
-     "g_144"
+     "g_144",
+     "g_066"
     ]
    }
   ]
@@ -905,7 +997,8 @@
      "vi": "わかる → わかり + やすい tạo tính từ い nghĩa là dễ hiểu. Từ này bổ nghĩa cho 言葉; を đánh dấu đối tượng được dùng."
     },
     "grammarIds": [
-     "g_201"
+     "g_201",
+     "g_166"
     ]
    },
    {
@@ -917,7 +1010,11 @@
     "detail": {
      "en": "Dictionary-form 使う + こと names the action of using. です identifies this action as the second point.",
      "vi": "使う ở thể từ điển + こと gọi tên việc dùng. です xác định đây là điều thứ hai."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_072"
+    ]
    }
   ]
  },
@@ -941,7 +1038,10 @@
     "detail": {
      "en": "や gives examples rather than a complete list, linking this phrase to the next kind of word.",
      "vi": "や liệt kê ví dụ chứ không phải toàn bộ, nối cụm này với loại từ tiếp theo."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "あまり使われない言葉は、",
@@ -955,7 +1055,8 @@
     },
     "grammarIds": [
      "g_193",
-     "g_165"
+     "g_165",
+     "g_073"
     ]
    },
    {
@@ -982,7 +1083,8 @@
     "grammarIds": [
      "g_201",
      "g_159",
-     "g_144"
+     "g_144",
+     "g_069"
     ]
    }
   ]
@@ -1020,7 +1122,8 @@
      "vi": "自分が話したい bổ nghĩa cho こと. じゃなくて là dạng nối thân mật của ではない, phủ định lựa chọn này trước khi nêu lựa chọn nên làm."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078"
     ]
    },
    {
@@ -1034,7 +1137,8 @@
      "vi": "相手が聞きたい bổ nghĩa cho こと; が đánh dấu người muốn nghe. を đánh dấu nội dung nên nói."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078"
     ],
     "words": [
      {
@@ -1056,7 +1160,11 @@
     "detail": {
      "en": "話す + こと nominalizes the recommended action. です presents it as the third principle.",
      "vi": "話す + こと danh từ hóa hành động được khuyên làm. です nêu hành động đó thành nguyên tắc thứ ba."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_072"
+    ]
    }
   ]
  },
@@ -1093,7 +1201,10 @@
      "vi": "を đánh dấu nội dung nghe được; 聞く → 聞いて nối nguyên nhân với phản ứng cảm xúc."
     },
     "grammarIds": [
-     "g_197"
+     "g_197",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1115,6 +1226,9 @@
        "vi": "ngạc nhiên"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -1152,7 +1266,10 @@
      "vi": "話す → 話したい diễn tả mong muốn; も lặp lại để thêm hết nội dung này đến nội dung khác. と đánh dấu suy nghĩ; 思って nối suy nghĩ với cách nói sau đó."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_003",
+     "g_078",
+     "g_091"
     ]
    },
    {
@@ -1167,7 +1284,13 @@
     },
     "grammarIds": [
      "g_165",
-     "g_167"
+     "g_167",
+     "g_078",
+     "g_091",
+     "g_094_1",
+     "g_094_3",
+     "g_021",
+     "g_044"
     ]
    },
    {
@@ -1182,7 +1305,8 @@
     },
     "grammarIds": [
      "g_160",
-     "g_146"
+     "g_146",
+     "g_069"
     ]
    },
    {
@@ -1204,6 +1328,11 @@
        "vi": "người đối diện; ở đây: người nghe"
       }
      }
+    ],
+    "grammarIds": [
+     "g_003",
+     "g_069",
+     "g_066"
     ]
    },
    {
@@ -1217,7 +1346,8 @@
      "vi": "いい → よくない là dạng phủ định bất quy tắc của いい. Dạng thường よくない + そうです thuật lại đánh giá của thầy cô."
     },
     "grammarIds": [
-     "g_144"
+     "g_144",
+     "g_036"
     ]
    }
   ]
@@ -1263,6 +1393,9 @@
        "vi": "chú ý, cẩn thận"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091"
     ]
    },
    {
@@ -1277,7 +1410,11 @@
     },
     "grammarIds": [
      "g_207",
-     "g_144"
+     "g_144",
+     "g_069",
+     "g_091",
+     "g_094_1",
+     "g_094_3"
     ]
    }
   ]
@@ -1312,6 +1449,12 @@
        "vi": "giờ học, buổi học"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_197",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -1357,6 +1500,9 @@
        "vi": "thay đổi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -1381,7 +1527,10 @@
     "detail": {
      "en": "難しい modifies 言葉, and を marks what the narrator avoids using.",
      "vi": "難しい bổ nghĩa cho 言葉; を đánh dấu thứ người kể cố tránh dùng."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "使わないようにして、",
@@ -1394,7 +1543,10 @@
      "vi": "使う → 使わない + ようにする nghĩa là cố gắng không dùng. して nối nỗ lực này với nỗ lực tiếp theo."
     },
     "grammarIds": [
-     "g_207"
+     "g_207",
+     "g_073",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -1420,7 +1572,12 @@
     },
     "grammarIds": [
      "g_203",
-     "g_207"
+     "g_207",
+     "g_073",
+     "g_091",
+     "g_094_1",
+     "g_094_3",
+     "g_044"
     ]
    }
   ]
@@ -1459,7 +1616,11 @@
     },
     "grammarIds": [
      "g_165",
-     "g_167"
+     "g_167",
+     "g_078",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -1484,7 +1645,8 @@
     },
     "grammarIds": [
      "g_173",
-     "g_197"
+     "g_197",
+     "g_069"
     ]
    },
    {
@@ -1498,7 +1660,9 @@
      "vi": "なかなか + できません diễn tả dù cố vẫn khó làm được. 上手に là dạng trạng từ của 上手, chỉ mức độ làm tốt hành động."
     },
     "grammarIds": [
-     "g_158"
+     "g_158",
+     "g_061_1",
+     "g_048"
     ]
    }
   ]
@@ -1523,7 +1687,10 @@
     "detail": {
      "en": "早く expresses the wish for this to happen soon; に identifies friends as the speakers in the later passive.",
      "vi": "早く diễn tả mong điều đó sớm xảy ra; に đánh dấu bạn bè là người nói trong cấu trúc bị động phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_158"
+    ]
    },
    {
     "text": "「話がわかりやすくなったね」と",
@@ -1537,7 +1704,9 @@
     },
     "grammarIds": [
      "g_201",
-     "g_160"
+     "g_160",
+     "g_008_1",
+     "g_076"
     ]
    },
    {
@@ -1551,7 +1720,10 @@
      "vi": "言う → 言われる → 言われたい kết hợp thể bị động với ý muốn. から nêu mong muốn được nhận xét như vậy làm lý do."
     },
     "grammarIds": [
-     "g_194"
+     "g_194",
+     "g_193",
+     "g_078",
+     "g_066"
     ]
    },
    {
@@ -1576,7 +1748,11 @@
      "vi": "相手が聞きたい bổ nghĩa cho こと; を đánh dấu nội dung cần nghĩ. 考えて nối việc suy nghĩ trước hoặc trong khi nói."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -1600,7 +1776,9 @@
      "vi": "話す → 話そう là thể ý chí. 話そう + と思います diễn tả ý định của người nói, không phải phỏng đoán về người khác."
     },
     "grammarIds": [
-     "g_147"
+     "g_147",
+     "g_079",
+     "g_044"
     ]
    }
   ]
@@ -1625,7 +1803,10 @@
     "detail": {
      "en": "から marks the starting season. Plain 始める is used as a lively advertising headline, with the learner understood as the person starting.",
      "vi": "から đánh dấu mùa bắt đầu. Dạng thường 始める tạo lời quảng cáo ngắn gọn, ngầm hiểu người học là người bắt đầu."
-    }
+    },
+    "grammarIds": [
+     "g_069"
+    ]
    },
    {
     "text": "ビジネス英語レッスン4コース",
@@ -1684,7 +1865,9 @@
      "vi": "使う → 使わない → 使わなければ là điều kiện ば phủ định, nghĩa là nếu không dùng tiếng Anh."
     },
     "grammarIds": [
-     "g_087"
+     "g_087",
+     "g_084",
+     "g_085"
     ]
    },
    {
@@ -1699,7 +1882,10 @@
     },
     "grammarIds": [
      "g_209",
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_048"
     ]
    }
   ]
@@ -1737,7 +1923,10 @@
      "vi": "会社で使う bổ nghĩa cho 英語; で chỉ nơi dùng. 簡単な cũng bổ nghĩa cho 英語; が đánh dấu ngôn ngữ người học có thể nói."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_166",
+     "g_050_1"
     ]
    },
    {
@@ -1751,7 +1940,10 @@
      "vi": "話す → 話せる → 話せるようになる diễn tả có được khả năng nói. Cả mệnh đề về khả năng bổ nghĩa cho コース phía sau."
     },
     "grammarIds": [
-     "g_209"
+     "g_209",
+     "g_061_1",
+     "g_075",
+     "g_069"
     ]
    },
    {
@@ -1832,7 +2024,12 @@
      "vi": "使う → 使わない + ようにしています diễn tả nỗ lực có ý thức được duy trì để không dùng tiếng Nhật. Đây là cách luyện tập, không phải không có khả năng nói tiếng Nhật."
     },
     "grammarIds": [
-     "g_207"
+     "g_207",
+     "g_073",
+     "g_091",
+     "g_094_1",
+     "g_094_3",
+     "g_044"
     ]
    }
   ]
@@ -1870,7 +2067,9 @@
      "vi": "上手 là tính từ な nên 上手に + なる nghĩa là trở nên giỏi. 英語が đánh dấu kỹ năng; よ tăng sắc thái động viên."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_008_2",
+     "g_044"
     ]
    },
    {
@@ -1923,7 +2122,10 @@
     },
     "grammarIds": [
      "g_209",
-     "g_165"
+     "g_165",
+     "g_061_1",
+     "g_075",
+     "g_069"
     ]
    },
    {
@@ -1945,6 +2147,10 @@
        "vi": "cách làm"
       }
      }
+    ],
+    "grammarIds": [
+     "g_060",
+     "g_166"
     ]
    },
    {
@@ -1967,7 +2173,10 @@
     "detail": {
      "en": "と marks the conversation partner; と + の allows that partner phrase to modify 会話. 簡単な describes the conversations as simple.",
      "vi": "と đánh dấu người cùng hội thoại; と + の giúp cụm này bổ nghĩa cho 会話. 簡単な mô tả cuộc hội thoại là đơn giản."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    }
   ]
  },
@@ -1993,7 +2202,8 @@
      "vi": "作る → 作り + 方 nghĩa là cách làm; các の nối rõ thứ được làm. で chỉ vấn đề khiến người đọc gặp khó."
     },
     "grammarIds": [
-     "g_060"
+     "g_060",
+     "g_166"
     ],
     "words": [
      {
@@ -2025,6 +2235,12 @@
        "vi": "gặp khó khăn, lúng túng"
       }
      }
+    ],
+    "grammarIds": [
+     "g_091",
+     "g_094_1",
+     "g_094_4",
+     "g_048"
     ]
    }
   ]
@@ -2051,7 +2267,9 @@
      "vi": "で đánh dấu nơi học. 勉強する → 勉強すれば tạo điều kiện ば cho kết quả được giới thiệu."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_084",
+     "g_050_1"
     ]
    },
    {
@@ -2097,7 +2315,9 @@
      "vi": "会社で使う bổ nghĩa cho 書類; で chỉ nơi sử dụng. が đánh dấu thứ người học sẽ làm được."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_050_1"
     ],
     "words": [
      {
@@ -2122,7 +2342,11 @@
     },
     "grammarIds": [
      "g_209",
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_044",
+     "g_062"
     ]
    }
   ]
@@ -2147,7 +2371,10 @@
     "detail": {
      "en": "や lists example countries, and の links them to the following business conventions.",
      "vi": "や liệt kê các nước làm ví dụ; の nối các nước ấy với quy tắc kinh doanh phía sau."
-    }
+    },
+    "grammarIds": [
+     "g_051"
+    ]
    },
    {
     "text": "ビジネスのルールも",
@@ -2158,7 +2385,11 @@
     "detail": {
      "en": "の connects business to its rules. も marks this as an additional teaching topic and replaces the object particle を.",
      "vi": "の nối lĩnh vực kinh doanh với các quy tắc. も cho biết đây là nội dung được dạy thêm và thay cho trợ từ đối tượng を."
-    }
+    },
+    "grammarIds": [
+     "g_003",
+     "g_166"
+    ]
    },
    {
     "text": "教えます。",
@@ -2169,7 +2400,10 @@
     "detail": {
      "en": "教えます is polite nonpast and describes what the course offers. The teacher or school is the understood subject.",
      "vi": "教えます là dạng phi quá khứ lịch sự, nêu nội dung khóa học cung cấp. Chủ ngữ được hiểu là giáo viên hoặc nhà trường."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -2196,7 +2430,9 @@
     },
     "grammarIds": [
      "g_174",
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069"
     ],
     "words": [
      {
@@ -2220,7 +2456,11 @@
      "vi": "使う → 使える là thể khả năng, bổ nghĩa cho 方. 方 ở đây đọc là かた, là cách gọi người lịch sự; が đánh dấu thứ họ dùng được."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_061_1",
+     "g_061_2",
+     "g_075",
+     "g_069"
     ]
    },
    {
@@ -2261,7 +2501,9 @@
      "vi": "英語で chỉ ngôn ngữ; 商品について chỉ chủ đề. 話す → 話したい bổ nghĩa cho 人; や nối nhóm này với nhóm ví dụ tiếp theo."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078",
+     "g_062"
     ],
     "words": [
      {
@@ -2285,7 +2527,12 @@
      "vi": "と đánh dấu công ty cùng hợp tác; を chỉ việc muốn làm. Cả mệnh đề kết thúc bằng やりたい bổ nghĩa cho 人."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078",
+     "g_166",
+     "g_050_3",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -2320,7 +2567,8 @@
      "vi": "参加する → 参加して + ください tạo lời mời hoặc yêu cầu lịch sự."
     },
     "grammarIds": [
-     "g_099"
+     "g_099",
+     "g_091"
     ],
     "words": [
      {
@@ -2389,7 +2637,11 @@
      "vi": "できる + ようになります diễn tả có được khả năng tiến hành cuộc họp. Dạng phi quá khứ lịch sự nêu kết quả sau khi học."
     },
     "grammarIds": [
-     "g_209"
+     "g_209",
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_044"
     ]
    },
    {
@@ -2411,6 +2663,10 @@
        "vi": "sản phẩm, hàng hóa"
       }
      }
+    ],
+    "grammarIds": [
+     "g_003",
+     "g_166"
     ]
    },
    {
@@ -2424,7 +2680,11 @@
      "vi": "できる + ようになります ở đây áp dụng cho việc trao đổi về sản phẩm. Ngôn ngữ tiếng Anh được hiểu tiếp từ câu đầu."
     },
     "grammarIds": [
-     "g_209"
+     "g_209",
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -2459,6 +2719,10 @@
        "vi": "sản phẩm, hàng hóa"
       }
      }
+    ],
+    "grammarIds": [
+     "g_078",
+     "g_034"
     ]
    },
    {
@@ -2473,7 +2737,9 @@
     },
     "grammarIds": [
      "g_061_1",
-     "g_158"
+     "g_158",
+     "g_075",
+     "g_073"
     ],
     "words": [
      {
@@ -2497,7 +2763,9 @@
      "vi": "新しく bổ nghĩa cho 入った; 会社に入った bổ nghĩa cho 外国人. と chỉ người cùng làm việc; 会社に入る ở đây nghĩa là gia nhập công ty."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_158",
+     "g_076"
     ]
    },
    {
@@ -2525,7 +2793,10 @@
      "vi": "と đánh dấu người cùng nói chuyện. 話す + 予定だ nêu sự việc đã có kế hoạch; けど mở ra khó khăn."
     },
     "grammarIds": [
-     "g_211"
+     "g_211",
+     "g_069",
+     "g_034",
+     "g_050_3"
     ],
     "words": [
      {
@@ -2549,7 +2820,11 @@
      "vi": "話す → 話せる → 話せない là thể khả năng phủ định. で chỉ ngôn ngữ; dấu … để ngỏ nỗi lo của người nói."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_073",
+     "g_158",
+     "g_062"
     ]
    }
   ]
@@ -2622,7 +2897,8 @@
     },
     "grammarIds": [
      "g_083",
-     "g_165"
+     "g_165",
+     "g_076"
     ]
    },
    {
@@ -2644,6 +2920,10 @@
        "vi": "kém, không giỏi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_065",
+     "g_166"
     ]
    },
    {
@@ -2689,7 +2969,10 @@
     "detail": {
      "en": "The centered dots separate the four skills. の connects the listed items to 4つ, and を marks the whole set as what learners study.",
      "vi": "Dấu ・ tách bốn kỹ năng. の nối các mục vừa liệt kê với 4つ; を đánh dấu cả bốn là nội dung học."
-    }
+    },
+    "grammarIds": [
+     "g_069"
+    ]
    },
    {
     "text": "ゼロから",
@@ -2713,7 +2996,8 @@
      "vi": "勉強する → 勉強できる → 勉強できます là dạng khả năng lịch sự, nêu cơ hội học mà khóa học cung cấp."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044"
     ]
    }
   ]
@@ -2759,6 +3043,10 @@
        "vi": "sự giải thích"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_166"
     ]
    },
    {
@@ -2793,7 +3081,12 @@
      "vi": "英語で chỉ ngôn ngữ sử dụng. できる + ようになります diễn tả có được khả năng thực hiện tất cả những việc vừa liệt kê."
     },
     "grammarIds": [
-     "g_209"
+     "g_209",
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_044",
+     "g_062"
     ]
    }
   ]
@@ -2821,7 +3114,9 @@
     },
     "grammarIds": [
      "g_193",
-     "g_165"
+     "g_165",
+     "g_076",
+     "g_062"
     ]
    },
    {
@@ -2843,6 +3138,9 @@
        "vi": "giấy tờ, văn bản"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051"
     ]
    },
    {
@@ -2857,7 +3155,10 @@
     },
     "grammarIds": [
      "g_209",
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -2904,7 +3205,10 @@
     "detail": {
      "en": "アメリカ人の identifies the engineer’s nationality. と marks the colleague, and 一緒に emphasizes working together.",
      "vi": "アメリカ人の chỉ quốc tịch của kỹ sư. と đánh dấu người cùng làm; 一緒に nhấn mạnh làm việc chung."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "仕事をすることになりました。",
@@ -2917,7 +3221,9 @@
      "vi": "仕事をする + ことになる nêu sự sắp xếp hoặc quyết định được đưa ra. なりました cho biết việc sắp xếp đã xong, không có nghĩa công việc đã bắt đầu."
     },
     "grammarIds": [
-     "g_206"
+     "g_206",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -2944,7 +3250,9 @@
      "vi": "話す → 話せます là dạng khả năng lịch sự. 少し giới hạn mức độ; が nối sang việc trái lại là gần đây không học."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_021",
+     "g_044"
     ]
    },
    {
@@ -2958,7 +3266,8 @@
      "vi": "大学を出る ở đây nghĩa là tốt nghiệp đại học. 出る → 出て + から lấy việc tốt nghiệp làm mốc bắt đầu cho khoảng thời gian sau."
     },
     "grammarIds": [
-     "g_093"
+     "g_093",
+     "g_091"
     ],
     "words": [
      {
@@ -2982,7 +3291,9 @@
      "vi": "ずっと bao quát toàn bộ thời gian từ khi tốt nghiệp. 勉強していなかった là dạng quá khứ phủ định của ている; ので nêu bối cảnh đó làm lý do cho kế hoạch."
     },
     "grammarIds": [
-     "g_253"
+     "g_253",
+     "g_091",
+     "g_094_1"
     ]
    },
    {
@@ -2996,7 +3307,8 @@
      "vi": "始める ở thể từ điển + 前に nghĩa là trước khi bắt đầu. Động từ giữ thể từ điển vì việc bắt đầu diễn ra sau việc học dự định."
     },
     "grammarIds": [
-     "g_080_1"
+     "g_080_1",
+     "g_069"
     ]
    },
    {
@@ -3008,7 +3320,10 @@
     "detail": {
      "en": "の identifies what the school teaches, and で marks the place of study.",
      "vi": "の cho biết trường dạy môn gì; で đánh dấu nơi học."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "勉強しようと思っています。",
@@ -3021,7 +3336,12 @@
      "vi": "勉強する → 勉強しよう là thể ý chí. 勉強しよう + と思っています diễn tả dự định đã có và vẫn đang được cân nhắc."
     },
     "grammarIds": [
-     "g_213"
+     "g_213",
+     "g_079",
+     "g_091",
+     "g_094_1",
+     "g_094_5",
+     "g_044"
     ]
    }
   ]
@@ -3046,7 +3366,10 @@
     "detail": {
      "en": "で gives the work context. 必要 is a な-adjective, so 必要な modifies こと; は introduces the required tasks.",
      "vi": "で nêu bối cảnh công việc. 必要 là tính từ な nên 必要な bổ nghĩa cho こと; は giới thiệu những việc cần làm."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "会社のアメリカ人に",
@@ -3057,7 +3380,10 @@
     "detail": {
      "en": "の links the person to the company. に marks the person receiving the product explanation.",
      "vi": "の nối người đó với công ty. に đánh dấu người được giải thích về sản phẩm."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "会社の商品を説明することと、",
@@ -3086,6 +3412,11 @@
        "vi": "giải thích"
       }
      }
+    ],
+    "grammarIds": [
+     "g_069",
+     "g_050_2",
+     "g_161"
     ]
    },
    {
@@ -3097,7 +3428,10 @@
     "detail": {
      "en": "の specifies the kind of program, and を marks what the other person will make.",
      "vi": "の xác định loại chương trình; を đánh dấu thứ người kia sẽ tạo."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "作ってもらうことなどです。",
@@ -3110,7 +3444,9 @@
      "vi": "作る → 作って + もらう nghĩa là được người khác làm giúp. こと gọi tên công việc; など cho biết đây là những ví dụ về yêu cầu công việc."
     },
     "grammarIds": [
-     "g_188"
+     "g_188",
+     "g_091",
+     "g_069"
     ]
    }
   ]
@@ -3145,6 +3481,9 @@
        "vi": "giấy tờ, văn bản"
       }
      }
+    ],
+    "grammarIds": [
+     "g_069"
     ]
    },
    {
@@ -3156,7 +3495,11 @@
     "detail": {
      "en": "電話をかける means making a phone call. ことはありません says these tasks do not occur in this job; context gives the meaning that he will not need to do them.",
      "vi": "電話をかける nghĩa là gọi điện. ことはありません nói rằng công việc không có những nhiệm vụ này; trong ngữ cảnh hiểu là anh không cần làm."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_048"
+    ]
    },
    {
     "text": "どのコースが",
@@ -3178,7 +3521,10 @@
     "detail": {
      "en": "いい asks which option is good for this person’s needs. か makes it a polite question.",
      "vi": "いい hỏi lựa chọn nào phù hợp với nhu cầu của người này. か tạo câu hỏi lịch sự."
-    }
+    },
+    "grammarIds": [
+     "g_017"
+    ]
    }
   ]
  },
@@ -3226,7 +3572,9 @@
      "vi": "する ở thể từ điển + ことにする nghĩa là quyết định làm. しました đặt quyết định ở quá khứ, dù thói quen vẫn tiếp tục về sau."
     },
     "grammarIds": [
-     "g_205"
+     "g_205",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -3278,7 +3626,12 @@
      "vi": "寝る ở thể từ điển + ようにしています diễn tả nỗ lực thường xuyên đi ngủ theo cách đã nêu."
     },
     "grammarIds": [
-     "g_207"
+     "g_207",
+     "g_069",
+     "g_091",
+     "g_094_1",
+     "g_094_3",
+     "g_044"
     ]
    }
   ]
@@ -3313,6 +3666,10 @@
        "vi": "mệnh lệnh"
       }
      }
+    ],
+    "grammarIds": [
+     "g_197",
+     "g_011_5"
     ]
    },
    {
@@ -3337,7 +3694,9 @@
      "vi": "働く + ことになる diễn tả việc được sắp xếp hoặc quyết định, thay vì lựa chọn riêng của người nói. なりました cho biết sự sắp xếp đã được chốt."
     },
     "grammarIds": [
-     "g_206"
+     "g_206",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -3362,7 +3721,10 @@
     "detail": {
      "en": "の links the speech to Osaka; が marks what the speaker wants to understand. Here 言葉 refers to the local way of speaking.",
      "vi": "の nối cách nói với Osaka; が đánh dấu điều muốn hiểu. Ở đây 言葉 chỉ cách nói của địa phương."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "わかるようになりたいですから、",
@@ -3375,7 +3737,10 @@
      "vi": "わかる + ようになる nghĩa là trở nên hiểu được. なる → なりたい thêm mong muốn có khả năng ấy; から nêu lý do luyện tập."
     },
     "grammarIds": [
-     "g_209"
+     "g_209",
+     "g_069",
+     "g_059",
+     "g_066"
     ]
    },
    {
@@ -3400,7 +3765,8 @@
      "vi": "練習する ở thể từ điển + つもりです diễn tả ý định cá nhân. Đây là dự định của người nói, không phải sự sắp xếp từ bên ngoài."
     },
     "grammarIds": [
-     "g_212"
+     "g_212",
+     "g_069"
     ]
    }
   ]
@@ -3438,7 +3804,11 @@
      "vi": "1日5杯 nêu lượng uống mỗi ngày; 杯 là lượng từ đếm cốc. 飲む → 飲んでいました chỉ thói quen trước đây; が nối sang ý đối lập."
     },
     "grammarIds": [
-     "g_094_3"
+     "g_094_3",
+     "g_091",
+     "g_094_1",
+     "g_021",
+     "g_044"
     ]
    },
    {
@@ -3512,7 +3882,12 @@
      "vi": "帰る → 帰ろう là thể ý chí. 帰ろう + と思っています diễn tả dự định đã có trong đầu, thay vì lời rủ nảy ra ngay lúc nói."
     },
     "grammarIds": [
-     "g_213"
+     "g_213",
+     "g_079",
+     "g_091",
+     "g_094_1",
+     "g_094_5",
+     "g_044"
     ]
    }
   ]
@@ -3539,7 +3914,8 @@
      "vi": "に đánh dấu trường theo học. 入る → 入って + から nêu việc vào đại học đã xảy ra trước sự sắp xếp mới."
     },
     "grammarIds": [
-     "g_093"
+     "g_093",
+     "g_091"
     ]
    },
    {
@@ -3564,7 +3940,9 @@
      "vi": "住む + ことになる nêu việc ở đã được quyết định hoặc do hoàn cảnh dẫn đến. なりました cho biết sự sắp xếp đã được xác lập."
     },
     "grammarIds": [
-     "g_206"
+     "g_206",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -3612,7 +3990,10 @@
      "vi": "料理ができる nghĩa là có thể nấu ăn. できる → できない → できなくて nối việc không làm được với hệ quả."
     },
     "grammarIds": [
-     "g_197"
+     "g_197",
+     "g_071",
+     "g_061_1",
+     "g_061_2"
     ]
    },
    {
@@ -3647,7 +4028,10 @@
      "vi": "食べる → 食べていました diễn tả thói quen lặp lại trong quá khứ, không phải đang ăn một bữa tại một thời điểm cụ thể."
     },
     "grammarIds": [
-     "g_094_3"
+     "g_094_3",
+     "g_091",
+     "g_094_1",
+     "g_044"
     ]
    }
   ]
@@ -3686,7 +4070,8 @@
     },
     "grammarIds": [
      "g_202",
-     "g_197"
+     "g_197",
+     "g_091"
     ],
     "words": [
      {
@@ -3718,6 +4103,9 @@
        "vi": "tình trạng; ở đây: tình trạng sức khỏe"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -3731,7 +4119,8 @@
      "vi": "悪い → 悪く + なりました diễn tả chuyển sang tình trạng không khỏe. Đây là trở nên kém sức khỏe, không phải cố ý làm điều gì xấu đi."
     },
     "grammarIds": [
-     "g_160"
+     "g_160",
+     "g_044"
     ]
    }
   ]
@@ -3780,7 +4169,9 @@
      "vi": "作る ở thể từ điển + ことにしました diễn tả quyết định do người nói đưa ra. Khác với ことになりました là việc được sắp xếp hoặc quyết định."
     },
     "grammarIds": [
-     "g_205"
+     "g_205",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -3833,7 +4224,8 @@
     },
     "grammarIds": [
      "g_188",
-     "g_200"
+     "g_200",
+     "g_091"
     ]
    },
    {
@@ -3845,7 +4237,10 @@
     "detail": {
      "en": "少しずつ expresses gradual progress in small amounts. 練習しました is the main action, while the ながら clause describes what accompanies it.",
      "vi": "少しずつ diễn tả tiến dần từng chút. 練習しました là hành động chính; mệnh đề ながら chỉ việc diễn ra kèm theo."
-    }
+    },
+    "grammarIds": [
+     "g_044"
+    ]
    }
   ]
  },
@@ -3882,7 +4277,9 @@
      "vi": "簡単な bổ nghĩa cho 料理. Danh từ + なら nêu điều kiện hoặc phạm vi: khả năng này áp dụng nếu món ăn đơn giản."
     },
     "grammarIds": [
-     "g_112"
+     "g_112",
+     "g_113",
+     "g_166"
     ]
    },
    {
@@ -3908,7 +4305,10 @@
     },
     "grammarIds": [
      "g_209",
-     "g_061_1"
+     "g_061_1",
+     "g_075",
+     "g_069",
+     "g_044"
     ]
    }
   ]
@@ -3957,7 +4357,8 @@
      "vi": "行く → 行かない → 行かなくなる diễn tả việc bỏ một thói quen. なりました cho biết đã có thay đổi; ほとんど giới hạn mức độ thành gần như hoàn toàn."
     },
     "grammarIds": [
-     "g_210"
+     "g_210",
+     "g_044"
     ]
    }
   ]
@@ -3995,7 +4396,10 @@
      "vi": "を đánh dấu người được mời. 呼ぶ → 呼んで nối việc mời đến với việc chuẩn bị bữa ăn; 呼ぶ ở đây là mời, không chỉ gọi ai đó."
     },
     "grammarIds": [
-     "g_092"
+     "g_092",
+     "g_091",
+     "g_050_2",
+     "g_161"
     ],
     "words": [
      {
@@ -4030,7 +4434,8 @@
      "vi": "作る ở thể từ điển + つもりです diễn tả dự định của người nói. Dạng phi quá khứ hướng đến thời gian tương lai đã nêu."
     },
     "grammarIds": [
-     "g_212"
+     "g_212",
+     "g_069"
     ]
    }
   ]

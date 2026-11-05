@@ -19,7 +19,10 @@
     "detail": {
      "en": "に marks the person who has someone in their life; は makes that person the topic.",
      "vi": "に chỉ người có ai đó trong cuộc sống của mình; は đưa người ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_041"
+    ]
    },
    {
     "text": "彼女がいます。",
@@ -65,6 +68,9 @@
        "vi": "ở đây: vui vẻ, cởi mở"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    }
   ]
@@ -111,7 +117,10 @@
     "detail": {
      "en": "おいしい modifies ご飯, which means meals here. を marks what she makes.",
      "vi": "おいしい bổ nghĩa cho ご飯, ở đây là bữa ăn. を đánh dấu thứ cô ấy nấu."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "作ってくれます。",
@@ -124,7 +133,9 @@
      "vi": "作る → 作って + くれます diễn tả cô ấy làm việc có ích cho người nói. Dạng hiện tại chỉ thói quen."
     },
     "grammarIds": [
-     "g_103"
+     "g_103",
+     "g_044",
+     "g_091"
     ]
    }
   ]
@@ -175,7 +186,9 @@
     "grammarIds": [
      "g_228",
      "g_229",
-     "g_103"
+     "g_103",
+     "g_044",
+     "g_091"
     ],
     "words": [
      {
@@ -242,6 +255,9 @@
        "vi": "lời hứa, cuộc hẹn"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -263,6 +279,9 @@
        "vi": "đến muộn, trễ giờ"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -326,7 +345,8 @@
     },
     "grammarIds": [
      "g_233",
-     "g_232"
+     "g_232",
+     "g_044"
     ]
    }
   ]
@@ -353,7 +373,8 @@
      "vi": "Thể từ điển 着る bổ nghĩa cho 服: quần áo cô ấy sẽ mặc. を đánh dấu cụm danh từ này là đối tượng của 考える."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -365,7 +386,12 @@
     "detail": {
      "en": "考える → 考えている → 考えていて links an ongoing activity to its consequence. She was thinking about which clothes to choose.",
      "vi": "考える → 考えている → 考えていて nối việc đang suy nghĩ với kết quả phía sau. Cô ấy mải nghĩ xem nên chọn quần áo nào."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_094_1",
+     "g_197"
+    ]
    },
    {
     "text": "遅くなってしまったそうです。",
@@ -380,7 +406,9 @@
     "grammarIds": [
      "g_160",
      "g_222",
-     "g_144"
+     "g_144",
+     "g_076",
+     "g_091"
     ]
    }
   ]
@@ -430,7 +458,8 @@
     },
     "grammarIds": [
      "g_233",
-     "g_232"
+     "g_232",
+     "g_044"
     ]
    }
   ]
@@ -468,7 +497,8 @@
      "vi": "デートする + の biến hành động thành cụm danh từ. は đưa việc ấy làm chủ đề cho nhận xét 大変."
     },
     "grammarIds": [
-     "g_173"
+     "g_173",
+     "g_069"
     ]
    },
    {
@@ -480,7 +510,10 @@
     "detail": {
      "en": "大変 is a な-adjective used as the predicate. ちょっと softens how strongly the speaker complains.",
      "vi": "大変 là tính từ な dùng làm vị ngữ. ちょっと giúp người nói than phiền nhẹ nhàng hơn."
-    }
+    },
+    "grammarIds": [
+     "g_015"
+    ]
    }
   ]
  },
@@ -525,6 +558,9 @@
        "vi": "ngày xưa, trước đây"
       }
      }
+    ],
+    "grammarIds": [
+     "g_003"
     ]
    },
    {
@@ -546,6 +582,9 @@
        "vi": "sự yêu thích, sự ưa chuộng"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    }
   ]
@@ -583,7 +622,8 @@
      "vi": "飼う → 飼いたい diễn tả mong muốn; が đánh dấu con vật muốn nuôi. 犬が飼いたい bổ nghĩa cho 人, còn は đưa những người ấy làm chủ đề."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_078"
     ],
     "words": [
      {
@@ -618,7 +658,8 @@
      "vi": "気を付ける → 気を付けたら + いい dùng để hỏi nên làm gì. でしょうか khiến câu hỏi mềm và lịch sự hơn."
     },
     "grammarIds": [
-     "g_136"
+     "g_136",
+     "g_081"
     ],
     "words": [
      {
@@ -699,7 +740,10 @@
     "detail": {
      "en": "の links トイレ to 場所, and を marks what the dog must learn.",
      "vi": "の nối トイレ với 場所; を đánh dấu điều chó cần nhớ."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "覚えさせてください。",
@@ -713,7 +757,9 @@
     },
     "grammarIds": [
      "g_228",
-     "g_230"
+     "g_230",
+     "g_091",
+     "g_099"
     ]
    }
   ]
@@ -738,7 +784,10 @@
     "detail": {
      "en": "の specifies what kind of place is meant, and は makes that location the topic.",
      "vi": "の xác định loại địa điểm đang nói tới; は đưa nơi ấy làm chủ đề."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "寝る場所とは",
@@ -751,7 +800,8 @@
      "vi": "寝る bổ nghĩa cho 場所. と đánh dấu nơi dùng để đối chiếu với 別; は nhấn mạnh sự phân biệt."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ]
    },
    {
@@ -773,6 +823,9 @@
        "vi": "khác, riêng biệt"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -784,7 +837,10 @@
     "detail": {
      "en": "いいです gives a recommendation about the location, rather than describing its appearance.",
      "vi": "いいです nêu lựa chọn nên dùng cho địa điểm, chứ không miêu tả vẻ ngoài của nơi đó."
-    }
+    },
+    "grammarIds": [
+     "g_013"
+    ]
    }
   ]
  },
@@ -810,7 +866,9 @@
      "vi": "上手 → 上手に bổ nghĩa cho できる. できる → できたら nghĩa là khi chó đã làm được việc ấy đúng cách."
     },
     "grammarIds": [
-     "g_081"
+     "g_081",
+     "g_061_1",
+     "g_158"
     ]
    },
    {
@@ -835,7 +893,9 @@
      "vi": "褒める → 褒めて + あげる diễn tả việc làm vì chó. あげてください biến cả cụm thành lời yêu cầu lịch sự."
     },
     "grammarIds": [
-     "g_105"
+     "g_105",
+     "g_091",
+     "g_099"
     ],
     "words": [
      {
@@ -881,7 +941,11 @@
     "detail": {
      "en": "食べる + こと makes the activity into a noun phrase. が marks what dogs love.",
      "vi": "食べる + こと biến hành động ăn thành cụm danh từ. が đánh dấu điều chó rất thích."
-    }
+    },
+    "grammarIds": [
+     "g_069",
+     "g_065"
+    ]
    },
    {
     "text": "でも、食事は",
@@ -906,7 +970,9 @@
     },
     "grammarIds": [
      "g_230",
-     "g_199"
+     "g_199",
+     "g_228",
+     "g_073"
     ]
    },
    {
@@ -920,7 +986,10 @@
      "vi": "待つ → 待たせる → 待たせて + ください yêu cầu người nuôi cho chó chờ. 少し chỉ một khoảng chờ ngắn."
     },
     "grammarIds": [
-     "g_228"
+     "g_228",
+     "g_229",
+     "g_099",
+     "g_091"
     ]
    }
   ]
@@ -983,7 +1052,9 @@
     },
     "grammarIds": [
      "g_230",
-     "g_214"
+     "g_214",
+     "g_228",
+     "g_073"
     ]
    }
   ]
@@ -1019,7 +1090,10 @@
     "detail": {
      "en": "自分 refers back to the dog. が marks the subject inside the quotation, and と closes the content of its thought.",
      "vi": "自分 chỉ chính con chó. が đánh dấu chủ ngữ bên trong lời dẫn, còn と kết thúc nội dung suy nghĩ."
-    }
+    },
+    "grammarIds": [
+     "g_033_2"
+    ]
    },
    {
     "text": "思ってしまうからです。",
@@ -1033,7 +1107,9 @@
     },
     "grammarIds": [
      "g_147",
-     "g_222"
+     "g_222",
+     "g_091",
+     "g_066"
     ]
    }
   ]
@@ -1069,7 +1145,10 @@
     "detail": {
      "en": "The first を marks the food eaten. の turns ご飯を食べる into a noun phrase, and the second を marks the activity being delayed.",
      "vi": "を thứ nhất đánh dấu thức ăn. の biến ご飯を食べる thành cụm danh từ; を thứ hai đánh dấu việc ăn phải chờ lại."
-    }
+    },
+    "grammarIds": [
+     "g_069"
+    ]
    },
    {
     "text": "待たせて、",
@@ -1082,7 +1161,9 @@
      "vi": "待つ → 待たせる → 待たせて là thể て của dạng sai khiến. Dạng này nối việc cho chó chờ với lời hướng dẫn tiếp theo."
     },
     "grammarIds": [
-     "g_228"
+     "g_228",
+     "g_091",
+     "g_092"
     ]
    },
    {
@@ -1125,7 +1206,9 @@
      "vi": "わかる → わからせる là thể sai khiến. ましょう tạo lời hướng dẫn mang tính khuyến khích cho người nuôi."
     },
     "grammarIds": [
-     "g_228"
+     "g_228",
+     "g_056",
+     "g_229"
     ]
    }
   ]
@@ -1179,7 +1262,10 @@
     "grammarIds": [
      "g_138",
      "g_160",
-     "g_222"
+     "g_222",
+     "g_078",
+     "g_021",
+     "g_091"
     ]
    },
    {
@@ -1195,7 +1281,9 @@
     "grammarIds": [
      "g_230",
      "g_203",
-     "g_220"
+     "g_220",
+     "g_228",
+     "g_091"
     ]
    }
   ]
@@ -1252,6 +1340,9 @@
        "vi": "vận động, tập thể dục"
       }
      }
+    ],
+    "grammarIds": [
+     "g_003"
     ]
    },
    {
@@ -1263,7 +1354,10 @@
     "detail": {
      "en": "大好き is a な-adjective used as the polite predicate. It expresses a strong liking.",
      "vi": "大好き là tính từ な dùng làm vị ngữ lịch sự, thể hiện mức độ yêu thích cao."
-    }
+    },
+    "grammarIds": [
+     "g_015"
+    ]
    }
   ]
  },
@@ -1289,7 +1383,8 @@
      "vi": "ある → あれば là dạng điều kiện. が đánh dấu thứ có sẵn; で chỉ nơi chó chơi."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_084"
     ]
    },
    {
@@ -1303,7 +1398,8 @@
      "vi": "ない → なければ nghĩa là nếu không có vườn; 庭 được lược bỏ. で tiếp tục chỉ nơi chơi."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_084"
     ]
    },
    {
@@ -1318,7 +1414,8 @@
     },
     "grammarIds": [
      "g_228",
-     "g_231"
+     "g_231",
+     "g_056"
     ]
    }
   ]
@@ -1373,7 +1470,8 @@
      "vi": "する hoàn thành cấu trúc liệt kê たり, rồi する → して + もいい diễn tả có thể thực hiện những hoạt động ấy."
     },
     "grammarIds": [
-     "g_098_1"
+     "g_098_1",
+     "g_091"
     ]
    }
   ]
@@ -1425,7 +1523,9 @@
      "vi": "運動する → 運動させる là thể sai khiến của động từ する. ましょう khuyến khích người nuôi bảo đảm chó được vận động."
     },
     "grammarIds": [
-     "g_228"
+     "g_228",
+     "g_229",
+     "g_056"
     ],
     "words": [
      {
@@ -1473,7 +1573,10 @@
      "vi": "話す + ことができません diễn tả không có khả năng nói. が nối ý phủ định này với khả năng được nêu ở vế sau."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_048",
+     "g_021",
+     "g_069"
     ]
    },
    {
@@ -1495,6 +1598,9 @@
        "vi": "phương pháp, cách thức"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -1540,7 +1646,9 @@
      "vi": "伝える + ことができます diễn tả khả năng. Cấu trúc này song song với 話すことができません ở vế đầu."
     },
     "grammarIds": [
-     "g_071"
+     "g_071",
+     "g_044",
+     "g_069"
     ],
     "words": [
      {
@@ -1575,7 +1683,10 @@
     "detail": {
      "en": "お腹が空く → お腹が空いた describes having become hungry. The quotation represents the dog’s message rather than actual speech.",
      "vi": "お腹が空く → お腹が空いた diễn tả trạng thái đã thấy đói. Phần trong ngoặc thể hiện điều chó muốn báo chứ không phải lời nói thực sự."
-    }
+    },
+    "grammarIds": [
+     "g_076"
+    ]
    },
    {
     "text": "「遊んでほしい」など、",
@@ -1588,7 +1699,8 @@
      "vi": "遊ぶ → 遊んで + ほしい diễn tả mong người khác chơi cùng chó. など cho biết các lời dẫn chỉ là ví dụ."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091"
     ]
    },
    {
@@ -1647,7 +1759,8 @@
      "vi": "声を出す nghĩa là phát ra tiếng. 出す → 出したり + して hoàn thành danh sách rồi nối các cách ấy với 知らせます."
     },
     "grammarIds": [
-     "g_215"
+     "g_215",
+     "g_091"
     ]
    },
    {
@@ -1669,6 +1782,9 @@
        "vi": "báo, cho biết"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -1693,7 +1809,10 @@
     "detail": {
      "en": "あなたのこと refers to you as the focus of the dog’s attention. を marks the object of 見る.",
      "vi": "あなたのこと chỉ bạn với tư cách đối tượng được chó chú ý. を đánh dấu đối tượng của 見る."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "じっと",
@@ -1715,7 +1834,12 @@
     "detail": {
      "en": "見る → 見ている describes ongoing looking. Adding こともあります means there are also occasions when that behavior occurs.",
      "vi": "見る → 見ている diễn tả việc đang nhìn. Thêm こともあります nghĩa là cũng có những lúc hành vi ấy xảy ra."
-    }
+    },
+    "grammarIds": [
+     "g_094_1",
+     "g_091",
+     "g_044"
+    ]
    }
   ]
  },
@@ -1749,6 +1873,10 @@
        "vi": "cử động, chuyển động"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_166"
     ]
    },
    {
@@ -1773,7 +1901,9 @@
      "vi": "見る → 見て + あげる diễn tả việc quan sát vì lợi ích của chó. ましょう tạo lời khuyên mang tính khuyến khích."
     },
     "grammarIds": [
-     "g_105"
+     "g_105",
+     "g_091",
+     "g_056"
     ]
    }
   ]
@@ -1798,7 +1928,10 @@
     "detail": {
      "en": "そして adds the next piece of advice. の marks whose feelings they are, and を makes them the object of わかってあげる.",
      "vi": "そして thêm lời khuyên tiếp theo. の chỉ cảm xúc của ai; を đánh dấu đối tượng của わかってあげる."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "わかってあげましょう。",
@@ -1811,7 +1944,9 @@
      "vi": "わかる → わかって + あげる diễn tả sự thấu hiểu dành cho chó. ましょう khuyến khích người nuôi thể hiện sự quan tâm ấy."
     },
     "grammarIds": [
-     "g_105"
+     "g_105",
+     "g_091",
+     "g_056"
     ]
    },
    {
@@ -1825,7 +1960,8 @@
      "vi": "する → すれば là thể điều kiện. そう chỉ việc thấu hiểu và quan tâm đến chó vừa nêu."
     },
     "grammarIds": [
-     "g_085"
+     "g_085",
+     "g_084"
     ]
    },
    {
@@ -1839,7 +1975,10 @@
      "vi": "家族に đánh dấu mối quan hệ sẽ hình thành. なる → なれる → なれます là thể khả năng; きっと thể hiện niềm tin vào kết quả đó."
     },
     "grammarIds": [
-     "g_061_1"
+     "g_061_1",
+     "g_044",
+     "g_160",
+     "g_166"
     ]
    }
   ]
@@ -1866,7 +2005,9 @@
      "vi": "に đánh dấu người được hỏi; 聞く → 聞いた là thể thường quá khứ. Mệnh đề này bổ nghĩa cho アンケート ở cuối tiêu đề."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076",
+     "g_166"
     ],
     "words": [
      {
@@ -1898,7 +2039,8 @@
      "vi": "子供に chỉ đối tượng mà mong muốn hướng tới. 望む bổ nghĩa cho こと, tức những điều cha mẹ mong muốn."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -1944,7 +2086,10 @@
     "detail": {
      "en": "自分 refers to the parent answering. に marks the child who would do the action in the causative expression.",
      "vi": "自分 chỉ phụ huynh đang trả lời. に đánh dấu người con sẽ thực hiện hành động trong cấu trúc sai khiến."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "一番させたいことは",
@@ -1958,7 +2103,8 @@
     },
     "grammarIds": [
      "g_228",
-     "g_165"
+     "g_165",
+     "g_078"
     ]
    },
    {
@@ -1970,7 +2116,10 @@
     "detail": {
      "en": "何ですか asks for the identity of the desired activity.",
      "vi": "何ですか hỏi việc mong muốn ấy là việc gì."
-    }
+    },
+    "grammarIds": [
+     "g_007"
+    ]
    },
    {
     "text": "（1つだけ）",
@@ -2035,7 +2184,8 @@
      "vi": "習う → 習わせる → 習わせたい kết hợp sai khiến với mong muốn. Cha mẹ muốn cho con học, không phải bản thân mình học."
     },
     "grammarIds": [
-     "g_228"
+     "g_228",
+     "g_078"
     ]
    },
    {
@@ -2081,6 +2231,10 @@
        "vi": "nhạc cụ"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_166"
     ]
    },
    {
@@ -2094,7 +2248,8 @@
      "vi": "行く → 行かせる → 行かせたい là sai khiến kết hợp với mong muốn. Người được cho đi là người con đã được hiểu từ câu hỏi."
     },
     "grammarIds": [
-     "g_228"
+     "g_228",
+     "g_078"
     ]
    },
    {
@@ -2130,7 +2285,11 @@
     "detail": {
      "en": "ボランティアをする means to do volunteer work. する → して links that activity to what the child should learn.",
      "vi": "ボランティアをする nghĩa là làm tình nguyện. する → して nối hoạt động ấy với điều muốn con học."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092"
+    ]
    },
    {
     "text": "人に親切にする心を",
@@ -2143,7 +2302,9 @@
      "vi": "人に chỉ những người được đối xử tốt. 親切にする bổ nghĩa cho 心; を đánh dấu tấm lòng ấy là điều cần học."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069",
+     "g_158"
     ],
     "words": [
      {
@@ -2175,7 +2336,8 @@
      "vi": "学ぶ → 学んで + ほしい diễn tả mong người khác học. Người học được hiểu là người con."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091"
     ],
     "words": [
      {
@@ -2221,7 +2383,10 @@
     "detail": {
      "en": "や gives examples of holidays. に marks those holidays as the time for play.",
      "vi": "や nêu ví dụ về các kỳ nghỉ. に đánh dấu chúng là thời gian chơi."
-    }
+    },
+    "grammarIds": [
+     "g_051"
+    ]
    },
    {
     "text": "山や川で",
@@ -2232,7 +2397,10 @@
     "detail": {
      "en": "や lists outdoor locations, and で marks where the activity happens.",
      "vi": "や liệt kê các địa điểm ngoài trời; で chỉ nơi diễn ra hoạt động."
-    }
+    },
+    "grammarIds": [
+     "g_051"
+    ]
    },
    {
     "text": "遊ばせたい",
@@ -2246,7 +2414,8 @@
     },
     "grammarIds": [
      "g_228",
-     "g_231"
+     "g_231",
+     "g_078"
     ]
    },
    {
@@ -2285,7 +2454,8 @@
     },
     "grammarIds": [
      "g_228",
-     "g_165"
+     "g_165",
+     "g_078"
     ]
    },
    {
@@ -2311,7 +2481,9 @@
     },
     "grammarIds": [
      "g_228",
-     "g_231"
+     "g_231",
+     "g_078",
+     "g_158"
     ],
     "words": [
      {
@@ -2357,7 +2529,10 @@
     "detail": {
      "en": "自分 refers to the parent answering. に marks the person whose action or change the parent wishes for.",
      "vi": "自分 chỉ phụ huynh trả lời. に đánh dấu người mà cha mẹ mong thực hiện hành động hoặc có sự thay đổi."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "どんな人に",
@@ -2381,7 +2556,8 @@
      "vi": "なる → なって + ほしい hỏi mong muốn về sự thay đổi của người khác. ですか tạo câu hỏi lịch sự."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091"
     ]
    },
    {
@@ -2420,7 +2596,10 @@
     "detail": {
      "en": "他の modifies 人. に marks the people receiving the kind treatment.",
      "vi": "他の bổ nghĩa cho 人. に đánh dấu người được đối xử tử tế."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "親切にできる人に",
@@ -2433,7 +2612,10 @@
      "vi": "親切にする → 親切にできる diễn tả khả năng đối xử tử tế. Mệnh đề bổ nghĩa cho 人; に cuối cụm đánh dấu người mà con sẽ trở thành."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_061_1",
+     "g_075",
+     "g_158"
     ],
     "words": [
      {
@@ -2457,7 +2639,8 @@
      "vi": "なる → なって + ほしい diễn tả mong muốn của cha mẹ đối với con; chủ thể là con được lược bỏ."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091"
     ]
    },
    {
@@ -2506,7 +2689,9 @@
      "vi": "迷惑をかける là cách nói gây phiền cho ai. かける → かけない → かけなければ tạo điều kiện phủ định."
     },
     "grammarIds": [
-     "g_087"
+     "g_087",
+     "g_084",
+     "g_085"
     ],
     "words": [
      {
@@ -2528,7 +2713,10 @@
     "detail": {
      "en": "それ refers to not causing trouble. でいい means that this condition is sufficient.",
      "vi": "それ chỉ việc không gây phiền. でいい nghĩa là đạt điều kiện ấy thì đã đủ."
-    }
+    },
+    "grammarIds": [
+     "g_033_2"
+    ]
    },
    {
     "text": "…27人",
@@ -2573,6 +2761,9 @@
        "vi": "sức lực, năng lực"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -2598,7 +2789,10 @@
     },
     "grammarIds": [
      "g_209",
-     "g_191"
+     "g_191",
+     "g_061_1",
+     "g_075",
+     "g_091"
     ]
    },
    {
@@ -2636,7 +2830,8 @@
      "vi": "諦める → 諦めない + で diễn tả cách người ấy tiếp tục cố gắng: không từ bỏ công việc."
     },
     "grammarIds": [
-     "g_198"
+     "g_198",
+     "g_073"
     ],
     "words": [
      {
@@ -2658,7 +2853,11 @@
     "detail": {
      "en": "まで follows the plain form できる and marks the endpoint of continuing effort.",
      "vi": "まで đứng sau thể thường できる, đánh dấu mốc kết thúc của sự cố gắng liên tục."
-    }
+    },
+    "grammarIds": [
+     "g_061_1",
+     "g_075"
+    ]
    },
    {
     "text": "頑張れる人に",
@@ -2672,7 +2871,8 @@
     },
     "grammarIds": [
      "g_061_1",
-     "g_165"
+     "g_165",
+     "g_075"
     ],
     "words": [
      {
@@ -2696,7 +2896,8 @@
      "vi": "なる → なって + ほしい diễn tả mong người khác thay đổi theo hướng này."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091"
     ]
    },
    {
@@ -2732,7 +2933,12 @@
     "detail": {
      "en": "に marks the destination. 行く → 行って connects attending school with the later step.",
      "vi": "に chỉ nơi đến. 行く → 行って nối việc đi học với bước tiếp theo."
-    }
+    },
+    "grammarIds": [
+     "g_166",
+     "g_091",
+     "g_092"
+    ]
    },
    {
     "text": "いい会社に",
@@ -2743,7 +2949,10 @@
     "detail": {
      "en": "いい modifies 会社. に marks the organization the child would join.",
      "vi": "いい bổ nghĩa cho 会社. に đánh dấu tổ chức mà con sẽ gia nhập."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "入ってほしい",
@@ -2756,7 +2965,8 @@
      "vi": "入る → 入って + ほしい diễn tả mong muốn của cha mẹ. Ở đây 入る nghĩa là vào làm trong một công ty."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091"
     ],
     "words": [
      {
@@ -2825,7 +3035,8 @@
      "vi": "なる → なって + ほしい diễn tả mong con trở nên giàu có."
     },
     "grammarIds": [
-     "g_191"
+     "g_191",
+     "g_091"
     ]
    },
    {
@@ -2850,7 +3061,8 @@
      "vi": "特に nghĩa là đặc biệt, cụ thể. 望む bổ nghĩa cho こと; はない cho biết không có điều mong muốn cụ thể như vậy."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -2906,6 +3118,10 @@
        "vi": "giờ học, tiết học"
       }
      }
+    ],
+    "grammarIds": [
+     "g_051",
+     "g_166"
     ]
    },
    {
@@ -2938,6 +3154,9 @@
        "vi": "mong muốn"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    },
    {
@@ -2991,7 +3210,10 @@
     "detail": {
      "en": "の specifies the subject of the classes. を marks what the school should increase.",
      "vi": "の xác định môn học của các tiết học. を đánh dấu thứ muốn nhà trường tăng."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "増やしてもらいたい",
@@ -3004,7 +3226,9 @@
      "vi": "増やす → 増やして + もらう diễn tả người nói nhận việc người khác làm cho mình. もらう → もらいたい thêm mong muốn được thực hiện việc ấy."
     },
     "grammarIds": [
-     "g_188"
+     "g_188",
+     "g_078",
+     "g_091"
     ],
     "words": [
      {
@@ -3050,7 +3274,11 @@
     "detail": {
      "en": "を marks the children being observed. よく means carefully here, and 見る → 見て links this action to listening.",
      "vi": "を đánh dấu trẻ được quan sát. よく ở đây nghĩa là kỹ; 見る → 見て nối việc quan sát với lắng nghe."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092"
+    ]
    },
    {
     "text": "意見を",
@@ -3084,7 +3312,9 @@
      "vi": "聞く → 聞いて + もらいたい diễn tả mong người khác lắng nghe như một việc có ích cho mình. Ở đây 聞く nghĩa là lắng nghe, không phải hỏi."
     },
     "grammarIds": [
-     "g_188"
+     "g_188",
+     "g_078",
+     "g_091"
     ]
    },
    {
@@ -3122,7 +3352,9 @@
      "vi": "悪いことをした bổ nghĩa cho 子供. は đưa những trẻ ấy làm chủ đề; trẻ là người được nhắc nhở, không phải người nhắc nhở."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076",
+     "g_166"
     ]
    },
    {
@@ -3147,7 +3379,9 @@
      "vi": "注意する → 注意して + もらいたい diễn tả muốn giáo viên thực hiện việc ấy. Ở đây 注意する là nhắc nhở hoặc chấn chỉnh hành vi."
     },
     "grammarIds": [
-     "g_188"
+     "g_188",
+     "g_078",
+     "g_091"
     ],
     "words": [
      {
@@ -3211,6 +3445,9 @@
        "vi": "số lượng"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -3225,7 +3462,9 @@
     },
     "grammarIds": [
      "g_159",
-     "g_188"
+     "g_188",
+     "g_078",
+     "g_091"
     ]
    },
    {
@@ -3271,6 +3510,9 @@
        "vi": "hội thể thao ở trường"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -3285,7 +3527,9 @@
     },
     "grammarIds": [
      "g_159",
-     "g_188"
+     "g_188",
+     "g_078",
+     "g_091"
     ]
    },
    {
@@ -3334,7 +3578,8 @@
      "vi": "望む bổ nghĩa cho こと: điều mình mong muốn. はない cho biết không có điều cụ thể như vậy."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_069"
     ],
     "words": [
      {
@@ -3380,7 +3625,10 @@
     "detail": {
      "en": "子供の modifies ころ, meaning the period when the speaker was a child.",
      "vi": "子供の bổ nghĩa cho ころ, chỉ khoảng thời gian người nói còn nhỏ."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "母は私を",
@@ -3416,7 +3664,8 @@
     },
     "grammarIds": [
      "g_228",
-     "g_229"
+     "g_229",
+     "g_044"
     ],
     "words": [
      {
@@ -3476,7 +3725,8 @@
     },
     "grammarIds": [
      "g_232",
-     "g_233"
+     "g_233",
+     "g_044"
     ]
    }
   ]
@@ -3527,7 +3777,10 @@
     "detail": {
      "en": "嫌 is a な-adjective, so its polite past is 嫌でした. The disliked activity is piano practice, understood from context.",
      "vi": "嫌 là tính từ な nên quá khứ lịch sự là 嫌でした. Việc bị ghét được hiểu từ ngữ cảnh là tập piano."
-    }
+    },
+    "grammarIds": [
+     "g_023"
+    ]
    }
   ]
  },
@@ -3590,7 +3843,10 @@
     },
     "grammarIds": [
      "g_231",
-     "g_103"
+     "g_103",
+     "g_228",
+     "g_091",
+     "g_044"
     ]
    }
   ]
@@ -3626,7 +3882,11 @@
     "detail": {
      "en": "を marks the instrument played. 弾く → 弾いて links the playing to its effect on the family.",
      "vi": "を đánh dấu nhạc cụ được chơi. 弾く → 弾いて nối việc chơi đàn với tác động lên gia đình."
-    }
+    },
+    "grammarIds": [
+     "g_091",
+     "g_092"
+    ]
    },
    {
     "text": "家族を",
@@ -3652,7 +3912,9 @@
     "grammarIds": [
      "g_229",
      "g_228",
-     "g_071"
+     "g_071",
+     "g_069",
+     "g_044"
     ],
     "words": [
      {
@@ -3698,7 +3960,10 @@
     "detail": {
      "en": "の identifies whose class or school it is. で marks where the performance will take place.",
      "vi": "の xác định lớp của ai. で đánh dấu nơi diễn ra việc chơi đàn."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "一曲",
@@ -3722,7 +3987,12 @@
      "vi": "弾く → 弾かせる → 弾かせて + もらう nghĩa là được cho phép chơi đàn. Người kể là người chơi, cô giáo là người cho phép."
     },
     "grammarIds": [
-     "g_234"
+     "g_234",
+     "g_228",
+     "g_231",
+     "g_188",
+     "g_091",
+     "g_069"
     ]
    },
    {
@@ -3736,7 +4006,8 @@
      "vi": "Thể từ điển + ことになる diễn tả sự sắp xếp hoặc quyết định. なりました cho biết việc ấy đã được sắp xếp."
     },
     "grammarIds": [
-     "g_206"
+     "g_206",
+     "g_044"
     ]
    }
   ]
@@ -3771,6 +4042,9 @@
        "vi": "đầu tiên, ban đầu"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -3796,7 +4070,8 @@
     },
     "grammarIds": [
      "g_233",
-     "g_232"
+     "g_232",
+     "g_044"
     ]
    }
   ]
@@ -3852,6 +4127,9 @@
        "vi": "nhân viên công ty"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -3865,7 +4143,12 @@
      "vi": "や liệt kê công việc; を đánh dấu việc được thực hiện. する → させる → させて tạo thể sai khiến rồi nối với hành động tiếp theo của trưởng phòng."
     },
     "grammarIds": [
-     "g_230"
+     "g_230",
+     "g_228",
+     "g_051",
+     "g_091",
+     "g_092",
+     "g_166"
     ],
     "words": [
      {
@@ -3901,7 +4184,8 @@
     },
     "grammarIds": [
      "g_222",
-     "g_148"
+     "g_148",
+     "g_091"
     ]
    }
   ]
@@ -3947,6 +4231,9 @@
        "vi": "cuộc họp"
       }
      }
+    ],
+    "grammarIds": [
+     "g_166"
     ]
    },
    {
@@ -3960,7 +4247,14 @@
      "vi": "出る（でる）→ 出させる（でさせる）→ 出させてもらう nghĩa là được cho phép tham dự. もらう → もらえる → もらえないか tạo câu hỏi mềm về việc có thể nhận sự cho phép ấy hay không."
     },
     "grammarIds": [
-     "g_234"
+     "g_234",
+     "g_228",
+     "g_231",
+     "g_188",
+     "g_061_1",
+     "g_075",
+     "g_073",
+     "g_091"
     ],
     "words": [
      {
@@ -4000,6 +4294,9 @@
        "vi": "ở đây: hỏi"
       }
      }
+    ],
+    "grammarIds": [
+     "g_044"
     ]
    }
   ]
@@ -4060,7 +4357,10 @@
     },
     "grammarIds": [
      "g_231",
-     "g_103"
+     "g_103",
+     "g_228",
+     "g_091",
+     "g_044"
     ]
    }
   ]
@@ -4087,7 +4387,8 @@
      "vi": "で chỉ nơi phát biểu. 話した bổ nghĩa cho こと, chỉ sự việc đã phát biểu; が đánh dấu sự việc ấy là bước ngoặt."
     },
     "grammarIds": [
-     "g_165"
+     "g_165",
+     "g_076"
     ]
    },
    {
@@ -4134,7 +4435,10 @@
     },
     "grammarIds": [
      "g_194",
-     "g_209"
+     "g_209",
+     "g_193",
+     "g_044",
+     "g_069"
     ],
     "words": [
      {
@@ -4180,7 +4484,10 @@
     "detail": {
      "en": "に marks the people allowed to think. The speaker is the omitted person giving them that opportunity.",
      "vi": "に đánh dấu những người được để tự suy nghĩ. Người tạo cơ hội ấy là người kể, đã được lược bỏ."
-    }
+    },
+    "grammarIds": [
+     "g_166"
+    ]
    },
    {
     "text": "自分で",
@@ -4205,7 +4512,12 @@
     },
     "grammarIds": [
      "g_231",
-     "g_207"
+     "g_207",
+     "g_228",
+     "g_069",
+     "g_091",
+     "g_094_3",
+     "g_044"
     ]
    }
   ]
@@ -4244,7 +4556,8 @@
     },
     "grammarIds": [
      "g_191",
-     "g_066"
+     "g_066",
+     "g_091"
     ],
     "words": [
      {
