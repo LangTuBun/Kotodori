@@ -25,7 +25,7 @@ Requirements: [Docker](https://docs.docker.com/get-docker/) with the Compose plu
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/kotodori.git
+git clone https://github.com/LangTuBun/Kotodori.git
 cd kotodori
 
 # 2. (Optional) change the host port if 8080 is already taken
